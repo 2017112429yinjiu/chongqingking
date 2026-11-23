@@ -1,17 +1,6 @@
-* text=auto
-*.md text eol=lf
-*.gd text eol=lf
-*.gdshader text eol=lf
-*.tscn text eol=lf
-*.tres text eol=lf
-*.godot text eol=lf
-*.uid text eol=lf
-*.import text eol=lf
-*.py text eol=lf
-*.ps1 text eol=lf
-*.json text eol=lf
-*.cmd text eol=crlf
-*.bat text eol=crlf
+# Preserve native file bytes and historical SHA-256 evidence, including line endings.
+# -text disables newline conversion; Git still detects text files for normal diffs.
+* -text
 
 # Authored sources, runtime assets, and native visual evidence.
 *.blend filter=lfs diff=lfs merge=lfs -text
