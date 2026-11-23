@@ -1,0 +1,165 @@
+{
+	"art_profile": {
+		"path": "res://assets/render_profile_r20.json",
+		"revision": "R20_lane_04_internal",
+		"sha256": "8571e53f5867dd4347d70395982e7134aad6748d069a0ef222a32aff9a715a46"
+	},
+	"character_import_sha256": "3c19ed22d73c29ae4915222bb58986c88ca78a8aa52a1e02903606f20b7f99f3",
+	"character_sha256": "2c0f3b14354d7c38fcbbff150705b7cb65843a64ea886c847be059a3d1a21b9e",
+	"controller_sha256": "883562c0af064d62d582673e25ac70793ae93e409559487d3320cc8e8b35be25",
+	"engine": "4.6.3-stable (official)",
+	"note": "Continuous physics drive on actual imported upper road. No whole-network navigation or crowd performance claim.",
+	"passed": true,
+	"revision": "R18 internal character iteration",
+	"rider_sha256": "4d0ace49adf7df87e4d31ea84f55a5779d2cea35a02d2f3ec0fa801dfae71d5a",
+	"runtime_sha256": {
+		"res://assets/fonts/cq_lane_ui.otf": "a06dc789f2be2f571b3c1c484c69fd94da1a51dc62b9e87dba063f2f4b482cd9",
+		"res://assets/lane_r20/rinse.wav": "8674dce3de89f536a8d519dd21223164a327c91e574f216fad88db91ab74f1bf",
+		"res://assets/lane_r20/rinse_fixture.json": "8a0f267946522fd59fe99b298e18e6a4e1e4b95d1a3728bb4a73e4636fa2ff1a",
+		"res://scripts/gameplay.gd": "c7173bdb738f6c21417998f8f5867ed38b34365bac5b67acb9a126933ec7b80c",
+		"res://scripts/main.gd": "3ed7477d4ca85f311fb24128c2c2c911348fe08a91150ed8b8c4b3218b0de610",
+		"res://scripts/qa_lane_r20.gd": "bbcea92a21323d92319131ef11100246d5d7f111e3d630269a235c68face3b13",
+		"res://scripts/rinse_tap.gd": "ca302ded980bb331c117d132fe69153ea42254de9ecc2bf68a1b5998a7ce8d52",
+		"res://scripts/street_detail_r19.gd": "e5b00907e9c30379f968ccaa4f2c760ec79ab6b63e54e2fe74180ed0101505ad",
+		"res://scripts/upper_lane_r20.gd": "0c61b1b914ad1f8d1ba0fbfb27889d1426d6635340d0867f62feda76d4f8d56c",
+		"res://shaders/hanging_cotton_r20.gdshader": "9d48788f6d3b3beffde16f0f5a94c8d99eac36fa8a9c00950c5116c97c208754",
+		"res://shaders/sky_visibility_r20.gdshaderinc": "14a770eab2dc29951adb2d5c9a17b4121b9a5bbf0e74d31e48743b8828985b7d",
+		"res://shaders/street_surface_r19.gdshader": "2f892b7c1e4d90a42f1429a50a1e6af7762035d236308ce47d9e257a9badb512"
+	},
+	"scene_sha256": "88b5be04c0c72ae2b54bb02f55f2186f7b7ec2937389a59697e7306dbd7e7c13",
+	"street_layer": {
+		"asset": "res://assets/street_r19/street_life.glb",
+		"enabled": true,
+		"manifest_sha256": "b0ec626c4096ddc6df5e1444e21294346990e8faf21e62fb5bcecd77d2ae0e17",
+		"replaced": [
+			"Type_梯坎小面",
+			"Resident_waste_14_bin_00",
+			"Resident_waste_14_bin_01",
+			"Resident_waste_14_bin_02",
+			"Resident_waste_14_bin_03",
+			"Resident_waste_14_bagA_00",
+			"Resident_waste_14_bagB_00",
+			"Resident_waste_14_crate_00",
+			"Authored_distant_hill_ridges_hill_near",
+			"Authored_distant_hill_ridges_hill_far",
+			"B_A01_noodle_details_faded_red",
+			"B_A01_noodle_details_curtain_beige"
+		],
+		"sha256": "1c40ae7ed04e8bf3f5f7956eaf630a098890e62a9c142f3e846c9ee15d530bad",
+		"source_revision": "R19_scene_05"
+	},
+	"tests": [
+		{
+			"name": "far_interaction_rejected",
+			"pass": true
+		},
+		{
+			"name": "delivery_requires_food",
+			"pass": true
+		},
+		{
+			"name": "wall_blocks_interaction",
+			"pass": true
+		},
+		{
+			"name": "shop_accept_order",
+			"pass": true
+		},
+		{
+			"name": "cannot_take_unprepared_food",
+			"pass": true
+		},
+		{
+			"name": "food_ready",
+			"pass": true
+		},
+		{
+			"name": "food_pickup",
+			"pass": true
+		},
+		{
+			"name": "duplicate_pickup_rejected",
+			"pass": true
+		},
+		{
+			"name": "food_delivered",
+			"pass": true
+		},
+		{
+			"name": "delivery_idempotent",
+			"pass": true
+		},
+		{
+			"name": "scooter_exists",
+			"pass": true
+		},
+		{
+			"name": "approach_and_enter_scooter",
+			"pass": true
+		},
+		{
+			"name": "unparked_exit_rejected",
+			"pass": true
+		},
+		{
+			"distance_m": 8.58952808380127,
+			"end": "(8.589279, 32.31535, -77.99999)",
+			"last_obstacle": {
+
+			},
+			"name": "drive_actual_world",
+			"pass": true
+		},
+		{
+			"name": "governed_speed",
+			"pass": true,
+			"peak_mps": 6.0
+		},
+		{
+			"name": "steer_changes_heading",
+			"pass": true
+		},
+		{
+			"name": "brake_stops",
+			"pass": true
+		},
+		{
+			"name": "reverse",
+			"pass": true,
+			"speed": -1.8
+		},
+		{
+			"name": "park",
+			"pass": true
+		},
+		{
+			"name": "blocked_exit_rejected",
+			"pass": true
+		},
+		{
+			"name": "safe_exit_restores_walk",
+			"pass": true
+		},
+		{
+			"name": "thirteen_residential_doorbells_registered",
+			"pass": true
+		},
+		{
+			"name": "worker_vestibule_bell_reachable",
+			"pass": true
+		},
+		{
+			"name": "return_to_shop_starts_next_order",
+			"pass": true
+		}
+	],
+	"upper_lane": {
+		"enabled": true,
+		"model_sha256": "1532f140ce7e0bf7afcf808a3e65be7efc7e3daae841d783354741128f08b39b",
+		"sky_sha256": {
+			"res://assets/lane_r20/alley_sky.png": "c8b799570de19d6acd2e5c822aa095807d6dc3b107bd4886e66caef438cf7d3b",
+			"res://assets/lane_r20/shop_sky.png": "8d5b169cfd0bf9cc799dec67d02fde5ebbc2558a3a79dc5c91fd85fbc98dd188"
+		}
+	},
+	"vehicle_sha256": "6536538dde0cc547e4a4461d1cef58ed7cd3f17620b4ac9eaa2e428bad6cea19"
+}

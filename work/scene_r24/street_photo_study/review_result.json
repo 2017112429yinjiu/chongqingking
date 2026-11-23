@@ -1,0 +1,94 @@
+{
+  "profile_sha256": "03cb2f0c42fd1cb84541ef6d52587c2bd4a9ed964efc613166323b91e577dc68",
+  "engine": "Godot 4.6.3 Forward+",
+  "matched_cameras": {
+    "r24_west_seam": {
+      "old": "2f8e290e01416f75e51dbf6f83b29b0a51b2dd8e88916ab85300e6b8858e0011",
+      "current": "6b8bd0f0d2cb0216b73c80536d8d93b7ece935fcaac271bf83d2c0da659099b3"
+    },
+    "r24_center_seam": {
+      "old": "815fc007844048bdc6b42972dcd5d33fc48fa35ba202a926ab72682f5b861c56",
+      "current": "c2642e84e0bd6839f4375cb2955eb943a49154a3bca3647b93d81c0ddc17bb67"
+    },
+    "r24_stall": {
+      "old": "eee4f3a1f69a08c5f6c1176d9a3423ad8933d64cb23696fa1fbc922b0e197f84",
+      "current": "bba9ab98f11639bd36399ff3bfe8813c8b6449193575017647cdcd8fc6fe9e90"
+    },
+    "r24_repair": {
+      "old": "d335d247538572f37d42ab2c09b8ad08f65121b896f0da4dae71bc148533bb6d",
+      "current": "fd3c281af09f3f1086ee7091f22c97e3dcd718087cb3c6d81b1bd3598de56d8d"
+    },
+    "r23_main_road": {
+      "old": "ad4c4cce841e447a139c659c4d751b575069fc2f1593ff7148d0d0f6b653c176",
+      "current": "dfcb32198778eaf67f471b20997045143af274fff998d5fa7124da30e2053cfe"
+    },
+    "r24_canopy_joint": {
+      "old": "b3dff22b98bab1a9c0fff05b702034a491691f65fb6f9c8be92c0c1ef44c543b",
+      "current": "3467085e26e378dd957e96943046bbdcbf000fb18d8344adcdbc67c7dae02d12"
+    },
+    "r23_shop_window": {
+      "old": "e75a1162e388156a2178ac3bd501341047185ef3214f9af92bf3724400603d13",
+      "current": "7758ea9ed1fd07bb27f381c9c3093ace657d95f42e0a9536abea50e9020fe21a"
+    },
+    "r24_counter": {
+      "old": "578f76be5d85e0a7818976599d97457c1c1096036038933013f5865bb54c8809",
+      "current": "2bff9754651160256fec3fc52cb5d604e74092067cfd142e7f67adca6688e13f"
+    },
+    "r24_market_ground": {
+      "old": "570f59d71d63d1d12d0b8f53ff7377db40b9b282b9c433b247299c61975ea9f4",
+      "current": "79534cc2a812364272053236b6c35b6eddd17f5f8fbdc148899c9a5ed6e470f9"
+    },
+    "r24_west_doorstep": {
+      "old": "b180b240d6474fd0577a79d84c4d3d09fb591a31686b817440a4a38a64149f50",
+      "current": "e955da7f052e6af9ef3d5c6b01029954ed5c2da6a3e7ee4f05384bbf10232beb"
+    }
+  },
+  "support_points": 24,
+  "worst_support_difference_m": 4.1961669921875e-05,
+  "motion": {
+    "captured": 32,
+    "max_physics_step_m": 0.070089228451252,
+    "metres": 8.43958282470703,
+    "reached": true
+  },
+  "checks": {
+    "walk": true,
+    "delivery_end_to_end": true,
+    "smoke": true,
+    "seam_walk": true
+  },
+  "gpu_comparison_1080": {
+    "before": [
+      {
+        "view": "r24_west_seam",
+        "samples": 240,
+        "gpu_p50_ms": 29.9300003051758,
+        "gpu_p95_ms": 35.1469993591309,
+        "frame_interval_p95_ms": 35.207
+      },
+      {
+        "view": "r24_stall",
+        "samples": 240,
+        "gpu_p50_ms": 70.5199966430664,
+        "gpu_p95_ms": 84.7730026245117,
+        "frame_interval_p95_ms": 84.904
+      }
+    ],
+    "current": [
+      {
+        "view": "r24_west_seam",
+        "samples": 240,
+        "gpu_p50_ms": 29.3339996337891,
+        "gpu_p95_ms": 31.9489994049072,
+        "frame_interval_p95_ms": 32.004
+      },
+      {
+        "view": "r24_stall",
+        "samples": 240,
+        "gpu_p50_ms": 71.4919967651367,
+        "gpu_p95_ms": 79.7320022583008,
+        "frame_interval_p95_ms": 81.141
+      }
+    ]
+  }
+}

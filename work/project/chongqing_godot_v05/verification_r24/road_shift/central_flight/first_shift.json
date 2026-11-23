@@ -1,0 +1,94 @@
+{
+	"checks": [
+		{
+			"detail": {
+				"arrived": false,
+				"bike": "(12.92394, 11.09923, 63.91302)",
+				"guide_obstacle": {
+					"body": "COL_D18_StoneFlights",
+					"normal": "(0.0, 1.0, 0.0)",
+					"position": "(10.49993, 11.2359, 62.4251)"
+				},
+				"mentor": "(10.59685, 11.24325, 62.48811)",
+				"student_obstacle": {
+					"body": "COL_Terrain_200m_yard_concrete",
+					"normal": "(-0.02585, 0.990468, 0.135298)",
+					"position": "(-53.76539, 11.6712, 51.96428)"
+				},
+				"wait": false,
+				"waypoint": 0
+			},
+			"name": "real_street_crossing",
+			"pass": false
+		}
+	],
+	"demonstrations": [
+		"AT_BIKE",
+		"RIDING"
+	],
+	"display": "headless",
+	"engine": "4.6.3-stable (official)",
+	"mentor_route": {
+		"issues": [
+			{
+				"goal": "(9.0, 11.37988, 61.45)",
+				"kind": "route_blocked",
+				"obstacle": "/root/ChongqingDistrict/City/COL_D18_StoneFlights/CQ_StaticCollision",
+				"position": "(10.57368, 11.24706, 62.5209)",
+				"seconds_without_progress": 3.02,
+				"segment": 0,
+				"stage": "TO_YARD",
+				"time_s": 4.88
+			}
+		],
+		"legs": {
+			"1/TO_YARD": {
+				"arrived": false,
+				"max_kmh": 6.72,
+				"moving_s": 53.3333333333316,
+				"travel_m": 87.3760230891057,
+				"waiting_s": 0.0,
+				"waypoints": [
+					{
+						"position": "(10.99933, 11.23803, 62.74961)",
+						"segment": 0,
+						"stage": "TO_YARD",
+						"time_s": 1.35
+					}
+				]
+			}
+		},
+		"max_frame_displacement_m": 0.146017238497734,
+		"rules": {
+			"airborne_seconds": 0.45,
+			"minimum_progress_m": 0.2,
+			"stalled_seconds": 3.0
+		}
+	},
+	"nearest_walking_resident": {
+		"clearance_to_bike_m": 1e99999
+	},
+	"passed": false,
+	"renderer": "forward_plus",
+	"source_sha256": {
+		"assets/vehicles/first_shift_box.glb": "0fe33e75e1a9e34a68eb87a6c0f01703e97206e6f5ab987cba1d7d2acb0a110a",
+		"first_shift.tscn": "1f4df48ea096f7c0e8a5b608e8b2e4558f2cb495bfb7e80a95057c7811f87160",
+		"scripts/day_one.gd": "fab5f8d48fa73d096c0dc17568c8a254a2ab16a69c33ec367a8f6861dcdc6de9",
+		"scripts/gameplay.gd": "d0dfd80f552674e8fa91757fe7e4a79be5ce78eef1422807bfe3f7c2ef2f4def",
+		"scripts/kraft_paper.gdshader": "2b952c85d014df3c35b9d9c646137b01d495652265edcab5da55b8af2dfc1fa2",
+		"scripts/main.gd": "1b6ba2fe65e1ee3d55800d6656a4da33ac348b278ed93cb7b1692095eb53da4a",
+		"scripts/mentor_arm.gd": "e36eaea6dcb0b34bb22bb09614debe2ca810c86d9a8a8fad5ba43b5a73c312a6",
+		"scripts/mentor_demonstration.gd": "716bbf904eb7be746b81559ff402f51602f31fb711bee097eaf3d539f0e7c2cb",
+		"scripts/mentor_gaze.gd": "2a491d730ace7343143296c196966f9aa8a42bd04b9e610118bb3b3bbf694424",
+		"scripts/mentor_hands.gd": "5c8b72bb1850fb6890d66ad0348a40f4fca82d2d68892ee7949162e0a8a24354",
+		"scripts/mentor_reach.gd": "375118606df307f3470fcc61fd29fcbe127658b501005304316983c69644b067",
+		"scripts/mentor_route_audit.gd": "3a948798f4d3732475fe64ecf32b9cfa446e8142f51209365b017d67eab854b1",
+		"scripts/mentor_scooter.gd": "c2e2e8e130c0e590cfa8e6226282e86aba82514c3b736089e1dac12ef758c6b6",
+		"scripts/mentor_walker.gd": "43c444ded1a4e332b010d70805786db7ed2a4c5d35d3d2d030ba8e61e3930f24",
+		"scripts/scooter_controller.gd": "b327cbf1ce75a3e1de9f19e04cb17ec6dfdb64702a32891d155596d36889f172",
+		"scripts/scooter_visual.gd": "48a71d6c0d83e95046373143cee6bdf8c9c3a7b4630ddc83bbbdd7aa9ae4171f",
+		"scripts/shift_cargo_box.gd": "92cb3e0e7ae4e10c38ffa4581d444cc3c968bf6614d250d39c2f97368018375a",
+		"scripts/takeaway_bag.gd": "26ba3c6c500f132e4015e0ab7b6bb038f663fc6eb512ee0337e91745f70774da",
+		"scripts/teaching_door.gd": "4c1fa35756bd605d723959e0d0384a9388204561eb7449fffbb228301803ea02"
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"engine": "4.6.3-stable (official)",
+	"gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+	"note": "R17 one scooter, one skinned animated shopkeeper, 57 trunk/post colliders and residential doorbells. Desktop frame intervals; not GPU-only timings or crowd benchmark.",
+	"renderer": "forward_plus",
+	"scene_sha256": "88b5be04c0c72ae2b54bb02f55f2186f7b7ec2937389a59697e7306dbd7e7c13",
+	"views": [
+		{
+			"draw_calls": 5401.0,
+			"mean_ms": 10.7146708333333,
+			"p50_ms": 10.711,
+			"p95_ms": 11.499,
+			"primitives": 28353360.0,
+			"samples": 240,
+			"static_memory_bytes": 432992371.0,
+			"view": "street_entry"
+		},
+		{
+			"draw_calls": 2440.0,
+			"mean_ms": 7.11178333333333,
+			"p50_ms": 7.04,
+			"p95_ms": 8.396,
+			"primitives": 15353620.0,
+			"samples": 240,
+			"static_memory_bytes": 433062211.0,
+			"view": "residential_entry"
+		},
+		{
+			"draw_calls": 4382.0,
+			"mean_ms": 9.50465833333333,
+			"p50_ms": 9.471,
+			"p95_ms": 10.312,
+			"primitives": 24247347.0,
+			"samples": 240,
+			"static_memory_bytes": 433453251.0,
+			"view": "roofscape"
+		}
+	],
+	"vsync": 1,
+	"window_size": "(1920.0, 1080.0)"
+}

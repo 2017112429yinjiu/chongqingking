@@ -1,0 +1,39 @@
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+
+CQ_INTERIOR_LIGHTS {"interior_candidate_count":9,"interior_lights":[{"energy":0.239999994635582,"name":"B_809889627_blue_apartments_room_lamp","position":[82.391,28.184,-13.942],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_809889628_clinic_room_lamp","position":[15.883,31.615,-53.5],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_809889629_artisan_room_lamp","position":[47.205,34.774,-72.476],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_1335306665_civic_room_lamp","position":[-24.373,26.707,-30.861],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_1335306666_heritage_room_lamp","position":[-50.162,26.057,-36.511],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_1335306667_brick_home_room_lamp","position":[-62.888,23.169,-17.653],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_1413081560_old_tile_room_lamp","position":[-33.476,29.533,-53.924],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_A03_blue_apartments_room_lamp","position":[-91.543,16.767,15.033],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_A04_courtyard_home_room_lamp","position":[-55.09,17.775,14.621],"range":2.70000004768372,"shadows":false}],"street_lights":22}
+CQ_BRANCH_OVERRIDE {"baked_primary":true,"imported_uv1_offset":[0.0,0.0,0.0],"imported_uv1_scale":[1.0,1.0,1.0],"imported_uv2_offset":[0.0,0.0,0.0],"imported_uv2_scale":[1.0,1.0,1.0],"normal_and_pbr_textures":false,"offset":[0.0,0.0],"scale":[1.0,1.0],"texcoord":0,"texture":"res://assets/chongqing_district_island_tree_01_branches_diff_2k.jpg"}
+CQ_BRANCH_OVERRIDE {"baked_primary":true,"imported_uv1_offset":[0.0,0.0,0.0],"imported_uv1_scale":[1.0,1.0,1.0],"imported_uv2_offset":[0.0,0.0,0.0],"imported_uv2_scale":[1.0,1.0,1.0],"normal_and_pbr_textures":false,"offset":[0.0,0.0],"scale":[1.0,1.0],"texcoord":0,"texture":"res://assets/chongqing_district_tree_small_02_branch_diff_2k.jpg"}
+CQ_STREET_USE { "dressed": 2, "paving": 56, "facades": 83, "asphalt": 15, "workday": true, "resident_pots": 2, "furniture_volumes": 2 }
+CQ_NEIGHBORHOOD {"missing":[],"plants":35,"removed":["COL_Handrails_Central_stair_lane_painted_metal","COL_Handrails_West_residential_link_painted_metal","Court_entry_rails_frame","Utility_cables_dark","COL_R20_Returned_handrail_steel","COL_R20_Returned_handrail_rail_enamel","COL_R20_Returned_handrail_pin","COL_R20_Returned_handrail_iron","Resident_waste_13_bin_00","Resident_waste_13_bin_01","Resident_waste_13_bin_02","Resident_waste_13_bin_03","Resident_waste_13_bagA_00","Resident_waste_13_bagB_00","Resident_waste_13_crate_00"],"shifted":87,"spans":4,"tree_distance_meshes":288,"trunks":5}
+CQ_READY {"collisions":{"bodies":276,"by_kind":{"refined_structure":276},"created":276,"failed":[],"props":{"method":"deduplicated root-aligned cylinders; foliage excluded","trunks_and_posts":57},"reused":0,"skipped_meshes":3604,"triangles":476329},"engine":"4.6.3-stable (official)","renderer":"forward_plus","spawn":[20.0,9.4995,76.0]}
+DAY1 {"detail":"","name":"district_booted","pass":true}
+DAY1 {"detail":"","name":"default_game_starts_at_registration","pass":true}
+DAY1 {"detail":"","name":"early_order_and_bike_locked","pass":true}
+DAY1 {"detail":"(-49.2, 12.06909, 49.8)","name":"register_at_mentor","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":5.33923655748367,"end":"(-54.67804, 11.77657, 51.00587)","goals":1,"max_frame_displacement_m":0.0722936242818832,"name":"walk_to_own_bike","pass":true,"reached":1,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":5.33923655748367,"end":"(-54.67804, 11.77657, 51.00587)","goals":1,"max_frame_displacement_m":0.0722936242818832,"name":"walk_to_own_bike","pass":true,"reached":1,"stall_contacts":[]},"name":"walk_to_own_bike","pass":true}
+DAY1 {"detail":"","name":"mount_own_scooter","pass":true}
+DAY1 {"detail":"(-43.60489, 11.88722, 52.11577)","name":"guide_waits_when_learner_stops","pass":true}
+PENG_ROUTE_ISSUE {"goal":"(-39.0, 12.0, 52.0)","kind":"route_blocked","obstacle":"/root/ChongqingDistrict/TestOnlyRoadblock","position":"(-41.60896, 11.91615, 52.1734)","seconds_without_progress":3.02,"segment":0,"stage":"TO_SHOP","time_s":16.87}
+DAY1 {"detail":{"frames":688,"mentor_end":"(-30.20011, 11.66765, 54.96361)","student_end":"(-34.17946, 11.82016, 53.85585)"},"name":"follow_to_noodle_shop","pass":true}
+DAY1 {"detail":"","name":"parked_at_shop","pass":true}
+DAY1 {"detail":"","name":"saved_shop","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":12.2491818070412,"end":"(-23.5967, 11.14491, 59.99662)","goals":2,"max_frame_displacement_m":0.088211365044117,"name":"walk_to_counter","pass":true,"reached":2,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":12.2491818070412,"end":"(-23.5967, 11.14491, 59.99662)","goals":2,"max_frame_displacement_m":0.088211365044117,"name":"walk_to_counter","pass":true,"reached":2,"stall_contacts":[]},"name":"walk_to_counter","pass":true}
+DAY1 {"detail":"","name":"place_real_order","pass":true}
+DAY1 {"detail":"","name":"take_packed_order","pass":true}
+DAY1 {"detail":"","name":"cannot_deliver_before_second_leg","pass":true}
+DAY1 {"detail":"","name":"saved_carrying","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":12.1919330731034,"end":"(-34.51, 11.6523, 55.02268)","goals":2,"max_frame_displacement_m":0.186098694801331,"name":"return_to_parked_scooter","pass":true,"reached":2,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":12.1919330731034,"end":"(-34.51, 11.6523, 55.02268)","goals":2,"max_frame_displacement_m":0.186098694801331,"name":"return_to_parked_scooter","pass":true,"reached":2,"stall_contacts":[]},"name":"return_to_parked_scooter","pass":true}
+DAY1 {"detail":{"objective":"老彭在你身后等你 · 4 米\n骑近他就会继续带路","prompt":"已上车 · W 前进 / S 刹车及倒车 · A D 转向 · 空格急刹 · P 停车 · E 下车"},"name":"mount_with_order","pass":true}
+DAY1 {"detail":{"frames":612,"mentor_end":"(-25.40584, 14.29744, 36.9487)","student_end":"(-25.41543, 13.79591, 41.06045)"},"name":"follow_to_courtyard_approach","pass":true}
+DAY1 {"detail":"","name":"last_mile_requires_walk","pass":true}
+DAY1 {"detail":"","name":"saved_last_mile","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":61.1007210612297,"end":"(-54.25604, 16.45401, 19.5019)","goals":7,"max_frame_displacement_m":0.223615899682045,"name":"walk_to_house_one","pass":true,"reached":7,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":61.1007210612297,"end":"(-54.25604, 16.45401, 19.5019)","goals":7,"max_frame_displacement_m":0.223615899682045,"name":"walk_to_house_one","pass":true,"reached":7,"stall_contacts":[]},"name":"walk_to_house_one","pass":true}
+DAY1 {"detail":"","name":"handover_once","pass":true}
+DAY1 {"detail":{"objective":"第一天教学完成 · 已学会取送餐\n累计 1 单 · 8 元，可回面馆接单","prompt":"住户：谢谢，辛苦了！ · 配送收入 +8 元"},"name":"credit_and_regular_order_unlocked","pass":true}
+DAY1 {"detail":"","name":"saved_completed","pass":true}
+DAY1 {"detail":"","name":"both_guided_routes_arrived","pass":true}
+DAY1 {"detail":[{"end_reason":"forward_progress","ended_at_s":17.15,"goal":"(-39.0, 12.0, 52.0)","kind":"route_blocked","obstacle":"/root/ChongqingDistrict/TestOnlyRoadblock","position":"(-41.60896, 11.91615, 52.1734)","seconds_without_progress":3.02,"segment":0,"stage":"TO_SHOP","time_s":16.87}],"name":"temporary_barrier_detected_and_recovered","pass":true}

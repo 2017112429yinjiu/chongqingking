@@ -1,0 +1,1867 @@
+{
+	"checks": [
+		{
+			"detail": "",
+			"name": "district_booted",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "default_game_starts_at_registration",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_01_arrival",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "early_order_and_bike_locked",
+			"pass": true
+		},
+		{
+			"detail": "(-49.2, 12.06909, 49.8)",
+			"name": "register_at_mentor",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "mentor_on_foot_at_check_in",
+			"pass": true
+		},
+		{
+			"detail": {
+				"walk_m": 0.0
+			},
+			"name": "watched_RIDING",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 5.33923655748367,
+				"end": "(-54.67804, 11.77657, 51.00587)",
+				"goals": 1,
+				"max_frame_displacement_m": 0.0722936242818832,
+				"name": "walk_to_own_bike",
+				"pass": true,
+				"reached": 1,
+				"stall_contacts": []
+			},
+			"name": "walk_to_own_bike",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "mount_own_scooter",
+			"pass": true
+		},
+		{
+			"detail": "(-43.60489, 11.88722, 52.11577)",
+			"name": "guide_waits_when_learner_stops",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_02_follow",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_03_both_riding",
+			"pass": true
+		},
+		{
+			"detail": {
+				"frames": 483,
+				"mentor_end": "(-30.20965, 11.6692, 54.9583)",
+				"student_end": "(-34.15994, 11.82033, 53.85556)"
+			},
+			"name": "follow_to_noodle_shop",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "parked_at_shop",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "saved_shop",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "pupil_cannot_order_before_demo",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_pickup_00001851",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_pickup_00001855",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_pickup_00001859",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_pickup_00001863",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_pickup_00001867",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_pickup_00001871",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_pickup_00001875",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_pickup_00001879",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_pickup_00001883",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_pickup_00001887",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_pickup_00001891",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_pickup_00001895",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_pickup_00001899",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_pickup_00001903",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_pickup_00001907",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_peng_pick_up",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_detail_pick_up",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_pickup_00001911",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_pickup_00001916",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_pickup_00001920",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_pickup_00001924",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_pickup_00001928",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_pickup_00001932",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_pickup_00001936",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_pickup_00001940",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_pickup_00001944",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_pickup_00001948",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_pickup_00001952",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_pickup_00001956",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_pickup_00001960",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_pickup_00001964",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_pickup_00001968",
+			"pass": true
+		},
+		{
+			"detail": {
+				"walk_m": 8.03057122789323
+			},
+			"name": "watched_PUPIL_PICKUP",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "mentor_took_separate_order",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_peng_counter",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 5.72731339372694,
+				"end": "(-23.62626, 11.15914, 59.95293)",
+				"goals": 2,
+				"max_frame_displacement_m": 0.0856700539588928,
+				"name": "walk_to_counter",
+				"pass": true,
+				"reached": 2,
+				"stall_contacts": []
+			},
+			"name": "walk_to_counter",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "place_real_order",
+			"pass": true
+		},
+		{
+			"detail": "{  }",
+			"name": "packed_meal_in_view_from_pickup",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_04_packed_meal",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "take_packed_order",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "cannot_deliver_before_second_leg",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002682",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002686",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002690",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002694",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002698",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002702",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002706",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002710",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002714",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002718",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002722",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002726",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002730",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002734",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002738",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002742",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002746",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002750",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002754",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002758",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002762",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002766",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002770",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002774",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002778",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002782",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002786",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002790",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002794",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002798",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002802",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002806",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002810",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002814",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002818",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002822",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002826",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002830",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_peng_load_box",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_detail_load_box",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002834",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002839",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002843",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002847",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002851",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002855",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002859",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002863",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002867",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002871",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002875",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002879",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002883",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002887",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002891",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002895",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002899",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002903",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002907",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002911",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002915",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002919",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002923",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002927",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002931",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002935",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002939",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002943",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002947",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002951",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002955",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002959",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002963",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002967",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002971",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002975",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002979",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_load_box_00002983",
+			"pass": true
+		},
+		{
+			"detail": {
+				"walk_m": 16.9803435141221
+			},
+			"name": "watched_RIDING",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "saved_carrying",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 9.79123838897794,
+				"end": "(-34.50636, 11.65277, 55.01483)",
+				"goals": 2,
+				"max_frame_displacement_m": 0.0747932493686676,
+				"name": "return_to_parked_scooter",
+				"pass": true,
+				"reached": 2,
+				"stall_contacts": []
+			},
+			"name": "return_to_parked_scooter",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "pupil_loads_separate_box",
+			"pass": true
+		},
+		{
+			"detail": {
+				"objective": "老彭在你身后等你 · 4 米\n骑近他就会继续带路",
+				"prompt": "已上车 · W 前进 / S 刹车及倒车 · A D 转向 · 空格急刹 · P 停车 · E 下车"
+			},
+			"name": "mount_with_order",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_05_riding_uphill",
+			"pass": true
+		},
+		{
+			"detail": {
+				"frames": 614,
+				"mentor_end": "(-25.40585, 14.29741, 36.94512)",
+				"student_end": "(-25.41435, 13.79581, 41.06049)"
+			},
+			"name": "follow_to_courtyard_approach",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "last_mile_requires_walk",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "saved_last_mile",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00003982",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00003986",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00003990",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00003994",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00003998",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004002",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004006",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004010",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004014",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004018",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004022",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004026",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004030",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004034",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004038",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004042",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004046",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004050",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004054",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004058",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004062",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004066",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004070",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004074",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004078",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004082",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004086",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004090",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004094",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004098",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004102",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004106",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004110",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004114",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004118",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004122",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004126",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004130",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004134",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004138",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004142",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004146",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_peng_unload",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_detail_unload",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004150",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004154",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004158",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004162",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004166",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004170",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004174",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004178",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004182",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004186",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004190",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004194",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004198",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004202",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004206",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004210",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004214",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004218",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004222",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004226",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004230",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004234",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004238",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004242",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004246",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004250",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004254",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004258",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004262",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004266",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004270",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004274",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004278",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_unload_00004282",
+			"pass": true
+		},
+		{
+			"detail": {
+				"walk_m": 17.4149392051622
+			},
+			"name": "watched_PUPIL_UNLOAD",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "pupil_retrieves_second_bag",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_peng_lead_home",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_detail_lead_home",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_carry_00005805",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_carry_00005809",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_carry_00005813",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_carry_00005817",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_carry_00005821",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_carry_00005825",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_carry_00005829",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_carry_00005833",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_carry_00005837",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_carry_00005841",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_carry_00005845",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_carry_00005849",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_carry_00005853",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_carry_00005857",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_carry_00005861",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_carry_00005865",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_carry_00005869",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_carry_00005873",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_carry_00005877",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_carry_00005881",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_knock_00006809",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_knock_00006813",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_knock_00006817",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_knock_00006821",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_knock_00006825",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_knock_00006829",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_knock_00006833",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_knock_00006837",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_knock_00006841",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_knock_00006845",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_knock_00006849",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_knock_00006853",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_knock_00006857",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_knock_00006861",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_knock_00006865",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_knock_00006869",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_knock_00006873",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_knock_00006877",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_peng_knock",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_detail_knock",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_knock_00006881",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_knock_00006885",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_knock_00006889",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_knock_00006893",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_knock_00006897",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_knock_00006901",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_knock_00006905",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_knock_00006909",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_knock_00006913",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_knock_00006917",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_knock_00006921",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_knock_00006925",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_knock_00006929",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_knock_00006933",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_hang_00006957",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_hang_00006961",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_hang_00006965",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_hang_00006969",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_hang_00006973",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_hang_00006977",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_hang_00006981",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_hang_00006985",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_hang_00006989",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_hang_00006993",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_hang_00006997",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_hang_00007001",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_hang_00007005",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_hang_00007009",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_hang_00007013",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_hang_00007017",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_hang_00007021",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_hang_00007025",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_hang_00007029",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_peng_hang",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_detail_hang",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_hang_00007033",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_hang_00007037",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_hang_00007041",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_hang_00007045",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_hang_00007049",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_reel_hang_00007053",
+			"pass": true
+		},
+		{
+			"detail": {
+				"walk_m": 84.0250977128744
+			},
+			"name": "watched_PUPIL_DELIVERS",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "mentor_delivers_first",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_peng_delivered",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 2.13535340316594,
+				"end": "(-54.94075, 16.4539, 19.59867)",
+				"goals": 1,
+				"max_frame_displacement_m": 0.0700200945138931,
+				"name": "walk_to_house_one",
+				"pass": true,
+				"reached": 1,
+				"stall_contacts": []
+			},
+			"name": "walk_to_house_one",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "rapid_input_cannot_skip_knock",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_pupil_knock",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "student_knocks_before_handover",
+			"pass": true
+		},
+		{
+			"detail": [
+				0.00166943902149796,
+				0.00266134948469698,
+				0.000444948091171682
+			],
+			"name": "pupil_knuckle_contacts_wood",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "saved_knocked",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 0.694897891953588,
+				"end": "(-54.28346, 16.4539, 18.96925)",
+				"goals": 1,
+				"max_frame_displacement_m": 0.0700004696846008,
+				"name": "reach_second_hook",
+				"pass": true,
+				"reached": 1,
+				"stall_contacts": []
+			},
+			"name": "reach_second_hook",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "credit_waits_for_release",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "handover_once",
+			"pass": true
+		},
+		{
+			"detail": {
+				"objective": "第一天教学完成 · 已学会取送餐\n累计 1 单 · 8 元，可回面馆接单",
+				"prompt": "住户：谢谢，辛苦了！ · 配送收入 +8 元"
+			},
+			"name": "credit_and_regular_order_unlocked",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_06_first_delivery",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "saved_completed",
+			"pass": true
+		},
+		{
+			"detail": {
+				"clearance_to_bike_m": 0.811876983642578,
+				"resident": "(-29.65093, 11.65706, 56.179)",
+				"route": "walk",
+				"scooter": "(-30.20965, 11.6692, 54.9583)",
+				"stage": "SHOP"
+			},
+			"name": "sampled_residents_clear_guide_bike",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "two_bags_at_supported_hooks",
+			"pass": true
+		},
+		{
+			"detail": {
+				"angle_degrees": 78.0782829686253,
+				"distance_m": 0.000142990742460825
+			},
+			"name": "curled_fingers_at_crown",
+			"pass": true
+		},
+		{
+			"detail": {
+				"gaps_m": [
+					0.00129634758923203,
+					0.00236867275089026,
+					0.000363038154318929
+				],
+				"leaf": "R17_Entry_A04_0_timber",
+				"surface": "(-55.2225, 17.83994, 19.71)",
+				"withdrawals_m": [
+					0.0993728637695313,
+					0.0926094055175781,
+					0.101047515869141
+				]
+			},
+			"name": "three_distinct_wood_contacts",
+			"pass": true
+		},
+		{
+			"detail": 0.0000513569320901297,
+			"name": "hung_at_supported_hook",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "both_guided_routes_arrived",
+			"pass": true
+		},
+		{
+			"detail": [],
+			"name": "no_blockage_jump_or_prolonged_airborne_contact",
+			"pass": true
+		}
+	],
+	"demonstrations": [
+		"AT_BIKE",
+		"BOARD_FIRST",
+		"RIDING",
+		"SHOP_EXIT",
+		"WALK_COUNTER",
+		"ORDER",
+		"PACK",
+		"PICK_UP",
+		"LIFT_CLEAR",
+		"PUPIL_PICKUP",
+		"RETURN_BIKE",
+		"LOAD_BOX",
+		"BOARD_AGAIN",
+		"RIDING",
+		"YARD_EXIT",
+		"UNLOAD",
+		"PUPIL_UNLOAD",
+		"LEAD_HOME",
+		"KNOCK",
+		"WALK_TO_HOOK",
+		"HANG",
+		"RELEASE_HOOK",
+		"STEP_ASIDE",
+		"PUPIL_DELIVERS"
+	],
+	"display": "Windows",
+	"engine": "4.6.3-stable (official)",
+	"mentor_route": {
+		"issues": [],
+		"legs": {
+			"TO_SHOP": {
+				"arrived": true,
+				"max_kmh": 9.86400000000004,
+				"moving_s": 9.56666666666672,
+				"travel_m": 20.2620564543176,
+				"waiting_s": 7.08333333333331,
+				"waypoints": [
+					{
+						"position": "(-49.99934, 11.76194, 52.00065)",
+						"segment": 0,
+						"stage": "TO_SHOP",
+						"time_s": 3.78
+					},
+					{
+						"position": "(-40.12001, 11.95561, 52.0853)",
+						"segment": 1,
+						"stage": "TO_SHOP",
+						"time_s": 16.12
+					}
+				]
+			},
+			"TO_YARD": {
+				"arrived": true,
+				"max_kmh": 9.87600000000002,
+				"moving_s": 10.0000000000001,
+				"travel_m": 22.5272816822981,
+				"waiting_s": 4.94999999999999,
+				"waypoints": [
+					{
+						"position": "(-30.20965, 11.6692, 54.9583)",
+						"segment": 0,
+						"stage": "TO_YARD",
+						"time_s": 50.55
+					},
+					{
+						"position": "(-27.06582, 11.72232, 55.04325)",
+						"segment": 1,
+						"stage": "TO_YARD",
+						"time_s": 57.23
+					},
+					{
+						"position": "(-25.04566, 12.13093, 53.07125)",
+						"segment": 2,
+						"stage": "TO_YARD",
+						"time_s": 58.65
+					},
+					{
+						"position": "(-25.08236, 12.67661, 49.13449)",
+						"segment": 3,
+						"stage": "TO_YARD",
+						"time_s": 60.3
+					}
+				]
+			}
+		},
+		"max_frame_displacement_m": 0.0459411405026913,
+		"rules": {
+			"airborne_seconds": 0.45,
+			"minimum_progress_m": 0.2,
+			"stalled_seconds": 3.0
+		}
+	},
+	"nearest_walking_resident": {
+		"clearance_to_bike_m": 0.811876983642578,
+		"resident": "(-29.65093, 11.65706, 56.179)",
+		"route": "walk",
+		"scooter": "(-30.20965, 11.6692, 54.9583)",
+		"stage": "SHOP"
+	},
+	"passed": true,
+	"renderer": "forward_plus",
+	"source_sha256": {
+		"assets/vehicles/first_shift_box.glb": "0fe33e75e1a9e34a68eb87a6c0f01703e97206e6f5ab987cba1d7d2acb0a110a",
+		"first_shift.tscn": "1f4df48ea096f7c0e8a5b608e8b2e4558f2cb495bfb7e80a95057c7811f87160",
+		"scripts/day_one.gd": "27e4c98bab8360dee750bf89678121337f3b76f0c28f9bd7f67405371310a03e",
+		"scripts/gameplay.gd": "13cc318887733b4b1ba8d506cc91ac458740e47eb927c62ce6595db06c39144b",
+		"scripts/kraft_paper.gdshader": "2b952c85d014df3c35b9d9c646137b01d495652265edcab5da55b8af2dfc1fa2",
+		"scripts/main.gd": "1b6ba2fe65e1ee3d55800d6656a4da33ac348b278ed93cb7b1692095eb53da4a",
+		"scripts/mentor_arm.gd": "e36eaea6dcb0b34bb22bb09614debe2ca810c86d9a8a8fad5ba43b5a73c312a6",
+		"scripts/mentor_demonstration.gd": "c85094113de95745a7d0a18680a53a11bf81c2072c65900720800e088f15142e",
+		"scripts/mentor_gaze.gd": "2a491d730ace7343143296c196966f9aa8a42bd04b9e610118bb3b3bbf694424",
+		"scripts/mentor_hands.gd": "756e60b9433bb870202e04e41f114dd9a2201becb1cd06df0df9d017180c2cae",
+		"scripts/mentor_reach.gd": "375118606df307f3470fcc61fd29fcbe127658b501005304316983c69644b067",
+		"scripts/mentor_route_audit.gd": "0e0a8221e123e126bdfb952670c279567b282ef8d3694ba14022a060b5dbea0f",
+		"scripts/mentor_scooter.gd": "0981b24e4ec3c28646c2dd01b7fa66eb3639d2465986d7cedb9955d67eb60263",
+		"scripts/mentor_walker.gd": "a4990ea7834622df56e5805dcd848d765113d9d1940b98d0e0f45b1557e5c1d1",
+		"scripts/scooter_controller.gd": "bfdc387467a5aa483e6ade38be3913052035a23b0c18ab95f615abb206a84a71",
+		"scripts/scooter_visual.gd": "48a71d6c0d83e95046373143cee6bdf8c9c3a7b4630ddc83bbbdd7aa9ae4171f",
+		"scripts/shift_cargo_box.gd": "6e2eef5cce9aab3b7e4476c53f13592fcac8f78ca4dc844e6fb4ba16e33aee9a",
+		"scripts/takeaway_bag.gd": "26ba3c6c500f132e4015e0ab7b6bb038f663fc6eb512ee0337e91745f70774da",
+		"scripts/teaching_door.gd": "4c1fa35756bd605d723959e0d0384a9388204561eb7449fffbb228301803ea02"
+	}
+}

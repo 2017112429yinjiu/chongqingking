@@ -1,0 +1,58 @@
+[
+	{
+		"detail": "",
+		"name": "resume_two_paid_one_held",
+		"pass": true
+	},
+	{
+		"detail": {
+			"distance_m": 7.1850980790332,
+			"end": "(-62.33331, 19.90407, 13.61277)",
+			"goals": 3,
+			"max_frame_displacement_m": 0.074253112077713,
+			"name": "knock_2",
+			"pass": true,
+			"reached": 3,
+			"stall_contacts": []
+		},
+		"name": "knock_2",
+		"pass": true
+	},
+	{
+		"detail": "202：豌杂到了？搁门边，我马上拿。",
+		"name": "resident_answers_2",
+		"pass": true
+	},
+	{
+		"detail": {
+			"distance_m": 0.732316430658102,
+			"end": "(-62.43087, 19.90423, 14.51829)",
+			"goals": 1,
+			"max_frame_displacement_m": 0.0700006261467934,
+			"name": "access_shelf_2",
+			"pass": true,
+			"reached": 1,
+			"stall_contacts": []
+		},
+		"name": "access_shelf_2",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "release_owns_ticket_2",
+		"pass": true
+	},
+	{
+		"detail": {
+			"fee": 11,
+			"time": 79.9999999999967
+		},
+		"name": "paid_2",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "reopen_does_not_pay_again",
+		"pass": true
+	}
+]

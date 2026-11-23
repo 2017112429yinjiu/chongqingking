@@ -1,0 +1,46 @@
+{
+	"checks": [
+		{
+			"detail": "",
+			"name": "district_booted",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "default_game_starts_at_registration",
+			"pass": false
+		}
+	],
+	"demonstrations": [],
+	"display": "headless",
+	"engine": "4.6.3-stable (official)",
+	"mentor_route": {
+
+	},
+	"nearest_walking_resident": {
+		"clearance_to_bike_m": 1e99999
+	},
+	"passed": false,
+	"renderer": "forward_plus",
+	"source_sha256": {
+		"assets/vehicles/first_shift_box.glb": "df652a952b2a7f530d40b0aff0ac41c0bcd11a8abcd84f02854a026c6891ae32",
+		"first_shift.tscn": "1f4df48ea096f7c0e8a5b608e8b2e4558f2cb495bfb7e80a95057c7811f87160",
+		"scripts/day_one.gd": "27e4c98bab8360dee750bf89678121337f3b76f0c28f9bd7f67405371310a03e",
+		"scripts/gameplay.gd": "13cc318887733b4b1ba8d506cc91ac458740e47eb927c62ce6595db06c39144b",
+		"scripts/kraft_paper.gdshader": "2b952c85d014df3c35b9d9c646137b01d495652265edcab5da55b8af2dfc1fa2",
+		"scripts/main.gd": "1b6ba2fe65e1ee3d55800d6656a4da33ac348b278ed93cb7b1692095eb53da4a",
+		"scripts/mentor_arm.gd": "e36eaea6dcb0b34bb22bb09614debe2ca810c86d9a8a8fad5ba43b5a73c312a6",
+		"scripts/mentor_demonstration.gd": "c7d27761c95f9f1fa7faa8f8857add11e296dc7e7adf289cc53acaedbe316d64",
+		"scripts/mentor_gaze.gd": "2a491d730ace7343143296c196966f9aa8a42bd04b9e610118bb3b3bbf694424",
+		"scripts/mentor_hands.gd": "7053fe2929d9b84fed5ca2505d3e93d307d160819da9131fdf53cc2ad8bbd87a",
+		"scripts/mentor_reach.gd": "b9cdacc708da4a3c2378999d92cc05b0affe4b85cb907bfee9cb3fc66a9d6e4f",
+		"scripts/mentor_route_audit.gd": "0e0a8221e123e126bdfb952670c279567b282ef8d3694ba14022a060b5dbea0f",
+		"scripts/mentor_scooter.gd": "0981b24e4ec3c28646c2dd01b7fa66eb3639d2465986d7cedb9955d67eb60263",
+		"scripts/mentor_walker.gd": "4ca3b12ddc300237fa80b1b9a029a02485ea11e49d3f8f946b56d030cbc2ba8d",
+		"scripts/scooter_controller.gd": "bfdc387467a5aa483e6ade38be3913052035a23b0c18ab95f615abb206a84a71",
+		"scripts/scooter_visual.gd": "48a71d6c0d83e95046373143cee6bdf8c9c3a7b4630ddc83bbbdd7aa9ae4171f",
+		"scripts/shift_cargo_box.gd": "6e2eef5cce9aab3b7e4476c53f13592fcac8f78ca4dc844e6fb4ba16e33aee9a",
+		"scripts/takeaway_bag.gd": "26ba3c6c500f132e4015e0ab7b6bb038f663fc6eb512ee0337e91745f70774da",
+		"scripts/teaching_door.gd": "4c1fa35756bd605d723959e0d0384a9388204561eb7449fffbb228301803ea02"
+	}
+}

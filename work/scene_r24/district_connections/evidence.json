@@ -1,0 +1,1716 @@
+{
+  "revision": {
+    "art_revision": "R24_district_connections_18_internal",
+    "block_r23": true,
+    "canopy_distance_r24": true,
+    "court_resident": true,
+    "courtyard_life_r24": true,
+    "courtyard_paving_r24": true,
+    "diagnostic_views": {
+      "r16_clothesline": {
+        "fov": 62.0,
+        "position": [
+          -74.0,
+          20.1,
+          9.0
+        ],
+        "target": [
+          -70.3,
+          19.2,
+          5.0
+        ],
+        "title": "西侧晾衣支架"
+      },
+      "r16_meter": {
+        "fov": 45.0,
+        "position": [
+          -27.2,
+          12.3,
+          59.8
+        ],
+        "target": [
+          -27.83,
+          12.01,
+          61.77
+        ],
+        "title": "电表箱近景"
+      },
+      "r16_roof": {
+        "fov": 58.0,
+        "position": [
+          -47.0,
+          30.0,
+          20.0
+        ],
+        "target": [
+          -54.0,
+          28.0,
+          20.0
+        ],
+        "title": "屋檐封口"
+      },
+      "r16_scooter": {
+        "fov": 48.0,
+        "position": [
+          -17.3,
+          13.4,
+          56.5
+        ],
+        "target": [
+          -20.5,
+          12.5,
+          59.0
+        ],
+        "title": "电瓶车贴地"
+      },
+      "r16_shop": {
+        "fov": 60.0,
+        "position": [
+          -22.0,
+          13.5,
+          57.0
+        ],
+        "target": [
+          -25.4,
+          13.4,
+          61.0
+        ],
+        "title": "店主与取餐入口"
+      },
+      "r17_A04_entry": {
+        "fov": 57.0,
+        "position": [
+          -48.6,
+          18.2,
+          18.2
+        ],
+        "target": [
+          -53.8,
+          17.6,
+          19.5
+        ],
+        "title": "住宅平层门厅"
+      },
+      "r17_east_route": {
+        "fov": 62.0,
+        "position": [
+          61.0,
+          29.0,
+          11.0
+        ],
+        "target": [
+          47.0,
+          21.0,
+          8.0
+        ],
+        "title": "东巷连续通道"
+      },
+      "r17_narrow_route": {
+        "fov": 62.0,
+        "position": [
+          -37.4,
+          27.1,
+          -43.0
+        ],
+        "target": [
+          -31.5,
+          27.8,
+          -53.0
+        ],
+        "title": "上层窄巷"
+      },
+      "r17_serve": {
+        "capture_state": {
+          "character_clip": "serve",
+          "food_ready": true,
+          "look_at_food": true,
+          "time": 1.0
+        },
+        "fov": 42.0,
+        "position": [
+          -23.3,
+          13.35,
+          58.3
+        ],
+        "target": [
+          -25.6,
+          12.7,
+          59.8
+        ],
+        "title": "递餐动作与打包餐食"
+      },
+      "r17_shopkeeper": {
+        "fov": 42.0,
+        "position": [
+          -23.3,
+          13.35,
+          58.3
+        ],
+        "target": [
+          -25.6,
+          12.7,
+          59.8
+        ],
+        "title": "店主角色近景"
+      },
+      "r17_takeaway": {
+        "capture_state": {
+          "food_ready": true
+        },
+        "fov": 48.0,
+        "position": [
+          -23.95,
+          12.4,
+          59.1
+        ],
+        "target": [
+          -24.8,
+          11.95,
+          59.9
+        ],
+        "title": "餐食打包细节"
+      },
+      "r17_west_route": {
+        "fov": 65.0,
+        "position": [
+          -60.0,
+          38.0,
+          -31.0
+        ],
+        "target": [
+          -74.0,
+          25.0,
+          -31.0
+        ],
+        "title": "西侧绕楼路线"
+      },
+      "r17_worker_door": {
+        "fov": 70.0,
+        "position": [
+          -70.8,
+          24.4,
+          -28.9
+        ],
+        "target": [
+          -74.1,
+          24.0,
+          -28.94
+        ],
+        "title": "住宅门厅内部"
+      },
+      "r17_worker_entry": {
+        "fov": 57.0,
+        "position": [
+          -65.5,
+          25.1,
+          -27.5
+        ],
+        "target": [
+          -72.0,
+          24.0,
+          -28.9
+        ],
+        "title": "山城里入口修正"
+      },
+      "r18_face": {
+        "capture_state": {
+          "character_clip": "greet",
+          "food_ready": false,
+          "look_at_camera": true,
+          "smile": 0.259,
+          "time": 0.65
+        },
+        "fov": 37.0,
+        "position": [
+          -24.7,
+          12.73,
+          59.35
+        ],
+        "target": [
+          -25.59,
+          12.66,
+          59.8
+        ],
+        "title": "In-engine face diagnostic"
+      },
+      "r18_greet": {
+        "capture_state": {
+          "character_clip": "greet",
+          "food_ready": false,
+          "look_at_camera": true,
+          "smile": 0.259,
+          "time": 0.65
+        },
+        "fov": 50.0,
+        "position": [
+          -23.63,
+          12.79,
+          58.8
+        ],
+        "target": [
+          -25.59,
+          12.6,
+          59.8
+        ],
+        "title": "Recognition and greeting"
+      },
+      "r18_grip": {
+        "capture_state": {
+          "character_clip": "serve",
+          "food_ready": true,
+          "look_at_food": true,
+          "time": 1.65
+        },
+        "fov": 34.0,
+        "position": [
+          -24.65,
+          12.57,
+          59.2
+        ],
+        "target": [
+          -25.142,
+          12.29,
+          59.717
+        ],
+        "title": "Hand and paper-handle contact"
+      },
+      "r18_idle": {
+        "capture_state": {
+          "character_clip": "idle",
+          "food_ready": true,
+          "time": 0.0
+        },
+        "fov": 42.0,
+        "position": [
+          -23.3,
+          13.35,
+          58.3
+        ],
+        "target": [
+          -25.6,
+          12.7,
+          59.8
+        ],
+        "title": "R18 internal character idle"
+      },
+      "r18_lift": {
+        "capture_state": {
+          "character_clip": "serve",
+          "food_ready": true,
+          "look_at_food": true,
+          "time": 1.65
+        },
+        "fov": 42.0,
+        "position": [
+          -23.3,
+          13.35,
+          58.3
+        ],
+        "target": [
+          -25.6,
+          12.7,
+          59.8
+        ],
+        "title": "R18 internal character lift"
+      },
+      "r18_place": {
+        "capture_state": {
+          "character_clip": "serve",
+          "food_ready": true,
+          "look_at_food": true,
+          "time": 2.4
+        },
+        "fov": 42.0,
+        "position": [
+          -23.3,
+          13.35,
+          58.3
+        ],
+        "target": [
+          -25.6,
+          12.7,
+          59.8
+        ],
+        "title": "R18 internal character place"
+      },
+      "r18_player_eye": {
+        "capture_state": {
+          "character_clip": "idle",
+          "food_ready": true,
+          "look_at_camera": true,
+          "time": 0.0
+        },
+        "fov": 50.0,
+        "position": [
+          -23.63,
+          12.79,
+          58.8
+        ],
+        "target": [
+          -25.59,
+          12.6,
+          59.8
+        ],
+        "title": "Player eye-height interaction"
+      },
+      "r18_reach": {
+        "capture_state": {
+          "character_clip": "serve",
+          "food_ready": true,
+          "look_at_food": true,
+          "time": 1.12
+        },
+        "fov": 42.0,
+        "position": [
+          -23.3,
+          13.35,
+          58.3
+        ],
+        "target": [
+          -25.6,
+          12.7,
+          59.8
+        ],
+        "title": "R18 internal character reach"
+      },
+      "r18_workstation": {
+        "capture_state": {
+          "character_clip": "serve",
+          "food_ready": true,
+          "look_at_food": true,
+          "time": 1.65
+        },
+        "fov": 47.0,
+        "position": [
+          -22.8,
+          13.2,
+          57.8
+        ],
+        "target": [
+          -25.3,
+          12.2,
+          59.8
+        ],
+        "title": "Packing station context"
+      },
+      "r19_seating": {
+        "fov": 55.0,
+        "position": [
+          -27.7,
+          12.65,
+          58.5
+        ],
+        "target": [
+          -30.5,
+          11.65,
+          61.0
+        ],
+        "title": "Breakfast place at eye height"
+      },
+      "r19_stair_detail": {
+        "fov": 55.0,
+        "position": [
+          -20.9,
+          14.6,
+          48.5
+        ],
+        "target": [
+          -20.0,
+          14.8,
+          44.0
+        ],
+        "title": "Stair materials and sidewall junction"
+      },
+      "r20_laundry": {
+        "fov": 63.0,
+        "position": [
+          -34.59,
+          29.09,
+          -47.27
+        ],
+        "target": [
+          -33.53,
+          31.4,
+          -50.55
+        ],
+        "title": "窗外晾晒"
+      },
+      "r20_neighbor": {
+        "capture_state": {
+          "resident_clip": "sit_rest",
+          "resident_time": 4.0
+        },
+        "fov": 52.0,
+        "position": [
+          -24.07,
+          30.51,
+          -67.29
+        ],
+        "target": [
+          -25.42,
+          30.24,
+          -68.77
+        ],
+        "title": "树下街坊"
+      },
+      "r20_notices": {
+        "fov": 67.0,
+        "position": [
+          -34.43,
+          28.2,
+          -47.87
+        ],
+        "target": [
+          -35.09,
+          28.04,
+          -48.79
+        ],
+        "title": "住户告示"
+      },
+      "r20_reverse": {
+        "fov": 66.0,
+        "position": [
+          -30.9,
+          29.0,
+          -54.8
+        ],
+        "target": [
+          -35.5,
+          27.45,
+          -46.2
+        ],
+        "title": "从上巷回望"
+      },
+      "r20_seated_neighbor": {
+        "capture_state": {
+          "resident_clip": "sit_look",
+          "resident_time": 2.6
+        },
+        "fov": 72.0,
+        "position": [
+          -26.40084,
+          30.74617,
+          -68.46053
+        ],
+        "target": [
+          -25.42,
+          30.57,
+          -68.77
+        ],
+        "title": "坐在树下看街坊"
+      },
+      "r20_tap": {
+        "capture_state": {
+          "rinse_running": true
+        },
+        "fov": 62.0,
+        "position": [
+          -32.55,
+          28.01,
+          -50.82
+        ],
+        "target": [
+          -31.46,
+          27.19,
+          -51.23
+        ],
+        "title": "巷内冲洗龙头"
+      },
+      "r20_tree_court": {
+        "fov": 65.0,
+        "position": [
+          -23.28,
+          31.19,
+          -66.92
+        ],
+        "target": [
+          -26.44,
+          30.18,
+          -70.38
+        ],
+        "title": "上巷树下歇脚处"
+      },
+      "r22_breakfast": {
+        "fov": 56.0,
+        "position": [
+          -27.0,
+          12.56,
+          56.2
+        ],
+        "target": [
+          -30.48,
+          12.23,
+          61.0
+        ],
+        "title": "早餐桌与遮雨棚"
+      },
+      "r22_river_detail": {
+        "fov": 36.0,
+        "position": [
+          -152.0,
+          56.0,
+          245.0
+        ],
+        "target": [
+          -501.0,
+          25.0,
+          504.0
+        ],
+        "title": "跨江远景诊断"
+      },
+      "r22_river_overview": {
+        "fov": 59.0,
+        "position": [
+          -75.0,
+          88.0,
+          66.0
+        ],
+        "target": [
+          -521.0,
+          14.0,
+          620.0
+        ],
+        "title": "城区和跨江远景"
+      },
+      "r22_river_street": {
+        "fov": 52.0,
+        "position": [
+          -45.0,
+          11.5800724029541,
+          66.0
+        ],
+        "target": [
+          -502.0,
+          30.0,
+          578.0
+        ],
+        "title": "路口行人眼高看江"
+      },
+      "r22_roof_garden": {
+        "fov": 58.0,
+        "position": [
+          3.0,
+          52.0,
+          -22.0
+        ],
+        "target": [
+          -14.0,
+          39.9,
+          -34.0
+        ],
+        "title": "文化室楼顶"
+      },
+      "r22_roof_wash": {
+        "fov": 57.0,
+        "position": [
+          -43.0,
+          49.0,
+          -47.0
+        ],
+        "target": [
+          -51.0,
+          43.3,
+          -60.0
+        ],
+        "title": "住户晾晒天台"
+      },
+      "r24_canopy_joint": {
+        "fov": 60.0,
+        "position": [
+          -4.85,
+          17.66,
+          31.2
+        ],
+        "target": [
+          -1.38,
+          18.5,
+          28.72
+        ],
+        "title": "院落雨棚 · 连接"
+      },
+      "r24_canopy_under": {
+        "fov": 75.0,
+        "position": [
+          -1.43,
+          17.86,
+          28.1
+        ],
+        "target": [
+          -0.45,
+          18.71,
+          29.6
+        ],
+        "title": "院落雨棚 · 檐底"
+      },
+      "r24_center_seam": {
+        "fov": 62.0,
+        "position": [
+          -20.1,
+          18.83,
+          24.0
+        ],
+        "target": [
+          -18.0,
+          17.1,
+          18.0
+        ],
+        "title": "中央梯坎与院路"
+      },
+      "r24_chess": {
+        "fov": 64.0,
+        "position": [
+          -16.0,
+          19.18,
+          17.8
+        ],
+        "target": [
+          -12.65,
+          18.2,
+          14.95
+        ],
+        "title": "树荫下的棋桌"
+      },
+      "r24_chess_table": {
+        "fov": 54.0,
+        "position": [
+          -15.9899997711182,
+          19.4195513916016,
+          17.2800003051758
+        ],
+        "target": [
+          -14.7399997711182,
+          18.3895513916016,
+          14.6800003051758
+        ],
+        "title": "院坝棋局"
+      },
+      "r24_court_entry": {
+        "fov": 65.0,
+        "position": [
+          -17.5,
+          21.68,
+          2.7
+        ],
+        "target": [
+          -21.55,
+          20.23,
+          0.34
+        ],
+        "title": "球场东口 · 梯坎接头"
+      },
+      "r24_court_gap": {
+        "fov": 65.0,
+        "position": [
+          -20.14,
+          18.93,
+          18.9
+        ],
+        "target": [
+          -20.22,
+          17.92,
+          14.03
+        ],
+        "title": "球场挡墙与梯坎侧缝"
+      },
+      "r24_east_inlet_0": {
+        "fov": 49.0,
+        "position": [
+          36.8333332061768,
+          22.5826404571533,
+          0.65
+        ],
+        "target": [
+          38.1333332061768,
+          21.7626404571533,
+          -1.0
+        ],
+        "title": "东巷 · 坡脚雨水口"
+      },
+      "r24_east_inlet_1": {
+        "fov": 49.0,
+        "position": [
+          43.8333332061768,
+          20.8501441955566,
+          12.65
+        ],
+        "target": [
+          45.1333332061768,
+          20.0301441955566,
+          11.0
+        ],
+        "title": "东巷 · 墙边雨水口"
+      },
+      "r24_east_upper_grate": {
+        "fov": 49.0,
+        "position": [
+          27.15,
+          24.17,
+          -8.01
+        ],
+        "target": [
+          27.98,
+          22.79,
+          -9.5
+        ],
+        "title": "上院坡地雨水箅"
+      },
+      "r24_east_upper_joint": {
+        "fov": 70.116398834466,
+        "position": [
+          26.799272946045,
+          24.5663427244114,
+          -6.86539315644464
+        ],
+        "target": [
+          28.4696387393762,
+          22.9318229512472,
+          -11.2855993990994
+        ],
+        "title": "上院步道 · 东巷接头"
+      },
+      "r24_east_upper_reverse": {
+        "fov": 64.0,
+        "position": [
+          32.3,
+          24.15,
+          -8.9
+        ],
+        "target": [
+          28.44,
+          23.35,
+          -12.98
+        ],
+        "title": "从东巷看上院步道"
+      },
+      "r24_frame": {
+        "fov": 56.0,
+        "position": [
+          -60.0,
+          122.0,
+          110.0
+        ],
+        "target": [
+          850.0,
+          109.0,
+          -650.0
+        ],
+        "title": "渝中城市框架 · 楼群"
+      },
+      "r24_frame_walk": {
+        "fov": 67.0,
+        "position": [
+          -23.92,
+          9.435,
+          81.05
+        ],
+        "target": [
+          39.0,
+          17.0,
+          4.0
+        ],
+        "title": "临街向渝中眺望"
+      },
+      "r24_hoop": {
+        "fov": 51.0,
+        "position": [
+          -33.0,
+          22.2,
+          6.4
+        ],
+        "target": [
+          -34.0,
+          23.72,
+          11.18
+        ],
+        "title": "社区球场 · 篮板"
+      },
+      "r24_join18_alley": {
+        "fov": 68.0,
+        "position": [
+          54.45,
+          18.03,
+          37.0
+        ],
+        "target": [
+          52.1,
+          16.34,
+          34.7
+        ],
+        "title": "东巷折梯 · 转角"
+      },
+      "r24_join18_bend": {
+        "fov": 68.0,
+        "position": [
+          -16.62,
+          14.53,
+          54.8
+        ],
+        "target": [
+          -20.45,
+          12.68,
+          50.9
+        ],
+        "title": "面馆坡口 · 转折平台"
+      },
+      "r24_join18_court": {
+        "fov": 69.0,
+        "position": [
+          -45.4,
+          22.24,
+          13.1
+        ],
+        "target": [
+          -43.98,
+          21.4,
+          7.26
+        ],
+        "title": "球场 · 西侧看台"
+      },
+      "r24_join18_front": {
+        "fov": 64.0,
+        "position": [
+          -20.1,
+          13.03,
+          55.25
+        ],
+        "target": [
+          -24.4,
+          12.93,
+          63.65
+        ],
+        "title": "巷对面 · 梯坎小面"
+      },
+      "r24_join18_long": {
+        "fov": 68.0,
+        "position": [
+          -7.2,
+          13.73,
+          54.95
+        ],
+        "target": [
+          4.7,
+          11.42,
+          59.0
+        ],
+        "title": "面馆上方 · 长梯边沿"
+      },
+      "r24_join18_prep": {
+        "fov": 65.0,
+        "position": [
+          -24.82,
+          12.91,
+          64.63
+        ],
+        "target": [
+          -24.01,
+          12.58,
+          67.35
+        ],
+        "title": "面馆 · 灶台与备餐"
+      },
+      "r24_join18_road": {
+        "fov": 68.0,
+        "position": [
+          29.2,
+          10.85,
+          81.6
+        ],
+        "target": [
+          13.3,
+          8.75,
+          77.4
+        ],
+        "title": "南区路 · 路肩交界"
+      },
+      "r24_join18_room": {
+        "fov": 52.0,
+        "position": [
+          -27.8691291809082,
+          13.0777149200439,
+          76.3699951171875
+        ],
+        "target": [
+          -28.2894878387451,
+          12.65771484375,
+          68.100471496582
+        ],
+        "title": "南区路 · 临窗起居间"
+      },
+      "r24_join18_shop": {
+        "fov": 57.0,
+        "position": [
+          -23.4,
+          12.93,
+          58.82
+        ],
+        "target": [
+          -24.85,
+          12.58,
+          65.1
+        ],
+        "title": "面馆 · 堂屋"
+      },
+      "r24_join18_threshold": {
+        "fov": 72.0,
+        "position": [
+          -24.91,
+          12.99,
+          61.36
+        ],
+        "target": [
+          -23.25,
+          12.53,
+          64.91
+        ],
+        "title": "进门 · 小面出餐口"
+      },
+      "r24_lane_life": {
+        "fov": 68.0,
+        "position": [
+          -34.3,
+          12.73,
+          60.6
+        ],
+        "target": [
+          -21.4,
+          11.64,
+          60.8
+        ],
+        "title": "外卖店门前的巷道"
+      },
+      "r24_lower_seam": {
+        "fov": 63.0,
+        "position": [
+          6.0,
+          13.13,
+          61.6
+        ],
+        "target": [
+          0.9,
+          11.6,
+          57.2
+        ],
+        "title": "中央梯坎下段铺面"
+      },
+      "r24_main_supper_window": {
+        "fov": 62.0,
+        "position": [
+          -31.9,
+          10.55,
+          76.0
+        ],
+        "target": [
+          -27.88,
+          13.36,
+          72.28
+        ],
+        "title": "南区路 · 厨房挂勺"
+      },
+      "r24_main_tea_window": {
+        "fov": 66.0,
+        "position": [
+          -33.7,
+          10.471,
+          75.3
+        ],
+        "target": [
+          -30.92,
+          13.27,
+          72.18
+        ],
+        "title": "南区路 · 沿窗茶架"
+      },
+      "r24_market_ground": {
+        "fov": 66.0,
+        "position": [
+          -33.65,
+          10.26,
+          77.45
+        ],
+        "target": [
+          -30.02,
+          9.48,
+          74.85
+        ],
+        "title": "菜摊到货处"
+      },
+      "r24_market_steps_along": {
+        "fov": 62.0,
+        "position": [
+          -26.15,
+          9.42,
+          81.45
+        ],
+        "target": [
+          -21.4,
+          8.31,
+          79.0
+        ],
+        "title": "南区路 · 走近市场台阶"
+      },
+      "r24_market_steps_front": {
+        "fov": 62.0,
+        "position": [
+          -21.6,
+          9.41,
+          83.7
+        ],
+        "target": [
+          -21.6,
+          8.44,
+          78.8
+        ],
+        "title": "南区路 · 从马路望市场台口"
+      },
+      "r24_market_steps_upper": {
+        "fov": 62.0,
+        "position": [
+          -19.6,
+          10.38,
+          76.45
+        ],
+        "target": [
+          -21.6,
+          8.15,
+          79.68
+        ],
+        "title": "南区路 · 从市场向下走"
+      },
+      "r24_step_edge": {
+        "fov": 65.0,
+        "position": [
+          -26.4,
+          14.1,
+          49.0
+        ],
+        "target": [
+          -19.0,
+          14.8,
+          41.0
+        ],
+        "title": "中央梯坎 · 侧沿"
+      },
+      "r24_west_arrival": {
+        "fov": 65.0,
+        "position": [
+          -79.3,
+          16.27,
+          33.4
+        ],
+        "target": [
+          -73.0,
+          16.5,
+          21.1
+        ],
+        "title": "从西巷下口上楼"
+      },
+      "r24_west_bowl": {
+        "fov": 58.0,
+        "position": [
+          -69.04,
+          17.48,
+          17.22
+        ],
+        "target": [
+          -67.33,
+          16.56,
+          18.69
+        ],
+        "title": "西巷檐下择豆"
+      },
+      "r24_west_doorstep": {
+        "fov": 62.0,
+        "position": [
+          -71.35,
+          17.54,
+          20.05
+        ],
+        "target": [
+          -66.82,
+          16.63,
+          16.35
+        ],
+        "title": "西巷门口花架"
+      },
+      "r24_west_kitchen": {
+        "fov": 63.0,
+        "position": [
+          -70.1,
+          17.66,
+          21.44
+        ],
+        "target": [
+          -66.38,
+          17.92,
+          20.34
+        ],
+        "title": "西巷窗前的竹帘与辣椒"
+      },
+      "r24_west_life": {
+        "fov": 64.0,
+        "position": [
+          -73.5,
+          16.88,
+          25.4
+        ],
+        "target": [
+          -71.4,
+          16.75,
+          17.2
+        ],
+        "title": "西巷步行与窗下绿植"
+      },
+      "r24_west_pantry": {
+        "fov": 59.0,
+        "position": [
+          -69.51,
+          17.32,
+          20.73
+        ],
+        "target": [
+          -65.24,
+          18.05,
+          21.4
+        ],
+        "title": "西巷 · 从街边看进厨房"
+      },
+      "r24_west_seam": {
+        "fov": 58.0,
+        "position": [
+          -73.7,
+          16.88,
+          25.35
+        ],
+        "target": [
+          -71.95,
+          15.7,
+          19.0
+        ],
+        "title": "西巷梯坎与院路"
+      },
+      "r24_west_threshold": {
+        "fov": 65.0,
+        "position": [
+          -74.16,
+          17.6,
+          20.6
+        ],
+        "target": [
+          -68.65,
+          16.55,
+          16.0
+        ],
+        "title": "西巷门前摘菜"
+      },
+      "r24_wire_anchor": {
+        "fov": 60.0,
+        "position": [
+          -74.5,
+          17.6,
+          20.3
+        ],
+        "target": [
+          -78.0,
+          21.52975,
+          22.464
+        ],
+        "title": "西巷墙面电线固定点"
+      },
+      "r24_wire_fixing": {
+        "fov": 53.0,
+        "position": [
+          -24.16,
+          17.11,
+          60.8
+        ],
+        "target": [
+          -23.11,
+          17.32,
+          61.85
+        ],
+        "title": "面馆墙上的瓷瓶线脚"
+      }
+    },
+    "district_connections_r24": true,
+    "district_r21": true,
+    "east_alley_inlets_r24": true,
+    "east_lane_joint_r24": true,
+    "fitted_kitchen_r24": true,
+    "label_zh": "R20 / 上巷",
+    "lane_r20": true,
+    "lighting": {
+      "ambient_color": [
+        0.67,
+        0.75,
+        0.84
+      ],
+      "ambient_energy": 0.61,
+      "background_energy": 0.83,
+      "brightness": 1.0,
+      "contrast": 1.0,
+      "exposure": 1.0,
+      "fog_aerial_perspective": 0.16,
+      "fog_color": [
+        0.62,
+        0.69,
+        0.73
+      ],
+      "fog_density": 0.00072,
+      "fog_light_energy": 0.59,
+      "fog_sky_affect": 0.075,
+      "glow": false,
+      "glow_bloom": 0.0,
+      "glow_intensity": 0.1,
+      "hdri_energy": 0.88,
+      "hdri_path": "res://assets/sky/kloofendal_28d_misty_puresky_2k.hdr",
+      "hdri_rotation_deg": [
+        0.0,
+        51.18945,
+        0.0
+      ],
+      "high_camera_shadow_height_m": 80.0,
+      "high_camera_shadow_max_distance": 450.0,
+      "high_camera_shadow_range_enabled": true,
+      "interior_light_energy_scale": 1.0,
+      "interior_light_limit": 10.0,
+      "packing_task_light_energy": 0.12,
+      "procedural_clouds": false,
+      "saturation": 1.0,
+      "sdfgi_enabled": false,
+      "shadow_bias": 0.06,
+      "shadow_max_distance": 180.0,
+      "shadow_normal_bias": 0.65,
+      "shadow_split_1": 0.035,
+      "shadow_split_2": 0.16,
+      "shadow_split_3": 0.45,
+      "sky_contribution": 0.9,
+      "ssao": true,
+      "ssao_detail": 0.65,
+      "ssao_half_size": true,
+      "ssao_intensity": 1.15,
+      "ssao_light_affect": 0.28,
+      "ssao_power": 1.25,
+      "ssao_radius": 1.2,
+      "ssil": true,
+      "ssil_intensity": 0.16,
+      "ssil_normal_rejection": 1.0,
+      "ssil_radius": 2.4,
+      "ssil_sharpness": 0.96,
+      "ssr": false,
+      "sun_angular_distance": 2.05,
+      "sun_color": [
+        1.0,
+        0.94,
+        0.85
+      ],
+      "sun_energy": 0.88,
+      "sun_rotation_deg": [
+        -28.56445,
+        62.0,
+        0.0
+      ],
+      "sun_specular": 0.75,
+      "tonemap_white": 6.0
+    },
+    "lighting_profiles": {
+      "gl_compatibility": {
+        "ambient_energy": 0.52,
+        "exposure": 1.0,
+        "ssao": false,
+        "ssil": false,
+        "sun_energy": 0.82,
+        "tonemap_white": 1.0
+      }
+    },
+    "market_r24": true,
+    "market_steps_r24": true,
+    "materials": {
+      "glass_grime_strength": 0.12,
+      "glass_opacity": 0.17,
+      "glass_roughness": 0.18,
+      "ph_branch_shader": true,
+      "ph_branch_uv_baked": true,
+      "ph_leaf_safe_material": false,
+      "ph_leaf_unshaded": false,
+      "ph_tree_lod_bias": 1.0,
+      "ph_tree_normals": false,
+      "thin_window_glass": true
+    },
+    "meter_lod": true,
+    "natural_stops_r24": true,
+    "neighborhood_r24": true,
+    "notes": [
+      "R19 overcast plus authored upper-lane geometry and two static diffuse sky-visibility fields."
+    ],
+    "reflections": {
+      "enabled": false,
+      "probes": [
+        {
+          "intensity": 0.75,
+          "max_distance": 115.0,
+          "name": "DistrictCourtyardReflection",
+          "origin_offset": [
+            0.0,
+            3.0,
+            0.0
+          ],
+          "position": [
+            -17.0,
+            24.0,
+            18.0
+          ],
+          "size": [
+            150.0,
+            82.0,
+            165.0
+          ]
+        }
+      ]
+    },
+    "river_r22": true,
+    "roofs_r22": true,
+    "room_patina_r24": true,
+    "street_finish_r24": true,
+    "street_r19": {
+      "enabled": true,
+      "surfaces": true
+    },
+    "street_use_r24": true,
+    "surface_import_revision": "R22_surface_import_01",
+    "traffic_lanes_r24": true,
+    "wall_occlusion_r24": true,
+    "washcloth_shader": "res://shaders/washcloth_r24.gdshader",
+    "window_life_r24": true,
+    "window_title": "重庆外卖王 · 梯坎里 R24 构建 18"
+  },
+  "source": "R24 build 17b full editable scene plus the authored changes in this folder",
+  "blender": "4.3.2",
+  "godot": "4.6.3-stable (official)",
+  "renderer": "forward_plus",
+  "profile_sha256": "68f358c8e9be60e078a26cd058eb2b361b51ff690a38a814a35bb8f62d025436",
+  "default_checks": {
+    "block_test.json": true,
+    "connections.json": true,
+    "courtyard.json": true,
+    "delivery_end_to_end.json": true,
+    "inlets.json": true,
+    "junction.json": true,
+    "market_steps.json": true,
+    "neighborhood.json": true,
+    "paving.json": true,
+    "pedestrian_turns.json": true,
+    "seam_walk.json": true,
+    "smoke.json": true,
+    "walk.json": true,
+    "window_rooms.json": true,
+    "walk/rooms_walk.json": true
+  },
+  "game_opened_at": "r24_join18_shop",
+  "screenshot_pixels_third_final": [
+    {
+      "(424, 253)": [
+        159,
+        170,
+        166
+      ],
+      "(428, 252)": [
+        159,
+        170,
+        166
+      ],
+      "(420, 256)": [
+        148,
+        158,
+        154
+      ],
+      "(439, 249)": [
+        147,
+        156,
+        151
+      ],
+      "(424, 251)": [
+        114,
+        114,
+        104
+      ]
+    },
+    {
+      "(424, 253)": [
+        102,
+        98,
+        91
+      ],
+      "(428, 252)": [
+        100,
+        97,
+        90
+      ],
+      "(420, 256)": [
+        96,
+        93,
+        86
+      ],
+      "(439, 249)": [
+        95,
+        91,
+        85
+      ],
+      "(424, 251)": [
+        92,
+        89,
+        83
+      ]
+    }
+  ],
+  "static_source": {
+    "source": "C:\\Users\\尹久\\Documents\\重庆外卖王\\work\\scene_r24\\district_connections\\city_and_connections.blend",
+    "revision": "R24 build 18, stair turns, Nanqu shoulder, ball court and interiors",
+    "probes": [
+      {
+        "name": "pot_on_burner",
+        "hit": [
+          -23.10500144958496,
+          -67.38249969482422,
+          12.230714797973633
+        ],
+        "object": "D18_NoodleKitchen"
+      },
+      {
+        "name": "bowl_on_shelf",
+        "hit": [
+          -24.145000457763672,
+          -67.59249877929688,
+          12.944714546203613
+        ],
+        "object": "D18_NoodleKitchen"
+      },
+      {
+        "name": "bracket_at_wall",
+        "hit": [
+          -24.410001754760742,
+          -67.69999694824219,
+          12.777714729309082
+        ],
+        "object": "D18_NoodleKitchen"
+      },
+      {
+        "name": "hood_duct_enters_wall",
+        "hit": [
+          -23.350000381469727,
+          -67.77249908447266,
+          13.641715049743652
+        ],
+        "object": "COL_D18_RoomShells"
+      },
+      {
+        "name": "table_foot",
+        "hit": [
+          -23.942001342773438,
+          -67.09449768066406,
+          11.408214569091797
+        ],
+        "object": "COL_D18_RoomShells"
+      }
+    ],
+    "errors": [],
+    "ginger_gap_m": 4.617309574683759e-07,
+    "Court_fence_and_hoops_painted_metal": [
+      4.02,
+      4.02
+    ],
+    "Court_fence_and_hoops_frame": [
+      4.036,
+      4.036
+    ],
+    "bench-9": {
+      "back_x": -45.310001373291016,
+      "base_z": 20.527990341186523,
+      "deck_z": 20.53
+    },
+    "bench9": {
+      "back_x": -45.310001373291016,
+      "base_z": 20.527997970581055,
+      "deck_z": 20.53
+    },
+    "passed": true
+  },
+  "visual_scope": "Ten engine views and two native takes. Player art approval pending.",
+  "files": {
+    "work/assets_incoming/r24_noodle/ginger/PROVENANCE.json": "4ecdc5ec2dd2a99199c6de2b0b2bcf6e70cf1771eda51debfd3e998eadbf99d9",
+    "work/assets_incoming/r24_noodle/interior_tiles/PROVENANCE.json": "a99422f23d6265257d9aea993c935c9c7fc71e1a1b9cbdde1c09aa08b7ef1b05",
+    "work/assets_incoming/r24_noodle/old_mosaic_floor/PROVENANCE.json": "ca16ec5cf6e54be89285c692a41e91cc23fe07c687960e8716174cc147cf17a3",
+    "work/project/chongqing_godot_v05/assets/connections_r24/connections.glb": "3cce6cc2961cc19dc240a0695056e14cf3ab9fa02fcac001704f215d5d1f1cfb",
+    "work/project/chongqing_godot_v05/assets/connections_r24/connections.glb.import": "37007f2d346458d3557f10f1f26c37d7cb72b1b1cbe9579412cdca87f0a78a67",
+    "work/project/chongqing_godot_v05/assets/connections_r24/ginger/food_ginger_01_diff_1k.jpg": "3f2117a9f5718a797bcbb22557cad1599ffb6eec50232b71ee4be3c7cf304890",
+    "work/project/chongqing_godot_v05/assets/connections_r24/ginger/food_ginger_01_diff_1k.jpg.import": "72013be6fb64db581fbd19792430c03cfebef0eda00bb3e1852afddb9c5b3a8a",
+    "work/project/chongqing_godot_v05/assets/connections_r24/ginger/food_ginger_01_nor_gl_1k.jpg": "0bcef5efbb8c14fe758278a42713dfd6a5cc25c5eaaaffa9ff594fcaee0a5910",
+    "work/project/chongqing_godot_v05/assets/connections_r24/ginger/food_ginger_01_nor_gl_1k.jpg.import": "1b28f013137825d5a456ec45b2828e8c4b0765672372e205607bdedff6ce9fa9",
+    "work/project/chongqing_godot_v05/assets/connections_r24/ginger/food_ginger_01_rough_1k.jpg": "19eba8b9048838849a4cb033d83b43efcaaf45bff14364285fa19b0c9aa12951",
+    "work/project/chongqing_godot_v05/assets/connections_r24/ginger/food_ginger_01_rough_1k.jpg.import": "b2a0d7ed3fa5a20c2ff69439d2d719f4011f7850b5df37ef76706f9ab1da91ed",
+    "work/project/chongqing_godot_v05/assets/connections_r24/layout.json": "48cb60ee25a424592124e40051195484c194307c24412491976b3c76fd24b536",
+    "work/project/chongqing_godot_v05/assets/connections_r24/soup_notice.jpg": "cea7778af844e50f7f4d79102c396f14791e7445c7ceeef16724ac120a8ea068",
+    "work/project/chongqing_godot_v05/assets/connections_r24/soup_notice.jpg.import": "e9999e972c8add20af07f833f48f68139d77386b738586cd41a10272c5ef550e",
+    "work/project/chongqing_godot_v05/assets/connections_r24/surfaces/interior_tiles_diff_2k.jpg": "57d3ce95255500e7b0fa677b99b258427a1b1676bd452e90f710eb4ac41f531f",
+    "work/project/chongqing_godot_v05/assets/connections_r24/surfaces/interior_tiles_diff_2k.jpg.import": "bac3a245c3a2d7c8e912645837e1ad0284fbdabf12863a56c85450dd8c023d40",
+    "work/project/chongqing_godot_v05/assets/connections_r24/surfaces/interior_tiles_nor_gl_2k.jpg": "67dc47321ca45fc71123eb3c285f7859ca47147d2a93655ee53d44f6a284bffe",
+    "work/project/chongqing_godot_v05/assets/connections_r24/surfaces/interior_tiles_nor_gl_2k.jpg.import": "c1dcee6d75f9f71a474b91fe31a8a4724f5933005a9dcf46f04b12af09d76bf7",
+    "work/project/chongqing_godot_v05/assets/connections_r24/surfaces/interior_tiles_rough_2k.jpg": "4e67f21f3ea84926e5f32b439b0200ea0abdf9ccc27a9f5084b98df5c77c5662",
+    "work/project/chongqing_godot_v05/assets/connections_r24/surfaces/interior_tiles_rough_2k.jpg.import": "5d2685797ca26a02dbf12f03ad9ee35822c3151d3f44770f746afcfae41bae3a",
+    "work/project/chongqing_godot_v05/assets/connections_r24/surfaces/old_mosaic_floor_diff_2k.jpg": "902e128679cb1fa2edcc33683e128350f668abca7d950970ae474c03b451edbf",
+    "work/project/chongqing_godot_v05/assets/connections_r24/surfaces/old_mosaic_floor_diff_2k.jpg.import": "a7a107ec4804d53a8f3516de8e831413345b9acba04d5a39479069e1735b445a",
+    "work/project/chongqing_godot_v05/assets/connections_r24/surfaces/old_mosaic_floor_nor_gl_2k.jpg": "2c0bc58bfda87fd56cfeba8c99fed396571be5bb52c7fdf2d50ec742fc1f4d80",
+    "work/project/chongqing_godot_v05/assets/connections_r24/surfaces/old_mosaic_floor_nor_gl_2k.jpg.import": "5f04133a50c24d83f4e1d8fbd16ac20d1ec07301afec8b21be1de842359c3bff",
+    "work/project/chongqing_godot_v05/assets/connections_r24/surfaces/old_mosaic_floor_rough_2k.jpg": "a240254c43c29694ea49546b94257cb09cf0f1da6ac3c2d6a406c137715b0d83",
+    "work/project/chongqing_godot_v05/assets/connections_r24/surfaces/old_mosaic_floor_rough_2k.jpg.import": "ae0d3c3341143c81f60aef01a1d3d2fdc3b0330a5db66a7da63fd0ce4a8701ca",
+    "work/project/chongqing_godot_v05/assets/render_profile_r24.json": "68f358c8e9be60e078a26cd058eb2b361b51ff690a38a814a35bb8f62d025436",
+    "work/project/chongqing_godot_v05/docs/DISTRICT_CONNECTIONS_R24_REVIEW.md": "677744662b0d4dec56408802da6c1f46ea396b8782eda01bf7dfa6e0f4f17b93",
+    "work/project/chongqing_godot_v05/docs/DISTRICT_PRODUCTION_STANDARD.md": "a957e1e4333d1f1bceb1dfc54e6200ba9f3655dc4a43ef6de5f68325968b18d9",
+    "work/project/chongqing_godot_v05/project.godot": "5e7fe01740f8c07a0c22e367627f6fd5ecc4bf127baa0314d780ec4673587abe",
+    "work/project/chongqing_godot_v05/scripts/district_connections_r24.gd": "9255efd7c637276b00c844807d792c852add70bddc6a409f4ac48b68714ae294",
+    "work/project/chongqing_godot_v05/scripts/junction_editor_preview.gd": "d28a5c88c1af9d97aa5b20679c3283fab8371ba06b1e11179e956b5fa9df686c",
+    "work/project/chongqing_godot_v05/scripts/main.gd": "0643e555a6399434839b5764a1381c4db977961c9861c9da93ed0da41069e54f",
+    "work/project/chongqing_godot_v05/scripts/qa_context.gd": "91e56879b2200eab3742205b5dfd78c26e44570ef2317a2d75c3d1adfeb18e25",
+    "work/project/chongqing_godot_v05/shaders/asphalt_use_r24.gdshader": "7bb8d04d4193084a813653526c5c7d25f7f92127b3ccfbb0f4cfd807ac659624",
+    "work/project/chongqing_godot_v05/shaders/city_envelope_r24.gdshader": "20bb1c420052c831673e61873cf8c32c14bfd4f46f731196d0d6c0fa804121ce",
+    "work/project/chongqing_godot_v05/shaders/court_canopy_r24.gdshader": "f0a35415df35233e82e250ea5aabc3bd68fcc40da2308fda793bd62803fc1395",
+    "work/project/chongqing_godot_v05/shaders/dressed_stone_r24.gdshader": "705de7c7f5601705e898dcef7441fa94dd478d5f29f130c5461cdbfc254dbb35",
+    "work/project/chongqing_godot_v05/shaders/frontage_canvas_r24.gdshader": "05a4855a2ded86e0d9b972d8b3836657bedbb93268add08cdf16f64354d8feb5",
+    "work/project/chongqing_godot_v05/shaders/frontage_surface_r24.gdshader": "d1f362d7e5f143590785d76ee0df8071248c1ddf78de50dc87f7535ec30118f9",
+    "work/project/chongqing_godot_v05/shaders/joined_stone_r24.gdshader": "f2e7a5bc92d5df0f1bdf08df54c6d0324d539563679a29ea2507aae221237612",
+    "work/project/chongqing_godot_v05/shaders/lane_pavers_r24.gdshader": "24e6323351bf0e4f3a76f1648ce21f7882862b887a9428684f179bc7b0cb2d1f",
+    "work/project/chongqing_godot_v05/shaders/lane_steps_r24.gdshader": "c1b43c1471b731794a8c3da09b53f333696228825a67b4ca348355c5bc6eb3ef",
+    "work/project/chongqing_godot_v05/shaders/market_sandstone_r24.gdshader": "c7a4463fb63c28708506c6ae5d6bac3afea24e810977d85f0bbfe8eadbe434e7",
+    "work/project/chongqing_godot_v05/shaders/noodle_steam_r24.gdshader": "4f33b8ebfdeea676af9bf4719db3dd88b23fa3950d0546b1de60f21631e2cacf",
+    "work/project/chongqing_godot_v05/shaders/noodle_surfaces_r24.gdshader": "c0c0fc9928c8a9047065477599bd65c1e867abf3018f24111aecc7ad50212ba6",
+    "work/project/chongqing_godot_v05/shaders/pedestrian_outerwear_r24.gdshader": "054fd5eb984cfa2868b95f61436be04c7a99018b893266b95636ef40816d7acc",
+    "work/project/chongqing_godot_v05/shaders/stall_enamel_r24.gdshader": "047d7175d2cf71e4c1a3f18eb1860027102f27e897f8d0682d9de86296c02f5b",
+    "work/project/chongqing_godot_v05/shaders/wall_patina_r24.gdshader": "aeda0e5c8c143f3725f037f8785430eafb5a21f4768aefd25a76ba64c2e3c1f6",
+    "work/project/chongqing_godot_v05/shaders/washcloth_r24.gdshader": "40257182eb7b60ad875f080f81fec3efb5e2b5b481510b5ff06a4154915179bc",
+    "work/project/chongqing_godot_v05/verification_r24/build18/block_test.json": "7adba34cef78f544b6d5ec8f89a13eec39ad0922d7f36174867152361e15156b",
+    "work/project/chongqing_godot_v05/verification_r24/build18/connections.json": "5dc395de51c163d553f9fe8291c082a3e5f338209263d1efc28db98dbe3b3702",
+    "work/project/chongqing_godot_v05/verification_r24/build18/courtyard.json": "51ab8e384e424a5cdb70550c1e28e9b1d758f651ea5cf7709d03e116a4133fc1",
+    "work/project/chongqing_godot_v05/verification_r24/build18/delivery_end_to_end.json": "4023afb172e192c529c54cf708d01c8dd8b6504485364f3746b96eac71ec79c0",
+    "work/project/chongqing_godot_v05/verification_r24/build18/fifth/connections.json": "c816bc5b0dfc56d6df7cabdcc447e9e47de11fc4f245f3a9f7958d8cf74980e3",
+    "work/project/chongqing_godot_v05/verification_r24/build18/first/connections.json": "c7e22cc5654c8968793788542b4b9057193e31fac0ce924e00ff84a840d67f6f",
+    "work/project/chongqing_godot_v05/verification_r24/build18/fourth/connections.json": "3820abcbf572f35ba4ca39e824e8d185a18d9dcedb915c68448b1804cc5698bc",
+    "work/project/chongqing_godot_v05/verification_r24/build18/inlets.json": "102eba0b4cf0e496b1650e1ac5cbabeb2210441823eb1fadaceae4b03432b4ab",
+    "work/project/chongqing_godot_v05/verification_r24/build18/junction.json": "e1d96c01e36b2bd60b15c22ef3e273415008c9f407c982f4d47cea15332724b4",
+    "work/project/chongqing_godot_v05/verification_r24/build18/market_steps.json": "46e5527d6e1410cfda1d58a321fd51f501080c1c50f46560dd7e7bf6f64d54a0",
+    "work/project/chongqing_godot_v05/verification_r24/build18/neighborhood.json": "9449fbf232adff00357d30b3dc83f2dfa4f837de23dae5fb10fa8082da4e84e3",
+    "work/project/chongqing_godot_v05/verification_r24/build18/paving.json": "95911959133519be3eacbaa9a9e47287c6a4972ee878fb0a9de05101c287c18e",
+    "work/project/chongqing_godot_v05/verification_r24/build18/pedestrian_turns.json": "bd787869e6fbc7252828b06f487582bac963ebba4741da08e5bd361efaa3df5c",
+    "work/project/chongqing_godot_v05/verification_r24/build18/seam_walk.json": "82860321aee44c4590d311f3f01c4ab3f15d36116501ea00a56808373b974ff2",
+    "work/project/chongqing_godot_v05/verification_r24/build18/second/connections.json": "5653126ec109584dd95c8402afc4d7f3f8c81ec068b1ddad03a360d2ea4990da",
+    "work/project/chongqing_godot_v05/verification_r24/build18/smoke.json": "b73cb7ac10ce49dfd521d78d5880ffb193032550490bbcb8dc1d0910c296ea88",
+    "work/project/chongqing_godot_v05/verification_r24/build18/third/connections.json": "323454bac255087848bd54806e58460642e172f71bfea223eea6137e84af8831",
+    "work/project/chongqing_godot_v05/verification_r24/build18/walk/rooms_walk.json": "b24a93ef503a790ac715c5d240af3fb72ab87e6bf050bf22adda2691d1d94ce6",
+    "work/project/chongqing_godot_v05/verification_r24/build18/walk.json": "67ff07ab7774636fa75dbc0cb88a734b401dcb902960dec460c95778205104e6",
+    "work/project/chongqing_godot_v05/verification_r24/build18/window_rooms.json": "7a57333540e22c56750d6c9b45f2c5c16e1c03159cc48c40a367f4d614fd7ba8",
+    "work/scene_r24/district_connections/17b_default.json": "81b582f24726203c775eea21f82c92aca68c034568f850cef61cda65da379efb",
+    "work/scene_r24/district_connections/author.py": "a30e60358a0fc15c9c76d319a3d19544c570fc626bb44ae260ebac3324d657d8",
+    "work/scene_r24/district_connections/check_source.py": "70ceea0874c37b766fad43a280eb01b1136770d2f8e7ac3f527130faf2282940",
+    "work/scene_r24/district_connections/city_and_connections.blend": "2db2cbbe13f3149b5096c286cb217b51d8a08063c9bb812ffc3ac17b32a06c54",
+    "work/scene_r24/district_connections/current/capture_manifest.json": "6c40fab9e23054730d4b3c95358a398cd0395c3eb8f3a1190cae358951c90a92",
+    "work/scene_r24/district_connections/current/godot_r24_join18_alley.png": "492807d23e033180df94698f359054314a1678c11d1252e4e35cad5dddd300eb",
+    "work/scene_r24/district_connections/current/godot_r24_join18_bend.png": "9c9d595e0aa6f09e18725c9e30383e083535bef1fd122eaa631d87e694b17569",
+    "work/scene_r24/district_connections/current/godot_r24_join18_court.png": "a84c107a17d5a38efbba910404b4b727e163a751c1e3af04e25c15ac045356db",
+    "work/scene_r24/district_connections/current/godot_r24_join18_front.png": "c840a92989c4f78c8363a4a5e4bf84fede20b97d7aa6d6704e7087f7194d03ae",
+    "work/scene_r24/district_connections/current/godot_r24_join18_long.png": "f87d122fdf3c815df640d699a0f0e2f28dfe61fe356f30840a4b8fd5bcd259a0",
+    "work/scene_r24/district_connections/current/godot_r24_join18_prep.png": "7c55e851f34f27e56ef51fcfdc70497e6ac70faead5d98923296e9962333cd63",
+    "work/scene_r24/district_connections/current/godot_r24_join18_road.png": "90da6bfffa3403c269e9fd36d1e29f2b264d970dd752bf39e941908cfdf65902",
+    "work/scene_r24/district_connections/current/godot_r24_join18_room.png": "52389d27a55e58d17d8be4efcbc4555f7c53538d1098f945cb9866a79593bb52",
+    "work/scene_r24/district_connections/current/godot_r24_join18_shop.png": "5b3e8da14d59f2a048be0626826aa09569463e29cdcf36c81c9d84758388daf6",
+    "work/scene_r24/district_connections/current/godot_r24_join18_threshold.png": "e766d478d1ef6fca00ec0a1667c35c4e79243f5f7c48fd1a6780ff89b7ad161d",
+    "work/scene_r24/district_connections/ginger.py": "ebe345423aaea4e343691200d40c009e104b7f7265777eb701f79aa8bbf8a1ea",
+    "work/scene_r24/district_connections/index_evidence.py": "5bf62f9fdb083905af30c26a111982db006c55cdb46eb41f136987e11a42205e",
+    "work/scene_r24/district_connections/interiors.py": "165f4b96bf7de4f75587963ac3dea81769db54f44f836a71d2186df87eb72a1f",
+    "work/scene_r24/district_connections/kitchen.py": "b34d49827abac92d2e47c80bb41fda1d44c577d94df4af8b7ac8c1428bba7e13",
+    "work/scene_r24/district_connections/kitchen_bounce.py": "44536c777141a69aae92bf2c3de23905f218bbb05b5f6f4ab8bcfdcee51af61c",
+    "work/scene_r24/district_connections/motion/frame_000.jpg": "bcc628881452aa2b43090075aa5f69c072c977e80d8aa32e9a9f9f264d7c5187",
+    "work/scene_r24/district_connections/motion/frame_001.jpg": "5907061dad18794bf5753a650c5ae80550713aa8edfdfc98976e50c636973300",
+    "work/scene_r24/district_connections/motion/frame_002.jpg": "5254736cc7e4d49ad848a9f451642963fb8a1986998a427f5ec842c976ea7c3f",
+    "work/scene_r24/district_connections/motion/frame_003.jpg": "0a123ad970c5e31cb7d3ff84d16872a87f126c9bbbae9e970c9d9f2ad5debfb8",
+    "work/scene_r24/district_connections/motion/frame_004.jpg": "f8635770b428cde566504a601a590b193790d4f67cb63ba2ef1e5bc6e1168eb3",
+    "work/scene_r24/district_connections/motion/frame_005.jpg": "154fe90c897564daa31f1ec2479a8cb1f0e7043391edf3b0a1afccb6dc7b8ff5",
+    "work/scene_r24/district_connections/motion/frame_006.jpg": "c8c451c616a2ba4a2137a9dbb8cb5d05fa10d087052d1a6520fc1f295bd290db",
+    "work/scene_r24/district_connections/motion/frame_007.jpg": "3f3d06b30cac912d825c4612d365b6eb5ca7da6d20b4e59a31a09f0f29ef17b3",
+    "work/scene_r24/district_connections/motion/frame_008.jpg": "50961ff0341480a580b02443aa3078ec91f02e5026be665b14a90ca43d19f968",
+    "work/scene_r24/district_connections/motion/frame_009.jpg": "a3bdd2786fecb7120bcf51df487c1f4c98a42eccb108a99ed1ff3758071a04a1",
+    "work/scene_r24/district_connections/motion/frame_010.jpg": "22bd5ba5c6d0d8419699bdc57ea7221997dad0cb7f6af671d71fe264072d9870",
+    "work/scene_r24/district_connections/motion/frame_011.jpg": "ead3c33a4a30474585780e261f1b08d28b2dbaf01dec75a242e450c2005b8970",
+    "work/scene_r24/district_connections/motion/frame_012.jpg": "d623e41bec31e4e47797230c4c2ff0376b23a7502b530992a526d60d7cfef409",
+    "work/scene_r24/district_connections/motion/frame_013.jpg": "b1cc7d0a9ae851bc8c67aa1fcb3d759e6b61cf36adbdbb69ebb23073c1c4a80d",
+    "work/scene_r24/district_connections/motion/frame_014.jpg": "7d98252794672963866273309f4a05efb8bd56a8c1be9b8fbbf1e9560a52e1f1",
+    "work/scene_r24/district_connections/motion/frame_015.jpg": "733089957bdaeedd097cfc85629705fa64ecea2bb1864409cbd281405d1419f9",
+    "work/scene_r24/district_connections/motion/frame_016.jpg": "4f4f7b00c934bde141ec5cd2bbfcdb0b95a2cecee2d040268caae2d2960178b8",
+    "work/scene_r24/district_connections/motion/frame_017.jpg": "8ff0ebeadb1dc65495abf7fa421f1bda5da44e52e69554d014a884f25ec8aed1",
+    "work/scene_r24/district_connections/motion/frame_018.jpg": "9b5fd2501a44a8be4827039708b44220117c7bcb5574a02bcb035f6fbf4ee9a2",
+    "work/scene_r24/district_connections/motion/frame_019.jpg": "f50de7616056861647131ff588d7d5d28a8d156fc7707efda7d6e487c8fead8c",
+    "work/scene_r24/district_connections/motion/frame_020.jpg": "07fbc6e9a78a24df18ab5f3d5895aeb2569759b08e90a1aab21d69cf20a9eaac",
+    "work/scene_r24/district_connections/motion/frame_021.jpg": "c8ed22702b15d15df16ca9d8542f11ac98c52858fe6870ca5306cc697936ac8d",
+    "work/scene_r24/district_connections/motion/frame_022.jpg": "7d88182ccb1ad50a0ff577262a1736b370fdf3ff2abb632b4f94188b4c44c8d3",
+    "work/scene_r24/district_connections/motion/frame_023.jpg": "8d5179934268042216cd4f1e8e3b80370eeeb545740a3ceb5ee88f5e28eeed36",
+    "work/scene_r24/district_connections/motion/frame_024.jpg": "7c6bd5ea83a47c917d1aea9877e23ba0299d7b78beac284efe2d76afafe7fd11",
+    "work/scene_r24/district_connections/motion/frame_025.jpg": "871bbe825c2427228947ab88ac2dc517e0edb132a89d0a6e34b4a5227538e7b9",
+    "work/scene_r24/district_connections/motion/frame_026.jpg": "77d030f7120efaedba77920c94f4a854ab4e266b4c145801c7d1f30e483abd19",
+    "work/scene_r24/district_connections/motion/frame_027.jpg": "a753712c861213cf97c3ed20fc28c7bc76f30b07389abbbdbcd48984df397615",
+    "work/scene_r24/district_connections/motion/frame_028.jpg": "454030b20f4c0eedf113ff83d9e38fe9c742fe83e427395e096d274ea81ea2a9",
+    "work/scene_r24/district_connections/motion/frame_029.jpg": "a55f3971eaa51f0f02572f8e404c77c87328a23e35932ef44329c015ce5301dc",
+    "work/scene_r24/district_connections/motion/frame_030.jpg": "dce1ac179e5de673b748a8a0e62a131b5cdb666c9dd18a5c97bc596d8e51d24d",
+    "work/scene_r24/district_connections/motion/frame_031.jpg": "582e05cafaae7f995183a5d4f8dc7c4742e8e7e1dea716535ab03976b4541fe3",
+    "work/scene_r24/district_connections/motion/frame_032.jpg": "2c520c254b4f276e86f274d4bf9b09eb26f3dc158a860a79cf43cc9b7ca93cad",
+    "work/scene_r24/district_connections/motion/frame_033.jpg": "5bb3943a1110a599bfce31ba69d42a335e23a540bcc8aba45983736d882c4a7e",
+    "work/scene_r24/district_connections/motion/frame_034.jpg": "e504c1c5eb8dd427c2d10fe5a9e91726ca514b802c3041b91efd29fa8864b6b9",
+    "work/scene_r24/district_connections/motion/frame_035.jpg": "e340473864182f7babd1aca8b91ac1fbee739944f4633fe2e792b64bada73003",
+    "work/scene_r24/district_connections/motion/frame_036.jpg": "3dfbd10b00fb0ed48d46c5e8d2da439c038bc696d9bb939dfff5d722f5445563",
+    "work/scene_r24/district_connections/motion/frame_037.jpg": "f3e384d2307fa8cfe1ff6ad6f132e5551e82f63b703e122535664008a3ff93fe",
+    "work/scene_r24/district_connections/motion/frame_038.jpg": "95c58bf8bb1b283d8a2188afb2b0f5e333c87837b3f1726c9ada9e32a96ec7f7",
+    "work/scene_r24/district_connections/motion/frame_039.jpg": "fc4d59b7fe2f493dcbd3644d15118fbf0ccf1e9643fc7741d1a8fc66a1e21d76",
+    "work/scene_r24/district_connections/motion/frame_040.jpg": "042b9e49ec75690a7a099eaf3df8fdca05a08f18a8ac2b6874ce7eb011424d39",
+    "work/scene_r24/district_connections/motion/frame_041.jpg": "9214e44d64d34ad1a9b52e31fd25f7631f34a4481ad25823a49de2defdb152a8",
+    "work/scene_r24/district_connections/motion/frame_042.jpg": "3c6af18271b7e2f6a36cbb759058104c79d70eb27144a4d2ba9494fd50d5d623",
+    "work/scene_r24/district_connections/motion/rooms_walk.json": "8de2476a17565b8f1f138ac235698fca7359abed88ce15df23123b03f6e49080",
+    "work/scene_r24/district_connections/native_source_checks.json": "d94012535b6d4f0d1f736a65c0fa4bd5ead1d4813e9ec2f8d3dc6941fd32cca0",
+    "work/scene_r24/district_connections/noodle_front.py": "3301d3931ee2f2f5988f84b80b724fd110eb15cc29e4eb718405c1572d2f4c7f",
+    "work/scene_r24/district_connections/play_here.gd": "7ff8dfe9512f08967f9cbc607034851144d16c939157cc9213c8e13a81d03635",
+    "work/scene_r24/district_connections/player/01.png": "3619aa541fb2a991addc450e09b8823be73766729180e37409c5eafe4d14ad89",
+    "work/scene_r24/district_connections/player/02.png": "91bb5010cae2f15a06d8e2919cebe9ee4f0a450807ed76a048d34327a5343f9c",
+    "work/scene_r24/district_connections/player/03.png": "64d110a764d107eb2c155de4f534bcd4e720787708fa84c5190690701de54c8e",
+    "work/scene_r24/district_connections/player/04.png": "4e0c8d3aa5f90e8f08ef91bdcca91399c7dfa32887ebe775b7a751bb5587ab8a",
+    "work/scene_r24/district_connections/player/05.png": "be12412ff2fd93479311c23d6db7e466400c525e0fb573bc08c2651a964b8324",
+    "work/scene_r24/district_connections/player/followup_1.png": "b02e25817f10c05ab0e129112ab48263e5b1027e2a869c9099c307664f9296a6",
+    "work/scene_r24/district_connections/player/followup_2.png": "14fdd561a1a452c53b89764251469947d6fb992ec4c4db844bd7d25e7d765f36",
+    "work/scene_r24/district_connections/player/followup_3.png": "43fd4ae4fe89fd07d2f5fb5d429bd3d999c03db735e034dfa98f9c0c75297b39",
+    "work/scene_r24/district_connections/prior_final/capture_manifest.json": "7c0d3bd554fb874087e76030afa9b01459a553db3a8af3be0e095e51929f8e5c",
+    "work/scene_r24/district_connections/prior_final/godot_r24_join18_alley.png": "af0eed5006e896850c43220fefae8fd5401bbf0be0420d9e442b065a45034a29",
+    "work/scene_r24/district_connections/prior_final/godot_r24_join18_bend.png": "dbceaa62bf791b4228ac07c7d07c40dff64b4b4477ea6b70993c9b61310d459f",
+    "work/scene_r24/district_connections/prior_final/godot_r24_join18_court.png": "ce81a347db80fca3cc75f02b3e3f314b652f1129509c44072ce552de4228929c",
+    "work/scene_r24/district_connections/prior_final/godot_r24_join18_front.png": "7e8275f1354cecf74e79e4258c4880cb38f16ade39268fa52cdb0a7440e4cdb0",
+    "work/scene_r24/district_connections/prior_final/godot_r24_join18_long.png": "438fe16ffd9599c0fa82602fbc5e976f201b9ded588a3ccc99dced769250c822",
+    "work/scene_r24/district_connections/prior_final/godot_r24_join18_prep.png": "ccc797924494522a68a7b6f29a5c8e6941716331c563c10ae5db36037c48f301",
+    "work/scene_r24/district_connections/prior_final/godot_r24_join18_road.png": "fe73c48c79dc60300b67b2818f3b9c15552ed7497eba2fa92acaec8bb89c7a33",
+    "work/scene_r24/district_connections/prior_final/godot_r24_join18_room.png": "6fa61120a06979596361003818705358231cecca903bea656ba7218d113bf63a",
+    "work/scene_r24/district_connections/prior_final/godot_r24_join18_shop.png": "9d647d307881a328ac4013aba9ef9e191b44da08b637492076d87c762f77c248",
+    "work/scene_r24/district_connections/prior_final/godot_r24_join18_threshold.png": "e0bbc208ad1dd8cdb9b0bb8ddfc57ea63214f40dea76568af524109ccc7826d4",
+    "work/scene_r24/district_connections/prior_timing/shop_timing.json": "450488301ae009a89382c761d3127341865ecb3eef9b0e24b1831d5ec8d8f9f2",
+    "work/scene_r24/district_connections/promenade.gd": "ada28e02493deceb39a3f664f089b2950d0a435ed472ba07b22ddd3d06e1e7f6",
+    "work/scene_r24/district_connections/promenade_failure.json": "b8653423a0a6d85e5d5089967032b5723906f259d7cd09316d4c06f6e3f749b8",
+    "work/scene_r24/district_connections/rail_hits.json": "b52d7cfe55a37ffb3fe4cb0c0db529af5ca0c75f6862b9e188820c50b539c1ba",
+    "work/scene_r24/district_connections/rails.py": "9828925b36dd7594277f7b11e288da0c0bb5c1859eb481f33e5129adf19583b1",
+    "work/scene_r24/district_connections/rays.py": "e46c387190279b3a1852b472db4bd99a75b39cde9ce19a2b95ff88b64ef4a580",
+    "work/scene_r24/district_connections/sections.py": "1dbb2411b3e43b6a55ce575eea24a79b3dd07f8c838b4c02bec3811ca009cd62",
+    "work/scene_r24/district_connections/service_wall.py": "ccff783a5a0045b4ba9a91503ddd486812f606f2512009ee6d46eed4212aa390",
+    "work/scene_r24/district_connections/shop_timing.gd": "98a47af1e855a0b67c9fc588e1458e75f49b56c315021a5f81256ff844db3306",
+    "work/scene_r24/district_connections/source_finishes.py": "e2feaa90de5f8c6bb45c7151ee84cd02e4a51610e1cda1be4f0e9637a668bdef",
+    "work/scene_r24/district_connections/stairs.py": "809f8b24042f16c510f0f2504b4a28bba09d7c7bbb9a5d3157c23dcba8e37650",
+    "work/scene_r24/district_connections/stamp.py": "4063294710ac0d1b6cd0a34ba4667eeccca9c42a10efa3084c9189ff63364f71",
+    "work/scene_r24/district_connections/street.py": "3d5fc171724825109e5c4d02fda851ff4101ddcb66a97c74739d90a439aed593",
+    "work/scene_r24/district_connections/surface_hits_first.json": "b4ee629e71c04306e6985f426d31af1daac0ecb41d5e2b16c165e58270c153ef",
+    "work/scene_r24/district_connections/survey.py": "b47a3dddcabcfe7959d4f824a0b7776656dd3be8a29e76d56d3bbf24ae6cd468",
+    "work/scene_r24/district_connections/survey_kitchen.py": "5fd2ab11d05c801cf174fc6030d19126e2983463c6c9468c941e97a3c19088b8",
+    "work/scene_r24/district_connections/test.gd": "8455644d5e871c474c9382fb64b52f69263c7caf24023e1ee7df1b98cd52177d",
+    "work/scene_r24/district_connections/timing/shop_timing.json": "918b40848e0fde50761e31a84e8546cf966d9c152142e94ed4df9639ea3b8573",
+    "work/scene_r24/district_connections/verify.ps1": "37996f827622233d7d65e14769edd3da886c5267420deb6d005d1683e845bbf1",
+    "work/scene_r24/district_connections/walk_rooms.gd": "0cf6ae3877bdffa4a963f0a5c575cc792f01039ef90a35144aa7d2ad8a9bf791"
+  }
+}

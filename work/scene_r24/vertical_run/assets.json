@@ -1,0 +1,123 @@
+{
+  "authorship": "Original project geometry and mission; architectural cuts, two-flight switchback, bridge and half-storey landing authored on the existing A03/A04 district. No new external art was downloaded.",
+  "source": {
+    "file": "scene_r24/vertical_run/city_and_crossing.blend",
+    "sha256": "cc0952e4d367622983c62960b9cd6f659c727f8849bfa96f443d6d63184314b3"
+  },
+  "runtime": [
+    {
+      "file": "project/chongqing_godot_v05/assets/vertical_run/vertical.glb",
+      "sha256": "abd05d3134ec3291a5c13d196166557f22801a827af39825a927ee66300298fb"
+    },
+    {
+      "file": "project/chongqing_godot_v05/assets/vertical_run/layout.json",
+      "sha256": "f8d594b21ba580d6dfeaa74703e06f11794bfa3dfbbe0014e2e63e0a10c748b8"
+    },
+    {
+      "file": "project/chongqing_godot_v05/assets/vertical_run/interior_wall_faces.res",
+      "sha256": "e63e74378d565eeaeea5f6befe6216b7c955291591662ffb47171f16f716b7a9"
+    }
+  ],
+  "prior_material_sources": [
+    {
+      "source": "https://polyhaven.com/a/plastered_wall_04",
+      "author": "Rob Tuytel",
+      "licence": "CC0-1.0",
+      "licence_url": "https://polyhaven.com/license",
+      "credit_required": false,
+      "use": "Existing local colour and OpenGL normal maps reused on metre-scaled UVs with local colour adjustment.",
+      "files": [
+        {
+          "file": "project/chongqing_godot_v05/assets/chongqing_district_plastered_wall_04_diff_1k.jpg",
+          "sha256": "52d789111bbe93d311c22e49d28b56256593c8f84c75742642403da857a36503"
+        },
+        {
+          "file": "project/chongqing_godot_v05/assets/chongqing_district_plastered_wall_04_nor_gl_1k.jpg",
+          "sha256": "c0a41dc06e33072ec1156d89f3bd4b481a479616791d4e9df6c5ee7b3283db82"
+        }
+      ]
+    },
+    {
+      "source": "https://polyhaven.com/a/concrete_floor_worn_001",
+      "author": "Dimitrios Savva, Rico Cilliers",
+      "licence": "CC0-1.0",
+      "licence_url": "https://polyhaven.com/license",
+      "credit_required": false,
+      "use": "Existing local colour and OpenGL normal maps reused on metre-scaled UVs with local colour adjustment.",
+      "files": [
+        {
+          "file": "project/chongqing_godot_v05/assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+          "sha256": "e29b45cdcd6d02fae3c087c456196ffa750779a9b62e7071aa3831dc322a0cc4"
+        },
+        {
+          "file": "project/chongqing_godot_v05/assets/chongqing_district_concrete_floor_worn_001_nor_gl_2k.jpg",
+          "sha256": "3b782137e34d63fd59b2e92b4e27b2ee4d082caf9dd23f00dc7ab4da5513daef"
+        }
+      ]
+    },
+    {
+      "source": "https://polyhaven.com/a/rusty_painted_metal",
+      "author": "Amal Kumar",
+      "licence": "CC0-1.0",
+      "licence_url": "https://polyhaven.com/license",
+      "credit_required": false,
+      "use": "Existing local colour and OpenGL normal maps reused on metre-scaled UVs with local colour adjustment.",
+      "files": [
+        {
+          "file": "project/chongqing_godot_v05/assets/chongqing_district_rusty_painted_metal_diff_2k.jpg",
+          "sha256": "883118fafabb56304f9e33ea2da3c183379b1c1b1c5a4702fdc335b0cf84614f"
+        },
+        {
+          "file": "project/chongqing_godot_v05/assets/chongqing_district_rusty_painted_metal_nor_gl_2k.jpg",
+          "sha256": "2289c10422d5082aea3cf37661008b281c4aec20f6d0b574df6d7887573eb70c"
+        }
+      ]
+    },
+    {
+      "source": "https://polyhaven.com/a/sandstone_cracks",
+      "author": "Rob Tuytel",
+      "licence": "CC0-1.0",
+      "credit_required": false,
+      "use": "Existing colour-adjusted city stone and scan normals on the exposed gallery and its steps.",
+      "files": [
+        {
+          "file": "project/chongqing_godot_v05/assets/district_r21/terraces_washed_sandstone.jpg",
+          "sha256": "9792a5261f98aee4a73328e1420585e7d33308a382e7abbb081dcee2b0094924"
+        },
+        {
+          "file": "project/chongqing_godot_v05/assets/district_r21/terraces_sandstone_cracks_nor_gl_2k.jpg",
+          "sha256": "904e852268e1fb1bd5c0d035382f6a0e64c98dceea784fe957b1983d98b0231a"
+        },
+        {
+          "file": "project/chongqing_godot_v05/assets/district_r21/provenance.json",
+          "sha256": "48818cf6518231826cd69e56ba8c68b47212f81fc00631f01696aabb33310c3f"
+        }
+      ]
+    }
+  ],
+  "timber": {
+    "source": "https://polyhaven.com/a/wood_table_worn",
+    "license": "CC0-1.0",
+    "attribution_required": false,
+    "authors": {
+      "Dimitrios Savva": "Photography",
+      "Rico Cilliers": "Processing"
+    },
+    "modifications": "Existing 2k diffuse image, tinted and mapped to the landing door and notice frame.",
+    "image": {
+      "file": "project/chongqing_godot_v05/assets/chongqing_district_wood_table_worn_diff_2k.jpg",
+      "sha256": "165cdba449d56ea8e9675116622b95d7af372b7d7c47b8a98a03fcc630f1d51c"
+    }
+  },
+  "font": {
+    "license": "SIL OFL 1.1",
+    "metadata": {
+      "file": "project/chongqing_godot_v05/assets/fonts/first_shift_sources.json",
+      "sha256": "fa8a6661ca32ae27be569038d9c833952b5ddfbdb53fa881736bd6a682ea6b8e"
+    },
+    "notice": {
+      "file": "project/chongqing_godot_v05/assets/fonts/R20_OFL.txt",
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    }
+  }
+}

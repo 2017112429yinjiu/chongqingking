@@ -1,0 +1,229 @@
+{
+  "revision": "R19_scene_05",
+  "coordinate_system": "Blender Z up; Godot [x,z,-y]",
+  "hide_city_objects": [
+    "B_A01_noodle_details_curtain_beige",
+    "B_A01_noodle_details_faded_red",
+    "Type_梯坎小面",
+    "Resident_waste_14_bin_03",
+    "Resident_waste_14_bin_02",
+    "Resident_waste_14_bin_01",
+    "Resident_waste_14_bin_00",
+    "Resident_waste_14_bagA_00",
+    "Resident_waste_14_bagB_00",
+    "Resident_waste_14_crate_00",
+    "Authored_distant_hill_ridges_hill_near",
+    "Authored_distant_hill_ridges_hill_far"
+  ],
+  "grounded_props": [
+    {
+      "name": "Breakfast_table",
+      "asset": "chinese_tea_table",
+      "bounds_blender": [
+        [
+          -30.981037139892578,
+          -61.37709426879883,
+          10.8334321975708
+        ],
+        [
+          -29.718963623046875,
+          -60.12290573120117,
+          11.631270408630371
+        ]
+      ],
+      "support_gap_range_m": [
+        0.0019979476928710938,
+        0.0020017623901367188
+      ],
+      "four_support_min_gaps_m": [
+        0.0019998550415039062,
+        0.0019998550415039062,
+        0.0019998550415039062,
+        0.0019979476928710938
+      ]
+    },
+    {
+      "name": "Breakfast_chair_A",
+      "asset": "plastic_monobloc_chair_01",
+      "bounds_blender": [
+        [
+          -31.77912712097168,
+          -60.83448028564453,
+          10.878278732299805
+        ],
+        [
+          -31.16171646118164,
+          -60.225528717041016,
+          11.726798057556152
+        ]
+      ],
+      "support_gap_range_m": [
+        0.0019998550415039062,
+        0.030567169189453125
+      ],
+      "four_support_min_gaps_m": [
+        0.0019998550415039062,
+        0.0019998550415039062,
+        0.0019998550415039062,
+        0.0020008087158203125
+      ]
+    },
+    {
+      "name": "Breakfast_chair_B",
+      "asset": "plastic_monobloc_chair_01",
+      "bounds_blender": [
+        [
+          -29.53737449645996,
+          -60.82144546508789,
+          10.920221328735352
+        ],
+        [
+          -28.93023109436035,
+          -60.22461700439453,
+          11.75245189666748
+        ]
+      ],
+      "support_gap_range_m": [
+        0.0019979476928710938,
+        0.030320167541503906
+      ],
+      "four_support_min_gaps_m": [
+        0.0020008087158203125,
+        0.0019979476928710938,
+        0.0019998550415039062,
+        0.0019989013671875
+      ]
+    },
+    {
+      "name": "Resident_pot_A",
+      "asset": "potted_plant_02",
+      "bounds_blender": [
+        [
+          -32.62775421142578,
+          -61.65742492675781,
+          10.779645919799805
+        ],
+        [
+          -31.974037170410156,
+          -61.148353576660156,
+          11.514044761657715
+        ]
+      ],
+      "support_gap_range_m": [
+        0.0019989013671875,
+        0.04503631591796875
+      ],
+      "four_support_min_gaps_m": [
+        0.0019989013671875,
+        0.0020008087158203125,
+        0.0020008087158203125,
+        0.0020008087158203125
+      ]
+    },
+    {
+      "name": "Resident_pot_B",
+      "asset": "potted_plant_02",
+      "bounds_blender": [
+        [
+          -32.95720291137695,
+          -61.52841567993164,
+          10.78728199005127
+        ],
+        [
+          -32.59347152709961,
+          -61.12826919555664,
+          11.246808052062988
+        ]
+      ],
+      "support_gap_range_m": [
+        0.0019989013671875,
+        0.03484916687011719
+      ],
+      "four_support_min_gaps_m": [
+        0.0020008087158203125,
+        0.0020017623901367188,
+        0.0019989013671875,
+        0.0020008087158203125
+      ]
+    },
+    {
+      "name": "Stair_resident_pot_A",
+      "asset": "potted_plant_02",
+      "bounds_blender": [
+        [
+          -23.646223068237305,
+          -43.588829040527344,
+          13.459626197814941
+        ],
+        [
+          -22.947490692138672,
+          -42.78492736816406,
+          14.38646125793457
+        ]
+      ],
+      "support_gap_range_m": [
+        0.0019960403442382812,
+        0.03781318664550781
+      ],
+      "four_support_min_gaps_m": [
+        0.0019979476928710938,
+        0.0019969940185546875,
+        0.0019960403442382812,
+        0.0019960403442382812
+      ]
+    },
+    {
+      "name": "Stair_resident_pot_B",
+      "asset": "potted_plant_02",
+      "bounds_blender": [
+        [
+          -23.94678497314453,
+          -43.6427001953125,
+          13.432415008544922
+        ],
+        [
+          -23.462175369262695,
+          -43.14613723754883,
+          14.043498039245605
+        ]
+      ],
+      "support_gap_range_m": [
+        0.0019979476928710938,
+        0.04047870635986328
+      ],
+      "four_support_min_gaps_m": [
+        0.0019998550415039062,
+        0.0019998550415039062,
+        0.0019998550415039062,
+        0.0019979476928710938
+      ]
+    }
+  ],
+  "stair_treads_capped": 19,
+  "source_city": "work/r17_scene/chongqing_district.blend",
+  "source_city_sha256": "88b5be04c0c72ae2b54bb02f55f2186f7b7ec2937389a59697e7306dbd7e7c13",
+  "practical_lights": [
+    {
+      "position": [
+        -24.2,
+        13.68,
+        61.49
+      ],
+      "color": [
+        1.0,
+        0.86,
+        0.65
+      ],
+      "energy": 0.4,
+      "range": 2.7
+    }
+  ],
+  "notes": [
+    "Original R19 geometry and placement; CC0 scans reused from existing prepared library.",
+    "New layer is not a surveyed reconstruction. Real photographs used for visual observation only.",
+    "Table/chair support vertices fit the actual R17 collision ground. Leaf canopy bounds are not rigid collision volumes."
+  ],
+  "objects": 52,
+  "glb_sha256": "1c40ae7ed04e8bf3f5f7956eaf630a098890e62a9c142f3e846c9ee15d530bad",
+  "blend_sha256": "0c2b76a47a88d00ca568eeef7cf537ee31ae89652afa215330441a25b3eb70a8"
+}

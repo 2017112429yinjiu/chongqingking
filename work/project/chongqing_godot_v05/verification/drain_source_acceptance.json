@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "revision": 15,
+  "passed": true,
+  "status": "PASS_SOURCE_REHEARSAL",
+  "scope": "All112 grates; all wall fixtures/111 covers unchanged, sole041 cover moves17cm to asphalt; unchanged actualR14 ground; not an R15 GLB pass",
+  "fresh_r15_glb_measurement": false,
+  "engines_started": false,
+  "ground_glb_sha256": "9238d83015ff5206e6ef336b8da40c2a51be7e18f5c3822279be3d28d2ba016a",
+  "source_sha256": {
+    "drain_support.py": "329c794e7f3d9a78d3e9c26af84506c8346ab057e8e284a13ab9e5c13f186376",
+    "urban_fabric.py": "3fa2c260406d610251d22607fa565bda53ddaafb01775a1338eccc403e3e29cc",
+    "district_geometry.py": "e27a4d1a625b5539674ce640c06012802b6f9d77e0191f996ac21a57185570ce"
+  },
+  "architecture_sha256": "b01d56ebd2fb6ef8b6b5a9204a91d7c903e4a7fd6370cf67c86a2a0e6948a1ae",
+  "baseline_source_sha256": "2ffd5c0c60a0c9ecd2729a0c8533f45d411c259aeb1d82298c7ab9107565d830",
+  "grate_count": 112,
+  "bar_count": 1456,
+  "bar_segment_count": 2445,
+  "new_named_material_meshes": 224,
+  "grate_triangle_count_before_export": 35730,
+  "maximum_coverage_area_error_m2": 1.354472090042691e-14,
+  "all_base_bottom_offsets_m": -0.0115,
+  "all_base_top_offsets_m": 0.0015,
+  "base_thickness_m": 0.013,
+  "non_grate_utility_and_seam_geometry_exact_same_in_same_adapter": true,
+  "unchanged_grate_footprints_count": 111,
+  "unchanged_bar_line_xy_count": 1443,
+  "only_authorized041_translation_in_same_adapter": true,
+  "sole041_placement_adjustment": {
+    "kind": "sole_measured_curb_clearance_041",
+    "original_anchor_xy": [
+      41.98782980092244,
+      74.73611982054085
+    ],
+    "new_anchor_xy": [
+      41.988211866133625,
+      74.90611939120552
+    ],
+    "delta_xy": [
+      0.00038206521118411274,
+      0.16999957066467175
+    ],
+    "distance_m": 0.16999999999999507,
+    "maximum_authorized_distance_m": 0.25,
+    "original_footprint_xy": [
+      [
+        42.54818797742837,
+        74.89486084870607
+      ],
+      [
+        41.428190805990496,
+        74.89737798421503
+      ],
+      [
+        41.42908978295799,
+        75.29737697401426
+      ],
+      [
+        42.54908695439586,
+        75.2948598385053
+      ]
+    ],
+    "new_footprint_xy": [
+      [
+        42.548570042639554,
+        75.06486041937075
+      ],
+      [
+        41.42857287120168,
+        75.0673775548797
+      ],
+      [
+        41.42947184816917,
+        75.46737654467893
+      ],
+      [
+        42.549469019607045,
+        75.46485940916997
+      ]
+    ],
+    "actual_support_surface_names": [
+      "COL_Road_734116597_0_asphalt"
+    ],
+    "minimum_curb_projection_clearance_m": 0.01765105251641983,
+    "minimum_required_curb_margin_m": 0.01,
+    "minimum_complete_bar_section_footprint_margin_m": 0.010999999999981034,
+    "wall_fixture_anchor_unchanged": true,
+    "reason": "Original footprint climbed an actual 120.907 mm bevelled road kerb; only this cover moves along the facade outward normal onto the same asphalt plane"
+  },
+  "other_urban_functions_ast_unchanged": true,
+  "unchanged_ground_tree_sources": {
+    "landscape_v05.py": true,
+    "terrain_interiors.py": true,
+    "tree_root_support.py": true,
+    "scanned_assets.py": true,
+    "district_layout.py": true,
+    "district_geometry.py": true
+  },
+  "support_surface_names": [
+    "COL_Road_734116595_0_asphalt",
+    "COL_Road_734116597_0_asphalt",
+    "COL_Terrain_200m_gravel_ground",
+    "COL_Terrain_200m_pavement",
+    "COL_Terrain_200m_yard_concrete",
+    "COL_Walk_OSM_734116601_0_pavement",
+    "Outer_ground_context_ground_dirt",
+    "Urban_paving_joints_and_repairs_soil_dark",
+    "Urban_paving_joints_and_repairs_yard_concrete"
+  ],
+  "numerical_seam_records": [
+    {
+      "grate_id": "Drain_grate_074",
+      "treatment": "Extend one adjacent actual plane only across a measured float32 T-junction seam; ground itself is unchanged",
+      "original_missing_polygon_xy": [
+        [
+          -55.16031759873463,
+          89.83968240126536
+        ],
+        [
+          -55.16031819408978,
+          89.83968271805809
+        ],
+        [
+          -55.45605757131695,
+          89.54394502347235
+        ],
+        [
+          -55.45605587770868,
+          89.54394412229132
+        ]
+      ],
+      "original_missing_area_m2": 5.185677814311276e-07,
+      "maximum_strip_width_m": 1.8347915112503482e-06,
+      "float32_half_ulp_normal_bound_m": 4.046101293825794e-06,
+      "allowed_width_m": 4.046101293825794e-06,
+      "maximum_plane_extension_m": 1.8347931052921934e-06,
+      "adjacent_plane_height_difference_m": 9.929366910910176e-07,
+      "adjacent_surfaces": [
+        {
+          "surface_name": "COL_Terrain_200m_pavement",
+          "triangle_index": 50105
+        },
+        {
+          "surface_name": "COL_Terrain_200m_pavement",
+          "triangle_index": 50106
+        }
+      ]
+    }
+  ],
+  "explicit_fold_records": [
+    {
+      "grate_id": "Drain_grate_101",
+      "building_id": "A05",
+      "base_fold_count": 10,
+      "maximum_actual_base_boundary_step_m": 0.017000575415295316,
+      "riser_count": 12,
+      "maximum_actual_bar_step_m": 0.014535214652191542,
+      "authorization": {
+        "allowed": true,
+        "maximum_bar_riser_step_m": 0.016,
+        "maximum_base_fold_step_m": 0.018,
+        "scope": "Only Drain_grate_101 / A05 edge1 anchor(-28,-35.2), measured existing paving boundary; never a numerical seam"
+      }
+    }
+  ],
+  "support_plan_path": "/workspace/scratch/5462bdafe44f/cq05/verification/round8/drain_support_rehearsal.json",
+  "support_plan_sha256": "578a976c03bf78a6d8ad8799a327123904d2fbb6cf560c5e42dc85e8dd7f8210",
+  "glb_unchanged_during_read": true,
+  "failures": [],
+  "limits": [
+    "Actual Blender mesh evaluation and R15 GLB geometry still require the independent full 112-grate checker.",
+    "This adapter uses doubles; it does not claim Blender float32 vertex byte identity."
+  ]
+}

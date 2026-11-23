@@ -1,0 +1,520 @@
+{
+  "status": "Internal iteration only; user has not accepted cinematic quality",
+  "vehicle_build": 9,
+  "recorded_at": "2026-11-20T16:51:18.126746+08:00",
+  "rider_qa": {
+    "captures": [
+      {
+        "camera": "(2.5, 33.53, -75.5)",
+        "name": "mounted_stop",
+        "speed": 0.0,
+        "steer": 0.0,
+        "support": 1.0,
+        "vehicle_position": "(0.0, 32.03, -78.0)"
+      },
+      {
+        "camera": "(5.528876, 33.61663, -75.00005)",
+        "name": "riding_side",
+        "speed": 5.55333333333335,
+        "steer": 0.0,
+        "support": 0.0,
+        "vehicle_position": "(5.528876, 32.21663, -78.00005)"
+      },
+      {
+        "camera": "(10.54186, 33.88795, -77.08157)",
+        "name": "riding_turn",
+        "speed": 6.0,
+        "steer": 0.24,
+        "support": 0.0,
+        "vehicle_position": "(7.771878, 32.28795, -78.2336)"
+      },
+      {
+        "camera": "(8.904453, 33.50064, -81.35171)",
+        "name": "parked_support",
+        "speed": 0.0,
+        "steer": 0.0,
+        "support": 1.0,
+        "vehicle_position": "(8.140574, 32.30064, -78.34064)"
+      },
+      {
+        "camera": "(6.649682, 33.80064, -75.29151)",
+        "name": "exited_parked",
+        "speed": 0.0,
+        "steer": 0.0,
+        "support": 1.0,
+        "vehicle_position": "(8.140574, 32.30064, -78.34064)"
+      }
+    ],
+    "controller_sha256": "883562c0af064d62d582673e25ac70793ae93e409559487d3320cc8e8b35be25",
+    "engine": "4.6.3-stable (official)",
+    "passed": true,
+    "rider_import_sha256": "90f72a70080add563b7c188209866d535787634cf708ed9f1e62ae6d3f2bd242",
+    "rider_sha256": "4d0ace49adf7df87e4d31ea84f55a5779d2cea35a02d2f3ec0fa801dfae71d5a",
+    "scope": "One initial road fixture, actual physics thereafter; captures freeze vehicle physics briefly. No mount/dismount body animation, crowd or full-body continuous collision acceptance.",
+    "tests": [
+      {
+        "name": "unoccupied_scooter_hides_rider",
+        "pass": true
+      },
+      {
+        "name": "enter_shows_rider",
+        "pass": true
+      },
+      {
+        "name": "stationary_left_foot_support",
+        "pass": true
+      },
+      {
+        "ankle_target_error_m": 3.82676034860197e-06,
+        "name": "imported_foot_arc_clears_deck_midpoint",
+        "pass": true
+      },
+      {
+        "distance": 5.53202533721924,
+        "name": "wheels_roll_during_actual_drive",
+        "pass": true
+      },
+      {
+        "name": "feet_on_deck_at_speed",
+        "pass": true
+      },
+      {
+        "name": "straight_grip_contacts",
+        "pass": true,
+        "wrist_target_errors_m": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "rolling_tyre_ground_contact",
+        "pass": true,
+        "rear_front_min_clearance_m": [
+          0.00139236450195313,
+          0.00139236450195313
+        ],
+        "sample": "eight lowest imported rubber vertices per wheel"
+      },
+      {
+        "name": "front_wheel_and_handlebar_steer",
+        "pass": true
+      },
+      {
+        "name": "turn_grip_contacts",
+        "pass": true,
+        "wrist_target_errors_m": [
+          6.10649522059248e-06,
+          1.8517006537877e-05
+        ]
+      },
+      {
+        "name": "steered_tyre_ground_contact",
+        "pass": true,
+        "rear_front_min_clearance_m": [
+          0.00110626220703125,
+          0.00164413452148438
+        ],
+        "sample": "eight lowest imported rubber vertices per wheel"
+      },
+      {
+        "name": "braked_rider_returns_support",
+        "pass": true
+      },
+      {
+        "name": "stopped_wheels_do_not_spin",
+        "pass": true
+      },
+      {
+        "name": "reverse_rider_keeps_deck_pose",
+        "pass": true
+      },
+      {
+        "name": "reverse_grip_contacts",
+        "pass": true,
+        "wrist_target_errors_m": [
+          9.5367431640625e-07,
+          9.5367431640625e-07
+        ]
+      },
+      {
+        "name": "park_with_rider",
+        "pass": true
+      },
+      {
+        "name": "exit_hides_rider",
+        "pass": true
+      },
+      {
+        "displacement": 0.0,
+        "name": "parked_vehicle_stays_after_exit",
+        "pass": true,
+        "trace": [
+          {
+            "actor": "(8.513904, 32.31668, -77.25293)",
+            "collisions": [
+              {
+                "collider": "/root/ChongqingDistrict/City/COL_Road_734116597_0_asphalt/CQ_StaticCollision",
+                "normal": "(-0.03239, 0.999475, -0.000247)"
+              }
+            ],
+            "position": "(8.140574, 32.30064, -78.34064)"
+          },
+          {
+            "actor": "(8.513904, 32.31668, -77.25293)",
+            "collisions": [
+              {
+                "collider": "/root/ChongqingDistrict/City/COL_Road_734116597_0_asphalt/CQ_StaticCollision",
+                "normal": "(-0.03239, 0.999475, -0.000247)"
+              }
+            ],
+            "position": "(8.140574, 32.30064, -78.34064)"
+          },
+          {
+            "actor": "(8.513904, 32.31668, -77.25293)",
+            "collisions": [
+              {
+                "collider": "/root/ChongqingDistrict/City/COL_Road_734116597_0_asphalt/CQ_StaticCollision",
+                "normal": "(-0.03239, 0.999475, -0.000247)"
+              }
+            ],
+            "position": "(8.140574, 32.30064, -78.34064)"
+          },
+          {
+            "actor": "(8.513904, 32.31668, -77.25293)",
+            "collisions": [
+              {
+                "collider": "/root/ChongqingDistrict/City/COL_Road_734116597_0_asphalt/CQ_StaticCollision",
+                "normal": "(-0.03239, 0.999475, -0.000247)"
+              }
+            ],
+            "position": "(8.140574, 32.30064, -78.34064)"
+          }
+        ]
+      },
+      {
+        "name": "exit_restores_actor_collision",
+        "pass": true
+      },
+      {
+        "name": "parked_stand_extended",
+        "pass": true
+      }
+    ],
+    "vehicle_sha256": "6536538dde0cc547e4a4461d1cef58ed7cd3f17620b4ac9eaa2e428bad6cea19",
+    "visual_sha256": "34409b9dab038f8ecdc8c558384969f31237991a6dbbeed1bd0a6231b617744d"
+  },
+  "performance": {
+    "character_import_sha256": "3c19ed22d73c29ae4915222bb58986c88ca78a8aa52a1e02903606f20b7f99f3",
+    "character_sha256": "2c0f3b14354d7c38fcbbff150705b7cb65843a64ea886c847be059a3d1a21b9e",
+    "engine": "4.6.3-stable (official)",
+    "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "note": "R18 one scooter and animated shopkeeper; sixth view also has the visible skinned rider in supported stationary pose with idle/blink processing. Desktop frame intervals, not GPU-only, high-speed driving or crowd benchmark.",
+    "renderer": "forward_plus",
+    "rider_sha256": "4d0ace49adf7df87e4d31ea84f55a5779d2cea35a02d2f3ec0fa801dfae71d5a",
+    "scene_sha256": "88b5be04c0c72ae2b54bb02f55f2186f7b7ec2937389a59697e7306dbd7e7c13",
+    "vehicle_sha256": "6536538dde0cc547e4a4461d1cef58ed7cd3f17620b4ac9eaa2e428bad6cea19",
+    "views": [
+      {
+        "draw_calls": 5696.0,
+        "mean_ms": 11.1422,
+        "p50_ms": 11.128,
+        "p95_ms": 11.653,
+        "primitives": 35959889.0,
+        "samples": 240,
+        "static_memory_bytes": 471503092.0,
+        "view": "street_entry"
+      },
+      {
+        "draw_calls": 2262.0,
+        "mean_ms": 6.3880125,
+        "p50_ms": 6.397,
+        "p95_ms": 6.813,
+        "primitives": 14774103.0,
+        "samples": 240,
+        "static_memory_bytes": 471679244.0,
+        "view": "residential_entry"
+      },
+      {
+        "draw_calls": 4191.0,
+        "mean_ms": 8.61530833333333,
+        "p50_ms": 8.634,
+        "p95_ms": 9.108,
+        "primitives": 23527969.0,
+        "samples": 240,
+        "static_memory_bytes": 471852936.0,
+        "view": "roofscape"
+      },
+      {
+        "draw_calls": 1616.0,
+        "mean_ms": 7.74913333333334,
+        "p50_ms": 7.785,
+        "p95_ms": 8.223,
+        "primitives": 20648515.0,
+        "samples": 240,
+        "static_memory_bytes": 471960660.0,
+        "view": "r18_workstation"
+      },
+      {
+        "draw_calls": 1210.0,
+        "mean_ms": 7.747225,
+        "p50_ms": 7.764,
+        "p95_ms": 8.228,
+        "primitives": 20694539.0,
+        "samples": 240,
+        "static_memory_bytes": 471963512.0,
+        "view": "r18_face"
+      },
+      {
+        "draw_calls": 4387.0,
+        "mean_ms": 13.1276041666667,
+        "p50_ms": 13.092,
+        "p95_ms": 13.778,
+        "primitives": 45193694.0,
+        "samples": 240,
+        "static_memory_bytes": 475821438.0,
+        "view": "r18_rider_active"
+      }
+    ],
+    "vsync": 1,
+    "window_size": "(1920.0, 1080.0)"
+  },
+  "movie": {
+    "camera_side": -1.0,
+    "capture_start_unix": 1795164514.429,
+    "events": [
+      {
+        "frame": 0,
+        "position": "(0.0, 32.25, -78.0)",
+        "speed": 0.0,
+        "steering": 0.0,
+        "support": 1.0
+      },
+      {
+        "enter": true,
+        "frame": 20
+      },
+      {
+        "frame": 30,
+        "position": "(0.0, 32.03, -78.0)",
+        "speed": 0.0,
+        "steering": 0.0,
+        "support": 1.0
+      },
+      {
+        "frame": 60,
+        "position": "(0.0, 32.03, -78.0)",
+        "speed": 0.0,
+        "steering": 0.0,
+        "support": 1.0
+      },
+      {
+        "frame": 90,
+        "position": "(1.412123, 32.08195, -78.00002)",
+        "speed": 2.8,
+        "steering": 0.0,
+        "support": 0.0
+      },
+      {
+        "frame": 120,
+        "position": "(5.622032, 32.21979, -78.00005)",
+        "speed": 5.60000000000001,
+        "steering": 0.0,
+        "support": 0.0
+      },
+      {
+        "frame": 150,
+        "position": "(11.51106, 32.40818, -78.58089)",
+        "speed": 6.0,
+        "steering": 0.192,
+        "support": 0.0
+      },
+      {
+        "frame": 180,
+        "position": "(13.29389, 32.4645, -79.35429)",
+        "speed": 0.0,
+        "steering": 0.0,
+        "support": 0.33
+      },
+      {
+        "frame": 210,
+        "position": "(13.29389, 32.4645, -79.35429)",
+        "speed": 0.0,
+        "steering": 0.0,
+        "support": 1.0
+      },
+      {
+        "frame": 240,
+        "position": "(13.29389, 32.4645, -79.35429)",
+        "speed": 0.0,
+        "steering": 0.0,
+        "support": 1.0
+      },
+      {
+        "frame": 270,
+        "position": "(12.15393, 32.42929, -78.85696)",
+        "speed": -1.8,
+        "steering": 0.0,
+        "support": 0.0
+      },
+      {
+        "frame": 300,
+        "park": true
+      },
+      {
+        "frame": 300,
+        "position": "(12.0013, 32.42369, -78.79059)",
+        "speed": 0.0,
+        "steering": 0.0,
+        "support": 1.0
+      },
+      {
+        "frame": 330,
+        "position": "(12.0013, 32.42369, -78.79059)",
+        "speed": 0.0,
+        "steering": 0.0,
+        "support": 1.0
+      },
+      {
+        "exit": true,
+        "frame": 360
+      },
+      {
+        "frame": 360,
+        "position": "(12.0013, 32.42369, -78.79059)",
+        "speed": 0.0,
+        "steering": 0.0,
+        "support": 1.0
+      },
+      {
+        "frame": 390,
+        "position": "(11.76688, 32.41205, -79.42754)",
+        "speed": 0.0,
+        "steering": 0.0,
+        "support": 1.0
+      }
+    ],
+    "initial_fixture_placements": 1,
+    "rider_import_sha256": "90f72a70080add563b7c188209866d535787634cf708ed9f1e62ae6d3f2bd242",
+    "rider_sha256": "4d0ace49adf7df87e4d31ea84f55a5779d2cea35a02d2f3ec0fa801dfae71d5a",
+    "scripted_inputs": true,
+    "scripts": {
+      "gameplay": "79442a0836350caf61d18f2fbe2aabf691eba9393f7c91a9d890c81c5e77bac1",
+      "qa_rider_motion": "eb7ebe05606e3e9c3e9e64b954ae59b4c2fadcff6796372443e4f55b5d0e804f",
+      "scooter_controller": "883562c0af064d62d582673e25ac70793ae93e409559487d3320cc8e8b35be25",
+      "scooter_visual": "34409b9dab038f8ecdc8c558384969f31237991a6dbbeed1bd0a6231b617744d"
+    },
+    "source": "Godot Movie Maker native render",
+    "vehicle_sha256": "6536538dde0cc547e4a4461d1cef58ed7cd3f17620b4ac9eaa2e428bad6cea19",
+    "resolution": [
+      1280,
+      720
+    ],
+    "fps": 30,
+    "frames": 421,
+    "postprocessing": "No grading or cuts; lossy H264 video-only conversion; Standard display transform. Original engine WAV retained separately if generated.",
+    "source_avi": "r18_rider09_left.avi",
+    "source_avi_sha256": "776219e41fcdc2ce2bba946909c1910e170121a3d156a6699cdde01266ae8b3b",
+    "mp4": "r18_rider09_left.mp4"
+  },
+  "source": {
+    "rider_authoring.blend": "8881ef423468d73167a6153b2a2d01c604b22f848dd1b921fbfd024b2621ebc0",
+    "scooter_articulated.blend": "cf8714b0d4b46b4d5456d27b73778c80b489167aa4d2d287fa0b1177f4944890",
+    "build_report.json": "23fa2c2314af6c6b8c96804a5db374b0573ebef2bf0482e84f9aac8be8ad7d6d",
+    "build_rider_trial.py": "e5e58b529add1b25e2314bb0afb6c441828fbc03cefcef911f74fa6f2909c105",
+    "install_rider_trial.py": "e8ab78fea6f92c6549bb6c0dbbe602afdaaebf86c515d5514ef41be6400d082d",
+    "configure_rider_import.py": "60520ddb2b40973f121ce95a1764525a86e4d42a948c440cd27a99996c9c8aa4",
+    "contact_audit.json": "e7e5c5977b3d1cd340c4cab8e4e833499435da2ce5f0f869a009c62f160b6b78"
+  },
+  "gameplay_tests": 24,
+  "delivery": {
+    "character_import_sha256": "3c19ed22d73c29ae4915222bb58986c88ca78a8aa52a1e02903606f20b7f99f3",
+    "character_sha256": "2c0f3b14354d7c38fcbbff150705b7cb65843a64ea886c847be059a3d1a21b9e",
+    "controller_sha256": "883562c0af064d62d582673e25ac70793ae93e409559487d3320cc8e8b35be25",
+    "engine": "4.6.3-stable (official)",
+    "initial_fixture_placements": 1,
+    "passed": true,
+    "rider_sha256": "4d0ace49adf7df87e4d31ea84f55a5779d2cea35a02d2f3ec0fa801dfae71d5a",
+    "scene_sha256": "88b5be04c0c72ae2b54bb02f55f2186f7b7ec2937389a59697e7306dbd7e7c13",
+    "teleports_between_stages": 0,
+    "tests": [
+      {
+        "distance_m": 0.684526429511607,
+        "end": "(-23.76738, 11.09545, 60.23557)",
+        "goals": 1,
+        "max_frame_displacement_m": 0.0700252279639244,
+        "name": "approach_shop",
+        "pass": true,
+        "reached": 1,
+        "stall_contacts": []
+      },
+      {
+        "name": "accept_order",
+        "pass": true
+      },
+      {
+        "name": "take_food",
+        "pass": true
+      },
+      {
+        "distance_m": 2.34701898135245,
+        "end": "(-21.11898, 11.17263, 60.02581)",
+        "goals": 1,
+        "max_frame_displacement_m": 0.0700821727514267,
+        "name": "walk_to_scooter",
+        "pass": true,
+        "reached": 1,
+        "stall_contacts": []
+      },
+      {
+        "name": "enter_scooter",
+        "pass": true
+      },
+      {
+        "distance_m": 6.16936206817627,
+        "last_obstacle": {},
+        "name": "ride_from_real_shop_forecourt",
+        "pass": true
+      },
+      {
+        "name": "park_at_trip_endpoint",
+        "pass": true
+      },
+      {
+        "name": "exit_at_trip_endpoint",
+        "pass": true
+      },
+      {
+        "distance_m": 76.6395427528769,
+        "end": "(-54.24089, 16.45382, 19.50198)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.316715866327286,
+        "name": "continuous_last_mile_to_house",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      {
+        "name": "deliver_at_residential_door",
+        "pass": true
+      },
+      {
+        "name": "single_delivery_credit",
+        "pass": true
+      }
+    ],
+    "vehicle_sha256": "6536538dde0cc547e4a4461d1cef58ed7cd3f17620b4ac9eaa2e428bad6cea19"
+  },
+  "reviewed_source_frames": [
+    75,
+    180,
+    315
+  ],
+  "limitations": [
+    "No full-body mount/dismount animation",
+    "Static authored shoe contacts; cross-slope foot fitting unfinished",
+    "No exhaustive body self-collision",
+    "Original scooter shell and box still crude",
+    "Player rider is not autonomous NPC simulation",
+    "Current shopkeeper20 retained; no cinematic approval"
+  ]
+}

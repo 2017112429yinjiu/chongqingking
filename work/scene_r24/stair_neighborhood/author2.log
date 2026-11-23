@@ -1,0 +1,13 @@
+Blender 4.3.2 (hash 32f5fdce0a0a built 2024-12-17 03:35:23)
+Read blend: "C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\street_photo_study\city_and_street_use.blend"
+Traceback (most recent call last):
+  File "C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\stair_neighborhood\author.py", line 84, in <module>
+    exec(compile((root/'lamps_and_seats.py').read_text('utf-8'),str(root/'lamps_and_seats.py'),'exec'))
+  File "C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\stair_neighborhood\lamps_and_seats.py", line 40, in <module>
+    for key,color in [('oldwood',(.25,.17,.105)),('darkwood',(.125,.084,.050)),('board',(.38,.26,.13)),('ink',(.08,.053,.033)),('redink',(.31,.066,.026)),('tea',(.19,.123,.056))]:mat(key,color)
+                                                                                                                                                                                   ^^^^^^^^^^^^^^
+TypeError: 'Matrix' object is not callable
+
+Error: script failed, file: 'work/scene_r24/stair_neighborhood/author.py', exiting.
+
+Blender quit

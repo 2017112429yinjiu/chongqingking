@@ -1,0 +1,39 @@
+{
+	"issues": [
+		{
+			"end_reason": "forward_progress",
+			"ended_at_s": 22.38,
+			"goal": "(-39.0, 12.0, 52.0)",
+			"kind": "route_blocked",
+			"obstacle": "/root/ChongqingDistrict/TestOnlyRoadblock",
+			"position": "(-41.61138, 11.92118, 52.10741)",
+			"seconds_without_progress": 3.02,
+			"segment": 0,
+			"stage": "TO_SHOP",
+			"time_s": 22.02
+		}
+	],
+	"legs": {
+		"1/TO_SHOP": {
+			"arrived": false,
+			"max_kmh": 9.86400000000001,
+			"moving_s": 8.28333333333332,
+			"travel_m": 8.72990667668637,
+			"waiting_s": 10.3333333333334,
+			"waypoints": [
+				{
+					"position": "(-49.99934, 11.76194, 52.00065)",
+					"segment": 0,
+					"stage": "TO_SHOP",
+					"time_s": 3.78
+				}
+			]
+		}
+	},
+	"max_frame_displacement_m": 0.045931052416563,
+	"rules": {
+		"airborne_seconds": 0.45,
+		"minimum_progress_m": 0.2,
+		"stalled_seconds": 3.0
+	}
+}

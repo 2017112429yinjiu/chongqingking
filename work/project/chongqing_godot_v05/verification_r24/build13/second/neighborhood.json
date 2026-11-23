@@ -1,0 +1,860 @@
+{
+  "footways": {
+    "central_stairs": {
+      "fail": [],
+      "samples": 214
+    },
+    "market_apron": {
+      "fail": [],
+      "samples": 176
+    },
+    "promenade": {
+      "fail": [
+        [
+          0.42,
+          -0.38,
+          "COL_Walk_OSM_734116598_0_pavement"
+        ],
+        [
+          0.84,
+          -0.38,
+          "COL_Walk_OSM_734116598_0_pavement"
+        ],
+        [
+          1.26,
+          -0.38,
+          "COL_Walk_OSM_734116598_0_pavement"
+        ],
+        [
+          1.68,
+          -0.38,
+          "COL_Walk_OSM_734116598_0_pavement"
+        ],
+        [
+          2.1,
+          -0.38,
+          "COL_Walk_OSM_734116598_0_pavement"
+        ],
+        [
+          2.52,
+          -0.38,
+          "COL_Walk_OSM_734116598_0_pavement"
+        ],
+        [
+          2.94,
+          -0.38,
+          "COL_Walk_OSM_734116598_0_pavement"
+        ],
+        [
+          3.36,
+          -0.38,
+          "COL_Walk_OSM_734116598_0_pavement"
+        ],
+        [
+          3.78,
+          -0.38,
+          "COL_Walk_OSM_734116598_0_pavement"
+        ],
+        [
+          4.2,
+          -0.38,
+          "COL_Walk_OSM_734116598_0_pavement"
+        ],
+        [
+          4.62,
+          -0.38,
+          "COL_Walk_OSM_734116598_0_pavement"
+        ],
+        [
+          5.04,
+          -0.38,
+          "COL_Walk_OSM_734116598_0_pavement"
+        ],
+        [
+          5.46,
+          -0.38,
+          "COL_Walk_OSM_734116598_0_pavement"
+        ]
+      ],
+      "samples": 440
+    },
+    "walk": {
+      "fail": [
+        [
+          80.22,
+          0.38,
+          "COL_Walk_Central_stair_lane_step_concrete"
+        ],
+        [
+          80.64,
+          0.38,
+          "COL_Walk_Central_stair_lane_step_concrete"
+        ],
+        [
+          81.06,
+          0.38,
+          "COL_Walk_Central_stair_lane_step_concrete"
+        ],
+        [
+          81.48,
+          0.38,
+          "COL_Walk_Central_stair_lane_step_concrete"
+        ],
+        [
+          81.9,
+          0.38,
+          "COL_Walk_Central_stair_lane_step_concrete"
+        ],
+        [
+          82.32,
+          0.38,
+          "COL_Walk_Central_stair_lane_step_concrete"
+        ],
+        [
+          82.74,
+          0.38,
+          "COL_Walk_Central_stair_lane_step_concrete"
+        ],
+        [
+          83.16,
+          0.38,
+          "COL_Walk_Central_stair_lane_step_concrete"
+        ],
+        [
+          83.58,
+          0.38,
+          "COL_Walk_Central_stair_lane_step_concrete"
+        ],
+        [
+          84.0,
+          0.38,
+          "COL_Walk_Central_stair_lane_step_concrete"
+        ],
+        [
+          84.42,
+          0.38,
+          "COL_Walk_Central_stair_lane_step_concrete"
+        ],
+        [
+          84.84,
+          0.38,
+          "COL_Walk_Central_stair_lane_step_concrete"
+        ]
+      ],
+      "samples": 404
+    },
+    "west_stairs": {
+      "fail": [],
+      "samples": 222
+    }
+  },
+  "mounts": [
+    {
+      "error": 0.0,
+      "hit": "COL_B_A03_blue_apartments_tile_blue",
+      "source": "COL_B_A03_blue_apartments_tile_blue",
+      "span": "N13_ServiceSpan_00"
+    },
+    {
+      "error": 0.0,
+      "hit": "COL_B_A04_courtyard_home_plaster_grey",
+      "source": "COL_B_A04_courtyard_home_plaster_grey",
+      "span": "N13_ServiceSpan_00"
+    },
+    {
+      "error": 0.0,
+      "hit": "COL_B_A01_noodle_plaster_ochre",
+      "source": "COL_B_A01_noodle_plaster_ochre",
+      "span": "N13_ServiceSpan_01"
+    },
+    {
+      "error": 0.0,
+      "hit": "COL_B_A05_market_tile_cream",
+      "source": "COL_B_A05_market_tile_cream",
+      "span": "N13_ServiceSpan_01"
+    },
+    {
+      "error": 0.000329414062434807,
+      "hit": "COL_B_1335306665_civic_plaster_ochre",
+      "source": "COL_B_1335306665_civic_plaster_ochre",
+      "span": "N13_ServiceSpan_02"
+    },
+    {
+      "error": 0.000746965408325195,
+      "hit": "COL_B_809889629_artisan_brick",
+      "source": "COL_B_809889629_artisan_brick",
+      "span": "N13_ServiceSpan_02"
+    },
+    {
+      "error": 0.0,
+      "hit": "COL_B_A05_market_tile_cream",
+      "source": "COL_B_A05_market_tile_cream",
+      "span": "N13_ServiceSpan_03"
+    },
+    {
+      "error": 0.0,
+      "hit": "COL_B_A05_market_plaster_grey",
+      "source": "COL_B_A05_market_plaster_grey",
+      "span": "N13_ServiceSpan_03"
+    }
+  ],
+  "passed": false,
+  "pedestrians": {
+    "moving_6s": 19,
+    "total": 19,
+    "visible_in_35m": {
+      "r23_main_road": 7,
+      "r24_center_seam": 2,
+      "r24_lane_life": 2,
+      "r24_west_life": 1
+    }
+  },
+  "prop_contacts": [
+    {
+      "group": "Bins_000",
+      "max_m": 0.0120248794555664,
+      "miss": 0,
+      "points": 20,
+      "unexpected": []
+    },
+    {
+      "group": "Bins_001",
+      "max_m": 0.0316457748413086,
+      "miss": 0,
+      "points": 18,
+      "unexpected": []
+    },
+    {
+      "group": "Bins_002",
+      "max_m": 0.0115299224853516,
+      "miss": 0,
+      "points": 18,
+      "unexpected": []
+    },
+    {
+      "group": "Bins_003",
+      "max_m": 0.0101871490478516,
+      "miss": 0,
+      "points": 17,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_0_bin",
+      "max_m": 0.015411376953125,
+      "miss": 0,
+      "points": 25,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_0_bagA",
+      "max_m": 0.0143661499023438,
+      "miss": 0,
+      "points": 26,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_0_bagB",
+      "max_m": 0.00753402709960938,
+      "miss": 0,
+      "points": 19,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_0_crate",
+      "max_m": 0.00901412963867188,
+      "miss": 0,
+      "points": 26,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_1_bin",
+      "max_m": 0.0152130126953125,
+      "miss": 0,
+      "points": 26,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_1_bagA",
+      "max_m": 0.0221748352050781,
+      "miss": 0,
+      "points": 28,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_1_bagB",
+      "max_m": 0.00756645202636719,
+      "miss": 0,
+      "points": 18,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_1_crate",
+      "max_m": 0.00760841369628906,
+      "miss": 0,
+      "points": 24,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_3_bin",
+      "max_m": 0.0188121795654297,
+      "miss": 0,
+      "points": 28,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_3_bagA",
+      "max_m": 0.0202178955078125,
+      "miss": 0,
+      "points": 28,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_3_bagB",
+      "max_m": 0.00714111328125,
+      "miss": 0,
+      "points": 19,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_3_crate",
+      "max_m": 0.0939235687255859,
+      "miss": 0,
+      "points": 26,
+      "unexpected": [
+        [
+          [
+            0.855275511741638,
+            17.9067611694336,
+            16.0150966644287
+          ],
+          "CQ_StaticCollision",
+          "COL_Resident_court_boundary_0_brick_dark",
+          0.0939235687255859
+        ],
+        [
+          [
+            0.882367491722107,
+            17.924186706543,
+            15.9544486999512
+          ],
+          "CQ_StaticCollision",
+          "COL_Resident_court_boundary_0_brick_dark",
+          0.0749130249023438
+        ]
+      ]
+    },
+    {
+      "group": "Resident_waste_4_bin",
+      "max_m": 0.0172233581542969,
+      "miss": 0,
+      "points": 28,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_4_bagA",
+      "max_m": 0.0187129974365234,
+      "miss": 0,
+      "points": 27,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_4_bagB",
+      "max_m": 0.0213527679443359,
+      "miss": 0,
+      "points": 19,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_4_crate",
+      "max_m": 0.0317897796630859,
+      "miss": 0,
+      "points": 28,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_5_bin",
+      "max_m": 0.0188941955566406,
+      "miss": 0,
+      "points": 28,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_5_bagA",
+      "max_m": 0.0144100189208984,
+      "miss": 0,
+      "points": 26,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_5_bagB",
+      "max_m": 0.00861167907714844,
+      "miss": 0,
+      "points": 20,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_5_crate",
+      "max_m": 0.0088348388671875,
+      "miss": 0,
+      "points": 25,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_7_bin",
+      "max_m": 0.0183334350585938,
+      "miss": 0,
+      "points": 33,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_7_bagA",
+      "max_m": 0.0085601806640625,
+      "miss": 0,
+      "points": 26,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_7_bagB",
+      "max_m": 0.0185127258300781,
+      "miss": 0,
+      "points": 18,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_7_crate",
+      "max_m": 0.00796890258789063,
+      "miss": 0,
+      "points": 26,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_8_bin",
+      "max_m": 0.0315361022949219,
+      "miss": 0,
+      "points": 29,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_8_bagA",
+      "max_m": 0.019287109375,
+      "miss": 0,
+      "points": 28,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_8_bagB",
+      "max_m": 0.00902175903320313,
+      "miss": 0,
+      "points": 18,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_8_crate",
+      "max_m": 0.00938796997070313,
+      "miss": 0,
+      "points": 25,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_9_bin",
+      "max_m": 0.0177650451660156,
+      "miss": 0,
+      "points": 30,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_9_bagA",
+      "max_m": 0.0184268951416016,
+      "miss": 0,
+      "points": 24,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_9_bagB",
+      "max_m": 0.00885391235351563,
+      "miss": 0,
+      "points": 18,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_9_crate",
+      "max_m": 0.00811386108398438,
+      "miss": 0,
+      "points": 27,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_10_bin",
+      "max_m": 0.0193901062011719,
+      "miss": 0,
+      "points": 29,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_10_bagA",
+      "max_m": 0.0161457061767578,
+      "miss": 0,
+      "points": 28,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_10_bagB",
+      "max_m": 0.0148162841796875,
+      "miss": 0,
+      "points": 20,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_10_crate",
+      "max_m": 0.00941848754882813,
+      "miss": 0,
+      "points": 24,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_11_bin",
+      "max_m": 0.0196189880371094,
+      "miss": 0,
+      "points": 30,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_11_bagA",
+      "max_m": 0.009979248046875,
+      "miss": 0,
+      "points": 26,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_11_bagB",
+      "max_m": 0.00749588012695313,
+      "miss": 0,
+      "points": 19,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_11_crate",
+      "max_m": 0.00867080688476563,
+      "miss": 0,
+      "points": 29,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_12_bin",
+      "max_m": 0.0154819488525391,
+      "miss": 0,
+      "points": 28,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_12_bagA",
+      "max_m": 0.0147495269775391,
+      "miss": 0,
+      "points": 25,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_12_bagB",
+      "max_m": 0.00691795349121094,
+      "miss": 0,
+      "points": 18,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_12_crate",
+      "max_m": 0.00942611694335938,
+      "miss": 0,
+      "points": 26,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_15_bin",
+      "max_m": 0.0196189880371094,
+      "miss": 0,
+      "points": 29,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_15_bagA",
+      "max_m": 0.00822162628173828,
+      "miss": 0,
+      "points": 27,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_15_bagB",
+      "max_m": 0.0168914794921875,
+      "miss": 0,
+      "points": 19,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_15_crate",
+      "max_m": 0.00811958312988281,
+      "miss": 0,
+      "points": 24,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_16_bin",
+      "max_m": 0.0189132690429688,
+      "miss": 0,
+      "points": 33,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_16_bagA",
+      "max_m": 0.0122032165527344,
+      "miss": 0,
+      "points": 27,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_16_bagB",
+      "max_m": 0.0192642211914063,
+      "miss": 0,
+      "points": 20,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_16_crate",
+      "max_m": 0.0101737976074219,
+      "miss": 0,
+      "points": 25,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_17_bin",
+      "max_m": 0.0154438018798828,
+      "miss": 0,
+      "points": 27,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_17_bagA",
+      "max_m": 0.0145416259765625,
+      "miss": 0,
+      "points": 27,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_17_bagB",
+      "max_m": 0.014556884765625,
+      "miss": 0,
+      "points": 17,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_17_crate",
+      "max_m": 0.00796890258789063,
+      "miss": 0,
+      "points": 24,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_18_bin",
+      "max_m": 0.0160551071166992,
+      "miss": 0,
+      "points": 30,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_18_bagA",
+      "max_m": 0.00954055786132813,
+      "miss": 0,
+      "points": 27,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_18_bagB",
+      "max_m": 0.0199966430664063,
+      "miss": 0,
+      "points": 19,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_18_crate",
+      "max_m": 0.00841426849365234,
+      "miss": 0,
+      "points": 25,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_19_bin",
+      "max_m": 0.0147371292114258,
+      "miss": 0,
+      "points": 27,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_19_bagA",
+      "max_m": 0.015101432800293,
+      "miss": 0,
+      "points": 28,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_19_bagB",
+      "max_m": 0.0179529190063477,
+      "miss": 0,
+      "points": 19,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_19_crate",
+      "max_m": 0.00818252563476563,
+      "miss": 0,
+      "points": 28,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_20_bin",
+      "max_m": 0.0065460205078125,
+      "miss": 0,
+      "points": 24,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_20_bagA",
+      "max_m": 0.0124740600585938,
+      "miss": 0,
+      "points": 27,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_20_bagB",
+      "max_m": 0.0148429870605469,
+      "miss": 0,
+      "points": 19,
+      "unexpected": []
+    },
+    {
+      "group": "Resident_waste_20_crate",
+      "max_m": 0.008514404296875,
+      "miss": 0,
+      "points": 26,
+      "unexpected": []
+    },
+    {
+      "group": "R19_Service_Resident_waste_14_crate",
+      "max_m": 0.0089874267578125,
+      "miss": 0,
+      "points": 27,
+      "unexpected": []
+    },
+    {
+      "group": "R19_Service_Resident_waste_14_bin",
+      "max_m": 0.0145998001098633,
+      "miss": 0,
+      "points": 27,
+      "unexpected": []
+    },
+    {
+      "group": "R19_Service_Resident_waste_14_bagB",
+      "max_m": 0.0179014205932617,
+      "miss": 0,
+      "points": 21,
+      "unexpected": []
+    },
+    {
+      "group": "R19_Service_Resident_waste_14_bagA",
+      "max_m": 0.0226154327392578,
+      "miss": 0,
+      "points": 29,
+      "unexpected": []
+    },
+    {
+      "group": "Lamp_000",
+      "max_m": 0.000400543212890625,
+      "miss": 0,
+      "points": 1,
+      "unexpected": []
+    },
+    {
+      "group": "Lamp_003",
+      "max_m": 0.000260353088378906,
+      "miss": 0,
+      "points": 1,
+      "unexpected": []
+    },
+    {
+      "group": "Lamp_004",
+      "max_m": 0.0000963211059570313,
+      "miss": 0,
+      "points": 1,
+      "unexpected": []
+    },
+    {
+      "group": "Lamp_005",
+      "max_m": 0.000403404235839844,
+      "miss": 0,
+      "points": 1,
+      "unexpected": []
+    },
+    {
+      "group": "Lamp_006",
+      "max_m": 0.000279426574707031,
+      "miss": 0,
+      "points": 1,
+      "unexpected": []
+    },
+    {
+      "group": "Lamp_007",
+      "max_m": 0.000288009643554688,
+      "miss": 0,
+      "points": 1,
+      "unexpected": []
+    },
+    {
+      "group": "Lamp_008",
+      "max_m": 0.000240325927734375,
+      "miss": 0,
+      "points": 1,
+      "unexpected": []
+    },
+    {
+      "group": "Lamp_009",
+      "max_m": 0.000041961669921875,
+      "miss": 0,
+      "points": 1,
+      "unexpected": []
+    },
+    {
+      "group": "Lamp_010",
+      "max_m": 0.00006103515625,
+      "miss": 0,
+      "points": 1,
+      "unexpected": []
+    },
+    {
+      "group": "Lamp_011",
+      "max_m": 0.00002288818359375,
+      "miss": 0,
+      "points": 1,
+      "unexpected": []
+    },
+    {
+      "group": "Lamp_013",
+      "max_m": 0.000026702880859375,
+      "miss": 0,
+      "points": 1,
+      "unexpected": []
+    }
+  ],
+  "retired_remaining": [],
+  "sealed_edges": {
+    "at_reported_corner": 11,
+    "hits": 32,
+    "misses": [
+      [
+        [
+          -2.25913190841675,
+          11.8918647766113,
+          55.587215423584
+        ],
+        "COL_R23_PathFoundations"
+      ]
+    ],
+    "tested": 33
+  }
+}

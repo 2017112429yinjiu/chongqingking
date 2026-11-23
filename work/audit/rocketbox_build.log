@@ -1,0 +1,14 @@
+Info: Packed 8 file(s)
+Info: Saved "candidate_authoring.blend"
+INFO Draco mesh compression is available, use library at C:\Users\尹久\Documents\重庆外卖王\work\tools\blender-4.3.2-windows-x64\4.3\python\lib\site-packages\extern_draco.dll
+15:17:03 | INFO: Starting glTF 2.0 export
+15:17:03 | INFO: Extracting primitive: Mesh
+15:17:05 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:17:05 | INFO: Primitives created: 3
+15:17:06 | INFO: Finished glTF 2.0 export in 2.3575174808502197 s
+
+CANDIDATE_CONVERTED {'status': 'Isolated comparison only; not production', 'source': 'Microsoft Rocketbox Male_Adult_10 facial', 'license': 'MIT', 'changes': ['Relink source TGA paths', 'Opaque body/head, original card alpha', 'Legacy specular texture disconnected for explicit dielectric specular', 'Source normal maps kept; tangent convention still needs visual review', 'Normalize height to 1.71 m'], 'baseline_sha256': '2c0f3b14354d7c38fcbbff150705b7cb65843a64ea886c847be059a3d1a21b9e', 'candidate_sha256': 'a789b529573f090944683c28c26bb6e4f41d4d0263925838e198ab0f01da7395', 'source_vertices': 3495, 'blendshapes': 175, 'packed_images': 8}
+Blender 4.3.2 (hash 32f5fdce0a0a built 2024-12-17 03:35:23)
+Read blend: "C:\Users\尹久\Documents\重庆外卖王\work\characters\rocketbox_candidate10\raw_import.blend"
+
+Blender quit

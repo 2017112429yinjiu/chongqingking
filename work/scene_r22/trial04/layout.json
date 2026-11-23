@@ -1,0 +1,421 @@
+{
+  "terrain": {
+    "Outer_ground_context_ground_dirt": {
+      "replacement": "R22_Bank_Outer",
+      "triangles": 40728,
+      "vertices": 21360
+    },
+    "R19_Distant_relief_distant19": {
+      "replacement": "R22_Bank_Relief",
+      "triangles": 111295,
+      "vertices": 55912
+    }
+  },
+  "axes": [
+    {
+      "osm_id": "49182292",
+      "north": [
+        -553.9630126953125,
+        14.5493408203125,
+        63.15700149536133
+      ],
+      "south": [
+        -429.7090148925781,
+        62.946038818359376,
+        1146.448974609375
+      ],
+      "length": 1090.3946788498477,
+      "deck_crown_m": 2.1,
+      "game_terrain_at_ends": [
+        13.23779296875,
+        55.057220458984375
+      ]
+    },
+    {
+      "osm_id": "49182296",
+      "north": [
+        -532.3790283203125,
+        9.3945556640625,
+        59.5890007019043
+      ],
+      "south": [
+        -406.9989929199219,
+        63.22640380859375,
+        1143.323974609375
+      ],
+      "length": 1090.9636351961108,
+      "deck_crown_m": 2.1,
+      "game_terrain_at_ends": [
+        8.2945556640625,
+        55.56524658203125
+      ]
+    }
+  ],
+  "mapped_buildings": [
+    {
+      "osm_id": "704006804",
+      "levels": 1,
+      "height": 3.05,
+      "base": 71.18850952148438,
+      "tagged_vertical": true
+    },
+    {
+      "osm_id": "704006805",
+      "levels": 11,
+      "height": 33.55,
+      "base": 73.90814453125,
+      "tagged_vertical": true
+    },
+    {
+      "osm_id": "1348500536",
+      "levels": 7,
+      "height": 21.349999999999998,
+      "base": 11.22845703125,
+      "tagged_vertical": false
+    },
+    {
+      "osm_id": "1348500537",
+      "levels": 4,
+      "height": 12.2,
+      "base": 12.408388671875,
+      "tagged_vertical": false
+    },
+    {
+      "osm_id": "1348500538",
+      "levels": 5,
+      "height": 15.25,
+      "base": 12.63476806640625,
+      "tagged_vertical": false
+    },
+    {
+      "osm_id": "1348500539",
+      "levels": 4,
+      "height": 12.2,
+      "base": 14.29883056640625,
+      "tagged_vertical": false
+    },
+    {
+      "osm_id": "1348500543",
+      "levels": 3,
+      "height": 9.149999999999999,
+      "base": 4.43109375,
+      "tagged_vertical": false
+    },
+    {
+      "osm_id": "302764528",
+      "levels": 17,
+      "height": 51.849999999999994,
+      "base": 60.6968408203125,
+      "tagged_vertical": false
+    },
+    {
+      "osm_id": "871948703",
+      "levels": 14,
+      "height": 42.699999999999996,
+      "base": 110.13379150390625,
+      "tagged_vertical": false
+    },
+    {
+      "osm_id": "871948704",
+      "levels": 17,
+      "height": 51.849999999999994,
+      "base": 128.26,
+      "tagged_vertical": false
+    },
+    {
+      "osm_id": "871948705",
+      "levels": 16,
+      "height": 48.8,
+      "base": 128.26,
+      "tagged_vertical": false
+    },
+    {
+      "osm_id": "871948706",
+      "levels": 5,
+      "height": 15.25,
+      "base": 128.26,
+      "tagged_vertical": false
+    },
+    {
+      "osm_id": "871948707",
+      "levels": 13,
+      "height": 39.65,
+      "base": 128.26,
+      "tagged_vertical": false
+    },
+    {
+      "osm_id": "871948708",
+      "levels": 9,
+      "height": 27.45,
+      "base": 128.26,
+      "tagged_vertical": false
+    }
+  ],
+  "vehicles": [
+    {
+      "node": "R22_TransitActor_A",
+      "axis": 0,
+      "reverse": false,
+      "phase": 0.2,
+      "speed_m_s": 9.8,
+      "kind": "bus"
+    },
+    {
+      "node": "R22_TransitActor_B",
+      "axis": 1,
+      "reverse": true,
+      "phase": 0.55,
+      "speed_m_s": 11.3,
+      "kind": "van"
+    },
+    {
+      "node": "R22_TransitActor_C",
+      "axis": 0,
+      "reverse": false,
+      "phase": 0.82,
+      "speed_m_s": 13.3,
+      "kind": "car"
+    },
+    {
+      "node": "R22_TransitActor_D",
+      "axis": 1,
+      "reverse": true,
+      "phase": 0.32,
+      "speed_m_s": 10.2,
+      "kind": "bus"
+    },
+    {
+      "node": "R22_TransitActor_E",
+      "axis": 0,
+      "reverse": false,
+      "phase": 0.62,
+      "speed_m_s": 12.5,
+      "kind": "car"
+    },
+    {
+      "node": "R22_TransitActor_F",
+      "axis": 1,
+      "reverse": true,
+      "phase": 0.92,
+      "speed_m_s": 11.0,
+      "kind": "van"
+    }
+  ],
+  "river_level_m": -16.0,
+  "river_trees": 5420,
+  "scan_atlas_sha256": "52c1708c2f236cef1108bc673a85c9e0376e3d524c8d9a57e9f1d463628e9074",
+  "street_sightlines": [
+    {
+      "eye": [
+        -45.0,
+        11.580072402954102,
+        66.0
+      ],
+      "support": "COL_Terrain_200m_yard_concrete",
+      "clear_samples": 3
+    },
+    {
+      "eye": [
+        -54.0,
+        11.387395858764648,
+        66.0
+      ],
+      "support": "COL_Terrain_200m_pavement",
+      "clear_samples": 3
+    },
+    {
+      "eye": [
+        -39.0,
+        11.685781478881836,
+        66.0
+      ],
+      "support": "COL_Terrain_200m_yard_concrete",
+      "clear_samples": 2
+    },
+    {
+      "eye": [
+        -54.0,
+        10.687189102172852,
+        71.0
+      ],
+      "support": "COL_Terrain_200m_yard_concrete",
+      "clear_samples": 2
+    },
+    {
+      "eye": [
+        -63.0,
+        11.152692794799805,
+        66.0
+      ],
+      "support": "COL_Terrain_200m_yard_concrete",
+      "clear_samples": 2
+    },
+    {
+      "eye": [
+        -34.0,
+        11.066896438598633,
+        71.0
+      ],
+      "support": "COL_Terrain_200m_pavement",
+      "clear_samples": 1
+    },
+    {
+      "eye": [
+        -34.0,
+        11.772008895874023,
+        66.0
+      ],
+      "support": "COL_Terrain_200m_pavement",
+      "clear_samples": 1
+    },
+    {
+      "eye": [
+        -54.0,
+        9.837034225463867,
+        77.0
+      ],
+      "support": "COL_Terrain_200m_pavement",
+      "clear_samples": 1
+    },
+    {
+      "eye": [
+        -45.0,
+        9.245046615600586,
+        83.0
+      ],
+      "support": "COL_Road_49182408_0_asphalt",
+      "clear_samples": 0
+    },
+    {
+      "eye": [
+        -45.0,
+        10.181768417358398,
+        77.0
+      ],
+      "support": "COL_Terrain_200m_pavement",
+      "clear_samples": 0
+    },
+    {
+      "eye": [
+        -45.0,
+        10.878122329711914,
+        71.0
+      ],
+      "support": "COL_Terrain_200m_yard_concrete",
+      "clear_samples": 0
+    },
+    {
+      "eye": [
+        -39.0,
+        9.259344100952148,
+        83.0
+      ],
+      "support": "COL_Road_49182408_0_asphalt",
+      "clear_samples": 0
+    },
+    {
+      "eye": [
+        -39.0,
+        10.478769302368164,
+        77.0
+      ],
+      "support": "COL_Walk_OSM_734116598_0_pavement",
+      "clear_samples": 0
+    },
+    {
+      "eye": [
+        -39.0,
+        10.999429702758789,
+        71.0
+      ],
+      "support": "COL_Terrain_200m_yard_concrete",
+      "clear_samples": 0
+    },
+    {
+      "eye": [
+        -34.0,
+        9.256868362426758,
+        83.0
+      ],
+      "support": "COL_Road_49182408_0_asphalt",
+      "clear_samples": 0
+    },
+    {
+      "eye": [
+        -34.0,
+        10.490606307983398,
+        77.0
+      ],
+      "support": "COL_Walk_OSM_734116598_0_pavement",
+      "clear_samples": 0
+    },
+    {
+      "eye": [
+        -54.0,
+        9.197126388549805,
+        83.0
+      ],
+      "support": "COL_Road_49182408_0_asphalt",
+      "clear_samples": 0
+    },
+    {
+      "eye": [
+        -63.0,
+        9.235795974731445,
+        83.0
+      ],
+      "support": "COL_Road_49182408_0_asphalt",
+      "clear_samples": 0
+    },
+    {
+      "eye": [
+        -63.0,
+        9.543210983276367,
+        77.0
+      ],
+      "support": "COL_Terrain_200m_yard_concrete",
+      "clear_samples": 0
+    },
+    {
+      "eye": [
+        -63.0,
+        10.401479721069336,
+        71.0
+      ],
+      "support": "COL_Terrain_200m_yard_concrete",
+      "clear_samples": 0
+    },
+    {
+      "eye": [
+        -74.0,
+        8.214406967163086,
+        83.0
+      ],
+      "support": "COL_Road_1189963598_0_asphalt",
+      "clear_samples": 0
+    },
+    {
+      "eye": [
+        -74.0,
+        9.232011795043945,
+        77.0
+      ],
+      "support": "COL_Road_49182408_0_asphalt",
+      "clear_samples": 0
+    },
+    {
+      "eye": [
+        -74.0,
+        10.265348434448242,
+        71.0
+      ],
+      "support": "COL_Walk_OSM_734116598_0_pavement",
+      "clear_samples": 0
+    }
+  ],
+  "source_plan_sha256": "bbae7145d99a6dba9f3d46c13ac8a89fcf2b617c923537b34a2aa9dea3f62932",
+  "model_sha256": "fd74fb0bcb7b6c5db47a95ef68388f8e3bfe6e0f7d6cc03ad74fe384724feb48",
+  "source_sha256": "e3bd9c572da2be3fa8584678abb10fa02d032bc314f37c4d65b5ca24f6100968",
+  "city_sha256": "bcf48d292bef75563b3e0093a00463509308d307ca0d0a658d1d633cf68202d6",
+  "scope": "Non-playable background. Mapped plan, art-directed elevations, traffic and generalised construction."
+}

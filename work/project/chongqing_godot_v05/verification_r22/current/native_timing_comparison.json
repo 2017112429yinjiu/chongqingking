@@ -1,0 +1,59 @@
+{
+  "device": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "gpu_p95_ms": {
+    "central_steps": {
+      "perf_reference": 50.4770011901855,
+      "current": 19.9209995269775,
+      "native_repeat_current": 180.14599609375,
+      "native_repeat_base": 19.8239994049072,
+      "native_checked_current": 175.869003295898,
+      "native_aa_trial": 17.2140007019043
+    },
+    "roofscape": {
+      "perf_reference": 54.1100006103516,
+      "current": 17.5270004272461,
+      "native_repeat_current": 180.830001831055,
+      "native_repeat_base": 16.7299995422363,
+      "native_checked_current": 156.485000610352,
+      "native_aa_trial": 14.7980003356934
+    },
+    "r22_breakfast": {
+      "perf_reference": 42.3359985351563,
+      "current": 10.7659997940063,
+      "native_repeat_current": 92.3050003051758,
+      "native_repeat_base": 9.16499996185303,
+      "native_checked_current": 126.721000671387,
+      "native_aa_trial": 8.27799987792969
+    },
+    "r22_river_street": {
+      "perf_reference": 31.2210006713867,
+      "current": 5.14099979400635,
+      "native_repeat_current": 5.32800006866455,
+      "native_repeat_base": 3.97099995613098,
+      "native_checked_current": 104.712997436523,
+      "native_aa_trial": 3.83200001716614
+    },
+    "r22_river_overview": {
+      "perf_reference": 29.378999710083,
+      "current": 3.50799989700317,
+      "native_repeat_current": 4.18599987030029,
+      "native_repeat_base": 2.67400002479553,
+      "native_checked_current": 123.610000610352,
+      "native_aa_trial": 2.57500004768372
+    }
+  },
+  "framebuffer": [
+    1920,
+    1080
+  ],
+  "samples_per_view_per_launch": 240,
+  "run_order": [
+    "perf_reference",
+    "current",
+    "native_repeat_current",
+    "native_repeat_base",
+    "native_checked_current",
+    "native_aa_trial"
+  ],
+  "scope": "Independent application launches, same fixed camera, root 3D disabled. Windows desktop GPU load and memory vary between launches. Alternate AA is diagnostic only."
+}

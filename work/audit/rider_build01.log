@@ -1,0 +1,74 @@
+Info: Saved "scooter_articulated.blend"
+INFO Draco mesh compression is available, use library at C:\Users\尹久\Documents\重庆外卖王\work\tools\blender-4.3.2-windows-x64\4.3\python\lib\site-packages\extern_draco.dll
+15:34:24 | INFO: Starting glTF 2.0 export
+15:34:24 | INFO: Extracting primitive: Scooter_Body_black_metal
+15:34:24 | INFO: Primitives created: 1
+15:34:24 | INFO: Extracting primitive: Scooter_Body_cream
+15:34:24 | INFO: Primitives created: 1
+15:34:24 | INFO: Extracting primitive: Scooter_Body_paint_teal
+15:34:24 | INFO: Primitives created: 1
+15:34:24 | INFO: Extracting primitive: Scooter_Body_plastic_orange
+15:34:24 | INFO: Primitives created: 1
+15:34:24 | INFO: Extracting primitive: Scooter_Body_rubber
+15:34:24 | INFO: Primitives created: 1
+15:34:24 | INFO: Extracting primitive: Scooter_Body_rubber_worn
+15:34:24 | INFO: Primitives created: 1
+15:34:24 | INFO: Extracting primitive: Scooter_Body_seat
+15:34:24 | INFO: Primitives created: 1
+15:34:24 | INFO: Extracting primitive: Scooter_Body_steel
+15:34:24 | INFO: Primitives created: 1
+15:34:24 | INFO: Extracting primitive: Scooter_Body_tail_lamp
+15:34:24 | INFO: Primitives created: 1
+15:34:24 | INFO: Extracting primitive: Scooter_Kickstand_black_metal
+15:34:24 | INFO: Primitives created: 1
+15:34:24 | INFO: Extracting primitive: Scooter_FrontFork_paint_teal
+15:34:24 | INFO: Primitives created: 1
+15:34:24 | INFO: Extracting primitive: Scooter_FrontFork_steel
+15:34:24 | INFO: Primitives created: 1
+15:34:24 | INFO: Extracting primitive: Scooter_Handlebar_black_metal
+15:34:24 | INFO: Primitives created: 1
+15:34:24 | INFO: Extracting primitive: Scooter_Handlebar_lamp
+15:34:24 | INFO: Primitives created: 1
+15:34:24 | INFO: Extracting primitive: Scooter_Handlebar_mirror
+15:34:24 | INFO: Primitives created: 1
+15:34:24 | INFO: Extracting primitive: Scooter_Handlebar_paint_teal
+15:34:24 | INFO: Primitives created: 1
+15:34:24 | INFO: Extracting primitive: Scooter_Handlebar_rubber
+15:34:24 | INFO: Primitives created: 1
+15:34:24 | INFO: Extracting primitive: Scooter_Handlebar_steel
+15:34:24 | INFO: Primitives created: 1
+15:34:24 | INFO: Extracting primitive: Scooter_WheelFront_black_metal
+15:34:24 | INFO: Primitives created: 1
+15:34:24 | INFO: Extracting primitive: Scooter_WheelFront_rubber
+15:34:24 | INFO: Primitives created: 1
+15:34:24 | INFO: Extracting primitive: Scooter_WheelFront_rubber_worn
+15:34:24 | INFO: Primitives created: 1
+15:34:24 | INFO: Extracting primitive: Scooter_WheelFront_steel
+15:34:24 | INFO: Primitives created: 1
+15:34:24 | INFO: Extracting primitive: Scooter_WheelRear_black_metal
+15:34:24 | INFO: Primitives created: 1
+15:34:24 | INFO: Extracting primitive: Scooter_WheelRear_rubber
+15:34:24 | INFO: Primitives created: 1
+15:34:24 | INFO: Extracting primitive: Scooter_WheelRear_rubber_worn
+15:34:24 | INFO: Primitives created: 1
+15:34:24 | INFO: Extracting primitive: Scooter_WheelRear_steel
+15:34:24 | INFO: Primitives created: 1
+15:34:24 | INFO: Finished glTF 2.0 export in 0.03681802749633789 s
+Blender 4.3.2 (hash 32f5fdce0a0a built 2024-12-17 03:35:23)
+Read blend: "C:\Users\尹久\Documents\重庆外卖王\work\characters\rocketbox_candidate10\candidate_authoring.blend"
+Traceback (most recent call last):
+  File "C:\Users\尹久\Documents\重庆外卖王\work\build_rider_trial.py", line 145, in <module>
+    contact=pose(steer,down,math.sin(t*math.tau) if name=='ride_idle' else 0)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\尹久\Documents\重庆外卖王\work\build_rider_trial.py", line 121, in pose
+    contacts[side+'_wrist_error']=ik(prefix+'UpperArm',prefix+'Forearm',prefix+'Hand',wrist,(sign*.48,-.12,1.13))
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\尹久\Documents\重庆外卖王\work\build_rider_trial.py", line 86, in ik
+    assert distance<l1+l2-.0001,('unreachable',upper,list(p),list(target),distance,l1+l2)
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('unreachable', 'Bip01 L UpperArm', [-0.2091096192598343, -0.12236307561397552, 1.3865423202514648], [-0.32669103145599365, 0.4155557155609131, 1.1430000066757202], 0.6020754896478547, 0.5198459132582106)
+
+Error: script failed, file: 'work/build_rider_trial.py', exiting.
+
+
+Blender quit

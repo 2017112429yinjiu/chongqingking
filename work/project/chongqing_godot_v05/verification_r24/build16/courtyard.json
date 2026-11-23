@@ -1,0 +1,455 @@
+{
+  "art_profile": {
+    "path": "res://assets/render_profile_r24.json",
+    "revision": "R24_market_masonry_16_internal",
+    "sha256": "680ae29105f2745bda36015d6274b6d2702ece87e8c827e8b4c392d0da32c8dc"
+  },
+  "art_revision": "R24_market_masonry_16_internal",
+  "block_r23": {
+    "actors": 25,
+    "brick_shells": 7,
+    "hidden": 8,
+    "missing": [],
+    "routes": {
+      "east": 196.978805541992,
+      "promenade": 92.858268737793,
+      "walk": 85.5828399658203,
+      "west": 196.792129516602
+    },
+    "swapped": 88
+  },
+  "counter_r21": {
+    "character_sha256": "ac585e8a037fcf950fc51d46e0fa34c3c46f40ccf1241250273f2af4d4fc6cbc",
+    "portion_sha256": "a3347a027ace51dca3db48093942e821e8a925131045f10472a34bda3e5c5746",
+    "stock_sha256": "e2a11e6c8ac2b26c1b077d38f343f1cb810855c89f7539898c9d41ef8df661ec"
+  },
+  "court_resident": {
+    "controller": "4d7ccd29e2e047a3006bf3a9a8b75107f07b07736d1a1c46318533bb3b22155f",
+    "fit": "a9df93aee35791d437c611680ea324c0b4bcfaab1bedccf6b1a1faa617d5ec83",
+    "model": "dfb43c77aff8beae940bceb906ad667f8b6e5ef85b1613393995a0a7091a94f3"
+  },
+  "courtyard_life": {
+    "chessmen": 32,
+    "missing": [],
+    "seats": 3,
+    "visitor_length": 12.0611190795898
+  },
+  "courtyard_paving": [
+    "pavement",
+    "yard_concrete"
+  ],
+  "district_r21": {
+    "exterior_sectors": 84,
+    "exterior_trees": 623,
+    "layer_sha256": "fdb98c3bd8b65364f2d76c30a6263cbfca46c2cc991436662197d56faa76346c",
+    "layout_sha256": "ef08224edd2de91299f87bc4534130df8153d6b8c5ee42890763e5feeed2bbcb",
+    "near_plantings": 21,
+    "paving": [
+      "COL_Terrain_200m_yard_concrete",
+      "COL_Walk_OSM_734116594_0_step_concrete",
+      "Walk_details_OSM_734116594_0_painted_metal",
+      "COL_Walk_OSM_1328811307_0_step_concrete",
+      "Walk_details_OSM_1328811307_0_painted_metal",
+      "COL_Walk_Central_stair_lane_step_concrete",
+      "COL_Handrails_Central_stair_lane_painted_metal",
+      "COL_Walk_Narrow_upper_passage_step_concrete",
+      "COL_Walk_Upper_terrace_connection_step_concrete",
+      "COL_Walk_West_residential_link_step_concrete",
+      "COL_Handrails_West_residential_link_painted_metal",
+      "COL_Walk_East_photo_alley_step_concrete",
+      "Outer_ground_context_ground_dirt",
+      "R20_Court_paving_step_concrete"
+    ],
+    "roof_structures": 35,
+    "terraces": 2,
+    "weather_atlas_sha256": "30596b17abf2da8ebe35e38aa7e3b8a57c36fd4d6971684b7cb9edaea02f0007",
+    "weathered_shell_surfaces": 104,
+    "window_fittings": 52
+  },
+  "failures": [],
+  "furniture_contact_max": 0.0000324249267578125,
+  "furniture_contact_misses": [],
+  "kitchen_clearance": {
+    "basin_base_to_table": -0.00149917602539063,
+    "board_above_trousers": 0.0937222552299488,
+    "brace_above_trousers": 0.0506950516700755,
+    "sampled_skin_frames": 33,
+    "table_height_local": 0.782499313354492
+  },
+  "kitchen_mounts": [
+    "COL_B_A04_courtyard_home_plaster_grey",
+    "COL_B_A04_courtyard_home_plaster_grey",
+    "COL_B_A04_courtyard_home_plaster_grey"
+  ],
+  "market_r24": {
+    "donors": 44,
+    "fixtures": 11,
+    "lights": 2,
+    "missing": [],
+    "stalls": 2
+  },
+  "market_steps": {
+    "COL_R23_NanquUpperApron": [
+      "R23_basalt_kerb",
+      "Market16_CutSandstone"
+    ],
+    "COL_R24_MarketStairs_R24_step_stone": [
+      "Market16_LimeBed",
+      "Market16_CutSandstone"
+    ]
+  },
+  "meter_lod": {
+    "sha256": "931e72fa0f34fe7bcdd65257f2b1c55316cde4ac61805fc81799cd777efc0ecc",
+    "sites": 112,
+    "source_triangles": 910876.0,
+    "switch_m": 18.0
+  },
+  "moving_walkers_12s": 21,
+  "neighborhood": {
+    "missing": [],
+    "plants": 35,
+    "removed": [
+      "COL_Handrails_Central_stair_lane_painted_metal",
+      "COL_Handrails_West_residential_link_painted_metal",
+      "Court_entry_rails_frame",
+      "Utility_cables_dark",
+      "COL_R20_Returned_handrail_steel",
+      "COL_R20_Returned_handrail_rail_enamel",
+      "COL_R20_Returned_handrail_pin",
+      "COL_R20_Returned_handrail_iron",
+      "Resident_waste_13_bin_00",
+      "Resident_waste_13_bin_01",
+      "Resident_waste_13_bin_02",
+      "Resident_waste_13_bin_03",
+      "Resident_waste_13_bagA_00",
+      "Resident_waste_13_bagB_00",
+      "Resident_waste_13_crate_00"
+    ],
+    "shifted": 87,
+    "spans": 4,
+    "tree_distance_meshes": 288,
+    "trunks": 5
+  },
+  "passed": true,
+  "poses": {
+    "black": {
+      "by_joint": {
+        "Head": 0.00119253725279123,
+        "L Foot": 0.00340040680021048,
+        "Pelvis": 0.0000019073486328125,
+        "R Finger12": 0.00178316701203585,
+        "R Foot": 0.00182002736255527,
+        "R Hand": 0.00122734624892473,
+        "R UpperArm": 0.00198790850117803
+      },
+      "contact_frames": 20,
+      "joint_max": 0.00340040680021048,
+      "sampled": 47,
+      "touch_max": 0.00454341340810061,
+      "touch_min": 0.0000415806389355566
+    },
+    "greens": {
+      "by_joint": {
+        "Head": 0.00157616834621876,
+        "L Finger12": 0.00174849887844175,
+        "L Foot": 0.00148388813249767,
+        "L Hand": 0.00148788106162101,
+        "Pelvis": 0.0,
+        "R Finger12": 0.00267956405878067,
+        "R Foot": 0.00135966134257615,
+        "R Hand": 0.00212638662196696,
+        "R UpperArm": 0.000879475963301957
+      },
+      "contact_frames": 40,
+      "joint_max": 0.00267956405878067,
+      "sampled": 57,
+      "touch_max": 0.00239108502864838,
+      "touch_min": 0.0000721018150215968
+    },
+    "red": {
+      "by_joint": {
+        "Head": 0.00159865769091994,
+        "L Foot": 0.00181244919076562,
+        "Pelvis": 0.0,
+        "R Finger12": 0.00315933022648096,
+        "R Foot": 0.0015164827927947,
+        "R Hand": 0.00267164525575936,
+        "R UpperArm": 0.0010590999154374
+      },
+      "contact_frames": 20,
+      "joint_max": 0.00315933022648096,
+      "sampled": 47,
+      "touch_max": 0.00523256370797753,
+      "touch_min": 0.0000102713865999249
+    }
+  },
+  "river_r22": {
+    "axes": 2,
+    "fleet": 6,
+    "layer_sha256": "7e6e4ebf4f54513ae6492baba5c02e1a6571735ef7e7cd5e4a6dff7847232f87",
+    "layout_sha256": "ff239e78712fbf074fb9a50d180f6288fd4198ac926f30e8054cb51b91ef6a45",
+    "mapped_buildings": 14,
+    "source_plan_sha256": "bbae7145d99a6dba9f3d46c13ac8a89fcf2b617c923537b34a2aa9dea3f62932",
+    "terrain": {
+      "Outer_ground_context_ground_dirt": {
+        "replacement": "R22_Bank_Outer",
+        "triangles": 40728.0,
+        "vertices": 21360.0
+      },
+      "R19_Distant_relief_distant19": {
+        "replacement": "R22_Bank_Relief",
+        "triangles": 111295.0,
+        "vertices": 55912.0
+      }
+    }
+  },
+  "roofs_r22": {
+    "canvas_shader_sha256": "2c79d2d0b0fb203bf4e343ea7bfc505d17eb4912e4c965330339cfcb1771ab4a",
+    "decks": 13,
+    "layer_sha256": "1bd3e44caf3cddd9ce47095815698725b45fed697f122c636a4def0b67b85c44",
+    "layout_sha256": "226528a93e1282d3c6185db6c62c0cfcdb50c5383076a9705ce07ef6f0f81031",
+    "sockets": 6,
+    "stations": 12,
+    "surface_imports_sha256": "8e5e08e095a59fba57cb7bfd607b961f1c31eaff259c4f3c7674d04532a1341e"
+  },
+  "runtime_sha256": {
+    "res://assets/block_r23/block.glb": "f0796f06598586cfdbb6fab09f18dc28287a6951f3e2a092134ab7feb75fb686",
+    "res://assets/block_r23/block.json": "88aa467c76741b1a7d926328c6edf5b37be6e1b59014ef44b9e80beaa6c45227",
+    "res://assets/block_r23/routes.json": "37e98b27546e4fac4f599adb53ff9dfbd072b8bf02f1f98feaf4d6962e760832",
+    "res://assets/courtyard_r24/black_motion.glb": "7d812f625b77e3907b9d6b8575cf80944bcce68ca2f4216bff1b67fdc1d63f2c",
+    "res://assets/courtyard_r24/courtyard.glb": "d91421262708814d053599d1773fc2854a1ba19dde04e89dd36ac76d65a6cbff",
+    "res://assets/courtyard_r24/greens_motion.glb": "bd815f57e2b9d9848d884b32d783550c05df66dcde0d6107ac882d4ff462d08a",
+    "res://assets/courtyard_r24/kitchen/courtyard.glb": "fe1cf574d2396922b35d00070a6335da648fb00eaeed9c3524ad9edc02bc7f42",
+    "res://assets/courtyard_r24/kitchen/greens_motion.glb": "df31bb48fae0f8bc5da6a8f8ffd54c37b4c3a71a3b077e4e9caf0f93680ffc78",
+    "res://assets/courtyard_r24/kitchen/layout.json": "9e570e390a13828a3ff3b13c94cd56b9dd1b463c40daf9de5f639f22333a39ae",
+    "res://assets/courtyard_r24/layout.json": "3f6f0abdc96db4a6ba688c30d0b53e572ab43f4912a0a0517fa1ecd36d61ef28",
+    "res://assets/courtyard_r24/paving.glb": "bef500fc1b6623e2bd7c6a1ad7c4b264cd086b9e319186f78cec64c869901e6a",
+    "res://assets/courtyard_r24/red_motion.glb": "e70d87c3ecdc2ad3b992d9b9d2beb982e621e53773226e1c9697e59e4c24ff44",
+    "res://assets/courtyard_r24/return_corridors.json": "9937dca8a758402e8ad7384d7ca7c495646624d32fa6cf2ffb367165e7c63567",
+    "res://assets/courtyard_r24/wait_clips.res": "7893625baeda6242f0c568c38b407ab8864be35ec10a0b74f72e7daaf924c9a9",
+    "res://assets/courtyard_r24/west_plaster.png": "7c27aee56178b2bc71ef72437b6862a880432f8bd608b413bcbcbf53d2f0b07f",
+    "res://assets/fonts/cq_lane_ui.otf": "4f3d9d826af0232c736d27c7ec955bc41f17c4fbb8bb3589692e4efcf5366d17",
+    "res://assets/frontage_r24/frontage.glb": "225e217815de12639bb7dbb58245ffabea2eb0502d3e2b1964ef5ceef7fb1cf6",
+    "res://assets/frontage_r24/frontage.json": "dd94246c3351da31958a0caf1233da6a1cda6a3c5310de6e631104c7c3d60bd2",
+    "res://assets/frontage_r24/stall_clips.res": "a6a8c3d5e49d7211f7f3f65da6206e53aa6beb542464fbbfcfa15c6dda7b012d",
+    "res://assets/frontage_r24/terry_pile.png": "fd459f7260aba51014c21b480ffd2bdcc8b2b346866a5a44c816255c5de27b11",
+    "res://assets/frontage_r24/traffic_lanes.json": "062b0996444cf2453877117ce883afccdbff2c20e98039745780cb534f1fd9e9",
+    "res://assets/frontage_r24/tyre_contact.png": "ec2133beae7a3dec76ce298de9862c7ea116d05540ce9d84e36eadd9363e4627",
+    "res://assets/lane_r20/rinse.wav": "8674dce3de89f536a8d519dd21223164a327c91e574f216fad88db91ab74f1bf",
+    "res://assets/lane_r20/rinse_fixture.json": "8a0f267946522fd59fe99b298e18e6a4e1e4b95d1a3728bb4a73e4636fa2ff1a",
+    "res://assets/lane_r20/tree_seats.json": "060f2507ab6997cdc5cddc2d3b5a9eefdbd4b199b88466318eb6a983fd73a0e6",
+    "res://assets/market_steps_r24/market.glb": "4ad5f7adb5cd8fc40acf8d97031684f31982e9c13bcfa1b82e126c5c5ef4f5ed",
+    "res://assets/neighborhood_r24/layout.json": "9bb11fb881f1e15f8d11f271c752343662ad25e1521a2d14889090b815ec2e9c",
+    "res://assets/neighborhood_r24/street.glb": "72e5de5ac664d3c3d2ab31282792d98e5138c60f1566c5e8c324d539e77494e7",
+    "res://assets/neighborhood_r24/tree_distances.glb": "a7aa853386928d878bbe15e262f904d1c68e7e7b3a50737aaaa850c8ff6a3525",
+    "res://assets/neighborhood_r24/tree_species.json": "f5183146354be74771c7b50c771694ef6e83d28ff95cb2c1c367007e6c97922c",
+    "res://assets/neighborhood_r24/trunk_sections.json": "a53c8de4fd3f2cc071ebb8c7f7f776934795f1ffe2ce5bc60b5fc121c5311d42",
+    "res://assets/neighborhood_r24/walk_lanes.json": "4502e660b6c71dbd3d0594d43027b295b1fe211e85f4c154b6c7123468a21dad",
+    "res://assets/river_r22/shore_masks.png": "8d02149256183b79a12328056618abc8b526f079c540b7a6fcb276cccd1d7cdd",
+    "res://assets/rooms_r24/interior_wall_faces.res": "c5139512ae2ee67e248ff0323abc5047c48434389508d96c783088beeded4bb3",
+    "res://assets/rooms_r24/layout.json": "ce535a2e3cb911b4554569d5aa2f61be0c5434098bab81b68b869bd443387c86",
+    "res://assets/rooms_r24/patina.glb": "c2a787f6b105fc13c30cb1902f6d06e566f4ce37f25e72f37b114e944ce2148d",
+    "res://assets/rooms_r24/patina.json": "81585100a9ba354d40e1e46a515d5bab76304402f8c9743e84638ea149df312f",
+    "res://assets/rooms_r24/rooms.glb": "b87a03a74ee4e5230d888a97a0dc5bed6690aed42c382f8a89f05864ba8f4fe0",
+    "res://assets/street_use_r24/layout.json": "2c75656562fc4a8c32c9ec970b965db26c0e80f82abdff433517b3873b1c1d7f",
+    "res://assets/street_use_r24/street_use.png": "b44593527a3b9f206f70b90c5304aff711eac0e50231e2e42bb911f0739b3e8b",
+    "res://assets/street_use_r24/support_heights.png": "7b7fab53b9acda150578ecfc860377c48db2d3f6ec8ff1d852fadd2e12140b01",
+    "res://assets/street_use_r24/workday.glb": "608094aa95d077dc3ea4601febcc77ce698e2317e6a2ecd64291c26043ac8a61",
+    "res://scripts/block_r23.gd": "90ec9b3a0884a078b0ece1a40b6a4bee48962d6fe058a138c85b2bfb083384e1",
+    "res://scripts/counter_condiments.gd": "fa08ffe36271c3ae1db3ab206bbc9b05c74d84764b0c0d2fcd3d671824c4e803",
+    "res://scripts/courtyard_life_r24.gd": "06ce9e8f323adb5fe7e2917b9e647038588858632a2913545bb87017ea6d7254",
+    "res://scripts/district_r21.gd": "0db44aa84d164a723d53ef96f62904f4c5a76a69546d0fec96cbb106678a9f7a",
+    "res://scripts/explorer.gd": "135a55984cca992494f66561f99ad3e2ed7df926d6d4caf1035231a153815892",
+    "res://scripts/frontage_r24.gd": "ebd12cab88ce40a1680b5d41dea50a848c08773b0624672a85d00dd012ac7471",
+    "res://scripts/gameplay.gd": "4379b58c124fd90ec94850c7d004653ed5bff7881837622a3f6366c3f9a52b2b",
+    "res://scripts/main.gd": "22151dd5046981ab414b4e457c63592f08460b2f858d86290a33618aac835859",
+    "res://scripts/market_steps_r24.gd": "eb79edf2130d038db245d38608a0deb99f45bb8c70793205d59a0e7876f51126",
+    "res://scripts/meter_detail_lod.gd": "2175ca3919c3728ef1db2fc7f8710ad1f39e15aa504306e25ae322e8448d45b3",
+    "res://scripts/neighborhood_r24.gd": "185d808b211090e882aa4218cdb7382172777f1b977c9b0e1b6215a1c5d7f26d",
+    "res://scripts/qa_lane_r20.gd": "18f87f9f26eddd78d05dc617465ff5c4aac399b25eafc1c7cd2aec4417f5b40a",
+    "res://scripts/rinse_tap.gd": "a14c99c56d463b5fb690153a3e53c735623ac2eb09efe408e686efb99bba5fe9",
+    "res://scripts/river_r22.gd": "584019e0ea8ae7f6013c85e233cc2db8f552006cf35a73b57b210edfb70060e6",
+    "res://scripts/roofs_r22.gd": "f0e8b58d18e99148e3128026f69a9e4d3c45dcf50b07b19cab678a64d23c06ad",
+    "res://scripts/scooter_controller.gd": "4393dbab0f3b7f0017962469dc067323ade7705def2d78b64fee1ba7a1047c1e",
+    "res://scripts/shopkeeper.gd": "b34f9b070efae4b0c4a5c619104e782b277b2482d31e4eaf25f3e1359052b5a8",
+    "res://scripts/shopkeeper_attention.gd": "b36275222a35552763acdc27f60687edc2e96a7e52560889480d709d2aa8c656",
+    "res://scripts/street_detail_r19.gd": "8dc39303ddfca91279a8c940439b1322526c406b823b324a8c9b099e81a469a0",
+    "res://scripts/street_use_r24.gd": "96a246687c10ca0bde9a7258d3bd5d86eb8157a09847bc8be9e15a89719fb523",
+    "res://scripts/takeaway_bag.gd": "f53ed8a685fccfbdd767c458dbef25cf85df1f33a5b7b3d3e4b5c90059df52a0",
+    "res://scripts/upper_lane_r20.gd": "0c61b1b914ad1f8d1ba0fbfb27889d1426d6635340d0867f62feda76d4f8d56c",
+    "res://scripts/window_life_r24.gd": "043dd4283980e73af389618ff18ca933988751afe9fda8ce4e642d3e04c5a125",
+    "res://shaders/asphalt_use_r24.gdshader": "7bb8d04d4193084a813653526c5c7d25f7f92127b3ccfbb0f4cfd807ac659624",
+    "res://shaders/breakfast_canvas_r22.gdshader": "2c79d2d0b0fb203bf4e343ea7bfc505d17eb4912e4c965330339cfcb1771ab4a",
+    "res://shaders/canopy_r21.gdshader": "8a02e64842c2b61ae025da990f7c1d7037dd3f24c338de4159d1eb895d596bab",
+    "res://shaders/dressed_stone_r24.gdshader": "705de7c7f5601705e898dcef7441fa94dd478d5f29f130c5461cdbfc254dbb35",
+    "res://shaders/exterior_r21.gdshader": "3b6a8584822522c97c527ea72fd9b33d31441343de73b4b5d89f0640b7755512",
+    "res://shaders/foundation_r23.gdshader": "6f1f2230b80ccf01bd08b5f15ebfbed57eba2e32cfbd9329cf26fc78aa40528c",
+    "res://shaders/frontage_canvas_r24.gdshader": "05a4855a2ded86e0d9b972d8b3836657bedbb93268add08cdf16f64354d8feb5",
+    "res://shaders/frontage_surface_r24.gdshader": "d1f362d7e5f143590785d76ee0df8071248c1ddf78de50dc87f7535ec30118f9",
+    "res://shaders/hanging_cotton_r20.gdshader": "9d48788f6d3b3beffde16f0f5a94c8d99eac36fa8a9c00950c5116c97c208754",
+    "res://shaders/market_sandstone_r24.gdshader": "c7a4463fb63c28708506c6ae5d6bac3afea24e810977d85f0bbfe8eadbe434e7",
+    "res://shaders/paving_r21.gdshader": "34f7c48e672b5f067d110a71330889a56ea941d0665a96793c6eb406a83cb817",
+    "res://shaders/pedestrian_outerwear_r24.gdshader": "054fd5eb984cfa2868b95f61436be04c7a99018b893266b95636ef40816d7acc",
+    "res://shaders/rinse_water.gdshader": "1a1c4d8f5d478384ae1cdec390d94903b83adf78096bc050116eee3354fee277",
+    "res://shaders/river_foliage_r22.gdshader": "625e26697fc1f7c0a7900774572b024157fdfb072e45b46207655130258c5391",
+    "res://shaders/river_r22.gdshader": "b44464750600087424a996e73d6cbf26891f2367df9f47ad6add66c0fea4cd79",
+    "res://shaders/riverbank_r22.gdshader": "71572bdd1e25f2d3cc3389eb72aad132cda52e7f5084cba4722ea467e6a47148",
+    "res://shaders/sidewalk_r23.gdshader": "96d10fdd833465653600ca1c72e6c03fe9059f3031eccaff791c308876e4b39c",
+    "res://shaders/sky_visibility_r20.gdshaderinc": "14a770eab2dc29951adb2d5c9a17b4121b9a5bbf0e74d31e48743b8828985b7d",
+    "res://shaders/stall_enamel_r24.gdshader": "047d7175d2cf71e4c1a3f18eb1860027102f27e897f8d0682d9de86296c02f5b",
+    "res://shaders/street_repairs_r24.gdshaderinc": "eb2b82186ead48bca380530590afd74fedba5bcbe7858162a7aec251aea480f2",
+    "res://shaders/street_surface_r19.gdshader": "3349e020ad7d093cd958426e76caf2d3cb8eed55f218170987dfe510df28e197",
+    "res://shaders/street_use_r24.gdshaderinc": "e28d5204d08915037d835271d8977d13d90b90cb9d8afe13fcf2898c9aadbe83",
+    "res://shaders/wall_patina_r24.gdshader": "aeda0e5c8c143f3725f037f8785430eafb5a21f4768aefd25a76ba64c2e3c1f6",
+    "res://shaders/washcloth_r24.gdshader": "40257182eb7b60ad875f080f81fec3efb5e2b5b481510b5ff06a4154915179bc",
+    "res://shaders/worn_rail_r21.gdshader": "14fe938ef6c6874fa67680e154f445eda0122976eb478dd5b3282417f5ada7c7"
+  },
+  "stopped_at_door": 23,
+  "street_layer": {
+    "asset": "res://assets/street_r19/street_life.glb",
+    "enabled": true,
+    "manifest_sha256": "b0ec626c4096ddc6df5e1444e21294346990e8faf21e62fb5bcecd77d2ae0e17",
+    "replaced": [
+      "Type_梯坎小面",
+      "Resident_waste_14_bin_00",
+      "Resident_waste_14_bin_01",
+      "Resident_waste_14_bin_02",
+      "Resident_waste_14_bin_03",
+      "Resident_waste_14_bagA_00",
+      "Resident_waste_14_bagB_00",
+      "Resident_waste_14_crate_00",
+      "Authored_distant_hill_ridges_hill_near",
+      "Authored_distant_hill_ridges_hill_far",
+      "B_A01_noodle_details_faded_red",
+      "B_A01_noodle_details_curtain_beige"
+    ],
+    "sha256": "1c40ae7ed04e8bf3f5f7956eaf630a098890e62a9c142f3e846c9ee15d530bad",
+    "source_revision": "R19_scene_05"
+  },
+  "street_use_r24": {
+    "asphalt": 15,
+    "dressed": 2,
+    "facades": 83,
+    "furniture_volumes": 2,
+    "paving": 56,
+    "resident_pots": 2,
+    "workday": true
+  },
+  "supports": {
+    "black": [
+      {
+        "body": "@StaticBody3D@388",
+        "error": 0.0019989013671875,
+        "key": "seat",
+        "point": [
+          -14.2269096374512,
+          18.1127223968506,
+          14.8336343765259
+        ]
+      },
+      {
+        "body": "CQ_StaticCollision",
+        "error": -0.0000057220458984375,
+        "key": "left",
+        "point": [
+          -14.6066093444824,
+          17.6487808227539,
+          14.8214721679688
+        ]
+      },
+      {
+        "body": "CQ_StaticCollision",
+        "error": 0.0,
+        "key": "right",
+        "point": [
+          -14.6443462371826,
+          17.6797504425049,
+          14.5832672119141
+        ]
+      }
+    ],
+    "greens": [
+      {
+        "body": "@StaticBody3D@392",
+        "error": 0.0019989013671875,
+        "key": "seat",
+        "point": [
+          -67.1854400634766,
+          16.3495082855225,
+          18.5600204467773
+        ]
+      },
+      {
+        "body": "CQ_StaticCollision",
+        "error": -0.0000209808349609375,
+        "key": "left",
+        "point": [
+          -67.5182189941406,
+          15.8748769760132,
+          18.6743698120117
+        ]
+      },
+      {
+        "body": "CQ_StaticCollision",
+        "error": -0.0000324249267578125,
+        "key": "right",
+        "point": [
+          -67.6736602783203,
+          15.8986396789551,
+          18.4784297943115
+        ]
+      }
+    ],
+    "red": [
+      {
+        "body": "@StaticBody3D@386",
+        "error": 0.0019989013671875,
+        "key": "seat",
+        "point": [
+          -15.2073392868042,
+          18.1336936950684,
+          14.5085582733154
+        ]
+      },
+      {
+        "body": "CQ_StaticCollision",
+        "error": -0.000003814697265625,
+        "key": "left",
+        "point": [
+          -14.8618516921997,
+          17.6792907714844,
+          14.5414056777954
+        ]
+      },
+      {
+        "body": "CQ_StaticCollision",
+        "error": -0.0000133514404296875,
+        "key": "right",
+        "point": [
+          -14.793553352356,
+          17.6463584899902,
+          14.7872304916382
+        ]
+      }
+    ]
+  },
+  "upper_lane": {
+    "enabled": true,
+    "model_sha256": "16dabbe6c51b1ff130153d68092dc84daa509ba4538f10152f85d4e8ae53be37",
+    "sky_sha256": {
+      "res://assets/lane_r20/alley_sky.png": "c8b799570de19d6acd2e5c822aa095807d6dc3b107bd4886e66caef438cf7d3b",
+      "res://assets/lane_r20/shop_sky.png": "8d5b169cfd0bf9cc799dec67d02fde5ebbc2558a3a79dc5c91fd85fbc98dd188"
+    }
+  },
+  "visit_blockers": [],
+  "visit_samples": 231,
+  "visitor_acknowledgment": 1.0,
+  "walkers": 21,
+  "west_visible_walkers_12s": 3,
+  "window_rooms": {
+    "existing_room_meshes": 48,
+    "furnishings": 6,
+    "lights": 3,
+    "patina_batches": 2
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "revision": 19,
+  "objects": 2893,
+  "unpacked_referenced_images": [],
+  "packed_images": 152,
+  "editable_scene": "work/scene_r19/chongqing_district.blend",
+  "blender_scene_sha256": "28312a3a417a14212280fa701842daaeda62bee10a4520234aaff9cefe95d741",
+  "base_city": {
+    "revision": "R17",
+    "path": "res://assets/chongqing_district.glb",
+    "sha256": "88b5be04c0c72ae2b54bb02f55f2186f7b7ec2937389a59697e7306dbd7e7c13"
+  },
+  "detail_layer": {
+    "revision": "R19_scene_05",
+    "path": "res://assets/street_r19/street_life.glb",
+    "sha256": "1c40ae7ed04e8bf3f5f7956eaf630a098890e62a9c142f3e846c9ee15d530bad"
+  },
+  "profile": {
+    "path": "res://assets/render_profile_r19.json",
+    "sha256": "1f2539b46d5e945654465f2c43f451b0e8c15987480dbdc827b6524427dbbca8"
+  },
+  "hidden_legacy_collection": true,
+  "passed": true,
+  "note": "Whole-city Blender composition actually reopened. Runtime imports preserved base and the exported detail layer separately, then applies the manifest replacement list and Godot lighting."
+}

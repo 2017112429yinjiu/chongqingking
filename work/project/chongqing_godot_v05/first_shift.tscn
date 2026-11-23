@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://main.tscn" id="1_district"]
+
+[node name="ChongqingDistrict" instance=ExtResource("1_district")]
+first_day_enabled = true

@@ -1,0 +1,498 @@
+{
+  "engine": "4.6.3-stable (official)",
+  "scene_mesh_sha256": "d4064f223dfa4cdf97f4d06b6ebd066a3bc70389deed4e6b7ce716c189128160",
+  "map_lines": 30,
+  "surface_sections": 26,
+  "surface_route_length_m": 2178.71,
+  "map_only_tunnel_sections": [
+    10,
+    11,
+    20,
+    21
+  ],
+  "native_probes": {
+    "three_tracks": {
+      "total": 16004,
+      "missing": 0
+    },
+    "ground_grid": {
+      "total": 10000,
+      "missing": 0
+    },
+    "asphalt_joint": {
+      "total": 3240,
+      "missing": 0
+    },
+    "western_median": {
+      "total": 2798,
+      "missing": 0
+    },
+    "western_extra": {
+      "total": 310,
+      "missing": 0
+    }
+  },
+  "rides": {
+    "out": {
+      "completed": 26,
+      "waypoints_reached": 1173,
+      "waypoints_expected": 1173,
+      "routes": [
+        {
+          "id": 0,
+          "state": "passed",
+          "route": "49182408",
+          "last_contact": {}
+        },
+        {
+          "id": 1,
+          "state": "passed",
+          "route": "59146775",
+          "last_contact": {}
+        },
+        {
+          "id": 2,
+          "state": "passed",
+          "route": "59146775",
+          "last_contact": {}
+        },
+        {
+          "id": 3,
+          "state": "passed",
+          "route": "176034707",
+          "last_contact": {}
+        },
+        {
+          "id": 4,
+          "state": "passed",
+          "route": "734116595",
+          "last_contact": {}
+        },
+        {
+          "id": 5,
+          "state": "passed",
+          "route": "734116597",
+          "last_contact": {}
+        },
+        {
+          "id": 6,
+          "state": "passed",
+          "route": "830761786",
+          "last_contact": {}
+        },
+        {
+          "id": 7,
+          "state": "passed",
+          "route": "1189963547",
+          "last_contact": {}
+        },
+        {
+          "id": 8,
+          "state": "passed",
+          "route": "1189963552",
+          "last_contact": {}
+        },
+        {
+          "id": 9,
+          "state": "passed",
+          "route": "1189963598",
+          "last_contact": {}
+        },
+        {
+          "id": 12,
+          "state": "passed",
+          "route": "1256840008",
+          "last_contact": {}
+        },
+        {
+          "id": 13,
+          "state": "passed",
+          "route": "1324001442",
+          "last_contact": {}
+        },
+        {
+          "id": 14,
+          "state": "passed",
+          "route": "1375242616",
+          "last_contact": {}
+        },
+        {
+          "id": 15,
+          "state": "passed",
+          "route": "1375242618",
+          "last_contact": {}
+        },
+        {
+          "id": 16,
+          "state": "passed",
+          "route": "1513362409",
+          "last_contact": {}
+        },
+        {
+          "id": 17,
+          "state": "passed",
+          "route": "734116594",
+          "last_contact": {}
+        },
+        {
+          "id": 18,
+          "state": "passed",
+          "route": "734116598",
+          "last_contact": {}
+        },
+        {
+          "id": 19,
+          "state": "passed",
+          "route": "734116601",
+          "last_contact": {}
+        },
+        {
+          "id": 22,
+          "state": "passed",
+          "route": "1328811307",
+          "last_contact": {}
+        },
+        {
+          "id": 23,
+          "state": "passed",
+          "route": "1328811309",
+          "last_contact": {}
+        },
+        {
+          "id": 24,
+          "state": "passed",
+          "route": "Main hillside lane",
+          "last_contact": {}
+        },
+        {
+          "id": 25,
+          "state": "passed",
+          "route": "West residential link",
+          "last_contact": {}
+        },
+        {
+          "id": 26,
+          "state": "passed",
+          "route": "Courtyard approach",
+          "last_contact": {}
+        },
+        {
+          "id": 27,
+          "state": "passed",
+          "route": "Upper courtyard walk",
+          "last_contact": {}
+        },
+        {
+          "id": 28,
+          "state": "passed",
+          "route": "Old school approach",
+          "last_contact": {}
+        },
+        {
+          "id": 29,
+          "state": "passed",
+          "route": "East photo alley",
+          "last_contact": {}
+        }
+      ]
+    },
+    "back": {
+      "completed": 26,
+      "waypoints_reached": 1173,
+      "waypoints_expected": 1173,
+      "routes": [
+        {
+          "id": 0,
+          "state": "passed",
+          "route": "49182408",
+          "last_contact": {}
+        },
+        {
+          "id": 1,
+          "state": "passed",
+          "route": "59146775",
+          "last_contact": {}
+        },
+        {
+          "id": 2,
+          "state": "passed",
+          "route": "59146775",
+          "last_contact": {}
+        },
+        {
+          "id": 3,
+          "state": "passed",
+          "route": "176034707",
+          "last_contact": {}
+        },
+        {
+          "id": 4,
+          "state": "passed",
+          "route": "734116595",
+          "last_contact": {}
+        },
+        {
+          "id": 5,
+          "state": "passed",
+          "route": "734116597",
+          "last_contact": {}
+        },
+        {
+          "id": 6,
+          "state": "passed",
+          "route": "830761786",
+          "last_contact": {}
+        },
+        {
+          "id": 7,
+          "state": "passed",
+          "route": "1189963547",
+          "last_contact": {}
+        },
+        {
+          "id": 8,
+          "state": "passed",
+          "route": "1189963552",
+          "last_contact": {}
+        },
+        {
+          "id": 9,
+          "state": "passed",
+          "route": "1189963598",
+          "last_contact": {}
+        },
+        {
+          "id": 12,
+          "state": "passed",
+          "route": "1256840008",
+          "last_contact": {}
+        },
+        {
+          "id": 13,
+          "state": "passed",
+          "route": "1324001442",
+          "last_contact": {}
+        },
+        {
+          "id": 14,
+          "state": "passed",
+          "route": "1375242616",
+          "last_contact": {}
+        },
+        {
+          "id": 15,
+          "state": "passed",
+          "route": "1375242618",
+          "last_contact": {}
+        },
+        {
+          "id": 16,
+          "state": "passed",
+          "route": "1513362409",
+          "last_contact": {}
+        },
+        {
+          "id": 17,
+          "state": "passed",
+          "route": "734116594",
+          "last_contact": {}
+        },
+        {
+          "id": 18,
+          "state": "passed",
+          "route": "734116598",
+          "last_contact": {}
+        },
+        {
+          "id": 19,
+          "state": "passed",
+          "route": "734116601",
+          "last_contact": {}
+        },
+        {
+          "id": 22,
+          "state": "passed",
+          "route": "1328811307",
+          "last_contact": {}
+        },
+        {
+          "id": 23,
+          "state": "passed",
+          "route": "1328811309",
+          "last_contact": {}
+        },
+        {
+          "id": 24,
+          "state": "passed",
+          "route": "Main hillside lane",
+          "last_contact": {}
+        },
+        {
+          "id": 25,
+          "state": "passed",
+          "route": "West residential link",
+          "last_contact": {}
+        },
+        {
+          "id": 26,
+          "state": "passed",
+          "route": "Courtyard approach",
+          "last_contact": {}
+        },
+        {
+          "id": 27,
+          "state": "passed",
+          "route": "Upper courtyard walk",
+          "last_contact": {}
+        },
+        {
+          "id": 28,
+          "state": "passed",
+          "route": "Old school approach",
+          "last_contact": {}
+        },
+        {
+          "id": 29,
+          "state": "passed",
+          "route": "East photo alley",
+          "last_contact": {}
+        }
+      ]
+    }
+  },
+  "anchors": [
+    {
+      "error_m": 2.09808349609375e-05,
+      "point": [
+        -68.28,
+        14.9040679931641,
+        25.6
+      ],
+      "support": "COL_Terrain_200m_pavement"
+    },
+    {
+      "error_m": -1.43051147460938e-05,
+      "point": [
+        -68.28,
+        15.5549392700195,
+        20.9
+      ],
+      "support": "COL_Terrain_200m_yard_concrete"
+    },
+    {
+      "error_m": -1.04904174804688e-05,
+      "point": [
+        -66.23,
+        14.9568328857422,
+        25.6
+      ],
+      "support": "COL_Terrain_200m_pavement"
+    },
+    {
+      "error_m": -3.14712524414063e-05,
+      "point": [
+        -66.23,
+        15.5990943908691,
+        20.9
+      ],
+      "support": "COL_Terrain_200m_pavement"
+    },
+    {
+      "error_m": 9.5367431640625e-06,
+      "point": [
+        -67.7611999511719,
+        15.0326728820801,
+        24.8272457122803
+      ],
+      "support": "COL_Terrain_200m_yard_concrete"
+    },
+    {
+      "error_m": -1.23977661132813e-05,
+      "point": [
+        -66.6988067626953,
+        15.0642471313477,
+        24.7527561187744
+      ],
+      "support": "COL_Terrain_200m_pavement"
+    },
+    {
+      "error_m": -5.7220458984375e-06,
+      "point": [
+        -67.758674621582,
+        15.259147644043,
+        23.1362533569336
+      ],
+      "support": "COL_Terrain_200m_yard_concrete"
+    },
+    {
+      "error_m": -9.5367431640625e-06,
+      "point": [
+        -66.7013320922852,
+        15.2592086791992,
+        23.2637462615967
+      ],
+      "support": "COL_Terrain_200m_pavement"
+    },
+    {
+      "error_m": -7.62939453125e-06,
+      "point": [
+        -67.7753601074219,
+        15.4435958862305,
+        21.8212985992432
+      ],
+      "support": "COL_Terrain_200m_yard_concrete"
+    },
+    {
+      "error_m": -3.0517578125e-05,
+      "point": [
+        -66.6846389770508,
+        15.483829498291,
+        21.6787014007568
+      ],
+      "support": "COL_Terrain_200m_pavement"
+    },
+    {
+      "error_m": -1.52587890625e-05,
+      "point": [
+        -62.435,
+        11.1325874328613,
+        54.369
+      ],
+      "support": "COL_Terrain_200m_pavement"
+    },
+    {
+      "error_m": -1.81198120117188e-05,
+      "point": [
+        -62.435,
+        11.1460990905762,
+        54.271
+      ],
+      "support": "COL_Terrain_200m_pavement"
+    },
+    {
+      "error_m": -2.19345092773438e-05,
+      "point": [
+        -62.205,
+        11.1397094726563,
+        54.369
+      ],
+      "support": "COL_Terrain_200m_pavement"
+    },
+    {
+      "error_m": -2.288818359375e-05,
+      "point": [
+        -62.205,
+        11.1538009643555,
+        54.271
+      ],
+      "support": "COL_Terrain_200m_pavement"
+    }
+  ],
+  "western_median_ground_intrusions": 0,
+  "under_higher_surface": 324.0,
+  "parked_car_tyres": {
+    "measured": 12,
+    "max_abs_m": 0.0107440948486328
+  },
+  "complete": true
+}

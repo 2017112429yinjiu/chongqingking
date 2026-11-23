@@ -1,0 +1,40 @@
+{
+	"engine": "4.6.3-stable (official)",
+	"gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+	"note": "Single-user prototype with one scooter and one static placeholder NPC; desktop frame intervals, not GPU-only timings or crowd benchmark.",
+	"renderer": "forward_plus",
+	"views": [
+		{
+			"draw_calls": 5178.0,
+			"mean_ms": 9.40624583333333,
+			"p50_ms": 9.447,
+			"p95_ms": 10.186,
+			"primitives": 26542192.0,
+			"samples": 240,
+			"static_memory_bytes": 374348099.0,
+			"view": "street_entry"
+		},
+		{
+			"draw_calls": 2330.0,
+			"mean_ms": 6.1221375,
+			"p50_ms": 6.116,
+			"p95_ms": 6.643,
+			"primitives": 13379604.0,
+			"samples": 240,
+			"static_memory_bytes": 374417951.0,
+			"view": "residential_entry"
+		},
+		{
+			"draw_calls": 4188.0,
+			"mean_ms": 8.45591666666667,
+			"p50_ms": 8.495,
+			"p95_ms": 9.12,
+			"primitives": 22369159.0,
+			"samples": 240,
+			"static_memory_bytes": 374738011.0,
+			"view": "roofscape"
+		}
+	],
+	"vsync": 1,
+	"window_size": "(1920.0, 1080.0)"
+}

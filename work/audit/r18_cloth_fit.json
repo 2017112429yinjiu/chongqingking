@@ -1,0 +1,119 @@
+{
+  "actions_saved": [
+    "greet",
+    "idle",
+    "serve"
+  ],
+  "bone_count": 58,
+  "scope": "Front bib |x|<.17 z .91..1.23 and front skirt |x|<.23 z .50...91, evaluated torso/pants triangles, arm-dominant triangles excluded; ray checks only, not complete cloth self-collision certification",
+  "samples": [
+    {
+      "clip": "idle",
+      "frame": 1,
+      "tested": 3461,
+      "min_front_clearance_m": 0.0038241147994995117,
+      "vertices_inside_shirt_over_4mm": 0,
+      "examples": [],
+      "skirt_tested": 3068,
+      "skirt_min_clearance_m": 0.05647893249988556,
+      "skirt_vertices_inside_over_4mm": 0,
+      "skirt_examples": []
+    },
+    {
+      "clip": "idle",
+      "frame": 60,
+      "tested": 3459,
+      "min_front_clearance_m": 0.003496825695037842,
+      "vertices_inside_shirt_over_4mm": 0,
+      "examples": [],
+      "skirt_tested": 3091,
+      "skirt_min_clearance_m": 0.05707031488418579,
+      "skirt_vertices_inside_over_4mm": 0,
+      "skirt_examples": []
+    },
+    {
+      "clip": "idle",
+      "frame": 150,
+      "tested": 3462,
+      "min_front_clearance_m": 0.0033906549215316772,
+      "vertices_inside_shirt_over_4mm": 0,
+      "examples": [],
+      "skirt_tested": 3057,
+      "skirt_min_clearance_m": 0.05662773549556732,
+      "skirt_vertices_inside_over_4mm": 0,
+      "skirt_examples": []
+    },
+    {
+      "clip": "idle",
+      "frame": 210,
+      "tested": 3520,
+      "min_front_clearance_m": 0.002944439649581909,
+      "vertices_inside_shirt_over_4mm": 0,
+      "examples": [],
+      "skirt_tested": 3016,
+      "skirt_min_clearance_m": 0.056191638112068176,
+      "skirt_vertices_inside_over_4mm": 0,
+      "skirt_examples": []
+    },
+    {
+      "clip": "idle",
+      "frame": 270,
+      "tested": 3528,
+      "min_front_clearance_m": 0.003427349030971527,
+      "vertices_inside_shirt_over_4mm": 0,
+      "examples": [],
+      "skirt_tested": 3012,
+      "skirt_min_clearance_m": 0.05799180269241333,
+      "skirt_vertices_inside_over_4mm": 0,
+      "skirt_examples": []
+    },
+    {
+      "clip": "idle",
+      "frame": 301,
+      "tested": 3461,
+      "min_front_clearance_m": 0.0038241147994995117,
+      "vertices_inside_shirt_over_4mm": 0,
+      "examples": [],
+      "skirt_tested": 3068,
+      "skirt_min_clearance_m": 0.056478872895240784,
+      "skirt_vertices_inside_over_4mm": 0,
+      "skirt_examples": []
+    },
+    {
+      "clip": "serve",
+      "frame": 30,
+      "tested": 3504,
+      "min_front_clearance_m": 0.0024633705615997314,
+      "vertices_inside_shirt_over_4mm": 0,
+      "examples": [],
+      "skirt_tested": 3057,
+      "skirt_min_clearance_m": 0.045392900705337524,
+      "skirt_vertices_inside_over_4mm": 0,
+      "skirt_examples": []
+    },
+    {
+      "clip": "serve",
+      "frame": 50,
+      "tested": 3507,
+      "min_front_clearance_m": 0.002633512020111084,
+      "vertices_inside_shirt_over_4mm": 0,
+      "examples": [],
+      "skirt_tested": 3025,
+      "skirt_min_clearance_m": 0.04659298062324524,
+      "skirt_vertices_inside_over_4mm": 0,
+      "skirt_examples": []
+    },
+    {
+      "clip": "serve",
+      "frame": 75,
+      "tested": 3500,
+      "min_front_clearance_m": 0.0028109103441238403,
+      "vertices_inside_shirt_over_4mm": 0,
+      "examples": [],
+      "skirt_tested": 3042,
+      "skirt_min_clearance_m": 0.05307239294052124,
+      "skirt_vertices_inside_over_4mm": 0,
+      "skirt_examples": []
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+Vulkan 1.4.351 - Forward+ - Using Device #0: NVIDIA - NVIDIA GeForce RTX 4070 Laptop GPU
+
+CQ_INTERIOR_LIGHTS {"interior_candidate_count":9,"interior_lights":[{"energy":0.239999994635582,"name":"B_809889627_blue_apartments_room_lamp","position":[82.391,28.184,-13.942],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_809889628_clinic_room_lamp","position":[15.883,31.615,-53.5],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_809889629_artisan_room_lamp","position":[47.205,34.774,-72.476],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_1335306665_civic_room_lamp","position":[-24.373,26.707,-30.861],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_1335306666_heritage_room_lamp","position":[-50.162,26.057,-36.511],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_1335306667_brick_home_room_lamp","position":[-62.888,23.169,-17.653],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_1413081560_old_tile_room_lamp","position":[-33.476,29.533,-53.924],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_A03_blue_apartments_room_lamp","position":[-91.543,16.767,15.033],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_A04_courtyard_home_room_lamp","position":[-55.09,17.775,14.621],"range":2.70000004768372,"shadows":false}],"street_lights":22}
+CQ_BRANCH_OVERRIDE {"baked_primary":true,"imported_uv1_offset":[0.0,0.0,0.0],"imported_uv1_scale":[1.0,1.0,1.0],"imported_uv2_offset":[0.0,0.0,0.0],"imported_uv2_scale":[1.0,1.0,1.0],"normal_and_pbr_textures":false,"offset":[0.0,0.0],"scale":[1.0,1.0],"texcoord":0,"texture":"res://assets/chongqing_district_island_tree_01_branches_diff_2k.jpg"}
+CQ_BRANCH_OVERRIDE {"baked_primary":true,"imported_uv1_offset":[0.0,0.0,0.0],"imported_uv1_scale":[1.0,1.0,1.0],"imported_uv2_offset":[0.0,0.0,0.0],"imported_uv2_scale":[1.0,1.0,1.0],"normal_and_pbr_textures":false,"offset":[0.0,0.0],"scale":[1.0,1.0],"texcoord":0,"texture":"res://assets/chongqing_district_tree_small_02_branch_diff_2k.jpg"}
+CQ_STREET_USE { "dressed": 2, "paving": 56, "facades": 83, "asphalt": 15, "workday": true, "resident_pots": 2, "furniture_volumes": 2 }
+CQ_NEIGHBORHOOD {"missing":[],"plants":35,"removed":["COL_Handrails_Central_stair_lane_painted_metal","COL_Handrails_West_residential_link_painted_metal","Court_entry_rails_frame","Utility_cables_dark","COL_R20_Returned_handrail_steel","COL_R20_Returned_handrail_rail_enamel","COL_R20_Returned_handrail_pin","COL_R20_Returned_handrail_iron","Resident_waste_13_bin_00","Resident_waste_13_bin_01","Resident_waste_13_bin_02","Resident_waste_13_bin_03","Resident_waste_13_bagA_00","Resident_waste_13_bagB_00","Resident_waste_13_crate_00"],"shifted":87,"spans":4,"tree_distance_meshes":288,"trunks":5}
+PENG_TEACH SHOP_EXIT
+CQ_READY {"collisions":{"bodies":286,"by_kind":{"refined_structure":286},"created":286,"failed":[],"props":{"method":"deduplicated root-aligned cylinders; foliage excluded","trunks_and_posts":57},"reused":0,"skipped_meshes":3630,"triangles":514403},"engine":"4.6.3-stable (official)","renderer":"forward_plus","spawn":[20.0,9.4995,76.0]}
+DAY1 {"detail":"","name":"practice_at_real_counter","pass":true}
+DAY1 {"detail":"","name":"manifest_before_accept","pass":true}
+DAY1 {"detail":"","name":"frame_01_offer","pass":true}
+DAY1 {"detail":"","name":"declining_has_no_charge","pass":true}
+DAY1 {"detail":"","name":"batch_accepted","pass":true}
+DAY1 {"detail":"","name":"paid_trip_uses_walking_and_riding","pass":true}
+DAY1 {"detail":"","name":"kitchen_not_ready","pass":true}
+PENG_TEACH WALK_COUNTER
+PENG_TEACH ORDER
+PENG_TEACH PICK_UP
+PENG_TEACH LIFT_CLEAR
+PENG_TEACH RETURN_BIKE
+PENG_TEACH LOAD_BOX
+PENG_TEACH BOARD_AGAIN
+PENG_TEACH RIDING
+DAY1 {"detail":"","name":"all_three_supported_at_counter","pass":true}
+DAY1 {"detail":"","name":"frame_all_three_orders","pass":true}
+DAY1 {"detail":"","name":"first_pickup_201","pass":true}
+DAY1 {"detail":"","name":"third_bag_stays_on_counter","pass":true}
+DAY1 {"detail":"","name":"frame_02_counter_full","pass":true}
+PENG_ROUTE_ISSUE {"goal":"(-34.5, 11.7, 55.0)","kind":"route_blocked","obstacle":"/root/ChongqingDistrict/InteractionWorld/PlayerElectricScooter","position":"(-31.90767, 11.68414, 54.76938)","seconds_without_progress":3.02,"segment":0,"stage":"DONE","time_s":26.33}
+CQ_DELIVERY_STAGE {"distance_m":75.7021428607404,"end":"(-62.28114, 19.90418, 19.61629)","goals":12,"max_frame_displacement_m":0.243485927581787,"name":"shop_to_second_floor","pass":true,"reached":12,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":75.7021428607404,"end":"(-62.28114, 19.90418, 19.61629)","goals":12,"max_frame_displacement_m":0.243485927581787,"name":"shop_to_second_floor","pass":true,"reached":12,"stall_contacts":[]},"name":"shop_to_second_floor","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":6.00069048069417,"end":"(-62.33246, 19.90418, 13.59632)","goals":3,"max_frame_displacement_m":0.0700000450015068,"name":"knock_2","pass":true,"reached":3,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":6.00069048069417,"end":"(-62.33246, 19.90418, 13.59632)","goals":3,"max_frame_displacement_m":0.0700000450015068,"name":"knock_2","pass":true,"reached":3,"stall_contacts":[]},"name":"knock_2","pass":true}
+DAY1 {"detail":"202：豌杂到了？搁门边，我马上拿。","name":"resident_answers_2","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":0.731851660646498,"end":"(-62.42819, 19.90424, 14.5009)","goals":1,"max_frame_displacement_m":0.0700006410479546,"name":"access_shelf_2","pass":true,"reached":1,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":0.731851660646498,"end":"(-62.42819, 19.90424, 14.5009)","goals":1,"max_frame_displacement_m":0.0700006410479546,"name":"access_shelf_2","pass":true,"reached":1,"stall_contacts":[]},"name":"access_shelf_2","pass":true}
+DAY1 {"detail":"","name":"release_owns_ticket_2","pass":true}
+DAY1 {"detail":"","name":"frame_04_flat_202","pass":true}
+DAY1 {"detail":{"fee":11,"time":45.9999999999987},"name":"paid_2","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":6.11630257125944,"end":"(-63.92081, 19.90424, 19.59669)","goals":2,"max_frame_displacement_m":0.070001557469368,"name":"knock_1","pass":true,"reached":2,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":6.11630257125944,"end":"(-63.92081, 19.90424, 19.59669)","goals":2,"max_frame_displacement_m":0.070001557469368,"name":"knock_1","pass":true,"reached":2,"stall_contacts":[]},"name":"knock_1","pass":true}
+DAY1 {"detail":"201：清汤抄手是我的，谢谢，放门边搁板。","name":"resident_answers_1","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":0.43724256195128,"end":"(-63.67949, 19.90422, 20.06003)","goals":1,"max_frame_displacement_m":0.0564950928092003,"name":"access_shelf_1","pass":true,"reached":1,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":0.43724256195128,"end":"(-63.67949, 19.90422, 20.06003)","goals":1,"max_frame_displacement_m":0.0564950928092003,"name":"access_shelf_1","pass":true,"reached":1,"stall_contacts":[]},"name":"access_shelf_1","pass":true}
+DAY1 {"detail":"","name":"release_owns_ticket_1","pass":true}
+DAY1 {"detail":{"fee":12,"time":50.2999999999984},"name":"paid_1","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":77.2238479070365,"end":"(-23.63772, 11.12534, 60.05762)","goals":13,"max_frame_displacement_m":0.128412216901779,"name":"back_to_kitchen","pass":true,"reached":13,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":77.2238479070365,"end":"(-23.63772, 11.12534, 60.05762)","goals":13,"max_frame_displacement_m":0.128412216901779,"name":"back_to_kitchen","pass":true,"reached":13,"stall_contacts":[]},"name":"back_to_kitchen","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":52.1149677252397,"end":"(-38.2014, 16.39041, 19.21258)","goals":10,"max_frame_displacement_m":0.0727831795811653,"name":"reach_court_button","pass":true,"reached":10,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":52.1149677252397,"end":"(-38.2014, 16.39041, 19.21258)","goals":10,"max_frame_displacement_m":0.0727831795811653,"name":"reach_court_button","pass":true,"reached":10,"stall_contacts":[]},"name":"reach_court_button","pass":true}
+DAY1 {"detail":{"pos":"(-38.2014, 16.39041, 19.21258)","prompt":"球友：杂酱是我的，放甲位，我打完这球就来。"},"name":"court_recipient_confirms","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":0.740107816178352,"end":"(-37.1596, 16.43036, 19.09978)","goals":1,"max_frame_displacement_m":0.0699468106031418,"name":"try_bay_B","pass":true,"reached":1,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":0.740107816178352,"end":"(-37.1596, 16.43036, 19.09978)","goals":1,"max_frame_displacement_m":0.0699468106031418,"name":"try_bay_B","pass":true,"reached":1,"stall_contacts":[]},"name":"try_bay_B","pass":true}
+DAY1 {"detail":"","name":"bay_B_refuses_A","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":0.597675433382392,"end":"(-38.07089, 16.41059, 19.06509)","goals":1,"max_frame_displacement_m":0.0701721832156181,"name":"reach_bay_A","pass":true,"reached":1,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":0.597675433382392,"end":"(-38.07089, 16.41059, 19.06509)","goals":1,"max_frame_displacement_m":0.0701721832156181,"name":"reach_bay_A","pass":true,"reached":1,"stall_contacts":[]},"name":"reach_bay_A","pass":true}
+DAY1 {"detail":"","name":"frame_03_court_rack","pass":true}
+DAY1 {"detail":{"p":"(-38.07089, 16.41059, 19.06509)","prompt":"008 已送达 · 超时 +6 元","t":84.5499999999965},"name":"court_parcel_released","pass":true}
+DAY1 {"detail":{"awards":[6,12,11],"earnings":53,"elapsed":84.5499999999965},"name":"all_receipts_settle_once","pass":true}
+DAY1 {"detail":"","name":"time_changes_actual_fee","pass":true}
+DAY1 {"detail":"","name":"frame_05_receipt","pass":true}

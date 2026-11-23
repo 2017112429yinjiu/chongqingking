@@ -1,0 +1,138 @@
+{
+	"CQ_Apron_CottonJersey": {
+		"albedo": "(1.0, 1.0, 1.0, 1.0)",
+		"alpha": 0,
+		"normal_enabled": true,
+		"normal_scale": 0.800000011920929,
+		"roughness": 1.0,
+		"textures": {
+			"albedo_texture": {
+				"path": "res://assets/characters/shopkeeper_r18_cotton_jersey_diff_1k.jpg",
+				"size": "(1024.0, 1025.0)"
+			},
+			"normal_texture": {
+				"path": "res://assets/characters/shopkeeper_r18_cotton_jersey_nor_gl_1k.jpg",
+				"size": "(1024.0, 1025.0)"
+			},
+			"roughness_texture": {
+				"path": "res://assets/characters/shopkeeper_r18_cotton_jersey_rough_1k.png",
+				"size": "(1024.0, 1025.0)"
+			}
+		},
+		"vertex_color": true
+	},
+	"CQ_Cotton_BoundSeams": {
+		"albedo": "(0.4845, 0.4492, 0.3811, 1.0)",
+		"alpha": 0,
+		"normal_enabled": false,
+		"normal_scale": 1.0,
+		"roughness": 0.959999978542328,
+		"textures": {
+
+		},
+		"vertex_color": true
+	},
+	"CQ_Cotton_Lockstitch": {
+		"albedo": "(0.6422, 0.5926, 0.5064, 1.0)",
+		"alpha": 0,
+		"normal_enabled": false,
+		"normal_scale": 1.0,
+		"roughness": 0.980000019073486,
+		"textures": {
+
+		},
+		"vertex_color": true
+	},
+	"Human.body": {
+		"albedo": "(0.92, 0.97, 1.0, 1.0)",
+		"alpha": 0,
+		"normal_enabled": true,
+		"normal_scale": 0.649999976158142,
+		"roughness": 0.600000023841858,
+		"textures": {
+			"albedo_texture": {
+				"path": "res://assets/characters/shopkeeper_r18_old_lightskinned_male_diffuse2.png",
+				"size": "(2048.0, 2048.0)"
+			},
+			"normal_texture": {
+				"path": "res://assets/characters/shopkeeper_r18_CQ_Skin_MicroNormal.png",
+				"size": "(2048.0, 2048.0)"
+			}
+		},
+		"vertex_color": false
+	},
+	"Human.eyebrow012": {
+		"albedo": "(1.35, 1.32, 1.28, 1.0)",
+		"alpha": 1,
+		"normal_enabled": false,
+		"normal_scale": 1.0,
+		"roughness": 0.649999976158142,
+		"textures": {
+			"albedo_texture": {
+				"path": "res://assets/characters/shopkeeper_r18_eyebrow012.png",
+				"size": "(512.0, 512.0)"
+			}
+		},
+		"vertex_color": false
+	},
+	"Human.low-poly": {
+		"albedo": "(1.0, 1.0, 1.0, 1.0)",
+		"alpha": 0,
+		"normal_enabled": false,
+		"normal_scale": 1.0,
+		"roughness": 0.140000000596046,
+		"textures": {
+			"albedo_texture": {
+				"path": "res://assets/characters/shopkeeper_r18_brown_eye.png",
+				"size": "(1024.0, 1024.0)"
+			}
+		},
+		"vertex_color": false
+	},
+	"Human.male_casualsuit01": {
+		"albedo": "(1.0, 1.0, 1.0, 1.0)",
+		"alpha": 0,
+		"normal_enabled": true,
+		"normal_scale": 1.0,
+		"roughness": 0.790000021457672,
+		"textures": {
+			"albedo_texture": {
+				"path": "res://assets/characters/shopkeeper_r18_male_casualsuit01_diffuse.png",
+				"size": "(2048.0, 2048.0)"
+			},
+			"normal_texture": {
+				"path": "res://assets/characters/shopkeeper_r18_male_casualsuit01_normal.png",
+				"size": "(2048.0, 2048.0)"
+			}
+		},
+		"vertex_color": false
+	},
+	"Human.shoes02": {
+		"albedo": "(1.0, 1.0, 1.0, 1.0)",
+		"alpha": 0,
+		"normal_enabled": false,
+		"normal_scale": 1.0,
+		"roughness": 0.790000021457672,
+		"textures": {
+			"albedo_texture": {
+				"path": "res://assets/characters/shopkeeper_r18_shoes02_diffuse.png",
+				"size": "(1024.0, 1024.0)"
+			}
+		},
+		"vertex_color": false
+	},
+	"Human.short04": {
+		"albedo": "(1.0, 1.0, 1.0, 1.0)",
+		"alpha": 2,
+		"normal_enabled": false,
+		"normal_scale": 1.0,
+		"roughness": 0.790000021457672,
+		"textures": {
+			"albedo_texture": {
+				"path": "res://assets/characters/shopkeeper_r18_short04_diffuse.png",
+				"size": "(2048.0, 2048.0)"
+			}
+		},
+		"vertex_color": false
+	}
+}

@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "revision": 15,
+  "status": "PASS_ACTUAL_CONTACT_AUDITS",
+  "generated_at_utc": "2026-11-19T15:34:05.101436+00:00",
+  "scene_sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223",
+  "execution_order": [
+    "drain",
+    "furniture"
+  ],
+  "runs": [
+    {
+      "kind": "drain",
+      "command": "python verification/audit_glb_drain_support.py --glb source/outputs_r15/chongqing_district.glb --source-audit source/outputs_r15/drain_grate_support_audit.json --output verification/round8/drain_grate_export_audit.json --expected-sha256 06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223",
+      "cwd": "/workspace/scratch/5462bdafe44f/cq05",
+      "tool_session_id": 82834,
+      "observed_process_exit_code": 0,
+      "exit_evidence": "exec_command/write_stdin returned actual exit_code 0; not inferred from file presence or traversal progress",
+      "stdout_status": "PASS",
+      "report_path": "/workspace/scratch/5462bdafe44f/cq05/verification/round8/drain_grate_export_audit.json",
+      "report_sha256": "34221b9bf3bc5ffc6f83aaffb07c69b1d2588521da06c67967865964c55cc0e4",
+      "scene_sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223",
+      "checker_sha256": "11777aa6bcfd365f76568a261bfa612046a25d6d87d87b7cc13bf655a1cbf2cd",
+      "source_sha256": {
+        "drain_support.py": "329c794e7f3d9a78d3e9c26af84506c8346ab057e8e284a13ab9e5c13f186376",
+        "urban_fabric.py": "3fa2c260406d610251d22607fa565bda53ddaafb01775a1338eccc403e3e29cc",
+        "district_geometry.py": "e27a4d1a625b5539674ce640c06012802b6f9d77e0191f996ac21a57185570ce"
+      },
+      "report_file_mtime_utc": "2026-11-19T15:32:19.568632+00:00",
+      "summary": {
+        "expected_grates": 112,
+        "grates_checked": 112,
+        "expected_bars": 1456,
+        "bars_checked": 1456,
+        "base_failures": 0,
+        "bar_failures": 0,
+        "missing_nodes": 0,
+        "unresolved_support_coverage_count": 0,
+        "two_sided_float32_seam_classifications": 4
+      },
+      "source_audit_sha256": "5e86df2c43d93cbe4d9f25c8bbb466f83d469c447c740d6aaa38d3995ea3868b"
+    },
+    {
+      "kind": "furniture",
+      "command": "python verification/audit_tea_furniture_contacts.py --glb source/outputs_r15/chongqing_district.glb --manifest source/outputs_r15/architecture_manifest.json --output verification/round8/furniture_contact_export_audit.json --expected-sha256 06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223",
+      "cwd": "/workspace/scratch/5462bdafe44f/cq05",
+      "tool_session_id": 1058,
+      "observed_process_exit_code": 0,
+      "exit_evidence": "exec_command/write_stdin returned actual exit_code 0; not inferred from file presence or traversal progress",
+      "stdout_status": "PASS",
+      "report_path": "/workspace/scratch/5462bdafe44f/cq05/verification/round8/furniture_contact_export_audit.json",
+      "report_sha256": "ca3478b3cdd4f925b479d43db534a2e4ae4b867ccb931e61a4f09a8293f20759",
+      "scene_sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223",
+      "checker_sha256": "aabb6e2c27bf85e27af158c874f59c6d8f5c492632789e62d28824f89fb360cc",
+      "source_sha256": {
+        "architecture_full.py": "65bd6df0c2851c777836eecdaae0cd73453ec3a03209da0cf5be0e64e875330f",
+        "interior_scenes.py": "e7785197ad310cfc421888c25db25a15d2e046044df536fe56f83346ee045ce1",
+        "interior_domains.py": "d2754f20c218573e13eaff4bae4fc69846ac5ab55a95a7e0b33019be98756e37"
+      },
+      "report_file_mtime_utc": "2026-11-19T15:32:34.342783+00:00",
+      "maximum_measured_absolute_gap_m": 0.0,
+      "architecture_manifest_sha256": "ee8a87c5def04d4a5cd8829e7336c8145bb247c9d9266f918f662cc920e6586f"
+    }
+  ],
+  "preserved_prior_attempts": [
+    {
+      "exit_code": 2,
+      "status": "ERROR",
+      "report": "drain_grate_export_audit_error_01.json",
+      "reason": "NumPy scalar JSON encoding; report encoding fixed only",
+      "report_path": "/workspace/scratch/5462bdafe44f/cq05/verification/round8/drain_grate_export_audit_error_01.json",
+      "report_sha256": "a1e679466db527e75f39e0944146d9cbe79316472e8da8fdd33bf1e6714a7f27"
+    },
+    {
+      "exit_code": 1,
+      "status": "FAIL",
+      "report": "drain_grate_export_audit_fail_01.json",
+      "reason": "Raw cap extreme-section reports; retained before actual end-ring diagnosis",
+      "report_path": "/workspace/scratch/5462bdafe44f/cq05/verification/round8/drain_grate_export_audit_fail_01.json",
+      "report_sha256": "2a973af2202ade022098475f32f15cd23c563a590e1f3764df7d8f554f946e44"
+    },
+    {
+      "exit_code": 1,
+      "status": "FAIL",
+      "report": "drain_grate_export_audit_fail_02.json",
+      "reason": "Remaining short-segment source-axis reports; retained before actual closed-cap axis diagnosis",
+      "report_path": "/workspace/scratch/5462bdafe44f/cq05/verification/round8/drain_grate_export_audit_fail_02.json",
+      "report_sha256": "5d340abeff32159fa57c3a3597456316993b6ca2011ed7cdcb086fbd0659e577"
+    },
+    {
+      "exit_code": 137,
+      "status": "INTERRUPTED",
+      "report": null,
+      "reason": "Reached 112/112 but process was killed before complete report publication; never accepted as PASS. Full audit later rerun sequentially with streamed atomic JSON output."
+    }
+  ],
+  "production_source_or_model_modified": false,
+  "engine_started_by_reviewer": false,
+  "native_visual_acceptance": "Pending fresh complete R15 22-view capture; actual geometry checks do not substitute for visual review."
+}

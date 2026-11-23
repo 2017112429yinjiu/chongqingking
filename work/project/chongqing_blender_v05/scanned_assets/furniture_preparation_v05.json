@@ -1,0 +1,285 @@
+{
+  "assets": [
+    {
+      "asset": "chinese_armchair",
+      "source_page": "https://polyhaven.com/a/chinese_armchair",
+      "original_triangles": 2675,
+      "source_height_m": 1.5874828100204468,
+      "source_width_m": 0.8482747673988342,
+      "source_dimensions_m": [
+        0.8482747673988342,
+        0.7886627912521362,
+        1.5874828100204468
+      ],
+      "source_forward_axis": "-Y",
+      "variants": {
+        "base": {
+          "objects": [
+            "PH_chinese_armchair_base_00"
+          ],
+          "triangles": 2675,
+          "target_triangles": 2675
+        }
+      },
+      "modifications": "Source transforms applied; center/ground origin normalized; original PBR maps and UVs retained."
+    },
+    {
+      "asset": "chinese_tea_table",
+      "source_page": "https://polyhaven.com/a/chinese_tea_table",
+      "original_triangles": 2508,
+      "source_height_m": 0.4986410439014435,
+      "source_width_m": 0.8413149118423462,
+      "source_dimensions_m": [
+        0.8413149118423462,
+        0.8356219530105591,
+        0.4986410439014435
+      ],
+      "source_forward_axis": "-Y",
+      "variants": {
+        "base": {
+          "objects": [
+            "PH_chinese_tea_table_base_00"
+          ],
+          "triangles": 2508,
+          "target_triangles": 2508
+        }
+      },
+      "modifications": "Source transforms applied; center/ground origin normalized; original PBR maps and UVs retained."
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "source_page": "https://polyhaven.com/a/plastic_monobloc_chair_01",
+      "original_triangles": 3356,
+      "source_height_m": 0.8798412084579468,
+      "source_width_m": 0.6418611407279968,
+      "source_dimensions_m": [
+        0.6418611407279968,
+        0.6275919079780579,
+        0.8798412084579468
+      ],
+      "source_forward_axis": "-Y",
+      "variants": {
+        "base": {
+          "objects": [
+            "PH_plastic_monobloc_chair_01_base_00"
+          ],
+          "triangles": 3356,
+          "target_triangles": 3356
+        }
+      },
+      "modifications": "Source transforms applied; center/ground origin normalized; original PBR maps and UVs retained."
+    },
+    {
+      "asset": "potted_plant_02",
+      "source_page": "https://polyhaven.com/a/potted_plant_02",
+      "original_triangles": 69806,
+      "source_height_m": 0.8411787152290344,
+      "source_width_m": 0.7011570334434509,
+      "source_dimensions_m": [
+        0.7011570334434509,
+        0.6573866009712219,
+        0.8411787152290344
+      ],
+      "source_forward_axis": "-Y",
+      "variants": {
+        "base": {
+          "objects": [
+            "PH_potted_plant_02_base_00",
+            "PH_potted_plant_02_base_01",
+            "PH_potted_plant_02_base_02"
+          ],
+          "triangles": 17999,
+          "target_triangles": 18000
+        }
+      },
+      "modifications": "Source transforms applied; center/ground origin normalized; original PBR maps and UVs retained. Geometry reduced for real-time use; source masked leaves retained."
+    }
+  ],
+  "source_files": [
+    {
+      "asset": "chinese_armchair",
+      "download_path": "furniture/chinese_armchair/chinese_armchair_2k.gltf",
+      "bytes": 2816,
+      "sha256": "91d1cdd6fba39af27b72ede79bd81ebc7e44f1bf944565ec5c60642cdf347eb7",
+      "md5": "d592d7794954cb692ef53f362794340a",
+      "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/2k/chinese_armchair/chinese_armchair_2k.gltf"
+    },
+    {
+      "asset": "chinese_armchair",
+      "download_path": "furniture/chinese_armchair/textures/chinese_armchair_diff_2k.jpg",
+      "bytes": 1854860,
+      "sha256": "f4820d32af21801c023aa68214ecd7143a0c050e8cc2fe59b93735c951e772a8",
+      "md5": "44d4cb5ff2f2bbc4b5fd773cff3adc02",
+      "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/chinese_armchair/chinese_armchair_diff_2k.jpg"
+    },
+    {
+      "asset": "chinese_armchair",
+      "download_path": "furniture/chinese_armchair/chinese_armchair.bin",
+      "bytes": 81428,
+      "sha256": "7e72b5360513057bdc453d6c03d5a837d32a8c9a2e6185f1b016c1bc62dc5b27",
+      "md5": "7575b1f0e7de094e7c1cbebf610e5da0",
+      "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/chinese_armchair/chinese_armchair.bin"
+    },
+    {
+      "asset": "chinese_armchair",
+      "download_path": "furniture/chinese_armchair/textures/chinese_armchair_nor_gl_2k.jpg",
+      "bytes": 1742166,
+      "sha256": "7b73aabeef66c0454ce5d89dc4ab98c6ea2ad52d7de929a3263ec0280f2d0178",
+      "md5": "bd25ad94c868ded712fc093324b8b7f7",
+      "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/chinese_armchair/chinese_armchair_nor_gl_2k.jpg"
+    },
+    {
+      "asset": "chinese_armchair",
+      "download_path": "furniture/chinese_armchair/textures/chinese_armchair_arm_2k.jpg",
+      "bytes": 2223029,
+      "sha256": "fe67e0b482fa206eb1dea3d803455b9639468de1104f6c2a5c5f8c17a6a8eb02",
+      "md5": "a6fa9bf7abd8a5d1977bdbbf5e43ae17",
+      "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/chinese_armchair/chinese_armchair_arm_2k.jpg"
+    },
+    {
+      "asset": "chinese_tea_table",
+      "download_path": "furniture/chinese_tea_table/chinese_tea_table_2k.gltf",
+      "bytes": 2793,
+      "sha256": "bd79eb86ac2edcb87b312ce1c2ae2a0cf5881981d11d21f5b62e3dd69d486303",
+      "md5": "0776a66d0f8eb2340506de53ed4eafe8",
+      "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/2k/chinese_tea_table/chinese_tea_table_2k.gltf"
+    },
+    {
+      "asset": "chinese_tea_table",
+      "download_path": "furniture/chinese_tea_table/textures/chinese_tea_table_diff_2k.jpg",
+      "bytes": 1696113,
+      "sha256": "0ea6290528c50a5c5c994a4648f101670fa0f2ce98209496a4dbba1b025ad669",
+      "md5": "adb3c90c197dd4a44140b0ea89991d6a",
+      "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/chinese_tea_table/chinese_tea_table_diff_2k.jpg"
+    },
+    {
+      "asset": "chinese_tea_table",
+      "download_path": "furniture/chinese_tea_table/chinese_tea_table.bin",
+      "bytes": 78792,
+      "sha256": "e584dbcf8d654c662ef849ef6111b11dc9f87e9a7ea8dc98c7d32dbfe10b7e52",
+      "md5": "8dcb405bff1e509e3c846278ce2f3ad9",
+      "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/chinese_tea_table/chinese_tea_table.bin"
+    },
+    {
+      "asset": "chinese_tea_table",
+      "download_path": "furniture/chinese_tea_table/textures/chinese_tea_table_nor_gl_2k.jpg",
+      "bytes": 2329694,
+      "sha256": "ca8484f0c8fa66c6922246cd129523cd4aee9f48a9fc5b0ce4c3f5f04b51e96c",
+      "md5": "d3f1289d154858c79915d58aad86366b",
+      "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/chinese_tea_table/chinese_tea_table_nor_gl_2k.jpg"
+    },
+    {
+      "asset": "chinese_tea_table",
+      "download_path": "furniture/chinese_tea_table/textures/chinese_tea_table_arm_2k.jpg",
+      "bytes": 1922536,
+      "sha256": "316bfe378289b18df8bec3bf906996e921153474417215baad8ce5c2f3701d88",
+      "md5": "f005012cff95323a9e6b451a8b562826",
+      "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/chinese_tea_table/chinese_tea_table_arm_2k.jpg"
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "download_path": "furniture/plastic_monobloc_chair_01/plastic_monobloc_chair_01_2k.gltf",
+      "bytes": 2892,
+      "sha256": "1f5976383ee8064012babb608cd40b9653d3855113ef0e4fdf4e8b96fd5d6615",
+      "md5": "e2e9ff70061d664128db92d5be98b300",
+      "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/2k/plastic_monobloc_chair_01/plastic_monobloc_chair_01_2k.gltf"
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "download_path": "furniture/plastic_monobloc_chair_01/plastic_monobloc_chair_01.bin",
+      "bytes": 124808,
+      "sha256": "db5c778488d01d7e7d3409e2cda53ee8f6dd523a327c080000d549dd0f83b375",
+      "md5": "cff97136a9c4bb57c62937cbb7d33a79",
+      "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/4k/plastic_monobloc_chair_01/plastic_monobloc_chair_01.bin"
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "download_path": "furniture/plastic_monobloc_chair_01/textures/plastic_monobloc_chair_01_nor_gl_2k.jpg",
+      "bytes": 2390698,
+      "sha256": "d20c1838a13b3efc0b51a2edd12a3d701f1d2846abc06bb202bff99952e994de",
+      "md5": "c1b0aea021718fab49c8c26ea2a0531a",
+      "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/plastic_monobloc_chair_01/plastic_monobloc_chair_01_nor_gl_2k.jpg"
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "download_path": "furniture/plastic_monobloc_chair_01/textures/plastic_monobloc_chair_01_diff_2k.jpg",
+      "bytes": 2010853,
+      "sha256": "97aa591b9291614799ba98b02a37913c381dee6695e1e5f9f42574e0119d755e",
+      "md5": "a3d16a97d5b83025e7c7e6d846de5fdc",
+      "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/plastic_monobloc_chair_01/plastic_monobloc_chair_01_diff_2k.jpg"
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "download_path": "furniture/plastic_monobloc_chair_01/textures/plastic_monobloc_chair_01_arm_2k.jpg",
+      "bytes": 2136069,
+      "sha256": "a8eda64bc7dc6e50c85b9a45af2201c758d98ca54d144d90c70eaf10a4dc1164",
+      "md5": "80910ea254aac1cdf7de7ffe0dccc50d",
+      "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/plastic_monobloc_chair_01/plastic_monobloc_chair_01_arm_2k.jpg"
+    },
+    {
+      "asset": "potted_plant_02",
+      "download_path": "furniture/potted_plant_02/potted_plant_02_2k.gltf",
+      "bytes": 6653,
+      "sha256": "80ab49cb61737244f50b805ddde3dd64e461b2a244817f8882e95a97c916d158",
+      "md5": "9161f84da94065f5b3888347c0f275ce",
+      "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/2k/potted_plant_02/potted_plant_02_2k.gltf"
+    },
+    {
+      "asset": "potted_plant_02",
+      "download_path": "furniture/potted_plant_02/textures/potted_plant_02_leaves_diff_2k.jpg",
+      "bytes": 584084,
+      "sha256": "f70de9a4b735b740e79d4e7720a47eae5e2bb4a289880cdae5905d156223bd7d",
+      "md5": "96aa3bba976e762eedced66d9832c2a5",
+      "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/potted_plant_02/potted_plant_02_leaves_diff_2k.jpg"
+    },
+    {
+      "asset": "potted_plant_02",
+      "download_path": "furniture/potted_plant_02/textures/potted_plant_02_leaves_nor_gl_2k.jpg",
+      "bytes": 481780,
+      "sha256": "2ae648b12ea457fb720f9adc6f8dc9feb8d5409e43f3b9f2ce7f089b3eef12f6",
+      "md5": "c187345d2875a28be93e61db4dd61558",
+      "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/potted_plant_02/potted_plant_02_leaves_nor_gl_2k.jpg"
+    },
+    {
+      "asset": "potted_plant_02",
+      "download_path": "furniture/potted_plant_02/textures/potted_plant_02_pot_diff_2k.jpg",
+      "bytes": 596006,
+      "sha256": "21672040b5de49e7dae07452431b4fe5cf401494f5ab5157b5f54a146cc68383",
+      "md5": "d7c6055680866af21f73e14a57bbd7d3",
+      "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/potted_plant_02/potted_plant_02_pot_diff_2k.jpg"
+    },
+    {
+      "asset": "potted_plant_02",
+      "download_path": "furniture/potted_plant_02/potted_plant_02.bin",
+      "bytes": 1852244,
+      "sha256": "9c9812482c78a59789ed32fa842b4cbd9365e09c900c31ebb998e5efe627fe97",
+      "md5": "cdbd4619b2596c9c469ad34676085fa8",
+      "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/potted_plant_02/potted_plant_02.bin"
+    },
+    {
+      "asset": "potted_plant_02",
+      "download_path": "furniture/potted_plant_02/textures/potted_plant_02_leaves_rough_2k.jpg",
+      "bytes": 435284,
+      "sha256": "399e61a82069b3e344cece76c128f84a664dd44719331450877b671906e01e27",
+      "md5": "0b1e1d0c38da3a5d73dc1274fc739fa0",
+      "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/potted_plant_02/potted_plant_02_leaves_rough_2k.jpg"
+    },
+    {
+      "asset": "potted_plant_02",
+      "download_path": "furniture/potted_plant_02/textures/potted_plant_02_pot_nor_gl_2k.jpg",
+      "bytes": 494387,
+      "sha256": "8e8c2e96de90e793712a9db8a6cea7a38f7fd5ec489b8134b586a42ebbbfcb11",
+      "md5": "0b333cfc921defac311dc9232f2f01b9",
+      "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/potted_plant_02/potted_plant_02_pot_nor_gl_2k.jpg"
+    },
+    {
+      "asset": "potted_plant_02",
+      "download_path": "furniture/potted_plant_02/textures/potted_plant_02_pot_rough_2k.jpg",
+      "bytes": 426559,
+      "sha256": "c1f341bfa5e610dab2fd31aad4068fa20cf957b098912da5949bca996d7649bf",
+      "md5": "08a89ef59d4fd0b19a925cc4d2c512af",
+      "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/potted_plant_02/potted_plant_02_pot_rough_2k.jpg"
+    }
+  ],
+  "branch_uv_repair_preserved": true
+}

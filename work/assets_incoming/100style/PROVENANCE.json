@@ -1,0 +1,29 @@
+{
+  "dataset": "100STYLE",
+  "author": "Ian Mason",
+  "source": "https://www.ianxmason.com/100style/",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "required_credit": "The 100STYLE Dataset - Ian Mason",
+  "modifications": "Original downloaded BVH files are unchanged. A derived idle from Neutral_ID frames 700-1300 is integrated: retargeted/bounded pelvis, chest, head, wrist deltas, fixed-foot IK, 30 Hz resampling and loop blend. Neutral_FW is not integrated. Exact derived record: work/characters/shopkeeper_r18/idle_motion_reference.json.",
+  "files": [
+    {
+      "name": "Neutral_ID.bvh",
+      "source_url": "https://drive.google.com/uc?id=1Vnz5wnFmOztNzaSBHjSt9v6y0pl0FK8X&export=download",
+      "sha256": "71aead2e3246bdb47a5b839cb3e60e0574e9a1a046c071cc147e2922a35f259f",
+      "bytes": 1465227
+    },
+    {
+      "name": "Neutral_FW.bvh",
+      "source_url": "https://drive.google.com/uc?id=1-TqZdIJvpr-QVvAmYJREUZkuAgpAQSfd&export=download",
+      "sha256": "2f28800baa299547c42c257d1c926172542a1e69b46a3d3e6aa0aded0e9b40f6",
+      "bytes": 5504825
+    },
+    {
+      "name": "Frame_Cuts.csv",
+      "source_url": "https://drive.google.com/uc?id=1d0VM8k4UjA4dDmaviuZMjAf-WQNLUwnZ&export=download",
+      "sha256": "e3c1d2beab6486e083622cef6a5402fe9b20edc75a9963ea30675c67ec29ee82",
+      "bytes": 10036
+    }
+  ]
+}

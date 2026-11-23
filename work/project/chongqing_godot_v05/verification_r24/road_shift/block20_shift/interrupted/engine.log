@@ -1,0 +1,208 @@
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+
+CQ_INTERIOR_LIGHTS {"interior_candidate_count":9,"interior_lights":[{"energy":0.239999994635582,"name":"B_809889627_blue_apartments_room_lamp","position":[82.391,28.184,-13.942],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_809889628_clinic_room_lamp","position":[15.883,31.615,-53.5],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_809889629_artisan_room_lamp","position":[47.205,34.774,-72.476],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_1335306665_civic_room_lamp","position":[-24.373,26.707,-30.861],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_1335306666_heritage_room_lamp","position":[-50.162,26.057,-36.511],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_1335306667_brick_home_room_lamp","position":[-62.888,23.169,-17.653],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_1413081560_old_tile_room_lamp","position":[-33.476,29.533,-53.924],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_A03_blue_apartments_room_lamp","position":[-91.543,16.767,15.033],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_A04_courtyard_home_room_lamp","position":[-55.09,17.775,14.621],"range":2.70000004768372,"shadows":false}],"street_lights":22}
+CQ_BRANCH_OVERRIDE {"baked_primary":true,"imported_uv1_offset":[0.0,0.0,0.0],"imported_uv1_scale":[1.0,1.0,1.0],"imported_uv2_offset":[0.0,0.0,0.0],"imported_uv2_scale":[1.0,1.0,1.0],"normal_and_pbr_textures":false,"offset":[0.0,0.0],"scale":[1.0,1.0],"texcoord":0,"texture":"res://assets/chongqing_district_island_tree_01_branches_diff_2k.jpg"}
+CQ_BRANCH_OVERRIDE {"baked_primary":true,"imported_uv1_offset":[0.0,0.0,0.0],"imported_uv1_scale":[1.0,1.0,1.0],"imported_uv2_offset":[0.0,0.0,0.0],"imported_uv2_scale":[1.0,1.0,1.0],"normal_and_pbr_textures":false,"offset":[0.0,0.0],"scale":[1.0,1.0],"texcoord":0,"texture":"res://assets/chongqing_district_tree_small_02_branch_diff_2k.jpg"}
+CQ_STREET_USE { "dressed": 2, "paving": 56, "facades": 83, "asphalt": 15, "workday": true, "resident_pots": 2, "furniture_volumes": 2 }
+CQ_NEIGHBORHOOD {"missing":[],"plants":35,"removed":["COL_Handrails_Central_stair_lane_painted_metal","COL_Handrails_West_residential_link_painted_metal","Court_entry_rails_frame","Utility_cables_dark","COL_R20_Returned_handrail_steel","COL_R20_Returned_handrail_rail_enamel","COL_R20_Returned_handrail_pin","COL_R20_Returned_handrail_iron","Resident_waste_13_bin_00","Resident_waste_13_bin_01","Resident_waste_13_bin_02","Resident_waste_13_bin_03","Resident_waste_13_bagA_00","Resident_waste_13_bagB_00","Resident_waste_13_crate_00"],"shifted":87,"spans":4,"tree_distance_meshes":288,"trunks":5}
+PENG_TEACH AT_BIKE
+CQ_READY {"collisions":{"bodies":276,"by_kind":{"refined_structure":276},"created":276,"failed":[],"props":{"method":"deduplicated root-aligned cylinders; foliage excluded","trunks_and_posts":57},"reused":0,"skipped_meshes":3622,"triangles":497577},"engine":"4.6.3-stable (official)","renderer":"forward_plus","spawn":[20.0,9.4995,76.0]}
+DAY1 {"detail":"","name":"district_booted","pass":true}
+DAY1 {"detail":"","name":"default_game_starts_at_registration","pass":true}
+DAY1 {"detail":"","name":"early_order_and_bike_locked","pass":true}
+PENG_TEACH BOARD_FIRST
+DAY1 {"detail":"(-49.2, 12.06909, 49.8)","name":"register_at_mentor","pass":true}
+DAY1 {"detail":"","name":"mentor_on_foot_at_check_in","pass":true}
+PENG_TEACH RIDING
+DAY1 {"detail":{"walk_m":0.0},"name":"watched_RIDING","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":5.34008981101215,"end":"(-54.67899, 11.78895, 51.00916)","goals":1,"max_frame_displacement_m":0.0722955465316772,"name":"walk_to_own_bike","pass":true,"reached":1,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":5.34008981101215,"end":"(-54.67899, 11.78895, 51.00916)","goals":1,"max_frame_displacement_m":0.0722955465316772,"name":"walk_to_own_bike","pass":true,"reached":1,"stall_contacts":[]},"name":"walk_to_own_bike","pass":true}
+DAY1 {"detail":"","name":"mount_own_scooter","pass":true}
+DAY1 {"detail":"(-43.56856, 11.88872, 52.1168)","name":"guide_waits_when_learner_stops","pass":true}
+DAY1 {"detail":"","name":"mid_route_park_and_dismount","pass":true}
+DAY1 {"detail":"","name":"mentor_waits_for_dismounted_learner","pass":true}
+DAY1 {"detail":"","name":"remount_after_practice_stop","pass":true}
+PENG_ROUTE_ISSUE {"goal":"(-39.0, 12.0, 52.0)","kind":"route_blocked","obstacle":"/root/ChongqingDistrict/TestOnlyRoadblock","position":"(-41.57556, 11.9209, 52.11082)","seconds_without_progress":3.02,"segment":0,"stage":"TO_SHOP","time_s":22.0}
+PENG_TEACH SHOP_EXIT
+DAY1 {"detail":{"frames":655,"mentor_end":"(-30.19444, 11.66862, 54.96118)","student_end":"(-34.148, 11.82206, 53.84648)","wheel_travel_m":20.3027181210346},"name":"follow_to_noodle_shop","pass":true}
+DAY1 {"detail":"","name":"parked_at_shop","pass":true}
+DAY1 {"detail":"","name":"saved_shop","pass":true}
+DAY1 {"detail":"","name":"pupil_cannot_order_before_demo","pass":true}
+PENG_TEACH WALK_COUNTER
+PENG_TEACH ORDER
+PENG_TEACH PACK
+PENG_TEACH PICK_UP
+PENG_TEACH LIFT_CLEAR
+PENG_TEACH PUPIL_PICKUP
+DAY1 {"detail":{"walk_m":8.00996027514338},"name":"watched_PUPIL_PICKUP","pass":true}
+DAY1 {"detail":"","name":"mentor_took_separate_order","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":5.78008721023798,"end":"(-23.61761, 11.15637, 59.96212)","goals":2,"max_frame_displacement_m":0.0751253888010979,"name":"walk_to_counter","pass":true,"reached":2,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":5.78008721023798,"end":"(-23.61761, 11.15637, 59.96212)","goals":2,"max_frame_displacement_m":0.0751253888010979,"name":"walk_to_counter","pass":true,"reached":2,"stall_contacts":[]},"name":"walk_to_counter","pass":true}
+DAY1 {"detail":"","name":"place_real_order","pass":true}
+DAY1 {"detail":"{  }","name":"packed_meal_in_view_from_pickup","pass":true}
+DAY1 {"detail":"","name":"take_packed_order","pass":true}
+PENG_TEACH RETURN_BIKE
+DAY1 {"detail":"","name":"cannot_deliver_before_second_leg","pass":true}
+PENG_TEACH LOAD_BOX
+PENG_TEACH BOARD_AGAIN
+PENG_TEACH RIDING
+DAY1 {"detail":{"walk_m":17.0250480379909},"name":"watched_RIDING","pass":true}
+DAY1 {"detail":"","name":"saved_carrying","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":9.77488525677472,"end":"(-34.47805, 11.65394, 55.00925)","goals":2,"max_frame_displacement_m":0.0723144933581352,"name":"return_to_parked_scooter","pass":true,"reached":2,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":9.77488525677472,"end":"(-34.47805, 11.65394, 55.00925)","goals":2,"max_frame_displacement_m":0.0723144933581352,"name":"return_to_parked_scooter","pass":true,"reached":2,"stall_contacts":[]},"name":"return_to_parked_scooter","pass":true}
+DAY1 {"detail":"","name":"pupil_loads_separate_box","pass":true}
+DAY1 {"detail":{"objective":"老彭在你身后等你 · 4 米\n骑近他就会继续带路","prompt":"已上车 · W 前进 / S 刹车及倒车 · A D 转向 · 空格急刹 · P 停车 · E 下车"},"name":"mount_with_order","pass":true}
+PENG_TEACH YARD_EXIT
+DAY1 {"detail":{"frames":1502,"mentor_end":"(-47.75912, 16.11741, 19.65506)","student_end":"(-43.66337, 16.20335, 19.75363)","wheel_travel_m":57.9511274010874},"name":"follow_to_courtyard_approach","pass":true}
+DAY1 {"detail":"(-47.75912, 16.11741, 19.65506)","name":"riders_park_at_real_address","pass":true}
+DAY1 {"detail":"","name":"saved_last_mile","pass":true}
+PENG_TEACH UNLOAD
+PENG_TEACH PUPIL_UNLOAD
+DAY1 {"detail":{"walk_m":17.6190891396254},"name":"watched_PUPIL_UNLOAD","pass":true}
+PENG_TEACH LEAD_HOME
+DAY1 {"detail":"","name":"pupil_retrieves_second_bag","pass":true}
+PENG_TEACH KNOCK
+DAY1 {"detail":"","name":"demonstration_waits_for_line_of_sight","pass":true}
+PENG_TEACH WALK_TO_HOOK
+PENG_TEACH HANG
+PENG_TEACH RELEASE_HOOK
+PENG_TEACH STEP_ASIDE
+PENG_TEACH PUPIL_DELIVERS
+DAY1 {"detail":{"walk_m":28.492021379061},"name":"watched_PUPIL_DELIVERS","pass":true}
+DAY1 {"detail":"","name":"mentor_delivers_first","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":2.14256665762514,"end":"(-54.95808, 16.45405, 19.59827)","goals":1,"max_frame_displacement_m":0.0723419561982155,"name":"walk_to_house_one","pass":true,"reached":1,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":2.14256665762514,"end":"(-54.95808, 16.45405, 19.59827)","goals":1,"max_frame_displacement_m":0.0723419561982155,"name":"walk_to_house_one","pass":true,"reached":1,"stall_contacts":[]},"name":"walk_to_house_one","pass":true}
+DAY1 {"detail":"","name":"rapid_input_cannot_skip_knock","pass":true}
+DAY1 {"detail":"","name":"student_knocks_before_handover","pass":true}
+DAY1 {"detail":[0.00147475546691567,0.00252743274904788,0.000279125350061804],"name":"pupil_knuckle_contacts_wood","pass":true}
+DAY1 {"detail":"","name":"saved_knocked","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":0.764336185529828,"end":"(-54.23943, 16.45405, 18.93188)","goals":1,"max_frame_displacement_m":0.0700003653764725,"name":"reach_second_hook","pass":true,"reached":1,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":0.764336185529828,"end":"(-54.23943, 16.45405, 18.93188)","goals":1,"max_frame_displacement_m":0.0700003653764725,"name":"reach_second_hook","pass":true,"reached":1,"stall_contacts":[]},"name":"reach_second_hook","pass":true}
+DAY1 {"detail":"","name":"credit_waits_for_release","pass":true}
+PENG_TEACH BACK_TO_SADDLE
+DAY1 {"detail":"","name":"order_one_credited_once","pass":true}
+DAY1 {"detail":"","name":"saved_after_door","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":10.520874787122,"end":"(-43.57341, 16.32672, 18.62473)","goals":2,"max_frame_displacement_m":0.0907831490039825,"name":"order_2_back_to_vehicle","pass":true,"reached":2,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":10.520874787122,"end":"(-43.57341, 16.32672, 18.62473)","goals":2,"max_frame_displacement_m":0.0907831490039825,"name":"order_2_back_to_vehicle","pass":true,"reached":2,"stall_contacts":[]},"name":"order_2_back_to_vehicle","pass":true}
+PENG_TEACH RIDING
+DAY1 {"detail":{"objective":"老彭在你身后等你 · 4 米\n骑近他就会继续带路","prompt":"已上车 · W 前进 / S 刹车及倒车 · A D 转向 · 空格急刹 · P 停车 · E 下车"},"name":"order_2_remount","pass":true}
+DAY1 {"detail":"","name":"mid_route_park_and_dismount","pass":true}
+DAY1 {"detail":"","name":"mentor_waits_for_dismounted_learner","pass":true}
+DAY1 {"detail":"","name":"remount_after_practice_stop","pass":true}
+PENG_TEACH SHOP_EXIT
+DAY1 {"detail":{"frames":2141,"mentor_end":"(-30.11936, 11.54164, 55.7035)","student_end":"(-32.55064, 11.92027, 53.74266)","wheel_travel_m":66.2756032847101},"name":"order_2_back_to_shop","pass":true}
+PENG_TEACH WALK_COUNTER
+PENG_TEACH ORDER
+PENG_TEACH PACK
+PENG_TEACH PICK_UP
+PENG_TEACH LIFT_CLEAR
+PENG_TEACH PUPIL_PICKUP
+DAY1 {"detail":{"walk_m":41.9600334493443},"name":"watched_PUPIL_PICKUP","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":5.78175264410675,"end":"(-23.59671, 11.15159, 59.97831)","goals":2,"max_frame_displacement_m":0.0755112320184708,"name":"order_2_counter","pass":true,"reached":2,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":5.78175264410675,"end":"(-23.59671, 11.15159, 59.97831)","goals":2,"max_frame_displacement_m":0.0755112320184708,"name":"order_2_counter","pass":true,"reached":2,"stall_contacts":[]},"name":"order_2_counter","pass":true}
+DAY1 {"detail":"","name":"spice_portion_required","pass":true}
+DAY1 {"detail":{"objective":"第 2 / 3 单 · 骑手站取餐架\n餐已拿好，跟老彭回车边","prompt":"已取餐 · 送往骑手站取餐架"},"name":"order_2_collected","pass":true}
+PENG_TEACH RETURN_BIKE
+PENG_TEACH LOAD_BOX
+PENG_TEACH BOARD_AGAIN
+PENG_TEACH RIDING
+DAY1 {"detail":{"walk_m":50.5009202165529},"name":"watched_RIDING","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":1.01188277918845,"end":"(-26.70048, 11.49533, 56.62633)","goals":1,"max_frame_displacement_m":0.0716188997030258,"name":"order_2_leave_counter","pass":true,"reached":1,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":1.01188277918845,"end":"(-26.70048, 11.49533, 56.62633)","goals":1,"max_frame_displacement_m":0.0716188997030258,"name":"order_2_leave_counter","pass":true,"reached":1,"stall_contacts":[]},"name":"order_2_leave_counter","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":5.13865878805518,"end":"(-31.52691, 11.78323, 54.32985)","goals":1,"max_frame_displacement_m":0.405831307172775,"name":"order_2_load","pass":true,"reached":1,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":5.13865878805518,"end":"(-31.52691, 11.78323, 54.32985)","goals":1,"max_frame_displacement_m":0.405831307172775,"name":"order_2_load","pass":true,"reached":1,"stall_contacts":[]},"name":"order_2_load","pass":true}
+DAY1 {"detail":"","name":"order_2_mounted_with_own_parcel","pass":true}
+PENG_TEACH YARD_EXIT
+DAY1 {"detail":{"frames":685,"mentor_end":"(-43.57904, 11.60287, 54.27122)","student_end":"(-39.53824, 11.77973, 53.55398)","wheel_travel_m":21.2413387629204},"name":"order_2_to_address","pass":true}
+PENG_TEACH UNLOAD
+PENG_TEACH PUPIL_UNLOAD
+DAY1 {"detail":{"walk_m":51.0949452659115},"name":"watched_PUPIL_UNLOAD","pass":true}
+PENG_TEACH TO_SHELF
+PENG_TEACH PUT_ON_SHELF
+PENG_TEACH CLEAR_SHELF
+PENG_TEACH PUPIL_SHELF
+DAY1 {"detail":{"walk_m":57.0063033690676},"name":"watched_PUPIL_SHELF","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":1.42064055800438,"end":"(-47.84295, 11.8662, 51.54374)","goals":1,"max_frame_displacement_m":0.0700277015566826,"name":"order_2_wrong_bay","pass":true,"reached":1,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":1.42064055800438,"end":"(-47.84295, 11.8662, 51.54374)","goals":1,"max_frame_displacement_m":0.0700277015566826,"name":"order_2_wrong_bay","pass":true,"reached":1,"stall_contacts":[]},"name":"order_2_wrong_bay","pass":true}
+DAY1 {"detail":"看袋上的小票，你的收餐位是乙。","name":"order_2_wrong_bay_rejected","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":0.530644875019789,"end":"(-47.00732, 11.89678, 51.4642)","goals":1,"max_frame_displacement_m":0.0699987635016441,"name":"order_2_correct_bay","pass":true,"reached":1,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":0.530644875019789,"end":"(-47.00732, 11.89678, 51.4642)","goals":1,"max_frame_displacement_m":0.0699987635016441,"name":"order_2_correct_bay","pass":true,"reached":1,"stall_contacts":[]},"name":"order_2_correct_bay","pass":true}
+PENG_TEACH PUPIL_PLACING
+PENG_TEACH PUPIL_SHELF
+DAY1 {"detail":"","name":"aborted_placement_keeps_order","pass":true}
+PENG_TEACH PUPIL_PLACING
+PENG_TEACH BACK_TO_SADDLE
+DAY1 {"detail":{"objective":"第 3 / 3 单 · 篮球场下巷取餐架\n跟老彭回到各自的车旁，骑回面馆接单","prompt":"老彭：最后一趟到球场下巷。看小票分清甲乙收餐位。"},"name":"order_2_both_real_bags_at_shelf","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":7.04577520303428,"end":"(-39.71556, 11.91747, 52.39006)","goals":1,"max_frame_displacement_m":0.071616917848587,"name":"order_3_back_to_vehicle","pass":true,"reached":1,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":7.04577520303428,"end":"(-39.71556, 11.91747, 52.39006)","goals":1,"max_frame_displacement_m":0.071616917848587,"name":"order_3_back_to_vehicle","pass":true,"reached":1,"stall_contacts":[]},"name":"order_3_back_to_vehicle","pass":true}
+PENG_TEACH RIDING
+DAY1 {"detail":{"objective":"老彭在你身后等你 · 4 米\n骑近他就会继续带路","prompt":"已上车 · W 前进 / S 刹车及倒车 · A D 转向 · 空格急刹 · P 停车 · E 下车"},"name":"order_3_remount","pass":true}
+DAY1 {"detail":"","name":"mid_route_park_and_dismount","pass":true}
+DAY1 {"detail":"","name":"mentor_waits_for_dismounted_learner","pass":true}
+DAY1 {"detail":"","name":"remount_after_practice_stop","pass":true}
+PENG_TEACH SHOP_EXIT
+DAY1 {"detail":{"frames":1031,"mentor_end":"(-30.20456, 11.68062, 54.92776)","student_end":"(-34.19659, 11.8721, 53.52446)","wheel_travel_m":22.2749648916651},"name":"order_3_back_to_shop","pass":true}
+PENG_TEACH WALK_COUNTER
+PENG_TEACH ORDER
+PENG_TEACH PACK
+PENG_TEACH PICK_UP
+PENG_TEACH LIFT_CLEAR
+PENG_TEACH PUPIL_PICKUP
+DAY1 {"detail":{"walk_m":70.6377532454208},"name":"watched_PUPIL_PICKUP","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":5.85135258268565,"end":"(-23.61451, 11.1559, 59.96384)","goals":2,"max_frame_displacement_m":0.0755118504166603,"name":"order_3_counter","pass":true,"reached":2,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":5.85135258268565,"end":"(-23.61451, 11.1559, 59.96384)","goals":2,"max_frame_displacement_m":0.0755118504166603,"name":"order_3_counter","pass":true,"reached":2,"stall_contacts":[]},"name":"order_3_counter","pass":true}
+DAY1 {"detail":{"objective":"第 3 / 3 单 · 篮球场下巷取餐架\n餐已拿好，跟老彭回车边","prompt":"已取餐 · 送往篮球场下巷取餐架"},"name":"order_3_collected","pass":true}
+PENG_TEACH RETURN_BIKE
+PENG_TEACH LOAD_BOX
+PENG_TEACH BOARD_AGAIN
+PENG_TEACH RIDING
+DAY1 {"detail":{"walk_m":79.7282024128363},"name":"watched_RIDING","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":1.86543023958802,"end":"(-26.65894, 11.49447, 56.65001)","goals":1,"max_frame_displacement_m":0.072010338306427,"name":"order_3_leave_counter","pass":true,"reached":1,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":1.86543023958802,"end":"(-26.65894, 11.49447, 56.65001)","goals":1,"max_frame_displacement_m":0.072010338306427,"name":"order_3_leave_counter","pass":true,"reached":1,"stall_contacts":[]},"name":"order_3_leave_counter","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":6.92357108835131,"end":"(-33.0686, 11.8106, 54.05068)","goals":1,"max_frame_displacement_m":0.0700444281101227,"name":"order_3_load","pass":true,"reached":1,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":6.92357108835131,"end":"(-33.0686, 11.8106, 54.05068)","goals":1,"max_frame_displacement_m":0.0700444281101227,"name":"order_3_load","pass":true,"reached":1,"stall_contacts":[]},"name":"order_3_load","pass":true}
+DAY1 {"detail":"","name":"order_3_mounted_with_own_parcel","pass":true}
+PENG_TEACH YARD_EXIT
+DAY1 {"detail":{"frames":1183,"mentor_end":"(-33.08177, 16.35585, 20.64023)","student_end":"(-29.20002, 16.39354, 20.98215)","wheel_travel_m":43.3480328137521},"name":"order_3_to_address","pass":true}
+PENG_TEACH UNLOAD
+PENG_TEACH PUPIL_UNLOAD
+DAY1 {"detail":{"walk_m":80.3221442913637},"name":"watched_PUPIL_UNLOAD","pass":true}
+PENG_TEACH TO_SHELF
+PENG_TEACH CALL_CUSTOMER
+PENG_TEACH PUT_ON_SHELF
+PENG_TEACH CLEAR_SHELF
+PENG_TEACH PUPIL_SHELF
+DAY1 {"detail":{"walk_m":86.4263743562624},"name":"watched_PUPIL_SHELF","pass":true}
+DAY1 {"detail":"","name":"unconfirmed_bays_locked","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":1.6339083313942,"end":"(-38.22499, 16.40357, 19.10021)","goals":1,"max_frame_displacement_m":0.0718234851956367,"name":"order_3_call","pass":true,"reached":1,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":1.6339083313942,"end":"(-38.22499, 16.40357, 19.10021)","goals":1,"max_frame_displacement_m":0.0718234851956367,"name":"order_3_call","pass":true,"reached":1,"stall_contacts":[]},"name":"order_3_call","pass":true}
+DAY1 {"detail":{"objective":"第 3 / 3 单 · 篮球场下巷取餐架\n小票 006 · 乙位，靠近右侧按 E 放餐","prompt":"球友：006 号是我的，麻烦放乙位。"},"name":"customer_confirms_slot","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":0.00981987826526165,"end":"(-38.21804, 16.38843, 19.10715)","goals":1,"max_frame_displacement_m":0.0180430114269257,"name":"order_3_wrong_bay","pass":true,"reached":1,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":0.00981987826526165,"end":"(-38.21804, 16.38843, 19.10715)","goals":1,"max_frame_displacement_m":0.0180430114269257,"name":"order_3_wrong_bay","pass":true,"reached":1,"stall_contacts":[]},"name":"order_3_wrong_bay","pass":true}
+DAY1 {"detail":"看袋上的小票，你的收餐位是乙。","name":"order_3_wrong_bay_rejected","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":0.80210243538022,"end":"(-37.09931, 16.4279, 19.13683)","goals":1,"max_frame_displacement_m":0.0700014159083366,"name":"order_3_correct_bay","pass":true,"reached":1,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":0.80210243538022,"end":"(-37.09931, 16.4279, 19.13683)","goals":1,"max_frame_displacement_m":0.0700014159083366,"name":"order_3_correct_bay","pass":true,"reached":1,"stall_contacts":[]},"name":"order_3_correct_bay","pass":true}
+PENG_TEACH PUPIL_PLACING
+PENG_TEACH BACK_TO_SADDLE
+DAY1 {"detail":{"objective":"第一天教学完成 · 已学会取送餐\n累计 3 单 · 24 元，可回面馆接单","prompt":"老彭：今天三单都送齐了。我回站跑下一趟，你可以自己接单了。"},"name":"order_3_both_real_bags_at_shelf","pass":true}
+DAY1 {"detail":{"objective":"第一天教学完成 · 已学会取送餐\n累计 3 单 · 24 元，可回面馆接单","prompt":"老彭：今天三单都送齐了。我回站跑下一趟，你可以自己接单了。"},"name":"three_orders_paid_once","pass":true}
+DAY1 {"detail":"","name":"saved_completed","pass":true}
+DAY1 {"detail":"","name":"repeat_interact_no_duplicate_credit","pass":true}
+PENG_TEACH RIDING
+PENG_TEACH SHOP_EXIT
+PENG_TEACH WALK_COUNTER
+PENG_TEACH ORDER
+PENG_TEACH PICK_UP
+PENG_TEACH LIFT_CLEAR
+PENG_TEACH RETURN_BIKE
+PENG_TEACH LOAD_BOX
+PENG_TEACH BOARD_AGAIN
+PENG_TEACH RIDING
+PENG_TEACH YARD_EXIT
+PENG_TEACH UNLOAD
+PENG_TEACH TO_SHELF
+PENG_TEACH PUT_ON_SHELF
+PENG_TEACH CLEAR_SHELF
+PENG_TEACH BACK_TO_SADDLE
+DAY1 {"detail":{"npc_deliveries":1,"position":"(-43.54972, 11.54803, 54.55397)","trips":1},"name":"instructor_starts_own_next_job","pass":true}
+DAY1 {"detail":[{"end_reason":"forward_progress","ended_at_s":22.37,"goal":"(-39.0, 12.0, 52.0)","kind":"route_blocked","obstacle":"/root/ChongqingDistrict/TestOnlyRoadblock","position":"(-41.57556, 11.9209, 52.11082)","seconds_without_progress":3.02,"segment":0,"stage":"TO_SHOP","time_s":22.0}],"name":"barrier_detected_then_cleared","pass":true}

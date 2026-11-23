@@ -1,0 +1,151 @@
+{
+	"checks": [
+		{
+			"detail": "",
+			"name": "default_game_starts_at_registration",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "early_order_and_bike_locked",
+			"pass": true
+		},
+		{
+			"detail": "(-51.7, 11.8348, 51.1)",
+			"name": "register_at_mentor",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 2.69712800066918,
+				"end": "(-54.67163, 11.78301, 51.0567)",
+				"goals": 1,
+				"max_frame_displacement_m": 0.0716501250863075,
+				"name": "walk_to_own_bike",
+				"pass": true,
+				"reached": 1,
+				"stall_contacts": []
+			},
+			"name": "walk_to_own_bike",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "mount_own_scooter",
+			"pass": true
+		},
+		{
+			"detail": "(-43.60489, 11.88722, 52.11577)",
+			"name": "guide_waits_when_learner_stops",
+			"pass": true
+		},
+		{
+			"detail": {
+				"frames": 483,
+				"mentor_end": "(-30.20965, 11.6692, 54.9583)",
+				"student_end": "(-34.15945, 11.82032, 53.85566)"
+			},
+			"name": "follow_to_noodle_shop",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "parked_at_shop",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 12.1973501648754,
+				"end": "(-23.62531, 11.15098, 59.97128)",
+				"goals": 2,
+				"max_frame_displacement_m": 0.119685672223568,
+				"name": "walk_to_counter",
+				"pass": true,
+				"reached": 2,
+				"stall_contacts": []
+			},
+			"name": "walk_to_counter",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "place_real_order",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "take_packed_order",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "cannot_deliver_before_second_leg",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 12.1854842742905,
+				"end": "(-34.5338, 11.65316, 55.01171)",
+				"goals": 2,
+				"max_frame_displacement_m": 0.175629809498787,
+				"name": "return_to_parked_scooter",
+				"pass": true,
+				"reached": 2,
+				"stall_contacts": []
+			},
+			"name": "return_to_parked_scooter",
+			"pass": true
+		},
+		{
+			"detail": {
+				"objective": "老彭在前面等你 · 4 米\n骑近他就会继续带路",
+				"prompt": "已上车 · W 前进 / S 刹车及倒车 · A D 转向 · 空格急刹 · P 停车 · E 下车"
+			},
+			"name": "mount_with_order",
+			"pass": true
+		},
+		{
+			"detail": {
+				"frames": 614,
+				"mentor_end": "(-25.40564, 14.29741, 36.94552)",
+				"student_end": "(-25.41428, 13.7958, 41.06051)"
+			},
+			"name": "follow_to_courtyard_approach",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "last_mile_requires_walk",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 61.2432152442634,
+				"end": "(-54.28588, 16.45387, 19.50176)",
+				"goals": 7,
+				"max_frame_displacement_m": 0.173161968588829,
+				"name": "walk_to_house_one",
+				"pass": true,
+				"reached": 7,
+				"stall_contacts": []
+			},
+			"name": "walk_to_house_one",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "handover_once",
+			"pass": true
+		},
+		{
+			"detail": {
+				"objective": "第一天教学完成 · 已学会取送餐\n累计 1 单 · 8 元，可回面馆接单",
+				"prompt": "住户：谢谢，辛苦了！ · 配送收入 +8 元"
+			},
+			"name": "credit_and_regular_order_unlocked",
+			"pass": true
+		}
+	],
+	"engine": "4.6.3-stable (official)",
+	"passed": true
+}

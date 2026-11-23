@@ -1,0 +1,247 @@
+{
+  "schema": "cq05_furniture_contact_native_review_v2",
+  "created_at_utc": "2026-11-19T15:53:12.057981+00:00",
+  "passed": true,
+  "status": "R15_same_full22_native_furniture_contact_review_passed_with_visual_limits",
+  "scope": "Three directly viewed original 1920x1080 contact views from the SAME completed exclusive-restart R15 full22 native batch, compared with byte-preserved R13 originals. No separate three-view native process was executed.",
+  "overall_scene_acceptance_owner": "root; this report accepts the stated furniture-contact and visible-regression scope, not cinematic quality",
+  "new_scene_blocker_observed": false,
+  "scene_revision": 15,
+  "scene_sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223",
+  "scene_bytes": 1017581848,
+  "main_script_sha256": "29517fc2472682aae053e2e1eafc954379755e9b212a425088cdb834599cf56d",
+  "profile_sha256": "9d0c7b69153c7c84fea8ac544b602bf15ef6806afa75068856a6adba0da809af",
+  "HDR_sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+  "capture_manifest_path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/capture_manifest.json",
+  "capture_manifest_sha256": "166a1dc19b44afa459171533b304050972e16a9dda72d1d93b872d01cdda27c7",
+  "full_batch_capture_count": 22,
+  "same_full22_batch": true,
+  "separate_three_view_capture_executed": false,
+  "baseline_scene_sha256": "e74ec6572cd4ce751c47c39bee3490a0085da6c503c219a497b33b0b7bfe0d20",
+  "baseline_full22_capture_manifest_path": "/workspace/scratch/5462bdafe44f/cq05/verification/round7/baseline_native/r13_full_capture_manifest_source.json",
+  "baseline_full22_capture_manifest_sha256": "2ee09ec5d3d782b26ff4d83a2ce511a69dc50346d674cd9a91a9303e2566aa88",
+  "baseline_image_bytes_unchanged": true,
+  "runtime_main_profile_HDR_and_camera_unchanged": true,
+  "views": [
+    {
+      "view": "tea_interior",
+      "current_path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_tea_interior.png",
+      "current_sha256": "e62c61e4bf0524f750915c3d15bb36c8d43b189b8d2613f1e4169e401c0b3bd6",
+      "baseline_path": "/workspace/scratch/5462bdafe44f/cq05/verification/round7/baseline_native/godot_tea_interior.png",
+      "baseline_sha256": "b0560ca5ebaa714646f21b450b7c2bddd5a277b687dc133ed12f3e17dbd4e554",
+      "reviewed_at_utc": "2026-11-19T15:47:12.647524+00:00",
+      "baseline_directly_viewed": true,
+      "same_full22_current_batch": true,
+      "visual_notes_zh": "直接与R13原始基线对照，柜、圆桌、圆凳脚的可见末端延长，桌面/座面及台上器皿位置稳定；地板未再被terrain覆盖，墙顶暗部与陶瓷高光保留。",
+      "visual_limits_zh": "地面接触阴影仍很弱，几何变化在本图只占少量像素；当前actual GLB报告证明零间隙，不能据此夸大为完整接触光照真实性。",
+      "passed_for_visible_furniture_repair_scope": true,
+      "native_size": [
+        1920,
+        1080
+      ],
+      "same_camera_pose_fov_and_size": true,
+      "same_shadow_state": true,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 18.1840991973877,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      },
+      "current_capture_manifest_sha256": "166a1dc19b44afa459171533b304050972e16a9dda72d1d93b872d01cdda27c7",
+      "passed_for_furniture_repair_scope": true
+    },
+    {
+      "view": "noodle_interior",
+      "current_path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_noodle_interior.png",
+      "current_sha256": "e7b4797acee3471c5e40eee8ced7bb3852e9c9f4ee41062f05a7b917e84aad71",
+      "baseline_path": "/workspace/scratch/5462bdafe44f/cq05/verification/round7/baseline_native/godot_noodle_interior.png",
+      "baseline_sha256": "b0da64bfa322f96a1bc895919b2e0a9b29fa348ac36b2ae67abb5766f30cadab",
+      "reviewed_at_utc": "2026-11-19T15:49:15.846211+00:00",
+      "baseline_directly_viewed": true,
+      "same_full22_current_batch": true,
+      "visual_notes_zh": "与重新打开的R13基线对照，右侧圆桌腿末端延伸，扫描塑料椅和桌面高度保持；锅/杯/碗与墙顶暗部稳定，室内地板、门槛未被terrain覆盖。",
+      "visual_limits_zh": "桌椅脚处接触阴影依旧轻，图像变化细小；实际零间隙由同R15模型导出审计证明。",
+      "passed_for_visible_furniture_repair_scope": true,
+      "native_size": [
+        1920,
+        1080
+      ],
+      "same_camera_pose_fov_and_size": true,
+      "same_shadow_state": true,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 13.1037998199463,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      },
+      "current_capture_manifest_sha256": "166a1dc19b44afa459171533b304050972e16a9dda72d1d93b872d01cdda27c7",
+      "passed_for_furniture_repair_scope": true
+    },
+    {
+      "view": "window_reading",
+      "current_path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_reading.png",
+      "current_sha256": "aaac35e56abd81e6c91d884a27db00bf1097839525bed3205e6aee05434ea1f7",
+      "baseline_path": "/workspace/scratch/5462bdafe44f/cq05/verification/round7/baseline_native/godot_window_reading.png",
+      "baseline_sha256": "6c164484f4e815afe6b6247e435c35378402de4ae4a0220dca8eb023bf8cb954",
+      "reviewed_at_utc": "2026-11-19T15:49:58.745060+00:00",
+      "baseline_directly_viewed": true,
+      "same_full22_current_batch": true,
+      "visual_notes_zh": "与R13基线直接对照，A04木地板、书桌/木椅、台灯暖晕及薄玻璃观感保持，未见灰色terrain重新穿入。",
+      "visual_limits_zh": "窗框、窗台和椅遮挡大部分脚底；下端修复在本图不显著，不能假称原图证明所有桌脚接地。实际桌脚零间隙由当前R15 actual GLB审计给出；接触阴影仍弱。",
+      "passed_for_visible_furniture_repair_scope": true,
+      "native_size": [
+        1920,
+        1080
+      ],
+      "same_camera_pose_fov_and_size": true,
+      "same_shadow_state": true,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 18.6019992828369,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      },
+      "current_capture_manifest_sha256": "166a1dc19b44afa459171533b304050972e16a9dda72d1d93b872d01cdda27c7",
+      "passed_for_furniture_repair_scope": true
+    }
+  ],
+  "geometry_evidence": {
+    "current_R15": {
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/furniture_contact_export_audit.json",
+      "sha256": "ca3478b3cdd4f925b479d43db534a2e4ae4b867ccb931e61a4f09a8293f20759",
+      "passed": true,
+      "scene_sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223",
+      "allowed_absolute_support_gap_m": 1e-05,
+      "maximum_measured_absolute_gap_m": 0.0
+    },
+    "R13_confirmed_air_gap_baseline": {
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/round6/r13_complete_baseline/tea_furniture_contact_audit_r13.json",
+      "sha256": "c022ce22bc466c354311b5b3eebde436ede9d3e08f24111f708bd286abbc2df6",
+      "cabinet_gap_m": 0.0149993896484375,
+      "round_table_gap_m": 0.02313995361328125,
+      "stool_gap_m": 0.023000717163085938,
+      "scanned_chair_gap_m": 0.0
+    }
+  },
+  "visual_limits_zh": [
+    "茶馆及面店可见脚端改变只占少量像素，家具与地板接触阴影依然偏弱。",
+    "A04桌脚下端部分被窗框、窗台和木椅遮住，本机位不能单独证明所有脚底；零间隙依据来自同R15模型的actual GLB审计。",
+    "空间、家具与材料仍有原型感；本专项通过不代表电影级、摄影级或完整物理光输运。"
+  ],
+  "runtime_material_stats": {
+    "branch_shader_overrides": {
+      "CQ_PH_island_tree_01_branches": {
+        "baked_primary": true,
+        "imported_uv1_offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "imported_uv1_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "imported_uv2_offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "imported_uv2_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "normal_and_pbr_textures": false,
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "texcoord": 0,
+        "texture": "res://assets/chongqing_district_island_tree_01_branches_diff_2k.jpg"
+      },
+      "CQ_PH_tree_small_02_branches": {
+        "baked_primary": true,
+        "imported_uv1_offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "imported_uv1_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "imported_uv2_offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "imported_uv2_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "normal_and_pbr_textures": false,
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "texcoord": 0,
+        "texture": "res://assets/chongqing_district_tree_small_02_branch_diff_2k.jpg"
+      }
+    },
+    "explicit_branch_surfaces": 43,
+    "gi_excluded_meshes": 0,
+    "specular_adjusted_materials": {},
+    "static_gi_meshes": 2690,
+    "surfaces": 2690,
+    "thin_glass_surfaces": 81,
+    "tile_diagnostics": {},
+    "tree_normal_overrides": {
+      "CQ_PH_island_tree_01": "normal texture disabled; albedo/roughness/geometry preserved",
+      "CQ_PH_island_tree_01_branches": "normal texture disabled; albedo/roughness/geometry preserved",
+      "CQ_PH_island_tree_01_leaves": "normal texture disabled; albedo/roughness/geometry preserved",
+      "CQ_PH_tree_small_02_branches": "normal texture disabled; albedo/roughness/geometry preserved",
+      "CQ_PH_tree_small_02_leaves": "normal texture disabled; albedo/roughness/geometry preserved",
+      "CQ_PH_tree_small_02_trunk": "normal texture disabled; albedo/roughness/geometry preserved"
+    },
+    "vertex_color_surfaces": 963
+  },
+  "actual_interior_lights_enabled": 9,
+  "failures": [],
+  "engine_started_by_reviewer": false,
+  "production_source_or_runtime_changed_by_reviewer": false
+}

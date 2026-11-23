@@ -1,0 +1,64 @@
+{
+	"checks": [
+		{
+			"detail": "",
+			"name": "default_game_starts_at_registration",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "early_order_and_bike_locked",
+			"pass": true
+		},
+		{
+			"detail": "(10.8, 11.93314, 57.1)",
+			"name": "register_at_mentor",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 2.06163256894797,
+				"end": "(13.17883, 11.97143, 57.0562)",
+				"goals": 1,
+				"max_frame_displacement_m": 0.0700177103281021,
+				"name": "walk_to_own_bike",
+				"pass": true,
+				"reached": 1,
+				"stall_contacts": []
+			},
+			"name": "walk_to_own_bike",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "mount_own_scooter",
+			"pass": true
+		},
+		{
+			"detail": "(2.823206, 11.68312, 58.02814)",
+			"name": "guide_waits_when_learner_stops",
+			"pass": true
+		},
+		{
+			"detail": {
+				"arrived": false,
+				"bike": "(4.805311, 11.68747, 58.08781)",
+				"guide_obstacle": {
+					"body": "COL_D18_StoneFlights",
+					"normal": "(0.0, 1.0, 0.0)",
+					"position": "(1.898222, 11.6803, 59.02702)"
+				},
+				"mentor": "(2.181842, 11.68784, 59.06587)",
+				"student_obstacle": {
+
+				},
+				"wait": false,
+				"waypoint": 0
+			},
+			"name": "follow_to_noodle_shop",
+			"pass": false
+		}
+	],
+	"engine": "4.6.3-stable (official)",
+	"passed": false
+}

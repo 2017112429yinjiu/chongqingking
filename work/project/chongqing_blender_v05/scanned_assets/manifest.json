@@ -1,0 +1,308 @@
+{
+  "source_provider": "Poly Haven",
+  "license": "CC0 1.0",
+  "license_url": "https://polyhaven.com/license",
+  "prepared_assets": {
+    "tree_small_02": {
+      "source_page": "https://polyhaven.com/a/tree_small_02",
+      "original_triangles": 2062487,
+      "source_height_m": 4.556740965694189,
+      "source_width_m": 4.292477130889893,
+      "variants": {
+        "hero": {
+          "objects": [
+            "PH_tree_small_02_hero_00",
+            "PH_tree_small_02_hero_01",
+            "PH_tree_small_02_hero_02"
+          ],
+          "triangles": 249998,
+          "target_triangles": 250000
+        },
+        "medium": {
+          "objects": [
+            "PH_tree_small_02_medium_00",
+            "PH_tree_small_02_medium_01",
+            "PH_tree_small_02_medium_02"
+          ],
+          "triangles": 79998,
+          "target_triangles": 80000
+        },
+        "low": {
+          "objects": [
+            "PH_tree_small_02_low_00",
+            "PH_tree_small_02_low_01",
+            "PH_tree_small_02_low_02"
+          ],
+          "triangles": 43846,
+          "target_triangles": 30000
+        }
+      },
+      "branch_uv_repair": {
+        "baked_to_primary": true,
+        "texture_mapping": "identity",
+        "details": "branch_uv_repair.json"
+      }
+    },
+    "island_tree_01": {
+      "source_page": "https://polyhaven.com/a/island_tree_01",
+      "original_triangles": 1599403,
+      "source_height_m": 5.02744660153985,
+      "source_width_m": 4.8176796436309814,
+      "variants": {
+        "hero": {
+          "objects": [
+            "PH_island_tree_01_hero_00",
+            "PH_island_tree_01_hero_01",
+            "PH_island_tree_01_hero_02"
+          ],
+          "triangles": 249996,
+          "target_triangles": 250000
+        },
+        "medium": {
+          "objects": [
+            "PH_island_tree_01_medium_00",
+            "PH_island_tree_01_medium_01",
+            "PH_island_tree_01_medium_02"
+          ],
+          "triangles": 79997,
+          "target_triangles": 80000
+        },
+        "low": {
+          "objects": [
+            "PH_island_tree_01_low_00",
+            "PH_island_tree_01_low_01",
+            "PH_island_tree_01_low_02"
+          ],
+          "triangles": 29999,
+          "target_triangles": 30000
+        }
+      },
+      "branch_uv_repair": {
+        "baked_to_primary": true,
+        "texture_mapping": "identity",
+        "details": "branch_uv_repair.json"
+      }
+    },
+    "shrub_01": {
+      "source_page": "https://polyhaven.com/a/shrub_01",
+      "original_triangles": 156012,
+      "source_height_m": 0.39597428869456053,
+      "source_width_m": 0.6186619102954865,
+      "variants": {
+        "hero": {
+          "objects": [
+            "PH_shrub_01_hero_00"
+          ],
+          "triangles": 29999,
+          "target_triangles": 30000
+        },
+        "medium": {
+          "objects": [
+            "PH_shrub_01_medium_00"
+          ],
+          "triangles": 14000,
+          "target_triangles": 14000
+        },
+        "low": {
+          "objects": [
+            "PH_shrub_01_low_00"
+          ],
+          "triangles": 8000,
+          "target_triangles": 8000
+        }
+      },
+      "layout_modification": "Nine original source specimens rearranged from presentation row into compact cluster. Components retain original geometry and UVs."
+    },
+    "trashbag": {
+      "source_page": "https://polyhaven.com/a/trashbag",
+      "original_triangles": 4482,
+      "source_height_m": 0.5749993845820427,
+      "source_width_m": 0.5280700922012329,
+      "variants": {
+        "base": {
+          "objects": [
+            "PH_trashbag_base_00"
+          ],
+          "triangles": 4482,
+          "target_triangles": 4482
+        }
+      }
+    },
+    "metal_trash_can_clean": {
+      "source_page": "https://polyhaven.com/a/metal_trash_can",
+      "original_triangles": 6428,
+      "source_height_m": 0.9061599323104019,
+      "source_width_m": 0.7780095338821411,
+      "variants": {
+        "base": {
+          "objects": [
+            "PH_metal_trash_can_clean_base_00",
+            "PH_metal_trash_can_clean_base_01",
+            "PH_metal_trash_can_clean_base_02",
+            "PH_metal_trash_can_clean_base_03"
+          ],
+          "triangles": 6428,
+          "target_triangles": 6428
+        }
+      }
+    },
+    "metal_trash_can_rust": {
+      "source_page": "https://polyhaven.com/a/metal_trash_can",
+      "original_triangles": 7532,
+      "source_height_m": 0.9061573890940053,
+      "source_width_m": 0.7732658684253693,
+      "variants": {
+        "base": {
+          "objects": [
+            "PH_metal_trash_can_rust_base_00",
+            "PH_metal_trash_can_rust_base_01",
+            "PH_metal_trash_can_rust_base_02",
+            "PH_metal_trash_can_rust_base_03"
+          ],
+          "triangles": 7532,
+          "target_triangles": 7532
+        }
+      }
+    },
+    "plastic_crate_01": {
+      "source_page": "https://polyhaven.com/a/plastic_crate_01",
+      "original_triangles": 18320,
+      "source_height_m": 0.2641694247722626,
+      "source_width_m": 0.40800413489341736,
+      "variants": {
+        "base": {
+          "objects": [
+            "PH_plastic_crate_01_base_00"
+          ],
+          "triangles": 18320,
+          "target_triangles": 18320
+        }
+      }
+    },
+    "covered_car": {
+      "source_page": "https://polyhaven.com/a/covered_car",
+      "original_triangles": 12592,
+      "source_height_m": 1.4111130833625793,
+      "source_width_m": 4.38025426864624,
+      "variants": {
+        "base": {
+          "objects": [
+            "PH_covered_car_base_00",
+            "PH_covered_car_base_01",
+            "PH_covered_car_base_02",
+            "PH_covered_car_base_03",
+            "PH_covered_car_base_04"
+          ],
+          "triangles": 12592,
+          "target_triangles": 12592
+        }
+      }
+    },
+    "chinese_armchair": {
+      "source_page": "https://polyhaven.com/a/chinese_armchair",
+      "original_triangles": 2675,
+      "source_height_m": 1.5874828100204468,
+      "source_width_m": 0.8482747673988342,
+      "source_dimensions_m": [
+        0.8482747673988342,
+        0.7886627912521362,
+        1.5874828100204468
+      ],
+      "source_forward_axis": "-Y",
+      "variants": {
+        "base": {
+          "objects": [
+            "PH_chinese_armchair_base_00"
+          ],
+          "triangles": 2675,
+          "target_triangles": 2675
+        }
+      },
+      "modifications": "Source transforms applied; center/ground origin normalized; original PBR maps and UVs retained."
+    },
+    "chinese_tea_table": {
+      "source_page": "https://polyhaven.com/a/chinese_tea_table",
+      "original_triangles": 2508,
+      "source_height_m": 0.4986410439014435,
+      "source_width_m": 0.8413149118423462,
+      "source_dimensions_m": [
+        0.8413149118423462,
+        0.8356219530105591,
+        0.4986410439014435
+      ],
+      "source_forward_axis": "-Y",
+      "variants": {
+        "base": {
+          "objects": [
+            "PH_chinese_tea_table_base_00"
+          ],
+          "triangles": 2508,
+          "target_triangles": 2508
+        }
+      },
+      "modifications": "Source transforms applied; center/ground origin normalized; original PBR maps and UVs retained."
+    },
+    "plastic_monobloc_chair_01": {
+      "source_page": "https://polyhaven.com/a/plastic_monobloc_chair_01",
+      "original_triangles": 3356,
+      "source_height_m": 0.8798412084579468,
+      "source_width_m": 0.6418611407279968,
+      "source_dimensions_m": [
+        0.6418611407279968,
+        0.6275919079780579,
+        0.8798412084579468
+      ],
+      "source_forward_axis": "-Y",
+      "variants": {
+        "base": {
+          "objects": [
+            "PH_plastic_monobloc_chair_01_base_00"
+          ],
+          "triangles": 3356,
+          "target_triangles": 3356
+        }
+      },
+      "modifications": "Source transforms applied; center/ground origin normalized; original PBR maps and UVs retained."
+    },
+    "potted_plant_02": {
+      "source_page": "https://polyhaven.com/a/potted_plant_02",
+      "original_triangles": 69806,
+      "source_height_m": 0.8411787152290344,
+      "source_width_m": 0.7011570334434509,
+      "source_dimensions_m": [
+        0.7011570334434509,
+        0.6573866009712219,
+        0.8411787152290344
+      ],
+      "source_forward_axis": "-Y",
+      "variants": {
+        "base": {
+          "objects": [
+            "PH_potted_plant_02_base_00",
+            "PH_potted_plant_02_base_01",
+            "PH_potted_plant_02_base_02"
+          ],
+          "triangles": 17999,
+          "target_triangles": 18000
+        }
+      },
+      "modifications": "Source transforms applied; center/ground origin normalized; original PBR maps and UVs retained. Geometry reduced for real-time use; source masked leaves retained."
+    }
+  },
+  "method": "Official glTF downloaded from asset-specific API. Applied source transforms, normalized root origin, separated material parts, decimated geometry, preserved original PBR maps and UV sets; reused mesh data per instance. No rendered images used as scene backplates. Production R7 bakes the original tree-branch mapping into the primary UV for both tree species; geometry, images and other part UVs remain unchanged. Branch shaders use primary identity UV without normal-map tangent dependency. R8 appends four CC0 furniture/plant assets; existing tree branch UV repairs are preserved.",
+  "production_revision": "v05_r8",
+  "production_library": {
+    "date": "2026-11-19",
+    "production_revision": "v05_r8",
+    "production_library": "source/scanned_assets/prepared_assets.blend",
+    "production_sha256": "b3ca66854942020353725dd82562a0443d450d40bdf12ac9c5a277427e77150d",
+    "production_bytes": 161151844,
+    "original_backup": "downloads/prepared_assets_before_branch_uv_repair.blend",
+    "original_sha256": "e0622e453ef194c437b08e92a89d5b16f225b0f4a4f3b986e716d4055d057a45",
+    "duplicate_repaired_library_removed_from_source": true,
+    "ph_branch_uv_baked": true,
+    "validation": "verification/branch_uv_audit/repair_validation.json",
+    "previous_revision": "v04_r7"
+  },
+  "branch_uv_baked": true
+}

@@ -1,0 +1,175 @@
+{
+  "revision": "R19_scene_05_internal",
+  "created_utc": "2026-11-20T11:37:20.288557+00:00",
+  "status": "Internal work in progress; not cinematic acceptance, delivery, publication or background execution.",
+  "base_scene_sha256": "88b5be04c0c72ae2b54bb02f55f2186f7b7ec2937389a59697e7306dbd7e7c13",
+  "detail_layer_sha256": "1c40ae7ed04e8bf3f5f7956eaf630a098890e62a9c142f3e846c9ee15d530bad",
+  "profile_sha256": "1f2539b46d5e945654465f2c43f451b0e8c15987480dbdc827b6524427dbbca8",
+  "runtime_sha256": {
+    "res://scripts/main.gd": "4619445de67c294dd6e8428f29a76abea9eb8fc480e80777934a3c5013937d4a",
+    "res://scripts/street_detail_r19.gd": "005750a5701f4a5e5113157163a0eae5eb26a0a574f5da72a643126a40ae4410",
+    "res://shaders/street_surface_r19.gdshader": "d42b181d844d8622e9fae0d4a89cf0ed6a4318fd7560456233891cb7fb4fd428"
+  },
+  "evidence_sha256": {
+    "street_test.json": "f9581c450112efee7ea0985897697040fc57b66a5491e6b812fb3cff50d66ac6",
+    "gameplay_test.json": "73e59683ed779e2227a028e0ce789505c9c34c4c9cfc6e305ddf282b4fa24016",
+    "delivery_end_to_end.json": "204455a8048c6c16c365491d19c21e30cfb8ef6bc952af419db6528ac158cd07",
+    "survey.json": "6ecd3275147c66ea87bb439755733b391d9a021a85a85b1e0b1c35e1c0916fc6"
+  },
+  "checks": {
+    "street_test.json": 11,
+    "gameplay_test.json": 24,
+    "delivery_end_to_end.json": 11,
+    "survey.json": 254
+  },
+  "reopened_geometry_checks": 9,
+  "routes": 24,
+  "delivery_teleports_between_stages": 0,
+  "blender_composition": {
+    "revision": 19,
+    "objects": 2893,
+    "unpacked_referenced_images": [],
+    "packed_images": 152,
+    "editable_scene": "work/scene_r19/chongqing_district.blend",
+    "blender_scene_sha256": "28312a3a417a14212280fa701842daaeda62bee10a4520234aaff9cefe95d741",
+    "base_city": {
+      "revision": "R17",
+      "path": "res://assets/chongqing_district.glb",
+      "sha256": "88b5be04c0c72ae2b54bb02f55f2186f7b7ec2937389a59697e7306dbd7e7c13"
+    },
+    "detail_layer": {
+      "revision": "R19_scene_05",
+      "path": "res://assets/street_r19/street_life.glb",
+      "sha256": "1c40ae7ed04e8bf3f5f7956eaf630a098890e62a9c142f3e846c9ee15d530bad"
+    },
+    "profile": {
+      "path": "res://assets/render_profile_r19.json",
+      "sha256": "1f2539b46d5e945654465f2c43f451b0e8c15987480dbdc827b6524427dbbca8"
+    },
+    "hidden_legacy_collection": true,
+    "passed": true,
+    "note": "Whole-city Blender composition actually reopened. Runtime imports preserved base and the exported detail layer separately, then applies the manifest replacement list and Godot lighting."
+  },
+  "captures": {
+    "godot_central_steps.png": {
+      "sha256": "6f86bc88294284526e0d839de4e283b3c3e092aa67763849bbce436922beeec1",
+      "size": [
+        1600,
+        900
+      ]
+    },
+    "godot_narrow_passage.png": {
+      "sha256": "07278406a3f48f78d9410aa7b7e64c9b151a9db50be8b7635cffcf3ff64bb9f8",
+      "size": [
+        1600,
+        900
+      ]
+    },
+    "godot_noodle_corner.png": {
+      "sha256": "d9daff480afd317e543bd7a5b6650401f8f2b967c5295149e89a9d755bec4910",
+      "size": [
+        1600,
+        900
+      ]
+    },
+    "godot_r18_workstation.png": {
+      "sha256": "2b64662ac700b366c27edd4c74bf11ff4db5f5e314151ba0df04d91b5a397d2a",
+      "size": [
+        1600,
+        900
+      ]
+    },
+    "godot_r19_seating.png": {
+      "sha256": "0f4d14589d225ff346ed6f5bf419996f9ee16425455174e5cec8ba352e27b015",
+      "size": [
+        1600,
+        900
+      ]
+    },
+    "godot_r19_stair_detail.png": {
+      "sha256": "0600c036c702c3f4b35fdef431c6a1e530841e89683ff455e9bbda12456d7d10",
+      "size": [
+        1600,
+        900
+      ]
+    },
+    "godot_residential_entry.png": {
+      "sha256": "926f840e5d47102fce73bcf9506046bc9e7dc4c3e3042c2a85fa968def993e9c",
+      "size": [
+        1600,
+        900
+      ]
+    },
+    "godot_street_entry.png": {
+      "sha256": "166e02a1c4fcd09249be30bd8a6c13ea302d5bfed6953505f05aa7d88943733e",
+      "size": [
+        1600,
+        900
+      ]
+    },
+    "godot_west_lane.png": {
+      "sha256": "b2b6c9565986220eb091371f1f9ad04ed3883ff117a7fb5cb9152d6b897c4651",
+      "size": [
+        1600,
+        900
+      ]
+    }
+  },
+  "capture_manifest_sha256": "9fe4847b6dc12a07b451fe94bcb3f8e25a3df50e028269efa4384f4bc32b3a79",
+  "performance": {
+    "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "viewport": "(1920.0, 1080.0)",
+    "samples_per_view": 240,
+    "warmup_frames": 90,
+    "comparison": [
+      {
+        "view": "street_entry",
+        "baseline_p95_ms": 11.712,
+        "current_p95_ms": 12.453,
+        "current_draw_calls": 6824.0
+      },
+      {
+        "view": "central_steps",
+        "baseline_p95_ms": 12.615,
+        "current_p95_ms": 12.977,
+        "current_draw_calls": 5756.0
+      },
+      {
+        "view": "noodle_corner",
+        "baseline_p95_ms": 7.286,
+        "current_p95_ms": 8.125,
+        "current_draw_calls": 2994.0
+      },
+      {
+        "view": "west_lane",
+        "baseline_p95_ms": 9.307,
+        "current_p95_ms": 10.449,
+        "current_draw_calls": 3440.0
+      },
+      {
+        "view": "narrow_passage",
+        "baseline_p95_ms": 10.144,
+        "current_p95_ms": 10.918,
+        "current_draw_calls": 2856.0
+      },
+      {
+        "view": "r18_rider_active",
+        "baseline_p95_ms": 14.003,
+        "current_p95_ms": 15.993,
+        "current_draw_calls": 7704.0
+      }
+    ],
+    "note": "One independent run per variant, fixed cameras and one occupied stationary scooter. Frame intervals include CPU/GPU/OS effects; not a crowd, continuous driving, minimum-FPS or universal 60-FPS guarantee.",
+    "omni_light_rider_p95_ms": 17.022,
+    "spot_light_rider_p95_ms": 15.993
+  },
+  "known_limits": [
+    "Whole 200m district not rebuilt to photographic/film quality. Repeated facades, empty slopes, generic railings/storefronts and sparse actual activity remain.",
+    "Original final R15 photo ZIP is still missing; no new photo pixels used as game textures.",
+    "8 inherited glTF shared-image sampler warnings; reopened layer sampler settings consistent. No new invalid-mesh warning in this detail export.",
+    "SSR, reflection probes and SDFGI disabled. SDFGI trial rejected for visible dotted edge artifacts.",
+    "No new crowd simulation, schedules, traffic, environment sound or full-body scooter mounting animations."
+  ],
+  "new_sources": "assets/street_r19/PROVENANCE.json",
+  "review_doc": "docs/SCENE_R19_REVIEW.md"
+}

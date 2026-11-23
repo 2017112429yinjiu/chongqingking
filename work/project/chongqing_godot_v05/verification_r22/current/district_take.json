@@ -1,0 +1,141 @@
+{
+	"art_revision": {
+		"counter_r21": {
+			"character_sha256": "ac585e8a037fcf950fc51d46e0fa34c3c46f40ccf1241250273f2af4d4fc6cbc",
+			"portion_sha256": "a3347a027ace51dca3db48093942e821e8a925131045f10472a34bda3e5c5746",
+			"stock_sha256": "e2a11e6c8ac2b26c1b077d38f343f1cb810855c89f7539898c9d41ef8df661ec"
+		},
+		"court_resident": {
+			"controller": "4d7ccd29e2e047a3006bf3a9a8b75107f07b07736d1a1c46318533bb3b22155f",
+			"fit": "a9df93aee35791d437c611680ea324c0b4bcfaab1bedccf6b1a1faa617d5ec83",
+			"model": "dfb43c77aff8beae940bceb906ad667f8b6e5ef85b1613393995a0a7091a94f3"
+		},
+		"district_r21": {
+			"exterior_sectors": 84,
+			"exterior_trees": 623,
+			"layer_sha256": "fdb98c3bd8b65364f2d76c30a6263cbfca46c2cc991436662197d56faa76346c",
+			"layout_sha256": "ef08224edd2de91299f87bc4534130df8153d6b8c5ee42890763e5feeed2bbcb",
+			"near_plantings": 21,
+			"paving": [
+				"COL_Terrain_200m_yard_concrete",
+				"COL_Walk_OSM_734116594_0_step_concrete",
+				"Walk_details_OSM_734116594_0_painted_metal",
+				"COL_Walk_OSM_1328811307_0_step_concrete",
+				"Walk_details_OSM_1328811307_0_painted_metal",
+				"COL_Walk_Central_stair_lane_step_concrete",
+				"COL_Handrails_Central_stair_lane_painted_metal",
+				"COL_Walk_Narrow_upper_passage_step_concrete",
+				"COL_Walk_Upper_terrace_connection_step_concrete",
+				"COL_Walk_West_residential_link_step_concrete",
+				"COL_Handrails_West_residential_link_painted_metal",
+				"COL_Walk_East_photo_alley_step_concrete",
+				"Outer_ground_context_ground_dirt",
+				"R20_Court_paving_step_concrete"
+			],
+			"roof_structures": 35,
+			"terraces": 2,
+			"weather_atlas_sha256": "30596b17abf2da8ebe35e38aa7e3b8a57c36fd4d6971684b7cb9edaea02f0007",
+			"weathered_shell_surfaces": 104,
+			"window_fittings": 52
+		},
+		"meter_lod": {
+			"sha256": "931e72fa0f34fe7bcdd65257f2b1c55316cde4ac61805fc81799cd777efc0ecc",
+			"sites": 112,
+			"source_triangles": 910876.0,
+			"switch_m": 18.0
+		},
+		"river_r22": {
+			"axes": 2,
+			"fleet": 6,
+			"layer_sha256": "7e6e4ebf4f54513ae6492baba5c02e1a6571735ef7e7cd5e4a6dff7847232f87",
+			"layout_sha256": "ff239e78712fbf074fb9a50d180f6288fd4198ac926f30e8054cb51b91ef6a45",
+			"mapped_buildings": 14,
+			"source_plan_sha256": "bbae7145d99a6dba9f3d46c13ac8a89fcf2b617c923537b34a2aa9dea3f62932",
+			"terrain": {
+				"Outer_ground_context_ground_dirt": {
+					"replacement": "R22_Bank_Outer",
+					"triangles": 40728.0,
+					"vertices": 21360.0
+				},
+				"R19_Distant_relief_distant19": {
+					"replacement": "R22_Bank_Relief",
+					"triangles": 111295.0,
+					"vertices": 55912.0
+				}
+			}
+		},
+		"roofs_r22": {
+			"canvas_shader_sha256": "2c79d2d0b0fb203bf4e343ea7bfc505d17eb4912e4c965330339cfcb1771ab4a",
+			"decks": 13,
+			"layer_sha256": "1bd3e44caf3cddd9ce47095815698725b45fed697f122c636a4def0b67b85c44",
+			"layout_sha256": "226528a93e1282d3c6185db6c62c0cfcdb50c5383076a9705ce07ef6f0f81031",
+			"sockets": 6,
+			"stations": 12
+		},
+		"street_r19": {
+			"asset": "res://assets/street_r19/street_life.glb",
+			"enabled": true,
+			"manifest_sha256": "b0ec626c4096ddc6df5e1444e21294346990e8faf21e62fb5bcecd77d2ae0e17",
+			"replaced": [
+				"Type_梯坎小面",
+				"Resident_waste_14_bin_00",
+				"Resident_waste_14_bin_01",
+				"Resident_waste_14_bin_02",
+				"Resident_waste_14_bin_03",
+				"Resident_waste_14_bagA_00",
+				"Resident_waste_14_bagB_00",
+				"Resident_waste_14_crate_00",
+				"Authored_distant_hill_ridges_hill_near",
+				"Authored_distant_hill_ridges_hill_far",
+				"B_A01_noodle_details_faded_red",
+				"B_A01_noodle_details_curtain_beige"
+			],
+			"sha256": "1c40ae7ed04e8bf3f5f7956eaf630a098890e62a9c142f3e846c9ee15d530bad",
+			"source_revision": "R19_scene_05"
+		},
+		"street_r19_surfaces": {
+			"materials": [
+				"CQ03_PBR_yard_concretetrue",
+				"CQ03_PBR_paving_slabtrue",
+				"CQ03_PBR_pavementtrue",
+				"CQ03_PBR_step_concretetrue",
+				"CQ03_PBR_step_concretefalse",
+				"CQ03_PBR_plaster_greyfalse",
+				"CQ03_PBR_plaster_ochrefalse",
+				"CQ03_PBR_stonetrue",
+				"CQ03_PBR_tile_creamtrue",
+				"CQ03_PBR_concretetrue",
+				"CQ03_PBR_plastertrue",
+				"CQ03_PBR_plaster_greytrue",
+				"CQ03_PBR_plaster_ochretrue",
+				"CQ03_PBR_tiletrue",
+				"CQ03_PBR_brick_darktrue",
+				"CQ03_PBR_tile_bluetrue",
+				"CQ03_PBR_bricktrue",
+				"R20_Dressed_stonetrue"
+			],
+			"surfaces": 270
+		},
+		"upper_lane": {
+			"enabled": true,
+			"model_sha256": "16dabbe6c51b1ff130153d68092dc84daa509ba4538f10152f85d4e8ae53be37",
+			"sky_sha256": {
+				"res://assets/lane_r20/alley_sky.png": "c8b799570de19d6acd2e5c822aa095807d6dc3b107bd4886e66caef438cf7d3b",
+				"res://assets/lane_r20/shop_sky.png": "8d5b169cfd0bf9cc799dec67d02fde5ebbc2558a3a79dc5c91fd85fbc98dd188"
+			}
+		}
+	},
+	"camera": "continuous collision-sampled walking shot",
+	"end": "(-45.0, 11.5801, 66.0)",
+	"eye_m": 1.65,
+	"frames": 241,
+	"largest_floor_step_m": 0.206381797790527,
+	"profile_sha256": "26078094da44a0969e8f8cb95e7767078938b5fa5391c54ebe63b311449ae3f2",
+	"sample_fps": 30,
+	"start": "(-27.0, 13.30988, 56.2)",
+	"support_samples": {
+		"COL_Terrain_200m_pavement/CQ_StaticCollision": 45,
+		"COL_Terrain_200m_yard_concrete/CQ_StaticCollision": 43,
+		"COL_Walk_OSM_734116601_0_pavement/CQ_StaticCollision": 153
+	}
+}

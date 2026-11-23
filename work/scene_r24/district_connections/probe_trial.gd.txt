@@ -1,0 +1,155 @@
+@tool
+extends RefCounted
+const DONOR := "res://assets/connections_r24/connections.glb"
+const PLAN := "res://assets/connections_r24/layout.json"
+
+static func kitchen_finish(source:StandardMaterial3D,kind:int)->ShaderMaterial:
+	var finish:=ShaderMaterial.new()
+	finish.shader=preload("res://shaders/noodle_surfaces_r24.gdshader")
+	finish.set_shader_parameter("finish",kind)
+	if kind in [1,2,8]:
+		var photo:="old_mosaic_floor" if kind==8 else "interior_tiles"
+		var stem:="res://assets/connections_r24/surfaces/"+photo
+		finish.set_shader_parameter("floor_photo",load(stem+"_diff_2k.jpg"))
+		finish.set_shader_parameter("floor_normal",load(stem+"_nor_gl_2k.jpg"))
+		finish.set_shader_parameter("floor_rough",load(stem+"_rough_2k.jpg"))
+		if kind==2:
+			finish.set_shader_parameter("floor_photo",preload("res://assets/chongqing_district_tile_cream_v4_diff.jpg"))
+			finish.set_shader_parameter("floor_normal",preload("res://assets/chongqing_district_tile_cream_v4_nor_gl.jpg"))
+			finish.set_shader_parameter("floor_rough",preload("res://assets/chongqing_district_tile_cream_v4_rough.png"))
+	finish.set_shader_parameter("tint",source.albedo_color)
+	finish.set_shader_parameter("brush",preload("res://assets/characters/serving_counter_r18_CQ_Steel_NORMAL.png"))
+	finish.set_shader_parameter("scratches",preload("res://assets/characters/serving_counter_r18_CQ_Steel_ROUGHNESS.png"))
+	finish.set_shader_parameter("grain",preload("res://assets/chongqing_district_concrete_floor_worn_001_rough_2k.png"))
+	finish.set_shader_parameter("patina",preload("res://assets/chongqing_district_plastered_wall_04_diff_1k.jpg"))
+	finish.set_shader_parameter("wood",preload("res://assets/chongqing_district_wood_table_worn_diff_2k.jpg"))
+	finish.set_shader_parameter("chilli",preload("res://assets/counter_r21/chilli_station_Fried chilli in rapeseed oil.png"))
+	return finish
+
+static func add_visual(city:Node3D,visual:Node3D,editor:bool,preview:Array)->void:
+	if editor:
+		city.add_child(visual,false,Node.INTERNAL_MODE_BACK)
+		preview.append(visual)
+	else:
+		city.add_child(visual)
+
+static func hide_source(target:MeshInstance3D,prior:Dictionary,originals:Array)->void:
+	if not target:return
+	RenderingServer.instance_set_visible(target.get_instance(),false)
+	originals.append(target)
+	var index:int=prior.get("originals",[]).find(target)
+	if index>=0:
+		var older:MeshInstance3D=prior.drawings[index]
+		RenderingServer.instance_set_visible(older.get_instance(),false)
+
+static func install(city:Node3D,editor:=false,prior:Dictionary={})->Dictionary:
+	var originals:=[]
+	var drawings:=[]
+	var plan:Dictionary=JSON.parse_string(FileAccess.get_file_as_string(PLAN))
+	var lib:Node3D=(load(DONOR) as PackedScene).instantiate()
+	var kitchen_materials:={"steel":0,"duct":0,"kitchenfloor":1,"dado":2,"bamboo":3,"chilioil":4,"oldtile":5,"rice":5,"formica":5,"stoolgreen":5,"celadon":5,"ivory":5,"stove":5,"skirt":5,"brownware":5,"oldstep":8,"noodleplaster":6,"agedtile":5,"workrag":7,"flask":5,"oiljug":5,"paintcream":6,"knob":5,"brine":5,"scallion":5,"broth":5,"jar":5,"redwood":3}
+	var cached:={}
+	var missing:Array=[]
+	var changed:=0
+	for key:String in plan.get("retired",[]):
+		var obsolete:=city.find_child(key,true,false) as MeshInstance3D
+		if editor:hide_source(obsolete,prior,originals)
+		elif obsolete:obsolete.mesh=null;obsolete.hide()
+	for name_key:String in plan.changed:
+		var dst:=city.find_child(name_key,true,false) as MeshInstance3D
+		var src:=lib.find_child(name_key,true,false) as MeshInstance3D
+		if not src or (not dst and not editor):
+			missing.append(name_key)
+			continue
+		var finishes:Array=[]
+		if dst and dst.mesh:
+			for i in dst.mesh.get_surface_count():finishes.append(dst.get_active_material(i))
+		if editor:
+			var actual:=dst.global_transform if dst else city.global_transform*src.transform
+			hide_source(dst,prior,originals)
+			dst=MeshInstance3D.new()
+			add_visual(city,dst,true,drawings)
+			dst.global_transform=actual
+		dst.mesh=src.mesh
+		for i in dst.mesh.get_surface_count():
+			if i<finishes.size():dst.set_surface_override_material(i,finishes[i])
+		changed+=1
+	var paving:=ShaderMaterial.new()
+	paving.shader=preload("res://shaders/joined_stone_r24.gdshader")
+	paving.set_shader_parameter("stone",preload("res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg"))
+	paving.set_shader_parameter("grain",preload("res://assets/chongqing_district_concrete_floor_worn_001_nor_gl_2k.jpg"))
+	var stone:=paving.duplicate() as ShaderMaterial
+	stone.set_shader_parameter("stone",preload("res://assets/district_r21/terraces_washed_sandstone.jpg"))
+	stone.set_shader_parameter("grain",preload("res://assets/district_r21/terraces_sandstone_cracks_nor_gl_2k.jpg"))
+	stone.set_shader_parameter("tread",true)
+	for name_key:String in plan.new:
+		var src:=lib.find_child(name_key,true,false) as MeshInstance3D
+		if not src:missing.append(name_key);continue
+		src.owner=null
+		src.get_parent().remove_child(src)
+		add_visual(city,src,editor,drawings)
+		for i in src.mesh.get_surface_count():
+			var old:=src.mesh.surface_get_material(i)
+			var key:String=old.resource_name.trim_prefix("R18_") if old else ""
+			if name_key=="D18_SoupNotice":
+				var paper:=StandardMaterial3D.new()
+				paper.albedo_texture=load("res://assets/connections_r24/soup_notice.jpg")
+				paper.roughness=.88
+				src.set_surface_override_material(i,paper)
+			elif name_key=="D18_PhotoGinger":
+				var skin:=StandardMaterial3D.new()
+				skin.albedo_texture=load("res://assets/connections_r24/ginger/food_ginger_01_diff_1k.jpg")
+				skin.normal_enabled=true
+				skin.normal_texture=load("res://assets/connections_r24/ginger/food_ginger_01_nor_gl_1k.jpg")
+				skin.roughness_texture=load("res://assets/connections_r24/ginger/food_ginger_01_rough_1k.jpg")
+				src.set_surface_override_material(i,skin)
+			elif old is StandardMaterial3D and key in kitchen_materials:
+				if not cached.has(key):cached[key]=kitchen_finish(old,kitchen_materials[key])
+				src.set_surface_override_material(i,cached[key])
+			elif old and old.resource_name=="R18_paver":src.set_surface_override_material(i,paving)
+			elif old and old.resource_name=="R18_stone":src.set_surface_override_material(i,stone)
+			elif old is StandardMaterial3D and old.resource_name in ["R18_wall","R18_lime","R18_deepgreen","R18_timber","R18_redwood","R18_cement"]:
+				var surface:=old.duplicate() as StandardMaterial3D
+				if old.resource_name in ["R18_timber","R18_redwood"]:
+					surface.albedo_texture=preload("res://assets/rooms_r24/rooms_timber.jpg")
+				else:
+					surface.albedo_texture=preload("res://assets/chongqing_district_plastered_wall_04_diff_1k.jpg")
+					surface.normal_enabled=true
+					surface.normal_texture=preload("res://assets/chongqing_district_plastered_wall_04_nor_gl_1k.jpg")
+					surface.normal_scale=.18
+				surface.uv1_scale=Vector3(.69,.69,.69)
+				src.set_surface_override_material(i,surface)
+	for room in plan.rooms:
+		var light:=OmniLight3D.new()
+		light.light_color=Color(.99,.862,.705) if room.type=="flat" else Color(.97,.914,.79)
+		light.light_energy=.29 if room.type=="flat" else .43
+		light.omni_range=3.75
+		light.distance_fade_enabled=true
+		light.distance_fade_begin=16.
+		light.distance_fade_length=12.
+		add_visual(city,light,editor,drawings)
+		light.global_position=Vector3(room.light[0],room.light[1],room.light[2])
+	var reflection:=ReflectionProbe.new()
+	reflection.size=Vector3(4.42,2.53,5.85)
+	reflection.box_projection=true
+	reflection.interior=true
+	reflection.intensity=.82
+	reflection.max_distance=8.
+	add_visual(city,reflection,editor,drawings)
+	reflection.global_position=Vector3(-24.29,12.66,64.90)
+	for place:Vector3 in [Vector3(-22.99,13.61,62.97), Vector3(-24.15,13.48,67.02)]:
+		var lamp:=SpotLight3D.new()
+		lamp.light_color=Color(.98,.937,.855)
+		lamp.light_energy=.68
+		lamp.spot_range=3.15
+		lamp.spot_angle=58.
+		lamp.shadow_enabled=true
+		lamp.distance_fade_enabled=true
+		lamp.distance_fade_begin=12.
+		lamp.distance_fade_length=6.
+		add_visual(city,lamp,editor,drawings)
+		lamp.global_position=place
+		lamp.rotation.x=-PI*.5
+	lib.free()
+	if editor:return {"originals":originals,"drawings":drawings,"changed":changed,"missing":missing}
+	return {"changed":changed,"missing":missing,"new":plan.new.size(),"rooms":plan.rooms.size(),"retired_stair_grates":plan.drains.size()}

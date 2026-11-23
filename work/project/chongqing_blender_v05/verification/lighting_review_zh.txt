@@ -1,0 +1,202 @@
+R15 最终原生 1080p 光照、玻璃与材质审阅
+审阅完成 UTC：2026-11-19T15:53:12.057981+00:00
+
+结论与范围
+本次独占重启批次的22张原始1920×1080 PNG均已逐张直接打开审阅；完整拍摄清单记录22/22、errors=0。所见范围未发现新增光照/玻璃/枝干材质阻塞，已修复的可见格栅悬空、树根扫描裙片、窗后遮挡/房间互穿没有在相关机位回归。此结论为专项回归复核；场景整体仍是可运行原型，不应宣称电影级、照片级或完整物理照明达标。
+R15第一次只完成3张的中断批次保留在verification/round8/native_aborted_parallel，并未用作本轮完成证据。这里22张均属于重新启动的同一完整批次。
+
+当前证据身份
+模型：res://assets/chongqing_district.glb；revision15；1017581848 bytes；SHA256 06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223
+拍摄清单：/workspace/scratch/5462bdafe44f/cq05/verification/final/native/capture_manifest.json
+拍摄清单 SHA256：166a1dc19b44afa459171533b304050972e16a9dda72d1d93b872d01cdda27c7
+运行：Godot 4.6.3-stable (official) / forward_plus / X11 / llvmpipe (LLVM 19.1.7, 256 bits)
+main.gd SHA256：29517fc2472682aae053e2e1eafc954379755e9b212a425088cdb834599cf56d
+活动 profile SHA256：9d0c7b69153c7c84fea8ac544b602bf15ef6806afa75068856a6adba0da809af
+原始 HDR SHA256：5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198
+本轮审阅未启动引擎，未修改脚本、shader、模型、profile、HDR 或任何光照参数。
+
+实际运行光照与材质
+本轮material_stats实际记录：2690 surfaces、81 thin_glass_surfaces、43 explicit_branch_surfaces、963 vertex_color_surfaces。81是本次完整清单的实际值，不是沿用历史假设。
+实际室内候选9盏，启用9盏；每盏约0.24 energy、2.7m range、无阴影；22盏街灯。profile上限10及runtime硬上限12不表示本次有10个灯具。
+每张照片使用自己的directional_shadow记录：overview相机Y=230m，range=450m，fade起点约360m；其余21机位range=180m、fade起点约144m。4级联模式mode=2，split约[0.1,0.2,0.5]，fade fraction约0.8，blend=true。lighting_applied_initial只是初始状态，不替代逐机位记录。
+阳光与HDR配置保持C日照基础：明亮蓝天与暖白日照有区分，阴面仍保留纹理；未通过整体压黑、过曝或更改bias掩盖局部几何问题。枝干实际override使用primary UV（texcoord0、scale1、offset0），没有黑枝/白泛光回归。
+
+本轮关键可见结果
+community_front：重新打开R14同机位原图对照后，电表下两处格栅的板底空气隙和偏移投影不再可见；现在随坡贴地。actual drain导出检查绑定同一R15模型，112格栅/1456条全部通过，普通支持的1mm竖向规则未放宽。该图是视觉一致性证据，不能用像素替代精密量测。
+residential_road与planting_detail：树根扫描裙片未再露出，树干贴图连续，树冠有较完整叶片形状；依然能辨灰白扫描树皮、深色叶边和薄片感。
+window_courtyard、window_dining、window_north、window_living：可见真实室内物件与暗腔，旧穿插物或遮挡整个北窗的Context白墙没有回归；局部台灯暖光没有将整屋抬亮。多数窗台遮住地坪，不能从这些图单独声称所有脚底均可见。
+tea_interior、noodle_interior、window_reading：来自这同一完整22批次的三张原图，已与精确保留的R13原图逐一直接对照；没有另跑三机位拍摄。茶馆/面店的腿末端延长而上部位置保持；A04木地板未重新被terrain覆盖。当前actual GLB家具审计最大绝对脚底gap=0m，允许值1e-5m；但可见接触阴影仍弱，A04多处脚底被遮挡，图像并不单独证明全部接触。
+
+保留的美术局限
+大片灰铺装和空场地较干净、规整；立面、窗阵列、屋顶与道路裂纹重复可辨。屋顶条带感、外围地表重复图案以及程序化陈设仍显原型。
+树叶/小植株仍有薄片和均匀分布感，部分受光叶片偏浅；灰白扫描树皮不等同真实场景中每株树的外观。
+房间大块墙面、帘布和陈设较简化；接触阴影不足会削弱家具重量感，即使几何实际接地。未把数值通过宣称为写实完成。
+
+完整逐图审阅覆盖（以下均为本批新原始PNG）
+
+01. overview — godot_overview.png
+文件：/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_overview.png
+SHA256：b9ed77118558976f11265bd78658943d788797a14103969c59655f74d17f2f75
+直接审阅 UTC：2026-11-19T15:38:50.709701+00:00
+观察：已重新打开本次重启批次原始1080p；楼体与树木投影可见，高机位不再全无日照投影。
+限制：大块灰铺装、规则楼体/窗阵列与外围地表重复图案明显，整体仍是原型。
+
+02. street_entry — godot_street_entry.png
+文件：/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_street_entry.png
+SHA256：6a789f3d20a117aa5ccb4e445e412a9c6bfb8a9c2fe34df2f2d6e3b63e957666
+直接审阅 UTC：2026-11-19T15:38:50.723753+00:00
+观察：蓝天与暖色受光砖墙有区分；背光立面、阶梯及栏杆阴影保留层次；树干/枝条未出现整片黑枝或泛白发光。
+限制：大面积铺装及楼面较干净、规则，细叶远景仍呈片状；不是摄影质感。
+
+03. noodle_corner — godot_noodle_corner.png
+文件：/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_noodle_corner.png
+SHA256：b35fce373657bbce658753d7fec62749db7d1e1d3b5eeeb81ae3fc6eaa05ad68
+直接审阅 UTC：2026-11-19T15:38:50.730659+00:00
+观察：背光小面馆墙面与招牌仍可读，窗后物件和店内杯碗/锅/椅轮廓分明，玻璃未显示整块银白遮挡。
+限制：桌椅接触阴影仍偏弱，本广角不能判定毫米级脚底接触；由后续近景与actual GLB共同确认。
+
+04. central_steps — godot_central_steps.png
+文件：/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_central_steps.png
+SHA256：3d196487db891e29eec199c9055185115cc3b938e86a99466579b6bffc257d8c
+直接审阅 UTC：2026-11-19T15:38:50.734877+00:00
+观察：日照右侧砖墙与左侧阴面分离，梯坎/栏杆/店内有深浅变化；可见窗口有真实暗腔，树干与植栽颜色无已知材质回归。
+限制：明亮立面、大片混凝土及重复门店陈设仍偏整齐；局部室内接触阴影有限。
+
+05. west_lane — godot_west_lane.png
+文件：/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_west_lane.png
+SHA256：8bdef1e90412c216209cae1fde6cca717a186ab8c907da2742f1d65a4ec9c184
+直接审阅 UTC：2026-11-19T15:39:22.286344+00:00
+观察：背光蓝灰瓷砖、日照暖砖墙与白墙有清楚区分；近窗玻璃仍能见暗腔和局部室内轮廓，栏杆/台阶有日照阴影。
+限制：窗阵列与大片坡地较规则，窗面局部反射仍偏灰，远端室内细节无法从此图判定。
+
+06. community_court — godot_community_court.png
+文件：/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_community_court.png
+SHA256：6370c794e480ad61d966c62269f6e41b51a85710fdf5f0b118083f7014628108
+直接审阅 UTC：2026-11-19T15:39:22.293724+00:00
+观察：球场绿色地坪、砖石挡墙与天空颜色区分正常；网围栏和阶梯可读，右侧白墙有受光/暗腔层次，无过曝抹白整面。
+限制：球场与大块铺装较平整干净；高楼窗阵列重复明显，细网远处有像素混叠。
+
+07. narrow_passage — godot_narrow_passage.png
+文件：/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_narrow_passage.png
+SHA256：d51fd931a9086ba38141b502148161cfeb8d8c8e2b47b81d867a0e03e4a6b448
+直接审阅 UTC：2026-11-19T15:40:01.936456+00:00
+观察：深巷背光较暗但砖石、阶梯及远端出口仍可读，右侧近窗能辨玻璃后的顶面和房间暗腔；无整窗银白或大面积死黑。
+限制：巷内阴影偏冷；最近房间墙面与天花仍简略，窗后物件在此视角有限。
+
+08. upper_houses — godot_upper_houses.png
+文件：/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_upper_houses.png
+SHA256：2ab9e6c93c7faf7811b4cefeba8db75d12760f5c00d44d3a3f5d3492e92db072
+直接审阅 UTC：2026-11-19T15:40:35.209192+00:00
+观察：近侧住家阴面有纹理，右侧铺装受光与树木/阶梯投影区分明确；大树枝干贴图可读，无白色扫描根裙再现。
+限制：树冠仍可辨叶片与细碎边缘，远楼窗阵列和大面积空铺装具有原型感；不把高分辨率渲染等同写实质量。
+
+09. east_gallery — godot_east_gallery.png
+文件：/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_east_gallery.png
+SHA256：b699cbe4bdf5003d275ea45ac5b0daf3845dba9ab6c63d8b987e5cd9dc8882e5
+直接审阅 UTC：2026-11-19T15:41:24.372039+00:00
+观察：灰砖与木窗材质可辨，窗后物件可见；前景树干为纹理化树皮并与土面接合，树冠绿色/背光深色有区分，无黑枝/白泛光。
+限制：受光地坪大片而干净，扫描树叶仍可辨离散薄片，灌木分布较均匀；写实度有限。
+
+10. residential_road — godot_residential_road.png
+文件：/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_residential_road.png
+SHA256：485140ec6635ac0b9a29857d41d0891da561a0cd5147d347284678b339b0de27
+直接审阅 UTC：2026-11-19T15:42:33.452110+00:00
+观察：前景树根扫描白裙未再露出，树干纹理与土面衔接可见；hero树冠有完整叶片形状和绿色明暗变化，道路保留树影及铺装材质变化，无黑枝/泛白发光回归。
+限制：灰白扫描树皮、局部深色叶边和叶面薄片感仍在；重复高楼窗阵列与大片空地明显，不能称为电影级或摄影级真实。
+
+11. upper_street — godot_upper_street.png
+文件：/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_upper_street.png
+SHA256：45d7a73bfe56eead8ec835fb35abef41dd91e9929d67caefc0e93a5ffa196e69
+直接审阅 UTC：2026-11-19T15:44:05.651353+00:00
+观察：近处背光砖面和沥青仍有纹理，左侧受光树木/白墙与阴面有明暗差；右窗能见帘布、层板与灯罩，没有重新变成不透明银色块。
+限制：路面裂纹重复、长直建筑面较规则，远楼简化窗面和扫描树皮仍有原型感。
+
+12. roofscape — godot_roofscape.png
+文件：/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_roofscape.png
+SHA256：4f1744fe98aad7b448cea27da06f0a12cfb1245b2504fc374296be65c2ae6fc1
+直接审阅 UTC：2026-11-19T15:44:05.693611+00:00
+观察：64m高机位仍使用180m阴影范围，可见楼体、树木及球架投影；砖屋顶、混凝土屋顶和球场色块可区分。
+限制：屋顶纹理重复与条带感明显，大块平台缺少生活磨损；远景地表重复图案可见，整体不是电影级写实。
+
+13. community_front — godot_community_front.png
+文件：/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_community_front.png
+SHA256：06b4f3cab71af9202154e9b472bf5bd343d0d3114596e855337e0e20895e5e47
+直接审阅 UTC：2026-11-19T15:44:40.833244+00:00
+观察：与重新打开的R14同机位原图对照，墙上电表下两处格栅现在随坡贴地，旧板底空气隙/偏移投影不再可见；墙面日照及窗内暗腔维持，未改变阴影bias掩盖问题。
+限制：灰白外墙、空铺装和简略窗内墙面仍显原型；毫米级支持以绑定同场景SHA的actual GLB报告为证，原图本身不用于精密量测。
+
+14. residential_entry — godot_residential_entry.png
+文件：/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_residential_entry.png
+SHA256：763ebcc8d00f9ea02fd56d96805c041b8d3ac4636337999f452107f55e35e7b5
+直接审阅 UTC：2026-11-19T15:44:57.864013+00:00
+观察：背光住宅门厅能见内侧阶梯、门板与顶灯，窗口有帘布/画框等深度线索；木阳台与砌石挡墙可读，格栅未出现明显悬空轮廓。
+限制：背光室内总体冷灰且陈设较简略，建筑及铺装依然规整；顶灯外观发亮不等于物理完整室内光输运。
+
+15. window_courtyard — godot_window_courtyard.png
+文件：/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_courtyard.png
+SHA256：e4ef7900a8ba9660604f8862922ac763c0d41f50f8e5128da251c6c1c90ba343
+直接审阅 UTC：2026-11-19T15:46:02.788258+00:00
+观察：家务间水盆、龙头、盘架、抹布及贴砖背板能透过玻璃辨认；窗后顶面/侧墙有暗部层次，未见旧绿色靠垫/邻室灯罩穿进盆内。
+限制：玻璃观感偏克制，房间整体冷灰且较整齐；窗台遮住大部分地板，不能由此图证明全部室内接地。
+
+16. tea_interior — godot_tea_interior.png
+文件：/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_tea_interior.png
+SHA256：e62c61e4bf0524f750915c3d15bb36c8d43b189b8d2613f1e4169e401c0b3bd6
+直接审阅 UTC：2026-11-19T15:47:12.647524+00:00
+观察：直接与R13原始基线对照，柜、圆桌、圆凳脚的可见末端延长，桌面/座面及台上器皿位置稳定；地板未再被terrain覆盖，墙顶暗部与陶瓷高光保留。
+限制：地面接触阴影仍很弱，几何变化在本图只占少量像素；当前actual GLB报告证明零间隙，不能据此夸大为完整接触光照真实性。
+
+17. window_living — godot_window_living.png
+文件：/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_living.png
+SHA256：07c834d3a742e8408a8e5400d2299b22d596cf48b5c228eae55d5b411a377355
+直接审阅 UTC：2026-11-19T15:47:56.307505+00:00
+观察：打开窗扇的薄玻璃、帘布、墙面画框和木椅清楚可辨；落地灯只在附近墙面形成小范围暖光，室内顶面仍暗，未把整屋抬亮成展示柜。
+限制：窗台遮挡椅脚与地坪，不能从图量接地；陈设稀疏、帘布重复和大块平墙仍显原型。
+
+18. window_north — godot_window_north.png
+文件：/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_north.png
+SHA256：530b220693b196bc36bd3c2c728f27bbb63e249890e8b8aef71c88381e439e09
+直接审阅 UTC：2026-11-19T15:49:15.846211+00:00
+观察：北侧窗后杯、书、盆栽、瓶子及帘布可见，旧重复Context不透明白墙遮挡没有再出现；墙顶与层板存在亮度层次。
+限制：房间背墙和陈设仍偏简略、冷灰，地坪被窗台遮住，不能据图量terrain间隙。
+
+19. noodle_interior — godot_noodle_interior.png
+文件：/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_noodle_interior.png
+SHA256：e7b4797acee3471c5e40eee8ced7bb3852e9c9f4ee41062f05a7b917e84aad71
+直接审阅 UTC：2026-11-19T15:49:15.846211+00:00
+观察：与重新打开的R13基线对照，右侧圆桌腿末端延伸，扫描塑料椅和桌面高度保持；锅/杯/碗与墙顶暗部稳定，室内地板、门槛未被terrain覆盖。
+限制：桌椅脚处接触阴影依旧轻，图像变化细小；实际零间隙由同R15模型导出审计证明。
+
+20. window_reading — godot_window_reading.png
+文件：/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_reading.png
+SHA256：aaac35e56abd81e6c91d884a27db00bf1097839525bed3205e6aee05434ea1f7
+直接审阅 UTC：2026-11-19T15:49:58.745060+00:00
+观察：与R13基线直接对照，A04木地板、书桌/木椅、台灯暖晕及薄玻璃观感保持，未见灰色terrain重新穿入。
+限制：窗框、窗台和椅遮挡大部分脚底；下端修复在本图不显著，不能假称原图证明所有桌脚接地。实际桌脚零间隙由当前R15 actual GLB审计给出；接触阴影仍弱。
+
+21. window_dining — godot_window_dining.png
+文件：/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_dining.png
+SHA256：fdd51bb8a16dc5ca65fcc35152bdc725b8ac5235615abcb1e7c6eda4b670b7b8
+直接审阅 UTC：2026-11-19T15:50:31.442778+00:00
+观察：狭小备餐/洗涤间的水盆、盘架、龙头和百叶可辨，开窗玻璃保持通透；未见旧餐桌/椅与邻室互穿再现，暗部保留物件轮廓。
+限制：局部室内总体冷暗，空间使用与材料仍简化，地坪大部分被台面/窗台遮住。
+
+22. planting_detail — godot_planting_detail.png
+文件：/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_planting_detail.png
+SHA256：e5744f62af637b1ef65ab97199f557fb75dc5a1b85badd5283ebeaa5bd52c294
+直接审阅 UTC：2026-11-19T15:50:31.442778+00:00
+观察：树干树皮贴图连续并接入土面，土壤/碎叶边带与铺装材质区分清楚；小植株和树影正常，无黑枝或白色扫描裙片。
+限制：植株分布较均匀，受光叶片偏浅、叶面薄片感可见；土面细节仍偏平，不能以高像素数量宣称照片级真实。
+
+可追溯报告
+逐图JSON：/workspace/scratch/5462bdafe44f/cq05/verification/final/lighting_review_r15.json
+逐图JSON SHA256：dc0b8b02bf711b0e1372f9f6161336c1a4ef57ed5c505c9df56fe51fc6aa3615
+家具原生对照：/workspace/scratch/5462bdafe44f/cq05/verification/final/furniture_contact_native_review.json
+家具原生对照 SHA256：bc087cd044a222437fb5108d7de114430d24e58abcabb55f7c92cdd07555f914
+furniture_contact_export_audit.json SHA256：ca3478b3cdd4f925b479d43db534a2e4ae4b867ccb931e61a4f09a8293f20759
+drain_grate_export_audit.json SHA256：34221b9bf3bc5ffc6f83aaffb07c69b1d2588521da06c67967865964c55cc0e4
+terrain_glb_clearance.json SHA256：6796e9644c051c83c160e2890ee9701659fbb3cbbc7af7a994106dd4f057dfaa
+physics_validation.json SHA256：e64475da03cfffa1395c71e23d66609424289ed57efaa560c2616f0e256213db
+
+历史边界
+R7的A/B/C对照只用于记录选择C的历史，不冒充R15最终验证。R9光照/玻璃检查保留为历史；R10构建在完整导出前取消，不能标成完成。R14完整照片因实际格栅空气隙被拒绝，其原图保留；本轮使用R15新照片与当前模型证据。

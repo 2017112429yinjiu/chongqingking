@@ -1,0 +1,46 @@
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+
+SCRIPT ERROR: Parse Error: Could not preload resource script "res://scripts/mentor_hands.gd".
+   at: GDScript::reload (res://scripts/mentor_demonstration.gd:18)
+   GDScript backtrace (most recent call first):
+       [0] go (res://../../scene_r24/day_one/demonstration/sites.gd:4)
+SCRIPT ERROR: Parse Error: Could not resolve script "res://scripts/mentor_hands.gd".
+   at: GDScript::reload (res://scripts/mentor_demonstration.gd:18)
+   GDScript backtrace (most recent call first):
+       [0] go (res://../../scene_r24/day_one/demonstration/sites.gd:4)
+SCRIPT ERROR: Parse Error: Cannot infer the type of "pupil_pose" variable because the value doesn't have a set type.
+   at: GDScript::reload (res://scripts/mentor_demonstration.gd:18)
+   GDScript backtrace (most recent call first):
+       [0] go (res://../../scene_r24/day_one/demonstration/sites.gd:4)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+   at: GDScript::reload (res://scripts/day_one.gd:0)
+   GDScript backtrace (most recent call first):
+       [0] go (res://../../scene_r24/day_one/demonstration/sites.gd:4)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+   at: GDScript::reload (res://scripts/main.gd:0)
+   GDScript backtrace (most recent call first):
+       [0] go (res://../../scene_r24/day_one/demonstration/sites.gd:4)
+ERROR: Failed to load script "res://scripts/main.gd" with error "Compilation failed".
+   at: load (modules/gdscript/gdscript.cpp:2907)
+   GDScript backtrace (most recent call first):
+       [0] go (res://../../scene_r24/day_one/demonstration/sites.gd:4)
+CQ_INTERIOR_LIGHTS {"interior_candidate_count":9,"interior_lights":[{"energy":0.239999994635582,"name":"B_809889627_blue_apartments_room_lamp","position":[82.391,28.184,-13.942],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_809889628_clinic_room_lamp","position":[15.883,31.615,-53.5],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_809889629_artisan_room_lamp","position":[47.205,34.774,-72.476],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_1335306665_civic_room_lamp","position":[-24.373,26.707,-30.861],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_1335306666_heritage_room_lamp","position":[-50.162,26.057,-36.511],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_1335306667_brick_home_room_lamp","position":[-62.888,23.169,-17.653],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_1413081560_old_tile_room_lamp","position":[-33.476,29.533,-53.924],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_A03_blue_apartments_room_lamp","position":[-91.543,16.767,15.033],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_A04_courtyard_home_room_lamp","position":[-55.09,17.775,14.621],"range":2.70000004768372,"shadows":false}],"street_lights":22}
+CQ_BRANCH_OVERRIDE {"baked_primary":true,"imported_uv1_offset":[0.0,0.0,0.0],"imported_uv1_scale":[1.0,1.0,1.0],"imported_uv2_offset":[0.0,0.0,0.0],"imported_uv2_scale":[1.0,1.0,1.0],"normal_and_pbr_textures":false,"offset":[0.0,0.0],"scale":[1.0,1.0],"texcoord":0,"texture":"res://assets/chongqing_district_island_tree_01_branches_diff_2k.jpg"}
+CQ_BRANCH_OVERRIDE {"baked_primary":true,"imported_uv1_offset":[0.0,0.0,0.0],"imported_uv1_scale":[1.0,1.0,1.0],"imported_uv2_offset":[0.0,0.0,0.0],"imported_uv2_scale":[1.0,1.0,1.0],"normal_and_pbr_textures":false,"offset":[0.0,0.0],"scale":[1.0,1.0],"texcoord":0,"texture":"res://assets/chongqing_district_tree_small_02_branch_diff_2k.jpg"}
+CQ_STREET_USE { "dressed": 2, "paving": 56, "facades": 83, "asphalt": 15, "workday": true, "resident_pots": 2, "furniture_volumes": 2 }
+CQ_NEIGHBORHOOD {"missing":[],"plants":35,"removed":["COL_Handrails_Central_stair_lane_painted_metal","COL_Handrails_West_residential_link_painted_metal","Court_entry_rails_frame","Utility_cables_dark","COL_R20_Returned_handrail_steel","COL_R20_Returned_handrail_rail_enamel","COL_R20_Returned_handrail_pin","COL_R20_Returned_handrail_iron","Resident_waste_13_bin_00","Resident_waste_13_bin_01","Resident_waste_13_bin_02","Resident_waste_13_bin_03","Resident_waste_13_bagA_00","Resident_waste_13_bagB_00","Resident_waste_13_crate_00"],"shifted":87,"spans":4,"tree_distance_meshes":288,"trunks":5}
+CQ_READY {"collisions":{"bodies":276,"by_kind":{"refined_structure":276},"created":276,"failed":[],"props":{"method":"deduplicated root-aligned cylinders; foliage excluded","trunks_and_posts":57},"reused":0,"skipped_meshes":3604,"triangles":476329},"engine":"4.6.3-stable (official)","renderer":"forward_plus","spawn":[20.0,9.4995,76.0]}
+SITES shop=(-24.29, 12.3177, 60.2) owner=[X: (-0.453991, 0.0, -0.891006), Y: (0.0, 1.0, 0.0), Z: (0.891006, 0.0, -0.453991), O: (-25.59, 11.14268, 59.8)] bag=(-25.12308, 11.87981, 59.56753) door=(-54.2, 17.45, 19.5)
+BELL (-55.184, 17.58994, 18.735)
+BOX_FEET (-29.3, 11.57828, 55.2) side -1.0 z 0.38 feet (-29.68, 11.68718, 54.7)
+BOX_FEET (-29.3, 11.57828, 55.2) side -1.0 z 0.6 feet (-29.9, 11.68184, 54.7)
+BOX_FEET (-29.3, 11.57828, 55.2) side -1.0 z 0.85 feet (-30.15, 11.68053, 54.7)
+BOX_FEET (-29.3, 11.57828, 55.2) side 1.0 z 0.38 feet (-29.68, 11.65069, 55.7)
+BOX_FEET (-29.3, 11.57828, 55.2) side 1.0 z 0.6 feet (-29.9, 11.64409, 55.7)
+BOX_FEET (-29.3, 11.57828, 55.2) side 1.0 z 0.85 feet (-30.15, 11.63668, 55.7)
+BOX_FEET (-25.4, 14.28879, 36.95) side -1.0 z 0.38 feet (-25.9, 14.23548, 37.33)
+BOX_FEET (-25.4, 14.28879, 36.95) side -1.0 z 0.6 feet (-25.9, 14.20373, 37.55)
+BOX_FEET (-25.4, 14.28879, 36.95) side -1.0 z 0.85 feet (-25.9, 14.16766, 37.8)
+BOX_FEET (-25.4, 14.28879, 36.95) side 1.0 z 0.38 feet (-24.9, 14.25123, 37.33)
+BOX_FEET (-25.4, 14.28879, 36.95) side 1.0 z 0.6 feet (-24.9, 14.22078, 37.55)
+BOX_FEET (-25.4, 14.28879, 36.95) side 1.0 z 0.85 feet (-24.9, 14.18616, 37.8)

@@ -1,0 +1,82 @@
+{
+	"issues": [
+		{
+			"goal": "(-20.2, 14.0, 38.5)",
+			"kind": "route_blocked",
+			"obstacle": "/root/ChongqingDistrict/City/COL_D18_StoneFlights/CQ_StaticCollision",
+			"position": "(-22.62409, 14.23213, 38.97215)",
+			"seconds_without_progress": 3.02,
+			"segment": 4,
+			"stage": "TO_YARD",
+			"time_s": 71.93
+		}
+	],
+	"legs": {
+		"TO_SHOP": {
+			"arrived": true,
+			"max_kmh": 9.86400000000004,
+			"moving_s": 9.56666666666672,
+			"travel_m": 20.2620564543176,
+			"waiting_s": 7.08333333333331,
+			"waypoints": [
+				{
+					"position": "(-49.99934, 11.76194, 52.00065)",
+					"segment": 0,
+					"stage": "TO_SHOP",
+					"time_s": 3.78
+				},
+				{
+					"position": "(-40.12001, 11.95561, 52.0853)",
+					"segment": 1,
+					"stage": "TO_SHOP",
+					"time_s": 16.12
+				}
+			]
+		},
+		"TO_YARD": {
+			"arrived": false,
+			"max_kmh": 9.87600000000008,
+			"moving_s": 14.9500000000003,
+			"travel_m": 21.9365692645079,
+			"waiting_s": 4.94999999999999,
+			"waypoints": [
+				{
+					"position": "(-30.20965, 11.6692, 54.9583)",
+					"segment": 0,
+					"stage": "TO_YARD",
+					"time_s": 52.05
+				},
+				{
+					"position": "(-27.06469, 11.72246, 55.04315)",
+					"segment": 1,
+					"stage": "TO_YARD",
+					"time_s": 58.73
+				},
+				{
+					"position": "(-25.04513, 12.13108, 53.07023)",
+					"segment": 2,
+					"stage": "TO_YARD",
+					"time_s": 60.15
+				},
+				{
+					"position": "(-25.08239, 12.67674, 49.13353)",
+					"segment": 3,
+					"stage": "TO_YARD",
+					"time_s": 61.8
+				},
+				{
+					"position": "(-24.70901, 13.72475, 41.62583)",
+					"segment": 4,
+					"stage": "TO_YARD",
+					"time_s": 64.68
+				}
+			]
+		}
+	},
+	"max_frame_displacement_m": 0.0853680595755577,
+	"rules": {
+		"airborne_seconds": 0.45,
+		"minimum_progress_m": 0.2,
+		"stalled_seconds": 3.0
+	}
+}

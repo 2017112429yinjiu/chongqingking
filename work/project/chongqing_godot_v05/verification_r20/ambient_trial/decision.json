@@ -1,0 +1,50 @@
+{
+  "source_revision": "R20_lane_11_internal",
+  "adopted_in": "R20_lane_12_internal",
+  "variable": "lighting.ssao_half_size",
+  "other_profile_fields_equal": true,
+  "native_viewport": [
+    1920,
+    1080
+  ],
+  "p95_ms": {
+    "full": {
+      "r20_neighbor": 10.484,
+      "r20_seated_neighbor": 23.663,
+      "central_steps": 23.004
+    },
+    "half": {
+      "r20_neighbor": 10.53,
+      "r20_seated_neighbor": 20.501,
+      "central_steps": 19.182
+    },
+    "full_repeat": {
+      "r20_neighbor": 10.67,
+      "r20_seated_neighbor": 23.552,
+      "central_steps": 21.207
+    }
+  },
+  "visual_review": "Compared four ungraded 1600x900 views, inspected the face, hair, bench anchors, pavement edge and stairs at native pixel scale. Half resolution retained for regression and motion review.",
+  "fixed_image_differences": {
+    "godot_central_steps": {
+      "mean_abs_per_channel": 0.2151,
+      "pct_pixels_max_channel_over_8": 0.0025,
+      "max_channel_delta": 18
+    },
+    "godot_r20_neighbor": {
+      "mean_abs_per_channel": 0.1178,
+      "pct_pixels_max_channel_over_8": 0.0003,
+      "max_channel_delta": 10
+    },
+    "godot_r20_seated_neighbor": {
+      "mean_abs_per_channel": 0.1872,
+      "pct_pixels_max_channel_over_8": 0.0003,
+      "max_channel_delta": 9
+    },
+    "godot_r20_tree_court": {
+      "mean_abs_per_channel": 0.1048,
+      "pct_pixels_max_channel_over_8": 0.0004,
+      "max_channel_delta": 9
+    }
+  }
+}

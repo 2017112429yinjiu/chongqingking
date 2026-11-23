@@ -1,0 +1,42 @@
+{
+	"checks": [
+		{
+			"detail": "",
+			"name": "district_booted",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "default_game_starts_at_registration",
+			"pass": false
+		}
+	],
+	"demonstrations": [],
+	"display": "headless",
+	"engine": "4.6.3-stable (official)",
+	"mentor_route": {
+
+	},
+	"nearest_walking_resident": {
+		"clearance_to_bike_m": 1e99999
+	},
+	"passed": false,
+	"renderer": "forward_plus",
+	"source_sha256": {
+		"assets/vehicles/first_shift_box.glb": "8898145f3053a125eafb876eb8c61cffc3542858628c7e9e5be6790748f580ed",
+		"first_shift.tscn": "1f4df48ea096f7c0e8a5b608e8b2e4558f2cb495bfb7e80a95057c7811f87160",
+		"scripts/day_one.gd": "3e9040a277d69d74922cd48fcc42d54986a3b0ca9b3db89005a6c218dcc16d7d",
+		"scripts/gameplay.gd": "13cc318887733b4b1ba8d506cc91ac458740e47eb927c62ce6595db06c39144b",
+		"scripts/main.gd": "1b6ba2fe65e1ee3d55800d6656a4da33ac348b278ed93cb7b1692095eb53da4a",
+		"scripts/mentor_demonstration.gd": "6dedf1cff4a9d07acf2b7fc6b41f454b3af9d2153aed4912f4a2a18dfe762960",
+		"scripts/mentor_hands.gd": "ac475858fcfc3bc3ca683c6457916db618f55801ccb1623ed277dbe54f47aecf",
+		"scripts/mentor_reach.gd": "b606c79f462c79c389981127835573df6aac384da775c9b6201d346923d14c10",
+		"scripts/mentor_route_audit.gd": "0e0a8221e123e126bdfb952670c279567b282ef8d3694ba14022a060b5dbea0f",
+		"scripts/mentor_scooter.gd": "0981b24e4ec3c28646c2dd01b7fa66eb3639d2465986d7cedb9955d67eb60263",
+		"scripts/mentor_walker.gd": "d7a91f1d2fdbf24f7669872514adfd6dadcd61ce0ce8f17468e55d2eb2b67569",
+		"scripts/scooter_controller.gd": "bfdc387467a5aa483e6ade38be3913052035a23b0c18ab95f615abb206a84a71",
+		"scripts/shift_cargo_box.gd": "abaff9a1d0d44de6a0354329bec2eb90255f6e60a11ec6b705b2240d71c0ed50",
+		"scripts/takeaway_bag.gd": "d5160051d380ce2f80dccd178268b2a18340d48a6138446c01ed11064517e254",
+		"scripts/teaching_door.gd": "4c1fa35756bd605d723959e0d0384a9388204561eb7449fffbb228301803ea02"
+	}
+}

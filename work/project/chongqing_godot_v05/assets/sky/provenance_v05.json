@@ -1,0 +1,1063 @@
+{
+  "asset_id": "kloofendal_48d_partly_cloudy_puresky",
+  "title": "Kloofendal 48d Partly Cloudy (Pure Sky)",
+  "source_url": "https://polyhaven.com/a/kloofendal_48d_partly_cloudy_puresky",
+  "official_api_info": "https://api.polyhaven.com/info/kloofendal_48d_partly_cloudy_puresky",
+  "official_api_files": "https://api.polyhaven.com/files/kloofendal_48d_partly_cloudy_puresky",
+  "download_url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+  "authors": {
+    "Greg Zaal": "Original",
+    "Jarod Guest": "Sky edits"
+  },
+  "license": "CC0 1.0",
+  "license_url": "https://polyhaven.com/license",
+  "retrieved_date_utc": "2026-11-19",
+  "local_file": "kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+  "bytes": 5451493,
+  "official_md5": "2eba3a4d7eeb23cbfbeca364c97e7980",
+  "actual_md5": "2eba3a4d7eeb23cbfbeca364c97e7980",
+  "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+  "dimensions": [
+    2048,
+    1024
+  ],
+  "source_file_modified": false,
+  "source_numeric_check": {
+    "all_pixels_finite": true,
+    "rgb_max": 73216.0,
+    "sun_peak_uv": [
+      0.5947265625,
+      0.2333984375
+    ],
+    "sun_peak_elevation_degrees": 47.98828125
+  },
+  "godot_import": {
+    "process/hdr_as_srgb": false,
+    "process/hdr_clamp_exposure": true,
+    "reason": "Prevent high-peak HDRI sparkles on ambient/specular reflections using Godot documented import smart clamp."
+  },
+  "official_engine_references": [
+    "https://docs.godotengine.org/en/4.6/tutorials/3d/environment_and_post_processing.html",
+    "https://docs.godotengine.org/en/4.6/classes/class_resourceimportertexture.html",
+    "https://docs.godotengine.org/en/4.6/classes/class_environment.html",
+    "https://github.com/godotengine/godot/blob/master/servers/rendering/renderer_rd/shaders/environment/sky.glsl"
+  ],
+  "selection_status": "Historical R7 A/B/C comparison selected C. The current profile, original HDR and R15 scene are now bound to the completed exclusive-restart 22-view 1920x1080 native batch. Lighting/material regression review passed within its stated scope; the scene remains prototype quality, not cinematic or photographic certification.",
+  "native_lighting_comparison": {
+    "selected": "C / warm courtyard",
+    "selected_profile": "res://assets/render_profile_v05_c_warm_courtyard.json",
+    "selected_profile_sha256": "34cfbbb6115b2b0621b77fceb725eb238344754170b3d9250aa632c6e83cd567",
+    "source_geometry": {
+      "asset": "res://assets/chongqing_district.glb",
+      "bytes": 859476540,
+      "revision": 7.0,
+      "sha256": "b15b52321f397889d61a2f8015aec84a59b000b9015227b068c63caf05be272e"
+    },
+    "capture_renderer": "forward_plus",
+    "capture_size": [
+      960,
+      540
+    ],
+    "views": [
+      "central_steps",
+      "east_gallery"
+    ],
+    "comparison_folders": [
+      "verification/light_a_soft_daylight",
+      "verification/light_b_sun_breaks",
+      "verification/light_c_warm_courtyard"
+    ],
+    "scope": "Lighting/material rendering comparison only; unchanged R7 geometry. All 14 viewpoints remain authored; 2 were used for this isolated comparison.",
+    "visual_review": "C provides the clearest facade sun/shade separation and a coherent building-shadow band across the central steps. Bark remains naturally brown-gray; no former black-branch or white-bloom defect is seen.",
+    "pending": "Historical R7 comparison is complete. It is not a validation of R9 or R10 geometry; see current_runtime_profile for later revision checks."
+  },
+  "current_runtime_profile": {
+    "profile": "res://assets/render_profile_v05.json",
+    "profile_sha256": "9d0c7b69153c7c84fea8ac544b602bf15ef6806afa75068856a6adba0da809af",
+    "art_revision": "v05_lighting_c_r10_actual_practical_completion",
+    "historical_lighting_basis": "res://assets/render_profile_v05_c_warm_courtyard.json",
+    "change_from_historical_C": {
+      "lighting.interior_light_limit": {
+        "before": 8,
+        "after": 10
+      },
+      "runtime_interior_light_hard_cap": {
+        "before": 8,
+        "after": 12
+      },
+      "lighting.high_camera_shadow_range_enabled": {
+        "before": "absent; fixed 180m behavior",
+        "after": true
+      },
+      "lighting.high_camera_shadow_height_m": {
+        "before": "absent",
+        "after": 80.0
+      },
+      "lighting.high_camera_shadow_max_distance": {
+        "before": "absent",
+        "after": 450.0
+      },
+      "profile_metadata_changed": [
+        "art_revision",
+        "notes[6]"
+      ],
+      "other_render_profile_values_changed": false,
+      "note": "The three high-camera keys were added during round6 after the 230m overview camera was proven outside the original 180m cascade range. Near cameras retain180m. The original C daylight/exposure/AO/sky/glass values remain unchanged."
+    },
+    "actual_practical_specification": {
+      "authored_candidates_at_final_capture": 9,
+      "enabled_at_final_capture": 9,
+      "profile_limit": 10,
+      "runtime_hard_cap": 12,
+      "nominal_energy_each": 0.24,
+      "nominal_range_m_each": 2.7,
+      "shadows": false,
+      "actual_lights": [
+        {
+          "energy": 0.239999994635582,
+          "name": "B_809889627_blue_apartments_room_lamp",
+          "position": [
+            82.391,
+            28.184,
+            -13.942
+          ],
+          "range": 2.70000004768372,
+          "shadows": false
+        },
+        {
+          "energy": 0.239999994635582,
+          "name": "B_809889628_clinic_room_lamp",
+          "position": [
+            15.883,
+            31.615,
+            -53.5
+          ],
+          "range": 2.70000004768372,
+          "shadows": false
+        },
+        {
+          "energy": 0.239999994635582,
+          "name": "B_809889629_artisan_room_lamp",
+          "position": [
+            47.205,
+            34.774,
+            -72.476
+          ],
+          "range": 2.70000004768372,
+          "shadows": false
+        },
+        {
+          "energy": 0.239999994635582,
+          "name": "B_1335306665_civic_room_lamp",
+          "position": [
+            -24.373,
+            26.707,
+            -30.861
+          ],
+          "range": 2.70000004768372,
+          "shadows": false
+        },
+        {
+          "energy": 0.239999994635582,
+          "name": "B_1335306666_heritage_room_lamp",
+          "position": [
+            -50.162,
+            26.057,
+            -36.511
+          ],
+          "range": 2.70000004768372,
+          "shadows": false
+        },
+        {
+          "energy": 0.239999994635582,
+          "name": "B_1335306667_brick_home_room_lamp",
+          "position": [
+            -62.888,
+            23.169,
+            -17.653
+          ],
+          "range": 2.70000004768372,
+          "shadows": false
+        },
+        {
+          "energy": 0.239999994635582,
+          "name": "B_1413081560_old_tile_room_lamp",
+          "position": [
+            -33.476,
+            29.533,
+            -53.924
+          ],
+          "range": 2.70000004768372,
+          "shadows": false
+        },
+        {
+          "energy": 0.239999994635582,
+          "name": "B_A03_blue_apartments_room_lamp",
+          "position": [
+            -91.543,
+            16.767,
+            15.033
+          ],
+          "range": 2.70000004768372,
+          "shadows": false
+        },
+        {
+          "energy": 0.239999994635582,
+          "name": "B_A04_courtyard_home_room_lamp",
+          "position": [
+            -55.09,
+            17.775,
+            14.621
+          ],
+          "range": 2.70000004768372,
+          "shadows": false
+        }
+      ],
+      "note": "Shared-room ownership cleanup removed one redundant neighbouring-room lamp in R12, leaving9 actual candidates; all9 are enabled. The unchanged profile art_revision/notes retain the historical R10 edit label and are not a claim of10 current lamps."
+    },
+    "r9_native_review": {
+      "scene_identity": {
+        "asset": "res://assets/chongqing_district.glb",
+        "bytes": 1054089420,
+        "revision": 9.0,
+        "sha256": "269bba00be7251395470d941c4522e0d798749a79df8f71ce290a229cd644441"
+      },
+      "profile_sha256_at_capture": "34cfbbb6115b2b0621b77fceb725eb238344754170b3d9250aa632c6e83cd567",
+      "capture_manifest": "verification/round2/native/capture_manifest.json",
+      "capture_count": 8,
+      "failures": [],
+      "thin_glass_surfaces": 81,
+      "vertex_color_surfaces": 946,
+      "interior_lights_enabled": 8,
+      "lighting_and_glass_status": "Checked in native Godot 4.6.3 Forward+; outdoor C sunlight/sky separation retained, actual room occlusion removes flat bright backing, thin-glass count matches exported architectural surfaces and primary-UV bark remains intact.",
+      "geometry_status": "R9 interior terrain overlap is not accepted. The frozen analytic audit is verification/round2/terrain_intrusion_audit.json. R10 must pass actual exported-mesh clearance and native room-floor review."
+    },
+    "r10_validation": {
+      "status": "cancelled_before_complete_export",
+      "validated_scene_sha256": null,
+      "validated_profile_sha256": null,
+      "capture_manifest": null,
+      "expected_interior_lights_enabled": 10,
+      "review_focus": [
+        "A04 actual wood floor and complete chair feet after terrain cut",
+        "local A04 warm practical light range",
+        "unchanged outdoor C daylight and exposure"
+      ],
+      "reason": "Build stopped after the outer context terrain overlap was identified; geometry fix proceeds as revision 11."
+    },
+    "profile_revision_note": "art_revision remains the historical R10 practical-light edit label. R10 was cancelled before a complete export. Current validation is the completed R15 scene and22-view native batch, using the round6 camera-height shadow policy and9 actual room lights; no R10 completion is claimed.",
+    "r11_validation": {
+      "status": "pending_complete_export_and_actual_GLB_clearance_then_native_capture",
+      "validated_scene_sha256": null,
+      "validated_profile_sha256": null,
+      "capture_manifest": null,
+      "expected_interior_lights_enabled": 10,
+      "review_focus": [
+        "Actual terrain clearance for all 1701 floor polygons, including outer context and shop thresholds",
+        "A04 exposed wood floor, complete chair feet and local warm practical",
+        "North-boundary room and tea-shop floor",
+        "Outdoor C daylight and exposure preserved"
+      ],
+      "historical_record_note": "Retained as the original pending checkpoint, not current status and not evidence of completed R15 validation. Current evidence is r15_final_native_validation."
+    },
+    "historical_r10_runtime_change_record": {
+      "lighting.interior_light_limit": {
+        "before": 8,
+        "after": 10
+      },
+      "runtime_interior_light_hard_cap": {
+        "before": 8,
+        "after": 12
+      },
+      "profile_metadata_changed": [
+        "art_revision",
+        "notes[6]"
+      ],
+      "other_profile_values_changed": false
+    },
+    "round6_shadow_range_correction": {
+      "policy": {
+        "enabled": true,
+        "high_camera_world_y_threshold_m": 80.0,
+        "normal_max_distance_m": 180.0,
+        "high_camera_max_distance_m": 450.0
+      },
+      "shared_runtime_and_native_capture_policy": true,
+      "old_profiles_without_enabled_flag_keep_original_behavior": true,
+      "main_gd_sha256": "29517fc2472682aae053e2e1eafc954379755e9b212a425088cdb834599cf56d",
+      "active_profile_sha256": "9d0c7b69153c7c84fea8ac544b602bf15ef6806afa75068856a6adba0da809af",
+      "per_capture_actual_ranges_m": {
+        "overview": 450.0,
+        "street_entry": 180.0,
+        "noodle_corner": 180.0,
+        "central_steps": 180.0,
+        "west_lane": 180.0,
+        "community_court": 180.0,
+        "narrow_passage": 180.0,
+        "upper_houses": 180.0,
+        "east_gallery": 180.0,
+        "residential_road": 180.0,
+        "upper_street": 180.0,
+        "roofscape": 180.0,
+        "community_front": 180.0,
+        "residential_entry": 180.0,
+        "window_courtyard": 180.0,
+        "tea_interior": 180.0,
+        "window_living": 180.0,
+        "window_north": 180.0,
+        "noodle_interior": 180.0,
+        "window_reading": 180.0,
+        "window_dining": 180.0,
+        "planting_detail": 180.0
+      },
+      "splits_fractions": [
+        0.1,
+        0.2,
+        0.5
+      ],
+      "fade_start_fraction": 0.8,
+      "blend_splits": true,
+      "initial_global_lighting_field": "lighting_applied_initial",
+      "authoritative_final_shadow_state": "captures[].directional_shadow; only overview uses450m, other21 use180m"
+    },
+    "r14_complete_native_history": {
+      "status": "complete22_native_batch_preserved_but_overall_scene_rejected_for_actual_drain_air_gaps",
+      "archive": "verification/round7/r14_complete_baseline",
+      "scene_sha256": "9238d83015ff5206e6ef336b8da40c2a51be7e18f5c3822279be3d28d2ba016a",
+      "capture_manifest_sha256": "1864fc0b9a5e8549ff41d7edf3d56906d4cd2d52d8f7c3059b8bbc88a7bfd312",
+      "reason": "Two community_front drain bases had measured actual support gaps of about49–115mm. R15 repairs actual surface support; lighting/profile remain frozen."
+    },
+    "r15_first_native_attempt": {
+      "status": "aborted_after_three_images_without_complete_manifest",
+      "archive": "verification/round8/native_aborted_parallel",
+      "review_record": "verification/round8/lighting_review_r15_aborted_parallel.json",
+      "review_record_sha256": "e638542427262d24431e90df96a00d8d86d8fd04988a9d75ab34fe7b79fbff2b",
+      "accepted_as_complete_final_evidence": false,
+      "note": "The final validation below uses22 newly reviewed originals from the exclusive restart after actual geometry checks completed."
+    },
+    "r15_final_native_validation": {
+      "status": "completed22_native_originals_and_scoped_lighting_material_review",
+      "updated_at_utc": "2026-11-19T15:54:37.078394+00:00",
+      "scene_identity": {
+        "asset": "res://assets/chongqing_district.glb",
+        "bytes": 1017581848,
+        "revision": 15.0,
+        "sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223"
+      },
+      "scene_sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223",
+      "capture_manifest_path_at_review": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/capture_manifest.json",
+      "capture_manifest_sha256": "166a1dc19b44afa459171533b304050972e16a9dda72d1d93b872d01cdda27c7",
+      "capture_count": 22,
+      "requested_size": [
+        1920,
+        1080
+      ],
+      "capture_failures": [],
+      "engine": "4.6.3-stable (official)",
+      "renderer": "forward_plus",
+      "display_server": "X11",
+      "device": "llvmpipe (LLVM 19.1.7, 256 bits)",
+      "profile": "res://assets/render_profile_v05.json",
+      "profile_sha256": "9d0c7b69153c7c84fea8ac544b602bf15ef6806afa75068856a6adba0da809af",
+      "main_gd_sha256": "29517fc2472682aae053e2e1eafc954379755e9b212a425088cdb834599cf56d",
+      "script_sha256": {
+        "res://scripts/build_collisions.gd": "2628a4eb84628582acd93ed16307ea708aa9e94867e286287eefa636abe803a8",
+        "res://scripts/explorer.gd": "8103d29a428970241be4ae0f7b67b304c528398f8e43f82613d728cc951c1bc2",
+        "res://scripts/main.gd": "29517fc2472682aae053e2e1eafc954379755e9b212a425088cdb834599cf56d"
+      },
+      "configuration_sha256": {
+        "res://assets/viewpoints.json": "a3da59baee65cea784440a54949fe5d2ddc556062727b763732c52698a743fe0",
+        "res://assets/walking_survey.json": "3277a9c561fb58826045d8a52affc3515a4ae1732e8231a27bf63bbf9d365d26"
+      },
+      "HDR_path": "res://assets/sky/kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+      "HDR_sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+      "HDR_source_bytes_unchanged": true,
+      "sky_profile": {
+        "energy": 1.54999995231628,
+        "path": "res://assets/sky/kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+        "procedural_clouds": false,
+        "radiance_size": 256,
+        "rotation_degrees": [
+          0.0,
+          -28.9,
+          0.0
+        ],
+        "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+        "type": "photographic_hdr_panorama"
+      },
+      "material_stats": {
+        "branch_shader_overrides": {
+          "CQ_PH_island_tree_01_branches": {
+            "baked_primary": true,
+            "imported_uv1_offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "imported_uv1_scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "imported_uv2_offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "imported_uv2_scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "normal_and_pbr_textures": false,
+            "offset": [
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0
+            ],
+            "texcoord": 0,
+            "texture": "res://assets/chongqing_district_island_tree_01_branches_diff_2k.jpg"
+          },
+          "CQ_PH_tree_small_02_branches": {
+            "baked_primary": true,
+            "imported_uv1_offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "imported_uv1_scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "imported_uv2_offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "imported_uv2_scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "normal_and_pbr_textures": false,
+            "offset": [
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0
+            ],
+            "texcoord": 0,
+            "texture": "res://assets/chongqing_district_tree_small_02_branch_diff_2k.jpg"
+          }
+        },
+        "explicit_branch_surfaces": 43,
+        "gi_excluded_meshes": 0,
+        "specular_adjusted_materials": {},
+        "static_gi_meshes": 2690,
+        "surfaces": 2690,
+        "thin_glass_surfaces": 81,
+        "tile_diagnostics": {},
+        "tree_normal_overrides": {
+          "CQ_PH_island_tree_01": "normal texture disabled; albedo/roughness/geometry preserved",
+          "CQ_PH_island_tree_01_branches": "normal texture disabled; albedo/roughness/geometry preserved",
+          "CQ_PH_island_tree_01_leaves": "normal texture disabled; albedo/roughness/geometry preserved",
+          "CQ_PH_tree_small_02_branches": "normal texture disabled; albedo/roughness/geometry preserved",
+          "CQ_PH_tree_small_02_leaves": "normal texture disabled; albedo/roughness/geometry preserved",
+          "CQ_PH_tree_small_02_trunk": "normal texture disabled; albedo/roughness/geometry preserved"
+        },
+        "vertex_color_surfaces": 963
+      },
+      "actual_interior_lights_enabled": 9,
+      "lighting_review": {
+        "path_at_review": "/workspace/scratch/5462bdafe44f/cq05/verification/final/lighting_review_zh.txt",
+        "sha256": "60398a2eda6c9418aa6eba2a22ceb08632f72ca9828ce0ad51c40d00f8afa8f8",
+        "direct_reviewed_original_count": 22,
+        "structured_record_path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/lighting_review_r15.json",
+        "structured_record_sha256": "dc0b8b02bf711b0e1372f9f6161336c1a4ef57ed5c505c9df56fe51fc6aa3615"
+      },
+      "furniture_contact_native_review": {
+        "path_at_review": "/workspace/scratch/5462bdafe44f/cq05/verification/final/furniture_contact_native_review.json",
+        "sha256": "bc087cd044a222437fb5108d7de114430d24e58abcabb55f7c92cdd07555f914",
+        "same_completed_full22_batch": true,
+        "separate_three_view_capture_executed": false,
+        "compared_views": [
+          "tea_interior",
+          "noodle_interior",
+          "window_reading"
+        ],
+        "passed_for_stated_scope": true
+      },
+      "geometry_evidence": {
+        "furniture_contact_export_audit.json": {
+          "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/furniture_contact_export_audit.json",
+          "sha256": "ca3478b3cdd4f925b479d43db534a2e4ae4b867ccb931e61a4f09a8293f20759",
+          "passed": true,
+          "scene_sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223",
+          "allowed_absolute_support_gap_m": 1e-05,
+          "maximum_measured_absolute_gap_m": 0.0
+        },
+        "drain_grate_export_audit.json": {
+          "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/drain_grate_export_audit.json",
+          "sha256": "34221b9bf3bc5ffc6f83aaffb07c69b1d2588521da06c67967865964c55cc0e4",
+          "passed": true,
+          "scene_sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223",
+          "summary": {
+            "expected_grates": 112,
+            "grates_checked": 112,
+            "expected_bars": 1456,
+            "bars_checked": 1456,
+            "base_failures": 0,
+            "bar_failures": 0,
+            "missing_nodes": 0,
+            "unresolved_support_coverage_count": 0,
+            "two_sided_float32_seam_classifications": 4
+          },
+          "allowed_vertical_support_error_m": 0.001
+        },
+        "terrain_glb_clearance.json": {
+          "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/terrain_glb_clearance.json",
+          "sha256": "6796e9644c051c83c160e2890ee9701659fbb3cbbc7af7a994106dd4f057dfaa",
+          "passed": true,
+          "scene_sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223"
+        },
+        "physics_validation.json": {
+          "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/physics_validation.json",
+          "sha256": "e64475da03cfffa1395c71e23d66609424289ed57efaa560c2616f0e256213db",
+          "passed": true,
+          "scene_sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223"
+        }
+      },
+      "capture_images": [
+        {
+          "view": "overview",
+          "file": "godot_overview.png",
+          "path_at_review": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_overview.png",
+          "sha256": "b9ed77118558976f11265bd78658943d788797a14103969c59655f74d17f2f75",
+          "width": 1920,
+          "height": 1080,
+          "directly_reviewed_at_utc": "2026-11-19T15:38:50.709701+00:00",
+          "directional_shadow": {
+            "blend_splits": true,
+            "camera_world_y_m": 230.0,
+            "fade_start_distance_m": 360.000005364418,
+            "fade_start_fraction": 0.800000011920929,
+            "high_camera_policy_enabled": true,
+            "max_distance_m": 450.0,
+            "mode": 2,
+            "split_fractions": [
+              0.100000001490116,
+              0.200000002980232,
+              0.5
+            ]
+          }
+        },
+        {
+          "view": "street_entry",
+          "file": "godot_street_entry.png",
+          "path_at_review": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_street_entry.png",
+          "sha256": "6a789f3d20a117aa5ccb4e445e412a9c6bfb8a9c2fe34df2f2d6e3b63e957666",
+          "width": 1920,
+          "height": 1080,
+          "directly_reviewed_at_utc": "2026-11-19T15:38:50.723753+00:00",
+          "directional_shadow": {
+            "blend_splits": true,
+            "camera_world_y_m": 10.5943002700806,
+            "fade_start_distance_m": 144.000002145767,
+            "fade_start_fraction": 0.800000011920929,
+            "high_camera_policy_enabled": true,
+            "max_distance_m": 180.0,
+            "mode": 2,
+            "split_fractions": [
+              0.100000001490116,
+              0.200000002980232,
+              0.5
+            ]
+          }
+        },
+        {
+          "view": "noodle_corner",
+          "file": "godot_noodle_corner.png",
+          "path_at_review": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_noodle_corner.png",
+          "sha256": "b35fce373657bbce658753d7fec62749db7d1e1d3b5eeeb81ae3fc6eaa05ad68",
+          "width": 1920,
+          "height": 1080,
+          "directly_reviewed_at_utc": "2026-11-19T15:38:50.730659+00:00",
+          "directional_shadow": {
+            "blend_splits": true,
+            "camera_world_y_m": 13.8121995925903,
+            "fade_start_distance_m": 144.000002145767,
+            "fade_start_fraction": 0.800000011920929,
+            "high_camera_policy_enabled": true,
+            "max_distance_m": 180.0,
+            "mode": 2,
+            "split_fractions": [
+              0.100000001490116,
+              0.200000002980232,
+              0.5
+            ]
+          }
+        },
+        {
+          "view": "central_steps",
+          "file": "godot_central_steps.png",
+          "path_at_review": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_central_steps.png",
+          "sha256": "3d196487db891e29eec199c9055185115cc3b938e86a99466579b6bffc257d8c",
+          "width": 1920,
+          "height": 1080,
+          "directly_reviewed_at_utc": "2026-11-19T15:38:50.734877+00:00",
+          "directional_shadow": {
+            "blend_splits": true,
+            "camera_world_y_m": 14.0322999954224,
+            "fade_start_distance_m": 144.000002145767,
+            "fade_start_fraction": 0.800000011920929,
+            "high_camera_policy_enabled": true,
+            "max_distance_m": 180.0,
+            "mode": 2,
+            "split_fractions": [
+              0.100000001490116,
+              0.200000002980232,
+              0.5
+            ]
+          }
+        },
+        {
+          "view": "west_lane",
+          "file": "godot_west_lane.png",
+          "path_at_review": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_west_lane.png",
+          "sha256": "8bdef1e90412c216209cae1fde6cca717a186ab8c907da2742f1d65a4ec9c184",
+          "width": 1920,
+          "height": 1080,
+          "directly_reviewed_at_utc": "2026-11-19T15:39:22.286344+00:00",
+          "directional_shadow": {
+            "blend_splits": true,
+            "camera_world_y_m": 15.3854999542236,
+            "fade_start_distance_m": 144.000002145767,
+            "fade_start_fraction": 0.800000011920929,
+            "high_camera_policy_enabled": true,
+            "max_distance_m": 180.0,
+            "mode": 2,
+            "split_fractions": [
+              0.100000001490116,
+              0.200000002980232,
+              0.5
+            ]
+          }
+        },
+        {
+          "view": "community_court",
+          "file": "godot_community_court.png",
+          "path_at_review": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_community_court.png",
+          "sha256": "6370c794e480ad61d966c62269f6e41b51a85710fdf5f0b118083f7014628108",
+          "width": 1920,
+          "height": 1080,
+          "directly_reviewed_at_utc": "2026-11-19T15:39:22.293724+00:00",
+          "directional_shadow": {
+            "blend_splits": true,
+            "camera_world_y_m": 22.2999992370605,
+            "fade_start_distance_m": 144.000002145767,
+            "fade_start_fraction": 0.800000011920929,
+            "high_camera_policy_enabled": true,
+            "max_distance_m": 180.0,
+            "mode": 2,
+            "split_fractions": [
+              0.100000001490116,
+              0.200000002980232,
+              0.5
+            ]
+          }
+        },
+        {
+          "view": "narrow_passage",
+          "file": "godot_narrow_passage.png",
+          "path_at_review": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_narrow_passage.png",
+          "sha256": "d51fd931a9086ba38141b502148161cfeb8d8c8e2b47b81d867a0e03e4a6b448",
+          "width": 1920,
+          "height": 1080,
+          "directly_reviewed_at_utc": "2026-11-19T15:40:01.936456+00:00",
+          "directional_shadow": {
+            "blend_splits": true,
+            "camera_world_y_m": 27.5860996246338,
+            "fade_start_distance_m": 144.000002145767,
+            "fade_start_fraction": 0.800000011920929,
+            "high_camera_policy_enabled": true,
+            "max_distance_m": 180.0,
+            "mode": 2,
+            "split_fractions": [
+              0.100000001490116,
+              0.200000002980232,
+              0.5
+            ]
+          }
+        },
+        {
+          "view": "upper_houses",
+          "file": "godot_upper_houses.png",
+          "path_at_review": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_upper_houses.png",
+          "sha256": "2ab9e6c93c7faf7811b4cefeba8db75d12760f5c00d44d3a3f5d3492e92db072",
+          "width": 1920,
+          "height": 1080,
+          "directly_reviewed_at_utc": "2026-11-19T15:40:35.209192+00:00",
+          "directional_shadow": {
+            "blend_splits": true,
+            "camera_world_y_m": 30.9218006134033,
+            "fade_start_distance_m": 144.000002145767,
+            "fade_start_fraction": 0.800000011920929,
+            "high_camera_policy_enabled": true,
+            "max_distance_m": 180.0,
+            "mode": 2,
+            "split_fractions": [
+              0.100000001490116,
+              0.200000002980232,
+              0.5
+            ]
+          }
+        },
+        {
+          "view": "east_gallery",
+          "file": "godot_east_gallery.png",
+          "path_at_review": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_east_gallery.png",
+          "sha256": "b699cbe4bdf5003d275ea45ac5b0daf3845dba9ab6c63d8b987e5cd9dc8882e5",
+          "width": 1920,
+          "height": 1080,
+          "directly_reviewed_at_utc": "2026-11-19T15:41:24.372039+00:00",
+          "directional_shadow": {
+            "blend_splits": true,
+            "camera_world_y_m": 15.5518999099731,
+            "fade_start_distance_m": 144.000002145767,
+            "fade_start_fraction": 0.800000011920929,
+            "high_camera_policy_enabled": true,
+            "max_distance_m": 180.0,
+            "mode": 2,
+            "split_fractions": [
+              0.100000001490116,
+              0.200000002980232,
+              0.5
+            ]
+          }
+        },
+        {
+          "view": "residential_road",
+          "file": "godot_residential_road.png",
+          "path_at_review": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_residential_road.png",
+          "sha256": "485140ec6635ac0b9a29857d41d0891da561a0cd5147d347284678b339b0de27",
+          "width": 1920,
+          "height": 1080,
+          "directly_reviewed_at_utc": "2026-11-19T15:42:33.452110+00:00",
+          "directional_shadow": {
+            "blend_splits": true,
+            "camera_world_y_m": 28.9818992614746,
+            "fade_start_distance_m": 144.000002145767,
+            "fade_start_fraction": 0.800000011920929,
+            "high_camera_policy_enabled": true,
+            "max_distance_m": 180.0,
+            "mode": 2,
+            "split_fractions": [
+              0.100000001490116,
+              0.200000002980232,
+              0.5
+            ]
+          }
+        },
+        {
+          "view": "upper_street",
+          "file": "godot_upper_street.png",
+          "path_at_review": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_upper_street.png",
+          "sha256": "45d7a73bfe56eead8ec835fb35abef41dd91e9929d67caefc0e93a5ffa196e69",
+          "width": 1920,
+          "height": 1080,
+          "directly_reviewed_at_utc": "2026-11-19T15:44:05.651353+00:00",
+          "directional_shadow": {
+            "blend_splits": true,
+            "camera_world_y_m": 33.6640014648438,
+            "fade_start_distance_m": 144.000002145767,
+            "fade_start_fraction": 0.800000011920929,
+            "high_camera_policy_enabled": true,
+            "max_distance_m": 180.0,
+            "mode": 2,
+            "split_fractions": [
+              0.100000001490116,
+              0.200000002980232,
+              0.5
+            ]
+          }
+        },
+        {
+          "view": "roofscape",
+          "file": "godot_roofscape.png",
+          "path_at_review": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_roofscape.png",
+          "sha256": "4f1744fe98aad7b448cea27da06f0a12cfb1245b2504fc374296be65c2ae6fc1",
+          "width": 1920,
+          "height": 1080,
+          "directly_reviewed_at_utc": "2026-11-19T15:44:05.693611+00:00",
+          "directional_shadow": {
+            "blend_splits": true,
+            "camera_world_y_m": 64.0,
+            "fade_start_distance_m": 144.000002145767,
+            "fade_start_fraction": 0.800000011920929,
+            "high_camera_policy_enabled": true,
+            "max_distance_m": 180.0,
+            "mode": 2,
+            "split_fractions": [
+              0.100000001490116,
+              0.200000002980232,
+              0.5
+            ]
+          }
+        },
+        {
+          "view": "community_front",
+          "file": "godot_community_front.png",
+          "path_at_review": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_community_front.png",
+          "sha256": "06b4f3cab71af9202154e9b472bf5bd343d0d3114596e855337e0e20895e5e47",
+          "width": 1920,
+          "height": 1080,
+          "directly_reviewed_at_utc": "2026-11-19T15:44:40.833244+00:00",
+          "directional_shadow": {
+            "blend_splits": true,
+            "camera_world_y_m": 23.5589008331299,
+            "fade_start_distance_m": 144.000002145767,
+            "fade_start_fraction": 0.800000011920929,
+            "high_camera_policy_enabled": true,
+            "max_distance_m": 180.0,
+            "mode": 2,
+            "split_fractions": [
+              0.100000001490116,
+              0.200000002980232,
+              0.5
+            ]
+          }
+        },
+        {
+          "view": "residential_entry",
+          "file": "godot_residential_entry.png",
+          "path_at_review": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_residential_entry.png",
+          "sha256": "763ebcc8d00f9ea02fd56d96805c041b8d3ac4636337999f452107f55e35e7b5",
+          "width": 1920,
+          "height": 1080,
+          "directly_reviewed_at_utc": "2026-11-19T15:44:57.864013+00:00",
+          "directional_shadow": {
+            "blend_splits": true,
+            "camera_world_y_m": 17.7423000335693,
+            "fade_start_distance_m": 144.000002145767,
+            "fade_start_fraction": 0.800000011920929,
+            "high_camera_policy_enabled": true,
+            "max_distance_m": 180.0,
+            "mode": 2,
+            "split_fractions": [
+              0.100000001490116,
+              0.200000002980232,
+              0.5
+            ]
+          }
+        },
+        {
+          "view": "window_courtyard",
+          "file": "godot_window_courtyard.png",
+          "path_at_review": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_courtyard.png",
+          "sha256": "e4ef7900a8ba9660604f8862922ac763c0d41f50f8e5128da251c6c1c90ba343",
+          "width": 1920,
+          "height": 1080,
+          "directly_reviewed_at_utc": "2026-11-19T15:46:02.788258+00:00",
+          "directional_shadow": {
+            "blend_splits": true,
+            "camera_world_y_m": 20.6816997528076,
+            "fade_start_distance_m": 144.000002145767,
+            "fade_start_fraction": 0.800000011920929,
+            "high_camera_policy_enabled": true,
+            "max_distance_m": 180.0,
+            "mode": 2,
+            "split_fractions": [
+              0.100000001490116,
+              0.200000002980232,
+              0.5
+            ]
+          }
+        },
+        {
+          "view": "tea_interior",
+          "file": "godot_tea_interior.png",
+          "path_at_review": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_tea_interior.png",
+          "sha256": "e62c61e4bf0524f750915c3d15bb36c8d43b189b8d2613f1e4169e401c0b3bd6",
+          "width": 1920,
+          "height": 1080,
+          "directly_reviewed_at_utc": "2026-11-19T15:47:12.647524+00:00",
+          "directional_shadow": {
+            "blend_splits": true,
+            "camera_world_y_m": 18.1840991973877,
+            "fade_start_distance_m": 144.000002145767,
+            "fade_start_fraction": 0.800000011920929,
+            "high_camera_policy_enabled": true,
+            "max_distance_m": 180.0,
+            "mode": 2,
+            "split_fractions": [
+              0.100000001490116,
+              0.200000002980232,
+              0.5
+            ]
+          }
+        },
+        {
+          "view": "window_living",
+          "file": "godot_window_living.png",
+          "path_at_review": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_living.png",
+          "sha256": "07c834d3a742e8408a8e5400d2299b22d596cf48b5c228eae55d5b411a377355",
+          "width": 1920,
+          "height": 1080,
+          "directly_reviewed_at_utc": "2026-11-19T15:47:56.307505+00:00",
+          "directional_shadow": {
+            "blend_splits": true,
+            "camera_world_y_m": 34.9570999145508,
+            "fade_start_distance_m": 144.000002145767,
+            "fade_start_fraction": 0.800000011920929,
+            "high_camera_policy_enabled": true,
+            "max_distance_m": 180.0,
+            "mode": 2,
+            "split_fractions": [
+              0.100000001490116,
+              0.200000002980232,
+              0.5
+            ]
+          }
+        },
+        {
+          "view": "window_north",
+          "file": "godot_window_north.png",
+          "path_at_review": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_north.png",
+          "sha256": "530b220693b196bc36bd3c2c728f27bbb63e249890e8b8aef71c88381e439e09",
+          "width": 1920,
+          "height": 1080,
+          "directly_reviewed_at_utc": "2026-11-19T15:49:15.846211+00:00",
+          "directional_shadow": {
+            "blend_splits": true,
+            "camera_world_y_m": 35.8849983215332,
+            "fade_start_distance_m": 144.000002145767,
+            "fade_start_fraction": 0.800000011920929,
+            "high_camera_policy_enabled": true,
+            "max_distance_m": 180.0,
+            "mode": 2,
+            "split_fractions": [
+              0.100000001490116,
+              0.200000002980232,
+              0.5
+            ]
+          }
+        },
+        {
+          "view": "noodle_interior",
+          "file": "godot_noodle_interior.png",
+          "path_at_review": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_noodle_interior.png",
+          "sha256": "e7b4797acee3471c5e40eee8ced7bb3852e9c9f4ee41062f05a7b917e84aad71",
+          "width": 1920,
+          "height": 1080,
+          "directly_reviewed_at_utc": "2026-11-19T15:49:15.846211+00:00",
+          "directional_shadow": {
+            "blend_splits": true,
+            "camera_world_y_m": 13.1037998199463,
+            "fade_start_distance_m": 144.000002145767,
+            "fade_start_fraction": 0.800000011920929,
+            "high_camera_policy_enabled": true,
+            "max_distance_m": 180.0,
+            "mode": 2,
+            "split_fractions": [
+              0.100000001490116,
+              0.200000002980232,
+              0.5
+            ]
+          }
+        },
+        {
+          "view": "window_reading",
+          "file": "godot_window_reading.png",
+          "path_at_review": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_reading.png",
+          "sha256": "aaac35e56abd81e6c91d884a27db00bf1097839525bed3205e6aee05434ea1f7",
+          "width": 1920,
+          "height": 1080,
+          "directly_reviewed_at_utc": "2026-11-19T15:49:58.745060+00:00",
+          "directional_shadow": {
+            "blend_splits": true,
+            "camera_world_y_m": 18.6019992828369,
+            "fade_start_distance_m": 144.000002145767,
+            "fade_start_fraction": 0.800000011920929,
+            "high_camera_policy_enabled": true,
+            "max_distance_m": 180.0,
+            "mode": 2,
+            "split_fractions": [
+              0.100000001490116,
+              0.200000002980232,
+              0.5
+            ]
+          }
+        },
+        {
+          "view": "window_dining",
+          "file": "godot_window_dining.png",
+          "path_at_review": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_dining.png",
+          "sha256": "fdd51bb8a16dc5ca65fcc35152bdc725b8ac5235615abcb1e7c6eda4b670b7b8",
+          "width": 1920,
+          "height": 1080,
+          "directly_reviewed_at_utc": "2026-11-19T15:50:31.442778+00:00",
+          "directional_shadow": {
+            "blend_splits": true,
+            "camera_world_y_m": 15.8577995300293,
+            "fade_start_distance_m": 144.000002145767,
+            "fade_start_fraction": 0.800000011920929,
+            "high_camera_policy_enabled": true,
+            "max_distance_m": 180.0,
+            "mode": 2,
+            "split_fractions": [
+              0.100000001490116,
+              0.200000002980232,
+              0.5
+            ]
+          }
+        },
+        {
+          "view": "planting_detail",
+          "file": "godot_planting_detail.png",
+          "path_at_review": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_planting_detail.png",
+          "sha256": "e5744f62af637b1ef65ab97199f557fb75dc5a1b85badd5283ebeaa5bd52c294",
+          "width": 1920,
+          "height": 1080,
+          "directly_reviewed_at_utc": "2026-11-19T15:50:31.442778+00:00",
+          "directional_shadow": {
+            "blend_splits": true,
+            "camera_world_y_m": 15.724100112915,
+            "fade_start_distance_m": 144.000002145767,
+            "fade_start_fraction": 0.800000011920929,
+            "high_camera_policy_enabled": true,
+            "max_distance_m": 180.0,
+            "mode": 2,
+            "split_fractions": [
+              0.100000001490116,
+              0.200000002980232,
+              0.5
+            ]
+          }
+        }
+      ],
+      "visual_limits_zh": [
+        "整体仍是原型，不宣称电影级或摄影级。",
+        "灰铺装、规则窗阵列、屋顶条带、道路裂纹与陈设重复可辨。",
+        "叶片薄片感、扫描灰白树皮及局部深色叶边仍可见。",
+        "家具实际脚底间隙已为0，但接触阴影仍偏弱；窗台遮住部分脚底，原图不能单独证明全部接触。"
+      ],
+      "reviewer_launched_engine": false,
+      "reviewer_changed_runtime_or_rendering_parameters": false,
+      "only_provenance_metadata_updated_in_runtime_projects": true
+    }
+  },
+  "updated_at_utc": "2026-11-19T15:54:37.078394+00:00",
+  "historical_provenance_state_before_r15_final_binding": {
+    "path_at_update": "/workspace/scratch/5462bdafe44f/cq05/verification/round8/provenance_v05_before_r15_final_binding.json",
+    "sha256": "fa847d0ee7fbc12ef8fef0fbe27a3279775abe9a89cb727265053fd701a99bbd",
+    "previous_selection_status": "Historical C / warm courtyard was selected on unchanged R7 geometry. R9 native lighting/glass were checked; the active practical-completion profile requests all 10 authored interior lights. Geometry R10 was stopped before complete export; corrected R11 awaits exported-mesh and native validation.",
+    "previous_current_profile_sha256": "b6680053206fac462b83eb3125989e09bca38fce7c81d11b45d68f4362779ec5",
+    "note": "The prior pending state is archived unchanged. It is superseded for current-runtime status only; R7 comparison, R9 review and cancelled R10 records below are preserved."
+  }
+}

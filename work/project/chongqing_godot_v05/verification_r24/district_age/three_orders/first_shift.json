@@ -1,0 +1,1274 @@
+{
+	"checks": [
+		{
+			"detail": "",
+			"name": "district_booted",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "default_game_starts_at_registration",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "early_order_and_bike_locked",
+			"pass": true
+		},
+		{
+			"detail": "(-49.2, 12.06909, 49.8)",
+			"name": "register_at_mentor",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "mentor_on_foot_at_check_in",
+			"pass": true
+		},
+		{
+			"detail": {
+				"walk_m": 0.0
+			},
+			"name": "watched_RIDING",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 5.3392577227205,
+				"end": "(-54.67818, 11.78899, 51.00898)",
+				"goals": 1,
+				"max_frame_displacement_m": 0.0722955465316772,
+				"name": "walk_to_own_bike",
+				"pass": true,
+				"reached": 1,
+				"stall_contacts": []
+			},
+			"name": "walk_to_own_bike",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "mount_own_scooter",
+			"pass": true
+		},
+		{
+			"detail": "(-43.56834, 11.88881, 52.11594)",
+			"name": "guide_waits_when_learner_stops",
+			"pass": true
+		},
+		{
+			"detail": {
+				"frames": 483,
+				"mentor_end": "(-30.19562, 11.66822, 54.962)",
+				"student_end": "(-34.15682, 11.82015, 53.85708)",
+				"wheel_travel_m": 20.2948919180781
+			},
+			"name": "follow_to_noodle_shop",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "parked_at_shop",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "saved_shop",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "pupil_cannot_order_before_demo",
+			"pass": true
+		},
+		{
+			"detail": {
+				"walk_m": 8.01070182584226
+			},
+			"name": "watched_PUPIL_PICKUP",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "mentor_took_separate_order",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 5.84742600284517,
+				"end": "(-23.62062, 11.15685, 59.96044)",
+				"goals": 2,
+				"max_frame_displacement_m": 0.0755110904574394,
+				"name": "walk_to_counter",
+				"pass": true,
+				"reached": 2,
+				"stall_contacts": []
+			},
+			"name": "walk_to_counter",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "place_real_order",
+			"pass": true
+		},
+		{
+			"detail": "{  }",
+			"name": "packed_meal_in_view_from_pickup",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "take_packed_order",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "cannot_deliver_before_second_leg",
+			"pass": true
+		},
+		{
+			"detail": {
+				"walk_m": 17.0753953363746
+			},
+			"name": "watched_RIDING",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "saved_carrying",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 9.70609664171934,
+				"end": "(-34.4924, 11.65307, 55.0201)",
+				"goals": 2,
+				"max_frame_displacement_m": 0.0719816163182259,
+				"name": "return_to_parked_scooter",
+				"pass": true,
+				"reached": 2,
+				"stall_contacts": []
+			},
+			"name": "return_to_parked_scooter",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "pupil_loads_separate_box",
+			"pass": true
+		},
+		{
+			"detail": {
+				"objective": "老彭在你身后等你 · 4 米\n骑近他就会继续带路",
+				"prompt": "已上车 · W 前进 / S 刹车及倒车 · A D 转向 · 空格急刹 · P 停车 · E 下车"
+			},
+			"name": "mount_with_order",
+			"pass": true
+		},
+		{
+			"detail": {
+				"frames": 1502,
+				"mentor_end": "(-47.75875, 16.11742, 19.6551)",
+				"student_end": "(-43.66242, 16.20345, 19.753)",
+				"wheel_travel_m": 57.9607955025276
+			},
+			"name": "follow_to_courtyard_approach",
+			"pass": true
+		},
+		{
+			"detail": "(-47.75875, 16.11742, 19.6551)",
+			"name": "riders_park_at_real_address",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "saved_last_mile",
+			"pass": true
+		},
+		{
+			"detail": {
+				"walk_m": 17.6692642811686
+			},
+			"name": "watched_PUPIL_UNLOAD",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "pupil_retrieves_second_bag",
+			"pass": true
+		},
+		{
+			"detail": {
+				"walk_m": 28.543080796022
+			},
+			"name": "watched_PUPIL_DELIVERS",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "mentor_delivers_first",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 2.14018022082746,
+				"end": "(-54.94881, 16.45396, 19.59773)",
+				"goals": 1,
+				"max_frame_displacement_m": 0.0724771916866302,
+				"name": "walk_to_house_one",
+				"pass": true,
+				"reached": 1,
+				"stall_contacts": []
+			},
+			"name": "walk_to_house_one",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "rapid_input_cannot_skip_knock",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "student_knocks_before_handover",
+			"pass": true
+		},
+		{
+			"detail": [
+				0.00154901610221714,
+				0.00260524055920541,
+				0.000301970081636682
+			],
+			"name": "pupil_knuckle_contacts_wood",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "saved_knocked",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 0.764611916616559,
+				"end": "(-54.23538, 16.45396, 18.92577)",
+				"goals": 1,
+				"max_frame_displacement_m": 0.0700019747018814,
+				"name": "reach_second_hook",
+				"pass": true,
+				"reached": 1,
+				"stall_contacts": []
+			},
+			"name": "reach_second_hook",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "credit_waits_for_release",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "order_one_credited_once",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "saved_after_door",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 10.5196467973292,
+				"end": "(-43.57249, 16.32678, 18.62422)",
+				"goals": 2,
+				"max_frame_displacement_m": 0.0915612056851387,
+				"name": "order_2_back_to_vehicle",
+				"pass": true,
+				"reached": 2,
+				"stall_contacts": []
+			},
+			"name": "order_2_back_to_vehicle",
+			"pass": true
+		},
+		{
+			"detail": {
+				"objective": "老彭在你身后等你 · 4 米\n骑近他就会继续带路",
+				"prompt": "已上车 · W 前进 / S 刹车及倒车 · A D 转向 · 空格急刹 · P 停车 · E 下车"
+			},
+			"name": "order_2_remount",
+			"pass": true
+		},
+		{
+			"detail": {
+				"frames": 2177,
+				"mentor_end": "(-30.12749, 11.54192, 55.69665)",
+				"student_end": "(-32.56482, 11.92528, 53.7057)",
+				"wheel_travel_m": 66.2299233974773
+			},
+			"name": "order_2_back_to_shop",
+			"pass": true
+		},
+		{
+			"detail": {
+				"walk_m": 42.0108075016178
+			},
+			"name": "watched_PUPIL_PICKUP",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 5.64136453345418,
+				"end": "(-23.63853, 11.16157, 59.94451)",
+				"goals": 2,
+				"max_frame_displacement_m": 0.0750679075717926,
+				"name": "order_2_counter",
+				"pass": true,
+				"reached": 2,
+				"stall_contacts": []
+			},
+			"name": "order_2_counter",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "spice_portion_required",
+			"pass": true
+		},
+		{
+			"detail": {
+				"objective": "第 2 / 3 单 · 骑手站取餐架\n餐已拿好，跟老彭回车边",
+				"prompt": "已取餐 · 送往骑手站取餐架"
+			},
+			"name": "order_2_collected",
+			"pass": true
+		},
+		{
+			"detail": {
+				"walk_m": 50.550574103836
+			},
+			"name": "watched_RIDING",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 1.08208011928946,
+				"end": "(-26.66109, 11.4944, 56.64382)",
+				"goals": 1,
+				"max_frame_displacement_m": 0.0716182664036751,
+				"name": "order_2_leave_counter",
+				"pass": true,
+				"reached": 1,
+				"stall_contacts": []
+			},
+			"name": "order_2_leave_counter",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 5.23580988869071,
+				"end": "(-31.5467, 11.7908, 54.29217)",
+				"goals": 1,
+				"max_frame_displacement_m": 0.351812094449997,
+				"name": "order_2_load",
+				"pass": true,
+				"reached": 1,
+				"stall_contacts": []
+			},
+			"name": "order_2_load",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "order_2_mounted_with_own_parcel",
+			"pass": true
+		},
+		{
+			"detail": {
+				"frames": 684,
+				"mentor_end": "(-43.56969, 11.60334, 54.26926)",
+				"student_end": "(-39.51912, 11.78064, 53.55017)",
+				"wheel_travel_m": 21.2515669311397
+			},
+			"name": "order_2_to_address",
+			"pass": true
+		},
+		{
+			"detail": {
+				"walk_m": 51.1445616283454
+			},
+			"name": "watched_PUPIL_UNLOAD",
+			"pass": true
+		},
+		{
+			"detail": {
+				"walk_m": 57.0554130082019
+			},
+			"name": "watched_PUPIL_SHELF",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 1.49157222360373,
+				"end": "(-47.8866, 11.86757, 51.52592)",
+				"goals": 1,
+				"max_frame_displacement_m": 0.069999173283577,
+				"name": "order_2_wrong_bay",
+				"pass": true,
+				"reached": 1,
+				"stall_contacts": []
+			},
+			"name": "order_2_wrong_bay",
+			"pass": true
+		},
+		{
+			"detail": "看袋上的小票，你的收餐位是乙。",
+			"name": "order_2_wrong_bay_rejected",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 0.52729642437771,
+				"end": "(-47.04976, 11.89586, 51.46305)",
+				"goals": 1,
+				"max_frame_displacement_m": 0.0699983164668083,
+				"name": "order_2_correct_bay",
+				"pass": true,
+				"reached": 1,
+				"stall_contacts": []
+			},
+			"name": "order_2_correct_bay",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "aborted_placement_keeps_order",
+			"pass": true
+		},
+		{
+			"detail": {
+				"objective": "第 3 / 3 单 · 篮球场下巷取餐架\n跟老彭回到各自的车旁，骑回面馆接单",
+				"prompt": "老彭：最后一趟到球场下巷。看小票分清甲乙收餐位。"
+			},
+			"name": "order_2_both_real_bags_at_shelf",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 7.11641147267073,
+				"end": "(-39.68629, 11.91862, 52.38828)",
+				"goals": 1,
+				"max_frame_displacement_m": 0.0716186761856079,
+				"name": "order_3_back_to_vehicle",
+				"pass": true,
+				"reached": 1,
+				"stall_contacts": []
+			},
+			"name": "order_3_back_to_vehicle",
+			"pass": true
+		},
+		{
+			"detail": {
+				"objective": "老彭在你身后等你 · 4 米\n骑近他就会继续带路",
+				"prompt": "已上车 · W 前进 / S 刹车及倒车 · A D 转向 · 空格急刹 · P 停车 · E 下车"
+			},
+			"name": "order_3_remount",
+			"pass": true
+		},
+		{
+			"detail": {
+				"frames": 1166,
+				"mentor_end": "(-30.19462, 11.68296, 54.92111)",
+				"student_end": "(-34.03838, 11.86759, 53.57397)",
+				"wheel_travel_m": 22.3616014016443
+			},
+			"name": "order_3_back_to_shop",
+			"pass": true
+		},
+		{
+			"detail": {
+				"walk_m": 70.6625004452653
+			},
+			"name": "watched_PUPIL_PICKUP",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 5.70918105728924,
+				"end": "(-23.61562, 11.15675, 59.9606)",
+				"goals": 2,
+				"max_frame_displacement_m": 0.0755132809281349,
+				"name": "order_3_counter",
+				"pass": true,
+				"reached": 2,
+				"stall_contacts": []
+			},
+			"name": "order_3_counter",
+			"pass": true
+		},
+		{
+			"detail": {
+				"objective": "第 3 / 3 单 · 篮球场下巷取餐架\n餐已拿好，跟老彭回车边",
+				"prompt": "已取餐 · 送往篮球场下巷取餐架"
+			},
+			"name": "order_3_collected",
+			"pass": true
+		},
+		{
+			"detail": {
+				"walk_m": 79.7510899682529
+			},
+			"name": "watched_RIDING",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 1.72800260502845,
+				"end": "(-26.70748, 11.49539, 56.62739)",
+				"goals": 1,
+				"max_frame_displacement_m": 0.072321780025959,
+				"name": "order_3_leave_counter",
+				"pass": true,
+				"reached": 1,
+				"stall_contacts": []
+			},
+			"name": "order_3_leave_counter",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 6.71317244321108,
+				"end": "(-32.90188, 11.80439, 54.10621)",
+				"goals": 1,
+				"max_frame_displacement_m": 0.523412346839905,
+				"name": "order_3_load",
+				"pass": true,
+				"reached": 1,
+				"stall_contacts": []
+			},
+			"name": "order_3_load",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "order_3_mounted_with_own_parcel",
+			"pass": true
+		},
+		{
+			"detail": {
+				"frames": 1185,
+				"mentor_end": "(-33.08133, 16.35631, 20.63694)",
+				"student_end": "(-29.22827, 16.39647, 20.95634)",
+				"wheel_travel_m": 43.2624783556676
+			},
+			"name": "order_3_to_address",
+			"pass": true
+		},
+		{
+			"detail": {
+				"walk_m": 80.3450308074243
+			},
+			"name": "watched_PUPIL_UNLOAD",
+			"pass": true
+		},
+		{
+			"detail": {
+				"walk_m": 86.4498702143319
+			},
+			"name": "watched_PUPIL_SHELF",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "unconfirmed_bays_locked",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 1.63382242433727,
+				"end": "(-38.21934, 16.40307, 19.10106)",
+				"goals": 1,
+				"max_frame_displacement_m": 0.0716708526015282,
+				"name": "order_3_call",
+				"pass": true,
+				"reached": 1,
+				"stall_contacts": []
+			},
+			"name": "order_3_call",
+			"pass": true
+		},
+		{
+			"detail": {
+				"objective": "第 3 / 3 单 · 篮球场下巷取餐架\n小票 006 · 乙位，靠近右侧按 E 放餐",
+				"prompt": "球友：006 号是我的，麻烦放乙位。"
+			},
+			"name": "customer_confirms_slot",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 0.00982931908220053,
+				"end": "(-38.21239, 16.40307, 19.10801)",
+				"goals": 1,
+				"max_frame_displacement_m": 0.00982931908220053,
+				"name": "order_3_wrong_bay",
+				"pass": true,
+				"reached": 1,
+				"stall_contacts": []
+			},
+			"name": "order_3_wrong_bay",
+			"pass": true
+		},
+		{
+			"detail": "看袋上的小票，你的收餐位是乙。",
+			"name": "order_3_wrong_bay_rejected",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 0.802135730162263,
+				"end": "(-37.09332, 16.42786, 19.13668)",
+				"goals": 1,
+				"max_frame_displacement_m": 0.0700031444430351,
+				"name": "order_3_correct_bay",
+				"pass": true,
+				"reached": 1,
+				"stall_contacts": []
+			},
+			"name": "order_3_correct_bay",
+			"pass": true
+		},
+		{
+			"detail": {
+				"objective": "第一天教学完成 · 已学会取送餐\n累计 3 单 · 24 元，可回面馆接单",
+				"prompt": "老彭：今天三单都送齐了。我回站跑下一趟，你可以自己接单了。"
+			},
+			"name": "order_3_both_real_bags_at_shelf",
+			"pass": true
+		},
+		{
+			"detail": {
+				"objective": "第一天教学完成 · 已学会取送餐\n累计 3 单 · 24 元，可回面馆接单",
+				"prompt": "老彭：今天三单都送齐了。我回站跑下一趟，你可以自己接单了。"
+			},
+			"name": "three_orders_paid_once",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "saved_completed",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "repeat_interact_no_duplicate_credit",
+			"pass": true
+		},
+		{
+			"detail": {
+				"npc_deliveries": 1,
+				"position": "(-43.54604, 11.54787, 54.55542)",
+				"trips": 1
+			},
+			"name": "instructor_starts_own_next_job",
+			"pass": true
+		},
+		{
+			"detail": [],
+			"name": "empty_route_issue_log",
+			"pass": true
+		}
+	],
+	"demonstrations": [
+		"AT_BIKE",
+		"BOARD_FIRST",
+		"RIDING",
+		"SHOP_EXIT",
+		"WALK_COUNTER",
+		"ORDER",
+		"PACK",
+		"PICK_UP",
+		"LIFT_CLEAR",
+		"PUPIL_PICKUP",
+		"RETURN_BIKE",
+		"LOAD_BOX",
+		"BOARD_AGAIN",
+		"RIDING",
+		"YARD_EXIT",
+		"UNLOAD",
+		"PUPIL_UNLOAD",
+		"LEAD_HOME",
+		"KNOCK",
+		"WALK_TO_HOOK",
+		"HANG",
+		"RELEASE_HOOK",
+		"STEP_ASIDE",
+		"PUPIL_DELIVERS",
+		"BACK_TO_SADDLE",
+		"RIDING",
+		"SHOP_EXIT",
+		"WALK_COUNTER",
+		"ORDER",
+		"PACK",
+		"PICK_UP",
+		"LIFT_CLEAR",
+		"PUPIL_PICKUP",
+		"RETURN_BIKE",
+		"LOAD_BOX",
+		"BOARD_AGAIN",
+		"RIDING",
+		"YARD_EXIT",
+		"UNLOAD",
+		"PUPIL_UNLOAD",
+		"TO_SHELF",
+		"PUT_ON_SHELF",
+		"CLEAR_SHELF",
+		"PUPIL_SHELF",
+		"PUPIL_PLACING",
+		"PUPIL_SHELF",
+		"PUPIL_PLACING",
+		"BACK_TO_SADDLE",
+		"RIDING",
+		"SHOP_EXIT",
+		"WALK_COUNTER",
+		"ORDER",
+		"PACK",
+		"PICK_UP",
+		"LIFT_CLEAR",
+		"PUPIL_PICKUP",
+		"RETURN_BIKE",
+		"LOAD_BOX",
+		"BOARD_AGAIN",
+		"RIDING",
+		"YARD_EXIT",
+		"UNLOAD",
+		"PUPIL_UNLOAD",
+		"TO_SHELF",
+		"CALL_CUSTOMER",
+		"PUT_ON_SHELF",
+		"CLEAR_SHELF",
+		"PUPIL_SHELF",
+		"PUPIL_PLACING",
+		"BACK_TO_SADDLE",
+		"RIDING",
+		"SHOP_EXIT",
+		"WALK_COUNTER",
+		"ORDER",
+		"PICK_UP",
+		"LIFT_CLEAR",
+		"RETURN_BIKE",
+		"LOAD_BOX",
+		"BOARD_AGAIN",
+		"RIDING",
+		"YARD_EXIT",
+		"UNLOAD",
+		"TO_SHELF",
+		"PUT_ON_SHELF",
+		"CLEAR_SHELF",
+		"BACK_TO_SADDLE"
+	],
+	"display": "headless",
+	"engine": "4.6.3-stable (official)",
+	"mentor_route": {
+		"issues": [],
+		"legs": {
+			"1/TO_SHOP": {
+				"arrived": true,
+				"max_kmh": 9.86400000000004,
+				"moving_s": 9.56666666666672,
+				"travel_m": 20.2761209540768,
+				"waiting_s": 7.08333333333331,
+				"waypoints": [
+					{
+						"position": "(-49.99934, 11.76194, 52.00065)",
+						"segment": 0,
+						"stage": "TO_SHOP",
+						"time_s": 3.78
+					},
+					{
+						"position": "(-40.12627, 11.95525, 52.08695)",
+						"segment": 1,
+						"stage": "TO_SHOP",
+						"time_s": 16.12
+					}
+				]
+			},
+			"1/TO_YARD": {
+				"arrived": true,
+				"max_kmh": 9.87600000000022,
+				"moving_s": 24.7999999999999,
+				"travel_m": 61.8343402600149,
+				"waiting_s": 4.93333333333332,
+				"waypoints": [
+					{
+						"position": "(-30.19562, 11.66822, 54.962)",
+						"segment": 0,
+						"stage": "TO_YARD",
+						"time_s": 52.12
+					},
+					{
+						"position": "(-27.08602, 11.71373, 55.08094)",
+						"segment": 1,
+						"stage": "TO_YARD",
+						"time_s": 58.77
+					},
+					{
+						"position": "(-25.09078, 12.12847, 53.06501)",
+						"segment": 2,
+						"stage": "TO_YARD",
+						"time_s": 60.12
+					},
+					{
+						"position": "(-25.06542, 12.67739, 49.10561)",
+						"segment": 3,
+						"stage": "TO_YARD",
+						"time_s": 61.73
+					},
+					{
+						"position": "(-24.71036, 13.72275, 41.63406)",
+						"segment": 4,
+						"stage": "TO_YARD",
+						"time_s": 64.5
+					},
+					{
+						"position": "(-25.69295, 14.45572, 36.10304)",
+						"segment": 5,
+						"stage": "TO_YARD",
+						"time_s": 66.58
+					},
+					{
+						"position": "(-26.01308, 15.2712, 30.12025)",
+						"segment": 6,
+						"stage": "TO_YARD",
+						"time_s": 68.8
+					},
+					{
+						"position": "(-25.69449, 15.9901, 25.11817)",
+						"segment": 7,
+						"stage": "TO_YARD",
+						"time_s": 70.65
+					},
+					{
+						"position": "(-25.13594, 16.29435, 22.98907)",
+						"segment": 8,
+						"stage": "TO_YARD",
+						"time_s": 71.47
+					},
+					{
+						"position": "(-26.92012, 16.57576, 19.97877)",
+						"segment": 9,
+						"stage": "TO_YARD",
+						"time_s": 73.63
+					}
+				]
+			},
+			"2/TO_SHOP": {
+				"arrived": true,
+				"max_kmh": 9.87600000000023,
+				"moving_s": 36.1833333333326,
+				"travel_m": 81.6741093570017,
+				"waiting_s": 6.34999999999998,
+				"waypoints": [
+					{
+						"position": "(-47.75875, 16.11742, 19.6551)",
+						"segment": 0,
+						"stage": "TO_SHOP",
+						"time_s": 112.57
+					},
+					{
+						"position": "(-49.83812, 16.08208, 20.13334)",
+						"segment": 1,
+						"stage": "TO_SHOP",
+						"time_s": 120.35
+					},
+					{
+						"position": "(-51.05323, 15.7884, 22.45525)",
+						"segment": 2,
+						"stage": "TO_SHOP",
+						"time_s": 121.62
+					},
+					{
+						"position": "(-50.29988, 15.45176, 24.98574)",
+						"segment": 3,
+						"stage": "TO_SHOP",
+						"time_s": 122.82
+					},
+					{
+						"position": "(-46.81863, 15.24901, 26.65694)",
+						"segment": 4,
+						"stage": "TO_SHOP",
+						"time_s": 124.52
+					},
+					{
+						"position": "(-38.09667, 15.54838, 26.00325)",
+						"segment": 5,
+						"stage": "TO_SHOP",
+						"time_s": 127.77
+					},
+					{
+						"position": "(-30.89828, 15.85918, 24.93772)",
+						"segment": 6,
+						"stage": "TO_SHOP",
+						"time_s": 130.47
+					},
+					{
+						"position": "(-27.776, 15.87619, 25.18983)",
+						"segment": 7,
+						"stage": "TO_SHOP",
+						"time_s": 131.63
+					},
+					{
+						"position": "(-26.00254, 15.6049, 27.85572)",
+						"segment": 8,
+						"stage": "TO_SHOP",
+						"time_s": 133.33
+					},
+					{
+						"position": "(-25.96808, 14.76104, 33.87282)",
+						"segment": 9,
+						"stage": "TO_SHOP",
+						"time_s": 135.55
+					},
+					{
+						"position": "(-24.89791, 14.02941, 39.41251)",
+						"segment": 10,
+						"stage": "TO_SHOP",
+						"time_s": 137.63
+					},
+					{
+						"position": "(-25.18151, 12.99791, 46.88696)",
+						"segment": 11,
+						"stage": "TO_SHOP",
+						"time_s": 140.4
+					},
+					{
+						"position": "(-24.89383, 12.44077, 50.89254)",
+						"segment": 12,
+						"stage": "TO_SHOP",
+						"time_s": 141.88
+					},
+					{
+						"position": "(-25.46894, 12.04264, 53.71519)",
+						"segment": 13,
+						"stage": "TO_SHOP",
+						"time_s": 143.1
+					},
+					{
+						"position": "(-28.64974, 12.15882, 52.39408)",
+						"segment": 14,
+						"stage": "TO_SHOP",
+						"time_s": 146.63
+					},
+					{
+						"position": "(-32.11426, 12.28486, 51.10509)",
+						"segment": 15,
+						"stage": "TO_SHOP",
+						"time_s": 150.72
+					},
+					{
+						"position": "(-33.28251, 11.9397, 53.49081)",
+						"segment": 16,
+						"stage": "TO_SHOP",
+						"time_s": 151.7
+					}
+				]
+			},
+			"2/TO_YARD": {
+				"arrived": true,
+				"max_kmh": 9.87600000000006,
+				"moving_s": 11.1666666666668,
+				"travel_m": 24.3951121309074,
+				"waiting_s": 4.39999999999999,
+				"waypoints": [
+					{
+						"position": "(-30.12749, 11.54192, 55.69665)",
+						"segment": 0,
+						"stage": "TO_YARD",
+						"time_s": 188.37
+					},
+					{
+						"position": "(-27.52832, 11.71066, 54.96756)",
+						"segment": 1,
+						"stage": "TO_YARD",
+						"time_s": 194.23
+					},
+					{
+						"position": "(-25.9473, 12.15212, 52.75872)",
+						"segment": 2,
+						"stage": "TO_YARD",
+						"time_s": 196.12
+					},
+					{
+						"position": "(-28.90385, 12.25024, 51.42522)",
+						"segment": 3,
+						"stage": "TO_YARD",
+						"time_s": 197.95
+					},
+					{
+						"position": "(-35.88736, 11.95675, 52.78152)",
+						"segment": 4,
+						"stage": "TO_YARD",
+						"time_s": 200.57
+					}
+				]
+			},
+			"3/TO_SHOP": {
+				"arrived": true,
+				"max_kmh": 9.87600000000003,
+				"moving_s": 16.716666666667,
+				"travel_m": 24.6973927388317,
+				"waiting_s": 7.88333333333331,
+				"waypoints": [
+					{
+						"position": "(-43.56969, 11.60334, 54.26926)",
+						"segment": 0,
+						"stage": "TO_SHOP",
+						"time_s": 226.1
+					},
+					{
+						"position": "(-45.92795, 11.52515, 54.33399)",
+						"segment": 1,
+						"stage": "TO_SHOP",
+						"time_s": 232.83
+					},
+					{
+						"position": "(-47.72177, 11.75342, 52.71233)",
+						"segment": 2,
+						"stage": "TO_SHOP",
+						"time_s": 234.12
+					},
+					{
+						"position": "(-45.79111, 12.02955, 50.92705)",
+						"segment": 3,
+						"stage": "TO_SHOP",
+						"time_s": 240.28
+					},
+					{
+						"position": "(-38.12487, 12.00432, 51.97861)",
+						"segment": 4,
+						"stage": "TO_SHOP",
+						"time_s": 243.78
+					}
+				]
+			},
+			"3/TO_YARD": {
+				"arrived": true,
+				"max_kmh": 9.87600000000014,
+				"moving_s": 19.5500000000002,
+				"travel_m": 47.2506497664144,
+				"waiting_s": 5.08333333333332,
+				"waypoints": [
+					{
+						"position": "(-30.19462, 11.68296, 54.92111)",
+						"segment": 0,
+						"stage": "TO_YARD",
+						"time_s": 282.32
+					},
+					{
+						"position": "(-27.08517, 11.71175, 55.09035)",
+						"segment": 1,
+						"stage": "TO_YARD",
+						"time_s": 289.15
+					},
+					{
+						"position": "(-25.09595, 12.12767, 53.07124)",
+						"segment": 2,
+						"stage": "TO_YARD",
+						"time_s": 290.5
+					},
+					{
+						"position": "(-25.07027, 12.67988, 49.09134)",
+						"segment": 3,
+						"stage": "TO_YARD",
+						"time_s": 292.13
+					},
+					{
+						"position": "(-24.7098, 13.72397, 41.62094)",
+						"segment": 4,
+						"stage": "TO_YARD",
+						"time_s": 294.9
+					},
+					{
+						"position": "(-25.69507, 14.45693, 36.09053)",
+						"segment": 5,
+						"stage": "TO_YARD",
+						"time_s": 296.98
+					},
+					{
+						"position": "(-26.01416, 15.26657, 30.15331)",
+						"segment": 6,
+						"stage": "TO_YARD",
+						"time_s": 299.18
+					},
+					{
+						"position": "(-25.69291, 15.99259, 25.10619)",
+						"segment": 7,
+						"stage": "TO_YARD",
+						"time_s": 301.05
+					},
+					{
+						"position": "(-25.13334, 16.29557, 22.97776)",
+						"segment": 8,
+						"stage": "TO_YARD",
+						"time_s": 301.87
+					},
+					{
+						"position": "(-26.91845, 16.57665, 19.9685)",
+						"segment": 9,
+						"stage": "TO_YARD",
+						"time_s": 304.03
+					}
+				]
+			},
+			"dispatch/7": {
+				"arrived": true,
+				"max_kmh": 9.87600000000002,
+				"moving_s": 28.133333333333,
+				"travel_m": 50.8381016221829,
+				"waiting_s": 0.0,
+				"waypoints": [
+					{
+						"position": "(-33.08221, 16.35582, 20.63764)",
+						"segment": 0,
+						"stage": "DONE",
+						"time_s": 331.15
+					},
+					{
+						"position": "(-35.90038, 16.16334, 21.87191)",
+						"segment": 1,
+						"stage": "DONE",
+						"time_s": 332.75
+					},
+					{
+						"position": "(-37.02024, 15.9313, 23.66167)",
+						"segment": 2,
+						"stage": "DONE",
+						"time_s": 333.98
+					},
+					{
+						"position": "(-36.15364, 15.62331, 25.78909)",
+						"segment": 3,
+						"stage": "DONE",
+						"time_s": 335.52
+					},
+					{
+						"position": "(-31.74379, 15.83171, 25.08886)",
+						"segment": 4,
+						"stage": "DONE",
+						"time_s": 337.77
+					},
+					{
+						"position": "(-28.52548, 15.95217, 24.59981)",
+						"segment": 5,
+						"stage": "DONE",
+						"time_s": 338.98
+					},
+					{
+						"position": "(-26.09369, 15.60714, 27.85544)",
+						"segment": 6,
+						"stage": "DONE",
+						"time_s": 341.27
+					},
+					{
+						"position": "(-25.99375, 14.76977, 33.84698)",
+						"segment": 7,
+						"stage": "DONE",
+						"time_s": 344.75
+					},
+					{
+						"position": "(-24.88111, 14.04142, 39.38335)",
+						"segment": 8,
+						"stage": "DONE",
+						"time_s": 348.03
+					},
+					{
+						"position": "(-25.20361, 13.00847, 46.84405)",
+						"segment": 9,
+						"stage": "DONE",
+						"time_s": 352.38
+					},
+					{
+						"position": "(-24.9449, 12.47733, 50.64533)",
+						"segment": 10,
+						"stage": "DONE",
+						"time_s": 354.6
+					},
+					{
+						"position": "(-25.10695, 12.0996, 53.3592)",
+						"segment": 11,
+						"stage": "DONE",
+						"time_s": 356.18
+					},
+					{
+						"position": "(-26.18591, 11.78116, 55.19179)",
+						"segment": 12,
+						"stage": "DONE",
+						"time_s": 357.47
+					}
+				]
+			},
+			"dispatch/8": {
+				"arrived": true,
+				"max_kmh": 6.288,
+				"moving_s": 9.48333333333338,
+				"travel_m": 15.2088914604392,
+				"waiting_s": 0.0,
+				"waypoints": [
+					{
+						"position": "(-28.443, 11.5557, 55.65816)",
+						"segment": 0,
+						"stage": "DONE",
+						"time_s": 378.02
+					},
+					{
+						"position": "(-33.36571, 11.6275, 55.17672)",
+						"segment": 1,
+						"stage": "DONE",
+						"time_s": 381.2
+					}
+				]
+			}
+		},
+		"max_frame_displacement_m": 0.0480081327259541,
+		"rules": {
+			"airborne_seconds": 0.45,
+			"minimum_progress_m": 0.2,
+			"stalled_seconds": 3.0
+		}
+	},
+	"nearest_walking_resident": {
+		"clearance_to_bike_m": 0.807163209915161,
+		"resident": "(-29.6609, 11.48074, 56.18002)",
+		"route": "walk",
+		"scooter": "(-30.19562, 11.66822, 54.962)",
+		"stage": "SHOP"
+	},
+	"passed": true,
+	"renderer": "forward_plus",
+	"source_sha256": {
+		"assets/courtyard_grade/footwear.png": "adb0748c4961948d638f4b434f0ecfe7b92248261ee886473d08a8c4716254f7",
+		"assets/courtyard_grade/grade.glb": "0897405e8a390de2e008184207fef211ef20d05805007e6a5a3226b982989fcb",
+		"assets/vehicles/first_shift_box.glb": "0fe33e75e1a9e34a68eb87a6c0f01703e97206e6f5ab987cba1d7d2acb0a110a",
+		"first_shift.tscn": "1f4df48ea096f7c0e8a5b608e8b2e4558f2cb495bfb7e80a95057c7811f87160",
+		"scripts/day_one.gd": "a80cf347ccd02488627fa16eca7354a1acd917a137cc620b41c7a1ead97ecfe3",
+		"scripts/district_connections_r24.gd": "d2c21d922d37d39cbe46be3619cef717172cd3a53a3a0a5e646530de4ddf2f16",
+		"scripts/gameplay.gd": "d0dfd80f552674e8fa91757fe7e4a79be5ce78eef1422807bfe3f7c2ef2f4def",
+		"scripts/kraft_paper.gdshader": "2b952c85d014df3c35b9d9c646137b01d495652265edcab5da55b8af2dfc1fa2",
+		"scripts/main.gd": "1b6ba2fe65e1ee3d55800d6656a4da33ac348b278ed93cb7b1692095eb53da4a",
+		"scripts/mentor_arm.gd": "e36eaea6dcb0b34bb22bb09614debe2ca810c86d9a8a8fad5ba43b5a73c312a6",
+		"scripts/mentor_demonstration.gd": "a949fb043f6482dbb864fbd2c40ea10c17f272ff4fbedfa5ab6e56d4150cbe0d",
+		"scripts/mentor_gaze.gd": "2a491d730ace7343143296c196966f9aa8a42bd04b9e610118bb3b3bbf694424",
+		"scripts/mentor_hands.gd": "5c8b72bb1850fb6890d66ad0348a40f4fca82d2d68892ee7949162e0a8a24354",
+		"scripts/mentor_reach.gd": "375118606df307f3470fcc61fd29fcbe127658b501005304316983c69644b067",
+		"scripts/mentor_route_audit.gd": "3a948798f4d3732475fe64ecf32b9cfa446e8142f51209365b017d67eab854b1",
+		"scripts/mentor_scooter.gd": "c2e2e8e130c0e590cfa8e6226282e86aba82514c3b736089e1dac12ef758c6b6",
+		"scripts/mentor_walker.gd": "43c444ded1a4e332b010d70805786db7ed2a4c5d35d3d2d030ba8e61e3930f24",
+		"scripts/scooter_controller.gd": "82a03e85b458aec07640fdc1efd3f156588bb3e5dc28ec52ad5cc97dc8038e16",
+		"scripts/scooter_visual.gd": "48a71d6c0d83e95046373143cee6bdf8c9c3a7b4630ddc83bbbdd7aa9ae4171f",
+		"scripts/shift_cargo_box.gd": "92cb3e0e7ae4e10c38ffa4581d444cc3c968bf6614d250d39c2f97368018375a",
+		"scripts/shift_collection_shelf.gd": "4c1d8ff18708cbfaf70638b06b3d1ea3db2f0010325b285808c1773204d92954",
+		"scripts/takeaway_bag.gd": "26ba3c6c500f132e4015e0ab7b6bb038f663fc6eb512ee0337e91745f70774da",
+		"scripts/teaching_door.gd": "4c1fa35756bd605d723959e0d0384a9388204561eb7449fffbb228301803ea02",
+		"shaders/street_repairs_r24.gdshaderinc": "9e4a4e76e200676938d4b63a3ee65dbcd8825a203b559593dd448bfb2e641167"
+	}
+}

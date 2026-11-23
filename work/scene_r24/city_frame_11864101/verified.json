@@ -1,0 +1,356 @@
+{
+  "source_fingerprints": {
+    "11864101_058ccbc9956406e8ca5e7fe507ef9785.rar": "cf400a61250737f69d2f981efd4bf58f03ff7489cef4534c18e7bc3128065b2d",
+    "9644040_cb90eebcb147404ccf43c795e9863eaa.rar": "1b6dffeb75af5fcbafa1ae71a2e14c37f40e6be97fbb8ef0809e63f5cd586bad"
+  },
+  "files": {
+    "city_and_block_r24.blend": {
+      "sha256": "b280b04eed5346023cb2e74e4897ea163f0750dc93dcaaaab82dca5b88cb4cfa",
+      "bytes": 595535876
+    },
+    "city_frame.glb": {
+      "sha256": "bd97c3835606b6ebc5f23cc12bd7ae44224a9f9acc60a01912cb3f40595368de",
+      "bytes": 1214552
+    },
+    "selected.json": {
+      "sha256": "e5dfaa1fb4b21e84f2e674fca192cec2a453006f460e66c1d73fd29d978f7c03",
+      "bytes": 148217
+    },
+    "street_finish.glb": {
+      "sha256": "a4bfb13de2bf37cc61e57fbf30c3bee2986a6a6d95cede5f01a23f6b0996751b",
+      "bytes": 16888180
+    },
+    "finish.json": {
+      "sha256": "3b01ad67493b1b4a6c7c140a46b04ef9992fa83e3922c371abf008b857a7d9db",
+      "bytes": 691
+    },
+    "render_profile_r24.json": {
+      "sha256": "627cbbb50f2cf0831818f08ab4f587fc4192118c5d40e114c43b23b8fdcba587",
+      "bytes": 16838
+    },
+    "city_frame_r24.gd": {
+      "sha256": "da0af49496ec042fb07193dc953d8d412d6697813cdbc8d64b0081f712965129",
+      "bytes": 2498
+    },
+    "city_envelope_r24.gdshader": {
+      "sha256": "20bb1c420052c831673e61873cf8c32c14bfd4f46f731196d0d6c0fa804121ce",
+      "bytes": 1138
+    },
+    "court_canopy_r24.gdshader": {
+      "sha256": "f0a35415df35233e82e250ea5aabc3bd68fcc40da2308fda793bd62803fc1395",
+      "bytes": 822
+    }
+  },
+  "captures": {
+    "godot_r24_canopy_joint.png": "b3dff22b98bab1a9c0fff05b702034a491691f65fb6f9c8be92c0c1ef44c543b",
+    "godot_r24_canopy_under.png": "1b9c19734f8f5415bac4df25e8078824c472a80533041c4f3f0d312674a20817",
+    "godot_r24_center_seam.png": "815fc007844048bdc6b42972dcd5d33fc48fa35ba202a926ab72682f5b861c56",
+    "godot_r24_court_entry.png": "b76f437ae5b9fd11c2db23ccadbf0b69d88282882c87cc2357bce97056628512",
+    "godot_r24_frame.png": "b7299a65dd7c2698aac66e7add6e54de96c39726a966cfc5dbb1179021e944c0",
+    "godot_r24_frame_walk.png": "624f18fa57f49bb85c568cffad7e01fef452f875451a35700718239cfdebc253",
+    "godot_r24_hoop.png": "79e33a8e687d9797ecbab3675793df236ed78eabe07dd368ed68bf2e71ed9864",
+    "godot_r24_lower_seam.png": "e778de4285300b69b2e2fc8085cca1aba79d411f82b5cefc8a279ea977a1eab3",
+    "godot_r24_step_edge.png": "fb6ed2f087a0413b9a6f5b39a7cb057fb1e8d5f446b21e44e0af6a9dc15399a2",
+    "godot_r24_west_seam.png": "099f8e02404e30c5d6512bb44bd049d9302a3fe4a5211de49bdaefc811ff3047"
+  },
+  "walk": {
+    "engine": "4.6.3-stable (official)",
+    "install": {
+      "donors": 9,
+      "local_frame": true,
+      "missing": [],
+      "retired": 3
+    },
+    "passed": true,
+    "routes": [
+      {
+        "goals": [
+          {
+            "ok": true,
+            "pos": [
+              -73.0404586791992,
+              15.4654626846313,
+              23.2910823822021
+            ]
+          },
+          {
+            "ok": true,
+            "pos": [
+              -72.7442932128906,
+              16.1225700378418,
+              18.2510471343994
+            ]
+          },
+          {
+            "ok": true,
+            "pos": [
+              -73.0854568481445,
+              16.7792339324951,
+              13.230993270874
+            ]
+          },
+          {
+            "ok": true,
+            "pos": [
+              -72.7436904907227,
+              16.1112804412842,
+              17.7473564147949
+            ]
+          },
+          {
+            "ok": true,
+            "pos": [
+              -72.9861755371094,
+              15.4647827148438,
+              22.719654083252
+            ]
+          },
+          {
+            "ok": true,
+            "pos": [
+              -73.6063232421875,
+              14.972469329834,
+              26.7194938659668
+            ]
+          }
+        ],
+        "max_step": 0.167278870940208,
+        "metres": 28.2294429764152
+      },
+      {
+        "goals": [
+          {
+            "ok": true,
+            "pos": [
+              -19.0164604187012,
+              16.8888530731201,
+              21.2849369049072
+            ]
+          },
+          {
+            "ok": true,
+            "pos": [
+              -18.5344657897949,
+              17.5510501861572,
+              17.2914524078369
+            ]
+          },
+          {
+            "ok": true,
+            "pos": [
+              -18.5029296875,
+              18.3794116973877,
+              11.2461566925049
+            ]
+          },
+          {
+            "ok": true,
+            "pos": [
+              -18.5000629425049,
+              17.5505294799805,
+              16.72340965271
+            ]
+          },
+          {
+            "ok": true,
+            "pos": [
+              -18.9691638946533,
+              17.0543098449707,
+              20.7368545532227
+            ]
+          },
+          {
+            "ok": true,
+            "pos": [
+              -19.2828712463379,
+              16.2129039764404,
+              25.7280158996582
+            ]
+          }
+        ],
+        "max_step": 0.169580295681953,
+        "metres": 29.9484197976417
+      },
+      {
+        "goals": [
+          {
+            "ok": true,
+            "pos": [
+              4.92324113845825,
+              11.6938161849976,
+              59.2264022827148
+            ]
+          },
+          {
+            "ok": true,
+            "pos": [
+              0.0882529020309448,
+              11.8504734039307,
+              57.8796882629395
+            ]
+          },
+          {
+            "ok": true,
+            "pos": [
+              -4.72431564331055,
+              11.9651508331299,
+              56.4312400817871
+            ]
+          },
+          {
+            "ok": true,
+            "pos": [
+              -0.446251928806305,
+              11.8496885299683,
+              57.737621307373
+            ]
+          },
+          {
+            "ok": true,
+            "pos": [
+              4.44430685043335,
+              11.694016456604,
+              59.0323066711426
+            ]
+          },
+          {
+            "ok": true,
+            "pos": [
+              8.36195278167725,
+              11.3801717758179,
+              61.2636871337891
+            ]
+          }
+        ],
+        "max_step": 0.104902058839798,
+        "metres": 28.9777166526765
+      },
+      {
+        "goals": [
+          {
+            "ok": true,
+            "pos": [
+              -19.751220703125,
+              19.8659629821777,
+              0.469999998807907
+            ]
+          },
+          {
+            "ok": true,
+            "pos": [
+              -21.3505592346191,
+              20.4623584747314,
+              0.337454050779343
+            ]
+          },
+          {
+            "ok": true,
+            "pos": [
+              -22.9156608581543,
+              20.5439720153809,
+              0.220763668417931
+            ]
+          },
+          {
+            "ok": true,
+            "pos": [
+              -21.8740940093994,
+              20.5439720153809,
+              0.311256766319275
+            ]
+          },
+          {
+            "ok": true,
+            "pos": [
+              -20.2773742675781,
+              20.0351600646973,
+              0.449496746063232
+            ]
+          },
+          {
+            "ok": true,
+            "pos": [
+              -18.8571910858154,
+              19.856014251709,
+              0.466782957315445
+            ]
+          }
+        ],
+        "max_step": 0.165048733353615,
+        "metres": 9.02935591083951
+      }
+    ]
+  },
+  "gpu": {
+    "build10": [
+      {
+        "view": "r24_frame",
+        "samples": 240,
+        "gpu_p50_ms": 13.7840003967285,
+        "gpu_p95_ms": 15.4659996032715,
+        "frame_interval_p95_ms": 15.552
+      },
+      {
+        "view": "r24_canopy_joint",
+        "samples": 240,
+        "gpu_p50_ms": 21.7320003509521,
+        "gpu_p95_ms": 25.3209991455078,
+        "frame_interval_p95_ms": 25.352
+      }
+    ],
+    "build11": [
+      {
+        "view": "r24_frame",
+        "samples": 240,
+        "gpu_p50_ms": 12.6110000610352,
+        "gpu_p95_ms": 13.9130001068115,
+        "frame_interval_p95_ms": 13.989
+      },
+      {
+        "view": "r24_canopy_joint",
+        "samples": 240,
+        "gpu_p50_ms": 19.1229991912842,
+        "gpu_p95_ms": 20.128999710083,
+        "frame_interval_p95_ms": 20.175
+      }
+    ]
+  },
+  "geo": {
+    "training": 14,
+    "holdout": 4,
+    "median_error_native_m": 1.1875,
+    "max_error_native_m": 4.988
+  },
+  "regression": {
+    "smoke": {
+      "passed": true,
+      "checks": 184,
+      "metres": null,
+      "sha256": "f3d47e837cee7fb1934c97ff086c7cae92bdea145a53f21a6b0acf3f1a58795d"
+    },
+    "block_test": {
+      "passed": true,
+      "checks": 8,
+      "metres": null,
+      "sha256": "4c29ae83b861a0b2b20435e41c883a2b8dd111c3bed157ec25ef3f1243f359aa"
+    },
+    "delivery_end_to_end": {
+      "passed": true,
+      "checks": 11,
+      "metres": null,
+      "sha256": "91b9c69030ce8cc1f64c5ee6c994e2e466af363bc4274333cbe9d5f9be4fac6b"
+    },
+    "corner_walk": {
+      "passed": true,
+      "checks": null,
+      "metres": 96.8226506132632,
+      "sha256": "1efbad656eff5e9ce6341053c287477c781c265a46958e214f38abb7925a246c"
+    },
+    "walk": {
+      "passed": true,
+      "checks": null,
+      "metres": 62.4186321878806,
+      "sha256": "715699e0cd9590df9b60c9d756d297fe5f58b77a9532af4a0ab6ef2a00b8d42c"
+    }
+  }
+}

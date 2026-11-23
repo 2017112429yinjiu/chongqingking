@@ -1,0 +1,129 @@
+{
+  "status": "PASS",
+  "passed": true,
+  "glb_path": "/workspace/scratch/5462bdafe44f/cq05/source/outputs_r15/chongqing_district.glb",
+  "glb_bytes": 1017581848,
+  "glb_sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223",
+  "manifest_path": "/workspace/scratch/5462bdafe44f/cq05/source/outputs_r15/architecture_manifest.json",
+  "scene_sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223",
+  "manifest_sha256": "ee8a87c5def04d4a5cd8829e7336c8145bb247c9d9266f918f662cc920e6586f",
+  "architecture_manifest_sha256": "ee8a87c5def04d4a5cd8829e7336c8145bb247c9d9266f918f662cc920e6586f",
+  "source_sha256": {
+    "architecture_full.py": "65bd6df0c2851c777836eecdaae0cd73453ec3a03209da0cf5be0e64e875330f",
+    "interior_scenes.py": "e7785197ad310cfc421888c25db25a15d2e046044df536fe56f83346ee045ce1",
+    "interior_domains.py": "d2754f20c218573e13eaff4bae4fc69846ac5ab55a95a7e0b33019be98756e37"
+  },
+  "checker_sha256": "aabb6e2c27bf85e27af158c874f59c6d8f5c492632789e62d28824f89fb360cc",
+  "audit_schema_version": 2,
+  "allowed_absolute_support_gap_m": 1e-05,
+  "maximum_measured_absolute_gap_m": 0.0,
+  "foot_xy_match_tolerance_m": 2e-05,
+  "tea_room": "809889626_edge1_door",
+  "tea_furniture": [
+    {
+      "object": "sideboard",
+      "actual_node": "IR_B_809889626_heritage_Interiors_timber",
+      "actual_floor_godot_y": 16.708940505981445,
+      "actual_foot_lowest_godot_y": 16.708940505981445,
+      "gap_m": 0.0,
+      "matched_sole_vertices": 20,
+      "maximum_xy_match_error_m": 3.781938469806667e-06,
+      "maximum_absolute_sole_vertex_gap_m": 0.0,
+      "pass": true
+    },
+    {
+      "object": "round_table",
+      "actual_node": "IR_B_809889626_heritage_Interiors_timber",
+      "actual_floor_godot_y": 16.708940505981445,
+      "actual_foot_lowest_godot_y": 16.708940505981445,
+      "gap_m": 0.0,
+      "matched_sole_vertices": 15,
+      "maximum_xy_match_error_m": 3.6510696250875043e-06,
+      "maximum_absolute_sole_vertex_gap_m": 0.0,
+      "pass": true
+    },
+    {
+      "object": "three_leg_stool",
+      "actual_node": "IR_B_809889626_heritage_Interiors_timber",
+      "actual_floor_godot_y": 16.708940505981445,
+      "actual_foot_lowest_godot_y": 16.708940505981445,
+      "gap_m": 0.0,
+      "matched_sole_vertices": 18,
+      "maximum_xy_match_error_m": 3.6399849294452405e-06,
+      "maximum_absolute_sole_vertex_gap_m": 0.0,
+      "pass": true
+    }
+  ],
+  "scanned_chair_control": {
+    "node": "B_809889626_heritage_Interior_asset_0_00",
+    "gap_m": 0.0,
+    "pass": true
+  },
+  "additional_visible_furniture": [
+    {
+      "object": "noodle_table",
+      "room_id": "A01_edge2_door",
+      "actual_node": "IR_B_A01_noodle_Interiors_timber",
+      "actual_floor_node": "COL_IR_B_A01_noodle_Shop_envelope_pavement",
+      "actual_floor_godot_y": 11.40771484375,
+      "gap_m": 0.0,
+      "matched_sole_vertices": 15,
+      "maximum_xy_match_error_m": 1.918746337839053e-06,
+      "maximum_absolute_sole_vertex_gap_m": 0.0,
+      "pass": true
+    },
+    {
+      "object": "reading_desk",
+      "room_id": "A04_edge1_window238636781",
+      "actual_node": "IR_B_A04_courtyard_home_HeroRoom_timber",
+      "actual_floor_node": "IR_B_A04_courtyard_home_HeroRoom_room_floor",
+      "actual_floor_godot_y": 16.469938278198242,
+      "gap_m": 0.0,
+      "matched_sole_vertices": 20,
+      "maximum_xy_match_error_m": 1.1090993287287988e-06,
+      "maximum_absolute_sole_vertex_gap_m": 0.0,
+      "pass": true
+    }
+  ],
+  "copiers": [
+    {
+      "building_id": "A06",
+      "room_id": "A06_edge3_door",
+      "rubber_node": "IR_B_A06_workshop_Interiors_black_rubber",
+      "actual_floor_godot_y": 14.782329559326172,
+      "actual_chassis_bottom_godot_y": 14.882329940795898,
+      "chassis_match_error_m": 1.3482731402175406e-06,
+      "wheel_components": [
+        {
+          "gap_m": 0.0,
+          "chassis_engagement_m": 0.006518363952636719,
+          "vertices": 48,
+          "pass": true
+        },
+        {
+          "gap_m": 0.0,
+          "chassis_engagement_m": 0.006518363952636719,
+          "vertices": 48,
+          "pass": true
+        },
+        {
+          "gap_m": 0.0,
+          "chassis_engagement_m": 0.006518363952636719,
+          "vertices": 48,
+          "pass": true
+        },
+        {
+          "gap_m": 0.0,
+          "chassis_engagement_m": 0.006518363952636719,
+          "vertices": 48,
+          "pass": true
+        }
+      ],
+      "pass": true
+    }
+  ],
+  "failures": [],
+  "scope": "Actual exported tea sideboard/table/stool and scanned chair control; A01 noodle table; A04 reading desk; every authored workshop copier. Full-scene procedural support invariants are separately checked in furniture_contact_source_audit.json.",
+  "hash_origin": "SHA-256 calculated from the selected GLB file during this run; no capture manifest hash reused.",
+  "glb_unchanged_while_reading": true
+}

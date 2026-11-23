@@ -1,0 +1,17 @@
+{
+  "status": "Isolated comparison only; not production",
+  "source": "Microsoft Rocketbox Male_Adult_10 facial",
+  "license": "MIT",
+  "changes": [
+    "Relink source TGA paths",
+    "Opaque body/head, original card alpha",
+    "Legacy specular texture disconnected for explicit dielectric specular",
+    "Source normal maps kept; tangent convention still needs visual review",
+    "Normalize height to 1.71 m"
+  ],
+  "baseline_sha256": "2c0f3b14354d7c38fcbbff150705b7cb65843a64ea886c847be059a3d1a21b9e",
+  "candidate_sha256": "a789b529573f090944683c28c26bb6e4f41d4d0263925838e198ab0f01da7395",
+  "source_vertices": 3495,
+  "blendshapes": 175,
+  "packed_images": 8
+}

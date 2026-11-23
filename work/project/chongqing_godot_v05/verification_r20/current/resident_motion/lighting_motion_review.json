@@ -1,0 +1,27 @@
+{
+  "frames_compared": 262,
+  "fps": 30,
+  "native_dimensions": [
+    1280,
+    720
+  ],
+  "reference_revision": "R20_lane_11_internal",
+  "working_revision": "R20_lane_12_internal",
+  "source_avi_sha256": [
+    "90ee594dd9dffed4db8c3c35861824e85c28347d47d646e3413f64490399c35e",
+    "0f318b822f128145e940329ec5166d60ce88b07f0ba154534a71f4cd41056d57"
+  ],
+  "method": "Matched uncut motion at the same fixed camera and greeting frame. MJPEG decoded; intensity error is on a 320x180 box-filtered full frame. Temporal luma variation uses a static crop at original scale.",
+  "bench_edge_crop_xyxy": [
+    175,
+    395,
+    439,
+    680
+  ],
+  "full_frame_mean_abs_0_255": 0.21078264153944024,
+  "largest_single_frame_mean_abs_0_255": 0.21447916666666667,
+  "bench_mean_abs_between_consecutive_frames_0_255": {
+    "full_size": 0.006294646403539325,
+    "half_size": 0.005511100111826065
+  }
+}

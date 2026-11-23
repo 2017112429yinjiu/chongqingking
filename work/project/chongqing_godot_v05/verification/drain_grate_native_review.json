@@ -1,0 +1,124 @@
+{
+  "schema": "cq05_drain_grate_native_visual_review_v1",
+  "revision": 15,
+  "scene_sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223",
+  "capture_manifest_path": "native/capture_manifest.json",
+  "capture_manifest_sha256": "166a1dc19b44afa459171533b304050972e16a9dda72d1d93b872d01cdda27c7",
+  "capture_process_started_at_utc": "2026-11-19T15:33:30.409701+00:00",
+  "capture_process_finished_at_utc": "2026-11-19T15:50:05.618699+00:00",
+  "capture_actual_exit_code": 0,
+  "art_profile_sha256": "9d0c7b69153c7c84fea8ac544b602bf15ef6806afa75068856a6adba0da809af",
+  "main_script_sha256": "29517fc2472682aae053e2e1eafc954379755e9b212a425088cdb834599cf56d",
+  "configuration_sha256": {
+    "res://assets/viewpoints.json": "a3da59baee65cea784440a54949fe5d2ddc556062727b763732c52698a743fe0",
+    "res://assets/walking_survey.json": "3277a9c561fb58826045d8a52affc3515a4ae1732e8231a27bf63bbf9d365d26"
+  },
+  "review_completed_at_utc": "2026-11-19T15:59:39.610Z",
+  "reviewer": "cq05_ground",
+  "measurement_kind": "direct_native_visual_review",
+  "production_source_modified": false,
+  "images_modified": false,
+  "engines_started": false,
+  "status": "COMPLETE_SCOPED_VISUAL_REVIEW",
+  "passed": true,
+  "acceptance": "PASS_FOR_DIRECTLY_VISIBLE_SCOPE_WITH_LIMITATIONS",
+  "scope_zh": "本次22图中格栅相关机位的直接视觉复核。主复核对象是community_front两组先前有真实5–11cm悬空问题的格栅；其余机位按局部/外观范围记录，不声称逐一看清全部112处。",
+  "primary_view": "community_front",
+  "primary_visible_grate_groups": 2,
+  "whole_scene_grate_count_visually_verified": false,
+  "millimeter_support_measured_from_images": false,
+  "fresh_geometry_measurement_performed_by_this_review": false,
+  "full_scene_geometry_evidence": {
+    "path": "drain_grate_export_audit.json",
+    "sha256": "34221b9bf3bc5ffc6f83aaffb07c69b1d2588521da06c67967865964c55cc0e4",
+    "kind": "separate_actual_GLB_drain_support",
+    "scope_zh": "独立全112格栅实际导出支撑检查；本报告只直接评估入镜的格栅外观。"
+  },
+  "blocking_findings": [],
+  "reviewed_images": [
+    {
+      "view": "community_front",
+      "visibility": "primary",
+      "visible_scope_zh": "前中与画面最右、墙侧表箱下方两组格栅。",
+      "directly_visible_grate_groups": 2,
+      "observation_zh": "两组均顺着邻近坡面落位；未见R14旧底板下方明显空气带，未见为遮蔽间隙而整体抬高或增厚的可见块体。照片仍不能测出毫米级底面间隙。",
+      "file": "godot_community_front.png",
+      "path": "native/godot_community_front.png",
+      "sha256": "06b4f3cab71af9202154e9b472bf5bd343d0d3114596e855337e0e20895e5e47",
+      "width": 1920,
+      "height": 1080,
+      "directly_viewed": true
+    },
+    {
+      "view": "west_lane",
+      "visibility": "secondary",
+      "visible_scope_zh": "画面右下格栅。",
+      "observation_zh": "局部格栅顺坡，未见明显开放的底部空气带；亮条与暗底板对比偏强，仍显干净。",
+      "file": "godot_west_lane.png",
+      "path": "native/godot_west_lane.png",
+      "sha256": "8bdef1e90412c216209cae1fde6cca717a186ab8c907da2742f1d65a4ec9c184",
+      "width": 1920,
+      "height": 1080,
+      "directly_viewed": true
+    },
+    {
+      "view": "residential_entry",
+      "visibility": "secondary",
+      "visible_scope_zh": "画面左下格栅。",
+      "observation_zh": "格栅与邻近斜铺装方向一致，未见旧式高架浮板；这只是当前视角的可见部分。",
+      "file": "godot_residential_entry.png",
+      "path": "native/godot_residential_entry.png",
+      "sha256": "763ebcc8d00f9ea02fd56d96805c041b8d3ac4636337999f452107f55e35e7b5",
+      "width": 1920,
+      "height": 1080,
+      "directly_viewed": true
+    },
+    {
+      "view": "tea_interior",
+      "visibility": "partial",
+      "visible_scope_zh": "画面右缘局部格栅。",
+      "observation_zh": "入镜部分未见明显浮起底板，但边缘截断/遮挡，不记录为完整格栅支撑可视检查。",
+      "file": "godot_tea_interior.png",
+      "path": "native/godot_tea_interior.png",
+      "sha256": "e62c61e4bf0524f750915c3d15bb36c8d43b189b8d2613f1e4169e401c0b3bd6",
+      "width": 1920,
+      "height": 1080,
+      "directly_viewed": true
+    },
+    {
+      "view": "central_steps",
+      "visibility": "appearance_only",
+      "visible_scope_zh": "阶梯附近浅色亮格条。",
+      "observation_zh": "亮条仍显较新、较干净；仅凭亮度与投影不判断有几何悬空，不纳入完整底板支撑可见范围。",
+      "file": "godot_central_steps.png",
+      "path": "native/godot_central_steps.png",
+      "sha256": "3d196487db891e29eec199c9055185115cc3b938e86a99466579b6bffc257d8c",
+      "width": 1920,
+      "height": 1080,
+      "directly_viewed": true
+    }
+  ],
+  "baseline_evidence": {
+    "revision": 14,
+    "path": "../round7/drain_grate_ground_audit.json",
+    "sha256": "a04804af7c5a8aaf92a799a5281782453fb65985e9a109d0a756c8cafd62f617",
+    "scope_zh": "引用已冻结的R14实际几何缺陷证据作问题背景，不复用R14原图作为本次视觉通过证据。",
+    "reported_gap_ranges_mm": {
+      "front_center": [
+        81.505,
+        114.629
+      ],
+      "far_right": [
+        48.927,
+        55.465
+      ]
+    },
+    "reported_plate_thickness_mm": 13.000488
+  },
+  "limitations_zh": [
+    "community_front新图未见旧明显空气缝，不能据此替代实际底面/杆件三角面的独立支撑计算。",
+    "其他机位的局部格条偏亮且较干净；斜面和投影可能放大视觉边缘，照片不用于反推毫米间隙。",
+    "覆盖全112处的结论应读取同GLB SHA绑定的drain_grate_export_audit.json；此报告未新增引擎运行或几何检测。"
+  ]
+}
+

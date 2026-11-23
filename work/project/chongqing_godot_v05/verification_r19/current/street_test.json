@@ -1,0 +1,91 @@
+{
+	"art_profile": {
+		"path": "res://assets/render_profile_r19.json",
+		"revision": "R19_scene_05_internal",
+		"sha256": "1f2539b46d5e945654465f2c43f451b0e8c15987480dbdc827b6524427dbbca8"
+	},
+	"passed": true,
+	"runtime_sha256": {
+		"res://scripts/main.gd": "4619445de67c294dd6e8428f29a76abea9eb8fc480e80777934a3c5013937d4a",
+		"res://scripts/street_detail_r19.gd": "005750a5701f4a5e5113157163a0eae5eb26a0a574f5da72a643126a40ae4410",
+		"res://shaders/street_surface_r19.gdshader": "d42b181d844d8622e9fae0d4a89cf0ed6a4318fd7560456233891cb7fb4fd428"
+	},
+	"scope": "Actual imported detail layer, replacement visibility and physics rays into new rigid props. Full route traversal runs separately.",
+	"street_layer": {
+		"asset": "res://assets/street_r19/street_life.glb",
+		"enabled": true,
+		"manifest_sha256": "b0ec626c4096ddc6df5e1444e21294346990e8faf21e62fb5bcecd77d2ae0e17",
+		"replaced": [
+			"Type_梯坎小面",
+			"Resident_waste_14_bin_00",
+			"Resident_waste_14_bin_01",
+			"Resident_waste_14_bin_02",
+			"Resident_waste_14_bin_03",
+			"Resident_waste_14_bagA_00",
+			"Resident_waste_14_bagB_00",
+			"Resident_waste_14_crate_00",
+			"Authored_distant_hill_ridges_hill_near",
+			"Authored_distant_hill_ridges_hill_far",
+			"B_A01_noodle_details_faded_red",
+			"B_A01_noodle_details_curtain_beige"
+		],
+		"sha256": "1c40ae7ed04e8bf3f5f7956eaf630a098890e62a9c142f3e846c9ee15d530bad",
+		"source_revision": "R19_scene_05"
+	},
+	"tests": [
+		{
+			"name": "detail_layer_loaded",
+			"pass": true
+		},
+		{
+			"missing_or_visible": [],
+			"name": "exact_obsolete_geometry_replaced",
+			"pass": true
+		},
+		{
+			"colored_surfaces": 1,
+			"name": "imported_canvas_weathering_colors",
+			"pass": true
+		},
+		{
+			"first_hit": "COLH_R19_Breakfast_table_iron",
+			"name": "rigid_prop_contact_Breakfast_table",
+			"pass": true
+		},
+		{
+			"first_hit": "COLH_R19_Breakfast_chair_A_iron",
+			"name": "rigid_prop_contact_Breakfast_chair_A",
+			"pass": true
+		},
+		{
+			"first_hit": "COLH_R19_Breakfast_chair_B_iron",
+			"name": "rigid_prop_contact_Breakfast_chair_B",
+			"pass": true
+		},
+		{
+			"first_hit": "COLH_R19_Resident_pot_A_iron",
+			"name": "rigid_prop_contact_Resident_pot_A",
+			"pass": true
+		},
+		{
+			"first_hit": "COLH_R19_Resident_pot_B_iron",
+			"name": "rigid_prop_contact_Resident_pot_B",
+			"pass": true
+		},
+		{
+			"first_hit": "COLH_R19_Stair_resident_pot_A_iron",
+			"name": "rigid_prop_contact_Stair_resident_pot_A",
+			"pass": true
+		},
+		{
+			"first_hit": "COLH_R19_Stair_resident_pot_B_iron",
+			"name": "rigid_prop_contact_Stair_resident_pot_B",
+			"pass": true
+		},
+		{
+			"bodies": 2,
+			"name": "new_stair_sidewalls_have_collision",
+			"pass": true
+		}
+	]
+}

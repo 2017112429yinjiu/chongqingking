@@ -1,0 +1,602 @@
+{
+  "revision": "R20_lane_12_internal",
+  "utc": "2026-11-20T14:27:04.175304+00:00",
+  "tests": {
+    "delivery_end_to_end": 11,
+    "gameplay_test": 24,
+    "lane_test": 42,
+    "street_test": 11,
+    "survey": 261
+  },
+  "survey_routes": 24,
+  "teleports_between_delivery_stages": 0,
+  "render_composition_sha256": "39a08ba0224512d2d1abb4c42ad3a37dfaf39b62eb877d59efc725f30bc349b3",
+  "provenance_sha256": "94009331fa4f4698f24adc07aa29e97cc589e52eea59f6a31435bdb8a0d7c906",
+  "composition": {
+    "revision": "R20",
+    "reopened_city": "work\\scene_r20\\chongqing_district.blend",
+    "objects": 2933,
+    "layer_objects": 37,
+    "packed_images": 178,
+    "unpacked": [],
+    "rail_support_ray_hits": [
+      [
+        "COL_B_1413081560_old_tile_stone",
+        0.105
+      ],
+      [
+        "COL_B_1413081560_old_tile_stone",
+        0.105
+      ],
+      [
+        "COL_B_1413081560_old_tile_stone",
+        0.105
+      ],
+      [
+        "COL_B_1413081560_old_tile_stone",
+        0.105
+      ],
+      [
+        "COL_B_1413081560_old_tile_stone",
+        0.105
+      ],
+      [
+        "COL_B_1413081560_old_tile_stone",
+        0.105
+      ],
+      [
+        "COL_B_1413081560_old_tile_tile",
+        0.105
+      ]
+    ],
+    "laundry_support_ray_hits": [
+      [
+        "COL_B_1413081560_old_tile_tile",
+        0.105
+      ],
+      [
+        "COL_B_1413081560_old_tile_tile",
+        0.105
+      ]
+    ],
+    "source_sha256": "e25826510ac6d81518ebdf4992c77a7e9e84c85632d250b9218de93d09c6ebf0",
+    "layer_blend_sha256": "faaecd3e0cc1a700e4f1151390d65c875ce1ba0a77b7e7a6c733a2dd63cba5a6",
+    "base_r19_source_sha256": "28312a3a417a14212280fa701842daaeda62bee10a4520234aaff9cefe95d741",
+    "runtime_layers": {
+      "assets/chongqing_district.glb": "88b5be04c0c72ae2b54bb02f55f2186f7b7ec2937389a59697e7306dbd7e7c13",
+      "assets/street_r19/street_life.glb": "1c40ae7ed04e8bf3f5f7956eaf630a098890e62a9c142f3e846c9ee15d530bad",
+      "assets/lane_r20/upper_lane.glb": "16dabbe6c51b1ff130153d68092dc84daa509ba4538f10152f85d4e8ae53be37"
+    },
+    "sky_fields": {
+      "shop": {
+        "origin": [
+          -35,
+          -74,
+          10
+        ],
+        "dimensions": [
+          35,
+          42,
+          15
+        ],
+        "spacing": [
+          0.5,
+          0.5,
+          0.75
+        ],
+        "directions": 64,
+        "probes": 22050,
+        "min": 5.166489232914973e-09,
+        "max": 1.0,
+        "sha256": "8d5b169cfd0bf9cc799dec67d02fde5ebbc2558a3a79dc5c91fd85fbc98dd188"
+      },
+      "alley": {
+        "origin": [
+          -42,
+          37,
+          24
+        ],
+        "dimensions": [
+          35,
+          50,
+          16
+        ],
+        "spacing": [
+          0.5,
+          0.5,
+          0.75
+        ],
+        "directions": 64,
+        "probes": 28000,
+        "min": 1.6055471440574296e-08,
+        "max": 0.9385796160884861,
+        "sha256": "c8b799570de19d6acd2e5c822aa095807d6dc3b107bd4886e66caef438cf7d3b"
+      }
+    },
+    "render_derivatives": {
+      "assets/render_profile_r20.json": "a65f9b5ad1ac5f434445a921b5af115fa7bd748a8d11a6937d09f24543f54c45",
+      "assets/lane_r20/meter_lods.glb": "931e72fa0f34fe7bcdd65257f2b1c55316cde4ac61805fc81799cd777efc0ecc",
+      "assets/lane_r20/meter_lods.json": "396261d645fecef0d4018742b6cc0da6b0a040db08b7ee8066ac3655e758be1f",
+      "assets/lane_r20/rinse_fixture.json": "8a0f267946522fd59fe99b298e18e6a4e1e4b95d1a3728bb4a73e4636fa2ff1a",
+      "assets/lane_r20/tree_seats.json": "060f2507ab6997cdc5cddc2d3b5a9eefdbd4b199b88466318eb6a983fd73a0e6",
+      "assets/lane_r20/alley_sky.png": "c8b799570de19d6acd2e5c822aa095807d6dc3b107bd4886e66caef438cf7d3b",
+      "assets/lane_r20/shop_sky.png": "8d5b169cfd0bf9cc799dec67d02fde5ebbc2558a3a79dc5c91fd85fbc98dd188"
+    },
+    "reopened_resident": {
+      "objects": 3,
+      "bones": 80,
+      "animation_tracks": [
+        "sit_rest",
+        "sit_look"
+      ]
+    },
+    "animated_resident": {
+      "editable_source_sha256": "931adca794f279272a642a58d653fc96ac82225ccf81e304c3fb35d40a50e9c8",
+      "model_sha256": "dfb43c77aff8beae940bceb906ad667f8b6e5ef85b1613393995a0a7091a94f3",
+      "fit_sha256": "a9df93aee35791d437c611680ea324c0b4bcfaab1bedccf6b1a1faa617d5ec83"
+    }
+  },
+  "runtime": {
+    "res://assets/fonts/cq_lane_ui.otf": "4f3d9d826af0232c736d27c7ec955bc41f17c4fbb8bb3589692e4efcf5366d17",
+    "res://assets/lane_r20/rinse.wav": "8674dce3de89f536a8d519dd21223164a327c91e574f216fad88db91ab74f1bf",
+    "res://assets/lane_r20/rinse_fixture.json": "8a0f267946522fd59fe99b298e18e6a4e1e4b95d1a3728bb4a73e4636fa2ff1a",
+    "res://assets/lane_r20/tree_seats.json": "060f2507ab6997cdc5cddc2d3b5a9eefdbd4b199b88466318eb6a983fd73a0e6",
+    "res://scripts/explorer.gd": "1afd5f1161003cc17ec39a8aaa9cbda9161ab559bef41bce829686b84208803c",
+    "res://scripts/gameplay.gd": "04bb8b1dbe5ebe2499f1d21c8f26f62838fed16f072d1f97fcc451afdd5ff51c",
+    "res://scripts/main.gd": "a4784d9810e4208eba0b914277d462e2ea25bc12c93d7c6c51fccc024c41e6b5",
+    "res://scripts/meter_detail_lod.gd": "2175ca3919c3728ef1db2fc7f8710ad1f39e15aa504306e25ae322e8448d45b3",
+    "res://scripts/qa_lane_r20.gd": "18f87f9f26eddd78d05dc617465ff5c4aac399b25eafc1c7cd2aec4417f5b40a",
+    "res://scripts/rinse_tap.gd": "a14c99c56d463b5fb690153a3e53c735623ac2eb09efe408e686efb99bba5fe9",
+    "res://scripts/street_detail_r19.gd": "e5b00907e9c30379f968ccaa4f2c760ec79ab6b63e54e2fe74180ed0101505ad",
+    "res://scripts/upper_lane_r20.gd": "0c61b1b914ad1f8d1ba0fbfb27889d1426d6635340d0867f62feda76d4f8d56c",
+    "res://shaders/hanging_cotton_r20.gdshader": "9d48788f6d3b3beffde16f0f5a94c8d99eac36fa8a9c00950c5116c97c208754",
+    "res://shaders/rinse_water.gdshader": "1a1c4d8f5d478384ae1cdec390d94903b83adf78096bc050116eee3354fee277",
+    "res://shaders/sky_visibility_r20.gdshaderinc": "14a770eab2dc29951adb2d5c9a17b4121b9a5bbf0e74d31e48743b8828985b7d",
+    "res://shaders/street_surface_r19.gdshader": "2f892b7c1e4d90a42f1429a50a1e6af7762035d236308ce47d9e257a9badb512"
+  },
+  "evidence_sha256": {
+    "delivery_end_to_end.json": "92291e925adfe78c600ae8410c86a1aff0d488abc6acf1c5f6e2cb7ccd8f7432",
+    "gameplay_test.json": "c87055208d7eb92216cd874b6e22bcdb4725078ddc00cc9efe82b6265fb590e2",
+    "lane_test.json": "31f7a7d7c0b02ca83ce1eff0ca75a176bc861450818b952d3e29c9eb16edbdaa",
+    "performance.json": "a4207a54040a58be75f91a990b974149a90d2cddf69d43f4f6e2f7f2ab72514b",
+    "street_test.json": "04574cd6e0515d3c09a0738b831e8e19cd5061c8e4228db0abff6c0cf73dcda7",
+    "survey.json": "1c947df12e729bac0fd45101da83a4ca2c409ea62bcc89445e20578175804278"
+  },
+  "capture_manifest_sha256": "7609f9d06226367c41e1a24a3e03847a2c78cf65afc0b8a3395f2ca31be5f493",
+  "fixed_view_image_sha256": {
+    "narrow_passage": "6d1f7ac071e3b1d726bc158e90972816a786df12411cd61910db1bb1da0bd11d",
+    "r20_notices": "2066a2e111e0033e5a87bd4464f402a815d92e5ffe2f265d9b315cbc2e1e55ca",
+    "r20_reverse": "38f148e859cdc35bd174f50286ebcb39a8540c343372ef06b3ff58372c7fa69b",
+    "r20_tap": "1e9678b37da288a8a1a345d03703d07292847679c02e54ecde494f65d99caebc",
+    "r20_laundry": "9a43640471884e1a69db39ecd17c1cb599cd4b90a33dda695ddcbc05a6aeb153",
+    "r20_tree_court": "5a03030ca5a187df4d83242b955ac6c952535a39fd67579359f66cb1a89211bc",
+    "r20_neighbor": "496c27e6cc1205260b8988e09246c716403198e0c0edef2e976ecf2ac11ab637",
+    "r20_seated_neighbor": "be350581539308dd10d26e3174bbdec0fed2a00cc5441f99c8de4b47581c77d1",
+    "noodle_corner": "ac4336025907abdcace45a91a1be68f8b465ca3a915186d50b2dfe8ccc770ecd",
+    "central_steps": "4756e6393d50d22b3c15a9043e83dd1713659383b03157478839d7d0b5fcd64a",
+    "r18_workstation": "1a7e2a54c6f1a80db3756857406799d546c47f9e1835c125e89c58928ab9e8ef",
+    "r16_meter": "cb35d1af7c484b397d5a9d3ef43c183f280cdad7225b095ba7667ec185b22be1"
+  },
+  "meter_only_image_differences": {
+    "r16_meter": {
+      "mean_absolute_rgb_0_255": 0.0022391203703703705,
+      "pct_pixels_max_channel_delta_above_8": 0.005277777777777778
+    },
+    "noodle_corner": {
+      "mean_absolute_rgb_0_255": 0.00039328703703703704,
+      "pct_pixels_max_channel_delta_above_8": 0.0015277777777777776
+    },
+    "narrow_passage": {
+      "mean_absolute_rgb_0_255": 0.00017777777777777779,
+      "pct_pixels_max_channel_delta_above_8": 0.000625
+    },
+    "r20_tree_court": {
+      "mean_absolute_rgb_0_255": 0.007274537037037037,
+      "pct_pixels_max_channel_delta_above_8": 0.015694444444444445
+    }
+  },
+  "performance": {
+    "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "viewport": "(1920.0, 1080.0)",
+    "warmup_frames": 90,
+    "samples_per_view": 240,
+    "fixed_views": [
+      {
+        "view": "street_entry",
+        "pre_partition_p95_ms": 13.746,
+        "current_p95_ms": 13.924,
+        "primitives_before": 41024616.0,
+        "primitives_current": 30104756.0
+      },
+      {
+        "view": "central_steps",
+        "pre_partition_p95_ms": 14.864,
+        "current_p95_ms": 16.675,
+        "primitives_before": 35756438.0,
+        "primitives_current": 31211958.0
+      },
+      {
+        "view": "noodle_corner",
+        "pre_partition_p95_ms": 9.169,
+        "current_p95_ms": 7.684,
+        "primitives_before": 25064102.0,
+        "primitives_current": 14170508.0
+      },
+      {
+        "view": "west_lane",
+        "pre_partition_p95_ms": 10.876,
+        "current_p95_ms": 12.219,
+        "primitives_before": 20841630.0,
+        "primitives_current": 16296514.0
+      },
+      {
+        "view": "narrow_passage",
+        "pre_partition_p95_ms": 12.247,
+        "current_p95_ms": 12.957,
+        "primitives_before": 21430940.0,
+        "primitives_current": 16929708.0
+      },
+      {
+        "view": "r18_rider_active",
+        "pre_partition_p95_ms": 18.104,
+        "current_p95_ms": 17.939,
+        "primitives_before": 57177754.0,
+        "primitives_current": 46320912.0
+      }
+    ],
+    "scope": "Stationary cameras; comparison baseline predates court surface changes. No moving crowd/traffic benchmark."
+  },
+  "limits": [
+    "No cinematic acceptance. Repetition and empty slopes remain.",
+    "Full pedestrian/traffic simulation and final R15 photo archive remain outstanding."
+  ],
+  "resident": {
+    "runtime": {
+      "controller": "4d7ccd29e2e047a3006bf3a9a8b75107f07b07736d1a1c46318533bb3b22155f",
+      "fit": "a9df93aee35791d437c611680ea324c0b4bcfaab1bedccf6b1a1faa617d5ec83",
+      "model": "dfb43c77aff8beae940bceb906ad667f8b6e5ef85b1613393995a0a7091a94f3"
+    },
+    "editable_source_sha256": "931adca794f279272a642a58d653fc96ac82225ccf81e304c3fb35d40a50e9c8",
+    "source_notice_sha256": "17474e386e0b9e1a700cc3d06b2b0882a2c376d9c6b49c7f8274409b8f8d2352",
+    "provenance": {
+      "model": "Female_Adult_14",
+      "provider": "Microsoft Rocketbox",
+      "commit": "0943055db6ec570bcef9f2c8b41c9e5467c808f9",
+      "license": "MIT",
+      "notice": "Copyright (c) 2020 Microsoft. Include full MIT copyright and permission notice.",
+      "license_url": "https://github.com/microsoft/Microsoft-Rocketbox/blob/0943055db6ec570bcef9f2c8b41c9e5467c808f9/LICENSE.md",
+      "files": [
+        {
+          "name": "f_sit_chair_idle_look_around.max.fbx",
+          "source": "https://raw.githubusercontent.com/microsoft/Microsoft-Rocketbox/0943055db6ec570bcef9f2c8b41c9e5467c808f9/Assets/Animations/all_animations_max_motextr_static/f_sit_chair_idle_look_around.max.fbx",
+          "bytes": 2166576,
+          "sha256": "8a6129aece3d382cecb4db5c3ef62a9e2826ef776a7cbec84eb5e28771d699f9"
+        },
+        {
+          "name": "f_sit_chair_idle_neutral_01.max.fbx",
+          "source": "https://raw.githubusercontent.com/microsoft/Microsoft-Rocketbox/0943055db6ec570bcef9f2c8b41c9e5467c808f9/Assets/Animations/all_animations_max_motextr_static/f_sit_chair_idle_neutral_01.max.fbx",
+          "bytes": 5562720,
+          "sha256": "45a11c11fa22364eb0ea0a0f20c05771aeefa92a7fbe89361eed90e218e58abb"
+        },
+        {
+          "name": "Female_Adult_14_facial.fbx",
+          "source": "https://raw.githubusercontent.com/microsoft/Microsoft-Rocketbox/0943055db6ec570bcef9f2c8b41c9e5467c808f9/Assets/Avatars/Adults/Female_Adult_14/Export/Female_Adult_14_facial.fbx",
+          "bytes": 2148192,
+          "sha256": "8fcaa34c4ed5c3ea5f6b9add7e9a39ac0184d11232688102ef0811ef8cf2914c"
+        },
+        {
+          "name": "f017_body_color.tga",
+          "source": "https://raw.githubusercontent.com/microsoft/Microsoft-Rocketbox/0943055db6ec570bcef9f2c8b41c9e5467c808f9/Assets/Avatars/Adults/Female_Adult_14/Textures/f017_body_color.tga",
+          "bytes": 12582956,
+          "sha256": "feed2c59b6c4eb2f673cd37d92392686867b4507adf4862c2c3e579f0df51b94"
+        },
+        {
+          "name": "f017_body_normal.tga",
+          "source": "https://raw.githubusercontent.com/microsoft/Microsoft-Rocketbox/0943055db6ec570bcef9f2c8b41c9e5467c808f9/Assets/Avatars/Adults/Female_Adult_14/Textures/f017_body_normal.tga",
+          "bytes": 12582956,
+          "sha256": "7bf6a8d41d7453ec17a6fd744ecf9d3059bf657160c97bcdd30c7505d638b718"
+        },
+        {
+          "name": "f017_body_specular.tga",
+          "source": "https://raw.githubusercontent.com/microsoft/Microsoft-Rocketbox/0943055db6ec570bcef9f2c8b41c9e5467c808f9/Assets/Avatars/Adults/Female_Adult_14/Textures/f017_body_specular.tga",
+          "bytes": 12582956,
+          "sha256": "4aad81b133ad46ebafe59e4eba824091b4ca8c6a92d9c6320c7b7466e8aced2b"
+        },
+        {
+          "name": "f017_head_color.tga",
+          "source": "https://raw.githubusercontent.com/microsoft/Microsoft-Rocketbox/0943055db6ec570bcef9f2c8b41c9e5467c808f9/Assets/Avatars/Adults/Female_Adult_14/Textures/f017_head_color.tga",
+          "bytes": 12582956,
+          "sha256": "c5805bb8b3a1c1ddae011696ee742747c9efefa4be5db4a059251c452031023a"
+        },
+        {
+          "name": "f017_head_normal.tga",
+          "source": "https://raw.githubusercontent.com/microsoft/Microsoft-Rocketbox/0943055db6ec570bcef9f2c8b41c9e5467c808f9/Assets/Avatars/Adults/Female_Adult_14/Textures/f017_head_normal.tga",
+          "bytes": 12582956,
+          "sha256": "9205d45b4e7ae40050ea7f6587a264671eefe51dac0f43ea140ce6156400690d"
+        },
+        {
+          "name": "f017_head_specular.tga",
+          "source": "https://raw.githubusercontent.com/microsoft/Microsoft-Rocketbox/0943055db6ec570bcef9f2c8b41c9e5467c808f9/Assets/Avatars/Adults/Female_Adult_14/Textures/f017_head_specular.tga",
+          "bytes": 12582956,
+          "sha256": "6ea5e1cb8627900c2de29d6921d3183d060ad008f3172a0b84d7ede3fab0d0a1"
+        },
+        {
+          "name": "f017_opacity_color.tga",
+          "source": "https://raw.githubusercontent.com/microsoft/Microsoft-Rocketbox/0943055db6ec570bcef9f2c8b41c9e5467c808f9/Assets/Avatars/Adults/Female_Adult_14/Textures/f017_opacity_color.tga",
+          "bytes": 16777260,
+          "sha256": "2d72503c645408d279d691e2545eddb446b82db57a7519f537bb8fe33fde26aa"
+        }
+      ],
+      "retrieved_utc": "2026-11-20T13:37:39.397855+00:00",
+      "modifications": "Texture relink, material conversion, retain two eyelid and two smile shapes, seated motion retarget and resampling. Two-bone leg corrections fit the shoe soles to the slope at the bench. Source FBX files preserved. Both motions are from the same pinned Microsoft Rocketbox repository."
+    },
+    "placement": {
+      "arc": 0,
+      "theta": 307,
+      "yaw": 6.981317007977318,
+      "position": [
+        -25.42116928100586,
+        29.43541717529297,
+        -68.77413177490234
+      ],
+      "blender_local_skin_contacts": {
+        "seat": [
+          0.05022330582141876,
+          -0.08003363758325577,
+          0.4858380854129791
+        ],
+        "left": [
+          -0.04047856852412224,
+          -0.33755049109458923,
+          0.03870702534914017
+        ],
+        "right": [
+          0.025839075446128845,
+          -0.4614705443382263,
+          0.021875595673918724
+        ]
+      },
+      "skin_samples": {
+        "seat": [
+          -25.33125114440918,
+          29.921255111694336,
+          -68.74510192871094
+        ],
+        "left": [
+          -25.235204696655273,
+          29.474124908447266,
+          -68.48953247070312
+        ],
+        "right": [
+          -25.104747772216797,
+          29.457292556762695,
+          -68.4372329711914
+        ]
+      },
+      "surface_hits": {
+        "seat": [
+          29.91617202758789,
+          "R20_Tree_seat_wood"
+        ],
+        "left": [
+          29.474124908447266,
+          "R20_Court_paving_step_concrete"
+        ],
+        "right": [
+          29.457292556762695,
+          "R20_Court_paving_step_concrete"
+        ]
+      },
+      "gaps_m": {
+        "seat": 0.0050830841064453125,
+        "left": 0.0,
+        "right": 0.0
+      },
+      "score": 0.0050830841064453125
+    },
+    "contact_ranges_m": {
+      "seat": [
+        -0.00469970703125,
+        0.008020401000976562
+      ],
+      "left": [
+        -0.0014476776123046875,
+        0.001720428466796875
+      ],
+      "right": [
+        -0.001354217529296875,
+        0.0008697509765625
+      ]
+    },
+    "samples_per_action": 65,
+    "court_performance": [
+      {
+        "draw_calls": 1535.0,
+        "mean_ms": 7.19097083333333,
+        "p50_ms": 7.226,
+        "p95_ms": 8.058,
+        "primitives": 9189434.0,
+        "samples": 240,
+        "static_memory_bytes": 494234232.0,
+        "view": "r20_tree_court"
+      },
+      {
+        "draw_calls": 1260.0,
+        "mean_ms": 7.55428333333333,
+        "p50_ms": 7.12,
+        "p95_ms": 10.077,
+        "primitives": 7828953.0,
+        "samples": 240,
+        "static_memory_bytes": 494238612.0,
+        "view": "r20_neighbor"
+      },
+      {
+        "draw_calls": 5286.0,
+        "mean_ms": 20.2094833333333,
+        "p50_ms": 20.237,
+        "p95_ms": 21.939,
+        "primitives": 34872264.0,
+        "samples": 240,
+        "static_memory_bytes": 500693551.0,
+        "view": "r20_seated_neighbor"
+      }
+    ],
+    "resident_on_off_p95_ms": {
+      "off_a": {
+        "r20_tree_court": 11.958,
+        "r20_seated_neighbor": 24.069,
+        "r18_rider_active": 27.08
+      },
+      "on": {
+        "r20_tree_court": 12.431,
+        "r20_seated_neighbor": 24.321,
+        "r18_rider_active": 23.739
+      },
+      "off_b": {
+        "r20_tree_court": 11.979,
+        "r20_seated_neighbor": 22.406,
+        "r18_rider_active": 22.254
+      }
+    },
+    "video": {
+      "first_frame": 30,
+      "fps": 30,
+      "greeting_trigger_frame": 45,
+      "profile_sha256": "a65f9b5ad1ac5f434445a921b5af115fa7bd748a8d11a6937d09f24543f54c45",
+      "requested_dimensions": [
+        1280,
+        720
+      ],
+      "scene": {
+        "controller": "4d7ccd29e2e047a3006bf3a9a8b75107f07b07736d1a1c46318533bb3b22155f",
+        "fit": "a9df93aee35791d437c611680ea324c0b4bcfaab1bedccf6b1a1faa617d5ec83",
+        "model": "dfb43c77aff8beae940bceb906ad667f8b6e5ef85b1613393995a0a7091a94f3"
+      },
+      "take_frames": 262,
+      "trigger": "Scripted greeting on the actual resident controller. No recorded player input or voice.",
+      "view": "r20_neighbor",
+      "raw_avi_sha256": "0f318b822f128145e940329ec5166d60ce88b07f0ba154534a71f4cd41056d57",
+      "mp4_sha256": "92e430f71d109410e70437c4c4012487816d1bf310f57dbdbf5fe6260e4030c7",
+      "source_frame_range": [
+        32,
+        293
+      ],
+      "encoding": "One continuous shot. Startup trimmed, H.264 video only, no grading or animation edits."
+    },
+    "desktop_texture_imports": {
+      "court_resident_Map #1.png.import": "5859f708ed0244d18f52c117ff8ccf0892e605509b69dfabce17e61f588627bd",
+      "court_resident_Map #3.png.import": "029b024ee4f0ad5bdfb68aad04c6bb7cddee6cbae3ec97d98744fb6ea5fae203",
+      "court_resident_Map #5.png.import": "2a93f9f26fee02cf83613b8810e2a5ad6b8453394402a7e84c2666ae49a3f0bc",
+      "court_resident_Map #7.png.import": "2feaa293b406f7d58e9dce342dfcf5ad3306acf012022f293c49ef525bf71acf",
+      "court_resident_Map #9.png.import": "394d5614ff6d01ae7b1df59433fc4140652078b5b6ce44891b7fb7e6dfe978c1"
+    },
+    "resident_qa_script": "30fdb2008ed7cf3bd4a0d9339aa5c5cf2c8de4a540439919227d70060642cf67",
+    "scope": "One seated neighbor with two skeletal actions, paired eyelid and smile controls, contextual directions and distance-based animation sampling."
+  },
+  "ambient_occlusion_trial": {
+    "source_revision": "R20_lane_11_internal",
+    "adopted_in": "R20_lane_12_internal",
+    "variable": "lighting.ssao_half_size",
+    "other_profile_fields_equal": true,
+    "native_viewport": [
+      1920,
+      1080
+    ],
+    "p95_ms": {
+      "full": {
+        "r20_neighbor": 10.484,
+        "r20_seated_neighbor": 23.663,
+        "central_steps": 23.004
+      },
+      "half": {
+        "r20_neighbor": 10.53,
+        "r20_seated_neighbor": 20.501,
+        "central_steps": 19.182
+      },
+      "full_repeat": {
+        "r20_neighbor": 10.67,
+        "r20_seated_neighbor": 23.552,
+        "central_steps": 21.207
+      }
+    },
+    "visual_review": "Compared four ungraded 1600x900 views, inspected the face, hair, bench anchors, pavement edge and stairs at native pixel scale. Half resolution retained for regression and motion review.",
+    "fixed_image_differences": {
+      "godot_central_steps": {
+        "mean_abs_per_channel": 0.2151,
+        "pct_pixels_max_channel_over_8": 0.0025,
+        "max_channel_delta": 18
+      },
+      "godot_r20_neighbor": {
+        "mean_abs_per_channel": 0.1178,
+        "pct_pixels_max_channel_over_8": 0.0003,
+        "max_channel_delta": 10
+      },
+      "godot_r20_seated_neighbor": {
+        "mean_abs_per_channel": 0.1872,
+        "pct_pixels_max_channel_over_8": 0.0003,
+        "max_channel_delta": 9
+      },
+      "godot_r20_tree_court": {
+        "mean_abs_per_channel": 0.1048,
+        "pct_pixels_max_channel_over_8": 0.0004,
+        "max_channel_delta": 9
+      }
+    }
+  },
+  "lighting_motion_qa": {
+    "frames_compared": 262,
+    "fps": 30,
+    "native_dimensions": [
+      1280,
+      720
+    ],
+    "reference_revision": "R20_lane_11_internal",
+    "working_revision": "R20_lane_12_internal",
+    "source_avi_sha256": [
+      "90ee594dd9dffed4db8c3c35861824e85c28347d47d646e3413f64490399c35e",
+      "0f318b822f128145e940329ec5166d60ce88b07f0ba154534a71f4cd41056d57"
+    ],
+    "method": "Matched uncut motion at the same fixed camera and greeting frame. MJPEG decoded; intensity error is on a 320x180 box-filtered full frame. Temporal luma variation uses a static crop at original scale.",
+    "bench_edge_crop_xyxy": [
+      175,
+      395,
+      439,
+      680
+    ],
+    "full_frame_mean_abs_0_255": 0.21078264153944024,
+    "largest_single_frame_mean_abs_0_255": 0.21447916666666667,
+    "bench_mean_abs_between_consecutive_frames_0_255": {
+      "full_size": 0.006294646403539325,
+      "half_size": 0.005511100111826065
+    }
+  },
+  "roof_and_entrance_lighting_qa": {
+    "roofscape": {
+      "source_image_sha256": [
+        "c7f9c36061e44599ea6302f595bff11974045e5dfefaf5e21ae92ff9eef9db72",
+        "81fe240924ac038b71ce647e55be65236bfcb482c541049b7f5a046ba9a3aed3"
+      ],
+      "position": [
+        14.0,
+        64.0,
+        20.0
+      ],
+      "mean_abs_rgb_0_255": 0.12974606481481482,
+      "pct_pixels_with_max_channel_over_8": 0.0004166666666666667
+    },
+    "residential_entry": {
+      "source_image_sha256": [
+        "3cc8fb0d6fb0daee5dc47e791a39efb7a272e581d3f46ac4df8787854adc6103",
+        "bb870edb5d287ddcd5bc5795ad2070c3587403fcda7c2f375687701208878d8f"
+      ],
+      "position": [
+        -43.0,
+        17.742,
+        22.0
+      ],
+      "mean_abs_rgb_0_255": 0.19313287037037036,
+      "pct_pixels_with_max_channel_over_8": 0.006319444444444444
+    }
+  },
+  "preceding_verified_sources": "work/checkpoints/R20_lane_11"
+}

@@ -1,0 +1,11 @@
+Blender 4.3.2 (hash 32f5fdce0a0a built 2024-12-17 03:35:23)
+Read blend: "C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\chongqing_district.blend"
+Traceback (most recent call last):
+  File "C:\Users\尹久\Documents\重庆外卖王\work\fit_traffic_r24.py", line 20, in <module>
+    if not hits:raise RuntimeError(('Missing carriageway',key,x,z))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ('Missing carriageway', 'east', 90.1456, 95.5299)
+
+Error: script failed, file: 'work/fit_traffic_r24.py', exiting.
+
+Blender quit

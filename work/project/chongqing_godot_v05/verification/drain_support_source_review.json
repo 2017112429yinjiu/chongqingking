@@ -1,0 +1,252 @@
+{
+  "schema": "cq05_r15_independent_drain_source_review_v1",
+  "revision": 15,
+  "created_at_utc": "2026-11-19T15:05:40.169892+00:00",
+  "passed": true,
+  "status": "PASS_BOUNDED_SOURCE_REVIEW",
+  "source_freeze_accepted": true,
+  "final_scene_accepted": false,
+  "scope": "Read-only independent review of the R15 grate repair, actual support selection/build order, preserved fixtures, sole041 relocation and sole101 folded connection.",
+  "reviewed_source_sha256": {
+    "drain_support.py": "329c794e7f3d9a78d3e9c26af84506c8346ab057e8e284a13ab9e5c13f186376",
+    "urban_fabric.py": "3fa2c260406d610251d22607fa565bda53ddaafb01775a1338eccc403e3e29cc",
+    "build_district.py": "78b2dc9e0e6a5d364ae77d6d1cd74ff4415d105a6c6f5ed7fca3f9b5e2aa312a",
+    "landscape_v05.py": "f946830f0719e8a89b9f3545e4c7cc35dfa1c1ec9d343fb078d3e500c5a22555",
+    "district_geometry.py": "e27a4d1a625b5539674ce640c06012802b6f9d77e0191f996ac21a57185570ce"
+  },
+  "runtime_frozen_canonical_and_round8_snapshot": {
+    "main_gd_sha256": "29517fc2472682aae053e2e1eafc954379755e9b212a425088cdb834599cf56d",
+    "profile_sha256": "9d0c7b69153c7c84fea8ac544b602bf15ef6806afa75068856a6adba0da809af",
+    "note": "The previous delivery staging directory has been moved to preview_r14; that preview is not represented as the current R15 stage."
+  },
+  "build_order_and_sampling": {
+    "passed": true,
+    "outer_context_and_paving_built_before_sampler": true,
+    "roads_walks_court_built_before_sampler": true,
+    "terrain_recess_replacement_completed_before_sampler": true,
+    "late_distant_city_is_buildings_not_terrain": true,
+    "evaluated_mesh_with_modifier_stack": true,
+    "actual_matrix_world_applied": true,
+    "temporary_mesh_cleared": true,
+    "sampling_triangulation": "Temporary BEAUTY/BEAUTY/keep_custom_normals after existing modifiers, matching final export; removed after reading.",
+    "no_analytic_grate_height_fallback": true,
+    "incomplete_support_policy": "Raise SupportError and stop construction."
+  },
+  "sole041_relocation_independent_check": {
+    "passed": true,
+    "original_anchor_xy": [
+      41.98782980092244,
+      74.73611982054085
+    ],
+    "new_anchor_xy": [
+      41.988211866133625,
+      74.90611939120552
+    ],
+    "delta_xy": [
+      0.00038206521118411274,
+      0.16999957066467175
+    ],
+    "distance_m": 0.16999999999999507,
+    "uniform_footprint_translation_error_m": 0.0,
+    "uniform_all13_bar_line_translation_error_m": 0.0,
+    "wall_anchor_unchanged": true,
+    "original_footprint_xy": [
+      [
+        42.54818797742837,
+        74.89486084870607
+      ],
+      [
+        41.428190805990496,
+        74.89737798421503
+      ],
+      [
+        41.42908978295799,
+        75.29737697401426
+      ],
+      [
+        42.54908695439586,
+        75.2948598385053
+      ]
+    ],
+    "new_footprint_xy": [
+      [
+        42.548570042639554,
+        75.06486041937075
+      ],
+      [
+        41.42857287120168,
+        75.0673775548797
+      ],
+      [
+        41.42947184816917,
+        75.46737654467893
+      ],
+      [
+        42.549469019607045,
+        75.46485940916997
+      ]
+    ],
+    "actual_support_surface_names": [
+      "COL_Road_734116597_0_asphalt"
+    ],
+    "curb_projection_clearance_m_recomputed_from_recorded_actual_triangles": 0.017651052516425868,
+    "complete_bar_section_margin_m_recomputed": 0.01099999999998535,
+    "fresh_blender_curb_projection_clearance_m": 0.017651041736299108,
+    "fresh_blender_complete_bar_section_margin_m": 0.01099999925002629,
+    "required_visible_margin_m": 0.01,
+    "maximum_authorized_move_m": 0.25
+  },
+  "preservation": {
+    "other111_footprints_exactly_unchanged": true,
+    "other1443_bar_lines_exactly_unchanged": true,
+    "all112_wall_anchors_unchanged": true,
+    "other_urban_functions_ast_unchanged": true,
+    "rng_calls_and_constants_ast_unchanged": true,
+    "non_grate_geometry_exact_in_ground_same_adapter": true
+  },
+  "construction": {
+    "base_bottom_offset_m": -0.0115,
+    "base_top_offset_m": 0.0015,
+    "base_thickness_m": 0.013,
+    "bar_center_offset_m": 0.0065,
+    "bar_radius_m": 0.009,
+    "surface_selection": "Full projected actual triangle partition, splitting crossing height planes; not corner-only or average-height sampling.",
+    "ordinary_bars": "Each segment follows its own highest actual supporting plane; genuine height jumps are rejected.",
+    "sole101_fold": [
+      {
+        "grate_id": "Drain_grate_101",
+        "building_id": "A05",
+        "base_fold_count": 10,
+        "maximum_actual_base_boundary_step_m": 0.017000575415295316,
+        "riser_count": 12,
+        "maximum_actual_bar_step_m": 0.014535214652191542,
+        "authorization": {
+          "allowed": true,
+          "maximum_bar_riser_step_m": 0.016,
+          "maximum_base_fold_step_m": 0.018,
+          "scope": "Only Drain_grate_101 / A05 edge1 anchor(-28,-35.2), measured existing paving boundary; never a numerical seam"
+        }
+      }
+    ],
+    "numerical074_seam": [
+      {
+        "grate_id": "Drain_grate_074",
+        "treatment": "Extend one adjacent actual plane only across a measured float32 T-junction seam; ground itself is unchanged",
+        "original_missing_polygon_xy": [
+          [
+            -55.16031759873463,
+            89.83968240126536
+          ],
+          [
+            -55.16031819408978,
+            89.83968271805809
+          ],
+          [
+            -55.45605757131695,
+            89.54394502347235
+          ],
+          [
+            -55.45605587770868,
+            89.54394412229132
+          ]
+        ],
+        "original_missing_area_m2": 5.185677814311276e-07,
+        "maximum_strip_width_m": 1.8347915112503482e-06,
+        "float32_half_ulp_normal_bound_m": 4.046101293825794e-06,
+        "allowed_width_m": 4.046101293825794e-06,
+        "maximum_plane_extension_m": 1.8347931052921934e-06,
+        "adjacent_plane_height_difference_m": 9.929366910910176e-07,
+        "adjacent_surfaces": [
+          {
+            "surface_name": "COL_Terrain_200m_pavement",
+            "triangle_index": 50105
+          },
+          {
+            "surface_name": "COL_Terrain_200m_pavement",
+            "triangle_index": 50106
+          }
+        ]
+      }
+    ],
+    "scope_limits": "101 precise identity authorizes bar risers <=16mm and base edges <=18mm. Numeric seams retain raw positive missing area and require computed float32 normal bounds plus two actual continuous neighbouring planes. These do not relax the actual GLB 1mm vertical support gate."
+  },
+  "bounded_independent_fixture_reports": [
+    {
+      "path": "verification/round8/drain_support_independent_fixture_audit_final.json",
+      "sha256": "286845e88fc164b28749ff8f6247b7db7f7718e17662a0cb43ff191b60c20a95",
+      "passed": true,
+      "scope": "4 source fitter fixtures in both input orders; same 8 actual checker partitions plus 1cm hole, no support, and exact internal-ridge offset extrema.",
+      "binding_note": "Exact implementation-stage helper/checker SHA is retained in each original fixture report; final current source is separately bound by the completed actual Blender audit."
+    },
+    {
+      "path": "verification/round8/drain_numeric_seam_independent_audit.json",
+      "sha256": "11e478cb1aef2401d58f533a1ffe8d26632a743dd2001324e41d2a1ef9d71fbd",
+      "passed": true,
+      "scope": "The measured four-triangle grate074 seam, plus coordinate-precision and real-height-gap rejection controls only.",
+      "binding_note": "Exact implementation-stage helper/checker SHA is retained in each original fixture report; final current source is separately bound by the completed actual Blender audit."
+    },
+    {
+      "path": "verification/round8/drain_authorized_fold_independent_audit.json",
+      "sha256": "7f31e8d98f5f3032d179afb86190f5ef7569865b2735f69fd85f0181a2241db3",
+      "passed": true,
+      "scope": "Only the already measured grate101/A05 actual support triangles and the authorized same-XY folded connection.",
+      "binding_note": "Exact implementation-stage helper/checker SHA is retained in each original fixture report; final current source is separately bound by the completed actual Blender audit."
+    },
+    {
+      "path": "verification/round8/drain_bar_contact_independent_fixture_audit.json",
+      "sha256": "4e8a1f7ce60e2d8eaee38fc1f894fd055dcbf88cf562066f1d5eaac68440101e",
+      "passed": true,
+      "scope": "Eight bounded analytic bar-contact, missing-support, internal-envelope and measured-seam checks only.",
+      "binding_note": "Exact implementation-stage helper/checker SHA is retained in each original fixture report; final current source is separately bound by the completed actual Blender audit."
+    },
+    {
+      "path": "verification/round8/drain_fold_checker_independent_fixture_audit.json",
+      "sha256": "32a019865732d81017fa9956a7c2eac8b078c2eadde9a930ecaa03ada322a049",
+      "passed": true,
+      "scope": "Only one analytic 14.5mm two-level folded base/bar, missing-web and missing-riser-side negative controls.",
+      "binding_note": "Exact implementation-stage helper/checker SHA is retained in each original fixture report; final current source is separately bound by the completed actual Blender audit."
+    }
+  ],
+  "full112_source_rehearsal": {
+    "path": "verification/round8/drain_source_acceptance.json",
+    "sha256": "524aa26da98e958a347347553eb7f28823918679598fa54fe95f4e2a464f6362",
+    "passed": true,
+    "grates": 112,
+    "bars": 1456,
+    "actual_R14_support_sha256": "9238d83015ff5206e6ef336b8da40c2a51be7e18f5c3822279be3d28d2ba016a",
+    "fresh_R15_export_acceptance": false
+  },
+  "fresh_blender_source_audit": {
+    "path": "source/outputs_r15/drain_grate_support_audit.json",
+    "sha256": "5e86df2c43d93cbe4d9f25c8bbb466f83d469c447c740d6aaa38d3995ea3868b",
+    "passed": true,
+    "grates": 112,
+    "bars": 1456,
+    "source_kind": "already_built_blender_mesh",
+    "snapshot_kind": "already_built_blender_evaluated_mesh",
+    "source_sha256": {
+      "drain_support.py": "329c794e7f3d9a78d3e9c26af84506c8346ab057e8e284a13ab9e5c13f186376",
+      "urban_fabric.py": "3fa2c260406d610251d22607fa565bda53ddaafb01775a1338eccc403e3e29cc",
+      "district_geometry.py": "e27a4d1a625b5539674ce640c06012802b6f9d77e0191f996ac21a57185570ce"
+    },
+    "failures": [],
+    "fresh_glb_measurement": false
+  },
+  "evidence_sha256": {
+    "drain_full_boundary_diagnosis.json": "3e38413bd105429008f94d73d0d4e841f4aa4a64b7d5011ebe1fba782855b7ad",
+    "drain_041_curb_relocation_options.json": "4a4c947809edf49be7dcf3f551eec3deee1211e2b3241869a83bf06c1461b2c3",
+    "drain_support_rehearsal.json": "578a976c03bf78a6d8ad8799a327123904d2fbb6cf560c5e42dc85e8dd7f8210",
+    "drain_source_footprints_r14.json": "59ee8445c91591b70b1959e3848070a4d3d1b5ecca9c35e18cf456f1fbcc4b85"
+  },
+  "production_source_modified_by_reviewer": false,
+  "engine_started_by_reviewer": false,
+  "remaining_acceptance": [
+    "Fresh R15 actual GLB must pass all112 bases and all1456 bars, including041/101.",
+    "Fresh full22 native captures must confirm removal of the original visible drain gaps and no new lighting/material regressions."
+  ],
+  "limits": [
+    "Source construction acceptance only; no final R15 exported geometry or native appearance acceptance is claimed.",
+    "Recorded reheasal geometry uses doubles; actual Blender evaluation now independently completed, and indexed GLB still requires its own check."
+  ],
+  "failures": []
+}

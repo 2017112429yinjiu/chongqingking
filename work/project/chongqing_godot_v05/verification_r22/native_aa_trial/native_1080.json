@@ -1,0 +1,214 @@
+{
+	"art_profile": {
+		"path": "res://assets/render_profile_r22.json",
+		"revision": "R22_district_06_internal",
+		"sha256": "26078094da44a0969e8f8cb95e7767078938b5fa5391c54ebe63b311449ae3f2"
+	},
+	"counter_r21": {
+		"character_sha256": "ac585e8a037fcf950fc51d46e0fa34c3c46f40ccf1241250273f2af4d4fc6cbc",
+		"portion_sha256": "a3347a027ace51dca3db48093942e821e8a925131045f10472a34bda3e5c5746",
+		"stock_sha256": "e2a11e6c8ac2b26c1b077d38f343f1cb810855c89f7539898c9d41ef8df661ec"
+	},
+	"court_resident": {
+		"controller": "4d7ccd29e2e047a3006bf3a9a8b75107f07b07736d1a1c46318533bb3b22155f",
+		"fit": "a9df93aee35791d437c611680ea324c0b4bcfaab1bedccf6b1a1faa617d5ec83",
+		"model": "dfb43c77aff8beae940bceb906ad667f8b6e5ef85b1613393995a0a7091a94f3"
+	},
+	"district_r21": {
+		"exterior_sectors": 84,
+		"exterior_trees": 623,
+		"layer_sha256": "fdb98c3bd8b65364f2d76c30a6263cbfca46c2cc991436662197d56faa76346c",
+		"layout_sha256": "ef08224edd2de91299f87bc4534130df8153d6b8c5ee42890763e5feeed2bbcb",
+		"near_plantings": 21,
+		"paving": [
+			"COL_Terrain_200m_yard_concrete",
+			"COL_Walk_OSM_734116594_0_step_concrete",
+			"Walk_details_OSM_734116594_0_painted_metal",
+			"COL_Walk_OSM_1328811307_0_step_concrete",
+			"Walk_details_OSM_1328811307_0_painted_metal",
+			"COL_Walk_Central_stair_lane_step_concrete",
+			"COL_Handrails_Central_stair_lane_painted_metal",
+			"COL_Walk_Narrow_upper_passage_step_concrete",
+			"COL_Walk_Upper_terrace_connection_step_concrete",
+			"COL_Walk_West_residential_link_step_concrete",
+			"COL_Handrails_West_residential_link_painted_metal",
+			"COL_Walk_East_photo_alley_step_concrete",
+			"Outer_ground_context_ground_dirt",
+			"R20_Court_paving_step_concrete"
+		],
+		"roof_structures": 35,
+		"terraces": 2,
+		"weather_atlas_sha256": "30596b17abf2da8ebe35e38aa7e3b8a57c36fd4d6971684b7cb9edaea02f0007",
+		"weathered_shell_surfaces": 104,
+		"window_fittings": 52
+	},
+	"framebuffer": [
+		1920,
+		1080
+	],
+	"gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+	"meter_lod": {
+		"sha256": "931e72fa0f34fe7bcdd65257f2b1c55316cde4ac61805fc81799cd777efc0ecc",
+		"sites": 112,
+		"source_triangles": 910876.0,
+		"switch_m": 18.0
+	},
+	"msaa_3d": 0,
+	"native_window_3d_disabled": true,
+	"post_aa_trial": true,
+	"river_r22": {
+		"axes": 2,
+		"fleet": 6,
+		"layer_sha256": "7e6e4ebf4f54513ae6492baba5c02e1a6571735ef7e7cd5e4a6dff7847232f87",
+		"layout_sha256": "ff239e78712fbf074fb9a50d180f6288fd4198ac926f30e8054cb51b91ef6a45",
+		"mapped_buildings": 14,
+		"source_plan_sha256": "bbae7145d99a6dba9f3d46c13ac8a89fcf2b617c923537b34a2aa9dea3f62932",
+		"terrain": {
+			"Outer_ground_context_ground_dirt": {
+				"replacement": "R22_Bank_Outer",
+				"triangles": 40728.0,
+				"vertices": 21360.0
+			},
+			"R19_Distant_relief_distant19": {
+				"replacement": "R22_Bank_Relief",
+				"triangles": 111295.0,
+				"vertices": 55912.0
+			}
+		}
+	},
+	"roofs_r22": {
+		"canvas_shader_sha256": "2c79d2d0b0fb203bf4e343ea7bfc505d17eb4912e4c965330339cfcb1771ab4a",
+		"decks": 13,
+		"layer_sha256": "1bd3e44caf3cddd9ce47095815698725b45fed697f122c636a4def0b67b85c44",
+		"layout_sha256": "226528a93e1282d3c6185db6c62c0cfcdb50c5383076a9705ce07ef6f0f81031",
+		"sockets": 6,
+		"stations": 12
+	},
+	"runtime_sha256": {
+		"res://assets/fonts/cq_lane_ui.otf": "4f3d9d826af0232c736d27c7ec955bc41f17c4fbb8bb3589692e4efcf5366d17",
+		"res://assets/lane_r20/rinse.wav": "8674dce3de89f536a8d519dd21223164a327c91e574f216fad88db91ab74f1bf",
+		"res://assets/lane_r20/rinse_fixture.json": "8a0f267946522fd59fe99b298e18e6a4e1e4b95d1a3728bb4a73e4636fa2ff1a",
+		"res://assets/lane_r20/tree_seats.json": "060f2507ab6997cdc5cddc2d3b5a9eefdbd4b199b88466318eb6a983fd73a0e6",
+		"res://assets/river_r22/shore_masks.png": "8d02149256183b79a12328056618abc8b526f079c540b7a6fcb276cccd1d7cdd",
+		"res://scripts/counter_condiments.gd": "fa08ffe36271c3ae1db3ab206bbc9b05c74d84764b0c0d2fcd3d671824c4e803",
+		"res://scripts/district_r21.gd": "0db44aa84d164a723d53ef96f62904f4c5a76a69546d0fec96cbb106678a9f7a",
+		"res://scripts/explorer.gd": "1afd5f1161003cc17ec39a8aaa9cbda9161ab559bef41bce829686b84208803c",
+		"res://scripts/gameplay.gd": "4379b58c124fd90ec94850c7d004653ed5bff7881837622a3f6366c3f9a52b2b",
+		"res://scripts/main.gd": "bcc392cebc3894118344a733e8c9d006515698bf90c1b28618a6d971fc360be7",
+		"res://scripts/meter_detail_lod.gd": "2175ca3919c3728ef1db2fc7f8710ad1f39e15aa504306e25ae322e8448d45b3",
+		"res://scripts/qa_lane_r20.gd": "18f87f9f26eddd78d05dc617465ff5c4aac399b25eafc1c7cd2aec4417f5b40a",
+		"res://scripts/rinse_tap.gd": "a14c99c56d463b5fb690153a3e53c735623ac2eb09efe408e686efb99bba5fe9",
+		"res://scripts/river_r22.gd": "584019e0ea8ae7f6013c85e233cc2db8f552006cf35a73b57b210edfb70060e6",
+		"res://scripts/roofs_r22.gd": "f0e8b58d18e99148e3128026f69a9e4d3c45dcf50b07b19cab678a64d23c06ad",
+		"res://scripts/shopkeeper.gd": "b34f9b070efae4b0c4a5c619104e782b277b2482d31e4eaf25f3e1359052b5a8",
+		"res://scripts/shopkeeper_attention.gd": "b36275222a35552763acdc27f60687edc2e96a7e52560889480d709d2aa8c656",
+		"res://scripts/street_detail_r19.gd": "8dc39303ddfca91279a8c940439b1322526c406b823b324a8c9b099e81a469a0",
+		"res://scripts/takeaway_bag.gd": "f53ed8a685fccfbdd767c458dbef25cf85df1f33a5b7b3d3e4b5c90059df52a0",
+		"res://scripts/upper_lane_r20.gd": "0c61b1b914ad1f8d1ba0fbfb27889d1426d6635340d0867f62feda76d4f8d56c",
+		"res://shaders/breakfast_canvas_r22.gdshader": "2c79d2d0b0fb203bf4e343ea7bfc505d17eb4912e4c965330339cfcb1771ab4a",
+		"res://shaders/canopy_r21.gdshader": "8a02e64842c2b61ae025da990f7c1d7037dd3f24c338de4159d1eb895d596bab",
+		"res://shaders/exterior_r21.gdshader": "3b6a8584822522c97c527ea72fd9b33d31441343de73b4b5d89f0640b7755512",
+		"res://shaders/hanging_cotton_r20.gdshader": "9d48788f6d3b3beffde16f0f5a94c8d99eac36fa8a9c00950c5116c97c208754",
+		"res://shaders/paving_r21.gdshader": "81bb72e0ab502c8a6e737fb20cafdc549da4e2bd5bf90fdaec72b75767b5fe2e",
+		"res://shaders/rinse_water.gdshader": "1a1c4d8f5d478384ae1cdec390d94903b83adf78096bc050116eee3354fee277",
+		"res://shaders/river_foliage_r22.gdshader": "625e26697fc1f7c0a7900774572b024157fdfb072e45b46207655130258c5391",
+		"res://shaders/river_r22.gdshader": "b44464750600087424a996e73d6cbf26891f2367df9f47ad6add66c0fea4cd79",
+		"res://shaders/riverbank_r22.gdshader": "71572bdd1e25f2d3cc3389eb72aad132cda52e7f5084cba4722ea467e6a47148",
+		"res://shaders/sky_visibility_r20.gdshaderinc": "14a770eab2dc29951adb2d5c9a17b4121b9a5bbf0e74d31e48743b8828985b7d",
+		"res://shaders/street_surface_r19.gdshader": "2add213f3e09f92d05767b23a0bc31c453d084bbf8d04342485c64affaf95aa5",
+		"res://shaders/worn_rail_r21.gdshader": "14fe938ef6c6874fa67680e154f445eda0122976eb478dd5b3282417f5ada7c7"
+	},
+	"scale": 1.0,
+	"screen_space_aa": 1,
+	"street_layer": {
+		"asset": "res://assets/street_r19/street_life.glb",
+		"enabled": true,
+		"manifest_sha256": "b0ec626c4096ddc6df5e1444e21294346990e8faf21e62fb5bcecd77d2ae0e17",
+		"replaced": [
+			"Type_梯坎小面",
+			"Resident_waste_14_bin_00",
+			"Resident_waste_14_bin_01",
+			"Resident_waste_14_bin_02",
+			"Resident_waste_14_bin_03",
+			"Resident_waste_14_bagA_00",
+			"Resident_waste_14_bagB_00",
+			"Resident_waste_14_crate_00",
+			"Authored_distant_hill_ridges_hill_near",
+			"Authored_distant_hill_ridges_hill_far",
+			"B_A01_noodle_details_faded_red",
+			"B_A01_noodle_details_curtain_beige"
+		],
+		"sha256": "1c40ae7ed04e8bf3f5f7956eaf630a098890e62a9c142f3e846c9ee15d530bad",
+		"source_revision": "R19_scene_05"
+	},
+	"upper_lane": {
+		"enabled": true,
+		"model_sha256": "16dabbe6c51b1ff130153d68092dc84daa509ba4538f10152f85d4e8ae53be37",
+		"sky_sha256": {
+			"res://assets/lane_r20/alley_sky.png": "c8b799570de19d6acd2e5c822aa095807d6dc3b107bd4886e66caef438cf7d3b",
+			"res://assets/lane_r20/shop_sky.png": "8d5b169cfd0bf9cc799dec67d02fde5ebbc2558a3a79dc5c91fd85fbc98dd188"
+		}
+	},
+	"views": [
+		{
+			"engine_texture_memory_bytes": 4543582720,
+			"engine_video_memory_bytes": 5361705664,
+			"fov": 59.0,
+			"frame_interval_p95_ms": 18.138,
+			"gpu_p50_ms": 16.3099994659424,
+			"gpu_p95_ms": 17.2140007019043,
+			"position": "(-20.0, 14.0323, 52.0)",
+			"readback_sha256": "cab5067ac559038dcb6f2908c5a67586544e5a539b0468d9ed70d0d84cd765be",
+			"samples": 240,
+			"view": "central_steps"
+		},
+		{
+			"engine_texture_memory_bytes": 4543582720,
+			"engine_video_memory_bytes": 5361705664,
+			"fov": 59.0,
+			"frame_interval_p95_ms": 15.732,
+			"gpu_p50_ms": 13.9390001296997,
+			"gpu_p95_ms": 14.7980003356934,
+			"position": "(14.0, 64.0, 20.0)",
+			"readback_sha256": "41f68b9cb90b1c3b23b6998103b62a58d7aa53a1fb4f19babf4ca3984c1c32b9",
+			"samples": 240,
+			"view": "roofscape"
+		},
+		{
+			"engine_texture_memory_bytes": 4553544192,
+			"engine_video_memory_bytes": 5374556608,
+			"fov": 56.0,
+			"frame_interval_p95_ms": 9.228,
+			"gpu_p50_ms": 7.67899990081787,
+			"gpu_p95_ms": 8.27799987792969,
+			"position": "(-27.0, 12.56, 56.2)",
+			"readback_sha256": "f68cf34f681b15a238c24513c4f27f2ca903802b68baed9cc9fa5cca86f46ac8",
+			"samples": 240,
+			"view": "r22_breakfast"
+		},
+		{
+			"engine_texture_memory_bytes": 4553544192,
+			"engine_video_memory_bytes": 5374556608,
+			"fov": 52.0,
+			"frame_interval_p95_ms": 4.687,
+			"gpu_p50_ms": 3.55900001525879,
+			"gpu_p95_ms": 3.83200001716614,
+			"position": "(-45.0, 11.58007, 66.0)",
+			"readback_sha256": "81182696f1acf3adb2c48c10847fb981c581d00a8f7579f9612869a46d5be955",
+			"samples": 240,
+			"view": "r22_river_street"
+		},
+		{
+			"engine_texture_memory_bytes": 4553544192,
+			"engine_video_memory_bytes": 5374556608,
+			"fov": 59.0,
+			"frame_interval_p95_ms": 4.595,
+			"gpu_p50_ms": 2.36899995803833,
+			"gpu_p95_ms": 2.57500004768372,
+			"position": "(-75.0, 88.0, 66.0)",
+			"readback_sha256": "677b94d6b75b75ce7791bd3fdf9ef5df316c252d96780ca80ea48b1c2d08504c",
+			"samples": 240,
+			"view": "r22_river_overview"
+		}
+	]
+}

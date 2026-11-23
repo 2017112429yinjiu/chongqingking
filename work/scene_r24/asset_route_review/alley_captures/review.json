@@ -1,0 +1,58 @@
+{
+  "along": {
+    "eye_offset_in_asset_units": 155.0,
+    "surface_y": 135.155029296875,
+    "z_offset_from_probe": 0.0
+  },
+  "bounds_min": [
+    -2414.22387695313,
+    -9.911376953125,
+    -406.588806152344
+  ],
+  "bounds_size": [
+    5368.9111328125,
+    622.220703125,
+    596.813415527344
+  ],
+  "cameras": [
+    {
+      "name": "map",
+      "position": "(270.2317, 8457.745, -108.1821)",
+      "sha256": "0ce91379969c504c2bf50de561633da64fc08e5846fd0ab6e72df9ff508a933d"
+    },
+    {
+      "name": "overview",
+      "position": "(3598.957, 3898.37, 4186.947)",
+      "sha256": "2163c688321cc1d076d0b022a36dbfab7d8e68f8541d69b2c39b24252d35159e"
+    },
+    {
+      "name": "along",
+      "position": "(-982.0001, 290.155, -39.0)",
+      "sha256": "8afaa1edc2f5f47afdaff09ae2edc439523f22ecfde2612c644b9cb7d44ff88f"
+    },
+    {
+      "name": "return",
+      "position": "(1147.0, 167.0959, -58.0)",
+      "sha256": "a509b1cc8c2257b4c1f5152cfa02caf3c3de1d300159d537d7511b4122d1e97b"
+    },
+    {
+      "name": "opposite",
+      "position": "(1147.0, 167.0959, 262.0)",
+      "sha256": "802d75862d6d899066ce221920e6d3b031c8669c9e75d89f7419be4c7b9f8858"
+    }
+  ],
+  "engine": "4.6.3-stable (official)",
+  "mesh_instances": 2,
+  "opposite": {
+    "eye_offset_in_asset_units": 155.0,
+    "surface_y": 12.095947265625,
+    "z_offset_from_probe": 320.0
+  },
+  "rendered_triangles": 77476,
+  "return": {
+    "eye_offset_in_asset_units": 155.0,
+    "surface_y": 12.095947265625,
+    "z_offset_from_probe": 0.0
+  },
+  "source_sha256": "88106fbb6fa123e877a0fd5a6f9d34927b1c9b1e5848d8523491deb68a2b893e"
+}

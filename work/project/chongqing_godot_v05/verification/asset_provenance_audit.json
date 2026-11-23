@@ -1,0 +1,754 @@
+{
+  "passed": true,
+  "errors": [],
+  "scope": "Active source dependency files, source checksums, prepared model library and optional exported GLB; visual quality is verified separately in native Godot.",
+  "surface_definitions": 31,
+  "selected_unique_maps": 73,
+  "material_files": [
+    {
+      "path": "asphalt/asphalt_02_diff_1k.jpg",
+      "exists": true,
+      "bytes": 731707,
+      "sha256": "1aa5ce99f58a625c71d48cfc3e68b65ca85ccb00f39e045c0a928608a0ea25ed",
+      "matches_record": true
+    },
+    {
+      "path": "asphalt/asphalt_02_nor_gl_1k.jpg",
+      "exists": true,
+      "bytes": 1240122,
+      "sha256": "42a1c381b53204e83a982db2864479a30bc127bbdeebb1006f8ee51bff099df3",
+      "matches_record": true
+    },
+    {
+      "path": "asphalt/asphalt_02_rough_1k.jpg",
+      "exists": true,
+      "bytes": 544032,
+      "sha256": "70ba3edc65525eb4dc366cf010ca7ae0bd34e0251ff0225c2dad627a873d0712",
+      "matches_record": true
+    },
+    {
+      "path": "bark/japanese_camphor_bark_diff_1k.jpg",
+      "exists": true,
+      "bytes": 1058720,
+      "sha256": "100c1c052c9b0305c4d95bcb845a2bdc44cd261946aac16146319e2f5fcb4fbc",
+      "matches_record": true
+    },
+    {
+      "path": "bark/japanese_camphor_bark_nor_gl_1k.jpg",
+      "exists": true,
+      "bytes": 1283697,
+      "sha256": "633567973b9d79ce54c33c50632771f80eb794904f367b584f7b21c1ad8a34d5",
+      "matches_record": true
+    },
+    {
+      "path": "bark/japanese_camphor_bark_rough_1k.jpg",
+      "exists": true,
+      "bytes": 527928,
+      "sha256": "bd8f3d6fce26a70b857340e5f76da2211da80f5b3d0be2b9fef64e0072c09289",
+      "matches_record": true
+    },
+    {
+      "path": "brick/brick_wall_09_diff_1k.jpg",
+      "exists": true,
+      "bytes": 777371,
+      "sha256": "7d42d3c1de8cd5c37cae15644e733040e7165ec7ee961fc9a8656271409d6e4b",
+      "matches_record": true
+    },
+    {
+      "path": "brick/brick_wall_09_nor_gl_1k.jpg",
+      "exists": true,
+      "bytes": 1039733,
+      "sha256": "5c66ecb5e97204ae81a5080c3550cf40f4ac8ea5c7566690b15986522f0fc2ce",
+      "matches_record": true
+    },
+    {
+      "path": "brick/brick_wall_09_rough_1k.jpg",
+      "exists": true,
+      "bytes": 433465,
+      "sha256": "d933f5a4915a4422f9953bed32f26d3f498283585608fafecc1b94a80df1850b",
+      "matches_record": true
+    },
+    {
+      "path": "concrete/concrete_wall_006_diff_2k.jpg",
+      "exists": true,
+      "bytes": 3109558,
+      "sha256": "daee26f5b5dae37e3fb2947c64f4045fd4e6d3b89884eb0d878ba6414746e8e8",
+      "matches_record": true
+    },
+    {
+      "path": "concrete/concrete_wall_006_nor_gl_2k.jpg",
+      "exists": true,
+      "bytes": 4939794,
+      "sha256": "22bd9c17a6dfe3441f671cba1b40e2329767c79b6472004d1633aeac368d5210",
+      "matches_record": true
+    },
+    {
+      "path": "concrete/concrete_wall_006_rough_2k.jpg",
+      "exists": true,
+      "bytes": 1102752,
+      "sha256": "4c463e871c50def9252c38a81e06624ff2fcd8c9ffcdd54534524efacba286ed",
+      "matches_record": true
+    },
+    {
+      "path": "court_green/court_green_diff.jpg",
+      "exists": true,
+      "bytes": 1104835,
+      "sha256": "ebabbf71b2ce471d083badf215ede16ed16a1290ab14ed19b6211e8be7fbba9b",
+      "matches_record": true
+    },
+    {
+      "path": "court_green/court_green_nor_gl.jpg",
+      "exists": true,
+      "bytes": 1705747,
+      "sha256": "efc5ca79c8e4363438e4c6d87b2ab4e9f7e459b73ba981938faa494df9e90c9e",
+      "matches_record": true
+    },
+    {
+      "path": "court_green/court_green_rough.jpg",
+      "exists": true,
+      "bytes": 605072,
+      "sha256": "c72a9e525d7d808777353632cf4675a6836fee0cdffe8e626518fbea4f6cd7e0",
+      "matches_record": true
+    },
+    {
+      "path": "court_red/court_red_diff.jpg",
+      "exists": true,
+      "bytes": 1102250,
+      "sha256": "fa02991730c62d54ba9ce9a840c2de9511ae9996b56957a139a1d8fdc8a53208",
+      "matches_record": true
+    },
+    {
+      "path": "court_red/court_red_nor_gl.jpg",
+      "exists": true,
+      "bytes": 1706410,
+      "sha256": "0215fe02febc386ad48838fac617aebe3841693ef8fc12928b6ce944d2b5abd5",
+      "matches_record": true
+    },
+    {
+      "path": "court_red/court_red_rough.jpg",
+      "exists": true,
+      "bytes": 605600,
+      "sha256": "fee426c45b3569d70303009eebd668f248c60ab3f2700ad4b81528e3bdebced2",
+      "matches_record": true
+    },
+    {
+      "path": "grime_streak/grime_streak_diff.png",
+      "exists": true,
+      "bytes": 302498,
+      "sha256": "d67c898ff031ec5fb7303801986fe3ea2284a66d0fbc78d48db197e4b344e811",
+      "matches_record": true
+    },
+    {
+      "path": "moss_grime/moss_grime_diff.png",
+      "exists": true,
+      "bytes": 617030,
+      "sha256": "e84e7cb11e50d00dcb0096247d9339cded45fd595932a547801a0a7f485d3099",
+      "matches_record": true
+    },
+    {
+      "path": "pavement/grey_tiles_diff_2k.jpg",
+      "exists": true,
+      "bytes": 2156903,
+      "sha256": "50a2b6eab72fa33e6baa8700f49912d75040f9ec23ce201ea360d3494111fe29",
+      "matches_record": true
+    },
+    {
+      "path": "pavement/grey_tiles_nor_gl_2k.jpg",
+      "exists": true,
+      "bytes": 1527309,
+      "sha256": "7d93a579daa9e954546201530a8a3ce1934ed4793f5eade17161ebe195868430",
+      "matches_record": true
+    },
+    {
+      "path": "plaster/plastered_wall_04_diff_1k.jpg",
+      "exists": true,
+      "bytes": 299230,
+      "sha256": "52d789111bbe93d311c22e49d28b56256593c8f84c75742642403da857a36503",
+      "matches_record": true
+    },
+    {
+      "path": "plaster/plastered_wall_04_nor_gl_1k.jpg",
+      "exists": true,
+      "bytes": 427268,
+      "sha256": "c0a41dc06e33072ec1156d89f3bd4b481a479616791d4e9df6c5ee7b3283db82",
+      "matches_record": true
+    },
+    {
+      "path": "plaster/plastered_wall_04_rough_1k.jpg",
+      "exists": true,
+      "bytes": 243061,
+      "sha256": "76587f1a3cf6bc009caaf3d1d7651ee52359e43ce91bf52e8a3ed07cff9db623",
+      "matches_record": true
+    },
+    {
+      "path": "roof_tiles/roof_tiles_diff.jpg",
+      "exists": true,
+      "bytes": 384174,
+      "sha256": "6bd87a97594b57e89cdf17cb0cfd912815b9d707613f56b15d9d07014818a915",
+      "matches_record": true
+    },
+    {
+      "path": "roof_tiles/roof_tiles_nor_gl.jpg",
+      "exists": true,
+      "bytes": 873269,
+      "sha256": "d54a00cfbda9ed50bd4ea8a5a2822f7b9bcdcb6c0a3973307bb7e160767f0de7",
+      "matches_record": true
+    },
+    {
+      "path": "roof_tiles/roof_tiles_rough.jpg",
+      "exists": true,
+      "bytes": 184993,
+      "sha256": "a698dd997ded46479a5cfd10becc954d5d497cb45ae02076a44586bf18f5dc7b",
+      "matches_record": true
+    },
+    {
+      "path": "rust_texture/rust_texture_diff.jpg",
+      "exists": true,
+      "bytes": 235464,
+      "sha256": "c35aa7f83102503b6d8eb62fe2adcf12e20a5e6247a84bdd561ab2b9d07e79fe",
+      "matches_record": true
+    },
+    {
+      "path": "rust_texture/rust_texture_nor_gl.jpg",
+      "exists": true,
+      "bytes": 490796,
+      "sha256": "36d964a936420e37dc0c291c89f25e5f7b9d6981e2b28b25ac336abf35048edb",
+      "matches_record": true
+    },
+    {
+      "path": "rust_texture/rust_texture_rough.jpg",
+      "exists": true,
+      "bytes": 142264,
+      "sha256": "f4203acbdbbd0768c4056db9badfc534fd08363f8a94bc646bcc81a1ce22f872",
+      "matches_record": true
+    },
+    {
+      "path": "scans/brick_dark/brick_wall_08_diff_2k.jpg",
+      "exists": true,
+      "bytes": 2939913,
+      "sha256": "e115c64fe0d10393f3cb3bbc46121c180a82ce1a4f8d4be3e8321397385ba89b",
+      "matches_record": true
+    },
+    {
+      "path": "tile/rounded_square_tiled_wall_diff_2k.jpg",
+      "exists": true,
+      "bytes": 2399426,
+      "sha256": "12b1f69125a526e95de030d40d760b993e4f257787cd18cd692fc34ed78c4d53",
+      "matches_record": true
+    },
+    {
+      "path": "tile/rounded_square_tiled_wall_nor_gl_2k.jpg",
+      "exists": true,
+      "bytes": 3271637,
+      "sha256": "df0534adb686a57fb480cb7779642dc618057b368f8f4a247329786332b2350d",
+      "matches_record": true
+    },
+    {
+      "path": "tile/rounded_square_tiled_wall_rough_2k.jpg",
+      "exists": true,
+      "bytes": 2285666,
+      "sha256": "b3cd0f4012c9fb9f88b677e4cff70d3bda29611b12c637c9797181d2533ae227",
+      "matches_record": true
+    },
+    {
+      "path": "tile_blue_v4/tile_blue_v4_diff.jpg",
+      "exists": true,
+      "bytes": 838708,
+      "sha256": "4d333560f5b07101eeafa0a09f8832c7cb20613cc322d003a562ca35a11e319b",
+      "matches_record": true
+    },
+    {
+      "path": "tile_blue_v4/tile_blue_v4_nor_gl.jpg",
+      "exists": true,
+      "bytes": 874507,
+      "sha256": "6075e84939ac549762a927111bee3bbcd20493578db90287f31670f3919de05a",
+      "matches_record": true
+    },
+    {
+      "path": "tile_blue_v4/tile_blue_v4_rough.jpg",
+      "exists": true,
+      "bytes": 804354,
+      "sha256": "a2b722a78d64cbd7575fbdc46e27374c9d9f2a52a3304dc6312ee239542a5ba1",
+      "matches_record": true
+    },
+    {
+      "path": "tile_cream_v4/tile_cream_v4_diff.jpg",
+      "exists": true,
+      "bytes": 944116,
+      "sha256": "741b7ffd780d58749dd386c7a4111fb613f20acfabd79f4645068d43565501d9",
+      "matches_record": true
+    },
+    {
+      "path": "tile_cream_v4/tile_cream_v4_nor_gl.jpg",
+      "exists": true,
+      "bytes": 874821,
+      "sha256": "2167e0df0c09b737ccdcd234b30b5312510c657990fd8163ea2663572debccb4",
+      "matches_record": true
+    },
+    {
+      "path": "tile_cream_v4/tile_cream_v4_rough.jpg",
+      "exists": true,
+      "bytes": 804297,
+      "sha256": "becc86272d959df82405c67901b8603126c1928af1490a56081579dcebb322d7",
+      "matches_record": true
+    },
+    {
+      "path": "v04_scans/concrete_floor_worn_001/concrete_floor_worn_001_diff_2k.jpg",
+      "exists": true,
+      "bytes": 482906,
+      "sha256": "e29b45cdcd6d02fae3c087c456196ffa750779a9b62e7071aa3831dc322a0cc4",
+      "matches_record": true
+    },
+    {
+      "path": "v04_scans/concrete_floor_worn_001/concrete_floor_worn_001_nor_gl_2k.jpg",
+      "exists": true,
+      "bytes": 870609,
+      "sha256": "3b782137e34d63fd59b2e92b4e27b2ee4d082caf9dd23f00dc7ab4da5513daef",
+      "matches_record": true
+    },
+    {
+      "path": "v04_scans/concrete_floor_worn_001/concrete_floor_worn_001_rough_2k.jpg",
+      "exists": true,
+      "bytes": 735249,
+      "sha256": "b904992f0d75da2c41edf832bbb838622cca076f48f7913065a152c3b640690e",
+      "matches_record": true
+    },
+    {
+      "path": "v04_scans/fabric_pattern_07/fabric_pattern_07_col_1_2k.jpg",
+      "exists": true,
+      "bytes": 2650991,
+      "sha256": "1f4941638b890d4535b1078067be8a831ca302d1e696ed959b4e4512de893cba",
+      "matches_record": true
+    },
+    {
+      "path": "v04_scans/fabric_pattern_07/fabric_pattern_07_nor_gl_2k.jpg",
+      "exists": true,
+      "bytes": 2572375,
+      "sha256": "84f15ee5f6b63e7e224051a22426c751cc1fe15a794efd001ebfdb5f84828602",
+      "matches_record": true
+    },
+    {
+      "path": "v04_scans/fabric_pattern_07/fabric_pattern_07_rough_2k.jpg",
+      "exists": true,
+      "bytes": 1657764,
+      "sha256": "be3e311614ee6f31d4cb4a774ed678b7a64189d3e1a55ad71033142185da270a",
+      "matches_record": true
+    },
+    {
+      "path": "v04_scans/plastered_wall_04/plastered_wall_04_diff_2k.jpg",
+      "exists": true,
+      "bytes": 1465312,
+      "sha256": "aaf0e693291d51d13531480625a942f950fed23f6b1d1008ee0e91f2a23a7b1e",
+      "matches_record": true
+    },
+    {
+      "path": "v04_scans/plastered_wall_04/plastered_wall_04_nor_gl_2k.jpg",
+      "exists": true,
+      "bytes": 1760685,
+      "sha256": "904f6ca0b569754502675b8891b5d6aad1d8a07f938e8a43cf385170a21a12dc",
+      "matches_record": true
+    },
+    {
+      "path": "v04_scans/plastered_wall_04/plastered_wall_04_rough_2k.jpg",
+      "exists": true,
+      "bytes": 1236406,
+      "sha256": "37302048eb2e60be2a73a7f803965097681e652b80b93d6d701cfc7fabc1e0a7",
+      "matches_record": true
+    },
+    {
+      "path": "v04_scans/rusty_painted_metal/rusty_painted_metal_diff_2k.jpg",
+      "exists": true,
+      "bytes": 1930544,
+      "sha256": "883118fafabb56304f9e33ea2da3c183379b1c1b1c5a4702fdc335b0cf84614f",
+      "matches_record": true
+    },
+    {
+      "path": "v04_scans/rusty_painted_metal/rusty_painted_metal_nor_gl_2k.jpg",
+      "exists": true,
+      "bytes": 2293576,
+      "sha256": "2289c10422d5082aea3cf37661008b281c4aec20f6d0b574df6d7887573eb70c",
+      "matches_record": true
+    },
+    {
+      "path": "v04_scans/rusty_painted_metal/rusty_painted_metal_rough_2k.jpg",
+      "exists": true,
+      "bytes": 1342923,
+      "sha256": "17e6a4cab6d42576ce0bffecc53ba364d18a40b5d941471273b947e6f347a3b5",
+      "matches_record": true
+    },
+    {
+      "path": "v04_scans/square_tiled_wall/square_tiled_wall_diff_2k.jpg",
+      "exists": true,
+      "bytes": 2211553,
+      "sha256": "4738c360c14c7b04f5dee07ef5ba724ab6ed8aeb0627ba0491468a79ba006314",
+      "matches_record": true
+    },
+    {
+      "path": "v04_scans/square_tiled_wall/square_tiled_wall_nor_gl_2k.jpg",
+      "exists": true,
+      "bytes": 3378250,
+      "sha256": "12967d41753ccc96129692fc9746a6a09a8978e9cc2ab0e4f82f854eac9e8f63",
+      "matches_record": true
+    },
+    {
+      "path": "v04_scans/square_tiled_wall/square_tiled_wall_rough_2k.jpg",
+      "exists": true,
+      "bytes": 1527270,
+      "sha256": "ff4b5ac825c0b29dc7e8f6a2046edbec449e16a130cec6e286a940c87b9ddf39",
+      "matches_record": true
+    },
+    {
+      "path": "v04_scans/stone_wall_05/stone_wall_05_diff_2k.jpg",
+      "exists": true,
+      "bytes": 3504038,
+      "sha256": "d3680c5ef2657aead18f9bfab93994555b8f05de4f4fecba18194cbe3a116b87",
+      "matches_record": true
+    },
+    {
+      "path": "v04_scans/stone_wall_05/stone_wall_05_nor_gl_2k.jpg",
+      "exists": true,
+      "bytes": 4874482,
+      "sha256": "14cd6f3fc1dcd1f95962cdf2806866a6608ae69c075a8ffbd1ebd75b2bb679ef",
+      "matches_record": true
+    },
+    {
+      "path": "v04_scans/stone_wall_05/stone_wall_05_rough_2k.jpg",
+      "exists": true,
+      "bytes": 1122076,
+      "sha256": "aead8f5c535fc22b1a3c46aa50679c43b37f279f7abce482115551b0f58a5b0e",
+      "matches_record": true
+    },
+    {
+      "path": "v05_scans/brick_wall_08/brick_wall_08_nor_gl_2k.jpg",
+      "exists": true,
+      "bytes": 4119217,
+      "sha256": "7e8404b29ef3af7b7cb949fee5441c48451bb21bf5bf24212c209262005f5604",
+      "matches_record": true
+    },
+    {
+      "path": "v05_scans/brick_wall_08/brick_wall_08_rough_2k.jpg",
+      "exists": true,
+      "bytes": 1953303,
+      "sha256": "9ad3fe0e754a7c1fd58ceaaab8db6d36edfae175971238c2afef20ee955e5355",
+      "matches_record": true
+    },
+    {
+      "path": "v05_scans/brown_mud_leaves_01/brown_mud_leaves_01_diff_2k.jpg",
+      "exists": true,
+      "bytes": 4539452,
+      "sha256": "29c997d77f56e4ea16d3e998a306be0c17fddb28ab4822657c7cd8249040ffda",
+      "matches_record": true
+    },
+    {
+      "path": "v05_scans/brown_mud_leaves_01/brown_mud_leaves_01_nor_gl_2k.jpg",
+      "exists": true,
+      "bytes": 5688696,
+      "sha256": "b6ec386e00d9d2a1c3a1da6a98a67066b0dfaa88ddb779341df29700cf081bdf",
+      "matches_record": true
+    },
+    {
+      "path": "v05_scans/brown_mud_leaves_01/brown_mud_leaves_01_rough_2k.jpg",
+      "exists": true,
+      "bytes": 2421908,
+      "sha256": "9556215f5fef905c37cdf19c77aef7822f124890f8fb7dcce65d57c5eafc0ca5",
+      "matches_record": true
+    },
+    {
+      "path": "v05_scans/leaf_scattered_gravel/leaf_scattered_gravel_diff_2k.jpg",
+      "exists": true,
+      "bytes": 3713229,
+      "sha256": "f81bd1e3b2395ea7c08c7afaf8646d98b6dd1eed588fe0569230f37da69fbd36",
+      "matches_record": true
+    },
+    {
+      "path": "v05_scans/leaf_scattered_gravel/leaf_scattered_gravel_nor_gl_2k.jpg",
+      "exists": true,
+      "bytes": 5327258,
+      "sha256": "68e43b0a8a09aa9f55b0786255d5757e4a843d04955f4fe4b9fcedc5066392c8",
+      "matches_record": true
+    },
+    {
+      "path": "v05_scans/leaf_scattered_gravel/leaf_scattered_gravel_rough_2k.jpg",
+      "exists": true,
+      "bytes": 2438034,
+      "sha256": "f2ef61e44cc32583d3e5d4b8e23a48c50caa851206d6f28a05201606027a0496",
+      "matches_record": true
+    },
+    {
+      "path": "v05_scans/stone_floor/stone_floor_diff_2k.jpg",
+      "exists": true,
+      "bytes": 3800807,
+      "sha256": "ce19d3cb1e683419b6a596e1baffbf2b429f970f8ddba81e391ad9a38f310ed8",
+      "matches_record": true
+    },
+    {
+      "path": "v05_scans/stone_floor/stone_floor_nor_gl_2k.jpg",
+      "exists": true,
+      "bytes": 4090235,
+      "sha256": "978242067a8b6d421ea6ef12f7757f8ba137e21914c71b259502a4582daa0122",
+      "matches_record": true
+    },
+    {
+      "path": "v05_scans/stone_floor/stone_floor_rough_2k.jpg",
+      "exists": true,
+      "bytes": 2080072,
+      "sha256": "cd8e7c6f7e7a9f483e45286b65c0ba7308bc943e7dc51ee9fd4532158cf44612",
+      "matches_record": true
+    },
+    {
+      "path": "v05_scans/wood_table_worn/wood_table_worn_diff_2k.jpg",
+      "exists": true,
+      "bytes": 3108339,
+      "sha256": "165cdba449d56ea8e9675116622b95d7af372b7d7c47b8a98a03fcc630f1d51c",
+      "matches_record": true
+    },
+    {
+      "path": "v05_scans/wood_table_worn/wood_table_worn_nor_gl_2k.jpg",
+      "exists": true,
+      "bytes": 3142587,
+      "sha256": "a90aaa321194fb41d6e44776c6ee88134e4be416051357a3c9e323cc447c4cf0",
+      "matches_record": true
+    },
+    {
+      "path": "v05_scans/wood_table_worn/wood_table_worn_rough_2k.jpg",
+      "exists": true,
+      "bytes": 2890891,
+      "sha256": "4263780c4b7737b8714eefcbda1b43c28f8e1e0ee2b797c125521cbe6e3889dd",
+      "matches_record": true
+    }
+  ],
+  "prepared_model_library": {
+    "bytes": 161151844,
+    "sha256": "b3ca66854942020353725dd82562a0443d450d40bdf12ac9c5a277427e77150d",
+    "branch_uv_baked": true,
+    "matches_record": true
+  },
+  "model_definitions": 12,
+  "model_sources": [
+    {
+      "id": "tree_small_02",
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "name": "Tree Small 02",
+      "source_url": "https://polyhaven.com/a/tree_small_02",
+      "license": "CC0 1.0"
+    },
+    {
+      "id": "island_tree_01",
+      "authors": {
+        "Rob Tuytel": "scanning, processing",
+        "Rico Cilliers": "cleanup, processing"
+      },
+      "name": "Island Tree 01",
+      "source_url": "https://polyhaven.com/a/island_tree_01",
+      "license": "CC0 1.0"
+    },
+    {
+      "id": "shrub_01",
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "name": "Shrub 01",
+      "source_url": "https://polyhaven.com/a/shrub_01",
+      "license": "CC0 1.0"
+    },
+    {
+      "id": "trashbag",
+      "authors": {
+        "Benny Weimer": "All"
+      },
+      "name": "Trashbag",
+      "source_url": "https://polyhaven.com/a/trashbag",
+      "license": "CC0 1.0"
+    },
+    {
+      "id": "metal_trash_can",
+      "authors": {
+        "GurJas Studios": "All"
+      },
+      "name": "Metal Trash Can",
+      "source_url": "https://polyhaven.com/a/metal_trash_can",
+      "license": "CC0 1.0"
+    },
+    {
+      "id": "plastic_crate_01",
+      "authors": {
+        "PierreB3D": "All"
+      },
+      "name": "Plastic Crate 01",
+      "source_url": "https://polyhaven.com/a/plastic_crate_01",
+      "license": "CC0 1.0"
+    },
+    {
+      "id": "covered_car",
+      "authors": {
+        "MP": "All"
+      },
+      "name": "Covered Car",
+      "source_url": "https://polyhaven.com/a/covered_car",
+      "license": "CC0 1.0"
+    },
+    {
+      "id": "overcast_soil_puresky",
+      "authors": {
+        "Jarod Guest": "Sky Edits",
+        "Sergej Majboroda": "Original"
+      },
+      "name": "Overcast Soil (Pure Sky)",
+      "source_url": "https://polyhaven.com/a/overcast_soil_puresky",
+      "license": "CC0 1.0"
+    },
+    {
+      "id": "kloofendal_48d_partly_cloudy_puresky",
+      "authors": {
+        "Greg Zaal": "Original",
+        "Jarod Guest": "Sky edits"
+      },
+      "name": "Kloofendal 48d Partly Cloudy (Pure Sky)",
+      "source_url": "https://polyhaven.com/a/kloofendal_48d_partly_cloudy_puresky",
+      "license": "CC0 1.0"
+    },
+    {
+      "id": "chinese_armchair",
+      "authors": {
+        "Kirill Sannikov": "All"
+      },
+      "name": "Chinese Armchair",
+      "source_url": "https://polyhaven.com/a/chinese_armchair",
+      "license": "CC0 1.0"
+    },
+    {
+      "id": "chinese_tea_table",
+      "authors": {
+        "Kirill Sannikov": "All"
+      },
+      "name": "Chinese Tea Table",
+      "source_url": "https://polyhaven.com/a/chinese_tea_table",
+      "license": "CC0 1.0"
+    },
+    {
+      "id": "plastic_monobloc_chair_01",
+      "authors": {
+        "Kuutti Siitonen": "All"
+      },
+      "name": "Plastic Monobloc Chair 01",
+      "source_url": "https://polyhaven.com/a/plastic_monobloc_chair_01",
+      "license": "CC0 1.0"
+    },
+    {
+      "id": "potted_plant_02",
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "name": "Potted Plant 02",
+      "source_url": "https://polyhaven.com/a/potted_plant_02",
+      "license": "CC0 1.0"
+    }
+  ],
+  "furniture_preparation": [
+    {
+      "asset": "chinese_armchair",
+      "source_page": "https://polyhaven.com/a/chinese_armchair",
+      "original_triangles": 2675,
+      "source_height_m": 1.5874828100204468,
+      "source_width_m": 0.8482747673988342,
+      "source_dimensions_m": [
+        0.8482747673988342,
+        0.7886627912521362,
+        1.5874828100204468
+      ],
+      "source_forward_axis": "-Y",
+      "variants": {
+        "base": {
+          "objects": [
+            "PH_chinese_armchair_base_00"
+          ],
+          "triangles": 2675,
+          "target_triangles": 2675
+        }
+      },
+      "modifications": "Source transforms applied; center/ground origin normalized; original PBR maps and UVs retained."
+    },
+    {
+      "asset": "chinese_tea_table",
+      "source_page": "https://polyhaven.com/a/chinese_tea_table",
+      "original_triangles": 2508,
+      "source_height_m": 0.4986410439014435,
+      "source_width_m": 0.8413149118423462,
+      "source_dimensions_m": [
+        0.8413149118423462,
+        0.8356219530105591,
+        0.4986410439014435
+      ],
+      "source_forward_axis": "-Y",
+      "variants": {
+        "base": {
+          "objects": [
+            "PH_chinese_tea_table_base_00"
+          ],
+          "triangles": 2508,
+          "target_triangles": 2508
+        }
+      },
+      "modifications": "Source transforms applied; center/ground origin normalized; original PBR maps and UVs retained."
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "source_page": "https://polyhaven.com/a/plastic_monobloc_chair_01",
+      "original_triangles": 3356,
+      "source_height_m": 0.8798412084579468,
+      "source_width_m": 0.6418611407279968,
+      "source_dimensions_m": [
+        0.6418611407279968,
+        0.6275919079780579,
+        0.8798412084579468
+      ],
+      "source_forward_axis": "-Y",
+      "variants": {
+        "base": {
+          "objects": [
+            "PH_plastic_monobloc_chair_01_base_00"
+          ],
+          "triangles": 3356,
+          "target_triangles": 3356
+        }
+      },
+      "modifications": "Source transforms applied; center/ground origin normalized; original PBR maps and UVs retained."
+    },
+    {
+      "asset": "potted_plant_02",
+      "source_page": "https://polyhaven.com/a/potted_plant_02",
+      "original_triangles": 69806,
+      "source_height_m": 0.8411787152290344,
+      "source_width_m": 0.7011570334434509,
+      "source_dimensions_m": [
+        0.7011570334434509,
+        0.6573866009712219,
+        0.8411787152290344
+      ],
+      "source_forward_axis": "-Y",
+      "variants": {
+        "base": {
+          "objects": [
+            "PH_potted_plant_02_base_00",
+            "PH_potted_plant_02_base_01",
+            "PH_potted_plant_02_base_02"
+          ],
+          "triangles": 17999,
+          "target_triangles": 18000
+        }
+      },
+      "modifications": "Source transforms applied; center/ground origin normalized; original PBR maps and UVs retained. Geometry reduced for real-time use; source masked leaves retained."
+    }
+  ],
+  "exported_glb": {
+    "bytes": 1017581848,
+    "sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223",
+    "materials": 92,
+    "meshes": 2290,
+    "embedded_images": 113,
+    "external_images": [],
+    "invalid_pbr_scalars": []
+  }
+}

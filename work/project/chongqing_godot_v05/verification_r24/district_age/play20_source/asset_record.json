@@ -1,0 +1,226 @@
+{
+  "build": "R24 build 20 internal",
+  "locally_authored": {
+    "maker": "Chongqing district project",
+    "work": "Bicycle shed, three bicycles, repair tools, fictional writing, paper atlas, ground masks, cut road meshes and height-derived slope normals",
+    "editable": {
+      "file": "scene_r24/district_age/city_and_yards.blend",
+      "sha256": "b587806707709000ea6a2f1e748de485feadb151e7d2dc1ecd3f235eae79839b"
+    },
+    "files": [
+      {
+        "file": "project/chongqing_godot_v05/assets/district_age/blue_block_bend.json",
+        "sha256": "38f6f53c62d819b0502de4d5137e4f2abbf9fa72eba460fea24e8d21fdf8e713"
+      },
+      {
+        "file": "project/chongqing_godot_v05/assets/district_age/east_passage.json",
+        "sha256": "3f909fafd0fc9dc665b92f494c0667b2821e33ad4323cbb967703630660309d0"
+      },
+      {
+        "file": "project/chongqing_godot_v05/assets/district_age/footpaths.png",
+        "sha256": "5e7216cf2ba74914e9416f040c1e93c873a5b33afd112da6b1e6142aeae9c6ed"
+      },
+      {
+        "file": "project/chongqing_godot_v05/assets/district_age/layout.json",
+        "sha256": "6f97363e33e5829ebcb4068f0088901260f95a0f10abf6a623324b2ae00a632e"
+      },
+      {
+        "file": "project/chongqing_godot_v05/assets/district_age/shoulder_gradient.png",
+        "sha256": "b708f1c01ce620ec6215c6263117fab8f3fb18a6372c4e3189980fdb4d9be418"
+      },
+      {
+        "file": "project/chongqing_godot_v05/assets/district_age/wall_lettering.png",
+        "sha256": "917cfbeaa35b230b9081d6fcb12dfa64f751b0c20f5ef35adc894e9ab3c7037c"
+      },
+      {
+        "file": "project/chongqing_godot_v05/assets/district_age/wall_prints.png",
+        "sha256": "2972ddf9b2cef33af5fd4a3c34fc06968393d9c06cf806df52b50015df52ed5d"
+      },
+      {
+        "file": "project/chongqing_godot_v05/assets/district_age/wall_side_passage.json",
+        "sha256": "bf370577b5ea45af798b8c9e13c45d5b063e1d04529fcc9493f8eac8fab4e380"
+      },
+      {
+        "file": "project/chongqing_godot_v05/assets/district_age/west_north_end.json",
+        "sha256": "76b3670e478f66e0040b7c2a66b4056045e68fed72ec737e51b7ce085a7c5467"
+      },
+      {
+        "file": "project/chongqing_godot_v05/assets/district_age/west_passage.json",
+        "sha256": "17218737ce5599fd51abcfb5173f6a342e675c7b14dd3f41a9afc0f5e42abccf"
+      },
+      {
+        "file": "project/chongqing_godot_v05/assets/district_age/yard.glb",
+        "sha256": "d4064f223dfa4cdf97f4d06b6ebd066a3bc70389deed4e6b7ce716c189128160"
+      }
+    ],
+    "import_settings": [
+      {
+        "file": "project/chongqing_godot_v05/assets/district_age/footpaths.png.import",
+        "sha256": "cc5910232ec1dfc7d2526a67d6649bcbd6e1d4afb234a17cf5f14437327e8785"
+      },
+      {
+        "file": "project/chongqing_godot_v05/assets/district_age/shoulder_gradient.png.import",
+        "sha256": "16067c3e4d4630f0c99ccc727a2641a3ce4a275b837934b43dfea4d88567824c"
+      },
+      {
+        "file": "project/chongqing_godot_v05/assets/district_age/wall_lettering.png.import",
+        "sha256": "021c60f5c1822c946b133126ebe6454f640ddc99e7713c466e79c7f6c44556e4"
+      },
+      {
+        "file": "project/chongqing_godot_v05/assets/district_age/wall_prints.png.import",
+        "sha256": "f4817c7ec543dff36191ea92016e24b4d3abeeb7816a066e1af8b73ceb19f9d8"
+      },
+      {
+        "file": "project/chongqing_godot_v05/assets/district_age/yard.glb.import",
+        "sha256": "bfb88fae2812c63a4e3138877973eb18f52fbb74ef60906979cb92dec3a9b7d6"
+      }
+    ],
+    "authoring": [
+      {
+        "file": "scene_r24/district_age/author.py",
+        "sha256": "8e2141ba245239e214b6173697f328fc1c357ad138840182c4139840b0b2cb97"
+      },
+      {
+        "file": "scene_r24/district_age/east_passages.py",
+        "sha256": "6892925a5bc8487eb0fbea446862c8e431a92b494a8226ed22e5a5361904f2d6"
+      },
+      {
+        "file": "scene_r24/district_age/fork_join.py",
+        "sha256": "4b0a103ee0c12d7035c170d67c0d6a772971afb2d777f44ccec5b09fd941148d"
+      },
+      {
+        "file": "scene_r24/district_age/height_tile.py",
+        "sha256": "56d9073944269abd3a0c965c5fb275f0303b0a49e606930e3a19364f4eff5e89"
+      },
+      {
+        "file": "scene_r24/district_age/high_approaches.py",
+        "sha256": "78e03ed0f0a2c1c24083646260241e0420bce9712ab4a54edfb4de44eb564506"
+      },
+      {
+        "file": "scene_r24/district_age/kerb_return.py",
+        "sha256": "64fd7355347b0ded8656c661cde753e8414ebd95449031eb6c95c062788a901c"
+      },
+      {
+        "file": "scene_r24/district_age/lime_print.py",
+        "sha256": "60cecaacfa0972f8958af0f85118871dce9c92f705c7d35d4271e2f6f7adff87"
+      },
+      {
+        "file": "scene_r24/district_age/median_bed.py",
+        "sha256": "a8f4120b03628c873a3e7c39e01452457fda279832eba0d4b89f4203f27f0526"
+      },
+      {
+        "file": "scene_r24/district_age/paint_lanes.py",
+        "sha256": "147f789b9bbe5e0ff13d158777a61970d8b81d9da4438cdfe1c4b5ca564f1840"
+      },
+      {
+        "file": "scene_r24/district_age/repair_stand.py",
+        "sha256": "a94f255a1edb92490f67db42d90aaa02599a1a435aafc2e6d69d75798b2605f6"
+      },
+      {
+        "file": "scene_r24/district_age/residents.py",
+        "sha256": "04e4be94db4588b8cf481f8db177395b16c8f3c5eb854a4ed63a5fd3c2ebc731"
+      },
+      {
+        "file": "scene_r24/district_age/road_edge.py",
+        "sha256": "a5f8da009c622678d9186e3e00e8b4de25b0ef8e6ac0656afeb31d471c92cfa9"
+      },
+      {
+        "file": "scene_r24/district_age/roads.py",
+        "sha256": "918800ef7234b6d74286e5bcde72f2fe751019c4ba0964f10be5ce5a265bcbef"
+      },
+      {
+        "file": "scene_r24/district_age/slope_tile.py",
+        "sha256": "0cad487436b5621298503d5b8da0cc4524e9b67668bff5462af744fe1585d98a"
+      },
+      {
+        "file": "scene_r24/district_age/soft_paving.py",
+        "sha256": "7c59fe33d0f92e9bebd6fade59de765bbadf5184db368515ad92813e05b631ae"
+      },
+      {
+        "file": "scene_r24/district_age/street_mouths.py",
+        "sha256": "bf5bb46a54203cd3cb53e5ee039c24ace60fb92acabfaf52c46375d293e960f3"
+      },
+      {
+        "file": "scene_r24/district_age/supported_runs.py",
+        "sha256": "b6a250c2be4208d56ea2016c8cc795626c5ddb934ef2b56fa00da13272ac6e35"
+      },
+      {
+        "file": "scene_r24/district_age/wall_prints.py",
+        "sha256": "eed6425f9b86d75c6b7f57634ceaaf9321cb6ab52e655475337770b19730d022"
+      },
+      {
+        "file": "scene_r24/district_age/west_passage.py",
+        "sha256": "50b9b113248d61ae36e3cd516e65f2ce4dc04aa4ed4af0896c49e374588adc4e"
+      }
+    ]
+  },
+  "existing_materials": [
+    {
+      "creator": "Amal Kumar",
+      "title": "Rusty Painted Metal",
+      "license": "CC0 1.0",
+      "source": "https://polyhaven.com/a/rusty_painted_metal",
+      "license_url": "https://polyhaven.com/license",
+      "modification": "Local 2K albedo; mapped to a desaturated oxidised zinc roof and enamel coefficients in yard_galvanized.gdshader. No attribution requirement; original source retained.",
+      "file": {
+        "file": "project/chongqing_godot_v05/assets/chongqing_district_rusty_painted_metal_diff_2k.jpg",
+        "sha256": "883118fafabb56304f9e33ea2da3c183379b1c1b1c5a4702fdc335b0cf84614f"
+      },
+      "metadata": {
+        "file": "project/chongqing_blender_v05/materials/v04_scans/rusty_painted_metal/source_info.json",
+        "sha256": "c178df331458dcac8b54f5574a33eafb3dfc2d38400056a0b9976b732bdc5bd8"
+      }
+    },
+    {
+      "title": "Existing road, concrete, stone and facade surfaces",
+      "provenance": {
+        "file": "project/chongqing_blender_v05/materials/material_provenance.json",
+        "sha256": "8825abcdae0278f5940f6f9bf35cd77edee592da35e54c2fe5432f62b7d205af"
+      },
+      "credits": {
+        "file": "project/chongqing_blender_v05/materials/CREDITS_zh.txt",
+        "sha256": "ff7675cf35759e2798ef0f0642dc70a30862c8bd57f3876b0892cf9016c92d2a"
+      },
+      "change": "Existing licensed game textures reused on original geometry; no new photograph incorporated."
+    }
+  ],
+  "typeface": {
+    "family": "Noto Sans CJK SC",
+    "license": "SIL Open Font License 1.1",
+    "source": "https://github.com/notofonts/noto-cjk",
+    "source_revision": "f8d157532fbfaeda587e826d4cd5b21a49186f7c",
+    "source_license": "https://github.com/notofonts/noto-cjk/blob/main/Sans/LICENSE",
+    "use": "Rasterised local fictional notices; no new font binaries shipped in the incremental art. Original license and attribution retained beside sources.",
+    "files": [
+      {
+        "file": "assets_incoming/r20_noto/LICENSE.txt",
+        "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+      },
+      {
+        "file": "assets_incoming/r20_noto/NotoSansCJKsc-Regular.otf",
+        "sha256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b"
+      },
+      {
+        "file": "assets_incoming/r20_noto/NotoSansCJKsc-Bold.otf",
+        "sha256": "b5f0d1a190a7f9b43c310a8850630af12553df32c4c050543f9059732d9b4c0a"
+      }
+    ]
+  },
+  "geodata": {
+    "source": "https://www.openstreetmap.org/copyright",
+    "license": "ODbL 1.0",
+    "attribution": "© OpenStreetMap contributors",
+    "source_file": {
+      "file": "project/chongqing_blender_v05/source_data/geo_layout.json",
+      "sha256": "9977a65ab9917888e304a649820c1f4f0a1a8bb95b545930b775fc43ad1673a4"
+    },
+    "local_changes": "Game-specific route deviations stored as separate files; base geodata and HUD attribution preserved."
+  },
+  "photo_references": {
+    "usage": "Research and visual comparison only. No new image pixels from documentary photographs used in the game.",
+    "credit_list": {
+      "file": "scene_r24/street_photo_study/reference/credits.json",
+      "sha256": "d729c1e8e5ca14f05bd5242cdfde59e6e99e07b683d0ce3a92be6bd11c03b1d6"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+[
+	{
+		"detail": "",
+		"name": "practice_at_real_counter",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "manifest_before_accept",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "declining_has_no_charge",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "batch_accepted",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "paid_trip_uses_walking_and_riding",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "kitchen_not_ready",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "first_pickup_201",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "third_bag_stays_on_counter",
+		"pass": true
+	},
+	{
+		"detail": {
+			"distance_m": 10.5320255160332,
+			"end": "(-32.64923, 11.39788, 56.43674)",
+			"goals": 3,
+			"max_frame_displacement_m": 0.0719423219561577,
+			"name": "approach_own_scooter_with_two",
+			"pass": true,
+			"reached": 3,
+			"stall_contacts": []
+		},
+		"name": "approach_own_scooter_with_two",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "both_meals_board",
+		"pass": true
+	},
+	{
+		"detail": [
+			"(0.0, 0.866, 0.48)",
+			"(0.0, 0.866, 0.679996)"
+		],
+		"name": "two_closed_lid_slots",
+		"pass": true
+	},
+	{
+		"detail": {
+			"end": "(-32.7, 11.52979, 55.45)",
+			"hits": {
+				"/root/ChongqingDistrict/City/COL_Terrain_200m_pavement/CQ_StaticCollision": "(0.011424, 0.968112, 0.250257)",
+				"/root/ChongqingDistrict/InteractionWorld/FirstShift/LaoPeng": "(-0.997148, 0.0, 0.075465)"
+			},
+			"metres": 0.0,
+			"obstacle": {
+				"body": "COL_Terrain_200m_pavement",
+				"normal": "(0.011424, 0.968112, 0.250257)",
+				"position": "(-33.0, 11.53829, 55.3811)"
+			},
+			"start": "(-32.7, 11.52979, 55.45)",
+			"top_m_s": 0.326666666666667
+		},
+		"name": "ridden_distance",
+		"pass": false
+	},
+	{
+		"detail": "",
+		"name": "both_meals_leave_with_rider",
+		"pass": true
+	}
+]

@@ -1,0 +1,14 @@
+Blender 4.3.2 (hash 32f5fdce0a0a built 2024-12-17 03:35:23)
+Read blend: "C:\Users\尹久\Documents\重庆外卖王\work\scene_r23\chongqing_district.blend"
+Traceback (most recent call last):
+  File "C:\Users\尹久\Documents\重庆外卖王\work\build_frontage_r24.py", line 378, in <module>
+    bpy.ops.export_scene.gltf(filepath=str(export/'frontage.glb'),export_format='GLB',use_selection=True,export_animations=False,export_yup=True,export_colors=True)
+  File "C:\Users\尹久\Documents\重庆外卖王\work\tools\blender-4.3.2-windows-x64\4.3\scripts\modules\bpy\ops.py", line 109, in __call__
+    ret = _op_call(self.idname_py(), kw)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Converting py args to operator properties:: keyword "export_colors" unrecognized
+
+Error: script failed, file: 'work/build_frontage_r24.py', exiting.
+Info: Saved "chongqing_district.blend"
+
+Blender quit

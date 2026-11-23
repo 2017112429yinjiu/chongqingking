@@ -1,0 +1,133 @@
+{
+  "provider": "Poly Haven",
+  "license_url": "https://polyhaven.com/license",
+  "assets": [
+    {
+      "id": "tree_small_02",
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "name": "Tree Small 02",
+      "source_url": "https://polyhaven.com/a/tree_small_02",
+      "license": "CC0 1.0"
+    },
+    {
+      "id": "island_tree_01",
+      "authors": {
+        "Rob Tuytel": "scanning, processing",
+        "Rico Cilliers": "cleanup, processing"
+      },
+      "name": "Island Tree 01",
+      "source_url": "https://polyhaven.com/a/island_tree_01",
+      "license": "CC0 1.0"
+    },
+    {
+      "id": "shrub_01",
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "name": "Shrub 01",
+      "source_url": "https://polyhaven.com/a/shrub_01",
+      "license": "CC0 1.0"
+    },
+    {
+      "id": "trashbag",
+      "authors": {
+        "Benny Weimer": "All"
+      },
+      "name": "Trashbag",
+      "source_url": "https://polyhaven.com/a/trashbag",
+      "license": "CC0 1.0"
+    },
+    {
+      "id": "metal_trash_can",
+      "authors": {
+        "GurJas Studios": "All"
+      },
+      "name": "Metal Trash Can",
+      "source_url": "https://polyhaven.com/a/metal_trash_can",
+      "license": "CC0 1.0"
+    },
+    {
+      "id": "plastic_crate_01",
+      "authors": {
+        "PierreB3D": "All"
+      },
+      "name": "Plastic Crate 01",
+      "source_url": "https://polyhaven.com/a/plastic_crate_01",
+      "license": "CC0 1.0"
+    },
+    {
+      "id": "covered_car",
+      "authors": {
+        "MP": "All"
+      },
+      "name": "Covered Car",
+      "source_url": "https://polyhaven.com/a/covered_car",
+      "license": "CC0 1.0"
+    },
+    {
+      "id": "overcast_soil_puresky",
+      "authors": {
+        "Jarod Guest": "Sky Edits",
+        "Sergej Majboroda": "Original"
+      },
+      "name": "Overcast Soil (Pure Sky)",
+      "source_url": "https://polyhaven.com/a/overcast_soil_puresky",
+      "license": "CC0 1.0"
+    },
+    {
+      "id": "kloofendal_48d_partly_cloudy_puresky",
+      "authors": {
+        "Greg Zaal": "Original",
+        "Jarod Guest": "Sky edits"
+      },
+      "name": "Kloofendal 48d Partly Cloudy (Pure Sky)",
+      "source_url": "https://polyhaven.com/a/kloofendal_48d_partly_cloudy_puresky",
+      "license": "CC0 1.0"
+    },
+    {
+      "id": "chinese_armchair",
+      "authors": {
+        "Kirill Sannikov": "All"
+      },
+      "name": "Chinese Armchair",
+      "source_url": "https://polyhaven.com/a/chinese_armchair",
+      "license": "CC0 1.0"
+    },
+    {
+      "id": "chinese_tea_table",
+      "authors": {
+        "Kirill Sannikov": "All"
+      },
+      "name": "Chinese Tea Table",
+      "source_url": "https://polyhaven.com/a/chinese_tea_table",
+      "license": "CC0 1.0"
+    },
+    {
+      "id": "plastic_monobloc_chair_01",
+      "authors": {
+        "Kuutti Siitonen": "All"
+      },
+      "name": "Plastic Monobloc Chair 01",
+      "source_url": "https://polyhaven.com/a/plastic_monobloc_chair_01",
+      "license": "CC0 1.0"
+    },
+    {
+      "id": "potted_plant_02",
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "name": "Potted Plant 02",
+      "source_url": "https://polyhaven.com/a/potted_plant_02",
+      "license": "CC0 1.0"
+    }
+  ],
+  "local_modifications": [
+    "LOD decimation, normalized metre-scale origins, material-part separation and shared mesh instances; original maps retained.",
+    "Shrub01 source contains nine specimens in a row; connected specimens were rigidly rearranged into a compact plant cluster, preserving geometry/UV/image content.",
+    "R7: original branch UV scale/offset baked into primary UV for six branch LOD meshes across Small02 and Island01; no image pixel or triangle-corner position change. Production uses stable albedo branch shaders and primary identity UV.",
+    "R8: appended Chinese chair, low tea table, plastic chair and potted plant. Normalized grounded origins and retained original PBR. Potted plant reduced to approximately 18k triangles, preserving source alpha-mask material."
+  ],
+  "production_revision": "v05_r8"
+}

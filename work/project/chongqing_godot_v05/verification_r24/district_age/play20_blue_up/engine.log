@@ -1,0 +1,26 @@
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+
+CQ_INTERIOR_LIGHTS {"interior_candidate_count":9,"interior_lights":[{"energy":0.239999994635582,"name":"B_809889627_blue_apartments_room_lamp","position":[82.391,28.184,-13.942],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_809889628_clinic_room_lamp","position":[15.883,31.615,-53.5],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_809889629_artisan_room_lamp","position":[47.205,34.774,-72.476],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_1335306665_civic_room_lamp","position":[-24.373,26.707,-30.861],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_1335306666_heritage_room_lamp","position":[-50.162,26.057,-36.511],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_1335306667_brick_home_room_lamp","position":[-62.888,23.169,-17.653],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_1413081560_old_tile_room_lamp","position":[-33.476,29.533,-53.924],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_A03_blue_apartments_room_lamp","position":[-91.543,16.767,15.033],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_A04_courtyard_home_room_lamp","position":[-55.09,17.775,14.621],"range":2.70000004768372,"shadows":false}],"street_lights":22}
+CQ_BRANCH_OVERRIDE {"baked_primary":true,"imported_uv1_offset":[0.0,0.0,0.0],"imported_uv1_scale":[1.0,1.0,1.0],"imported_uv2_offset":[0.0,0.0,0.0],"imported_uv2_scale":[1.0,1.0,1.0],"normal_and_pbr_textures":false,"offset":[0.0,0.0],"scale":[1.0,1.0],"texcoord":0,"texture":"res://assets/chongqing_district_island_tree_01_branches_diff_2k.jpg"}
+CQ_BRANCH_OVERRIDE {"baked_primary":true,"imported_uv1_offset":[0.0,0.0,0.0],"imported_uv1_scale":[1.0,1.0,1.0],"imported_uv2_offset":[0.0,0.0,0.0],"imported_uv2_scale":[1.0,1.0,1.0],"normal_and_pbr_textures":false,"offset":[0.0,0.0],"scale":[1.0,1.0],"texcoord":0,"texture":"res://assets/chongqing_district_tree_small_02_branch_diff_2k.jpg"}
+CQ_STREET_USE { "dressed": 2, "paving": 56, "facades": 83, "asphalt": 15, "workday": true, "resident_pots": 2, "furniture_volumes": 2 }
+CQ_NEIGHBORHOOD {"missing":[],"plants":35,"removed":["COL_Handrails_Central_stair_lane_painted_metal","COL_Handrails_West_residential_link_painted_metal","Court_entry_rails_frame","Utility_cables_dark","COL_R20_Returned_handrail_steel","COL_R20_Returned_handrail_rail_enamel","COL_R20_Returned_handrail_pin","COL_R20_Returned_handrail_iron","Resident_waste_13_bin_00","Resident_waste_13_bin_01","Resident_waste_13_bin_02","Resident_waste_13_bin_03","Resident_waste_13_bagA_00","Resident_waste_13_bagB_00","Resident_waste_13_crate_00"],"shifted":87,"spans":4,"tree_distance_meshes":288,"trunks":5}
+PENG_TEACH AT_BIKE
+CQ_READY {"collisions":{"bodies":276,"by_kind":{"refined_structure":276},"created":276,"failed":[],"props":{"method":"deduplicated root-aligned cylinders; foliage excluded","trunks_and_posts":57},"reused":0,"skipped_meshes":3622,"triangles":497570},"engine":"4.6.3-stable (official)","renderer":"forward_plus","spawn":[20.0,9.4995,76.0]}
+DAY1 {"detail":[76.8,-24.72],"name":"start_and_goal_support","pass":true}
+DAY1 {"detail":[79.1148834228516,-21.7109889984131],"name":"start_and_goal_support","pass":true}
+DAY1 {"detail":[80.9968338012695,-20.171314239502],"name":"start_and_goal_support","pass":true}
+DAY1 {"detail":[83.1620712280273,-19.2140998840332],"name":"start_and_goal_support","pass":true}
+DAY1 {"detail":[85.4667739868164,-18.4756469726563],"name":"start_and_goal_support","pass":true}
+DAY1 {"detail":[87.8098297119141,-17.6578826904297],"name":"start_and_goal_support","pass":true}
+DAY1 {"detail":[90.0019683837891,-16.4192962646484],"name":"start_and_goal_support","pass":true}
+DAY1 {"detail":[91.61572265625,-14.5204982757568],"name":"start_and_goal_support","pass":true}
+DAY1 {"detail":[92.4394073486328,-12.2932710647583],"name":"start_and_goal_support","pass":true}
+DAY1 {"detail":[92.8525466918945,-9.84450626373291],"name":"start_and_goal_support","pass":true}
+DAY1 {"detail":[93.1521224975586,-7.50545644760132],"name":"start_and_goal_support","pass":true}
+DAY1 {"detail":[93.6658096313477,-5.16840887069702],"name":"start_and_goal_support","pass":true}
+DAY1 {"detail":[94.7715911865234,-2.98026394844055],"name":"start_and_goal_support","pass":true}
+DAY1 {"detail":[97.62,0.46],"name":"start_and_goal_support","pass":true}
+PENG_TEACH RIDING
+PENG_TEACH YARD_EXIT
+DAY1 {"detail":{"frames":824,"mentor_end":"(97.00514, 22.75319, -0.236366)","student_end":"(94.88389, 23.11133, -3.727072)"},"name":"corner_bypass_both_arrive","pass":true}

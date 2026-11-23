@@ -1,0 +1,78 @@
+{
+  "materials": [
+    {
+      "name": "brown_mud_leaves_01",
+      "author": "Rob Tuytel",
+      "url": "https://polyhaven.com/a/brown_mud_leaves_01",
+      "license": "CC0-1.0",
+      "local_input": "assets/chongqing_district_brown_mud_leaves_01_diff_2k.jpg",
+      "sha256": "29c997d77f56e4ea16d3e998a306be0c17fddb28ab4822657c7cd8249040ffda",
+      "usage": "Existing unchanged scan, mapped in metres on authored surfaces."
+    },
+    {
+      "name": "leaf_scattered_gravel",
+      "author": "Dimitrios Savva",
+      "url": "https://polyhaven.com/a/leaf_scattered_gravel",
+      "license": "CC0-1.0",
+      "local_input": "assets/chongqing_district_leaf_scattered_gravel_diff_2k.jpg",
+      "sha256": "f81bd1e3b2395ea7c08c7afaf8646d98b6dd1eed588fe0569230f37da69fbd36",
+      "usage": "Existing unchanged scan, mapped in metres on authored surfaces."
+    },
+    {
+      "name": "mossy_stone_wall",
+      "author": "Amal Kumar",
+      "url": "https://polyhaven.com/a/mossy_stone_wall",
+      "license": "CC0-1.0",
+      "local_input": "assets/district_r21/terraces_mossy_stone_wall_diff_2k.jpg",
+      "sha256": "4c41e62e3c6b0af73b89bd3c9c46c55f3723a36789475d3ff76fe112d89d45e2",
+      "usage": "Existing unchanged scan, mapped in metres on authored surfaces."
+    },
+    {
+      "name": "concrete_floor_worn_001",
+      "author": "Dimitrios Savva, Rico Cilliers",
+      "url": "https://polyhaven.com/a/concrete_floor_worn_001",
+      "license": "CC0-1.0",
+      "local_input": "assets/street_r19/street_life_concrete_floor_worn_001_diff_2k.jpg",
+      "sha256": "e29b45cdcd6d02fae3c087c456196ffa750779a9b62e7071aa3831dc322a0cc4",
+      "usage": "Existing unchanged scan, mapped in metres on authored surfaces."
+    },
+    {
+      "name": "asphalt_02",
+      "author": "Rob Tuytel",
+      "url": "https://polyhaven.com/a/asphalt_02",
+      "license": "CC0-1.0",
+      "local_input": "assets/chongqing_district_asphalt_02_diff_1k.jpg",
+      "sha256": "1aa5ce99f58a625c71d48cfc3e68b65ca85ccb00f39e045c0a928608a0ea25ed",
+      "usage": "Existing unchanged scan, mapped in metres on authored surfaces."
+    }
+  ],
+  "lettering": {
+    "name": "Noto Sans CJK SC",
+    "author": "Noto CJK project contributors",
+    "commit": "f8d157532fbfaeda587e826d4cd5b21a49186f7c",
+    "source": "https://github.com/notofonts/noto-cjk",
+    "license": "SIL OFL 1.1",
+    "notice": "assets/fonts/LICENSE_Noto_CJK.txt",
+    "original_font_sha256": {
+      "NotoSansCJKsc-Bold.otf": "b5f0d1a190a7f9b43c310a8850630af12553df32c4c050543f9059732d9b4c0a",
+      "NotoSansCJKsc-Regular.otf": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b"
+    },
+    "usage": "Raster lettering on two original street-name blades."
+  },
+  "layout": {
+    "author": "OpenStreetMap contributors",
+    "license": "ODbL-1.0",
+    "url": "https://www.openstreetmap.org/api/0.6/map?bbox=106.5628,29.5507,106.5677,29.5550",
+    "attribution_url": "https://www.openstreetmap.org/copyright",
+    "original_layout": "source_data/geo_layout.json",
+    "layout_sha256": "9977a65ab9917888e304a649820c1f4f0a1a8bb95b545930b775fc43ad1673a4",
+    "derived": "assets/frontage_r24/traffic_lanes.json",
+    "derived_sha256": "062b0996444cf2453877117ce883afccdbff2c20e98039745780cb534f1fd9e9",
+    "modifications": "Bound existing OSM ways to their own road meshes, joined endpoints and authored local game elevations and roadway finishes."
+  },
+  "original_art": {
+    "road_name_faces": "0965ee636e17e0f1984614c47cf714bd7098b82dc3b12ca708f33d97b5e354e4",
+    "soft_contact_projection": "ec2133beae7a3dec76ce298de9862c7ea116d05540ce9d84e36eadd9363e4627",
+    "models": "Original game geometry for the median, local retaining face, planted strip, grass, drains, street sign and pier treatment."
+  }
+}

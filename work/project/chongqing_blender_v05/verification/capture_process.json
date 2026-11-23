@@ -1,0 +1,39 @@
+{
+  "expected_revision": 15,
+  "expected_views": [
+    "overview",
+    "street_entry",
+    "noodle_corner",
+    "central_steps",
+    "west_lane",
+    "community_court",
+    "narrow_passage",
+    "upper_houses",
+    "east_gallery",
+    "residential_road",
+    "upper_street",
+    "roofscape",
+    "community_front",
+    "residential_entry",
+    "window_courtyard",
+    "tea_interior",
+    "window_living",
+    "window_north",
+    "noodle_interior",
+    "window_reading",
+    "window_dining",
+    "planting_detail"
+  ],
+  "started_at_utc": "2026-11-19T15:33:30.409701+00:00",
+  "status": "EXITED",
+  "command": [
+    "sh",
+    "/workspace/scratch/5462bdafe44f/cq05/render_tools/capture.sh",
+    "/workspace/scratch/5462bdafe44f/cq05/verification/final/native",
+    "overview,street_entry,noodle_corner,central_steps,west_lane,community_court,narrow_passage,upper_houses,east_gallery,residential_road,upper_street,roofscape,community_front,residential_entry,window_courtyard,tea_interior,window_living,window_north,noodle_interior,window_reading,window_dining,planting_detail",
+    "3",
+    "1920x1080"
+  ],
+  "actual_exit_code": 0,
+  "finished_at_utc": "2026-11-19T15:50:05.618699+00:00"
+}

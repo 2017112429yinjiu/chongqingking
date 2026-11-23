@@ -1,0 +1,211 @@
+{
+  "revision": "R19_scene_05",
+  "checked_on": "2026-11-20",
+  "authored": "Original mesh sign, canopy tailoring, fittings, duct, drainage grates, dish profiles, stair caps/curbs, distant terrain, placements and runtime weathering. No AI raster assets created.",
+  "reused_scans": [
+    {
+      "id": "trashbag",
+      "authors": {
+        "Benny Weimer": "All"
+      },
+      "name": "Trashbag",
+      "source_url": "https://polyhaven.com/a/trashbag",
+      "license": "CC0 1.0"
+    },
+    {
+      "id": "metal_trash_can",
+      "authors": {
+        "GurJas Studios": "All"
+      },
+      "name": "Metal Trash Can",
+      "source_url": "https://polyhaven.com/a/metal_trash_can",
+      "license": "CC0 1.0"
+    },
+    {
+      "id": "plastic_crate_01",
+      "authors": {
+        "PierreB3D": "All"
+      },
+      "name": "Plastic Crate 01",
+      "source_url": "https://polyhaven.com/a/plastic_crate_01",
+      "license": "CC0 1.0"
+    },
+    {
+      "id": "chinese_tea_table",
+      "authors": {
+        "Kirill Sannikov": "All"
+      },
+      "name": "Chinese Tea Table",
+      "source_url": "https://polyhaven.com/a/chinese_tea_table",
+      "license": "CC0 1.0"
+    },
+    {
+      "id": "plastic_monobloc_chair_01",
+      "authors": {
+        "Kuutti Siitonen": "All"
+      },
+      "name": "Plastic Monobloc Chair 01",
+      "source_url": "https://polyhaven.com/a/plastic_monobloc_chair_01",
+      "license": "CC0 1.0"
+    },
+    {
+      "id": "potted_plant_02",
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "name": "Potted Plant 02",
+      "source_url": "https://polyhaven.com/a/potted_plant_02",
+      "license": "CC0 1.0"
+    }
+  ],
+  "reused_material_sources": {
+    "concrete": {
+      "asset": "concrete_wall_006",
+      "resolution": "2k",
+      "meters": 2.0,
+      "authors": [
+        "Charlotte Baglioni",
+        "Dario Barresi"
+      ],
+      "source_url": "https://polyhaven.com/a/concrete_wall_006",
+      "origin": "Poly Haven scan, reused unchanged",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "maps": {
+        "diff": "concrete/concrete_wall_006_diff_2k.jpg",
+        "rough": "concrete/concrete_wall_006_rough_2k.jpg",
+        "nor_gl": "concrete/concrete_wall_006_nor_gl_2k.jpg"
+      },
+      "normal_strength": 0.62
+    },
+    "stone": {
+      "asset": "stone_wall_05",
+      "resolution": "2k",
+      "maps": {
+        "diff": "v04_scans/stone_wall_05/stone_wall_05_diff_2k.jpg",
+        "rough": "v04_scans/stone_wall_05/stone_wall_05_rough_2k.jpg",
+        "nor_gl": "v04_scans/stone_wall_05/stone_wall_05_nor_gl_2k.jpg"
+      },
+      "meters": 2.055,
+      "source_url": "https://polyhaven.com/a/stone_wall_05",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "authors": [
+        "Charlotte Baglioni"
+      ],
+      "origin": "Original Poly Haven photographic scan maps, downloaded unchanged; visually reviewed diffuse before selection.",
+      "normal_strength": 0.45
+    },
+    "timber": {
+      "maps": {
+        "diff": "v05_scans/wood_table_worn/wood_table_worn_diff_2k.jpg",
+        "rough": "v05_scans/wood_table_worn/wood_table_worn_rough_2k.jpg",
+        "nor_gl": "v05_scans/wood_table_worn/wood_table_worn_nor_gl_2k.jpg"
+      },
+      "meters": 1.2,
+      "source_url": "https://polyhaven.com/a/wood_table_worn",
+      "license": "CC0",
+      "authors": [
+        "Dimitrios Savva",
+        "Rico Cilliers"
+      ],
+      "origin": "Original Poly Haven photographic scan maps, downloaded unchanged; scene repetition scale is an authored selection.",
+      "normal_strength": 0.48,
+      "roughness": 0.87
+    },
+    "step_concrete": {
+      "asset": "concrete_floor_worn_001",
+      "resolution": "2k",
+      "maps": {
+        "diff": "v04_scans/concrete_floor_worn_001/concrete_floor_worn_001_diff_2k.jpg",
+        "rough": "v04_scans/concrete_floor_worn_001/concrete_floor_worn_001_rough_2k.jpg",
+        "nor_gl": "v04_scans/concrete_floor_worn_001/concrete_floor_worn_001_nor_gl_2k.jpg"
+      },
+      "meters": 3.0,
+      "source_url": "https://polyhaven.com/a/concrete_floor_worn_001",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "authors": [
+        "Dimitrios Savva",
+        "Rico Cilliers"
+      ],
+      "origin": "Original Poly Haven photographic scan maps, downloaded unchanged; visually reviewed diffuse before selection.",
+      "normal_strength": 0.85
+    }
+  },
+  "reuse_note": "Existing project Poly Haven CC0 library, not a claim of newly downloaded models. Low support vertices refitted to R17 paving; source scans retained. Attribution is optional for these CC0 assets, but authors and URLs retained. Other earlier licenses remain in force.",
+  "new_sky": {
+    "id": "kloofendal_overcast_puresky",
+    "author": "Greg Zaal",
+    "license": "CC0-1.0",
+    "commercial_use": "permitted",
+    "attribution_required": false,
+    "source_url": "https://polyhaven.com/a/kloofendal_overcast_puresky",
+    "license_url": "https://polyhaven.com/license",
+    "download_url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/kloofendal_overcast_puresky_2k.hdr",
+    "provider_md5": "26462123fc5ce757a331553d05e4db37",
+    "md5_verified": true,
+    "sha256": "312b1b04b7f10057a4f1418abc59d1166c8933cc93fc72051502edaf8d6b2fcd",
+    "bytes": 4335717,
+    "modifications": "Source HDR pixels unchanged. Runtime sky energy and orientation adjusted; broad bright-cloud position measured, not a sharp solar disk."
+  },
+  "reference_photos": [
+    {
+      "url": "https://www.johnrash.com/imported-20110606170757/2013/7/22/report-from-the-river-chongqing.html",
+      "author": "John Rash",
+      "publication_date": "2013-07-22",
+      "observed": "Stair/terrace relationship; grilles; wires; household objects; irregular repairs. Black-and-white photo, not a color or illumination calibration.",
+      "use": "Viewed in browser for visual study only; not downloaded into the game or used as a texture. No commercial reuse license assumed."
+    }
+  ],
+  "unrecovered": "Original final R15 reference photo ZIP still missing; new references are not recovered project files.",
+  "source_files": {
+    "project/chongqing_blender_v05/scanned_assets/prepared_assets.blend": "b3ca66854942020353725dd82562a0443d450d40bdf12ac9c5a277427e77150d",
+    "r17_scene/chongqing_district.blend": "1194f74853ea6cd4958fa7a16a94c1c9a1172dd283bd9e59e81d7129dc891410",
+    "scene_r19/street_life.blend": "0c2b76a47a88d00ca568eeef7cf537ee31ae89652afa215330441a25b3eb70a8",
+    "build_street_r19.py": "6f83fa99323ceacc7e2a9aa9a29fcbaaabb08243167502db374912d3c8e90175",
+    "project/chongqing_blender_v05/scanned_assets/source_credits.json": "cffc10b91a1d32ca3e7f11a57354639729c1a2d255864657633f1ff579d99653",
+    "project/chongqing_blender_v05/materials/material_provenance.json": "8825abcdae0278f5940f6f9bf35cd77edee592da35e54c2fe5432f62b7d205af"
+  },
+  "exported_files": {
+    "street_life.glb": "1c40ae7ed04e8bf3f5f7956eaf630a098890e62a9c142f3e846c9ee15d530bad",
+    "street_life_chinese_tea_table_arm_2k.jpg": "316bfe378289b18df8bec3bf906996e921153474417215baad8ce5c2f3701d88",
+    "street_life_chinese_tea_table_diff_2k.jpg": "0ea6290528c50a5c5c994a4648f101670fa0f2ce98209496a4dbba1b025ad669",
+    "street_life_chinese_tea_table_nor_gl_2k.jpg": "ca8484f0c8fa66c6922246cd129523cd4aee9f48a9fc5b0ce4c3f5f04b51e96c",
+    "street_life_concrete_floor_worn_001_diff_2k.jpg": "e29b45cdcd6d02fae3c087c456196ffa750779a9b62e7071aa3831dc322a0cc4",
+    "street_life_concrete_floor_worn_001_nor_gl_2k.jpg": "3b782137e34d63fd59b2e92b4e27b2ee4d082caf9dd23f00dc7ab4da5513daef",
+    "street_life_concrete_floor_worn_001_rough_2k.png": "7ce8796fded6cfc0969044065657ec358f6e5e0e4fa011ddbf9cddb4d2bc0025",
+    "street_life_concrete_wall_006_diff_2k.jpg": "daee26f5b5dae37e3fb2947c64f4045fd4e6d3b89884eb0d878ba6414746e8e8",
+    "street_life_concrete_wall_006_nor_gl_2k.jpg": "22bd9c17a6dfe3441f671cba1b40e2329767c79b6472004d1633aeac368d5210",
+    "street_life_concrete_wall_006_rough_2k.png": "ca7a817ef12b6ea577ea505d528ef0bbc5d6440310129bbf72ab43e986e57bc8",
+    "street_life_fabric_pattern_07_nor_gl_2k.jpg": "84f15ee5f6b63e7e224051a22426c751cc1fe15a794efd001ebfdb5f84828602",
+    "street_life_fabric_pattern_07_rough_2k.png": "305928b2ccd182e2d6eee047dfeb0e1be8a1058903204b654c261d2cdfb98965",
+    "street_life_metal_trash_can_arm_2k.jpg": "168c3143575152a64c4d5b205a53e0748d76eeb6ea8376e14914b41c9f6fd6a2",
+    "street_life_metal_trash_can_diff_2k.jpg": "2f2cec31a3d8cd2117eb0358e253e53f78181310975441b9e6e45b580d0079e7",
+    "street_life_metal_trash_can_nor_gl_2k.jpg": "7bb12839b501bdb605be02a8ba86c3f283197ec35bbcb5be5a85e8cdfdb7f953",
+    "street_life_plastic_crate_01_arm_2k.jpg": "5eacb0a5d7facfc2dfd9ad4dda7f14f1bf314f3804c173d6790f6e0369a4b6be",
+    "street_life_plastic_crate_01_diff_2k.jpg": "3fa112fc8c4e0ca811330496bddab8825503b9eaccbcca5b2963fb9ff459b0ab",
+    "street_life_plastic_crate_01_nor_gl_2k.jpg": "336070f8a5df854defcd5dee12e501af0d0d4320749db3e828bea05e352f5d90",
+    "street_life_plastic_monobloc_chair_01_arm_2k.jpg": "a8eda64bc7dc6e50c85b9a45af2201c758d98ca54d144d90c70eaf10a4dc1164",
+    "street_life_plastic_monobloc_chair_01_diff_2k.jpg": "97aa591b9291614799ba98b02a37913c381dee6695e1e5f9f42574e0119d755e",
+    "street_life_plastic_monobloc_chair_01_nor_gl_2k.jpg": "d20c1838a13b3efc0b51a2edd12a3d701f1d2846abc06bb202bff99952e994de",
+    "street_life_potted_plant_02_leaves_diff_2k.png": "e3b0e662736165a6759b3b53db7eabbd6eed95904920fcc448a88bb027da9700",
+    "street_life_potted_plant_02_leaves_nor_gl_2k.jpg": "2ae648b12ea457fb720f9adc6f8dc9feb8d5409e43f3b9f2ce7f089b3eef12f6",
+    "street_life_potted_plant_02_leaves_rough_2k.jpg": "399e61a82069b3e344cece76c128f84a664dd44719331450877b671906e01e27",
+    "street_life_potted_plant_02_pot_diff_2k.jpg": "21672040b5de49e7dae07452431b4fe5cf401494f5ab5157b5f54a146cc68383",
+    "street_life_potted_plant_02_pot_nor_gl_2k.jpg": "8e8c2e96de90e793712a9db8a6cea7a38f7fd5ec489b8134b586a42ebbbfcb11",
+    "street_life_potted_plant_02_pot_rough_2k.jpg": "c1f341bfa5e610dab2fd31aad4068fa20cf957b098912da5949bca996d7649bf",
+    "street_life_stone_floor_diff_2k.jpg": "ce19d3cb1e683419b6a596e1baffbf2b429f970f8ddba81e391ad9a38f310ed8",
+    "street_life_stone_floor_nor_gl_2k.jpg": "978242067a8b6d421ea6ef12f7757f8ba137e21914c71b259502a4582daa0122",
+    "street_life_stone_floor_rough_2k.png": "085e16aa7fbe317a5e950ca7d3212b24811436da0206f7ba68a6d285fce9b571",
+    "street_life_stone_wall_05_diff_2k.jpg": "d3680c5ef2657aead18f9bfab93994555b8f05de4f4fecba18194cbe3a116b87",
+    "street_life_stone_wall_05_nor_gl_2k.jpg": "14cd6f3fc1dcd1f95962cdf2806866a6608ae69c075a8ffbd1ebd75b2bb679ef",
+    "street_life_stone_wall_05_rough_2k.png": "45dd8f30c60e4d948a05fa76957b1bba855373ca68e71f000b7c2a9cb4a4440b",
+    "street_life_trashbag_arm_2k.jpg": "2a8274fd1f48ec230a5a7125c9840073b983c70bdc6cc90b456d9c68f27023bf",
+    "street_life_trashbag_diff_2k.jpg": "aec8e973460c58a9de52e42ea6e2f80565cc16cb38a487e4f2e2e0fd32a710a8",
+    "street_life_trashbag_nor_gl_2k.jpg": "7d7893ef3143770e9da25c80debccf6ea6ad913be78beef5df9c861bb94afa85",
+    "street_life_wood_table_worn_diff_2k.jpg": "165cdba449d56ea8e9675116622b95d7af372b7d7c47b8a98a03fcc630f1d51c",
+    "street_life_wood_table_worn_nor_gl_2k.jpg": "a90aaa321194fb41d6e44776c6ee88134e4be416051357a3c9e323cc447c4cf0",
+    "street_life_wood_table_worn_rough_2k.png": "c4659c925c955f3f726c84e0b283f2a783249e462781740a55f32754d79d612b"
+  }
+}

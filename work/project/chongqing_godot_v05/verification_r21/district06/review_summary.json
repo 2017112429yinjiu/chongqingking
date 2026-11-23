@@ -1,0 +1,500 @@
+{
+  "profile": "R21_district_06_internal",
+  "profile_sha256": "e96c44bc6cf3fcdffa553befadfac6157e4ede02f520dce572b0492b44a427e8",
+  "runtime_files": {
+    "project.godot": "11b22a42a12e96133e4c74cbe2bb25ff549f5562fa7c1a1ba63af20e1ab715ca",
+    "scripts/main.gd": "0503064c778982d8a2f885262ca446c6603cc78af254a9951d7f4486fc7c58a5",
+    "scripts/district_r21.gd": "b04d50637d175128ae095a306f872cef6d878b1f50b9520461b331401e41786a",
+    "shaders/canopy_r21.gdshader": "5e9ad1650717ccd7141c20d950cbd4a1a13b1cf0a227566cb97f945fe362c1fc",
+    "shaders/exterior_r21.gdshader": "70893c179b854fe2d07cd9a47029c3e28fc4bf4d1104c434b47d20e8948104f6",
+    "shaders/paving_r21.gdshader": "81bb72e0ab502c8a6e737fb20cafdc549da4e2bd5bf90fdaec72b75767b5fe2e",
+    "shaders/worn_rail_r21.gdshader": "14fe938ef6c6874fa67680e154f445eda0122976eb478dd5b3282417f5ada7c7",
+    "assets/district_r21/layout.json": "ef08224edd2de91299f87bc4534130df8153d6b8c5ee42890763e5feeed2bbcb",
+    "assets/district_r21/wall_fields.json": "53f7172a9abbb542f09098bfe146feffa8b935fcf0c8a9d7f1d8675b2208a56f",
+    "assets/district_r21/wall_runoff.png": "30596b17abf2da8ebe35e38aa7e3b8a57c36fd4d6971684b7cb9edaea02f0007",
+    "assets/district_r21/exterior_land.png": "7d583bda695579a26a3e44ff0cb5ebf76cb1f80048255393b2953d7ba2042deb",
+    "assets/district_r21/canopy_atlas.png": "52c1708c2f236cef1108bc673a85c9e0376e3d524c8d9a57e9f1d463628e9074",
+    "assets/district_r21/provenance.json": "1b355d441a5456107180d98ccfe2a7eaa3c1b28b73ebd69d20df02ab10b22655"
+  },
+  "comparison_baseline": "R20_lane_12_internal",
+  "same_cameras": {
+    "street_entry": {
+      "before": "e8e9d4532bde9d21a45e89922f59301a426b1348f5b4790e0e40635d2ad8d654",
+      "current": "83fd29531b1a27a21bc4d04ca8e68c33a789890db13e75d9b239258946ed9b14",
+      "camera": {
+        "view": "street_entry",
+        "position": [
+          24.0,
+          10.594,
+          77.0
+        ],
+        "target": [
+          1.0,
+          14.8245,
+          63.0
+        ],
+        "fov": 60.0,
+        "width": 1600,
+        "height": 900,
+        "capture_state": {}
+      }
+    },
+    "central_steps": {
+      "before": "4756e6393d50d22b3c15a9043e83dd1713659383b03157478839d7d0b5fcd64a",
+      "current": "17ffa00c4d89a9569c7024c64a290f45fc0308f47f0ab25f7f1797e2d697b775",
+      "camera": {
+        "view": "central_steps",
+        "position": [
+          -20.0,
+          14.032,
+          52.0
+        ],
+        "target": [
+          -20.0,
+          20.2251,
+          25.0
+        ],
+        "fov": 59.0,
+        "width": 1600,
+        "height": 900,
+        "capture_state": {}
+      }
+    },
+    "r20_tree_court": {
+      "before": "5a03030ca5a187df4d83242b955ac6c952535a39fd67579359f66cb1a89211bc",
+      "current": "3e297781e42659389d0bc9dbce1d86dde0ef7fb14933922f5ad804e1db3d6445",
+      "camera": {
+        "view": "r20_tree_court",
+        "position": [
+          -23.28,
+          31.19,
+          -66.92
+        ],
+        "target": [
+          -26.44,
+          30.18,
+          -70.38
+        ],
+        "fov": 65.0,
+        "width": 1600,
+        "height": 900,
+        "capture_state": {}
+      }
+    },
+    "r20_neighbor": {
+      "before": "496c27e6cc1205260b8988e09246c716403198e0c0edef2e976ecf2ac11ab637",
+      "current": "a781df39239e9507957cfc3d8c3082470e54da75984c5aa1aca7a43f1448aac2",
+      "camera": {
+        "view": "r20_neighbor",
+        "position": [
+          -24.07,
+          30.51,
+          -67.29
+        ],
+        "target": [
+          -25.42,
+          30.24,
+          -68.77
+        ],
+        "fov": 52.0,
+        "width": 1600,
+        "height": 900,
+        "capture_state": {
+          "resident_clip": "sit_rest",
+          "resident_time": 4.0
+        }
+      }
+    },
+    "noodle_corner": {
+      "before": "ee913c9a6e0b9bd44aa779da164ee83613194b14c4f0727e879f8b163faa3313",
+      "current": "7344321742aa1331fff41b794c59da2a1bfa891ce19186147e86814e34ea0387",
+      "camera": {
+        "view": "noodle_corner",
+        "position": [
+          -24.0,
+          13.812,
+          53.5
+        ],
+        "target": [
+          -26.5,
+          14.6,
+          62.05
+        ],
+        "fov": 64.0,
+        "width": 1600,
+        "height": 900,
+        "capture_state": {}
+      }
+    },
+    "roofscape": {
+      "before": "81fe240924ac038b71ce647e55be65236bfcb482c541049b7f5a046ba9a3aed3",
+      "current": "6e2fd609d8670001413eaa369410f882722da61e7610fcb04661f6e1c2285508",
+      "camera": {
+        "view": "roofscape",
+        "position": [
+          14.0,
+          64.0,
+          20.0
+        ],
+        "target": [
+          -31.0,
+          22.0,
+          -8.0
+        ],
+        "fov": 59.0,
+        "width": 1600,
+        "height": 900,
+        "capture_state": {}
+      }
+    },
+    "narrow_passage": {
+      "before": "6d1f7ac071e3b1d726bc158e90972816a786df12411cd61910db1bb1da0bd11d",
+      "current": "c630ec722aff809baa7c92ade6ddfc547ef242da5ff9e37aedbc84a65e8e6e54",
+      "camera": {
+        "view": "narrow_passage",
+        "position": [
+          -35.5,
+          27.586,
+          -46.2
+        ],
+        "target": [
+          -30.6,
+          28.8952,
+          -54.6
+        ],
+        "fov": 70.0,
+        "width": 1600,
+        "height": 900,
+        "capture_state": {}
+      }
+    },
+    "residential_entry": {
+      "before": "bb870edb5d287ddcd5bc5795ad2070c3587403fcda7c2f375687701208878d8f",
+      "current": "7961a8337071f754f1d577f37bcce1f3ccef7082cb39f4451efedbade15df3a4",
+      "camera": {
+        "view": "residential_entry",
+        "position": [
+          -43.0,
+          17.742,
+          22.0
+        ],
+        "target": [
+          -52.9,
+          18.85,
+          19.5
+        ],
+        "fov": 64.0,
+        "width": 1600,
+        "height": 900,
+        "capture_state": {}
+      }
+    },
+    "west_lane": {
+      "before": "e0491bf2bf260a80ce5d56ebf28e82307e0726d00b8b43c5cbe7d83df5fb9ee7",
+      "current": "c55dac7aa972a8a7380ad954800fa7a09c96c84448f87d0490e3231b4589db93",
+      "camera": {
+        "view": "west_lane",
+        "position": [
+          -73.0,
+          15.385,
+          34.0
+        ],
+        "target": [
+          -77.0,
+          21.2493,
+          10.0
+        ],
+        "fov": 61.0,
+        "width": 1600,
+        "height": 900,
+        "capture_state": {}
+      }
+    }
+  },
+  "checks": {
+    "district_test": {
+      "tests": 18,
+      "sha256": "91d01cd9942b79fac6ec5f63d280f6dcf84c6e76b14c42798b3e999fd66af241"
+    },
+    "gameplay_test": {
+      "tests": 24,
+      "sha256": "f6b2cbe59fc8d899b3eea61519a368b9e7cee719906b52029efe52eedd52b84f"
+    },
+    "lane_test": {
+      "tests": 42,
+      "sha256": "f5f5c24413a13af8be6941cf7ea375ca80386509bb38678a14b2b7e4094ebc03"
+    },
+    "delivery_end_to_end": {
+      "tests": 11,
+      "sha256": "ba693de9788dfa3ef299a412a240c6ba27374b0d04bf57039a70bedc993bd7e1"
+    },
+    "survey": {
+      "tests": 261,
+      "sha256": "408e8dd467c080560e731c2b2496d507c062d801b3c71c616638fb89451c6250"
+    },
+    "shopkeeper_performance": {
+      "tests": 20,
+      "sha256": "1e9cb5e013bbe489e5cb7dc5feb5e1e32146ee456e1f3374555102cff976cd49"
+    }
+  },
+  "routes": 24,
+  "delivery_teleports": 0,
+  "device": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "window_size": "(1920.0, 1080.0)",
+  "p95_ms_by_view": {
+    "street_entry": {
+      "previous": 15.36,
+      "current": 20.401
+    },
+    "central_steps": {
+      "previous": 17.364,
+      "current": 22.883
+    },
+    "r20_tree_court": {
+      "previous": 11.284,
+      "current": 16.367
+    },
+    "roofscape": {
+      "previous": 13.693,
+      "current": 21.001
+    },
+    "noodle_corner": {
+      "previous": 9.656,
+      "current": 8.906
+    },
+    "narrow_passage": {
+      "previous": 15.145,
+      "current": 13.988
+    }
+  },
+  "geometry_reopen": {
+    "city_sha256": "c398b3af79a8231bae0969988091a60c5ff862a9fe83e6c87946e311a07e48f1",
+    "kit_sha256": "30f9622ca334d830bf3b37eac23c8d6bea464babc4ff79e3527c5c69d256f602",
+    "objects": 2984,
+    "packed_images": 185,
+    "authored_objects": 51,
+    "atlas_preview_cards": 623,
+    "stair_physical_support": [
+      {
+        "source": "COL_Walk_Central_stair_lane_step_concrete",
+        "tested_stone_centres": 624,
+        "clearance_m": [
+          0.0035076141357421875,
+          0.0068950653076171875
+        ]
+      },
+      {
+        "source": "COL_Walk_West_residential_link_step_concrete",
+        "tested_stone_centres": 418,
+        "clearance_m": [
+          0.0035037994384765625,
+          0.0068988800048828125
+        ]
+      }
+    ],
+    "roof_hits": [
+      {
+        "source": "Context_1374780313_tile_blue",
+        "first_hit": "Context_1374780313_tile_blue",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_809889593_tile_blue",
+        "first_hit": "Context_809889593_tile_blue",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_809889594_tile_cream",
+        "first_hit": "Context_809889594_tile_cream",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_809889602_plaster_grey",
+        "first_hit": "Context_809889602_plaster_grey",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_809889603_plaster_ochre",
+        "first_hit": "Context_809889603_plaster_ochre",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_809889621_plaster_grey",
+        "first_hit": "Context_809889621_plaster_grey",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_809889625_plaster_grey",
+        "first_hit": "Context_809889625_plaster_grey",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_809889635_plaster_grey",
+        "first_hit": "Context_809889635_plaster_grey",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_authored_0_1_brick_dark",
+        "first_hit": "Context_authored_0_1_brick_dark",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_authored_0_2_plaster_grey",
+        "first_hit": "Context_authored_0_2_plaster_grey",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_authored_0_3_plaster_ochre",
+        "first_hit": "Context_authored_0_3_plaster_ochre",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_authored_0_4_tile_cream",
+        "first_hit": "Context_authored_0_4_tile_cream",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_authored_0_5_tile_cream",
+        "first_hit": "Context_authored_0_5_tile_cream",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_authored_0_7_plaster_ochre",
+        "first_hit": "Context_authored_0_7_plaster_ochre",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_authored_0_8_brick_dark",
+        "first_hit": "Context_authored_0_8_brick_dark",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_authored_1_0_brick_dark",
+        "first_hit": "Context_authored_1_0_brick_dark",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_authored_1_1_tile_cream",
+        "first_hit": "Context_authored_1_1_tile_cream",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_authored_1_8_plaster_grey",
+        "first_hit": "Context_authored_1_8_plaster_grey",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_authored_2_1_concrete",
+        "first_hit": "Context_authored_2_1_concrete",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_authored_2_2_plaster_ochre",
+        "first_hit": "Context_authored_2_2_plaster_ochre",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_authored_2_8_tile_cream",
+        "first_hit": "Context_authored_2_8_tile_cream",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_authored_3_0_tile_cream",
+        "first_hit": "Context_authored_3_0_tile_cream",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_authored_3_1_plaster_ochre",
+        "first_hit": "Context_authored_3_1_plaster_ochre",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_authored_3_2_tile_cream",
+        "first_hit": "Context_authored_3_2_tile_cream",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_authored_3_6_plaster_ochre",
+        "first_hit": "Context_authored_3_6_plaster_ochre",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_authored_3_7_tile_cream",
+        "first_hit": "Context_authored_3_7_tile_cream",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_authored_3_8_plaster_ochre",
+        "first_hit": "Context_authored_3_8_plaster_ochre",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_authored_4_1_concrete",
+        "first_hit": "Context_authored_4_1_concrete",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_authored_4_2_plaster_grey",
+        "first_hit": "Context_authored_4_2_plaster_grey",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_authored_4_3_plaster_ochre",
+        "first_hit": "Context_authored_4_3_plaster_ochre",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_authored_4_4_tile_cream",
+        "first_hit": "Context_authored_4_4_tile_cream",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_authored_4_5_plaster_ochre",
+        "first_hit": "Context_authored_4_5_plaster_ochre",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_authored_4_6_plaster_grey",
+        "first_hit": "Context_authored_4_6_plaster_grey",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_authored_4_7_plaster_ochre",
+        "first_hit": "Context_authored_4_7_plaster_ochre",
+        "delta_m": 0.0
+      },
+      {
+        "source": "Context_authored_4_8_plaster_grey",
+        "first_hit": "Context_authored_4_8_plaster_grey",
+        "delta_m": 0.0
+      }
+    ],
+    "runtime_glb_sha256": "fdb98c3bd8b65364f2d76c30a6263cbfca46c2cc991436662197d56faa76346c",
+    "marked_wall_sockets": 208,
+    "unpacked_images": [],
+    "standalone_kit_objects": 51
+  },
+  "movie": {
+    "frames": 241,
+    "native_fps": 30,
+    "decoded_size": [
+      1280,
+      720
+    ],
+    "source_frame_range": [
+      38,
+      278
+    ],
+    "source_avi_sha256": "b5c4cc8b39ba743d3c16fd8ba39d4089d36aa29eb751b48e26fc5cbec1291e3f",
+    "mp4_sha256": "8d209bd15093a277494c83234670444ce04e018274560903bb6a4daae623feba",
+    "method": "Continuous in-engine tracking camera. Trimmed startup and encoded H.264 in Blender. Original colour, silent."
+  },
+  "media_files_sha256": {
+    "街口实机.png": "83fd29531b1a27a21bc4d04ca8e68c33a789890db13e75d9b239258946ed9b14",
+    "中央梯坎实机.png": "17ffa00c4d89a9569c7024c64a290f45fc0308f47f0ab25f7f1797e2d697b775",
+    "上巷树池实机.png": "3e297781e42659389d0bc9dbce1d86dde0ef7fb14933922f5ad804e1db3d6445",
+    "住宅屋顶实机.png": "6e2fd609d8670001413eaa369410f882722da61e7610fcb04661f6e1c2285508",
+    "城区同机位对照.jpg": "d07c8138389503f5aa5513a4abde14c61315899f23dfbec8e71cf41fd82f565d",
+    "中央梯坎连续实机.mp4": "8d209bd15093a277494c83234670444ce04e018274560903bb6a4daae623feba"
+  }
+}

@@ -1,0 +1,54 @@
+# Regenerable engine/editor caches. Keep Godot .import settings and .uid files.
+.godot/
+.import/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.blend[0-9]
+*.tmp
+*.temp
+.env
+.env.*
+!.env.example
+export_credentials.cfg
+*.pfx
+*.p12
+*.pem
+*.key
+
+# Installed tools, duplicated test projects, immutable local checkpoint copies.
+/work/tools/
+/work/checkpoints/
+/work/gpu_trial_r22/project/
+/work/scene_r23/playtest/
+/work/scene_r24/playtest/
+
+# Original delivery packages and third-party MAX archives stay local.
+# Hashes and exact excluded paths are recorded in docs/version-control/.
+/outputs/R15原始资产/
+/work/scene_r24/city_frame_11864101/source/
+/work/scene_r24/city_frame_11864101/metadata/
+/work/scene_r24/chaotianmen_9644040/source/
+/work/scene_r24/chaotianmen_9644040/metadata/
+
+# Pre-Git full-city snapshots remain local; independent authoring layers stay tracked.
+/work/r16_scene/chongqing_district.blend
+/work/r16_scene/chongqing_district.glb
+/work/r17_scene/chongqing_district.blend
+/work/project/chongqing_blender_v05/chongqing_district.blend
+/work/scene_r19/chongqing_district.blend
+/work/scene_r20/chongqing_district.blend
+/work/scene_r21/chongqing_district.blend
+/work/scene_r21/district_trial05/chongqing_district.blend
+/work/scene_r21/city_and_rooftops.blend
+/work/scene_r22/**/chongqing_district.blend
+/work/scene_r22/city_roofs.blend
+/work/scene_r23/chongqing_district.blend
+/work/scene_r24/**/city*.blend
+/work/scene_r24/chongqing_district.blend
+/work/scene_r24/build08_baseline/chongqing_district.blend
+/work/scene_r24/pre_flyover/chongqing_district.blend
+!/work/scene_r24/vertical_run/city_and_crossing.blend

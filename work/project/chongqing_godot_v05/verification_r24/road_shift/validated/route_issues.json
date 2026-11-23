@@ -1,0 +1,459 @@
+{
+	"issues": [
+		{
+			"end_reason": "forward_progress",
+			"ended_at_s": 347.27,
+			"goal": "(-28.0, 16.8, 19.7)",
+			"kind": "route_blocked",
+			"obstacle": "/root/ChongqingDistrict/InteractionWorld/PlayerElectricScooter",
+			"position": "(-30.10535, 16.31397, 21.79976)",
+			"seconds_without_progress": 3.02,
+			"segment": 2,
+			"stage": "DONE",
+			"time_s": 344.83
+		},
+		{
+			"end_reason": "forward_progress",
+			"ended_at_s": 380.53,
+			"goal": "(-32.7, 12.0, 52.1)",
+			"kind": "route_blocked",
+			"obstacle": "/root/ChongqingDistrict/City/COL_B_A05_market_pavement/CQ_StaticCollision",
+			"position": "(-29.8604, 12.50586, 49.43005)",
+			"seconds_without_progress": 3.02,
+			"segment": 12,
+			"stage": "DONE",
+			"time_s": 380.48
+		}
+	],
+	"legs": {
+		"1/TO_SHOP": {
+			"arrived": true,
+			"max_kmh": 9.86400000000004,
+			"moving_s": 9.56666666666672,
+			"travel_m": 20.2652982208529,
+			"waiting_s": 7.08333333333331,
+			"waypoints": [
+				{
+					"position": "(-49.99934, 11.76194, 52.00065)",
+					"segment": 0,
+					"stage": "TO_SHOP",
+					"time_s": 3.78
+				},
+				{
+					"position": "(-40.11868, 11.95542, 52.08705)",
+					"segment": 1,
+					"stage": "TO_SHOP",
+					"time_s": 16.12
+				}
+			]
+		},
+		"1/TO_YARD": {
+			"arrived": true,
+			"max_kmh": 9.87600000000014,
+			"moving_s": 24.8333333333332,
+			"travel_m": 61.7934069139883,
+			"waiting_s": 4.93333333333332,
+			"waypoints": [
+				{
+					"position": "(-30.20801, 11.66927, 54.95811)",
+					"segment": 0,
+					"stage": "TO_YARD",
+					"time_s": 52.07
+				},
+				{
+					"position": "(-27.10301, 11.71622, 55.04205)",
+					"segment": 1,
+					"stage": "TO_YARD",
+					"time_s": 58.72
+				},
+				{
+					"position": "(-25.08733, 12.12811, 53.07072)",
+					"segment": 2,
+					"stage": "TO_YARD",
+					"time_s": 60.08
+				},
+				{
+					"position": "(-25.06289, 12.67576, 49.12313)",
+					"segment": 3,
+					"stage": "TO_YARD",
+					"time_s": 61.7
+				},
+				{
+					"position": "(-24.70681, 13.72568, 41.6062)",
+					"segment": 4,
+					"stage": "TO_YARD",
+					"time_s": 64.48
+				},
+				{
+					"position": "(-25.69771, 14.45993, 36.07688)",
+					"segment": 5,
+					"stage": "TO_YARD",
+					"time_s": 66.57
+				},
+				{
+					"position": "(-26.01499, 15.26828, 30.1398)",
+					"segment": 6,
+					"stage": "TO_YARD",
+					"time_s": 68.77
+				},
+				{
+					"position": "(-25.69565, 15.98846, 25.13692)",
+					"segment": 7,
+					"stage": "TO_YARD",
+					"time_s": 70.62
+				},
+				{
+					"position": "(-25.14017, 16.29144, 23.00764)",
+					"segment": 8,
+					"stage": "TO_YARD",
+					"time_s": 71.43
+				},
+				{
+					"position": "(-26.89948, 16.57424, 20.0016)",
+					"segment": 9,
+					"stage": "TO_YARD",
+					"time_s": 73.58
+				}
+			]
+		},
+		"2/TO_SHOP": {
+			"arrived": true,
+			"max_kmh": 9.87600000000021,
+			"moving_s": 39.0999999999991,
+			"travel_m": 87.5551016086247,
+			"waiting_s": 6.36666666666665,
+			"waypoints": [
+				{
+					"position": "(-47.76607, 16.11697, 19.65569)",
+					"segment": 0,
+					"stage": "TO_SHOP",
+					"time_s": 112.55
+				},
+				{
+					"position": "(-50.83468, 16.01303, 20.68927)",
+					"segment": 1,
+					"stage": "TO_SHOP",
+					"time_s": 120.75
+				},
+				{
+					"position": "(-50.32574, 15.54723, 23.95078)",
+					"segment": 2,
+					"stage": "TO_SHOP",
+					"time_s": 123.3
+				},
+				{
+					"position": "(-29.1083, 16.53457, 20.01401)",
+					"segment": 3,
+					"stage": "TO_SHOP",
+					"time_s": 131.43
+				},
+				{
+					"position": "(-25.517, 16.46169, 21.30608)",
+					"segment": 4,
+					"stage": "TO_SHOP",
+					"time_s": 133.17
+				},
+				{
+					"position": "(-24.67867, 16.27805, 23.27794)",
+					"segment": 5,
+					"stage": "TO_SHOP",
+					"time_s": 134.52
+				},
+				{
+					"position": "(-25.80009, 15.61012, 27.88177)",
+					"segment": 6,
+					"stage": "TO_SHOP",
+					"time_s": 136.33
+				},
+				{
+					"position": "(-26.01059, 14.76298, 33.85254)",
+					"segment": 7,
+					"stage": "TO_SHOP",
+					"time_s": 138.53
+				},
+				{
+					"position": "(-24.89886, 14.03163, 39.39662)",
+					"segment": 8,
+					"stage": "TO_SHOP",
+					"time_s": 140.62
+				},
+				{
+					"position": "(-25.18158, 13.00254, 46.87933)",
+					"segment": 9,
+					"stage": "TO_SHOP",
+					"time_s": 143.38
+				},
+				{
+					"position": "(-24.89364, 12.43904, 50.88985)",
+					"segment": 10,
+					"stage": "TO_SHOP",
+					"time_s": 144.87
+				},
+				{
+					"position": "(-25.46881, 12.04145, 53.7137)",
+					"segment": 11,
+					"stage": "TO_SHOP",
+					"time_s": 146.08
+				},
+				{
+					"position": "(-28.65721, 12.15808, 52.40608)",
+					"segment": 12,
+					"stage": "TO_SHOP",
+					"time_s": 149.6
+				},
+				{
+					"position": "(-32.1209, 12.28549, 51.10228)",
+					"segment": 13,
+					"stage": "TO_SHOP",
+					"time_s": 153.67
+				},
+				{
+					"position": "(-33.28488, 11.93873, 53.49597)",
+					"segment": 14,
+					"stage": "TO_SHOP",
+					"time_s": 154.65
+				}
+			]
+		},
+		"2/TO_YARD": {
+			"arrived": true,
+			"max_kmh": 9.87600000000006,
+			"moving_s": 11.1833333333335,
+			"travel_m": 24.4831160717877,
+			"waiting_s": 4.44999999999999,
+			"waypoints": [
+				{
+					"position": "(-30.16461, 11.65156, 55.63873)",
+					"segment": 0,
+					"stage": "TO_YARD",
+					"time_s": 191.35
+				},
+				{
+					"position": "(-27.54887, 11.7163, 54.94349)",
+					"segment": 1,
+					"stage": "TO_YARD",
+					"time_s": 197.27
+				},
+				{
+					"position": "(-25.92008, 12.15606, 52.73433)",
+					"segment": 2,
+					"stage": "TO_YARD",
+					"time_s": 199.18
+				},
+				{
+					"position": "(-28.8585, 12.25188, 51.42261)",
+					"segment": 3,
+					"stage": "TO_YARD",
+					"time_s": 201.0
+				},
+				{
+					"position": "(-35.8875, 11.95655, 52.78254)",
+					"segment": 4,
+					"stage": "TO_YARD",
+					"time_s": 203.63
+				}
+			]
+		},
+		"3/TO_SHOP": {
+			"arrived": true,
+			"max_kmh": 9.87600000000003,
+			"moving_s": 16.816666666667,
+			"travel_m": 24.6867462239461,
+			"waiting_s": 8.08333333333331,
+			"waypoints": [
+				{
+					"position": "(-43.58085, 11.60315, 54.27053)",
+					"segment": 0,
+					"stage": "TO_SHOP",
+					"time_s": 228.73
+				},
+				{
+					"position": "(-45.93834, 11.52505, 54.33436)",
+					"segment": 1,
+					"stage": "TO_SHOP",
+					"time_s": 235.47
+				},
+				{
+					"position": "(-47.7277, 11.75373, 52.70753)",
+					"segment": 2,
+					"stage": "TO_SHOP",
+					"time_s": 236.75
+				},
+				{
+					"position": "(-45.81582, 12.02752, 50.93774)",
+					"segment": 3,
+					"stage": "TO_SHOP",
+					"time_s": 243.03
+				},
+				{
+					"position": "(-38.13456, 12.00398, 51.97876)",
+					"segment": 4,
+					"stage": "TO_SHOP",
+					"time_s": 246.52
+				}
+			]
+		},
+		"3/TO_YARD": {
+			"arrived": true,
+			"max_kmh": 9.87600000000015,
+			"moving_s": 19.5000000000002,
+			"travel_m": 47.1794347505784,
+			"waiting_s": 5.93333333333332,
+			"waypoints": [
+				{
+					"position": "(-30.1994, 11.68337, 54.91911)",
+					"segment": 0,
+					"stage": "TO_YARD",
+					"time_s": 285.23
+				},
+				{
+					"position": "(-27.07028, 11.71942, 55.03893)",
+					"segment": 1,
+					"stage": "TO_YARD",
+					"time_s": 292.92
+				},
+				{
+					"position": "(-25.06985, 12.12927, 53.06181)",
+					"segment": 2,
+					"stage": "TO_YARD",
+					"time_s": 294.28
+				},
+				{
+					"position": "(-25.05926, 12.67618, 49.12007)",
+					"segment": 3,
+					"stage": "TO_YARD",
+					"time_s": 295.88
+				},
+				{
+					"position": "(-24.71115, 13.72026, 41.64862)",
+					"segment": 4,
+					"stage": "TO_YARD",
+					"time_s": 298.65
+				},
+				{
+					"position": "(-25.70224, 14.46035, 36.0735)",
+					"segment": 5,
+					"stage": "TO_YARD",
+					"time_s": 300.75
+				},
+				{
+					"position": "(-26.01498, 15.26871, 30.13583)",
+					"segment": 6,
+					"stage": "TO_YARD",
+					"time_s": 302.95
+				},
+				{
+					"position": "(-25.69543, 15.98889, 25.13368)",
+					"segment": 7,
+					"stage": "TO_YARD",
+					"time_s": 304.8
+				},
+				{
+					"position": "(-25.13978, 16.29187, 23.00542)",
+					"segment": 8,
+					"stage": "TO_YARD",
+					"time_s": 305.62
+				},
+				{
+					"position": "(-26.88854, 16.57395, 20.00684)",
+					"segment": 9,
+					"stage": "TO_YARD",
+					"time_s": 307.77
+				}
+			]
+		},
+		"dispatch/7": {
+			"arrived": false,
+			"max_kmh": 9.87600000000003,
+			"moving_s": 45.7166666666654,
+			"travel_m": 68.2115756571875,
+			"waiting_s": 0.0,
+			"waypoints": [
+				{
+					"position": "(-33.08171, 16.35562, 20.6397)",
+					"segment": 0,
+					"stage": "DONE",
+					"time_s": 334.83
+				},
+				{
+					"position": "(-36.08057, 16.15079, 21.92093)",
+					"segment": 1,
+					"stage": "DONE",
+					"time_s": 336.5
+				},
+				{
+					"position": "(-35.52691, 15.69605, 25.23395)",
+					"segment": 2,
+					"stage": "DONE",
+					"time_s": 339.15
+				},
+				{
+					"position": "(-28.05752, 16.48571, 20.84937)",
+					"segment": 3,
+					"stage": "DONE",
+					"time_s": 352.58
+				},
+				{
+					"position": "(-24.53071, 16.57059, 20.86859)",
+					"segment": 4,
+					"stage": "DONE",
+					"time_s": 355.83
+				},
+				{
+					"position": "(-24.99305, 16.29193, 23.03264)",
+					"segment": 5,
+					"stage": "DONE",
+					"time_s": 356.82
+				},
+				{
+					"position": "(-25.92415, 15.61712, 27.8362)",
+					"segment": 6,
+					"stage": "DONE",
+					"time_s": 358.73
+				},
+				{
+					"position": "(-25.99933, 14.76865, 33.84641)",
+					"segment": 7,
+					"stage": "DONE",
+					"time_s": 362.23
+				},
+				{
+					"position": "(-24.88154, 14.04148, 39.38283)",
+					"segment": 8,
+					"stage": "DONE",
+					"time_s": 365.52
+				},
+				{
+					"position": "(-25.20465, 13.00727, 46.85801)",
+					"segment": 9,
+					"stage": "DONE",
+					"time_s": 369.87
+				},
+				{
+					"position": "(-24.8646, 12.44597, 50.86076)",
+					"segment": 10,
+					"stage": "DONE",
+					"time_s": 372.2
+				},
+				{
+					"position": "(-25.49783, 12.04941, 53.65786)",
+					"segment": 11,
+					"stage": "DONE",
+					"time_s": 373.9
+				},
+				{
+					"position": "(-28.6627, 12.1708, 52.31615)",
+					"segment": 12,
+					"stage": "DONE",
+					"time_s": 377.48
+				}
+			]
+		}
+	},
+	"max_frame_displacement_m": 0.167872235178947,
+	"rules": {
+		"airborne_seconds": 0.45,
+		"minimum_progress_m": 0.2,
+		"stalled_seconds": 3.0
+	}
+}

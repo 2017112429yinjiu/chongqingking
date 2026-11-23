@@ -1,0 +1,229 @@
+{
+  "revision": "R24_market_terrace_10_internal",
+  "engine": "Godot 4.6.3 Forward+",
+  "profile_sha256": "62397a0bceb3dad4a5615ce9e0c3a95f37b0d9aadae20cd5273df6756f477156",
+  "project_sha256": "5e7fe01740f8c07a0c22e367627f6fd5ecc4bf127baa0314d780ec4673587abe",
+  "runtime_dependencies": {
+    "res://assets/block_r23/block.glb": "f0796f06598586cfdbb6fab09f18dc28287a6951f3e2a092134ab7feb75fb686",
+    "res://assets/block_r23/block.json": "88aa467c76741b1a7d926328c6edf5b37be6e1b59014ef44b9e80beaa6c45227",
+    "res://assets/block_r23/routes.json": "37e98b27546e4fac4f599adb53ff9dfbd072b8bf02f1f98feaf4d6962e760832",
+    "res://assets/fonts/cq_lane_ui.otf": "4f3d9d826af0232c736d27c7ec955bc41f17c4fbb8bb3589692e4efcf5366d17",
+    "res://assets/frontage_r24/frontage.glb": "225e217815de12639bb7dbb58245ffabea2eb0502d3e2b1964ef5ceef7fb1cf6",
+    "res://assets/frontage_r24/frontage.json": "dd94246c3351da31958a0caf1233da6a1cda6a3c5310de6e631104c7c3d60bd2",
+    "res://assets/frontage_r24/stall_clips.res": "a6a8c3d5e49d7211f7f3f65da6206e53aa6beb542464fbbfcfa15c6dda7b012d",
+    "res://assets/frontage_r24/terry_pile.png": "fd459f7260aba51014c21b480ffd2bdcc8b2b346866a5a44c816255c5de27b11",
+    "res://assets/frontage_r24/traffic_lanes.json": "062b0996444cf2453877117ce883afccdbff2c20e98039745780cb534f1fd9e9",
+    "res://assets/frontage_r24/tyre_contact.png": "ec2133beae7a3dec76ce298de9862c7ea116d05540ce9d84e36eadd9363e4627",
+    "res://assets/lane_r20/rinse.wav": "8674dce3de89f536a8d519dd21223164a327c91e574f216fad88db91ab74f1bf",
+    "res://assets/lane_r20/rinse_fixture.json": "8a0f267946522fd59fe99b298e18e6a4e1e4b95d1a3728bb4a73e4636fa2ff1a",
+    "res://assets/lane_r20/tree_seats.json": "060f2507ab6997cdc5cddc2d3b5a9eefdbd4b199b88466318eb6a983fd73a0e6",
+    "res://assets/river_r22/shore_masks.png": "8d02149256183b79a12328056618abc8b526f079c540b7a6fcb276cccd1d7cdd",
+    "res://scripts/block_r23.gd": "815888f57d13c680be89050563a5c1d4688e7c9ebe2bcc91f3e92cd5b0da77ef",
+    "res://scripts/counter_condiments.gd": "fa08ffe36271c3ae1db3ab206bbc9b05c74d84764b0c0d2fcd3d671824c4e803",
+    "res://scripts/district_r21.gd": "0db44aa84d164a723d53ef96f62904f4c5a76a69546d0fec96cbb106678a9f7a",
+    "res://scripts/explorer.gd": "135a55984cca992494f66561f99ad3e2ed7df926d6d4caf1035231a153815892",
+    "res://scripts/frontage_r24.gd": "ebd12cab88ce40a1680b5d41dea50a848c08773b0624672a85d00dd012ac7471",
+    "res://scripts/gameplay.gd": "4379b58c124fd90ec94850c7d004653ed5bff7881837622a3f6366c3f9a52b2b",
+    "res://scripts/main.gd": "da48404c185247df5cee165011871f719ba5b8c38f419968c219bdb27d7fa216",
+    "res://scripts/meter_detail_lod.gd": "2175ca3919c3728ef1db2fc7f8710ad1f39e15aa504306e25ae322e8448d45b3",
+    "res://scripts/qa_lane_r20.gd": "18f87f9f26eddd78d05dc617465ff5c4aac399b25eafc1c7cd2aec4417f5b40a",
+    "res://scripts/rinse_tap.gd": "a14c99c56d463b5fb690153a3e53c735623ac2eb09efe408e686efb99bba5fe9",
+    "res://scripts/river_r22.gd": "584019e0ea8ae7f6013c85e233cc2db8f552006cf35a73b57b210edfb70060e6",
+    "res://scripts/roofs_r22.gd": "f0e8b58d18e99148e3128026f69a9e4d3c45dcf50b07b19cab678a64d23c06ad",
+    "res://scripts/scooter_controller.gd": "4393dbab0f3b7f0017962469dc067323ade7705def2d78b64fee1ba7a1047c1e",
+    "res://scripts/shopkeeper.gd": "b34f9b070efae4b0c4a5c619104e782b277b2482d31e4eaf25f3e1359052b5a8",
+    "res://scripts/shopkeeper_attention.gd": "b36275222a35552763acdc27f60687edc2e96a7e52560889480d709d2aa8c656",
+    "res://scripts/street_detail_r19.gd": "8dc39303ddfca91279a8c940439b1322526c406b823b324a8c9b099e81a469a0",
+    "res://scripts/takeaway_bag.gd": "f53ed8a685fccfbdd767c458dbef25cf85df1f33a5b7b3d3e4b5c90059df52a0",
+    "res://scripts/upper_lane_r20.gd": "0c61b1b914ad1f8d1ba0fbfb27889d1426d6635340d0867f62feda76d4f8d56c",
+    "res://shaders/breakfast_canvas_r22.gdshader": "2c79d2d0b0fb203bf4e343ea7bfc505d17eb4912e4c965330339cfcb1771ab4a",
+    "res://shaders/canopy_r21.gdshader": "8a02e64842c2b61ae025da990f7c1d7037dd3f24c338de4159d1eb895d596bab",
+    "res://shaders/exterior_r21.gdshader": "3b6a8584822522c97c527ea72fd9b33d31441343de73b4b5d89f0640b7755512",
+    "res://shaders/frontage_canvas_r24.gdshader": "05a4855a2ded86e0d9b972d8b3836657bedbb93268add08cdf16f64354d8feb5",
+    "res://shaders/frontage_surface_r24.gdshader": "bd85a6e4c69f4bc52ab0ab43af5894bd2843b3556a74d122acad3b9a84bf79bd",
+    "res://shaders/hanging_cotton_r20.gdshader": "9d48788f6d3b3beffde16f0f5a94c8d99eac36fa8a9c00950c5116c97c208754",
+    "res://shaders/paving_r21.gdshader": "81bb72e0ab502c8a6e737fb20cafdc549da4e2bd5bf90fdaec72b75767b5fe2e",
+    "res://shaders/rinse_water.gdshader": "1a1c4d8f5d478384ae1cdec390d94903b83adf78096bc050116eee3354fee277",
+    "res://shaders/river_foliage_r22.gdshader": "625e26697fc1f7c0a7900774572b024157fdfb072e45b46207655130258c5391",
+    "res://shaders/river_r22.gdshader": "b44464750600087424a996e73d6cbf26891f2367df9f47ad6add66c0fea4cd79",
+    "res://shaders/riverbank_r22.gdshader": "71572bdd1e25f2d3cc3389eb72aad132cda52e7f5084cba4722ea467e6a47148",
+    "res://shaders/sky_visibility_r20.gdshaderinc": "14a770eab2dc29951adb2d5c9a17b4121b9a5bbf0e74d31e48743b8828985b7d",
+    "res://shaders/stall_enamel_r24.gdshader": "047d7175d2cf71e4c1a3f18eb1860027102f27e897f8d0682d9de86296c02f5b",
+    "res://shaders/street_surface_r19.gdshader": "f091b47b5bcc69ce5884c0f1fe709c73a8e4ac09156e1fb86054f22c681db0bb",
+    "res://shaders/washcloth_r24.gdshader": "40257182eb7b60ad875f080f81fec3efb5e2b5b481510b5ff06a4154915179bc",
+    "res://shaders/worn_rail_r21.gdshader": "14fe938ef6c6874fa67680e154f445eda0122976eb478dd5b3282417f5ada7c7"
+  },
+  "checked_installed_inputs": 42,
+  "previous_geometry_evidence": {
+    "file": "verification_r24/build09/session_record.json",
+    "sha256": "dfba819ed771f63529b9a80be442d1ffc8bec8d1b3e2356e87e15cff8f14d241"
+  },
+  "reopened_blender_sha256": "c89593aa0f8c7c18ecdda0c596fd4a5265d465fbc7c86debfbd45507bb4c9a24",
+  "checks": {
+    "walk": {
+      "metres": 62.3911873279139,
+      "checkpoints": 15
+    },
+    "corner_walk": {
+      "metres": 96.8197913169861,
+      "checkpoints": 24
+    },
+    "traffic": {
+      "route_wheels": 2128,
+      "parked_wheels": 12,
+      "live_frames": 2520,
+      "live_peak_m": 0.025181770324707
+    },
+    "block_test": {
+      "passed": 8
+    },
+    "delivery_end_to_end": {
+      "passed": 11
+    },
+    "smoke": {
+      "passed": 174
+    },
+    "survey": {
+      "passed": 283
+    }
+  },
+  "cloth_motion": {
+    "alpha_threshold": 128,
+    "phase_s": [
+      0,
+      1.6,
+      3.2
+    ],
+    "render_target_px": [
+      640,
+      640
+    ],
+    "tested_mesh": "R23_Towel_02",
+    "mesh_pin_and_hem_rows_inspected": 15,
+    "changed_silhouette_pixels_vs_phase_0": {
+      "peg_edge": [
+        0,
+        0
+      ],
+      "lower_quarter": [
+        1187,
+        3365
+      ]
+    },
+    "current_images": {
+      "line.png": "04f42c2bca783b64a3ba9ff556add89940cc885fb7ca998d1699a5eb83aefbc9",
+      "fibres.png": "62c21df8b47fb6616870a98b460e4fb7ed4439084119dee4fcc6d741d01535e8",
+      "silhouette_0.png": "4c7906fdac965ce1cb62745e88aebce32ed0e0b4fc05c567e7460b4838950614",
+      "silhouette_16.png": "719d45c9855c1fd3f61f0d32f8bf87c0b151806e5b478fe4c65ae5a990192e5d",
+      "silhouette_32.png": "45563ec122590a4ec16f51a53e2287dcf623fe96a090b369aca26e83782254d1",
+      "cotton.json": "322f4f7dbabccc27dffc54f7c08191dbd1245887427c1680fcdb39730182561f"
+    },
+    "previous_comparison_images": {
+      "line.png": "cf05d588e816d417c06b854f80e9af9538918d34014426d7d94dd95c8e5609b6",
+      "fibres.png": "4ecce0a23a9d937db180bc22b43ae48d9e69e14b7feecdf28310c58f5e88c6bf"
+    }
+  },
+  "texture": {
+    "asset": "Terry Cloth",
+    "source": "https://polyhaven.com/a/terry_cloth",
+    "authors": {
+      "colormass": "Photography",
+      "Rico Cilliers": "Processing"
+    },
+    "license": "CC0-1.0",
+    "license_url": "https://polyhaven.com/license",
+    "attribution": "Commercial use permitted. Attribution optional; credited in project.",
+    "scan_extent_mm": [
+      367.0535953781794,
+      363.20000886917114
+    ],
+    "maps": {
+      "Diffuse": {
+        "file": "terry_cloth_diff_1k.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/terry_cloth/terry_cloth_diff_1k.jpg",
+        "publisher_md5": "79084e50ec009738e0bf9c64365a4dfd",
+        "sha256": "8605d028a0109de5f2db5992795581f441b56266f27f7969dca32d30866eb9db"
+      },
+      "AO": {
+        "file": "terry_cloth_ao_1k.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/terry_cloth/terry_cloth_ao_1k.jpg",
+        "publisher_md5": "6015aec6b05adab4cdc02e0d816712d0",
+        "sha256": "c1a8d92279199837b7f8b6aa9dfef3d7e62220aa67c77c672b4e9bb1bc4df3fe"
+      },
+      "nor_gl": {
+        "file": "terry_cloth_nor_gl_1k.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/terry_cloth/terry_cloth_nor_gl_1k.jpg",
+        "publisher_md5": "ee48655761129f8a2f96ce83de922116",
+        "sha256": "06ba21255a91259a95115b63cd894fd073327bde05948e51786f37cf46795955"
+      }
+    },
+    "derived": {
+      "file": "terry_pile.png",
+      "sha256": "fd459f7260aba51014c21b480ffd2bdcc8b2b346866a5a44c816255c5de27b11",
+      "rg": "Tangent-space OpenGL normal XY, linear data.",
+      "b": "Luminance times softened occlusion, normalized using the 2nd and 98th percentiles.",
+      "game_modifications": "Local faded dyes, woven bands, pinned edge and moving hem."
+    }
+  },
+  "isolated_gpu": {
+    "framebuffer": [
+      1920,
+      1080
+    ],
+    "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "meshes": 5,
+    "passes": [
+      {
+        "image_sha256": "31680a40e476df7c05631a99731cca6a1a50148a4b5a70aa90fd0aef1ce256ad",
+        "mode": "old",
+        "p50_ms": 14.3649997711182,
+        "p95_ms": 16.5289993286133,
+        "samples": 240
+      },
+      {
+        "image_sha256": "c3063e8b1d5dd989de82f3fac8145dfcc333e0cf901bcea0fc5d501cca0ae976",
+        "mode": "new",
+        "p50_ms": 14.2480001449585,
+        "p95_ms": 17.4699993133545,
+        "samples": 240
+      },
+      {
+        "image_sha256": "4f6a44e4b6d15414d67e114689d2debee3f3307fcaf5975b9cdb5f4a56fce568",
+        "mode": "old_repeat",
+        "p50_ms": 14.3190002441406,
+        "p95_ms": 16.5790004730225,
+        "samples": 240
+      }
+    ],
+    "scope": "Five actual court meshes and materials in an isolated viewport; main city freed",
+    "warmup": 90
+  },
+  "performance_scope": "One isolated five-mesh viewport. An editor play session was open. No build 10 whole-district FPS inferred.",
+  "remaining": [
+    "Long empty approaches, window occupancy, untreated building entrances and lower shop floors",
+    "Player acceptance in motion; district visual standards remain provisional."
+  ],
+  "report_sha256": {
+    "block_test.json": "7daa6c7608adc04574521a059fb29aca7720f0d5bcc4ad7d3454a6ce99307bbc",
+    "cloth_gpu.json": "08386eeaba4a4c120fba902c1d06a5f5adbcfcbe57ba3a166e8a2f7ac989a0e0",
+    "cloth_mask_check.json": "77043b686fe972f1903274e083492b370dd6a083578cd93263c23a4b076ba4bb",
+    "corner_walk.json": "8623de5ba5b312b6182ebe18e352eaa1cbe642d3b47be0d279bf245e1ad29476",
+    "cotton.json": "322f4f7dbabccc27dffc54f7c08191dbd1245887427c1680fcdb39730182561f",
+    "delivery_end_to_end.json": "b469c8aa1cdd01e7ade9f812412daf9f98450835cbc605bcead004e5b826b62c",
+    "smoke.json": "54caf22d3966827f97a535eef8bf4b1ffb9d8e48d9a4b0cd644f61a65c7611bb",
+    "survey.json": "9d06cd56679f1e393c5071f77f8c2d61f248bd9a086f3ba9ef8799f0b2efdd23",
+    "traffic.json": "9ea07d13c39d931ba1318efed5d5b2d49e134b33f020134c224435ab00340f12",
+    "walk.json": "1ef7282c49e3d11be082383e34356ce3ecfd5afdb2c18bc64463432fa58dca22"
+  },
+  "capture_sha256": {
+    "cloth1080_new.png": "c3063e8b1d5dd989de82f3fac8145dfcc333e0cf901bcea0fc5d501cca0ae976",
+    "cloth1080_old.png": "31680a40e476df7c05631a99731cca6a1a50148a4b5a70aa90fd0aef1ce256ad",
+    "cloth1080_old_repeat.png": "4f6a44e4b6d15414d67e114689d2debee3f3307fcaf5975b9cdb5f4a56fce568",
+    "fibres.png": "62c21df8b47fb6616870a98b460e4fb7ed4439084119dee4fcc6d741d01535e8",
+    "line.png": "04f42c2bca783b64a3ba9ff556add89940cc885fb7ca998d1699a5eb83aefbc9",
+    "silhouette_0.png": "4c7906fdac965ce1cb62745e88aebce32ed0e0b4fc05c567e7460b4838950614",
+    "silhouette_16.png": "719d45c9855c1fd3f61f0d32f8bf87c0b151806e5b478fe4c65ae5a990192e5d",
+    "silhouette_32.png": "45563ec122590a4ec16f51a53e2287dcf623fe96a090b369aca26e83782254d1",
+    "球场毛巾同机位对照.jpg": "0908e7c4560b341b5a6be3f48046f2209b7d47f7ddcd6415783b62c5004fe103"
+  }
+}

@@ -1,0 +1,375 @@
+{
+  "revision": 15,
+  "status": "PASS_INTERIOR_SCOPE_WITH_RECORDED_LIMITS",
+  "passed": true,
+  "stage": "source + actual exported contact + fresh complete native22 visual review",
+  "recorded_utc": "2026-11-19T15:56:17.226040+00:00",
+  "scope": "Current R15 interior source/geometry is unchanged from R14; evidence is freshly rebound to R15 source audits, actual R15 GLB and all 22 directly opened R15 native images. This is bounded interior acceptance, not whole-delivery acceptance.",
+  "source_sha256": {
+    "architecture_full.py": "65bd6df0c2851c777836eecdaae0cd73453ec3a03209da0cf5be0e64e875330f",
+    "interior_scenes.py": "e7785197ad310cfc421888c25db25a15d2e046044df536fe56f83346ee045ce1",
+    "interior_domains.py": "d2754f20c218573e13eaff4bae4fc69846ac5ab55a95a7e0b33019be98756e37"
+  },
+  "scene_sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223",
+  "architecture_manifest_sha256": "ee8a87c5def04d4a5cd8829e7336c8145bb247c9d9266f918f662cc920e6586f",
+  "source_contact_audit": "/workspace/scratch/5462bdafe44f/cq05/verification/final/furniture_contact_source_audit.json",
+  "source_contact_audit_sha256": "c4abc20d106614fcf9200f84713432853d6979217921f08fbcd8c2229158ef9e",
+  "source_contact_status": "PASS",
+  "affected_floor_support_count": 5888,
+  "affected_floor_standing_piece_count": 1823,
+  "copier_instance_count": 1,
+  "wheel_component_count": 4,
+  "source_maximum_sole_gap_m": 0.0,
+  "source_maximum_upper_ring_change_m": 0.0,
+  "source_maximum_support_xy_change_m": 0.0,
+  "actual_export_contact_audit": "/workspace/scratch/5462bdafe44f/cq05/verification/final/furniture_contact_export_audit.json",
+  "actual_export_contact_audit_sha256": "ca3478b3cdd4f925b479d43db534a2e4ae4b867ccb931e61a4f09a8293f20759",
+  "actual_export_contact_status": "PASS",
+  "actual_export_scope": "Actual exported tea sideboard/table/stool and scanned chair control; A01 noodle table; A04 reading desk; every authored workshop copier. Full-scene procedural support invariants are separately checked in furniture_contact_source_audit.json.",
+  "allowed_absolute_support_gap_m": 1e-05,
+  "maximum_measured_absolute_gap_m": 0.0,
+  "actual_export_failures": [],
+  "actual_copier_wheel_to_chassis_overlap_m": [
+    0.006518363952636719,
+    0.006518363952636719,
+    0.006518363952636719,
+    0.006518363952636719
+  ],
+  "protected_layout_changes": [],
+  "metadata_changes": [],
+  "rng_call_sequence_unchanged": true,
+  "floor_cutout_count": 1701,
+  "source_floor_cutouts_match_planner": true,
+  "shared_room_groups": 67,
+  "shared_rooms_and_furniture_poses_unchanged": true,
+  "scanned_markers": 19,
+  "interior_light_candidates": 9,
+  "runtime_light_hard_cap": 12,
+  "active_profile_interior_limit": 10,
+  "expected_runtime_interior_lights": 9,
+  "native_runtime_interior_lights": 9,
+  "native_runtime_light_verification": "Current full native log CQ_INTERIOR_LIGHTS and completed capture_manifest practical_profile agree exactly; 9 candidates and 9 enabled.",
+  "native_runtime_light_evidence": {
+    "candidate_count": 9,
+    "enabled_count": 9,
+    "street_lights": 22,
+    "log": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/native_run.log",
+    "log_sha256": "652911c318a1c06ff99ac591a2e6790f7a09ad354014fb360f24f2faa201c645",
+    "line": 4,
+    "complete_manifest_agrees_exactly": true,
+    "acceptance_note": "Fresh complete R15 log and capture_manifest practical_profile agree; historical R10 profile note is not used as an actual count."
+  },
+  "architecture_interior_review_candidate_count": 22,
+  "delivered_total_camera_view_count": 22,
+  "camera_count_definition": "Architecture has 22 interior candidate records; the delivered 22 total views are a separate set containing aerial/wide/exterior and room closeups, listed explicitly below.",
+  "delivered_camera_view_names": [
+    "overview",
+    "street_entry",
+    "noodle_corner",
+    "central_steps",
+    "west_lane",
+    "community_court",
+    "narrow_passage",
+    "upper_houses",
+    "east_gallery",
+    "residential_road",
+    "upper_street",
+    "roofscape",
+    "community_front",
+    "residential_entry",
+    "window_courtyard",
+    "tea_interior",
+    "window_living",
+    "window_north",
+    "noodle_interior",
+    "window_reading",
+    "window_dining",
+    "planting_detail"
+  ],
+  "camera_changes": [],
+  "r13_opening_safe_utility_fixture_count": 33,
+  "r13_opening_safe_utility_fixtures_unchanged": true,
+  "r10_compact_workrooms_and_r12_shared_room_fixes_retained": true,
+  "geometry_statistics": {
+    "revision": 15,
+    "buildings": 21,
+    "windows": 1679,
+    "balconies": 89,
+    "triangles_before_export_dedupe": 2808420,
+    "vertices": 2212323,
+    "nonfinite_vertices": 0,
+    "unknown_materials": [],
+    "interior_detail_counts": {
+      "near_street": 353,
+      "middle": 557,
+      "distant": 769
+    },
+    "interior_types": {
+      "bedroom": 244,
+      "dining": 218,
+      "study": 264,
+      "reading_nook": 259,
+      "bookshelf": 247,
+      "kitchen_sideboard": 239,
+      "utility": 132,
+      "compact_prep": 31,
+      "shared_entry_foyer": 2,
+      "utility_wash": 43
+    },
+    "expanded_near_street_rooms": 132,
+    "expanded_width_range_m": [
+      2.96788,
+      3.1
+    ],
+    "expanded_depth_range_m": [
+      2.40169,
+      2.79985
+    ],
+    "expanded_room_footprint_failures": 0,
+    "expanded_room_overlaps": 0,
+    "scan_markers": 19,
+    "scan_types": {
+      "potted_plant_02": 7,
+      "chinese_armchair": 6,
+      "chinese_tea_table": 3,
+      "plastic_monobloc_chair_01": 3
+    },
+    "interior_lights": 9,
+    "interior_meshes": 585,
+    "envelope_meshes": 90,
+    "contact_occluder_meshes": 477,
+    "diagnostic_rooms": [
+      "1335306667_edge4_window2816226",
+      "809889624_edge10_window32235000",
+      "A04_edge1_window238636781",
+      "A05_edge1_window258644831"
+    ],
+    "scanned_instance_render_triangles": 159635
+  },
+  "geometry_statistics_unchanged_except_revision": true,
+  "native_review_status": "COMPLETE_WITH_RECORDED_LIMITS",
+  "native_review_required": false,
+  "native_visual_review": "/workspace/scratch/5462bdafe44f/cq05/verification/final/interior_review_zh.txt",
+  "native_visual_review_sha256": "9a05473149ebd2389f81223ba0bd825bf9c1984b2a69f34e07be324e1b8e5140",
+  "native_review_progress": "/workspace/scratch/5462bdafe44f/cq05/verification/final/interior_review_progress.json",
+  "native_review_progress_sha256": "3bdd170216a58a214abbd0fc487bfba5345d31696bb86cbc4b72805278b59144",
+  "native_reviewed_view_count": 22,
+  "native_reviewed_files": [
+    {
+      "view": "overview",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_overview.png",
+      "sha256": "b9ed77118558976f11265bd78658943d788797a14103969c59655f74d17f2f75",
+      "width": 1920,
+      "height": 1080,
+      "scope": "高空全街区，窗内家具不可辨；仅核视图范围，不构成室内陈设验收。"
+    },
+    {
+      "view": "street_entry",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_street_entry.png",
+      "sha256": "6a789f3d20a117aa5ccb4e445e412a9c6bfb8a9c2fe34df2f2d6e3b63e957666",
+      "width": 1920,
+      "height": 1080,
+      "scope": "入口坡道与多层立面，室内只占少量像素。"
+    },
+    {
+      "view": "noodle_corner",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_noodle_corner.png",
+      "sha256": "b35fce373657bbce658753d7fec62749db7d1e1d3b5eeeb81ae3fc6eaa05ad68",
+      "width": 1920,
+      "height": 1080,
+      "scope": "面馆完整店口与部分二层窗。"
+    },
+    {
+      "view": "central_steps",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_central_steps.png",
+      "sha256": "3d196487db891e29eec199c9055185115cc3b938e86a99466579b6bffc257d8c",
+      "width": 1920,
+      "height": 1080,
+      "scope": "中央梯坎两侧店口及楼上窗。"
+    },
+    {
+      "view": "west_lane",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_west_lane.png",
+      "sha256": "8bdef1e90412c216209cae1fde6cca717a186ab8c907da2742f1d65a4ec9c184",
+      "width": 1920,
+      "height": 1080,
+      "scope": "沿坡斜看多层住宅窗；最近窗的侧墙与帘布占主画面。"
+    },
+    {
+      "view": "community_court",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_community_court.png",
+      "sha256": "6370c794e480ad61d966c62269f6e41b51a85710fdf5f0b118083f7014628108",
+      "width": 1920,
+      "height": 1080,
+      "scope": "球场、周边住宅立面及远距离窗洞。"
+    },
+    {
+      "view": "narrow_passage",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_narrow_passage.png",
+      "sha256": "d51fd931a9086ba38141b502148161cfeb8d8c8e2b47b81d867a0e03e4a6b448",
+      "width": 1920,
+      "height": 1080,
+      "scope": "狭巷紧贴窗户的正常斜视角。"
+    },
+    {
+      "view": "upper_houses",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_upper_houses.png",
+      "sha256": "2ab9e6c93c7faf7811b4cefeba8db75d12760f5c00d44d3a3f5d3492e92db072",
+      "width": 1920,
+      "height": 1080,
+      "scope": "坡上院落、远入口与近侧住宅窗。"
+    },
+    {
+      "view": "east_gallery",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_east_gallery.png",
+      "sha256": "b699cbe4bdf5003d275ea45ac5b0daf3845dba9ab6c63d8b987e5cd9dc8882e5",
+      "width": 1920,
+      "height": 1080,
+      "scope": "木窗、灰砖院落立面的中距离正侧视。"
+    },
+    {
+      "view": "residential_road",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_residential_road.png",
+      "sha256": "485140ec6635ac0b9a29857d41d0891da561a0cd5147d347284678b339b0de27",
+      "width": 1920,
+      "height": 1080,
+      "scope": "树下道路与住宅远立面。"
+    },
+    {
+      "view": "upper_street",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_upper_street.png",
+      "sha256": "45d7a73bfe56eead8ec835fb35abef41dd91e9929d67caefc0e93a5ffa196e69",
+      "width": 1920,
+      "height": 1080,
+      "scope": "上街沿街店面及右前木窗局部。"
+    },
+    {
+      "view": "roofscape",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_roofscape.png",
+      "sha256": "4f1744fe98aad7b448cea27da06f0a12cfb1245b2504fc374296be65c2ae6fc1",
+      "width": 1920,
+      "height": 1080,
+      "scope": "屋面、球场与街区层级的高处视角。"
+    },
+    {
+      "view": "community_front",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_community_front.png",
+      "sha256": "06b4f3cab71af9202154e9b472bf5bd343d0d3114596e855337e0e20895e5e47",
+      "width": 1920,
+      "height": 1080,
+      "scope": "社区楼前两面近窗与本轮修正的外部格栅。"
+    },
+    {
+      "view": "residential_entry",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_residential_entry.png",
+      "sha256": "763ebcc8d00f9ea02fd56d96805c041b8d3ac4636337999f452107f55e35e7b5",
+      "width": 1920,
+      "height": 1080,
+      "scope": "山城里小院住宅入口、首段楼梯与相邻窗。"
+    },
+    {
+      "view": "window_courtyard",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_courtyard.png",
+      "sha256": "e4ef7900a8ba9660604f8862922ac763c0d41f50f8e5128da251c6c1c90ba343",
+      "width": 1920,
+      "height": 1080,
+      "scope": "共享转角家务房的正面透窗近景。"
+    },
+    {
+      "view": "tea_interior",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_tea_interior.png",
+      "sha256": "e62c61e4bf0524f750915c3d15bb36c8d43b189b8d2613f1e4169e401c0b3bd6",
+      "width": 1920,
+      "height": 1080,
+      "scope": "茶铺完整店内与主要家具脚部。"
+    },
+    {
+      "view": "window_living",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_living.png",
+      "sha256": "07c834d3a742e8408a8e5400d2299b22d596cf48b5c228eae55d5b411a377355",
+      "width": 1920,
+      "height": 1080,
+      "scope": "起居窗近景；椅背、落地灯、后墙与帘布。"
+    },
+    {
+      "view": "window_north",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_north.png",
+      "sha256": "530b220693b196bc36bd3c2c728f27bbb63e249890e8b8aef71c88381e439e09",
+      "width": 1920,
+      "height": 1080,
+      "scope": "北侧透明窗、实际层板陈设、窗下墙面与相邻入口。"
+    },
+    {
+      "view": "noodle_interior",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_noodle_interior.png",
+      "sha256": "e7b4797acee3471c5e40eee8ced7bb3852e9c9f4ee41062f05a7b917e84aad71",
+      "width": 1920,
+      "height": 1080,
+      "scope": "面馆入口完整店内；操作台、圆桌、塑料椅及可见脚部。"
+    },
+    {
+      "view": "window_reading",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_reading.png",
+      "sha256": "aaac35e56abd81e6c91d884a27db00bf1097839525bed3205e6aee05434ea1f7",
+      "width": 1920,
+      "height": 1080,
+      "scope": "A04阅读角近景；木地板、书桌、台灯、木椅与层板书本。"
+    },
+    {
+      "view": "window_dining",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_dining.png",
+      "sha256": "fdd51bb8a16dc5ca65fcc35152bdc725b8ac5235615abcb1e7c6eda4b670b7b8",
+      "width": 1920,
+      "height": 1080,
+      "scope": "沿用window_dining机位名称，实际为A05备餐/洗涤小间。"
+    },
+    {
+      "view": "planting_detail",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_planting_detail.png",
+      "sha256": "e5744f62af637b1ef65ab97199f557fb75dc5a1b85badd5283ebeaa5bd52c294",
+      "width": 1920,
+      "height": 1080,
+      "scope": "树池近景及其后临街窗的有限可见内容。"
+    }
+  ],
+  "native_capture_manifest": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/capture_manifest.json",
+  "native_capture_manifest_sha256": "166a1dc19b44afa459171533b304050972e16a9dda72d1d93b872d01cdda27c7",
+  "native_capture_process": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/capture_process.json",
+  "native_capture_process_sha256": "57d71fde94440566c0e956f0b232d2c44651cf6d7c95cb287db3e32c536e781c",
+  "native_actual_exit_code": 0,
+  "native_capture_failures": [],
+  "native_requested_size": [
+    1920,
+    1080
+  ],
+  "native_scene_revision": 15,
+  "native_scene_sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223",
+  "native_script_sha256": {
+    "res://scripts/build_collisions.gd": "2628a4eb84628582acd93ed16307ea708aa9e94867e286287eefa636abe803a8",
+    "res://scripts/explorer.gd": "8103d29a428970241be4ae0f7b67b304c528398f8e43f82613d728cc951c1bc2",
+    "res://scripts/main.gd": "29517fc2472682aae053e2e1eafc954379755e9b212a425088cdb834599cf56d"
+  },
+  "native_art_profile_sha256": "9d0c7b69153c7c84fea8ac544b602bf15ef6806afa75068856a6adba0da809af",
+  "native_review_completed_at_utc": "2026-11-19T15:56:17.226040+00:00",
+  "native_remaining_limitations": [
+    "west_lane、narrow_passage、community_front等普通斜窗仍以灰色侧墙、帘布或窗框为主，家具和生活用途难以辨认；它们不能计作丰富生活场景的成功近景。",
+    "茶铺和面馆的家具脚部接触阴影偏弱，仍有轻微悬浮或陈列感。当前真实GLB受检脚底gap均为0，弱阴影是保留的画面限制，不被几何PASS掩盖。",
+    "帘布褶皱、层板瓶杯和部分书脊排列重复；背景楼体、墙面生活痕迹及部分器物仍简化。当前是具备重点窗内小景的实时街区，不能称为电影级或与高质量参考照片等效。",
+    "窗台、窗框、柜体及取景下缘遮挡了很多家具脚部。22张图只证明各自可见范围，不能宣称全部1701室内地板域或1679窗口均逐件完成视觉验收。",
+    "住宅入口展示局部门厅和首段楼梯；它不是逐户完整、可探索的公寓室内。",
+    "67组共享房修复限定于已规划的137个近街成员；远高层房壳接缝与不可见陈设不作全场零交叠保证。"
+  ],
+  "native_specific_blocking_defects_found": [],
+  "native_specific_blocking_defects_found_scope": "Only visible interior/facade-opening content in the 22 named fresh images; occluded and distant room details are not visually certified.",
+  "old_r13_and_r14_visual_pass_not_reused": true,
+  "interrupted_r15_visual_pass_not_reused": true,
+  "furniture_native_review": "/workspace/scratch/5462bdafe44f/cq05/verification/final/furniture_contact_native_review.json",
+  "furniture_native_review_sha256": "bc087cd044a222437fb5108d7de114430d24e58abcabb55f7c92cdd07555f914",
+  "overall_scene_acceptance": "Owned by root final package/physics/manual/ground gates; not asserted by this interior-specific report.",
+  "interior_scope_result": "PASS_WITH_RECORDED_VISUAL_LIMITS",
+  "valid_as_overall_delivery_acceptance": false,
+  "limits": [
+    "Full-scene procedural source support checks and representative actual export measurements have different scopes.",
+    "No new engines, production changes or optional broad audits were performed for this review."
+  ]
+}

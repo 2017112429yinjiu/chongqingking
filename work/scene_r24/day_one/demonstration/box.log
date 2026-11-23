@@ -1,0 +1,12 @@
+Blender 4.3.2 (hash 32f5fdce0a0a built 2024-12-17 03:35:23)
+Traceback (most recent call last):
+  File "C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\day_one\demonstration\build_box.py", line 9, in <module>
+    bpy.ops.import_scene.gltf(filepath=str(game/'assets/vehicles/scooter_r18.glb'))
+  File "C:\Users\尹久\Documents\重庆外卖王\work\tools\blender-4.3.2-windows-x64\4.3\scripts\modules\bpy\ops.py", line 109, in __call__
+    ret = _op_call(self.idname_py(), kw)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Error: Please select a file
+
+Error: Please select a file
+
+Blender quit

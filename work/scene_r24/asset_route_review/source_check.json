@@ -1,0 +1,46 @@
+{
+  "default_profile": "R24_market_terrace_10_internal",
+  "canopy_base_mesh": [
+    {
+      "node": "Courtyard_service_canopy_0_painted_metal",
+      "roof_triangles": 96,
+      "material_double_sided": false,
+      "pole_to_roof_m": [
+        0.0869,
+        0.1839,
+        0.0869,
+        0.1839
+      ]
+    },
+    {
+      "node": "Courtyard_service_canopy_1_painted_metal",
+      "roof_triangles": 96,
+      "material_double_sided": false,
+      "pole_to_roof_m": [
+        0.0869,
+        0.1839,
+        0.0869,
+        0.1839
+      ]
+    },
+    {
+      "node": "Courtyard_service_canopy_2_painted_metal",
+      "roof_triangles": 96,
+      "material_double_sided": false,
+      "pole_to_roof_m": [
+        0.0869,
+        0.1839,
+        0.0869,
+        0.1839
+      ]
+    }
+  ],
+  "red_target_source": "work/project/chongqing_blender_v05/build_district.py — two vertical marks only.",
+  "road_findings": "Player screenshots 2–4: stair intersects adjacent surface; raised edge/retaining wall needs local section and collision checks. No exact road layers identified in this review.",
+  "evidence_sha256": {
+    "1.png": "95231fd5d5d4d3b4051843b027a4b4921ef7bfb096f2ea3eedc028fa83194d4b",
+    "2.png": "d5175c5b0bde0e717ea47b316fe49d43ad1d0f53296b8976973483f332ddb898",
+    "3.png": "408fcf5fab405522053cafd2dcd57c6ade1e0d5c8f364f8e91b784500e2e2f4a",
+    "4.png": "4f589d317e914349befa4b9631b218c58558b26a8b262f60ca4fc851b67a012e"
+  }
+}

@@ -1,0 +1,112 @@
+{
+	"engine": "4.6.3-stable (official)",
+	"note": "Continuous physics drive on actual imported upper road. No whole-network navigation or crowd performance claim.",
+	"passed": true,
+	"revision": "R17",
+	"scene_sha256": "88b5be04c0c72ae2b54bb02f55f2186f7b7ec2937389a59697e7306dbd7e7c13",
+	"tests": [
+		{
+			"name": "far_interaction_rejected",
+			"pass": true
+		},
+		{
+			"name": "delivery_requires_food",
+			"pass": true
+		},
+		{
+			"name": "wall_blocks_interaction",
+			"pass": true
+		},
+		{
+			"name": "shop_accept_order",
+			"pass": true
+		},
+		{
+			"name": "cannot_take_unprepared_food",
+			"pass": true
+		},
+		{
+			"name": "food_ready",
+			"pass": true
+		},
+		{
+			"name": "food_pickup",
+			"pass": true
+		},
+		{
+			"name": "duplicate_pickup_rejected",
+			"pass": true
+		},
+		{
+			"name": "food_delivered",
+			"pass": true
+		},
+		{
+			"name": "delivery_idempotent",
+			"pass": true
+		},
+		{
+			"name": "scooter_exists",
+			"pass": true
+		},
+		{
+			"name": "approach_and_enter_scooter",
+			"pass": true
+		},
+		{
+			"name": "unparked_exit_rejected",
+			"pass": true
+		},
+		{
+			"distance_m": 8.58952808380127,
+			"end": "(8.589279, 32.31535, -77.99999)",
+			"last_obstacle": {
+
+			},
+			"name": "drive_actual_world",
+			"pass": true
+		},
+		{
+			"name": "governed_speed",
+			"pass": true,
+			"peak_mps": 6.0
+		},
+		{
+			"name": "steer_changes_heading",
+			"pass": true
+		},
+		{
+			"name": "brake_stops",
+			"pass": true
+		},
+		{
+			"name": "reverse",
+			"pass": true,
+			"speed": -1.8
+		},
+		{
+			"name": "park",
+			"pass": true
+		},
+		{
+			"name": "blocked_exit_rejected",
+			"pass": true
+		},
+		{
+			"name": "safe_exit_restores_walk",
+			"pass": true
+		},
+		{
+			"name": "thirteen_residential_doorbells_registered",
+			"pass": true
+		},
+		{
+			"name": "worker_vestibule_bell_reachable",
+			"pass": true
+		},
+		{
+			"name": "return_to_shop_starts_next_order",
+			"pass": true
+		}
+	]
+}

@@ -1,0 +1,92 @@
+{
+  "engine": "4.6.3-stable (official)",
+  "native_surface_nodes": {
+    "COL_Terrace21_Fork": 1668,
+    "COL_Walk_East_photo_alley_step_concrete": 35,
+    "MarketTerraceR24": 2,
+    "COL_D18_NanquShoulder": 82,
+    "COL_Road_176034707_0_pavement": 107,
+    "COL_Terrain_200m_pavement": 93,
+    "COL_Terrain_200m_yard_concrete": 117
+  },
+  "native_ground_missing": 0,
+  "matched_surface_height_points": 2067,
+  "matched_triplets": 2308,
+  "matched_seam_pairs": 399,
+  "metrics": {
+    "old_source": {
+      "grade_break_deg_p95": 9.651510070361333,
+      "grade_break_deg_max": 23.876788065982005,
+      "seam_max_height_change_over_40mm": 0.013429641723632812
+    },
+    "new_source": {
+      "grade_break_deg_p95": 0.8681582758757665,
+      "grade_break_deg_max": 4.5115177773936725,
+      "seam_max_height_change_over_40mm": 0.011682510375976562
+    },
+    "engine": {
+      "grade_break_deg_p95": 0.8682788399852023,
+      "grade_break_deg_max": 4.501967983234886,
+      "seam_max_height_change_over_40mm": 0.01202011108399148
+    }
+  },
+  "native_vs_source_max_m": 0.0005779266357439639,
+  "bed_min_clearance_to_mapped_edge_m": 2.2733317714340506,
+  "tree_count": 3,
+  "underplants": 77,
+  "wheels": 12,
+  "max_wheel_contact_m": 0.00692081451416016,
+  "public_road_probes_total_and_missing": {
+    "sections": [
+      16004,
+      0
+    ],
+    "grid": [
+      10000,
+      0
+    ],
+    "south_joint": [
+      3240,
+      0
+    ],
+    "western_median": [
+      2798,
+      0
+    ],
+    "western_extra": [
+      310,
+      0
+    ]
+  },
+  "ride_runs": {
+    "out": {
+      "count": 26,
+      "passed": 26,
+      "targets": 1173
+    },
+    "back": {
+      "count": 26,
+      "passed": 26,
+      "targets": 1173
+    }
+  },
+  "registered_orders_passed": true,
+  "lesson_checks": 85,
+  "walk_passed": true,
+  "walk_sampled_m": 23.720272430251747,
+  "source_sha256": "b14cd5b363267f9059f6a9720ea339dd5a23d5c2a220cf29a606222cee500107",
+  "model_sha256": "ffd6399e6984552d6a524521d3e0c70f7a05a41c8d0ebaf6aa1878310c8a266f",
+  "root_probes": {
+    "expected": 80,
+    "found": 80,
+    "root_minus_soil_m": [
+      -0.0483531951904297,
+      -0.00558280944824219
+    ]
+  },
+  "east_landing_runs": {
+    "expected": 6,
+    "passed": 6
+  },
+  "passed": true
+}

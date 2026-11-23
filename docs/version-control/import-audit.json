@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-24",
+  "scope": "Initial staged development baseline. Audit document itself may be updated after this measurement.",
+  "tracked_files": 18341,
+  "lfs_paths": 9829,
+  "lfs_unique_objects": 7906,
+  "lfs_unique_bytes": 10390260687,
+  "regular_git_worktree_bytes": 440465129,
+  "regular_files_over_50_mib": [],
+  "missing_required_paths": [],
+  "untracked_runtime_assets": [],
+  "engine_cases": [
+    {
+      "case": "walk/route.json",
+      "checks": 42,
+      "failed": 0
+    },
+    {
+      "case": "sections/section.json",
+      "checks": 3,
+      "failed": 0
+    },
+    {
+      "case": "restore/reopen.json",
+      "checks": 5,
+      "failed": 0
+    },
+    {
+      "case": "teaching/first_shift.json",
+      "checks": 85,
+      "failed": 0
+    },
+    {
+      "case": "offer/reopen.json",
+      "checks": 7,
+      "failed": 0
+    },
+    {
+      "case": "single/free_order.json",
+      "checks": 8,
+      "failed": 0
+    },
+    {
+      "case": "lunch/trip.json",
+      "checks": 35,
+      "failed": 0
+    }
+  ],
+  "engine_check_count": 185,
+  "performance_retested": false,
+  "art_acceptance": false,
+  "secret_scan": {
+    "candidate_files_scanned": 18318,
+    "known_token_or_private_key_pattern_matches": []
+  }
+}

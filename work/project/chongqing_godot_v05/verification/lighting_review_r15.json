@@ -1,0 +1,1892 @@
+{
+  "schema": "cq05_r15_complete_restart_native_lighting_review_working_v1",
+  "revision": 15,
+  "status": "complete_22_originals_directly_reviewed",
+  "batch": "exclusive_restart_after_actual_geometry_checks",
+  "created_at_utc": "2026-11-19T15:34:32.606940+00:00",
+  "scene_sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223",
+  "main_gd_sha256": "29517fc2472682aae053e2e1eafc954379755e9b212a425088cdb834599cf56d",
+  "profile_sha256": "9d0c7b69153c7c84fea8ac544b602bf15ef6806afa75068856a6adba0da809af",
+  "expected_views": [
+    "overview",
+    "street_entry",
+    "noodle_corner",
+    "central_steps",
+    "west_lane",
+    "community_court",
+    "narrow_passage",
+    "upper_houses",
+    "east_gallery",
+    "residential_road",
+    "upper_street",
+    "roofscape",
+    "community_front",
+    "residential_entry",
+    "window_courtyard",
+    "tea_interior",
+    "window_living",
+    "window_north",
+    "noodle_interior",
+    "window_reading",
+    "window_dining",
+    "planting_detail"
+  ],
+  "capture_manifest_complete": true,
+  "reviews": [
+    {
+      "view": "overview",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_overview.png",
+      "sha256": "b9ed77118558976f11265bd78658943d788797a14103969c59655f74d17f2f75",
+      "bytes": 3580242,
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:38:50.709701+00:00",
+      "review_method": "direct_view_of_fresh_original_png_in_exclusive_restart_batch",
+      "findings_zh": "已重新打开本次重启批次原始1080p；楼体与树木投影可见，高机位不再全无日照投影。",
+      "limitations_zh": "大块灰铺装、规则楼体/窗阵列与外围地表重复图案明显，整体仍是原型。",
+      "new_lighting_or_material_blocker_observed": false,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 230.0,
+        "fade_start_distance_m": 360.000005364418,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 450.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      }
+    },
+    {
+      "view": "street_entry",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_street_entry.png",
+      "sha256": "6a789f3d20a117aa5ccb4e445e412a9c6bfb8a9c2fe34df2f2d6e3b63e957666",
+      "bytes": 2665296,
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:38:50.723753+00:00",
+      "review_method": "direct_view_of_fresh_original_png_in_exclusive_restart_batch",
+      "findings_zh": "蓝天与暖色受光砖墙有区分；背光立面、阶梯及栏杆阴影保留层次；树干/枝条未出现整片黑枝或泛白发光。",
+      "limitations_zh": "大面积铺装及楼面较干净、规则，细叶远景仍呈片状；不是摄影质感。",
+      "new_lighting_or_material_blocker_observed": false,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 10.5943002700806,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      }
+    },
+    {
+      "view": "noodle_corner",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_noodle_corner.png",
+      "sha256": "b35fce373657bbce658753d7fec62749db7d1e1d3b5eeeb81ae3fc6eaa05ad68",
+      "bytes": 1949019,
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:38:50.730659+00:00",
+      "review_method": "direct_view_of_fresh_original_png_in_exclusive_restart_batch",
+      "findings_zh": "背光小面馆墙面与招牌仍可读，窗后物件和店内杯碗/锅/椅轮廓分明，玻璃未显示整块银白遮挡。",
+      "limitations_zh": "桌椅接触阴影仍偏弱，本广角不能判定毫米级脚底接触；由后续近景与actual GLB共同确认。",
+      "new_lighting_or_material_blocker_observed": false,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 13.8121995925903,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      }
+    },
+    {
+      "view": "central_steps",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_central_steps.png",
+      "sha256": "3d196487db891e29eec199c9055185115cc3b938e86a99466579b6bffc257d8c",
+      "bytes": 2949375,
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:38:50.734877+00:00",
+      "review_method": "direct_view_of_fresh_original_png_in_exclusive_restart_batch",
+      "findings_zh": "日照右侧砖墙与左侧阴面分离，梯坎/栏杆/店内有深浅变化；可见窗口有真实暗腔，树干与植栽颜色无已知材质回归。",
+      "limitations_zh": "明亮立面、大片混凝土及重复门店陈设仍偏整齐；局部室内接触阴影有限。",
+      "new_lighting_or_material_blocker_observed": false,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 14.0322999954224,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      }
+    },
+    {
+      "view": "west_lane",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_west_lane.png",
+      "sha256": "8bdef1e90412c216209cae1fde6cca717a186ab8c907da2742f1d65a4ec9c184",
+      "bytes": 2866800,
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:39:22.286344+00:00",
+      "review_method": "direct_view_of_fresh_original_png_in_exclusive_restart_batch",
+      "findings_zh": "背光蓝灰瓷砖、日照暖砖墙与白墙有清楚区分；近窗玻璃仍能见暗腔和局部室内轮廓，栏杆/台阶有日照阴影。",
+      "limitations_zh": "窗阵列与大片坡地较规则，窗面局部反射仍偏灰，远端室内细节无法从此图判定。",
+      "new_lighting_or_material_blocker_observed": false,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 15.3854999542236,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      }
+    },
+    {
+      "view": "community_court",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_community_court.png",
+      "sha256": "6370c794e480ad61d966c62269f6e41b51a85710fdf5f0b118083f7014628108",
+      "bytes": 2746422,
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:39:22.293724+00:00",
+      "review_method": "direct_view_of_fresh_original_png_in_exclusive_restart_batch",
+      "findings_zh": "球场绿色地坪、砖石挡墙与天空颜色区分正常；网围栏和阶梯可读，右侧白墙有受光/暗腔层次，无过曝抹白整面。",
+      "limitations_zh": "球场与大块铺装较平整干净；高楼窗阵列重复明显，细网远处有像素混叠。",
+      "new_lighting_or_material_blocker_observed": false,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 22.2999992370605,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      }
+    },
+    {
+      "view": "narrow_passage",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_narrow_passage.png",
+      "sha256": "d51fd931a9086ba38141b502148161cfeb8d8c8e2b47b81d867a0e03e4a6b448",
+      "bytes": 2475991,
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:40:01.936456+00:00",
+      "review_method": "direct_view_of_fresh_original_png_in_exclusive_restart_batch",
+      "findings_zh": "深巷背光较暗但砖石、阶梯及远端出口仍可读，右侧近窗能辨玻璃后的顶面和房间暗腔；无整窗银白或大面积死黑。",
+      "limitations_zh": "巷内阴影偏冷；最近房间墙面与天花仍简略，窗后物件在此视角有限。",
+      "new_lighting_or_material_blocker_observed": false,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 27.5860996246338,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      }
+    },
+    {
+      "view": "upper_houses",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_upper_houses.png",
+      "sha256": "2ab9e6c93c7faf7811b4cefeba8db75d12760f5c00d44d3a3f5d3492e92db072",
+      "bytes": 2855566,
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:40:35.209192+00:00",
+      "review_method": "direct_view_of_fresh_original_png_in_exclusive_restart_batch",
+      "findings_zh": "近侧住家阴面有纹理，右侧铺装受光与树木/阶梯投影区分明确；大树枝干贴图可读，无白色扫描根裙再现。",
+      "limitations_zh": "树冠仍可辨叶片与细碎边缘，远楼窗阵列和大面积空铺装具有原型感；不把高分辨率渲染等同写实质量。",
+      "new_lighting_or_material_blocker_observed": false,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 30.9218006134033,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      }
+    },
+    {
+      "view": "east_gallery",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_east_gallery.png",
+      "sha256": "b699cbe4bdf5003d275ea45ac5b0daf3845dba9ab6c63d8b987e5cd9dc8882e5",
+      "bytes": 3298856,
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:41:24.372039+00:00",
+      "review_method": "direct_view_of_fresh_original_png_in_exclusive_restart_batch",
+      "findings_zh": "灰砖与木窗材质可辨，窗后物件可见；前景树干为纹理化树皮并与土面接合，树冠绿色/背光深色有区分，无黑枝/白泛光。",
+      "limitations_zh": "受光地坪大片而干净，扫描树叶仍可辨离散薄片，灌木分布较均匀；写实度有限。",
+      "new_lighting_or_material_blocker_observed": false,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 15.5518999099731,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      }
+    },
+    {
+      "view": "residential_road",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_residential_road.png",
+      "sha256": "485140ec6635ac0b9a29857d41d0891da561a0cd5147d347284678b339b0de27",
+      "bytes": 3796857,
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:42:33.452110+00:00",
+      "review_method": "direct_view_of_fresh_original_png_in_exclusive_restart_batch",
+      "findings_zh": "前景树根扫描白裙未再露出，树干纹理与土面衔接可见；hero树冠有完整叶片形状和绿色明暗变化，道路保留树影及铺装材质变化，无黑枝/泛白发光回归。",
+      "limitations_zh": "灰白扫描树皮、局部深色叶边和叶面薄片感仍在；重复高楼窗阵列与大片空地明显，不能称为电影级或摄影级真实。",
+      "new_lighting_or_material_blocker_observed": false,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 28.9818992614746,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      }
+    },
+    {
+      "view": "upper_street",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_upper_street.png",
+      "sha256": "45d7a73bfe56eead8ec835fb35abef41dd91e9929d67caefc0e93a5ffa196e69",
+      "bytes": 3493766,
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:44:05.651353+00:00",
+      "review_method": "direct_view_of_fresh_original_png_in_exclusive_restart_batch",
+      "findings_zh": "近处背光砖面和沥青仍有纹理，左侧受光树木/白墙与阴面有明暗差；右窗能见帘布、层板与灯罩，没有重新变成不透明银色块。",
+      "limitations_zh": "路面裂纹重复、长直建筑面较规则，远楼简化窗面和扫描树皮仍有原型感。",
+      "new_lighting_or_material_blocker_observed": false,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 33.6640014648438,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      }
+    },
+    {
+      "view": "roofscape",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_roofscape.png",
+      "sha256": "4f1744fe98aad7b448cea27da06f0a12cfb1245b2504fc374296be65c2ae6fc1",
+      "bytes": 3337656,
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:44:05.693611+00:00",
+      "review_method": "direct_view_of_fresh_original_png_in_exclusive_restart_batch",
+      "findings_zh": "64m高机位仍使用180m阴影范围，可见楼体、树木及球架投影；砖屋顶、混凝土屋顶和球场色块可区分。",
+      "limitations_zh": "屋顶纹理重复与条带感明显，大块平台缺少生活磨损；远景地表重复图案可见，整体不是电影级写实。",
+      "new_lighting_or_material_blocker_observed": false,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 64.0,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      }
+    },
+    {
+      "view": "community_front",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_community_front.png",
+      "sha256": "06b4f3cab71af9202154e9b472bf5bd343d0d3114596e855337e0e20895e5e47",
+      "bytes": 2262223,
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:44:40.833244+00:00",
+      "review_method": "direct_view_of_fresh_original_png_in_exclusive_restart_batch_and_exact_r14_baseline",
+      "findings_zh": "与重新打开的R14同机位原图对照，墙上电表下两处格栅现在随坡贴地，旧板底空气隙/偏移投影不再可见；墙面日照及窗内暗腔维持，未改变阴影bias掩盖问题。",
+      "limitations_zh": "灰白外墙、空铺装和简略窗内墙面仍显原型；毫米级支持以绑定同场景SHA的actual GLB报告为证，原图本身不用于精密量测。",
+      "new_lighting_or_material_blocker_observed": false,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 23.5589008331299,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      },
+      "direct_comparison": {
+        "baseline_revision": 14,
+        "path": "/workspace/scratch/5462bdafe44f/cq05/verification/round7/r14_complete_baseline/native/godot_community_front.png",
+        "sha256": "b679cf17681ca10fb694f4a50f5d9616a6a5c61c7e99bded1e9b5dc4a3db452d",
+        "baseline_directly_viewed": true,
+        "scope": "two visible wall-meter drain grates; daylight and material continuity"
+      }
+    },
+    {
+      "view": "residential_entry",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_residential_entry.png",
+      "sha256": "763ebcc8d00f9ea02fd56d96805c041b8d3ac4636337999f452107f55e35e7b5",
+      "bytes": 2388092,
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:44:57.864013+00:00",
+      "review_method": "direct_view_of_fresh_original_png_in_exclusive_restart_batch",
+      "findings_zh": "背光住宅门厅能见内侧阶梯、门板与顶灯，窗口有帘布/画框等深度线索；木阳台与砌石挡墙可读，格栅未出现明显悬空轮廓。",
+      "limitations_zh": "背光室内总体冷灰且陈设较简略，建筑及铺装依然规整；顶灯外观发亮不等于物理完整室内光输运。",
+      "new_lighting_or_material_blocker_observed": false,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 17.7423000335693,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      }
+    },
+    {
+      "view": "window_courtyard",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_courtyard.png",
+      "sha256": "e4ef7900a8ba9660604f8862922ac763c0d41f50f8e5128da251c6c1c90ba343",
+      "bytes": 2255306,
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:46:02.788258+00:00",
+      "review_method": "direct_view_of_fresh_original_png_in_exclusive_restart_batch",
+      "findings_zh": "家务间水盆、龙头、盘架、抹布及贴砖背板能透过玻璃辨认；窗后顶面/侧墙有暗部层次，未见旧绿色靠垫/邻室灯罩穿进盆内。",
+      "limitations_zh": "玻璃观感偏克制，房间整体冷灰且较整齐；窗台遮住大部分地板，不能由此图证明全部室内接地。",
+      "new_lighting_or_material_blocker_observed": false,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 20.6816997528076,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      }
+    },
+    {
+      "view": "tea_interior",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_tea_interior.png",
+      "sha256": "e62c61e4bf0524f750915c3d15bb36c8d43b189b8d2613f1e4169e401c0b3bd6",
+      "bytes": 2093201,
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:47:12.647524+00:00",
+      "review_method": "direct_view_of_fresh_original_png_in_exclusive_restart_batch_and_exact_r13_baseline",
+      "findings_zh": "直接与R13原始基线对照，柜、圆桌、圆凳脚的可见末端延长，桌面/座面及台上器皿位置稳定；地板未再被terrain覆盖，墙顶暗部与陶瓷高光保留。",
+      "limitations_zh": "地面接触阴影仍很弱，几何变化在本图只占少量像素；当前actual GLB报告证明零间隙，不能据此夸大为完整接触光照真实性。",
+      "new_lighting_or_material_blocker_observed": false,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 18.1840991973877,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      }
+    },
+    {
+      "view": "window_living",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_living.png",
+      "sha256": "07c834d3a742e8408a8e5400d2299b22d596cf48b5c228eae55d5b411a377355",
+      "bytes": 2496549,
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:47:56.307505+00:00",
+      "review_method": "direct_view_of_fresh_original_png_in_exclusive_restart_batch",
+      "findings_zh": "打开窗扇的薄玻璃、帘布、墙面画框和木椅清楚可辨；落地灯只在附近墙面形成小范围暖光，室内顶面仍暗，未把整屋抬亮成展示柜。",
+      "limitations_zh": "窗台遮挡椅脚与地坪，不能从图量接地；陈设稀疏、帘布重复和大块平墙仍显原型。",
+      "new_lighting_or_material_blocker_observed": false,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 34.9570999145508,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      }
+    },
+    {
+      "view": "window_north",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_north.png",
+      "sha256": "530b220693b196bc36bd3c2c728f27bbb63e249890e8b8aef71c88381e439e09",
+      "bytes": 2040416,
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:49:15.846211+00:00",
+      "review_method": "direct_view_of_fresh_original_png_in_exclusive_restart_batch",
+      "findings_zh": "北侧窗后杯、书、盆栽、瓶子及帘布可见，旧重复Context不透明白墙遮挡没有再出现；墙顶与层板存在亮度层次。",
+      "limitations_zh": "房间背墙和陈设仍偏简略、冷灰，地坪被窗台遮住，不能据图量terrain间隙。",
+      "new_lighting_or_material_blocker_observed": false,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 35.8849983215332,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      }
+    },
+    {
+      "view": "noodle_interior",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_noodle_interior.png",
+      "sha256": "e7b4797acee3471c5e40eee8ced7bb3852e9c9f4ee41062f05a7b917e84aad71",
+      "bytes": 1873127,
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:49:15.846211+00:00",
+      "review_method": "direct_view_of_fresh_original_png_in_exclusive_restart_batch_and_exact_r13_baseline",
+      "findings_zh": "与重新打开的R13基线对照，右侧圆桌腿末端延伸，扫描塑料椅和桌面高度保持；锅/杯/碗与墙顶暗部稳定，室内地板、门槛未被terrain覆盖。",
+      "limitations_zh": "桌椅脚处接触阴影依旧轻，图像变化细小；实际零间隙由同R15模型导出审计证明。",
+      "new_lighting_or_material_blocker_observed": false,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 13.1037998199463,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      }
+    },
+    {
+      "view": "window_reading",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_reading.png",
+      "sha256": "aaac35e56abd81e6c91d884a27db00bf1097839525bed3205e6aee05434ea1f7",
+      "bytes": 2103089,
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:49:58.745060+00:00",
+      "review_method": "direct_view_of_fresh_original_png_in_exclusive_restart_batch_and_exact_r13_baseline",
+      "findings_zh": "与R13基线直接对照，A04木地板、书桌/木椅、台灯暖晕及薄玻璃观感保持，未见灰色terrain重新穿入。",
+      "limitations_zh": "窗框、窗台和椅遮挡大部分脚底；下端修复在本图不显著，不能假称原图证明所有桌脚接地。实际桌脚零间隙由当前R15 actual GLB审计给出；接触阴影仍弱。",
+      "new_lighting_or_material_blocker_observed": false,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 18.6019992828369,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      }
+    },
+    {
+      "view": "window_dining",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_dining.png",
+      "sha256": "fdd51bb8a16dc5ca65fcc35152bdc725b8ac5235615abcb1e7c6eda4b670b7b8",
+      "bytes": 1632177,
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:50:31.442778+00:00",
+      "review_method": "direct_view_of_fresh_original_png_in_exclusive_restart_batch",
+      "findings_zh": "狭小备餐/洗涤间的水盆、盘架、龙头和百叶可辨，开窗玻璃保持通透；未见旧餐桌/椅与邻室互穿再现，暗部保留物件轮廓。",
+      "limitations_zh": "局部室内总体冷暗，空间使用与材料仍简化，地坪大部分被台面/窗台遮住。",
+      "new_lighting_or_material_blocker_observed": false,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 15.8577995300293,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      }
+    },
+    {
+      "view": "planting_detail",
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_planting_detail.png",
+      "sha256": "e5744f62af637b1ef65ab97199f557fb75dc5a1b85badd5283ebeaa5bd52c294",
+      "bytes": 3772830,
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:50:31.442778+00:00",
+      "review_method": "direct_view_of_fresh_original_png_in_exclusive_restart_batch",
+      "findings_zh": "树干树皮贴图连续并接入土面，土壤/碎叶边带与铺装材质区分清楚；小植株和树影正常，无黑枝或白色扫描裙片。",
+      "limitations_zh": "植株分布较均匀，受光叶片偏浅、叶面薄片感可见；土面细节仍偏平，不能以高像素数量宣称照片级真实。",
+      "new_lighting_or_material_blocker_observed": false,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 15.724100112915,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      }
+    }
+  ],
+  "accepted_prior_native_images": 0,
+  "prior_aborted_batch_evidence": "verification/round8/lighting_review_r15_aborted_parallel.json",
+  "current_actual_geometry": {
+    "drain_audit_passed": true,
+    "drain_summary": {
+      "expected_grates": 112,
+      "grates_checked": 112,
+      "expected_bars": 1456,
+      "bars_checked": 1456,
+      "base_failures": 0,
+      "bar_failures": 0,
+      "missing_nodes": 0,
+      "unresolved_support_coverage_count": 0,
+      "two_sided_float32_seam_classifications": 4
+    },
+    "drain_audit_sha256": "34221b9bf3bc5ffc6f83aaffb07c69b1d2588521da06c67967865964c55cc0e4",
+    "furniture_audit_passed": true,
+    "furniture_maximum_measured_absolute_gap_m": 0.0,
+    "furniture_audit_sha256": "ca3478b3cdd4f925b479d43db534a2e4ae4b867ccb931e61a4f09a8293f20759"
+  },
+  "production_source_modified": false,
+  "engine_started": false,
+  "overall_acceptance": "No new lighting/material blocker observed in these22 original views; prototype quality with documented limits, not cinematic certification.",
+  "last_updated_at_utc": "2026-11-19T15:50:31.442778+00:00",
+  "completed_at_utc": "2026-11-19T15:53:12.057981+00:00",
+  "passed_for_lighting_material_regression_scope": true,
+  "scene_revision": 15,
+  "scene_identity": {
+    "asset": "res://assets/chongqing_district.glb",
+    "bytes": 1017581848,
+    "revision": 15.0,
+    "sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223"
+  },
+  "capture_manifest_path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/capture_manifest.json",
+  "capture_manifest_sha256": "166a1dc19b44afa459171533b304050972e16a9dda72d1d93b872d01cdda27c7",
+  "captures": [
+    {
+      "capture_viewport_has_camera": true,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 230.0,
+        "fade_start_distance_m": 360.000005364418,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 450.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      },
+      "draw_calls": 6494.0,
+      "exact_requested_size": true,
+      "fov": 53.0,
+      "height": 1080,
+      "native_viewport_3d_disabled": true,
+      "native_viewport_has_camera": false,
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_overview.png",
+      "position": [
+        90.0,
+        230.0,
+        120.0
+      ],
+      "rendered_objects": 7586.0,
+      "rendered_primitives": 42022477.0,
+      "save_error": 0,
+      "settle_elapsed_ms": 45453,
+      "settle_frames": 3,
+      "target": [
+        0.0,
+        20.0,
+        -5.0
+      ],
+      "title": "全街区 · 南向北",
+      "view": "overview",
+      "width": 1920
+    },
+    {
+      "capture_viewport_has_camera": true,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 10.5943002700806,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      },
+      "draw_calls": 4968.0,
+      "exact_requested_size": true,
+      "fov": 60.0,
+      "height": 1080,
+      "native_viewport_3d_disabled": true,
+      "native_viewport_has_camera": false,
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_street_entry.png",
+      "position": [
+        24.0,
+        10.594,
+        77.0
+      ],
+      "rendered_objects": 5380.0,
+      "rendered_primitives": 22893902.0,
+      "save_error": 0,
+      "settle_elapsed_ms": 23857,
+      "settle_frames": 3,
+      "target": [
+        1.0,
+        14.8245,
+        63.0
+      ],
+      "title": "山城巷街口",
+      "view": "street_entry",
+      "width": 1920
+    },
+    {
+      "capture_viewport_has_camera": true,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 13.8121995925903,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      },
+      "draw_calls": 1154.0,
+      "exact_requested_size": true,
+      "fov": 64.0,
+      "height": 1080,
+      "native_viewport_3d_disabled": true,
+      "native_viewport_has_camera": false,
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_noodle_corner.png",
+      "position": [
+        -24.0,
+        13.812,
+        53.5
+      ],
+      "rendered_objects": 1159.0,
+      "rendered_primitives": 5732704.0,
+      "save_error": 0,
+      "settle_elapsed_ms": 7217,
+      "settle_frames": 3,
+      "target": [
+        -26.5,
+        14.6,
+        62.05
+      ],
+      "title": "小面馆与下层街面",
+      "view": "noodle_corner",
+      "width": 1920
+    },
+    {
+      "capture_viewport_has_camera": true,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 14.0322999954224,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      },
+      "draw_calls": 5623.0,
+      "exact_requested_size": true,
+      "fov": 59.0,
+      "height": 1080,
+      "native_viewport_3d_disabled": true,
+      "native_viewport_has_camera": false,
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_central_steps.png",
+      "position": [
+        -20.0,
+        14.032,
+        52.0
+      ],
+      "rendered_objects": 6284.0,
+      "rendered_primitives": 32528257.0,
+      "save_error": 0,
+      "settle_elapsed_ms": 32779,
+      "settle_frames": 3,
+      "target": [
+        -20.0,
+        20.2251,
+        25.0
+      ],
+      "title": "中央梯坎与临街住家",
+      "view": "central_steps",
+      "width": 1920
+    },
+    {
+      "capture_viewport_has_camera": true,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 15.3854999542236,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      },
+      "draw_calls": 3334.0,
+      "exact_requested_size": true,
+      "fov": 61.0,
+      "height": 1080,
+      "native_viewport_3d_disabled": true,
+      "native_viewport_has_camera": false,
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_west_lane.png",
+      "position": [
+        -73.0,
+        15.385,
+        34.0
+      ],
+      "rendered_objects": 3519.0,
+      "rendered_primitives": 16251065.0,
+      "save_error": 0,
+      "settle_elapsed_ms": 20222,
+      "settle_frames": 3,
+      "target": [
+        -77.0,
+        21.2493,
+        10.0
+      ],
+      "title": "西侧居民巷",
+      "view": "west_lane",
+      "width": 1920
+    },
+    {
+      "capture_viewport_has_camera": true,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 22.2999992370605,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      },
+      "draw_calls": 3298.0,
+      "exact_requested_size": true,
+      "fov": 66.0,
+      "height": 1080,
+      "native_viewport_3d_disabled": true,
+      "native_viewport_has_camera": false,
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_community_court.png",
+      "position": [
+        -20.0,
+        22.3,
+        19.0
+      ],
+      "rendered_objects": 3469.0,
+      "rendered_primitives": 15597115.0,
+      "save_error": 0,
+      "settle_elapsed_ms": 17373,
+      "settle_frames": 3,
+      "target": [
+        -36.0,
+        23.5,
+        -4.0
+      ],
+      "title": "社区球场与住宅",
+      "view": "community_court",
+      "width": 1920
+    },
+    {
+      "capture_viewport_has_camera": true,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 27.5860996246338,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      },
+      "draw_calls": 3178.0,
+      "exact_requested_size": true,
+      "fov": 70.0,
+      "height": 1080,
+      "native_viewport_3d_disabled": true,
+      "native_viewport_has_camera": false,
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_narrow_passage.png",
+      "position": [
+        -35.5,
+        27.586,
+        -46.2
+      ],
+      "rendered_objects": 3456.0,
+      "rendered_primitives": 23646153.0,
+      "save_error": 0,
+      "settle_elapsed_ms": 20787,
+      "settle_frames": 3,
+      "target": [
+        -30.6,
+        28.8952,
+        -54.6
+      ],
+      "title": "上坡楼间通道",
+      "view": "narrow_passage",
+      "width": 1920
+    },
+    {
+      "capture_viewport_has_camera": true,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 30.9218006134033,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      },
+      "draw_calls": 2481.0,
+      "exact_requested_size": true,
+      "fov": 63.0,
+      "height": 1080,
+      "native_viewport_3d_disabled": true,
+      "native_viewport_has_camera": false,
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_upper_houses.png",
+      "position": [
+        -12.0,
+        30.922,
+        -63.0
+      ],
+      "rendered_objects": 2604.0,
+      "rendered_primitives": 13422737.0,
+      "save_error": 0,
+      "settle_elapsed_ms": 15803,
+      "settle_frames": 3,
+      "target": [
+        -43.0,
+        32.6,
+        -65.0
+      ],
+      "title": "上层院落回望",
+      "view": "upper_houses",
+      "width": 1920
+    },
+    {
+      "capture_viewport_has_camera": true,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 15.5518999099731,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      },
+      "draw_calls": 3135.0,
+      "exact_requested_size": true,
+      "fov": 61.0,
+      "height": 1080,
+      "native_viewport_3d_disabled": true,
+      "native_viewport_has_camera": false,
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_east_gallery.png",
+      "position": [
+        50.0,
+        15.552,
+        49.0
+      ],
+      "rendered_objects": 3555.0,
+      "rendered_primitives": 29908757.0,
+      "save_error": 0,
+      "settle_elapsed_ms": 31267,
+      "settle_frames": 3,
+      "target": [
+        65.0,
+        20.5696,
+        32.0
+      ],
+      "title": "东侧砖墙坡巷",
+      "view": "east_gallery",
+      "width": 1920
+    },
+    {
+      "capture_viewport_has_camera": true,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 28.9818992614746,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      },
+      "draw_calls": 2412.0,
+      "exact_requested_size": true,
+      "fov": 59.0,
+      "height": 1080,
+      "native_viewport_3d_disabled": true,
+      "native_viewport_has_camera": false,
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_residential_road.png",
+      "position": [
+        64.0,
+        28.982,
+        -34.0
+      ],
+      "rendered_objects": 2648.0,
+      "rendered_primitives": 21786387.0,
+      "save_error": 0,
+      "settle_elapsed_ms": 20835,
+      "settle_frames": 3,
+      "target": [
+        65.0,
+        37.1868,
+        -67.0
+      ],
+      "title": "东侧居民道路",
+      "view": "residential_road",
+      "width": 1920
+    },
+    {
+      "capture_viewport_has_camera": true,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 33.6640014648438,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      },
+      "draw_calls": 3618.0,
+      "exact_requested_size": true,
+      "fov": 62.0,
+      "height": 1080,
+      "native_viewport_3d_disabled": true,
+      "native_viewport_has_camera": false,
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_upper_street.png",
+      "position": [
+        4.0,
+        33.664,
+        -80.0
+      ],
+      "rendered_objects": 4205.0,
+      "rendered_primitives": 33735862.0,
+      "save_error": 0,
+      "settle_elapsed_ms": 34962,
+      "settle_frames": 3,
+      "target": [
+        28.0,
+        35.2031,
+        -67.0
+      ],
+      "title": "上层长街与店面",
+      "view": "upper_street",
+      "width": 1920
+    },
+    {
+      "capture_viewport_has_camera": true,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 64.0,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      },
+      "draw_calls": 4006.0,
+      "exact_requested_size": true,
+      "fov": 59.0,
+      "height": 1080,
+      "native_viewport_3d_disabled": true,
+      "native_viewport_has_camera": false,
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_roofscape.png",
+      "position": [
+        14.0,
+        64.0,
+        20.0
+      ],
+      "rendered_objects": 4312.0,
+      "rendered_primitives": 18715431.0,
+      "save_error": 0,
+      "settle_elapsed_ms": 20818,
+      "settle_frames": 3,
+      "target": [
+        -31.0,
+        22.0,
+        -8.0
+      ],
+      "title": "台地、院落与屋顶",
+      "view": "roofscape",
+      "width": 1920
+    },
+    {
+      "capture_viewport_has_camera": true,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 23.5589008331299,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      },
+      "draw_calls": 3931.0,
+      "exact_requested_size": true,
+      "fov": 61.0,
+      "height": 1080,
+      "native_viewport_3d_disabled": true,
+      "native_viewport_has_camera": false,
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_community_front.png",
+      "position": [
+        28.0,
+        23.559,
+        -4.0
+      ],
+      "rendered_objects": 4180.0,
+      "rendered_primitives": 18515413.0,
+      "save_error": 0,
+      "settle_elapsed_ms": 19443,
+      "settle_frames": 3,
+      "target": [
+        13.0,
+        24.8043,
+        -11.0
+      ],
+      "title": "社区服务站",
+      "view": "community_front",
+      "width": 1920
+    },
+    {
+      "capture_viewport_has_camera": true,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 17.7423000335693,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      },
+      "draw_calls": 2172.0,
+      "exact_requested_size": true,
+      "fov": 64.0,
+      "height": 1080,
+      "native_viewport_3d_disabled": true,
+      "native_viewport_has_camera": false,
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_residential_entry.png",
+      "position": [
+        -43.0,
+        17.742,
+        22.0
+      ],
+      "rendered_objects": 2234.0,
+      "rendered_primitives": 9737912.0,
+      "save_error": 0,
+      "settle_elapsed_ms": 12646,
+      "settle_frames": 3,
+      "target": [
+        -52.9,
+        18.85,
+        19.5
+      ],
+      "title": "居民楼入口与墙脚",
+      "view": "residential_entry",
+      "width": 1920
+    },
+    {
+      "capture_viewport_has_camera": true,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 20.6816997528076,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      },
+      "draw_calls": 2348.0,
+      "exact_requested_size": true,
+      "fov": 64.0,
+      "height": 1080,
+      "native_viewport_3d_disabled": true,
+      "native_viewport_has_camera": false,
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_courtyard.png",
+      "position": [
+        5.53,
+        20.682,
+        10.302
+      ],
+      "rendered_objects": 2588.0,
+      "rendered_primitives": 21910205.0,
+      "save_error": 0,
+      "settle_elapsed_ms": 23604,
+      "settle_frames": 3,
+      "target": [
+        7.6877,
+        20.5329,
+        11.5265
+      ],
+      "title": "院落住家 · 家务间近景",
+      "view": "window_courtyard",
+      "width": 1920
+    },
+    {
+      "capture_viewport_has_camera": true,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 18.1840991973877,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      },
+      "draw_calls": 6164.0,
+      "exact_requested_size": true,
+      "fov": 66.0,
+      "height": 1080,
+      "native_viewport_3d_disabled": true,
+      "native_viewport_has_camera": false,
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_tea_interior.png",
+      "position": [
+        79.578,
+        18.184,
+        37.251
+      ],
+      "rendered_objects": 7076.0,
+      "rendered_primitives": 40755442.0,
+      "save_error": 0,
+      "settle_elapsed_ms": 44353,
+      "settle_frames": 3,
+      "target": [
+        75.9791,
+        17.9989,
+        35.3943
+      ],
+      "title": "巷口茶馆 · 门口看店内",
+      "view": "tea_interior",
+      "width": 1920
+    },
+    {
+      "capture_viewport_has_camera": true,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 34.9570999145508,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      },
+      "draw_calls": 4811.0,
+      "exact_requested_size": true,
+      "fov": 64.0,
+      "height": 1080,
+      "native_viewport_3d_disabled": true,
+      "native_viewport_has_camera": false,
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_living.png",
+      "position": [
+        47.905,
+        34.957,
+        -76.373
+      ],
+      "rendered_objects": 5455.0,
+      "rendered_primitives": 33129764.0,
+      "save_error": 0,
+      "settle_elapsed_ms": 31394,
+      "settle_frames": 3,
+      "target": [
+        47.9793,
+        35.0689,
+        -73.8927
+      ],
+      "title": "坡道住家 · 深房与木椅近景",
+      "view": "window_living",
+      "width": 1920
+    },
+    {
+      "capture_viewport_has_camera": true,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 35.8849983215332,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      },
+      "draw_calls": 2846.0,
+      "exact_requested_size": true,
+      "fov": 64.0,
+      "height": 1080,
+      "native_viewport_3d_disabled": true,
+      "native_viewport_has_camera": false,
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_north.png",
+      "position": [
+        -23.878,
+        35.885,
+        -97.746
+      ],
+      "rendered_objects": 3245.0,
+      "rendered_primitives": 25724887.0,
+      "save_error": 0,
+      "settle_elapsed_ms": 26364,
+      "settle_frames": 3,
+      "target": [
+        -21.4024,
+        35.9631,
+        -97.9171
+      ],
+      "title": "北侧住家 · 窗内生活近景",
+      "view": "window_north",
+      "width": 1920
+    },
+    {
+      "capture_viewport_has_camera": true,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 13.1037998199463,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      },
+      "draw_calls": 1025.0,
+      "exact_requested_size": true,
+      "fov": 66.0,
+      "height": 1080,
+      "native_viewport_3d_disabled": true,
+      "native_viewport_has_camera": false,
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_noodle_interior.png",
+      "position": [
+        -24.29,
+        13.104,
+        59.3
+      ],
+      "rendered_objects": 1025.0,
+      "rendered_primitives": 4308308.0,
+      "save_error": 0,
+      "settle_elapsed_ms": 6906,
+      "settle_frames": 3,
+      "target": [
+        -24.29,
+        12.6977,
+        63.35
+      ],
+      "title": "小面馆 · 门口看店内",
+      "view": "noodle_interior",
+      "width": 1920
+    },
+    {
+      "capture_viewport_has_camera": true,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 18.6019992828369,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      },
+      "draw_calls": 1750.0,
+      "exact_requested_size": true,
+      "fov": 64.0,
+      "height": 1080,
+      "native_viewport_3d_disabled": true,
+      "native_viewport_has_camera": false,
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_reading.png",
+      "position": [
+        -51.35,
+        18.602,
+        14.17
+      ],
+      "rendered_objects": 1807.0,
+      "rendered_primitives": 8511291.0,
+      "save_error": 0,
+      "settle_elapsed_ms": 11598,
+      "settle_frames": 3,
+      "target": [
+        -53.83,
+        18.2899,
+        14.25
+      ],
+      "title": "坡巷住家 · 窗内生活近景",
+      "view": "window_reading",
+      "width": 1920
+    },
+    {
+      "capture_viewport_has_camera": true,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 15.8577995300293,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      },
+      "draw_calls": 2562.0,
+      "exact_requested_size": true,
+      "fov": 64.0,
+      "height": 1080,
+      "native_viewport_3d_disabled": true,
+      "native_viewport_has_camera": false,
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_dining.png",
+      "position": [
+        -26.35,
+        15.858,
+        38.42
+      ],
+      "rendered_objects": 2636.0,
+      "rendered_primitives": 10803732.0,
+      "save_error": 0,
+      "settle_elapsed_ms": 14119,
+      "settle_frames": 3,
+      "target": [
+        -28.83,
+        15.7559,
+        38.5
+      ],
+      "title": "临街住家 · 备餐间近景",
+      "view": "window_dining",
+      "width": 1920
+    },
+    {
+      "capture_viewport_has_camera": true,
+      "directional_shadow": {
+        "blend_splits": true,
+        "camera_world_y_m": 15.724100112915,
+        "fade_start_distance_m": 144.000002145767,
+        "fade_start_fraction": 0.800000011920929,
+        "high_camera_policy_enabled": true,
+        "max_distance_m": 180.0,
+        "mode": 2,
+        "split_fractions": [
+          0.100000001490116,
+          0.200000002980232,
+          0.5
+        ]
+      },
+      "draw_calls": 2546.0,
+      "exact_requested_size": true,
+      "fov": 55.0,
+      "height": 1080,
+      "native_viewport_3d_disabled": true,
+      "native_viewport_has_camera": false,
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_planting_detail.png",
+      "position": [
+        52.2,
+        15.724,
+        48.2
+      ],
+      "rendered_objects": 2854.0,
+      "rendered_primitives": 23657546.0,
+      "save_error": 0,
+      "settle_elapsed_ms": 19143,
+      "settle_frames": 3,
+      "target": [
+        56.5,
+        14.8341,
+        45.2
+      ],
+      "title": "树池、土壤与旧铺装近景",
+      "view": "planting_detail",
+      "width": 1920
+    }
+  ],
+  "runtime_material_stats": {
+    "branch_shader_overrides": {
+      "CQ_PH_island_tree_01_branches": {
+        "baked_primary": true,
+        "imported_uv1_offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "imported_uv1_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "imported_uv2_offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "imported_uv2_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "normal_and_pbr_textures": false,
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "texcoord": 0,
+        "texture": "res://assets/chongqing_district_island_tree_01_branches_diff_2k.jpg"
+      },
+      "CQ_PH_tree_small_02_branches": {
+        "baked_primary": true,
+        "imported_uv1_offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "imported_uv1_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "imported_uv2_offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "imported_uv2_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "normal_and_pbr_textures": false,
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "texcoord": 0,
+        "texture": "res://assets/chongqing_district_tree_small_02_branch_diff_2k.jpg"
+      }
+    },
+    "explicit_branch_surfaces": 43,
+    "gi_excluded_meshes": 0,
+    "specular_adjusted_materials": {},
+    "static_gi_meshes": 2690,
+    "surfaces": 2690,
+    "thin_glass_surfaces": 81,
+    "tile_diagnostics": {},
+    "tree_normal_overrides": {
+      "CQ_PH_island_tree_01": "normal texture disabled; albedo/roughness/geometry preserved",
+      "CQ_PH_island_tree_01_branches": "normal texture disabled; albedo/roughness/geometry preserved",
+      "CQ_PH_island_tree_01_leaves": "normal texture disabled; albedo/roughness/geometry preserved",
+      "CQ_PH_tree_small_02_branches": "normal texture disabled; albedo/roughness/geometry preserved",
+      "CQ_PH_tree_small_02_leaves": "normal texture disabled; albedo/roughness/geometry preserved",
+      "CQ_PH_tree_small_02_trunk": "normal texture disabled; albedo/roughness/geometry preserved"
+    },
+    "vertex_color_surfaces": 963
+  },
+  "practical_profile": {
+    "interior_candidate_count": 9,
+    "interior_lights": [
+      {
+        "energy": 0.239999994635582,
+        "name": "B_809889627_blue_apartments_room_lamp",
+        "position": [
+          82.391,
+          28.184,
+          -13.942
+        ],
+        "range": 2.70000004768372,
+        "shadows": false
+      },
+      {
+        "energy": 0.239999994635582,
+        "name": "B_809889628_clinic_room_lamp",
+        "position": [
+          15.883,
+          31.615,
+          -53.5
+        ],
+        "range": 2.70000004768372,
+        "shadows": false
+      },
+      {
+        "energy": 0.239999994635582,
+        "name": "B_809889629_artisan_room_lamp",
+        "position": [
+          47.205,
+          34.774,
+          -72.476
+        ],
+        "range": 2.70000004768372,
+        "shadows": false
+      },
+      {
+        "energy": 0.239999994635582,
+        "name": "B_1335306665_civic_room_lamp",
+        "position": [
+          -24.373,
+          26.707,
+          -30.861
+        ],
+        "range": 2.70000004768372,
+        "shadows": false
+      },
+      {
+        "energy": 0.239999994635582,
+        "name": "B_1335306666_heritage_room_lamp",
+        "position": [
+          -50.162,
+          26.057,
+          -36.511
+        ],
+        "range": 2.70000004768372,
+        "shadows": false
+      },
+      {
+        "energy": 0.239999994635582,
+        "name": "B_1335306667_brick_home_room_lamp",
+        "position": [
+          -62.888,
+          23.169,
+          -17.653
+        ],
+        "range": 2.70000004768372,
+        "shadows": false
+      },
+      {
+        "energy": 0.239999994635582,
+        "name": "B_1413081560_old_tile_room_lamp",
+        "position": [
+          -33.476,
+          29.533,
+          -53.924
+        ],
+        "range": 2.70000004768372,
+        "shadows": false
+      },
+      {
+        "energy": 0.239999994635582,
+        "name": "B_A03_blue_apartments_room_lamp",
+        "position": [
+          -91.543,
+          16.767,
+          15.033
+        ],
+        "range": 2.70000004768372,
+        "shadows": false
+      },
+      {
+        "energy": 0.239999994635582,
+        "name": "B_A04_courtyard_home_room_lamp",
+        "position": [
+          -55.09,
+          17.775,
+          14.621
+        ],
+        "range": 2.70000004768372,
+        "shadows": false
+      }
+    ],
+    "street_lights": 22
+  },
+  "configuration_sha256": {
+    "res://assets/viewpoints.json": "a3da59baee65cea784440a54949fe5d2ddc556062727b763732c52698a743fe0",
+    "res://assets/walking_survey.json": "3277a9c561fb58826045d8a52affc3515a4ae1732e8231a27bf63bbf9d365d26"
+  },
+  "script_sha256": {
+    "res://scripts/build_collisions.gd": "2628a4eb84628582acd93ed16307ea708aa9e94867e286287eefa636abe803a8",
+    "res://scripts/explorer.gd": "8103d29a428970241be4ae0f7b67b304c528398f8e43f82613d728cc951c1bc2",
+    "res://scripts/main.gd": "29517fc2472682aae053e2e1eafc954379755e9b212a425088cdb834599cf56d"
+  },
+  "sky_profile": {
+    "energy": 1.54999995231628,
+    "path": "res://assets/sky/kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+    "procedural_clouds": false,
+    "radiance_size": 256,
+    "rotation_degrees": [
+      0.0,
+      -28.9,
+      0.0
+    ],
+    "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+    "type": "photographic_hdr_panorama"
+  },
+  "geometry_evidence": {
+    "furniture_contact_export_audit.json": {
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/furniture_contact_export_audit.json",
+      "sha256": "ca3478b3cdd4f925b479d43db534a2e4ae4b867ccb931e61a4f09a8293f20759",
+      "passed": true,
+      "scene_sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223",
+      "allowed_absolute_support_gap_m": 1e-05,
+      "maximum_measured_absolute_gap_m": 0.0
+    },
+    "drain_grate_export_audit.json": {
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/drain_grate_export_audit.json",
+      "sha256": "34221b9bf3bc5ffc6f83aaffb07c69b1d2588521da06c67967865964c55cc0e4",
+      "passed": true,
+      "scene_sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223",
+      "summary": {
+        "expected_grates": 112,
+        "grates_checked": 112,
+        "expected_bars": 1456,
+        "bars_checked": 1456,
+        "base_failures": 0,
+        "bar_failures": 0,
+        "missing_nodes": 0,
+        "unresolved_support_coverage_count": 0,
+        "two_sided_float32_seam_classifications": 4
+      },
+      "allowed_vertical_support_error_m": 0.001
+    },
+    "terrain_glb_clearance.json": {
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/terrain_glb_clearance.json",
+      "sha256": "6796e9644c051c83c160e2890ee9701659fbb3cbbc7af7a994106dd4f057dfaa",
+      "passed": true,
+      "scene_sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223"
+    },
+    "physics_validation.json": {
+      "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/physics_validation.json",
+      "sha256": "e64475da03cfffa1395c71e23d66609424289ed57efaa560c2616f0e256213db",
+      "passed": true,
+      "scene_sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223"
+    }
+  },
+  "furniture_contact_native_review": {
+    "path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/furniture_contact_native_review.json",
+    "sha256": "bc087cd044a222437fb5108d7de114430d24e58abcabb55f7c92cdd07555f914"
+  },
+  "render_resource_sha256_at_review": {
+    "/workspace/scratch/5462bdafe44f/cq05/godot_project/scripts/main.gd": "29517fc2472682aae053e2e1eafc954379755e9b212a425088cdb834599cf56d",
+    "/workspace/scratch/5462bdafe44f/cq05/godot_project/scripts/build_collisions.gd": "2628a4eb84628582acd93ed16307ea708aa9e94867e286287eefa636abe803a8",
+    "/workspace/scratch/5462bdafe44f/cq05/godot_project/scripts/explorer.gd": "8103d29a428970241be4ae0f7b67b304c528398f8e43f82613d728cc951c1bc2",
+    "/workspace/scratch/5462bdafe44f/cq05/godot_project/assets/render_profile_v05.json": "9d0c7b69153c7c84fea8ac544b602bf15ef6806afa75068856a6adba0da809af",
+    "/workspace/scratch/5462bdafe44f/cq05/godot_project/assets/sky/kloofendal_48d_partly_cloudy_puresky_2k.hdr": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+    "/workspace/scratch/5462bdafe44f/cq05/godot_project/assets/viewpoints.json": "a3da59baee65cea784440a54949fe5d2ddc556062727b763732c52698a743fe0",
+    "/workspace/scratch/5462bdafe44f/cq05/godot_project/assets/walking_survey.json": "3277a9c561fb58826045d8a52affc3515a4ae1732e8231a27bf63bbf9d365d26",
+    "/workspace/scratch/5462bdafe44f/cq05/godot_project/shaders/chongqing_overcast.gdshader": "dd509d5836b15f947b91504fa71bf36a6b6e08ac2fbbe5090c7a9ca1b7459f22",
+    "/workspace/scratch/5462bdafe44f/cq05/godot_project/shaders/chongqing_overcast.gdshader.uid": "2cdff456bea0bb4ba3825a8c74ff0ff221078f6a92d9166cef5e023ef9080b44",
+    "/workspace/scratch/5462bdafe44f/cq05/godot_project/shaders/cq04_tree_bark.gdshader": "3ceb6fbe6e7d7e1b96dacee236893fac1ab98bc544059d99be713d6dfdd199e5",
+    "/workspace/scratch/5462bdafe44f/cq05/godot_project/shaders/cq04_tree_bark.gdshader.uid": "4a4d2c9e2b1545fcfa2cd56c7c8f82a7e6680df5cc4991bc7527e403fb3ab55a",
+    "/workspace/scratch/5462bdafe44f/cq05/godot_project/shaders/cq04_window_glass.gdshader": "4c31bc0646975844ba87b6b32e7fe52cc9a05094615cdd4c47f8a14086c103fa",
+    "/workspace/scratch/5462bdafe44f/cq05/godot_project/shaders/cq04_window_glass.gdshader.uid": "d1459b9229525c113262753b8ba8d01ad2162802adad2e718997bb1fda739c3d",
+    "/workspace/scratch/5462bdafe44f/cq05/delivery/chongqing_godot_v05/scripts/main.gd": "29517fc2472682aae053e2e1eafc954379755e9b212a425088cdb834599cf56d",
+    "/workspace/scratch/5462bdafe44f/cq05/delivery/chongqing_godot_v05/scripts/build_collisions.gd": "2628a4eb84628582acd93ed16307ea708aa9e94867e286287eefa636abe803a8",
+    "/workspace/scratch/5462bdafe44f/cq05/delivery/chongqing_godot_v05/scripts/explorer.gd": "8103d29a428970241be4ae0f7b67b304c528398f8e43f82613d728cc951c1bc2",
+    "/workspace/scratch/5462bdafe44f/cq05/delivery/chongqing_godot_v05/assets/render_profile_v05.json": "9d0c7b69153c7c84fea8ac544b602bf15ef6806afa75068856a6adba0da809af",
+    "/workspace/scratch/5462bdafe44f/cq05/delivery/chongqing_godot_v05/assets/sky/kloofendal_48d_partly_cloudy_puresky_2k.hdr": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+    "/workspace/scratch/5462bdafe44f/cq05/delivery/chongqing_godot_v05/assets/viewpoints.json": "a3da59baee65cea784440a54949fe5d2ddc556062727b763732c52698a743fe0",
+    "/workspace/scratch/5462bdafe44f/cq05/delivery/chongqing_godot_v05/assets/walking_survey.json": "3277a9c561fb58826045d8a52affc3515a4ae1732e8231a27bf63bbf9d365d26",
+    "/workspace/scratch/5462bdafe44f/cq05/delivery/chongqing_godot_v05/shaders/chongqing_overcast.gdshader": "dd509d5836b15f947b91504fa71bf36a6b6e08ac2fbbe5090c7a9ca1b7459f22",
+    "/workspace/scratch/5462bdafe44f/cq05/delivery/chongqing_godot_v05/shaders/chongqing_overcast.gdshader.uid": "2cdff456bea0bb4ba3825a8c74ff0ff221078f6a92d9166cef5e023ef9080b44",
+    "/workspace/scratch/5462bdafe44f/cq05/delivery/chongqing_godot_v05/shaders/cq04_tree_bark.gdshader": "3ceb6fbe6e7d7e1b96dacee236893fac1ab98bc544059d99be713d6dfdd199e5",
+    "/workspace/scratch/5462bdafe44f/cq05/delivery/chongqing_godot_v05/shaders/cq04_tree_bark.gdshader.uid": "4a4d2c9e2b1545fcfa2cd56c7c8f82a7e6680df5cc4991bc7527e403fb3ab55a",
+    "/workspace/scratch/5462bdafe44f/cq05/delivery/chongqing_godot_v05/shaders/cq04_window_glass.gdshader": "4c31bc0646975844ba87b6b32e7fe52cc9a05094615cdd4c47f8a14086c103fa",
+    "/workspace/scratch/5462bdafe44f/cq05/delivery/chongqing_godot_v05/shaders/cq04_window_glass.gdshader.uid": "d1459b9229525c113262753b8ba8d01ad2162802adad2e718997bb1fda739c3d"
+  },
+  "expected_view_count": 22,
+  "reviewed_view_count": 22,
+  "all_files_are_original_1920x1080": true,
+  "prior_aborted_images_used_as_current_evidence": false,
+  "engine_launched_by_reviewer": false,
+  "production_runtime_or_light_parameters_changed_by_reviewer": false
+}

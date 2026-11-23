@@ -1,0 +1,131 @@
+{
+  "art_revision": "v05_lighting_c_r10_actual_practical_completion",
+  "lighting": {
+    "hdri_path": "res://assets/sky/kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+    "hdri_energy": 1.55,
+    "hdri_rotation_deg": [
+      0,
+      -28.9,
+      0
+    ],
+    "background_energy": 0.95,
+    "ambient_energy": 0.52,
+    "sky_contribution": 0.9,
+    "ambient_color": [
+      0.67,
+      0.75,
+      0.84
+    ],
+    "sun_energy": 1.2,
+    "sun_color": [
+      1.0,
+      0.95,
+      0.86
+    ],
+    "sun_rotation_deg": [
+      -48,
+      -63,
+      0
+    ],
+    "sun_angular_distance": 1.5,
+    "sun_specular": 0.75,
+    "shadow_bias": 0.06,
+    "shadow_normal_bias": 0.65,
+    "shadow_max_distance": 180,
+    "high_camera_shadow_range_enabled": true,
+    "high_camera_shadow_height_m": 80.0,
+    "high_camera_shadow_max_distance": 450.0,
+    "exposure": 1.08,
+    "contrast": 1.0,
+    "saturation": 1.0,
+    "brightness": 1.0,
+    "ssao": true,
+    "ssao_radius": 1.2,
+    "ssao_intensity": 1.15,
+    "ssao_power": 1.25,
+    "ssao_detail": 0.65,
+    "ssao_light_affect": 0.28,
+    "ssao_half_size": false,
+    "ssil": true,
+    "ssil_radius": 2.4,
+    "ssil_intensity": 0.16,
+    "ssil_sharpness": 0.96,
+    "ssil_normal_rejection": 1.0,
+    "ssr": false,
+    "glow": false,
+    "glow_intensity": 0.1,
+    "glow_bloom": 0.0,
+    "fog_density": 0.00045,
+    "fog_color": [
+      0.65,
+      0.73,
+      0.8
+    ],
+    "fog_light_energy": 0.8,
+    "fog_aerial_perspective": 0.2,
+    "fog_sky_affect": 0.08,
+    "sdfgi_enabled": false,
+    "procedural_clouds": false,
+    "tonemap_white": 6.0,
+    "interior_light_limit": 10,
+    "interior_light_energy_scale": 1.0
+  },
+  "lighting_profiles": {
+    "gl_compatibility": {
+      "ssil": false,
+      "ssao": false,
+      "sun_energy": 0.82,
+      "ambient_energy": 0.52,
+      "exposure": 1.0,
+      "tonemap_white": 1.0
+    }
+  },
+  "materials": {
+    "thin_window_glass": true,
+    "glass_opacity": 0.17,
+    "glass_roughness": 0.18,
+    "ph_branch_shader": true,
+    "ph_branch_uv_baked": true,
+    "ph_tree_normals": false,
+    "ph_tree_lod_bias": 1.0,
+    "ph_leaf_safe_material": false,
+    "ph_leaf_unshaded": false,
+    "glass_grime_strength": 0.12
+  },
+  "reflections": {
+    "enabled": false,
+    "probes": [
+      {
+        "name": "DistrictCourtyardReflection",
+        "position": [
+          -17,
+          24,
+          18
+        ],
+        "size": [
+          150,
+          82,
+          165
+        ],
+        "origin_offset": [
+          0,
+          3,
+          0
+        ],
+        "intensity": 0.75,
+        "max_distance": 115
+      }
+    ]
+  },
+  "notes": [
+    "V05 daylight comparison: original photographic CC0 partly-cloudy sky; neutral postprocessing; direct warm-white sun gives physical surface separation.",
+    "HDR source contains a 73216.0 RGB peak. Godot importer process/hdr_clamp_exposure=true applies the documented smart clamp to prevent sky-radiance sparkle; the downloaded source file is unchanged.",
+    "ACES tonemap_white=6.0 retains sunlit masonry and cloud highlight headroom. Exposure is fixed per comparison; no LUT, bloom or post-process brightness lift.",
+    "First A/B/C comparison retains the V04 vertex AO, SSAO and SSIL settings to isolate sky and direct lighting.",
+    "The 2048x1024 source sun peak lies at UV (0.59473,0.23340), elevation 47.99 degrees. Directional sun follows the photo elevation and azimuth; the optional sky rotation and sun azimuth move together.",
+    "Thin glass uses continuous world-scale residue, moderate Fresnel reflections and a clear frontal view into real recessed room geometry.",
+    "R10 actual-practical completion: all 10 authored interior bulbs are enabled from architecture_manifest.interior_lights (profile limit 10; runtime safety cap 12). Each remains 0.24 energy, 2.7m range and unshadowed; exterior C sunlight, HDRI, exposure and AO parameters are unchanged.",
+    "ReflectionProbe remains disabled. SDFGI, SSR and glow remain disabled. The known-good explicit primary-UV bark shader is unchanged."
+  ],
+  "label_zh": "C / 暖日庭院"
+}

@@ -1,0 +1,63 @@
+{
+  "working_version": "R23_street_ground_09_internal",
+  "base": "R22_district_07_internal",
+  "engine": "4.6.3-stable (official)",
+  "profile_sha256": "dc9e217cfed08ad32031bdd7067f8d67b7df1dba21ec4d9f485ae425ce00f2c1",
+  "editable_city_sha256": "818d95fce788e576df4d41600c63858be0c2f2edb85b9f5f2e8cf60c9c98773d",
+  "installed_assets": {
+    "block.glb": "f0796f06598586cfdbb6fab09f18dc28287a6951f3e2a092134ab7feb75fb686",
+    "body_view.glb": "8c11273f814658f3e44b22442da165b3442f071ed98ac6fd264f74df6fb24d06",
+    "commuter.glb": "210bf68072fc9365d36b02f457bbabc21cd6c4a01ca7fd990b5692e9ce7631a0",
+    "microvan.glb": "a2c5750c13b58b0019ba724f9b62377acf30698edacb39c5f24961237912e599",
+    "neighbor.glb": "f416ea09f010f3fdb8dfb286f2aebffa0ceeab61e0ff6f15bf9f68284983fecf",
+    "taxi.glb": "6ba1b7ef263404413ea27bee5a92d976511f766abaa4f74f1f2fdbec2984589d"
+  },
+  "tests": {
+    "block_test": {
+      "sha256": "703fd89e4d5d419600067deed776007c53534b4d20b96fe0a9aa0028e443264a",
+      "checks": 8
+    },
+    "survey": {
+      "sha256": "a42049a9df4f7d718aca4728a766b29c53d35de9349678d9cfe2057adbc9b714",
+      "checks": 275
+    },
+    "delivery_end_to_end": {
+      "sha256": "06f946800dcd4e1f221c5457332c206bba8bc217eef3edac5742525ac0fdf596",
+      "checks": 11
+    },
+    "native_1080": {
+      "sha256": "961f3d36a939f83bab3244924f373ca5d6752ffad68b65f212e5f37bebab4ec8",
+      "checks": 0
+    },
+    "performance": {
+      "sha256": "95c5ede3e104ac40db1e5cfe1a0fe5a31d2419569e5ce070822f1478b10ca1c5",
+      "checks": 0
+    }
+  },
+  "artifacts": {
+    "captures\\capture_manifest.json": "63a5634993410beb41e6f14fa9d77d323e27956457a731f0e1063d32de0b2d61",
+    "threshold_audit.json": "f86e055cd70bc15222ae8ea4b6193e3bf000830b854c8ab1aca955c25030c055",
+    "brick_audit.json": "8ce498e0769744d38f80885aa10a22741db72976c9af6107378f34e0f46ed4f8",
+    "same_camera_comparison.jpg": "f900987d3bbbad86ac66fba61209e0fdde8fb47573fb950b704546d77da455aa",
+    "captures\\godot_r23_brick.png": "9aa0a9c0bae94ffa8e36a1c2de6d09f3b9fbf7606fe494aa3a02a661bf803b4a",
+    "captures\\godot_r23_court_bench.png": "28188a2b96cf08f2c98ac1000b6f1bdc588d23cc3935ec065ed71dbbcb48c3ef",
+    "captures\\godot_r23_garden.png": "20d8476ce3303e8ba43a833d88c30452d3948a27731816f9029f2def1802d44f",
+    "captures\\godot_r23_laundry.png": "152c40c8fed22077d2566427bc9860f9f242ad4df13607977d9681ccb4716518",
+    "captures\\godot_r23_main_road.png": "f70f7d74e9ea68a6ccfbc482a6d93cccb37637b54e77eee20aa295da8a5e6302",
+    "captures\\godot_r23_shop_window.png": "3a1df400867951f3377fb570749fa5a9086e77525c3bcd7e8e8ed6e023fd8231",
+    "captures\\godot_r23_shutter.png": "1752d41a1d4e7514d5ffa5dc27a1af336874080d44ec1f1a6bcd537c2eb1e0bf",
+    "captures\\godot_r23_street_support.png": "d95a96d28c9428ec7acc35f9d70b5ec48a61169d71854f8bf4aafa93f3f5c545",
+    "player\\look_at_feet.png": "4d3dba29f6d21c42bc1513932da03bec648f59c88a1bcd72edd59dbe6f7b5964",
+    "player\\walk_level.png": "dcf573bd2081b35c3163cdfe9a4babff3dd7d75811e166e4b2b4dc1d909cd21d",
+    "player\\walking_stride.png": "401b45fa49f6e8c51707fad081cbab3e8f18c20b86c6003b118d8f62bc10b3b5",
+    "player\\window_left.png": "0ac68322807dec457d998792d36feec6cf16552570399229e6503150bbee7653",
+    "player\\window_right.png": "84a8eed7a4a63541eb0a6ba9ebd17e91faffa2851a4965aae43b0444ebd57730"
+  },
+  "review_notes": [
+    "Measured 132 surface points across 22 documented main entrances, plus six positions outside A05 in the running engine.",
+    "Two pedestrian routes were sampled with a capsule every two metres. The near-tier walking rig and first-person camera were checked in rendered frames.",
+    "5 comparison poses use the R22 render profile against the retained base layers.",
+    "The 10 extended rooms do not cover the whole district. The reported double-brick appearance has no confirmed unique cause.",
+    "No player visual acceptance. No game package created."
+  ]
+}

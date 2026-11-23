@@ -1,0 +1,1384 @@
+{
+  "art_revision": "R24_district_connections_18_internal",
+  "surface_import_revision": "R22_surface_import_01",
+  "lighting": {
+    "hdri_path": "res://assets/sky/kloofendal_28d_misty_puresky_2k.hdr",
+    "hdri_energy": 0.88,
+    "hdri_rotation_deg": [
+      0,
+      51.18945,
+      0
+    ],
+    "background_energy": 0.83,
+    "ambient_energy": 0.61,
+    "sky_contribution": 0.9,
+    "ambient_color": [
+      0.67,
+      0.75,
+      0.84
+    ],
+    "sun_energy": 0.88,
+    "sun_color": [
+      1,
+      0.94,
+      0.85
+    ],
+    "sun_rotation_deg": [
+      -28.56445,
+      62,
+      0
+    ],
+    "sun_angular_distance": 2.05,
+    "sun_specular": 0.75,
+    "shadow_bias": 0.06,
+    "shadow_normal_bias": 0.65,
+    "shadow_max_distance": 180,
+    "high_camera_shadow_range_enabled": true,
+    "high_camera_shadow_height_m": 80.0,
+    "high_camera_shadow_max_distance": 450.0,
+    "exposure": 1.0,
+    "contrast": 1.0,
+    "saturation": 1.0,
+    "brightness": 1.0,
+    "ssao": true,
+    "ssao_radius": 1.2,
+    "ssao_intensity": 1.15,
+    "ssao_power": 1.25,
+    "ssao_detail": 0.65,
+    "ssao_light_affect": 0.28,
+    "ssao_half_size": true,
+    "ssil": true,
+    "ssil_radius": 2.4,
+    "ssil_intensity": 0.16,
+    "ssil_sharpness": 0.96,
+    "ssil_normal_rejection": 1.0,
+    "ssr": false,
+    "glow": false,
+    "glow_intensity": 0.1,
+    "glow_bloom": 0.0,
+    "fog_density": 0.00072,
+    "fog_color": [
+      0.62,
+      0.69,
+      0.73
+    ],
+    "fog_light_energy": 0.59,
+    "fog_aerial_perspective": 0.16,
+    "fog_sky_affect": 0.075,
+    "sdfgi_enabled": false,
+    "procedural_clouds": false,
+    "tonemap_white": 6.0,
+    "interior_light_limit": 10,
+    "interior_light_energy_scale": 1.0,
+    "packing_task_light_energy": 0.12,
+    "shadow_split_1": 0.035,
+    "shadow_split_2": 0.16,
+    "shadow_split_3": 0.45
+  },
+  "lighting_profiles": {
+    "gl_compatibility": {
+      "ssil": false,
+      "ssao": false,
+      "sun_energy": 0.82,
+      "ambient_energy": 0.52,
+      "exposure": 1.0,
+      "tonemap_white": 1.0
+    }
+  },
+  "materials": {
+    "thin_window_glass": true,
+    "glass_opacity": 0.17,
+    "glass_roughness": 0.18,
+    "ph_branch_shader": true,
+    "ph_branch_uv_baked": true,
+    "ph_tree_normals": false,
+    "ph_tree_lod_bias": 1.0,
+    "ph_leaf_safe_material": false,
+    "ph_leaf_unshaded": false,
+    "glass_grime_strength": 0.12
+  },
+  "reflections": {
+    "enabled": false,
+    "probes": [
+      {
+        "name": "DistrictCourtyardReflection",
+        "position": [
+          -17,
+          24,
+          18
+        ],
+        "size": [
+          150,
+          82,
+          165
+        ],
+        "origin_offset": [
+          0,
+          3,
+          0
+        ],
+        "intensity": 0.75,
+        "max_distance": 115
+      }
+    ]
+  },
+  "notes": [
+    "R19 overcast plus authored upper-lane geometry and two static diffuse sky-visibility fields."
+  ],
+  "label_zh": "R20 / 上巷",
+  "diagnostic_views": {
+    "r16_scooter": {
+      "title": "电瓶车贴地",
+      "position": [
+        -17.3,
+        13.4,
+        56.5
+      ],
+      "target": [
+        -20.5,
+        12.5,
+        59
+      ],
+      "fov": 48
+    },
+    "r16_clothesline": {
+      "title": "西侧晾衣支架",
+      "position": [
+        -74,
+        20.1,
+        9
+      ],
+      "target": [
+        -70.3,
+        19.2,
+        5
+      ],
+      "fov": 62
+    },
+    "r16_roof": {
+      "title": "屋檐封口",
+      "position": [
+        -47,
+        30,
+        20
+      ],
+      "target": [
+        -54,
+        28,
+        20
+      ],
+      "fov": 58
+    },
+    "r16_shop": {
+      "title": "店主与取餐入口",
+      "position": [
+        -22,
+        13.5,
+        57
+      ],
+      "target": [
+        -25.4,
+        13.4,
+        61
+      ],
+      "fov": 60
+    },
+    "r16_meter": {
+      "title": "电表箱近景",
+      "position": [
+        -27.2,
+        12.3,
+        59.8
+      ],
+      "target": [
+        -27.83,
+        12.01,
+        61.77
+      ],
+      "fov": 45
+    },
+    "r17_worker_entry": {
+      "title": "山城里入口修正",
+      "position": [
+        -65.5,
+        25.1,
+        -27.5
+      ],
+      "target": [
+        -72,
+        24,
+        -28.9
+      ],
+      "fov": 57
+    },
+    "r17_worker_door": {
+      "title": "住宅门厅内部",
+      "position": [
+        -70.8,
+        24.4,
+        -28.9
+      ],
+      "target": [
+        -74.1,
+        24,
+        -28.94
+      ],
+      "fov": 70
+    },
+    "r17_A04_entry": {
+      "title": "住宅平层门厅",
+      "position": [
+        -48.6,
+        18.2,
+        18.2
+      ],
+      "target": [
+        -53.8,
+        17.6,
+        19.5
+      ],
+      "fov": 57
+    },
+    "r17_west_route": {
+      "title": "西侧绕楼路线",
+      "position": [
+        -60,
+        38,
+        -31
+      ],
+      "target": [
+        -74,
+        25,
+        -31
+      ],
+      "fov": 65
+    },
+    "r17_east_route": {
+      "title": "东巷连续通道",
+      "position": [
+        61,
+        29,
+        11
+      ],
+      "target": [
+        47,
+        21,
+        8
+      ],
+      "fov": 62
+    },
+    "r17_narrow_route": {
+      "title": "上层窄巷",
+      "position": [
+        -37.4,
+        27.1,
+        -43
+      ],
+      "target": [
+        -31.5,
+        27.8,
+        -53
+      ],
+      "fov": 62
+    },
+    "r17_shopkeeper": {
+      "title": "店主角色近景",
+      "position": [
+        -23.3,
+        13.35,
+        58.3
+      ],
+      "target": [
+        -25.6,
+        12.7,
+        59.8
+      ],
+      "fov": 42
+    },
+    "r17_serve": {
+      "title": "递餐动作与打包餐食",
+      "position": [
+        -23.3,
+        13.35,
+        58.3
+      ],
+      "target": [
+        -25.6,
+        12.7,
+        59.8
+      ],
+      "fov": 42,
+      "capture_state": {
+        "character_clip": "serve",
+        "time": 1.0,
+        "food_ready": true,
+        "look_at_food": true
+      }
+    },
+    "r17_takeaway": {
+      "title": "餐食打包细节",
+      "position": [
+        -23.95,
+        12.4,
+        59.1
+      ],
+      "target": [
+        -24.8,
+        11.95,
+        59.9
+      ],
+      "fov": 48,
+      "capture_state": {
+        "food_ready": true
+      }
+    },
+    "r18_idle": {
+      "title": "R18 internal character idle",
+      "position": [
+        -23.3,
+        13.35,
+        58.3
+      ],
+      "target": [
+        -25.6,
+        12.7,
+        59.8
+      ],
+      "fov": 42,
+      "capture_state": {
+        "character_clip": "idle",
+        "time": 0,
+        "food_ready": true
+      }
+    },
+    "r18_reach": {
+      "title": "R18 internal character reach",
+      "position": [
+        -23.3,
+        13.35,
+        58.3
+      ],
+      "target": [
+        -25.6,
+        12.7,
+        59.8
+      ],
+      "fov": 42,
+      "capture_state": {
+        "character_clip": "serve",
+        "time": 1.12,
+        "food_ready": true,
+        "look_at_food": true
+      }
+    },
+    "r18_lift": {
+      "title": "R18 internal character lift",
+      "position": [
+        -23.3,
+        13.35,
+        58.3
+      ],
+      "target": [
+        -25.6,
+        12.7,
+        59.8
+      ],
+      "fov": 42,
+      "capture_state": {
+        "character_clip": "serve",
+        "time": 1.65,
+        "food_ready": true,
+        "look_at_food": true
+      }
+    },
+    "r18_place": {
+      "title": "R18 internal character place",
+      "position": [
+        -23.3,
+        13.35,
+        58.3
+      ],
+      "target": [
+        -25.6,
+        12.7,
+        59.8
+      ],
+      "fov": 42,
+      "capture_state": {
+        "character_clip": "serve",
+        "time": 2.4,
+        "food_ready": true,
+        "look_at_food": true
+      }
+    },
+    "r18_workstation": {
+      "title": "Packing station context",
+      "position": [
+        -22.8,
+        13.2,
+        57.8
+      ],
+      "target": [
+        -25.3,
+        12.2,
+        59.8
+      ],
+      "fov": 47,
+      "capture_state": {
+        "character_clip": "serve",
+        "time": 1.65,
+        "food_ready": true,
+        "look_at_food": true
+      }
+    },
+    "r18_player_eye": {
+      "title": "Player eye-height interaction",
+      "position": [
+        -23.63,
+        12.79,
+        58.8
+      ],
+      "target": [
+        -25.59,
+        12.6,
+        59.8
+      ],
+      "fov": 50,
+      "capture_state": {
+        "character_clip": "idle",
+        "time": 0,
+        "food_ready": true,
+        "look_at_camera": true
+      }
+    },
+    "r18_greet": {
+      "title": "Recognition and greeting",
+      "position": [
+        -23.63,
+        12.79,
+        58.8
+      ],
+      "target": [
+        -25.59,
+        12.6,
+        59.8
+      ],
+      "fov": 50,
+      "capture_state": {
+        "character_clip": "greet",
+        "time": 0.65,
+        "smile": 0.259,
+        "food_ready": false,
+        "look_at_camera": true
+      }
+    },
+    "r18_face": {
+      "title": "In-engine face diagnostic",
+      "position": [
+        -24.7,
+        12.73,
+        59.35
+      ],
+      "target": [
+        -25.59,
+        12.66,
+        59.8
+      ],
+      "fov": 37,
+      "capture_state": {
+        "character_clip": "greet",
+        "time": 0.65,
+        "smile": 0.259,
+        "food_ready": false,
+        "look_at_camera": true
+      }
+    },
+    "r18_grip": {
+      "title": "Hand and paper-handle contact",
+      "position": [
+        -24.65,
+        12.57,
+        59.2
+      ],
+      "target": [
+        -25.142,
+        12.29,
+        59.717
+      ],
+      "fov": 34,
+      "capture_state": {
+        "character_clip": "serve",
+        "time": 1.65,
+        "food_ready": true,
+        "look_at_food": true
+      }
+    },
+    "r19_seating": {
+      "title": "Breakfast place at eye height",
+      "position": [
+        -27.7,
+        12.65,
+        58.5
+      ],
+      "fov": 55,
+      "target": [
+        -30.5,
+        11.65,
+        61
+      ]
+    },
+    "r19_stair_detail": {
+      "title": "Stair materials and sidewall junction",
+      "position": [
+        -20.9,
+        14.6,
+        48.5
+      ],
+      "fov": 55,
+      "target": [
+        -20,
+        14.8,
+        44
+      ]
+    },
+    "r20_notices": {
+      "target": [
+        -35.09,
+        28.04,
+        -48.79
+      ],
+      "fov": 67,
+      "position": [
+        -34.43,
+        28.2,
+        -47.87
+      ],
+      "title": "住户告示"
+    },
+    "r20_reverse": {
+      "target": [
+        -35.5,
+        27.45,
+        -46.2
+      ],
+      "fov": 66,
+      "position": [
+        -30.9,
+        29,
+        -54.8
+      ],
+      "title": "从上巷回望"
+    },
+    "r20_tap": {
+      "title": "巷内冲洗龙头",
+      "target": [
+        -31.46,
+        27.19,
+        -51.23
+      ],
+      "fov": 62,
+      "position": [
+        -32.55,
+        28.01,
+        -50.82
+      ],
+      "capture_state": {
+        "rinse_running": true
+      }
+    },
+    "r20_laundry": {
+      "title": "窗外晾晒",
+      "target": [
+        -33.53,
+        31.4,
+        -50.55
+      ],
+      "fov": 63,
+      "position": [
+        -34.59,
+        29.09,
+        -47.27
+      ]
+    },
+    "r20_tree_court": {
+      "position": [
+        -23.28,
+        31.19,
+        -66.92
+      ],
+      "fov": 65,
+      "target": [
+        -26.44,
+        30.18,
+        -70.38
+      ],
+      "title": "上巷树下歇脚处"
+    },
+    "r20_neighbor": {
+      "title": "树下街坊",
+      "position": [
+        -24.07,
+        30.51,
+        -67.29
+      ],
+      "target": [
+        -25.42,
+        30.24,
+        -68.77
+      ],
+      "fov": 52,
+      "capture_state": {
+        "resident_clip": "sit_rest",
+        "resident_time": 4
+      }
+    },
+    "r20_seated_neighbor": {
+      "title": "坐在树下看街坊",
+      "position": [
+        -26.40084,
+        30.74617,
+        -68.46053
+      ],
+      "target": [
+        -25.42,
+        30.57,
+        -68.77
+      ],
+      "fov": 72,
+      "capture_state": {
+        "resident_clip": "sit_look",
+        "resident_time": 2.6
+      }
+    },
+    "r22_breakfast": {
+      "position": [
+        -27.0,
+        12.56,
+        56.2
+      ],
+      "target": [
+        -30.48,
+        12.23,
+        61.0
+      ],
+      "fov": 56,
+      "title": "早餐桌与遮雨棚"
+    },
+    "r22_roof_garden": {
+      "position": [
+        3,
+        52,
+        -22
+      ],
+      "target": [
+        -14,
+        39.9,
+        -34
+      ],
+      "fov": 58,
+      "title": "文化室楼顶"
+    },
+    "r22_roof_wash": {
+      "position": [
+        -43,
+        49,
+        -47
+      ],
+      "target": [
+        -51,
+        43.3,
+        -60
+      ],
+      "fov": 57,
+      "title": "住户晾晒天台"
+    },
+    "r22_river_street": {
+      "position": [
+        -45.0,
+        11.580072402954102,
+        66.0
+      ],
+      "target": [
+        -502,
+        30,
+        578
+      ],
+      "fov": 52,
+      "title": "路口行人眼高看江"
+    },
+    "r22_river_overview": {
+      "position": [
+        -75,
+        88,
+        66
+      ],
+      "target": [
+        -521,
+        14,
+        620
+      ],
+      "fov": 59,
+      "title": "城区和跨江远景"
+    },
+    "r22_river_detail": {
+      "position": [
+        -152,
+        56,
+        245
+      ],
+      "target": [
+        -501,
+        25,
+        504
+      ],
+      "fov": 36,
+      "title": "跨江远景诊断"
+    },
+    "r24_canopy_joint": {
+      "title": "院落雨棚 · 连接",
+      "position": [
+        -4.85,
+        17.66,
+        31.2
+      ],
+      "target": [
+        -1.38,
+        18.5,
+        28.72
+      ],
+      "fov": 60
+    },
+    "r24_canopy_under": {
+      "title": "院落雨棚 · 檐底",
+      "position": [
+        -1.43,
+        17.86,
+        28.1
+      ],
+      "target": [
+        -0.45,
+        18.71,
+        29.6
+      ],
+      "fov": 75
+    },
+    "r24_hoop": {
+      "title": "社区球场 · 篮板",
+      "position": [
+        -33,
+        22.2,
+        6.4
+      ],
+      "target": [
+        -34,
+        23.72,
+        11.18
+      ],
+      "fov": 51
+    },
+    "r24_frame": {
+      "title": "渝中城市框架 · 楼群",
+      "position": [
+        -60,
+        122,
+        110
+      ],
+      "target": [
+        850,
+        109,
+        -650
+      ],
+      "fov": 56
+    },
+    "r24_frame_walk": {
+      "title": "临街向渝中眺望",
+      "position": [
+        -23.92,
+        9.435,
+        81.05
+      ],
+      "target": [
+        39,
+        17,
+        4
+      ],
+      "fov": 67
+    },
+    "r24_step_edge": {
+      "title": "中央梯坎 · 侧沿",
+      "position": [
+        -26.4,
+        14.1,
+        49
+      ],
+      "target": [
+        -19,
+        14.8,
+        41
+      ],
+      "fov": 65
+    },
+    "r24_west_seam": {
+      "position": [
+        -73.7,
+        16.88,
+        25.35
+      ],
+      "target": [
+        -71.95,
+        15.7,
+        19.0
+      ],
+      "fov": 58,
+      "title": "西巷梯坎与院路"
+    },
+    "r24_center_seam": {
+      "position": [
+        -20.1,
+        18.83,
+        24.0
+      ],
+      "target": [
+        -18.0,
+        17.1,
+        18.0
+      ],
+      "fov": 62,
+      "title": "中央梯坎与院路"
+    },
+    "r24_lower_seam": {
+      "position": [
+        6.0,
+        13.13,
+        61.6
+      ],
+      "target": [
+        0.9,
+        11.6,
+        57.2
+      ],
+      "fov": 63,
+      "title": "中央梯坎下段铺面"
+    },
+    "r24_court_entry": {
+      "position": [
+        -17.5,
+        21.68,
+        2.7
+      ],
+      "target": [
+        -21.55,
+        20.23,
+        0.34
+      ],
+      "fov": 65,
+      "title": "球场东口 · 梯坎接头"
+    },
+    "r24_market_ground": {
+      "title": "菜摊到货处",
+      "position": [
+        -33.65,
+        10.26,
+        77.45
+      ],
+      "target": [
+        -30.02,
+        9.48,
+        74.85
+      ],
+      "fov": 66
+    },
+    "r24_west_doorstep": {
+      "title": "西巷门口花架",
+      "position": [
+        -71.35,
+        17.54,
+        20.05
+      ],
+      "target": [
+        -66.82,
+        16.63,
+        16.35
+      ],
+      "fov": 62
+    },
+    "r24_court_gap": {
+      "position": [
+        -20.14,
+        18.93,
+        18.9
+      ],
+      "target": [
+        -20.22,
+        17.92,
+        14.03
+      ],
+      "fov": 65,
+      "title": "球场挡墙与梯坎侧缝"
+    },
+    "r24_west_life": {
+      "position": [
+        -73.5,
+        16.88,
+        25.4
+      ],
+      "target": [
+        -71.4,
+        16.75,
+        17.2
+      ],
+      "fov": 64,
+      "title": "西巷步行与窗下绿植"
+    },
+    "r24_lane_life": {
+      "position": [
+        -34.3,
+        12.73,
+        60.6
+      ],
+      "target": [
+        -21.4,
+        11.64,
+        60.8
+      ],
+      "fov": 68,
+      "title": "外卖店门前的巷道"
+    },
+    "r24_wire_anchor": {
+      "position": [
+        -74.5,
+        17.6,
+        20.3
+      ],
+      "target": [
+        -78,
+        21.52975,
+        22.464
+      ],
+      "fov": 60,
+      "title": "西巷墙面电线固定点"
+    },
+    "r24_chess": {
+      "position": [
+        -16.0,
+        19.18,
+        17.8
+      ],
+      "target": [
+        -12.65,
+        18.2,
+        14.95
+      ],
+      "fov": 64,
+      "title": "树荫下的棋桌"
+    },
+    "r24_wire_fixing": {
+      "title": "面馆墙上的瓷瓶线脚",
+      "position": [
+        -24.16,
+        17.11,
+        60.8
+      ],
+      "target": [
+        -23.11,
+        17.32,
+        61.85
+      ],
+      "fov": 53
+    },
+    "r24_chess_table": {
+      "position": [
+        -15.989999771118164,
+        19.419551391601562,
+        17.280000305175783
+      ],
+      "target": [
+        -14.739999771118164,
+        18.38955139160156,
+        14.680000305175781
+      ],
+      "fov": 54,
+      "title": "院坝棋局"
+    },
+    "r24_west_threshold": {
+      "position": [
+        -74.16,
+        17.6,
+        20.6
+      ],
+      "target": [
+        -68.65,
+        16.55,
+        16.0
+      ],
+      "fov": 65,
+      "title": "西巷门前摘菜"
+    },
+    "r24_west_arrival": {
+      "position": [
+        -79.3,
+        16.27,
+        33.4
+      ],
+      "target": [
+        -73.0,
+        16.5,
+        21.1
+      ],
+      "fov": 65,
+      "title": "从西巷下口上楼"
+    },
+    "r24_west_bowl": {
+      "position": [
+        -69.04,
+        17.48,
+        17.22
+      ],
+      "target": [
+        -67.33,
+        16.56,
+        18.69
+      ],
+      "fov": 58,
+      "title": "西巷檐下择豆"
+    },
+    "r24_west_kitchen": {
+      "title": "西巷窗前的竹帘与辣椒",
+      "position": [
+        -70.1,
+        17.66,
+        21.44
+      ],
+      "target": [
+        -66.38,
+        17.92,
+        20.34
+      ],
+      "fov": 63
+    },
+    "r24_main_tea_window": {
+      "title": "南区路 · 沿窗茶架",
+      "position": [
+        -33.7,
+        10.471,
+        75.3
+      ],
+      "target": [
+        -30.92,
+        13.27,
+        72.18
+      ],
+      "fov": 66
+    },
+    "r24_main_supper_window": {
+      "title": "南区路 · 厨房挂勺",
+      "position": [
+        -31.9,
+        10.55,
+        76.0
+      ],
+      "target": [
+        -27.88,
+        13.36,
+        72.28
+      ],
+      "fov": 62
+    },
+    "r24_west_pantry": {
+      "title": "西巷 · 从街边看进厨房",
+      "position": [
+        -69.51,
+        17.32,
+        20.73
+      ],
+      "target": [
+        -65.24,
+        18.05,
+        21.4
+      ],
+      "fov": 59
+    },
+    "r24_market_steps_front": {
+      "title": "南区路 · 从马路望市场台口",
+      "position": [
+        -21.6,
+        9.41,
+        83.7
+      ],
+      "target": [
+        -21.6,
+        8.44,
+        78.8
+      ],
+      "fov": 62
+    },
+    "r24_market_steps_along": {
+      "title": "南区路 · 走近市场台阶",
+      "position": [
+        -26.15,
+        9.42,
+        81.45
+      ],
+      "target": [
+        -21.4,
+        8.31,
+        79.0
+      ],
+      "fov": 62
+    },
+    "r24_market_steps_upper": {
+      "title": "南区路 · 从市场向下走",
+      "position": [
+        -19.6,
+        10.38,
+        76.45
+      ],
+      "target": [
+        -21.6,
+        8.15,
+        79.68
+      ],
+      "fov": 62
+    },
+    "r24_east_upper_joint": {
+      "title": "上院步道 · 东巷接头",
+      "position": [
+        26.799272946044955,
+        24.566342724411438,
+        -6.865393156444642
+      ],
+      "target": [
+        28.469638739376204,
+        22.931822951247216,
+        -11.285599399099397
+      ],
+      "fov": 70.11639883446597
+    },
+    "r24_east_upper_reverse": {
+      "title": "从东巷看上院步道",
+      "position": [
+        32.3,
+        24.15,
+        -8.9
+      ],
+      "target": [
+        28.44,
+        23.35,
+        -12.98
+      ],
+      "fov": 64
+    },
+    "r24_east_upper_grate": {
+      "title": "上院坡地雨水箅",
+      "position": [
+        27.15,
+        24.17,
+        -8.01
+      ],
+      "target": [
+        27.98,
+        22.79,
+        -9.5
+      ],
+      "fov": 49
+    },
+    "r24_east_inlet_0": {
+      "position": [
+        36.8333332061768,
+        22.5826404571533,
+        0.6499999999999999
+      ],
+      "target": [
+        38.1333332061768,
+        21.7626404571533,
+        -1.0
+      ],
+      "fov": 49.0,
+      "title": "东巷 · 坡脚雨水口"
+    },
+    "r24_east_inlet_1": {
+      "position": [
+        43.8333332061768,
+        20.850144195556602,
+        12.65
+      ],
+      "target": [
+        45.1333332061768,
+        20.030144195556602,
+        11.0
+      ],
+      "fov": 49.0,
+      "title": "东巷 · 墙边雨水口"
+    },
+    "r24_join18_long": {
+      "title": "面馆上方 · 长梯边沿",
+      "position": [
+        -7.2,
+        13.73,
+        54.95
+      ],
+      "target": [
+        4.7,
+        11.42,
+        59.0
+      ],
+      "fov": 68
+    },
+    "r24_join18_bend": {
+      "title": "面馆坡口 · 转折平台",
+      "position": [
+        -16.62,
+        14.53,
+        54.8
+      ],
+      "target": [
+        -20.45,
+        12.68,
+        50.9
+      ],
+      "fov": 68
+    },
+    "r24_join18_road": {
+      "title": "南区路 · 路肩交界",
+      "position": [
+        29.2,
+        10.85,
+        81.6
+      ],
+      "target": [
+        13.3,
+        8.75,
+        77.4
+      ],
+      "fov": 68
+    },
+    "r24_join18_alley": {
+      "title": "东巷折梯 · 转角",
+      "position": [
+        54.45,
+        18.03,
+        37.0
+      ],
+      "target": [
+        52.1,
+        16.34,
+        34.7
+      ],
+      "fov": 68
+    },
+    "r24_join18_court": {
+      "title": "球场 · 西侧看台",
+      "position": [
+        -45.4,
+        22.24,
+        13.1
+      ],
+      "target": [
+        -43.98,
+        21.4,
+        7.26
+      ],
+      "fov": 69
+    },
+    "r24_join18_shop": {
+      "title": "面馆 · 堂屋",
+      "position": [
+        -23.4,
+        12.93,
+        58.82
+      ],
+      "target": [
+        -24.85,
+        12.58,
+        65.1
+      ],
+      "fov": 57
+    },
+    "r24_join18_room": {
+      "title": "南区路 · 临窗起居间",
+      "position": [
+        -27.869129180908203,
+        13.077714920043945,
+        76.3699951171875
+      ],
+      "target": [
+        -28.289487838745117,
+        12.65771484375,
+        68.10047149658203
+      ],
+      "fov": 52
+    },
+    "r24_join18_prep": {
+      "title": "面馆 · 灶台与备餐",
+      "position": [
+        -24.82,
+        12.91,
+        64.63
+      ],
+      "target": [
+        -24.01,
+        12.58,
+        67.35
+      ],
+      "fov": 65
+    },
+    "r24_join18_front": {
+      "title": "巷对面 · 梯坎小面",
+      "position": [
+        -20.1,
+        13.03,
+        55.25
+      ],
+      "target": [
+        -24.4,
+        12.93,
+        63.65
+      ],
+      "fov": 64
+    },
+    "r24_join18_threshold": {
+      "title": "进门 · 小面出餐口",
+      "position": [
+        -24.91,
+        12.99,
+        61.36
+      ],
+      "target": [
+        -23.25,
+        12.53,
+        64.91
+      ],
+      "fov": 72
+    }
+  },
+  "street_r19": {
+    "enabled": true,
+    "surfaces": true
+  },
+  "lane_r20": true,
+  "meter_lod": true,
+  "court_resident": true,
+  "district_r21": true,
+  "roofs_r22": true,
+  "river_r22": true,
+  "block_r23": true,
+  "market_r24": true,
+  "traffic_lanes_r24": true,
+  "washcloth_shader": "res://shaders/washcloth_r24.gdshader",
+  "street_finish_r24": true,
+  "street_use_r24": true,
+  "neighborhood_r24": true,
+  "window_title": "重庆外卖王 · 梯坎里 R24 构建 18",
+  "canopy_distance_r24": true,
+  "courtyard_life_r24": true,
+  "natural_stops_r24": true,
+  "courtyard_paving_r24": true,
+  "fitted_kitchen_r24": true,
+  "window_life_r24": true,
+  "room_patina_r24": true,
+  "wall_occlusion_r24": true,
+  "market_steps_r24": true,
+  "east_lane_joint_r24": true,
+  "east_alley_inlets_r24": true,
+  "district_connections_r24": true
+}

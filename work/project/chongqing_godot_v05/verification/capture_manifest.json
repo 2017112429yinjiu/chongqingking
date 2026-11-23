@@ -1,0 +1,1444 @@
+{
+	"applied_lighting_profile": {
+		"ambient_color": [
+			0.67,
+			0.75,
+			0.84
+		],
+		"ambient_energy": 0.52,
+		"background_energy": 0.95,
+		"brightness": 1.0,
+		"cloud_coverage": 0.76,
+		"cloud_scale": 1.35,
+		"cloud_seed": 17.0,
+		"cloud_strength": 0.62,
+		"contrast": 1.0,
+		"exposure": 1.08,
+		"fog_aerial_perspective": 0.2,
+		"fog_color": [
+			0.65,
+			0.73,
+			0.8
+		],
+		"fog_density": 0.00045,
+		"fog_light_energy": 0.8,
+		"fog_sky_affect": 0.08,
+		"glow": false,
+		"glow_bloom": 0.0,
+		"glow_intensity": 0.1,
+		"hdri_energy": 1.55,
+		"hdri_path": "res://assets/sky/kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+		"hdri_rotation_deg": [
+			0.0,
+			-28.9,
+			0.0
+		],
+		"high_camera_shadow_height_m": 80.0,
+		"high_camera_shadow_max_distance": 450.0,
+		"high_camera_shadow_range_enabled": true,
+		"interior_light_energy_scale": 1.0,
+		"interior_light_limit": 10.0,
+		"procedural_clouds": false,
+		"saturation": 1.0,
+		"sdfgi_enabled": false,
+		"shadow_bias": 0.06,
+		"shadow_max_distance": 180.0,
+		"shadow_normal_bias": 0.65,
+		"sky_contribution": 0.9,
+		"ssao": true,
+		"ssao_detail": 0.65,
+		"ssao_half_size": false,
+		"ssao_intensity": 1.15,
+		"ssao_light_affect": 0.28,
+		"ssao_power": 1.25,
+		"ssao_radius": 1.2,
+		"ssil": true,
+		"ssil_intensity": 0.16,
+		"ssil_normal_rejection": 1.0,
+		"ssil_radius": 2.4,
+		"ssil_sharpness": 0.96,
+		"ssr": false,
+		"sun_angular_distance": 1.5,
+		"sun_color": [
+			1.0,
+			0.95,
+			0.86
+		],
+		"sun_energy": 1.2,
+		"sun_rotation_deg": [
+			-48.0,
+			-63.0,
+			0.0
+		],
+		"sun_specular": 0.75,
+		"tonemap_white": 6.0
+	},
+	"art_profile": {
+		"art_revision": "v05_lighting_c_r10_actual_practical_completion",
+		"label_zh": "C / 暖日庭院",
+		"lighting": {
+			"ambient_color": [
+				0.67,
+				0.75,
+				0.84
+			],
+			"ambient_energy": 0.52,
+			"background_energy": 0.95,
+			"brightness": 1.0,
+			"contrast": 1.0,
+			"exposure": 1.08,
+			"fog_aerial_perspective": 0.2,
+			"fog_color": [
+				0.65,
+				0.73,
+				0.8
+			],
+			"fog_density": 0.00045,
+			"fog_light_energy": 0.8,
+			"fog_sky_affect": 0.08,
+			"glow": false,
+			"glow_bloom": 0.0,
+			"glow_intensity": 0.1,
+			"hdri_energy": 1.55,
+			"hdri_path": "res://assets/sky/kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+			"hdri_rotation_deg": [
+				0.0,
+				-28.9,
+				0.0
+			],
+			"high_camera_shadow_height_m": 80.0,
+			"high_camera_shadow_max_distance": 450.0,
+			"high_camera_shadow_range_enabled": true,
+			"interior_light_energy_scale": 1.0,
+			"interior_light_limit": 10.0,
+			"procedural_clouds": false,
+			"saturation": 1.0,
+			"sdfgi_enabled": false,
+			"shadow_bias": 0.06,
+			"shadow_max_distance": 180.0,
+			"shadow_normal_bias": 0.65,
+			"sky_contribution": 0.9,
+			"ssao": true,
+			"ssao_detail": 0.65,
+			"ssao_half_size": false,
+			"ssao_intensity": 1.15,
+			"ssao_light_affect": 0.28,
+			"ssao_power": 1.25,
+			"ssao_radius": 1.2,
+			"ssil": true,
+			"ssil_intensity": 0.16,
+			"ssil_normal_rejection": 1.0,
+			"ssil_radius": 2.4,
+			"ssil_sharpness": 0.96,
+			"ssr": false,
+			"sun_angular_distance": 1.5,
+			"sun_color": [
+				1.0,
+				0.95,
+				0.86
+			],
+			"sun_energy": 1.2,
+			"sun_rotation_deg": [
+				-48.0,
+				-63.0,
+				0.0
+			],
+			"sun_specular": 0.75,
+			"tonemap_white": 6.0
+		},
+		"lighting_profiles": {
+			"gl_compatibility": {
+				"ambient_energy": 0.52,
+				"exposure": 1.0,
+				"ssao": false,
+				"ssil": false,
+				"sun_energy": 0.82,
+				"tonemap_white": 1.0
+			}
+		},
+		"materials": {
+			"glass_grime_strength": 0.12,
+			"glass_opacity": 0.17,
+			"glass_roughness": 0.18,
+			"ph_branch_shader": true,
+			"ph_branch_uv_baked": true,
+			"ph_leaf_safe_material": false,
+			"ph_leaf_unshaded": false,
+			"ph_tree_lod_bias": 1.0,
+			"ph_tree_normals": false,
+			"thin_window_glass": true
+		},
+		"notes": [
+			"V05 daylight comparison: original photographic CC0 partly-cloudy sky; neutral postprocessing; direct warm-white sun gives physical surface separation.",
+			"HDR source contains a 73216.0 RGB peak. Godot importer process/hdr_clamp_exposure=true applies the documented smart clamp to prevent sky-radiance sparkle; the downloaded source file is unchanged.",
+			"ACES tonemap_white=6.0 retains sunlit masonry and cloud highlight headroom. Exposure is fixed per comparison; no LUT, bloom or post-process brightness lift.",
+			"First A/B/C comparison retains the V04 vertex AO, SSAO and SSIL settings to isolate sky and direct lighting.",
+			"The 2048x1024 source sun peak lies at UV (0.59473,0.23340), elevation 47.99 degrees. Directional sun follows the photo elevation and azimuth; the optional sky rotation and sun azimuth move together.",
+			"Thin glass uses continuous world-scale residue, moderate Fresnel reflections and a clear frontal view into real recessed room geometry.",
+			"R10 actual-practical completion: all 10 authored interior bulbs are enabled from architecture_manifest.interior_lights (profile limit 10; runtime safety cap 12). Each remains 0.24 energy, 2.7m range and unshadowed; exterior C sunlight, HDRI, exposure and AO parameters are unchanged.",
+			"ReflectionProbe remains disabled. SDFGI, SSR and glow remain disabled. The known-good explicit primary-UV bark shader is unchanged."
+		],
+		"reflections": {
+			"enabled": false,
+			"probes": [
+				{
+					"intensity": 0.75,
+					"max_distance": 115.0,
+					"name": "DistrictCourtyardReflection",
+					"origin_offset": [
+						0.0,
+						3.0,
+						0.0
+					],
+					"position": [
+						-17.0,
+						24.0,
+						18.0
+					],
+					"size": [
+						150.0,
+						82.0,
+						165.0
+					]
+				}
+			]
+		}
+	},
+	"art_profile_path": "res://assets/render_profile_v05.json",
+	"art_profile_sha256": "9d0c7b69153c7c84fea8ac544b602bf15ef6806afa75068856a6adba0da809af",
+	"capture_order": [
+		"overview",
+		"street_entry",
+		"noodle_corner",
+		"central_steps",
+		"west_lane",
+		"community_court",
+		"narrow_passage",
+		"upper_houses",
+		"east_gallery",
+		"residential_road",
+		"upper_street",
+		"roofscape",
+		"community_front",
+		"residential_entry",
+		"window_courtyard",
+		"tea_interior",
+		"window_living",
+		"window_north",
+		"noodle_interior",
+		"window_reading",
+		"window_dining",
+		"planting_detail"
+	],
+	"captured_at_unix": 1795102454.378,
+	"captures": [
+		{
+			"capture_viewport_has_camera": true,
+			"directional_shadow": {
+				"blend_splits": true,
+				"camera_world_y_m": 230.0,
+				"fade_start_distance_m": 360.000005364418,
+				"fade_start_fraction": 0.800000011920929,
+				"high_camera_policy_enabled": true,
+				"max_distance_m": 450.0,
+				"mode": 2,
+				"split_fractions": [
+					0.100000001490116,
+					0.200000002980232,
+					0.5
+				]
+			},
+			"draw_calls": 6494.0,
+			"exact_requested_size": true,
+			"fov": 53.0,
+			"height": 1080,
+			"native_viewport_3d_disabled": true,
+			"native_viewport_has_camera": false,
+			"path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_overview.png",
+			"position": [
+				90.0,
+				230.0,
+				120.0
+			],
+			"rendered_objects": 7586.0,
+			"rendered_primitives": 42022477.0,
+			"save_error": 0,
+			"settle_elapsed_ms": 45453,
+			"settle_frames": 3,
+			"target": [
+				0.0,
+				20.0,
+				-5.0
+			],
+			"title": "全街区 · 南向北",
+			"view": "overview",
+			"width": 1920
+		},
+		{
+			"capture_viewport_has_camera": true,
+			"directional_shadow": {
+				"blend_splits": true,
+				"camera_world_y_m": 10.5943002700806,
+				"fade_start_distance_m": 144.000002145767,
+				"fade_start_fraction": 0.800000011920929,
+				"high_camera_policy_enabled": true,
+				"max_distance_m": 180.0,
+				"mode": 2,
+				"split_fractions": [
+					0.100000001490116,
+					0.200000002980232,
+					0.5
+				]
+			},
+			"draw_calls": 4968.0,
+			"exact_requested_size": true,
+			"fov": 60.0,
+			"height": 1080,
+			"native_viewport_3d_disabled": true,
+			"native_viewport_has_camera": false,
+			"path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_street_entry.png",
+			"position": [
+				24.0,
+				10.594,
+				77.0
+			],
+			"rendered_objects": 5380.0,
+			"rendered_primitives": 22893902.0,
+			"save_error": 0,
+			"settle_elapsed_ms": 23857,
+			"settle_frames": 3,
+			"target": [
+				1.0,
+				14.8245,
+				63.0
+			],
+			"title": "山城巷街口",
+			"view": "street_entry",
+			"width": 1920
+		},
+		{
+			"capture_viewport_has_camera": true,
+			"directional_shadow": {
+				"blend_splits": true,
+				"camera_world_y_m": 13.8121995925903,
+				"fade_start_distance_m": 144.000002145767,
+				"fade_start_fraction": 0.800000011920929,
+				"high_camera_policy_enabled": true,
+				"max_distance_m": 180.0,
+				"mode": 2,
+				"split_fractions": [
+					0.100000001490116,
+					0.200000002980232,
+					0.5
+				]
+			},
+			"draw_calls": 1154.0,
+			"exact_requested_size": true,
+			"fov": 64.0,
+			"height": 1080,
+			"native_viewport_3d_disabled": true,
+			"native_viewport_has_camera": false,
+			"path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_noodle_corner.png",
+			"position": [
+				-24.0,
+				13.812,
+				53.5
+			],
+			"rendered_objects": 1159.0,
+			"rendered_primitives": 5732704.0,
+			"save_error": 0,
+			"settle_elapsed_ms": 7217,
+			"settle_frames": 3,
+			"target": [
+				-26.5,
+				14.6,
+				62.05
+			],
+			"title": "小面馆与下层街面",
+			"view": "noodle_corner",
+			"width": 1920
+		},
+		{
+			"capture_viewport_has_camera": true,
+			"directional_shadow": {
+				"blend_splits": true,
+				"camera_world_y_m": 14.0322999954224,
+				"fade_start_distance_m": 144.000002145767,
+				"fade_start_fraction": 0.800000011920929,
+				"high_camera_policy_enabled": true,
+				"max_distance_m": 180.0,
+				"mode": 2,
+				"split_fractions": [
+					0.100000001490116,
+					0.200000002980232,
+					0.5
+				]
+			},
+			"draw_calls": 5623.0,
+			"exact_requested_size": true,
+			"fov": 59.0,
+			"height": 1080,
+			"native_viewport_3d_disabled": true,
+			"native_viewport_has_camera": false,
+			"path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_central_steps.png",
+			"position": [
+				-20.0,
+				14.032,
+				52.0
+			],
+			"rendered_objects": 6284.0,
+			"rendered_primitives": 32528257.0,
+			"save_error": 0,
+			"settle_elapsed_ms": 32779,
+			"settle_frames": 3,
+			"target": [
+				-20.0,
+				20.2251,
+				25.0
+			],
+			"title": "中央梯坎与临街住家",
+			"view": "central_steps",
+			"width": 1920
+		},
+		{
+			"capture_viewport_has_camera": true,
+			"directional_shadow": {
+				"blend_splits": true,
+				"camera_world_y_m": 15.3854999542236,
+				"fade_start_distance_m": 144.000002145767,
+				"fade_start_fraction": 0.800000011920929,
+				"high_camera_policy_enabled": true,
+				"max_distance_m": 180.0,
+				"mode": 2,
+				"split_fractions": [
+					0.100000001490116,
+					0.200000002980232,
+					0.5
+				]
+			},
+			"draw_calls": 3334.0,
+			"exact_requested_size": true,
+			"fov": 61.0,
+			"height": 1080,
+			"native_viewport_3d_disabled": true,
+			"native_viewport_has_camera": false,
+			"path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_west_lane.png",
+			"position": [
+				-73.0,
+				15.385,
+				34.0
+			],
+			"rendered_objects": 3519.0,
+			"rendered_primitives": 16251065.0,
+			"save_error": 0,
+			"settle_elapsed_ms": 20222,
+			"settle_frames": 3,
+			"target": [
+				-77.0,
+				21.2493,
+				10.0
+			],
+			"title": "西侧居民巷",
+			"view": "west_lane",
+			"width": 1920
+		},
+		{
+			"capture_viewport_has_camera": true,
+			"directional_shadow": {
+				"blend_splits": true,
+				"camera_world_y_m": 22.2999992370605,
+				"fade_start_distance_m": 144.000002145767,
+				"fade_start_fraction": 0.800000011920929,
+				"high_camera_policy_enabled": true,
+				"max_distance_m": 180.0,
+				"mode": 2,
+				"split_fractions": [
+					0.100000001490116,
+					0.200000002980232,
+					0.5
+				]
+			},
+			"draw_calls": 3298.0,
+			"exact_requested_size": true,
+			"fov": 66.0,
+			"height": 1080,
+			"native_viewport_3d_disabled": true,
+			"native_viewport_has_camera": false,
+			"path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_community_court.png",
+			"position": [
+				-20.0,
+				22.3,
+				19.0
+			],
+			"rendered_objects": 3469.0,
+			"rendered_primitives": 15597115.0,
+			"save_error": 0,
+			"settle_elapsed_ms": 17373,
+			"settle_frames": 3,
+			"target": [
+				-36.0,
+				23.5,
+				-4.0
+			],
+			"title": "社区球场与住宅",
+			"view": "community_court",
+			"width": 1920
+		},
+		{
+			"capture_viewport_has_camera": true,
+			"directional_shadow": {
+				"blend_splits": true,
+				"camera_world_y_m": 27.5860996246338,
+				"fade_start_distance_m": 144.000002145767,
+				"fade_start_fraction": 0.800000011920929,
+				"high_camera_policy_enabled": true,
+				"max_distance_m": 180.0,
+				"mode": 2,
+				"split_fractions": [
+					0.100000001490116,
+					0.200000002980232,
+					0.5
+				]
+			},
+			"draw_calls": 3178.0,
+			"exact_requested_size": true,
+			"fov": 70.0,
+			"height": 1080,
+			"native_viewport_3d_disabled": true,
+			"native_viewport_has_camera": false,
+			"path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_narrow_passage.png",
+			"position": [
+				-35.5,
+				27.586,
+				-46.2
+			],
+			"rendered_objects": 3456.0,
+			"rendered_primitives": 23646153.0,
+			"save_error": 0,
+			"settle_elapsed_ms": 20787,
+			"settle_frames": 3,
+			"target": [
+				-30.6,
+				28.8952,
+				-54.6
+			],
+			"title": "上坡楼间通道",
+			"view": "narrow_passage",
+			"width": 1920
+		},
+		{
+			"capture_viewport_has_camera": true,
+			"directional_shadow": {
+				"blend_splits": true,
+				"camera_world_y_m": 30.9218006134033,
+				"fade_start_distance_m": 144.000002145767,
+				"fade_start_fraction": 0.800000011920929,
+				"high_camera_policy_enabled": true,
+				"max_distance_m": 180.0,
+				"mode": 2,
+				"split_fractions": [
+					0.100000001490116,
+					0.200000002980232,
+					0.5
+				]
+			},
+			"draw_calls": 2481.0,
+			"exact_requested_size": true,
+			"fov": 63.0,
+			"height": 1080,
+			"native_viewport_3d_disabled": true,
+			"native_viewport_has_camera": false,
+			"path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_upper_houses.png",
+			"position": [
+				-12.0,
+				30.922,
+				-63.0
+			],
+			"rendered_objects": 2604.0,
+			"rendered_primitives": 13422737.0,
+			"save_error": 0,
+			"settle_elapsed_ms": 15803,
+			"settle_frames": 3,
+			"target": [
+				-43.0,
+				32.6,
+				-65.0
+			],
+			"title": "上层院落回望",
+			"view": "upper_houses",
+			"width": 1920
+		},
+		{
+			"capture_viewport_has_camera": true,
+			"directional_shadow": {
+				"blend_splits": true,
+				"camera_world_y_m": 15.5518999099731,
+				"fade_start_distance_m": 144.000002145767,
+				"fade_start_fraction": 0.800000011920929,
+				"high_camera_policy_enabled": true,
+				"max_distance_m": 180.0,
+				"mode": 2,
+				"split_fractions": [
+					0.100000001490116,
+					0.200000002980232,
+					0.5
+				]
+			},
+			"draw_calls": 3135.0,
+			"exact_requested_size": true,
+			"fov": 61.0,
+			"height": 1080,
+			"native_viewport_3d_disabled": true,
+			"native_viewport_has_camera": false,
+			"path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_east_gallery.png",
+			"position": [
+				50.0,
+				15.552,
+				49.0
+			],
+			"rendered_objects": 3555.0,
+			"rendered_primitives": 29908757.0,
+			"save_error": 0,
+			"settle_elapsed_ms": 31267,
+			"settle_frames": 3,
+			"target": [
+				65.0,
+				20.5696,
+				32.0
+			],
+			"title": "东侧砖墙坡巷",
+			"view": "east_gallery",
+			"width": 1920
+		},
+		{
+			"capture_viewport_has_camera": true,
+			"directional_shadow": {
+				"blend_splits": true,
+				"camera_world_y_m": 28.9818992614746,
+				"fade_start_distance_m": 144.000002145767,
+				"fade_start_fraction": 0.800000011920929,
+				"high_camera_policy_enabled": true,
+				"max_distance_m": 180.0,
+				"mode": 2,
+				"split_fractions": [
+					0.100000001490116,
+					0.200000002980232,
+					0.5
+				]
+			},
+			"draw_calls": 2412.0,
+			"exact_requested_size": true,
+			"fov": 59.0,
+			"height": 1080,
+			"native_viewport_3d_disabled": true,
+			"native_viewport_has_camera": false,
+			"path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_residential_road.png",
+			"position": [
+				64.0,
+				28.982,
+				-34.0
+			],
+			"rendered_objects": 2648.0,
+			"rendered_primitives": 21786387.0,
+			"save_error": 0,
+			"settle_elapsed_ms": 20835,
+			"settle_frames": 3,
+			"target": [
+				65.0,
+				37.1868,
+				-67.0
+			],
+			"title": "东侧居民道路",
+			"view": "residential_road",
+			"width": 1920
+		},
+		{
+			"capture_viewport_has_camera": true,
+			"directional_shadow": {
+				"blend_splits": true,
+				"camera_world_y_m": 33.6640014648438,
+				"fade_start_distance_m": 144.000002145767,
+				"fade_start_fraction": 0.800000011920929,
+				"high_camera_policy_enabled": true,
+				"max_distance_m": 180.0,
+				"mode": 2,
+				"split_fractions": [
+					0.100000001490116,
+					0.200000002980232,
+					0.5
+				]
+			},
+			"draw_calls": 3618.0,
+			"exact_requested_size": true,
+			"fov": 62.0,
+			"height": 1080,
+			"native_viewport_3d_disabled": true,
+			"native_viewport_has_camera": false,
+			"path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_upper_street.png",
+			"position": [
+				4.0,
+				33.664,
+				-80.0
+			],
+			"rendered_objects": 4205.0,
+			"rendered_primitives": 33735862.0,
+			"save_error": 0,
+			"settle_elapsed_ms": 34962,
+			"settle_frames": 3,
+			"target": [
+				28.0,
+				35.2031,
+				-67.0
+			],
+			"title": "上层长街与店面",
+			"view": "upper_street",
+			"width": 1920
+		},
+		{
+			"capture_viewport_has_camera": true,
+			"directional_shadow": {
+				"blend_splits": true,
+				"camera_world_y_m": 64.0,
+				"fade_start_distance_m": 144.000002145767,
+				"fade_start_fraction": 0.800000011920929,
+				"high_camera_policy_enabled": true,
+				"max_distance_m": 180.0,
+				"mode": 2,
+				"split_fractions": [
+					0.100000001490116,
+					0.200000002980232,
+					0.5
+				]
+			},
+			"draw_calls": 4006.0,
+			"exact_requested_size": true,
+			"fov": 59.0,
+			"height": 1080,
+			"native_viewport_3d_disabled": true,
+			"native_viewport_has_camera": false,
+			"path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_roofscape.png",
+			"position": [
+				14.0,
+				64.0,
+				20.0
+			],
+			"rendered_objects": 4312.0,
+			"rendered_primitives": 18715431.0,
+			"save_error": 0,
+			"settle_elapsed_ms": 20818,
+			"settle_frames": 3,
+			"target": [
+				-31.0,
+				22.0,
+				-8.0
+			],
+			"title": "台地、院落与屋顶",
+			"view": "roofscape",
+			"width": 1920
+		},
+		{
+			"capture_viewport_has_camera": true,
+			"directional_shadow": {
+				"blend_splits": true,
+				"camera_world_y_m": 23.5589008331299,
+				"fade_start_distance_m": 144.000002145767,
+				"fade_start_fraction": 0.800000011920929,
+				"high_camera_policy_enabled": true,
+				"max_distance_m": 180.0,
+				"mode": 2,
+				"split_fractions": [
+					0.100000001490116,
+					0.200000002980232,
+					0.5
+				]
+			},
+			"draw_calls": 3931.0,
+			"exact_requested_size": true,
+			"fov": 61.0,
+			"height": 1080,
+			"native_viewport_3d_disabled": true,
+			"native_viewport_has_camera": false,
+			"path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_community_front.png",
+			"position": [
+				28.0,
+				23.559,
+				-4.0
+			],
+			"rendered_objects": 4180.0,
+			"rendered_primitives": 18515413.0,
+			"save_error": 0,
+			"settle_elapsed_ms": 19443,
+			"settle_frames": 3,
+			"target": [
+				13.0,
+				24.8043,
+				-11.0
+			],
+			"title": "社区服务站",
+			"view": "community_front",
+			"width": 1920
+		},
+		{
+			"capture_viewport_has_camera": true,
+			"directional_shadow": {
+				"blend_splits": true,
+				"camera_world_y_m": 17.7423000335693,
+				"fade_start_distance_m": 144.000002145767,
+				"fade_start_fraction": 0.800000011920929,
+				"high_camera_policy_enabled": true,
+				"max_distance_m": 180.0,
+				"mode": 2,
+				"split_fractions": [
+					0.100000001490116,
+					0.200000002980232,
+					0.5
+				]
+			},
+			"draw_calls": 2172.0,
+			"exact_requested_size": true,
+			"fov": 64.0,
+			"height": 1080,
+			"native_viewport_3d_disabled": true,
+			"native_viewport_has_camera": false,
+			"path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_residential_entry.png",
+			"position": [
+				-43.0,
+				17.742,
+				22.0
+			],
+			"rendered_objects": 2234.0,
+			"rendered_primitives": 9737912.0,
+			"save_error": 0,
+			"settle_elapsed_ms": 12646,
+			"settle_frames": 3,
+			"target": [
+				-52.9,
+				18.85,
+				19.5
+			],
+			"title": "居民楼入口与墙脚",
+			"view": "residential_entry",
+			"width": 1920
+		},
+		{
+			"capture_viewport_has_camera": true,
+			"directional_shadow": {
+				"blend_splits": true,
+				"camera_world_y_m": 20.6816997528076,
+				"fade_start_distance_m": 144.000002145767,
+				"fade_start_fraction": 0.800000011920929,
+				"high_camera_policy_enabled": true,
+				"max_distance_m": 180.0,
+				"mode": 2,
+				"split_fractions": [
+					0.100000001490116,
+					0.200000002980232,
+					0.5
+				]
+			},
+			"draw_calls": 2348.0,
+			"exact_requested_size": true,
+			"fov": 64.0,
+			"height": 1080,
+			"native_viewport_3d_disabled": true,
+			"native_viewport_has_camera": false,
+			"path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_courtyard.png",
+			"position": [
+				5.53,
+				20.682,
+				10.302
+			],
+			"rendered_objects": 2588.0,
+			"rendered_primitives": 21910205.0,
+			"save_error": 0,
+			"settle_elapsed_ms": 23604,
+			"settle_frames": 3,
+			"target": [
+				7.6877,
+				20.5329,
+				11.5265
+			],
+			"title": "院落住家 · 家务间近景",
+			"view": "window_courtyard",
+			"width": 1920
+		},
+		{
+			"capture_viewport_has_camera": true,
+			"directional_shadow": {
+				"blend_splits": true,
+				"camera_world_y_m": 18.1840991973877,
+				"fade_start_distance_m": 144.000002145767,
+				"fade_start_fraction": 0.800000011920929,
+				"high_camera_policy_enabled": true,
+				"max_distance_m": 180.0,
+				"mode": 2,
+				"split_fractions": [
+					0.100000001490116,
+					0.200000002980232,
+					0.5
+				]
+			},
+			"draw_calls": 6164.0,
+			"exact_requested_size": true,
+			"fov": 66.0,
+			"height": 1080,
+			"native_viewport_3d_disabled": true,
+			"native_viewport_has_camera": false,
+			"path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_tea_interior.png",
+			"position": [
+				79.578,
+				18.184,
+				37.251
+			],
+			"rendered_objects": 7076.0,
+			"rendered_primitives": 40755442.0,
+			"save_error": 0,
+			"settle_elapsed_ms": 44353,
+			"settle_frames": 3,
+			"target": [
+				75.9791,
+				17.9989,
+				35.3943
+			],
+			"title": "巷口茶馆 · 门口看店内",
+			"view": "tea_interior",
+			"width": 1920
+		},
+		{
+			"capture_viewport_has_camera": true,
+			"directional_shadow": {
+				"blend_splits": true,
+				"camera_world_y_m": 34.9570999145508,
+				"fade_start_distance_m": 144.000002145767,
+				"fade_start_fraction": 0.800000011920929,
+				"high_camera_policy_enabled": true,
+				"max_distance_m": 180.0,
+				"mode": 2,
+				"split_fractions": [
+					0.100000001490116,
+					0.200000002980232,
+					0.5
+				]
+			},
+			"draw_calls": 4811.0,
+			"exact_requested_size": true,
+			"fov": 64.0,
+			"height": 1080,
+			"native_viewport_3d_disabled": true,
+			"native_viewport_has_camera": false,
+			"path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_living.png",
+			"position": [
+				47.905,
+				34.957,
+				-76.373
+			],
+			"rendered_objects": 5455.0,
+			"rendered_primitives": 33129764.0,
+			"save_error": 0,
+			"settle_elapsed_ms": 31394,
+			"settle_frames": 3,
+			"target": [
+				47.9793,
+				35.0689,
+				-73.8927
+			],
+			"title": "坡道住家 · 深房与木椅近景",
+			"view": "window_living",
+			"width": 1920
+		},
+		{
+			"capture_viewport_has_camera": true,
+			"directional_shadow": {
+				"blend_splits": true,
+				"camera_world_y_m": 35.8849983215332,
+				"fade_start_distance_m": 144.000002145767,
+				"fade_start_fraction": 0.800000011920929,
+				"high_camera_policy_enabled": true,
+				"max_distance_m": 180.0,
+				"mode": 2,
+				"split_fractions": [
+					0.100000001490116,
+					0.200000002980232,
+					0.5
+				]
+			},
+			"draw_calls": 2846.0,
+			"exact_requested_size": true,
+			"fov": 64.0,
+			"height": 1080,
+			"native_viewport_3d_disabled": true,
+			"native_viewport_has_camera": false,
+			"path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_north.png",
+			"position": [
+				-23.878,
+				35.885,
+				-97.746
+			],
+			"rendered_objects": 3245.0,
+			"rendered_primitives": 25724887.0,
+			"save_error": 0,
+			"settle_elapsed_ms": 26364,
+			"settle_frames": 3,
+			"target": [
+				-21.4024,
+				35.9631,
+				-97.9171
+			],
+			"title": "北侧住家 · 窗内生活近景",
+			"view": "window_north",
+			"width": 1920
+		},
+		{
+			"capture_viewport_has_camera": true,
+			"directional_shadow": {
+				"blend_splits": true,
+				"camera_world_y_m": 13.1037998199463,
+				"fade_start_distance_m": 144.000002145767,
+				"fade_start_fraction": 0.800000011920929,
+				"high_camera_policy_enabled": true,
+				"max_distance_m": 180.0,
+				"mode": 2,
+				"split_fractions": [
+					0.100000001490116,
+					0.200000002980232,
+					0.5
+				]
+			},
+			"draw_calls": 1025.0,
+			"exact_requested_size": true,
+			"fov": 66.0,
+			"height": 1080,
+			"native_viewport_3d_disabled": true,
+			"native_viewport_has_camera": false,
+			"path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_noodle_interior.png",
+			"position": [
+				-24.29,
+				13.104,
+				59.3
+			],
+			"rendered_objects": 1025.0,
+			"rendered_primitives": 4308308.0,
+			"save_error": 0,
+			"settle_elapsed_ms": 6906,
+			"settle_frames": 3,
+			"target": [
+				-24.29,
+				12.6977,
+				63.35
+			],
+			"title": "小面馆 · 门口看店内",
+			"view": "noodle_interior",
+			"width": 1920
+		},
+		{
+			"capture_viewport_has_camera": true,
+			"directional_shadow": {
+				"blend_splits": true,
+				"camera_world_y_m": 18.6019992828369,
+				"fade_start_distance_m": 144.000002145767,
+				"fade_start_fraction": 0.800000011920929,
+				"high_camera_policy_enabled": true,
+				"max_distance_m": 180.0,
+				"mode": 2,
+				"split_fractions": [
+					0.100000001490116,
+					0.200000002980232,
+					0.5
+				]
+			},
+			"draw_calls": 1750.0,
+			"exact_requested_size": true,
+			"fov": 64.0,
+			"height": 1080,
+			"native_viewport_3d_disabled": true,
+			"native_viewport_has_camera": false,
+			"path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_reading.png",
+			"position": [
+				-51.35,
+				18.602,
+				14.17
+			],
+			"rendered_objects": 1807.0,
+			"rendered_primitives": 8511291.0,
+			"save_error": 0,
+			"settle_elapsed_ms": 11598,
+			"settle_frames": 3,
+			"target": [
+				-53.83,
+				18.2899,
+				14.25
+			],
+			"title": "坡巷住家 · 窗内生活近景",
+			"view": "window_reading",
+			"width": 1920
+		},
+		{
+			"capture_viewport_has_camera": true,
+			"directional_shadow": {
+				"blend_splits": true,
+				"camera_world_y_m": 15.8577995300293,
+				"fade_start_distance_m": 144.000002145767,
+				"fade_start_fraction": 0.800000011920929,
+				"high_camera_policy_enabled": true,
+				"max_distance_m": 180.0,
+				"mode": 2,
+				"split_fractions": [
+					0.100000001490116,
+					0.200000002980232,
+					0.5
+				]
+			},
+			"draw_calls": 2562.0,
+			"exact_requested_size": true,
+			"fov": 64.0,
+			"height": 1080,
+			"native_viewport_3d_disabled": true,
+			"native_viewport_has_camera": false,
+			"path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_dining.png",
+			"position": [
+				-26.35,
+				15.858,
+				38.42
+			],
+			"rendered_objects": 2636.0,
+			"rendered_primitives": 10803732.0,
+			"save_error": 0,
+			"settle_elapsed_ms": 14119,
+			"settle_frames": 3,
+			"target": [
+				-28.83,
+				15.7559,
+				38.5
+			],
+			"title": "临街住家 · 备餐间近景",
+			"view": "window_dining",
+			"width": 1920
+		},
+		{
+			"capture_viewport_has_camera": true,
+			"directional_shadow": {
+				"blend_splits": true,
+				"camera_world_y_m": 15.724100112915,
+				"fade_start_distance_m": 144.000002145767,
+				"fade_start_fraction": 0.800000011920929,
+				"high_camera_policy_enabled": true,
+				"max_distance_m": 180.0,
+				"mode": 2,
+				"split_fractions": [
+					0.100000001490116,
+					0.200000002980232,
+					0.5
+				]
+			},
+			"draw_calls": 2546.0,
+			"exact_requested_size": true,
+			"fov": 55.0,
+			"height": 1080,
+			"native_viewport_3d_disabled": true,
+			"native_viewport_has_camera": false,
+			"path": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_planting_detail.png",
+			"position": [
+				52.2,
+				15.724,
+				48.2
+			],
+			"rendered_objects": 2854.0,
+			"rendered_primitives": 23657546.0,
+			"save_error": 0,
+			"settle_elapsed_ms": 19143,
+			"settle_frames": 3,
+			"target": [
+				56.5,
+				14.8341,
+				45.2
+			],
+			"title": "树池、土壤与旧铺装近景",
+			"view": "planting_detail",
+			"width": 1920
+		}
+	],
+	"configuration_sha256": {
+		"res://assets/viewpoints.json": "a3da59baee65cea784440a54949fe5d2ddc556062727b763732c52698a743fe0",
+		"res://assets/walking_survey.json": "3277a9c561fb58826045d8a52affc3515a4ae1732e8231a27bf63bbf9d365d26"
+	},
+	"device": "llvmpipe (LLVM 19.1.7, 256 bits)",
+	"diagnostic_overrides": {
+		"external_art_profile": false,
+		"sdfgi_experiment": false,
+		"sun_shadows_disabled": false,
+		"tile_normal_disabled": false,
+		"tile_unshaded": false
+	},
+	"display_server": "X11",
+	"engine": "4.6.3-stable (official)",
+	"failures": [],
+	"gi_profile": {
+		"enabled": false,
+		"explicit_experiment": false,
+		"requested": false,
+		"structures_only": false
+	},
+	"lighting_applied_initial": {
+		"ambient_energy": 0.519999980926514,
+		"ambient_source": 3,
+		"reflection_source": 2,
+		"shadow_bias": 0.0599999986588955,
+		"shadow_distance": 180.0,
+		"shadow_normal_bias": 0.649999976158142,
+		"sky_contribution": 0.899999976158142,
+		"sun_energy": 1.20000004768372,
+		"sun_shadows": true,
+		"sun_specular": 0.75
+	},
+	"material_stats": {
+		"branch_shader_overrides": {
+			"CQ_PH_island_tree_01_branches": {
+				"baked_primary": true,
+				"imported_uv1_offset": [
+					0.0,
+					0.0,
+					0.0
+				],
+				"imported_uv1_scale": [
+					1.0,
+					1.0,
+					1.0
+				],
+				"imported_uv2_offset": [
+					0.0,
+					0.0,
+					0.0
+				],
+				"imported_uv2_scale": [
+					1.0,
+					1.0,
+					1.0
+				],
+				"normal_and_pbr_textures": false,
+				"offset": [
+					0.0,
+					0.0
+				],
+				"scale": [
+					1.0,
+					1.0
+				],
+				"texcoord": 0,
+				"texture": "res://assets/chongqing_district_island_tree_01_branches_diff_2k.jpg"
+			},
+			"CQ_PH_tree_small_02_branches": {
+				"baked_primary": true,
+				"imported_uv1_offset": [
+					0.0,
+					0.0,
+					0.0
+				],
+				"imported_uv1_scale": [
+					1.0,
+					1.0,
+					1.0
+				],
+				"imported_uv2_offset": [
+					0.0,
+					0.0,
+					0.0
+				],
+				"imported_uv2_scale": [
+					1.0,
+					1.0,
+					1.0
+				],
+				"normal_and_pbr_textures": false,
+				"offset": [
+					0.0,
+					0.0
+				],
+				"scale": [
+					1.0,
+					1.0
+				],
+				"texcoord": 0,
+				"texture": "res://assets/chongqing_district_tree_small_02_branch_diff_2k.jpg"
+			}
+		},
+		"explicit_branch_surfaces": 43,
+		"gi_excluded_meshes": 0,
+		"specular_adjusted_materials": {
+
+		},
+		"static_gi_meshes": 2690,
+		"surfaces": 2690,
+		"thin_glass_surfaces": 81,
+		"tile_diagnostics": {
+
+		},
+		"tree_normal_overrides": {
+			"CQ_PH_island_tree_01": "normal texture disabled; albedo/roughness/geometry preserved",
+			"CQ_PH_island_tree_01_branches": "normal texture disabled; albedo/roughness/geometry preserved",
+			"CQ_PH_island_tree_01_leaves": "normal texture disabled; albedo/roughness/geometry preserved",
+			"CQ_PH_tree_small_02_branches": "normal texture disabled; albedo/roughness/geometry preserved",
+			"CQ_PH_tree_small_02_leaves": "normal texture disabled; albedo/roughness/geometry preserved",
+			"CQ_PH_tree_small_02_trunk": "normal texture disabled; albedo/roughness/geometry preserved"
+		},
+		"vertex_color_surfaces": 963
+	},
+	"practical_profile": {
+		"interior_candidate_count": 9,
+		"interior_lights": [
+			{
+				"energy": 0.239999994635582,
+				"name": "B_809889627_blue_apartments_room_lamp",
+				"position": [
+					82.391,
+					28.184,
+					-13.942
+				],
+				"range": 2.70000004768372,
+				"shadows": false
+			},
+			{
+				"energy": 0.239999994635582,
+				"name": "B_809889628_clinic_room_lamp",
+				"position": [
+					15.883,
+					31.615,
+					-53.5
+				],
+				"range": 2.70000004768372,
+				"shadows": false
+			},
+			{
+				"energy": 0.239999994635582,
+				"name": "B_809889629_artisan_room_lamp",
+				"position": [
+					47.205,
+					34.774,
+					-72.476
+				],
+				"range": 2.70000004768372,
+				"shadows": false
+			},
+			{
+				"energy": 0.239999994635582,
+				"name": "B_1335306665_civic_room_lamp",
+				"position": [
+					-24.373,
+					26.707,
+					-30.861
+				],
+				"range": 2.70000004768372,
+				"shadows": false
+			},
+			{
+				"energy": 0.239999994635582,
+				"name": "B_1335306666_heritage_room_lamp",
+				"position": [
+					-50.162,
+					26.057,
+					-36.511
+				],
+				"range": 2.70000004768372,
+				"shadows": false
+			},
+			{
+				"energy": 0.239999994635582,
+				"name": "B_1335306667_brick_home_room_lamp",
+				"position": [
+					-62.888,
+					23.169,
+					-17.653
+				],
+				"range": 2.70000004768372,
+				"shadows": false
+			},
+			{
+				"energy": 0.239999994635582,
+				"name": "B_1413081560_old_tile_room_lamp",
+				"position": [
+					-33.476,
+					29.533,
+					-53.924
+				],
+				"range": 2.70000004768372,
+				"shadows": false
+			},
+			{
+				"energy": 0.239999994635582,
+				"name": "B_A03_blue_apartments_room_lamp",
+				"position": [
+					-91.543,
+					16.767,
+					15.033
+				],
+				"range": 2.70000004768372,
+				"shadows": false
+			},
+			{
+				"energy": 0.239999994635582,
+				"name": "B_A04_courtyard_home_room_lamp",
+				"position": [
+					-55.09,
+					17.775,
+					14.621
+				],
+				"range": 2.70000004768372,
+				"shadows": false
+			}
+		],
+		"street_lights": 22
+	},
+	"reflection_profile": {
+		"enabled": false,
+		"probes": []
+	},
+	"render_effects": {
+		"glow": false,
+		"sdfgi": false,
+		"sdfgi_cascades": 4,
+		"sdfgi_cell_metres": 0.200000002980232,
+		"sdfgi_read_sky": true,
+		"ssao": true,
+		"ssao_detail": 0.649999976158142,
+		"ssao_intensity": 1.14999997615814,
+		"ssao_radius": 1.20000004768372,
+		"ssil": true,
+		"ssil_intensity": 0.159999996423721,
+		"ssr": false,
+		"tonemap_exposure": 1.08000004291534,
+		"tonemap_mode": 3,
+		"tonemap_white": 6.0
+	},
+	"renderer": "forward_plus",
+	"requested_size": [
+		1920,
+		1080
+	],
+	"scene": "res://assets/chongqing_district.glb",
+	"scene_identity": {
+		"asset": "res://assets/chongqing_district.glb",
+		"bytes": 1017581848,
+		"revision": 15.0,
+		"sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223"
+	},
+	"scene_revision": 15.0,
+	"scene_sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223",
+	"script_sha256": {
+		"res://scripts/build_collisions.gd": "2628a4eb84628582acd93ed16307ea708aa9e94867e286287eefa636abe803a8",
+		"res://scripts/explorer.gd": "8103d29a428970241be4ae0f7b67b304c528398f8e43f82613d728cc951c1bc2",
+		"res://scripts/main.gd": "29517fc2472682aae053e2e1eafc954379755e9b212a425088cdb834599cf56d"
+	},
+	"sky_profile": {
+		"energy": 1.54999995231628,
+		"path": "res://assets/sky/kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+		"procedural_clouds": false,
+		"radiance_size": 256,
+		"rotation_degrees": [
+			0.0,
+			-28.9,
+			0.0
+		],
+		"sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+		"type": "photographic_hdr_panorama"
+	},
+	"source": "Exact-size Godot runtime SubViewport sharing the playable World3D; original PNG, no resizing or retouching"
+}

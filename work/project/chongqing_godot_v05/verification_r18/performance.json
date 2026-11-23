@@ -1,0 +1,75 @@
+{
+	"character_import_sha256": "3c19ed22d73c29ae4915222bb58986c88ca78a8aa52a1e02903606f20b7f99f3",
+	"character_sha256": "2c0f3b14354d7c38fcbbff150705b7cb65843a64ea886c847be059a3d1a21b9e",
+	"engine": "4.6.3-stable (official)",
+	"gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+	"note": "R18 one scooter and animated shopkeeper; sixth view also has the visible skinned rider in supported stationary pose with idle/blink processing. Desktop frame intervals, not GPU-only, high-speed driving or crowd benchmark.",
+	"renderer": "forward_plus",
+	"rider_sha256": "4d0ace49adf7df87e4d31ea84f55a5779d2cea35a02d2f3ec0fa801dfae71d5a",
+	"scene_sha256": "88b5be04c0c72ae2b54bb02f55f2186f7b7ec2937389a59697e7306dbd7e7c13",
+	"vehicle_sha256": "6536538dde0cc547e4a4461d1cef58ed7cd3f17620b4ac9eaa2e428bad6cea19",
+	"views": [
+		{
+			"draw_calls": 5696.0,
+			"mean_ms": 11.1422,
+			"p50_ms": 11.128,
+			"p95_ms": 11.653,
+			"primitives": 35959889.0,
+			"samples": 240,
+			"static_memory_bytes": 471503092.0,
+			"view": "street_entry"
+		},
+		{
+			"draw_calls": 2262.0,
+			"mean_ms": 6.3880125,
+			"p50_ms": 6.397,
+			"p95_ms": 6.813,
+			"primitives": 14774103.0,
+			"samples": 240,
+			"static_memory_bytes": 471679244.0,
+			"view": "residential_entry"
+		},
+		{
+			"draw_calls": 4191.0,
+			"mean_ms": 8.61530833333333,
+			"p50_ms": 8.634,
+			"p95_ms": 9.108,
+			"primitives": 23527969.0,
+			"samples": 240,
+			"static_memory_bytes": 471852936.0,
+			"view": "roofscape"
+		},
+		{
+			"draw_calls": 1616.0,
+			"mean_ms": 7.74913333333334,
+			"p50_ms": 7.785,
+			"p95_ms": 8.223,
+			"primitives": 20648515.0,
+			"samples": 240,
+			"static_memory_bytes": 471960660.0,
+			"view": "r18_workstation"
+		},
+		{
+			"draw_calls": 1210.0,
+			"mean_ms": 7.747225,
+			"p50_ms": 7.764,
+			"p95_ms": 8.228,
+			"primitives": 20694539.0,
+			"samples": 240,
+			"static_memory_bytes": 471963512.0,
+			"view": "r18_face"
+		},
+		{
+			"draw_calls": 4387.0,
+			"mean_ms": 13.1276041666667,
+			"p50_ms": 13.092,
+			"p95_ms": 13.778,
+			"primitives": 45193694.0,
+			"samples": 240,
+			"static_memory_bytes": 475821438.0,
+			"view": "r18_rider_active"
+		}
+	],
+	"vsync": 1,
+	"window_size": "(1920.0, 1080.0)"
+}

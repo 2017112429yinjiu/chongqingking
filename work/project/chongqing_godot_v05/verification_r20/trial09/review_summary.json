@@ -1,0 +1,238 @@
+{
+  "revision": "R20_lane_09_internal",
+  "utc": "2026-11-20T13:33:52.088699+00:00",
+  "tests": {
+    "delivery_end_to_end": 11,
+    "gameplay_test": 24,
+    "lane_test": 27,
+    "street_test": 11,
+    "survey": 259
+  },
+  "survey_routes": 24,
+  "teleports_between_delivery_stages": 0,
+  "render_composition_sha256": "d6276d38a357cc175737f6badaca4424e0c6bd118016a5fe03b9df92f3dd2281",
+  "provenance_sha256": "4b78b33ce2b91485efad829d04a828034003f2ecd279f653015f65911ab6a05c",
+  "composition": {
+    "revision": "R20",
+    "reopened_city": "work\\scene_r20\\chongqing_district.blend",
+    "objects": 2930,
+    "layer_objects": 37,
+    "packed_images": 170,
+    "unpacked": [],
+    "rail_support_ray_hits": [
+      [
+        "COL_B_1413081560_old_tile_stone",
+        0.105
+      ],
+      [
+        "COL_B_1413081560_old_tile_stone",
+        0.105
+      ],
+      [
+        "COL_B_1413081560_old_tile_stone",
+        0.105
+      ],
+      [
+        "COL_B_1413081560_old_tile_stone",
+        0.105
+      ],
+      [
+        "COL_B_1413081560_old_tile_stone",
+        0.105
+      ],
+      [
+        "COL_B_1413081560_old_tile_stone",
+        0.105
+      ],
+      [
+        "COL_B_1413081560_old_tile_tile",
+        0.105
+      ]
+    ],
+    "laundry_support_ray_hits": [
+      [
+        "COL_B_1413081560_old_tile_tile",
+        0.105
+      ],
+      [
+        "COL_B_1413081560_old_tile_tile",
+        0.105
+      ]
+    ],
+    "source_sha256": "9fb139ad75887e87ef94260d8955405a1beb672c3a8c0a7fd707fd5700c80864",
+    "layer_blend_sha256": "faaecd3e0cc1a700e4f1151390d65c875ce1ba0a77b7e7a6c733a2dd63cba5a6",
+    "base_r19_source_sha256": "28312a3a417a14212280fa701842daaeda62bee10a4520234aaff9cefe95d741",
+    "runtime_layers": {
+      "assets/chongqing_district.glb": "88b5be04c0c72ae2b54bb02f55f2186f7b7ec2937389a59697e7306dbd7e7c13",
+      "assets/street_r19/street_life.glb": "1c40ae7ed04e8bf3f5f7956eaf630a098890e62a9c142f3e846c9ee15d530bad",
+      "assets/lane_r20/upper_lane.glb": "16dabbe6c51b1ff130153d68092dc84daa509ba4538f10152f85d4e8ae53be37"
+    },
+    "sky_fields": {
+      "shop": {
+        "origin": [
+          -35,
+          -74,
+          10
+        ],
+        "dimensions": [
+          35,
+          42,
+          15
+        ],
+        "spacing": [
+          0.5,
+          0.5,
+          0.75
+        ],
+        "directions": 64,
+        "probes": 22050,
+        "min": 5.166489232914973e-09,
+        "max": 1.0,
+        "sha256": "8d5b169cfd0bf9cc799dec67d02fde5ebbc2558a3a79dc5c91fd85fbc98dd188"
+      },
+      "alley": {
+        "origin": [
+          -42,
+          37,
+          24
+        ],
+        "dimensions": [
+          35,
+          50,
+          16
+        ],
+        "spacing": [
+          0.5,
+          0.5,
+          0.75
+        ],
+        "directions": 64,
+        "probes": 28000,
+        "min": 1.6055471440574296e-08,
+        "max": 0.9385796160884861,
+        "sha256": "c8b799570de19d6acd2e5c822aa095807d6dc3b107bd4886e66caef438cf7d3b"
+      }
+    },
+    "render_derivatives": {
+      "assets/render_profile_r20.json": "85b35290f740f61bbaae29b5e0f620bc04ae42f8fd6379092f9ab29919410b0d",
+      "assets/lane_r20/meter_lods.glb": "931e72fa0f34fe7bcdd65257f2b1c55316cde4ac61805fc81799cd777efc0ecc",
+      "assets/lane_r20/meter_lods.json": "396261d645fecef0d4018742b6cc0da6b0a040db08b7ee8066ac3655e758be1f",
+      "assets/lane_r20/rinse_fixture.json": "8a0f267946522fd59fe99b298e18e6a4e1e4b95d1a3728bb4a73e4636fa2ff1a",
+      "assets/lane_r20/tree_seats.json": "060f2507ab6997cdc5cddc2d3b5a9eefdbd4b199b88466318eb6a983fd73a0e6",
+      "assets/lane_r20/alley_sky.png": "c8b799570de19d6acd2e5c822aa095807d6dc3b107bd4886e66caef438cf7d3b",
+      "assets/lane_r20/shop_sky.png": "8d5b169cfd0bf9cc799dec67d02fde5ebbc2558a3a79dc5c91fd85fbc98dd188"
+    }
+  },
+  "runtime": {
+    "res://assets/fonts/cq_lane_ui.otf": "42f083b0707279c5398088fe2ad36257954c5c49e416280360d2f17f58ced1ae",
+    "res://assets/lane_r20/rinse.wav": "8674dce3de89f536a8d519dd21223164a327c91e574f216fad88db91ab74f1bf",
+    "res://assets/lane_r20/rinse_fixture.json": "8a0f267946522fd59fe99b298e18e6a4e1e4b95d1a3728bb4a73e4636fa2ff1a",
+    "res://assets/lane_r20/tree_seats.json": "060f2507ab6997cdc5cddc2d3b5a9eefdbd4b199b88466318eb6a983fd73a0e6",
+    "res://scripts/explorer.gd": "1afd5f1161003cc17ec39a8aaa9cbda9161ab559bef41bce829686b84208803c",
+    "res://scripts/gameplay.gd": "7041100d5f001b9fff9dab064d2ab1b3cc17977610c6a5b597fcf8eb8901876a",
+    "res://scripts/main.gd": "57929b7d748a1c18f1907f857cffd48217871d0cb46023899d2ebdc832954d42",
+    "res://scripts/meter_detail_lod.gd": "2175ca3919c3728ef1db2fc7f8710ad1f39e15aa504306e25ae322e8448d45b3",
+    "res://scripts/qa_lane_r20.gd": "7edf53bf969fedbdde0ef24789e300e234c1f0e60f23fd4f1ce90b1922082497",
+    "res://scripts/rinse_tap.gd": "a14c99c56d463b5fb690153a3e53c735623ac2eb09efe408e686efb99bba5fe9",
+    "res://scripts/street_detail_r19.gd": "e5b00907e9c30379f968ccaa4f2c760ec79ab6b63e54e2fe74180ed0101505ad",
+    "res://scripts/upper_lane_r20.gd": "0c61b1b914ad1f8d1ba0fbfb27889d1426d6635340d0867f62feda76d4f8d56c",
+    "res://shaders/hanging_cotton_r20.gdshader": "9d48788f6d3b3beffde16f0f5a94c8d99eac36fa8a9c00950c5116c97c208754",
+    "res://shaders/rinse_water.gdshader": "1a1c4d8f5d478384ae1cdec390d94903b83adf78096bc050116eee3354fee277",
+    "res://shaders/sky_visibility_r20.gdshaderinc": "14a770eab2dc29951adb2d5c9a17b4121b9a5bbf0e74d31e48743b8828985b7d",
+    "res://shaders/street_surface_r19.gdshader": "2f892b7c1e4d90a42f1429a50a1e6af7762035d236308ce47d9e257a9badb512"
+  },
+  "evidence_sha256": {
+    "delivery_end_to_end.json": "e8bab8acb96b5cafa93a15a99a5cf022fab986b1a28a5414ef12485d5c29511b",
+    "gameplay_test.json": "94c53ad1424bbb21b3661381779bf461bb19d38c791fc1a40b278bf3074bdbda",
+    "lane_test.json": "290023cd7ef8cab14e468ea722e3c2cf7bdb05de3cf21f0df78efa2c74c57c51",
+    "performance.json": "21b3a0231d79918be367bbcb35232573d8b4afafc9da6b2d88eac8941b04a0d8",
+    "street_test.json": "ed78949702321dcbb80a0abf9d5df93c290173168987dc43d14063620e8be36a",
+    "survey.json": "5f43e26e7c0ca1295835481eeab81826e7ccac844efb80d09f11d3ee8fe6b2ce"
+  },
+  "capture_manifest_sha256": "2398ffd9b55a9ec7644cd5af0dc030c8131bd5a4958cb96d2b423d699db38cae",
+  "fixed_view_image_sha256": {
+    "narrow_passage": "37b6f0c39df01ecc96e8b5187fa595e79683879f06c0128db79f067d68e2a816",
+    "r20_notices": "ec137b0880dd9b72c526287aa2055ebe28cbc6d26449d9b8dd46e6334e9444b5",
+    "r20_reverse": "adddbecca7c491be7496734d5545976dc1150e92be87442457e4995c4068044f",
+    "r20_tap": "50a428270c882453c8dad49f859c7a9ec276e5a56a6840fea925ebc822212852",
+    "r20_laundry": "2a8e1447db0a3686d56de1fcb242c924f60c59b846946cc267c5587e090a9e07",
+    "r20_tree_court": "68771d80a0e4d4e2b7b0c4a80aca62edcd737d91bd712382f3d7a0b767984568",
+    "noodle_corner": "baee18fe6d3261bf1bc9e94e37a2502402f007754b7fe49cd6a2fd1c0c91341b",
+    "central_steps": "6659485f896f8ef5ae7ace9be97874ba724e62ec27e4ac26d11be91ceb88403d",
+    "r18_workstation": "ea1a765170ccbfe53c987188c94189e6985e12e024b1bf9410c05d984507fca5",
+    "r16_meter": "f2cff3ff257453cbe9f3fbd6995e0282f62992aae7e071a5ea725420a7c9bb36"
+  },
+  "meter_only_image_differences": {
+    "r16_meter": {
+      "mean_absolute_rgb_0_255": 0.002201851851851852,
+      "pct_pixels_max_channel_delta_above_8": 0.005277777777777778
+    },
+    "noodle_corner": {
+      "mean_absolute_rgb_0_255": 0.0004150462962962963,
+      "pct_pixels_max_channel_delta_above_8": 0.0015277777777777776
+    },
+    "narrow_passage": {
+      "mean_absolute_rgb_0_255": 0.0001775462962962963,
+      "pct_pixels_max_channel_delta_above_8": 0.000625
+    },
+    "r20_tree_court": {
+      "mean_absolute_rgb_0_255": 0.007418518518518519,
+      "pct_pixels_max_channel_delta_above_8": 0.015694444444444445
+    }
+  },
+  "performance": {
+    "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "viewport": "(1920.0, 1080.0)",
+    "warmup_frames": 90,
+    "samples_per_view": 240,
+    "fixed_views": [
+      {
+        "view": "street_entry",
+        "pre_partition_p95_ms": 13.746,
+        "current_p95_ms": 10.352,
+        "primitives_before": 41024616.0,
+        "primitives_current": 30104756.0
+      },
+      {
+        "view": "central_steps",
+        "pre_partition_p95_ms": 14.864,
+        "current_p95_ms": 12.063,
+        "primitives_before": 35756438.0,
+        "primitives_current": 31211958.0
+      },
+      {
+        "view": "noodle_corner",
+        "pre_partition_p95_ms": 9.169,
+        "current_p95_ms": 5.959,
+        "primitives_before": 25064102.0,
+        "primitives_current": 14170696.0
+      },
+      {
+        "view": "west_lane",
+        "pre_partition_p95_ms": 10.876,
+        "current_p95_ms": 9.383,
+        "primitives_before": 20841630.0,
+        "primitives_current": 16296514.0
+      },
+      {
+        "view": "narrow_passage",
+        "pre_partition_p95_ms": 12.247,
+        "current_p95_ms": 10.454,
+        "primitives_before": 21430940.0,
+        "primitives_current": 16921748.0
+      },
+      {
+        "view": "r18_rider_active",
+        "pre_partition_p95_ms": 18.104,
+        "current_p95_ms": 13.677,
+        "primitives_before": 57177754.0,
+        "primitives_current": 46320912.0
+      }
+    ],
+    "scope": "Stationary cameras; comparison baseline predates court surface changes. No moving crowd/traffic benchmark."
+  },
+  "limits": [
+    "No cinematic acceptance. Repetition and empty slopes remain.",
+    "Full pedestrian/traffic simulation and final R15 photo archive remain outstanding."
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "new_to_old_native_metres": {
+    "multiplier": [
+      1.0531261827258673,
+      -0.016324696433904627
+    ],
+    "offset": [
+      -499.0017538967826,
+      179.96372552009205
+    ],
+    "conjugate": false,
+    "vertical_offset": -17.340570372035515
+  },
+  "threshold": 6,
+  "train_inliers": 14,
+  "test_inliers": 4,
+  "candidates": 113,
+  "holdout_candidates": 29,
+  "pairs": [
+    {
+      "white_node": 41384,
+      "river_node": 61859,
+      "xy_error": 0.557,
+      "old_m": [
+        8069.245,
+        -7.355,
+        204.323
+      ],
+      "partition": "train"
+    },
+    {
+      "white_node": 41852,
+      "river_node": 62352,
+      "xy_error": 4.988,
+      "old_m": [
+        7537.901,
+        -397.889,
+        266.192
+      ],
+      "partition": "train"
+    },
+    {
+      "white_node": 41908,
+      "river_node": 62417,
+      "xy_error": 2.287,
+      "old_m": [
+        7478.896,
+        -424.276,
+        319.758
+      ],
+      "partition": "train"
+    },
+    {
+      "white_node": 41876,
+      "river_node": 62379,
+      "xy_error": 2.688,
+      "old_m": [
+        7461.299,
+        -375.412,
+        296.929
+      ],
+      "partition": "train"
+    },
+    {
+      "white_node": 41828,
+      "river_node": 62325,
+      "xy_error": 1.786,
+      "old_m": [
+        7454.361,
+        -447.355,
+        282.362
+      ],
+      "partition": "train"
+    },
+    {
+      "white_node": 41812,
+      "river_node": 62307,
+      "xy_error": 2.699,
+      "old_m": [
+        7464.132,
+        -459.178,
+        319.762
+      ],
+      "partition": "train"
+    },
+    {
+      "white_node": 41836,
+      "river_node": 62334,
+      "xy_error": 2.309,
+      "old_m": [
+        7468.919,
+        -435.243,
+        324.096
+      ],
+      "partition": "train"
+    },
+    {
+      "white_node": 43471,
+      "river_node": 62028,
+      "xy_error": 3.706,
+      "old_m": [
+        8119.457,
+        21.803,
+        216.329
+      ],
+      "partition": "holdout"
+    },
+    {
+      "white_node": 43621,
+      "river_node": 61916,
+      "xy_error": 0.09,
+      "old_m": [
+        8070.527,
+        3.28,
+        212.755
+      ],
+      "partition": "train"
+    },
+    {
+      "white_node": 41900,
+      "river_node": 62407,
+      "xy_error": 4.549,
+      "old_m": [
+        7466.708,
+        -461.204,
+        307.65
+      ],
+      "partition": "train"
+    },
+    {
+      "white_node": 41402,
+      "river_node": 61873,
+      "xy_error": 0.241,
+      "old_m": [
+        8069.985,
+        0.801,
+        222.565
+      ],
+      "partition": "train"
+    },
+    {
+      "white_node": 43740,
+      "river_node": 62000,
+      "xy_error": 0.486,
+      "old_m": [
+        8077.357,
+        12.119,
+        200.234
+      ],
+      "partition": "holdout"
+    },
+    {
+      "white_node": 43727,
+      "river_node": 61986,
+      "xy_error": 0.589,
+      "old_m": [
+        8067.51,
+        -4.935,
+        214.093
+      ],
+      "partition": "train"
+    },
+    {
+      "white_node": 43674,
+      "river_node": 61944,
+      "xy_error": 0.206,
+      "old_m": [
+        8072.347,
+        2.079,
+        221.614
+      ],
+      "partition": "train"
+    },
+    {
+      "white_node": 43687,
+      "river_node": 61958,
+      "xy_error": 4.792,
+      "old_m": [
+        8123.169,
+        36.381,
+        202.777
+      ],
+      "partition": "holdout"
+    },
+    {
+      "white_node": 41416,
+      "river_node": 61887,
+      "xy_error": 0.227,
+      "old_m": [
+        8069.674,
+        0.801,
+        221.518
+      ],
+      "partition": "train"
+    },
+    {
+      "white_node": 43634,
+      "river_node": 61930,
+      "xy_error": 0.388,
+      "old_m": [
+        8069.541,
+        0.409,
+        212.068
+      ],
+      "partition": "train"
+    },
+    {
+      "white_node": 43700,
+      "river_node": 61972,
+      "xy_error": 0.305,
+      "old_m": [
+        8074.816,
+        0.927,
+        219.399
+      ],
+      "partition": "holdout"
+    }
+  ]
+}

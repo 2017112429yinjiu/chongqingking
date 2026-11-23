@@ -1,0 +1,627 @@
+{
+	"applied_lighting_profile": {
+		"ambient_color": [
+			0.67,
+			0.75,
+			0.84
+		],
+		"ambient_energy": 0.52,
+		"background_energy": 0.95,
+		"brightness": 1.0,
+		"cloud_coverage": 0.76,
+		"cloud_scale": 1.35,
+		"cloud_seed": 17.0,
+		"cloud_strength": 0.62,
+		"contrast": 1.0,
+		"exposure": 1.08,
+		"fog_aerial_perspective": 0.2,
+		"fog_color": [
+			0.65,
+			0.73,
+			0.8
+		],
+		"fog_density": 0.00045,
+		"fog_light_energy": 0.8,
+		"fog_sky_affect": 0.08,
+		"glow": false,
+		"glow_bloom": 0.0,
+		"glow_intensity": 0.1,
+		"hdri_energy": 1.55,
+		"hdri_path": "res://assets/sky/kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+		"hdri_rotation_deg": [
+			0.0,
+			-28.9,
+			0.0
+		],
+		"high_camera_shadow_height_m": 80.0,
+		"high_camera_shadow_max_distance": 450.0,
+		"high_camera_shadow_range_enabled": true,
+		"interior_light_energy_scale": 1.0,
+		"interior_light_limit": 10.0,
+		"procedural_clouds": false,
+		"saturation": 1.0,
+		"sdfgi_enabled": false,
+		"shadow_bias": 0.06,
+		"shadow_max_distance": 180.0,
+		"shadow_normal_bias": 0.65,
+		"sky_contribution": 0.9,
+		"ssao": true,
+		"ssao_detail": 0.65,
+		"ssao_half_size": false,
+		"ssao_intensity": 1.15,
+		"ssao_light_affect": 0.28,
+		"ssao_power": 1.25,
+		"ssao_radius": 1.2,
+		"ssil": true,
+		"ssil_intensity": 0.16,
+		"ssil_normal_rejection": 1.0,
+		"ssil_radius": 2.4,
+		"ssil_sharpness": 0.96,
+		"ssr": false,
+		"sun_angular_distance": 1.5,
+		"sun_color": [
+			1.0,
+			0.95,
+			0.86
+		],
+		"sun_energy": 1.2,
+		"sun_rotation_deg": [
+			-48.0,
+			-63.0,
+			0.0
+		],
+		"sun_specular": 0.75,
+		"tonemap_white": 6.0
+	},
+	"art_profile": {
+		"art_revision": "v05_lighting_c_r10_actual_practical_completion",
+		"label_zh": "C / 暖日庭院",
+		"lighting": {
+			"ambient_color": [
+				0.67,
+				0.75,
+				0.84
+			],
+			"ambient_energy": 0.52,
+			"background_energy": 0.95,
+			"brightness": 1.0,
+			"contrast": 1.0,
+			"exposure": 1.08,
+			"fog_aerial_perspective": 0.2,
+			"fog_color": [
+				0.65,
+				0.73,
+				0.8
+			],
+			"fog_density": 0.00045,
+			"fog_light_energy": 0.8,
+			"fog_sky_affect": 0.08,
+			"glow": false,
+			"glow_bloom": 0.0,
+			"glow_intensity": 0.1,
+			"hdri_energy": 1.55,
+			"hdri_path": "res://assets/sky/kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+			"hdri_rotation_deg": [
+				0.0,
+				-28.9,
+				0.0
+			],
+			"high_camera_shadow_height_m": 80.0,
+			"high_camera_shadow_max_distance": 450.0,
+			"high_camera_shadow_range_enabled": true,
+			"interior_light_energy_scale": 1.0,
+			"interior_light_limit": 10.0,
+			"procedural_clouds": false,
+			"saturation": 1.0,
+			"sdfgi_enabled": false,
+			"shadow_bias": 0.06,
+			"shadow_max_distance": 180.0,
+			"shadow_normal_bias": 0.65,
+			"sky_contribution": 0.9,
+			"ssao": true,
+			"ssao_detail": 0.65,
+			"ssao_half_size": false,
+			"ssao_intensity": 1.15,
+			"ssao_light_affect": 0.28,
+			"ssao_power": 1.25,
+			"ssao_radius": 1.2,
+			"ssil": true,
+			"ssil_intensity": 0.16,
+			"ssil_normal_rejection": 1.0,
+			"ssil_radius": 2.4,
+			"ssil_sharpness": 0.96,
+			"ssr": false,
+			"sun_angular_distance": 1.5,
+			"sun_color": [
+				1.0,
+				0.95,
+				0.86
+			],
+			"sun_energy": 1.2,
+			"sun_rotation_deg": [
+				-48.0,
+				-63.0,
+				0.0
+			],
+			"sun_specular": 0.75,
+			"tonemap_white": 6.0
+		},
+		"lighting_profiles": {
+			"gl_compatibility": {
+				"ambient_energy": 0.52,
+				"exposure": 1.0,
+				"ssao": false,
+				"ssil": false,
+				"sun_energy": 0.82,
+				"tonemap_white": 1.0
+			}
+		},
+		"materials": {
+			"glass_grime_strength": 0.12,
+			"glass_opacity": 0.17,
+			"glass_roughness": 0.18,
+			"ph_branch_shader": true,
+			"ph_branch_uv_baked": true,
+			"ph_leaf_safe_material": false,
+			"ph_leaf_unshaded": false,
+			"ph_tree_lod_bias": 1.0,
+			"ph_tree_normals": false,
+			"thin_window_glass": true
+		},
+		"notes": [
+			"V05 daylight comparison: original photographic CC0 partly-cloudy sky; neutral postprocessing; direct warm-white sun gives physical surface separation.",
+			"HDR source contains a 73216.0 RGB peak. Godot importer process/hdr_clamp_exposure=true applies the documented smart clamp to prevent sky-radiance sparkle; the downloaded source file is unchanged.",
+			"ACES tonemap_white=6.0 retains sunlit masonry and cloud highlight headroom. Exposure is fixed per comparison; no LUT, bloom or post-process brightness lift.",
+			"First A/B/C comparison retains the V04 vertex AO, SSAO and SSIL settings to isolate sky and direct lighting.",
+			"The 2048x1024 source sun peak lies at UV (0.59473,0.23340), elevation 47.99 degrees. Directional sun follows the photo elevation and azimuth; the optional sky rotation and sun azimuth move together.",
+			"Thin glass uses continuous world-scale residue, moderate Fresnel reflections and a clear frontal view into real recessed room geometry.",
+			"R10 actual-practical completion: all 10 authored interior bulbs are enabled from architecture_manifest.interior_lights (profile limit 10; runtime safety cap 12). Each remains 0.24 energy, 2.7m range and unshadowed; exterior C sunlight, HDRI, exposure and AO parameters are unchanged.",
+			"ReflectionProbe remains disabled. SDFGI, SSR and glow remain disabled. The known-good explicit primary-UV bark shader is unchanged."
+		],
+		"reflections": {
+			"enabled": false,
+			"probes": [
+				{
+					"intensity": 0.75,
+					"max_distance": 115.0,
+					"name": "DistrictCourtyardReflection",
+					"origin_offset": [
+						0.0,
+						3.0,
+						0.0
+					],
+					"position": [
+						-17.0,
+						24.0,
+						18.0
+					],
+					"size": [
+						150.0,
+						82.0,
+						165.0
+					]
+				}
+			]
+		}
+	},
+	"art_profile_path": "res://assets/render_profile_v05.json",
+	"art_profile_sha256": "9d0c7b69153c7c84fea8ac544b602bf15ef6806afa75068856a6adba0da809af",
+	"capture_order": [
+		"street_entry",
+		"residential_entry",
+		"roofscape"
+	],
+	"captured_at_unix": 1795108760.449,
+	"captures": [
+		{
+			"capture_viewport_has_camera": true,
+			"directional_shadow": {
+				"blend_splits": true,
+				"camera_world_y_m": 10.5943002700806,
+				"fade_start_distance_m": 144.000002145767,
+				"fade_start_fraction": 0.800000011920929,
+				"high_camera_policy_enabled": true,
+				"max_distance_m": 180.0,
+				"mode": 2,
+				"split_fractions": [
+					0.100000001490116,
+					0.200000002980232,
+					0.5
+				]
+			},
+			"draw_calls": 4968.0,
+			"exact_requested_size": true,
+			"fov": 60.0,
+			"height": 720,
+			"native_viewport_3d_disabled": true,
+			"native_viewport_has_camera": false,
+			"path": "res://../../audit/baseline_captures/godot_street_entry.png",
+			"position": [
+				24.0,
+				10.594,
+				77.0
+			],
+			"rendered_objects": 5380.0,
+			"rendered_primitives": 22893902.0,
+			"save_error": 0,
+			"settle_elapsed_ms": 59,
+			"settle_frames": 6,
+			"target": [
+				1.0,
+				14.8245,
+				63.0
+			],
+			"title": "山城巷街口",
+			"view": "street_entry",
+			"width": 1280
+		},
+		{
+			"capture_viewport_has_camera": true,
+			"directional_shadow": {
+				"blend_splits": true,
+				"camera_world_y_m": 17.7423000335693,
+				"fade_start_distance_m": 144.000002145767,
+				"fade_start_fraction": 0.800000011920929,
+				"high_camera_policy_enabled": true,
+				"max_distance_m": 180.0,
+				"mode": 2,
+				"split_fractions": [
+					0.100000001490116,
+					0.200000002980232,
+					0.5
+				]
+			},
+			"draw_calls": 2172.0,
+			"exact_requested_size": true,
+			"fov": 64.0,
+			"height": 720,
+			"native_viewport_3d_disabled": true,
+			"native_viewport_has_camera": false,
+			"path": "res://../../audit/baseline_captures/godot_residential_entry.png",
+			"position": [
+				-43.0,
+				17.742,
+				22.0
+			],
+			"rendered_objects": 2234.0,
+			"rendered_primitives": 9737912.0,
+			"save_error": 0,
+			"settle_elapsed_ms": 32,
+			"settle_frames": 6,
+			"target": [
+				-52.9,
+				18.85,
+				19.5
+			],
+			"title": "居民楼入口与墙脚",
+			"view": "residential_entry",
+			"width": 1280
+		},
+		{
+			"capture_viewport_has_camera": true,
+			"directional_shadow": {
+				"blend_splits": true,
+				"camera_world_y_m": 64.0,
+				"fade_start_distance_m": 144.000002145767,
+				"fade_start_fraction": 0.800000011920929,
+				"high_camera_policy_enabled": true,
+				"max_distance_m": 180.0,
+				"mode": 2,
+				"split_fractions": [
+					0.100000001490116,
+					0.200000002980232,
+					0.5
+				]
+			},
+			"draw_calls": 4006.0,
+			"exact_requested_size": true,
+			"fov": 59.0,
+			"height": 720,
+			"native_viewport_3d_disabled": true,
+			"native_viewport_has_camera": false,
+			"path": "res://../../audit/baseline_captures/godot_roofscape.png",
+			"position": [
+				14.0,
+				64.0,
+				20.0
+			],
+			"rendered_objects": 4312.0,
+			"rendered_primitives": 18715431.0,
+			"save_error": 0,
+			"settle_elapsed_ms": 47,
+			"settle_frames": 6,
+			"target": [
+				-31.0,
+				22.0,
+				-8.0
+			],
+			"title": "台地、院落与屋顶",
+			"view": "roofscape",
+			"width": 1280
+		}
+	],
+	"configuration_sha256": {
+		"res://assets/viewpoints.json": "a3da59baee65cea784440a54949fe5d2ddc556062727b763732c52698a743fe0",
+		"res://assets/walking_survey.json": "3277a9c561fb58826045d8a52affc3515a4ae1732e8231a27bf63bbf9d365d26"
+	},
+	"device": "NVIDIA GeForce RTX 4070 Laptop GPU",
+	"diagnostic_overrides": {
+		"external_art_profile": false,
+		"sdfgi_experiment": false,
+		"sun_shadows_disabled": false,
+		"tile_normal_disabled": false,
+		"tile_unshaded": false
+	},
+	"display_server": "Windows",
+	"engine": "4.6.3-stable (official)",
+	"failures": [],
+	"gi_profile": {
+		"enabled": false,
+		"explicit_experiment": false,
+		"requested": false,
+		"structures_only": false
+	},
+	"lighting_applied_initial": {
+		"ambient_energy": 0.519999980926514,
+		"ambient_source": 3,
+		"reflection_source": 2,
+		"shadow_bias": 0.0599999986588955,
+		"shadow_distance": 180.0,
+		"shadow_normal_bias": 0.649999976158142,
+		"sky_contribution": 0.899999976158142,
+		"sun_energy": 1.20000004768372,
+		"sun_shadows": true,
+		"sun_specular": 0.75
+	},
+	"material_stats": {
+		"branch_shader_overrides": {
+			"CQ_PH_island_tree_01_branches": {
+				"baked_primary": true,
+				"imported_uv1_offset": [
+					0.0,
+					0.0,
+					0.0
+				],
+				"imported_uv1_scale": [
+					1.0,
+					1.0,
+					1.0
+				],
+				"imported_uv2_offset": [
+					0.0,
+					0.0,
+					0.0
+				],
+				"imported_uv2_scale": [
+					1.0,
+					1.0,
+					1.0
+				],
+				"normal_and_pbr_textures": false,
+				"offset": [
+					0.0,
+					0.0
+				],
+				"scale": [
+					1.0,
+					1.0
+				],
+				"texcoord": 0,
+				"texture": "res://assets/chongqing_district_island_tree_01_branches_diff_2k.jpg"
+			},
+			"CQ_PH_tree_small_02_branches": {
+				"baked_primary": true,
+				"imported_uv1_offset": [
+					0.0,
+					0.0,
+					0.0
+				],
+				"imported_uv1_scale": [
+					1.0,
+					1.0,
+					1.0
+				],
+				"imported_uv2_offset": [
+					0.0,
+					0.0,
+					0.0
+				],
+				"imported_uv2_scale": [
+					1.0,
+					1.0,
+					1.0
+				],
+				"normal_and_pbr_textures": false,
+				"offset": [
+					0.0,
+					0.0
+				],
+				"scale": [
+					1.0,
+					1.0
+				],
+				"texcoord": 0,
+				"texture": "res://assets/chongqing_district_tree_small_02_branch_diff_2k.jpg"
+			}
+		},
+		"explicit_branch_surfaces": 43,
+		"gi_excluded_meshes": 0,
+		"specular_adjusted_materials": {
+
+		},
+		"static_gi_meshes": 2690,
+		"surfaces": 2690,
+		"thin_glass_surfaces": 81,
+		"tile_diagnostics": {
+
+		},
+		"tree_normal_overrides": {
+			"CQ_PH_island_tree_01": "normal texture disabled; albedo/roughness/geometry preserved",
+			"CQ_PH_island_tree_01_branches": "normal texture disabled; albedo/roughness/geometry preserved",
+			"CQ_PH_island_tree_01_leaves": "normal texture disabled; albedo/roughness/geometry preserved",
+			"CQ_PH_tree_small_02_branches": "normal texture disabled; albedo/roughness/geometry preserved",
+			"CQ_PH_tree_small_02_leaves": "normal texture disabled; albedo/roughness/geometry preserved",
+			"CQ_PH_tree_small_02_trunk": "normal texture disabled; albedo/roughness/geometry preserved"
+		},
+		"vertex_color_surfaces": 963
+	},
+	"practical_profile": {
+		"interior_candidate_count": 9,
+		"interior_lights": [
+			{
+				"energy": 0.239999994635582,
+				"name": "B_809889627_blue_apartments_room_lamp",
+				"position": [
+					82.391,
+					28.184,
+					-13.942
+				],
+				"range": 2.70000004768372,
+				"shadows": false
+			},
+			{
+				"energy": 0.239999994635582,
+				"name": "B_809889628_clinic_room_lamp",
+				"position": [
+					15.883,
+					31.615,
+					-53.5
+				],
+				"range": 2.70000004768372,
+				"shadows": false
+			},
+			{
+				"energy": 0.239999994635582,
+				"name": "B_809889629_artisan_room_lamp",
+				"position": [
+					47.205,
+					34.774,
+					-72.476
+				],
+				"range": 2.70000004768372,
+				"shadows": false
+			},
+			{
+				"energy": 0.239999994635582,
+				"name": "B_1335306665_civic_room_lamp",
+				"position": [
+					-24.373,
+					26.707,
+					-30.861
+				],
+				"range": 2.70000004768372,
+				"shadows": false
+			},
+			{
+				"energy": 0.239999994635582,
+				"name": "B_1335306666_heritage_room_lamp",
+				"position": [
+					-50.162,
+					26.057,
+					-36.511
+				],
+				"range": 2.70000004768372,
+				"shadows": false
+			},
+			{
+				"energy": 0.239999994635582,
+				"name": "B_1335306667_brick_home_room_lamp",
+				"position": [
+					-62.888,
+					23.169,
+					-17.653
+				],
+				"range": 2.70000004768372,
+				"shadows": false
+			},
+			{
+				"energy": 0.239999994635582,
+				"name": "B_1413081560_old_tile_room_lamp",
+				"position": [
+					-33.476,
+					29.533,
+					-53.924
+				],
+				"range": 2.70000004768372,
+				"shadows": false
+			},
+			{
+				"energy": 0.239999994635582,
+				"name": "B_A03_blue_apartments_room_lamp",
+				"position": [
+					-91.543,
+					16.767,
+					15.033
+				],
+				"range": 2.70000004768372,
+				"shadows": false
+			},
+			{
+				"energy": 0.239999994635582,
+				"name": "B_A04_courtyard_home_room_lamp",
+				"position": [
+					-55.09,
+					17.775,
+					14.621
+				],
+				"range": 2.70000004768372,
+				"shadows": false
+			}
+		],
+		"street_lights": 22
+	},
+	"reflection_profile": {
+		"enabled": false,
+		"probes": []
+	},
+	"render_effects": {
+		"glow": false,
+		"sdfgi": false,
+		"sdfgi_cascades": 4,
+		"sdfgi_cell_metres": 0.200000002980232,
+		"sdfgi_read_sky": true,
+		"ssao": true,
+		"ssao_detail": 0.649999976158142,
+		"ssao_intensity": 1.14999997615814,
+		"ssao_radius": 1.20000004768372,
+		"ssil": true,
+		"ssil_intensity": 0.159999996423721,
+		"ssr": false,
+		"tonemap_exposure": 1.08000004291534,
+		"tonemap_mode": 3,
+		"tonemap_white": 6.0
+	},
+	"renderer": "forward_plus",
+	"requested_size": [
+		1280,
+		720
+	],
+	"scene": "res://assets/chongqing_district.glb",
+	"scene_identity": {
+		"asset": "res://assets/chongqing_district.glb",
+		"bytes": 1017581848,
+		"revision": 15.0,
+		"sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223"
+	},
+	"scene_revision": 15.0,
+	"scene_sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223",
+	"script_sha256": {
+		"res://scripts/build_collisions.gd": "2628a4eb84628582acd93ed16307ea708aa9e94867e286287eefa636abe803a8",
+		"res://scripts/explorer.gd": "8103d29a428970241be4ae0f7b67b304c528398f8e43f82613d728cc951c1bc2",
+		"res://scripts/main.gd": "29517fc2472682aae053e2e1eafc954379755e9b212a425088cdb834599cf56d"
+	},
+	"sky_profile": {
+		"energy": 1.54999995231628,
+		"path": "res://assets/sky/kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+		"procedural_clouds": false,
+		"radiance_size": 256,
+		"rotation_degrees": [
+			0.0,
+			-28.9,
+			0.0
+		],
+		"sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+		"type": "photographic_hdr_panorama"
+	},
+	"source": "Exact-size Godot runtime SubViewport sharing the playable World3D; original PNG, no resizing or retouching"
+}

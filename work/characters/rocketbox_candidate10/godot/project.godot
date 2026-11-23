@@ -1,0 +1,10 @@
+config_version=5
+[application]
+config/name="重庆人物隔离材质比较 · 不进入主工程"
+config/features=PackedStringArray("4.6", "Forward Plus")
+[display]
+window/size/viewport_width=1000
+window/size/viewport_height=1000
+[rendering]
+renderer/rendering_method="forward_plus"
+anti_aliasing/quality/msaa_3d=2

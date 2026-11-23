@@ -1,0 +1,256 @@
+{
+	"checks": [
+		{
+			"detail": [
+				97.62,
+				0.46
+			],
+			"name": "start_and_goal_support",
+			"pass": true
+		},
+		{
+			"detail": [
+				94.7715911865234,
+				-2.98026394844055
+			],
+			"name": "start_and_goal_support",
+			"pass": true
+		},
+		{
+			"detail": [
+				93.6658096313477,
+				-5.16840887069702
+			],
+			"name": "start_and_goal_support",
+			"pass": true
+		},
+		{
+			"detail": [
+				93.1521224975586,
+				-7.50545644760132
+			],
+			"name": "start_and_goal_support",
+			"pass": true
+		},
+		{
+			"detail": [
+				92.8525466918945,
+				-9.84450626373291
+			],
+			"name": "start_and_goal_support",
+			"pass": true
+		},
+		{
+			"detail": [
+				92.4394073486328,
+				-12.2932710647583
+			],
+			"name": "start_and_goal_support",
+			"pass": true
+		},
+		{
+			"detail": [
+				91.61572265625,
+				-14.5204982757568
+			],
+			"name": "start_and_goal_support",
+			"pass": true
+		},
+		{
+			"detail": [
+				90.0019683837891,
+				-16.4192962646484
+			],
+			"name": "start_and_goal_support",
+			"pass": true
+		},
+		{
+			"detail": [
+				87.8098297119141,
+				-17.6578826904297
+			],
+			"name": "start_and_goal_support",
+			"pass": true
+		},
+		{
+			"detail": [
+				85.4667739868164,
+				-18.4756469726563
+			],
+			"name": "start_and_goal_support",
+			"pass": true
+		},
+		{
+			"detail": [
+				83.1620712280273,
+				-19.2140998840332
+			],
+			"name": "start_and_goal_support",
+			"pass": true
+		},
+		{
+			"detail": [
+				80.9968338012695,
+				-20.171314239502
+			],
+			"name": "start_and_goal_support",
+			"pass": true
+		},
+		{
+			"detail": [
+				79.1148834228516,
+				-21.7109889984131
+			],
+			"name": "start_and_goal_support",
+			"pass": true
+		},
+		{
+			"detail": [
+				76.8,
+				-24.72
+			],
+			"name": "start_and_goal_support",
+			"pass": true
+		},
+		{
+			"detail": {
+				"frames": 828,
+				"mentor_end": "(77.34572, 26.16493, -23.95241)",
+				"student_end": "(80.36115, 25.77165, -21.25462)"
+			},
+			"name": "corner_bypass_both_arrive",
+			"pass": true
+		}
+	],
+	"demonstrations": [
+		"AT_BIKE",
+		"RIDING",
+		"YARD_EXIT"
+	],
+	"display": "headless",
+	"engine": "4.6.3-stable (official)",
+	"mentor_route": {
+		"issues": [],
+		"legs": {
+			"1/TO_YARD": {
+				"arrived": true,
+				"max_kmh": 9.86400000000011,
+				"moving_s": 13.5833333333336,
+				"travel_m": 34.2681678325462,
+				"waiting_s": 0.0,
+				"waypoints": [
+					{
+						"position": "(97.61987, 22.64723, 0.459835)",
+						"segment": 0,
+						"stage": "TO_YARD",
+						"time_s": 1.3
+					},
+					{
+						"position": "(95.49576, 23.00812, -2.105661)",
+						"segment": 1,
+						"stage": "TO_YARD",
+						"time_s": 3.0
+					},
+					{
+						"position": "(94.17043, 23.23115, -4.137734)",
+						"segment": 2,
+						"stage": "TO_YARD",
+						"time_s": 3.9
+					},
+					{
+						"position": "(93.3545, 23.51668, -6.381062)",
+						"segment": 3,
+						"stage": "TO_YARD",
+						"time_s": 4.78
+					},
+					{
+						"position": "(92.9591, 23.74159, -8.693413)",
+						"segment": 4,
+						"stage": "TO_YARD",
+						"time_s": 5.65
+					},
+					{
+						"position": "(92.61132, 23.97536, -11.19583)",
+						"segment": 5,
+						"stage": "TO_YARD",
+						"time_s": 6.58
+					},
+					{
+						"position": "(92.02512, 24.2129, -13.46704)",
+						"segment": 6,
+						"stage": "TO_YARD",
+						"time_s": 7.45
+					},
+					{
+						"position": "(90.77875, 24.48711, -15.60091)",
+						"segment": 7,
+						"stage": "TO_YARD",
+						"time_s": 8.37
+					},
+					{
+						"position": "(88.82017, 24.75569, -17.17808)",
+						"segment": 8,
+						"stage": "TO_YARD",
+						"time_s": 9.3
+					},
+					{
+						"position": "(86.54319, 24.99671, -18.1609)",
+						"segment": 9,
+						"stage": "TO_YARD",
+						"time_s": 10.22
+					},
+					{
+						"position": "(84.24228, 25.22048, -18.8909)",
+						"segment": 10,
+						"stage": "TO_YARD",
+						"time_s": 11.12
+					},
+					{
+						"position": "(82.04113, 25.4478, -19.7069)",
+						"segment": 11,
+						"stage": "TO_YARD",
+						"time_s": 11.98
+					},
+					{
+						"position": "(79.96864, 25.77491, -20.96597)",
+						"segment": 12,
+						"stage": "TO_YARD",
+						"time_s": 12.88
+					}
+				]
+			}
+		},
+		"max_frame_displacement_m": 0.0464345254004002,
+		"rules": {
+			"airborne_seconds": 0.45,
+			"minimum_progress_m": 0.2,
+			"stalled_seconds": 3.0
+		}
+	},
+	"nearest_walking_resident": {
+		"clearance_to_bike_m": 1e99999
+	},
+	"passed": true,
+	"renderer": "forward_plus",
+	"source_sha256": {
+		"assets/vehicles/first_shift_box.glb": "0fe33e75e1a9e34a68eb87a6c0f01703e97206e6f5ab987cba1d7d2acb0a110a",
+		"first_shift.tscn": "1f4df48ea096f7c0e8a5b608e8b2e4558f2cb495bfb7e80a95057c7811f87160",
+		"scripts/day_one.gd": "a80cf347ccd02488627fa16eca7354a1acd917a137cc620b41c7a1ead97ecfe3",
+		"scripts/gameplay.gd": "d0dfd80f552674e8fa91757fe7e4a79be5ce78eef1422807bfe3f7c2ef2f4def",
+		"scripts/kraft_paper.gdshader": "2b952c85d014df3c35b9d9c646137b01d495652265edcab5da55b8af2dfc1fa2",
+		"scripts/main.gd": "1b6ba2fe65e1ee3d55800d6656a4da33ac348b278ed93cb7b1692095eb53da4a",
+		"scripts/mentor_arm.gd": "e36eaea6dcb0b34bb22bb09614debe2ca810c86d9a8a8fad5ba43b5a73c312a6",
+		"scripts/mentor_demonstration.gd": "a949fb043f6482dbb864fbd2c40ea10c17f272ff4fbedfa5ab6e56d4150cbe0d",
+		"scripts/mentor_gaze.gd": "2a491d730ace7343143296c196966f9aa8a42bd04b9e610118bb3b3bbf694424",
+		"scripts/mentor_hands.gd": "5c8b72bb1850fb6890d66ad0348a40f4fca82d2d68892ee7949162e0a8a24354",
+		"scripts/mentor_reach.gd": "375118606df307f3470fcc61fd29fcbe127658b501005304316983c69644b067",
+		"scripts/mentor_route_audit.gd": "3a948798f4d3732475fe64ecf32b9cfa446e8142f51209365b017d67eab854b1",
+		"scripts/mentor_scooter.gd": "c2e2e8e130c0e590cfa8e6226282e86aba82514c3b736089e1dac12ef758c6b6",
+		"scripts/mentor_walker.gd": "43c444ded1a4e332b010d70805786db7ed2a4c5d35d3d2d030ba8e61e3930f24",
+		"scripts/scooter_controller.gd": "82a03e85b458aec07640fdc1efd3f156588bb3e5dc28ec52ad5cc97dc8038e16",
+		"scripts/scooter_visual.gd": "48a71d6c0d83e95046373143cee6bdf8c9c3a7b4630ddc83bbbdd7aa9ae4171f",
+		"scripts/shift_cargo_box.gd": "92cb3e0e7ae4e10c38ffa4581d444cc3c968bf6614d250d39c2f97368018375a",
+		"scripts/takeaway_bag.gd": "26ba3c6c500f132e4015e0ab7b6bb038f663fc6eb512ee0337e91745f70774da",
+		"scripts/teaching_door.gd": "4c1fa35756bd605d723959e0d0384a9388204561eb7449fffbb228301803ea02"
+	}
+}

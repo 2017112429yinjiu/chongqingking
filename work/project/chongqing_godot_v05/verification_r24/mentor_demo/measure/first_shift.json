@@ -1,0 +1,385 @@
+{
+	"checks": [
+		{
+			"detail": "",
+			"name": "district_booted",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "default_game_starts_at_registration",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "early_order_and_bike_locked",
+			"pass": true
+		},
+		{
+			"detail": "(-49.2, 12.06909, 49.8)",
+			"name": "register_at_mentor",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "mentor_on_foot_at_check_in",
+			"pass": true
+		},
+		{
+			"detail": {
+				"walk_m": 0.0
+			},
+			"name": "watched_RIDING",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 5.33923655748367,
+				"end": "(-54.67804, 11.77657, 51.00587)",
+				"goals": 1,
+				"max_frame_displacement_m": 0.0722936242818832,
+				"name": "walk_to_own_bike",
+				"pass": true,
+				"reached": 1,
+				"stall_contacts": []
+			},
+			"name": "walk_to_own_bike",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "mount_own_scooter",
+			"pass": true
+		},
+		{
+			"detail": "(-43.60489, 11.88722, 52.11577)",
+			"name": "guide_waits_when_learner_stops",
+			"pass": true
+		},
+		{
+			"detail": {
+				"frames": 483,
+				"mentor_end": "(-30.20965, 11.6692, 54.9583)",
+				"student_end": "(-34.15994, 11.82033, 53.85556)"
+			},
+			"name": "follow_to_noodle_shop",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "parked_at_shop",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "saved_shop",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "pupil_cannot_order_before_demo",
+			"pass": true
+		},
+		{
+			"detail": {
+				"walk_m": 7.94639259949327
+			},
+			"name": "watched_PUPIL_PICKUP",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "mentor_took_separate_order",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 5.64823525585234,
+				"end": "(-23.61523, 11.15722, 59.95891)",
+				"goals": 2,
+				"max_frame_displacement_m": 0.0820348560810089,
+				"name": "walk_to_counter",
+				"pass": true,
+				"reached": 2,
+				"stall_contacts": []
+			},
+			"name": "walk_to_counter",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "place_real_order",
+			"pass": true
+		},
+		{
+			"detail": "{  }",
+			"name": "packed_meal_in_view_from_pickup",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "take_packed_order",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "cannot_deliver_before_second_leg",
+			"pass": true
+		},
+		{
+			"detail": {
+				"walk_m": 15.7966989353299
+			},
+			"name": "watched_RIDING",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "saved_carrying",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 9.16405569948256,
+				"end": "(-34.48429, 11.65309, 55.02093)",
+				"goals": 2,
+				"max_frame_displacement_m": 0.0767875909805298,
+				"name": "return_to_parked_scooter",
+				"pass": true,
+				"reached": 2,
+				"stall_contacts": []
+			},
+			"name": "return_to_parked_scooter",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "pupil_loads_separate_box",
+			"pass": true
+		},
+		{
+			"detail": {
+				"objective": "老彭在你身后等你 · 4 米\n骑近他就会继续带路",
+				"prompt": "已上车 · W 前进 / S 刹车及倒车 · A D 转向 · 空格急刹 · P 停车 · E 下车"
+			},
+			"name": "mount_with_order",
+			"pass": true
+		},
+		{
+			"detail": {
+				"frames": 614,
+				"mentor_end": "(-25.40643, 14.2974, 36.94762)",
+				"student_end": "(-25.4171, 13.79547, 41.06262)"
+			},
+			"name": "follow_to_courtyard_approach",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "last_mile_requires_walk",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "saved_last_mile",
+			"pass": true
+		},
+		{
+			"detail": {
+				"walk_m": 15.7966989353299
+			},
+			"name": "watched_PUPIL_UNLOAD",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "pupil_retrieves_second_bag",
+			"pass": true
+		},
+		{
+			"detail": {
+				"walk_m": 82.0279100639746
+			},
+			"name": "watched_PUPIL_DELIVERS",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "mentor_delivers_first",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 0.891533843241632,
+				"end": "(-53.44336, 16.45385, 19.4731)",
+				"goals": 1,
+				"max_frame_displacement_m": 0.201833173632622,
+				"name": "walk_to_house_one",
+				"pass": true,
+				"reached": 1,
+				"stall_contacts": []
+			},
+			"name": "walk_to_house_one",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "student_rings_before_handover",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "handover_once",
+			"pass": true
+		},
+		{
+			"detail": {
+				"objective": "第一天教学完成 · 已学会取送餐\n累计 1 单 · 8 元，可回面馆接单",
+				"prompt": "住户：谢谢，辛苦了！ · 配送收入 +8 元"
+			},
+			"name": "credit_and_regular_order_unlocked",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "saved_completed",
+			"pass": true
+		},
+		{
+			"detail": {
+				"clearance_to_bike_m": 0.811876983642578,
+				"resident": "(-29.65093, 11.65706, 56.179)",
+				"route": "walk",
+				"scooter": "(-30.20965, 11.6692, 54.9583)",
+				"stage": "SHOP"
+			},
+			"name": "sampled_residents_clear_guide_bike",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "two_bags_at_supported_hooks",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "both_guided_routes_arrived",
+			"pass": true
+		},
+		{
+			"detail": [],
+			"name": "no_blockage_jump_or_prolonged_airborne_contact",
+			"pass": true
+		}
+	],
+	"demonstrations": [
+		"AT_BIKE",
+		"BOARD_FIRST",
+		"RIDING",
+		"SHOP_EXIT",
+		"WALK_COUNTER",
+		"ORDER",
+		"PACK",
+		"PICK_UP",
+		"PUPIL_PICKUP",
+		"RETURN_BIKE",
+		"LOAD_BOX",
+		"BOARD_AGAIN",
+		"RIDING",
+		"YARD_EXIT",
+		"UNLOAD",
+		"PUPIL_UNLOAD",
+		"LEAD_HOME",
+		"RING",
+		"HANG",
+		"STEP_ASIDE",
+		"PUPIL_DELIVERS"
+	],
+	"display": "headless",
+	"engine": "4.6.3-stable (official)",
+	"mentor_route": {
+		"issues": [],
+		"legs": {
+			"TO_SHOP": {
+				"arrived": true,
+				"max_kmh": 9.86400000000004,
+				"moving_s": 9.56666666666672,
+				"travel_m": 20.2620564543176,
+				"waiting_s": 7.08333333333331,
+				"waypoints": [
+					{
+						"position": "(-49.99934, 11.76194, 52.00065)",
+						"segment": 0,
+						"stage": "TO_SHOP",
+						"time_s": 3.78
+					},
+					{
+						"position": "(-40.12001, 11.95561, 52.0853)",
+						"segment": 1,
+						"stage": "TO_SHOP",
+						"time_s": 16.12
+					}
+				]
+			},
+			"TO_YARD": {
+				"arrived": true,
+				"max_kmh": 9.87600000000002,
+				"moving_s": 10.0000000000001,
+				"travel_m": 22.5254112969851,
+				"waiting_s": 2.73333333333333,
+				"waypoints": [
+					{
+						"position": "(-30.20965, 11.6692, 54.9583)",
+						"segment": 0,
+						"stage": "TO_YARD",
+						"time_s": 45.4
+					},
+					{
+						"position": "(-27.06676, 11.722, 55.04481)",
+						"segment": 1,
+						"stage": "TO_YARD",
+						"time_s": 49.87
+					},
+					{
+						"position": "(-25.04672, 12.13076, 53.07234)",
+						"segment": 2,
+						"stage": "TO_YARD",
+						"time_s": 51.28
+					},
+					{
+						"position": "(-25.09001, 12.68146, 49.09235)",
+						"segment": 3,
+						"stage": "TO_YARD",
+						"time_s": 52.95
+					}
+				]
+			}
+		},
+		"max_frame_displacement_m": 0.0459411405026913,
+		"rules": {
+			"airborne_seconds": 0.45,
+			"minimum_progress_m": 0.2,
+			"stalled_seconds": 3.0
+		}
+	},
+	"nearest_walking_resident": {
+		"clearance_to_bike_m": 0.811876983642578,
+		"resident": "(-29.65093, 11.65706, 56.179)",
+		"route": "walk",
+		"scooter": "(-30.20965, 11.6692, 54.9583)",
+		"stage": "SHOP"
+	},
+	"passed": true,
+	"renderer": "forward_plus",
+	"source_sha256": {
+		"first_shift.tscn": "1f4df48ea096f7c0e8a5b608e8b2e4558f2cb495bfb7e80a95057c7811f87160",
+		"scripts/day_one.gd": "4efc0cc7b449d6fbdfd01311cddb7b0cfefdf95dc253cd4560df25afef54d336",
+		"scripts/gameplay.gd": "13cc318887733b4b1ba8d506cc91ac458740e47eb927c62ce6595db06c39144b",
+		"scripts/main.gd": "1b6ba2fe65e1ee3d55800d6656a4da33ac348b278ed93cb7b1692095eb53da4a",
+		"scripts/mentor_demonstration.gd": "c97fed9fa4b2aff152459d84200eeb5fb35495c4c87980b81f8abb6de13e1301",
+		"scripts/mentor_route_audit.gd": "0e0a8221e123e126bdfb952670c279567b282ef8d3694ba14022a060b5dbea0f",
+		"scripts/mentor_scooter.gd": "0981b24e4ec3c28646c2dd01b7fa66eb3639d2465986d7cedb9955d67eb60263",
+		"scripts/mentor_walker.gd": "7aed353de3b16b5e5f216fe1b644f6e87c79349f47316b090950998d456f1f07",
+		"scripts/scooter_controller.gd": "bfdc387467a5aa483e6ade38be3913052035a23b0c18ab95f615abb206a84a71"
+	}
+}

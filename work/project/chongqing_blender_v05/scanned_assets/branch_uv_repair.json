@@ -1,0 +1,275 @@
+{
+  "repaired_library": "prepared_assets.blend",
+  "modified_object_count": 6,
+  "modified_material_count": 2,
+  "modified_objects": [
+    {
+      "object": "PH_island_tree_01_hero_00",
+      "material": "CQ_PH_island_tree_01_branches",
+      "source_uv": "UVMap",
+      "primary_uv": "UVMap",
+      "blender_scale": [
+        15.0,
+        3.4000000953674316,
+        1.0
+      ],
+      "blender_location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "primary_uv_unique_values_after": 46793,
+      "source_uv_unique_values_before": 48024,
+      "primary_min_after": [
+        0.013821016065776348,
+        0.000578379665967077
+      ],
+      "primary_max_after": [
+        3.1774911880493164,
+        3.3839571475982666
+      ]
+    },
+    {
+      "object": "PH_island_tree_01_low_00",
+      "material": "CQ_PH_island_tree_01_branches",
+      "source_uv": "UVMap",
+      "primary_uv": "UVMap",
+      "blender_scale": [
+        15.0,
+        3.4000000953674316,
+        1.0
+      ],
+      "blender_location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "primary_uv_unique_values_after": 15281,
+      "source_uv_unique_values_before": 15548,
+      "primary_min_after": [
+        0.04618971422314644,
+        0.000966498046182096
+      ],
+      "primary_max_after": [
+        3.147799015045166,
+        3.1879661083221436
+      ]
+    },
+    {
+      "object": "PH_island_tree_01_medium_00",
+      "material": "CQ_PH_island_tree_01_branches",
+      "source_uv": "UVMap",
+      "primary_uv": "UVMap",
+      "blender_scale": [
+        15.0,
+        3.4000000953674316,
+        1.0
+      ],
+      "blender_location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "primary_uv_unique_values_after": 26186,
+      "source_uv_unique_values_before": 26660,
+      "primary_min_after": [
+        0.045772913843393326,
+        0.000578379665967077
+      ],
+      "primary_max_after": [
+        3.1774911880493164,
+        3.366070508956909
+      ]
+    },
+    {
+      "object": "PH_tree_small_02_hero_01",
+      "material": "CQ_PH_tree_small_02_branches",
+      "source_uv": "UVMap.001",
+      "primary_uv": "UVMap",
+      "blender_scale": [
+        3.0,
+        0.5999999046325684,
+        1.0
+      ],
+      "blender_location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "primary_uv_unique_values_after": 10980,
+      "source_uv_unique_values_before": 10980,
+      "primary_min_after": [
+        -0.0029724331106990576,
+        -0.16708789765834808
+      ],
+      "primary_max_after": [
+        3.000107765197754,
+        0.706487238407135
+      ]
+    },
+    {
+      "object": "PH_tree_small_02_low_01",
+      "material": "CQ_PH_tree_small_02_branches",
+      "source_uv": "UVMap.001",
+      "primary_uv": "UVMap",
+      "blender_scale": [
+        3.0,
+        0.5999999046325684,
+        1.0
+      ],
+      "blender_location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "primary_uv_unique_values_after": 2617,
+      "source_uv_unique_values_before": 2617,
+      "primary_min_after": [
+        -0.0018953855615109205,
+        -0.021157046779990196
+      ],
+      "primary_max_after": [
+        3.000511646270752,
+        0.6402193903923035
+      ]
+    },
+    {
+      "object": "PH_tree_small_02_medium_01",
+      "material": "CQ_PH_tree_small_02_branches",
+      "source_uv": "UVMap.001",
+      "primary_uv": "UVMap",
+      "blender_scale": [
+        3.0,
+        0.5999999046325684,
+        1.0
+      ],
+      "blender_location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "primary_uv_unique_values_after": 4809,
+      "source_uv_unique_values_before": 4809,
+      "primary_min_after": [
+        -0.001173144206404686,
+        -0.031339969485998154
+      ],
+      "primary_max_after": [
+        3.000511646270752,
+        0.6583099961280823
+      ]
+    }
+  ],
+  "position_changes": [],
+  "method": "Bake source branch UV scale/offset into primary Blender UV, connect all existing original image samplers to that primary UV directly, and designate it for tangent normal mapping. No image pixels or object positions changed.",
+  "source_urls": [
+    "https://polyhaven.com/a/tree_small_02",
+    "https://polyhaven.com/a/island_tree_01"
+  ],
+  "license": "CC0 1.0",
+  "engine_configuration": "Use ph_branch_uv_baked=true after adopting this library; both tree branch types now use primary UV identity.",
+  "original_material_coordinate_configs": {
+    "CQ_PH_island_tree_01_branches": [
+      {
+        "image": "Image Texture",
+        "uv_map": "UVMap",
+        "scale": [
+          15.0,
+          3.4000000953674316,
+          1.0
+        ],
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "image": "Image Texture.001",
+        "uv_map": "UVMap",
+        "scale": [
+          15.0,
+          3.4000000953674316,
+          1.0
+        ],
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "image": "Image Texture.002",
+        "uv_map": "UVMap",
+        "scale": [
+          15.0,
+          3.4000000953674316,
+          1.0
+        ],
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "CQ_PH_tree_small_02_branches": [
+      {
+        "image": "Image Texture",
+        "uv_map": "UVMap.001",
+        "scale": [
+          3.0,
+          0.5999999046325684,
+          1.0
+        ],
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "image": "Image Texture.001",
+        "uv_map": "UVMap.001",
+        "scale": [
+          3.0,
+          0.5999999046325684,
+          1.0
+        ],
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "image": "Image Texture.002",
+        "uv_map": "UVMap.001",
+        "scale": [
+          3.0,
+          0.5999999046325684,
+          1.0
+        ],
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ]
+  },
+  "repair_creation_kept_original_intact": true,
+  "original_library_before_adoption": "prepared_assets.blend",
+  "production_adoption": {
+    "date": "2026-11-19",
+    "production_revision": "v04_r7",
+    "production_library": "source/scanned_assets/prepared_assets.blend",
+    "production_sha256": "733d613f269e03450a8aa52a183da74a1a83d3d7e3dbce88dfe39f6a7f8d5f5d",
+    "production_bytes": 139017163,
+    "original_backup": "downloads/prepared_assets_before_branch_uv_repair.blend",
+    "original_sha256": "e0622e453ef194c437b08e92a89d5b16f225b0f4a4f3b986e716d4055d057a45",
+    "duplicate_repaired_library_removed_from_source": true,
+    "ph_branch_uv_baked": true,
+    "validation": "verification/branch_uv_audit/repair_validation.json"
+  }
+}

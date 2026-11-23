@@ -1,0 +1,69 @@
+{
+  "shift": {
+    "court_crossing": {
+      "file": "first_shift.json",
+      "checks": 1,
+      "passed": true
+    },
+    "court_descent": {
+      "file": "first_shift.json",
+      "checks": 1,
+      "passed": true
+    },
+    "court_sections": {
+      "file": "cross_sections.json",
+      "checks": 4,
+      "passed": true
+    },
+    "interrupted": {
+      "file": "first_shift.json",
+      "checks": 95,
+      "passed": true
+    },
+    "lip_sizes": {
+      "file": "results.json",
+      "checks": 10,
+      "passed": true
+    },
+    "old_obstruction": {
+      "file": "first_shift.json",
+      "checks": 1,
+      "passed": true
+    },
+    "restore": {
+      "file": "resume.json",
+      "checks": 3,
+      "passed": true
+    },
+    "stone_flight": {
+      "file": "first_shift.json",
+      "checks": 1,
+      "passed": true
+    },
+    "three_orders": {
+      "file": "first_shift.json",
+      "checks": 127,
+      "passed": true
+    }
+  },
+  "paired_rides": {
+    "east_up": true,
+    "east_down": true,
+    "blue_up": true,
+    "blue_down": true,
+    "west_up": true,
+    "west_down": true
+  },
+  "old_seam_targets": 43,
+  "original_seam_misses_now": 0,
+  "parking_wheel_patches": 12,
+  "max_abs_tyre_deviation_m": 0.0107440948486328,
+  "reported_engine_errors": {},
+  "shots": 33,
+  "walk_frames": 15,
+  "post_editor_captures": {
+    "fixed": 33,
+    "walk_frames": 15,
+    "walk_passed": true
+  }
+}

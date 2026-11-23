@@ -1,0 +1,123 @@
+{
+  "study": "R24 build12",
+  "photos": "reference/credits.json",
+  "scan_terms": "https://polyhaven.com/license",
+  "scans": [
+    {
+      "asset": "asphalt_02",
+      "author": "Rob Tuytel",
+      "license": "CC0 1.0",
+      "source": "https://polyhaven.com/a/asphalt_02",
+      "change": "3 m 扫描贴图，沿用既有沥青原图、法线和粗糙度，新增道路修补和磨耗着色。",
+      "attribution": "voluntary"
+    },
+    {
+      "asset": "concrete_floor_worn_001",
+      "author": "Dimitrios Savva（摄影）, Rico Cilliers（处理）",
+      "license": "CC0 1.0",
+      "source": "https://polyhaven.com/a/concrete_floor_worn_001",
+      "change": "既有磨损地面贴图，用于补浆骨料与墙脚湿痕。",
+      "attribution": "voluntary"
+    },
+    {
+      "asset": "sandstone_cracks",
+      "author": "Rob Tuytel",
+      "license": "CC0 1.0",
+      "source": "https://polyhaven.com/a/sandstone_cracks",
+      "change": "沿用 R21 石材颜色、法线及粗糙度图；踏步从实物顶面和立面分别着色。",
+      "attribution": "voluntary"
+    },
+    {
+      "asset": "potted_plant_02",
+      "author": "Rico Cilliers",
+      "license": "CC0 1.0",
+      "source": "https://polyhaven.com/a/potted_plant_02",
+      "change": "沿用原始工程中菜市场室内盆栽的三个网格部件，复用贴图，旋转、等比缩放并摆上住户花架。",
+      "attribution": "voluntary"
+    },
+    {
+      "asset": "wood_table_worn",
+      "author": "Dimitrios Savva（摄影），Rico Cilliers（处理）",
+      "license": "CC0 1.0",
+      "source": "https://polyhaven.com/a/wood_table_worn",
+      "change": "从既有原图提取木器明暗、微观磨损；分别重配木料、竹篾与手推车旧漆，导出五幅独立图并嵌入新增道具。",
+      "attribution": "voluntary"
+    }
+  ],
+  "font": {
+    "face": "Noto Sans CJK SC",
+    "license": "SIL Open Font License 1.1",
+    "upstream": "https://github.com/notofonts/noto-cjk",
+    "local_terms": "work/assets_incoming/r20_noto/LICENSE.txt",
+    "pinned_revision": "f8d157532fbfaeda587e826d4cd5b21a49186f7c",
+    "reference": "手写数字原创，中文栅格字形取自工程现有字体。"
+  },
+  "OSM": {
+    "credit": "© OpenStreetMap contributors",
+    "license": "ODbL 1.0",
+    "source": "https://www.openstreetmap.org/copyright",
+    "inputs": [
+      "assets/scene_manifest.json",
+      "assets/geometry_repairs_r17.json"
+    ],
+    "result": "street_use.png 的路线由已保存的投影路网及原创步道计算，原数据库与游戏内署名随工程保留。"
+  },
+  "current_artifact_sha256": {
+    "work/scene_r24/street_photo_study/city_and_street_use.blend": "11620153e587719199fb2e20da9d1bc4bc67cbe8f3cc3f80a36f67aed0984629",
+    "work/scene_r24/street_photo_study/greengrocer_card.jpg": "731e836bfe2f65080641caa2bdd7f8a7f861e1f35da67b75d6d155c0e28c37ad",
+    "work/scene_r24/street_photo_study/candidate_profile.json": "03cb2f0c42fd1cb84541ef6d52587c2bd4a9ed964efc613166323b91e577dc68",
+    "work/assets_incoming/r20_noto/NotoSansCJKsc-Regular.otf": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+    "work/project/chongqing_blender_v05/scanned_assets/source_credits.json": "cffc10b91a1d32ca3e7f11a57354639729c1a2d255864657633f1ff579d99653",
+    "work/assets_incoming/district_r21/sandstone_cracks/PROVENANCE.json": "e05710e586d4472a55dda771f8f75ecb62d6cf84730d4c9d8d0636e74218a6a9",
+    "work/project/chongqing_godot_v05/assets/scene_manifest.json": "2bdf2aeaab2af5068e1caef651e2069c3a0666d24d300651a667fa9437ad820b",
+    "work/project/chongqing_godot_v05/assets/geometry_repairs_r17.json": "9566d6e5ed3fc42c6fb1f55a5d23ba3448f0ba4efd3381a5d5a50cc217479124",
+    "work/project/chongqing_godot_v05/assets/street_use_r24/layout.json": "2c75656562fc4a8c32c9ec970b965db26c0e80f82abdff433517b3873b1c1d7f",
+    "work/project/chongqing_godot_v05/assets/street_use_r24/street_use.png": "b44593527a3b9f206f70b90c5304aff711eac0e50231e2e42bb911f0739b3e8b",
+    "work/project/chongqing_godot_v05/assets/street_use_r24/street_use.png.import": "d6b0ad184320a6683fbf0d9918c0e9e2ec6bca266cdf28bf59e7928ee9f2a011",
+    "work/project/chongqing_godot_v05/assets/street_use_r24/support_heights.png": "7b7fab53b9acda150578ecfc860377c48db2d3f6ec8ff1d852fadd2e12140b01",
+    "work/project/chongqing_godot_v05/assets/street_use_r24/support_heights.png.import": "22994088a5f31ba9d18c40543816b86c62688c164812c31d7097bc24ccc0666b",
+    "work/project/chongqing_godot_v05/assets/street_use_r24/workday.glb": "608094aa95d077dc3ea4601febcc77ce698e2317e6a2ecd64291c26043ac8a61",
+    "work/project/chongqing_godot_v05/assets/street_use_r24/workday.glb.import": "408d6bded76da02e924214a4bca277d644209e5b656f023021424991be705b44",
+    "work/project/chongqing_godot_v05/assets/street_use_r24/workday_greengrocer_card.jpg": "731e836bfe2f65080641caa2bdd7f8a7f861e1f35da67b75d6d155c0e28c37ad",
+    "work/project/chongqing_godot_v05/assets/street_use_r24/workday_greengrocer_card.jpg.import": "0df8110c4434577e459dffed3827356f82e32e543bc3953ec8b948bd97cc0817",
+    "work/project/chongqing_godot_v05/assets/chongqing_district_asphalt_02_diff_1k.jpg": "1aa5ce99f58a625c71d48cfc3e68b65ca85ccb00f39e045c0a928608a0ea25ed",
+    "work/project/chongqing_godot_v05/assets/chongqing_district_asphalt_02_nor_gl_1k.jpg": "42a1c381b53204e83a982db2864479a30bc127bbdeebb1006f8ee51bff099df3",
+    "work/project/chongqing_godot_v05/assets/chongqing_district_asphalt_02_rough_1k.png": "aa2028e4f30818804d54615ec529d50d84dfac8194b8e988780c3d98b0467689",
+    "work/project/chongqing_godot_v05/assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg": "e29b45cdcd6d02fae3c087c456196ffa750779a9b62e7071aa3831dc322a0cc4",
+    "work/project/chongqing_godot_v05/assets/chongqing_district_concrete_floor_worn_001_nor_gl_2k.jpg": "3b782137e34d63fd59b2e92b4e27b2ee4d082caf9dd23f00dc7ab4da5513daef",
+    "work/project/chongqing_godot_v05/assets/chongqing_district_concrete_floor_worn_001_rough_2k.png": "7ce8796fded6cfc0969044065657ec358f6e5e0e4fa011ddbf9cddb4d2bc0025",
+    "work/project/chongqing_godot_v05/assets/chongqing_district_potted_plant_02_leaves_diff_2k.png": "e3b0e662736165a6759b3b53db7eabbd6eed95904920fcc448a88bb027da9700",
+    "work/project/chongqing_godot_v05/assets/chongqing_district_potted_plant_02_leaves_nor_gl_2k.jpg": "2ae648b12ea457fb720f9adc6f8dc9feb8d5409e43f3b9f2ce7f089b3eef12f6",
+    "work/project/chongqing_godot_v05/assets/chongqing_district_potted_plant_02_leaves_rough_2k.jpg": "399e61a82069b3e344cece76c128f84a664dd44719331450877b671906e01e27",
+    "work/project/chongqing_godot_v05/assets/chongqing_district_potted_plant_02_pot_diff_2k.jpg": "21672040b5de49e7dae07452431b4fe5cf401494f5ab5157b5f54a146cc68383",
+    "work/project/chongqing_godot_v05/assets/chongqing_district_potted_plant_02_pot_nor_gl_2k.jpg": "8e8c2e96de90e793712a9db8a6cea7a38f7fd5ec489b8134b586a42ebbbfcb11",
+    "work/project/chongqing_godot_v05/assets/chongqing_district_potted_plant_02_pot_rough_2k.jpg": "c1f341bfa5e610dab2fd31aad4068fa20cf957b098912da5949bca996d7649bf",
+    "work/project/chongqing_godot_v05/assets/district_r21/terraces_sandstone_cracks_nor_gl_2k.jpg": "904e852268e1fb1bd5c0d035382f6a0e64c98dceea784fe957b1983d98b0231a",
+    "work/project/chongqing_godot_v05/assets/district_r21/terraces_sandstone_cracks_nor_gl_2k.jpg.import": "2683bddb325ec00674e32d454b1be79340d704d7ef87c04badd44f2a3b54c6bb",
+    "work/project/chongqing_godot_v05/assets/district_r21/terraces_sandstone_cracks_rough_2k.png": "0b4322234eb20d961841bc0307aceda83423a2b606b159bac5a77a90a76313bb",
+    "work/project/chongqing_godot_v05/assets/district_r21/terraces_sandstone_cracks_rough_2k.png.import": "d73450282264fce4fe5db34013a5ef16f8dd84c644da39aa532f1da021f244eb",
+    "work/project/chongqing_godot_v05/assets/district_r21/terraces_washed_sandstone.jpg": "9792a5261f98aee4a73328e1420585e7d33308a382e7abbb081dcee2b0094924",
+    "work/project/chongqing_godot_v05/assets/district_r21/terraces_washed_sandstone.jpg.import": "786a1a31176fb7e4fadad7d2340f999b73f2ab6076556e4ac5cf9afeeb0e013c",
+    "work/project/chongqing_godot_v05/shaders/asphalt_use_r24.gdshader": "7bb8d04d4193084a813653526c5c7d25f7f92127b3ccfbb0f4cfd807ac659624",
+    "work/project/chongqing_godot_v05/shaders/city_envelope_r24.gdshader": "20bb1c420052c831673e61873cf8c32c14bfd4f46f731196d0d6c0fa804121ce",
+    "work/project/chongqing_godot_v05/shaders/court_canopy_r24.gdshader": "f0a35415df35233e82e250ea5aabc3bd68fcc40da2308fda793bd62803fc1395",
+    "work/project/chongqing_godot_v05/shaders/dressed_stone_r24.gdshader": "705de7c7f5601705e898dcef7441fa94dd478d5f29f130c5461cdbfc254dbb35",
+    "work/project/chongqing_godot_v05/shaders/frontage_canvas_r24.gdshader": "05a4855a2ded86e0d9b972d8b3836657bedbb93268add08cdf16f64354d8feb5",
+    "work/project/chongqing_godot_v05/shaders/frontage_surface_r24.gdshader": "d1f362d7e5f143590785d76ee0df8071248c1ddf78de50dc87f7535ec30118f9",
+    "work/project/chongqing_godot_v05/shaders/stall_enamel_r24.gdshader": "047d7175d2cf71e4c1a3f18eb1860027102f27e897f8d0682d9de86296c02f5b",
+    "work/project/chongqing_godot_v05/shaders/street_repairs_r24.gdshaderinc": "eb2b82186ead48bca380530590afd74fedba5bcbe7858162a7aec251aea480f2",
+    "work/project/chongqing_godot_v05/shaders/street_use_r24.gdshaderinc": "e28d5204d08915037d835271d8977d13d90b90cb9d8afe13fcf2898c9aadbe83",
+    "work/project/chongqing_godot_v05/shaders/washcloth_r24.gdshader": "40257182eb7b60ad875f080f81fec3efb5e2b5b481510b5ff06a4154915179bc",
+    "work/project/chongqing_godot_v05/scripts/street_use_r24.gd": "96a246687c10ca0bde9a7258d3bd5d86eb8157a09847bc8be9e15a89719fb523",
+    "work/scene_r24/street_photo_study/workday_surfaces/light_cane.jpg": "b554f69113102cfe3f2f41da8624898bae7934b052db1883d20efb2bfad99dbd",
+    "work/scene_r24/street_photo_study/workday_surfaces/old_cane.jpg": "f8d89b2c1c9aaf27f71a0a1fab6e8ad1e6461efb69104cf828d513a5c018f88a",
+    "work/scene_r24/street_photo_study/workday_surfaces/paint.jpg": "d836f24d69fa085f431bfa549deb2174461333c83a87146dba3f47a3ba061a12",
+    "work/scene_r24/street_photo_study/workday_surfaces/split_bamboo.jpg": "732015feda7bdb2f7ee8e676b0ebe7b3e4c3221787b15b4652fb7bd35fe95a2b",
+    "work/scene_r24/street_photo_study/workday_surfaces/timber.jpg": "50430d4d404e34e8b03b893f38714767a8e214846ac1a38bd6611309c7c40bea",
+    "work/project/chongqing_godot_v05/assets/chongqing_district_wood_table_worn_diff_2k.jpg": "165cdba449d56ea8e9675116622b95d7af372b7d7c47b8a98a03fcc630f1d51c",
+    "work/scene_r24/street_photo_study/household_and_cart.py": "cccda31d3e6258c2650d28e55e9072fea0ec6caec17e69c9e518891bb40b7d68",
+    "work/scene_r24/street_photo_study/author_workday.py": "7a54c3011814d219f21bd59c386d779723faa5c1e7b9f0309ee9c8eacc2798ca",
+    "work/scene_r24/street_photo_study/price_card_and_ground.py": "5993461d112b6b364bd2f006e23c768c1ae1d6617149734a8651ca13c8867ef8",
+    "work/project/chongqing_godot_v05/scripts/qa_context.gd": "850217a526dedb6fd7e6a3c5b2f1e887b9e11b1d634b538bf9850450e0d67af8"
+  }
+}

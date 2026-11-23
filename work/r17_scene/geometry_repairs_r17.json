@@ -1,0 +1,1169 @@
+{
+  "revision": 17,
+  "routes": [
+    {
+      "name": "Central_stair_lane",
+      "points": [
+        [
+          16.0,
+          -66.0
+        ],
+        [
+          6.0,
+          -59.5
+        ],
+        [
+          -20.0,
+          -52.0
+        ],
+        [
+          -20.0,
+          -30.0
+        ],
+        [
+          -18.0,
+          -8.0
+        ],
+        [
+          -18.0,
+          14.0
+        ],
+        [
+          -40.0,
+          38.0
+        ]
+      ],
+      "width_m": 3.8,
+      "plan_clearance_m": 0.06,
+      "sample_spacing_m": 0.1,
+      "intersections": []
+    },
+    {
+      "name": "Narrow_upper_passage",
+      "points": [
+        [
+          -40.0,
+          38.0
+        ],
+        [
+          -37.4,
+          43.0
+        ],
+        [
+          -33.3,
+          50.0
+        ],
+        [
+          -28.7,
+          57.0
+        ],
+        [
+          -29.0,
+          60.0
+        ]
+      ],
+      "width_m": 1.35,
+      "plan_clearance_m": 0.06,
+      "sample_spacing_m": 0.1,
+      "intersections": []
+    },
+    {
+      "name": "Upper_terrace_connection",
+      "points": [
+        [
+          -29.0,
+          60.0
+        ],
+        [
+          -25.0,
+          64.0
+        ],
+        [
+          -17.0,
+          77.0
+        ],
+        [
+          -27.0,
+          90.0
+        ]
+      ],
+      "width_m": 2.5,
+      "plan_clearance_m": 0.06,
+      "sample_spacing_m": 0.1,
+      "intersections": []
+    },
+    {
+      "name": "West_residential_link",
+      "points": [
+        [
+          -93.0,
+          -45.0
+        ],
+        [
+          -74.0,
+          -34.0
+        ],
+        [
+          -73.0,
+          -8.0
+        ],
+        [
+          -76.0,
+          17.0
+        ],
+        [
+          -69.0,
+          23.5
+        ],
+        [
+          -68.7,
+          28.9
+        ],
+        [
+          -69.0,
+          34.2
+        ],
+        [
+          -74.0,
+          40.0
+        ],
+        [
+          -77.0,
+          61.0
+        ],
+        [
+          -76.0,
+          77.5
+        ]
+      ],
+      "width_m": 2.7,
+      "plan_clearance_m": 0.06,
+      "sample_spacing_m": 0.1,
+      "intersections": []
+    },
+    {
+      "name": "East_photo_alley",
+      "points": [
+        [
+          52.0,
+          -61.7
+        ],
+        [
+          48.0,
+          -49.0
+        ],
+        [
+          52.0,
+          -35.0
+        ],
+        [
+          49.0,
+          -19.0
+        ],
+        [
+          51.0,
+          -11.0
+        ],
+        [
+          53.0,
+          -4.0
+        ],
+        [
+          48.0,
+          3.5
+        ],
+        [
+          42.0,
+          4.8
+        ],
+        [
+          35.0,
+          5.0
+        ],
+        [
+          28.0,
+          14.0
+        ]
+      ],
+      "width_m": 2.5,
+      "plan_clearance_m": 0.06,
+      "sample_spacing_m": 0.1,
+      "intersections": []
+    }
+  ],
+  "entrances": [
+    {
+      "building": "809889604",
+      "index": 0,
+      "origin": [
+        78.45560455322266,
+        95.43553161621094,
+        36.49336242675781
+      ],
+      "outward": [
+        0.9999837875366211,
+        0.005708832759410143
+      ],
+      "width_m": 2.7,
+      "floor_top_m": 36.583363005387525,
+      "ceiling_m": 39.29336300538752,
+      "clear_height_m": 2.71,
+      "type": "private_vestibule_closed_residential_door",
+      "approach": [
+        80.2555,
+        95.4458,
+        36.3734
+      ],
+      "removed_steps": 5
+    },
+    {
+      "building": "809889622",
+      "index": 0,
+      "origin": [
+        -71.72208404541016,
+        28.886417388916016,
+        22.763912200927734
+      ],
+      "outward": [
+        0.9998748898506165,
+        0.015823034569621086
+      ],
+      "width_m": 2.7,
+      "floor_top_m": 22.853912922772803,
+      "ceiling_m": 25.563912922772804,
+      "clear_height_m": 2.71,
+      "type": "private_vestibule_closed_residential_door",
+      "approach": [
+        -69.9223,
+        28.9149,
+        22.6439
+      ],
+      "removed_steps": 5
+    },
+    {
+      "building": "809889624",
+      "index": 0,
+      "origin": [
+        4.908726215362549,
+        -14.48184871673584,
+        18.592878341674805
+      ],
+      "outward": [
+        -0.8532598614692688,
+        0.5214858055114746
+      ],
+      "width_m": 2.15,
+      "floor_top_m": 18.68287793330033,
+      "ceiling_m": 21.39287793330033,
+      "clear_height_m": 2.71,
+      "type": "private_vestibule_closed_residential_door",
+      "approach": [
+        3.3729,
+        -13.5432,
+        18.4729
+      ],
+      "removed_steps": 5
+    },
+    {
+      "building": "809889627",
+      "index": 0,
+      "origin": [
+        54.9608268737793,
+        4.816380500793457,
+        23.70909881591797
+      ],
+      "outward": [
+        -0.6382783651351929,
+        -0.7698056697845459
+      ],
+      "width_m": 2.7,
+      "floor_top_m": 23.799099423864774,
+      "ceiling_m": 26.509099423864775,
+      "clear_height_m": 2.71,
+      "type": "private_vestibule_closed_residential_door",
+      "approach": [
+        53.8119,
+        3.4307,
+        22.4823
+      ],
+      "removed_steps": 5
+    },
+    {
+      "building": "809889627",
+      "index": 1,
+      "origin": [
+        84.02574157714844,
+        8.75151252746582,
+        23.70909881591797
+      ],
+      "outward": [
+        0.7665987014770508,
+        -0.6421265006065369
+      ],
+      "width_m": 2.7,
+      "floor_top_m": 23.799099423864774,
+      "ceiling_m": 26.509099423864775,
+      "clear_height_m": 2.71,
+      "type": "private_vestibule_closed_residential_door",
+      "approach": [
+        85.4056,
+        7.5957,
+        23.5891
+      ],
+      "removed_steps": 5
+    },
+    {
+      "building": "809889628",
+      "index": 0,
+      "origin": [
+        20.90937614440918,
+        55.63861846923828,
+        29.970020294189453
+      ],
+      "outward": [
+        0.018234504386782646,
+        0.9998337626457214
+      ],
+      "width_m": 2.15,
+      "floor_top_m": 30.060021071230132,
+      "ceiling_m": 32.77002107123013,
+      "clear_height_m": 2.71,
+      "type": "private_vestibule_closed_residential_door",
+      "approach": [
+        20.9422,
+        57.4384,
+        29.85
+      ],
+      "removed_steps": 5
+    },
+    {
+      "building": "809889630",
+      "index": 0,
+      "origin": [
+        -22.154367446899414,
+        95.7734603881836,
+        34.02309799194336
+      ],
+      "outward": [
+        -0.9993305206298828,
+        -0.036584366112947464
+      ],
+      "width_m": 2.15,
+      "floor_top_m": 34.113096143083865,
+      "ceiling_m": 36.82309614308386,
+      "clear_height_m": 2.71,
+      "type": "private_vestibule_closed_residential_door",
+      "approach": [
+        -23.9532,
+        95.7076,
+        33.9031
+      ],
+      "removed_steps": 5
+    },
+    {
+      "building": "1335306665",
+      "index": 0,
+      "origin": [
+        -30.436187744140625,
+        41.87173080444336,
+        25.282224655151367
+      ],
+      "outward": [
+        -0.5311199426651001,
+        -0.8472966551780701
+      ],
+      "width_m": 2.15,
+      "floor_top_m": 25.3722240341524,
+      "ceiling_m": 28.0822240341524,
+      "clear_height_m": 2.71,
+      "type": "private_vestibule_closed_residential_door",
+      "approach": [
+        -31.3922,
+        40.3466,
+        25.1622
+      ],
+      "removed_steps": 5
+    },
+    {
+      "building": "1335306667",
+      "index": 0,
+      "origin": [
+        -59.699851989746094,
+        17.591201782226562,
+        21.523963928222656
+      ],
+      "outward": [
+        0.4675200283527374,
+        0.8839824795722961
+      ],
+      "width_m": 2.15,
+      "floor_top_m": 21.6139636427351,
+      "ceiling_m": 24.3239636427351,
+      "clear_height_m": 2.71,
+      "type": "private_vestibule_closed_residential_door",
+      "approach": [
+        -58.8583,
+        19.1824,
+        21.404
+      ],
+      "removed_steps": 5
+    },
+    {
+      "building": "1413081560",
+      "index": 0,
+      "origin": [
+        -38.068214416503906,
+        58.653663635253906,
+        28.107851028442383
+      ],
+      "outward": [
+        0.4761497974395752,
+        0.8793641924858093
+      ],
+      "width_m": 2.7,
+      "floor_top_m": 28.19785147003645,
+      "ceiling_m": 30.90785147003645,
+      "clear_height_m": 2.71,
+      "type": "private_vestibule_closed_residential_door",
+      "approach": [
+        -37.2111,
+        60.2366,
+        27.9879
+      ],
+      "removed_steps": 5
+    },
+    {
+      "building": "1413081561",
+      "index": 0,
+      "origin": [
+        -73.79138946533203,
+        97.24773406982422,
+        33.42497253417969
+      ],
+      "outward": [
+        0.48287340998649597,
+        0.8756901621818542
+      ],
+      "width_m": 2.15,
+      "floor_top_m": 33.514971190467854,
+      "ceiling_m": 36.22497119046785,
+      "clear_height_m": 2.71,
+      "type": "private_vestibule_closed_residential_door",
+      "approach": [
+        -72.9222,
+        98.824,
+        33.305
+      ],
+      "removed_steps": 5
+    },
+    {
+      "building": "A03",
+      "index": 0,
+      "origin": [
+        -94.0,
+        -20.0,
+        15.412485122680664
+      ],
+      "outward": [
+        -1.0,
+        0.0
+      ],
+      "width_m": 2.7,
+      "floor_top_m": 15.502485479493844,
+      "ceiling_m": 18.212485479493843,
+      "clear_height_m": 2.71,
+      "type": "private_vestibule_closed_residential_door",
+      "approach": [
+        -95.8,
+        -20.0,
+        15.2925
+      ],
+      "removed_steps": 5
+    },
+    {
+      "building": "A04",
+      "index": 0,
+      "origin": [
+        -53.0,
+        -19.5,
+        16.349939346313477
+      ],
+      "outward": [
+        1.0,
+        0.0
+      ],
+      "width_m": 2.15,
+      "floor_top_m": 16.439938667942585,
+      "ceiling_m": 19.149938667942585,
+      "clear_height_m": 2.71,
+      "type": "private_vestibule_closed_residential_door",
+      "approach": [
+        -51.2,
+        -19.5,
+        16.2299
+      ],
+      "removed_steps": 5
+    }
+  ],
+  "removed_fake_stair_blocks": 65,
+  "rail_spans_skipped": 28,
+  "prop_adjustments": [
+    {
+      "group": "Resident_waste_1_bin_",
+      "objects": [
+        "Resident_waste_1_bin_00",
+        "Resident_waste_1_bin_01",
+        "Resident_waste_1_bin_02",
+        "Resident_waste_1_bin_03"
+      ],
+      "before": [
+        -69.97689056396484,
+        32.36446762084961,
+        23.142658233642578
+      ],
+      "after": [
+        -72.17688751220703,
+        33.56446838378906,
+        23.266494750976562
+      ],
+      "minimum_clearance_m": 0.012
+    },
+    {
+      "group": "Resident_waste_1_bagA_",
+      "objects": [
+        "Resident_waste_1_bagA_00"
+      ],
+      "before": [
+        -70.15547180175781,
+        31.641551971435547,
+        23.142658233642578
+      ],
+      "after": [
+        -72.35546875,
+        32.841552734375,
+        23.14759635925293
+      ],
+      "minimum_clearance_m": 0.012
+    },
+    {
+      "group": "Resident_waste_1_bagB_",
+      "objects": [
+        "Resident_waste_1_bagB_00"
+      ],
+      "before": [
+        -69.72173309326172,
+        31.40838623046875,
+        23.142658233642578
+      ],
+      "after": [
+        -71.9217300415039,
+        32.6083869934082,
+        23.10819435119629
+      ],
+      "minimum_clearance_m": 0.012
+    },
+    {
+      "group": "Resident_waste_1_crate_",
+      "objects": [
+        "Resident_waste_1_crate_00"
+      ],
+      "before": [
+        -69.336181640625,
+        32.32460403442383,
+        23.142658233642578
+      ],
+      "after": [
+        -71.53617858886719,
+        33.52460479736328,
+        23.258867263793945
+      ],
+      "minimum_clearance_m": 0.012
+    },
+    {
+      "group": "CQF_StreetLamp_",
+      "objects": [
+        "CQF_StreetLamp_black_metal.009",
+        "CQF_StreetLamp_lamp.009",
+        "CQF_StreetLamp_steel.009"
+      ],
+      "before": [
+        -27.0,
+        62.0,
+        28.58771324157715
+      ],
+      "after": [
+        -29.5,
+        62.29999923706055,
+        28.488618850708008
+      ],
+      "minimum_clearance_m": 0.012
+    }
+  ],
+  "tree_25_well_edge_clearance_m": 0.9326367194643548,
+  "meter_boxes": {
+    "count": 112,
+    "unique_readings": 112,
+    "records": [
+      {
+        "panel": 0,
+        "reading": 1031,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 1,
+        "reading": 1410,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 2,
+        "reading": 1789,
+        "finish": "meter_enamel_0"
+      },
+      {
+        "panel": 3,
+        "reading": 2168,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 4,
+        "reading": 2547,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 5,
+        "reading": 2926,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 6,
+        "reading": 3305,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 7,
+        "reading": 3684,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 8,
+        "reading": 4063,
+        "finish": "meter_enamel_0"
+      },
+      {
+        "panel": 9,
+        "reading": 4442,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 10,
+        "reading": 4821,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 11,
+        "reading": 5200,
+        "finish": "meter_enamel_0"
+      },
+      {
+        "panel": 12,
+        "reading": 5579,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 13,
+        "reading": 5958,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 14,
+        "reading": 6337,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 15,
+        "reading": 6716,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 16,
+        "reading": 7095,
+        "finish": "meter_enamel_0"
+      },
+      {
+        "panel": 17,
+        "reading": 7474,
+        "finish": "meter_enamel_0"
+      },
+      {
+        "panel": 18,
+        "reading": 7853,
+        "finish": "meter_enamel_0"
+      },
+      {
+        "panel": 19,
+        "reading": 8232,
+        "finish": "meter_enamel_0"
+      },
+      {
+        "panel": 20,
+        "reading": 8611,
+        "finish": "meter_enamel_0"
+      },
+      {
+        "panel": 21,
+        "reading": 8990,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 22,
+        "reading": 9369,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 23,
+        "reading": 9748,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 24,
+        "reading": 10127,
+        "finish": "meter_enamel_0"
+      },
+      {
+        "panel": 25,
+        "reading": 10506,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 26,
+        "reading": 10885,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 27,
+        "reading": 11264,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 28,
+        "reading": 11643,
+        "finish": "meter_enamel_0"
+      },
+      {
+        "panel": 29,
+        "reading": 12022,
+        "finish": "meter_enamel_0"
+      },
+      {
+        "panel": 30,
+        "reading": 12401,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 31,
+        "reading": 12780,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 32,
+        "reading": 13159,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 33,
+        "reading": 13538,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 34,
+        "reading": 13917,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 35,
+        "reading": 14296,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 36,
+        "reading": 14675,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 37,
+        "reading": 15054,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 38,
+        "reading": 15433,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 39,
+        "reading": 15812,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 40,
+        "reading": 16191,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 41,
+        "reading": 16570,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 42,
+        "reading": 16949,
+        "finish": "meter_enamel_0"
+      },
+      {
+        "panel": 43,
+        "reading": 17328,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 44,
+        "reading": 17707,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 45,
+        "reading": 18086,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 46,
+        "reading": 18465,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 47,
+        "reading": 18844,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 48,
+        "reading": 19223,
+        "finish": "meter_enamel_0"
+      },
+      {
+        "panel": 49,
+        "reading": 19602,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 50,
+        "reading": 19981,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 51,
+        "reading": 20360,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 52,
+        "reading": 20739,
+        "finish": "meter_enamel_0"
+      },
+      {
+        "panel": 53,
+        "reading": 21118,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 54,
+        "reading": 21497,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 55,
+        "reading": 21876,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 56,
+        "reading": 22255,
+        "finish": "meter_enamel_0"
+      },
+      {
+        "panel": 57,
+        "reading": 22634,
+        "finish": "meter_enamel_0"
+      },
+      {
+        "panel": 58,
+        "reading": 23013,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 59,
+        "reading": 23392,
+        "finish": "meter_enamel_0"
+      },
+      {
+        "panel": 60,
+        "reading": 23771,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 61,
+        "reading": 24150,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 62,
+        "reading": 24529,
+        "finish": "meter_enamel_0"
+      },
+      {
+        "panel": 63,
+        "reading": 24908,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 64,
+        "reading": 25287,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 65,
+        "reading": 25666,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 66,
+        "reading": 26045,
+        "finish": "meter_enamel_0"
+      },
+      {
+        "panel": 67,
+        "reading": 26424,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 68,
+        "reading": 26803,
+        "finish": "meter_enamel_0"
+      },
+      {
+        "panel": 69,
+        "reading": 27182,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 70,
+        "reading": 27561,
+        "finish": "meter_enamel_0"
+      },
+      {
+        "panel": 71,
+        "reading": 27940,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 72,
+        "reading": 28319,
+        "finish": "meter_enamel_0"
+      },
+      {
+        "panel": 73,
+        "reading": 28698,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 74,
+        "reading": 29077,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 75,
+        "reading": 29456,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 76,
+        "reading": 29835,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 77,
+        "reading": 30214,
+        "finish": "meter_enamel_0"
+      },
+      {
+        "panel": 78,
+        "reading": 30593,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 79,
+        "reading": 30972,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 80,
+        "reading": 31351,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 81,
+        "reading": 31730,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 82,
+        "reading": 32109,
+        "finish": "meter_enamel_0"
+      },
+      {
+        "panel": 83,
+        "reading": 32488,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 84,
+        "reading": 32867,
+        "finish": "meter_enamel_0"
+      },
+      {
+        "panel": 85,
+        "reading": 33246,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 86,
+        "reading": 33625,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 87,
+        "reading": 34004,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 88,
+        "reading": 34383,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 89,
+        "reading": 34762,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 90,
+        "reading": 35141,
+        "finish": "meter_enamel_0"
+      },
+      {
+        "panel": 91,
+        "reading": 35520,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 92,
+        "reading": 35899,
+        "finish": "meter_enamel_0"
+      },
+      {
+        "panel": 93,
+        "reading": 36278,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 94,
+        "reading": 36657,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 95,
+        "reading": 37036,
+        "finish": "meter_enamel_0"
+      },
+      {
+        "panel": 96,
+        "reading": 37415,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 97,
+        "reading": 37794,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 98,
+        "reading": 38173,
+        "finish": "meter_enamel_0"
+      },
+      {
+        "panel": 99,
+        "reading": 38552,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 100,
+        "reading": 38931,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 101,
+        "reading": 39310,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 102,
+        "reading": 39689,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 103,
+        "reading": 40068,
+        "finish": "meter_enamel_0"
+      },
+      {
+        "panel": 104,
+        "reading": 40447,
+        "finish": "meter_enamel_0"
+      },
+      {
+        "panel": 105,
+        "reading": 40826,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 106,
+        "reading": 41205,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 107,
+        "reading": 41584,
+        "finish": "meter_enamel_0"
+      },
+      {
+        "panel": 108,
+        "reading": 41963,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 109,
+        "reading": 42342,
+        "finish": "meter_enamel_2"
+      },
+      {
+        "panel": 110,
+        "reading": 42721,
+        "finish": "meter_enamel_1"
+      },
+      {
+        "panel": 111,
+        "reading": 43100,
+        "finish": "meter_enamel_0"
+      }
+    ]
+  }
+}

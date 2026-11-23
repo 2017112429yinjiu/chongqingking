@@ -1,0 +1,95 @@
+{
+  "status": "R17 internal development; not packaged, not cinematic acceptance",
+  "recorded_utc": "2026-11-20T02:43:52.880875+00:00",
+  "scene_sha256": "88b5be04c0c72ae2b54bb02f55f2186f7b7ec2937389a59697e7306dbd7e7c13",
+  "character_sha256": "88650d4794aff5253da9c6adbe1e910630bcdbfcb7f9d58bb05b74dad561383b",
+  "checks": {
+    "survey": 242,
+    "continuous_routes": 24,
+    "gameplay": 24,
+    "delivery_stages": 11,
+    "character_bones": 53,
+    "runtime_captures": 11
+  },
+  "performance": {
+    "engine": "4.6.3-stable (official)",
+    "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "note": "R17 one scooter, one skinned animated shopkeeper, 57 trunk/post colliders and residential doorbells. Desktop frame intervals; not GPU-only timings or crowd benchmark.",
+    "renderer": "forward_plus",
+    "scene_sha256": "88b5be04c0c72ae2b54bb02f55f2186f7b7ec2937389a59697e7306dbd7e7c13",
+    "views": [
+      {
+        "draw_calls": 5401.0,
+        "mean_ms": 10.7146708333333,
+        "p50_ms": 10.711,
+        "p95_ms": 11.499,
+        "primitives": 28353360.0,
+        "samples": 240,
+        "static_memory_bytes": 432992371.0,
+        "view": "street_entry"
+      },
+      {
+        "draw_calls": 2440.0,
+        "mean_ms": 7.11178333333333,
+        "p50_ms": 7.04,
+        "p95_ms": 8.396,
+        "primitives": 15353620.0,
+        "samples": 240,
+        "static_memory_bytes": 433062211.0,
+        "view": "residential_entry"
+      },
+      {
+        "draw_calls": 4382.0,
+        "mean_ms": 9.50465833333333,
+        "p50_ms": 9.471,
+        "p95_ms": 10.312,
+        "primitives": 24247347.0,
+        "samples": 240,
+        "static_memory_bytes": 433453251.0,
+        "view": "roofscape"
+      }
+    ],
+    "vsync": 1,
+    "window_size": "(1920.0, 1080.0)"
+  },
+  "source_fingerprints": {
+    "scripts\\build_collisions.gd": "2628a4eb84628582acd93ed16307ea708aa9e94867e286287eefa636abe803a8",
+    "scripts\\explorer.gd": "6756df784cc15a10f47ff3de9247b3acf5f0abdec6eddfba58876c78f654353b",
+    "scripts\\gameplay.gd": "2127adf26341f2bea4f11921e8747559528ad7d70271821ab5588b8efffbf01a",
+    "scripts\\interaction_manager.gd": "452749051bee06cbf93d29a754ef10cc8c69b739a96340e165fa5102fc7c9ab6",
+    "scripts\\interaction_target.gd": "2858d7f2fbabd5bcd35304ae34aeab074882cd50d28902c677d0a30effed32e6",
+    "scripts\\main.gd": "a1193a0ed085cb15af6f3a8987effc1f6d6febb9bfd9606a3e8ddb536e0804c5",
+    "scripts\\prop_collisions.gd": "8c67174e4816e36782b41fea8ef22f9c89d6688f0928567c30059a388101a44e",
+    "scripts\\qa_character.gd": "77df825801c36a81b85971811c1f9c0735a9b560196ff7bd4da5004a4222bac6",
+    "scripts\\qa_delivery.gd": "d7b2ab89551c4a60972d17e234866d051d0699873dea5c847bad4b059bacb92d",
+    "scripts\\qa_gameplay.gd": "796529c03d38bafaaaccc1e11f0304bf21cffe440ff52772b3ff067568ef7204",
+    "scripts\\qa_performance.gd": "9d92a749c199ed98a8031ec22bc441c45916e826b0049c6c71144abe566e64d4",
+    "scripts\\scooter_controller.gd": "02757f83c9b2b562d793eece6434b488f4a76ba8571c8994cb516ad67c07f501",
+    "scripts\\shopkeeper.gd": "bffd45b5698ff7af648f9a8276f601da63e6544602093301a6701044483e61e9",
+    "scripts\\takeaway_bag.gd": "f4bc98dcee19bd63c7e2fc2fcb2a14040ccc35ef020c2eff52ec977cf22b39f0",
+    "project.godot": "d7ae42ddae3ffe013a7d23605d9f4ef84d6630f471b879ea49021c8127835919",
+    "assets\\architecture_manifest.json": "ee8a87c5def04d4a5cd8829e7336c8145bb247c9d9266f918f662cc920e6586f",
+    "assets\\context_ownership_audit.json": "3c5021d21ed152532279e07908765d0a6edaba2fcafa658e116c538366ae62d7",
+    "assets\\geometry_repairs_r16.json": "0ac2ac75db541b21c61a1e84a2736e08f02bfa2134443c0f2dc6d9f9e66d2f34",
+    "assets\\geometry_repairs_r17.json": "9566d6e5ed3fc42c6fb1f55a5d23ba3448f0ba4efd3381a5d5a50cc217479124",
+    "assets\\landscape_report.json": "5c0692b90f0b42ef7108c2fc262396e77328ac1b93a0e6b9cdd72337f0830388",
+    "assets\\material_provenance.json": "8825abcdae0278f5940f6f9bf35cd77edee592da35e54c2fe5432f62b7d205af",
+    "assets\\render_profile_r16.json": "8f140ad7e3782e8fc3e7f421b21dd74ae896438a186ff945d9c0e165e00623ea",
+    "assets\\render_profile_r17.json": "a747d3141d4209cb291f0d9801c1f6874ccb18afd9c713b74f4a932eaf35f160",
+    "assets\\render_profile_v05.json": "9d0c7b69153c7c84fea8ac544b602bf15ef6806afa75068856a6adba0da809af",
+    "assets\\scene_manifest.json": "2bdf2aeaab2af5068e1caef651e2069c3a0666d24d300651a667fa9437ad820b",
+    "assets\\terrain_interior_audit.json": "4d357f49f58f8210de98064b3a0ea1cd88267168ea1c1f57c24dc7c4788633e1",
+    "assets\\viewpoints.json": "c0771c6cdbbd1ef54633435dbb8627d6e0b27aacec95db80820681642d95bf0d",
+    "assets\\walking_survey.json": "dfb48d17e9afe8f0cda23a12a13fcbd0a0d71639947d1b8fd9a8812c29d26fb5",
+    "assets\\characters\\shopkeeper_r17.glb": "88650d4794aff5253da9c6adbe1e910630bcdbfcb7f9d58bb05b74dad561383b"
+  },
+  "known_limits": [
+    "Not cinematic final art",
+    "No NPC/traffic crowd simulation or navigation implementation",
+    "No persistence, rider rig or wheel animation",
+    "No accessible upper storeys",
+    "Inherited Blender leaf mesh and texture sampler warnings",
+    "Full from-scratch generator not run",
+    "R15 final photo ZIP still blocked by saved browser permissions"
+  ]
+}

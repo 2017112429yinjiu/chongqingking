@@ -1,0 +1,478 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-11-19T16:14:02.208848+00:00",
+  "title": "梯坎里 · 重庆街区 05",
+  "revision": 15,
+  "extent_metres": [
+    200,
+    200
+  ],
+  "scene_glb": {
+    "bytes": 1017581848,
+    "sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223",
+    "embedded_image_count": 113,
+    "generator": "Khronos glTF Blender I/O v4.3.47"
+  },
+  "main_blend": {
+    "bytes": 414201503,
+    "sha256": "2666db85432b61546a21bcb3707c5c2e21a09bce18b14d123cc3b5745198185f"
+  },
+  "final_capture_count": 22,
+  "final_view_order": [
+    "overview",
+    "street_entry",
+    "noodle_corner",
+    "central_steps",
+    "west_lane",
+    "community_court",
+    "narrow_passage",
+    "upper_houses",
+    "east_gallery",
+    "residential_road",
+    "upper_street",
+    "roofscape",
+    "community_front",
+    "residential_entry",
+    "window_courtyard",
+    "tea_interior",
+    "window_living",
+    "window_north",
+    "noodle_interior",
+    "window_reading",
+    "window_dining",
+    "planting_detail"
+  ],
+  "final_image_size": [
+    1920,
+    1080
+  ],
+  "engine": "4.6.3-stable (official)",
+  "renderer": "forward_plus",
+  "device": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "captured_at_unix": 1795102454.378,
+  "physics": {
+    "passed": true,
+    "tests": 216,
+    "route_names": [
+      "central_stair_ascent",
+      "west_lane_ascent",
+      "upper_road_walk",
+      "narrow_upper_passage",
+      "court_east_entry",
+      "court_east_exit",
+      "lower_street_to_spine",
+      "east_alley_continuous_ascent",
+      "upper_courtyard_to_east_connection",
+      "school_front_connection",
+      "south_courtyard_connection",
+      "west_lane_south_threshold"
+    ],
+    "routes": 12,
+    "walking_clearances": 88,
+    "coverage_samples": 121,
+    "coverage_grid": [
+      11,
+      11
+    ],
+    "coverage_meaning": "Vertical collision coverage of terrain or roofs; does not imply street walkability",
+    "script_sha256": {
+      "res://scripts/build_collisions.gd": "2628a4eb84628582acd93ed16307ea708aa9e94867e286287eefa636abe803a8",
+      "res://scripts/explorer.gd": "8103d29a428970241be4ae0f7b67b304c528398f8e43f82613d728cc951c1bc2",
+      "res://scripts/main.gd": "29517fc2472682aae053e2e1eafc954379755e9b212a425088cdb834599cf56d"
+    }
+  },
+  "landscape": {
+    "trees": 43,
+    "soil_beds": 14,
+    "plant_support_records": 173,
+    "raised_planter_sections": 6
+  },
+  "interior_terrain_clearance": {
+    "checked_rooms": 1701,
+    "source_passed": true,
+    "actual_glb_passed": true,
+    "minimum_generated_clearance_m": 0.02999999999999936,
+    "actual_glb_audit_sha256": "6796e9644c051c83c160e2890ee9701659fbb3cbbc7af7a994106dd4f057dfaa",
+    "numerical_boundary_contact_rooms": 2
+  },
+  "drain_support": {
+    "expected_grates": 112,
+    "grates_checked": 112,
+    "expected_bars": 1456,
+    "bars_checked": 1456,
+    "base_failures": 0,
+    "bar_failures": 0,
+    "missing_nodes": 0,
+    "unresolved_support_coverage_count": 0,
+    "two_sided_float32_seam_classifications": 4
+  },
+  "profile_sha256": "9d0c7b69153c7c84fea8ac544b602bf15ef6806afa75068856a6adba0da809af",
+  "profile_art_revision": "v05_lighting_c_r10_actual_practical_completion",
+  "sky_resource": "res://assets/sky/kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+  "sky_sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+  "source_python_modules": [
+    "architecture_full.py",
+    "bake_vertex_ao.py",
+    "build_district.py",
+    "district_geometry.py",
+    "district_layout.py",
+    "drain_support.py",
+    "interior_domains.py",
+    "interior_scenes.py",
+    "landscape_v05.py",
+    "material_library.py",
+    "props_library.py",
+    "scanned_assets.py",
+    "terrain_interiors.py",
+    "tree_root_support.py",
+    "urban_fabric.py"
+  ],
+  "current_material_map_count": 73,
+  "prepared_library_asset_count": 12,
+  "review_files": [
+    {
+      "name": "root_review_zh.txt",
+      "sha256": "9e07d842403f87fbc5823dae6166a8d39d57539628d79bc830e93ca693ae1c4d"
+    },
+    {
+      "name": "interior_review_zh.txt",
+      "sha256": "9a05473149ebd2389f81223ba0bd825bf9c1984b2a69f34e07be324e1b8e5140"
+    },
+    {
+      "name": "lighting_review_zh.txt",
+      "sha256": "60398a2eda6c9418aa6eba2a22ceb08632f72ca9828ce0ad51c40d00f8afa8f8"
+    }
+  ],
+  "final_images": [
+    {
+      "view": "overview",
+      "title": "全街区 · 南向北",
+      "file": "godot_overview.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 3580242,
+      "sha256": "b9ed77118558976f11265bd78658943d788797a14103969c59655f74d17f2f75"
+    },
+    {
+      "view": "street_entry",
+      "title": "山城巷街口",
+      "file": "godot_street_entry.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2665296,
+      "sha256": "6a789f3d20a117aa5ccb4e445e412a9c6bfb8a9c2fe34df2f2d6e3b63e957666"
+    },
+    {
+      "view": "noodle_corner",
+      "title": "小面馆与下层街面",
+      "file": "godot_noodle_corner.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1949019,
+      "sha256": "b35fce373657bbce658753d7fec62749db7d1e1d3b5eeeb81ae3fc6eaa05ad68"
+    },
+    {
+      "view": "central_steps",
+      "title": "中央梯坎与临街住家",
+      "file": "godot_central_steps.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2949375,
+      "sha256": "3d196487db891e29eec199c9055185115cc3b938e86a99466579b6bffc257d8c"
+    },
+    {
+      "view": "west_lane",
+      "title": "西侧居民巷",
+      "file": "godot_west_lane.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2866800,
+      "sha256": "8bdef1e90412c216209cae1fde6cca717a186ab8c907da2742f1d65a4ec9c184"
+    },
+    {
+      "view": "community_court",
+      "title": "社区球场与住宅",
+      "file": "godot_community_court.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2746422,
+      "sha256": "6370c794e480ad61d966c62269f6e41b51a85710fdf5f0b118083f7014628108"
+    },
+    {
+      "view": "narrow_passage",
+      "title": "上坡楼间通道",
+      "file": "godot_narrow_passage.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2475991,
+      "sha256": "d51fd931a9086ba38141b502148161cfeb8d8c8e2b47b81d867a0e03e4a6b448"
+    },
+    {
+      "view": "upper_houses",
+      "title": "上层院落回望",
+      "file": "godot_upper_houses.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2855566,
+      "sha256": "2ab9e6c93c7faf7811b4cefeba8db75d12760f5c00d44d3a3f5d3492e92db072"
+    },
+    {
+      "view": "east_gallery",
+      "title": "东侧砖墙坡巷",
+      "file": "godot_east_gallery.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 3298856,
+      "sha256": "b699cbe4bdf5003d275ea45ac5b0daf3845dba9ab6c63d8b987e5cd9dc8882e5"
+    },
+    {
+      "view": "residential_road",
+      "title": "东侧居民道路",
+      "file": "godot_residential_road.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 3796857,
+      "sha256": "485140ec6635ac0b9a29857d41d0891da561a0cd5147d347284678b339b0de27"
+    },
+    {
+      "view": "upper_street",
+      "title": "上层长街与店面",
+      "file": "godot_upper_street.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 3493766,
+      "sha256": "45d7a73bfe56eead8ec835fb35abef41dd91e9929d67caefc0e93a5ffa196e69"
+    },
+    {
+      "view": "roofscape",
+      "title": "台地、院落与屋顶",
+      "file": "godot_roofscape.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 3337656,
+      "sha256": "4f1744fe98aad7b448cea27da06f0a12cfb1245b2504fc374296be65c2ae6fc1"
+    },
+    {
+      "view": "community_front",
+      "title": "社区服务站",
+      "file": "godot_community_front.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2262223,
+      "sha256": "06b4f3cab71af9202154e9b472bf5bd343d0d3114596e855337e0e20895e5e47"
+    },
+    {
+      "view": "residential_entry",
+      "title": "居民楼入口与墙脚",
+      "file": "godot_residential_entry.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2388092,
+      "sha256": "763ebcc8d00f9ea02fd56d96805c041b8d3ac4636337999f452107f55e35e7b5"
+    },
+    {
+      "view": "window_courtyard",
+      "title": "院落住家 · 家务间近景",
+      "file": "godot_window_courtyard.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2255306,
+      "sha256": "e4ef7900a8ba9660604f8862922ac763c0d41f50f8e5128da251c6c1c90ba343"
+    },
+    {
+      "view": "tea_interior",
+      "title": "巷口茶馆 · 门口看店内",
+      "file": "godot_tea_interior.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2093201,
+      "sha256": "e62c61e4bf0524f750915c3d15bb36c8d43b189b8d2613f1e4169e401c0b3bd6"
+    },
+    {
+      "view": "window_living",
+      "title": "坡道住家 · 深房与木椅近景",
+      "file": "godot_window_living.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2496549,
+      "sha256": "07c834d3a742e8408a8e5400d2299b22d596cf48b5c228eae55d5b411a377355"
+    },
+    {
+      "view": "window_north",
+      "title": "北侧住家 · 窗内生活近景",
+      "file": "godot_window_north.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2040416,
+      "sha256": "530b220693b196bc36bd3c2c728f27bbb63e249890e8b8aef71c88381e439e09"
+    },
+    {
+      "view": "noodle_interior",
+      "title": "小面馆 · 门口看店内",
+      "file": "godot_noodle_interior.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1873127,
+      "sha256": "e7b4797acee3471c5e40eee8ced7bb3852e9c9f4ee41062f05a7b917e84aad71"
+    },
+    {
+      "view": "window_reading",
+      "title": "坡巷住家 · 窗内生活近景",
+      "file": "godot_window_reading.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2103089,
+      "sha256": "aaac35e56abd81e6c91d884a27db00bf1097839525bed3205e6aee05434ea1f7"
+    },
+    {
+      "view": "window_dining",
+      "title": "临街住家 · 备餐间近景",
+      "file": "godot_window_dining.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1632177,
+      "sha256": "fdd51bb8a16dc5ca65fcc35152bdc725b8ac5235615abcb1e7c6eda4b670b7b8"
+    },
+    {
+      "view": "planting_detail",
+      "title": "树池、土壤与旧铺装近景",
+      "file": "godot_planting_detail.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 3772830,
+      "sha256": "e5744f62af637b1ef65ab97199f557fb75dc5a1b85badd5283ebeaa5bd52c294"
+    }
+  ],
+  "internal_sets": [
+    {
+      "label": "first_iteration",
+      "revision": 8.0,
+      "scene_sha256": "72969116226d195cad409139fbf905edbf8d3d499a62503db277e1a5f690f16a",
+      "count": 8,
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "label": "second_iteration",
+      "revision": 9.0,
+      "scene_sha256": "269bba00be7251395470d941c4522e0d798749a79df8f71ce290a229cd644441",
+      "count": 8,
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "label": "third_iteration",
+      "revision": 11.0,
+      "scene_sha256": "cf811ea891ed412fe469ab032bccbeca5cf999e3d4b4450763aeaef393db30dc",
+      "count": 10,
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "label": "third_iteration_wide",
+      "revision": 11.0,
+      "scene_sha256": "cf811ea891ed412fe469ab032bccbeca5cf999e3d4b4450763aeaef393db30dc",
+      "count": 12,
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "label": "fourth_iteration",
+      "revision": 12.0,
+      "scene_sha256": "ddaa842376fde5bf92efc77cd3c3b11e521dd6a1c57a9d4239ce490180864dc2",
+      "count": 5,
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "label": "fifth_iteration",
+      "revision": 13.0,
+      "scene_sha256": "e74ec6572cd4ce751c47c39bee3490a0085da6c503c219a497b33b0b7bfe0d20",
+      "count": 2,
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "label": "sunlight_range",
+      "revision": 13.0,
+      "scene_sha256": "e74ec6572cd4ce751c47c39bee3490a0085da6c503c219a497b33b0b7bfe0d20",
+      "count": 3,
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "label": "r13_before_contact_fix",
+      "revision": 13.0,
+      "scene_sha256": "e74ec6572cd4ce751c47c39bee3490a0085da6c503c219a497b33b0b7bfe0d20",
+      "count": 22,
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "label": "r14_before_drain_fix",
+      "revision": 14.0,
+      "scene_sha256": "9238d83015ff5206e6ef336b8da40c2a51be7e18f5c3822279be3d28d2ba016a",
+      "count": 22,
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "label": "lighting_a",
+      "revision": 7.0,
+      "scene_sha256": "b15b52321f397889d61a2f8015aec84a59b000b9015227b068c63caf05be272e",
+      "count": 2,
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "label": "lighting_b",
+      "revision": 7.0,
+      "scene_sha256": "b15b52321f397889d61a2f8015aec84a59b000b9015227b068c63caf05be272e",
+      "count": 2,
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "label": "lighting_c",
+      "revision": 7.0,
+      "scene_sha256": "b15b52321f397889d61a2f8015aec84a59b000b9015227b068c63caf05be272e",
+      "count": 2,
+      "size": [
+        960,
+        540
+      ]
+    }
+  ],
+  "source_provenance": {
+    "planar": "OpenStreetMap contributors / ODbL 1.0; source outlines are retained in source_data/geo_layout.json",
+    "terrain": "Authored hillside and distant ridges, not DEM survey",
+    "architecture": "21 individually composed core buildings (14 mapped planar outlines, 7 authored infill); facade details/heights are authored. Additional surrounding blocks are context design, not surveyed reconstructions.",
+    "reference_photos": "Wikimedia Commons Shancheng Lane photographs used for visual study; no photo pixels are bundled as game textures",
+    "textures": "Poly Haven CC0 scans + original procedural surface assets; exact files and credits in material_provenance.json",
+    "props_and_vegetation": "Original authored props plus Poly Haven CC0 scan models. Prepared instances, controlled LODs, and edited plant grouping; source credits in scanned_assets/source_credits.json.",
+    "lighting": "Godot runtime profile and CC0 photographic HDRI supplied in the engine project. Blender preview lighting is not the acceptance render."
+  },
+  "validation_scope": "File identities, native image dimensions/CRC, actual configured counts, reported physics results and portable inputs. Direct visual judgments remain in the supplied review files."
+}

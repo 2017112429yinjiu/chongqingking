@@ -1,0 +1,1215 @@
+{
+  "art_profile": {
+    "path": "res://assets/render_profile_r24.json",
+    "revision": "R24_east_lane_joint_17_internal",
+    "sha256": "440b38ab6966dd1f87755e37a291e5ee3a358f2df0c5fc232fd8c307b07eca3d"
+  },
+  "block_r23": {
+    "actors": 25,
+    "brick_shells": 7,
+    "hidden": 8,
+    "missing": [],
+    "routes": {
+      "east": 196.978805541992,
+      "promenade": 92.858268737793,
+      "walk": 85.5828399658203,
+      "west": 196.792129516602
+    },
+    "swapped": 88
+  },
+  "counter_r21": {
+    "character_sha256": "ac585e8a037fcf950fc51d46e0fa34c3c46f40ccf1241250273f2af4d4fc6cbc",
+    "portion_sha256": "a3347a027ace51dca3db48093942e821e8a925131045f10472a34bda3e5c5746",
+    "stock_sha256": "e2a11e6c8ac2b26c1b077d38f343f1cb810855c89f7539898c9d41ef8df661ec"
+  },
+  "court_resident": {
+    "controller": "4d7ccd29e2e047a3006bf3a9a8b75107f07b07736d1a1c46318533bb3b22155f",
+    "fit": "a9df93aee35791d437c611680ea324c0b4bcfaab1bedccf6b1a1faa617d5ec83",
+    "model": "dfb43c77aff8beae940bceb906ad667f8b6e5ef85b1613393995a0a7091a94f3"
+  },
+  "courtyard_life": {
+    "chessmen": 32,
+    "missing": [],
+    "seats": 3,
+    "visitor_length": 12.0611190795898
+  },
+  "courtyard_paving": [
+    "pavement",
+    "yard_concrete"
+  ],
+  "district_r21": {
+    "exterior_sectors": 84,
+    "exterior_trees": 623,
+    "layer_sha256": "fdb98c3bd8b65364f2d76c30a6263cbfca46c2cc991436662197d56faa76346c",
+    "layout_sha256": "ef08224edd2de91299f87bc4534130df8153d6b8c5ee42890763e5feeed2bbcb",
+    "near_plantings": 21,
+    "paving": [
+      "COL_Terrain_200m_yard_concrete",
+      "COL_Walk_OSM_734116594_0_step_concrete",
+      "Walk_details_OSM_734116594_0_painted_metal",
+      "COL_Walk_OSM_1328811307_0_step_concrete",
+      "Walk_details_OSM_1328811307_0_painted_metal",
+      "COL_Walk_Central_stair_lane_step_concrete",
+      "COL_Handrails_Central_stair_lane_painted_metal",
+      "COL_Walk_Narrow_upper_passage_step_concrete",
+      "COL_Walk_Upper_terrace_connection_step_concrete",
+      "COL_Walk_West_residential_link_step_concrete",
+      "COL_Handrails_West_residential_link_painted_metal",
+      "COL_Walk_East_photo_alley_step_concrete",
+      "Outer_ground_context_ground_dirt",
+      "R20_Court_paving_step_concrete"
+    ],
+    "roof_structures": 35,
+    "terraces": 2,
+    "weather_atlas_sha256": "30596b17abf2da8ebe35e38aa7e3b8a57c36fd4d6971684b7cb9edaea02f0007",
+    "weathered_shell_surfaces": 104,
+    "window_fittings": 52
+  },
+  "east_lane_joint": {
+    "added": 7,
+    "missing": [],
+    "replaced": 10
+  },
+  "flagged": 39,
+  "market_r24": {
+    "donors": 44,
+    "fixtures": 11,
+    "lights": 2,
+    "missing": [],
+    "stalls": 2
+  },
+  "market_steps": {
+    "COL_R23_NanquUpperApron": [
+      "R23_basalt_kerb",
+      "Market16_CutSandstone"
+    ],
+    "COL_R24_MarketStairs_R24_step_stone": [
+      "Market16_LimeBed",
+      "Market16_CutSandstone"
+    ]
+  },
+  "meter_lod": {
+    "sha256": "931e72fa0f34fe7bcdd65257f2b1c55316cde4ac61805fc81799cd777efc0ecc",
+    "sites": 112,
+    "source_triangles": 910876.0,
+    "switch_m": 18.0
+  },
+  "neighborhood": {
+    "missing": [],
+    "plants": 35,
+    "removed": [
+      "COL_Handrails_Central_stair_lane_painted_metal",
+      "COL_Handrails_West_residential_link_painted_metal",
+      "Court_entry_rails_frame",
+      "Utility_cables_dark",
+      "COL_R20_Returned_handrail_steel",
+      "COL_R20_Returned_handrail_rail_enamel",
+      "COL_R20_Returned_handrail_pin",
+      "COL_R20_Returned_handrail_iron",
+      "Resident_waste_13_bin_00",
+      "Resident_waste_13_bin_01",
+      "Resident_waste_13_bin_02",
+      "Resident_waste_13_bin_03",
+      "Resident_waste_13_bagA_00",
+      "Resident_waste_13_bagB_00",
+      "Resident_waste_13_crate_00"
+    ],
+    "shifted": 87,
+    "spans": 4,
+    "tree_distance_meshes": 288,
+    "trunks": 5
+  },
+  "river_r22": {
+    "axes": 2,
+    "fleet": 6,
+    "layer_sha256": "7e6e4ebf4f54513ae6492baba5c02e1a6571735ef7e7cd5e4a6dff7847232f87",
+    "layout_sha256": "ff239e78712fbf074fb9a50d180f6288fd4198ac926f30e8054cb51b91ef6a45",
+    "mapped_buildings": 14,
+    "source_plan_sha256": "bbae7145d99a6dba9f3d46c13ac8a89fcf2b617c923537b34a2aa9dea3f62932",
+    "terrain": {
+      "Outer_ground_context_ground_dirt": {
+        "replacement": "R22_Bank_Outer",
+        "triangles": 40728.0,
+        "vertices": 21360.0
+      },
+      "R19_Distant_relief_distant19": {
+        "replacement": "R22_Bank_Relief",
+        "triangles": 111295.0,
+        "vertices": 55912.0
+      }
+    }
+  },
+  "roofs_r22": {
+    "canvas_shader_sha256": "2c79d2d0b0fb203bf4e343ea7bfc505d17eb4912e4c965330339cfcb1771ab4a",
+    "decks": 13,
+    "layer_sha256": "1bd3e44caf3cddd9ce47095815698725b45fed697f122c636a4def0b67b85c44",
+    "layout_sha256": "226528a93e1282d3c6185db6c62c0cfcdb50c5383076a9705ce07ef6f0f81031",
+    "sockets": 6,
+    "stations": 12,
+    "surface_imports_sha256": "8e5e08e095a59fba57cb7bfd607b961f1c31eaff259c4f3c7674d04532a1341e"
+  },
+  "runtime_sha256": {
+    "res://assets/block_r23/block.glb": "f0796f06598586cfdbb6fab09f18dc28287a6951f3e2a092134ab7feb75fb686",
+    "res://assets/block_r23/block.json": "88aa467c76741b1a7d926328c6edf5b37be6e1b59014ef44b9e80beaa6c45227",
+    "res://assets/block_r23/routes.json": "37e98b27546e4fac4f599adb53ff9dfbd072b8bf02f1f98feaf4d6962e760832",
+    "res://assets/courtyard_r24/black_motion.glb": "7d812f625b77e3907b9d6b8575cf80944bcce68ca2f4216bff1b67fdc1d63f2c",
+    "res://assets/courtyard_r24/courtyard.glb": "d91421262708814d053599d1773fc2854a1ba19dde04e89dd36ac76d65a6cbff",
+    "res://assets/courtyard_r24/greens_motion.glb": "bd815f57e2b9d9848d884b32d783550c05df66dcde0d6107ac882d4ff462d08a",
+    "res://assets/courtyard_r24/kitchen/courtyard.glb": "fe1cf574d2396922b35d00070a6335da648fb00eaeed9c3524ad9edc02bc7f42",
+    "res://assets/courtyard_r24/kitchen/greens_motion.glb": "df31bb48fae0f8bc5da6a8f8ffd54c37b4c3a71a3b077e4e9caf0f93680ffc78",
+    "res://assets/courtyard_r24/kitchen/layout.json": "9e570e390a13828a3ff3b13c94cd56b9dd1b463c40daf9de5f639f22333a39ae",
+    "res://assets/courtyard_r24/layout.json": "3f6f0abdc96db4a6ba688c30d0b53e572ab43f4912a0a0517fa1ecd36d61ef28",
+    "res://assets/courtyard_r24/paving.glb": "bef500fc1b6623e2bd7c6a1ad7c4b264cd086b9e319186f78cec64c869901e6a",
+    "res://assets/courtyard_r24/red_motion.glb": "e70d87c3ecdc2ad3b992d9b9d2beb982e621e53773226e1c9697e59e4c24ff44",
+    "res://assets/courtyard_r24/return_corridors.json": "9937dca8a758402e8ad7384d7ca7c495646624d32fa6cf2ffb367165e7c63567",
+    "res://assets/courtyard_r24/wait_clips.res": "7893625baeda6242f0c568c38b407ab8864be35ec10a0b74f72e7daaf924c9a9",
+    "res://assets/courtyard_r24/west_plaster.png": "7c27aee56178b2bc71ef72437b6862a880432f8bd608b413bcbcbf53d2f0b07f",
+    "res://assets/fonts/cq_lane_ui.otf": "4f3d9d826af0232c736d27c7ec955bc41f17c4fbb8bb3589692e4efcf5366d17",
+    "res://assets/frontage_r24/frontage.glb": "225e217815de12639bb7dbb58245ffabea2eb0502d3e2b1964ef5ceef7fb1cf6",
+    "res://assets/frontage_r24/frontage.json": "dd94246c3351da31958a0caf1233da6a1cda6a3c5310de6e631104c7c3d60bd2",
+    "res://assets/frontage_r24/stall_clips.res": "a6a8c3d5e49d7211f7f3f65da6206e53aa6beb542464fbbfcfa15c6dda7b012d",
+    "res://assets/frontage_r24/terry_pile.png": "fd459f7260aba51014c21b480ffd2bdcc8b2b346866a5a44c816255c5de27b11",
+    "res://assets/frontage_r24/traffic_lanes.json": "062b0996444cf2453877117ce883afccdbff2c20e98039745780cb534f1fd9e9",
+    "res://assets/frontage_r24/tyre_contact.png": "ec2133beae7a3dec76ce298de9862c7ea116d05540ce9d84e36eadd9363e4627",
+    "res://assets/lane_connection_r24/junction.glb": "9f45b133847fa4c27b722bbd162f4900086dfb444bd97096c99824f2c147d15c",
+    "res://assets/lane_connection_r24/layout.json": "00a9fab21ea326f421728b9f7ae4303463161a09ff47f0dbbe3cb28ccb0cadf5",
+    "res://assets/lane_r20/rinse.wav": "8674dce3de89f536a8d519dd21223164a327c91e574f216fad88db91ab74f1bf",
+    "res://assets/lane_r20/rinse_fixture.json": "8a0f267946522fd59fe99b298e18e6a4e1e4b95d1a3728bb4a73e4636fa2ff1a",
+    "res://assets/lane_r20/tree_seats.json": "060f2507ab6997cdc5cddc2d3b5a9eefdbd4b199b88466318eb6a983fd73a0e6",
+    "res://assets/market_steps_r24/market.glb": "4ad5f7adb5cd8fc40acf8d97031684f31982e9c13bcfa1b82e126c5c5ef4f5ed",
+    "res://assets/neighborhood_r24/layout.json": "9bb11fb881f1e15f8d11f271c752343662ad25e1521a2d14889090b815ec2e9c",
+    "res://assets/neighborhood_r24/street.glb": "72e5de5ac664d3c3d2ab31282792d98e5138c60f1566c5e8c324d539e77494e7",
+    "res://assets/neighborhood_r24/tree_distances.glb": "a7aa853386928d878bbe15e262f904d1c68e7e7b3a50737aaaa850c8ff6a3525",
+    "res://assets/neighborhood_r24/tree_species.json": "f5183146354be74771c7b50c771694ef6e83d28ff95cb2c1c367007e6c97922c",
+    "res://assets/neighborhood_r24/trunk_sections.json": "a53c8de4fd3f2cc071ebb8c7f7f776934795f1ffe2ce5bc60b5fc121c5311d42",
+    "res://assets/neighborhood_r24/walk_lanes.json": "4502e660b6c71dbd3d0594d43027b295b1fe211e85f4c154b6c7123468a21dad",
+    "res://assets/river_r22/shore_masks.png": "8d02149256183b79a12328056618abc8b526f079c540b7a6fcb276cccd1d7cdd",
+    "res://assets/rooms_r24/interior_wall_faces.res": "c5139512ae2ee67e248ff0323abc5047c48434389508d96c783088beeded4bb3",
+    "res://assets/rooms_r24/layout.json": "ce535a2e3cb911b4554569d5aa2f61be0c5434098bab81b68b869bd443387c86",
+    "res://assets/rooms_r24/patina.glb": "c2a787f6b105fc13c30cb1902f6d06e566f4ce37f25e72f37b114e944ce2148d",
+    "res://assets/rooms_r24/patina.json": "81585100a9ba354d40e1e46a515d5bab76304402f8c9743e84638ea149df312f",
+    "res://assets/rooms_r24/rooms.glb": "b87a03a74ee4e5230d888a97a0dc5bed6690aed42c382f8a89f05864ba8f4fe0",
+    "res://assets/street_use_r24/layout.json": "2c75656562fc4a8c32c9ec970b965db26c0e80f82abdff433517b3873b1c1d7f",
+    "res://assets/street_use_r24/street_use.png": "b44593527a3b9f206f70b90c5304aff711eac0e50231e2e42bb911f0739b3e8b",
+    "res://assets/street_use_r24/support_heights.png": "7b7fab53b9acda150578ecfc860377c48db2d3f6ec8ff1d852fadd2e12140b01",
+    "res://assets/street_use_r24/workday.glb": "608094aa95d077dc3ea4601febcc77ce698e2317e6a2ecd64291c26043ac8a61",
+    "res://scripts/block_r23.gd": "a990f882013e81d7c8c232428c645c0a664608f3b46cc569d9fc834186fca712",
+    "res://scripts/counter_condiments.gd": "fa08ffe36271c3ae1db3ab206bbc9b05c74d84764b0c0d2fcd3d671824c4e803",
+    "res://scripts/courtyard_life_r24.gd": "06ce9e8f323adb5fe7e2917b9e647038588858632a2913545bb87017ea6d7254",
+    "res://scripts/district_r21.gd": "0db44aa84d164a723d53ef96f62904f4c5a76a69546d0fec96cbb106678a9f7a",
+    "res://scripts/explorer.gd": "fcb92171dcf67a8c30757603549324a92a35707abbb96dc101fa41d3a092b402",
+    "res://scripts/frontage_r24.gd": "ebd12cab88ce40a1680b5d41dea50a848c08773b0624672a85d00dd012ac7471",
+    "res://scripts/gameplay.gd": "4379b58c124fd90ec94850c7d004653ed5bff7881837622a3f6366c3f9a52b2b",
+    "res://scripts/lane_connection_r24.gd": "59ae39c8684c073ce00c7d38c2d4583781a6c8999c683a6f7d5b6d7a38b50c12",
+    "res://scripts/main.gd": "57c5dba1fbdcbeb8446604cad54bd07dd6d8758bc6e32e6af9e3914a12aaa082",
+    "res://scripts/market_steps_r24.gd": "eb79edf2130d038db245d38608a0deb99f45bb8c70793205d59a0e7876f51126",
+    "res://scripts/meter_detail_lod.gd": "2175ca3919c3728ef1db2fc7f8710ad1f39e15aa504306e25ae322e8448d45b3",
+    "res://scripts/neighborhood_r24.gd": "185d808b211090e882aa4218cdb7382172777f1b977c9b0e1b6215a1c5d7f26d",
+    "res://scripts/qa_lane_r20.gd": "18f87f9f26eddd78d05dc617465ff5c4aac399b25eafc1c7cd2aec4417f5b40a",
+    "res://scripts/rinse_tap.gd": "a14c99c56d463b5fb690153a3e53c735623ac2eb09efe408e686efb99bba5fe9",
+    "res://scripts/river_r22.gd": "584019e0ea8ae7f6013c85e233cc2db8f552006cf35a73b57b210edfb70060e6",
+    "res://scripts/roofs_r22.gd": "f0e8b58d18e99148e3128026f69a9e4d3c45dcf50b07b19cab678a64d23c06ad",
+    "res://scripts/scooter_controller.gd": "1307d6e24ce0279aa9671dd3f9646f4aaf00f900797ff5a935fd2cc2743c035a",
+    "res://scripts/shopkeeper.gd": "b34f9b070efae4b0c4a5c619104e782b277b2482d31e4eaf25f3e1359052b5a8",
+    "res://scripts/shopkeeper_attention.gd": "b36275222a35552763acdc27f60687edc2e96a7e52560889480d709d2aa8c656",
+    "res://scripts/street_detail_r19.gd": "8dc39303ddfca91279a8c940439b1322526c406b823b324a8c9b099e81a469a0",
+    "res://scripts/street_use_r24.gd": "96a246687c10ca0bde9a7258d3bd5d86eb8157a09847bc8be9e15a89719fb523",
+    "res://scripts/takeaway_bag.gd": "f53ed8a685fccfbdd767c458dbef25cf85df1f33a5b7b3d3e4b5c90059df52a0",
+    "res://scripts/upper_lane_r20.gd": "0c61b1b914ad1f8d1ba0fbfb27889d1426d6635340d0867f62feda76d4f8d56c",
+    "res://scripts/window_life_r24.gd": "043dd4283980e73af389618ff18ca933988751afe9fda8ce4e642d3e04c5a125",
+    "res://shaders/asphalt_use_r24.gdshader": "7bb8d04d4193084a813653526c5c7d25f7f92127b3ccfbb0f4cfd807ac659624",
+    "res://shaders/breakfast_canvas_r22.gdshader": "2c79d2d0b0fb203bf4e343ea7bfc505d17eb4912e4c965330339cfcb1771ab4a",
+    "res://shaders/canopy_r21.gdshader": "8a02e64842c2b61ae025da990f7c1d7037dd3f24c338de4159d1eb895d596bab",
+    "res://shaders/dressed_stone_r24.gdshader": "705de7c7f5601705e898dcef7441fa94dd478d5f29f130c5461cdbfc254dbb35",
+    "res://shaders/exterior_r21.gdshader": "3b6a8584822522c97c527ea72fd9b33d31441343de73b4b5d89f0640b7755512",
+    "res://shaders/foundation_r23.gdshader": "6f1f2230b80ccf01bd08b5f15ebfbed57eba2e32cfbd9329cf26fc78aa40528c",
+    "res://shaders/frontage_canvas_r24.gdshader": "05a4855a2ded86e0d9b972d8b3836657bedbb93268add08cdf16f64354d8feb5",
+    "res://shaders/frontage_surface_r24.gdshader": "d1f362d7e5f143590785d76ee0df8071248c1ddf78de50dc87f7535ec30118f9",
+    "res://shaders/hanging_cotton_r20.gdshader": "9d48788f6d3b3beffde16f0f5a94c8d99eac36fa8a9c00950c5116c97c208754",
+    "res://shaders/lane_pavers_r24.gdshader": "24e6323351bf0e4f3a76f1648ce21f7882862b887a9428684f179bc7b0cb2d1f",
+    "res://shaders/lane_steps_r24.gdshader": "c1b43c1471b731794a8c3da09b53f333696228825a67b4ca348355c5bc6eb3ef",
+    "res://shaders/market_sandstone_r24.gdshader": "c7a4463fb63c28708506c6ae5d6bac3afea24e810977d85f0bbfe8eadbe434e7",
+    "res://shaders/paving_r21.gdshader": "34f7c48e672b5f067d110a71330889a56ea941d0665a96793c6eb406a83cb817",
+    "res://shaders/pedestrian_outerwear_r24.gdshader": "054fd5eb984cfa2868b95f61436be04c7a99018b893266b95636ef40816d7acc",
+    "res://shaders/rinse_water.gdshader": "1a1c4d8f5d478384ae1cdec390d94903b83adf78096bc050116eee3354fee277",
+    "res://shaders/river_foliage_r22.gdshader": "625e26697fc1f7c0a7900774572b024157fdfb072e45b46207655130258c5391",
+    "res://shaders/river_r22.gdshader": "b44464750600087424a996e73d6cbf26891f2367df9f47ad6add66c0fea4cd79",
+    "res://shaders/riverbank_r22.gdshader": "71572bdd1e25f2d3cc3389eb72aad132cda52e7f5084cba4722ea467e6a47148",
+    "res://shaders/sidewalk_r23.gdshader": "96d10fdd833465653600ca1c72e6c03fe9059f3031eccaff791c308876e4b39c",
+    "res://shaders/sky_visibility_r20.gdshaderinc": "14a770eab2dc29951adb2d5c9a17b4121b9a5bbf0e74d31e48743b8828985b7d",
+    "res://shaders/stall_enamel_r24.gdshader": "047d7175d2cf71e4c1a3f18eb1860027102f27e897f8d0682d9de86296c02f5b",
+    "res://shaders/street_repairs_r24.gdshaderinc": "eb2b82186ead48bca380530590afd74fedba5bcbe7858162a7aec251aea480f2",
+    "res://shaders/street_surface_r19.gdshader": "3349e020ad7d093cd958426e76caf2d3cb8eed55f218170987dfe510df28e197",
+    "res://shaders/street_use_r24.gdshaderinc": "e28d5204d08915037d835271d8977d13d90b90cb9d8afe13fcf2898c9aadbe83",
+    "res://shaders/wall_patina_r24.gdshader": "aeda0e5c8c143f3725f037f8785430eafb5a21f4768aefd25a76ba64c2e3c1f6",
+    "res://shaders/washcloth_r24.gdshader": "40257182eb7b60ad875f080f81fec3efb5e2b5b481510b5ff06a4154915179bc",
+    "res://shaders/worn_rail_r21.gdshader": "14fe938ef6c6874fa67680e154f445eda0122976eb478dd5b3282417f5ada7c7"
+  },
+  "scope": "Legacy seven-bar estate fittings only. Outliers prioritise visual inspection; collision measurements alone do not establish an art defect.",
+  "sites": [
+    {
+      "bar_top": 11.8082761764526,
+      "bar_top_above_collision_max_m": -0.132323265075684,
+      "bar_top_above_collision_min_m": -0.132323265075684,
+      "floors": {
+        "COL_Walk_West_residential_link_step_concrete": 9
+      },
+      "nearest_original_lane": "West residential link",
+      "position": [
+        -92.1359977722168,
+        11.7967767715454,
+        45.0
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 13.0525932312012,
+      "bar_top_above_collision_max_m": -0.0775060653686523,
+      "bar_top_above_collision_min_m": -0.0775060653686523,
+      "floors": {
+        "COL_Walk_West_residential_link_step_concrete": 9
+      },
+      "nearest_original_lane": "West residential link",
+      "position": [
+        -80.7360000610352,
+        13.0410928726196,
+        38.3999996185303
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 27.4477653503418,
+      "bar_top_above_collision_max_m": 0.0376663208007813,
+      "bar_top_above_collision_min_m": -0.121734619140625,
+      "floors": {
+        "COL_Walk_West_residential_link_step_concrete": 9
+      },
+      "nearest_original_lane": "West residential link",
+      "position": [
+        -76.1359977722168,
+        27.4362659454346,
+        -61.0
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 29.3780422210693,
+      "bar_top_above_collision_max_m": -0.104257583618164,
+      "bar_top_above_collision_min_m": -0.104257583618164,
+      "floors": {
+        "COL_Walk_West_residential_link_step_concrete": 9
+      },
+      "nearest_original_lane": "West residential link",
+      "position": [
+        -75.1359977722168,
+        29.3665428161621,
+        -73.5
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 21.6124820709229,
+      "bar_top_above_collision_max_m": 0.224044799804688,
+      "bar_top_above_collision_min_m": 0.183048248291016,
+      "floors": {
+        "COL_Terrain_200m_pavement": 9
+      },
+      "nearest_original_lane": "West residential link",
+      "position": [
+        -74.7360000610352,
+        21.6009826660156,
+        -21.5999994277954
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 25.5588855743408,
+      "bar_top_above_collision_max_m": -0.0387134552001953,
+      "bar_top_above_collision_min_m": -0.0387134552001953,
+      "floors": {
+        "COL_Walk_West_residential_link_step_concrete": 9
+      },
+      "nearest_original_lane": "West residential link",
+      "position": [
+        -74.3360023498535,
+        25.5473861694336,
+        -48.3999996185303
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 19.769458770752,
+      "bar_top_above_collision_max_m": 0.0227584838867188,
+      "bar_top_above_collision_min_m": -0.143341064453125,
+      "floors": {
+        "COL_Walk_West_residential_link_step_concrete": 9
+      },
+      "nearest_original_lane": "West residential link",
+      "position": [
+        -74.1359977722168,
+        19.7579574584961,
+        -8.66666650772095
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 31.3376140594482,
+      "bar_top_above_collision_max_m": 0.228652954101563,
+      "bar_top_above_collision_min_m": 0.202922821044922,
+      "floors": {
+        "COL_Terrain_200m_pavement": 9
+      },
+      "nearest_original_lane": "West residential link",
+      "position": [
+        -74.1359977722168,
+        31.3261127471924,
+        -86.0
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 23.6341667175293,
+      "bar_top_above_collision_max_m": 0.221569061279297,
+      "bar_top_above_collision_min_m": 0.180906295776367,
+      "floors": {
+        "COL_Terrain_200m_pavement": 9
+      },
+      "nearest_original_lane": "West residential link",
+      "position": [
+        -73.5359992980957,
+        23.6226673126221,
+        -35.3999996185303
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 14.4491329193115,
+      "bar_top_above_collision_max_m": -0.0175666809082031,
+      "bar_top_above_collision_min_m": -0.0175666809082031,
+      "floors": {
+        "COL_Walk_West_residential_link_step_concrete": 9
+      },
+      "nearest_original_lane": "West residential link",
+      "position": [
+        -72.9693336486816,
+        14.43763256073,
+        29.6666669845581
+      ],
+      "requires_review": false,
+      "samples": 9
+    },
+    {
+      "bar_top": 18.031795501709,
+      "bar_top_above_collision_max_m": -0.0543041229248047,
+      "bar_top_above_collision_min_m": -0.0543041229248047,
+      "floors": {
+        "COL_Walk_West_residential_link_step_concrete": 9
+      },
+      "nearest_original_lane": "West residential link",
+      "position": [
+        -72.6359977722168,
+        18.0202960968018,
+        3.83333337306976
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 16.2529926300049,
+      "bar_top_above_collision_max_m": -0.0195064544677734,
+      "bar_top_above_collision_min_m": -0.0195064544677734,
+      "floors": {
+        "COL_Walk_West_residential_link_step_concrete": 9
+      },
+      "nearest_original_lane": "Courtyard approach",
+      "position": [
+        -72.4693336486816,
+        16.2414932250977,
+        16.6666669845581
+      ],
+      "requires_review": false,
+      "samples": 9
+    },
+    {
+      "bar_top": 16.3234825134277,
+      "bar_top_above_collision_max_m": 0.0713634490966797,
+      "bar_top_above_collision_min_m": 0.0325679779052734,
+      "floors": {
+        "COL_Walk_Courtyard_approach_pavement": 9
+      },
+      "nearest_original_lane": "Courtyard approach",
+      "position": [
+        -71.1040000915527,
+        16.3119831085205,
+        16.3333330154419
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 14.6363353729248,
+      "bar_top_above_collision_max_m": 0.071009635925293,
+      "bar_top_above_collision_min_m": 0.0326213836669922,
+      "floors": {
+        "COL_Walk_Courtyard_approach_pavement": 9
+      },
+      "nearest_original_lane": "Courtyard approach",
+      "position": [
+        -69.6040000915527,
+        14.6248350143433,
+        28.8333330154419
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 14.3025007247925,
+      "bar_top_above_collision_max_m": 0.0211801528930664,
+      "bar_top_above_collision_min_m": 0.0138149261474609,
+      "floors": {
+        "COL_Walk_Courtyard_approach_pavement": 9
+      },
+      "nearest_original_lane": "Courtyard approach",
+      "position": [
+        -59.1040000915527,
+        14.2910003662109,
+        33.0
+      ],
+      "requires_review": false,
+      "samples": 9
+    },
+    {
+      "bar_top": 15.1274280548096,
+      "bar_top_above_collision_max_m": 0.0469846725463867,
+      "bar_top_above_collision_min_m": 0.0098114013671875,
+      "floors": {
+        "COL_Walk_Courtyard_approach_pavement": 9
+      },
+      "nearest_original_lane": "Courtyard approach",
+      "position": [
+        -48.7706661224365,
+        15.115927696228,
+        28.5666666030884
+      ],
+      "requires_review": false,
+      "samples": 9
+    },
+    {
+      "bar_top": 16.4327239990234,
+      "bar_top_above_collision_max_m": 0.0208587646484375,
+      "bar_top_above_collision_min_m": 0.0133056640625,
+      "floors": {
+        "COL_Walk_Courtyard_approach_pavement": 9
+      },
+      "nearest_original_lane": "Courtyard approach",
+      "position": [
+        -43.7468566894531,
+        16.4212245941162,
+        19.6999998092651
+      ],
+      "requires_review": false,
+      "samples": 9
+    },
+    {
+      "bar_top": 24.6422920227051,
+      "bar_top_above_collision_max_m": 0.0374927520751953,
+      "bar_top_above_collision_min_m": 0.0374927520751953,
+      "floors": {
+        "COL_Walk_Central_stair_lane_step_concrete": 9
+      },
+      "nearest_original_lane": "Main hillside lane",
+      "position": [
+        -38.7840003967285,
+        24.6307926177979,
+        -38.0
+      ],
+      "requires_review": false,
+      "samples": 9
+    },
+    {
+      "bar_top": 26.052453994751,
+      "bar_top_above_collision_max_m": 0.680253982543945,
+      "bar_top_above_collision_min_m": -0.429645538330078,
+      "floors": {
+        "COL_B_1335306665_civic_concrete": 1,
+        "COL_Terrain_200m_pavement": 8
+      },
+      "nearest_original_lane": "Main hillside lane",
+      "position": [
+        -33.8339996337891,
+        26.0409526824951,
+        -46.5
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 16.7412338256836,
+      "bar_top_above_collision_max_m": 0.0196952819824219,
+      "bar_top_above_collision_min_m": 0.0116138458251953,
+      "floors": {
+        "COL_Walk_Courtyard_approach_pavement": 9
+      },
+      "nearest_original_lane": "Courtyard approach",
+      "position": [
+        -30.6754283905029,
+        16.7297344207764,
+        19.6999998092651
+      ],
+      "requires_review": false,
+      "samples": 9
+    },
+    {
+      "bar_top": 23.4230842590332,
+      "bar_top_above_collision_max_m": -0.0417156219482422,
+      "bar_top_above_collision_min_m": -0.0417156219482422,
+      "floors": {
+        "COL_Walk_Central_stair_lane_step_concrete": 9
+      },
+      "nearest_original_lane": "Main hillside lane",
+      "position": [
+        -29.3554286956787,
+        23.411584854126,
+        -27.7142858505249
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 27.8414726257324,
+      "bar_top_above_collision_max_m": 0.158124923706055,
+      "bar_top_above_collision_min_m": 0.103050231933594,
+      "floors": {
+        "COL_Terrain_200m_pavement": 9
+      },
+      "nearest_original_lane": "Main hillside lane",
+      "position": [
+        -27.4840002059937,
+        27.8299713134766,
+        -57.0
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 29.0327892303467,
+      "bar_top_above_collision_max_m": -0.123710632324219,
+      "bar_top_above_collision_min_m": -0.123710632324219,
+      "floors": {
+        "COL_Walk_Upper_terrace_connection_step_concrete": 9
+      },
+      "nearest_original_lane": "Old school approach",
+      "position": [
+        -24.1999998092651,
+        29.0212898254395,
+        -64.0
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 32.5724830627441,
+      "bar_top_above_collision_max_m": -0.0708274841308594,
+      "bar_top_above_collision_min_m": -0.0932655334472656,
+      "floors": {
+        "COL_Road_734116597_0_asphalt": 9
+      },
+      "nearest_original_lane": "Main hillside lane",
+      "position": [
+        -23.2839994430542,
+        32.5609855651855,
+        -86.75
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 29.597484588623,
+      "bar_top_above_collision_max_m": -0.0431156158447266,
+      "bar_top_above_collision_min_m": -0.204414367675781,
+      "floors": {
+        "COL_Walk_Upper_terrace_connection_step_concrete": 9
+      },
+      "nearest_original_lane": "Main hillside lane",
+      "position": [
+        -21.7839994430542,
+        29.5859851837158,
+        -67.25
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 22.2574024200439,
+      "bar_top_above_collision_max_m": 0.0950031280517578,
+      "bar_top_above_collision_min_m": -0.067596435546875,
+      "floors": {
+        "COL_Walk_Central_stair_lane_step_concrete": 9
+      },
+      "nearest_original_lane": "Main hillside lane",
+      "position": [
+        -19.9268569946289,
+        22.2459030151367,
+        -17.4285717010498
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 13.1194086074829,
+      "bar_top_above_collision_max_m": 0.00720882415771484,
+      "bar_top_above_collision_min_m": 0.00720882415771484,
+      "floors": {
+        "COL_Walk_Central_stair_lane_step_concrete": 9
+      },
+      "nearest_original_lane": "Main hillside lane",
+      "position": [
+        -18.7839994430542,
+        13.1079082489014,
+        47.6000003814697
+      ],
+      "requires_review": false,
+      "samples": 9
+    },
+    {
+      "bar_top": 14.9713478088379,
+      "bar_top_above_collision_max_m": -0.0909519195556641,
+      "bar_top_above_collision_min_m": -0.0909519195556641,
+      "floors": {
+        "COL_Walk_Central_stair_lane_step_concrete": 9
+      },
+      "nearest_original_lane": "Main hillside lane",
+      "position": [
+        -18.7839994430542,
+        14.9598474502563,
+        34.3999996185303
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 16.8401927947998,
+      "bar_top_above_collision_max_m": -0.0347061157226563,
+      "bar_top_above_collision_min_m": -0.0347061157226563,
+      "floors": {
+        "COL_Walk_Central_stair_lane_step_concrete": 9
+      },
+      "nearest_original_lane": "Main hillside lane",
+      "position": [
+        -17.9840002059937,
+        16.8286933898926,
+        21.1999998092651
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 17.06884765625,
+      "bar_top_above_collision_max_m": 0.0285472869873047,
+      "bar_top_above_collision_min_m": -0.137052536010742,
+      "floors": {
+        "COL_Walk_Central_stair_lane_step_concrete": 9
+      },
+      "nearest_original_lane": "Courtyard approach",
+      "position": [
+        -17.6040000915527,
+        17.0573463439941,
+        19.6999998092651
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 18.7340927124023,
+      "bar_top_above_collision_max_m": 0.214530944824219,
+      "bar_top_above_collision_min_m": -0.127706527709961,
+      "floors": {
+        "COL_Terrain_200m_pavement": 3,
+        "COL_Walk_Central_stair_lane_step_concrete": 6
+      },
+      "nearest_original_lane": "Main hillside lane",
+      "position": [
+        -17.1040000915527,
+        18.7225933074951,
+        8.00000023841858
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 21.8742446899414,
+      "bar_top_above_collision_max_m": 0.0696201324462891,
+      "bar_top_above_collision_min_m": 0.0375461578369141,
+      "floors": {
+        "COL_Walk_Central_stair_lane_step_concrete": 6,
+        "COL_Walk_Upper_courtyard_walk_pavement": 3
+      },
+      "nearest_original_lane": "Upper courtyard walk",
+      "position": [
+        -17.0080003738403,
+        21.8627452850342,
+        -14.0
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 18.7340927124023,
+      "bar_top_above_collision_max_m": 0.213779449462891,
+      "bar_top_above_collision_min_m": -0.127706527709961,
+      "floors": {
+        "COL_Terrain_200m_pavement": 3,
+        "COL_Walk_Central_stair_lane_step_concrete": 5,
+        "COL_Walk_Courtyard_approach_pavement": 1
+      },
+      "nearest_original_lane": "Main hillside lane",
+      "position": [
+        -16.7839994430542,
+        18.7225933074951,
+        8.00000023841858
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 20.6115589141846,
+      "bar_top_above_collision_max_m": -0.0681400299072266,
+      "bar_top_above_collision_min_m": -0.0681400299072266,
+      "floors": {
+        "COL_Walk_Central_stair_lane_step_concrete": 9
+      },
+      "nearest_original_lane": "Main hillside lane",
+      "position": [
+        -16.7839994430542,
+        20.6000595092773,
+        -5.20000004768372
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 31.2914161682129,
+      "bar_top_above_collision_max_m": 0.21711540222168,
+      "bar_top_above_collision_min_m": 0.199008941650391,
+      "floors": {
+        "COL_Terrain_200m_pavement": 9
+      },
+      "nearest_original_lane": "Main hillside lane",
+      "position": [
+        -15.7839999198914,
+        31.2799167633057,
+        -77.0
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 28.7377986907959,
+      "bar_top_above_collision_max_m": 0.0175399780273438,
+      "bar_top_above_collision_min_m": 0.00137901306152344,
+      "floors": {
+        "COL_Walk_Old_school_approach_pavement": 9
+      },
+      "nearest_original_lane": "Old school approach",
+      "position": [
+        -11.1999998092651,
+        28.7262992858887,
+        -59.0
+      ],
+      "requires_review": false,
+      "samples": 9
+    },
+    {
+      "bar_top": 12.1222400665283,
+      "bar_top_above_collision_max_m": 0.000439643859863281,
+      "bar_top_above_collision_min_m": -0.00965499877929688,
+      "floors": {
+        "COL_Walk_Central_stair_lane_step_concrete": 9
+      },
+      "nearest_original_lane": "Main hillside lane",
+      "position": [
+        -9.78399991989136,
+        12.1107397079468,
+        55.5
+      ],
+      "requires_review": false,
+      "samples": 9
+    },
+    {
+      "bar_top": 21.4789581298828,
+      "bar_top_above_collision_max_m": 0.0736331939697266,
+      "bar_top_above_collision_min_m": 0.0601291656494141,
+      "floors": {
+        "COL_Walk_Upper_courtyard_walk_pavement": 9
+      },
+      "nearest_original_lane": "Upper courtyard walk",
+      "position": [
+        -6.20799994468689,
+        21.4674587249756,
+        -8.59999990463257
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 29.257791519165,
+      "bar_top_above_collision_max_m": 0.0128421783447266,
+      "bar_top_above_collision_min_m": 0.0000362396240234375,
+      "floors": {
+        "COL_Walk_Old_school_approach_pavement": 9
+      },
+      "nearest_original_lane": "Old school approach",
+      "position": [
+        2.29999995231628,
+        29.2462921142578,
+        -59.0
+      ],
+      "requires_review": false,
+      "samples": 9
+    },
+    {
+      "bar_top": 11.5013732910156,
+      "bar_top_above_collision_max_m": 0.158448219299316,
+      "bar_top_above_collision_min_m": -0.17862606048584,
+      "floors": {
+        "COL_Walk_Central_stair_lane_step_concrete": 6,
+        "COL_Walk_OSM_734116601_0_pavement": 3
+      },
+      "nearest_original_lane": "Main hillside lane",
+      "position": [
+        3.71599996089935,
+        11.4898738861084,
+        60.75
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 21.3606834411621,
+      "bar_top_above_collision_max_m": 0.00834083557128906,
+      "bar_top_above_collision_min_m": -0.00327491760253906,
+      "floors": {
+        "COL_Walk_Upper_courtyard_walk_pavement": 9
+      },
+      "nearest_original_lane": "Upper courtyard walk",
+      "position": [
+        5.3253333568573,
+        21.3491840362549,
+        -5.0
+      ],
+      "requires_review": false,
+      "samples": 9
+    },
+    {
+      "bar_top": 29.7856864929199,
+      "bar_top_above_collision_max_m": 0.0140552520751953,
+      "bar_top_above_collision_min_m": 0.00196266174316406,
+      "floors": {
+        "COL_Walk_Old_school_approach_pavement": 9
+      },
+      "nearest_original_lane": "Old school approach",
+      "position": [
+        16.1333336830139,
+        29.7741851806641,
+        -59.0
+      ],
+      "requires_review": false,
+      "samples": 9
+    },
+    {
+      "bar_top": 10.8415393829346,
+      "bar_top_above_collision_max_m": 0.0428733825683594,
+      "bar_top_above_collision_min_m": 0.0322704315185547,
+      "floors": {
+        "COL_Walk_OSM_1328811309_0_pavement": 9
+      },
+      "nearest_original_lane": "Main hillside lane",
+      "position": [
+        17.2160005569458,
+        10.830039024353,
+        66.0
+      ],
+      "requires_review": false,
+      "samples": 9
+    },
+    {
+      "bar_top": 21.809757232666,
+      "bar_top_above_collision_max_m": 0.0099334716796875,
+      "bar_top_above_collision_min_m": -0.0010223388671875,
+      "floors": {
+        "COL_Walk_Upper_courtyard_walk_pavement": 9
+      },
+      "nearest_original_lane": "Upper courtyard walk",
+      "position": [
+        18.3253335952759,
+        21.7982578277588,
+        -5.0
+      ],
+      "requires_review": false,
+      "samples": 9
+    },
+    {
+      "bar_top": 30.0837516784668,
+      "bar_top_above_collision_max_m": 0.0297012329101563,
+      "bar_top_above_collision_min_m": 0.0251502990722656,
+      "floors": {
+        "COL_Walk_Old_school_approach_pavement": 9
+      },
+      "nearest_original_lane": "Old school approach",
+      "position": [
+        29.5999994277954,
+        30.0722503662109,
+        -57.7999992370605
+      ],
+      "requires_review": false,
+      "samples": 9
+    },
+    {
+      "bar_top": 25.087121963501,
+      "bar_top_above_collision_max_m": 0.0252304077148438,
+      "bar_top_above_collision_min_m": -0.0247745513916016,
+      "floors": {
+        "COL_Walk_Upper_courtyard_walk_pavement": 9
+      },
+      "nearest_original_lane": "Upper courtyard walk",
+      "position": [
+        31.3919992446899,
+        25.0756206512451,
+        -23.5999994277954
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 27.3634757995605,
+      "bar_top_above_collision_max_m": 0.0177726745605469,
+      "bar_top_above_collision_min_m": -0.0395641326904297,
+      "floors": {
+        "COL_Walk_Upper_courtyard_walk_pavement": 9
+      },
+      "nearest_original_lane": "Upper courtyard walk",
+      "position": [
+        34.992000579834,
+        27.3519763946533,
+        -38.0
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 21.7941417694092,
+      "bar_top_above_collision_max_m": 0.273046493530273,
+      "bar_top_above_collision_min_m": 0.226406097412109,
+      "floors": {
+        "COL_Terrain_200m_pavement": 9
+      },
+      "nearest_original_lane": "East photo alley",
+      "position": [
+        38.1333332061768,
+        21.7826404571533,
+        -1.0
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 29.5164833068848,
+      "bar_top_above_collision_max_m": 0.00577354431152344,
+      "bar_top_above_collision_min_m": -0.0460834503173828,
+      "floors": {
+        "COL_Walk_Upper_courtyard_walk_pavement": 9
+      },
+      "nearest_original_lane": "Upper courtyard walk",
+      "position": [
+        40.992000579834,
+        29.5049839019775,
+        -51.5
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 30.2174034118652,
+      "bar_top_above_collision_max_m": 0.0302257537841797,
+      "bar_top_above_collision_min_m": 0.0169715881347656,
+      "floors": {
+        "COL_Walk_Upper_courtyard_walk_pavement": 9
+      },
+      "nearest_original_lane": "Upper courtyard walk",
+      "position": [
+        42.7999992370605,
+        30.205904006958,
+        -56.0
+      ],
+      "requires_review": false,
+      "samples": 9
+    },
+    {
+      "bar_top": 20.0616436004639,
+      "bar_top_above_collision_max_m": 0.276578903198242,
+      "bar_top_above_collision_min_m": 0.22929573059082,
+      "floors": {
+        "COL_Terrain_200m_pavement": 9
+      },
+      "nearest_original_lane": "East photo alley",
+      "position": [
+        45.1333332061768,
+        20.0501441955566,
+        11.0
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 14.0210151672363,
+      "bar_top_above_collision_max_m": -0.12978458404541,
+      "bar_top_above_collision_min_m": -0.12978458404541,
+      "floors": {
+        "COL_Walk_East_photo_alley_step_concrete": 9
+      },
+      "nearest_original_lane": "East photo alley",
+      "position": [
+        48.7999992370605,
+        14.0095157623291,
+        49.0
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 18.2530403137207,
+      "bar_top_above_collision_max_m": 0.0802402496337891,
+      "bar_top_above_collision_min_m": -0.0876598358154297,
+      "floors": {
+        "COL_Walk_East_photo_alley_step_concrete": 9
+      },
+      "nearest_original_lane": "East photo alley",
+      "position": [
+        50.5499992370605,
+        18.2415409088135,
+        23.0
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 30.4337139129639,
+      "bar_top_above_collision_max_m": 0.0198993682861328,
+      "bar_top_above_collision_min_m": 0.0129489898681641,
+      "floors": {
+        "COL_Walk_Upper_courtyard_walk_pavement": 9
+      },
+      "nearest_original_lane": "Upper courtyard walk",
+      "position": [
+        51.992000579834,
+        30.4222145080566,
+        -56.0
+      ],
+      "requires_review": false,
+      "samples": 9
+    },
+    {
+      "bar_top": 12.0846452713013,
+      "bar_top_above_collision_max_m": -0.0135316848754883,
+      "bar_top_above_collision_min_m": -0.0548915863037109,
+      "floors": {
+        "COL_Walk_OSM_1328811309_0_pavement": 9
+      },
+      "nearest_original_lane": "East photo alley",
+      "position": [
+        52.7999992370605,
+        12.073145866394,
+        61.7000007629395
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 16.3635654449463,
+      "bar_top_above_collision_max_m": 0.230525970458984,
+      "bar_top_above_collision_min_m": -0.130334854125977,
+      "floors": {
+        "COL_Terrain_200m_pavement": 8,
+        "COL_Walk_East_photo_alley_step_concrete": 1
+      },
+      "nearest_original_lane": "East photo alley",
+      "position": [
+        52.7999992370605,
+        16.3520641326904,
+        35.0
+      ],
+      "requires_review": true,
+      "samples": 9
+    },
+    {
+      "bar_top": 30.6543846130371,
+      "bar_top_above_collision_max_m": -0.0524559020996094,
+      "bar_top_above_collision_min_m": -0.0851402282714844,
+      "floors": {
+        "COL_Road_734116595_0_asphalt": 9
+      },
+      "nearest_original_lane": "Upper courtyard walk",
+      "position": [
+        63.992000579834,
+        30.6428833007813,
+        -56.0
+      ],
+      "requires_review": true,
+      "samples": 9
+    }
+  ],
+  "street_layer": {
+    "asset": "res://assets/street_r19/street_life.glb",
+    "enabled": true,
+    "manifest_sha256": "b0ec626c4096ddc6df5e1444e21294346990e8faf21e62fb5bcecd77d2ae0e17",
+    "replaced": [
+      "Type_梯坎小面",
+      "Resident_waste_14_bin_00",
+      "Resident_waste_14_bin_01",
+      "Resident_waste_14_bin_02",
+      "Resident_waste_14_bin_03",
+      "Resident_waste_14_bagA_00",
+      "Resident_waste_14_bagB_00",
+      "Resident_waste_14_crate_00",
+      "Authored_distant_hill_ridges_hill_near",
+      "Authored_distant_hill_ridges_hill_far",
+      "B_A01_noodle_details_faded_red",
+      "B_A01_noodle_details_curtain_beige"
+    ],
+    "sha256": "1c40ae7ed04e8bf3f5f7956eaf630a098890e62a9c142f3e846c9ee15d530bad",
+    "source_revision": "R19_scene_05"
+  },
+  "street_use_r24": {
+    "asphalt": 15,
+    "dressed": 2,
+    "facades": 83,
+    "furniture_volumes": 2,
+    "paving": 56,
+    "resident_pots": 2,
+    "workday": true
+  },
+  "total": 57,
+  "upper_lane": {
+    "enabled": true,
+    "model_sha256": "16dabbe6c51b1ff130153d68092dc84daa509ba4538f10152f85d4e8ae53be37",
+    "sky_sha256": {
+      "res://assets/lane_r20/alley_sky.png": "c8b799570de19d6acd2e5c822aa095807d6dc3b107bd4886e66caef438cf7d3b",
+      "res://assets/lane_r20/shop_sky.png": "8d5b169cfd0bf9cc799dec67d02fde5ebbc2558a3a79dc5c91fd85fbc98dd188"
+    }
+  },
+  "window_rooms": {
+    "existing_room_meshes": 48,
+    "furnishings": 6,
+    "lights": 3,
+    "patina_batches": 2
+  }
+}

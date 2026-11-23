@@ -1,0 +1,75 @@
+{
+	"engine": "4.6.3-stable (official)",
+	"initial_fixture_placements": 1,
+	"passed": true,
+	"scene_sha256": "88b5be04c0c72ae2b54bb02f55f2186f7b7ec2937389a59697e7306dbd7e7c13",
+	"teleports_between_stages": 0,
+	"tests": [
+		{
+			"distance_m": 0.684526429511607,
+			"end": "(-23.76738, 11.09545, 60.23557)",
+			"goals": 1,
+			"max_frame_displacement_m": 0.0700252279639244,
+			"name": "approach_shop",
+			"pass": true,
+			"reached": 1,
+			"stall_contacts": []
+		},
+		{
+			"name": "accept_order",
+			"pass": true
+		},
+		{
+			"name": "take_food",
+			"pass": true
+		},
+		{
+			"distance_m": 2.34692765213549,
+			"end": "(-21.11912, 11.17256, 60.02603)",
+			"goals": 1,
+			"max_frame_displacement_m": 0.0700699090957642,
+			"name": "walk_to_scooter",
+			"pass": true,
+			"reached": 1,
+			"stall_contacts": []
+		},
+		{
+			"name": "enter_scooter",
+			"pass": true
+		},
+		{
+			"distance_m": 6.16936206817627,
+			"last_obstacle": {
+
+			},
+			"name": "ride_from_real_shop_forecourt",
+			"pass": true
+		},
+		{
+			"name": "park_at_trip_endpoint",
+			"pass": true
+		},
+		{
+			"name": "exit_at_trip_endpoint",
+			"pass": true
+		},
+		{
+			"distance_m": 76.7183535825461,
+			"end": "(-54.28738, 16.45386, 19.50173)",
+			"goals": 6,
+			"max_frame_displacement_m": 0.292816609144211,
+			"name": "continuous_last_mile_to_house",
+			"pass": true,
+			"reached": 6,
+			"stall_contacts": []
+		},
+		{
+			"name": "deliver_at_residential_door",
+			"pass": true
+		},
+		{
+			"name": "single_delivery_credit",
+			"pass": true
+		}
+	]
+}

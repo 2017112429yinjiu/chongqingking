@@ -1,0 +1,180 @@
+{
+  "revision": "R18 internal character build 20; hanging bib, strand brows, planted feet and task-aware attention",
+  "status": "Internal iteration only. User has not accepted the art; no package or release.",
+  "created": "2026-11-20T14:57:23.838459+08:00",
+  "character_sha256": "2c0f3b14354d7c38fcbbff150705b7cb65843a64ea886c847be059a3d1a21b9e",
+  "counter_sha256": "dbc89c838cb3dfc835790fc1336fa3f6e8784d41ec972c76e7359119c8e41f54",
+  "city_sha256": "88b5be04c0c72ae2b54bb02f55f2186f7b7ec2937389a59697e7306dbd7e7c13",
+  "tests": {
+    "shopkeeper_performance": {
+      "passed": true,
+      "count": 20,
+      "report_sha256": "cf8441e3a5ed474afb97374a9cb43997da5277ed8bfd518aef8b889fe209612b"
+    },
+    "gameplay_test": {
+      "passed": true,
+      "count": 24,
+      "report_sha256": "09b4f80938db20d47b66cd98eff0fdb71b784c18124dbfb671bb76a6409e7063"
+    },
+    "delivery_end_to_end": {
+      "passed": true,
+      "count": 11,
+      "report_sha256": "fd77a6b8fbd9f4e14690c26f80af1b3092eaff7d7ff0cb77454f97fc2622ae4b"
+    }
+  },
+  "captures": 9,
+  "performance": {
+    "character_import_sha256": "3c19ed22d73c29ae4915222bb58986c88ca78a8aa52a1e02903606f20b7f99f3",
+    "character_sha256": "2c0f3b14354d7c38fcbbff150705b7cb65843a64ea886c847be059a3d1a21b9e",
+    "engine": "4.6.3-stable (official)",
+    "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "note": "R18 one scooter, one skinned animated shopkeeper with eyelids and cloth hem, packing counter, 57 trunk/post colliders and residential doorbells. Desktop frame intervals; not GPU-only timings or crowd benchmark.",
+    "renderer": "forward_plus",
+    "scene_sha256": "88b5be04c0c72ae2b54bb02f55f2186f7b7ec2937389a59697e7306dbd7e7c13",
+    "views": [
+      {
+        "draw_calls": 5636.0,
+        "mean_ms": 11.6843708333333,
+        "p50_ms": 11.6,
+        "p95_ms": 12.576,
+        "primitives": 35973665.0,
+        "samples": 240,
+        "static_memory_bytes": 466152508.0,
+        "view": "street_entry"
+      },
+      {
+        "draw_calls": 2262.0,
+        "mean_ms": 6.79795,
+        "p50_ms": 6.731,
+        "p95_ms": 7.694,
+        "primitives": 14774103.0,
+        "samples": 240,
+        "static_memory_bytes": 466319336.0,
+        "view": "residential_entry"
+      },
+      {
+        "draw_calls": 4191.0,
+        "mean_ms": 9.06385,
+        "p50_ms": 9.098,
+        "p95_ms": 9.71,
+        "primitives": 23527969.0,
+        "samples": 240,
+        "static_memory_bytes": 466493040.0,
+        "view": "roofscape"
+      },
+      {
+        "draw_calls": 1616.0,
+        "mean_ms": 8.23171666666667,
+        "p50_ms": 8.202,
+        "p95_ms": 9.084,
+        "primitives": 20648515.0,
+        "samples": 240,
+        "static_memory_bytes": 466600764.0,
+        "view": "r18_workstation"
+      },
+      {
+        "draw_calls": 1219.0,
+        "mean_ms": 8.28853333333333,
+        "p50_ms": 8.294,
+        "p95_ms": 9.111,
+        "primitives": 20753489.0,
+        "samples": 240,
+        "static_memory_bytes": 466603616.0,
+        "view": "r18_face"
+      }
+    ],
+    "vsync": 1,
+    "window_size": "(1920.0, 1080.0)"
+  },
+  "movie": {
+    "capture_start_unix": 1795157515.056,
+    "character_import_sha256": "3c19ed22d73c29ae4915222bb58986c88ca78a8aa52a1e02903606f20b7f99f3",
+    "character_sha256": "2c0f3b14354d7c38fcbbff150705b7cb65843a64ea886c847be059a3d1a21b9e",
+    "counter_sha256": "dbc89c838cb3dfc835790fc1336fa3f6e8784d41ec972c76e7359119c8e41f54",
+    "scripted_order": true,
+    "scripts": {
+      "gameplay": "2deab81b37aba4755045ca47cb51a59db3651430d2f47db06679d26c8d417d93",
+      "qa_shopkeeper_motion": "7862c994f28e857808c50da976816cc2c01528949962c20bf27a3a6e93be80c3",
+      "shopkeeper": "703d4cc8e35c665a3240b068ad99f3f2f150ffb8efcba6a243159bff4363ecc5",
+      "shopkeeper_attention": "b36275222a35552763acdc27f60687edc2e96a7e52560889480d709d2aa8c656"
+    },
+    "view": "r18_workstation",
+    "source": "Godot Movie Maker native render",
+    "resolution": [
+      1280,
+      720
+    ],
+    "fps": 30,
+    "frames": 541,
+    "postprocessing": "No grading or cuts; lossy H264 video-only conversion; Standard display transform. Original engine WAV retained separately if generated.",
+    "source_avi": "r18_motion20.avi",
+    "source_avi_sha256": "4f5c3b7fa9a77d4d6e224d8026daf1f9cb378458a93929ab7566a43700f250b0",
+    "mp4": "r18_motion20.mp4"
+  },
+  "source_reopened": {
+    "bones": 58,
+    "actions": [
+      "greet",
+      "idle",
+      "serve"
+    ],
+    "character_packed_images": 11,
+    "counter_packed_images": 5
+  },
+  "cloth_check_scope": "Front bib |x|<.17 z .91..1.23 and front skirt |x|<.23 z .50...91, evaluated torso/pants triangles, arm-dominant triangles excluded; ray checks only, not complete cloth self-collision certification",
+  "hashes": {
+    "project\\chongqing_godot_v05\\scripts\\build_collisions.gd": "2628a4eb84628582acd93ed16307ea708aa9e94867e286287eefa636abe803a8",
+    "project\\chongqing_godot_v05\\scripts\\explorer.gd": "6756df784cc15a10f47ff3de9247b3acf5f0abdec6eddfba58876c78f654353b",
+    "project\\chongqing_godot_v05\\scripts\\gameplay.gd": "2deab81b37aba4755045ca47cb51a59db3651430d2f47db06679d26c8d417d93",
+    "project\\chongqing_godot_v05\\scripts\\interaction_manager.gd": "452749051bee06cbf93d29a754ef10cc8c69b739a96340e165fa5102fc7c9ab6",
+    "project\\chongqing_godot_v05\\scripts\\interaction_target.gd": "2858d7f2fbabd5bcd35304ae34aeab074882cd50d28902c677d0a30effed32e6",
+    "project\\chongqing_godot_v05\\scripts\\main.gd": "213c699f30c0646eca2c3a1b1d2a828db4acfbb5721a5b637b1dda247f4bab6c",
+    "project\\chongqing_godot_v05\\scripts\\prop_collisions.gd": "8c67174e4816e36782b41fea8ef22f9c89d6688f0928567c30059a388101a44e",
+    "project\\chongqing_godot_v05\\scripts\\qa_animation_import.gd": "2fe6f48cdef238668e5c48dbfa79874422b9f24191a1c154c03e1f307a46db0c",
+    "project\\chongqing_godot_v05\\scripts\\qa_character.gd": "77df825801c36a81b85971811c1f9c0735a9b560196ff7bd4da5004a4222bac6",
+    "project\\chongqing_godot_v05\\scripts\\qa_character_art.gd": "e34b710713b88e1cdd9a370d6c916543f34468923484c75b19856e2bfddb0dcc",
+    "project\\chongqing_godot_v05\\scripts\\qa_delivery.gd": "5ea0bea657026df2045efa4861f768c459da0cc2e11d1f750570db7707e3602a",
+    "project\\chongqing_godot_v05\\scripts\\qa_gameplay.gd": "512dd005682fc760fab5242aaa0dadc5f8e1a6dc4002ad3d6a38f326df0dfc56",
+    "project\\chongqing_godot_v05\\scripts\\qa_material_import.gd": "3a200af6958360acc9b16f75764699709441ca3dcb7f561908e2a0b8fc95288d",
+    "project\\chongqing_godot_v05\\scripts\\qa_performance.gd": "04f9e18d884b44f7939e20b160945e9366ec81294d772446cb0f83d4da5238e6",
+    "project\\chongqing_godot_v05\\scripts\\qa_shopkeeper_attention.gd": "381c1a0b7b777e3f73dca25c613d8e75f2eaccee95cd052995fff800e68c9ef5",
+    "project\\chongqing_godot_v05\\scripts\\qa_shopkeeper_motion.gd": "7862c994f28e857808c50da976816cc2c01528949962c20bf27a3a6e93be80c3",
+    "project\\chongqing_godot_v05\\scripts\\qa_shopkeeper_performance.gd": "11083cbf5a3b2465d7a2eba0275f844692be157094d03a6b82fbdc31cd68222d",
+    "project\\chongqing_godot_v05\\scripts\\scooter_controller.gd": "02757f83c9b2b562d793eece6434b488f4a76ba8571c8994cb516ad67c07f501",
+    "project\\chongqing_godot_v05\\scripts\\shopkeeper.gd": "703d4cc8e35c665a3240b068ad99f3f2f150ffb8efcba6a243159bff4363ecc5",
+    "project\\chongqing_godot_v05\\scripts\\shopkeeper_attention.gd": "b36275222a35552763acdc27f60687edc2e96a7e52560889480d709d2aa8c656",
+    "project\\chongqing_godot_v05\\scripts\\station_reflection.gd": "d5fd44d0f2333da9177c2df32a0b1dd5214c1401c6c90be19c5f41605028a4ef",
+    "project\\chongqing_godot_v05\\scripts\\takeaway_bag.gd": "3bc227c053f21434586286987692b7b1d95dd2d754afcc894c2ed9f9abb8bd17",
+    "project\\chongqing_godot_v05\\project.godot": "4e759e60614016854066198e34e8d7631fb682f915ba92af61cbca19cf3e2906",
+    "project\\chongqing_godot_v05\\assets\\render_profile_r18.json": "2f13d1f103390f6bde761cf07ddfcaf6163a596b571996a0157b6a07d0648833",
+    "project\\chongqing_godot_v05\\assets\\characters\\shopkeeper_r18.glb.import": "3c19ed22d73c29ae4915222bb58986c88ca78a8aa52a1e02903606f20b7f99f3",
+    "build_shopkeeper_r18.py": "17be2cc9ce056b8034e8154df0ad74e042213bb81401aef6b8db8c251a993d85",
+    "shopkeeper_tailoring.py": "e887824ebb80afcdfff7c150736367dc1641b86ef2bd684ac40c04bcbd0b36c1",
+    "shopkeeper_performance.py": "af10ace7524e427c244d6cc55ecad668bc7ed239adcca48d91b9189e06bc0eef",
+    "shopkeeper_skin.py": "5bcbd1035ed56f33c64952b232fe77d939ae4a02664f279d2d526d2423c52022",
+    "shopkeeper_face_rig.py": "ec4ed0f0feb130b6e06425a55d60e1f7f2c9622fe8240944bf07b476a1cfaad6",
+    "mocap_idle_reference.py": "f1e46ae3340f955bc484a038b70ccd2f9ea931cf1da18b112ef4520f0e1c72c3",
+    "shopkeeper_drape_bake.py": "e71abe24461efcd7a1433cb408cdbec2cdddf5cac07b4af7d8516cdeab09cee3",
+    "build_serving_counter.py": "19a20e386f684c55a76e5a31a45ec284952f5ab7e6cb64cf210edc9e78553ffc",
+    "counter_surface.py": "50413705f56810f73b9ff2565e513f6bf26ecc4812c98a44413b26d9638c144c",
+    "prototype_cloth_rest.py": "212deb2e5423e6f28bb1a1d9f56ddd57ac605ac9e1d0e36f49c520be32c4a759",
+    "characters\\shopkeeper_r18\\shopkeeper_authoring.blend": "d3bc3d846ca8b4eb72f8cf36c46cda608263531819137543fb849172bb3f2e4a",
+    "characters\\serving_counter_r18\\serving_counter.blend": "1f295410905d7322ef6f0077309b962f9141e2e5497325e126b731543e43752f",
+    "characters\\cloth_trial\\input_character.blend": "9416923d1846397eb28717db43e95be3bf3d9522d622c46e4a3ea36b0d95290d",
+    "characters\\cloth_trial\\drape_result.json": "1e08bcaeb1151458d77af4d148bc3c7d9d757a7109dc9cd117e0152320888438",
+    "shopkeeper_bib_drape.py": "3b13aa14ae61f7fec7525dbfaab54d075849cf939dc416f653a8a0720dc7ad63",
+    "prototype_bib_drape.py": "438029b525ef42e9a2bbcfeba7d7445003ab011c5cbdb23192de0af7371403eb",
+    "characters\\cloth_bib_trial\\input_character.blend": "787611fdea89171e1a65f45101796b1685c5b16e746982420f8d642f03ac7140",
+    "characters\\cloth_bib_trial\\drape_result.json": "86f8c5a094ac5abc7c5adbf8cea23938ff4d498a410e73ac2db3b4266cc08688"
+  },
+  "unresolved": [
+    "Art remains below cinematic acceptance: face/hair, garment drape, environment repetition and large empty streets.",
+    "Cloth uses offline lower-skirt and upper-bib gravity/collision rest transfers with skinned secondary bones, not live cloth physics.",
+    "Grip QA measures attachment anchors; close image review is still needed for fingers and handle shape.",
+    "No crowd schedules/navigation implementation, rider/wheel animation, save system or full road-network driving.",
+    "R15 final photo ZIP remains unavailable; three core archives and six defect screenshots preserved.",
+    "Inherited city export leaf/sampler warnings remain; city was not rebuilt in this character iteration.",
+    "Blender character export retains inherited sampler and greater-than-four bone influence warnings; runtime tests do not certify every skin vertex."
+  ],
+  "character_import_sha256": "3c19ed22d73c29ae4915222bb58986c88ca78a8aa52a1e02903606f20b7f99f3"
+}

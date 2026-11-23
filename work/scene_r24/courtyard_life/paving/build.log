@@ -1,0 +1,14 @@
+Blender 4.3.2 (hash 32f5fdce0a0a built 2024-12-17 03:35:23)
+Read blend: "C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\courtyard_life\city_and_courtyard.blend"
+Info: Read library: 'C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\courtyard_life\black.blend', 'C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\courtyard_life\black.blend', parent '<direct>'
+Info: Read library: 'C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\courtyard_life\greens.blend', 'C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\courtyard_life\greens.blend', parent '<direct>'
+Info: Read library: 'C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\courtyard_life\red.blend', 'C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\courtyard_life\red.blend', parent '<direct>'
+Traceback (most recent call last):
+  File "C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\courtyard_life\paving\author.py", line 55, in <module>
+    drop[name].append(bms[name].faces[idx])
+                      ~~~~~~~~~~~~~~~^^^^^
+IndexError: BMElemSeq[index]: outdated internal index table, run ensure_lookup_table() first
+
+Error: script failed, file: 'work/scene_r24/courtyard_life/paving/author.py', exiting.
+
+Blender quit

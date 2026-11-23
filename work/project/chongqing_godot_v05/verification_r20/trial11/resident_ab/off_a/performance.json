@@ -1,0 +1,103 @@
+{
+	"art_profile": {
+		"path": "res://verification_r20/resident_ab/disabled.json",
+		"revision": "R20_lane_11_internal",
+		"sha256": "5b9614b38e0739b83379995a6c5ae3f242e189d154233e9f8fb182942d1c4df8"
+	},
+	"character_import_sha256": "3c19ed22d73c29ae4915222bb58986c88ca78a8aa52a1e02903606f20b7f99f3",
+	"character_sha256": "2c0f3b14354d7c38fcbbff150705b7cb65843a64ea886c847be059a3d1a21b9e",
+	"engine": "4.6.3-stable (official)",
+	"gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+	"meter_lod": {
+		"sha256": "931e72fa0f34fe7bcdd65257f2b1c55316cde4ac61805fc81799cd777efc0ecc",
+		"sites": 112,
+		"source_triangles": 910876.0,
+		"switch_m": 18.0
+	},
+	"note": "R18 one scooter and animated shopkeeper; sixth view also has the visible skinned rider in supported stationary pose with idle/blink processing. Desktop frame intervals, not GPU-only, high-speed driving or crowd benchmark.",
+	"renderer": "forward_plus",
+	"rider_sha256": "4d0ace49adf7df87e4d31ea84f55a5779d2cea35a02d2f3ec0fa801dfae71d5a",
+	"runtime_sha256": {
+		"res://assets/fonts/cq_lane_ui.otf": "4f3d9d826af0232c736d27c7ec955bc41f17c4fbb8bb3589692e4efcf5366d17",
+		"res://assets/lane_r20/rinse.wav": "8674dce3de89f536a8d519dd21223164a327c91e574f216fad88db91ab74f1bf",
+		"res://assets/lane_r20/rinse_fixture.json": "8a0f267946522fd59fe99b298e18e6a4e1e4b95d1a3728bb4a73e4636fa2ff1a",
+		"res://assets/lane_r20/tree_seats.json": "060f2507ab6997cdc5cddc2d3b5a9eefdbd4b199b88466318eb6a983fd73a0e6",
+		"res://scripts/explorer.gd": "1afd5f1161003cc17ec39a8aaa9cbda9161ab559bef41bce829686b84208803c",
+		"res://scripts/gameplay.gd": "04bb8b1dbe5ebe2499f1d21c8f26f62838fed16f072d1f97fcc451afdd5ff51c",
+		"res://scripts/main.gd": "a4784d9810e4208eba0b914277d462e2ea25bc12c93d7c6c51fccc024c41e6b5",
+		"res://scripts/meter_detail_lod.gd": "2175ca3919c3728ef1db2fc7f8710ad1f39e15aa504306e25ae322e8448d45b3",
+		"res://scripts/qa_lane_r20.gd": "18f87f9f26eddd78d05dc617465ff5c4aac399b25eafc1c7cd2aec4417f5b40a",
+		"res://scripts/rinse_tap.gd": "a14c99c56d463b5fb690153a3e53c735623ac2eb09efe408e686efb99bba5fe9",
+		"res://scripts/street_detail_r19.gd": "e5b00907e9c30379f968ccaa4f2c760ec79ab6b63e54e2fe74180ed0101505ad",
+		"res://scripts/upper_lane_r20.gd": "0c61b1b914ad1f8d1ba0fbfb27889d1426d6635340d0867f62feda76d4f8d56c",
+		"res://shaders/hanging_cotton_r20.gdshader": "9d48788f6d3b3beffde16f0f5a94c8d99eac36fa8a9c00950c5116c97c208754",
+		"res://shaders/rinse_water.gdshader": "1a1c4d8f5d478384ae1cdec390d94903b83adf78096bc050116eee3354fee277",
+		"res://shaders/sky_visibility_r20.gdshaderinc": "14a770eab2dc29951adb2d5c9a17b4121b9a5bbf0e74d31e48743b8828985b7d",
+		"res://shaders/street_surface_r19.gdshader": "2f892b7c1e4d90a42f1429a50a1e6af7762035d236308ce47d9e257a9badb512"
+	},
+	"scene_sha256": "88b5be04c0c72ae2b54bb02f55f2186f7b7ec2937389a59697e7306dbd7e7c13",
+	"street_layer": {
+		"asset": "res://assets/street_r19/street_life.glb",
+		"enabled": true,
+		"manifest_sha256": "b0ec626c4096ddc6df5e1444e21294346990e8faf21e62fb5bcecd77d2ae0e17",
+		"replaced": [
+			"Type_梯坎小面",
+			"Resident_waste_14_bin_00",
+			"Resident_waste_14_bin_01",
+			"Resident_waste_14_bin_02",
+			"Resident_waste_14_bin_03",
+			"Resident_waste_14_bagA_00",
+			"Resident_waste_14_bagB_00",
+			"Resident_waste_14_crate_00",
+			"Authored_distant_hill_ridges_hill_near",
+			"Authored_distant_hill_ridges_hill_far",
+			"B_A01_noodle_details_faded_red",
+			"B_A01_noodle_details_curtain_beige"
+		],
+		"sha256": "1c40ae7ed04e8bf3f5f7956eaf630a098890e62a9c142f3e846c9ee15d530bad",
+		"source_revision": "R19_scene_05"
+	},
+	"upper_lane": {
+		"enabled": true,
+		"model_sha256": "16dabbe6c51b1ff130153d68092dc84daa509ba4538f10152f85d4e8ae53be37",
+		"sky_sha256": {
+			"res://assets/lane_r20/alley_sky.png": "c8b799570de19d6acd2e5c822aa095807d6dc3b107bd4886e66caef438cf7d3b",
+			"res://assets/lane_r20/shop_sky.png": "8d5b169cfd0bf9cc799dec67d02fde5ebbc2558a3a79dc5c91fd85fbc98dd188"
+		}
+	},
+	"vehicle_sha256": "6536538dde0cc547e4a4461d1cef58ed7cd3f17620b4ac9eaa2e428bad6cea19",
+	"views": [
+		{
+			"draw_calls": 1520.0,
+			"mean_ms": 11.8419708333333,
+			"p50_ms": 11.862,
+			"p95_ms": 13.537,
+			"primitives": 9145814.0,
+			"samples": 240,
+			"static_memory_bytes": 491662256.0,
+			"view": "r20_tree_court"
+		},
+		{
+			"draw_calls": 5271.0,
+			"mean_ms": 20.3562916666667,
+			"p50_ms": 20.355,
+			"p95_ms": 22.555,
+			"primitives": 34828644.0,
+			"samples": 240,
+			"static_memory_bytes": 498261019.0,
+			"view": "r20_seated_neighbor"
+		},
+		{
+			"draw_calls": 8218.0,
+			"mean_ms": 20.1275791666667,
+			"p50_ms": 20.215,
+			"p95_ms": 21.249,
+			"primitives": 46320914.0,
+			"samples": 240,
+			"static_memory_bytes": 504696362.0,
+			"view": "r18_rider_active"
+		}
+	],
+	"vsync": 1,
+	"window_size": "(1920.0, 1080.0)"
+}

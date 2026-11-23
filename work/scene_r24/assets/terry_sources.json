@@ -1,0 +1,42 @@
+{
+  "asset": "Terry Cloth",
+  "source": "https://polyhaven.com/a/terry_cloth",
+  "authors": {
+    "colormass": "Photography",
+    "Rico Cilliers": "Processing"
+  },
+  "license": "CC0-1.0",
+  "license_url": "https://polyhaven.com/license",
+  "attribution": "Commercial use permitted. Attribution optional; credited in project.",
+  "scan_extent_mm": [
+    367.0535953781794,
+    363.20000886917114
+  ],
+  "maps": {
+    "Diffuse": {
+      "file": "terry_cloth_diff_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/terry_cloth/terry_cloth_diff_1k.jpg",
+      "publisher_md5": "79084e50ec009738e0bf9c64365a4dfd",
+      "sha256": "8605d028a0109de5f2db5992795581f441b56266f27f7969dca32d30866eb9db"
+    },
+    "AO": {
+      "file": "terry_cloth_ao_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/terry_cloth/terry_cloth_ao_1k.jpg",
+      "publisher_md5": "6015aec6b05adab4cdc02e0d816712d0",
+      "sha256": "c1a8d92279199837b7f8b6aa9dfef3d7e62220aa67c77c672b4e9bb1bc4df3fe"
+    },
+    "nor_gl": {
+      "file": "terry_cloth_nor_gl_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/terry_cloth/terry_cloth_nor_gl_1k.jpg",
+      "publisher_md5": "ee48655761129f8a2f96ce83de922116",
+      "sha256": "06ba21255a91259a95115b63cd894fd073327bde05948e51786f37cf46795955"
+    }
+  },
+  "derived": {
+    "file": "terry_pile.png",
+    "sha256": "fd459f7260aba51014c21b480ffd2bdcc8b2b346866a5a44c816255c5de27b11",
+    "rg": "Tangent-space OpenGL normal XY, linear data.",
+    "b": "Luminance times softened occlusion, normalized using the 2nd and 98th percentiles.",
+    "game_modifications": "Local faded dyes, woven bands, pinned edge and moving hem."
+  }
+}

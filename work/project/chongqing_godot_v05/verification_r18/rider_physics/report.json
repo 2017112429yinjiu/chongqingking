@@ -1,0 +1,158 @@
+{
+	"captures": [
+		{
+			"image": "not captured in headless physics run",
+			"name": "mounted_stop"
+		},
+		{
+			"image": "not captured in headless physics run",
+			"name": "riding_side"
+		},
+		{
+			"image": "not captured in headless physics run",
+			"name": "riding_turn"
+		},
+		{
+			"image": "not captured in headless physics run",
+			"name": "parked_support"
+		},
+		{
+			"image": "not captured in headless physics run",
+			"name": "exited_parked"
+		}
+	],
+	"controller_sha256": "4c3857399f5807d7228955211294e257767e2e0d1c405d3646c74c4e84349870",
+	"engine": "4.6.3-stable (official)",
+	"passed": true,
+	"rider_import_sha256": "90f72a70080add563b7c188209866d535787634cf708ed9f1e62ae6d3f2bd242",
+	"rider_sha256": "032591e2dd8cef6ccc77b8dd4194638fa63d05b8ac7de15641145bc4245dfffd",
+	"scope": "One initial road fixture, actual physics thereafter; captures freeze vehicle physics briefly. No mount/dismount body animation, crowd or full-body continuous collision acceptance.",
+	"tests": [
+		{
+			"name": "unoccupied_scooter_hides_rider",
+			"pass": true
+		},
+		{
+			"name": "enter_shows_rider",
+			"pass": true
+		},
+		{
+			"name": "stationary_left_foot_support",
+			"pass": true
+		},
+		{
+			"distance": 5.62523412704468,
+			"name": "wheels_roll_during_actual_drive",
+			"pass": true
+		},
+		{
+			"name": "feet_on_deck_at_speed",
+			"pass": true
+		},
+		{
+			"name": "straight_grip_contacts",
+			"pass": true,
+			"wrist_target_errors_m": [
+				0.000000476837158203125,
+				0.0
+			]
+		},
+		{
+			"name": "front_wheel_and_handlebar_steer",
+			"pass": true
+		},
+		{
+			"name": "turn_grip_contacts",
+			"pass": true,
+			"wrist_target_errors_m": [
+				0.0000093440621640184,
+				0.0000157283993758028
+			]
+		},
+		{
+			"name": "braked_rider_returns_support",
+			"pass": true
+		},
+		{
+			"name": "stopped_wheels_do_not_spin",
+			"pass": true
+		},
+		{
+			"name": "reverse_rider_keeps_deck_pose",
+			"pass": true
+		},
+		{
+			"name": "reverse_grip_contacts",
+			"pass": true,
+			"wrist_target_errors_m": [
+				0.000003814697265625,
+				0.000003814697265625
+			]
+		},
+		{
+			"name": "park_with_rider",
+			"pass": true
+		},
+		{
+			"name": "exit_hides_rider",
+			"pass": true
+		},
+		{
+			"displacement": 0.0,
+			"name": "parked_vehicle_stays_after_exit",
+			"pass": true,
+			"trace": [
+				{
+					"actor": "(8.721327, 32.32339, -77.29019)",
+					"collisions": [
+						{
+							"collider": "/root/ChongqingDistrict/City/COL_Road_734116597_0_asphalt/CQ_StaticCollision",
+							"normal": "(-0.03239, 0.999475, -0.000247)"
+						}
+					],
+					"position": "(8.332401, 32.30616, -78.37243)"
+				},
+				{
+					"actor": "(8.721327, 32.32339, -77.29019)",
+					"collisions": [
+						{
+							"collider": "/root/ChongqingDistrict/City/COL_Road_734116597_0_asphalt/CQ_StaticCollision",
+							"normal": "(-0.03239, 0.999475, -0.000247)"
+						}
+					],
+					"position": "(8.332401, 32.30616, -78.37243)"
+				},
+				{
+					"actor": "(8.721327, 32.32339, -77.29019)",
+					"collisions": [
+						{
+							"collider": "/root/ChongqingDistrict/City/COL_Road_734116597_0_asphalt/CQ_StaticCollision",
+							"normal": "(-0.03239, 0.999475, -0.000247)"
+						}
+					],
+					"position": "(8.332401, 32.30616, -78.37243)"
+				},
+				{
+					"actor": "(8.721327, 32.32339, -77.29019)",
+					"collisions": [
+						{
+							"collider": "/root/ChongqingDistrict/City/COL_Road_734116597_0_asphalt/CQ_StaticCollision",
+							"normal": "(-0.03239, 0.999475, -0.000247)"
+						}
+					],
+					"position": "(8.332401, 32.30616, -78.37243)"
+				}
+			]
+		},
+		{
+			"name": "exit_restores_actor_collision",
+			"pass": true
+		},
+		{
+			"name": "parked_stand_extended",
+			"pass": true
+		}
+	],
+	"vehicle_sha256": "6536538dde0cc547e4a4461d1cef58ed7cd3f17620b4ac9eaa2e428bad6cea19",
+	"visual_sha256": "07ed1479e8b48a01436f291ac22c142351ae134bedfbd9ace7f1e1abdceabf15"
+}

@@ -1,0 +1,548 @@
+{
+  "art_revision": "R19_scene_04_overcast_balanced",
+  "lighting": {
+    "hdri_path": "res://assets/sky/kloofendal_overcast_puresky_2k.hdr",
+    "hdri_energy": 0.95,
+    "hdri_rotation_deg": [
+      0,
+      -86.557,
+      0
+    ],
+    "background_energy": 0.8,
+    "ambient_energy": 0.56,
+    "sky_contribution": 0.9,
+    "ambient_color": [
+      0.67,
+      0.75,
+      0.84
+    ],
+    "sun_energy": 0.38,
+    "sun_color": [
+      1.0,
+      0.98,
+      0.94
+    ],
+    "sun_rotation_deg": [
+      -23.115,
+      -116,
+      0
+    ],
+    "sun_angular_distance": 3.5,
+    "sun_specular": 0.75,
+    "shadow_bias": 0.06,
+    "shadow_normal_bias": 0.65,
+    "shadow_max_distance": 180,
+    "high_camera_shadow_range_enabled": true,
+    "high_camera_shadow_height_m": 80.0,
+    "high_camera_shadow_max_distance": 450.0,
+    "exposure": 1.0,
+    "contrast": 1.0,
+    "saturation": 1.0,
+    "brightness": 1.0,
+    "ssao": true,
+    "ssao_radius": 1.2,
+    "ssao_intensity": 1.15,
+    "ssao_power": 1.25,
+    "ssao_detail": 0.65,
+    "ssao_light_affect": 0.28,
+    "ssao_half_size": false,
+    "ssil": true,
+    "ssil_radius": 2.4,
+    "ssil_intensity": 0.16,
+    "ssil_sharpness": 0.96,
+    "ssil_normal_rejection": 1.0,
+    "ssr": false,
+    "glow": false,
+    "glow_intensity": 0.1,
+    "glow_bloom": 0.0,
+    "fog_density": 0.0008,
+    "fog_color": [
+      0.68,
+      0.72,
+      0.72
+    ],
+    "fog_light_energy": 0.8,
+    "fog_aerial_perspective": 0.6,
+    "fog_sky_affect": 0.08,
+    "sdfgi_enabled": false,
+    "procedural_clouds": false,
+    "tonemap_white": 6.0,
+    "interior_light_limit": 10,
+    "interior_light_energy_scale": 1.0,
+    "packing_task_light_energy": 0.12,
+    "shadow_split_1": 0.035,
+    "shadow_split_2": 0.16,
+    "shadow_split_3": 0.45
+  },
+  "lighting_profiles": {
+    "gl_compatibility": {
+      "ssil": false,
+      "ssao": false,
+      "sun_energy": 0.82,
+      "ambient_energy": 0.52,
+      "exposure": 1.0,
+      "tonemap_white": 1.0
+    }
+  },
+  "materials": {
+    "thin_window_glass": true,
+    "glass_opacity": 0.17,
+    "glass_roughness": 0.18,
+    "ph_branch_shader": true,
+    "ph_branch_uv_baked": true,
+    "ph_tree_normals": false,
+    "ph_tree_lod_bias": 1.0,
+    "ph_leaf_safe_material": false,
+    "ph_leaf_unshaded": false,
+    "glass_grime_strength": 0.12
+  },
+  "reflections": {
+    "enabled": false,
+    "probes": [
+      {
+        "name": "DistrictCourtyardReflection",
+        "position": [
+          -17,
+          24,
+          18
+        ],
+        "size": [
+          150,
+          82,
+          165
+        ],
+        "origin_offset": [
+          0,
+          3,
+          0
+        ],
+        "intensity": 0.75,
+        "max_distance": 115
+      }
+    ]
+  },
+  "notes": [
+    "R19 fixed-camera scene lighting comparison. Internal trial, not film-quality acceptance."
+  ],
+  "label_zh": "R19 / daylight",
+  "diagnostic_views": {
+    "r16_scooter": {
+      "title": "电瓶车贴地",
+      "position": [
+        -17.3,
+        13.4,
+        56.5
+      ],
+      "target": [
+        -20.5,
+        12.5,
+        59
+      ],
+      "fov": 48
+    },
+    "r16_clothesline": {
+      "title": "西侧晾衣支架",
+      "position": [
+        -74,
+        20.1,
+        9
+      ],
+      "target": [
+        -70.3,
+        19.2,
+        5
+      ],
+      "fov": 62
+    },
+    "r16_roof": {
+      "title": "屋檐封口",
+      "position": [
+        -47,
+        30,
+        20
+      ],
+      "target": [
+        -54,
+        28,
+        20
+      ],
+      "fov": 58
+    },
+    "r16_shop": {
+      "title": "店主与取餐入口",
+      "position": [
+        -22,
+        13.5,
+        57
+      ],
+      "target": [
+        -25.4,
+        13.4,
+        61
+      ],
+      "fov": 60
+    },
+    "r16_meter": {
+      "title": "电表箱近景",
+      "position": [
+        -27.2,
+        12.3,
+        59.8
+      ],
+      "target": [
+        -27.83,
+        12.01,
+        61.77
+      ],
+      "fov": 45
+    },
+    "r17_worker_entry": {
+      "title": "山城里入口修正",
+      "position": [
+        -65.5,
+        25.1,
+        -27.5
+      ],
+      "target": [
+        -72,
+        24,
+        -28.9
+      ],
+      "fov": 57
+    },
+    "r17_worker_door": {
+      "title": "住宅门厅内部",
+      "position": [
+        -70.8,
+        24.4,
+        -28.9
+      ],
+      "target": [
+        -74.1,
+        24,
+        -28.94
+      ],
+      "fov": 70
+    },
+    "r17_A04_entry": {
+      "title": "住宅平层门厅",
+      "position": [
+        -48.6,
+        18.2,
+        18.2
+      ],
+      "target": [
+        -53.8,
+        17.6,
+        19.5
+      ],
+      "fov": 57
+    },
+    "r17_west_route": {
+      "title": "西侧绕楼路线",
+      "position": [
+        -60,
+        38,
+        -31
+      ],
+      "target": [
+        -74,
+        25,
+        -31
+      ],
+      "fov": 65
+    },
+    "r17_east_route": {
+      "title": "东巷连续通道",
+      "position": [
+        61,
+        29,
+        11
+      ],
+      "target": [
+        47,
+        21,
+        8
+      ],
+      "fov": 62
+    },
+    "r17_narrow_route": {
+      "title": "上层窄巷",
+      "position": [
+        -37.4,
+        27.1,
+        -43
+      ],
+      "target": [
+        -31.5,
+        27.8,
+        -53
+      ],
+      "fov": 62
+    },
+    "r17_shopkeeper": {
+      "title": "店主角色近景",
+      "position": [
+        -23.3,
+        13.35,
+        58.3
+      ],
+      "target": [
+        -25.6,
+        12.7,
+        59.8
+      ],
+      "fov": 42
+    },
+    "r17_serve": {
+      "title": "递餐动作与打包餐食",
+      "position": [
+        -23.3,
+        13.35,
+        58.3
+      ],
+      "target": [
+        -25.6,
+        12.7,
+        59.8
+      ],
+      "fov": 42,
+      "capture_state": {
+        "character_clip": "serve",
+        "time": 1.0,
+        "food_ready": true,
+        "look_at_food": true
+      }
+    },
+    "r17_takeaway": {
+      "title": "餐食打包细节",
+      "position": [
+        -23.95,
+        12.4,
+        59.1
+      ],
+      "target": [
+        -24.8,
+        11.95,
+        59.9
+      ],
+      "fov": 48,
+      "capture_state": {
+        "food_ready": true
+      }
+    },
+    "r18_idle": {
+      "title": "R18 internal character idle",
+      "position": [
+        -23.3,
+        13.35,
+        58.3
+      ],
+      "target": [
+        -25.6,
+        12.7,
+        59.8
+      ],
+      "fov": 42,
+      "capture_state": {
+        "character_clip": "idle",
+        "time": 0,
+        "food_ready": true
+      }
+    },
+    "r18_reach": {
+      "title": "R18 internal character reach",
+      "position": [
+        -23.3,
+        13.35,
+        58.3
+      ],
+      "target": [
+        -25.6,
+        12.7,
+        59.8
+      ],
+      "fov": 42,
+      "capture_state": {
+        "character_clip": "serve",
+        "time": 1.12,
+        "food_ready": true,
+        "look_at_food": true
+      }
+    },
+    "r18_lift": {
+      "title": "R18 internal character lift",
+      "position": [
+        -23.3,
+        13.35,
+        58.3
+      ],
+      "target": [
+        -25.6,
+        12.7,
+        59.8
+      ],
+      "fov": 42,
+      "capture_state": {
+        "character_clip": "serve",
+        "time": 1.65,
+        "food_ready": true,
+        "look_at_food": true
+      }
+    },
+    "r18_place": {
+      "title": "R18 internal character place",
+      "position": [
+        -23.3,
+        13.35,
+        58.3
+      ],
+      "target": [
+        -25.6,
+        12.7,
+        59.8
+      ],
+      "fov": 42,
+      "capture_state": {
+        "character_clip": "serve",
+        "time": 2.4,
+        "food_ready": true,
+        "look_at_food": true
+      }
+    },
+    "r18_workstation": {
+      "title": "Packing station context",
+      "position": [
+        -22.8,
+        13.2,
+        57.8
+      ],
+      "target": [
+        -25.3,
+        12.2,
+        59.8
+      ],
+      "fov": 47,
+      "capture_state": {
+        "character_clip": "serve",
+        "time": 1.65,
+        "food_ready": true,
+        "look_at_food": true
+      }
+    },
+    "r18_player_eye": {
+      "title": "Player eye-height interaction",
+      "position": [
+        -23.63,
+        12.79,
+        58.8
+      ],
+      "target": [
+        -25.59,
+        12.6,
+        59.8
+      ],
+      "fov": 50,
+      "capture_state": {
+        "character_clip": "idle",
+        "time": 0,
+        "food_ready": true,
+        "look_at_camera": true
+      }
+    },
+    "r18_greet": {
+      "title": "Recognition and greeting",
+      "position": [
+        -23.63,
+        12.79,
+        58.8
+      ],
+      "target": [
+        -25.59,
+        12.6,
+        59.8
+      ],
+      "fov": 50,
+      "capture_state": {
+        "character_clip": "greet",
+        "time": 0.65,
+        "smile": 0.259,
+        "food_ready": false,
+        "look_at_camera": true
+      }
+    },
+    "r18_face": {
+      "title": "In-engine face diagnostic",
+      "position": [
+        -24.7,
+        12.73,
+        59.35
+      ],
+      "target": [
+        -25.59,
+        12.66,
+        59.8
+      ],
+      "fov": 37,
+      "capture_state": {
+        "character_clip": "greet",
+        "time": 0.65,
+        "smile": 0.259,
+        "food_ready": false,
+        "look_at_camera": true
+      }
+    },
+    "r18_grip": {
+      "title": "Hand and paper-handle contact",
+      "position": [
+        -24.65,
+        12.57,
+        59.2
+      ],
+      "target": [
+        -25.142,
+        12.29,
+        59.717
+      ],
+      "fov": 34,
+      "capture_state": {
+        "character_clip": "serve",
+        "time": 1.65,
+        "food_ready": true,
+        "look_at_food": true
+      }
+    },
+    "r19_seating": {
+      "title": "Breakfast place at eye height",
+      "position": [
+        -27.7,
+        12.65,
+        58.5
+      ],
+      "fov": 55,
+      "target": [
+        -30.5,
+        11.65,
+        61
+      ]
+    },
+    "r19_stair_detail": {
+      "title": "Stair materials and sidewall junction",
+      "position": [
+        -20.9,
+        14.6,
+        48.5
+      ],
+      "fov": 55,
+      "target": [
+        -20,
+        14.8,
+        44
+      ]
+    }
+  },
+  "street_r19": {
+    "enabled": true,
+    "surfaces": true
+  }
+}

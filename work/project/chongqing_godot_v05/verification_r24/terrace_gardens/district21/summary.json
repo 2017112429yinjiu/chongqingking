@@ -1,0 +1,80 @@
+{
+  "engine": "4.6.3-stable (official)",
+  "native_surface_nodes": {
+    "COL_Terrace21_Fork": 1674,
+    "COL_Walk_East_photo_alley_step_concrete": 29,
+    "MarketTerraceR24": 2,
+    "COL_D18_NanquShoulder": 82,
+    "COL_Road_176034707_0_pavement": 107,
+    "COL_Terrain_200m_pavement": 93,
+    "COL_Terrain_200m_yard_concrete": 117
+  },
+  "native_ground_missing": 0,
+  "matched_surface_height_points": 2073,
+  "matched_triplets": 2317,
+  "matched_seam_pairs": 399,
+  "metrics": {
+    "old_source": {
+      "grade_break_deg_p95": 9.646054689847308,
+      "grade_break_deg_max": 23.876788065982005,
+      "seam_max_height_change_over_40mm": 0.013429641723632812
+    },
+    "new_source": {
+      "grade_break_deg_p95": 1.161833002800364,
+      "grade_break_deg_max": 9.377009291959007,
+      "seam_max_height_change_over_40mm": 0.011409759521484375
+    },
+    "engine": {
+      "grade_break_deg_p95": 1.1670721394850025,
+      "grade_break_deg_max": 9.359718083140681,
+      "seam_max_height_change_over_40mm": 0.011753082275401283
+    }
+  },
+  "native_vs_source_max_m": 0.0005779266357439639,
+  "bed_min_clearance_to_mapped_edge_m": 2.2733317714340506,
+  "tree_count": 3,
+  "underplants": 77,
+  "wheels": 12,
+  "max_wheel_contact_m": 0.00992488861083984,
+  "public_road_probes_total_and_missing": {
+    "sections": [
+      16004,
+      33
+    ],
+    "grid": [
+      10000,
+      11
+    ],
+    "south_joint": [
+      3240,
+      0
+    ],
+    "western_median": [
+      2798,
+      0
+    ],
+    "western_extra": [
+      310,
+      0
+    ]
+  },
+  "ride_runs": {
+    "out": {
+      "count": 26,
+      "passed": 26,
+      "targets": 1173
+    },
+    "back": {
+      "count": 26,
+      "passed": 26,
+      "targets": 1173
+    }
+  },
+  "registered_orders_passed": true,
+  "lesson_checks": 85,
+  "walk_passed": true,
+  "walk_sampled_m": 23.7255762546799,
+  "source_sha256": "643d2c52a1a5e6ebb8a50c3c73f118ec7e5fa638c0e82a2df92d002230433b4b",
+  "model_sha256": "28a7a8a852aa4d8d05f1bf1e5eb41f6fc83a13de621f88e690aefcb5544a62d2",
+  "passed": false
+}

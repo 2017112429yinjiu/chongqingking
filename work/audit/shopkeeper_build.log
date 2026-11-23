@@ -1,0 +1,86 @@
+[INFO ] services.locationservice ...............: Not adding link to MakeHuman user data, since neither explicit path nor auto-discovery is set in preferences.
+[INFO ] mpfb.init ..............................: Build info FROM_SOURCE
+[INFO ] mpfb.init ..............................: Online access preference is not enabled. Not checking if MakeHuman is online.
+[INFO ] mpfb.init ..............................: MPFB initialization has finished.
+[WARN ] services.humanservice ..................: Creating game engine skin material
+[WARN ] material.mhmaterial ....................: Patching input material line to cater for non-normalized key ('bumpTexture', 'bumpmapTexture')
+Info: Packed 8 file(s)
+Info: Saved "shopkeeper_authoring.blend"
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+INFO Draco mesh compression is available, use library at C:\Users\尹久\Documents\Codex\2026-11-20\referenced-chatgpt-conversation-this-is-an\work\tools\blender-4.3.2-windows-x64\4.3\python\lib\site-packages\extern_draco.dll
+10:16:49 | INFO: Starting glTF 2.0 export
+10:16:49 | INFO: Extracting primitive: CQ_ApronPocket.001
+10:16:49 | INFO: Primitives created: 1
+10:16:49 | INFO: Extracting primitive: CQ_ApronStrap_-1.001
+10:16:49 | INFO: Primitives created: 1
+10:16:49 | INFO: Extracting primitive: CQ_ApronStrap_1.001
+10:16:49 | INFO: Primitives created: 1
+10:16:49 | INFO: Extracting primitive: CQ_ShopApron.001
+10:16:49 | INFO: Primitives created: 1
+10:16:49 | INFO: Extracting primitive: eyebrow001.001
+10:16:49 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+10:16:49 | INFO: Primitives created: 1
+10:16:49 | INFO: Extracting primitive: eyelashes01.001
+10:16:49 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+10:16:49 | INFO: Primitives created: 1
+10:16:49 | INFO: Extracting primitive: low-poly.001
+10:16:49 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+10:16:49 | INFO: Primitives created: 1
+10:16:49 | INFO: Extracting primitive: male_casualsuit01.001
+10:16:49 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+10:16:49 | INFO: Primitives created: 1
+10:16:49 | WARNING: There are more than 4 joint vertex influences.The 4 with highest weight will be used (and normalized).
+10:16:49 | INFO: Extracting primitive: shoes02.001
+10:16:49 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+10:16:49 | INFO: Primitives created: 1
+10:16:49 | INFO: Extracting primitive: short02.001
+10:16:49 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+10:16:49 | INFO: Primitives created: 1
+10:16:49 | INFO: Extracting primitive: base.002
+10:16:49 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+10:16:49 | INFO: Primitives created: 1
+10:16:50 | INFO: Finished glTF 2.0 export in 1.2737653255462646 s
+
+SHOPKEEPER_EXPORTED {"name": "梯坎小面店主", "height_m": 1.71, "base": "MPFB 2.0.18 core human", "animations": ["idle", "serve"], "animation_method": "Authored procedural keyframes, not motion capture; motion requires visual refinement.", "source_license": "CC0-1.0; MPFB tool code GPL-3.0-or-later (not in game)", "author_credit": "MakeHuman team; Data Collection AB; Joel Palmius; Jonas Hauquier. Attribution voluntary for CC0.", "vertices": 20534, "meshes": 11, "original_additions": "Fitted cotton apron, neck straps and pocket; authored geometry.", "evaluated_floor_before_normalization": -0.017170380800962448, "evaluated_height_before_normalization": 1.6725298874080181, "export_scale": 1.0224032544195971}
+Blender 4.3.2 (hash 32f5fdce0a0a built 2024-12-17 03:35:23)
+OBJ import of 'base.obj' took 10.48 ms
+OBJ import of 'low-poly.obj' took 0.47 ms
+OBJ import of 'eyebrow001.obj' took 0.30 ms
+OBJ import of 'eyelashes01.obj' took 0.34 ms
+OBJ import of 'short02.obj' took 1.34 ms
+OBJ import of 'male_casualsuit01.obj' took 4.82 ms
+OBJ import of 'shoes02.obj' took 1.16 ms
+
+Blender quit

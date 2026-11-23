@@ -1,0 +1,13 @@
+config_version=5
+
+[application]
+config/name="重庆朝天门模型本地复查"
+run/main_scene="res://study.tscn"
+
+[display]
+window/size/viewport_width=1440
+window/size/viewport_height=900
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+

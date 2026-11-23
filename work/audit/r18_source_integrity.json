@@ -1,0 +1,284 @@
+{
+  "bones": [
+    "Root",
+    "pelvis",
+    "spine_01",
+    "spine_02",
+    "spine_03",
+    "clavicle_l",
+    "upperarm_l",
+    "lowerarm_l",
+    "hand_l",
+    "index_01_l",
+    "index_02_l",
+    "index_03_l",
+    "middle_01_l",
+    "middle_02_l",
+    "middle_03_l",
+    "pinky_01_l",
+    "pinky_02_l",
+    "pinky_03_l",
+    "ring_01_l",
+    "ring_02_l",
+    "ring_03_l",
+    "thumb_01_l",
+    "thumb_02_l",
+    "thumb_03_l",
+    "clavicle_r",
+    "upperarm_r",
+    "lowerarm_r",
+    "hand_r",
+    "index_01_r",
+    "index_02_r",
+    "index_03_r",
+    "middle_01_r",
+    "middle_02_r",
+    "middle_03_r",
+    "pinky_01_r",
+    "pinky_02_r",
+    "pinky_03_r",
+    "ring_01_r",
+    "ring_02_r",
+    "ring_03_r",
+    "thumb_01_r",
+    "thumb_02_r",
+    "thumb_03_r",
+    "neck_01",
+    "head",
+    "eye_l",
+    "eye_r",
+    "thigh_l",
+    "calf_l",
+    "foot_l",
+    "ball_l",
+    "thigh_r",
+    "calf_r",
+    "foot_r",
+    "ball_r",
+    "apron_L",
+    "apron_C",
+    "apron_R"
+  ],
+  "actions": [
+    "greet",
+    "idle",
+    "serve"
+  ],
+  "images": [
+    {
+      "name": "brown_eye.png",
+      "packed": true,
+      "path": "//..\\..\\assets_incoming\\mpfb\\system_assets\\eyes\\materials\\brown_eye.png"
+    },
+    {
+      "name": "cotton_jersey_diff_1k.jpg",
+      "packed": true,
+      "path": "//..\\..\\assets_incoming\\cotton_jersey\\cotton_jersey_diff_1k.jpg"
+    },
+    {
+      "name": "cotton_jersey_nor_gl_1k.jpg",
+      "packed": true,
+      "path": "//..\\..\\assets_incoming\\cotton_jersey\\cotton_jersey_nor_gl_1k.jpg"
+    },
+    {
+      "name": "cotton_jersey_rough_1k.jpg",
+      "packed": true,
+      "path": "//..\\..\\assets_incoming\\cotton_jersey\\cotton_jersey_rough_1k.jpg"
+    },
+    {
+      "name": "CQ_Skin_MicroNormal",
+      "packed": true,
+      "path": "//skin_micro_normal.png"
+    },
+    {
+      "name": "eyebrow012.png",
+      "packed": true,
+      "path": "//..\\..\\assets_incoming\\mpfb\\system_assets\\eyebrows\\eyebrow012\\eyebrow012.png"
+    },
+    {
+      "name": "male_casualsuit01_diffuse.png",
+      "packed": true,
+      "path": "//..\\..\\assets_incoming\\mpfb\\system_assets\\clothes\\male_casualsuit01\\male_casualsuit01_diffuse.png"
+    },
+    {
+      "name": "male_casualsuit01_normal.png",
+      "packed": true,
+      "path": "//..\\..\\assets_incoming\\mpfb\\system_assets\\clothes\\male_casualsuit01\\male_casualsuit01_normal.png"
+    },
+    {
+      "name": "old_lightskinned_male_diffuse2.png",
+      "packed": true,
+      "path": "//..\\..\\assets_incoming\\mpfb\\system_assets\\skins\\old_asian_male\\old_lightskinned_male_diffuse2.png"
+    },
+    {
+      "name": "shoes02_diffuse.png",
+      "packed": true,
+      "path": "//..\\..\\assets_incoming\\mpfb\\system_assets\\clothes\\shoes02\\shoes02_diffuse.png"
+    },
+    {
+      "name": "short04_diffuse.png",
+      "packed": true,
+      "path": "//..\\..\\assets_incoming\\mpfb\\system_assets\\hair\\short04\\short04_diffuse.png"
+    }
+  ],
+  "face_meshes": [
+    {
+      "name": "Human.eyebrow012",
+      "bounds": [
+        [
+          -0.05537261813879013,
+          0.05537261813879013
+        ],
+        [
+          -0.14007259905338287,
+          -0.11413594335317612
+        ],
+        [
+          1.5252406597137451,
+          1.542009711265564
+        ]
+      ],
+      "positions": [
+        [
+          0.021099237725138664,
+          -0.13485325872898102,
+          1.530529499053955
+        ],
+        [
+          0.014362459070980549,
+          -0.13379479944705963,
+          1.5276223421096802
+        ],
+        [
+          0.014694604091346264,
+          -0.14007259905338287,
+          1.540452241897583
+        ],
+        [
+          0.009854759089648724,
+          -0.139678493142128,
+          1.5375714302062988
+        ],
+        [
+          0.024081770330667496,
+          -0.13559378683567047,
+          1.5320231914520264
+        ],
+        [
+          0.018814221024513245,
+          -0.13968731462955475,
+          1.5415685176849365
+        ],
+        [
+          0.02814360335469246,
+          -0.13577474653720856,
+          1.532123327255249
+        ],
+        [
+          0.024749932810664177,
+          -0.13862194120883942,
+          1.5419739484786987
+        ],
+        [
+          0.03447369858622551,
+          -0.13482637703418732,
+          1.5302019119262695
+        ],
+        [
+          0.03055557981133461,
+          -0.13640327751636505,
+          1.542009711265564
+        ],
+        [
+          0.03804639354348183,
+          -0.13320834934711456,
+          1.5297188758850098
+        ],
+        [
+          0.03578869625926018,
+          -0.13400228321552277,
+          1.5409576892852783
+        ]
+      ]
+    },
+    {
+      "name": "Human.low-poly",
+      "bounds": [
+        [
+          -0.04431195929646492,
+          0.04431195929646492
+        ],
+        [
+          -0.13106876611709595,
+          -0.10865847766399384
+        ],
+        [
+          1.509426474571228,
+          1.537049651145935
+        ]
+      ],
+      "positions": [
+        [
+          0.016084665432572365,
+          -0.10865847766399384,
+          1.5184173583984375
+        ],
+        [
+          0.014827919192612171,
+          -0.11459053307771683,
+          1.5176910161972046
+        ],
+        [
+          0.015388429164886475,
+          -0.1207999438047409,
+          1.5178018808364868
+        ],
+        [
+          0.01820347271859646,
+          -0.12595511972904205,
+          1.5188146829605103
+        ],
+        [
+          0.02294100448489189,
+          -0.12963248789310455,
+          1.5205450057983398
+        ],
+        [
+          0.025806311517953873,
+          -0.13075903058052063,
+          1.5214353799819946
+        ],
+        [
+          0.02406838908791542,
+          -0.10866542905569077,
+          1.510819911956787
+        ],
+        [
+          0.023469164967536926,
+          -0.11459748446941376,
+          1.509426474571228
+        ],
+        [
+          0.023614849895238876,
+          -0.12080691009759903,
+          1.510204553604126
+        ],
+        [
+          0.024655578657984734,
+          -0.125974640250206,
+          1.5130360126495361
+        ],
+        [
+          0.0266093909740448,
+          -0.12961022555828094,
+          1.5174710750579834
+        ],
+        [
+          0.02754143998026848,
+          -0.13075615465641022,
+          1.5198410749435425
+        ]
+      ]
+    }
+  ]
+}

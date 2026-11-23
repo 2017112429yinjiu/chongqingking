@@ -1,0 +1,121 @@
+{
+  "authoring": "Original local mesh cuts, two doors, workshop fittings, corridor, slab and stepped gallery. The original A04 entry leaf, frame and hardware are moved together. No new external models acquired.",
+  "source": {
+    "file": "scene_r24/indoor_delivery/city_and_unit.blend",
+    "sha256": "e0c7d4acb2af08ef8c02307ffed9e01e7e0374ccf055feadd9b0ee5850b0f535"
+  },
+  "runtime": [
+    {
+      "file": "project/chongqing_godot_v05/assets/indoor_delivery/unit.glb",
+      "sha256": "6e1060c420623ab728acce81299b410e5ac60576ef85c6d773b942526a1b9e52"
+    },
+    {
+      "file": "project/chongqing_godot_v05/assets/indoor_delivery/layout.json",
+      "sha256": "803ad05f7fd278daf89ee2a915deff11f18f180360b7b5a43ad5f71c341e7885"
+    },
+    {
+      "file": "project/chongqing_godot_v05/assets/indoor_delivery/interior_wall_faces.res",
+      "sha256": "7f4dd9d92a524c40a1670937afe7ae1178d909f6bff4f30da1d2dfcc599485f9"
+    }
+  ],
+  "reused_materials": [
+    {
+      "source": "https://polyhaven.com/a/plastered_wall_04",
+      "author": "Rob Tuytel",
+      "licence": "CC0-1.0",
+      "licence_url": "https://polyhaven.com/license",
+      "credit_required": false,
+      "use": "Existing local colour and OpenGL normal maps reused on metre-scaled UVs with local colour adjustment.",
+      "files": [
+        {
+          "file": "project/chongqing_godot_v05/assets/chongqing_district_plastered_wall_04_diff_1k.jpg",
+          "sha256": "52d789111bbe93d311c22e49d28b56256593c8f84c75742642403da857a36503"
+        },
+        {
+          "file": "project/chongqing_godot_v05/assets/chongqing_district_plastered_wall_04_nor_gl_1k.jpg",
+          "sha256": "c0a41dc06e33072ec1156d89f3bd4b481a479616791d4e9df6c5ee7b3283db82"
+        }
+      ]
+    },
+    {
+      "source": "https://polyhaven.com/a/concrete_floor_worn_001",
+      "author": "Dimitrios Savva, Rico Cilliers",
+      "licence": "CC0-1.0",
+      "licence_url": "https://polyhaven.com/license",
+      "credit_required": false,
+      "use": "Existing local colour and OpenGL normal maps reused on metre-scaled UVs with local colour adjustment.",
+      "files": [
+        {
+          "file": "project/chongqing_godot_v05/assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+          "sha256": "e29b45cdcd6d02fae3c087c456196ffa750779a9b62e7071aa3831dc322a0cc4"
+        },
+        {
+          "file": "project/chongqing_godot_v05/assets/chongqing_district_concrete_floor_worn_001_nor_gl_2k.jpg",
+          "sha256": "3b782137e34d63fd59b2e92b4e27b2ee4d082caf9dd23f00dc7ab4da5513daef"
+        }
+      ]
+    },
+    {
+      "source": "https://polyhaven.com/a/rusty_painted_metal",
+      "author": "Amal Kumar",
+      "licence": "CC0-1.0",
+      "licence_url": "https://polyhaven.com/license",
+      "credit_required": false,
+      "use": "Existing local colour and OpenGL normal maps reused on metre-scaled UVs with local colour adjustment.",
+      "files": [
+        {
+          "file": "project/chongqing_godot_v05/assets/chongqing_district_rusty_painted_metal_diff_2k.jpg",
+          "sha256": "883118fafabb56304f9e33ea2da3c183379b1c1b1c5a4702fdc335b0cf84614f"
+        },
+        {
+          "file": "project/chongqing_godot_v05/assets/chongqing_district_rusty_painted_metal_nor_gl_2k.jpg",
+          "sha256": "2289c10422d5082aea3cf37661008b281c4aec20f6d0b574df6d7887573eb70c"
+        }
+      ]
+    },
+    {
+      "source": "https://polyhaven.com/a/sandstone_cracks",
+      "author": "Rob Tuytel",
+      "licence": "CC0-1.0",
+      "credit_required": false,
+      "use": "Existing colour-adjusted city stone and scan normals on the exposed gallery and its steps.",
+      "files": [
+        {
+          "file": "project/chongqing_godot_v05/assets/district_r21/terraces_washed_sandstone.jpg",
+          "sha256": "9792a5261f98aee4a73328e1420585e7d33308a382e7abbb081dcee2b0094924"
+        },
+        {
+          "file": "project/chongqing_godot_v05/assets/district_r21/terraces_sandstone_cracks_nor_gl_2k.jpg",
+          "sha256": "904e852268e1fb1bd5c0d035382f6a0e64c98dceea784fe957b1983d98b0231a"
+        },
+        {
+          "file": "project/chongqing_godot_v05/assets/district_r21/provenance.json",
+          "sha256": "48818cf6518231826cd69e56ba8c68b47212f81fc00631f01696aabb33310c3f"
+        }
+      ]
+    }
+  ],
+  "notices": {
+    "art": {
+      "file": "project/chongqing_godot_v05/assets/district_age/wall_prints.png",
+      "sha256": "2972ddf9b2cef33af5fd4a3c34fc06968393d9c06cf806df52b50015df52ed5d"
+    },
+    "maker": "District project, original fictional text and layout from build 20",
+    "font": "Existing renamed Noto Sans CJK SC subset, SIL OFL 1.1; retain the licence and font notices.",
+    "font_files": [
+      {
+        "file": "project/chongqing_godot_v05/assets/fonts/first_shift.otf",
+        "sha256": "ee38d373e6ab79cd3ba2ba8785329a1957d67e82d401691ce48f3dde337aaef8"
+      },
+      {
+        "file": "project/chongqing_godot_v05/assets/fonts/first_shift_sources.json",
+        "sha256": "011930b0cb3b96164de1ba37fd096c842a0cfd89584ad7f8369ab158f190e4bc"
+      },
+      {
+        "file": "project/chongqing_godot_v05/assets/fonts/R20_OFL.txt",
+        "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+      }
+    ]
+  },
+  "existing_district": "Existing street base and HUD map attribution preserved. The indoor passage and routes are authored game geometry."
+}

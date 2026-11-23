@@ -1,0 +1,42 @@
+{
+  "revision": 15,
+  "scene_sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223",
+  "status": "PASS_FOR_SCOPED_REPAIR_REVIEW",
+  "checked_at_utc": "2026-11-19T16:11:12.491982+00:00",
+  "cinematic_target_met": false,
+  "capture_manifest_sha256": "166a1dc19b44afa459171533b304050972e16a9dda72d1d93b872d01cdda27c7",
+  "native_capture_actual_exit_code": 0,
+  "native_capture_count": 22,
+  "native_image_size": [
+    1920,
+    1080
+  ],
+  "clean_import_actual_exit_code": 0,
+  "physics_actual_exit_code": 0,
+  "physics_tests": 216,
+  "continuous_walking_routes": 12,
+  "manual_review_status": "COMPLETE_SCOPED_MANUAL_REVIEW",
+  "reports": {
+    "build_identity.json": "25365f2ab46547dc98ee55e676804c1b4aa6534ce63be48c59d3b33c16484e36",
+    "portable_check.json": "c1952d2460b4171c003fd894052bcfbbcfaf19f2a83caa9976e0b78edd2fd333",
+    "physics_validation.json": "e64475da03cfffa1395c71e23d66609424289ed57efaa560c2616f0e256213db",
+    "native_capture_validation.json": "e467907a3cf919bceaad0dea7956648097d534b2f64367feae7539b31e36c560",
+    "actual_contact_audit_run_status.json": "188b3b180c1a6847e52acc1d1b02e842e453cd3f1aef0a512e57a8da4847af69",
+    "furniture_contact_export_audit.json": "ca3478b3cdd4f925b479d43db534a2e4ae4b867ccb931e61a4f09a8293f20759",
+    "drain_grate_export_audit.json": "34221b9bf3bc5ffc6f83aaffb07c69b1d2588521da06c67967865964c55cc0e4",
+    "terrain_glb_clearance.json": "6796e9644c051c83c160e2890ee9701659fbb3cbbc7af7a994106dd4f057dfaa",
+    "asset_provenance_audit.json": "0cad1bcfe9f47736fffa28cc8d77d25be9df56643e38c591152c7e84f982abb7",
+    "ground_geometry_identity.json": "34a97de0846d0b65be3c9fef8ddca7547b2a0230334a878476b088d731617ca9",
+    "ground_review.json": "2287d2904c9f6e05be6321f8e70ce1f6266fe092db99405671199f7f53d33d67",
+    "lighting_review_r15.json": "dc0b8b02bf711b0e1372f9f6161336c1a4ef57ed5c505c9df56fe51fc6aa3615",
+    "interior_review_progress.json": "3bdd170216a58a214abbd0fc487bfba5345d31696bb86cbc4b72805278b59144",
+    "interactive_preview_review.json": "f252cb69d7bf1ba810cb520f7b9f6dbb6703e270d807d4153a57480616472459",
+    "root_visual_progress.json": "a9ec570122f8d87c9e9a7aa5c7ed27939b9f42dada08480a6f683e164d3347b5"
+  },
+  "notes": [
+    "All evidence refers to revision 15 and the actual staged model.",
+    "Visual approval covers the disclosed repair preview; quality limitations remain.",
+    "Archive membership, resource closure, hashes, size and CRC are independently enforced by package_v05.py during assembly.",
+    "No claim of target-GPU frame rate, whole-map pedestrian coverage or 1:1 surveying accuracy."
+  ]
+}

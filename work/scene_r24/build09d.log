@@ -1,0 +1,16 @@
+Blender 4.3.2 (hash 32f5fdce0a0a built 2024-12-17 03:35:23)
+Read blend: "C:\Users\尹久\Documents\重庆外卖王\work\scene_r23\chongqing_district.blend"
+Traceback (most recent call last):
+  File "C:\Users\尹久\Documents\重庆外卖王\work\build_frontage_r24.py", line 437, in <module>
+    report['flyover']=add_flyover(scene,S,spatial,surface,box,rod,mat)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\尹久\Documents\重庆外卖王\work\flyover_frontage_r24.py", line 89, in build
+    c,n=frame(a);ground=soil(c.x,c.y)
+                        ^^^^^^^^^^^^^
+  File "C:\Users\尹久\Documents\重庆外卖王\work\flyover_frontage_r24.py", line 26, in soil
+    raise ValueError(('no support for bridge',x,y))
+ValueError: ('no support for bridge', 71.77091979980469, -82.0523681640625)
+
+Error: script failed, file: 'work/build_frontage_r24.py', exiting.
+
+Blender quit

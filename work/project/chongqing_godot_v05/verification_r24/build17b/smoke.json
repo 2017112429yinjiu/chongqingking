@@ -1,0 +1,2477 @@
+{
+	"art_profile": {
+		"path": "res://assets/render_profile_r24.json",
+		"revision": "R24_east_alley_inlets_17b_internal",
+		"sha256": "81b582f24726203c775eea21f82c92aca68c034568f850cef61cda65da379efb"
+	},
+	"block_r23": {
+		"actors": 25,
+		"brick_shells": 7,
+		"hidden": 8,
+		"missing": [],
+		"routes": {
+			"east": 196.978805541992,
+			"promenade": 92.858268737793,
+			"walk": 85.5828399658203,
+			"west": 196.792129516602
+		},
+		"swapped": 88
+	},
+	"collision_stats": {
+		"bodies": 274,
+		"by_kind": {
+			"refined_structure": 274
+		},
+		"created": 274,
+		"failed": [],
+		"props": {
+			"method": "deduplicated root-aligned cylinders; foliage excluded",
+			"trunks_and_posts": 57
+		},
+		"reused": 0,
+		"skipped_meshes": 3592,
+		"triangles": 454844
+	},
+	"configuration_sha256": {
+		"res://assets/viewpoints.json": "0e83f8c622fd935e897dc593103568902e544930084cac34a8a2e8b4a2865bc2",
+		"res://assets/walking_survey.json": "dfb48d17e9afe8f0cda23a12a13fcbd0a0d71639947d1b8fd9a8812c29d26fb5"
+	},
+	"configured_route_count": 4,
+	"controller": {
+		"maximum_landing_probe_m": 0.35,
+		"step_height_m": 0.45,
+		"step_validation": "Upward headroom, horizontal sweep, downward walkable landing; shortest safe landing is chosen",
+		"version": "swept_step_landing_v2",
+		"waypoints_teleport": false
+	},
+	"counter_r21": {
+		"character_sha256": "ac585e8a037fcf950fc51d46e0fa34c3c46f40ccf1241250273f2af4d4fc6cbc",
+		"portion_sha256": "a3347a027ace51dca3db48093942e821e8a925131045f10472a34bda3e5c5746",
+		"stock_sha256": "e2a11e6c8ac2b26c1b077d38f343f1cb810855c89f7539898c9d41ef8df661ec"
+	},
+	"court_resident": {
+		"controller": "4d7ccd29e2e047a3006bf3a9a8b75107f07b07736d1a1c46318533bb3b22155f",
+		"fit": "a9df93aee35791d437c611680ea324c0b4bcfaab1bedccf6b1a1faa617d5ec83",
+		"model": "dfb43c77aff8beae940bceb906ad667f8b6e5ef85b1613393995a0a7091a94f3"
+	},
+	"courtyard_life": {
+		"chessmen": 32,
+		"missing": [],
+		"seats": 3,
+		"visitor_length": 12.0611190795898
+	},
+	"courtyard_paving": [
+		"pavement",
+		"yard_concrete"
+	],
+	"district_r21": {
+		"exterior_sectors": 84,
+		"exterior_trees": 623,
+		"layer_sha256": "fdb98c3bd8b65364f2d76c30a6263cbfca46c2cc991436662197d56faa76346c",
+		"layout_sha256": "ef08224edd2de91299f87bc4534130df8153d6b8c5ee42890763e5feeed2bbcb",
+		"near_plantings": 21,
+		"paving": [
+			"COL_Terrain_200m_yard_concrete",
+			"COL_Walk_OSM_734116594_0_step_concrete",
+			"Walk_details_OSM_734116594_0_painted_metal",
+			"COL_Walk_OSM_1328811307_0_step_concrete",
+			"Walk_details_OSM_1328811307_0_painted_metal",
+			"COL_Walk_Central_stair_lane_step_concrete",
+			"COL_Handrails_Central_stair_lane_painted_metal",
+			"COL_Walk_Narrow_upper_passage_step_concrete",
+			"COL_Walk_Upper_terrace_connection_step_concrete",
+			"COL_Walk_West_residential_link_step_concrete",
+			"COL_Handrails_West_residential_link_painted_metal",
+			"COL_Walk_East_photo_alley_step_concrete",
+			"Outer_ground_context_ground_dirt",
+			"R20_Court_paving_step_concrete"
+		],
+		"roof_structures": 35,
+		"terraces": 2,
+		"weather_atlas_sha256": "30596b17abf2da8ebe35e38aa7e3b8a57c36fd4d6971684b7cb9edaea02f0007",
+		"weathered_shell_surfaces": 104,
+		"window_fittings": 52
+	},
+	"east_lane_joint": {
+		"added": 7,
+		"missing": [],
+		"replaced": 10
+	},
+	"engine": "4.6.3-stable (official)",
+	"gi_profile": {
+		"enabled": false,
+		"explicit_experiment": false,
+		"requested": false,
+		"structures_only": false
+	},
+	"market_r24": {
+		"donors": 44,
+		"fixtures": 11,
+		"lights": 2,
+		"missing": [],
+		"stalls": 2
+	},
+	"market_steps": {
+		"COL_R23_NanquUpperApron": [
+			"R23_basalt_kerb",
+			"Market16_CutSandstone"
+		],
+		"COL_R24_MarketStairs_R24_step_stone": [
+			"Market16_LimeBed",
+			"Market16_CutSandstone"
+		]
+	},
+	"meter_lod": {
+		"sha256": "931e72fa0f34fe7bcdd65257f2b1c55316cde4ac61805fc81799cd777efc0ecc",
+		"sites": 112,
+		"source_triangles": 910876.0,
+		"switch_m": 18.0
+	},
+	"neighborhood": {
+		"missing": [],
+		"plants": 35,
+		"removed": [
+			"COL_Handrails_Central_stair_lane_painted_metal",
+			"COL_Handrails_West_residential_link_painted_metal",
+			"Court_entry_rails_frame",
+			"Utility_cables_dark",
+			"COL_R20_Returned_handrail_steel",
+			"COL_R20_Returned_handrail_rail_enamel",
+			"COL_R20_Returned_handrail_pin",
+			"COL_R20_Returned_handrail_iron",
+			"Resident_waste_13_bin_00",
+			"Resident_waste_13_bin_01",
+			"Resident_waste_13_bin_02",
+			"Resident_waste_13_bin_03",
+			"Resident_waste_13_bagA_00",
+			"Resident_waste_13_bagB_00",
+			"Resident_waste_13_crate_00"
+		],
+		"shifted": 87,
+		"spans": 4,
+		"tree_distance_meshes": 288,
+		"trunks": 5
+	},
+	"passed": true,
+	"river_r22": {
+		"axes": 2,
+		"fleet": 6,
+		"layer_sha256": "7e6e4ebf4f54513ae6492baba5c02e1a6571735ef7e7cd5e4a6dff7847232f87",
+		"layout_sha256": "ff239e78712fbf074fb9a50d180f6288fd4198ac926f30e8054cb51b91ef6a45",
+		"mapped_buildings": 14,
+		"source_plan_sha256": "bbae7145d99a6dba9f3d46c13ac8a89fcf2b617c923537b34a2aa9dea3f62932",
+		"terrain": {
+			"Outer_ground_context_ground_dirt": {
+				"replacement": "R22_Bank_Outer",
+				"triangles": 40728.0,
+				"vertices": 21360.0
+			},
+			"R19_Distant_relief_distant19": {
+				"replacement": "R22_Bank_Relief",
+				"triangles": 111295.0,
+				"vertices": 55912.0
+			}
+		}
+	},
+	"roofs_r22": {
+		"canvas_shader_sha256": "2c79d2d0b0fb203bf4e343ea7bfc505d17eb4912e4c965330339cfcb1771ab4a",
+		"decks": 13,
+		"layer_sha256": "1bd3e44caf3cddd9ce47095815698725b45fed697f122c636a4def0b67b85c44",
+		"layout_sha256": "226528a93e1282d3c6185db6c62c0cfcdb50c5383076a9705ce07ef6f0f81031",
+		"sockets": 6,
+		"stations": 12,
+		"surface_imports_sha256": "8e5e08e095a59fba57cb7bfd607b961f1c31eaff259c4f3c7674d04532a1341e"
+	},
+	"route_filter": [],
+	"runtime_sha256": {
+		"res://assets/block_r23/block.glb": "f0796f06598586cfdbb6fab09f18dc28287a6951f3e2a092134ab7feb75fb686",
+		"res://assets/block_r23/block.json": "88aa467c76741b1a7d926328c6edf5b37be6e1b59014ef44b9e80beaa6c45227",
+		"res://assets/block_r23/routes.json": "37e98b27546e4fac4f599adb53ff9dfbd072b8bf02f1f98feaf4d6962e760832",
+		"res://assets/courtyard_r24/black_motion.glb": "7d812f625b77e3907b9d6b8575cf80944bcce68ca2f4216bff1b67fdc1d63f2c",
+		"res://assets/courtyard_r24/courtyard.glb": "d91421262708814d053599d1773fc2854a1ba19dde04e89dd36ac76d65a6cbff",
+		"res://assets/courtyard_r24/greens_motion.glb": "bd815f57e2b9d9848d884b32d783550c05df66dcde0d6107ac882d4ff462d08a",
+		"res://assets/courtyard_r24/kitchen/courtyard.glb": "fe1cf574d2396922b35d00070a6335da648fb00eaeed9c3524ad9edc02bc7f42",
+		"res://assets/courtyard_r24/kitchen/greens_motion.glb": "df31bb48fae0f8bc5da6a8f8ffd54c37b4c3a71a3b077e4e9caf0f93680ffc78",
+		"res://assets/courtyard_r24/kitchen/layout.json": "9e570e390a13828a3ff3b13c94cd56b9dd1b463c40daf9de5f639f22333a39ae",
+		"res://assets/courtyard_r24/layout.json": "3f6f0abdc96db4a6ba688c30d0b53e572ab43f4912a0a0517fa1ecd36d61ef28",
+		"res://assets/courtyard_r24/paving.glb": "bef500fc1b6623e2bd7c6a1ad7c4b264cd086b9e319186f78cec64c869901e6a",
+		"res://assets/courtyard_r24/red_motion.glb": "e70d87c3ecdc2ad3b992d9b9d2beb982e621e53773226e1c9697e59e4c24ff44",
+		"res://assets/courtyard_r24/return_corridors.json": "9937dca8a758402e8ad7384d7ca7c495646624d32fa6cf2ffb367165e7c63567",
+		"res://assets/courtyard_r24/wait_clips.res": "7893625baeda6242f0c568c38b407ab8864be35ec10a0b74f72e7daaf924c9a9",
+		"res://assets/courtyard_r24/west_plaster.png": "7c27aee56178b2bc71ef72437b6862a880432f8bd608b413bcbcbf53d2f0b07f",
+		"res://assets/fonts/cq_lane_ui.otf": "4f3d9d826af0232c736d27c7ec955bc41f17c4fbb8bb3589692e4efcf5366d17",
+		"res://assets/frontage_r24/frontage.glb": "225e217815de12639bb7dbb58245ffabea2eb0502d3e2b1964ef5ceef7fb1cf6",
+		"res://assets/frontage_r24/frontage.json": "dd94246c3351da31958a0caf1233da6a1cda6a3c5310de6e631104c7c3d60bd2",
+		"res://assets/frontage_r24/stall_clips.res": "a6a8c3d5e49d7211f7f3f65da6206e53aa6beb542464fbbfcfa15c6dda7b012d",
+		"res://assets/frontage_r24/terry_pile.png": "fd459f7260aba51014c21b480ffd2bdcc8b2b346866a5a44c816255c5de27b11",
+		"res://assets/frontage_r24/traffic_lanes.json": "062b0996444cf2453877117ce883afccdbff2c20e98039745780cb534f1fd9e9",
+		"res://assets/frontage_r24/tyre_contact.png": "ec2133beae7a3dec76ce298de9862c7ea116d05540ce9d84e36eadd9363e4627",
+		"res://assets/lane_connection_r24/layout.json": "00a9fab21ea326f421728b9f7ae4303463161a09ff47f0dbbe3cb28ccb0cadf5",
+		"res://assets/lane_inlets_r24/inlets.json": "428b80c4cf1c0ae277abd43c4c873dd18ea0e6d71b41751f5c56a43848eadb03",
+		"res://assets/lane_inlets_r24/junction.glb": "6e2a59065037626e819e885c6d09c81b598f30421d0c9b0519dc96974709eb49",
+		"res://assets/lane_r20/rinse.wav": "8674dce3de89f536a8d519dd21223164a327c91e574f216fad88db91ab74f1bf",
+		"res://assets/lane_r20/rinse_fixture.json": "8a0f267946522fd59fe99b298e18e6a4e1e4b95d1a3728bb4a73e4636fa2ff1a",
+		"res://assets/lane_r20/tree_seats.json": "060f2507ab6997cdc5cddc2d3b5a9eefdbd4b199b88466318eb6a983fd73a0e6",
+		"res://assets/market_steps_r24/market.glb": "4ad5f7adb5cd8fc40acf8d97031684f31982e9c13bcfa1b82e126c5c5ef4f5ed",
+		"res://assets/neighborhood_r24/layout.json": "9bb11fb881f1e15f8d11f271c752343662ad25e1521a2d14889090b815ec2e9c",
+		"res://assets/neighborhood_r24/street.glb": "72e5de5ac664d3c3d2ab31282792d98e5138c60f1566c5e8c324d539e77494e7",
+		"res://assets/neighborhood_r24/tree_distances.glb": "a7aa853386928d878bbe15e262f904d1c68e7e7b3a50737aaaa850c8ff6a3525",
+		"res://assets/neighborhood_r24/tree_species.json": "f5183146354be74771c7b50c771694ef6e83d28ff95cb2c1c367007e6c97922c",
+		"res://assets/neighborhood_r24/trunk_sections.json": "a53c8de4fd3f2cc071ebb8c7f7f776934795f1ffe2ce5bc60b5fc121c5311d42",
+		"res://assets/neighborhood_r24/walk_lanes.json": "4502e660b6c71dbd3d0594d43027b295b1fe211e85f4c154b6c7123468a21dad",
+		"res://assets/river_r22/shore_masks.png": "8d02149256183b79a12328056618abc8b526f079c540b7a6fcb276cccd1d7cdd",
+		"res://assets/rooms_r24/interior_wall_faces.res": "c5139512ae2ee67e248ff0323abc5047c48434389508d96c783088beeded4bb3",
+		"res://assets/rooms_r24/layout.json": "ce535a2e3cb911b4554569d5aa2f61be0c5434098bab81b68b869bd443387c86",
+		"res://assets/rooms_r24/patina.glb": "c2a787f6b105fc13c30cb1902f6d06e566f4ce37f25e72f37b114e944ce2148d",
+		"res://assets/rooms_r24/patina.json": "81585100a9ba354d40e1e46a515d5bab76304402f8c9743e84638ea149df312f",
+		"res://assets/rooms_r24/rooms.glb": "b87a03a74ee4e5230d888a97a0dc5bed6690aed42c382f8a89f05864ba8f4fe0",
+		"res://assets/street_use_r24/layout.json": "2c75656562fc4a8c32c9ec970b965db26c0e80f82abdff433517b3873b1c1d7f",
+		"res://assets/street_use_r24/street_use.png": "b44593527a3b9f206f70b90c5304aff711eac0e50231e2e42bb911f0739b3e8b",
+		"res://assets/street_use_r24/support_heights.png": "7b7fab53b9acda150578ecfc860377c48db2d3f6ec8ff1d852fadd2e12140b01",
+		"res://assets/street_use_r24/workday.glb": "608094aa95d077dc3ea4601febcc77ce698e2317e6a2ecd64291c26043ac8a61",
+		"res://scripts/block_r23.gd": "a990f882013e81d7c8c232428c645c0a664608f3b46cc569d9fc834186fca712",
+		"res://scripts/counter_condiments.gd": "fa08ffe36271c3ae1db3ab206bbc9b05c74d84764b0c0d2fcd3d671824c4e803",
+		"res://scripts/courtyard_life_r24.gd": "06ce9e8f323adb5fe7e2917b9e647038588858632a2913545bb87017ea6d7254",
+		"res://scripts/district_r21.gd": "0db44aa84d164a723d53ef96f62904f4c5a76a69546d0fec96cbb106678a9f7a",
+		"res://scripts/explorer.gd": "fcb92171dcf67a8c30757603549324a92a35707abbb96dc101fa41d3a092b402",
+		"res://scripts/frontage_r24.gd": "ebd12cab88ce40a1680b5d41dea50a848c08773b0624672a85d00dd012ac7471",
+		"res://scripts/gameplay.gd": "4379b58c124fd90ec94850c7d004653ed5bff7881837622a3f6366c3f9a52b2b",
+		"res://scripts/lane_connection_r24.gd": "9a895ee47911f77ead2b8db5495cb36892eafcd2e94d4645b0ae665f03652797",
+		"res://scripts/main.gd": "1ff905e5123261f709841d210df58ede6fa1e8f7415edc9fef16cd8d86fe15b4",
+		"res://scripts/market_steps_r24.gd": "eb79edf2130d038db245d38608a0deb99f45bb8c70793205d59a0e7876f51126",
+		"res://scripts/meter_detail_lod.gd": "2175ca3919c3728ef1db2fc7f8710ad1f39e15aa504306e25ae322e8448d45b3",
+		"res://scripts/neighborhood_r24.gd": "185d808b211090e882aa4218cdb7382172777f1b977c9b0e1b6215a1c5d7f26d",
+		"res://scripts/qa_lane_r20.gd": "18f87f9f26eddd78d05dc617465ff5c4aac399b25eafc1c7cd2aec4417f5b40a",
+		"res://scripts/rinse_tap.gd": "a14c99c56d463b5fb690153a3e53c735623ac2eb09efe408e686efb99bba5fe9",
+		"res://scripts/river_r22.gd": "584019e0ea8ae7f6013c85e233cc2db8f552006cf35a73b57b210edfb70060e6",
+		"res://scripts/roofs_r22.gd": "f0e8b58d18e99148e3128026f69a9e4d3c45dcf50b07b19cab678a64d23c06ad",
+		"res://scripts/scooter_controller.gd": "1307d6e24ce0279aa9671dd3f9646f4aaf00f900797ff5a935fd2cc2743c035a",
+		"res://scripts/shopkeeper.gd": "b34f9b070efae4b0c4a5c619104e782b277b2482d31e4eaf25f3e1359052b5a8",
+		"res://scripts/shopkeeper_attention.gd": "b36275222a35552763acdc27f60687edc2e96a7e52560889480d709d2aa8c656",
+		"res://scripts/street_detail_r19.gd": "8dc39303ddfca91279a8c940439b1322526c406b823b324a8c9b099e81a469a0",
+		"res://scripts/street_use_r24.gd": "96a246687c10ca0bde9a7258d3bd5d86eb8157a09847bc8be9e15a89719fb523",
+		"res://scripts/takeaway_bag.gd": "f53ed8a685fccfbdd767c458dbef25cf85df1f33a5b7b3d3e4b5c90059df52a0",
+		"res://scripts/upper_lane_r20.gd": "0c61b1b914ad1f8d1ba0fbfb27889d1426d6635340d0867f62feda76d4f8d56c",
+		"res://scripts/window_life_r24.gd": "043dd4283980e73af389618ff18ca933988751afe9fda8ce4e642d3e04c5a125",
+		"res://shaders/asphalt_use_r24.gdshader": "7bb8d04d4193084a813653526c5c7d25f7f92127b3ccfbb0f4cfd807ac659624",
+		"res://shaders/breakfast_canvas_r22.gdshader": "2c79d2d0b0fb203bf4e343ea7bfc505d17eb4912e4c965330339cfcb1771ab4a",
+		"res://shaders/canopy_r21.gdshader": "8a02e64842c2b61ae025da990f7c1d7037dd3f24c338de4159d1eb895d596bab",
+		"res://shaders/dressed_stone_r24.gdshader": "705de7c7f5601705e898dcef7441fa94dd478d5f29f130c5461cdbfc254dbb35",
+		"res://shaders/exterior_r21.gdshader": "3b6a8584822522c97c527ea72fd9b33d31441343de73b4b5d89f0640b7755512",
+		"res://shaders/foundation_r23.gdshader": "6f1f2230b80ccf01bd08b5f15ebfbed57eba2e32cfbd9329cf26fc78aa40528c",
+		"res://shaders/frontage_canvas_r24.gdshader": "05a4855a2ded86e0d9b972d8b3836657bedbb93268add08cdf16f64354d8feb5",
+		"res://shaders/frontage_surface_r24.gdshader": "d1f362d7e5f143590785d76ee0df8071248c1ddf78de50dc87f7535ec30118f9",
+		"res://shaders/hanging_cotton_r20.gdshader": "9d48788f6d3b3beffde16f0f5a94c8d99eac36fa8a9c00950c5116c97c208754",
+		"res://shaders/lane_pavers_r24.gdshader": "24e6323351bf0e4f3a76f1648ce21f7882862b887a9428684f179bc7b0cb2d1f",
+		"res://shaders/lane_steps_r24.gdshader": "c1b43c1471b731794a8c3da09b53f333696228825a67b4ca348355c5bc6eb3ef",
+		"res://shaders/market_sandstone_r24.gdshader": "c7a4463fb63c28708506c6ae5d6bac3afea24e810977d85f0bbfe8eadbe434e7",
+		"res://shaders/paving_r21.gdshader": "34f7c48e672b5f067d110a71330889a56ea941d0665a96793c6eb406a83cb817",
+		"res://shaders/pedestrian_outerwear_r24.gdshader": "054fd5eb984cfa2868b95f61436be04c7a99018b893266b95636ef40816d7acc",
+		"res://shaders/rinse_water.gdshader": "1a1c4d8f5d478384ae1cdec390d94903b83adf78096bc050116eee3354fee277",
+		"res://shaders/river_foliage_r22.gdshader": "625e26697fc1f7c0a7900774572b024157fdfb072e45b46207655130258c5391",
+		"res://shaders/river_r22.gdshader": "b44464750600087424a996e73d6cbf26891f2367df9f47ad6add66c0fea4cd79",
+		"res://shaders/riverbank_r22.gdshader": "71572bdd1e25f2d3cc3389eb72aad132cda52e7f5084cba4722ea467e6a47148",
+		"res://shaders/sidewalk_r23.gdshader": "96d10fdd833465653600ca1c72e6c03fe9059f3031eccaff791c308876e4b39c",
+		"res://shaders/sky_visibility_r20.gdshaderinc": "14a770eab2dc29951adb2d5c9a17b4121b9a5bbf0e74d31e48743b8828985b7d",
+		"res://shaders/stall_enamel_r24.gdshader": "047d7175d2cf71e4c1a3f18eb1860027102f27e897f8d0682d9de86296c02f5b",
+		"res://shaders/street_repairs_r24.gdshaderinc": "eb2b82186ead48bca380530590afd74fedba5bcbe7858162a7aec251aea480f2",
+		"res://shaders/street_surface_r19.gdshader": "3349e020ad7d093cd958426e76caf2d3cb8eed55f218170987dfe510df28e197",
+		"res://shaders/street_use_r24.gdshaderinc": "e28d5204d08915037d835271d8977d13d90b90cb9d8afe13fcf2898c9aadbe83",
+		"res://shaders/wall_patina_r24.gdshader": "aeda0e5c8c143f3725f037f8785430eafb5a21f4768aefd25a76ba64c2e3c1f6",
+		"res://shaders/washcloth_r24.gdshader": "40257182eb7b60ad875f080f81fec3efb5e2b5b481510b5ff06a4154915179bc",
+		"res://shaders/worn_rail_r21.gdshader": "14fe938ef6c6874fa67680e154f445eda0122976eb478dd5b3282417f5ada7c7"
+	},
+	"sample_adjustments": [],
+	"scene_identity": {
+		"asset": "res://assets/chongqing_district.glb",
+		"block_r23": {
+			"actors": 25,
+			"brick_shells": 7,
+			"hidden": 8,
+			"missing": [],
+			"routes": {
+				"east": 196.978805541992,
+				"promenade": 92.858268737793,
+				"walk": 85.5828399658203,
+				"west": 196.792129516602
+			},
+			"swapped": 88
+		},
+		"bytes": 1174416336,
+		"counter_r21": {
+			"character_sha256": "ac585e8a037fcf950fc51d46e0fa34c3c46f40ccf1241250273f2af4d4fc6cbc",
+			"portion_sha256": "a3347a027ace51dca3db48093942e821e8a925131045f10472a34bda3e5c5746",
+			"stock_sha256": "e2a11e6c8ac2b26c1b077d38f343f1cb810855c89f7539898c9d41ef8df661ec"
+		},
+		"court_resident": {
+			"controller": "4d7ccd29e2e047a3006bf3a9a8b75107f07b07736d1a1c46318533bb3b22155f",
+			"fit": "a9df93aee35791d437c611680ea324c0b4bcfaab1bedccf6b1a1faa617d5ec83",
+			"model": "dfb43c77aff8beae940bceb906ad667f8b6e5ef85b1613393995a0a7091a94f3"
+		},
+		"courtyard_life": {
+			"chessmen": 32,
+			"missing": [],
+			"seats": 3,
+			"visitor_length": 12.0611190795898
+		},
+		"courtyard_paving": [
+			"pavement",
+			"yard_concrete"
+		],
+		"district_r21": {
+			"exterior_sectors": 84,
+			"exterior_trees": 623,
+			"layer_sha256": "fdb98c3bd8b65364f2d76c30a6263cbfca46c2cc991436662197d56faa76346c",
+			"layout_sha256": "ef08224edd2de91299f87bc4534130df8153d6b8c5ee42890763e5feeed2bbcb",
+			"near_plantings": 21,
+			"paving": [
+				"COL_Terrain_200m_yard_concrete",
+				"COL_Walk_OSM_734116594_0_step_concrete",
+				"Walk_details_OSM_734116594_0_painted_metal",
+				"COL_Walk_OSM_1328811307_0_step_concrete",
+				"Walk_details_OSM_1328811307_0_painted_metal",
+				"COL_Walk_Central_stair_lane_step_concrete",
+				"COL_Handrails_Central_stair_lane_painted_metal",
+				"COL_Walk_Narrow_upper_passage_step_concrete",
+				"COL_Walk_Upper_terrace_connection_step_concrete",
+				"COL_Walk_West_residential_link_step_concrete",
+				"COL_Handrails_West_residential_link_painted_metal",
+				"COL_Walk_East_photo_alley_step_concrete",
+				"Outer_ground_context_ground_dirt",
+				"R20_Court_paving_step_concrete"
+			],
+			"roof_structures": 35,
+			"terraces": 2,
+			"weather_atlas_sha256": "30596b17abf2da8ebe35e38aa7e3b8a57c36fd4d6971684b7cb9edaea02f0007",
+			"weathered_shell_surfaces": 104,
+			"window_fittings": 52
+		},
+		"east_lane_joint": {
+			"added": 7,
+			"missing": [],
+			"replaced": 10
+		},
+		"market_r24": {
+			"donors": 44,
+			"fixtures": 11,
+			"lights": 2,
+			"missing": [],
+			"stalls": 2
+		},
+		"market_steps": {
+			"COL_R23_NanquUpperApron": [
+				"R23_basalt_kerb",
+				"Market16_CutSandstone"
+			],
+			"COL_R24_MarketStairs_R24_step_stone": [
+				"Market16_LimeBed",
+				"Market16_CutSandstone"
+			]
+		},
+		"meter_lod": {
+			"sha256": "931e72fa0f34fe7bcdd65257f2b1c55316cde4ac61805fc81799cd777efc0ecc",
+			"sites": 112,
+			"source_triangles": 910876.0,
+			"switch_m": 18.0
+		},
+		"neighborhood": {
+			"missing": [],
+			"plants": 35,
+			"removed": [
+				"COL_Handrails_Central_stair_lane_painted_metal",
+				"COL_Handrails_West_residential_link_painted_metal",
+				"Court_entry_rails_frame",
+				"Utility_cables_dark",
+				"COL_R20_Returned_handrail_steel",
+				"COL_R20_Returned_handrail_rail_enamel",
+				"COL_R20_Returned_handrail_pin",
+				"COL_R20_Returned_handrail_iron",
+				"Resident_waste_13_bin_00",
+				"Resident_waste_13_bin_01",
+				"Resident_waste_13_bin_02",
+				"Resident_waste_13_bin_03",
+				"Resident_waste_13_bagA_00",
+				"Resident_waste_13_bagB_00",
+				"Resident_waste_13_crate_00"
+			],
+			"shifted": 87,
+			"spans": 4,
+			"tree_distance_meshes": 288,
+			"trunks": 5
+		},
+		"revision": 17.0,
+		"river_r22": {
+			"axes": 2,
+			"fleet": 6,
+			"layer_sha256": "7e6e4ebf4f54513ae6492baba5c02e1a6571735ef7e7cd5e4a6dff7847232f87",
+			"layout_sha256": "ff239e78712fbf074fb9a50d180f6288fd4198ac926f30e8054cb51b91ef6a45",
+			"mapped_buildings": 14,
+			"source_plan_sha256": "bbae7145d99a6dba9f3d46c13ac8a89fcf2b617c923537b34a2aa9dea3f62932",
+			"terrain": {
+				"Outer_ground_context_ground_dirt": {
+					"replacement": "R22_Bank_Outer",
+					"triangles": 40728.0,
+					"vertices": 21360.0
+				},
+				"R19_Distant_relief_distant19": {
+					"replacement": "R22_Bank_Relief",
+					"triangles": 111295.0,
+					"vertices": 55912.0
+				}
+			}
+		},
+		"roofs_r22": {
+			"canvas_shader_sha256": "2c79d2d0b0fb203bf4e343ea7bfc505d17eb4912e4c965330339cfcb1771ab4a",
+			"decks": 13,
+			"layer_sha256": "1bd3e44caf3cddd9ce47095815698725b45fed697f122c636a4def0b67b85c44",
+			"layout_sha256": "226528a93e1282d3c6185db6c62c0cfcdb50c5383076a9705ce07ef6f0f81031",
+			"sockets": 6,
+			"stations": 12,
+			"surface_imports_sha256": "8e5e08e095a59fba57cb7bfd607b961f1c31eaff259c4f3c7674d04532a1341e"
+		},
+		"sha256": "88b5be04c0c72ae2b54bb02f55f2186f7b7ec2937389a59697e7306dbd7e7c13",
+		"street_finish_r24": {
+			"donors": 9,
+			"local_frame": true,
+			"missing": [],
+			"retired": 3
+		},
+		"street_r19": {
+			"asset": "res://assets/street_r19/street_life.glb",
+			"enabled": true,
+			"manifest_sha256": "b0ec626c4096ddc6df5e1444e21294346990e8faf21e62fb5bcecd77d2ae0e17",
+			"replaced": [
+				"Type_梯坎小面",
+				"Resident_waste_14_bin_00",
+				"Resident_waste_14_bin_01",
+				"Resident_waste_14_bin_02",
+				"Resident_waste_14_bin_03",
+				"Resident_waste_14_bagA_00",
+				"Resident_waste_14_bagB_00",
+				"Resident_waste_14_crate_00",
+				"Authored_distant_hill_ridges_hill_near",
+				"Authored_distant_hill_ridges_hill_far",
+				"B_A01_noodle_details_faded_red",
+				"B_A01_noodle_details_curtain_beige"
+			],
+			"sha256": "1c40ae7ed04e8bf3f5f7956eaf630a098890e62a9c142f3e846c9ee15d530bad",
+			"source_revision": "R19_scene_05"
+		},
+		"street_r19_surfaces": {
+			"materials": [
+				"CQ03_PBR_yard_concretetrue",
+				"CQ03_PBR_paving_slabtrue",
+				"CQ03_PBR_pavementtrue",
+				"CQ03_PBR_step_concretetrue",
+				"CQ03_PBR_step_concretefalse",
+				"CQ03_PBR_plaster_greyfalse",
+				"CQ03_PBR_plaster_ochrefalse",
+				"CQ03_PBR_stonetrue",
+				"CQ03_PBR_tile_creamtrue",
+				"CQ03_PBR_concretetrue",
+				"CQ03_PBR_plastertrue",
+				"CQ03_PBR_plaster_greytrue",
+				"CQ03_PBR_plaster_ochretrue",
+				"CQ03_PBR_tiletrue",
+				"CQ03_PBR_brick_darktrue",
+				"CQ03_PBR_tile_bluetrue",
+				"CQ03_PBR_bricktrue",
+				"R20_Dressed_stonetrue"
+			],
+			"surfaces": 270
+		},
+		"street_use_r24": {
+			"asphalt": 15,
+			"dressed": 2,
+			"facades": 83,
+			"furniture_volumes": 2,
+			"paving": 56,
+			"resident_pots": 2,
+			"workday": true
+		},
+		"upper_lane": {
+			"enabled": true,
+			"model_sha256": "16dabbe6c51b1ff130153d68092dc84daa509ba4538f10152f85d4e8ae53be37",
+			"sky_sha256": {
+				"res://assets/lane_r20/alley_sky.png": "c8b799570de19d6acd2e5c822aa095807d6dc3b107bd4886e66caef438cf7d3b",
+				"res://assets/lane_r20/shop_sky.png": "8d5b169cfd0bf9cc799dec67d02fde5ebbc2558a3a79dc5c91fd85fbc98dd188"
+			}
+		},
+		"window_rooms": {
+			"existing_room_meshes": 48,
+			"furnishings": 6,
+			"lights": 3,
+			"patina_batches": 2
+		}
+	},
+	"scene_revision": 17.0,
+	"scene_sha256": "88b5be04c0c72ae2b54bb02f55f2186f7b7ec2937389a59697e7306dbd7e7c13",
+	"script_sha256": {
+		"res://scripts/build_collisions.gd": "2628a4eb84628582acd93ed16307ea708aa9e94867e286287eefa636abe803a8",
+		"res://scripts/explorer.gd": "fcb92171dcf67a8c30757603549324a92a35707abbb96dc101fa41d3a092b402",
+		"res://scripts/main.gd": "1ff905e5123261f709841d210df58ede6fa1e8f7415edc9fef16cd8d86fe15b4"
+	},
+	"street_layer": {
+		"asset": "res://assets/street_r19/street_life.glb",
+		"enabled": true,
+		"manifest_sha256": "b0ec626c4096ddc6df5e1444e21294346990e8faf21e62fb5bcecd77d2ae0e17",
+		"replaced": [
+			"Type_梯坎小面",
+			"Resident_waste_14_bin_00",
+			"Resident_waste_14_bin_01",
+			"Resident_waste_14_bin_02",
+			"Resident_waste_14_bin_03",
+			"Resident_waste_14_bagA_00",
+			"Resident_waste_14_bagB_00",
+			"Resident_waste_14_crate_00",
+			"Authored_distant_hill_ridges_hill_near",
+			"Authored_distant_hill_ridges_hill_far",
+			"B_A01_noodle_details_faded_red",
+			"B_A01_noodle_details_curtain_beige"
+		],
+		"sha256": "1c40ae7ed04e8bf3f5f7956eaf630a098890e62a9c142f3e846c9ee15d530bad",
+		"source_revision": "R19_scene_05"
+	},
+	"street_use_r24": {
+		"asphalt": 15,
+		"dressed": 2,
+		"facades": 83,
+		"furniture_volumes": 2,
+		"paving": 56,
+		"resident_pots": 2,
+		"workday": true
+	},
+	"tested_route_names": [
+		"central_stair_ascent",
+		"west_lane_ascent",
+		"upper_road_walk",
+		"narrow_upper_passage"
+	],
+	"tests": [
+		{
+			"name": "world_collision_created",
+			"pass": true
+		},
+		{
+			"name": "camera_overview",
+			"pass": true,
+			"position": [
+				90.0,
+				230.0,
+				120.0
+			]
+		},
+		{
+			"name": "camera_street_entry",
+			"pass": true,
+			"position": [
+				24.0,
+				10.594,
+				77.0
+			]
+		},
+		{
+			"name": "camera_noodle_corner",
+			"pass": true,
+			"position": [
+				-24.0,
+				13.812,
+				53.5
+			]
+		},
+		{
+			"name": "camera_central_steps",
+			"pass": true,
+			"position": [
+				-20.0,
+				14.032,
+				52.0
+			]
+		},
+		{
+			"name": "camera_west_lane",
+			"pass": true,
+			"position": [
+				-73.0,
+				15.385,
+				34.0
+			]
+		},
+		{
+			"name": "camera_community_court",
+			"pass": true,
+			"position": [
+				-20.0,
+				22.3,
+				19.0
+			]
+		},
+		{
+			"name": "camera_narrow_passage",
+			"pass": true,
+			"position": [
+				-35.5,
+				27.586,
+				-46.2
+			]
+		},
+		{
+			"name": "camera_upper_houses",
+			"pass": true,
+			"position": [
+				-12.0,
+				30.922,
+				-63.0
+			]
+		},
+		{
+			"name": "camera_east_gallery",
+			"pass": true,
+			"position": [
+				50.0,
+				15.552,
+				49.0
+			]
+		},
+		{
+			"name": "camera_residential_road",
+			"pass": true,
+			"position": [
+				64.0,
+				28.982,
+				-34.0
+			]
+		},
+		{
+			"name": "camera_upper_street",
+			"pass": true,
+			"position": [
+				4.0,
+				33.664,
+				-80.0
+			]
+		},
+		{
+			"name": "camera_roofscape",
+			"pass": true,
+			"position": [
+				14.0,
+				64.0,
+				20.0
+			]
+		},
+		{
+			"name": "camera_community_front",
+			"pass": true,
+			"position": [
+				28.0,
+				23.559,
+				-4.0
+			]
+		},
+		{
+			"name": "camera_residential_entry",
+			"pass": true,
+			"position": [
+				-43.0,
+				17.742,
+				22.0
+			]
+		},
+		{
+			"name": "camera_window_courtyard",
+			"pass": true,
+			"position": [
+				5.53,
+				20.682,
+				10.302
+			]
+		},
+		{
+			"name": "camera_tea_interior",
+			"pass": true,
+			"position": [
+				79.578,
+				18.184,
+				37.251
+			]
+		},
+		{
+			"name": "camera_window_living",
+			"pass": true,
+			"position": [
+				47.905,
+				34.957,
+				-76.373
+			]
+		},
+		{
+			"name": "camera_window_north",
+			"pass": true,
+			"position": [
+				-23.878,
+				35.885,
+				-97.746
+			]
+		},
+		{
+			"name": "camera_noodle_interior",
+			"pass": true,
+			"position": [
+				-24.29,
+				13.104,
+				59.3
+			]
+		},
+		{
+			"name": "camera_window_reading",
+			"pass": true,
+			"position": [
+				-51.35,
+				18.602,
+				14.17
+			]
+		},
+		{
+			"name": "camera_window_dining",
+			"pass": true,
+			"position": [
+				-26.35,
+				15.858,
+				38.42
+			]
+		},
+		{
+			"name": "camera_planting_detail",
+			"pass": true,
+			"position": [
+				52.2,
+				15.724,
+				48.2
+			]
+		},
+		{
+			"name": "camera_r23_shutter",
+			"pass": true,
+			"position": [
+				-24.9,
+				15.48,
+				35.13
+			]
+		},
+		{
+			"name": "camera_r23_court_bench",
+			"pass": true,
+			"position": [
+				-43.0,
+				22.12,
+				12.8
+			]
+		},
+		{
+			"name": "camera_r23_laundry",
+			"pass": true,
+			"position": [
+				-47.676,
+				22.049,
+				-6.868
+			]
+		},
+		{
+			"name": "camera_r23_shop_window",
+			"pass": true,
+			"position": [
+				-24.445,
+				13.158,
+				75.65
+			]
+		},
+		{
+			"name": "camera_r23_main_road",
+			"pass": true,
+			"position": [
+				-38.312,
+				9.411,
+				79.839
+			]
+		},
+		{
+			"name": "camera_r23_garden",
+			"pass": true,
+			"position": [
+				48.946,
+				28.46,
+				-33.217
+			]
+		},
+		{
+			"name": "camera_r23_street_support",
+			"pass": true,
+			"position": [
+				-25.0,
+				13.986,
+				51.0
+			]
+		},
+		{
+			"name": "camera_r23_brick",
+			"pass": true,
+			"position": [
+				-48.0,
+				19.778,
+				5.0
+			]
+		},
+		{
+			"name": "camera_r24_stall",
+			"pass": true,
+			"position": [
+				-27.48,
+				10.352,
+				78.54
+			]
+		},
+		{
+			"name": "camera_r24_counter",
+			"pass": true,
+			"position": [
+				-25.62,
+				10.484,
+				76.66
+			]
+		},
+		{
+			"name": "camera_r24_repair",
+			"pass": true,
+			"position": [
+				-11.03,
+				10.438,
+				77.3
+			]
+		},
+		{
+			"name": "camera_r24_stairs",
+			"pass": true,
+			"position": [
+				-23.92,
+				9.435,
+				81.05
+			]
+		},
+		{
+			"name": "camera_r24_court",
+			"pass": true,
+			"position": [
+				-34.0,
+				22.15,
+				-7.0
+			]
+		},
+		{
+			"name": "camera_r24_viaduct",
+			"pass": true,
+			"position": [
+				-21.4,
+				9.46,
+				80.62
+			]
+		},
+		{
+			"name": "camera_r24_junction",
+			"pass": true,
+			"position": [
+				25.3,
+				10.69,
+				78.8
+			]
+		},
+		{
+			"name": "camera_r24_verge",
+			"pass": true,
+			"position": [
+				57.5,
+				10.78,
+				78.9
+			]
+		},
+		{
+			"name": "camera_r16_scooter",
+			"pass": true,
+			"position": [
+				-17.3,
+				13.4,
+				56.5
+			]
+		},
+		{
+			"name": "camera_r16_clothesline",
+			"pass": true,
+			"position": [
+				-74.0,
+				20.1,
+				9.0
+			]
+		},
+		{
+			"name": "camera_r16_roof",
+			"pass": true,
+			"position": [
+				-47.0,
+				30.0,
+				20.0
+			]
+		},
+		{
+			"name": "camera_r16_shop",
+			"pass": true,
+			"position": [
+				-22.0,
+				13.5,
+				57.0
+			]
+		},
+		{
+			"name": "camera_r16_meter",
+			"pass": true,
+			"position": [
+				-27.2,
+				12.3,
+				59.8
+			]
+		},
+		{
+			"name": "camera_r17_worker_entry",
+			"pass": true,
+			"position": [
+				-65.5,
+				25.1,
+				-27.5
+			]
+		},
+		{
+			"name": "camera_r17_worker_door",
+			"pass": true,
+			"position": [
+				-70.8,
+				24.4,
+				-28.9
+			]
+		},
+		{
+			"name": "camera_r17_A04_entry",
+			"pass": true,
+			"position": [
+				-48.6,
+				18.2,
+				18.2
+			]
+		},
+		{
+			"name": "camera_r17_west_route",
+			"pass": true,
+			"position": [
+				-60.0,
+				38.0,
+				-31.0
+			]
+		},
+		{
+			"name": "camera_r17_east_route",
+			"pass": true,
+			"position": [
+				61.0,
+				29.0,
+				11.0
+			]
+		},
+		{
+			"name": "camera_r17_narrow_route",
+			"pass": true,
+			"position": [
+				-37.4,
+				27.1,
+				-43.0
+			]
+		},
+		{
+			"name": "camera_r17_shopkeeper",
+			"pass": true,
+			"position": [
+				-23.3,
+				13.35,
+				58.3
+			]
+		},
+		{
+			"name": "camera_r17_serve",
+			"pass": true,
+			"position": [
+				-23.3,
+				13.35,
+				58.3
+			]
+		},
+		{
+			"name": "camera_r17_takeaway",
+			"pass": true,
+			"position": [
+				-23.95,
+				12.4,
+				59.1
+			]
+		},
+		{
+			"name": "camera_r18_idle",
+			"pass": true,
+			"position": [
+				-23.3,
+				13.35,
+				58.3
+			]
+		},
+		{
+			"name": "camera_r18_reach",
+			"pass": true,
+			"position": [
+				-23.3,
+				13.35,
+				58.3
+			]
+		},
+		{
+			"name": "camera_r18_lift",
+			"pass": true,
+			"position": [
+				-23.3,
+				13.35,
+				58.3
+			]
+		},
+		{
+			"name": "camera_r18_place",
+			"pass": true,
+			"position": [
+				-23.3,
+				13.35,
+				58.3
+			]
+		},
+		{
+			"name": "camera_r18_workstation",
+			"pass": true,
+			"position": [
+				-22.8,
+				13.2,
+				57.8
+			]
+		},
+		{
+			"name": "camera_r18_player_eye",
+			"pass": true,
+			"position": [
+				-23.63,
+				12.79,
+				58.8
+			]
+		},
+		{
+			"name": "camera_r18_greet",
+			"pass": true,
+			"position": [
+				-23.63,
+				12.79,
+				58.8
+			]
+		},
+		{
+			"name": "camera_r18_face",
+			"pass": true,
+			"position": [
+				-24.7,
+				12.73,
+				59.35
+			]
+		},
+		{
+			"name": "camera_r18_grip",
+			"pass": true,
+			"position": [
+				-24.65,
+				12.57,
+				59.2
+			]
+		},
+		{
+			"name": "camera_r19_seating",
+			"pass": true,
+			"position": [
+				-27.7,
+				12.65,
+				58.5
+			]
+		},
+		{
+			"name": "camera_r19_stair_detail",
+			"pass": true,
+			"position": [
+				-20.9,
+				14.6,
+				48.5
+			]
+		},
+		{
+			"name": "camera_r20_notices",
+			"pass": true,
+			"position": [
+				-34.43,
+				28.2,
+				-47.87
+			]
+		},
+		{
+			"name": "camera_r20_reverse",
+			"pass": true,
+			"position": [
+				-30.9,
+				29.0,
+				-54.8
+			]
+		},
+		{
+			"name": "camera_r20_tap",
+			"pass": true,
+			"position": [
+				-32.55,
+				28.01,
+				-50.82
+			]
+		},
+		{
+			"name": "camera_r20_laundry",
+			"pass": true,
+			"position": [
+				-34.59,
+				29.09,
+				-47.27
+			]
+		},
+		{
+			"name": "camera_r20_tree_court",
+			"pass": true,
+			"position": [
+				-23.28,
+				31.19,
+				-66.92
+			]
+		},
+		{
+			"name": "camera_r20_neighbor",
+			"pass": true,
+			"position": [
+				-24.07,
+				30.51,
+				-67.29
+			]
+		},
+		{
+			"name": "camera_r20_seated_neighbor",
+			"pass": true,
+			"position": [
+				-26.401,
+				30.746,
+				-68.461
+			]
+		},
+		{
+			"name": "camera_r22_breakfast",
+			"pass": true,
+			"position": [
+				-27.0,
+				12.56,
+				56.2
+			]
+		},
+		{
+			"name": "camera_r22_roof_garden",
+			"pass": true,
+			"position": [
+				3.0,
+				52.0,
+				-22.0
+			]
+		},
+		{
+			"name": "camera_r22_roof_wash",
+			"pass": true,
+			"position": [
+				-43.0,
+				49.0,
+				-47.0
+			]
+		},
+		{
+			"name": "camera_r22_river_street",
+			"pass": true,
+			"position": [
+				-45.0,
+				11.58,
+				66.0
+			]
+		},
+		{
+			"name": "camera_r22_river_overview",
+			"pass": true,
+			"position": [
+				-75.0,
+				88.0,
+				66.0
+			]
+		},
+		{
+			"name": "camera_r22_river_detail",
+			"pass": true,
+			"position": [
+				-152.0,
+				56.0,
+				245.0
+			]
+		},
+		{
+			"name": "camera_r24_canopy_joint",
+			"pass": true,
+			"position": [
+				-4.85,
+				17.66,
+				31.2
+			]
+		},
+		{
+			"name": "camera_r24_canopy_under",
+			"pass": true,
+			"position": [
+				-1.43,
+				17.86,
+				28.1
+			]
+		},
+		{
+			"name": "camera_r24_hoop",
+			"pass": true,
+			"position": [
+				-33.0,
+				22.2,
+				6.4
+			]
+		},
+		{
+			"name": "camera_r24_frame",
+			"pass": true,
+			"position": [
+				-60.0,
+				122.0,
+				110.0
+			]
+		},
+		{
+			"name": "camera_r24_frame_walk",
+			"pass": true,
+			"position": [
+				-23.92,
+				9.435,
+				81.05
+			]
+		},
+		{
+			"name": "camera_r24_step_edge",
+			"pass": true,
+			"position": [
+				-26.4,
+				14.1,
+				49.0
+			]
+		},
+		{
+			"name": "camera_r24_west_seam",
+			"pass": true,
+			"position": [
+				-73.7,
+				16.88,
+				25.35
+			]
+		},
+		{
+			"name": "camera_r24_center_seam",
+			"pass": true,
+			"position": [
+				-20.1,
+				18.83,
+				24.0
+			]
+		},
+		{
+			"name": "camera_r24_lower_seam",
+			"pass": true,
+			"position": [
+				6.0,
+				13.13,
+				61.6
+			]
+		},
+		{
+			"name": "camera_r24_court_entry",
+			"pass": true,
+			"position": [
+				-17.5,
+				21.68,
+				2.7
+			]
+		},
+		{
+			"name": "camera_r24_market_ground",
+			"pass": true,
+			"position": [
+				-33.65,
+				10.26,
+				77.45
+			]
+		},
+		{
+			"name": "camera_r24_west_doorstep",
+			"pass": true,
+			"position": [
+				-71.35,
+				17.54,
+				20.05
+			]
+		},
+		{
+			"name": "camera_r24_court_gap",
+			"pass": true,
+			"position": [
+				-20.14,
+				18.93,
+				18.9
+			]
+		},
+		{
+			"name": "camera_r24_west_life",
+			"pass": true,
+			"position": [
+				-73.5,
+				16.88,
+				25.4
+			]
+		},
+		{
+			"name": "camera_r24_lane_life",
+			"pass": true,
+			"position": [
+				-34.3,
+				12.73,
+				60.6
+			]
+		},
+		{
+			"name": "camera_r24_wire_anchor",
+			"pass": true,
+			"position": [
+				-74.5,
+				17.6,
+				20.3
+			]
+		},
+		{
+			"name": "camera_r24_chess",
+			"pass": true,
+			"position": [
+				-16.0,
+				19.18,
+				17.8
+			]
+		},
+		{
+			"name": "camera_r24_wire_fixing",
+			"pass": true,
+			"position": [
+				-24.16,
+				17.11,
+				60.8
+			]
+		},
+		{
+			"name": "camera_r24_chess_table",
+			"pass": true,
+			"position": [
+				-15.99,
+				19.42,
+				17.28
+			]
+		},
+		{
+			"name": "camera_r24_west_threshold",
+			"pass": true,
+			"position": [
+				-74.16,
+				17.6,
+				20.6
+			]
+		},
+		{
+			"name": "camera_r24_west_arrival",
+			"pass": true,
+			"position": [
+				-79.3,
+				16.27,
+				33.4
+			]
+		},
+		{
+			"name": "camera_r24_west_bowl",
+			"pass": true,
+			"position": [
+				-69.04,
+				17.48,
+				17.22
+			]
+		},
+		{
+			"name": "camera_r24_west_kitchen",
+			"pass": true,
+			"position": [
+				-70.1,
+				17.66,
+				21.44
+			]
+		},
+		{
+			"name": "camera_r24_main_tea_window",
+			"pass": true,
+			"position": [
+				-33.7,
+				10.471,
+				75.3
+			]
+		},
+		{
+			"name": "camera_r24_main_supper_window",
+			"pass": true,
+			"position": [
+				-31.9,
+				10.55,
+				76.0
+			]
+		},
+		{
+			"name": "camera_r24_west_pantry",
+			"pass": true,
+			"position": [
+				-69.51,
+				17.32,
+				20.73
+			]
+		},
+		{
+			"name": "camera_r24_market_steps_front",
+			"pass": true,
+			"position": [
+				-21.6,
+				9.41,
+				83.7
+			]
+		},
+		{
+			"name": "camera_r24_market_steps_along",
+			"pass": true,
+			"position": [
+				-26.15,
+				9.42,
+				81.45
+			]
+		},
+		{
+			"name": "camera_r24_market_steps_upper",
+			"pass": true,
+			"position": [
+				-19.6,
+				10.38,
+				76.45
+			]
+		},
+		{
+			"name": "camera_r24_east_upper_joint",
+			"pass": true,
+			"position": [
+				26.799,
+				24.566,
+				-6.865
+			]
+		},
+		{
+			"name": "camera_r24_east_upper_reverse",
+			"pass": true,
+			"position": [
+				32.3,
+				24.15,
+				-8.9
+			]
+		},
+		{
+			"name": "camera_r24_east_upper_grate",
+			"pass": true,
+			"position": [
+				27.15,
+				24.17,
+				-8.01
+			]
+		},
+		{
+			"name": "camera_r24_east_inlet_0",
+			"pass": true,
+			"position": [
+				36.833,
+				22.583,
+				0.65
+			]
+		},
+		{
+			"name": "camera_r24_east_inlet_1",
+			"pass": true,
+			"position": [
+				43.833,
+				20.85,
+				12.65
+			]
+		},
+		{
+			"foot_position": [
+				20.0,
+				9.132,
+				76.0
+			],
+			"name": "walk_spawn_stands_on_ground",
+			"pass": true
+		},
+		{
+			"from": [
+				16.0,
+				13.474,
+				66.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				1.6,
+				14.177,
+				60.4
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-12.8,
+				14.833,
+				54.8
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-20.0,
+				16.164,
+				44.667
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-20.0,
+				18.22,
+				30.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-18.667,
+				20.312,
+				15.333
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-18.0,
+				22.407,
+				0.667
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-18.0,
+				24.507,
+				-14.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-29.0,
+				25.858,
+				-26.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-40.0,
+				27.275,
+				-38.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-33.1,
+				29.272,
+				-50.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-25.0,
+				31.665,
+				-64.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-17.0,
+				33.924,
+				-77.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-27.0,
+				35.646,
+				-90.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-93.0,
+				14.441,
+				45.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-80.333,
+				15.819,
+				37.667
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-73.667,
+				17.683,
+				25.333
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-73.0,
+				20.092,
+				8.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-75.0,
+				22.402,
+				-8.667
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-75.333,
+				24.691,
+				-24.667
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-74.0,
+				26.95,
+				-40.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-76.0,
+				29.027,
+				-54.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-76.333,
+				31.364,
+				-69.333
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-18.0,
+				21.367,
+				8.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-18.5,
+				19.701,
+				19.7
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-33.75,
+				19.321,
+				19.7
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-49.0,
+				18.967,
+				19.7
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-50.0,
+				17.157,
+				33.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-63.333,
+				16.86,
+				33.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-71.0,
+				17.83,
+				24.667
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-73.0,
+				20.092,
+				8.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-18.0,
+				24.507,
+				-14.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-6.0,
+				24.067,
+				-8.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				8.667,
+				24.145,
+				-5.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				26.0,
+				24.723,
+				-5.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				28.0,
+				26.176,
+				-14.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				32.0,
+				28.738,
+				-30.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				36.667,
+				30.962,
+				-44.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				42.0,
+				32.85,
+				-56.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				60.0,
+				33.239,
+				-56.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-25.0,
+				31.665,
+				-64.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-12.0,
+				31.37,
+				-59.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				6.0,
+				32.065,
+				-59.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				20.0,
+				32.588,
+				-59.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				34.667,
+				32.786,
+				-57.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				52.0,
+				14.717,
+				61.7
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				48.0,
+				16.653,
+				49.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				52.0,
+				18.996,
+				35.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				49.0,
+				21.514,
+				19.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				35.0,
+				24.991,
+				-5.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				28.0,
+				26.176,
+				-14.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				15.972,
+				13.437,
+				66.241
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				16.233,
+				11.614,
+				78.268
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-100.0,
+				11.222,
+				65.444
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-76.228,
+				11.267,
+				70.855
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-55.514,
+				11.37,
+				74.388
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-31.081,
+				11.512,
+				76.594
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-11.582,
+				11.468,
+				78.146
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				3.489,
+				11.458,
+				78.789
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				26.759,
+				11.727,
+				78.146
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				44.95,
+				12.88,
+				72.448
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				62.501,
+				15.402,
+				59.003
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				78.487,
+				17.63,
+				47.624
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				93.698,
+				19.819,
+				35.98
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-100.0,
+				14.302,
+				44.606
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-91.392,
+				14.276,
+				46.455
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-80.469,
+				13.545,
+				53.826
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-65.273,
+				12.775,
+				62.494
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-54.477,
+				12.946,
+				63.27
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-43.428,
+				13.379,
+				61.851
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-32.38,
+				14.236,
+				57.063
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-23.541,
+				14.279,
+				57.706
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-12.105,
+				14.237,
+				59.003
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-0.407,
+				14.172,
+				60.3
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				15.972,
+				13.437,
+				66.241
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				80.188,
+				19.332,
+				37.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				15.972,
+				13.437,
+				66.241
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				39.994,
+				14.238,
+				63.189
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				60.951,
+				15.989,
+				55.045
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				74.451,
+				18.291,
+				42.719
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"name": "wall_809889604",
+			"pass": true
+		},
+		{
+			"name": "wall_809889626",
+			"pass": true
+		},
+		{
+			"name": "wall_809889630",
+			"pass": true
+		},
+		{
+			"name": "wall_1413081560",
+			"pass": true
+		},
+		{
+			"name": "wall_A03",
+			"pass": true
+		},
+		{
+			"name": "wall_A07",
+			"pass": true
+		},
+		{
+			"continuous_controller_walk": true,
+			"end_floor": "COL_Walk_Central_stair_lane_step_concrete",
+			"frames": 265,
+			"from": [
+				-20.0,
+				12.956,
+				49.0
+			],
+			"goal_distance_m": 0.324867248535156,
+			"goals_reached": [
+				{
+					"foot": [
+						-20.0,
+						15.508,
+						31.325
+					],
+					"index": 0
+				}
+			],
+			"goals_total": 1,
+			"height_gain_m": 2.55154991149902,
+			"horizontal_progress_m": 17.6751327514648,
+			"max_frame_displacement_m": 0.163961827754974,
+			"minimum_foot_height_m": 12.9562673568726,
+			"name": "central_stair_ascent",
+			"on_floor": true,
+			"pass": true,
+			"to": [
+				-20.0,
+				15.508,
+				31.325
+			],
+			"trajectory_length_m": 17.6754254670814
+		},
+		{
+			"continuous_controller_walk": true,
+			"end_floor": "COL_Walk_West_residential_link_step_concrete",
+			"frames": 215,
+			"from": [
+				-73.0,
+				15.125,
+				25.0
+			],
+			"goal_distance_m": 0.280040830373764,
+			"goals_reached": [
+				{
+					"foot": [
+						-73.001,
+						17.272,
+						10.28
+					],
+					"index": 0
+				}
+			],
+			"goals_total": 1,
+			"height_gain_m": 2.14665508270264,
+			"horizontal_progress_m": 14.7199621200562,
+			"max_frame_displacement_m": 0.16958025097847,
+			"minimum_foot_height_m": 15.1249780654907,
+			"name": "west_lane_ascent",
+			"on_floor": true,
+			"pass": true,
+			"to": [
+				-73.001,
+				17.272,
+				10.28
+			],
+			"trajectory_length_m": 14.7200477160513
+		},
+		{
+			"continuous_controller_walk": true,
+			"end_floor": "COL_Road_734116597_0_asphalt",
+			"frames": 629,
+			"from": [
+				0.0,
+				32.014,
+				-78.0
+			],
+			"goal_distance_m": 0.32818603515625,
+			"goals_reached": [
+				{
+					"foot": [
+						43.672,
+						33.315,
+						-78.0
+					],
+					"index": 0
+				}
+			],
+			"goals_total": 1,
+			"height_gain_m": 1.30073928833008,
+			"horizontal_progress_m": 43.6718139648438,
+			"max_frame_displacement_m": 0.0711155086755753,
+			"minimum_foot_height_m": 32.0143585205078,
+			"name": "upper_road_walk",
+			"on_floor": true,
+			"pass": true,
+			"to": [
+				43.672,
+				33.315,
+				-78.0
+			],
+			"trajectory_length_m": 43.6718144412152
+		},
+		{
+			"continuous_controller_walk": true,
+			"end_floor": "COL_Walk_Narrow_upper_passage_step_concrete",
+			"frames": 206,
+			"from": [
+				-36.5,
+				25.742,
+				-44.0
+			],
+			"goal_distance_m": 0.284690409898758,
+			"goals_reached": [
+				{
+					"foot": [
+						-29.15,
+						27.695,
+						-55.758
+					],
+					"index": 0
+				}
+			],
+			"goals_total": 1,
+			"height_gain_m": 1.95306015014648,
+			"horizontal_progress_m": 13.8662815093994,
+			"max_frame_displacement_m": 0.173162072896957,
+			"minimum_foot_height_m": 25.7422389984131,
+			"name": "narrow_upper_passage",
+			"on_floor": true,
+			"pass": true,
+			"to": [
+				-29.15,
+				27.695,
+				-55.758
+			],
+			"trajectory_length_m": 13.8712478987873
+		},
+		{
+			"name": "pickup_requires_proximity",
+			"pass": true
+		},
+		{
+			"name": "preparation_completes_before_timeout",
+			"pass": true
+		},
+		{
+			"name": "pickup_advances_order",
+			"pass": true
+		},
+		{
+			"name": "cannot_deliver_at_pickup",
+			"pass": true
+		},
+		{
+			"name": "dropoff_completes_order",
+			"pass": true
+		},
+		{
+			"name": "completed_order_idempotent",
+			"pass": true
+		}
+	],
+	"upper_lane": {
+		"enabled": true,
+		"model_sha256": "16dabbe6c51b1ff130153d68092dc84daa509ba4538f10152f85d4e8ae53be37",
+		"sky_sha256": {
+			"res://assets/lane_r20/alley_sky.png": "c8b799570de19d6acd2e5c822aa095807d6dc3b107bd4886e66caef438cf7d3b",
+			"res://assets/lane_r20/shop_sky.png": "8d5b169cfd0bf9cc799dec67d02fde5ebbc2558a3a79dc5c91fd85fbc98dd188"
+		}
+	},
+	"window_rooms": {
+		"existing_room_meshes": 48,
+		"furnishings": 6,
+		"lights": 3,
+		"patina_batches": 2
+	}
+}

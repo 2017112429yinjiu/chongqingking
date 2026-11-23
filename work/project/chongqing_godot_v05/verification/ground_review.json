@@ -1,0 +1,583 @@
+{
+  "schema": "cq05_ground_native_visual_review_v1",
+  "revision": 15,
+  "scene_sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223",
+  "capture_manifest_path": "native/capture_manifest.json",
+  "capture_manifest_sha256": "166a1dc19b44afa459171533b304050972e16a9dda72d1d93b872d01cdda27c7",
+  "capture_process_started_at_utc": "2026-11-19T15:33:30.409701+00:00",
+  "capture_process_finished_at_utc": "2026-11-19T15:50:05.618699+00:00",
+  "capture_actual_exit_code": 0,
+  "art_profile_sha256": "9d0c7b69153c7c84fea8ac544b602bf15ef6806afa75068856a6adba0da809af",
+  "main_script_sha256": "29517fc2472682aae053e2e1eafc954379755e9b212a425088cdb834599cf56d",
+  "configuration_sha256": {
+    "res://assets/viewpoints.json": "a3da59baee65cea784440a54949fe5d2ddc556062727b763732c52698a743fe0",
+    "res://assets/walking_survey.json": "3277a9c561fb58826045d8a52affc3515a4ae1732e8231a27bf63bbf9d365d26"
+  },
+  "review_completed_at_utc": "2026-11-19T15:59:39.610Z",
+  "reviewer": "cq05_ground",
+  "measurement_kind": "direct_native_visual_review",
+  "production_source_modified": false,
+  "images_modified": false,
+  "engines_started": false,
+  "status": "COMPLETE_SCOPED_VISUAL_REVIEW",
+  "passed": true,
+  "acceptance": "PASS_WITH_RECORDED_ART_LIMITATIONS",
+  "overall_delivery_acceptance": "Reserved for root; this report covers visible ground and vegetation only.",
+  "scope_zh": "逐张直接打开本次独占批次的22张原始1920×1080 PNG，评估可见地表、软硬过渡、树根、台阶/坡道、屋顶/背景限制与入镜格栅。最终文件SHA已在复核后重算并与所看记录匹配。",
+  "batch": "R15 restarted exclusive native22",
+  "aborted_batch_used_for_acceptance": false,
+  "expected_view_count": 22,
+  "reviewed_count": 22,
+  "expected_views": [
+    "overview",
+    "street_entry",
+    "noodle_corner",
+    "central_steps",
+    "west_lane",
+    "community_court",
+    "narrow_passage",
+    "upper_houses",
+    "east_gallery",
+    "residential_road",
+    "upper_street",
+    "roofscape",
+    "community_front",
+    "residential_entry",
+    "window_courtyard",
+    "tea_interior",
+    "window_living",
+    "window_north",
+    "noodle_interior",
+    "window_reading",
+    "window_dining",
+    "planting_detail"
+  ],
+  "reviewed_views": [
+    "overview",
+    "street_entry",
+    "noodle_corner",
+    "central_steps",
+    "west_lane",
+    "community_court",
+    "narrow_passage",
+    "upper_houses",
+    "east_gallery",
+    "residential_road",
+    "upper_street",
+    "roofscape",
+    "community_front",
+    "residential_entry",
+    "window_courtyard",
+    "tea_interior",
+    "window_living",
+    "window_north",
+    "noodle_interior",
+    "window_reading",
+    "window_dining",
+    "planting_detail"
+  ],
+  "all_expected_images_directly_viewed": true,
+  "all_images_1920_by_1080": true,
+  "all_reviewed_hashes_rechecked": true,
+  "capture_failures": [],
+  "blocking_findings": [],
+  "key_observations_zh": [
+    "central_steps、east_gallery与planting_detail中的植物来自有明确石边的土床/树池；土、碎叶/碎石与硬铺装可分辨，未见旧完整硬地板上散放大株或明显尖三角土边。",
+    "residential_road大树根部的旧白色扫描裙边未再露出，树干进入土池；树冠叶形比旧简化版本完整，但仍保留扫描与叶片外观限制。",
+    "community_front前中和最右两组格栅在新图中顺着局部坡面落位，未再见旧照片所示的明显悬空底板与空气缝。",
+    "主要可见道路、台阶和门前硬铺装连续，未见新的大块缺面、坡地穿入店面或植物堵住主路。",
+    "window_reading露出的真实木地板连续，未重现旧灰色terrain覆盖室内地坪；其他遮挡严重的窗口明确保留未能视查地面的范围。"
+  ],
+  "remaining_art_limitations_zh": [
+    "大面积灰色铺装仍较均匀、开敞区域生活细节偏少；裂缝、接缝与粗糙度已可见，但没有达到摄影级材质变化。",
+    "总览中的外围棕色地面、背景楼窗和屋面设备重复明显；这些机位提供街区布局与范围证据，不构成电影级画质证明。",
+    "小株家族、土面绿色碎屑和边石排列较重复。大树有扫描树皮灰白斑、放大叶片尺度与剩余叶片面片感。",
+    "上部住宅斜视机位的楼梯侧缘呈明显齿形，局部构件与铺地收口仍规整。若干格条较亮、较干净。",
+    "部分室内接触阴影较弱，多个窗口机位被窗台、柜体和窗框遮挡，不能据照片证明所有家具脚点或整间房地面支撑。",
+    "本报告只评估这22张原始图中可见内容，不对未入镜地面、所有112格栅、家具毫米级接触、性能、工程适用性或1:1测绘精度作额外保证。"
+  ],
+  "separate_geometry_evidence": [
+    {
+      "path": "ground_geometry_identity.json",
+      "sha256": "34a97de0846d0b65be3c9fef8ddca7547b2a0230334a878476b088d731617ca9",
+      "kind": "separate_actual_GLB_regression",
+      "scope_zh": "既有R14→R15实际地形、外环、树与土盖137节点身份检查。此视觉复核没有重跑该检查。"
+    },
+    {
+      "path": "terrain_glb_clearance.json",
+      "sha256": "6796e9644c051c83c160e2890ee9701659fbb3cbbc7af7a994106dd4f057dfaa",
+      "kind": "separate_actual_GLB_terrain_clearance",
+      "scope_zh": "既有1701完整房间地板范围的主地形与Outer_ground实际几何净空检查；图片不替代此结果。"
+    },
+    {
+      "path": "drain_grate_export_audit.json",
+      "sha256": "34221b9bf3bc5ffc6f83aaffb07c69b1d2588521da06c67967865964c55cc0e4",
+      "kind": "separate_actual_GLB_drain_support",
+      "scope_zh": "独立全112格栅实际导出支撑检查；本报告只直接评估入镜的格栅外观。"
+    }
+  ],
+  "reviewed": [
+    {
+      "view": "overview",
+      "file": "godot_overview.png",
+      "sha256": "b9ed77118558976f11265bd78658943d788797a14103969c59655f74d17f2f75",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 3580242,
+      "observations_zh": [
+        "已重新打开独占重拍批次的总览原图。核心建筑和树冠投影可见，球场台地、路网和沿坡阶梯层次清楚。",
+        "土床与树池在总体铺装中有明确位置，画面内未见新增大面积地表缺面或植被堵住主要通道。"
+      ],
+      "limitations_zh": [
+        "核心灰色铺装与褐色外围地面边界明显；外围大面积单一纹理、背景楼体及屋面设备重复，仍属于简化场景表现。",
+        "总览分辨率不足以判定细小根部、井篦或家具脚点的真实接触，不能作为这些构件的几何证据。"
+      ],
+      "blocking_findings": [],
+      "ordinal": 1,
+      "directly_viewed": true,
+      "viewing_method": "Original unmodified PNG opened through view_image",
+      "path": "native/godot_overview.png"
+    },
+    {
+      "view": "street_entry",
+      "file": "godot_street_entry.png",
+      "sha256": "6a789f3d20a117aa5ccb4e445e412a9c6bfb8a9c2fe34df2f2d6e3b63e957666",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2665296,
+      "observations_zh": [
+        "入口阶梯的踏面、侧边与坡地边界可辨，栏杆落点和石砌种植空间位置清楚；主梯与旁侧通道没有新增土草或杂物堵塞。",
+        "前景水泥可见细裂纹、擦磨和粗糙纹理，投影沿坡面连续，未见明显缺面或悬出的整块地坪。"
+      ],
+      "limitations_zh": [
+        "大片浅灰铺装仍较均匀，踏步侧边呈箱式、齿状收口，边角干净，施工与磨损细节有模型化表现。",
+        "右侧树根部分被石边和坡面遮挡，本图不单独证明全部株根接触。"
+      ],
+      "blocking_findings": [],
+      "ordinal": 2,
+      "directly_viewed": true,
+      "viewing_method": "Original unmodified PNG opened through view_image",
+      "path": "native/godot_street_entry.png"
+    },
+    {
+      "view": "noodle_corner",
+      "file": "godot_noodle_corner.png",
+      "sha256": "b35fce373657bbce658753d7fec62749db7d1e1d3b5eeeb81ae3fc6eaa05ad68",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1949019,
+      "observations_zh": [
+        "店门两级踏步与外部铺装的关系连续，门内可见地坪保持平面，未见外部坡地凸入营业空间。",
+        "箱筐、垃圾桶等位于门侧，门洞前的进出位置保持清楚；可见铺装接缝与墙脚没有明显缺口。"
+      ],
+      "limitations_zh": [
+        "店内家具脚点在该广角中很小，照片不能取代实际导出接触测量。",
+        "铺地与店内地坪颜色接近，杂物造型、远景山体及背景楼仍有简化感。"
+      ],
+      "blocking_findings": [],
+      "ordinal": 3,
+      "directly_viewed": true,
+      "viewing_method": "Original unmodified PNG opened through view_image",
+      "path": "native/godot_noodle_corner.png"
+    },
+    {
+      "view": "central_steps",
+      "file": "godot_central_steps.png",
+      "sha256": "3d196487db891e29eec199c9055185115cc3b938e86a99466579b6bffc257d8c",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2949375,
+      "observations_zh": [
+        "中央楼梯踏面和两侧通道连续，店门前与主梯保持净空，没有可见新增植物或构件堵住行走位置。",
+        "左侧沿坡土床、右侧石砌花池和上方树池都有可辨边界；近景株茎进入棕色土层，土石边缘与灰铺装接合，未见旧式整片水泥上直接散放大灌木的情况。"
+      ],
+      "limitations_zh": [
+        "水泥铺装变化仍较均匀，植物种类及株形重复，花池石块较规则。",
+        "近侧浅色格条显得偏亮、偏新；仅凭此画面不能把亮度当作悬空或已证明的毫米级接触。"
+      ],
+      "blocking_findings": [],
+      "ordinal": 4,
+      "directly_viewed": true,
+      "viewing_method": "Original unmodified PNG opened through view_image",
+      "path": "native/godot_central_steps.png"
+    },
+    {
+      "view": "west_lane",
+      "file": "godot_west_lane.png",
+      "sha256": "8bdef1e90412c216209cae1fde6cca717a186ab8c907da2742f1d65a4ec9c184",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2866800,
+      "observations_zh": [
+        "上坡巷道的中间踏步、两侧硬铺装与墙脚保持连续，栏杆落点清楚，未见缺片、洞口或植被堵路。",
+        "水泥近景有磨损和裂纹；右下可见格栅随铺装坡向布置，画面未显示明显贯通的板底空气带。"
+      ],
+      "limitations_zh": [
+        "大片硬铺装、窗列和栏杆的规律性较强，巷道生活细节密度较低。",
+        "右下格条仍偏亮、偏干净，暗色底板与浅灰地面反差较大；真实支撑不能只凭阴影或此广角图判断。"
+      ],
+      "blocking_findings": [],
+      "ordinal": 5,
+      "directly_viewed": true,
+      "viewing_method": "Original unmodified PNG opened through view_image",
+      "path": "native/godot_west_lane.png"
+    },
+    {
+      "view": "community_court",
+      "file": "godot_community_court.png",
+      "sha256": "6370c794e480ad61d966c62269f6e41b51a85710fdf5f0b118083f7014628108",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2746422,
+      "observations_zh": [
+        "球场面层保持可辨的完整平台，石砌挡墙承托台地，围网柱沿平台边缘连续。",
+        "右侧梯道、侧向入口与平台的高差关系可读，没有可见车辆或植被占据踏面，也未见地表把球场面层顶破。"
+      ],
+      "limitations_zh": [
+        "挡墙砌块纹理及球场色块较规则、重复，平台边缘磨损和生活细节较少。",
+        "侧入口栏杆与梯道在此视角叠影较复杂；照片不替代同版本路线碰撞与净空测量。"
+      ],
+      "blocking_findings": [],
+      "ordinal": 6,
+      "directly_viewed": true,
+      "viewing_method": "Original unmodified PNG opened through view_image",
+      "path": "native/godot_community_court.png"
+    },
+    {
+      "view": "narrow_passage",
+      "file": "godot_narrow_passage.png",
+      "sha256": "d51fd931a9086ba38141b502148161cfeb8d8c8e2b47b81d867a0e03e4a6b448",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2475991,
+      "observations_zh": [
+        "近景阶梯直到巷口出口连续，两侧墙脚与窄石边相接，未见明显地面缺片或草木堵住窄通道。",
+        "踏面可见裂纹、污痕和粗糙变化，外部坡面没有在可见窗口区域形成突出的地形块。"
+      ],
+      "limitations_zh": [
+        "狭巷本身空间很窄，阶梯与墙角收口仍较规则；照片不判定全路线通行尺寸。",
+        "右侧窗台和窗框遮住大部分室内底部，无法用此图判断完整室内家具脚点。"
+      ],
+      "blocking_findings": [],
+      "ordinal": 7,
+      "directly_viewed": true,
+      "viewing_method": "Original unmodified PNG opened through view_image",
+      "path": "native/godot_narrow_passage.png"
+    },
+    {
+      "view": "upper_houses",
+      "file": "godot_upper_houses.png",
+      "sha256": "2ab9e6c93c7faf7811b4cefeba8db75d12760f5c00d44d3a3f5d3492e92db072",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2855566,
+      "observations_zh": [
+        "树干基部进入有石边的土池，未见旧的亮白扫描底盘；近侧坡面、门口台阶与沿坡通道仍能区分。",
+        "横向梯级的踏面可辨，画面没有新增地形覆盖整条踏面的明显情况；通行铺装没有草木散落占位。"
+      ],
+      "limitations_zh": [
+        "横向台阶从这个斜角看仍呈明显连续齿状侧影，台阶与大坡面收边保留简化模型观感。",
+        "坡地面积较空、铺装较均匀；右上褐色外围地面与重复背景楼明显，树冠素材仍有面片感。"
+      ],
+      "blocking_findings": [],
+      "ordinal": 8,
+      "directly_viewed": true,
+      "viewing_method": "Original unmodified PNG opened through view_image",
+      "path": "native/godot_upper_houses.png"
+    },
+    {
+      "view": "east_gallery",
+      "file": "godot_east_gallery.png",
+      "sha256": "b699cbe4bdf5003d275ea45ac5b0daf3845dba9ab6c63d8b987e5cd9dc8882e5",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 3298856,
+      "observations_zh": [
+        "近景树干与小株从土床中生出，石边沿坡衔接，外侧灰褐碎石/落叶窄带把土层与水泥铺装分开。",
+        "本次原图未出现旧的亮白边环或粗大尖三角过渡；门前分缝与立面方向协调，左右通道及阶梯保持清楚。"
+      ],
+      "limitations_zh": [
+        "土床表面颜色与植株分布较均匀，同种灌木重复明显；近景叶片仍能看到素材面片特征。",
+        "前坪较空旷，灰铺装与背景住宅重复感仍在；这些限制不应被几何检查通过掩盖。"
+      ],
+      "blocking_findings": [],
+      "ordinal": 9,
+      "directly_viewed": true,
+      "viewing_method": "Original unmodified PNG opened through view_image",
+      "path": "native/godot_east_gallery.png"
+    },
+    {
+      "view": "residential_road",
+      "file": "godot_residential_road.png",
+      "sha256": "485140ec6635ac0b9a29857d41d0891da561a0cd5147d347284678b339b0de27",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 3796857,
+      "observations_zh": [
+        "前景大树基部进入土池，旧亮白扫描裙边没有在这张原图中外露；石圈、土面与外围碎石/落叶带关系清楚。",
+        "主干和分枝轮廓完整，近景叶形比此前简化阶段更完整；路面裂纹、颗粒与树影可辨，路缘和步行面连接连续。"
+      ],
+      "limitations_zh": [
+        "灰白树皮、放大后的叶尺度、浅深叶片与扫描面片感仍明显，同一类大树重复出现。",
+        "宽阔硬铺装较空，远景高楼窗格重复；素材升级不等于达到照片或电影级真实感。"
+      ],
+      "blocking_findings": [],
+      "ordinal": 10,
+      "directly_viewed": true,
+      "viewing_method": "Original unmodified PNG opened through view_image",
+      "path": "native/godot_residential_road.png"
+    },
+    {
+      "view": "upper_street",
+      "file": "godot_upper_street.png",
+      "sha256": "45d7a73bfe56eead8ec835fb35abef41dd91e9929d67caefc0e93a5ffa196e69",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 3493766,
+      "observations_zh": [
+        "沥青、路缘与浅灰步行面界限清楚，近景裂纹和颗粒可辨；门面墙脚沿坡连接，画面未见路面缺片或新坑。",
+        "左侧植被集中在有土层的床/池内，店前和道路可见通行带保持空出。"
+      ],
+      "limitations_zh": [
+        "路面裂纹与建筑窗列有重复，沿街细节密度较低。",
+        "卷帘门后的底坪在该机位不可见；本图也不能逐一辨认全场112处井篦。"
+      ],
+      "blocking_findings": [],
+      "ordinal": 11,
+      "directly_viewed": true,
+      "viewing_method": "Original unmodified PNG opened through view_image",
+      "path": "native/godot_upper_street.png"
+    },
+    {
+      "view": "roofscape",
+      "file": "godot_roofscape.png",
+      "sha256": "4f1744fe98aad7b448cea27da06f0a12cfb1245b2504fc374296be65c2ae6fc1",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 3337656,
+      "observations_zh": [
+        "俯视中球场平台、挡墙和多段上下阶梯的布局保持完整，灰铺装与土床范围可区分；未见新的大面积地表缺面。",
+        "房屋周边的树池、花床和主要连接路径位置清楚，核心区地面仍有建筑与树冠投影。"
+      ],
+      "limitations_zh": [
+        "屋面纹理、设备箱和水箱形式重复、细节简化；大片灰地面与规则铺装补片仍显模型化。",
+        "俯视图不提供毫米级井篦支撑、树根埋深或完整室内脚点证据，也不等同结构工程验收。"
+      ],
+      "blocking_findings": [],
+      "ordinal": 12,
+      "directly_viewed": true,
+      "viewing_method": "Original unmodified PNG opened through view_image",
+      "path": "native/godot_roofscape.png"
+    },
+    {
+      "view": "community_front",
+      "file": "godot_community_front.png",
+      "sha256": "06b4f3cab71af9202154e9b472bf5bd343d0d3114596e855337e0e20895e5e47",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2262223,
+      "observations_zh": [
+        "前中和右侧两组井篦现在沿各自坡面落位；旧板底明显离地及分离的空气带在本次原图中没有再出现，视觉改善明确。",
+        "建筑转角周边铺装、墙脚与坡道相接，井篦没有堵门或占据主梯；该画面没有新的可见地表缺片。"
+      ],
+      "limitations_zh": [
+        "大面积灰铺装仍较均匀，长条接缝规则，环境生活细节较少。",
+        "照片只覆盖可见的两组井篦，不能证明全场112处或毫米级杆/板接触；相应结论必须引用独立实际GLB检测。"
+      ],
+      "blocking_findings": [],
+      "ordinal": 13,
+      "directly_viewed": true,
+      "viewing_method": "Original unmodified PNG opened through view_image",
+      "path": "native/godot_community_front.png"
+    },
+    {
+      "view": "residential_entry",
+      "file": "godot_residential_entry.png",
+      "sha256": "763ebcc8d00f9ea02fd56d96805c041b8d3ac4636337999f452107f55e35e7b5",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2388092,
+      "observations_zh": [
+        "外部坡地、门槛和门内楼梯层次可辨，门洞没有被连续外坡或其他地形块填入。",
+        "左下井篦随斜铺装落位，未见明显浮起底盘；垃圾桶、箱筐位于门侧，没有堵住当前可见入口。"
+      ],
+      "limitations_zh": [
+        "门前铺装、围墙砌块和部分杂物仍偏规则、简化。",
+        "可见范围仅入口及近段楼梯，不能据此推断全部室内通行或每个家具脚点。"
+      ],
+      "blocking_findings": [],
+      "ordinal": 14,
+      "directly_viewed": true,
+      "viewing_method": "Original unmodified PNG opened through view_image",
+      "path": "native/godot_residential_entry.png"
+    },
+    {
+      "view": "window_courtyard",
+      "file": "godot_window_courtyard.png",
+      "sha256": "e4ef7900a8ba9660604f8862922ac763c0d41f50f8e5128da251c6c1c90ba343",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2255306,
+      "observations_zh": [
+        "本次窗口近景中，实际露出的窄下沿没有看到外部坡地凸块挡住室内。"
+      ],
+      "limitations_zh": [
+        "柜台、窗台与窗框遮住绝大部分地坪及支撑点；本图不能用来证明整间地板清空或家具足底接触。",
+        "室内细节与构件重叠属于室内专项复核，地表报告只记录本图可见范围。"
+      ],
+      "blocking_findings": [],
+      "ordinal": 15,
+      "directly_viewed": true,
+      "viewing_method": "Original unmodified PNG opened through view_image",
+      "path": "native/godot_window_courtyard.png"
+    },
+    {
+      "view": "tea_interior",
+      "file": "godot_tea_interior.png",
+      "sha256": "e62c61e4bf0524f750915c3d15bb36c8d43b189b8d2613f1e4169e401c0b3bd6",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2093201,
+      "observations_zh": [
+        "茶铺可见地坪保持完整平面，没有外坡形成的凸块或把柜、桌、凳腿截断；门前台阶与外部坡地边界可辨。",
+        "当前可见区域未出现新的大地面裂口，右侧裁入画面的井篦也没有明显悬起底盘。"
+      ],
+      "limitations_zh": [
+        "柜、桌、凳的细腿接触阴影较弱，不能仅凭这张图判断毫米级足底落地；需要独立家具与地形实际GLB报告。",
+        "地坪纹理与室内陈设仍较规则、简化，图中也看不到全部背面脚点。"
+      ],
+      "blocking_findings": [],
+      "ordinal": 16,
+      "directly_viewed": true,
+      "viewing_method": "Original unmodified PNG opened through view_image",
+      "path": "native/godot_tea_interior.png"
+    },
+    {
+      "view": "window_living",
+      "file": "godot_window_living.png",
+      "sha256": "07c834d3a742e8408a8e5400d2299b22d596cf48b5c228eae55d5b411a377355",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2496549,
+      "observations_zh": [
+        "直接查看原始1920×1080截图。窗台、窗框及室内陈设遮住地面和家具脚部；本图不能提供室内地坪或家具落地的直接视觉证明。",
+        "可见窗台及墙面交接完整，未见露出窗外的地形块；这仅限窗口可见范围。"
+      ],
+      "limitations_zh": [
+        "几乎没有可辨认的室内地面区域，不据此声称地形净空或家具脚部支撑已经由照片证实。"
+      ],
+      "blocking_findings": [],
+      "ordinal": 17,
+      "directly_viewed": true,
+      "viewing_method": "Original unmodified PNG opened through view_image",
+      "path": "native/godot_window_living.png"
+    },
+    {
+      "view": "window_north",
+      "file": "godot_window_north.png",
+      "sha256": "530b220693b196bc36bd3c2c728f27bbb63e249890e8b8aef71c88381e439e09",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2040416,
+      "observations_zh": [
+        "直接查看原始1920×1080截图。北侧窗口的真实室内陈设可见，未重现旧背景建筑壳封住整个窗口的白板。",
+        "右侧入口短楼梯踏面可辨，未见外围地形块从入口或窗内突出；窗台与墙面连接完整。"
+      ],
+      "limitations_zh": [
+        "窗台、低柜和帘子遮住主要室内地面，本图不能证明整间房或柜脚的毫米级地形净空。",
+        "右侧楼梯只显示局部，通行/碰撞仍依赖独立运行验证。"
+      ],
+      "blocking_findings": [],
+      "ordinal": 18,
+      "directly_viewed": true,
+      "viewing_method": "Original unmodified PNG opened through view_image",
+      "path": "native/godot_window_north.png"
+    },
+    {
+      "view": "noodle_interior",
+      "file": "godot_noodle_interior.png",
+      "sha256": "e7b4797acee3471c5e40eee8ced7bb3852e9c9f4ee41062f05a7b917e84aad71",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1873127,
+      "observations_zh": [
+        "直接查看原始1920×1080截图。店内可见地坪为连续平面，门口两级台阶/门槛与内部地坪分界明确，未见室外坡地穿入柜体、桌椅或占据店内地面。",
+        "柜体底部和桌椅腿在地坪前可辨，没有可见的大段埋腿或悬空带。"
+      ],
+      "limitations_zh": [
+        "细腿接触阴影较弱，单张照片不能代替家具毫米级实际几何检测。",
+        "地坪和门外台阶纹理较均匀，室内陈设仍较稀疏、规整。"
+      ],
+      "blocking_findings": [],
+      "ordinal": 19,
+      "directly_viewed": true,
+      "viewing_method": "Original unmodified PNG opened through view_image",
+      "path": "native/godot_noodle_interior.png"
+    },
+    {
+      "view": "window_reading",
+      "file": "godot_window_reading.png",
+      "sha256": "aaac35e56abd81e6c91d884a27db00bf1097839525bed3205e6aee05434ea1f7",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2103089,
+      "observations_zh": [
+        "直接查看原始1920×1080截图。阅读房底部可见真实棕色木地板，桌腿在木地板前可读，未重现旧连续灰色terrain穿入房内并埋腿的画面。",
+        "窗台/墙面完整，室内可见木地面带连续，没有斜坡或缺面。"
+      ],
+      "limitations_zh": [
+        "窗框下沿遮住部分椅脚和地面，不能把此图当作全部家具脚点的毫米级支撑测量。",
+        "玻璃、弱接触阴影和遮挡降低了细部可读性。"
+      ],
+      "blocking_findings": [],
+      "ordinal": 20,
+      "directly_viewed": true,
+      "viewing_method": "Original unmodified PNG opened through view_image",
+      "path": "native/godot_window_reading.png"
+    },
+    {
+      "view": "window_dining",
+      "file": "godot_window_dining.png",
+      "sha256": "fdd51bb8a16dc5ca65fcc35152bdc725b8ac5235615abcb1e7c6eda4b670b7b8",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1632177,
+      "observations_zh": [
+        "直接查看原始1920×1080截图。窗口内水槽台、墙面及窗台可见，主要室内地坪被台面、框架和窗台遮挡。",
+        "左下邻店仅有小片连续地坪可见；该可见范围未见凸出的室外地形块。"
+      ],
+      "limitations_zh": [
+        "本机位几乎不能直接查看水槽台脚、地面接触和整间房地形净空；其几何结果以独立actual GLB报告为准。",
+        "不把遮挡下的不可见区域记录为照片已验证。"
+      ],
+      "blocking_findings": [],
+      "ordinal": 21,
+      "directly_viewed": true,
+      "viewing_method": "Original unmodified PNG opened through view_image",
+      "path": "native/godot_window_dining.png"
+    },
+    {
+      "view": "planting_detail",
+      "file": "godot_planting_detail.png",
+      "sha256": "e5744f62af637b1ef65ab97199f557fb75dc5a1b85badd5283ebeaa5bd52c294",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 3772830,
+      "observations_zh": [
+        "直接查看原始1920×1080截图。树干根部进入种植土面，未露出旧扫描底盘/白色裙边；小株茎部在土面中起生，未见整株悬空于完整硬铺装。",
+        "花床石边随当地坡面围合，外侧有碎叶/碎石过渡带，土面与硬铺装材质分离；未见早期明显尖三角土边或米白色亮环。",
+        "右侧通路与门前空间保持硬铺装，土床没有扩展占据通行路径。"
+      ],
+      "limitations_zh": [
+        "小株品种和分布重复，土面绿色碎屑/苔点分布偏均匀；边石几何规整、宽阔前坪仍显空。",
+        "树皮仍有扫描灰白斑与部分叶片面片感；照片只能判断可见表面，不能替代173处原支撑记录或全场碰撞检测。"
+      ],
+      "blocking_findings": [],
+      "ordinal": 22,
+      "directly_viewed": true,
+      "viewing_method": "Original unmodified PNG opened through view_image",
+      "path": "native/godot_planting_detail.png"
+    }
+  ]
+}
+

@@ -1,0 +1,48 @@
+{
+	"baseline": "2c0f3b14354d7c38fcbbff150705b7cb65843a64ea886c847be059a3d1a21b9e",
+	"candidate": "a789b529573f090944683c28c26bb6e4f41d4d0263925838e198ab0f01da7395",
+	"views": [
+		{
+			"camera": "(0.23, 1.6, 1.05)",
+			"expression": "neutral",
+			"model": "baseline20",
+			"shader": "Isolated comparable studio; candidate opacity depth prepass, dielectric materials",
+			"target": "(0,1.51,0)"
+		},
+		{
+			"camera": "(0.23, 1.6, 1.05)",
+			"expression": "warm",
+			"model": "baseline20",
+			"shader": "Isolated comparable studio; candidate opacity depth prepass, dielectric materials",
+			"target": "(0,1.51,0)"
+		},
+		{
+			"camera": "(0.23, 1.6, 1.05)",
+			"expression": "blink",
+			"model": "baseline20",
+			"shader": "Isolated comparable studio; candidate opacity depth prepass, dielectric materials",
+			"target": "(0,1.51,0)"
+		},
+		{
+			"camera": "(0.23, 1.6, 1.05)",
+			"expression": "neutral",
+			"model": "candidate10",
+			"shader": "Isolated comparable studio; candidate opacity depth prepass, dielectric materials",
+			"target": "(0,1.51,0)"
+		},
+		{
+			"camera": "(0.23, 1.6, 1.05)",
+			"expression": "warm",
+			"model": "candidate10",
+			"shader": "Isolated comparable studio; candidate opacity depth prepass, dielectric materials",
+			"target": "(0,1.51,0)"
+		},
+		{
+			"camera": "(0.23, 1.6, 1.05)",
+			"expression": "blink",
+			"model": "candidate10",
+			"shader": "Isolated comparable studio; candidate opacity depth prepass, dielectric materials",
+			"target": "(0,1.51,0)"
+		}
+	]
+}

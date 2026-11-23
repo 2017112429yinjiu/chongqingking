@@ -1,0 +1,34 @@
+{
+  "study": "R24 build 17, east alley / upper courtyard junction",
+  "authored": "Local staircase, closed shoulders, paving, cast-iron drain and shader UVs. Grade adapted from the existing district. Retained existing tree, soil and planting rim.",
+  "licenses": [
+    {
+      "asset": "concrete_floor_worn_001",
+      "author": "Dimitrios Savva（摄影）, Rico Cilliers（处理）",
+      "license": "CC0 1.0",
+      "source": "https://polyhaven.com/a/concrete_floor_worn_001",
+      "change": "既有磨损地面贴图，用于补浆骨料与墙脚湿痕。",
+      "attribution": "voluntary"
+    },
+    {
+      "asset": "sandstone_cracks",
+      "author": "Rob Tuytel",
+      "license": "CC0 1.0",
+      "source": "https://polyhaven.com/a/sandstone_cracks",
+      "change": "沿用 R21 石材颜色、法线及粗糙度图；踏步从实物顶面和立面分别着色。",
+      "attribution": "voluntary"
+    }
+  ],
+  "terms": "https://polyhaven.com/license",
+  "modification": "Existing sandstone scan sampled on stone treads, existing worn concrete on the new paving. No third-party meshes added for the junction.",
+  "maps": {
+    "work/assets_incoming/district_r21/sandstone_cracks/PROVENANCE.json": "e05710e586d4472a55dda771f8f75ecb62d6cf84730d4c9d8d0636e74218a6a9",
+    "work/project/chongqing_godot_v05/assets/district_r21/terraces_sandstone_cracks_nor_gl_2k.jpg": "904e852268e1fb1bd5c0d035382f6a0e64c98dceea784fe957b1983d98b0231a",
+    "work/project/chongqing_godot_v05/assets/district_r21/terraces_sandstone_cracks_rough_2k.png": "0b4322234eb20d961841bc0307aceda83423a2b606b159bac5a77a90a76313bb",
+    "work/project/chongqing_godot_v05/assets/district_r21/terraces_washed_sandstone.jpg": "9792a5261f98aee4a73328e1420585e7d33308a382e7abbb081dcee2b0094924",
+    "work/project/chongqing_godot_v05/assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg": "e29b45cdcd6d02fae3c087c456196ffa750779a9b62e7071aa3831dc322a0cc4",
+    "work/project/chongqing_godot_v05/assets/chongqing_district_concrete_floor_worn_001_nor_gl_2k.jpg": "3b782137e34d63fd59b2e92b4e27b2ee4d082caf9dd23f00dc7ab4da5513daef"
+  },
+  "city_data": "Existing OSM attribution and city registration retained. Separate supplied MAX rights remain as recorded in ../city_frame_11864101.",
+  "photo": "Player screenshot is QA evidence only."
+}

@@ -1,0 +1,15 @@
+Blender 4.3.2 (hash 32f5fdce0a0a built 2024-12-17 03:35:23)
+Read blend: "C:\Users\尹久\Documents\重庆外卖王\work\scene_r22\roofs_and_breakfast.blend"
+Read blend: "C:\Users\尹久\Documents\重庆外卖王\work\scene_r22\river_context.blend"
+Read blend: "C:\Users\尹久\Documents\重庆外卖王\work\scene_r22\chongqing_district.blend"
+Traceback (most recent call last):
+  File "C:\Users\尹久\Documents\重庆外卖王\work\audit_roofs_r22.py", line 58, in <module>
+    assert up==len(obj.data.polygons),(obj.name,up,len(obj.data.polygons))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('R22_Bank_Outer', 39128, 40728)
+
+Error: script failed, file: 'work/audit_roofs_r22.py', exiting.
+Warning: Library file, loading empty scene
+Warning: Library file, loading empty scene
+
+Blender quit

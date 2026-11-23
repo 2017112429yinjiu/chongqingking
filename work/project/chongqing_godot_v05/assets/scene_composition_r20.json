@@ -1,0 +1,124 @@
+{
+  "revision": "R20",
+  "reopened_city": "work\\scene_r20\\chongqing_district.blend",
+  "objects": 2933,
+  "layer_objects": 37,
+  "packed_images": 178,
+  "unpacked": [],
+  "rail_support_ray_hits": [
+    [
+      "COL_B_1413081560_old_tile_stone",
+      0.105
+    ],
+    [
+      "COL_B_1413081560_old_tile_stone",
+      0.105
+    ],
+    [
+      "COL_B_1413081560_old_tile_stone",
+      0.105
+    ],
+    [
+      "COL_B_1413081560_old_tile_stone",
+      0.105
+    ],
+    [
+      "COL_B_1413081560_old_tile_stone",
+      0.105
+    ],
+    [
+      "COL_B_1413081560_old_tile_stone",
+      0.105
+    ],
+    [
+      "COL_B_1413081560_old_tile_tile",
+      0.105
+    ]
+  ],
+  "laundry_support_ray_hits": [
+    [
+      "COL_B_1413081560_old_tile_tile",
+      0.105
+    ],
+    [
+      "COL_B_1413081560_old_tile_tile",
+      0.105
+    ]
+  ],
+  "source_sha256": "e25826510ac6d81518ebdf4992c77a7e9e84c85632d250b9218de93d09c6ebf0",
+  "layer_blend_sha256": "faaecd3e0cc1a700e4f1151390d65c875ce1ba0a77b7e7a6c733a2dd63cba5a6",
+  "base_r19_source_sha256": "28312a3a417a14212280fa701842daaeda62bee10a4520234aaff9cefe95d741",
+  "runtime_layers": {
+    "assets/chongqing_district.glb": "88b5be04c0c72ae2b54bb02f55f2186f7b7ec2937389a59697e7306dbd7e7c13",
+    "assets/street_r19/street_life.glb": "1c40ae7ed04e8bf3f5f7956eaf630a098890e62a9c142f3e846c9ee15d530bad",
+    "assets/lane_r20/upper_lane.glb": "16dabbe6c51b1ff130153d68092dc84daa509ba4538f10152f85d4e8ae53be37"
+  },
+  "sky_fields": {
+    "shop": {
+      "origin": [
+        -35,
+        -74,
+        10
+      ],
+      "dimensions": [
+        35,
+        42,
+        15
+      ],
+      "spacing": [
+        0.5,
+        0.5,
+        0.75
+      ],
+      "directions": 64,
+      "probes": 22050,
+      "min": 5.166489232914973e-09,
+      "max": 1.0,
+      "sha256": "8d5b169cfd0bf9cc799dec67d02fde5ebbc2558a3a79dc5c91fd85fbc98dd188"
+    },
+    "alley": {
+      "origin": [
+        -42,
+        37,
+        24
+      ],
+      "dimensions": [
+        35,
+        50,
+        16
+      ],
+      "spacing": [
+        0.5,
+        0.5,
+        0.75
+      ],
+      "directions": 64,
+      "probes": 28000,
+      "min": 1.6055471440574296e-08,
+      "max": 0.9385796160884861,
+      "sha256": "c8b799570de19d6acd2e5c822aa095807d6dc3b107bd4886e66caef438cf7d3b"
+    }
+  },
+  "render_derivatives": {
+    "assets/render_profile_r20.json": "a65f9b5ad1ac5f434445a921b5af115fa7bd748a8d11a6937d09f24543f54c45",
+    "assets/lane_r20/meter_lods.glb": "931e72fa0f34fe7bcdd65257f2b1c55316cde4ac61805fc81799cd777efc0ecc",
+    "assets/lane_r20/meter_lods.json": "396261d645fecef0d4018742b6cc0da6b0a040db08b7ee8066ac3655e758be1f",
+    "assets/lane_r20/rinse_fixture.json": "8a0f267946522fd59fe99b298e18e6a4e1e4b95d1a3728bb4a73e4636fa2ff1a",
+    "assets/lane_r20/tree_seats.json": "060f2507ab6997cdc5cddc2d3b5a9eefdbd4b199b88466318eb6a983fd73a0e6",
+    "assets/lane_r20/alley_sky.png": "c8b799570de19d6acd2e5c822aa095807d6dc3b107bd4886e66caef438cf7d3b",
+    "assets/lane_r20/shop_sky.png": "8d5b169cfd0bf9cc799dec67d02fde5ebbc2558a3a79dc5c91fd85fbc98dd188"
+  },
+  "reopened_resident": {
+    "objects": 3,
+    "bones": 80,
+    "animation_tracks": [
+      "sit_rest",
+      "sit_look"
+    ]
+  },
+  "animated_resident": {
+    "editable_source_sha256": "931adca794f279272a642a58d653fc96ac82225ccf81e304c3fb35d40a50e9c8",
+    "model_sha256": "dfb43c77aff8beae940bceb906ad667f8b6e5ef85b1613393995a0a7091a94f3",
+    "fit_sha256": "a9df93aee35791d437c611680ea324c0b4bcfaab1bedccf6b1a1faa617d5ec83"
+  }
+}

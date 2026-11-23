@@ -1,0 +1,89 @@
+{
+  "build": "R24_patina_windows_15_internal",
+  "original": "Window furnishings, local light placement, welded mounting geometry and per-component ageing coordinates authored in this workspace. The transom light and other kitchen props reuse existing licensed materials.",
+  "wood": {
+    "asset": "wood_table_worn",
+    "author": "Dimitrios Savva（摄影），Rico Cilliers（处理）",
+    "license": "CC0 1.0",
+    "source": "https://polyhaven.com/a/wood_table_worn",
+    "change": "从既有原图提取木器明暗、微观磨损；分别重配木料、竹篾与手推车旧漆，导出五幅独立图并嵌入新增道具。",
+    "attribution": "voluntary",
+    "photographic_original": {
+      "path": "work/project/chongqing_blender_v05/materials/v05_scans/wood_table_worn/wood_table_worn_diff_2k.jpg",
+      "sha256": "165cdba449d56ea8e9675116622b95d7af372b7d7c47b8a98a03fcc630f1d51c"
+    },
+    "existing_map": {
+      "file": "work/scene_r24/street_photo_study/workday_surfaces/timber.jpg",
+      "sha256": "50430d4d404e34e8b03b893f38714767a8e214846ac1a38bd6611309c7c40bea"
+    },
+    "usage": "Board cut and timber surface for the cabinet, shelves and cleats. Original geometry."
+  },
+  "stain": {
+    "author": "Existing Chongqing project",
+    "source": {
+      "file": "work/project/chongqing_godot_v05/assets/chongqing_district_moss_grime_diff.png",
+      "sha256": "e84e7cb11e50d00dcb0096247d9339cded45fd595932a547801a0a7f485d3099"
+    },
+    "procedure": {
+      "file": "work/project/chongqing_blender_v05/materials/author_surfaces.py",
+      "sha256": "f5cfe1e8e3dae1a3ca1fff0ae806a1132e632e609e3c05c3ca5378b92a76b4a1"
+    },
+    "change": "New local edge fade, receiver-fitting, crop and strength of pre-existing procedural mask."
+  },
+  "reference_contact_sheet": {
+    "file": {
+      "file": "work/scene_r24/window_life/reference_work.jpg",
+      "sha256": "4c0ebdb0124e34726ddbe0de3a77efbc905f3ede3bce8a8ee98a78dc2c0c0c8b"
+    },
+    "use": "Workspace-only visual reference. Three resized photographs side-by-side with letterboxing. The rights and author for each photograph follow.",
+    "photos": [
+      {
+        "id": 1,
+        "file": "01.jpg",
+        "title": "Shancheng Alley, Chongqing.jpg",
+        "author": "HoweyYuan",
+        "date": "2024-07-20 10:04:26",
+        "license": "CC BY-SA 4.0",
+        "terms": "https://creativecommons.org/licenses/by-sa/4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Shancheng_Alley,_Chongqing.jpg",
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Shancheng_Alley%2C_Chongqing.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "retrieved_sha256": "3420a336ab703cc9e9bb1baad989bc8fb2d1102d8a410c75f7de3dd31e82ab4e",
+        "local_sha256": "03bb4e4a69cc9821f03be5645a6478eda6c3f248bd2a73574fa37216872b5d1d",
+        "modification": "resized for local reference; original aspect ratio"
+      },
+      {
+        "id": 5,
+        "file": "05.jpg",
+        "title": "出售收购各种物品 - Sell and Purchase All Kinds of Goods - 2015.04 - panoramio.jpg",
+        "author": "rheins",
+        "date": "Taken on 11 April 2015",
+        "license": "CC BY 3.0",
+        "terms": "https://creativecommons.org/licenses/by/3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:%E5%87%BA%E5%94%AE%E6%94%B6%E8%B4%AD%E5%90%84%E7%A7%8D%E7%89%A9%E5%93%81_-_Sell_and_Purchase_All_Kinds_of_Goods_-_2015.04_-_panoramio.jpg",
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/%E5%87%BA%E5%94%AE%E6%94%B6%E8%B4%AD%E5%90%84%E7%A7%8D%E7%89%A9%E5%93%81_-_Sell_and_Purchase_All_Kinds_of_Goods_-_2015.04_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "retrieved_sha256": "d75c01d2d55cb6493da1d27d09401b844abbd0435cb6c747bf70c7b679149908",
+        "local_sha256": "a3144229c0e371e8ea8ca66bab93a1f7f70d3aa5080d0df1b77bb69a63211910",
+        "modification": "resized for local reference; original aspect ratio"
+      },
+      {
+        "id": 9,
+        "file": "09.jpg",
+        "title": "重庆十八梯厚慈街 - panoramio.jpg",
+        "author": "杨志强Zhiqiang",
+        "date": "Taken on 21 March 2009",
+        "license": "CC BY-SA 3.0",
+        "terms": "https://creativecommons.org/licenses/by-sa/3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:%E9%87%8D%E5%BA%86%E5%8D%81%E5%85%AB%E6%A2%AF%E5%8E%9A%E6%85%88%E8%A1%97_-_panoramio.jpg",
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/%E9%87%8D%E5%BA%86%E5%8D%81%E5%85%AB%E6%A2%AF%E5%8E%9A%E6%85%88%E8%A1%97_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "retrieved_sha256": "7d3a17311a82f81afee9b8c1a18995151da6156da5f9a9ee2570f42308ee6eb5",
+        "local_sha256": "f01160e8ff99a3e69a725baed3983e4d486e0548807cdf4478d6040455290fa7",
+        "modification": "resized for local reference; original aspect ratio"
+      }
+    ]
+  },
+  "prior_credits": {
+    "file": "work/scene_r24/courtyard_life/asset_record.json",
+    "sha256": "081b8e8e2d6643876b3a80e7150263e010b93a2c8edf2df09fb6d584cf16f2b3"
+  },
+  "city_data_status": "Earlier two privately supplied city-model studies remain local. No new map or third-party geometry was downloaded for this build."
+}

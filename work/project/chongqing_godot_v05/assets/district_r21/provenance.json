@@ -1,0 +1,140 @@
+{
+  "imports": [
+    {
+      "asset": "mossy_stone_wall",
+      "source": "https://polyhaven.com/a/mossy_stone_wall",
+      "license": "CC0-1.0",
+      "terms": "https://polyhaven.com/license",
+      "authors": {
+        "Amal Kumar": "All"
+      },
+      "dimensions_cm": [
+        1999.9996423721313,
+        1999.9996423721313
+      ],
+      "attribution": "Voluntary. Commercial use and redistribution permitted.",
+      "files": [
+        {
+          "map": "diff",
+          "api_key": "Diffuse",
+          "file": "mossy_stone_wall_diff_2k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/mossy_stone_wall/mossy_stone_wall_diff_2k.jpg",
+          "upstream_md5": "1f0ff600e455874379c78ab97c7680b4",
+          "sha256": "4c41e62e3c6b0af73b89bd3c9c46c55f3723a36789475d3ff76fe112d89d45e2"
+        },
+        {
+          "map": "nor_gl",
+          "api_key": "nor_gl",
+          "file": "mossy_stone_wall_nor_gl_2k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/mossy_stone_wall/mossy_stone_wall_nor_gl_2k.jpg",
+          "upstream_md5": "0c40b1b9b731c404bd499389322fffb1",
+          "sha256": "5b0bc44304093ebb2307d91fe6f7f7b0c4af1ccbd84025a8c36c97da981be5cb"
+        },
+        {
+          "map": "rough",
+          "api_key": "Rough",
+          "file": "mossy_stone_wall_rough_2k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/mossy_stone_wall/mossy_stone_wall_rough_2k.jpg",
+          "upstream_md5": "c0c8fc6f25386e98fe0ee6bfe4264eda",
+          "sha256": "ecb8c608fdcea5a21bfd9ad553dbb6b0a74c7d2cdd5f8a3a16e9e83b18126c42"
+        }
+      ]
+    },
+    {
+      "asset": "sandstone_cracks",
+      "source": "https://polyhaven.com/a/sandstone_cracks",
+      "license": "CC0-1.0",
+      "terms": "https://polyhaven.com/license",
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "dimensions_cm": [
+        2000,
+        2000
+      ],
+      "attribution": "Voluntary. Commercial use and redistribution permitted.",
+      "files": [
+        {
+          "map": "diff",
+          "api_key": "Diffuse",
+          "file": "sandstone_cracks_diff_2k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/sandstone_cracks/sandstone_cracks_diff_2k.jpg",
+          "upstream_md5": "bc08fe111536bf9b12fa89b43ae90561",
+          "sha256": "6d3f99604c85a818277150db784ac66e67a4d91ddc255dabf61b3e956564090d"
+        },
+        {
+          "map": "nor_gl",
+          "api_key": "nor_gl",
+          "file": "sandstone_cracks_nor_gl_2k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/sandstone_cracks/sandstone_cracks_nor_gl_2k.jpg",
+          "upstream_md5": "f2139f27ed981b9b6788f5065ea97fee",
+          "sha256": "904e852268e1fb1bd5c0d035382f6a0e64c98dceea784fe957b1983d98b0231a"
+        },
+        {
+          "map": "rough",
+          "api_key": "Rough",
+          "file": "sandstone_cracks_rough_2k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/sandstone_cracks/sandstone_cracks_rough_2k.jpg",
+          "upstream_md5": "242c27221af41d559dfc0281345bba6f",
+          "sha256": "45347870225f1f1b223968e8fc0ac2125374c0b1e0907cda7ad93b1c5dda39f4"
+        }
+      ]
+    },
+    {
+      "asset": "kloofendal_28d_misty_puresky",
+      "source": "https://polyhaven.com/a/kloofendal_28d_misty_puresky",
+      "license": "CC0-1.0",
+      "terms": "https://polyhaven.com/license",
+      "authors": {
+        "Greg Zaal": "Processing",
+        "Jenelle van Heerden": "Photography"
+      },
+      "dimensions_cm": null,
+      "attribution": "Voluntary. Commercial use and redistribution permitted.",
+      "files": [
+        {
+          "map": "hdri",
+          "api_key": "hdri",
+          "file": "kloofendal_28d_misty_puresky_2k.hdr",
+          "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/kloofendal_28d_misty_puresky_2k.hdr",
+          "upstream_md5": "bbda20a597cd1c7b6e1e1c9d1c1899f4",
+          "sha256": "7adde668fb821069a05e4dcaf09c08ebf2de6503bdd99fd5bdf7bcfddff4236a"
+        }
+      ]
+    }
+  ],
+  "existing_scans": [
+    {
+      "id": "tree_small_02",
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "name": "Tree Small 02",
+      "source_url": "https://polyhaven.com/a/tree_small_02",
+      "license": "CC0 1.0"
+    },
+    {
+      "id": "island_tree_01",
+      "authors": {
+        "Rob Tuytel": "scanning, processing",
+        "Rico Cilliers": "cleanup, processing"
+      },
+      "name": "Island Tree 01",
+      "source_url": "https://polyhaven.com/a/island_tree_01",
+      "license": "CC0 1.0"
+    },
+    {
+      "id": "shrub_01",
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "name": "Shrub 01",
+      "source_url": "https://polyhaven.com/a/shrub_01",
+      "license": "CC0 1.0"
+    }
+  ],
+  "vegetation_source_library_sha256": "b3ca66854942020353725dd82562a0443d450d40bdf12ac9c5a277427e77150d",
+  "canopy_atlas_sha256": "52c1708c2f236cef1108bc673a85c9e0376e3d524c8d9a57e9f1d463628e9074",
+  "modifications": "Two CC0 scan meshes rendered from four directions in Blender; alpha images assembled in one atlas for non-playable exterior trees. The same eight scan alpha images project fixed-sun ground shading in bake_exterior_sun_r21.py. The mossy masonry scan uses metre-based UVs. Sandstone Cracks diffuse desaturated and darkened, original OpenGL normal and roughness retained. The HDRI is copied byte-for-byte; brightest sample elevation 28.564 degrees, unrotated yaw 10.811 degrees. Panorama and sun rotate together.",
+  "local_study": "Research only: pre-existing project photograph on the third Shancheng trail and city housing department Shancheng Lane record, https://zfcxjw.cq.gov.cn/zjzj/tszj/scbd/202211/t20221128_11339455.html. No reference-photo pixels in the game."
+}

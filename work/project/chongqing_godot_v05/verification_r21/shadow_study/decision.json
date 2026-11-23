@@ -1,0 +1,44 @@
+{
+  "order": [
+    "180m",
+    "112m",
+    "112m",
+    "180m"
+  ],
+  "p95_ms": [
+    {
+      "street_entry": 20.401,
+      "central_steps": 22.883,
+      "r20_tree_court": 16.367,
+      "roofscape": 21.001,
+      "noodle_corner": 8.906,
+      "narrow_passage": 13.988
+    },
+    {
+      "street_entry": 20.421,
+      "central_steps": 17.513,
+      "r20_tree_court": 15.838,
+      "roofscape": 18.821,
+      "noodle_corner": 12.136,
+      "narrow_passage": 14.809
+    },
+    {
+      "street_entry": 22.047,
+      "central_steps": 23.029,
+      "r20_tree_court": 14.908,
+      "roofscape": 16.228,
+      "noodle_corner": 10.438,
+      "narrow_passage": 13.24
+    },
+    {
+      "street_entry": 19.985,
+      "central_steps": 22.353,
+      "r20_tree_court": 15.759,
+      "roofscape": 19.842,
+      "noodle_corner": 8.774,
+      "narrow_passage": 14.581
+    }
+  ],
+  "selected_eye_level_range_m": 180,
+  "reason": "The lower range gained frame time at the tree court and rooftop, but central steps did not repeat consistently. Rooftop crops lose far directional shadow coverage. Keep the higher range for this art pass."
+}

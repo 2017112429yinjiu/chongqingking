@@ -1,0 +1,1608 @@
+{
+  "title": "梯坎里 · 重庆街区 05",
+  "revision": 15,
+  "extent_metres": [
+    200,
+    200
+  ],
+  "source_buildings": 14,
+  "detailed_buildings": 21,
+  "unique_building_signatures": 21,
+  "architecture_profiles": 18,
+  "background_buildings": 47,
+  "context_ownership": {
+    "excluded_refined_building_ids": [
+      809889604,
+      809889630,
+      1413081561
+    ],
+    "rule": "One architectural representation per OSM building ID; refined core geometry owns its entire source identity.",
+    "remaining_context_ids": [
+      585541371,
+      809889593,
+      809889594,
+      809889602,
+      809889603,
+      809889620,
+      809889621,
+      809889625,
+      809889631,
+      809889632,
+      809889635,
+      1374780313,
+      1374780314,
+      1374780315
+    ],
+    "duplicate_ids_remaining": [],
+    "passed": true
+  },
+  "meshes": 2690,
+  "triangles_before_modifiers": 14285897,
+  "props": {
+    "trees": 43,
+    "planted_beds": 14,
+    "scanned_shrub_clusters": 124,
+    "slope_fitted_tree_wells": 43,
+    "random_hardscape_shrub_clusters": 0,
+    "make_crates": 10,
+    "make_cafe_set": 3,
+    "make_scooter": 7,
+    "make_bins": 4,
+    "scanned_parked_cars": 3,
+    "make_clothesline": 3,
+    "make_street_lamp": 14,
+    "scanned_waste_groups": 19,
+    "service_clusters": 112,
+    "authored_courtyard_wall_sections": 273,
+    "authored_courtyards": 3,
+    "continuous_hedge_clusters": 6,
+    "stairside_planter_sections": 6
+  },
+  "routes": [
+    {
+      "name": "南区路",
+      "type": "OSM road",
+      "points": [
+        [
+          34.5216,
+          -83.7322
+        ],
+        [
+          7.607900000000001,
+          -85.5834
+        ],
+        [
+          -14.8476,
+          -86.2263
+        ],
+        [
+          -33.1841,
+          -85.3838
+        ],
+        [
+          -53.3621,
+          -83.2555
+        ],
+        [
+          -85.5867,
+          -76.3275
+        ],
+        [
+          -92.3223,
+          -74.5096
+        ],
+        [
+          -100.0,
+          -72.44157723114581
+        ]
+      ],
+      "width_m": 6.4,
+      "authored_height": true
+    },
+    {
+      "name": "59146775",
+      "type": "OSM road",
+      "points": [
+        [
+          -100.0,
+          -90.91991481543319
+        ],
+        [
+          -88.9886,
+          -93.4198
+        ],
+        [
+          -54.2538,
+          -97.4658
+        ],
+        [
+          -20.510124422264944,
+          -100.0
+        ]
+      ],
+      "width_m": 5.2,
+      "authored_height": true
+    },
+    {
+      "name": "59146775",
+      "type": "OSM road",
+      "points": [
+        [
+          23.4231506177682,
+          -100.0
+        ],
+        [
+          36.9833,
+          -98.3859
+        ],
+        [
+          64.5462,
+          -87.257
+        ],
+        [
+          97.4588,
+          -63.547
+        ],
+        [
+          100.0,
+          -61.563905056603765
+        ]
+      ],
+      "width_m": 5.2,
+      "authored_height": true
+    },
+    {
+      "name": "中兴路",
+      "type": "OSM road",
+      "points": [
+        [
+          100.0,
+          -43.717315840264
+        ],
+        [
+          71.0589,
+          -68.0586
+        ],
+        [
+          61.3964,
+          -73.9223
+        ],
+        [
+          52.1118,
+          -78.7663
+        ],
+        [
+          34.5216,
+          -83.7322
+        ]
+      ],
+      "width_m": 6.0,
+      "authored_height": true
+    },
+    {
+      "name": "734116595",
+      "type": "OSM road",
+      "points": [
+        [
+          66.784,
+          77.4143
+        ],
+        [
+          66.9198,
+          67.0725
+        ],
+        [
+          66.1348,
+          56.8637
+        ],
+        [
+          66.6582,
+          46.0009
+        ],
+        [
+          68.0926,
+          39.1506
+        ],
+        [
+          70.9516,
+          32.5554
+        ],
+        [
+          78.482,
+          22.4685
+        ],
+        [
+          100.0,
+          -3.286790822966008
+        ]
+      ],
+      "width_m": 5.2,
+      "authored_height": true
+    },
+    {
+      "name": "734116597",
+      "type": "OSM road",
+      "points": [
+        [
+          -27.7661,
+          89.6625
+        ],
+        [
+          -7.946999999999999,
+          77.9905
+        ],
+        [
+          66.784,
+          77.4143
+        ],
+        [
+          85.3819,
+          84.4088
+        ],
+        [
+          100.0,
+          90.62089266888661
+        ]
+      ],
+      "width_m": 5.2,
+      "authored_height": true
+    },
+    {
+      "name": "解放西路",
+      "type": "OSM road",
+      "points": [
+        [
+          89.9384,
+          -96.7119
+        ],
+        [
+          100.0,
+          -98.47565414515455
+        ]
+      ],
+      "width_m": 6.4,
+      "authored_height": true
+    },
+    {
+      "name": "南区路",
+      "type": "OSM road",
+      "points": [
+        [
+          100.0,
+          -91.12737276090304
+        ],
+        [
+          83.4546,
+          -88.2212
+        ],
+        [
+          61.0863,
+          -85.2507
+        ],
+        [
+          48.3418,
+          -83.9539
+        ],
+        [
+          34.5216,
+          -83.7322
+        ]
+      ],
+      "width_m": 6.4,
+      "authored_height": true
+    },
+    {
+      "name": "中兴路",
+      "type": "OSM road",
+      "points": [
+        [
+          100.0,
+          -85.34925938296743
+        ],
+        [
+          96.7902,
+          -82.701
+        ],
+        [
+          93.2721,
+          -74.4763
+        ],
+        [
+          91.6826,
+          -64.3119
+        ],
+        [
+          93.6984,
+          -58.2265
+        ],
+        [
+          98.2922,
+          -53.1386
+        ],
+        [
+          100.0,
+          -51.78550935554588
+        ]
+      ],
+      "width_m": 6.0,
+      "authored_height": true
+    },
+    {
+      "name": "南区路",
+      "type": "OSM road",
+      "points": [
+        [
+          -100.0,
+          -80.23155904143694
+        ],
+        [
+          -86.459,
+          -83.1666
+        ],
+        [
+          -53.837,
+          -90.2387
+        ],
+        [
+          -33.3101,
+          -92.6331
+        ],
+        [
+          -15.186799999999998,
+          -94.0076
+        ],
+        [
+          8.4608,
+          -93.664
+        ],
+        [
+          13.2194,
+          -93.3425
+        ],
+        [
+          31.3815,
+          -92.1121
+        ],
+        [
+          41.4026,
+          -92.0123
+        ],
+        [
+          60.8731,
+          -92.5443
+        ],
+        [
+          89.9384,
+          -96.7119
+        ]
+      ],
+      "width_m": 6.4,
+      "authored_height": true
+    },
+    {
+      "name": "1256840008",
+      "type": "OSM road",
+      "points": [
+        [
+          78.64324003807238,
+          -100.0
+        ],
+        [
+          89.9384,
+          -96.7119
+        ]
+      ],
+      "width_m": 4.4,
+      "authored_height": true
+    },
+    {
+      "name": "1324001442",
+      "type": "OSM road",
+      "points": [
+        [
+          -53.837,
+          -90.2387
+        ],
+        [
+          -47.8185,
+          -93.5974
+        ],
+        [
+          -45.2309,
+          -96.5459
+        ],
+        [
+          -43.777056820308566,
+          -100.0
+        ]
+      ],
+      "width_m": 4.4,
+      "authored_height": true
+    },
+    {
+      "name": "1375242616",
+      "type": "OSM road",
+      "points": [
+        [
+          43.30908822405216,
+          -100.0
+        ],
+        [
+          43.2925,
+          -99.2394
+        ],
+        [
+          42.7207,
+          -95.3709
+        ],
+        [
+          41.4026,
+          -92.0123
+        ],
+        [
+          39.9683,
+          -88.7756
+        ],
+        [
+          37.5454,
+          -86.193
+        ],
+        [
+          34.5216,
+          -83.7322
+        ]
+      ],
+      "width_m": 4.4,
+      "authored_height": true
+    },
+    {
+      "name": "1375242618",
+      "type": "OSM road",
+      "points": [
+        [
+          61.0863,
+          -85.2507
+        ],
+        [
+          52.8097,
+          -86.6141
+        ],
+        [
+          47.644,
+          -88.5207
+        ],
+        [
+          41.4026,
+          -92.0123
+        ],
+        [
+          36.082,
+          -95.5705
+        ],
+        [
+          31.837,
+          -99.9045
+        ],
+        [
+          31.790339628899584,
+          -100.0
+        ]
+      ],
+      "width_m": 4.4,
+      "authored_height": true
+    },
+    {
+      "name": "马蹄街",
+      "type": "OSM road",
+      "points": [
+        [
+          -27.7661,
+          89.6625
+        ],
+        [
+          -34.98861183324231,
+          100.0
+        ]
+      ],
+      "width_m": 5.2,
+      "authored_height": true
+    },
+    {
+      "name": "OSM_734116594_0",
+      "type": "Authored supplementary walk",
+      "points": [
+        [
+          15.9718,
+          -66.2409
+        ],
+        [
+          16.0978,
+          -73.3572
+        ],
+        [
+          16.2335,
+          -78.2676
+        ]
+      ],
+      "width_m": 2.6,
+      "stepped": true
+    },
+    {
+      "name": "OSM_734116598_0",
+      "type": "Authored supplementary walk",
+      "points": [
+        [
+          -100.0,
+          -65.44410643892428
+        ],
+        [
+          -86.5849,
+          -69.0893
+        ],
+        [
+          -55.5136,
+          -74.3879
+        ],
+        [
+          -31.081,
+          -76.5938
+        ],
+        [
+          -11.581500000000002,
+          -78.1457
+        ],
+        [
+          3.488999999999999,
+          -78.7886
+        ],
+        [
+          16.2335,
+          -78.2676
+        ],
+        [
+          26.7586,
+          -78.1457
+        ],
+        [
+          34.037,
+          -76.4608
+        ],
+        [
+          44.9497,
+          -72.4482
+        ],
+        [
+          52.4898,
+          -67.2828
+        ],
+        [
+          62.5011,
+          -59.0026
+        ],
+        [
+          72.2509,
+          -52.5403
+        ],
+        [
+          84.7239,
+          -42.7082
+        ],
+        [
+          93.6982,
+          -35.9799
+        ],
+        [
+          100.0,
+          -30.19931623390081
+        ]
+      ],
+      "width_m": 2.5,
+      "stepped": false
+    },
+    {
+      "name": "OSM_734116601_0",
+      "type": "Authored supplementary walk",
+      "points": [
+        [
+          -100.0,
+          -44.60597007464325
+        ],
+        [
+          -96.9741,
+          -45.2908
+        ],
+        [
+          -91.3917,
+          -46.4547
+        ],
+        [
+          -86.7107,
+          -49.9464
+        ],
+        [
+          -80.4693,
+          -53.826
+        ],
+        [
+          -71.7663,
+          -59.5124
+        ],
+        [
+          -65.273,
+          -62.4942
+        ],
+        [
+          -59.6809,
+          -63.2701
+        ],
+        [
+          -54.4765,
+          -63.2702
+        ],
+        [
+          -48.1091,
+          -62.3613
+        ],
+        [
+          -43.4281,
+          -61.8514
+        ],
+        [
+          -38.2334,
+          -58.2268
+        ],
+        [
+          -32.3796,
+          -57.0629
+        ],
+        [
+          -28.6096,
+          -56.675
+        ],
+        [
+          -23.5409,
+          -57.7059
+        ],
+        [
+          -16.9118,
+          -57.9719
+        ],
+        [
+          -12.1048,
+          -59.0028
+        ],
+        [
+          -7.6854,
+          -59.3907
+        ],
+        [
+          -0.40700000000000003,
+          -60.2996
+        ],
+        [
+          6.222,
+          -62.4944
+        ],
+        [
+          15.971800000000002,
+          -66.2409
+        ]
+      ],
+      "width_m": 2.5,
+      "stepped": false
+    },
+    {
+      "name": "OSM_1328811307_0",
+      "type": "Authored supplementary walk",
+      "points": [
+        [
+          80.1882,
+          -36.9998
+        ],
+        [
+          74.4508,
+          -42.7194
+        ]
+      ],
+      "width_m": 2.6,
+      "stepped": true
+    },
+    {
+      "name": "OSM_1328811309_0",
+      "type": "Authored supplementary walk",
+      "points": [
+        [
+          15.9718,
+          -66.2409
+        ],
+        [
+          52.0052,
+          -61.6629
+        ],
+        [
+          60.9505,
+          -55.0454
+        ],
+        [
+          62.7918,
+          -45.4573
+        ],
+        [
+          74.4508,
+          -42.7194
+        ]
+      ],
+      "width_m": 2.5,
+      "stepped": false
+    },
+    {
+      "name": "Central_stair_lane",
+      "type": "Authored supplementary walk",
+      "points": [
+        [
+          16.0,
+          -66.0
+        ],
+        [
+          -20.0,
+          -52.0
+        ],
+        [
+          -20.0,
+          -30.0
+        ],
+        [
+          -18.0,
+          -8.0
+        ],
+        [
+          -18.0,
+          14.0
+        ],
+        [
+          -40.0,
+          38.0
+        ]
+      ],
+      "width_m": 3.8,
+      "stepped": true
+    },
+    {
+      "name": "Narrow_upper_passage",
+      "type": "Authored supplementary walk",
+      "points": [
+        [
+          -40.0,
+          38.0
+        ],
+        [
+          -37.0,
+          43.0
+        ],
+        [
+          -33.1,
+          50.0
+        ],
+        [
+          -28.7,
+          57.0
+        ]
+      ],
+      "width_m": 1.65,
+      "stepped": true
+    },
+    {
+      "name": "Upper_terrace_connection",
+      "type": "Authored supplementary walk",
+      "points": [
+        [
+          -28.7,
+          57.0
+        ],
+        [
+          -25.0,
+          64.0
+        ],
+        [
+          -17.0,
+          77.0
+        ],
+        [
+          -27.0,
+          90.0
+        ]
+      ],
+      "width_m": 2.5,
+      "stepped": true
+    },
+    {
+      "name": "West_residential_link",
+      "type": "Authored supplementary walk",
+      "points": [
+        [
+          -93.0,
+          -45.0
+        ],
+        [
+          -74.0,
+          -34.0
+        ],
+        [
+          -73.0,
+          -8.0
+        ],
+        [
+          -76.0,
+          17.0
+        ],
+        [
+          -74.0,
+          40.0
+        ],
+        [
+          -77.0,
+          61.0
+        ],
+        [
+          -75.0,
+          86.0
+        ]
+      ],
+      "width_m": 2.7,
+      "stepped": true
+    },
+    {
+      "name": "Courtyard_approach",
+      "type": "Authored supplementary walk",
+      "points": [
+        [
+          -18.0,
+          -8.0
+        ],
+        [
+          -18.5,
+          -19.7
+        ],
+        [
+          -49.0,
+          -19.7
+        ],
+        [
+          -50.0,
+          -33.0
+        ],
+        [
+          -70.0,
+          -33.0
+        ],
+        [
+          -73.0,
+          -8.0
+        ]
+      ],
+      "width_m": 2.8,
+      "stepped": false
+    },
+    {
+      "name": "Upper_courtyard_walk",
+      "type": "Authored supplementary walk",
+      "points": [
+        [
+          -18.0,
+          14.0
+        ],
+        [
+          0.0,
+          5.0
+        ],
+        [
+          26.0,
+          5.0
+        ],
+        [
+          28.0,
+          14.0
+        ],
+        [
+          34.0,
+          38.0
+        ],
+        [
+          42.0,
+          56.0
+        ],
+        [
+          60.0,
+          56.0
+        ],
+        [
+          66.0,
+          56.0
+        ]
+      ],
+      "width_m": 3.1,
+      "stepped": false
+    },
+    {
+      "name": "Old_school_approach",
+      "type": "Authored supplementary walk",
+      "points": [
+        [
+          -25.0,
+          64.0
+        ],
+        [
+          -12.0,
+          59.0
+        ],
+        [
+          6.0,
+          59.0
+        ],
+        [
+          20.0,
+          59.0
+        ],
+        [
+          42.0,
+          56.0
+        ]
+      ],
+      "width_m": 2.5,
+      "stepped": false
+    },
+    {
+      "name": "East_photo_alley",
+      "type": "Authored supplementary walk",
+      "points": [
+        [
+          52.0,
+          -61.7
+        ],
+        [
+          48.0,
+          -49.0
+        ],
+        [
+          52.0,
+          -35.0
+        ],
+        [
+          49.0,
+          -19.0
+        ],
+        [
+          35.0,
+          5.0
+        ],
+        [
+          28.0,
+          14.0
+        ]
+      ],
+      "width_m": 2.5,
+      "stepped": true
+    }
+  ],
+  "vertex_ao": {
+    "method": "Geometry raycast near-field AO and optional hemispherical sky visibility in linear vertex RGB; not full GI",
+    "attribute": "CQ_StaticAO",
+    "domain": "CORNER",
+    "type": "FLOAT_COLOR",
+    "radius_m": 2.0,
+    "strength": 0.4,
+    "rays_per_sample": 6,
+    "cell_size_m": 0.34,
+    "occluders": {
+      "objects": 207,
+      "vertices": 262266,
+      "polygons": 225026
+    },
+    "sky_radius_m": 12.0,
+    "sky_strength": 0.42,
+    "sky_visibility_rays": 8,
+    "objects": 963,
+    "corners": 6409217,
+    "unique_samples": 1392931,
+    "cache_hits": 192601,
+    "fallback_samples": 222706,
+    "local_reuse_corners": 4600979,
+    "rays_cast": 41267769,
+    "min_multiplier": 0.10807,
+    "max_multiplier": 1.0,
+    "duration_seconds": 278.601,
+    "export_flags": {
+      "export_vertex_color": "ACTIVE",
+      "export_all_vertex_colors": false
+    },
+    "interior_visibility": {
+      "enabled": true,
+      "method": "Actual opaque room envelope and furniture; cosine-weighted binary upper-sky visibility, local contact AO and explicit indirect-bounce floor",
+      "exterior_bvh_and_formula": "Original COL-only occluders and exterior formula retained",
+      "target_objects": 501,
+      "sky_rays": 48,
+      "sky_radius_m": 12.0,
+      "indirect_bounce_floor": 0.18,
+      "cell_size_m": 0.18,
+      "contact_radius_m": 1.25,
+      "contact_rays": 12,
+      "contact_strength": 0.4,
+      "cache_coarsening": false,
+      "unique_samples": 944999,
+      "cache_hits": 39322,
+      "rays_cast": 34996721,
+      "occluders": {
+        "objects": 668,
+        "vertices": 1511468,
+        "polygons": 1135943,
+        "room_envelope_objects": 90,
+        "real_furniture_objects": 411,
+        "render_or_collision_objects_added": 0
+      },
+      "numerical_aperture_probe": {
+        "scope": "In-memory numerical visibility check; no scene objects or proxy geometry",
+        "room_dimensions_m": [
+          3.0,
+          3.0,
+          2.8
+        ],
+        "aperture_dimensions_m": [
+          1.8,
+          1.6
+        ],
+        "closed_room_sky_visibility": 0.0,
+        "near_window_sky_visibility": 0.857727,
+        "deep_room_sky_visibility": 0.164315,
+        "near_window_distance_m": 0.4,
+        "deep_room_distance_m": 2.6,
+        "closed_room_sky_multiplier": 0.18,
+        "near_window_sky_multiplier": 0.883336,
+        "deep_room_sky_multiplier": 0.314738,
+        "passed": true
+      },
+      "raw_sky_visibility": {
+        "samples": 944999,
+        "min": 0.0,
+        "mean": 0.057855,
+        "p10": 0.0,
+        "p50": 0.0,
+        "p90": 0.204413,
+        "max": 1.0
+      },
+      "combined_vertex_multiplier": {
+        "samples": 944999,
+        "min": 0.10807,
+        "mean": 0.191949,
+        "p10": 0.115148,
+        "p50": 0.160478,
+        "p90": 0.312358,
+        "max": 1.0
+      },
+      "actual_tagged_room_depth_comparison": {
+        "809889624_edge10_window32235000": {
+          "depth_m": 1.61778,
+          "objects": [
+            "IR_B_809889624_courtyard_HeroRoom_room_wall",
+            "IR_B_809889624_courtyard_HeroRoom_room_floor",
+            "IR_B_809889624_courtyard_HeroRoom_timber",
+            "IR_B_809889624_courtyard_HeroRoom_ceramic_glaze",
+            "IR_B_809889624_courtyard_HeroRoom_frame",
+            "IR_B_809889624_courtyard_HeroRoom_aluminium",
+            "IR_B_809889624_courtyard_HeroRoom_offwhite",
+            "IR_B_809889624_courtyard_HeroRoom_tile_cream",
+            "IR_B_809889624_courtyard_HeroRoom_curtain_linen",
+            "IR_B_809889624_courtyard_HeroRoom_curtain_beige",
+            "IR_B_809889624_courtyard_HeroRoom_faded_green"
+          ],
+          "near_window_visibility": {
+            "samples": 183,
+            "min": 0.0,
+            "mean": 0.088512,
+            "p10": 0.0,
+            "p50": 0.0,
+            "p90": 0.407851,
+            "max": 0.686622
+          },
+          "near_window_multiplier": {
+            "samples": 183,
+            "min": 0.11407,
+            "mean": 0.213592,
+            "p10": 0.124829,
+            "p50": 0.161159,
+            "p90": 0.41966,
+            "max": 0.72354
+          },
+          "deep_room_visibility": {
+            "samples": 1322,
+            "min": 0.0,
+            "mean": 0.079676,
+            "p10": 0.0,
+            "p50": 0.037321,
+            "p90": 0.235058,
+            "max": 0.431658
+          },
+          "deep_room_multiplier": {
+            "samples": 1322,
+            "min": 0.108175,
+            "mean": 0.203882,
+            "p10": 0.113044,
+            "p50": 0.17538,
+            "p90": 0.343314,
+            "max": 0.531804
+          }
+        },
+        "1335306667_edge4_window2816226": {
+          "depth_m": 1.64098,
+          "objects": [
+            "IR_B_1335306667_brick_home_HeroRoom_room_wall",
+            "IR_B_1335306667_brick_home_HeroRoom_room_floor",
+            "IR_B_1335306667_brick_home_HeroRoom_ceramic_glaze",
+            "IR_B_1335306667_brick_home_HeroRoom_timber",
+            "IR_B_1335306667_brick_home_HeroRoom_frame",
+            "IR_B_1335306667_brick_home_HeroRoom_curtain_beige",
+            "IR_B_1335306667_brick_home_HeroRoom_offwhite",
+            "IR_B_1335306667_brick_home_HeroRoom_curtain_linen",
+            "B_1335306667_brick_home_Interior_asset_0_00",
+            "B_1335306667_brick_home_Interior_asset_1_00"
+          ],
+          "near_window_visibility": {
+            "samples": 509,
+            "min": 0.0,
+            "mean": 0.024718,
+            "p10": 0.0,
+            "p50": 0.0,
+            "p90": 0.059438,
+            "max": 0.507593
+          },
+          "near_window_multiplier": {
+            "samples": 509,
+            "min": 0.109586,
+            "mean": 0.164515,
+            "p10": 0.115507,
+            "p50": 0.14617,
+            "p90": 0.214885,
+            "max": 0.578129
+          },
+          "deep_room_visibility": {
+            "samples": 798,
+            "min": 0.0,
+            "mean": 0.06295,
+            "p10": 0.0,
+            "p50": 0.02202,
+            "p90": 0.180585,
+            "max": 0.46148
+          },
+          "deep_room_multiplier": {
+            "samples": 798,
+            "min": 0.108087,
+            "mean": 0.205174,
+            "p10": 0.13876,
+            "p50": 0.18,
+            "p90": 0.305933,
+            "max": 0.508321
+          }
+        },
+        "A04_edge1_window238636781": {
+          "depth_m": 2.51024,
+          "objects": [
+            "IR_B_A04_courtyard_home_HeroRoom_room_wall",
+            "IR_B_A04_courtyard_home_HeroRoom_room_floor",
+            "IR_B_A04_courtyard_home_HeroRoom_timber",
+            "IR_B_A04_courtyard_home_HeroRoom_ceramic_glaze",
+            "IR_B_A04_courtyard_home_HeroRoom_curtain_beige",
+            "IR_B_A04_courtyard_home_HeroRoom_offwhite",
+            "IR_B_A04_courtyard_home_HeroRoom_frame",
+            "IR_B_A04_courtyard_home_HeroRoom_faded_red",
+            "IR_B_A04_courtyard_home_HeroRoom_electric_blue",
+            "IR_B_A04_courtyard_home_HeroRoom_faded_green",
+            "IR_B_A04_courtyard_home_HeroRoom_wood",
+            "IR_B_A04_courtyard_home_HeroRoom_curtain_sage",
+            "B_A04_courtyard_home_Interior_asset_0_00"
+          ],
+          "near_window_visibility": {
+            "samples": 229,
+            "min": 0.0,
+            "mean": 0.059107,
+            "p10": 0.0,
+            "p50": 0.0,
+            "p90": 0.285407,
+            "max": 0.578438
+          },
+          "near_window_multiplier": {
+            "samples": 229,
+            "min": 0.124685,
+            "mean": 0.202895,
+            "p10": 0.132289,
+            "p50": 0.172325,
+            "p90": 0.360926,
+            "max": 0.638542
+          },
+          "deep_room_visibility": {
+            "samples": 1141,
+            "min": 0.0,
+            "mean": 0.034676,
+            "p10": 0.0,
+            "p50": 0.0,
+            "p90": 0.102501,
+            "max": 0.570364
+          },
+          "deep_room_multiplier": {
+            "samples": 1141,
+            "min": 0.108908,
+            "mean": 0.184894,
+            "p10": 0.120639,
+            "p50": 0.175386,
+            "p90": 0.252724,
+            "max": 0.589459
+          }
+        },
+        "A05_edge1_window258644831": {
+          "depth_m": 1.7583,
+          "objects": [
+            "IR_B_A05_market_HeroRoom_room_wall",
+            "IR_B_A05_market_HeroRoom_room_floor",
+            "IR_B_A05_market_HeroRoom_timber",
+            "IR_B_A05_market_HeroRoom_aluminium",
+            "IR_B_A05_market_HeroRoom_frame",
+            "IR_B_A05_market_HeroRoom_offwhite",
+            "IR_B_A05_market_HeroRoom_tile_cream",
+            "IR_B_A05_market_HeroRoom_ceramic_glaze",
+            "IR_B_A05_market_HeroRoom_curtain_linen",
+            "IR_B_A05_market_HeroRoom_curtain_beige",
+            "IR_B_A05_market_HeroRoom_faded_green",
+            "IR_B_A05_market_HeroRoom_wood"
+          ],
+          "near_window_visibility": {
+            "samples": 107,
+            "min": 0.0,
+            "mean": 0.043191,
+            "p10": 0.0,
+            "p50": 0.0,
+            "p90": 0.171054,
+            "max": 0.475903
+          },
+          "near_window_multiplier": {
+            "samples": 107,
+            "min": 0.114243,
+            "mean": 0.188978,
+            "p10": 0.129568,
+            "p50": 0.168004,
+            "p90": 0.284403,
+            "max": 0.49417
+          },
+          "deep_room_visibility": {
+            "samples": 1401,
+            "min": 0.0,
+            "mean": 0.054237,
+            "p10": 0.0,
+            "p50": 0.00343,
+            "p90": 0.179106,
+            "max": 0.608556
+          },
+          "deep_room_multiplier": {
+            "samples": 1401,
+            "min": 0.108146,
+            "mean": 0.178933,
+            "p10": 0.11197,
+            "p50": 0.15412,
+            "p90": 0.291809,
+            "max": 0.599577
+          }
+        },
+        "809889623_edge3_window59790299": {
+          "depth_m": 1.42,
+          "objects": [
+            "B_809889623_market_Interior_asset_0_00",
+            "B_809889623_market_Interior_asset_0_02"
+          ],
+          "near_window_visibility": {
+            "samples": 0
+          },
+          "near_window_multiplier": {
+            "samples": 0
+          },
+          "deep_room_visibility": {
+            "samples": 2019,
+            "min": 0.0,
+            "mean": 0.058854,
+            "p10": 0.0,
+            "p50": 0.0,
+            "p90": 0.212112,
+            "max": 0.597586
+          },
+          "deep_room_multiplier": {
+            "samples": 2019,
+            "min": 0.108073,
+            "mean": 0.177588,
+            "p10": 0.108872,
+            "p50": 0.141094,
+            "p90": 0.309106,
+            "max": 0.649287
+          }
+        },
+        "809889627_edge11_window214157974": {
+          "depth_m": 2.47964,
+          "objects": [
+            "B_809889627_blue_apartments_Interior_asset_0_00",
+            "B_809889627_blue_apartments_Interior_asset_0_02"
+          ],
+          "near_window_visibility": {
+            "samples": 0
+          },
+          "near_window_multiplier": {
+            "samples": 0
+          },
+          "deep_room_visibility": {
+            "samples": 2268,
+            "min": 0.0,
+            "mean": 0.028763,
+            "p10": 0.0,
+            "p50": 0.0,
+            "p90": 0.112977,
+            "max": 0.322719
+          },
+          "deep_room_multiplier": {
+            "samples": 2268,
+            "min": 0.108073,
+            "mean": 0.160364,
+            "p10": 0.108706,
+            "p50": 0.140759,
+            "p90": 0.244201,
+            "max": 0.444493
+          }
+        },
+        "809889628_edge3_window204077496": {
+          "depth_m": 2.62107,
+          "objects": [
+            "B_809889628_clinic_Interior_asset_0_00",
+            "B_809889628_clinic_Interior_asset_0_02"
+          ],
+          "near_window_visibility": {
+            "samples": 0
+          },
+          "near_window_multiplier": {
+            "samples": 0
+          },
+          "deep_room_visibility": {
+            "samples": 2876,
+            "min": 0.0,
+            "mean": 0.016881,
+            "p10": 0.0,
+            "p50": 0.0,
+            "p90": 0.068549,
+            "max": 0.326929
+          },
+          "deep_room_multiplier": {
+            "samples": 2876,
+            "min": 0.10807,
+            "mean": 0.148908,
+            "p10": 0.108848,
+            "p50": 0.138123,
+            "p90": 0.209404,
+            "max": 0.445847
+          }
+        },
+        "809889629_edge1_window233988458": {
+          "depth_m": 2.45358,
+          "objects": [
+            "B_809889629_artisan_Interior_asset_0_00",
+            "B_809889629_artisan_Interior_asset_1_00"
+          ],
+          "near_window_visibility": {
+            "samples": 0
+          },
+          "near_window_multiplier": {
+            "samples": 0
+          },
+          "deep_room_visibility": {
+            "samples": 1108,
+            "min": 0.0,
+            "mean": 0.036409,
+            "p10": 0.0,
+            "p50": 0.0,
+            "p90": 0.149697,
+            "max": 0.396555
+          },
+          "deep_room_multiplier": {
+            "samples": 1108,
+            "min": 0.108782,
+            "mean": 0.183459,
+            "p10": 0.120281,
+            "p50": 0.16101,
+            "p90": 0.281407,
+            "max": 0.501864
+          }
+        },
+        "809889630_edge0_window113104001": {
+          "depth_m": 1.59855,
+          "objects": [
+            "B_809889630_contemporary_Interior_asset_0_00",
+            "B_809889630_contemporary_Interior_asset_0_02"
+          ],
+          "near_window_visibility": {
+            "samples": 0
+          },
+          "near_window_multiplier": {
+            "samples": 0
+          },
+          "deep_room_visibility": {
+            "samples": 2951,
+            "min": 0.0,
+            "mean": 0.07096,
+            "p10": 0.0,
+            "p50": 0.0,
+            "p90": 0.269059,
+            "max": 0.619073
+          },
+          "deep_room_multiplier": {
+            "samples": 2951,
+            "min": 0.10807,
+            "mean": 0.194974,
+            "p10": 0.108927,
+            "p50": 0.147905,
+            "p90": 0.368144,
+            "max": 0.640744
+          }
+        },
+        "1335306665_edge0_window176595401": {
+          "depth_m": 1.73974,
+          "objects": [
+            "B_1335306665_civic_Interior_asset_0_00",
+            "B_1335306665_civic_Interior_asset_0_02"
+          ],
+          "near_window_visibility": {
+            "samples": 0
+          },
+          "near_window_multiplier": {
+            "samples": 0
+          },
+          "deep_room_visibility": {
+            "samples": 2571,
+            "min": 0.0,
+            "mean": 0.069593,
+            "p10": 0.0,
+            "p50": 0.0,
+            "p90": 0.263859,
+            "max": 0.558145
+          },
+          "deep_room_multiplier": {
+            "samples": 2571,
+            "min": 0.108074,
+            "mean": 0.192725,
+            "p10": 0.108535,
+            "p50": 0.149428,
+            "p90": 0.362209,
+            "max": 0.608032
+          }
+        },
+        "1335306666_edge4_window94700819": {
+          "depth_m": 1.74255,
+          "objects": [
+            "B_1335306666_heritage_Interior_asset_1_00",
+            "B_1335306666_heritage_Interior_asset_2_00"
+          ],
+          "near_window_visibility": {
+            "samples": 234,
+            "min": 0.0,
+            "mean": 0.005203,
+            "p10": 0.0,
+            "p50": 0.0,
+            "p90": 0.027868,
+            "max": 0.107453
+          },
+          "near_window_multiplier": {
+            "samples": 234,
+            "min": 0.109586,
+            "mean": 0.147121,
+            "p10": 0.110632,
+            "p50": 0.14646,
+            "p90": 0.18,
+            "max": 0.261213
+          },
+          "deep_room_visibility": {
+            "samples": 680,
+            "min": 0.0,
+            "mean": 0.039686,
+            "p10": 0.0,
+            "p50": 0.021231,
+            "p90": 0.107258,
+            "max": 0.252335
+          },
+          "deep_room_multiplier": {
+            "samples": 680,
+            "min": 0.108089,
+            "mean": 0.18358,
+            "p10": 0.120777,
+            "p50": 0.179901,
+            "p90": 0.252234,
+            "max": 0.379304
+          }
+        },
+        "1413081561_edge1_window52140866": {
+          "depth_m": 1.54719,
+          "objects": [
+            "B_1413081561_restored_Interior_asset_0_00",
+            "B_1413081561_restored_Interior_asset_0_02"
+          ],
+          "near_window_visibility": {
+            "samples": 0
+          },
+          "near_window_multiplier": {
+            "samples": 0
+          },
+          "deep_room_visibility": {
+            "samples": 2824,
+            "min": 0.0,
+            "mean": 0.062339,
+            "p10": 0.0,
+            "p50": 0.0,
+            "p90": 0.244551,
+            "max": 0.442788
+          },
+          "deep_room_multiplier": {
+            "samples": 2824,
+            "min": 0.108075,
+            "mean": 0.181971,
+            "p10": 0.108635,
+            "p50": 0.143344,
+            "p90": 0.329736,
+            "max": 0.528213
+          }
+        },
+        "A02_edge3_window186853805": {
+          "depth_m": 1.52206,
+          "objects": [
+            "B_A02_repair_Interior_asset_1_00",
+            "B_A02_repair_Interior_asset_1_02"
+          ],
+          "near_window_visibility": {
+            "samples": 0
+          },
+          "near_window_multiplier": {
+            "samples": 0
+          },
+          "deep_room_visibility": {
+            "samples": 2507,
+            "min": 0.0,
+            "mean": 0.073055,
+            "p10": 0.0,
+            "p50": 0.002342,
+            "p90": 0.246271,
+            "max": 0.723654
+          },
+          "deep_room_multiplier": {
+            "samples": 2507,
+            "min": 0.108074,
+            "mean": 0.192415,
+            "p10": 0.1087,
+            "p50": 0.160944,
+            "p90": 0.342803,
+            "max": 0.714085
+          }
+        }
+      }
+    },
+    "mean_multiplier": 0.45362,
+    "cache_entries": 1615637,
+    "exterior_cache_entries": 670638
+  },
+  "interior_terrain": {
+    "checked_rooms": 1701,
+    "original_intruding_rooms": 99,
+    "final_intruding_rooms": 0,
+    "minimum_final_clearance_m": 0.02999999999999936,
+    "passed": true
+  },
+  "blend_bytes": 414201503,
+  "glb_bytes": 1017581848,
+  "provenance": {
+    "planar": "OpenStreetMap contributors / ODbL 1.0; source outlines are retained in source_data/geo_layout.json",
+    "terrain": "Authored hillside and distant ridges, not DEM survey",
+    "architecture": "21 individually composed core buildings (14 mapped planar outlines, 7 authored infill); facade details/heights are authored. Additional surrounding blocks are context design, not surveyed reconstructions.",
+    "reference_photos": "Wikimedia Commons Shancheng Lane photographs used for visual study; no photo pixels are bundled as game textures",
+    "textures": "Poly Haven CC0 scans + original procedural surface assets; exact files and credits in material_provenance.json",
+    "props_and_vegetation": "Original authored props plus Poly Haven CC0 scan models. Prepared instances, controlled LODs, and edited plant grouping; source credits in scanned_assets/source_credits.json.",
+    "lighting": "Godot runtime profile and CC0 photographic HDRI supplied in the engine project. Blender preview lighting is not the acceptance render."
+  },
+  "runtime_captures": "Produced by Godot, not Blender renders. See verification/capture_manifest.json in each review round."
+}

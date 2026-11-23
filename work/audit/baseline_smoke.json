@@ -1,0 +1,1171 @@
+{
+	"collision_stats": {
+		"bodies": 207,
+		"by_kind": {
+			"refined_structure": 207
+		},
+		"created": 207,
+		"failed": [],
+		"reused": 0,
+		"skipped_meshes": 2483,
+		"triangles": 592246
+	},
+	"configuration_sha256": {
+		"res://assets/viewpoints.json": "a3da59baee65cea784440a54949fe5d2ddc556062727b763732c52698a743fe0",
+		"res://assets/walking_survey.json": "3277a9c561fb58826045d8a52affc3515a4ae1732e8231a27bf63bbf9d365d26"
+	},
+	"configured_route_count": 4,
+	"controller": {
+		"maximum_landing_probe_m": 0.35,
+		"step_height_m": 0.45,
+		"step_validation": "Upward headroom, horizontal sweep, downward walkable landing; shortest safe landing is chosen",
+		"version": "swept_step_landing_v2",
+		"waypoints_teleport": false
+	},
+	"engine": "4.6.3-stable (official)",
+	"gi_profile": {
+		"enabled": false,
+		"explicit_experiment": false,
+		"requested": false,
+		"structures_only": false
+	},
+	"passed": true,
+	"route_filter": [],
+	"sample_adjustments": [],
+	"scene_identity": {
+		"asset": "res://assets/chongqing_district.glb",
+		"bytes": 1017581848,
+		"revision": 15.0,
+		"sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223"
+	},
+	"scene_revision": 15.0,
+	"scene_sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223",
+	"script_sha256": {
+		"res://scripts/build_collisions.gd": "2628a4eb84628582acd93ed16307ea708aa9e94867e286287eefa636abe803a8",
+		"res://scripts/explorer.gd": "8103d29a428970241be4ae0f7b67b304c528398f8e43f82613d728cc951c1bc2",
+		"res://scripts/main.gd": "29517fc2472682aae053e2e1eafc954379755e9b212a425088cdb834599cf56d"
+	},
+	"tested_route_names": [
+		"central_stair_ascent",
+		"west_lane_ascent",
+		"upper_road_walk",
+		"narrow_upper_passage"
+	],
+	"tests": [
+		{
+			"name": "world_collision_created",
+			"pass": true
+		},
+		{
+			"name": "camera_overview",
+			"pass": true,
+			"position": [
+				90.0,
+				230.0,
+				120.0
+			]
+		},
+		{
+			"name": "camera_street_entry",
+			"pass": true,
+			"position": [
+				24.0,
+				10.594,
+				77.0
+			]
+		},
+		{
+			"name": "camera_noodle_corner",
+			"pass": true,
+			"position": [
+				-24.0,
+				13.812,
+				53.5
+			]
+		},
+		{
+			"name": "camera_central_steps",
+			"pass": true,
+			"position": [
+				-20.0,
+				14.032,
+				52.0
+			]
+		},
+		{
+			"name": "camera_west_lane",
+			"pass": true,
+			"position": [
+				-73.0,
+				15.385,
+				34.0
+			]
+		},
+		{
+			"name": "camera_community_court",
+			"pass": true,
+			"position": [
+				-20.0,
+				22.3,
+				19.0
+			]
+		},
+		{
+			"name": "camera_narrow_passage",
+			"pass": true,
+			"position": [
+				-35.5,
+				27.586,
+				-46.2
+			]
+		},
+		{
+			"name": "camera_upper_houses",
+			"pass": true,
+			"position": [
+				-12.0,
+				30.922,
+				-63.0
+			]
+		},
+		{
+			"name": "camera_east_gallery",
+			"pass": true,
+			"position": [
+				50.0,
+				15.552,
+				49.0
+			]
+		},
+		{
+			"name": "camera_residential_road",
+			"pass": true,
+			"position": [
+				64.0,
+				28.982,
+				-34.0
+			]
+		},
+		{
+			"name": "camera_upper_street",
+			"pass": true,
+			"position": [
+				4.0,
+				33.664,
+				-80.0
+			]
+		},
+		{
+			"name": "camera_roofscape",
+			"pass": true,
+			"position": [
+				14.0,
+				64.0,
+				20.0
+			]
+		},
+		{
+			"name": "camera_community_front",
+			"pass": true,
+			"position": [
+				28.0,
+				23.559,
+				-4.0
+			]
+		},
+		{
+			"name": "camera_residential_entry",
+			"pass": true,
+			"position": [
+				-43.0,
+				17.742,
+				22.0
+			]
+		},
+		{
+			"name": "camera_window_courtyard",
+			"pass": true,
+			"position": [
+				5.53,
+				20.682,
+				10.302
+			]
+		},
+		{
+			"name": "camera_tea_interior",
+			"pass": true,
+			"position": [
+				79.578,
+				18.184,
+				37.251
+			]
+		},
+		{
+			"name": "camera_window_living",
+			"pass": true,
+			"position": [
+				47.905,
+				34.957,
+				-76.373
+			]
+		},
+		{
+			"name": "camera_window_north",
+			"pass": true,
+			"position": [
+				-23.878,
+				35.885,
+				-97.746
+			]
+		},
+		{
+			"name": "camera_noodle_interior",
+			"pass": true,
+			"position": [
+				-24.29,
+				13.104,
+				59.3
+			]
+		},
+		{
+			"name": "camera_window_reading",
+			"pass": true,
+			"position": [
+				-51.35,
+				18.602,
+				14.17
+			]
+		},
+		{
+			"name": "camera_window_dining",
+			"pass": true,
+			"position": [
+				-26.35,
+				15.858,
+				38.42
+			]
+		},
+		{
+			"name": "camera_planting_detail",
+			"pass": true,
+			"position": [
+				52.2,
+				15.724,
+				48.2
+			]
+		},
+		{
+			"foot_position": [
+				20.0,
+				9.132,
+				76.0
+			],
+			"name": "walk_spawn_stands_on_ground",
+			"pass": true
+		},
+		{
+			"from": [
+				16.0,
+				13.474,
+				66.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				1.6,
+				14.177,
+				60.4
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-12.8,
+				14.833,
+				54.8
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-20.0,
+				16.164,
+				44.667
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-20.0,
+				18.22,
+				30.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-18.667,
+				20.312,
+				15.333
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-18.0,
+				22.407,
+				0.667
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-18.0,
+				24.507,
+				-14.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-29.0,
+				25.858,
+				-26.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-40.0,
+				27.275,
+				-38.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-33.1,
+				29.272,
+				-50.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-25.0,
+				31.665,
+				-64.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-17.0,
+				33.924,
+				-77.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-27.0,
+				35.646,
+				-90.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-93.0,
+				14.441,
+				45.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-80.333,
+				15.819,
+				37.667
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-73.667,
+				17.683,
+				25.333
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-73.0,
+				20.092,
+				8.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-75.0,
+				22.402,
+				-8.667
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-75.333,
+				24.691,
+				-24.667
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-74.0,
+				26.95,
+				-40.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-76.0,
+				29.027,
+				-54.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-76.333,
+				31.364,
+				-69.333
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-18.0,
+				21.367,
+				8.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-18.5,
+				19.701,
+				19.7
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-33.75,
+				19.321,
+				19.7
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-49.0,
+				18.967,
+				19.7
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-50.0,
+				17.157,
+				33.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-63.333,
+				16.86,
+				33.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-71.0,
+				17.83,
+				24.667
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-73.0,
+				20.092,
+				8.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-18.0,
+				24.507,
+				-14.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-6.0,
+				24.067,
+				-8.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				8.667,
+				24.145,
+				-5.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				26.0,
+				24.723,
+				-5.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				28.0,
+				26.176,
+				-14.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				32.0,
+				28.738,
+				-30.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				36.667,
+				30.962,
+				-44.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				42.0,
+				32.85,
+				-56.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				60.0,
+				33.239,
+				-56.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-25.0,
+				31.665,
+				-64.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-12.0,
+				31.37,
+				-59.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				6.0,
+				32.065,
+				-59.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				20.0,
+				32.588,
+				-59.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				34.667,
+				32.786,
+				-57.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				52.0,
+				14.717,
+				61.7
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				48.0,
+				16.653,
+				49.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				52.0,
+				18.996,
+				35.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				49.0,
+				21.514,
+				19.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				35.0,
+				24.991,
+				-5.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				28.0,
+				26.176,
+				-14.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				15.972,
+				13.437,
+				66.241
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				16.233,
+				11.614,
+				78.268
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-100.0,
+				11.222,
+				65.444
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-76.228,
+				11.267,
+				70.855
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-55.514,
+				11.37,
+				74.388
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-31.081,
+				11.512,
+				76.594
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-11.582,
+				11.468,
+				78.146
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				3.489,
+				11.458,
+				78.789
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				26.759,
+				11.727,
+				78.146
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				44.95,
+				12.88,
+				72.448
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				62.501,
+				15.402,
+				59.003
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				78.487,
+				17.63,
+				47.624
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				93.698,
+				19.819,
+				35.98
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-100.0,
+				14.302,
+				44.606
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-91.392,
+				14.276,
+				46.455
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-80.469,
+				13.545,
+				53.826
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-65.273,
+				12.775,
+				62.494
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-54.477,
+				12.946,
+				63.27
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-43.428,
+				13.379,
+				61.851
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-32.38,
+				14.236,
+				57.063
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-23.541,
+				14.279,
+				57.706
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-12.105,
+				14.237,
+				59.003
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-0.407,
+				14.172,
+				60.3
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				15.972,
+				13.437,
+				66.241
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				80.188,
+				19.332,
+				37.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				15.972,
+				13.437,
+				66.241
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				39.994,
+				14.238,
+				63.189
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				60.951,
+				15.989,
+				55.045
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				74.451,
+				18.291,
+				42.719
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"name": "wall_809889604",
+			"pass": true
+		},
+		{
+			"name": "wall_809889626",
+			"pass": true
+		},
+		{
+			"name": "wall_809889630",
+			"pass": true
+		},
+		{
+			"name": "wall_1413081560",
+			"pass": true
+		},
+		{
+			"name": "wall_A03",
+			"pass": true
+		},
+		{
+			"name": "wall_A07",
+			"pass": true
+		},
+		{
+			"continuous_controller_walk": true,
+			"end_floor": "COL_Walk_Central_stair_lane_step_concrete",
+			"frames": 263,
+			"from": [
+				-20.0,
+				12.95,
+				49.0
+			],
+			"goal_distance_m": 0.313472747802734,
+			"goals_reached": [
+				{
+					"foot": [
+						-20.0,
+						15.522,
+						31.313
+					],
+					"index": 0
+				}
+			],
+			"goals_total": 1,
+			"height_gain_m": 2.57189083099365,
+			"horizontal_progress_m": 17.6865272521973,
+			"max_frame_displacement_m": 0.174387753009796,
+			"minimum_foot_height_m": 12.9504079818726,
+			"name": "central_stair_ascent",
+			"on_floor": true,
+			"pass": true,
+			"to": [
+				-20.0,
+				15.522,
+				31.313
+			],
+			"trajectory_length_m": 17.6865272521973
+		},
+		{
+			"continuous_controller_walk": true,
+			"end_floor": "COL_Walk_West_residential_link_step_concrete",
+			"frames": 216,
+			"from": [
+				-73.0,
+				15.125,
+				25.0
+			],
+			"goal_distance_m": 0.343228340148926,
+			"goals_reached": [
+				{
+					"foot": [
+						-73.002,
+						17.272,
+						10.343
+					],
+					"index": 0
+				}
+			],
+			"goals_total": 1,
+			"height_gain_m": 2.14657878875732,
+			"horizontal_progress_m": 14.6567754745483,
+			"max_frame_displacement_m": 0.169580236077309,
+			"minimum_foot_height_m": 15.1249780654907,
+			"name": "west_lane_ascent",
+			"on_floor": true,
+			"pass": true,
+			"to": [
+				-73.002,
+				17.272,
+				10.343
+			],
+			"trajectory_length_m": 14.6568776164204
+		},
+		{
+			"continuous_controller_walk": true,
+			"end_floor": "COL_Road_734116597_0_asphalt",
+			"frames": 629,
+			"from": [
+				0.0,
+				32.014,
+				-78.0
+			],
+			"goal_distance_m": 0.326492309570313,
+			"goals_reached": [
+				{
+					"foot": [
+						43.674,
+						33.313,
+						-78.0
+					],
+					"index": 0
+				}
+			],
+			"goals_total": 1,
+			"height_gain_m": 1.29898071289063,
+			"horizontal_progress_m": 43.6735076904297,
+			"max_frame_displacement_m": 0.0710500031709671,
+			"minimum_foot_height_m": 32.0143585205078,
+			"name": "upper_road_walk",
+			"on_floor": true,
+			"pass": true,
+			"to": [
+				43.674,
+				33.313,
+				-78.0
+			],
+			"trajectory_length_m": 43.6735081374645
+		},
+		{
+			"continuous_controller_walk": true,
+			"end_floor": "COL_Walk_Narrow_upper_passage_step_concrete",
+			"frames": 206,
+			"from": [
+				-36.5,
+				25.765,
+				-44.0
+			],
+			"goal_distance_m": 0.321983605623245,
+			"goals_reached": [
+				{
+					"foot": [
+						-29.17,
+						27.668,
+						-55.726
+					],
+					"index": 0
+				}
+			],
+			"goals_total": 1,
+			"height_gain_m": 1.9029369354248,
+			"horizontal_progress_m": 13.8289909362793,
+			"max_frame_displacement_m": 0.163962006568909,
+			"minimum_foot_height_m": 25.7646999359131,
+			"name": "narrow_upper_passage",
+			"on_floor": true,
+			"pass": true,
+			"to": [
+				-29.17,
+				27.668,
+				-55.726
+			],
+			"trajectory_length_m": 13.8340282822028
+		},
+		{
+			"name": "pickup_requires_proximity",
+			"pass": true
+		},
+		{
+			"name": "pickup_advances_order",
+			"pass": true
+		},
+		{
+			"name": "cannot_deliver_at_pickup",
+			"pass": true
+		},
+		{
+			"name": "dropoff_completes_order",
+			"pass": true
+		},
+		{
+			"name": "completed_order_idempotent",
+			"pass": true
+		}
+	]
+}

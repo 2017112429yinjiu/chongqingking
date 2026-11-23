@@ -1,0 +1,8848 @@
+{
+	"art_profile": {
+		"path": "res://assets/render_profile_r20.json",
+		"revision": "R20_lane_09_internal",
+		"sha256": "85b35290f740f61bbaae29b5e0f620bc04ae42f8fd6379092f9ab29919410b0d"
+	},
+	"collision_stats": {
+		"bodies": 238,
+		"by_kind": {
+			"refined_structure": 238
+		},
+		"created": 238,
+		"failed": [],
+		"props": {
+			"method": "deduplicated root-aligned cylinders; foliage excluded",
+			"trunks_and_posts": 57
+		},
+		"reused": 0,
+		"skipped_meshes": 2893,
+		"triangles": 779204
+	},
+	"configuration_sha256": {
+		"res://assets/viewpoints.json": "c0771c6cdbbd1ef54633435dbb8627d6e0b27aacec95db80820681642d95bf0d",
+		"res://assets/walking_survey.json": "dfb48d17e9afe8f0cda23a12a13fcbd0a0d71639947d1b8fd9a8812c29d26fb5"
+	},
+	"configured_route_count": 24,
+	"controller": {
+		"maximum_landing_probe_m": 0.35,
+		"step_height_m": 0.45,
+		"step_validation": "Upward headroom, horizontal sweep, downward walkable landing; shortest safe landing is chosen",
+		"version": "swept_step_landing_v2",
+		"waypoints_teleport": false
+	},
+	"engine": "4.6.3-stable (official)",
+	"gi_profile": {
+		"enabled": false,
+		"explicit_experiment": false,
+		"requested": false,
+		"structures_only": false
+	},
+	"meter_lod": {
+		"sha256": "931e72fa0f34fe7bcdd65257f2b1c55316cde4ac61805fc81799cd777efc0ecc",
+		"sites": 112,
+		"source_triangles": 910876.0,
+		"switch_m": 18.0
+	},
+	"passed": true,
+	"region_coverage": {
+		"covered": 121,
+		"extent_xz_m": [
+			-98.0,
+			-98.0,
+			98.0,
+			98.0
+		],
+		"grid": [
+			11,
+			11
+		],
+		"meaning": "Vertical collision coverage of terrain or roofs; does not imply street walkability",
+		"samples": [
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.019,
+					0.988,
+					0.153
+				],
+				"pass": true,
+				"position_xz": [
+					-98.0,
+					-98.0
+				],
+				"surface": [
+					-98.0,
+					32.592,
+					-98.0
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.0,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					-78.4,
+					-98.0
+				],
+				"surface": [
+					-78.4,
+					33.425,
+					-98.0
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.027,
+					0.987,
+					0.157
+				],
+				"pass": true,
+				"position_xz": [
+					-58.8,
+					-98.0
+				],
+				"surface": [
+					-58.8,
+					33.334,
+					-98.0
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.029,
+					0.988,
+					0.152
+				],
+				"pass": true,
+				"position_xz": [
+					-39.2,
+					-98.0
+				],
+				"surface": [
+					-39.2,
+					33.769,
+					-98.0
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.019,
+					0.987,
+					0.157
+				],
+				"pass": true,
+				"position_xz": [
+					-19.6,
+					-98.0
+				],
+				"surface": [
+					-19.6,
+					34.244,
+					-98.0
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.0,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					0.0,
+					-98.0
+				],
+				"surface": [
+					0.0,
+					34.113,
+					-98.0
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.031,
+					0.99,
+					0.135
+				],
+				"pass": true,
+				"position_xz": [
+					19.6,
+					-98.0
+				],
+				"surface": [
+					19.6,
+					35.276,
+					-98.0
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.019,
+					0.992,
+					0.128
+				],
+				"pass": true,
+				"position_xz": [
+					39.2,
+					-98.0
+				],
+				"surface": [
+					39.2,
+					35.752,
+					-98.0
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.0,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					58.8,
+					-98.0
+				],
+				"surface": [
+					58.8,
+					36.493,
+					-98.0
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.0,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					78.4,
+					-98.0
+				],
+				"surface": [
+					78.4,
+					54.913,
+					-98.0
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.02,
+					0.99,
+					0.139
+				],
+				"pass": true,
+				"position_xz": [
+					98.0,
+					-98.0
+				],
+				"surface": [
+					98.0,
+					36.933,
+					-98.0
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.0,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					-98.0,
+					-78.4
+				],
+				"surface": [
+					-98.0,
+					33.425,
+					-78.4
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.011,
+					0.989,
+					0.146
+				],
+				"pass": true,
+				"position_xz": [
+					-78.4,
+					-78.4
+				],
+				"surface": [
+					-78.4,
+					29.894,
+					-78.4
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.027,
+					0.988,
+					0.151
+				],
+				"pass": true,
+				"position_xz": [
+					-58.8,
+					-78.4
+				],
+				"surface": [
+					-58.8,
+					30.201,
+					-78.4
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.027,
+					0.986,
+					0.163
+				],
+				"pass": true,
+				"position_xz": [
+					-39.2,
+					-78.4
+				],
+				"surface": [
+					-39.2,
+					30.642,
+					-78.4
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.0,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					-19.6,
+					-78.4
+				],
+				"surface": [
+					-19.6,
+					31.567,
+					-78.4
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.033,
+					0.999,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					0.0,
+					-78.4
+				],
+				"surface": [
+					0.0,
+					32.013,
+					-78.4
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.031,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					19.6,
+					-78.4
+				],
+				"surface": [
+					19.6,
+					32.642,
+					-78.4
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.025,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					39.2,
+					-78.4
+				],
+				"surface": [
+					39.2,
+					33.193,
+					-78.4
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.018,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					58.8,
+					-78.4
+				],
+				"surface": [
+					58.8,
+					33.612,
+					-78.4
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.058,
+					0.998,
+					0.022
+				],
+				"pass": true,
+				"position_xz": [
+					78.4,
+					-78.4
+				],
+				"surface": [
+					78.4,
+					34.551,
+					-78.4
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.013,
+					0.99,
+					0.143
+				],
+				"pass": true,
+				"position_xz": [
+					98.0,
+					-78.4
+				],
+				"surface": [
+					98.0,
+					34.044,
+					-78.4
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.0,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					-98.0,
+					-58.8
+				],
+				"surface": [
+					-98.0,
+					33.425,
+					-58.8
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.04,
+					0.988,
+					0.15
+				],
+				"pass": true,
+				"position_xz": [
+					-78.4,
+					-58.8
+				],
+				"surface": [
+					-78.4,
+					26.908,
+					-58.8
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.0,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					-58.8,
+					-58.8
+				],
+				"surface": [
+					-58.8,
+					28.108,
+					-58.8
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.0,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					-39.2,
+					-58.8
+				],
+				"surface": [
+					-39.2,
+					30.998,
+					-58.8
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.034,
+					0.988,
+					0.148
+				],
+				"pass": true,
+				"position_xz": [
+					-19.6,
+					-58.8
+				],
+				"surface": [
+					-19.6,
+					28.216,
+					-58.8
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.039,
+					0.999,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					0.0,
+					-58.8
+				],
+				"surface": [
+					0.0,
+					29.162,
+					-58.8
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.033,
+					0.999,
+					-0.002
+				],
+				"pass": true,
+				"position_xz": [
+					19.6,
+					-58.8
+				],
+				"surface": [
+					19.6,
+					29.905,
+					-58.8
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.021,
+					0.956,
+					0.292
+				],
+				"pass": true,
+				"position_xz": [
+					39.2,
+					-58.8
+				],
+				"surface": [
+					39.2,
+					30.3,
+					-58.8
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.019,
+					0.96,
+					0.28
+				],
+				"pass": true,
+				"position_xz": [
+					58.8,
+					-58.8
+				],
+				"surface": [
+					58.8,
+					30.742,
+					-58.8
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.013,
+					0.99,
+					0.137
+				],
+				"pass": true,
+				"position_xz": [
+					78.4,
+					-58.8
+				],
+				"surface": [
+					78.4,
+					31.026,
+					-58.8
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.002,
+					0.988,
+					0.152
+				],
+				"pass": true,
+				"position_xz": [
+					98.0,
+					-58.8
+				],
+				"surface": [
+					98.0,
+					31.155,
+					-58.8
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.004,
+					0.989,
+					0.147
+				],
+				"pass": true,
+				"position_xz": [
+					-98.0,
+					-39.2
+				],
+				"surface": [
+					-98.0,
+					23.851,
+					-39.2
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.006,
+					0.989,
+					0.149
+				],
+				"pass": true,
+				"position_xz": [
+					-78.4,
+					-39.2
+				],
+				"surface": [
+					-78.4,
+					23.946,
+					-39.2
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.023,
+					0.989,
+					0.147
+				],
+				"pass": true,
+				"position_xz": [
+					-58.8,
+					-39.2
+				],
+				"surface": [
+					-58.8,
+					24.188,
+					-39.2
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.0,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					-39.2,
+					-39.2
+				],
+				"surface": [
+					-39.2,
+					24.924,
+					-39.2
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.0,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					-19.6,
+					-39.2
+				],
+				"surface": [
+					-19.6,
+					25.282,
+					-39.2
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.044,
+					0.987,
+					0.152
+				],
+				"pass": true,
+				"position_xz": [
+					0.0,
+					-39.2
+				],
+				"surface": [
+					0.0,
+					26.054,
+					-39.2
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.036,
+					0.988,
+					0.15
+				],
+				"pass": true,
+				"position_xz": [
+					19.6,
+					-39.2
+				],
+				"surface": [
+					19.6,
+					26.836,
+					-39.2
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.026,
+					0.99,
+					0.139
+				],
+				"pass": true,
+				"position_xz": [
+					39.2,
+					-39.2
+				],
+				"surface": [
+					39.2,
+					27.484,
+					-39.2
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.018,
+					0.989,
+					0.145
+				],
+				"pass": true,
+				"position_xz": [
+					58.8,
+					-39.2
+				],
+				"surface": [
+					58.8,
+					27.926,
+					-39.2
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.006,
+					0.988,
+					0.156
+				],
+				"pass": true,
+				"position_xz": [
+					78.4,
+					-39.2
+				],
+				"surface": [
+					78.4,
+					28.163,
+					-39.2
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.0,
+					0.989,
+					0.145
+				],
+				"pass": true,
+				"position_xz": [
+					98.0,
+					-39.2
+				],
+				"surface": [
+					98.0,
+					28.263,
+					-39.2
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.001,
+					0.988,
+					0.153
+				],
+				"pass": true,
+				"position_xz": [
+					-98.0,
+					-19.6
+				],
+				"surface": [
+					-98.0,
+					20.956,
+					-19.6
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.009,
+					0.99,
+					0.141
+				],
+				"pass": true,
+				"position_xz": [
+					-78.4,
+					-19.6
+				],
+				"surface": [
+					-78.4,
+					21.087,
+					-19.6
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.022,
+					0.991,
+					0.135
+				],
+				"pass": true,
+				"position_xz": [
+					-58.8,
+					-19.6
+				],
+				"surface": [
+					-58.8,
+					21.341,
+					-19.6
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.029,
+					0.99,
+					0.141
+				],
+				"pass": true,
+				"position_xz": [
+					-39.2,
+					-19.6
+				],
+				"surface": [
+					-39.2,
+					21.781,
+					-19.6
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.129,
+					0.955,
+					0.268
+				],
+				"pass": true,
+				"position_xz": [
+					-19.6,
+					-19.6
+				],
+				"surface": [
+					-19.6,
+					22.297,
+					-19.6
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.042,
+					0.988,
+					0.147
+				],
+				"pass": true,
+				"position_xz": [
+					0.0,
+					-19.6
+				],
+				"surface": [
+					0.0,
+					23.159,
+					-19.6
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.034,
+					0.988,
+					0.149
+				],
+				"pass": true,
+				"position_xz": [
+					19.6,
+					-19.6
+				],
+				"surface": [
+					19.6,
+					23.9,
+					-19.6
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.025,
+					0.988,
+					0.149
+				],
+				"pass": true,
+				"position_xz": [
+					39.2,
+					-19.6
+				],
+				"surface": [
+					39.2,
+					24.524,
+					-19.6
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.017,
+					0.988,
+					0.154
+				],
+				"pass": true,
+				"position_xz": [
+					58.8,
+					-19.6
+				],
+				"surface": [
+					58.8,
+					24.972,
+					-19.6
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.0,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					78.4,
+					-19.6
+				],
+				"surface": [
+					78.4,
+					44.429,
+					-19.6
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.004,
+					0.99,
+					0.142
+				],
+				"pass": true,
+				"position_xz": [
+					98.0,
+					-19.6
+				],
+				"surface": [
+					98.0,
+					25.354,
+					-19.6
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.01,
+					0.99,
+					0.139
+				],
+				"pass": true,
+				"position_xz": [
+					-98.0,
+					0.0
+				],
+				"surface": [
+					-98.0,
+					18.073,
+					0.0
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.015,
+					0.991,
+					0.134
+				],
+				"pass": true,
+				"position_xz": [
+					-78.4,
+					0.0
+				],
+				"surface": [
+					-78.4,
+					18.289,
+					0.0
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.0,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					-58.8,
+					0.0
+				],
+				"surface": [
+					-58.8,
+					21.524,
+					0.0
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.0,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					-39.2,
+					0.0
+				],
+				"surface": [
+					-39.2,
+					20.576,
+					0.0
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.0,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					-19.6,
+					0.0
+				],
+				"surface": [
+					-19.6,
+					20.115,
+					0.0
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.035,
+					0.989,
+					0.145
+				],
+				"pass": true,
+				"position_xz": [
+					0.0,
+					0.0
+				],
+				"surface": [
+					0.0,
+					20.255,
+					0.0
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.031,
+					0.987,
+					0.157
+				],
+				"pass": true,
+				"position_xz": [
+					19.6,
+					0.0
+				],
+				"surface": [
+					19.6,
+					20.9,
+					0.0
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.036,
+					0.971,
+					0.236
+				],
+				"pass": true,
+				"position_xz": [
+					39.2,
+					0.0
+				],
+				"surface": [
+					39.2,
+					21.38,
+					0.0
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.019,
+					0.988,
+					0.155
+				],
+				"pass": true,
+				"position_xz": [
+					58.8,
+					0.0
+				],
+				"surface": [
+					58.8,
+					21.917,
+					0.0
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.015,
+					0.989,
+					0.149
+				],
+				"pass": true,
+				"position_xz": [
+					78.4,
+					0.0
+				],
+				"surface": [
+					78.4,
+					22.221,
+					0.0
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.069,
+					0.994,
+					0.082
+				],
+				"pass": true,
+				"position_xz": [
+					98.0,
+					0.0
+				],
+				"surface": [
+					98.0,
+					22.607,
+					0.0
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.017,
+					0.99,
+					0.139
+				],
+				"pass": true,
+				"position_xz": [
+					-98.0,
+					19.6
+				],
+				"surface": [
+					-98.0,
+					15.186,
+					19.6
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.0,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					-78.4,
+					19.6
+				],
+				"surface": [
+					-78.4,
+					15.503,
+					19.6
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.0,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					-58.8,
+					19.6
+				],
+				"surface": [
+					-58.8,
+					16.35,
+					19.6
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.023,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					-39.2,
+					19.6
+				],
+				"surface": [
+					-39.2,
+					16.521,
+					19.6
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.0,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					-19.6,
+					19.6
+				],
+				"surface": [
+					-19.6,
+					17.04,
+					19.6
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.023,
+					0.988,
+					0.15
+				],
+				"pass": true,
+				"position_xz": [
+					0.0,
+					19.6
+				],
+				"surface": [
+					0.0,
+					17.352,
+					19.6
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.0,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					19.6,
+					19.6
+				],
+				"surface": [
+					19.6,
+					18.593,
+					19.6
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.026,
+					0.988,
+					0.152
+				],
+				"pass": true,
+				"position_xz": [
+					39.2,
+					19.6
+				],
+				"surface": [
+					39.2,
+					18.352,
+					19.6
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.02,
+					0.988,
+					0.153
+				],
+				"pass": true,
+				"position_xz": [
+					58.8,
+					19.6
+				],
+				"surface": [
+					58.8,
+					18.784,
+					19.6
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.019,
+					0.987,
+					0.159
+				],
+				"pass": true,
+				"position_xz": [
+					78.4,
+					19.6
+				],
+				"surface": [
+					78.4,
+					19.164,
+					19.6
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.019,
+					0.988,
+					0.151
+				],
+				"pass": true,
+				"position_xz": [
+					98.0,
+					19.6
+				],
+				"surface": [
+					98.0,
+					19.522,
+					19.6
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.025,
+					0.989,
+					0.145
+				],
+				"pass": true,
+				"position_xz": [
+					-98.0,
+					39.2
+				],
+				"surface": [
+					-98.0,
+					12.305,
+					39.2
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.072,
+					0.968,
+					0.239
+				],
+				"pass": true,
+				"position_xz": [
+					-78.4,
+					39.2
+				],
+				"surface": [
+					-78.4,
+					12.835,
+					39.2
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.024,
+					0.991,
+					0.135
+				],
+				"pass": true,
+				"position_xz": [
+					-58.8,
+					39.2
+				],
+				"surface": [
+					-58.8,
+					13.282,
+					39.2
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.0,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					-39.2,
+					39.2
+				],
+				"surface": [
+					-39.2,
+					13.816,
+					39.2
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.0,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					-19.6,
+					39.2
+				],
+				"surface": [
+					-19.6,
+					14.412,
+					39.2
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.0,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					0.0,
+					39.2
+				],
+				"surface": [
+					0.0,
+					14.692,
+					39.2
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.021,
+					0.988,
+					0.155
+				],
+				"pass": true,
+				"position_xz": [
+					19.6,
+					39.2
+				],
+				"surface": [
+					19.6,
+					14.815,
+					39.2
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.0,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					39.2,
+					39.2
+				],
+				"surface": [
+					39.2,
+					18.593,
+					39.2
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.02,
+					0.987,
+					0.157
+				],
+				"pass": true,
+				"position_xz": [
+					58.8,
+					39.2
+				],
+				"surface": [
+					58.8,
+					15.625,
+					39.2
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.0,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					78.4,
+					39.2
+				],
+				"surface": [
+					78.4,
+					16.364,
+					39.2
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.027,
+					0.989,
+					0.146
+				],
+				"pass": true,
+				"position_xz": [
+					98.0,
+					39.2
+				],
+				"surface": [
+					98.0,
+					16.602,
+					39.2
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.034,
+					0.989,
+					0.144
+				],
+				"pass": true,
+				"position_xz": [
+					-98.0,
+					58.8
+				],
+				"surface": [
+					-98.0,
+					9.428,
+					58.8
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.028,
+					0.986,
+					0.164
+				],
+				"pass": true,
+				"position_xz": [
+					-78.4,
+					58.8
+				],
+				"surface": [
+					-78.4,
+					10.071,
+					58.8
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.027,
+					0.991,
+					0.135
+				],
+				"pass": true,
+				"position_xz": [
+					-58.8,
+					58.8
+				],
+				"surface": [
+					-58.8,
+					10.607,
+					58.8
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.077,
+					0.996,
+					0.054
+				],
+				"pass": true,
+				"position_xz": [
+					-39.2,
+					58.8
+				],
+				"surface": [
+					-39.2,
+					11.2,
+					58.8
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.007,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					-19.6,
+					58.8
+				],
+				"surface": [
+					-19.6,
+					11.639,
+					58.8
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.0,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					0.0,
+					58.8
+				],
+				"surface": [
+					0.0,
+					11.837,
+					58.8
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.018,
+					0.989,
+					0.149
+				],
+				"pass": true,
+				"position_xz": [
+					19.6,
+					58.8
+				],
+				"surface": [
+					19.6,
+					11.77,
+					58.8
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.018,
+					0.987,
+					0.157
+				],
+				"pass": true,
+				"position_xz": [
+					39.2,
+					58.8
+				],
+				"surface": [
+					39.2,
+					12.071,
+					58.8
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.06,
+					0.969,
+					0.24
+				],
+				"pass": true,
+				"position_xz": [
+					58.8,
+					58.8
+				],
+				"surface": [
+					58.8,
+					12.582,
+					58.8
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.094,
+					0.992,
+					0.079
+				],
+				"pass": true,
+				"position_xz": [
+					78.4,
+					58.8
+				],
+				"surface": [
+					78.4,
+					13.038,
+					58.8
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.088,
+					0.991,
+					0.098
+				],
+				"pass": true,
+				"position_xz": [
+					98.0,
+					58.8
+				],
+				"surface": [
+					98.0,
+					14.275,
+					58.8
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.007,
+					1.0,
+					-0.001
+				],
+				"pass": true,
+				"position_xz": [
+					-98.0,
+					78.4
+				],
+				"surface": [
+					-98.0,
+					6.426,
+					78.4
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.004,
+					1.0,
+					-0.001
+				],
+				"pass": true,
+				"position_xz": [
+					-78.4,
+					78.4
+				],
+				"surface": [
+					-78.4,
+					7.569,
+					78.4
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.131,
+					0.907,
+					0.4
+				],
+				"pass": true,
+				"position_xz": [
+					-58.8,
+					78.4
+				],
+				"surface": [
+					-58.8,
+					7.637,
+					78.4
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.021,
+					0.983,
+					0.185
+				],
+				"pass": true,
+				"position_xz": [
+					-39.2,
+					78.4
+				],
+				"surface": [
+					-39.2,
+					8.319,
+					78.4
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.003,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					-19.6,
+					78.4
+				],
+				"surface": [
+					-19.6,
+					8.832,
+					78.4
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.001,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					0.0,
+					78.4
+				],
+				"surface": [
+					0.0,
+					8.791,
+					78.4
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.01,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					19.6,
+					78.4
+				],
+				"surface": [
+					19.6,
+					8.977,
+					78.4
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.014,
+					0.905,
+					0.425
+				],
+				"pass": true,
+				"position_xz": [
+					39.2,
+					78.4
+				],
+				"surface": [
+					39.2,
+					8.889,
+					78.4
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.083,
+					0.996,
+					0.043
+				],
+				"pass": true,
+				"position_xz": [
+					58.8,
+					78.4
+				],
+				"surface": [
+					58.8,
+					10.0,
+					78.4
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.094,
+					0.993,
+					0.068
+				],
+				"pass": true,
+				"position_xz": [
+					78.4,
+					78.4
+				],
+				"surface": [
+					78.4,
+					15.575,
+					78.4
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.048,
+					0.993,
+					0.111
+				],
+				"pass": true,
+				"position_xz": [
+					98.0,
+					78.4
+				],
+				"surface": [
+					98.0,
+					10.727,
+					78.4
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.04,
+					0.989,
+					0.144
+				],
+				"pass": true,
+				"position_xz": [
+					-98.0,
+					98.0
+				],
+				"surface": [
+					-98.0,
+					3.642,
+					98.0
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.028,
+					0.989,
+					0.148
+				],
+				"pass": true,
+				"position_xz": [
+					-78.4,
+					98.0
+				],
+				"surface": [
+					-78.4,
+					4.408,
+					98.0
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.01,
+					1.0,
+					-0.001
+				],
+				"pass": true,
+				"position_xz": [
+					-58.8,
+					98.0
+				],
+				"surface": [
+					-58.8,
+					10.639,
+					98.0
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.004,
+					1.0,
+					0.0
+				],
+				"pass": true,
+				"position_xz": [
+					-39.2,
+					98.0
+				],
+				"surface": [
+					-39.2,
+					10.81,
+					98.0
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.002,
+					0.858,
+					0.514
+				],
+				"pass": true,
+				"position_xz": [
+					-19.6,
+					98.0
+				],
+				"surface": [
+					-19.6,
+					5.663,
+					98.0
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					0.005,
+					0.847,
+					0.532
+				],
+				"pass": true,
+				"position_xz": [
+					0.0,
+					98.0
+				],
+				"surface": [
+					0.0,
+					5.746,
+					98.0
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.012,
+					0.981,
+					0.194
+				],
+				"pass": true,
+				"position_xz": [
+					19.6,
+					98.0
+				],
+				"surface": [
+					19.6,
+					5.841,
+					98.0
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.065,
+					0.998,
+					0.026
+				],
+				"pass": true,
+				"position_xz": [
+					39.2,
+					98.0
+				],
+				"surface": [
+					39.2,
+					11.556,
+					98.0
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.02,
+					0.988,
+					0.155
+				],
+				"pass": true,
+				"position_xz": [
+					58.8,
+					98.0
+				],
+				"surface": [
+					58.8,
+					6.46,
+					98.0
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.015,
+					1.0,
+					-0.002
+				],
+				"pass": true,
+				"position_xz": [
+					78.4,
+					98.0
+				],
+				"surface": [
+					78.4,
+					7.762,
+					98.0
+				]
+			},
+			{
+				"kind": "refined_structure",
+				"normal": [
+					-0.014,
+					1.0,
+					-0.003
+				],
+				"pass": true,
+				"position_xz": [
+					98.0,
+					98.0
+				],
+				"surface": [
+					98.0,
+					8.066,
+					98.0
+				]
+			}
+		]
+	},
+	"route_filter": [],
+	"runtime_sha256": {
+		"res://assets/fonts/cq_lane_ui.otf": "42f083b0707279c5398088fe2ad36257954c5c49e416280360d2f17f58ced1ae",
+		"res://assets/lane_r20/rinse.wav": "8674dce3de89f536a8d519dd21223164a327c91e574f216fad88db91ab74f1bf",
+		"res://assets/lane_r20/rinse_fixture.json": "8a0f267946522fd59fe99b298e18e6a4e1e4b95d1a3728bb4a73e4636fa2ff1a",
+		"res://assets/lane_r20/tree_seats.json": "060f2507ab6997cdc5cddc2d3b5a9eefdbd4b199b88466318eb6a983fd73a0e6",
+		"res://scripts/explorer.gd": "1afd5f1161003cc17ec39a8aaa9cbda9161ab559bef41bce829686b84208803c",
+		"res://scripts/gameplay.gd": "7041100d5f001b9fff9dab064d2ab1b3cc17977610c6a5b597fcf8eb8901876a",
+		"res://scripts/main.gd": "57929b7d748a1c18f1907f857cffd48217871d0cb46023899d2ebdc832954d42",
+		"res://scripts/meter_detail_lod.gd": "2175ca3919c3728ef1db2fc7f8710ad1f39e15aa504306e25ae322e8448d45b3",
+		"res://scripts/qa_lane_r20.gd": "7edf53bf969fedbdde0ef24789e300e234c1f0e60f23fd4f1ce90b1922082497",
+		"res://scripts/rinse_tap.gd": "a14c99c56d463b5fb690153a3e53c735623ac2eb09efe408e686efb99bba5fe9",
+		"res://scripts/street_detail_r19.gd": "e5b00907e9c30379f968ccaa4f2c760ec79ab6b63e54e2fe74180ed0101505ad",
+		"res://scripts/upper_lane_r20.gd": "0c61b1b914ad1f8d1ba0fbfb27889d1426d6635340d0867f62feda76d4f8d56c",
+		"res://shaders/hanging_cotton_r20.gdshader": "9d48788f6d3b3beffde16f0f5a94c8d99eac36fa8a9c00950c5116c97c208754",
+		"res://shaders/rinse_water.gdshader": "1a1c4d8f5d478384ae1cdec390d94903b83adf78096bc050116eee3354fee277",
+		"res://shaders/sky_visibility_r20.gdshaderinc": "14a770eab2dc29951adb2d5c9a17b4121b9a5bbf0e74d31e48743b8828985b7d",
+		"res://shaders/street_surface_r19.gdshader": "2f892b7c1e4d90a42f1429a50a1e6af7762035d236308ce47d9e257a9badb512"
+	},
+	"sample_adjustments": [
+		{
+			"index": 14,
+			"list": "ground_samples",
+			"original": [
+				-93.0,
+				14.4408,
+				45.0
+			],
+			"reason": "The original ray was exactly on the open end edge of the first stair mesh and hit lower terrain while its capsule overlapped the first riser. This moves the clearance sample 0.915 m to the centre of the actual first tread (Blender x=-92.2083, y=-44.5417, authored tread top=11.9407 m). A separate physical threshold route retains the original endpoint to verify actual access.",
+			"replacement": [
+				-92.2083,
+				14.7293,
+				44.5417
+			]
+		},
+		{
+			"index": 1,
+			"list": "ground_samples",
+			"original": [
+				1.6,
+				14.1769,
+				60.4
+			],
+			"reason": "R17 reroutes the full 3.8 m public stair envelope away from building 809889623. The former centre sample lies on the new safety rail; relocate this clearance sample to the authored new centreline (6,-59.5) to (-20,-52). Both whole-route directions are independently tested with the player capsule.",
+			"replacement": [
+				1.6,
+				14.4,
+				58.2308
+			]
+		}
+	],
+	"scene_identity": {
+		"asset": "res://assets/chongqing_district.glb",
+		"bytes": 1174416336,
+		"meter_lod": {
+			"sha256": "931e72fa0f34fe7bcdd65257f2b1c55316cde4ac61805fc81799cd777efc0ecc",
+			"sites": 112,
+			"source_triangles": 910876.0,
+			"switch_m": 18.0
+		},
+		"revision": 17.0,
+		"sha256": "88b5be04c0c72ae2b54bb02f55f2186f7b7ec2937389a59697e7306dbd7e7c13",
+		"street_r19": {
+			"asset": "res://assets/street_r19/street_life.glb",
+			"enabled": true,
+			"manifest_sha256": "b0ec626c4096ddc6df5e1444e21294346990e8faf21e62fb5bcecd77d2ae0e17",
+			"replaced": [
+				"Type_梯坎小面",
+				"Resident_waste_14_bin_00",
+				"Resident_waste_14_bin_01",
+				"Resident_waste_14_bin_02",
+				"Resident_waste_14_bin_03",
+				"Resident_waste_14_bagA_00",
+				"Resident_waste_14_bagB_00",
+				"Resident_waste_14_crate_00",
+				"Authored_distant_hill_ridges_hill_near",
+				"Authored_distant_hill_ridges_hill_far",
+				"B_A01_noodle_details_faded_red",
+				"B_A01_noodle_details_curtain_beige"
+			],
+			"sha256": "1c40ae7ed04e8bf3f5f7956eaf630a098890e62a9c142f3e846c9ee15d530bad",
+			"source_revision": "R19_scene_05"
+		},
+		"street_r19_surfaces": {
+			"materials": [
+				"CQ03_PBR_yard_concretetrue",
+				"CQ03_PBR_paving_slabtrue",
+				"CQ03_PBR_pavementtrue",
+				"CQ03_PBR_step_concretetrue",
+				"CQ03_PBR_step_concretefalse",
+				"CQ03_PBR_plaster_greyfalse",
+				"CQ03_PBR_plaster_ochrefalse",
+				"CQ03_PBR_plastertrue",
+				"CQ03_PBR_plaster_greytrue",
+				"CQ03_PBR_plaster_ochretrue",
+				"CQ03_PBR_stonetrue",
+				"CQ03_PBR_tiletrue",
+				"CQ03_PBR_tile_creamtrue",
+				"R20_Dressed_stonetrue"
+			],
+			"surfaces": 219
+		},
+		"upper_lane": {
+			"enabled": true,
+			"model_sha256": "16dabbe6c51b1ff130153d68092dc84daa509ba4538f10152f85d4e8ae53be37",
+			"sky_sha256": {
+				"res://assets/lane_r20/alley_sky.png": "c8b799570de19d6acd2e5c822aa095807d6dc3b107bd4886e66caef438cf7d3b",
+				"res://assets/lane_r20/shop_sky.png": "8d5b169cfd0bf9cc799dec67d02fde5ebbc2558a3a79dc5c91fd85fbc98dd188"
+			}
+		}
+	},
+	"scene_revision": 17.0,
+	"scene_sha256": "88b5be04c0c72ae2b54bb02f55f2186f7b7ec2937389a59697e7306dbd7e7c13",
+	"script_sha256": {
+		"res://scripts/build_collisions.gd": "2628a4eb84628582acd93ed16307ea708aa9e94867e286287eefa636abe803a8",
+		"res://scripts/explorer.gd": "1afd5f1161003cc17ec39a8aaa9cbda9161ab559bef41bce829686b84208803c",
+		"res://scripts/main.gd": "57929b7d748a1c18f1907f857cffd48217871d0cb46023899d2ebdc832954d42"
+	},
+	"street_layer": {
+		"asset": "res://assets/street_r19/street_life.glb",
+		"enabled": true,
+		"manifest_sha256": "b0ec626c4096ddc6df5e1444e21294346990e8faf21e62fb5bcecd77d2ae0e17",
+		"replaced": [
+			"Type_梯坎小面",
+			"Resident_waste_14_bin_00",
+			"Resident_waste_14_bin_01",
+			"Resident_waste_14_bin_02",
+			"Resident_waste_14_bin_03",
+			"Resident_waste_14_bagA_00",
+			"Resident_waste_14_bagB_00",
+			"Resident_waste_14_crate_00",
+			"Authored_distant_hill_ridges_hill_near",
+			"Authored_distant_hill_ridges_hill_far",
+			"B_A01_noodle_details_faded_red",
+			"B_A01_noodle_details_curtain_beige"
+		],
+		"sha256": "1c40ae7ed04e8bf3f5f7956eaf630a098890e62a9c142f3e846c9ee15d530bad",
+		"source_revision": "R19_scene_05"
+	},
+	"tested_route_names": [
+		"central_stair_ascent",
+		"west_lane_ascent",
+		"upper_road_walk",
+		"narrow_upper_passage",
+		"court_east_entry",
+		"court_east_exit",
+		"lower_street_to_spine",
+		"east_alley_continuous_ascent",
+		"upper_courtyard_to_east_connection",
+		"school_front_connection",
+		"south_courtyard_connection",
+		"west_lane_south_threshold",
+		"r17_Central_stair_lane_up",
+		"r17_Central_stair_lane_down",
+		"r17_Narrow_upper_passage_up",
+		"r17_Narrow_upper_passage_down",
+		"r17_Upper_terrace_connection_up",
+		"r17_Upper_terrace_connection_down",
+		"r17_West_residential_link_up",
+		"r17_West_residential_link_down",
+		"r17_East_photo_alley_up",
+		"r17_East_photo_alley_down",
+		"r17_worker_entry",
+		"r17_A04_entry"
+	],
+	"tests": [
+		{
+			"name": "world_collision_created",
+			"pass": true
+		},
+		{
+			"name": "camera_overview",
+			"pass": true,
+			"position": [
+				90.0,
+				230.0,
+				120.0
+			]
+		},
+		{
+			"name": "camera_street_entry",
+			"pass": true,
+			"position": [
+				24.0,
+				10.594,
+				77.0
+			]
+		},
+		{
+			"name": "camera_noodle_corner",
+			"pass": true,
+			"position": [
+				-24.0,
+				13.812,
+				53.5
+			]
+		},
+		{
+			"name": "camera_central_steps",
+			"pass": true,
+			"position": [
+				-20.0,
+				14.032,
+				52.0
+			]
+		},
+		{
+			"name": "camera_west_lane",
+			"pass": true,
+			"position": [
+				-73.0,
+				15.385,
+				34.0
+			]
+		},
+		{
+			"name": "camera_community_court",
+			"pass": true,
+			"position": [
+				-20.0,
+				22.3,
+				19.0
+			]
+		},
+		{
+			"name": "camera_narrow_passage",
+			"pass": true,
+			"position": [
+				-35.5,
+				27.586,
+				-46.2
+			]
+		},
+		{
+			"name": "camera_upper_houses",
+			"pass": true,
+			"position": [
+				-12.0,
+				30.922,
+				-63.0
+			]
+		},
+		{
+			"name": "camera_east_gallery",
+			"pass": true,
+			"position": [
+				50.0,
+				15.552,
+				49.0
+			]
+		},
+		{
+			"name": "camera_residential_road",
+			"pass": true,
+			"position": [
+				64.0,
+				28.982,
+				-34.0
+			]
+		},
+		{
+			"name": "camera_upper_street",
+			"pass": true,
+			"position": [
+				4.0,
+				33.664,
+				-80.0
+			]
+		},
+		{
+			"name": "camera_roofscape",
+			"pass": true,
+			"position": [
+				14.0,
+				64.0,
+				20.0
+			]
+		},
+		{
+			"name": "camera_community_front",
+			"pass": true,
+			"position": [
+				28.0,
+				23.559,
+				-4.0
+			]
+		},
+		{
+			"name": "camera_residential_entry",
+			"pass": true,
+			"position": [
+				-43.0,
+				17.742,
+				22.0
+			]
+		},
+		{
+			"name": "camera_window_courtyard",
+			"pass": true,
+			"position": [
+				5.53,
+				20.682,
+				10.302
+			]
+		},
+		{
+			"name": "camera_tea_interior",
+			"pass": true,
+			"position": [
+				79.578,
+				18.184,
+				37.251
+			]
+		},
+		{
+			"name": "camera_window_living",
+			"pass": true,
+			"position": [
+				47.905,
+				34.957,
+				-76.373
+			]
+		},
+		{
+			"name": "camera_window_north",
+			"pass": true,
+			"position": [
+				-23.878,
+				35.885,
+				-97.746
+			]
+		},
+		{
+			"name": "camera_noodle_interior",
+			"pass": true,
+			"position": [
+				-24.29,
+				13.104,
+				59.3
+			]
+		},
+		{
+			"name": "camera_window_reading",
+			"pass": true,
+			"position": [
+				-51.35,
+				18.602,
+				14.17
+			]
+		},
+		{
+			"name": "camera_window_dining",
+			"pass": true,
+			"position": [
+				-26.35,
+				15.858,
+				38.42
+			]
+		},
+		{
+			"name": "camera_planting_detail",
+			"pass": true,
+			"position": [
+				52.2,
+				15.724,
+				48.2
+			]
+		},
+		{
+			"name": "camera_r16_scooter",
+			"pass": true,
+			"position": [
+				-17.3,
+				13.4,
+				56.5
+			]
+		},
+		{
+			"name": "camera_r16_clothesline",
+			"pass": true,
+			"position": [
+				-74.0,
+				20.1,
+				9.0
+			]
+		},
+		{
+			"name": "camera_r16_roof",
+			"pass": true,
+			"position": [
+				-47.0,
+				30.0,
+				20.0
+			]
+		},
+		{
+			"name": "camera_r16_shop",
+			"pass": true,
+			"position": [
+				-22.0,
+				13.5,
+				57.0
+			]
+		},
+		{
+			"name": "camera_r16_meter",
+			"pass": true,
+			"position": [
+				-27.2,
+				12.3,
+				59.8
+			]
+		},
+		{
+			"name": "camera_r17_worker_entry",
+			"pass": true,
+			"position": [
+				-65.5,
+				25.1,
+				-27.5
+			]
+		},
+		{
+			"name": "camera_r17_worker_door",
+			"pass": true,
+			"position": [
+				-70.8,
+				24.4,
+				-28.9
+			]
+		},
+		{
+			"name": "camera_r17_A04_entry",
+			"pass": true,
+			"position": [
+				-48.6,
+				18.2,
+				18.2
+			]
+		},
+		{
+			"name": "camera_r17_west_route",
+			"pass": true,
+			"position": [
+				-60.0,
+				38.0,
+				-31.0
+			]
+		},
+		{
+			"name": "camera_r17_east_route",
+			"pass": true,
+			"position": [
+				61.0,
+				29.0,
+				11.0
+			]
+		},
+		{
+			"name": "camera_r17_narrow_route",
+			"pass": true,
+			"position": [
+				-37.4,
+				27.1,
+				-43.0
+			]
+		},
+		{
+			"name": "camera_r17_shopkeeper",
+			"pass": true,
+			"position": [
+				-23.3,
+				13.35,
+				58.3
+			]
+		},
+		{
+			"name": "camera_r17_serve",
+			"pass": true,
+			"position": [
+				-23.3,
+				13.35,
+				58.3
+			]
+		},
+		{
+			"name": "camera_r17_takeaway",
+			"pass": true,
+			"position": [
+				-23.95,
+				12.4,
+				59.1
+			]
+		},
+		{
+			"name": "camera_r18_idle",
+			"pass": true,
+			"position": [
+				-23.3,
+				13.35,
+				58.3
+			]
+		},
+		{
+			"name": "camera_r18_reach",
+			"pass": true,
+			"position": [
+				-23.3,
+				13.35,
+				58.3
+			]
+		},
+		{
+			"name": "camera_r18_lift",
+			"pass": true,
+			"position": [
+				-23.3,
+				13.35,
+				58.3
+			]
+		},
+		{
+			"name": "camera_r18_place",
+			"pass": true,
+			"position": [
+				-23.3,
+				13.35,
+				58.3
+			]
+		},
+		{
+			"name": "camera_r18_workstation",
+			"pass": true,
+			"position": [
+				-22.8,
+				13.2,
+				57.8
+			]
+		},
+		{
+			"name": "camera_r18_player_eye",
+			"pass": true,
+			"position": [
+				-23.63,
+				12.79,
+				58.8
+			]
+		},
+		{
+			"name": "camera_r18_greet",
+			"pass": true,
+			"position": [
+				-23.63,
+				12.79,
+				58.8
+			]
+		},
+		{
+			"name": "camera_r18_face",
+			"pass": true,
+			"position": [
+				-24.7,
+				12.73,
+				59.35
+			]
+		},
+		{
+			"name": "camera_r18_grip",
+			"pass": true,
+			"position": [
+				-24.65,
+				12.57,
+				59.2
+			]
+		},
+		{
+			"name": "camera_r19_seating",
+			"pass": true,
+			"position": [
+				-27.7,
+				12.65,
+				58.5
+			]
+		},
+		{
+			"name": "camera_r19_stair_detail",
+			"pass": true,
+			"position": [
+				-20.9,
+				14.6,
+				48.5
+			]
+		},
+		{
+			"name": "camera_r20_notices",
+			"pass": true,
+			"position": [
+				-34.43,
+				28.2,
+				-47.87
+			]
+		},
+		{
+			"name": "camera_r20_reverse",
+			"pass": true,
+			"position": [
+				-30.9,
+				29.0,
+				-54.8
+			]
+		},
+		{
+			"name": "camera_r20_tap",
+			"pass": true,
+			"position": [
+				-32.55,
+				28.01,
+				-50.82
+			]
+		},
+		{
+			"name": "camera_r20_laundry",
+			"pass": true,
+			"position": [
+				-34.59,
+				29.09,
+				-47.27
+			]
+		},
+		{
+			"name": "camera_r20_tree_court",
+			"pass": true,
+			"position": [
+				-23.28,
+				31.19,
+				-66.92
+			]
+		},
+		{
+			"foot_position": [
+				20.0,
+				9.132,
+				76.0
+			],
+			"name": "walk_spawn_stands_on_ground",
+			"pass": true
+		},
+		{
+			"from": [
+				16.0,
+				13.474,
+				66.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				1.6,
+				14.4,
+				58.231
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-12.8,
+				14.833,
+				54.8
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-20.0,
+				16.164,
+				44.667
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-20.0,
+				18.22,
+				30.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-18.667,
+				20.312,
+				15.333
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-18.0,
+				22.407,
+				0.667
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-18.0,
+				24.507,
+				-14.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-29.0,
+				25.858,
+				-26.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-40.0,
+				27.275,
+				-38.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-33.1,
+				29.272,
+				-50.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-25.0,
+				31.665,
+				-64.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-17.0,
+				33.924,
+				-77.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-27.0,
+				35.646,
+				-90.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-92.208,
+				14.729,
+				44.542
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-80.333,
+				15.819,
+				37.667
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-73.667,
+				17.683,
+				25.333
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-73.0,
+				20.092,
+				8.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-75.0,
+				22.402,
+				-8.667
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-75.333,
+				24.691,
+				-24.667
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-74.0,
+				26.95,
+				-40.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-76.0,
+				29.027,
+				-54.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-76.333,
+				31.364,
+				-69.333
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-18.0,
+				21.367,
+				8.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-18.5,
+				19.701,
+				19.7
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-33.75,
+				19.321,
+				19.7
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-49.0,
+				18.967,
+				19.7
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-50.0,
+				17.157,
+				33.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-63.333,
+				16.86,
+				33.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-71.0,
+				17.83,
+				24.667
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-73.0,
+				20.092,
+				8.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-18.0,
+				24.507,
+				-14.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-6.0,
+				24.067,
+				-8.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				8.667,
+				24.145,
+				-5.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				26.0,
+				24.723,
+				-5.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				28.0,
+				26.176,
+				-14.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				32.0,
+				28.738,
+				-30.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				36.667,
+				30.962,
+				-44.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				42.0,
+				32.85,
+				-56.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				60.0,
+				33.239,
+				-56.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-25.0,
+				31.665,
+				-64.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-12.0,
+				31.37,
+				-59.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				6.0,
+				32.065,
+				-59.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				20.0,
+				32.588,
+				-59.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				34.667,
+				32.786,
+				-57.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				52.0,
+				14.717,
+				61.7
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				48.0,
+				16.653,
+				49.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				52.0,
+				18.996,
+				35.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				49.0,
+				21.514,
+				19.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				35.0,
+				24.991,
+				-5.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				28.0,
+				26.176,
+				-14.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				15.972,
+				13.437,
+				66.241
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				16.233,
+				11.614,
+				78.268
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-100.0,
+				11.222,
+				65.444
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-76.228,
+				11.267,
+				70.855
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-55.514,
+				11.37,
+				74.388
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-31.081,
+				11.512,
+				76.594
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-11.582,
+				11.468,
+				78.146
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				3.489,
+				11.458,
+				78.789
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				26.759,
+				11.727,
+				78.146
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				44.95,
+				12.88,
+				72.448
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				62.501,
+				15.402,
+				59.003
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				78.487,
+				17.63,
+				47.624
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				93.698,
+				19.819,
+				35.98
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-100.0,
+				14.302,
+				44.606
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-91.392,
+				14.276,
+				46.455
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-80.469,
+				13.545,
+				53.826
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-65.273,
+				12.775,
+				62.494
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-54.477,
+				12.946,
+				63.27
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-43.428,
+				13.379,
+				61.851
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-32.38,
+				14.236,
+				57.063
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-23.541,
+				14.279,
+				57.706
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-12.105,
+				14.237,
+				59.003
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				-0.407,
+				14.172,
+				60.3
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				15.972,
+				13.437,
+				66.241
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				80.188,
+				19.332,
+				37.0
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				15.972,
+				13.437,
+				66.241
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				39.994,
+				14.238,
+				63.189
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				60.951,
+				15.989,
+				55.045
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"from": [
+				74.451,
+				18.291,
+				42.719
+			],
+			"name": "ground_probe",
+			"pass": true
+		},
+		{
+			"name": "wall_809889604",
+			"pass": true
+		},
+		{
+			"name": "wall_809889626",
+			"pass": true
+		},
+		{
+			"name": "wall_809889630",
+			"pass": true
+		},
+		{
+			"name": "wall_1413081560",
+			"pass": true
+		},
+		{
+			"name": "wall_A03",
+			"pass": true
+		},
+		{
+			"name": "wall_A07",
+			"pass": true
+		},
+		{
+			"continuous_controller_walk": true,
+			"end_floor": "COL_Walk_Central_stair_lane_step_concrete",
+			"frames": 266,
+			"from": [
+				-20.0,
+				12.95,
+				49.0
+			],
+			"goal_distance_m": 0.331277847290039,
+			"goals_reached": [
+				{
+					"foot": [
+						-20.0,
+						15.512,
+						31.331
+					],
+					"index": 0
+				}
+			],
+			"goals_total": 1,
+			"height_gain_m": 2.54391384124756,
+			"horizontal_progress_m": 17.66872215271,
+			"max_frame_displacement_m": 0.174387753009796,
+			"minimum_foot_height_m": 12.9504079818726,
+			"name": "central_stair_ascent",
+			"on_floor": true,
+			"pass": true,
+			"to": [
+				-20.0,
+				15.494,
+				31.331
+			],
+			"trajectory_length_m": 17.66872215271
+		},
+		{
+			"continuous_controller_walk": true,
+			"end_floor": "COL_Walk_West_residential_link_step_concrete",
+			"frames": 216,
+			"from": [
+				-73.0,
+				15.125,
+				25.0
+			],
+			"goal_distance_m": 0.282011240720749,
+			"goals_reached": [
+				{
+					"foot": [
+						-73.001,
+						17.272,
+						10.282
+					],
+					"index": 0
+				}
+			],
+			"goals_total": 1,
+			"height_gain_m": 2.14667797088623,
+			"horizontal_progress_m": 14.7179908752441,
+			"max_frame_displacement_m": 0.16958025097847,
+			"minimum_foot_height_m": 15.1249780654907,
+			"name": "west_lane_ascent",
+			"on_floor": true,
+			"pass": true,
+			"to": [
+				-73.001,
+				17.272,
+				10.282
+			],
+			"trajectory_length_m": 14.7180787660182
+		},
+		{
+			"continuous_controller_walk": true,
+			"end_floor": "COL_Road_734116597_0_asphalt",
+			"frames": 629,
+			"from": [
+				0.0,
+				32.014,
+				-78.0
+			],
+			"goal_distance_m": 0.326492309570313,
+			"goals_reached": [
+				{
+					"foot": [
+						43.674,
+						33.313,
+						-78.0
+					],
+					"index": 0
+				}
+			],
+			"goals_total": 1,
+			"height_gain_m": 1.29898071289063,
+			"horizontal_progress_m": 43.6735076904297,
+			"max_frame_displacement_m": 0.0710500031709671,
+			"minimum_foot_height_m": 32.0143585205078,
+			"name": "upper_road_walk",
+			"on_floor": true,
+			"pass": true,
+			"to": [
+				43.674,
+				33.313,
+				-78.0
+			],
+			"trajectory_length_m": 43.6735081374645
+		},
+		{
+			"continuous_controller_walk": true,
+			"end_floor": "COL_Walk_Narrow_upper_passage_step_concrete",
+			"frames": 205,
+			"from": [
+				-36.5,
+				25.742,
+				-44.0
+			],
+			"goal_distance_m": 0.34823614358902,
+			"goals_reached": [
+				{
+					"foot": [
+						-29.184,
+						27.666,
+						-55.704
+					],
+					"index": 0
+				}
+			],
+			"goals_total": 1,
+			"height_gain_m": 1.92368316650391,
+			"horizontal_progress_m": 13.8027362823486,
+			"max_frame_displacement_m": 0.173162072896957,
+			"minimum_foot_height_m": 25.7422389984131,
+			"name": "narrow_upper_passage",
+			"on_floor": true,
+			"pass": true,
+			"to": [
+				-29.184,
+				27.666,
+				-55.704
+			],
+			"trajectory_length_m": 13.8077015709132
+		},
+		{
+			"continuous_controller_walk": true,
+			"end_floor": "COL_Community_court_line_white",
+			"end_height_matches": true,
+			"expected_end_height": 20.58,
+			"frames": 193,
+			"from": [
+				-17.8,
+				20.0,
+				0.0
+			],
+			"goal_distance_m": 0.282003372907639,
+			"goals_reached": [
+				{
+					"foot": [
+						-30.718,
+						20.59,
+						0.002
+					],
+					"index": 0
+				}
+			],
+			"goals_total": 1,
+			"height_gain_m": 0.590431213378906,
+			"horizontal_progress_m": 12.918004989624,
+			"max_frame_displacement_m": 0.0832019373774529,
+			"minimum_foot_height_m": 20.0,
+			"name": "court_east_entry",
+			"on_floor": true,
+			"pass": true,
+			"to": [
+				-30.718,
+				20.59,
+				0.002
+			],
+			"trajectory_length_m": 12.9191338475794
+		},
+		{
+			"continuous_controller_walk": true,
+			"end_floor": "COL_Court_east_entry_steps_step_concrete",
+			"end_height_matches": true,
+			"expected_end_height": 19.92,
+			"frames": 188,
+			"from": [
+				-31.0,
+				20.577,
+				0.0
+			],
+			"goal_distance_m": 0.296520441770554,
+			"goals_reached": [
+				{
+					"foot": [
+						-18.097,
+						20.001,
+						0.0
+					],
+					"index": 0
+				}
+			],
+			"goals_total": 1,
+			"height_gain_m": -0.575990676879883,
+			"horizontal_progress_m": 12.9034805297852,
+			"max_frame_displacement_m": 0.104691319167614,
+			"minimum_foot_height_m": 20.0005722045898,
+			"name": "court_east_exit",
+			"on_floor": true,
+			"pass": true,
+			"to": [
+				-18.097,
+				20.001,
+				0.0
+			],
+			"trajectory_length_m": 12.9048250578344
+		},
+		{
+			"continuous_controller_walk": true,
+			"end_floor": "COL_Walk_Central_stair_lane_step_concrete",
+			"frames": 869,
+			"from": [
+				16.0,
+				10.949,
+				66.0
+			],
+			"goal_distance_m": 0.328163653612137,
+			"goals_reached": [
+				{
+					"foot": [
+						6.293,
+						11.538,
+						59.689
+					],
+					"index": 0
+				},
+				{
+					"foot": [
+						-19.685,
+						12.611,
+						52.129
+					],
+					"index": 1
+				},
+				{
+					"foot": [
+						-19.999,
+						15.514,
+						31.328
+					],
+					"index": 2
+				}
+			],
+			"goals_total": 3,
+			"height_gain_m": 4.54687404632568,
+			"horizontal_progress_m": 49.9809494018555,
+			"max_frame_displacement_m": 0.168420791625977,
+			"minimum_foot_height_m": 10.9494686126709,
+			"name": "lower_street_to_spine",
+			"on_floor": true,
+			"pass": true,
+			"to": [
+				-19.999,
+				15.496,
+				31.328
+			],
+			"trajectory_length_m": 59.5479843914509
+		},
+		{
+			"continuous_controller_walk": true,
+			"end_floor": "COL_Walk_East_photo_alley_step_concrete",
+			"frames": 434,
+			"from": [
+				48.0,
+				14.153,
+				49.0
+			],
+			"goal_distance_m": 0.300421386957169,
+			"goals_reached": [
+				{
+					"foot": [
+						51.912,
+						16.34,
+						35.312
+					],
+					"index": 0
+				},
+				{
+					"foot": [
+						49.057,
+						18.778,
+						20.295
+					],
+					"index": 1
+				}
+			],
+			"goals_total": 2,
+			"height_gain_m": 4.62425422668457,
+			"horizontal_progress_m": 28.7244911193848,
+			"max_frame_displacement_m": 0.170757874846458,
+			"minimum_foot_height_m": 14.1534996032715,
+			"name": "east_alley_continuous_ascent",
+			"on_floor": true,
+			"pass": true,
+			"to": [
+				49.057,
+				18.778,
+				20.295
+			],
+			"trajectory_length_m": 29.5414970843121
+		},
+		{
+			"continuous_controller_walk": true,
+			"end_floor": "COL_Walk_Upper_courtyard_walk_pavement",
+			"frames": 1140,
+			"from": [
+				0.0,
+				21.172,
+				-5.0
+			],
+			"goal_distance_m": 0.320190191268921,
+			"goals_reached": [
+				{
+					"foot": [
+						25.665,
+						22.111,
+						-4.98
+					],
+					"index": 0
+				},
+				{
+					"foot": [
+						27.932,
+						23.519,
+						-13.723
+					],
+					"index": 1
+				},
+				{
+					"foot": [
+						33.916,
+						27.295,
+						-37.664
+					],
+					"index": 2
+				},
+				{
+					"foot": [
+						41.477,
+						30.189,
+						-54.805
+					],
+					"index": 3
+				}
+			],
+			"goals_total": 4,
+			"height_gain_m": 9.01690292358398,
+			"horizontal_progress_m": 64.8136138916016,
+			"max_frame_displacement_m": 0.228491961956024,
+			"minimum_foot_height_m": 21.1720314025879,
+			"name": "upper_courtyard_to_east_connection",
+			"on_floor": true,
+			"pass": true,
+			"to": [
+				41.477,
+				30.189,
+				-54.805
+			],
+			"trajectory_length_m": 78.2235460509546
+		},
+		{
+			"continuous_controller_walk": true,
+			"end_floor": "COL_Walk_Old_school_approach_pavement",
+			"frames": 444,
+			"from": [
+				-12.0,
+				28.702,
+				-59.0
+			],
+			"goal_distance_m": 0.283222198486328,
+			"goals_reached": [
+				{
+					"foot": [
+						5.715,
+						29.398,
+						-59.0
+					],
+					"index": 0
+				},
+				{
+					"foot": [
+						18.717,
+						29.886,
+						-59.0
+					],
+					"index": 1
+				}
+			],
+			"goals_total": 2,
+			"height_gain_m": 1.18350601196289,
+			"horizontal_progress_m": 30.7167778015137,
+			"max_frame_displacement_m": 0.0700561702251434,
+			"minimum_foot_height_m": 28.7023315429688,
+			"name": "school_front_connection",
+			"on_floor": true,
+			"pass": true,
+			"to": [
+				18.717,
+				29.886,
+				-59.0
+			],
+			"trajectory_length_m": 30.7167779738083
+		},
+		{
+			"continuous_controller_walk": true,
+			"end_floor": "COL_Walk_Courtyard_approach_pavement",
+			"frames": 1057,
+			"from": [
+				-18.0,
+				18.867,
+				8.0
+			],
+			"goal_distance_m": 0.347572326660156,
+			"goals_reached": [
+				{
+					"foot": [
+						-18.488,
+						17.219,
+						19.413
+					],
+					"index": 0
+				},
+				{
+					"foot": [
+						-48.652,
+						16.315,
+						19.701
+					],
+					"index": 1
+				},
+				{
+					"foot": [
+						-49.975,
+						14.579,
+						32.689
+					],
+					"index": 2
+				},
+				{
+					"foot": [
+						-68.652,
+						14.083,
+						33.0
+					],
+					"index": 3
+				}
+			],
+			"goals_total": 4,
+			"height_gain_m": -4.78378963470459,
+			"horizontal_progress_m": 56.4860153198242,
+			"max_frame_displacement_m": 0.123681224882603,
+			"minimum_foot_height_m": 14.0727138519287,
+			"name": "south_courtyard_connection",
+			"on_floor": true,
+			"pass": true,
+			"to": [
+				-68.652,
+				14.083,
+				33.0
+			],
+			"trajectory_length_m": 73.8291531442665
+		},
+		{
+			"continuous_controller_walk": true,
+			"end_floor": "COL_Walk_West_residential_link_step_concrete",
+			"frames": 83,
+			"from": [
+				-93.0,
+				11.942,
+				45.0
+			],
+			"goal_distance_m": 0.330931186676025,
+			"goals_reached": [
+				{
+					"foot": [
+						-88.288,
+						12.459,
+						42.269
+					],
+					"index": 0
+				}
+			],
+			"goals_total": 1,
+			"height_gain_m": 0.516641616821289,
+			"horizontal_progress_m": 5.44656372070313,
+			"max_frame_displacement_m": 0.108786731958389,
+			"minimum_foot_height_m": 11.9419717788696,
+			"name": "west_lane_south_threshold",
+			"on_floor": true,
+			"pass": true,
+			"to": [
+				-88.288,
+				12.459,
+				42.269
+			],
+			"trajectory_length_m": 5.45285585708916
+		},
+		{
+			"continuous_controller_walk": true,
+			"end_floor": "COL_Walk_Central_stair_lane_step_concrete",
+			"frames": 2006,
+			"from": [
+				16.0,
+				10.949,
+				66.0
+			],
+			"goal_distance_m": 0.341997891664505,
+			"goals_reached": [
+				{
+					"foot": [
+						6.293,
+						11.538,
+						59.689
+					],
+					"index": 0
+				},
+				{
+					"foot": [
+						-19.685,
+						12.611,
+						52.129
+					],
+					"index": 1
+				},
+				{
+					"foot": [
+						-19.999,
+						15.564,
+						30.294
+					],
+					"index": 2
+				},
+				{
+					"foot": [
+						-18.028,
+						18.71,
+						8.312
+					],
+					"index": 3
+				},
+				{
+					"foot": [
+						-18.002,
+						21.902,
+						-13.687
+					],
+					"index": 4
+				},
+				{
+					"foot": [
+						-39.79,
+						24.744,
+						-37.73
+					],
+					"index": 5
+				}
+			],
+			"goals_total": 6,
+			"height_gain_m": 13.7949562072754,
+			"horizontal_progress_m": 117.781448364258,
+			"max_frame_displacement_m": 0.222004696726799,
+			"minimum_foot_height_m": 10.9494686126709,
+			"name": "r17_Central_stair_lane_up",
+			"on_floor": true,
+			"pass": true,
+			"to": [
+				-39.79,
+				24.744,
+				-37.73
+			],
+			"trajectory_length_m": 137.135862668976
+		},
+		{
+			"continuous_controller_walk": true,
+			"end_floor": "COL_Walk_Central_stair_lane_step_concrete",
+			"frames": 1940,
+			"from": [
+				-40.0,
+				24.766,
+				-38.0
+			],
+			"goal_distance_m": 0.328230917453766,
+			"goals_reached": [
+				{
+					"foot": [
+						-18.195,
+						22.013,
+						-14.212
+					],
+					"index": 0
+				},
+				{
+					"foot": [
+						-18.001,
+						18.876,
+						7.704
+					],
+					"index": 1
+				},
+				{
+					"foot": [
+						-19.97,
+						15.73,
+						29.67
+					],
+					"index": 2
+				},
+				{
+					"foot": [
+						-20.0,
+						12.637,
+						51.672
+					],
+					"index": 3
+				},
+				{
+					"foot": [
+						5.686,
+						11.693,
+						59.408
+					],
+					"index": 4
+				},
+				{
+					"foot": [
+						15.724,
+						10.961,
+						65.823
+					],
+					"index": 5
+				}
+			],
+			"goals_total": 6,
+			"height_gain_m": -13.8044567108154,
+			"horizontal_progress_m": 117.831825256348,
+			"max_frame_displacement_m": 0.174359351396561,
+			"minimum_foot_height_m": 10.9483604431152,
+			"name": "r17_Central_stair_lane_down",
+			"on_floor": true,
+			"pass": true,
+			"to": [
+				15.724,
+				10.961,
+				65.823
+			],
+			"trajectory_length_m": 137.11828014534
+		},
+		{
+			"continuous_controller_walk": true,
+			"end_floor": "COL_Walk_Narrow_upper_passage_step_concrete",
+			"frames": 368,
+			"from": [
+				-40.0,
+				24.766,
+				-38.0
+			],
+			"goal_distance_m": 0.30609455704689,
+			"goals_reached": [
+				{
+					"foot": [
+						-37.545,
+						25.417,
+						-42.714
+					],
+					"index": 0
+				},
+				{
+					"foot": [
+						-33.447,
+						26.601,
+						-49.748
+					],
+					"index": 1
+				},
+				{
+					"foot": [
+						-28.873,
+						27.818,
+						-56.736
+					],
+					"index": 2
+				},
+				{
+					"foot": [
+						-28.977,
+						28.276,
+						-59.695
+					],
+					"index": 3
+				}
+			],
+			"goals_total": 4,
+			"height_gain_m": 3.50994300842285,
+			"horizontal_progress_m": 24.3344573974609,
+			"max_frame_displacement_m": 0.167278796434402,
+			"minimum_foot_height_m": 24.7658939361572,
+			"name": "r17_Narrow_upper_passage_up",
+			"on_floor": true,
+			"pass": true,
+			"to": [
+				-28.977,
+				28.276,
+				-59.695
+			],
+			"trajectory_length_m": 24.7973437430337
+		},
+		{
+			"continuous_controller_walk": true,
+			"end_floor": "COL_Walk_Narrow_upper_passage_step_concrete",
+			"frames": 353,
+			"from": [
+				-29.0,
+				28.344,
+				-60.0
+			],
+			"goal_distance_m": 0.29472479224205,
+			"goals_reached": [
+				{
+					"foot": [
+						-28.731,
+						27.944,
+						-57.34
+					],
+					"index": 0
+				},
+				{
+					"foot": [
+						-33.14,
+						26.753,
+						-50.251
+					],
+					"index": 1
+				},
+				{
+					"foot": [
+						-37.254,
+						25.587,
+						-43.248
+					],
+					"index": 2
+				},
+				{
+					"foot": [
+						-39.863,
+						24.779,
+						-38.261
+					],
+					"index": 3
+				}
+			],
+			"goals_total": 4,
+			"height_gain_m": -3.5655345916748,
+			"horizontal_progress_m": 24.3020725250244,
+			"max_frame_displacement_m": 0.123308911919594,
+			"minimum_foot_height_m": 24.7647552490234,
+			"name": "r17_Narrow_upper_passage_down",
+			"on_floor": true,
+			"pass": true,
+			"to": [
+				-39.863,
+				24.779,
+				-38.261
+			],
+			"trajectory_length_m": 24.7964351959527
+		},
+		{
+			"continuous_controller_walk": true,
+			"end_floor": "COL_Walk_Upper_terrace_connection_step_concrete",
+			"frames": 548,
+			"from": [
+				-29.0,
+				28.344,
+				-60.0
+			],
+			"goal_distance_m": 0.289013534784317,
+			"goals_reached": [
+				{
+					"foot": [
+						-25.234,
+						29.009,
+						-63.766
+					],
+					"index": 0
+				},
+				{
+					"foot": [
+						-17.138,
+						31.385,
+						-76.706
+					],
+					"index": 1
+				},
+				{
+					"foot": [
+						-26.831,
+						32.989,
+						-89.765
+					],
+					"index": 2
+				}
+			],
+			"goals_total": 3,
+			"height_gain_m": 4.64542770385742,
+			"horizontal_progress_m": 29.8443450927734,
+			"max_frame_displacement_m": 0.488670915365219,
+			"minimum_foot_height_m": 28.3440475463867,
+			"name": "r17_Upper_terrace_connection_up",
+			"on_floor": true,
+			"pass": true,
+			"to": [
+				-26.831,
+				32.989,
+				-89.765
+			],
+			"trajectory_length_m": 37.0450288206339
+		},
+		{
+			"continuous_controller_walk": true,
+			"end_floor": "COL_Walk_Upper_terrace_connection_step_concrete",
+			"frames": 526,
+			"from": [
+				-27.0,
+				32.976,
+				-90.0
+			],
+			"goal_distance_m": 0.294765204191208,
+			"goals_reached": [
+				{
+					"foot": [
+						-17.17,
+						31.424,
+						-77.225
+					],
+					"index": 0
+				},
+				{
+					"foot": [
+						-24.823,
+						29.171,
+						-64.284
+					],
+					"index": 1
+				},
+				{
+					"foot": [
+						-28.794,
+						28.358,
+						-60.211
+					],
+					"index": 2
+				}
+			],
+			"goals_total": 3,
+			"height_gain_m": -4.61859130859375,
+			"horizontal_progress_m": 29.8431758880615,
+			"max_frame_displacement_m": 0.123518548905849,
+			"minimum_foot_height_m": 28.3458518981934,
+			"name": "r17_Upper_terrace_connection_down",
+			"on_floor": true,
+			"pass": true,
+			"to": [
+				-28.794,
+				28.358,
+				-60.211
+			],
+			"trajectory_length_m": 36.9876352194697
+		},
+		{
+			"continuous_controller_walk": true,
+			"end_floor": "COL_Walk_West_residential_link_step_concrete",
+			"frames": 2028,
+			"from": [
+				-93.0,
+				11.942,
+				45.0
+			],
+			"goal_distance_m": 0.292250543832779,
+			"goals_reached": [
+				{
+					"foot": [
+						-74.256,
+						13.91,
+						34.177
+					],
+					"index": 0
+				},
+				{
+					"foot": [
+						-73.012,
+						17.436,
+						8.34
+					],
+					"index": 1
+				},
+				{
+					"foot": [
+						-75.96,
+						21.01,
+						-16.661
+					],
+					"index": 2
+				},
+				{
+					"foot": [
+						-69.231,
+						21.977,
+						-23.281
+					],
+					"index": 3
+				},
+				{
+					"foot": [
+						-68.725,
+						22.72,
+						-28.557
+					],
+					"index": 4
+				},
+				{
+					"foot": [
+						-68.985,
+						23.523,
+						-33.894
+					],
+					"index": 5
+				},
+				{
+					"foot": [
+						-73.776,
+						24.293,
+						-39.733
+					],
+					"index": 6
+				},
+				{
+					"foot": [
+						-76.958,
+						27.424,
+						-60.719
+					],
+					"index": 7
+				},
+				{
+					"foot": [
+						-76.017,
+						29.975,
+						-77.208
+					],
+					"index": 8
+				}
+			],
+			"goals_total": 9,
+			"height_gain_m": 18.0330438613892,
+			"horizontal_progress_m": 123.382659912109,
+			"max_frame_displacement_m": 0.171951159834862,
+			"minimum_foot_height_m": 11.9416589736938,
+			"name": "r17_West_residential_link_up",
+			"on_floor": true,
+			"pass": true,
+			"to": [
+				-76.017,
+				29.975,
+				-77.208
+			],
+			"trajectory_length_m": 138.265793052502
+		},
+		{
+			"continuous_controller_walk": true,
+			"end_floor": "COL_Walk_West_residential_link_step_concrete",
+			"frames": 1952,
+			"from": [
+				-76.0,
+				29.962,
+				-77.5
+			],
+			"goal_distance_m": 0.283699303865433,
+			"goals_reached": [
+				{
+					"foot": [
+						-76.981,
+						27.583,
+						-61.319
+					],
+					"index": 0
+				},
+				{
+					"foot": [
+						-74.041,
+						24.458,
+						-40.289
+					],
+					"index": 1
+				},
+				{
+					"foot": [
+						-69.185,
+						23.65,
+						-34.419
+					],
+					"index": 2
+				},
+				{
+					"foot": [
+						-68.724,
+						22.873,
+						-29.239
+					],
+					"index": 3
+				},
+				{
+					"foot": [
+						-68.983,
+						22.09,
+						-23.836
+					],
+					"index": 4
+				},
+				{
+					"foot": [
+						-75.772,
+						21.091,
+						-17.216
+					],
+					"index": 5
+				},
+				{
+					"foot": [
+						-73.036,
+						17.602,
+						7.701
+					],
+					"index": 6
+				},
+				{
+					"foot": [
+						-73.989,
+						13.987,
+						33.712
+					],
+					"index": 7
+				},
+				{
+					"foot": [
+						-92.755,
+						11.955,
+						44.857
+					],
+					"index": 8
+				}
+			],
+			"goals_total": 9,
+			"height_gain_m": -18.0069952011108,
+			"horizontal_progress_m": 123.49885559082,
+			"max_frame_displacement_m": 0.126230299472809,
+			"minimum_foot_height_m": 11.9425144195557,
+			"name": "r17_West_residential_link_down",
+			"on_floor": true,
+			"pass": true,
+			"to": [
+				-92.755,
+				11.955,
+				44.857
+			],
+			"trajectory_length_m": 138.244311434217
+		},
+		{
+			"continuous_controller_walk": true,
+			"end_floor": "COL_Walk_East_photo_alley_step_concrete",
+			"frames": 1359,
+			"from": [
+				52.0,
+				12.21,
+				61.7
+			],
+			"goal_distance_m": 0.282094419002533,
+			"goals_reached": [
+				{
+					"foot": [
+						48.072,
+						14.078,
+						49.233
+					],
+					"index": 0
+				},
+				{
+					"foot": [
+						51.916,
+						16.34,
+						35.298
+					],
+					"index": 1
+				},
+				{
+					"foot": [
+						49.054,
+						18.858,
+						19.298
+					],
+					"index": 2
+				},
+				{
+					"foot": [
+						50.927,
+						20.189,
+						11.305
+					],
+					"index": 3
+				},
+				{
+					"foot": [
+						52.932,
+						21.415,
+						4.31
+					],
+					"index": 4
+				},
+				{
+					"foot": [
+						48.176,
+						22.431,
+						-3.234
+					],
+					"index": 5
+				},
+				{
+					"foot": [
+						42.296,
+						22.486,
+						-4.731
+					],
+					"index": 6
+				},
+				{
+					"foot": [
+						35.301,
+						22.425,
+						-4.971
+					],
+					"index": 7
+				},
+				{
+					"foot": [
+						28.175,
+						23.519,
+						-13.779
+					],
+					"index": 8
+				}
+			],
+			"goals_total": 9,
+			"height_gain_m": 11.3092012405396,
+			"horizontal_progress_m": 79.149543762207,
+			"max_frame_displacement_m": 0.170757949352264,
+			"minimum_foot_height_m": 12.2101469039917,
+			"name": "r17_East_photo_alley_up",
+			"on_floor": true,
+			"pass": true,
+			"to": [
+				28.175,
+				23.519,
+				-13.779
+			],
+			"trajectory_length_m": 92.7619214933366
+		},
+		{
+			"continuous_controller_walk": true,
+			"end_floor": "COL_Walk_East_photo_alley_step_concrete",
+			"frames": 1309,
+			"from": [
+				28.0,
+				23.51,
+				-14.0
+			],
+			"goal_distance_m": 0.289707481861115,
+			"goals_reached": [
+				{
+					"foot": [
+						34.813,
+						22.504,
+						-5.242
+					],
+					"index": 0
+				},
+				{
+					"foot": [
+						41.699,
+						22.484,
+						-4.811
+					],
+					"index": 1
+				},
+				{
+					"foot": [
+						47.665,
+						22.435,
+						-3.57
+					],
+					"index": 2
+				},
+				{
+					"foot": [
+						52.817,
+						21.504,
+						3.734
+					],
+					"index": 3
+				},
+				{
+					"foot": [
+						51.093,
+						20.355,
+						10.668
+					],
+					"index": 4
+				},
+				{
+					"foot": [
+						49.079,
+						19.024,
+						18.685
+					],
+					"index": 5
+				},
+				{
+					"foot": [
+						51.944,
+						16.508,
+						34.691
+					],
+					"index": 6
+				},
+				{
+					"foot": [
+						48.086,
+						14.164,
+						48.692
+					],
+					"index": 7
+				},
+				{
+					"foot": [
+						51.914,
+						12.222,
+						61.423
+					],
+					"index": 8
+				}
+			],
+			"goals_total": 9,
+			"height_gain_m": -11.2887153625488,
+			"horizontal_progress_m": 79.1237106323242,
+			"max_frame_displacement_m": 0.126186683773994,
+			"minimum_foot_height_m": 12.2087640762329,
+			"name": "r17_East_photo_alley_down",
+			"on_floor": true,
+			"pass": true,
+			"to": [
+				51.914,
+				12.222,
+				61.423
+			],
+			"trajectory_length_m": 92.6662769103423
+		},
+		{
+			"continuous_controller_walk": true,
+			"end_floor": "COL_IR_B_809889622_workers_Shop_envelope_pavement",
+			"frames": 53,
+			"from": [
+				-68.7,
+				22.861,
+				-28.9
+			],
+			"goal_distance_m": 0.285412311553955,
+			"goals_reached": [
+				{
+					"foot": [
+						-70.205,
+						22.819,
+						-28.9
+					],
+					"index": 0
+				},
+				{
+					"foot": [
+						-72.115,
+						22.868,
+						-28.883
+					],
+					"index": 1
+				}
+			],
+			"goals_total": 2,
+			"height_gain_m": 0.00677299499511719,
+			"horizontal_progress_m": 3.41464853286743,
+			"max_frame_displacement_m": 0.245684906840324,
+			"minimum_foot_height_m": 22.5230522155762,
+			"name": "r17_worker_entry",
+			"on_floor": true,
+			"pass": true,
+			"to": [
+				-72.115,
+				22.868,
+				-28.883
+			],
+			"trajectory_length_m": 3.41468361206353
+		},
+		{
+			"continuous_controller_walk": true,
+			"end_floor": "COL_B_A04_courtyard_home_pavement",
+			"frames": 45,
+			"from": [
+				-50.5,
+				16.088,
+				19.5
+			],
+			"goal_distance_m": 0.33689945936203,
+			"goals_reached": [
+				{
+					"foot": [
+						-51.652,
+						16.105,
+						19.501
+					],
+					"index": 0
+				},
+				{
+					"foot": [
+						-53.263,
+						16.454,
+						19.501
+					],
+					"index": 1
+				}
+			],
+			"goals_total": 2,
+			"height_gain_m": 0.365703582763672,
+			"horizontal_progress_m": 2.76309967041016,
+			"max_frame_displacement_m": 0.165097057819366,
+			"minimum_foot_height_m": 16.080228805542,
+			"name": "r17_A04_entry",
+			"on_floor": true,
+			"pass": true,
+			"to": [
+				-53.263,
+				16.454,
+				19.501
+			],
+			"trajectory_length_m": 2.76319670490921
+		},
+		{
+			"name": "pickup_requires_proximity",
+			"pass": true
+		},
+		{
+			"name": "preparation_completes_before_timeout",
+			"pass": true
+		},
+		{
+			"name": "pickup_advances_order",
+			"pass": true
+		},
+		{
+			"name": "cannot_deliver_at_pickup",
+			"pass": true
+		},
+		{
+			"name": "dropoff_completes_order",
+			"pass": true
+		},
+		{
+			"name": "completed_order_idempotent",
+			"pass": true
+		},
+		{
+			"covered": 121,
+			"name": "whole_region_vertical_surface_coverage",
+			"pass": true,
+			"total": 121
+		},
+		{
+			"foot": [
+				16.0,
+				10.77,
+				66.0
+			],
+			"index": 0,
+			"initial_contacts": [
+				"COL_Walk_Central_stair_lane_step_concrete"
+			],
+			"name": "walking_capsule_clearance_00",
+			"normal": [
+				0.042,
+				0.999,
+				0.016
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				16.0,
+				13.474,
+				66.0
+			]
+		},
+		{
+			"foot": [
+				1.6,
+				11.837,
+				58.231
+			],
+			"index": 1,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_01",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				1.6,
+				14.4,
+				58.231
+			]
+		},
+		{
+			"foot": [
+				-12.8,
+				12.306,
+				54.8
+			],
+			"index": 2,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_02",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-12.8,
+				14.833,
+				54.8
+			]
+		},
+		{
+			"foot": [
+				-20.0,
+				13.6,
+				44.667
+			],
+			"index": 3,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_03",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-20.0,
+				16.164,
+				44.667
+			]
+		},
+		{
+			"foot": [
+				-20.0,
+				15.55,
+				30.0
+			],
+			"index": 4,
+			"initial_contacts": [
+				"COL_Walk_Central_stair_lane_step_concrete"
+			],
+			"name": "walking_capsule_clearance_04",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				-20.0,
+				18.22,
+				30.0
+			]
+		},
+		{
+			"foot": [
+				-18.667,
+				17.703,
+				15.333
+			],
+			"index": 5,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_05",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-18.667,
+				20.312,
+				15.333
+			]
+		},
+		{
+			"foot": [
+				-18.0,
+				19.974,
+				0.667
+			],
+			"index": 6,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_06",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-18.0,
+				22.407,
+				0.667
+			]
+		},
+		{
+			"foot": [
+				-18.0,
+				21.837,
+				-14.0
+			],
+			"index": 7,
+			"initial_contacts": [
+				"COL_Walk_Central_stair_lane_step_concrete"
+			],
+			"name": "walking_capsule_clearance_07",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				-18.0,
+				24.507,
+				-14.0
+			]
+		},
+		{
+			"foot": [
+				-29.0,
+				23.302,
+				-26.0
+			],
+			"index": 8,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_08",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-29.0,
+				25.858,
+				-26.0
+			]
+		},
+		{
+			"foot": [
+				-40.0,
+				24.764,
+				-38.0
+			],
+			"index": 9,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_09",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-40.0,
+				27.275,
+				-38.0
+			]
+		},
+		{
+			"foot": [
+				-33.1,
+				26.74,
+				-50.0
+			],
+			"index": 10,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_10",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-33.1,
+				29.272,
+				-50.0
+			]
+		},
+		{
+			"foot": [
+				-25.0,
+				28.995,
+				-64.0
+			],
+			"index": 11,
+			"initial_contacts": [
+				"COL_Walk_Upper_terrace_connection_step_concrete"
+			],
+			"name": "walking_capsule_clearance_11",
+			"normal": [
+				0.022,
+				1.0,
+				0.009
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				-25.0,
+				31.665,
+				-64.0
+			]
+		},
+		{
+			"foot": [
+				-17.0,
+				31.254,
+				-77.0
+			],
+			"index": 12,
+			"initial_contacts": [
+				"COL_Walk_Upper_terrace_connection_step_concrete"
+			],
+			"name": "walking_capsule_clearance_12",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				-17.0,
+				33.924,
+				-77.0
+			]
+		},
+		{
+			"foot": [
+				-27.0,
+				32.975,
+				-90.0
+			],
+			"index": 13,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_13",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-27.0,
+				35.646,
+				-90.0
+			]
+		},
+		{
+			"foot": [
+				-92.208,
+				11.941,
+				44.542
+			],
+			"index": 14,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_14",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-92.208,
+				14.729,
+				44.542
+			]
+		},
+		{
+			"foot": [
+				-80.333,
+				13.3,
+				37.667
+			],
+			"index": 15,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_15",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-80.333,
+				15.819,
+				37.667
+			]
+		},
+		{
+			"foot": [
+				-73.667,
+				15.123,
+				25.333
+			],
+			"index": 16,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_16",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-73.667,
+				17.683,
+				25.333
+			]
+		},
+		{
+			"foot": [
+				-73.0,
+				17.422,
+				8.0
+			],
+			"index": 17,
+			"initial_contacts": [
+				"COL_Walk_West_residential_link_step_concrete"
+			],
+			"name": "walking_capsule_clearance_17",
+			"normal": [
+				0.016,
+				0.991,
+				0.134
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				-73.0,
+				20.092,
+				8.0
+			]
+		},
+		{
+			"foot": [
+				-75.0,
+				19.747,
+				-8.667
+			],
+			"index": 18,
+			"initial_contacts": [
+				"COL_Walk_West_residential_link_step_concrete"
+			],
+			"name": "walking_capsule_clearance_18",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				-75.0,
+				22.402,
+				-8.667
+			]
+		},
+		{
+			"foot": [
+				-75.333,
+				21.85,
+				-24.667
+			],
+			"index": 19,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_19",
+			"normal": [
+				-0.007,
+				0.99,
+				0.14
+			],
+			"pass": true,
+			"sample": [
+				-75.333,
+				24.691,
+				-24.667
+			]
+		},
+		{
+			"foot": [
+				-74.0,
+				24.279,
+				-40.0
+			],
+			"index": 20,
+			"initial_contacts": [
+				"COL_Walk_West_residential_link_step_concrete"
+			],
+			"name": "walking_capsule_clearance_20",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				-74.0,
+				26.95,
+				-40.0
+			]
+		},
+		{
+			"foot": [
+				-76.0,
+				26.421,
+				-54.0
+			],
+			"index": 21,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_21",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-76.0,
+				29.027,
+				-54.0
+			]
+		},
+		{
+			"foot": [
+				-76.333,
+				28.845,
+				-69.333
+			],
+			"index": 22,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_22",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-76.333,
+				31.364,
+				-69.333
+			]
+		},
+		{
+			"foot": [
+				-18.0,
+				18.697,
+				8.0
+			],
+			"index": 23,
+			"initial_contacts": [
+				"COL_Walk_Central_stair_lane_step_concrete"
+			],
+			"name": "walking_capsule_clearance_23",
+			"normal": [
+				-0.006,
+				0.99,
+				0.141
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				-18.0,
+				21.367,
+				8.0
+			]
+		},
+		{
+			"foot": [
+				-18.5,
+				17.04,
+				19.7
+			],
+			"index": 24,
+			"initial_contacts": [
+				"COL_Walk_Central_stair_lane_step_concrete"
+			],
+			"name": "walking_capsule_clearance_24",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				-18.5,
+				19.701,
+				19.7
+			]
+		},
+		{
+			"foot": [
+				-33.75,
+				16.651,
+				19.7
+			],
+			"index": 25,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_25",
+			"normal": [
+				-0.024,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-33.75,
+				19.321,
+				19.7
+			]
+		},
+		{
+			"foot": [
+				-49.0,
+				16.232,
+				19.7
+			],
+			"index": 26,
+			"initial_contacts": [
+				"COL_Walk_Courtyard_approach_pavement"
+			],
+			"name": "walking_capsule_clearance_26",
+			"normal": [
+				-0.005,
+				0.998,
+				0.067
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				-49.0,
+				18.967,
+				19.7
+			]
+		},
+		{
+			"foot": [
+				-50.0,
+				14.552,
+				33.0
+			],
+			"index": 27,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_27",
+			"normal": [
+				-0.005,
+				0.998,
+				0.067
+			],
+			"pass": true,
+			"sample": [
+				-50.0,
+				17.157,
+				33.0
+			]
+		},
+		{
+			"foot": [
+				-63.333,
+				14.19,
+				33.0
+			],
+			"index": 28,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_28",
+			"normal": [
+				-0.022,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-63.333,
+				16.86,
+				33.0
+			]
+		},
+		{
+			"foot": [
+				-71.0,
+				15.16,
+				24.667
+			],
+			"index": 29,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_29",
+			"normal": [
+				0.016,
+				0.991,
+				0.132
+			],
+			"pass": true,
+			"sample": [
+				-71.0,
+				17.83,
+				24.667
+			]
+		},
+		{
+			"foot": [
+				-73.0,
+				17.422,
+				8.0
+			],
+			"index": 30,
+			"initial_contacts": [
+				"COL_Walk_West_residential_link_step_concrete"
+			],
+			"name": "walking_capsule_clearance_30",
+			"normal": [
+				0.016,
+				0.991,
+				0.134
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				-73.0,
+				20.092,
+				8.0
+			]
+		},
+		{
+			"foot": [
+				-18.0,
+				21.837,
+				-14.0
+			],
+			"index": 31,
+			"initial_contacts": [
+				"COL_Walk_Central_stair_lane_step_concrete"
+			],
+			"name": "walking_capsule_clearance_31",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				-18.0,
+				24.507,
+				-14.0
+			]
+		},
+		{
+			"foot": [
+				-6.0,
+				21.397,
+				-8.0
+			],
+			"index": 32,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_32",
+			"normal": [
+				0.03,
+				0.999,
+				0.015
+			],
+			"pass": true,
+			"sample": [
+				-6.0,
+				24.067,
+				-8.0
+			]
+		},
+		{
+			"foot": [
+				8.667,
+				21.475,
+				-5.0
+			],
+			"index": 33,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_33",
+			"normal": [
+				-0.035,
+				0.999,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				8.667,
+				24.145,
+				-5.0
+			]
+		},
+		{
+			"foot": [
+				26.0,
+				22.129,
+				-5.0
+			],
+			"index": 34,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_34",
+			"normal": [
+				-0.016,
+				0.997,
+				0.073
+			],
+			"pass": true,
+			"sample": [
+				26.0,
+				24.723,
+				-5.0
+			]
+		},
+		{
+			"foot": [
+				28.0,
+				23.505,
+				-14.0
+			],
+			"index": 35,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_35",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				28.0,
+				26.176,
+				-14.0
+			]
+		},
+		{
+			"foot": [
+				32.0,
+				26.068,
+				-30.0
+			],
+			"index": 36,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_36",
+			"normal": [
+				-0.037,
+				0.988,
+				0.147
+			],
+			"pass": true,
+			"sample": [
+				32.0,
+				28.738,
+				-30.0
+			]
+		},
+		{
+			"foot": [
+				36.667,
+				28.292,
+				-44.0
+			],
+			"index": 37,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_37",
+			"normal": [
+				-0.059,
+				0.989,
+				0.132
+			],
+			"pass": true,
+			"sample": [
+				36.667,
+				30.962,
+				-44.0
+			]
+		},
+		{
+			"foot": [
+				42.0,
+				30.18,
+				-56.0
+			],
+			"index": 38,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_38",
+			"normal": [
+				-0.013,
+				1.0,
+				0.008
+			],
+			"pass": true,
+			"sample": [
+				42.0,
+				32.85,
+				-56.0
+			]
+		},
+		{
+			"foot": [
+				60.0,
+				30.569,
+				-56.0
+			],
+			"index": 39,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_39",
+			"normal": [
+				-0.016,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				60.0,
+				33.239,
+				-56.0
+			]
+		},
+		{
+			"foot": [
+				-25.0,
+				28.995,
+				-64.0
+			],
+			"index": 40,
+			"initial_contacts": [
+				"COL_Walk_Upper_terrace_connection_step_concrete"
+			],
+			"name": "walking_capsule_clearance_40",
+			"normal": [
+				0.022,
+				1.0,
+				0.009
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				-25.0,
+				31.665,
+				-64.0
+			]
+		},
+		{
+			"foot": [
+				-12.0,
+				28.7,
+				-59.0
+			],
+			"index": 41,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_41",
+			"normal": [
+				-0.031,
+				1.0,
+				-0.006
+			],
+			"pass": true,
+			"sample": [
+				-12.0,
+				31.37,
+				-59.0
+			]
+		},
+		{
+			"foot": [
+				6.0,
+				29.395,
+				-59.0
+			],
+			"index": 42,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_42",
+			"normal": [
+				-0.038,
+				0.999,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				6.0,
+				32.065,
+				-59.0
+			]
+		},
+		{
+			"foot": [
+				20.0,
+				29.918,
+				-59.0
+			],
+			"index": 43,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_43",
+			"normal": [
+				-0.014,
+				1.0,
+				-0.001
+			],
+			"pass": true,
+			"sample": [
+				20.0,
+				32.588,
+				-59.0
+			]
+		},
+		{
+			"foot": [
+				34.667,
+				30.116,
+				-57.0
+			],
+			"index": 44,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_44",
+			"normal": [
+				-0.01,
+				1.0,
+				-0.001
+			],
+			"pass": true,
+			"sample": [
+				34.667,
+				32.786,
+				-57.0
+			]
+		},
+		{
+			"foot": [
+				52.0,
+				12.053,
+				61.7
+			],
+			"index": 45,
+			"initial_contacts": [
+				"COL_Walk_East_photo_alley_step_concrete"
+			],
+			"name": "walking_capsule_clearance_45",
+			"normal": [
+				-0.031,
+				0.999,
+				0.012
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				52.0,
+				14.717,
+				61.7
+			]
+		},
+		{
+			"foot": [
+				48.0,
+				13.983,
+				49.0
+			],
+			"index": 46,
+			"initial_contacts": [
+				"COL_Walk_East_photo_alley_step_concrete"
+			],
+			"name": "walking_capsule_clearance_46",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				48.0,
+				16.653,
+				49.0
+			]
+		},
+		{
+			"foot": [
+				52.0,
+				16.326,
+				35.0
+			],
+			"index": 47,
+			"initial_contacts": [
+				"COL_Walk_East_photo_alley_step_concrete"
+			],
+			"name": "walking_capsule_clearance_47",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				52.0,
+				18.996,
+				35.0
+			]
+		},
+		{
+			"foot": [
+				49.0,
+				18.844,
+				19.0
+			],
+			"index": 48,
+			"initial_contacts": [
+				"COL_Walk_East_photo_alley_step_concrete"
+			],
+			"name": "walking_capsule_clearance_48",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				49.0,
+				21.514,
+				19.0
+			]
+		},
+		{
+			"foot": [
+				35.0,
+				22.321,
+				-5.0
+			],
+			"index": 49,
+			"initial_contacts": [
+				"COL_Walk_East_photo_alley_step_concrete"
+			],
+			"name": "walking_capsule_clearance_49",
+			"normal": [
+				0.064,
+				0.998,
+				0.002
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				35.0,
+				24.991,
+				-5.0
+			]
+		},
+		{
+			"foot": [
+				28.0,
+				23.505,
+				-14.0
+			],
+			"index": 50,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_50",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				28.0,
+				26.176,
+				-14.0
+			]
+		},
+		{
+			"foot": [
+				15.972,
+				10.767,
+				66.241
+			],
+			"index": 51,
+			"initial_contacts": [
+				"COL_Walk_Central_stair_lane_step_concrete"
+			],
+			"name": "walking_capsule_clearance_51",
+			"normal": [
+				-0.029,
+				1.0,
+				0.004
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				15.972,
+				13.437,
+				66.241
+			]
+		},
+		{
+			"foot": [
+				16.233,
+				8.944,
+				78.268
+			],
+			"index": 52,
+			"initial_contacts": [
+				"COL_Walk_OSM_734116594_0_step_concrete"
+			],
+			"name": "walking_capsule_clearance_52",
+			"normal": [
+				-0.013,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				16.233,
+				11.614,
+				78.268
+			]
+		},
+		{
+			"foot": [
+				-100.0,
+				8.38,
+				65.444
+			],
+			"index": 53,
+			"initial_contacts": [
+				"COL_Walk_OSM_734116598_0_pavement"
+			],
+			"name": "walking_capsule_clearance_53",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				-100.0,
+				11.222,
+				65.444
+			]
+		},
+		{
+			"foot": [
+				-76.228,
+				8.597,
+				70.855
+			],
+			"index": 54,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_54",
+			"normal": [
+				-0.008,
+				1.0,
+				-0.001
+			],
+			"pass": true,
+			"sample": [
+				-76.228,
+				11.267,
+				70.855
+			]
+		},
+		{
+			"foot": [
+				-55.514,
+				8.7,
+				74.388
+			],
+			"index": 55,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_55",
+			"normal": [
+				-0.011,
+				1.0,
+				-0.001
+			],
+			"pass": true,
+			"sample": [
+				-55.514,
+				11.37,
+				74.388
+			]
+		},
+		{
+			"foot": [
+				-31.081,
+				8.842,
+				76.594
+			],
+			"index": 56,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_56",
+			"normal": [
+				-0.001,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-31.081,
+				11.512,
+				76.594
+			]
+		},
+		{
+			"foot": [
+				-11.582,
+				8.798,
+				78.146
+			],
+			"index": 57,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_57",
+			"normal": [
+				0.005,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-11.582,
+				11.468,
+				78.146
+			]
+		},
+		{
+			"foot": [
+				3.489,
+				8.788,
+				78.789
+			],
+			"index": 58,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_58",
+			"normal": [
+				0.001,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				3.489,
+				11.458,
+				78.789
+			]
+		},
+		{
+			"foot": [
+				26.759,
+				9.057,
+				78.146
+			],
+			"index": 59,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_59",
+			"normal": [
+				-0.039,
+				0.999,
+				0.005
+			],
+			"pass": true,
+			"sample": [
+				26.759,
+				11.727,
+				78.146
+			]
+		},
+		{
+			"foot": [
+				44.95,
+				10.21,
+				72.448
+			],
+			"index": 60,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_60",
+			"normal": [
+				-0.079,
+				0.996,
+				0.041
+			],
+			"pass": true,
+			"sample": [
+				44.95,
+				12.88,
+				72.448
+			]
+		},
+		{
+			"foot": [
+				62.501,
+				12.732,
+				59.003
+			],
+			"index": 61,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_61",
+			"normal": [
+				-0.091,
+				0.994,
+				0.067
+			],
+			"pass": true,
+			"sample": [
+				62.501,
+				15.402,
+				59.003
+			]
+		},
+		{
+			"foot": [
+				78.487,
+				14.96,
+				47.624
+			],
+			"index": 62,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_62",
+			"normal": [
+				-0.092,
+				0.993,
+				0.073
+			],
+			"pass": true,
+			"sample": [
+				78.487,
+				17.63,
+				47.624
+			]
+		},
+		{
+			"foot": [
+				93.698,
+				17.149,
+				35.98
+			],
+			"index": 63,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_63",
+			"normal": [
+				-0.079,
+				0.995,
+				0.066
+			],
+			"pass": true,
+			"sample": [
+				93.698,
+				19.819,
+				35.98
+			]
+		},
+		{
+			"foot": [
+				-100.0,
+				11.631,
+				44.606
+			],
+			"index": 64,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_64",
+			"normal": [
+				0.005,
+				1.0,
+				0.001
+			],
+			"pass": true,
+			"sample": [
+				-100.0,
+				14.302,
+				44.606
+			]
+		},
+		{
+			"foot": [
+				-91.392,
+				11.606,
+				46.455
+			],
+			"index": 65,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_65",
+			"normal": [
+				0.046,
+				0.999,
+				0.021
+			],
+			"pass": true,
+			"sample": [
+				-91.392,
+				14.276,
+				46.455
+			]
+		},
+		{
+			"foot": [
+				-80.469,
+				10.875,
+				53.826
+			],
+			"index": 66,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_66",
+			"normal": [
+				0.043,
+				0.999,
+				0.028
+			],
+			"pass": true,
+			"sample": [
+				-80.469,
+				13.545,
+				53.826
+			]
+		},
+		{
+			"foot": [
+				-65.273,
+				10.105,
+				62.494
+			],
+			"index": 67,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_67",
+			"normal": [
+				-0.007,
+				1.0,
+				-0.002
+			],
+			"pass": true,
+			"sample": [
+				-65.273,
+				12.775,
+				62.494
+			]
+		},
+		{
+			"foot": [
+				-54.477,
+				10.276,
+				63.27
+			],
+			"index": 68,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_68",
+			"normal": [
+				-0.039,
+				0.999,
+				0.003
+			],
+			"pass": true,
+			"sample": [
+				-54.477,
+				12.946,
+				63.27
+			]
+		},
+		{
+			"foot": [
+				-43.428,
+				10.709,
+				61.851
+			],
+			"index": 69,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_69",
+			"normal": [
+				-0.067,
+				0.997,
+				0.025
+			],
+			"pass": true,
+			"sample": [
+				-43.428,
+				13.379,
+				61.851
+			]
+		},
+		{
+			"foot": [
+				-32.38,
+				11.566,
+				57.063
+			],
+			"index": 70,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_70",
+			"normal": [
+				-0.028,
+				1.0,
+				0.004
+			],
+			"pass": true,
+			"sample": [
+				-32.38,
+				14.236,
+				57.063
+			]
+		},
+		{
+			"foot": [
+				-23.541,
+				11.609,
+				57.706
+			],
+			"index": 71,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_71",
+			"normal": [
+				-0.007,
+				1.0,
+				-0.001
+			],
+			"pass": true,
+			"sample": [
+				-23.541,
+				14.279,
+				57.706
+			]
+		},
+		{
+			"foot": [
+				-12.105,
+				11.567,
+				59.003
+			],
+			"index": 72,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_72",
+			"normal": [
+				0.001,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-12.105,
+				14.237,
+				59.003
+			]
+		},
+		{
+			"foot": [
+				-0.407,
+				11.502,
+				60.3
+			],
+			"index": 73,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_73",
+			"normal": [
+				0.032,
+				0.999,
+				0.007
+			],
+			"pass": true,
+			"sample": [
+				-0.407,
+				14.172,
+				60.3
+			]
+		},
+		{
+			"foot": [
+				15.972,
+				10.767,
+				66.241
+			],
+			"index": 74,
+			"initial_contacts": [
+				"COL_Walk_Central_stair_lane_step_concrete"
+			],
+			"name": "walking_capsule_clearance_74",
+			"normal": [
+				-0.029,
+				1.0,
+				0.004
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				15.972,
+				13.437,
+				66.241
+			]
+		},
+		{
+			"foot": [
+				80.188,
+				16.662,
+				37.0
+			],
+			"index": 75,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_75",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				80.188,
+				19.332,
+				37.0
+			]
+		},
+		{
+			"foot": [
+				15.972,
+				10.767,
+				66.241
+			],
+			"index": 76,
+			"initial_contacts": [
+				"COL_Walk_Central_stair_lane_step_concrete"
+			],
+			"name": "walking_capsule_clearance_76",
+			"normal": [
+				-0.029,
+				1.0,
+				0.004
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				15.972,
+				13.437,
+				66.241
+			]
+		},
+		{
+			"foot": [
+				39.994,
+				11.568,
+				63.189
+			],
+			"index": 77,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_77",
+			"normal": [
+				-0.037,
+				0.999,
+				0.005
+			],
+			"pass": true,
+			"sample": [
+				39.994,
+				14.238,
+				63.189
+			]
+		},
+		{
+			"foot": [
+				60.951,
+				13.319,
+				55.045
+			],
+			"index": 78,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_78",
+			"normal": [
+				-0.06,
+				0.993,
+				0.098
+			],
+			"pass": true,
+			"sample": [
+				60.951,
+				15.989,
+				55.045
+			]
+		},
+		{
+			"foot": [
+				74.451,
+				15.77,
+				42.719
+			],
+			"index": 79,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_79",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				74.451,
+				18.291,
+				42.719
+			]
+		},
+		{
+			"foot": [
+				-17.8,
+				19.853,
+				0.0
+			],
+			"index": 80,
+			"initial_contacts": [
+				"COL_Walk_Central_stair_lane_step_concrete"
+			],
+			"name": "walking_capsule_clearance_80",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				-17.8,
+				23.5,
+				0.0
+			]
+		},
+		{
+			"foot": [
+				-19.0,
+				20.115,
+				0.0
+			],
+			"index": 81,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_81",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-19.0,
+				23.5,
+				0.0
+			]
+		},
+		{
+			"foot": [
+				-20.5,
+				20.257,
+				0.0
+			],
+			"index": 82,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_82",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-20.5,
+				23.5,
+				0.0
+			]
+		},
+		{
+			"foot": [
+				-21.9,
+				20.398,
+				0.0
+			],
+			"index": 83,
+			"initial_contacts": [
+				"COL_Community_court_pavement",
+				"COL_Court_east_entry_steps_step_concrete"
+			],
+			"name": "walking_capsule_clearance_83",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				-21.9,
+				23.5,
+				0.0
+			]
+		},
+		{
+			"foot": [
+				-23.5,
+				20.53,
+				0.0
+			],
+			"index": 84,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_84",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-23.5,
+				23.5,
+				0.0
+			]
+		},
+		{
+			"foot": [
+				-26.0,
+				20.547,
+				0.0
+			],
+			"index": 85,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_85",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-26.0,
+				23.5,
+				0.0
+			]
+		},
+		{
+			"foot": [
+				-31.0,
+				20.576,
+				0.0
+			],
+			"index": 86,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_86",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-31.0,
+				23.5,
+				0.0
+			]
+		},
+		{
+			"foot": [
+				-37.0,
+				20.576,
+				0.0
+			],
+			"index": 87,
+			"initial_contacts": [],
+			"name": "walking_capsule_clearance_87",
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-37.0,
+				23.5,
+				0.0
+			]
+		}
+	],
+	"upper_lane": {
+		"enabled": true,
+		"model_sha256": "16dabbe6c51b1ff130153d68092dc84daa509ba4538f10152f85d4e8ae53be37",
+		"sky_sha256": {
+			"res://assets/lane_r20/alley_sky.png": "c8b799570de19d6acd2e5c822aa095807d6dc3b107bd4886e66caef438cf7d3b",
+			"res://assets/lane_r20/shop_sky.png": "8d5b169cfd0bf9cc799dec67d02fde5ebbc2558a3a79dc5c91fd85fbc98dd188"
+		}
+	},
+	"walking_clearances": [
+		{
+			"foot": [
+				16.0,
+				10.77,
+				66.0
+			],
+			"index": 0,
+			"initial_contacts": [
+				"COL_Walk_Central_stair_lane_step_concrete"
+			],
+			"normal": [
+				0.042,
+				0.999,
+				0.016
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				16.0,
+				13.474,
+				66.0
+			]
+		},
+		{
+			"foot": [
+				1.6,
+				11.837,
+				58.231
+			],
+			"index": 1,
+			"initial_contacts": [],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				1.6,
+				14.4,
+				58.231
+			]
+		},
+		{
+			"foot": [
+				-12.8,
+				12.306,
+				54.8
+			],
+			"index": 2,
+			"initial_contacts": [],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-12.8,
+				14.833,
+				54.8
+			]
+		},
+		{
+			"foot": [
+				-20.0,
+				13.6,
+				44.667
+			],
+			"index": 3,
+			"initial_contacts": [],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-20.0,
+				16.164,
+				44.667
+			]
+		},
+		{
+			"foot": [
+				-20.0,
+				15.55,
+				30.0
+			],
+			"index": 4,
+			"initial_contacts": [
+				"COL_Walk_Central_stair_lane_step_concrete"
+			],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				-20.0,
+				18.22,
+				30.0
+			]
+		},
+		{
+			"foot": [
+				-18.667,
+				17.703,
+				15.333
+			],
+			"index": 5,
+			"initial_contacts": [],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-18.667,
+				20.312,
+				15.333
+			]
+		},
+		{
+			"foot": [
+				-18.0,
+				19.974,
+				0.667
+			],
+			"index": 6,
+			"initial_contacts": [],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-18.0,
+				22.407,
+				0.667
+			]
+		},
+		{
+			"foot": [
+				-18.0,
+				21.837,
+				-14.0
+			],
+			"index": 7,
+			"initial_contacts": [
+				"COL_Walk_Central_stair_lane_step_concrete"
+			],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				-18.0,
+				24.507,
+				-14.0
+			]
+		},
+		{
+			"foot": [
+				-29.0,
+				23.302,
+				-26.0
+			],
+			"index": 8,
+			"initial_contacts": [],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-29.0,
+				25.858,
+				-26.0
+			]
+		},
+		{
+			"foot": [
+				-40.0,
+				24.764,
+				-38.0
+			],
+			"index": 9,
+			"initial_contacts": [],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-40.0,
+				27.275,
+				-38.0
+			]
+		},
+		{
+			"foot": [
+				-33.1,
+				26.74,
+				-50.0
+			],
+			"index": 10,
+			"initial_contacts": [],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-33.1,
+				29.272,
+				-50.0
+			]
+		},
+		{
+			"foot": [
+				-25.0,
+				28.995,
+				-64.0
+			],
+			"index": 11,
+			"initial_contacts": [
+				"COL_Walk_Upper_terrace_connection_step_concrete"
+			],
+			"normal": [
+				0.022,
+				1.0,
+				0.009
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				-25.0,
+				31.665,
+				-64.0
+			]
+		},
+		{
+			"foot": [
+				-17.0,
+				31.254,
+				-77.0
+			],
+			"index": 12,
+			"initial_contacts": [
+				"COL_Walk_Upper_terrace_connection_step_concrete"
+			],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				-17.0,
+				33.924,
+				-77.0
+			]
+		},
+		{
+			"foot": [
+				-27.0,
+				32.975,
+				-90.0
+			],
+			"index": 13,
+			"initial_contacts": [],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-27.0,
+				35.646,
+				-90.0
+			]
+		},
+		{
+			"foot": [
+				-92.208,
+				11.941,
+				44.542
+			],
+			"index": 14,
+			"initial_contacts": [],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-92.208,
+				14.729,
+				44.542
+			]
+		},
+		{
+			"foot": [
+				-80.333,
+				13.3,
+				37.667
+			],
+			"index": 15,
+			"initial_contacts": [],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-80.333,
+				15.819,
+				37.667
+			]
+		},
+		{
+			"foot": [
+				-73.667,
+				15.123,
+				25.333
+			],
+			"index": 16,
+			"initial_contacts": [],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-73.667,
+				17.683,
+				25.333
+			]
+		},
+		{
+			"foot": [
+				-73.0,
+				17.422,
+				8.0
+			],
+			"index": 17,
+			"initial_contacts": [
+				"COL_Walk_West_residential_link_step_concrete"
+			],
+			"normal": [
+				0.016,
+				0.991,
+				0.134
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				-73.0,
+				20.092,
+				8.0
+			]
+		},
+		{
+			"foot": [
+				-75.0,
+				19.747,
+				-8.667
+			],
+			"index": 18,
+			"initial_contacts": [
+				"COL_Walk_West_residential_link_step_concrete"
+			],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				-75.0,
+				22.402,
+				-8.667
+			]
+		},
+		{
+			"foot": [
+				-75.333,
+				21.85,
+				-24.667
+			],
+			"index": 19,
+			"initial_contacts": [],
+			"normal": [
+				-0.007,
+				0.99,
+				0.14
+			],
+			"pass": true,
+			"sample": [
+				-75.333,
+				24.691,
+				-24.667
+			]
+		},
+		{
+			"foot": [
+				-74.0,
+				24.279,
+				-40.0
+			],
+			"index": 20,
+			"initial_contacts": [
+				"COL_Walk_West_residential_link_step_concrete"
+			],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				-74.0,
+				26.95,
+				-40.0
+			]
+		},
+		{
+			"foot": [
+				-76.0,
+				26.421,
+				-54.0
+			],
+			"index": 21,
+			"initial_contacts": [],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-76.0,
+				29.027,
+				-54.0
+			]
+		},
+		{
+			"foot": [
+				-76.333,
+				28.845,
+				-69.333
+			],
+			"index": 22,
+			"initial_contacts": [],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-76.333,
+				31.364,
+				-69.333
+			]
+		},
+		{
+			"foot": [
+				-18.0,
+				18.697,
+				8.0
+			],
+			"index": 23,
+			"initial_contacts": [
+				"COL_Walk_Central_stair_lane_step_concrete"
+			],
+			"normal": [
+				-0.006,
+				0.99,
+				0.141
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				-18.0,
+				21.367,
+				8.0
+			]
+		},
+		{
+			"foot": [
+				-18.5,
+				17.04,
+				19.7
+			],
+			"index": 24,
+			"initial_contacts": [
+				"COL_Walk_Central_stair_lane_step_concrete"
+			],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				-18.5,
+				19.701,
+				19.7
+			]
+		},
+		{
+			"foot": [
+				-33.75,
+				16.651,
+				19.7
+			],
+			"index": 25,
+			"initial_contacts": [],
+			"normal": [
+				-0.024,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-33.75,
+				19.321,
+				19.7
+			]
+		},
+		{
+			"foot": [
+				-49.0,
+				16.232,
+				19.7
+			],
+			"index": 26,
+			"initial_contacts": [
+				"COL_Walk_Courtyard_approach_pavement"
+			],
+			"normal": [
+				-0.005,
+				0.998,
+				0.067
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				-49.0,
+				18.967,
+				19.7
+			]
+		},
+		{
+			"foot": [
+				-50.0,
+				14.552,
+				33.0
+			],
+			"index": 27,
+			"initial_contacts": [],
+			"normal": [
+				-0.005,
+				0.998,
+				0.067
+			],
+			"pass": true,
+			"sample": [
+				-50.0,
+				17.157,
+				33.0
+			]
+		},
+		{
+			"foot": [
+				-63.333,
+				14.19,
+				33.0
+			],
+			"index": 28,
+			"initial_contacts": [],
+			"normal": [
+				-0.022,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-63.333,
+				16.86,
+				33.0
+			]
+		},
+		{
+			"foot": [
+				-71.0,
+				15.16,
+				24.667
+			],
+			"index": 29,
+			"initial_contacts": [],
+			"normal": [
+				0.016,
+				0.991,
+				0.132
+			],
+			"pass": true,
+			"sample": [
+				-71.0,
+				17.83,
+				24.667
+			]
+		},
+		{
+			"foot": [
+				-73.0,
+				17.422,
+				8.0
+			],
+			"index": 30,
+			"initial_contacts": [
+				"COL_Walk_West_residential_link_step_concrete"
+			],
+			"normal": [
+				0.016,
+				0.991,
+				0.134
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				-73.0,
+				20.092,
+				8.0
+			]
+		},
+		{
+			"foot": [
+				-18.0,
+				21.837,
+				-14.0
+			],
+			"index": 31,
+			"initial_contacts": [
+				"COL_Walk_Central_stair_lane_step_concrete"
+			],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				-18.0,
+				24.507,
+				-14.0
+			]
+		},
+		{
+			"foot": [
+				-6.0,
+				21.397,
+				-8.0
+			],
+			"index": 32,
+			"initial_contacts": [],
+			"normal": [
+				0.03,
+				0.999,
+				0.015
+			],
+			"pass": true,
+			"sample": [
+				-6.0,
+				24.067,
+				-8.0
+			]
+		},
+		{
+			"foot": [
+				8.667,
+				21.475,
+				-5.0
+			],
+			"index": 33,
+			"initial_contacts": [],
+			"normal": [
+				-0.035,
+				0.999,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				8.667,
+				24.145,
+				-5.0
+			]
+		},
+		{
+			"foot": [
+				26.0,
+				22.129,
+				-5.0
+			],
+			"index": 34,
+			"initial_contacts": [],
+			"normal": [
+				-0.016,
+				0.997,
+				0.073
+			],
+			"pass": true,
+			"sample": [
+				26.0,
+				24.723,
+				-5.0
+			]
+		},
+		{
+			"foot": [
+				28.0,
+				23.505,
+				-14.0
+			],
+			"index": 35,
+			"initial_contacts": [],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				28.0,
+				26.176,
+				-14.0
+			]
+		},
+		{
+			"foot": [
+				32.0,
+				26.068,
+				-30.0
+			],
+			"index": 36,
+			"initial_contacts": [],
+			"normal": [
+				-0.037,
+				0.988,
+				0.147
+			],
+			"pass": true,
+			"sample": [
+				32.0,
+				28.738,
+				-30.0
+			]
+		},
+		{
+			"foot": [
+				36.667,
+				28.292,
+				-44.0
+			],
+			"index": 37,
+			"initial_contacts": [],
+			"normal": [
+				-0.059,
+				0.989,
+				0.132
+			],
+			"pass": true,
+			"sample": [
+				36.667,
+				30.962,
+				-44.0
+			]
+		},
+		{
+			"foot": [
+				42.0,
+				30.18,
+				-56.0
+			],
+			"index": 38,
+			"initial_contacts": [],
+			"normal": [
+				-0.013,
+				1.0,
+				0.008
+			],
+			"pass": true,
+			"sample": [
+				42.0,
+				32.85,
+				-56.0
+			]
+		},
+		{
+			"foot": [
+				60.0,
+				30.569,
+				-56.0
+			],
+			"index": 39,
+			"initial_contacts": [],
+			"normal": [
+				-0.016,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				60.0,
+				33.239,
+				-56.0
+			]
+		},
+		{
+			"foot": [
+				-25.0,
+				28.995,
+				-64.0
+			],
+			"index": 40,
+			"initial_contacts": [
+				"COL_Walk_Upper_terrace_connection_step_concrete"
+			],
+			"normal": [
+				0.022,
+				1.0,
+				0.009
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				-25.0,
+				31.665,
+				-64.0
+			]
+		},
+		{
+			"foot": [
+				-12.0,
+				28.7,
+				-59.0
+			],
+			"index": 41,
+			"initial_contacts": [],
+			"normal": [
+				-0.031,
+				1.0,
+				-0.006
+			],
+			"pass": true,
+			"sample": [
+				-12.0,
+				31.37,
+				-59.0
+			]
+		},
+		{
+			"foot": [
+				6.0,
+				29.395,
+				-59.0
+			],
+			"index": 42,
+			"initial_contacts": [],
+			"normal": [
+				-0.038,
+				0.999,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				6.0,
+				32.065,
+				-59.0
+			]
+		},
+		{
+			"foot": [
+				20.0,
+				29.918,
+				-59.0
+			],
+			"index": 43,
+			"initial_contacts": [],
+			"normal": [
+				-0.014,
+				1.0,
+				-0.001
+			],
+			"pass": true,
+			"sample": [
+				20.0,
+				32.588,
+				-59.0
+			]
+		},
+		{
+			"foot": [
+				34.667,
+				30.116,
+				-57.0
+			],
+			"index": 44,
+			"initial_contacts": [],
+			"normal": [
+				-0.01,
+				1.0,
+				-0.001
+			],
+			"pass": true,
+			"sample": [
+				34.667,
+				32.786,
+				-57.0
+			]
+		},
+		{
+			"foot": [
+				52.0,
+				12.053,
+				61.7
+			],
+			"index": 45,
+			"initial_contacts": [
+				"COL_Walk_East_photo_alley_step_concrete"
+			],
+			"normal": [
+				-0.031,
+				0.999,
+				0.012
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				52.0,
+				14.717,
+				61.7
+			]
+		},
+		{
+			"foot": [
+				48.0,
+				13.983,
+				49.0
+			],
+			"index": 46,
+			"initial_contacts": [
+				"COL_Walk_East_photo_alley_step_concrete"
+			],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				48.0,
+				16.653,
+				49.0
+			]
+		},
+		{
+			"foot": [
+				52.0,
+				16.326,
+				35.0
+			],
+			"index": 47,
+			"initial_contacts": [
+				"COL_Walk_East_photo_alley_step_concrete"
+			],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				52.0,
+				18.996,
+				35.0
+			]
+		},
+		{
+			"foot": [
+				49.0,
+				18.844,
+				19.0
+			],
+			"index": 48,
+			"initial_contacts": [
+				"COL_Walk_East_photo_alley_step_concrete"
+			],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				49.0,
+				21.514,
+				19.0
+			]
+		},
+		{
+			"foot": [
+				35.0,
+				22.321,
+				-5.0
+			],
+			"index": 49,
+			"initial_contacts": [
+				"COL_Walk_East_photo_alley_step_concrete"
+			],
+			"normal": [
+				0.064,
+				0.998,
+				0.002
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				35.0,
+				24.991,
+				-5.0
+			]
+		},
+		{
+			"foot": [
+				28.0,
+				23.505,
+				-14.0
+			],
+			"index": 50,
+			"initial_contacts": [],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				28.0,
+				26.176,
+				-14.0
+			]
+		},
+		{
+			"foot": [
+				15.972,
+				10.767,
+				66.241
+			],
+			"index": 51,
+			"initial_contacts": [
+				"COL_Walk_Central_stair_lane_step_concrete"
+			],
+			"normal": [
+				-0.029,
+				1.0,
+				0.004
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				15.972,
+				13.437,
+				66.241
+			]
+		},
+		{
+			"foot": [
+				16.233,
+				8.944,
+				78.268
+			],
+			"index": 52,
+			"initial_contacts": [
+				"COL_Walk_OSM_734116594_0_step_concrete"
+			],
+			"normal": [
+				-0.013,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				16.233,
+				11.614,
+				78.268
+			]
+		},
+		{
+			"foot": [
+				-100.0,
+				8.38,
+				65.444
+			],
+			"index": 53,
+			"initial_contacts": [
+				"COL_Walk_OSM_734116598_0_pavement"
+			],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				-100.0,
+				11.222,
+				65.444
+			]
+		},
+		{
+			"foot": [
+				-76.228,
+				8.597,
+				70.855
+			],
+			"index": 54,
+			"initial_contacts": [],
+			"normal": [
+				-0.008,
+				1.0,
+				-0.001
+			],
+			"pass": true,
+			"sample": [
+				-76.228,
+				11.267,
+				70.855
+			]
+		},
+		{
+			"foot": [
+				-55.514,
+				8.7,
+				74.388
+			],
+			"index": 55,
+			"initial_contacts": [],
+			"normal": [
+				-0.011,
+				1.0,
+				-0.001
+			],
+			"pass": true,
+			"sample": [
+				-55.514,
+				11.37,
+				74.388
+			]
+		},
+		{
+			"foot": [
+				-31.081,
+				8.842,
+				76.594
+			],
+			"index": 56,
+			"initial_contacts": [],
+			"normal": [
+				-0.001,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-31.081,
+				11.512,
+				76.594
+			]
+		},
+		{
+			"foot": [
+				-11.582,
+				8.798,
+				78.146
+			],
+			"index": 57,
+			"initial_contacts": [],
+			"normal": [
+				0.005,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-11.582,
+				11.468,
+				78.146
+			]
+		},
+		{
+			"foot": [
+				3.489,
+				8.788,
+				78.789
+			],
+			"index": 58,
+			"initial_contacts": [],
+			"normal": [
+				0.001,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				3.489,
+				11.458,
+				78.789
+			]
+		},
+		{
+			"foot": [
+				26.759,
+				9.057,
+				78.146
+			],
+			"index": 59,
+			"initial_contacts": [],
+			"normal": [
+				-0.039,
+				0.999,
+				0.005
+			],
+			"pass": true,
+			"sample": [
+				26.759,
+				11.727,
+				78.146
+			]
+		},
+		{
+			"foot": [
+				44.95,
+				10.21,
+				72.448
+			],
+			"index": 60,
+			"initial_contacts": [],
+			"normal": [
+				-0.079,
+				0.996,
+				0.041
+			],
+			"pass": true,
+			"sample": [
+				44.95,
+				12.88,
+				72.448
+			]
+		},
+		{
+			"foot": [
+				62.501,
+				12.732,
+				59.003
+			],
+			"index": 61,
+			"initial_contacts": [],
+			"normal": [
+				-0.091,
+				0.994,
+				0.067
+			],
+			"pass": true,
+			"sample": [
+				62.501,
+				15.402,
+				59.003
+			]
+		},
+		{
+			"foot": [
+				78.487,
+				14.96,
+				47.624
+			],
+			"index": 62,
+			"initial_contacts": [],
+			"normal": [
+				-0.092,
+				0.993,
+				0.073
+			],
+			"pass": true,
+			"sample": [
+				78.487,
+				17.63,
+				47.624
+			]
+		},
+		{
+			"foot": [
+				93.698,
+				17.149,
+				35.98
+			],
+			"index": 63,
+			"initial_contacts": [],
+			"normal": [
+				-0.079,
+				0.995,
+				0.066
+			],
+			"pass": true,
+			"sample": [
+				93.698,
+				19.819,
+				35.98
+			]
+		},
+		{
+			"foot": [
+				-100.0,
+				11.631,
+				44.606
+			],
+			"index": 64,
+			"initial_contacts": [],
+			"normal": [
+				0.005,
+				1.0,
+				0.001
+			],
+			"pass": true,
+			"sample": [
+				-100.0,
+				14.302,
+				44.606
+			]
+		},
+		{
+			"foot": [
+				-91.392,
+				11.606,
+				46.455
+			],
+			"index": 65,
+			"initial_contacts": [],
+			"normal": [
+				0.046,
+				0.999,
+				0.021
+			],
+			"pass": true,
+			"sample": [
+				-91.392,
+				14.276,
+				46.455
+			]
+		},
+		{
+			"foot": [
+				-80.469,
+				10.875,
+				53.826
+			],
+			"index": 66,
+			"initial_contacts": [],
+			"normal": [
+				0.043,
+				0.999,
+				0.028
+			],
+			"pass": true,
+			"sample": [
+				-80.469,
+				13.545,
+				53.826
+			]
+		},
+		{
+			"foot": [
+				-65.273,
+				10.105,
+				62.494
+			],
+			"index": 67,
+			"initial_contacts": [],
+			"normal": [
+				-0.007,
+				1.0,
+				-0.002
+			],
+			"pass": true,
+			"sample": [
+				-65.273,
+				12.775,
+				62.494
+			]
+		},
+		{
+			"foot": [
+				-54.477,
+				10.276,
+				63.27
+			],
+			"index": 68,
+			"initial_contacts": [],
+			"normal": [
+				-0.039,
+				0.999,
+				0.003
+			],
+			"pass": true,
+			"sample": [
+				-54.477,
+				12.946,
+				63.27
+			]
+		},
+		{
+			"foot": [
+				-43.428,
+				10.709,
+				61.851
+			],
+			"index": 69,
+			"initial_contacts": [],
+			"normal": [
+				-0.067,
+				0.997,
+				0.025
+			],
+			"pass": true,
+			"sample": [
+				-43.428,
+				13.379,
+				61.851
+			]
+		},
+		{
+			"foot": [
+				-32.38,
+				11.566,
+				57.063
+			],
+			"index": 70,
+			"initial_contacts": [],
+			"normal": [
+				-0.028,
+				1.0,
+				0.004
+			],
+			"pass": true,
+			"sample": [
+				-32.38,
+				14.236,
+				57.063
+			]
+		},
+		{
+			"foot": [
+				-23.541,
+				11.609,
+				57.706
+			],
+			"index": 71,
+			"initial_contacts": [],
+			"normal": [
+				-0.007,
+				1.0,
+				-0.001
+			],
+			"pass": true,
+			"sample": [
+				-23.541,
+				14.279,
+				57.706
+			]
+		},
+		{
+			"foot": [
+				-12.105,
+				11.567,
+				59.003
+			],
+			"index": 72,
+			"initial_contacts": [],
+			"normal": [
+				0.001,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-12.105,
+				14.237,
+				59.003
+			]
+		},
+		{
+			"foot": [
+				-0.407,
+				11.502,
+				60.3
+			],
+			"index": 73,
+			"initial_contacts": [],
+			"normal": [
+				0.032,
+				0.999,
+				0.007
+			],
+			"pass": true,
+			"sample": [
+				-0.407,
+				14.172,
+				60.3
+			]
+		},
+		{
+			"foot": [
+				15.972,
+				10.767,
+				66.241
+			],
+			"index": 74,
+			"initial_contacts": [
+				"COL_Walk_Central_stair_lane_step_concrete"
+			],
+			"normal": [
+				-0.029,
+				1.0,
+				0.004
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				15.972,
+				13.437,
+				66.241
+			]
+		},
+		{
+			"foot": [
+				80.188,
+				16.662,
+				37.0
+			],
+			"index": 75,
+			"initial_contacts": [],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				80.188,
+				19.332,
+				37.0
+			]
+		},
+		{
+			"foot": [
+				15.972,
+				10.767,
+				66.241
+			],
+			"index": 76,
+			"initial_contacts": [
+				"COL_Walk_Central_stair_lane_step_concrete"
+			],
+			"normal": [
+				-0.029,
+				1.0,
+				0.004
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				15.972,
+				13.437,
+				66.241
+			]
+		},
+		{
+			"foot": [
+				39.994,
+				11.568,
+				63.189
+			],
+			"index": 77,
+			"initial_contacts": [],
+			"normal": [
+				-0.037,
+				0.999,
+				0.005
+			],
+			"pass": true,
+			"sample": [
+				39.994,
+				14.238,
+				63.189
+			]
+		},
+		{
+			"foot": [
+				60.951,
+				13.319,
+				55.045
+			],
+			"index": 78,
+			"initial_contacts": [],
+			"normal": [
+				-0.06,
+				0.993,
+				0.098
+			],
+			"pass": true,
+			"sample": [
+				60.951,
+				15.989,
+				55.045
+			]
+		},
+		{
+			"foot": [
+				74.451,
+				15.77,
+				42.719
+			],
+			"index": 79,
+			"initial_contacts": [],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				74.451,
+				18.291,
+				42.719
+			]
+		},
+		{
+			"foot": [
+				-17.8,
+				19.853,
+				0.0
+			],
+			"index": 80,
+			"initial_contacts": [
+				"COL_Walk_Central_stair_lane_step_concrete"
+			],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				-17.8,
+				23.5,
+				0.0
+			]
+		},
+		{
+			"foot": [
+				-19.0,
+				20.115,
+				0.0
+			],
+			"index": 81,
+			"initial_contacts": [],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-19.0,
+				23.5,
+				0.0
+			]
+		},
+		{
+			"foot": [
+				-20.5,
+				20.257,
+				0.0
+			],
+			"index": 82,
+			"initial_contacts": [],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-20.5,
+				23.5,
+				0.0
+			]
+		},
+		{
+			"foot": [
+				-21.9,
+				20.398,
+				0.0
+			],
+			"index": 83,
+			"initial_contacts": [
+				"COL_Community_court_pavement",
+				"COL_Court_east_entry_steps_step_concrete"
+			],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"raised_by_0_24m_contacts": [],
+			"requires_small_step_clearance": true,
+			"sample": [
+				-21.9,
+				23.5,
+				0.0
+			]
+		},
+		{
+			"foot": [
+				-23.5,
+				20.53,
+				0.0
+			],
+			"index": 84,
+			"initial_contacts": [],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-23.5,
+				23.5,
+				0.0
+			]
+		},
+		{
+			"foot": [
+				-26.0,
+				20.547,
+				0.0
+			],
+			"index": 85,
+			"initial_contacts": [],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-26.0,
+				23.5,
+				0.0
+			]
+		},
+		{
+			"foot": [
+				-31.0,
+				20.576,
+				0.0
+			],
+			"index": 86,
+			"initial_contacts": [],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-31.0,
+				23.5,
+				0.0
+			]
+		},
+		{
+			"foot": [
+				-37.0,
+				20.576,
+				0.0
+			],
+			"index": 87,
+			"initial_contacts": [],
+			"normal": [
+				0.0,
+				1.0,
+				0.0
+			],
+			"pass": true,
+			"sample": [
+				-37.0,
+				23.5,
+				0.0
+			]
+		}
+	]
+}

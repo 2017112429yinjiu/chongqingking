@@ -1,0 +1,37 @@
+INFO Draco mesh compression is available, use library at C:\Users\尹久\Documents\重庆外卖王\work\tools\blender-4.3.2-windows-x64\4.3\python\lib\site-packages\extern_draco.dll
+17:12:36 | INFO: Starting glTF 2.0 export
+17:12:36 | INFO: Extracting primitive: Court14_Stools
+17:12:36 | INFO: Primitives created: 2
+17:12:36 | INFO: Extracting primitive: Court14_Table
+17:12:36 | INFO: Primitives created: 3
+17:12:36 | INFO: Extracting primitive: Court14_Chessmen
+17:12:36 | INFO: Primitives created: 2
+17:12:36 | INFO: Extracting primitive: Court14_RedHorse
+17:12:36 | INFO: Primitives created: 2
+17:12:36 | INFO: Extracting primitive: Court14_BlackHorse
+17:12:36 | INFO: Primitives created: 2
+17:12:36 | INFO: Extracting primitive: Court14_Teacups
+17:12:37 | INFO: Primitives created: 3
+17:12:37 | INFO: Extracting primitive: Court14_VegetableStand
+17:12:37 | INFO: Primitives created: 2
+17:12:37 | INFO: Extracting primitive: Court14_EnamelBowls
+17:12:37 | INFO: Primitives created: 2
+17:12:37 | INFO: Extracting primitive: Court14_SnappedBeans
+17:12:37 | INFO: Primitives created: 2
+17:12:37 | INFO: Extracting primitive: Court14_Trellis
+17:12:37 | INFO: Primitives created: 2
+17:12:37 | INFO: Extracting primitive: Court14_Climber
+17:12:37 | INFO: Primitives created: 2
+17:12:37 | INFO: Finished glTF 2.0 export in 0.6063623428344727 s
+Blender 4.3.2 (hash 32f5fdce0a0a built 2024-12-17 03:35:23)
+Read blend: "C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\stair_neighborhood\city_and_neighborhood.blend"
+Traceback (most recent call last):
+  File "C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\courtyard_life\author_city.py", line 157, in <module>
+    dest.collections=['Collection'] if 'Collection' in source.collections else [source.collections[0]]
+                                                                                ~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+Error: script failed, file: 'work/scene_r24/courtyard_life/author_city.py', exiting.
+
+
+Blender quit

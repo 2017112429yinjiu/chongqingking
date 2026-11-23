@@ -1,0 +1,28 @@
+{
+  "credit": "© OpenStreetMap contributors",
+  "license": "ODbL-1.0",
+  "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "copyright_url": "https://www.openstreetmap.org/copyright",
+  "sources": [
+    {
+      "file": "osm_southwest.osm",
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=106.5554,29.5471,106.5633,29.5546",
+      "downloaded_local_date": "2026-11-21",
+      "sha256": "77ebf61e7623ce059bba45fc29f428b966908feb0218bfc97487a27390abfdff"
+    },
+    {
+      "file": "osm_southbank.osm",
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=106.5500,29.5365,106.5690,29.5460",
+      "downloaded_local_date": "2026-11-21",
+      "sha256": "a496e4be1102f57e90a1ba8d2a7c676f6e6ae9eebb27ce51f131b94c7dca9e7c"
+    },
+    {
+      "file": "osm_river.osm",
+      "url": "https://api.openstreetmap.org/api/0.6/relation/9087399/full",
+      "downloaded_local_date": "2026-11-21",
+      "sha256": "cebbb683412a07d5e7788b8eaf8c4894fe65bfbd1dbd417cc5fe6e4a80a2ef33"
+    }
+  ],
+  "derived_database": "river_plan.json",
+  "modifications": "Local east/north projection, shoreline clipping, island mask and selection of closed building footprints and two bridge road axes. Vertical art and traffic are fictional."
+}

@@ -1,0 +1,137 @@
+{
+  "capture_start_unix": 1795162654.233,
+  "events": [
+    {
+      "frame": 0,
+      "position": "(0.0, 32.25, -78.0)",
+      "speed": 0.0,
+      "steering": 0.0,
+      "support": 1.0
+    },
+    {
+      "enter": true,
+      "frame": 20
+    },
+    {
+      "frame": 30,
+      "position": "(0.0, 32.03, -78.0)",
+      "speed": 0.0,
+      "steering": 0.0,
+      "support": 1.0
+    },
+    {
+      "frame": 60,
+      "position": "(0.0, 32.03, -78.0)",
+      "speed": 0.0,
+      "steering": 0.0,
+      "support": 1.0
+    },
+    {
+      "frame": 90,
+      "position": "(1.412123, 32.08195, -78.00002)",
+      "speed": 2.8,
+      "steering": 0.0,
+      "support": 0.0
+    },
+    {
+      "frame": 120,
+      "position": "(5.622032, 32.21979, -78.00005)",
+      "speed": 5.60000000000001,
+      "steering": 0.0,
+      "support": 0.0
+    },
+    {
+      "frame": 150,
+      "position": "(11.51106, 32.40818, -78.58089)",
+      "speed": 6.0,
+      "steering": 0.192,
+      "support": 0.0
+    },
+    {
+      "frame": 180,
+      "position": "(13.29389, 32.4645, -79.35429)",
+      "speed": 0.0,
+      "steering": 0.0,
+      "support": 0.63
+    },
+    {
+      "frame": 210,
+      "position": "(13.29389, 32.4645, -79.35429)",
+      "speed": 0.0,
+      "steering": 0.0,
+      "support": 1.0
+    },
+    {
+      "frame": 240,
+      "position": "(13.29389, 32.4645, -79.35429)",
+      "speed": 0.0,
+      "steering": 0.0,
+      "support": 1.0
+    },
+    {
+      "frame": 270,
+      "position": "(12.15393, 32.42929, -78.85696)",
+      "speed": -1.8,
+      "steering": 0.0,
+      "support": 0.0
+    },
+    {
+      "frame": 300,
+      "park": true
+    },
+    {
+      "frame": 300,
+      "position": "(12.0013, 32.42369, -78.79059)",
+      "speed": 0.0,
+      "steering": 0.0,
+      "support": 1.0
+    },
+    {
+      "frame": 330,
+      "position": "(12.0013, 32.42369, -78.79059)",
+      "speed": 0.0,
+      "steering": 0.0,
+      "support": 1.0
+    },
+    {
+      "exit": true,
+      "frame": 360
+    },
+    {
+      "frame": 360,
+      "position": "(12.0013, 32.42369, -78.79059)",
+      "speed": 0.0,
+      "steering": 0.0,
+      "support": 1.0
+    },
+    {
+      "frame": 390,
+      "position": "(11.76688, 32.41205, -79.42754)",
+      "speed": 0.0,
+      "steering": 0.0,
+      "support": 1.0
+    }
+  ],
+  "initial_fixture_placements": 1,
+  "rider_import_sha256": "90f72a70080add563b7c188209866d535787634cf708ed9f1e62ae6d3f2bd242",
+  "rider_sha256": "032591e2dd8cef6ccc77b8dd4194638fa63d05b8ac7de15641145bc4245dfffd",
+  "scripted_inputs": true,
+  "scripts": {
+    "gameplay": "79442a0836350caf61d18f2fbe2aabf691eba9393f7c91a9d890c81c5e77bac1",
+    "qa_rider_motion": "c8db5c27cc21599bf087b7e1ce669547ba158d339e9b57e387f29a8c5e5c5df6",
+    "scooter_controller": "883562c0af064d62d582673e25ac70793ae93e409559487d3320cc8e8b35be25",
+    "scooter_visual": "07ed1479e8b48a01436f291ac22c142351ae134bedfbd9ace7f1e1abdceabf15"
+  },
+  "source": "Godot Movie Maker native render",
+  "vehicle_sha256": "6536538dde0cc547e4a4461d1cef58ed7cd3f17620b4ac9eaa2e428bad6cea19",
+  "resolution": [
+    1280,
+    720
+  ],
+  "fps": 30,
+  "frames": 421,
+  "postprocessing": "No grading or cuts; lossy H264 video-only conversion; Standard display transform. Original engine WAV retained separately if generated.",
+  "source_avi": "r18_rider08.avi",
+  "source_avi_sha256": "751297637186e2bf1d2af98b5378788d25035a9e73145831e31c263e5f8d9e03",
+  "mp4": "r18_rider08.mp4"
+}

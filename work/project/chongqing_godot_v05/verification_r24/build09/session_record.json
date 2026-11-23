@@ -1,0 +1,186 @@
+{
+  "scope": "Internal R24 build 09. Nanqu Road and Zhongxing Road junction only.",
+  "project": {
+    "project.godot": "5e7fe01740f8c07a0c22e367627f6fd5ecc4bf127baa0314d780ec4673587abe",
+    "main.tscn": "cb158ea7de89ffd8b607d90b98a4049a8031cbe743e2dee4cdd962d42cae16d0",
+    "scripts/main.gd": "605cb2e44ef1cd6fd458b311bb9d2674d5b0d595cd3b4a3785ca1803636fa95a",
+    "assets/render_profile_r24.json": "d4ae7ccb78df0668388b3b691c17aee52824473072003d3f116f05f81db718cd"
+  },
+  "source_sha256": {
+    "scene_r24/chongqing_district.blend": "c89593aa0f8c7c18ecdda0c596fd4a5265d465fbc7c86debfbd45507bb4c9a24",
+    "scene_r24/assets/frontage.glb": "225e217815de12639bb7dbb58245ffabea2eb0502d3e2b1964ef5ceef7fb1cf6",
+    "scene_r24/source_reopened.json": "aebe26eb73caaed6cdf88df6d62d96174875c3adb286939da5470e45f879a583",
+    "scene_r24/assets/road_sources.json": "a1d4d634455e9f3e03882dbd60e9edf8dd51aebaaeadf20ee5dab733c9ff7830",
+    "scene_r24/geometry.json": "07ac27d940c9305f9ee4190bd591c8fe4ebd0051730172e762a6eab5a2387516",
+    "scene_r24/active_install.json": "8d8360192c843bb7d41f18064804ae406170a86d864e89914636750ef68dcd50",
+    "scene_r24/traffic_fit.json": "6a077f5d96b5f7c2564f51a4496f6f600b604db8333ad4dfb70de6f1387f0f31"
+  },
+  "inputs_checked_in_daily_project": {
+    "res://assets/block_r23/block.glb": "f0796f06598586cfdbb6fab09f18dc28287a6951f3e2a092134ab7feb75fb686",
+    "res://assets/block_r23/block.json": "88aa467c76741b1a7d926328c6edf5b37be6e1b59014ef44b9e80beaa6c45227",
+    "res://assets/block_r23/routes.json": "37e98b27546e4fac4f599adb53ff9dfbd072b8bf02f1f98feaf4d6962e760832",
+    "res://assets/fonts/cq_lane_ui.otf": "4f3d9d826af0232c736d27c7ec955bc41f17c4fbb8bb3589692e4efcf5366d17",
+    "res://assets/frontage_r24/frontage.glb": "225e217815de12639bb7dbb58245ffabea2eb0502d3e2b1964ef5ceef7fb1cf6",
+    "res://assets/frontage_r24/frontage.json": "dd94246c3351da31958a0caf1233da6a1cda6a3c5310de6e631104c7c3d60bd2",
+    "res://assets/frontage_r24/stall_clips.res": "a6a8c3d5e49d7211f7f3f65da6206e53aa6beb542464fbbfcfa15c6dda7b012d",
+    "res://assets/frontage_r24/traffic_lanes.json": "062b0996444cf2453877117ce883afccdbff2c20e98039745780cb534f1fd9e9",
+    "res://assets/frontage_r24/tyre_contact.png": "ec2133beae7a3dec76ce298de9862c7ea116d05540ce9d84e36eadd9363e4627",
+    "res://assets/lane_r20/rinse.wav": "8674dce3de89f536a8d519dd21223164a327c91e574f216fad88db91ab74f1bf",
+    "res://assets/lane_r20/rinse_fixture.json": "8a0f267946522fd59fe99b298e18e6a4e1e4b95d1a3728bb4a73e4636fa2ff1a",
+    "res://assets/lane_r20/tree_seats.json": "060f2507ab6997cdc5cddc2d3b5a9eefdbd4b199b88466318eb6a983fd73a0e6",
+    "res://assets/river_r22/shore_masks.png": "8d02149256183b79a12328056618abc8b526f079c540b7a6fcb276cccd1d7cdd",
+    "res://scripts/block_r23.gd": "5a0ff07624d2dde0dbc73a907449fc1f631b806283fb1a933298614757658563",
+    "res://scripts/counter_condiments.gd": "fa08ffe36271c3ae1db3ab206bbc9b05c74d84764b0c0d2fcd3d671824c4e803",
+    "res://scripts/district_r21.gd": "0db44aa84d164a723d53ef96f62904f4c5a76a69546d0fec96cbb106678a9f7a",
+    "res://scripts/explorer.gd": "135a55984cca992494f66561f99ad3e2ed7df926d6d4caf1035231a153815892",
+    "res://scripts/frontage_r24.gd": "ebd12cab88ce40a1680b5d41dea50a848c08773b0624672a85d00dd012ac7471",
+    "res://scripts/gameplay.gd": "4379b58c124fd90ec94850c7d004653ed5bff7881837622a3f6366c3f9a52b2b",
+    "res://scripts/main.gd": "605cb2e44ef1cd6fd458b311bb9d2674d5b0d595cd3b4a3785ca1803636fa95a",
+    "res://scripts/meter_detail_lod.gd": "2175ca3919c3728ef1db2fc7f8710ad1f39e15aa504306e25ae322e8448d45b3",
+    "res://scripts/qa_lane_r20.gd": "18f87f9f26eddd78d05dc617465ff5c4aac399b25eafc1c7cd2aec4417f5b40a",
+    "res://scripts/rinse_tap.gd": "a14c99c56d463b5fb690153a3e53c735623ac2eb09efe408e686efb99bba5fe9",
+    "res://scripts/river_r22.gd": "584019e0ea8ae7f6013c85e233cc2db8f552006cf35a73b57b210edfb70060e6",
+    "res://scripts/roofs_r22.gd": "f0e8b58d18e99148e3128026f69a9e4d3c45dcf50b07b19cab678a64d23c06ad",
+    "res://scripts/scooter_controller.gd": "4393dbab0f3b7f0017962469dc067323ade7705def2d78b64fee1ba7a1047c1e",
+    "res://scripts/shopkeeper.gd": "b34f9b070efae4b0c4a5c619104e782b277b2482d31e4eaf25f3e1359052b5a8",
+    "res://scripts/shopkeeper_attention.gd": "b36275222a35552763acdc27f60687edc2e96a7e52560889480d709d2aa8c656",
+    "res://scripts/street_detail_r19.gd": "8dc39303ddfca91279a8c940439b1322526c406b823b324a8c9b099e81a469a0",
+    "res://scripts/takeaway_bag.gd": "f53ed8a685fccfbdd767c458dbef25cf85df1f33a5b7b3d3e4b5c90059df52a0",
+    "res://scripts/upper_lane_r20.gd": "0c61b1b914ad1f8d1ba0fbfb27889d1426d6635340d0867f62feda76d4f8d56c",
+    "res://shaders/breakfast_canvas_r22.gdshader": "2c79d2d0b0fb203bf4e343ea7bfc505d17eb4912e4c965330339cfcb1771ab4a",
+    "res://shaders/canopy_r21.gdshader": "8a02e64842c2b61ae025da990f7c1d7037dd3f24c338de4159d1eb895d596bab",
+    "res://shaders/exterior_r21.gdshader": "3b6a8584822522c97c527ea72fd9b33d31441343de73b4b5d89f0640b7755512",
+    "res://shaders/frontage_canvas_r24.gdshader": "05a4855a2ded86e0d9b972d8b3836657bedbb93268add08cdf16f64354d8feb5",
+    "res://shaders/frontage_surface_r24.gdshader": "bd85a6e4c69f4bc52ab0ab43af5894bd2843b3556a74d122acad3b9a84bf79bd",
+    "res://shaders/hanging_cotton_r20.gdshader": "9d48788f6d3b3beffde16f0f5a94c8d99eac36fa8a9c00950c5116c97c208754",
+    "res://shaders/paving_r21.gdshader": "81bb72e0ab502c8a6e737fb20cafdc549da4e2bd5bf90fdaec72b75767b5fe2e",
+    "res://shaders/rinse_water.gdshader": "1a1c4d8f5d478384ae1cdec390d94903b83adf78096bc050116eee3354fee277",
+    "res://shaders/river_foliage_r22.gdshader": "625e26697fc1f7c0a7900774572b024157fdfb072e45b46207655130258c5391",
+    "res://shaders/river_r22.gdshader": "b44464750600087424a996e73d6cbf26891f2367df9f47ad6add66c0fea4cd79",
+    "res://shaders/riverbank_r22.gdshader": "71572bdd1e25f2d3cc3389eb72aad132cda52e7f5084cba4722ea467e6a47148",
+    "res://shaders/sky_visibility_r20.gdshaderinc": "14a770eab2dc29951adb2d5c9a17b4121b9a5bbf0e74d31e48743b8828985b7d",
+    "res://shaders/stall_enamel_r24.gdshader": "047d7175d2cf71e4c1a3f18eb1860027102f27e897f8d0682d9de86296c02f5b",
+    "res://shaders/street_surface_r19.gdshader": "f091b47b5bcc69ce5884c0f1fe709c73a8e4ac09156e1fb86054f22c681db0bb",
+    "res://shaders/worn_rail_r21.gdshader": "14fe938ef6c6874fa67680e154f445eda0122976eb478dd5b3282417f5ada7c7"
+  },
+  "installation_entries_checked": 37,
+  "geometry": {
+    "blender": "4.3.2",
+    "stair_contacts": 18,
+    "bridge_sections": 49,
+    "ramp_max_grade": 0.0989781521668123
+  },
+  "ground_contact": {
+    "full_route_wheel_samples": 2128,
+    "full_route_peak_m": 0.0190591812133789,
+    "live_frames": 2520,
+    "live_wheels": 948,
+    "live_peak_m": 0.025181770324707,
+    "parked_wheel_peak_m": 0.0182304382324219
+  },
+  "walk_m": {
+    "walk": 62.3911873279139,
+    "corner_walk": 96.8197913169861,
+    "corner_walk_visual": 96.8618429005146
+  },
+  "checks_passed": {
+    "block_test": 8,
+    "smoke": 174,
+    "survey": 283,
+    "delivery_end_to_end": 11
+  },
+  "reports_sha256": {
+    "walk.json": "634abb90a05aa67f0347741ce35bd20cded9caf291d0e54a2f98e8aaf321c353",
+    "corner_walk.json": "a82fc59c0e523ad056ad3eb2d4b6cfa8b4400ccabecf07b77f501981811b009d",
+    "corner_walk_visual.json": "c8a44e480ff456f214560039b6cd7c1225266a838217dea020c80c72ce26b526",
+    "traffic.json": "3972dbffdf0884925529b8a03bd2e4f24c4cbb850fb16cc83bcfa1dfd0886813",
+    "traffic_cameras.json": "bde24a9bf737807db0f2f7abda2b124d539209e8f449eb90e748de1a213b9849",
+    "block_test.json": "0e8f99bcc6886d3d89819b6fa0f49f273a1f190e68f7e4fde55c8d519b3c7139",
+    "smoke.json": "4a24820997eecfdca1847db8d93f99b9a5de508b7106693e7ad3f57c758619b6",
+    "survey.json": "12910fb4be1a1cb93dce693775243af19a6ff6f89529798813b2a418885dabf4",
+    "delivery_end_to_end.json": "c3cc3102cb7b9a67c0f3ffe0497abbe8f9d84d80dfecf01dc9a394eef9905408",
+    "native_1080.json": "8f971da30c7bd36d6b68d607ba3f8260d2e1b73518ac239e3f901e5e42fe6d95",
+    "captures/capture_manifest.json": "551c24600dbeba1d4cdf935655d527260a6af49edad736bf710c302d5d72760f",
+    "defect_views/capture_manifest.json": "48d885bb5c12f37e162996b3f794ccc9c256e9ffc0fc31f740f85dc6d1d00f4c"
+  },
+  "images_sha256": {
+    "1080_r23_main_road.png": "7889349385d8ab6f9c3602f687f1fe302cdba26ada540a1dd0a13d93e144fea0",
+    "1080_r24_counter.png": "29017dabfc12d2c49a3672e7cd8f09b89d1181ade97d1d6784dc1fcd73d81618",
+    "1080_r24_court.png": "9241b6855dab8a254153871123df1f5f91d87d3091045890b68dc42210fa2386",
+    "1080_r24_verge.png": "26f1b8d1ade53870dec47469c5ffb1596edf4d6089cf0a41cbaf75ab3060336e",
+    "1080_r24_viaduct.png": "f4ac69c4ead9ff110d37d41a2a631057b5eb4bb23de4a58978607bae585159f5",
+    "beneath_bridge.png": "cada4cf814b0c73cac26082d5b23ad2013fbc887e5dca870ed53c1dac6eb5806",
+    "captures/godot_r23_main_road.png": "141a6cf8e820471cf8fcb7f67bd729a112d9e4d13f5ab08df50ded86c3ed7c79",
+    "captures/godot_r23_street_support.png": "f773829496ff5b0643d7b4d70a5e15565782b60305599404671dd6e81bf1157d",
+    "captures/godot_r24_counter.png": "94710650a726b6bab2be333942c24b05f3274dd0f545d58f8ae2372280ca1eec",
+    "captures/godot_r24_court.png": "2bb63aebc9776f71249a2fc37e3c3278a2bbebef7c236dc1215c9667502bc5a2",
+    "captures/godot_r24_junction.png": "dd9687c22ca6ea1c185d20fb35292b7a782d2ace8402c1f26f959a3937e87460",
+    "captures/godot_r24_repair.png": "a1f712809163a6efd19f4553e28a66833e77b37c8dc7cf7b211400cd260addac",
+    "captures/godot_r24_stairs.png": "81b77335c168e5ee9c38f32f8d0f9581b409e2dbd8089349b01aa5ad9e7272ac",
+    "captures/godot_r24_stall.png": "88f145993132eb89cad04f5e672b2b437ba9359e75ec523c0957f4795fabcd9c",
+    "captures/godot_r24_verge.png": "a020d0de5a9c84a3862b4018b9b9d085b2f5d7d3508709fbd2057ea7dbc2b63f",
+    "captures/godot_r24_viaduct.png": "324d686c9574940de09b965961f485c57dd1c9d45d27f38d70edd497c12ba736",
+    "corner_walk_02.png": "431d941ffa6304399351239303369e234414b7d287c99f3a94184f8f34f3b934",
+    "corner_walk_05.png": "df89ca57fc994b8df38bcf00d78449b0a5b34baea3ed978646df0977629049b2",
+    "corner_walk_09.png": "072c748ae6beabbecd6a5a6063cbd9e1243ddc3d8d2d6b6f03756e7a98272521",
+    "corner_walk_12.png": "c55b72720381c613d0ed4a0acd68fbdad15cf5da5316ff0aea4056a94539f223",
+    "corner_walk_19.png": "f6c2dd54179ca03ee86acb47d33830b0181cf549c95a8dd172113eb9323860d2",
+    "corner_walk_22.png": "40c76a18e0f04b79076d418bdc000efdeccc896879bc433f08ca1ed139419b7c",
+    "curb.png": "5af55f428e3a44ecbdfacf42f5c47cb9d463696d234ef4dcb72a356fecfaa06d",
+    "defect_views/godot_r23_brick.png": "7efbf175b43f954a61e5ef22499447c44384d988e496451a7ad3b900a747fdf7",
+    "defect_views/godot_r23_court_bench.png": "316264a821349bb29368481780662af4f4b648fba1b9a3e1d010e2d9507ada79",
+    "defect_views/godot_r23_garden.png": "ad4787c13ba1a1d8b949e07157ac3327e8266ced762ca1b92e5355af00b784ca",
+    "defect_views/godot_r23_laundry.png": "8247edd7dc537d457b7e8c276f8e2e405ffbd4a28c66e25d3eb23045c5937a74",
+    "defect_views/godot_r23_shop_window.png": "9abbf86226323040391ac26c17d6d8b13c988799b2fd9e4f0113bc67e593fb12",
+    "defect_views/godot_r23_shutter.png": "b5b638ef436ca4a4ef0fed3f6b0a9fdba30686adc787aa8fa83f037b94519edc",
+    "defect_views/godot_r23_street_support.png": "b3c88cbd1c95c6161a250ac98ea0db88631e909165a74e3f1cf72e5bf0c3b9e2",
+    "defect_views/七处玩家视角复查.jpg": "998f58c926b6e875f908a2aa3d8cb5506f5db5ffcdd3241f412ee66dfc74ae73",
+    "junction.png": "e75446d37de7a40504ad223e05cf4f005eded4b447f4fc030006e915b95aebb2",
+    "街角往返实走.jpg": "ebcd5c8e32939d8d344e530a9ff7b0a2f713ba171c997b20f613e1444094f09c",
+    "路口同机位对照.jpg": "607cea2e5f54e3f7b41b0bcb1b30310c05f9e6575775ebe6059607ec9c0b5fb3"
+  },
+  "native_1080": {
+    "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "warmup_per_view": 90,
+    "frames_per_view": 240,
+    "views": [
+      {
+        "view": "r23_main_road",
+        "before_gpu_p50_ms": 20.7689990997314,
+        "after_gpu_p50_ms": 21.1989994049072,
+        "after_gpu_p95_ms": 22.871000289917
+      },
+      {
+        "view": "r24_counter",
+        "before_gpu_p50_ms": 24.8139991760254,
+        "after_gpu_p50_ms": 27.2430000305176,
+        "after_gpu_p95_ms": 29.8659992218018
+      },
+      {
+        "view": "r24_court",
+        "before_gpu_p50_ms": 20.2329998016357,
+        "after_gpu_p50_ms": 21.3540000915527,
+        "after_gpu_p95_ms": 23.8139991760254
+      },
+      {
+        "view": "r24_viaduct",
+        "before_gpu_p50_ms": 4.64699983596802,
+        "after_gpu_p50_ms": 4.55999994277954,
+        "after_gpu_p95_ms": 5.77600002288818
+      },
+      {
+        "view": "r24_verge",
+        "before_gpu_p50_ms": 9.95699977874756,
+        "after_gpu_p50_ms": 9.9980001449585,
+        "after_gpu_p95_ms": 11.5389995574951
+      }
+    ]
+  },
+  "baseline_comparison": "verification_r24/traffic08_full (R24 build 08, same camera setup)",
+  "visual_limits": [
+    "Sparse foot traffic on the long approach",
+    "Plain vehicle glazing and wheel arches",
+    "Untested interiors and frontage outside these walks",
+    "Street-level image quality remains under review"
+  ]
+}

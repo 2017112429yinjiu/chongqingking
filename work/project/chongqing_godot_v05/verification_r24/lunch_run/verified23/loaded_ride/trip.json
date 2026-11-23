@@ -1,0 +1,193 @@
+[
+	{
+		"detail": "",
+		"name": "practice_at_real_counter",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "manifest_before_accept",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "frame_01_offer",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "declining_has_no_charge",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "batch_accepted",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "paid_trip_uses_walking_and_riding",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "kitchen_not_ready",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "first_pickup_201",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "third_bag_stays_on_counter",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "frame_02_counter_full",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "reading_tickets_keeps_each_bag_in_its_hand",
+		"pass": true
+	},
+	{
+		"detail": {
+			"distance_m": 9.65919229388237,
+			"end": "(-24.38529, 12.44131, 50.53924)",
+			"goals": 4,
+			"max_frame_displacement_m": 0.0732093453407288,
+			"name": "approach_own_scooter_with_two",
+			"pass": true,
+			"reached": 4,
+			"stall_contacts": []
+		},
+		"name": "approach_own_scooter_with_two",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "both_meals_board",
+		"pass": true
+	},
+	{
+		"detail": [
+			"(0.0, 0.866001, 0.479996)",
+			"(0.0, 0.866001, 0.68)"
+		],
+		"name": "two_closed_lid_slots",
+		"pass": true
+	},
+	{
+		"detail": {
+			"end": "(-25.70566, 15.9085, 25.76871)",
+			"hits": {
+				"/root/ChongqingDistrict/City/COL_Terrain_200m_yard_concrete/CQ_StaticCollision": "(-0.02671, 0.989227, 0.143933)"
+			},
+			"metres": 24.9707508087158,
+			"obstacle": {
+
+			},
+			"start": "(-25.25, 12.48882, 50.5)",
+			"top_m_s": 3.94000000000002
+		},
+		"name": "ridden_distance",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "both_meals_leave_with_rider",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "frame_both_meals_after_parking",
+		"pass": true
+	},
+	{
+		"detail": {
+			"distance_m": 3.97697500605136,
+			"end": "(-25.26805, 16.42507, 21.53583)",
+			"goals": 1,
+			"max_frame_displacement_m": 0.0696734637022018,
+			"name": "park_to_court_lane",
+			"pass": true,
+			"reached": 1,
+			"stall_contacts": []
+		},
+		"name": "park_to_court_lane",
+		"pass": true
+	},
+	{
+		"detail": {
+			"distance_m": 13.1477819439024,
+			"end": "(-38.2163, 16.38934, 19.21367)",
+			"goals": 2,
+			"max_frame_displacement_m": 0.0716193988919258,
+			"name": "reach_court_button",
+			"pass": true,
+			"reached": 2,
+			"stall_contacts": []
+		},
+		"name": "reach_court_button",
+		"pass": true
+	},
+	{
+		"detail": {
+			"pos": "(-38.2163, 16.38934, 19.21367)",
+			"prompt": "球友：杂酱是我的，放甲位，我打完这球就来。"
+		},
+		"name": "court_recipient_confirms",
+		"pass": true
+	},
+	{
+		"detail": {
+			"distance_m": 0.739985092077404,
+			"end": "(-37.1745, 16.42977, 19.10143)",
+			"goals": 1,
+			"max_frame_displacement_m": 0.0699460878968239,
+			"name": "try_bay_B",
+			"pass": true,
+			"reached": 1,
+			"stall_contacts": []
+		},
+		"name": "try_bay_B",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "bay_B_refuses_A",
+		"pass": true
+	},
+	{
+		"detail": {
+			"distance_m": 0.527689538896084,
+			"end": "(-38.01491, 16.41182, 19.06688)",
+			"goals": 1,
+			"max_frame_displacement_m": 0.0701698139309883,
+			"name": "reach_bay_A",
+			"pass": true,
+			"reached": 1,
+			"stall_contacts": []
+		},
+		"name": "reach_bay_A",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "frame_03_court_rack",
+		"pass": true
+	},
+	{
+		"detail": {
+			"p": "(-38.01491, 16.41182, 19.06688)",
+			"prompt": "008 已送达 · 准时 +9 元",
+			"t": 42.4499999999989
+		},
+		"name": "court_parcel_released",
+		"pass": true
+	}
+]

@@ -1,0 +1,38 @@
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+
+CQ_INTERIOR_LIGHTS {"interior_candidate_count":9,"interior_lights":[{"energy":0.239999994635582,"name":"B_809889627_blue_apartments_room_lamp","position":[82.391,28.184,-13.942],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_809889628_clinic_room_lamp","position":[15.883,31.615,-53.5],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_809889629_artisan_room_lamp","position":[47.205,34.774,-72.476],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_1335306665_civic_room_lamp","position":[-24.373,26.707,-30.861],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_1335306666_heritage_room_lamp","position":[-50.162,26.057,-36.511],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_1335306667_brick_home_room_lamp","position":[-62.888,23.169,-17.653],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_1413081560_old_tile_room_lamp","position":[-33.476,29.533,-53.924],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_A03_blue_apartments_room_lamp","position":[-91.543,16.767,15.033],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_A04_courtyard_home_room_lamp","position":[-55.09,17.775,14.621],"range":2.70000004768372,"shadows":false}],"street_lights":22}
+CQ_BRANCH_OVERRIDE {"baked_primary":true,"imported_uv1_offset":[0.0,0.0,0.0],"imported_uv1_scale":[1.0,1.0,1.0],"imported_uv2_offset":[0.0,0.0,0.0],"imported_uv2_scale":[1.0,1.0,1.0],"normal_and_pbr_textures":false,"offset":[0.0,0.0],"scale":[1.0,1.0],"texcoord":0,"texture":"res://assets/chongqing_district_island_tree_01_branches_diff_2k.jpg"}
+CQ_BRANCH_OVERRIDE {"baked_primary":true,"imported_uv1_offset":[0.0,0.0,0.0],"imported_uv1_scale":[1.0,1.0,1.0],"imported_uv2_offset":[0.0,0.0,0.0],"imported_uv2_scale":[1.0,1.0,1.0],"normal_and_pbr_textures":false,"offset":[0.0,0.0],"scale":[1.0,1.0],"texcoord":0,"texture":"res://assets/chongqing_district_tree_small_02_branch_diff_2k.jpg"}
+CQ_STREET_USE { "dressed": 2, "paving": 56, "facades": 83, "asphalt": 15, "workday": true, "resident_pots": 2, "furniture_volumes": 2 }
+CQ_NEIGHBORHOOD {"missing":[],"plants":35,"removed":["COL_Handrails_Central_stair_lane_painted_metal","COL_Handrails_West_residential_link_painted_metal","Court_entry_rails_frame","Utility_cables_dark","COL_R20_Returned_handrail_steel","COL_R20_Returned_handrail_rail_enamel","COL_R20_Returned_handrail_pin","COL_R20_Returned_handrail_iron","Resident_waste_13_bin_00","Resident_waste_13_bin_01","Resident_waste_13_bin_02","Resident_waste_13_bin_03","Resident_waste_13_bagA_00","Resident_waste_13_bagB_00","Resident_waste_13_crate_00"],"shifted":87,"spans":4,"tree_distance_meshes":288,"trunks":5}
+CQ_READY {"collisions":{"bodies":276,"by_kind":{"refined_structure":276},"created":276,"failed":[],"props":{"method":"deduplicated root-aligned cylinders; foliage excluded","trunks_and_posts":57},"reused":0,"skipped_meshes":3604,"triangles":476329},"engine":"4.6.3-stable (official)","renderer":"forward_plus","spawn":[20.0,9.4995,76.0]}
+LAND 18 166 166 167 167 168 168 174 174 172 172   X 173 174 174 175 175 176 176 186 186 186 186 186 186 
+LAND 20 167 167 168 168 169 169 170 170 169 169   X 170 171 171 172 172 173   X   X 186 186 186 186 186 
+LAND 22 162 163 163 164 164 165   X 169 166 166   X 167 168 168 169 170 170 170 171   # 186 186 186 186 
+LAND 24 159 160 160 161 161 162 165 165 163 164   X   X 165 166 166 167 167 168 168 169 169   X 186 186 
+LAND 26 157 157 158 158 158 159 162 162 160 161   X 162 162 163 163 164 164 164 165 165 166 166   X 186 
+LAND 28   X   #   X 155 156   X 159   X 157   X   X 159 159 160 160 161 161 162 162 162 163 163 164 164 
+LAND 30 151 152   #   # 153   X   X   X   X 155   X 156 156 157 157 158 158 159 159 159 160 160 161 161 
+LAND 32 148 149   X 141 151   X 154   X 156 152 153   #   #   #   X   #   X   #   X 156 157 157 158 158 
+LAND 34 146 146   # 140   X   X 151   X   X 149 150 150 151 148   X 148 152 153   X 153 154 154 155 155 
+LAND 36 143 143   X 142 145   X 147   X 146 147 147 175 173 173 149 149 149 150   X 150 151 151 152 152 
+LAND 38 140 141   # 141 142   X 146   X 143 144 144 175 173 173 147 147 147 147   X 147 148 148 149 149 
+LAND 40   X 167   X 139 139   X 142   X 141 141 141   X 147 147 147 147 147 147   X 144 145 145 145 146 
+LAND 42 164 167   X 136 136 138 139 138 138 138 138 147 147 147 147 147 147 147   # 141 142 142 142 143 
+LAND 44   X 167   X 133 133   X   X   X 139 135   X 147 147 174   X 147 147 147   X 138 139 139 139 140 
+LAND 46 138 138   X 130 131   X 134   X 136 134   X 147 147 174   X 147 147 147   # 135 136 136 136 137 
+LAND 48 138 138   X 128 128   X 131 130 129 129 130 147 147 147 147 147 147 147   X 132 133 133 133 134 
+LAND 50 124 124 124 125 125   X 128   X 126 127 127 127 127 128 128 128 129 129 129 129 130 130 130 130 
+LAND 52 121 121 122 122 122 123   X 125 125 123 122 124 125 125 125 125 126 126 126 126   X   X 127 128 
+LAND 54 118 119 119 119 119 120 122 125 125 123 123 121 121 119 121 122 123 123 123 123 124 124 124 124 
+LAND 56 116 116 117 116 115 116 116 117   #   X 123 121 121 120 120 118 118 118 120 120 121 121 121 121 
+LAND 58 116 116 117 116 116 116 116 117 116 116 116 116 117 120 120 118 118 117 117 117 116 118 118 118 
+LAND 60   X   X 110   X 111 111 112 112   X   X   X 116 116 115 115 115   X 117 117 115 115 114 115 115 
+LAND 62 187 187 187 187 187 187 187 109   X 116 116 116 116 116   X   X   X   X 113 114 114 114 112 112 
+LAND 64 113 113 113 142 142 141   # 106   # 116 116 116 116 116   X 144 144 116   X   X 111 112 111 111 
+LAND 66 113 113 113   X 139 113   # 103   X 116 116 116 116 116 142 142 116 116   X 105 106 107 109 109 
+LAND 68 113 113 140   X 140 113   # 100   X 116 116 116 116 116 116   X 116 116 102 102 103 103 103 103 
+LAND 70 113 113 140   X   X 113   #  97   X 116 116 116 116 116 116 116 116 116  99  99 100 100 100 100 
+LAND 72 113 113 113 113 113 113 190  95  95   X   X  95  95   X   X   X   X   X  96  96  96  97  97  97 
+LAND 74  90  90   X   X   X  91  92  92  92   X  92   X  92  93  93  93  93  93  93  93  94  94  94  94 
+LAND 76  88  88  88  88  88   X  87  87  88  88  89  89  90  90  90  90  90  90  90  90  91  91  91  91 

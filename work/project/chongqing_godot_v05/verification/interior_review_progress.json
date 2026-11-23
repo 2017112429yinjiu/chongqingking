@@ -1,0 +1,604 @@
+{
+  "schema_version": 1,
+  "revision": 15,
+  "status": "COMPLETE_WITH_RECORDED_LIMITS",
+  "scene_sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223",
+  "capture_started_at_utc": "2026-11-19T15:33:30.409701+00:00",
+  "expected_views": [
+    "overview",
+    "street_entry",
+    "noodle_corner",
+    "central_steps",
+    "west_lane",
+    "community_court",
+    "narrow_passage",
+    "upper_houses",
+    "east_gallery",
+    "residential_road",
+    "upper_street",
+    "roofscape",
+    "community_front",
+    "residential_entry",
+    "window_courtyard",
+    "tea_interior",
+    "window_living",
+    "window_north",
+    "noodle_interior",
+    "window_reading",
+    "window_dining",
+    "planting_detail"
+  ],
+  "reviewed_count": 22,
+  "complete_capture_manifest_verified": true,
+  "runtime_lights_from_current_log": {
+    "candidate_count": 9,
+    "enabled_count": 9,
+    "street_lights": 22,
+    "log": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/native_run.log",
+    "log_sha256": "652911c318a1c06ff99ac591a2e6790f7a09ad354014fb360f24f2faa201c645",
+    "line": 4,
+    "complete_manifest_agrees_exactly": true,
+    "acceptance_note": "Fresh complete R15 log and capture_manifest practical_profile agree; historical R10 profile note is not used as an actual count."
+  },
+  "records": [
+    {
+      "view": "overview",
+      "file": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_overview.png",
+      "sha256": "b9ed77118558976f11265bd78658943d788797a14103969c59655f74d17f2f75",
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:36:28.594079+00:00",
+      "scope": "高空全街区，窗内家具不可辨；仅核视图范围，不构成室内陈设验收。",
+      "observations_zh": "已实际查看本轮原图。建筑外壳与道路层次可见；此距离无法判断窗内小物、桌椅脚部或房间用途。背景高层与外部平铺地表仍有重复、模型化的观感。",
+      "blocking_interior_defect_observed": false,
+      "interior_detail_visibility": "not_observable_at_this_distance",
+      "capture_title_zh": "全街区 · 南向北",
+      "capture_position_godot": [
+        90.0,
+        230.0,
+        120.0
+      ],
+      "capture_target_godot": [
+        0.0,
+        20.0,
+        -5.0
+      ],
+      "capture_fov": 53.0,
+      "fresh_batch_file_mtime_utc": "2026-11-19T15:35:37.172047+00:00"
+    },
+    {
+      "view": "street_entry",
+      "file": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_street_entry.png",
+      "sha256": "6a789f3d20a117aa5ccb4e445e412a9c6bfb8a9c2fe34df2f2d6e3b63e957666",
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:38:04.380621+00:00",
+      "scope": "入口坡道与多层立面，室内只占少量像素。",
+      "observations_zh": "已实际查看。窗洞、玻璃与深色腔体可辨，少数低层窗有小物轮廓；此宽景不足以核桌椅脚部或房间用途。未见此前北楼整扇白墙挡窗的同类明显遮挡，但北楼专属近景仍待看。",
+      "blocking_interior_defect_observed": false,
+      "interior_detail_visibility": "limited_wide_facade",
+      "capture_title_zh": "山城巷街口",
+      "capture_position_godot": [
+        24.0,
+        10.594,
+        77.0
+      ],
+      "capture_target_godot": [
+        1.0,
+        14.8245,
+        63.0
+      ],
+      "capture_fov": 60.0,
+      "fresh_batch_file_mtime_utc": "2026-11-19T15:36:18.409386+00:00"
+    },
+    {
+      "view": "noodle_corner",
+      "file": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_noodle_corner.png",
+      "sha256": "b35fce373657bbce658753d7fec62749db7d1e1d3b5eeeb81ae3fc6eaa05ad68",
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:38:04.387875+00:00",
+      "scope": "面馆完整店口与部分二层窗。",
+      "observations_zh": "已实际查看。操作台、汤锅、层板瓶杯、右侧小圆桌与塑料椅均能辨认，门口到后墙有真实进深。店内桌椅未见明显穿插；脚部局部阴影仍浅，真实接地另由当前GLB审计支持。杯瓶排列、墙面与吧台仍偏整齐、简化，不能据此称照片级。上层窗内书脊/小物可辨但地板在窗台以下。",
+      "blocking_interior_defect_observed": false,
+      "interior_detail_visibility": "shop_interior_readable",
+      "capture_title_zh": "小面馆与下层街面",
+      "capture_position_godot": [
+        -24.0,
+        13.812,
+        53.5
+      ],
+      "capture_target_godot": [
+        -26.5,
+        14.6,
+        62.05
+      ],
+      "capture_fov": 64.0,
+      "fresh_batch_file_mtime_utc": "2026-11-19T15:36:34.100644+00:00"
+    },
+    {
+      "view": "central_steps",
+      "file": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_central_steps.png",
+      "sha256": "3d196487db891e29eec199c9055185115cc3b938e86a99466579b6bffc257d8c",
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:40:40.859862+00:00",
+      "scope": "中央梯坎两侧店口及楼上窗。",
+      "observations_zh": "已实际查看。左侧餐馆可辨吧台、茶具、塑料椅与吊灯；右侧文印店可辨纸台/设备和店内空间，地面及部分脚部被街边物件遮住，不能凭本图验脚底。未见横穿门洞或相邻房陈设伸出的明显问题。远窗仍以墙、窗帘和少量小物为主。",
+      "blocking_interior_defect_observed": false,
+      "interior_detail_visibility": "partial_shop_interiors",
+      "capture_title_zh": "中央梯坎与临街住家",
+      "capture_position_godot": [
+        -20.0,
+        14.032,
+        52.0
+      ],
+      "capture_target_godot": [
+        -20.0,
+        20.2251,
+        25.0
+      ],
+      "capture_fov": 59.0,
+      "fresh_batch_file_mtime_utc": "2026-11-19T15:37:40.173648+00:00"
+    },
+    {
+      "view": "west_lane",
+      "file": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_west_lane.png",
+      "sha256": "8bdef1e90412c216209cae1fde6cca717a186ab8c907da2742f1d65a4ec9c184",
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:40:40.874013+00:00",
+      "scope": "沿坡斜看多层住宅窗；最近窗的侧墙与帘布占主画面。",
+      "observations_zh": "已实际查看。窗框、可开启窗扇及腔体可辨，但近左窗主要呈灰色侧墙/帘布，正常斜视角下不能识别家具或房间用途，仍显空和重复。此项是保留的陈设可读性限制，不能据本图称所有街窗已达到丰富生活感。未见新的明确家具穿插。",
+      "blocking_interior_defect_observed": false,
+      "interior_detail_visibility": "oblique_room_walls_dominate",
+      "capture_title_zh": "西侧居民巷",
+      "capture_position_godot": [
+        -73.0,
+        15.385,
+        34.0
+      ],
+      "capture_target_godot": [
+        -77.0,
+        21.2493,
+        10.0
+      ],
+      "capture_fov": 61.0,
+      "fresh_batch_file_mtime_utc": "2026-11-19T15:38:14.367908+00:00"
+    },
+    {
+      "view": "community_court",
+      "file": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_community_court.png",
+      "sha256": "6370c794e480ad61d966c62269f6e41b51a85710fdf5f0b118083f7014628108",
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:40:40.881341+00:00",
+      "scope": "球场、周边住宅立面及远距离窗洞。",
+      "observations_zh": "已实际查看。右侧少量窗内有小物/书脊轮廓、帘布及明暗深度，但多数家具在此距离无法辨认；窗间重复感仍存在。本图不支持对桌椅脚部或全房布局作结论。未见窗洞被整片外墙错误封住的明显新情况。",
+      "blocking_interior_defect_observed": false,
+      "interior_detail_visibility": "limited_distant_windows",
+      "capture_title_zh": "社区球场与住宅",
+      "capture_position_godot": [
+        -20.0,
+        22.3,
+        19.0
+      ],
+      "capture_target_godot": [
+        -36.0,
+        23.5,
+        -4.0
+      ],
+      "capture_fov": 66.0,
+      "fresh_batch_file_mtime_utc": "2026-11-19T15:38:44.265858+00:00"
+    },
+    {
+      "view": "narrow_passage",
+      "file": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_narrow_passage.png",
+      "sha256": "d51fd931a9086ba38141b502148161cfeb8d8c8e2b47b81d867a0e03e4a6b448",
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:40:40.884155+00:00",
+      "scope": "狭巷紧贴窗户的正常斜视角。",
+      "observations_zh": "已实际查看。右侧窗有真实框、把手、侧墙、天花和帘布，但所见几乎全是灰色内墙/帘面，生活物件无法辨认，视觉仍空；这是当前版本透窗表现的明确局限。没有从该角度证实新的几何穿插，也不能将此图算作家具可读性通过证据。",
+      "blocking_interior_defect_observed": false,
+      "interior_detail_visibility": "oblique_room_walls_dominate",
+      "capture_title_zh": "上坡楼间通道",
+      "capture_position_godot": [
+        -35.5,
+        27.586,
+        -46.2
+      ],
+      "capture_target_godot": [
+        -30.6,
+        28.8952,
+        -54.6
+      ],
+      "capture_fov": 70.0,
+      "fresh_batch_file_mtime_utc": "2026-11-19T15:39:20.358170+00:00"
+    },
+    {
+      "view": "upper_houses",
+      "file": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_upper_houses.png",
+      "sha256": "2ab9e6c93c7faf7811b4cefeba8db75d12760f5c00d44d3a3f5d3492e92db072",
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:42:19.590546+00:00",
+      "scope": "坡上院落、远入口与近侧住宅窗。",
+      "observations_zh": "已实际查看。左侧个别窗有灯罩/小物轮廓，远处住宅入口可见门洞及内部明暗，但距离和窗台遮住大部分家具。室内陈设较稀，不能以此证明所有窗都有完整生活场景。未见新的明确整面封窗或穿插。",
+      "blocking_interior_defect_observed": false,
+      "interior_detail_visibility": "limited_wide_windows",
+      "capture_title_zh": "上层院落回望",
+      "capture_position_godot": [
+        -12.0,
+        30.922,
+        -63.0
+      ],
+      "capture_target_godot": [
+        -43.0,
+        32.6,
+        -65.0
+      ],
+      "capture_fov": 63.0,
+      "fresh_batch_file_mtime_utc": "2026-11-19T15:39:47.688995+00:00"
+    },
+    {
+      "view": "east_gallery",
+      "file": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_east_gallery.png",
+      "sha256": "b699cbe4bdf5003d275ea45ac5b0daf3845dba9ab6c63d8b987e5cd9dc8882e5",
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:42:19.605775+00:00",
+      "scope": "木窗、灰砖院落立面的中距离正侧视。",
+      "observations_zh": "已实际查看。低层多个木窗能看到盆栽/花枝或小灯轮廓，帘布、窗框及房间暗部有分层，未见旧裸方块堆叠的明显近景表现。多数家具仍低于窗台或太小，房间完整布局、椅脚不能从本图判断。窗间布置的重复与简化仍可感到。",
+      "blocking_interior_defect_observed": false,
+      "interior_detail_visibility": "some_small_props_readable",
+      "capture_title_zh": "东侧砖墙坡巷",
+      "capture_position_godot": [
+        50.0,
+        15.552,
+        49.0
+      ],
+      "capture_target_godot": [
+        65.0,
+        20.5696,
+        32.0
+      ],
+      "capture_fov": 61.0,
+      "fresh_batch_file_mtime_utc": "2026-11-19T15:40:51.504515+00:00"
+    },
+    {
+      "view": "residential_road",
+      "file": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_residential_road.png",
+      "sha256": "485140ec6635ac0b9a29857d41d0891da561a0cd5147d347284678b339b0de27",
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:42:19.629655+00:00",
+      "scope": "树下道路与住宅远立面。",
+      "observations_zh": "已实际查看。近左住宅窗内少量盆/灯轮廓可辨，前方楼体低层窗洞未见明显被外部柜箱遮满；此宽景的主要证据是街面关系，远窗的小物和脚部不能核验。背景高层立面仍高度重复，属于环境美术限制。",
+      "blocking_interior_defect_observed": false,
+      "interior_detail_visibility": "limited_distant_windows",
+      "capture_title_zh": "东侧居民道路",
+      "capture_position_godot": [
+        64.0,
+        28.982,
+        -34.0
+      ],
+      "capture_target_godot": [
+        65.0,
+        37.1868,
+        -67.0
+      ],
+      "capture_fov": 59.0,
+      "fresh_batch_file_mtime_utc": "2026-11-19T15:41:26.910836+00:00"
+    },
+    {
+      "view": "upper_street",
+      "file": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_upper_street.png",
+      "sha256": "45d7a73bfe56eead8ec835fb35abef41dd91e9929d67caefc0e93a5ffa196e69",
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:43:37.249239+00:00",
+      "scope": "上街沿街店面及右前木窗局部。",
+      "observations_zh": "已实际查看。右前窗内可辨层板、竖立书脊/小物、白色灯罩和有褶帘布，玻璃没有把这些细节盖成白面。高窗台及画面裁切遮住下半空间，不能由此核桌椅脚部。中部便利店卷帘关闭，其店内不在本图可见范围。",
+      "blocking_interior_defect_observed": false,
+      "interior_detail_visibility": "near_upper_props_readable_lower_room_hidden",
+      "capture_title_zh": "上层长街与店面",
+      "capture_position_godot": [
+        4.0,
+        33.664,
+        -80.0
+      ],
+      "capture_target_godot": [
+        28.0,
+        35.2031,
+        -67.0
+      ],
+      "capture_fov": 62.0,
+      "fresh_batch_file_mtime_utc": "2026-11-19T15:42:36.375552+00:00"
+    },
+    {
+      "view": "roofscape",
+      "file": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_roofscape.png",
+      "sha256": "4f1744fe98aad7b448cea27da06f0a12cfb1245b2504fc374296be65c2ae6fc1",
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:45:49.895188+00:00",
+      "scope": "屋面、球场与街区层级的高处视角。",
+      "observations_zh": "已实际查看。此图可核街区/屋面关系，窗内家具大多不可辨，不作室内小物、脚部或完整房间布局通过证据。远景高层与外部地表的简化、重复仍明显。",
+      "blocking_interior_defect_observed": false,
+      "interior_detail_visibility": "not_observable_at_this_distance",
+      "capture_title_zh": "台地、院落与屋顶",
+      "capture_position_godot": [
+        14.0,
+        64.0,
+        20.0
+      ],
+      "capture_target_godot": [
+        -31.0,
+        22.0,
+        -8.0
+      ],
+      "capture_fov": 59.0,
+      "fresh_batch_file_mtime_utc": "2026-11-19T15:43:17.689607+00:00"
+    },
+    {
+      "view": "community_front",
+      "file": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_community_front.png",
+      "sha256": "06b4f3cab71af9202154e9b472bf5bd343d0d3114596e855337e0e20895e5e47",
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:45:49.899097+00:00",
+      "scope": "社区楼前两面近窗与本轮修正的外部格栅。",
+      "observations_zh": "已实际查看。近窗多数仍主要见灰色侧墙/窗帘，生活物件较难辨认，不能称丰富真实室内。外部柜箱位于窗间实墙。两块可见格栅现沿坡面贴合，未见旧版整片浮起的明显空气间隙；全部格栅实际支持另有本轮GLB专项PASS，不以本图判断毫米值。未见新增室内穿插。",
+      "blocking_interior_defect_observed": false,
+      "interior_detail_visibility": "oblique_room_walls_dominate",
+      "capture_title_zh": "社区服务站",
+      "capture_position_godot": [
+        28.0,
+        23.559,
+        -4.0
+      ],
+      "capture_target_godot": [
+        13.0,
+        24.8043,
+        -11.0
+      ],
+      "capture_fov": 61.0,
+      "fresh_batch_file_mtime_utc": "2026-11-19T15:43:58.332771+00:00"
+    },
+    {
+      "view": "residential_entry",
+      "file": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_residential_entry.png",
+      "sha256": "763ebcc8d00f9ea02fd56d96805c041b8d3ac4636337999f452107f55e35e7b5",
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:45:49.902391+00:00",
+      "scope": "山城里小院住宅入口、首段楼梯与相邻窗。",
+      "observations_zh": "已实际查看。敞开门扇、门框、门厅顶灯及一段楼梯清楚可见；左右窗有帘布、盆栽/书脊及墙画等可辨小物。没有看到物件穿入门道或邻房壳。门厅后的空间仍是局部构造，不能称已建完整可游玩的住宅室内。",
+      "blocking_interior_defect_observed": false,
+      "interior_detail_visibility": "entry_and_selected_window_props_readable",
+      "capture_title_zh": "居民楼入口与墙脚",
+      "capture_position_godot": [
+        -43.0,
+        17.742,
+        22.0
+      ],
+      "capture_target_godot": [
+        -52.9,
+        18.85,
+        19.5
+      ],
+      "capture_fov": 64.0,
+      "fresh_batch_file_mtime_utc": "2026-11-19T15:44:20.902635+00:00"
+    },
+    {
+      "view": "window_courtyard",
+      "file": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_courtyard.png",
+      "sha256": "e4ef7900a8ba9660604f8862922ac763c0d41f50f8e5128da251c6c1c90ba343",
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:47:46.170555+00:00",
+      "scope": "共享转角家务房的正面透窗近景。",
+      "observations_zh": "已实际查看。圆盆内为空、没有旧版相邻家具穿入；水龙头、洗涤瓶、碟架上的立盘与杯、墙上毛巾、瓷砖背板及台面小碟均可辨，家务/清洗用途成立。窗框、帘布与顶侧墙分层清楚，玻璃没有盖住陈设。窗台遮住台下脚部/地板，不能从这张图逐脚验落地；上半墙仍偏空、帘褶较规则。",
+      "blocking_interior_defect_observed": false,
+      "interior_detail_visibility": "functional_wash_workspace_readable",
+      "capture_title_zh": "院落住家 · 家务间近景",
+      "capture_position_godot": [
+        5.53,
+        20.682,
+        10.302
+      ],
+      "capture_target_godot": [
+        7.6877,
+        20.5329,
+        11.5265
+      ],
+      "capture_fov": 64.0,
+      "fresh_batch_file_mtime_utc": "2026-11-19T15:45:08.308334+00:00"
+    },
+    {
+      "view": "tea_interior",
+      "file": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_tea_interior.png",
+      "sha256": "e62c61e4bf0524f750915c3d15bb36c8d43b189b8d2613f1e4169e401c0b3bd6",
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:47:46.173769+00:00",
+      "scope": "茶铺完整店内与主要家具脚部。",
+      "observations_zh": "已实际查看。双门木柜的门缝/台沿/细腿、圆桌、三腿凳、木椅曲线、茶壶杯具、盆栽及吊灯均能辨认，空间留有可用地面，未见家具互穿或显著被地面吞没。脚部接触阴影依然很弱，画面仍有轻微悬浮/陈列感；本轮真实GLB对茶柜、圆桌、凳及扫描椅对照均实测gap=0，不能用视觉猜测否定或替代该几何证据。后墙瓶杯按整齐重复网格排列，材质和生活杂物密度仍简化。",
+      "blocking_interior_defect_observed": false,
+      "interior_detail_visibility": "furniture_and_tea_function_readable_with_weak_contact_shadows",
+      "capture_title_zh": "巷口茶馆 · 门口看店内",
+      "capture_position_godot": [
+        79.578,
+        18.184,
+        37.251
+      ],
+      "capture_target_godot": [
+        75.9791,
+        17.9989,
+        35.3943
+      ],
+      "capture_fov": 66.0,
+      "fresh_batch_file_mtime_utc": "2026-11-19T15:46:19.921051+00:00"
+    },
+    {
+      "view": "window_living",
+      "file": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_living.png",
+      "sha256": "07c834d3a742e8408a8e5400d2299b22d596cf48b5c228eae55d5b411a377355",
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:56:17.226040+00:00",
+      "scope": "起居窗近景；椅背、落地灯、后墙与帘布。",
+      "observations_zh": "已实际查看。曲线木椅靠背、落地灯及其局部暖光、墙面小画和两侧帘布均可辨，玻璃保留了真实房间的前后层次，未见旧整块白墙封窗或家具穿墙。窗台遮住座面以下和脚部，不能从本图判断全部落地关系；后墙仍显空、陈设稀疏，窗帘褶皱较规则。",
+      "blocking_interior_defect_observed": false,
+      "interior_detail_visibility": "recognizable_chair_lamp_and_room_depth_feet_occluded",
+      "capture_title_zh": "坡道住家 · 深房与木椅近景",
+      "capture_position_godot": [
+        47.905,
+        34.957,
+        -76.373
+      ],
+      "capture_target_godot": [
+        47.9793,
+        35.0689,
+        -73.8927
+      ],
+      "capture_fov": 64.0,
+      "fresh_batch_file_mtime_utc": "2026-11-19T15:47:29.090796+00:00"
+    },
+    {
+      "view": "window_north",
+      "file": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_north.png",
+      "sha256": "530b220693b196bc36bd3c2c728f27bbb63e249890e8b8aef71c88381e439e09",
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:56:17.226040+00:00",
+      "scope": "北侧透明窗、实际层板陈设、窗下墙面与相邻入口。",
+      "observations_zh": "已实际查看。层板、杯与碗、不同书脊、陶盆绿植及瓶子透过玻璃可辨；旧背景实墙没有再封住窗口，橙色电表箱不再占据玻璃区域，窗框、双侧帘布及室内灰墙有真实前后关系。邻门能见楼梯片段。台下和脚部被窗台遮住；盆栽及器物造型仍简化，生活物件分布较整齐。",
+      "blocking_interior_defect_observed": false,
+      "interior_detail_visibility": "clear_window_and_recognizable_shelf_objects_utility_box_below_sill",
+      "capture_title_zh": "北侧住家 · 窗内生活近景",
+      "capture_position_godot": [
+        -23.878,
+        35.885,
+        -97.746
+      ],
+      "capture_target_godot": [
+        -21.4024,
+        35.9631,
+        -97.9171
+      ],
+      "capture_fov": 64.0,
+      "fresh_batch_file_mtime_utc": "2026-11-19T15:48:14.795612+00:00"
+    },
+    {
+      "view": "noodle_interior",
+      "file": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_noodle_interior.png",
+      "sha256": "e7b4797acee3471c5e40eee8ced7bb3852e9c9f4ee41062f05a7b917e84aad71",
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:56:17.226040+00:00",
+      "scope": "面馆入口完整店内；操作台、圆桌、塑料椅及可见脚部。",
+      "observations_zh": "已实际查看。汤锅带盖/把手、杯碗、茶壶、排烟罩、层板瓶杯、圆桌与塑料椅有可辨构造；柜前木条和开门框有厚度，入口与用餐侧留有地面空间。未见明显穿地、用具互穿或旧大方块占位物。桌椅脚部阴影仍弱，画面有简化陈列感；本轮实际GLB面馆桌脚gap=0，几何证据与阴影观感分别记录。",
+      "blocking_interior_defect_observed": false,
+      "interior_detail_visibility": "shop_function_and_furniture_readable_with_weak_contact_shadows",
+      "capture_title_zh": "小面馆 · 门口看店内",
+      "capture_position_godot": [
+        -24.29,
+        13.104,
+        59.3
+      ],
+      "capture_target_godot": [
+        -24.29,
+        12.6977,
+        63.35
+      ],
+      "capture_fov": 66.0,
+      "fresh_batch_file_mtime_utc": "2026-11-19T15:48:27.815793+00:00"
+    },
+    {
+      "view": "window_reading",
+      "file": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_reading.png",
+      "sha256": "aaac35e56abd81e6c91d884a27db00bf1097839525bed3205e6aee05434ea1f7",
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:56:17.226040+00:00",
+      "scope": "A04阅读角近景；木地板、书桌、台灯、木椅与层板书本。",
+      "observations_zh": "已实际查看。真实木地板已露出，旧亮灰地形覆盖/吞脚现象未再出现。书桌细腿、台灯底座/灯杆/灯罩、弯曲扶手木椅及书脊可辨，房间有前后深度。可见桌腿落到木地板位置；扫描椅最下端被窗台和取景下缘部分遮住，不能声称本图看清所有椅脚。本轮真实GLB阅读桌检查gap=0；接触阴影和墙面生活细节仍偏弱。",
+      "blocking_interior_defect_observed": false,
+      "interior_detail_visibility": "wood_floor_restored_reading_furniture_clear_chair_soles_partly_occluded",
+      "capture_title_zh": "坡巷住家 · 窗内生活近景",
+      "capture_position_godot": [
+        -51.35,
+        18.602,
+        14.17
+      ],
+      "capture_target_godot": [
+        -53.83,
+        18.2899,
+        14.25
+      ],
+      "capture_fov": 64.0,
+      "fresh_batch_file_mtime_utc": "2026-11-19T15:48:53.242187+00:00"
+    },
+    {
+      "view": "window_dining",
+      "file": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_window_dining.png",
+      "sha256": "fdd51bb8a16dc5ca65fcc35152bdc725b8ac5235615abcb1e7c6eda4b670b7b8",
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:56:17.226040+00:00",
+      "scope": "沿用window_dining机位名称，实际为A05备餐/洗涤小间。",
+      "observations_zh": "已实际查看。圆盆内为空，水龙头、台面上的碗、沥水架直立盘片/杯、挂巾、瓶子和瓷砖挡水墙共同表达备餐/洗涤用途；没有再把小空间布成茶桌单椅展柜，也未见其他房间家具穿进盆内。百叶、开窗扇和窗台遮住部分上下区域，但主要操作台清楚。正常街面视点只能核可见操作区，台下支撑/完整地板不在本图可核范围。",
+      "blocking_interior_defect_observed": false,
+      "interior_detail_visibility": "compact_prep_and_washing_function_readable",
+      "capture_title_zh": "临街住家 · 备餐间近景",
+      "capture_position_godot": [
+        -26.35,
+        15.858,
+        38.42
+      ],
+      "capture_target_godot": [
+        -28.83,
+        15.7559,
+        38.5
+      ],
+      "capture_fov": 64.0,
+      "fresh_batch_file_mtime_utc": "2026-11-19T15:49:23.200398+00:00"
+    },
+    {
+      "view": "planting_detail",
+      "file": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/godot_planting_detail.png",
+      "sha256": "e5744f62af637b1ef65ab97199f557fb75dc5a1b85badd5283ebeaa5bd52c294",
+      "width": 1920,
+      "height": 1080,
+      "reviewed_at_utc": "2026-11-19T15:56:17.226040+00:00",
+      "scope": "树池近景及其后临街窗的有限可见内容。",
+      "observations_zh": "已实际查看。背景低层窗有杯具、层板书本、帘布和室内灰墙的小尺度轮廓，未见全窗被白墙或墙装箱体封住。主体是树池、树干和铺装，本图不用于家具脚部、房内布局或窗内生活细节通过证明；远处重复背景楼体仍有模型化观感。",
+      "blocking_interior_defect_observed": false,
+      "interior_detail_visibility": "background_window_silhouettes_only_not_furniture_contact_evidence",
+      "capture_title_zh": "树池、土壤与旧铺装近景",
+      "capture_position_godot": [
+        52.2,
+        15.724,
+        48.2
+      ],
+      "capture_target_godot": [
+        56.5,
+        14.8341,
+        45.2
+      ],
+      "capture_fov": 55.0,
+      "fresh_batch_file_mtime_utc": "2026-11-19T15:49:56.622823+00:00"
+    }
+  ],
+  "scope_note": "All 22 original 1920x1080 PNGs were actually opened in this fresh exclusive R15 batch. No interrupted R15, R13 or R14 visual pass is carried forward. Findings are bounded to the visible content and individually stated occlusions; this is not a visual inspection of every room or furniture foot.",
+  "capture_manifest": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/capture_manifest.json",
+  "capture_manifest_sha256": "166a1dc19b44afa459171533b304050972e16a9dda72d1d93b872d01cdda27c7",
+  "capture_process": "/workspace/scratch/5462bdafe44f/cq05/verification/final/native/capture_process.json",
+  "capture_process_sha256": "57d71fde94440566c0e956f0b232d2c44651cf6d7c95cb287db3e32c536e781c",
+  "actual_capture_exit_code": 0,
+  "capture_failures": [],
+  "completed_at_utc": "2026-11-19T15:56:17.226040+00:00",
+  "new_blocking_interior_defects_observed": []
+}

@@ -1,0 +1,36 @@
+{
+  "alpha_threshold": 128,
+  "phase_s": [
+    0,
+    1.6,
+    3.2
+  ],
+  "render_target_px": [
+    640,
+    640
+  ],
+  "tested_mesh": "R23_Towel_02",
+  "mesh_pin_and_hem_rows_inspected": 15,
+  "changed_silhouette_pixels_vs_phase_0": {
+    "peg_edge": [
+      0,
+      0
+    ],
+    "lower_quarter": [
+      1187,
+      3365
+    ]
+  },
+  "current_images": {
+    "line.png": "04f42c2bca783b64a3ba9ff556add89940cc885fb7ca998d1699a5eb83aefbc9",
+    "fibres.png": "62c21df8b47fb6616870a98b460e4fb7ed4439084119dee4fcc6d741d01535e8",
+    "silhouette_0.png": "4c7906fdac965ce1cb62745e88aebce32ed0e0b4fc05c567e7460b4838950614",
+    "silhouette_16.png": "719d45c9855c1fd3f61f0d32f8bf87c0b151806e5b478fe4c65ae5a990192e5d",
+    "silhouette_32.png": "45563ec122590a4ec16f51a53e2287dcf623fe96a090b369aca26e83782254d1",
+    "cotton.json": "322f4f7dbabccc27dffc54f7c08191dbd1245887427c1680fcdb39730182561f"
+  },
+  "previous_comparison_images": {
+    "line.png": "cf05d588e816d417c06b854f80e9af9538918d34014426d7d94dd95c8e5609b6",
+    "fibres.png": "4ecce0a23a9d937db180bc22b43ae48d9e69e14b7feecdf28310c58f5e88c6bf"
+  }
+}

@@ -1,0 +1,23 @@
+{
+	"gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+	"measurements": [
+		{
+			"draw_calls": 2202.0,
+			"gpu_ms_p50": 3.61800003051758,
+			"gpu_ms_p95": 6.36800003051758,
+			"samples": 120,
+			"view": "counter",
+			"wall_ms_p95": 7.785
+		},
+		{
+			"draw_calls": 6386.0,
+			"gpu_ms_p50": 9.79399967193604,
+			"gpu_ms_p95": 10.6979999542236,
+			"samples": 120,
+			"view": "three_ready",
+			"wall_ms_p95": 12.321
+		}
+	],
+	"viewport": "(480.0, 270.0)",
+	"window": "(960, 540)"
+}

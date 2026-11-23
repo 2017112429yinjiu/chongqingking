@@ -1,0 +1,2093 @@
+{
+  "version": "v04",
+  "assets": {
+    "tile": {
+      "asset": "rounded_square_tiled_wall",
+      "resolution": "2k",
+      "meters": 2.0,
+      "source_meters": 2.0,
+      "authors": [
+        "Charlotte Baglioni"
+      ],
+      "source_url": "https://polyhaven.com/a/rounded_square_tiled_wall",
+      "origin": "Poly Haven scan, reused unchanged",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "maps": {
+        "diff": "tile/rounded_square_tiled_wall_diff_2k.jpg",
+        "rough": "tile/rounded_square_tiled_wall_rough_2k.jpg",
+        "nor_gl": "tile/rounded_square_tiled_wall_nor_gl_2k.jpg"
+      },
+      "normal_strength": 0.55
+    },
+    "concrete": {
+      "asset": "concrete_wall_006",
+      "resolution": "2k",
+      "meters": 2.0,
+      "authors": [
+        "Charlotte Baglioni",
+        "Dario Barresi"
+      ],
+      "source_url": "https://polyhaven.com/a/concrete_wall_006",
+      "origin": "Poly Haven scan, reused unchanged",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "maps": {
+        "diff": "concrete/concrete_wall_006_diff_2k.jpg",
+        "rough": "concrete/concrete_wall_006_rough_2k.jpg",
+        "nor_gl": "concrete/concrete_wall_006_nor_gl_2k.jpg"
+      },
+      "normal_strength": 0.62
+    },
+    "pavement": {
+      "asset": "concrete_floor_worn_001",
+      "resolution": "2k",
+      "maps": {
+        "diff": "v04_scans/concrete_floor_worn_001/concrete_floor_worn_001_diff_2k.jpg",
+        "rough": "v04_scans/concrete_floor_worn_001/concrete_floor_worn_001_rough_2k.jpg",
+        "nor_gl": "v04_scans/concrete_floor_worn_001/concrete_floor_worn_001_nor_gl_2k.jpg"
+      },
+      "meters": 3.2,
+      "source_url": "https://polyhaven.com/a/concrete_floor_worn_001",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "authors": [
+        "Dimitrios Savva",
+        "Rico Cilliers"
+      ],
+      "origin": "Original Poly Haven photographic scan maps, downloaded unchanged; visually reviewed diffuse before selection.",
+      "normal_strength": 0.85,
+      "description": "Neutral worn concrete, 3.2m scene repeat. Physical seams, localized repairs and drainage modeled separately."
+    },
+    "asphalt": {
+      "asset": "asphalt_02",
+      "resolution": "1k",
+      "meters": 3.0,
+      "authors": [
+        "Rob Tuytel"
+      ],
+      "source_url": "https://polyhaven.com/a/asphalt_02",
+      "origin": "Poly Haven scan, reused unchanged",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "maps": {
+        "diff": "asphalt/asphalt_02_diff_1k.jpg",
+        "rough": "asphalt/asphalt_02_rough_1k.jpg",
+        "nor_gl": "asphalt/asphalt_02_nor_gl_1k.jpg"
+      },
+      "normal_strength": 0.85
+    },
+    "plaster": {
+      "asset": "plastered_wall_04",
+      "resolution": "1k",
+      "meters": 3.2,
+      "authors": [
+        "Rob Tuytel"
+      ],
+      "source_url": "https://polyhaven.com/a/plastered_wall_04",
+      "origin": "Poly Haven scan, reused unchanged",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "maps": {
+        "diff": "plaster/plastered_wall_04_diff_1k.jpg",
+        "rough": "plaster/plastered_wall_04_rough_1k.jpg",
+        "nor_gl": "plaster/plastered_wall_04_nor_gl_1k.jpg"
+      },
+      "normal_strength": 0.55
+    },
+    "brick": {
+      "asset": "brick_wall_09",
+      "resolution": "1k",
+      "meters": 2.0,
+      "authors": [
+        "Matterfield",
+        "Rob Tuytel"
+      ],
+      "source_url": "https://polyhaven.com/a/brick_wall_09",
+      "origin": "Poly Haven scan, reused unchanged",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "maps": {
+        "diff": "brick/brick_wall_09_diff_1k.jpg",
+        "rough": "brick/brick_wall_09_rough_1k.jpg",
+        "nor_gl": "brick/brick_wall_09_nor_gl_1k.jpg"
+      },
+      "normal_strength": 0.55
+    },
+    "bark": {
+      "asset": "japanese_camphor_bark",
+      "resolution": "1k",
+      "meters": 1.8,
+      "authors": [
+        "Charlotte Baglioni"
+      ],
+      "source_url": "https://polyhaven.com/a/japanese_camphor_bark",
+      "origin": "Poly Haven scan, reused unchanged",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "maps": {
+        "diff": "bark/japanese_camphor_bark_diff_1k.jpg",
+        "rough": "bark/japanese_camphor_bark_rough_1k.jpg",
+        "nor_gl": "bark/japanese_camphor_bark_nor_gl_1k.jpg"
+      },
+      "normal_strength": 0.62
+    },
+    "tile_blue": {
+      "origin": "Original mathematical material authoring",
+      "license": "Project-authored; no third-party source imagery",
+      "authors": [
+        "Project procedural material authoring"
+      ],
+      "source_url": "",
+      "meters": 2.4,
+      "resolution_px": [
+        2048,
+        2048
+      ],
+      "maps": {
+        "diff": "tile_blue_v4/tile_blue_v4_diff.jpg",
+        "nor_gl": "tile_blue_v4/tile_blue_v4_nor_gl.jpg",
+        "rough": "tile_blue_v4/tile_blue_v4_rough.jpg"
+      },
+      "normal_strength": 0.55,
+      "roughness": 0.8,
+      "metallic": 0.0,
+      "alpha": false,
+      "description": "Aged 150 x 75 mm ceramic cladding; restrained tile-wise glaze differences, 3 mm joints, sparse small edge chips and faint thin seepage. Metre-scale dark cloud masks removed after real-engine review."
+    },
+    "tile_cream": {
+      "origin": "Original mathematical material authoring",
+      "license": "Project-authored; no third-party source imagery",
+      "authors": [
+        "Project procedural material authoring"
+      ],
+      "source_url": "",
+      "meters": 2.4,
+      "resolution_px": [
+        2048,
+        2048
+      ],
+      "maps": {
+        "diff": "tile_cream_v4/tile_cream_v4_diff.jpg",
+        "nor_gl": "tile_cream_v4/tile_cream_v4_nor_gl.jpg",
+        "rough": "tile_cream_v4/tile_cream_v4_rough.jpg"
+      },
+      "normal_strength": 0.55,
+      "roughness": 0.8,
+      "metallic": 0.0,
+      "alpha": false,
+      "description": "Aged 150 x 75 mm ceramic cladding; restrained tile-wise glaze differences, 3 mm joints, sparse small edge chips and faint thin seepage. Metre-scale dark cloud masks removed after real-engine review."
+    },
+    "plaster_ochre": {
+      "asset": "plastered_wall_04",
+      "resolution": "2k",
+      "maps": {
+        "diff": "v04_scans/plastered_wall_04/plastered_wall_04_diff_2k.jpg",
+        "rough": "v04_scans/plastered_wall_04/plastered_wall_04_rough_2k.jpg",
+        "nor_gl": "v04_scans/plastered_wall_04/plastered_wall_04_nor_gl_2k.jpg"
+      },
+      "meters": 4.0,
+      "source_url": "https://polyhaven.com/a/plastered_wall_04",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "authors": [
+        "Rob Tuytel"
+      ],
+      "origin": "Original Poly Haven gray plaster scan maps, downloaded unchanged; selected after visual review. Local weathering is separate authored geometry overlays.",
+      "normal_strength": 0.5,
+      "description": "Legacy material key retained; actual surface is unchanged neutral gray plastered_wall_04 at 4 m repeat. Local rain traces and wall-foot patches supply age; no color processing."
+    },
+    "plaster_grey": {
+      "asset": "plastered_wall_04",
+      "resolution": "2k",
+      "maps": {
+        "diff": "v04_scans/plastered_wall_04/plastered_wall_04_diff_2k.jpg",
+        "rough": "v04_scans/plastered_wall_04/plastered_wall_04_rough_2k.jpg",
+        "nor_gl": "v04_scans/plastered_wall_04/plastered_wall_04_nor_gl_2k.jpg"
+      },
+      "meters": 3.2,
+      "source_url": "https://polyhaven.com/a/plastered_wall_04",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "authors": [
+        "Rob Tuytel"
+      ],
+      "origin": "Original Poly Haven gray plaster scan maps, downloaded unchanged; selected after visual review. Local weathering is separate authored geometry overlays.",
+      "normal_strength": 0.5
+    },
+    "brick_dark": {
+      "asset": "brick_wall_08",
+      "meters": 1.9,
+      "authors": [
+        "Amal Kumar"
+      ],
+      "origin": "Original Poly Haven CC0 photographic scan maps, downloaded unchanged and checked against official hashes.",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "source_url": "https://polyhaven.com/a/brick_wall_08",
+      "resolution_px": [
+        2048,
+        2048
+      ],
+      "resolution": "2k",
+      "roughness": 0.84,
+      "normal_strength": 0.65,
+      "maps": {
+        "diff": "scans/brick_dark/brick_wall_08_diff_2k.jpg",
+        "rough": "v05_scans/brick_wall_08/brick_wall_08_rough_2k.jpg",
+        "nor_gl": "v05_scans/brick_wall_08/brick_wall_08_nor_gl_2k.jpg"
+      },
+      "description": "Matched original Brick Wall 08 diffuse, roughness and OpenGL normal maps. Restored real mortar/brick response under oblique daylight; no diffuse image changes."
+    },
+    "stone": {
+      "asset": "stone_wall_05",
+      "resolution": "2k",
+      "maps": {
+        "diff": "v04_scans/stone_wall_05/stone_wall_05_diff_2k.jpg",
+        "rough": "v04_scans/stone_wall_05/stone_wall_05_rough_2k.jpg",
+        "nor_gl": "v04_scans/stone_wall_05/stone_wall_05_nor_gl_2k.jpg"
+      },
+      "meters": 2.055,
+      "source_url": "https://polyhaven.com/a/stone_wall_05",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "authors": [
+        "Charlotte Baglioni"
+      ],
+      "origin": "Original Poly Haven photographic scan maps, downloaded unchanged; visually reviewed diffuse before selection.",
+      "normal_strength": 0.45
+    },
+    "roof_tiles": {
+      "origin": "Original mathematical material authoring",
+      "license": "Project-authored; no third-party source imagery",
+      "authors": [
+        "Project procedural material authoring"
+      ],
+      "source_url": "",
+      "meters": 3.2,
+      "resolution_px": [
+        2048,
+        2048
+      ],
+      "maps": {
+        "diff": "roof_tiles/roof_tiles_diff.jpg",
+        "nor_gl": "roof_tiles/roof_tiles_nor_gl.jpg",
+        "rough": "roof_tiles/roof_tiles_rough.jpg"
+      },
+      "normal_strength": 0.7,
+      "roughness": 0.8,
+      "metallic": 0.0,
+      "alpha": false,
+      "description": "Dark grey fired-clay barrel tiles, 160 mm spacing; tile-wise age variation and fine grit."
+    },
+    "rust_texture": {
+      "origin": "Original mathematical material authoring",
+      "license": "Project-authored; no third-party source imagery",
+      "authors": [
+        "Project procedural material authoring"
+      ],
+      "source_url": "",
+      "meters": 1.2,
+      "resolution_px": [
+        1024,
+        1024
+      ],
+      "maps": {
+        "diff": "rust_texture/rust_texture_diff.jpg",
+        "nor_gl": "rust_texture/rust_texture_nor_gl.jpg",
+        "rough": "rust_texture/rust_texture_rough.jpg"
+      },
+      "normal_strength": 0.65,
+      "roughness": 0.8,
+      "metallic": 0.34,
+      "alpha": false,
+      "description": "Pitted metal with irregular oxidized patches and surviving dark green paint."
+    },
+    "timber": {
+      "maps": {
+        "diff": "v05_scans/wood_table_worn/wood_table_worn_diff_2k.jpg",
+        "rough": "v05_scans/wood_table_worn/wood_table_worn_rough_2k.jpg",
+        "nor_gl": "v05_scans/wood_table_worn/wood_table_worn_nor_gl_2k.jpg"
+      },
+      "meters": 1.2,
+      "source_url": "https://polyhaven.com/a/wood_table_worn",
+      "license": "CC0",
+      "authors": [
+        "Dimitrios Savva",
+        "Rico Cilliers"
+      ],
+      "origin": "Original Poly Haven photographic scan maps, downloaded unchanged; scene repetition scale is an authored selection.",
+      "normal_strength": 0.48,
+      "roughness": 0.87
+    },
+    "ground_dirt": {
+      "maps": {
+        "diff": "v05_scans/brown_mud_leaves_01/brown_mud_leaves_01_diff_2k.jpg",
+        "rough": "v05_scans/brown_mud_leaves_01/brown_mud_leaves_01_rough_2k.jpg",
+        "nor_gl": "v05_scans/brown_mud_leaves_01/brown_mud_leaves_01_nor_gl_2k.jpg"
+      },
+      "meters": 1.6,
+      "source_url": "https://polyhaven.com/a/brown_mud_leaves_01",
+      "license": "CC0",
+      "authors": [
+        "Rob Tuytel"
+      ],
+      "origin": "Original Poly Haven photographic scan maps, downloaded unchanged; scene repetition scale is an authored selection.",
+      "normal_strength": 0.85,
+      "roughness": 0.87
+    },
+    "grime_streak": {
+      "origin": "Original mathematical material authoring",
+      "license": "Project-authored; no third-party source imagery",
+      "authors": [
+        "Project procedural material authoring"
+      ],
+      "source_url": "",
+      "meters": 4.0,
+      "resolution_px": [
+        1024,
+        1024
+      ],
+      "maps": {
+        "diff": "grime_streak/grime_streak_diff.png"
+      },
+      "normal_strength": 0.65,
+      "roughness": 0.96,
+      "metallic": 0.0,
+      "alpha": true,
+      "description": "Subtle transparent rain streaks below eaves and drain fixtures; authored mask, no photo pixels."
+    },
+    "moss_grime": {
+      "origin": "Original mathematical material authoring",
+      "license": "Project-authored; no third-party source imagery",
+      "authors": [
+        "Project procedural material authoring"
+      ],
+      "source_url": "",
+      "meters": 4.0,
+      "resolution_px": [
+        1024,
+        1024
+      ],
+      "maps": {
+        "diff": "moss_grime/moss_grime_diff.png"
+      },
+      "normal_strength": 0.65,
+      "roughness": 0.96,
+      "metallic": 0.0,
+      "alpha": true,
+      "description": "Subtle transparent moss residue at masonry base; authored mask, no photo pixels."
+    },
+    "wet_pavement": {
+      "asset": "grey_tiles",
+      "resolution": "2k",
+      "meters": 2.2,
+      "authors": [
+        "Amal Kumar"
+      ],
+      "source_url": "https://polyhaven.com/a/grey_tiles",
+      "origin": "Poly Haven scan, reused unchanged",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "maps": {
+        "diff": "pavement/grey_tiles_diff_2k.jpg",
+        "nor_gl": "pavement/grey_tiles_nor_gl_2k.jpg"
+      },
+      "normal_strength": 0.55,
+      "roughness": 0.3,
+      "description": "Original pavement maps with a lower authored roughness value; use sparingly on damp pavement patches."
+    },
+    "court_green": {
+      "origin": "Original mathematical material authoring",
+      "license": "Project-authored; no third-party source imagery",
+      "authors": [
+        "Project procedural material authoring"
+      ],
+      "source_url": "",
+      "meters": 5.0,
+      "resolution_px": [
+        2048,
+        2048
+      ],
+      "maps": {
+        "diff": "court_green/court_green_diff.jpg",
+        "nor_gl": "court_green/court_green_nor_gl.jpg",
+        "rough": "court_green/court_green_rough.jpg"
+      },
+      "normal_strength": 0.42,
+      "roughness": 0.8,
+      "metallic": 0.0,
+      "alpha": false,
+      "description": "Fine-grained matte sports-court coating; original seeded aggregate, tiny pores and sparse centimetre-sized worn scuffs. Color matches the scene palette in linear space.",
+      "scene_palette_linear": [
+        0.12,
+        0.2,
+        0.18
+      ]
+    },
+    "court_red": {
+      "origin": "Original mathematical material authoring",
+      "license": "Project-authored; no third-party source imagery",
+      "authors": [
+        "Project procedural material authoring"
+      ],
+      "source_url": "",
+      "meters": 5.0,
+      "resolution_px": [
+        2048,
+        2048
+      ],
+      "maps": {
+        "diff": "court_red/court_red_diff.jpg",
+        "nor_gl": "court_red/court_red_nor_gl.jpg",
+        "rough": "court_red/court_red_rough.jpg"
+      },
+      "normal_strength": 0.42,
+      "roughness": 0.8,
+      "metallic": 0.0,
+      "alpha": false,
+      "description": "Fine-grained matte sports-court coating; original seeded aggregate, tiny pores and sparse centimetre-sized worn scuffs. Color matches the scene palette in linear space.",
+      "scene_palette_linear": [
+        0.26,
+        0.12,
+        0.087
+      ]
+    },
+    "painted_metal": {
+      "maps": {
+        "diff": "v04_scans/rusty_painted_metal/rusty_painted_metal_diff_2k.jpg",
+        "rough": "v04_scans/rusty_painted_metal/rusty_painted_metal_rough_2k.jpg",
+        "nor_gl": "v04_scans/rusty_painted_metal/rusty_painted_metal_nor_gl_2k.jpg"
+      },
+      "meters": 2.0,
+      "source_url": "https://polyhaven.com/a/rusty_painted_metal",
+      "license": "CC0",
+      "authors": [
+        "Amal Kumar"
+      ],
+      "origin": "Original Poly Haven photographic scan maps, downloaded unchanged; explicit physical scale selected for scene",
+      "normal_strength": 0.5,
+      "metallic": 0.3
+    },
+    "curtain": {
+      "maps": {
+        "diff": "v04_scans/fabric_pattern_07/fabric_pattern_07_col_1_2k.jpg",
+        "rough": "v04_scans/fabric_pattern_07/fabric_pattern_07_rough_2k.jpg",
+        "nor_gl": "v04_scans/fabric_pattern_07/fabric_pattern_07_nor_gl_2k.jpg"
+      },
+      "meters": 1.2,
+      "source_url": "https://polyhaven.com/a/fabric_pattern_07",
+      "license": "CC0",
+      "authors": [
+        "Rob Tuytel"
+      ],
+      "origin": "Original Poly Haven photographic scan maps, downloaded unchanged; explicit physical scale selected for scene",
+      "normal_strength": 0.5
+    },
+    "yard_concrete": {
+      "asset": "concrete_floor_worn_001",
+      "resolution": "2k",
+      "maps": {
+        "diff": "v04_scans/concrete_floor_worn_001/concrete_floor_worn_001_diff_2k.jpg",
+        "rough": "v04_scans/concrete_floor_worn_001/concrete_floor_worn_001_rough_2k.jpg",
+        "nor_gl": "v04_scans/concrete_floor_worn_001/concrete_floor_worn_001_nor_gl_2k.jpg"
+      },
+      "meters": 3.0,
+      "source_url": "https://polyhaven.com/a/concrete_floor_worn_001",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "authors": [
+        "Dimitrios Savva",
+        "Rico Cilliers"
+      ],
+      "origin": "Original Poly Haven photographic scan maps, downloaded unchanged; visually reviewed diffuse before selection.",
+      "normal_strength": 0.85
+    },
+    "tile_scan": {
+      "asset": "square_tiled_wall",
+      "resolution": "2k",
+      "maps": {
+        "diff": "v04_scans/square_tiled_wall/square_tiled_wall_diff_2k.jpg",
+        "rough": "v04_scans/square_tiled_wall/square_tiled_wall_rough_2k.jpg",
+        "nor_gl": "v04_scans/square_tiled_wall/square_tiled_wall_nor_gl_2k.jpg"
+      },
+      "meters": 3.0,
+      "source_url": "https://polyhaven.com/a/square_tiled_wall",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "authors": [
+        "Charlotte Baglioni"
+      ],
+      "origin": "Poly Haven scan, reused unchanged",
+      "normal_strength": 0.55
+    },
+    "step_concrete": {
+      "asset": "concrete_floor_worn_001",
+      "resolution": "2k",
+      "maps": {
+        "diff": "v04_scans/concrete_floor_worn_001/concrete_floor_worn_001_diff_2k.jpg",
+        "rough": "v04_scans/concrete_floor_worn_001/concrete_floor_worn_001_rough_2k.jpg",
+        "nor_gl": "v04_scans/concrete_floor_worn_001/concrete_floor_worn_001_nor_gl_2k.jpg"
+      },
+      "meters": 3.0,
+      "source_url": "https://polyhaven.com/a/concrete_floor_worn_001",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "authors": [
+        "Dimitrios Savva",
+        "Rico Cilliers"
+      ],
+      "origin": "Original Poly Haven photographic scan maps, downloaded unchanged; visually reviewed diffuse before selection.",
+      "normal_strength": 0.85
+    },
+    "gravel_ground": {
+      "asset": "leaf_scattered_gravel",
+      "meters": 1.8,
+      "resolution": "2k",
+      "source_url": "https://polyhaven.com/a/leaf_scattered_gravel",
+      "authors": [
+        "Dimitrios Savva"
+      ],
+      "origin": "Matched original Poly Haven photographic scan maps, downloaded unchanged and hash verified.",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "normal_strength": 0.72,
+      "maps": {
+        "diff": "v05_scans/leaf_scattered_gravel/leaf_scattered_gravel_diff_2k.jpg",
+        "rough": "v05_scans/leaf_scattered_gravel/leaf_scattered_gravel_rough_2k.jpg",
+        "nor_gl": "v05_scans/leaf_scattered_gravel/leaf_scattered_gravel_nor_gl_2k.jpg"
+      },
+      "description": "Dark neutral gravel with accumulated fallen leaves for established planting margins. Selected in R9 after the prior pale gravel edge appeared newly laid and too bright."
+    },
+    "paving_slab": {
+      "maps": {
+        "diff": "v05_scans/stone_floor/stone_floor_diff_2k.jpg",
+        "rough": "v05_scans/stone_floor/stone_floor_rough_2k.jpg",
+        "nor_gl": "v05_scans/stone_floor/stone_floor_nor_gl_2k.jpg"
+      },
+      "meters": 2.4,
+      "source_url": "https://polyhaven.com/a/stone_floor",
+      "license": "CC0",
+      "authors": [
+        "Dimitrios Savva"
+      ],
+      "origin": "Original Poly Haven photographic scan maps, downloaded unchanged; scene repetition scale is an authored selection.",
+      "normal_strength": 0.75,
+      "roughness": 0.87
+    },
+    "soil_dark": {
+      "maps": {
+        "diff": "v05_scans/brown_mud_leaves_01/brown_mud_leaves_01_diff_2k.jpg",
+        "rough": "v05_scans/brown_mud_leaves_01/brown_mud_leaves_01_rough_2k.jpg",
+        "nor_gl": "v05_scans/brown_mud_leaves_01/brown_mud_leaves_01_nor_gl_2k.jpg"
+      },
+      "meters": 1.3,
+      "source_url": "https://polyhaven.com/a/brown_mud_leaves_01",
+      "license": "CC0",
+      "authors": [
+        "Rob Tuytel"
+      ],
+      "origin": "Original Poly Haven photographic scan maps, downloaded unchanged; scene repetition scale is an authored selection.",
+      "normal_strength": 0.85,
+      "roughness": 0.87
+    },
+    "room_wall": {
+      "asset": "plastered_wall_04",
+      "resolution": "2k",
+      "maps": {
+        "diff": "v04_scans/plastered_wall_04/plastered_wall_04_diff_2k.jpg",
+        "rough": "v04_scans/plastered_wall_04/plastered_wall_04_rough_2k.jpg",
+        "nor_gl": "v04_scans/plastered_wall_04/plastered_wall_04_nor_gl_2k.jpg"
+      },
+      "meters": 2.1,
+      "source_url": "https://polyhaven.com/a/plastered_wall_04",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "authors": [
+        "Rob Tuytel"
+      ],
+      "origin": "Original Poly Haven gray plaster scan maps, downloaded unchanged; selected after visual review. Local weathering is separate authored geometry overlays.",
+      "normal_strength": 0.35,
+      "description": "Fine interior plaster using matched, unchanged photographic maps. Indoor light falloff comes from the room geometry bake, not darkened diffuse pixels."
+    }
+  },
+  "files": [
+    {
+      "local_path": "tile/rounded_square_tiled_wall_diff_2k.jpg",
+      "role": "diff",
+      "referenced_by": [
+        "tile"
+      ],
+      "bytes": 2399426,
+      "sha256": "12b1f69125a526e95de030d40d760b993e4f257787cd18cd692fc34ed78c4d53"
+    },
+    {
+      "local_path": "tile/rounded_square_tiled_wall_rough_2k.jpg",
+      "role": "rough",
+      "referenced_by": [
+        "tile"
+      ],
+      "bytes": 2285666,
+      "sha256": "b3cd0f4012c9fb9f88b677e4cff70d3bda29611b12c637c9797181d2533ae227"
+    },
+    {
+      "local_path": "tile/rounded_square_tiled_wall_nor_gl_2k.jpg",
+      "role": "nor_gl",
+      "referenced_by": [
+        "tile"
+      ],
+      "bytes": 3271637,
+      "sha256": "df0534adb686a57fb480cb7779642dc618057b368f8f4a247329786332b2350d"
+    },
+    {
+      "local_path": "concrete/concrete_wall_006_diff_2k.jpg",
+      "role": "diff",
+      "referenced_by": [
+        "concrete"
+      ],
+      "bytes": 3109558,
+      "sha256": "daee26f5b5dae37e3fb2947c64f4045fd4e6d3b89884eb0d878ba6414746e8e8"
+    },
+    {
+      "local_path": "concrete/concrete_wall_006_rough_2k.jpg",
+      "role": "rough",
+      "referenced_by": [
+        "concrete"
+      ],
+      "bytes": 1102752,
+      "sha256": "4c463e871c50def9252c38a81e06624ff2fcd8c9ffcdd54534524efacba286ed"
+    },
+    {
+      "local_path": "concrete/concrete_wall_006_nor_gl_2k.jpg",
+      "role": "nor_gl",
+      "referenced_by": [
+        "concrete"
+      ],
+      "bytes": 4939794,
+      "sha256": "22bd9c17a6dfe3441f671cba1b40e2329767c79b6472004d1633aeac368d5210"
+    },
+    {
+      "local_path": "v04_scans/concrete_floor_worn_001/concrete_floor_worn_001_diff_2k.jpg",
+      "role": "diff",
+      "referenced_by": [
+        "pavement",
+        "yard_concrete",
+        "step_concrete"
+      ],
+      "bytes": 482906,
+      "sha256": "e29b45cdcd6d02fae3c087c456196ffa750779a9b62e7071aa3831dc322a0cc4"
+    },
+    {
+      "local_path": "v04_scans/concrete_floor_worn_001/concrete_floor_worn_001_rough_2k.jpg",
+      "role": "rough",
+      "referenced_by": [
+        "pavement",
+        "yard_concrete",
+        "step_concrete"
+      ],
+      "bytes": 735249,
+      "sha256": "b904992f0d75da2c41edf832bbb838622cca076f48f7913065a152c3b640690e"
+    },
+    {
+      "local_path": "v04_scans/concrete_floor_worn_001/concrete_floor_worn_001_nor_gl_2k.jpg",
+      "role": "nor_gl",
+      "referenced_by": [
+        "pavement",
+        "yard_concrete",
+        "step_concrete"
+      ],
+      "bytes": 870609,
+      "sha256": "3b782137e34d63fd59b2e92b4e27b2ee4d082caf9dd23f00dc7ab4da5513daef"
+    },
+    {
+      "local_path": "asphalt/asphalt_02_diff_1k.jpg",
+      "role": "diff",
+      "referenced_by": [
+        "asphalt"
+      ],
+      "bytes": 731707,
+      "sha256": "1aa5ce99f58a625c71d48cfc3e68b65ca85ccb00f39e045c0a928608a0ea25ed"
+    },
+    {
+      "local_path": "asphalt/asphalt_02_rough_1k.jpg",
+      "role": "rough",
+      "referenced_by": [
+        "asphalt"
+      ],
+      "bytes": 544032,
+      "sha256": "70ba3edc65525eb4dc366cf010ca7ae0bd34e0251ff0225c2dad627a873d0712"
+    },
+    {
+      "local_path": "asphalt/asphalt_02_nor_gl_1k.jpg",
+      "role": "nor_gl",
+      "referenced_by": [
+        "asphalt"
+      ],
+      "bytes": 1240122,
+      "sha256": "42a1c381b53204e83a982db2864479a30bc127bbdeebb1006f8ee51bff099df3"
+    },
+    {
+      "local_path": "plaster/plastered_wall_04_diff_1k.jpg",
+      "role": "diff",
+      "referenced_by": [
+        "plaster"
+      ],
+      "bytes": 299230,
+      "sha256": "52d789111bbe93d311c22e49d28b56256593c8f84c75742642403da857a36503"
+    },
+    {
+      "local_path": "plaster/plastered_wall_04_rough_1k.jpg",
+      "role": "rough",
+      "referenced_by": [
+        "plaster"
+      ],
+      "bytes": 243061,
+      "sha256": "76587f1a3cf6bc009caaf3d1d7651ee52359e43ce91bf52e8a3ed07cff9db623"
+    },
+    {
+      "local_path": "plaster/plastered_wall_04_nor_gl_1k.jpg",
+      "role": "nor_gl",
+      "referenced_by": [
+        "plaster"
+      ],
+      "bytes": 427268,
+      "sha256": "c0a41dc06e33072ec1156d89f3bd4b481a479616791d4e9df6c5ee7b3283db82"
+    },
+    {
+      "local_path": "brick/brick_wall_09_diff_1k.jpg",
+      "role": "diff",
+      "referenced_by": [
+        "brick"
+      ],
+      "bytes": 777371,
+      "sha256": "7d42d3c1de8cd5c37cae15644e733040e7165ec7ee961fc9a8656271409d6e4b"
+    },
+    {
+      "local_path": "brick/brick_wall_09_rough_1k.jpg",
+      "role": "rough",
+      "referenced_by": [
+        "brick"
+      ],
+      "bytes": 433465,
+      "sha256": "d933f5a4915a4422f9953bed32f26d3f498283585608fafecc1b94a80df1850b"
+    },
+    {
+      "local_path": "brick/brick_wall_09_nor_gl_1k.jpg",
+      "role": "nor_gl",
+      "referenced_by": [
+        "brick"
+      ],
+      "bytes": 1039733,
+      "sha256": "5c66ecb5e97204ae81a5080c3550cf40f4ac8ea5c7566690b15986522f0fc2ce"
+    },
+    {
+      "local_path": "bark/japanese_camphor_bark_diff_1k.jpg",
+      "role": "diff",
+      "referenced_by": [
+        "bark"
+      ],
+      "bytes": 1058720,
+      "sha256": "100c1c052c9b0305c4d95bcb845a2bdc44cd261946aac16146319e2f5fcb4fbc"
+    },
+    {
+      "local_path": "bark/japanese_camphor_bark_rough_1k.jpg",
+      "role": "rough",
+      "referenced_by": [
+        "bark"
+      ],
+      "bytes": 527928,
+      "sha256": "bd8f3d6fce26a70b857340e5f76da2211da80f5b3d0be2b9fef64e0072c09289"
+    },
+    {
+      "local_path": "bark/japanese_camphor_bark_nor_gl_1k.jpg",
+      "role": "nor_gl",
+      "referenced_by": [
+        "bark"
+      ],
+      "bytes": 1283697,
+      "sha256": "633567973b9d79ce54c33c50632771f80eb794904f367b584f7b21c1ad8a34d5"
+    },
+    {
+      "local_path": "tile_blue_v4/tile_blue_v4_diff.jpg",
+      "role": "diff",
+      "referenced_by": [
+        "tile_blue"
+      ],
+      "bytes": 838708,
+      "sha256": "4d333560f5b07101eeafa0a09f8832c7cb20613cc322d003a562ca35a11e319b"
+    },
+    {
+      "local_path": "tile_blue_v4/tile_blue_v4_nor_gl.jpg",
+      "role": "nor_gl",
+      "referenced_by": [
+        "tile_blue"
+      ],
+      "bytes": 874507,
+      "sha256": "6075e84939ac549762a927111bee3bbcd20493578db90287f31670f3919de05a"
+    },
+    {
+      "local_path": "tile_blue_v4/tile_blue_v4_rough.jpg",
+      "role": "rough",
+      "referenced_by": [
+        "tile_blue"
+      ],
+      "bytes": 804354,
+      "sha256": "a2b722a78d64cbd7575fbdc46e27374c9d9f2a52a3304dc6312ee239542a5ba1"
+    },
+    {
+      "local_path": "tile_cream_v4/tile_cream_v4_diff.jpg",
+      "role": "diff",
+      "referenced_by": [
+        "tile_cream"
+      ],
+      "bytes": 944116,
+      "sha256": "741b7ffd780d58749dd386c7a4111fb613f20acfabd79f4645068d43565501d9"
+    },
+    {
+      "local_path": "tile_cream_v4/tile_cream_v4_nor_gl.jpg",
+      "role": "nor_gl",
+      "referenced_by": [
+        "tile_cream"
+      ],
+      "bytes": 874821,
+      "sha256": "2167e0df0c09b737ccdcd234b30b5312510c657990fd8163ea2663572debccb4"
+    },
+    {
+      "local_path": "tile_cream_v4/tile_cream_v4_rough.jpg",
+      "role": "rough",
+      "referenced_by": [
+        "tile_cream"
+      ],
+      "bytes": 804297,
+      "sha256": "becc86272d959df82405c67901b8603126c1928af1490a56081579dcebb322d7"
+    },
+    {
+      "local_path": "v04_scans/plastered_wall_04/plastered_wall_04_diff_2k.jpg",
+      "role": "diff",
+      "referenced_by": [
+        "plaster_ochre",
+        "plaster_grey",
+        "room_wall"
+      ],
+      "bytes": 1465312,
+      "sha256": "aaf0e693291d51d13531480625a942f950fed23f6b1d1008ee0e91f2a23a7b1e"
+    },
+    {
+      "local_path": "v04_scans/plastered_wall_04/plastered_wall_04_rough_2k.jpg",
+      "role": "rough",
+      "referenced_by": [
+        "plaster_ochre",
+        "plaster_grey",
+        "room_wall"
+      ],
+      "bytes": 1236406,
+      "sha256": "37302048eb2e60be2a73a7f803965097681e652b80b93d6d701cfc7fabc1e0a7"
+    },
+    {
+      "local_path": "v04_scans/plastered_wall_04/plastered_wall_04_nor_gl_2k.jpg",
+      "role": "nor_gl",
+      "referenced_by": [
+        "plaster_ochre",
+        "plaster_grey",
+        "room_wall"
+      ],
+      "bytes": 1760685,
+      "sha256": "904f6ca0b569754502675b8891b5d6aad1d8a07f938e8a43cf385170a21a12dc"
+    },
+    {
+      "local_path": "scans/brick_dark/brick_wall_08_diff_2k.jpg",
+      "role": "diff",
+      "referenced_by": [
+        "brick_dark"
+      ],
+      "bytes": 2939913,
+      "sha256": "e115c64fe0d10393f3cb3bbc46121c180a82ce1a4f8d4be3e8321397385ba89b"
+    },
+    {
+      "local_path": "v05_scans/brick_wall_08/brick_wall_08_rough_2k.jpg",
+      "role": "rough",
+      "referenced_by": [
+        "brick_dark"
+      ],
+      "bytes": 1953303,
+      "sha256": "9ad3fe0e754a7c1fd58ceaaab8db6d36edfae175971238c2afef20ee955e5355"
+    },
+    {
+      "local_path": "v05_scans/brick_wall_08/brick_wall_08_nor_gl_2k.jpg",
+      "role": "nor_gl",
+      "referenced_by": [
+        "brick_dark"
+      ],
+      "bytes": 4119217,
+      "sha256": "7e8404b29ef3af7b7cb949fee5441c48451bb21bf5bf24212c209262005f5604"
+    },
+    {
+      "local_path": "v04_scans/stone_wall_05/stone_wall_05_diff_2k.jpg",
+      "role": "diff",
+      "referenced_by": [
+        "stone"
+      ],
+      "bytes": 3504038,
+      "sha256": "d3680c5ef2657aead18f9bfab93994555b8f05de4f4fecba18194cbe3a116b87"
+    },
+    {
+      "local_path": "v04_scans/stone_wall_05/stone_wall_05_rough_2k.jpg",
+      "role": "rough",
+      "referenced_by": [
+        "stone"
+      ],
+      "bytes": 1122076,
+      "sha256": "aead8f5c535fc22b1a3c46aa50679c43b37f279f7abce482115551b0f58a5b0e"
+    },
+    {
+      "local_path": "v04_scans/stone_wall_05/stone_wall_05_nor_gl_2k.jpg",
+      "role": "nor_gl",
+      "referenced_by": [
+        "stone"
+      ],
+      "bytes": 4874482,
+      "sha256": "14cd6f3fc1dcd1f95962cdf2806866a6608ae69c075a8ffbd1ebd75b2bb679ef"
+    },
+    {
+      "local_path": "roof_tiles/roof_tiles_diff.jpg",
+      "role": "diff",
+      "referenced_by": [
+        "roof_tiles"
+      ],
+      "bytes": 384174,
+      "sha256": "6bd87a97594b57e89cdf17cb0cfd912815b9d707613f56b15d9d07014818a915"
+    },
+    {
+      "local_path": "roof_tiles/roof_tiles_nor_gl.jpg",
+      "role": "nor_gl",
+      "referenced_by": [
+        "roof_tiles"
+      ],
+      "bytes": 873269,
+      "sha256": "d54a00cfbda9ed50bd4ea8a5a2822f7b9bcdcb6c0a3973307bb7e160767f0de7"
+    },
+    {
+      "local_path": "roof_tiles/roof_tiles_rough.jpg",
+      "role": "rough",
+      "referenced_by": [
+        "roof_tiles"
+      ],
+      "bytes": 184993,
+      "sha256": "a698dd997ded46479a5cfd10becc954d5d497cb45ae02076a44586bf18f5dc7b"
+    },
+    {
+      "local_path": "rust_texture/rust_texture_diff.jpg",
+      "role": "diff",
+      "referenced_by": [
+        "rust_texture"
+      ],
+      "bytes": 235464,
+      "sha256": "c35aa7f83102503b6d8eb62fe2adcf12e20a5e6247a84bdd561ab2b9d07e79fe"
+    },
+    {
+      "local_path": "rust_texture/rust_texture_nor_gl.jpg",
+      "role": "nor_gl",
+      "referenced_by": [
+        "rust_texture"
+      ],
+      "bytes": 490796,
+      "sha256": "36d964a936420e37dc0c291c89f25e5f7b9d6981e2b28b25ac336abf35048edb"
+    },
+    {
+      "local_path": "rust_texture/rust_texture_rough.jpg",
+      "role": "rough",
+      "referenced_by": [
+        "rust_texture"
+      ],
+      "bytes": 142264,
+      "sha256": "f4203acbdbbd0768c4056db9badfc534fd08363f8a94bc646bcc81a1ce22f872"
+    },
+    {
+      "local_path": "v05_scans/wood_table_worn/wood_table_worn_diff_2k.jpg",
+      "role": "diff",
+      "referenced_by": [
+        "timber"
+      ],
+      "bytes": 3108339,
+      "sha256": "165cdba449d56ea8e9675116622b95d7af372b7d7c47b8a98a03fcc630f1d51c"
+    },
+    {
+      "local_path": "v05_scans/wood_table_worn/wood_table_worn_rough_2k.jpg",
+      "role": "rough",
+      "referenced_by": [
+        "timber"
+      ],
+      "bytes": 2890891,
+      "sha256": "4263780c4b7737b8714eefcbda1b43c28f8e1e0ee2b797c125521cbe6e3889dd"
+    },
+    {
+      "local_path": "v05_scans/wood_table_worn/wood_table_worn_nor_gl_2k.jpg",
+      "role": "nor_gl",
+      "referenced_by": [
+        "timber"
+      ],
+      "bytes": 3142587,
+      "sha256": "a90aaa321194fb41d6e44776c6ee88134e4be416051357a3c9e323cc447c4cf0"
+    },
+    {
+      "local_path": "v05_scans/brown_mud_leaves_01/brown_mud_leaves_01_diff_2k.jpg",
+      "role": "diff",
+      "referenced_by": [
+        "ground_dirt",
+        "soil_dark"
+      ],
+      "bytes": 4539452,
+      "sha256": "29c997d77f56e4ea16d3e998a306be0c17fddb28ab4822657c7cd8249040ffda"
+    },
+    {
+      "local_path": "v05_scans/brown_mud_leaves_01/brown_mud_leaves_01_rough_2k.jpg",
+      "role": "rough",
+      "referenced_by": [
+        "ground_dirt",
+        "soil_dark"
+      ],
+      "bytes": 2421908,
+      "sha256": "9556215f5fef905c37cdf19c77aef7822f124890f8fb7dcce65d57c5eafc0ca5"
+    },
+    {
+      "local_path": "v05_scans/brown_mud_leaves_01/brown_mud_leaves_01_nor_gl_2k.jpg",
+      "role": "nor_gl",
+      "referenced_by": [
+        "ground_dirt",
+        "soil_dark"
+      ],
+      "bytes": 5688696,
+      "sha256": "b6ec386e00d9d2a1c3a1da6a98a67066b0dfaa88ddb779341df29700cf081bdf"
+    },
+    {
+      "local_path": "grime_streak/grime_streak_diff.png",
+      "role": "diff",
+      "referenced_by": [
+        "grime_streak"
+      ],
+      "bytes": 302498,
+      "sha256": "d67c898ff031ec5fb7303801986fe3ea2284a66d0fbc78d48db197e4b344e811"
+    },
+    {
+      "local_path": "moss_grime/moss_grime_diff.png",
+      "role": "diff",
+      "referenced_by": [
+        "moss_grime"
+      ],
+      "bytes": 617030,
+      "sha256": "e84e7cb11e50d00dcb0096247d9339cded45fd595932a547801a0a7f485d3099"
+    },
+    {
+      "local_path": "pavement/grey_tiles_diff_2k.jpg",
+      "role": "diff",
+      "referenced_by": [
+        "wet_pavement"
+      ],
+      "bytes": 2156903,
+      "sha256": "50a2b6eab72fa33e6baa8700f49912d75040f9ec23ce201ea360d3494111fe29"
+    },
+    {
+      "local_path": "pavement/grey_tiles_nor_gl_2k.jpg",
+      "role": "nor_gl",
+      "referenced_by": [
+        "wet_pavement"
+      ],
+      "bytes": 1527309,
+      "sha256": "7d93a579daa9e954546201530a8a3ce1934ed4793f5eade17161ebe195868430"
+    },
+    {
+      "local_path": "court_green/court_green_diff.jpg",
+      "role": "diff",
+      "referenced_by": [
+        "court_green"
+      ],
+      "bytes": 1104835,
+      "sha256": "ebabbf71b2ce471d083badf215ede16ed16a1290ab14ed19b6211e8be7fbba9b"
+    },
+    {
+      "local_path": "court_green/court_green_nor_gl.jpg",
+      "role": "nor_gl",
+      "referenced_by": [
+        "court_green"
+      ],
+      "bytes": 1705747,
+      "sha256": "efc5ca79c8e4363438e4c6d87b2ab4e9f7e459b73ba981938faa494df9e90c9e"
+    },
+    {
+      "local_path": "court_green/court_green_rough.jpg",
+      "role": "rough",
+      "referenced_by": [
+        "court_green"
+      ],
+      "bytes": 605072,
+      "sha256": "c72a9e525d7d808777353632cf4675a6836fee0cdffe8e626518fbea4f6cd7e0"
+    },
+    {
+      "local_path": "court_red/court_red_diff.jpg",
+      "role": "diff",
+      "referenced_by": [
+        "court_red"
+      ],
+      "bytes": 1102250,
+      "sha256": "fa02991730c62d54ba9ce9a840c2de9511ae9996b56957a139a1d8fdc8a53208"
+    },
+    {
+      "local_path": "court_red/court_red_nor_gl.jpg",
+      "role": "nor_gl",
+      "referenced_by": [
+        "court_red"
+      ],
+      "bytes": 1706410,
+      "sha256": "0215fe02febc386ad48838fac617aebe3841693ef8fc12928b6ce944d2b5abd5"
+    },
+    {
+      "local_path": "court_red/court_red_rough.jpg",
+      "role": "rough",
+      "referenced_by": [
+        "court_red"
+      ],
+      "bytes": 605600,
+      "sha256": "fee426c45b3569d70303009eebd668f248c60ab3f2700ad4b81528e3bdebced2"
+    },
+    {
+      "local_path": "v04_scans/rusty_painted_metal/rusty_painted_metal_diff_2k.jpg",
+      "role": "diff",
+      "referenced_by": [
+        "painted_metal"
+      ],
+      "bytes": 1930544,
+      "sha256": "883118fafabb56304f9e33ea2da3c183379b1c1b1c5a4702fdc335b0cf84614f"
+    },
+    {
+      "local_path": "v04_scans/rusty_painted_metal/rusty_painted_metal_rough_2k.jpg",
+      "role": "rough",
+      "referenced_by": [
+        "painted_metal"
+      ],
+      "bytes": 1342923,
+      "sha256": "17e6a4cab6d42576ce0bffecc53ba364d18a40b5d941471273b947e6f347a3b5"
+    },
+    {
+      "local_path": "v04_scans/rusty_painted_metal/rusty_painted_metal_nor_gl_2k.jpg",
+      "role": "nor_gl",
+      "referenced_by": [
+        "painted_metal"
+      ],
+      "bytes": 2293576,
+      "sha256": "2289c10422d5082aea3cf37661008b281c4aec20f6d0b574df6d7887573eb70c"
+    },
+    {
+      "local_path": "v04_scans/fabric_pattern_07/fabric_pattern_07_col_1_2k.jpg",
+      "role": "diff",
+      "referenced_by": [
+        "curtain"
+      ],
+      "bytes": 2650991,
+      "sha256": "1f4941638b890d4535b1078067be8a831ca302d1e696ed959b4e4512de893cba"
+    },
+    {
+      "local_path": "v04_scans/fabric_pattern_07/fabric_pattern_07_rough_2k.jpg",
+      "role": "rough",
+      "referenced_by": [
+        "curtain"
+      ],
+      "bytes": 1657764,
+      "sha256": "be3e311614ee6f31d4cb4a774ed678b7a64189d3e1a55ad71033142185da270a"
+    },
+    {
+      "local_path": "v04_scans/fabric_pattern_07/fabric_pattern_07_nor_gl_2k.jpg",
+      "role": "nor_gl",
+      "referenced_by": [
+        "curtain"
+      ],
+      "bytes": 2572375,
+      "sha256": "84f15ee5f6b63e7e224051a22426c751cc1fe15a794efd001ebfdb5f84828602"
+    },
+    {
+      "local_path": "v04_scans/square_tiled_wall/square_tiled_wall_diff_2k.jpg",
+      "role": "diff",
+      "referenced_by": [
+        "tile_scan"
+      ],
+      "bytes": 2211553,
+      "sha256": "4738c360c14c7b04f5dee07ef5ba724ab6ed8aeb0627ba0491468a79ba006314"
+    },
+    {
+      "local_path": "v04_scans/square_tiled_wall/square_tiled_wall_rough_2k.jpg",
+      "role": "rough",
+      "referenced_by": [
+        "tile_scan"
+      ],
+      "bytes": 1527270,
+      "sha256": "ff4b5ac825c0b29dc7e8f6a2046edbec449e16a130cec6e286a940c87b9ddf39"
+    },
+    {
+      "local_path": "v04_scans/square_tiled_wall/square_tiled_wall_nor_gl_2k.jpg",
+      "role": "nor_gl",
+      "referenced_by": [
+        "tile_scan"
+      ],
+      "bytes": 3378250,
+      "sha256": "12967d41753ccc96129692fc9746a6a09a8978e9cc2ab0e4f82f854eac9e8f63"
+    },
+    {
+      "local_path": "v05_scans/leaf_scattered_gravel/leaf_scattered_gravel_diff_2k.jpg",
+      "role": "diff",
+      "referenced_by": [
+        "gravel_ground"
+      ],
+      "bytes": 3713229,
+      "sha256": "f81bd1e3b2395ea7c08c7afaf8646d98b6dd1eed588fe0569230f37da69fbd36"
+    },
+    {
+      "local_path": "v05_scans/leaf_scattered_gravel/leaf_scattered_gravel_rough_2k.jpg",
+      "role": "rough",
+      "referenced_by": [
+        "gravel_ground"
+      ],
+      "bytes": 2438034,
+      "sha256": "f2ef61e44cc32583d3e5d4b8e23a48c50caa851206d6f28a05201606027a0496"
+    },
+    {
+      "local_path": "v05_scans/leaf_scattered_gravel/leaf_scattered_gravel_nor_gl_2k.jpg",
+      "role": "nor_gl",
+      "referenced_by": [
+        "gravel_ground"
+      ],
+      "bytes": 5327258,
+      "sha256": "68e43b0a8a09aa9f55b0786255d5757e4a843d04955f4fe4b9fcedc5066392c8"
+    },
+    {
+      "local_path": "v05_scans/stone_floor/stone_floor_diff_2k.jpg",
+      "role": "diff",
+      "referenced_by": [
+        "paving_slab"
+      ],
+      "bytes": 3800807,
+      "sha256": "ce19d3cb1e683419b6a596e1baffbf2b429f970f8ddba81e391ad9a38f310ed8"
+    },
+    {
+      "local_path": "v05_scans/stone_floor/stone_floor_rough_2k.jpg",
+      "role": "rough",
+      "referenced_by": [
+        "paving_slab"
+      ],
+      "bytes": 2080072,
+      "sha256": "cd8e7c6f7e7a9f483e45286b65c0ba7308bc943e7dc51ee9fd4532158cf44612"
+    },
+    {
+      "local_path": "v05_scans/stone_floor/stone_floor_nor_gl_2k.jpg",
+      "role": "nor_gl",
+      "referenced_by": [
+        "paving_slab"
+      ],
+      "bytes": 4090235,
+      "sha256": "978242067a8b6d421ea6ef12f7757f8ba137e21914c71b259502a4582daa0122"
+    }
+  ],
+  "notes": [
+    "Current source surface library has 27 assets and 13 unique Poly Haven texture sources; selected images are original bytes unless a map is explicitly marked as project-authored.",
+    "Three derived plain cloth colors are project-authored; original Poly Haven fabric_pattern_07 normal and roughness supply measured weave. Their original printed diffuse is disconnected.",
+    "Project-authored mathematical maps contain no street-view or reference-image pixels. Poly Haven photographic maps are separately credited as CC0 scans.",
+    "The environment uses authored Chongqing motifs and OSM plan references, not a photographic survey or 1:1 façade reproduction.",
+    "R7 gray plaster is quiet plastered_wall_04; localized weathering overlays provide age. Previous whole-wall moss, colored floor paint and high-contrast stone remain only as unselected archival inputs.",
+    "R7 scanned branch mappings are baked into valid primary UV in the adopted prepared library; details are in scanned_assets/branch_uv_repair.json.",
+    "R7 ordinary pavement reuses neutral concrete_floor_worn_001 at 4.5 m scene repeat, while yard and stairs use 3 m. Previous brown-gray checkerboard paving is retained only as an archival input.",
+    "R7 plaster_ochre is a retained legacy key now using the same unchanged gray plastered_wall_04 scan at 4 m repeat; plaster_grey uses 3.2 m. No color modification or third surface download."
+  ],
+  "refinement": "After visual review, analytic grey brick was replaced by an acquired photographic color map. The original procedural fallback remains reproducible in author_surfaces.py.",
+  "review_refinement_1": {
+    "trigger": "Actual Godot round0 central_steps and noodle_corner screenshots",
+    "changes": [
+      "Stone physical repeat3.2→1.5m;lighter irregular joints and fine mineral detail.",
+      "Ochre and grey plaster:reduce broad dark clouds,add small aggregate and sparse paint chips.",
+      "Earth:neutral damp hue,7800 mineral grains,subtle olive moss,lower normal strength."
+    ],
+    "note": "No screenshots or external image pixels were edited."
+  },
+  "review_refinement_2": {
+    "trigger": "Godot round1_review four-view inspection and requested sports-court close detail",
+    "changes": [
+      "Added palette-matched court_green and court_red PBR maps with fine aggregate, shallow grain and sparse small scuffs; repeat 5m.",
+      "Confirmed ground-dirt AO median multiplier1.0; do not paint lighting compensation into ground diffuse."
+    ],
+    "diagnostic_pending": "Periodic hard facade blotches: GLB material role bindings checked; duplicate Context geometry and renderer isolation under review."
+  },
+  "review_refinement_3": {
+    "trigger": "Round1 real-engine porcelain facade mottling and actual normal-disabled probe; original macro diffuse cloud located in authored material source",
+    "changes": [
+      "Removed metre-scale wet-cloud term from tile_blue and tile_cream basecolor and roughness.",
+      "Kept subtle individual tile glaze variation, 3mm joints, sparse small edge chips and faint narrow seepage.",
+      "Preserved 150x75mm tile proportions and physically shallow relief.",
+      "Version4 map paths remain distinct from prior textures, protecting in-progress revision3 export."
+    ],
+    "renderer_diagnostic": "Both Forward+ normal-disabled and unshaded-tile real-engine probes retained the same macro mottling. Core A05 facade COLOR_0 values are mostly1.0; albedo cloud masks confirmed as main cause.",
+    "coarse_diffuse_contrast_measurement": {
+      "tile_blue": {
+        "old": {
+          "mean_srgb_luminance": 0.4941307769038015,
+          "coarse_30cm_block_std": 0.0635131711643757,
+          "coarse_peak_to_peak": 0.20636269978389116
+        },
+        "_v4": {
+          "mean_srgb_luminance": 0.5779441795523091,
+          "coarse_30cm_block_std": 0.00403018077600217,
+          "coarse_peak_to_peak": 0.018126029038930458
+        }
+      },
+      "tile_cream": {
+        "old": {
+          "mean_srgb_luminance": 0.5188124955863125,
+          "coarse_30cm_block_std": 0.0827117400888132,
+          "coarse_peak_to_peak": 0.2273034466093219
+        },
+        "_v4": {
+          "mean_srgb_luminance": 0.6251071199937901,
+          "coarse_30cm_block_std": 0.004410312437323623,
+          "coarse_peak_to_peak": 0.019673388458507968
+        }
+      }
+    },
+    "status": "Active for final revision4 Blender rebuild after completed round2 14-view real-engine capture."
+  },
+  "surface_revision": 5,
+  "v04_scan_sources": [
+    {
+      "key": "painted_metal",
+      "source_url": "https://polyhaven.com/a/rusty_painted_metal",
+      "files": [
+        {
+          "bytes": 1930544,
+          "sha256": "883118fafabb56304f9e33ea2da3c183379b1c1b1c5a4702fdc335b0cf84614f",
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rusty_painted_metal/rusty_painted_metal_diff_2k.jpg",
+          "license": "CC0",
+          "local_path": "v04_scans/rusty_painted_metal/rusty_painted_metal_diff_2k.jpg"
+        },
+        {
+          "bytes": 1342923,
+          "sha256": "17e6a4cab6d42576ce0bffecc53ba364d18a40b5d941471273b947e6f347a3b5",
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rusty_painted_metal/rusty_painted_metal_rough_2k.jpg",
+          "license": "CC0",
+          "local_path": "v04_scans/rusty_painted_metal/rusty_painted_metal_rough_2k.jpg"
+        },
+        {
+          "bytes": 2293576,
+          "sha256": "2289c10422d5082aea3cf37661008b281c4aec20f6d0b574df6d7887573eb70c",
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rusty_painted_metal/rusty_painted_metal_nor_gl_2k.jpg",
+          "license": "CC0",
+          "local_path": "v04_scans/rusty_painted_metal/rusty_painted_metal_nor_gl_2k.jpg"
+        }
+      ]
+    },
+    {
+      "key": "curtain",
+      "source_url": "https://polyhaven.com/a/fabric_pattern_07",
+      "files": [
+        {
+          "bytes": 2650991,
+          "sha256": "1f4941638b890d4535b1078067be8a831ca302d1e696ed959b4e4512de893cba",
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/fabric_pattern_07/fabric_pattern_07_col_1_2k.jpg",
+          "license": "CC0",
+          "local_path": "v04_scans/fabric_pattern_07/fabric_pattern_07_col_1_2k.jpg"
+        },
+        {
+          "bytes": 1657764,
+          "sha256": "be3e311614ee6f31d4cb4a774ed678b7a64189d3e1a55ad71033142185da270a",
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/fabric_pattern_07/fabric_pattern_07_rough_2k.jpg",
+          "license": "CC0",
+          "local_path": "v04_scans/fabric_pattern_07/fabric_pattern_07_rough_2k.jpg"
+        },
+        {
+          "bytes": 2572375,
+          "sha256": "84f15ee5f6b63e7e224051a22426c751cc1fe15a794efd001ebfdb5f84828602",
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/fabric_pattern_07/fabric_pattern_07_nor_gl_2k.jpg",
+          "license": "CC0",
+          "local_path": "v04_scans/fabric_pattern_07/fabric_pattern_07_nor_gl_2k.jpg"
+        }
+      ]
+    },
+    {
+      "key": "yard_concrete",
+      "source_url": "https://polyhaven.com/a/concrete_floor_worn_001",
+      "files": [
+        {
+          "local_path": "v04_scans/concrete_floor_worn_001/concrete_floor_worn_001_diff_2k.jpg",
+          "role": "diff",
+          "bytes": 482906,
+          "sha256": "e29b45cdcd6d02fae3c087c456196ffa750779a9b62e7071aa3831dc322a0cc4",
+          "md5": "6a3645f19f2ac4b7f60f43419c5d09ec",
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_floor_worn_001/concrete_floor_worn_001_diff_2k.jpg",
+          "license": "CC0-1.0"
+        },
+        {
+          "local_path": "v04_scans/concrete_floor_worn_001/concrete_floor_worn_001_rough_2k.jpg",
+          "role": "rough",
+          "bytes": 735249,
+          "sha256": "b904992f0d75da2c41edf832bbb838622cca076f48f7913065a152c3b640690e",
+          "md5": "169cac76d6499d7d70d1dbb237fcc976",
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_floor_worn_001/concrete_floor_worn_001_rough_2k.jpg",
+          "license": "CC0-1.0"
+        },
+        {
+          "local_path": "v04_scans/concrete_floor_worn_001/concrete_floor_worn_001_nor_gl_2k.jpg",
+          "role": "nor_gl",
+          "bytes": 870609,
+          "sha256": "3b782137e34d63fd59b2e92b4e27b2ee4d082caf9dd23f00dc7ab4da5513daef",
+          "md5": "210fbc9fe40492177e79fdb4afda268e",
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_floor_worn_001/concrete_floor_worn_001_nor_gl_2k.jpg",
+          "license": "CC0-1.0"
+        }
+      ]
+    },
+    {
+      "key": "step_concrete",
+      "source_url": "https://polyhaven.com/a/concrete_floor_worn_001",
+      "files": [
+        {
+          "local_path": "v04_scans/concrete_floor_worn_001/concrete_floor_worn_001_diff_2k.jpg",
+          "role": "diff",
+          "bytes": 482906,
+          "sha256": "e29b45cdcd6d02fae3c087c456196ffa750779a9b62e7071aa3831dc322a0cc4",
+          "md5": "6a3645f19f2ac4b7f60f43419c5d09ec",
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_floor_worn_001/concrete_floor_worn_001_diff_2k.jpg",
+          "license": "CC0-1.0"
+        },
+        {
+          "local_path": "v04_scans/concrete_floor_worn_001/concrete_floor_worn_001_rough_2k.jpg",
+          "role": "rough",
+          "bytes": 735249,
+          "sha256": "b904992f0d75da2c41edf832bbb838622cca076f48f7913065a152c3b640690e",
+          "md5": "169cac76d6499d7d70d1dbb237fcc976",
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_floor_worn_001/concrete_floor_worn_001_rough_2k.jpg",
+          "license": "CC0-1.0"
+        },
+        {
+          "local_path": "v04_scans/concrete_floor_worn_001/concrete_floor_worn_001_nor_gl_2k.jpg",
+          "role": "nor_gl",
+          "bytes": 870609,
+          "sha256": "3b782137e34d63fd59b2e92b4e27b2ee4d082caf9dd23f00dc7ab4da5513daef",
+          "md5": "210fbc9fe40492177e79fdb4afda268e",
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_floor_worn_001/concrete_floor_worn_001_nor_gl_2k.jpg",
+          "license": "CC0-1.0"
+        }
+      ]
+    },
+    {
+      "key": "stone",
+      "source_url": "https://polyhaven.com/a/stone_wall_05",
+      "files": [
+        {
+          "local_path": "v04_scans/stone_wall_05/stone_wall_05_diff_2k.jpg",
+          "role": "diff",
+          "bytes": 3504038,
+          "sha256": "d3680c5ef2657aead18f9bfab93994555b8f05de4f4fecba18194cbe3a116b87",
+          "md5": "a68442d9069165f1d640944a88ed9603",
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/stone_wall_05/stone_wall_05_diff_2k.jpg",
+          "license": "CC0-1.0"
+        },
+        {
+          "local_path": "v04_scans/stone_wall_05/stone_wall_05_rough_2k.jpg",
+          "role": "rough",
+          "bytes": 1122076,
+          "sha256": "aead8f5c535fc22b1a3c46aa50679c43b37f279f7abce482115551b0f58a5b0e",
+          "md5": "b3533f7a6c909a5590776c9e1d6ccb66",
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/stone_wall_05/stone_wall_05_rough_2k.jpg",
+          "license": "CC0-1.0"
+        },
+        {
+          "local_path": "v04_scans/stone_wall_05/stone_wall_05_nor_gl_2k.jpg",
+          "role": "nor_gl",
+          "bytes": 4874482,
+          "sha256": "14cd6f3fc1dcd1f95962cdf2806866a6608ae69c075a8ffbd1ebd75b2bb679ef",
+          "md5": "4e5a7f4385fcfddfb6401ac76c5383fd",
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/stone_wall_05/stone_wall_05_nor_gl_2k.jpg",
+          "license": "CC0-1.0"
+        }
+      ]
+    },
+    {
+      "key": "plaster_grey",
+      "source_url": "https://polyhaven.com/a/plastered_wall_04",
+      "files": [
+        {
+          "local_path": "v04_scans/plastered_wall_04/plastered_wall_04_diff_2k.jpg",
+          "role": "diff",
+          "bytes": 1465312,
+          "sha256": "aaf0e693291d51d13531480625a942f950fed23f6b1d1008ee0e91f2a23a7b1e",
+          "md5": "895416a6d0f0b41c8a53a3436bed5a05",
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/plastered_wall_04/plastered_wall_04_diff_2k.jpg",
+          "license": "CC0-1.0"
+        },
+        {
+          "local_path": "v04_scans/plastered_wall_04/plastered_wall_04_rough_2k.jpg",
+          "role": "rough",
+          "bytes": 1236406,
+          "sha256": "37302048eb2e60be2a73a7f803965097681e652b80b93d6d701cfc7fabc1e0a7",
+          "md5": "f471836a79416eecb11b9863e7f79160",
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/plastered_wall_04/plastered_wall_04_rough_2k.jpg",
+          "license": "CC0-1.0"
+        },
+        {
+          "local_path": "v04_scans/plastered_wall_04/plastered_wall_04_nor_gl_2k.jpg",
+          "role": "nor_gl",
+          "bytes": 1760685,
+          "sha256": "904f6ca0b569754502675b8891b5d6aad1d8a07f938e8a43cf385170a21a12dc",
+          "md5": "119d0993d303caadcfe73003db001c42",
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/plastered_wall_04/plastered_wall_04_nor_gl_2k.jpg",
+          "license": "CC0-1.0"
+        }
+      ]
+    },
+    {
+      "key": "pavement",
+      "source_url": "https://polyhaven.com/a/concrete_floor_worn_001",
+      "files": [
+        {
+          "local_path": "v04_scans/concrete_floor_worn_001/concrete_floor_worn_001_diff_2k.jpg",
+          "role": "diff",
+          "bytes": 482906,
+          "sha256": "e29b45cdcd6d02fae3c087c456196ffa750779a9b62e7071aa3831dc322a0cc4",
+          "md5": "6a3645f19f2ac4b7f60f43419c5d09ec",
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_floor_worn_001/concrete_floor_worn_001_diff_2k.jpg",
+          "license": "CC0-1.0"
+        },
+        {
+          "local_path": "v04_scans/concrete_floor_worn_001/concrete_floor_worn_001_rough_2k.jpg",
+          "role": "rough",
+          "bytes": 735249,
+          "sha256": "b904992f0d75da2c41edf832bbb838622cca076f48f7913065a152c3b640690e",
+          "md5": "169cac76d6499d7d70d1dbb237fcc976",
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_floor_worn_001/concrete_floor_worn_001_rough_2k.jpg",
+          "license": "CC0-1.0"
+        },
+        {
+          "local_path": "v04_scans/concrete_floor_worn_001/concrete_floor_worn_001_nor_gl_2k.jpg",
+          "role": "nor_gl",
+          "bytes": 870609,
+          "sha256": "3b782137e34d63fd59b2e92b4e27b2ee4d082caf9dd23f00dc7ab4da5513daef",
+          "md5": "210fbc9fe40492177e79fdb4afda268e",
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_floor_worn_001/concrete_floor_worn_001_nor_gl_2k.jpg",
+          "license": "CC0-1.0"
+        }
+      ]
+    },
+    {
+      "key": "plaster_ochre",
+      "source_url": "https://polyhaven.com/a/plastered_wall_04",
+      "files": [
+        {
+          "local_path": "v04_scans/plastered_wall_04/plastered_wall_04_diff_2k.jpg",
+          "role": "diff",
+          "bytes": 1465312,
+          "sha256": "aaf0e693291d51d13531480625a942f950fed23f6b1d1008ee0e91f2a23a7b1e",
+          "md5": "895416a6d0f0b41c8a53a3436bed5a05",
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/plastered_wall_04/plastered_wall_04_diff_2k.jpg",
+          "license": "CC0-1.0"
+        },
+        {
+          "local_path": "v04_scans/plastered_wall_04/plastered_wall_04_rough_2k.jpg",
+          "role": "rough",
+          "bytes": 1236406,
+          "sha256": "37302048eb2e60be2a73a7f803965097681e652b80b93d6d701cfc7fabc1e0a7",
+          "md5": "f471836a79416eecb11b9863e7f79160",
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/plastered_wall_04/plastered_wall_04_rough_2k.jpg",
+          "license": "CC0-1.0"
+        },
+        {
+          "local_path": "v04_scans/plastered_wall_04/plastered_wall_04_nor_gl_2k.jpg",
+          "role": "nor_gl",
+          "bytes": 1760685,
+          "sha256": "904f6ca0b569754502675b8891b5d6aad1d8a07f938e8a43cf385170a21a12dc",
+          "md5": "119d0993d303caadcfe73003db001c42",
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/plastered_wall_04/plastered_wall_04_nor_gl_2k.jpg",
+          "license": "CC0-1.0"
+        }
+      ]
+    }
+  ],
+  "v04_file_manifest_audit": {
+    "previous_version": 3,
+    "previous_records": 81,
+    "previous_local_path_records": 63,
+    "previous_path_records": 18,
+    "current_records": 71,
+    "canonical_path_field": "local_path",
+    "current_map_bytes": 122516199,
+    "method": "Rebuilt only file metadata from every current assets[*].maps reference, including optional materials. No texture bytes, material parameters, assets or source metadata changed. No original map files deleted."
+  },
+  "v04_surface_selection_history": [
+    {
+      "date": "2026-11-19",
+      "reason": "Engine review found colored paint in worn_concrete_floor and high-contrast blotches in mossy_stone_wall. Six official diffuse candidates were viewed before replacing two surface types.",
+      "reviewed_candidates": [
+        "concrete_floor_worn_001",
+        "concrete_floor_03",
+        "concrete_floor_02",
+        "stone_wall_05",
+        "stone_brick_wall_001",
+        "large_sandstone_blocks"
+      ],
+      "selected": {
+        "yard_concrete": "concrete_floor_worn_001",
+        "step_concrete": "concrete_floor_worn_001",
+        "stone": "stone_wall_05"
+      },
+      "previous_assets": {
+        "yard_concrete": {
+          "asset": "worn_concrete_floor",
+          "resolution": "2k",
+          "maps": {
+            "diff": "v04_scans/worn_concrete_floor/worn_concrete_floor_diff_2k.jpg",
+            "rough": "v04_scans/worn_concrete_floor/worn_concrete_floor_rough_2k.jpg",
+            "nor_gl": "v04_scans/worn_concrete_floor/worn_concrete_floor_nor_gl_2k.jpg"
+          },
+          "meters": 4.0,
+          "source_url": "https://polyhaven.com/a/worn_concrete_floor",
+          "license": "CC0-1.0",
+          "license_url": "https://polyhaven.com/license",
+          "authors": [
+            "Dimitrios Savva"
+          ],
+          "origin": "Poly Haven scan, reused unchanged",
+          "normal_strength": 0.55
+        },
+        "stone": {
+          "maps": {
+            "diff": "v04_scans/mossy_stone_wall/mossy_stone_wall_diff_2k.jpg",
+            "rough": "v04_scans/mossy_stone_wall/mossy_stone_wall_rough_2k.jpg",
+            "nor_gl": "v04_scans/mossy_stone_wall/mossy_stone_wall_nor_gl_2k.jpg"
+          },
+          "meters": 3.0,
+          "source_url": "https://polyhaven.com/a/mossy_stone_wall",
+          "license": "CC0",
+          "authors": [
+            "Amal Kumar"
+          ],
+          "origin": "Original Poly Haven photographic scan maps, downloaded unchanged; explicit physical scale selected for scene",
+          "normal_strength": 0.5
+        }
+      },
+      "previous_source_records": [
+        {
+          "key": "stone",
+          "source_url": "https://polyhaven.com/a/mossy_stone_wall",
+          "files": [
+            {
+              "path": "v04_scans/mossy_stone_wall/mossy_stone_wall_diff_2k.jpg",
+              "bytes": 3808852,
+              "sha256": "4c41e62e3c6b0af73b89bd3c9c46c55f3723a36789475d3ff76fe112d89d45e2",
+              "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/mossy_stone_wall/mossy_stone_wall_diff_2k.jpg",
+              "license": "CC0"
+            },
+            {
+              "path": "v04_scans/mossy_stone_wall/mossy_stone_wall_rough_2k.jpg",
+              "bytes": 1901225,
+              "sha256": "ecb8c608fdcea5a21bfd9ad553dbb6b0a74c7d2cdd5f8a3a16e9e83b18126c42",
+              "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/mossy_stone_wall/mossy_stone_wall_rough_2k.jpg",
+              "license": "CC0"
+            },
+            {
+              "path": "v04_scans/mossy_stone_wall/mossy_stone_wall_nor_gl_2k.jpg",
+              "bytes": 5143278,
+              "sha256": "5b0bc44304093ebb2307d91fe6f7f7b0c4af1ccbd84025a8c36c97da981be5cb",
+              "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/mossy_stone_wall/mossy_stone_wall_nor_gl_2k.jpg",
+              "license": "CC0"
+            }
+          ]
+        }
+      ],
+      "original_files_retained": true,
+      "visual_reason": "Neutral gray worn concrete with small scratches; regular gray-brown masonry courses with narrow gray joints. No colored floor paint or high-contrast black moss patches."
+    },
+    {
+      "date": "2026-11-19",
+      "revision": "R7",
+      "reason": "Native R6 review: broad moss pattern over whole gray façades was too busy. Root and asset reviewer selected quiet gray plaster; separate local overlays provide weathering.",
+      "selected": {
+        "plaster_grey": "plastered_wall_04 2k"
+      },
+      "previous_assets": {
+        "plaster_grey": {
+          "maps": {
+            "diff": "v04_scans/worn_mossy_plasterwall/worn_mossy_plasterwall_diff_2k.jpg",
+            "rough": "v04_scans/worn_mossy_plasterwall/worn_mossy_plasterwall_rough_2k.jpg",
+            "nor_gl": "v04_scans/worn_mossy_plasterwall/worn_mossy_plasterwall_nor_gl_2k.jpg"
+          },
+          "meters": 3.5,
+          "source_url": "https://polyhaven.com/a/worn_mossy_plasterwall",
+          "license": "CC0",
+          "authors": [
+            "Amal Kumar"
+          ],
+          "origin": "Original Poly Haven photographic scan maps, downloaded unchanged; explicit physical scale selected for scene",
+          "normal_strength": 0.5
+        }
+      },
+      "previous_source_records": [
+        {
+          "key": "plaster_grey",
+          "source_url": "https://polyhaven.com/a/worn_mossy_plasterwall",
+          "files": [
+            {
+              "path": "v04_scans/worn_mossy_plasterwall/worn_mossy_plasterwall_diff_2k.jpg",
+              "bytes": 3987892,
+              "sha256": "b55a5ac7b045d64d7615c30cc47d8c2f630127877ddf686585722c178fab4b4c",
+              "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/worn_mossy_plasterwall/worn_mossy_plasterwall_diff_2k.jpg",
+              "license": "CC0"
+            },
+            {
+              "path": "v04_scans/worn_mossy_plasterwall/worn_mossy_plasterwall_rough_2k.jpg",
+              "bytes": 2601005,
+              "sha256": "ef28f4ea25072e0e756ac43b38b16d25f009c001e72427f1f26ee444829644bb",
+              "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/worn_mossy_plasterwall/worn_mossy_plasterwall_rough_2k.jpg",
+              "license": "CC0"
+            },
+            {
+              "path": "v04_scans/worn_mossy_plasterwall/worn_mossy_plasterwall_nor_gl_2k.jpg",
+              "bytes": 3874111,
+              "sha256": "f7057359fa854bf8bda43d16c9d69a8da27f557f33270270b0b87043cb6e8775",
+              "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/worn_mossy_plasterwall/worn_mossy_plasterwall_nor_gl_2k.jpg",
+              "license": "CC0"
+            }
+          ]
+        }
+      ],
+      "original_files_retained": true
+    },
+    {
+      "date": "2026-11-19",
+      "revision": "R7",
+      "reason": "Six native R6 views showed broad brown-gray checkerboard paving competing with the reference. Replace ordinary pedestrian paving with the already reviewed neutral gray concrete; geometric joints, curbs and drains retain layered detail.",
+      "selected": {
+        "pavement": "concrete_floor_worn_001 2k"
+      },
+      "scene_repeat_m": 4.5,
+      "normal_strength": 0.4,
+      "previous_assets": {
+        "pavement": {
+          "maps": {
+            "diff": "v04_scans/concrete_pavement_03/concrete_pavement_03_diff_2k.jpg",
+            "rough": "v04_scans/concrete_pavement_03/concrete_pavement_03_rough_2k.jpg",
+            "nor_gl": "v04_scans/concrete_pavement_03/concrete_pavement_03_nor_gl_2k.jpg"
+          },
+          "meters": 3.0,
+          "source_url": "https://polyhaven.com/a/concrete_pavement_03",
+          "license": "CC0",
+          "authors": [
+            "Charlotte Baglioni"
+          ],
+          "origin": "Original Poly Haven photographic scan maps, downloaded unchanged; explicit physical scale selected for scene",
+          "normal_strength": 0.5
+        }
+      },
+      "previous_source_records": [
+        {
+          "key": "pavement",
+          "source_url": "https://polyhaven.com/a/concrete_pavement_03",
+          "files": [
+            {
+              "bytes": 3872063,
+              "sha256": "6f0ed226b4104d7065f22567addc762944365a67e764df3d0faf2ea7baf15370",
+              "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_pavement_03/concrete_pavement_03_diff_2k.jpg",
+              "license": "CC0",
+              "local_path": "v04_scans/concrete_pavement_03/concrete_pavement_03_diff_2k.jpg"
+            },
+            {
+              "bytes": 1243806,
+              "sha256": "6703a47dda248206146828d47e5f59060e68ed40eb12ea036ea83664fe0d94e8",
+              "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_pavement_03/concrete_pavement_03_rough_2k.jpg",
+              "license": "CC0",
+              "local_path": "v04_scans/concrete_pavement_03/concrete_pavement_03_rough_2k.jpg"
+            },
+            {
+              "bytes": 4791871,
+              "sha256": "5d090a97b798fa0392a80af63543e162247175a384cfa7b411d7b1dae9d4b2dd",
+              "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_pavement_03/concrete_pavement_03_nor_gl_2k.jpg",
+              "license": "CC0",
+              "local_path": "v04_scans/concrete_pavement_03/concrete_pavement_03_nor_gl_2k.jpg"
+            }
+          ]
+        }
+      ],
+      "original_files_retained": true
+    },
+    {
+      "date": "2026-11-19",
+      "revision": "R7",
+      "reason": "Native R6 upper_houses and narrow_passage views showed repeating large peeled patches in worn_plaster_wall. Reuse quiet plastered_wall_04 unchanged; localized authored rain traces and wall-foot patches provide weathering, while brick, tiles and timber retain architectural variation.",
+      "selected": {
+        "plaster_ochre": "plastered_wall_04 2k"
+      },
+      "scene_repeat_m": 4.0,
+      "normal_strength": 0.5,
+      "color_processing": false,
+      "previous_assets": {
+        "plaster_ochre": {
+          "maps": {
+            "diff": "v04_scans/worn_plaster_wall/worn_plaster_wall_diff_2k.jpg",
+            "rough": "v04_scans/worn_plaster_wall/worn_plaster_wall_rough_2k.jpg",
+            "nor_gl": "v04_scans/worn_plaster_wall/worn_plaster_wall_nor_gl_2k.jpg"
+          },
+          "meters": 3.5,
+          "source_url": "https://polyhaven.com/a/worn_plaster_wall",
+          "license": "CC0",
+          "authors": [
+            "Dimitrios Savva"
+          ],
+          "origin": "Original Poly Haven photographic scan maps, downloaded unchanged; explicit physical scale selected for scene",
+          "normal_strength": 0.5
+        }
+      },
+      "previous_source_records": [
+        {
+          "key": "plaster_ochre",
+          "source_url": "https://polyhaven.com/a/worn_plaster_wall",
+          "files": [
+            {
+              "bytes": 3096042,
+              "sha256": "1cf28fcd1a0aa5873055fbfaf791e4a1528e03d3eeea8f66af23aba651e71f54",
+              "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/worn_plaster_wall/worn_plaster_wall_diff_2k.jpg",
+              "license": "CC0",
+              "local_path": "v04_scans/worn_plaster_wall/worn_plaster_wall_diff_2k.jpg"
+            },
+            {
+              "bytes": 1012956,
+              "sha256": "1063b53b2cba33f791b895f0d7ac0ee5f3434a54a674164e53405d9cf358f7b1",
+              "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/worn_plaster_wall/worn_plaster_wall_rough_2k.jpg",
+              "license": "CC0",
+              "local_path": "v04_scans/worn_plaster_wall/worn_plaster_wall_rough_2k.jpg"
+            },
+            {
+              "bytes": 2935964,
+              "sha256": "ffc110c57a6f98416a9cec390aeee80e1c6a3e6be627cfabfa041a55ccf96546",
+              "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/worn_plaster_wall/worn_plaster_wall_nor_gl_2k.jpg",
+              "license": "CC0",
+              "local_path": "v04_scans/worn_plaster_wall/worn_plaster_wall_nor_gl_2k.jpg"
+            }
+          ]
+        }
+      ],
+      "original_files_retained": true
+    }
+  ],
+  "derived_materials": {
+    "curtain_linen": {
+      "created_in": "build_district.py, REVISION >= 6",
+      "base_material": "curtain",
+      "base_color_linear": [
+        0.38,
+        0.36,
+        0.31
+      ],
+      "color_author": "Project art direction",
+      "texture_authors": [
+        "Rob Tuytel"
+      ],
+      "source_url": "https://polyhaven.com/a/fabric_pattern_07",
+      "license": "Project-authored solid color; CC0-1.0 scanned normal and roughness maps",
+      "license_url": "https://polyhaven.com/license",
+      "maps": {
+        "rough": "v04_scans/fabric_pattern_07/fabric_pattern_07_rough_2k.jpg",
+        "nor_gl": "v04_scans/fabric_pattern_07/fabric_pattern_07_nor_gl_2k.jpg"
+      },
+      "origin": "Authored plain cloth color with unchanged Poly Haven fabric_pattern_07 weave normal/roughness. The original printed diffuse is disconnected for these variants."
+    },
+    "curtain_beige": {
+      "created_in": "build_district.py, REVISION >= 6",
+      "base_material": "curtain",
+      "base_color_linear": [
+        0.5,
+        0.46,
+        0.36
+      ],
+      "color_author": "Project art direction",
+      "texture_authors": [
+        "Rob Tuytel"
+      ],
+      "source_url": "https://polyhaven.com/a/fabric_pattern_07",
+      "license": "Project-authored solid color; CC0-1.0 scanned normal and roughness maps",
+      "license_url": "https://polyhaven.com/license",
+      "maps": {
+        "rough": "v04_scans/fabric_pattern_07/fabric_pattern_07_rough_2k.jpg",
+        "nor_gl": "v04_scans/fabric_pattern_07/fabric_pattern_07_nor_gl_2k.jpg"
+      },
+      "origin": "Authored plain cloth color with unchanged Poly Haven fabric_pattern_07 weave normal/roughness. The original printed diffuse is disconnected for these variants."
+    },
+    "curtain_sage": {
+      "created_in": "build_district.py, REVISION >= 6",
+      "base_material": "curtain",
+      "base_color_linear": [
+        0.2,
+        0.27,
+        0.23
+      ],
+      "color_author": "Project art direction",
+      "texture_authors": [
+        "Rob Tuytel"
+      ],
+      "source_url": "https://polyhaven.com/a/fabric_pattern_07",
+      "license": "Project-authored solid color; CC0-1.0 scanned normal and roughness maps",
+      "license_url": "https://polyhaven.com/license",
+      "maps": {
+        "rough": "v04_scans/fabric_pattern_07/fabric_pattern_07_rough_2k.jpg",
+        "nor_gl": "v04_scans/fabric_pattern_07/fabric_pattern_07_nor_gl_2k.jpg"
+      },
+      "origin": "Authored plain cloth color with unchanged Poly Haven fabric_pattern_07 weave normal/roughness. The original printed diffuse is disconnected for these variants."
+    }
+  },
+  "production_revision": 13,
+  "scanned_model_branch_uv_repair": {
+    "adopted": true,
+    "details": "../scanned_assets/branch_uv_repair.json",
+    "production_library_sha256": "733d613f269e03450a8aa52a183da74a1a83d3d7e3dbce88dfe39f6a7f8d5f5d"
+  },
+  "v05_surface_adoption": [
+    {
+      "material": "ground_dirt",
+      "source_url": "https://polyhaven.com/a/brown_mud_leaves_01",
+      "meters": 1.6,
+      "normal_strength": 0.85
+    },
+    {
+      "material": "gravel_ground",
+      "source_url": "https://polyhaven.com/a/gravel_floor",
+      "meters": 2.0,
+      "normal_strength": 0.75
+    },
+    {
+      "material": "paving_slab",
+      "source_url": "https://polyhaven.com/a/stone_floor",
+      "meters": 2.4,
+      "normal_strength": 0.75
+    },
+    {
+      "material": "timber",
+      "source_url": "https://polyhaven.com/a/wood_table_worn",
+      "meters": 1.2,
+      "normal_strength": 0.48
+    }
+  ],
+  "v05_brick_relief_r9": {
+    "source_url": "https://polyhaven.com/a/brick_wall_08",
+    "authors": {
+      "Amal Kumar": "All"
+    },
+    "license": "CC0-1.0",
+    "added_maps": [
+      {
+        "role": "Rough",
+        "local_path": "v05_scans/brick_wall_08/brick_wall_08_rough_2k.jpg",
+        "path": "cq05/downloads/brick_wall_08_r9/brick_wall_08_rough_2k.jpg",
+        "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/brick_wall_08/brick_wall_08_rough_2k.jpg",
+        "bytes": 1953303,
+        "md5": "4109b36a487961745f5d91da7344dcc1",
+        "sha256": "9ad3fe0e754a7c1fd58ceaaab8db6d36edfae175971238c2afef20ee955e5355"
+      },
+      {
+        "role": "nor_gl",
+        "local_path": "v05_scans/brick_wall_08/brick_wall_08_nor_gl_2k.jpg",
+        "path": "cq05/downloads/brick_wall_08_r9/brick_wall_08_nor_gl_2k.jpg",
+        "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/brick_wall_08/brick_wall_08_nor_gl_2k.jpg",
+        "bytes": 4119217,
+        "md5": "a6b814e305d316ca78826fbffbbc43f5",
+        "sha256": "7e8404b29ef3af7b7cb949fee5441c48451bb21bf5bf24212c209262005f5604"
+      }
+    ],
+    "matching_diffuse_md5": "7ee8d22f280cf9b40ceec057a7800d85"
+  },
+  "v05_gravel_selection_r9": {
+    "previous_spec": {
+      "maps": {
+        "diff": "v05_scans/gravel_floor/gravel_floor_diff_2k.jpg",
+        "rough": "v05_scans/gravel_floor/gravel_floor_rough_2k.jpg",
+        "nor_gl": "v05_scans/gravel_floor/gravel_floor_nor_gl_2k.jpg"
+      },
+      "meters": 2.0,
+      "source_url": "https://polyhaven.com/a/gravel_floor",
+      "license": "CC0",
+      "authors": [
+        "Jenelle van Heerden",
+        "Matterfield"
+      ],
+      "origin": "Original Poly Haven photographic scan maps, downloaded unchanged; scene repetition scale is an authored selection.",
+      "normal_strength": 0.75,
+      "roughness": 0.87
+    },
+    "chosen_source_info": {
+      "type": 1,
+      "name": "Leaf Scattered Gravel",
+      "categories": [
+        "outdoor",
+        "natural",
+        "terrain",
+        "gravel",
+        "rock"
+      ],
+      "category": "Ground & Terrain/Forest Floor/Leaf Litter",
+      "attributes": {
+        "surface_use": "ground",
+        "origin": "man_made",
+        "setting": "outdoor",
+        "condition": [
+          "dirty"
+        ]
+      },
+      "tags": [
+        "forest",
+        "nature",
+        "stones",
+        "autumn",
+        "leaves",
+        "stone-fragments",
+        "organic-debris",
+        "organic-debris",
+        "loose pebbles"
+      ],
+      "description": "Free 8K texture of leaf-littered gravel: dark stones mixed with dried brown leaves and twigs, damp, rough and uneven surface with rich micro detail.",
+      "authors": {
+        "Dimitrios Savva": "All"
+      },
+      "category_id": "b9a51c27-1499-5f4d-b28f-0d96ef8e0319",
+      "max_resolution": [
+        8192,
+        8192
+      ],
+      "dimensions": [
+        1800.0000715255737,
+        1800.0000715255737
+      ],
+      "files_hash": "1776cedc8d340fb844730db8f6773fcb6e1eb2db",
+      "img_version": "a9811e8b",
+      "date_published": 1790726400,
+      "staging": null,
+      "download_count": 2924,
+      "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/leaf_scattered_gravel.png?width=256&height=256&format=webp&v=a9811e8b"
+    },
+    "files": [
+      {
+        "role": "Diffuse",
+        "local_path": "v05_scans/leaf_scattered_gravel/leaf_scattered_gravel_diff_2k.jpg",
+        "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/leaf_scattered_gravel/leaf_scattered_gravel_diff_2k.jpg",
+        "bytes": 3713229,
+        "md5": "150a6fd72584527884fd7ec0e392bdf4",
+        "sha256": "f81bd1e3b2395ea7c08c7afaf8646d98b6dd1eed588fe0569230f37da69fbd36"
+      },
+      {
+        "role": "Rough",
+        "local_path": "v05_scans/leaf_scattered_gravel/leaf_scattered_gravel_rough_2k.jpg",
+        "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/leaf_scattered_gravel/leaf_scattered_gravel_rough_2k.jpg",
+        "bytes": 2438034,
+        "md5": "a10e915c489abe7c7ec6372d25af83b0",
+        "sha256": "f2ef61e44cc32583d3e5d4b8e23a48c50caa851206d6f28a05201606027a0496"
+      },
+      {
+        "role": "nor_gl",
+        "local_path": "v05_scans/leaf_scattered_gravel/leaf_scattered_gravel_nor_gl_2k.jpg",
+        "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/leaf_scattered_gravel/leaf_scattered_gravel_nor_gl_2k.jpg",
+        "bytes": 5327258,
+        "md5": "2c17712e09f90b302546f8a0c34130da",
+        "sha256": "68e43b0a8a09aa9f55b0786255d5757e4a843d04955f4fe4b9fcedc5066392c8"
+      }
+    ]
+  }
+}

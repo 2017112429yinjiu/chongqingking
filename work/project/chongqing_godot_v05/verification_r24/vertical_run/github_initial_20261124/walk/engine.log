@@ -1,0 +1,80 @@
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+Vulkan 1.4.351 - Forward+ - Using Device #0: NVIDIA - NVIDIA GeForce RTX 4070 Laptop GPU
+
+CQ_INTERIOR_LIGHTS {"interior_candidate_count":9,"interior_lights":[{"energy":0.239999994635582,"name":"B_809889627_blue_apartments_room_lamp","position":[82.391,28.184,-13.942],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_809889628_clinic_room_lamp","position":[15.883,31.615,-53.5],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_809889629_artisan_room_lamp","position":[47.205,34.774,-72.476],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_1335306665_civic_room_lamp","position":[-24.373,26.707,-30.861],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_1335306666_heritage_room_lamp","position":[-50.162,26.057,-36.511],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_1335306667_brick_home_room_lamp","position":[-62.888,23.169,-17.653],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_1413081560_old_tile_room_lamp","position":[-33.476,29.533,-53.924],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_A03_blue_apartments_room_lamp","position":[-91.543,16.767,15.033],"range":2.70000004768372,"shadows":false},{"energy":0.239999994635582,"name":"B_A04_courtyard_home_room_lamp","position":[-55.09,17.775,14.621],"range":2.70000004768372,"shadows":false}],"street_lights":22}
+CQ_BRANCH_OVERRIDE {"baked_primary":true,"imported_uv1_offset":[0.0,0.0,0.0],"imported_uv1_scale":[1.0,1.0,1.0],"imported_uv2_offset":[0.0,0.0,0.0],"imported_uv2_scale":[1.0,1.0,1.0],"normal_and_pbr_textures":false,"offset":[0.0,0.0],"scale":[1.0,1.0],"texcoord":0,"texture":"res://assets/chongqing_district_island_tree_01_branches_diff_2k.jpg"}
+CQ_BRANCH_OVERRIDE {"baked_primary":true,"imported_uv1_offset":[0.0,0.0,0.0],"imported_uv1_scale":[1.0,1.0,1.0],"imported_uv2_offset":[0.0,0.0,0.0],"imported_uv2_scale":[1.0,1.0,1.0],"normal_and_pbr_textures":false,"offset":[0.0,0.0],"scale":[1.0,1.0],"texcoord":0,"texture":"res://assets/chongqing_district_tree_small_02_branch_diff_2k.jpg"}
+CQ_STREET_USE { "dressed": 2, "paving": 56, "facades": 83, "asphalt": 15, "workday": true, "resident_pots": 2, "furniture_volumes": 2 }
+CQ_NEIGHBORHOOD {"missing":[],"plants":35,"removed":["COL_Handrails_Central_stair_lane_painted_metal","COL_Handrails_West_residential_link_painted_metal","Court_entry_rails_frame","Utility_cables_dark","COL_R20_Returned_handrail_steel","COL_R20_Returned_handrail_rail_enamel","COL_R20_Returned_handrail_pin","COL_R20_Returned_handrail_iron","Resident_waste_13_bin_00","Resident_waste_13_bin_01","Resident_waste_13_bin_02","Resident_waste_13_bin_03","Resident_waste_13_bagA_00","Resident_waste_13_bagB_00","Resident_waste_13_crate_00"],"shifted":87,"spans":4,"tree_distance_meshes":288,"trunks":5}
+PENG_TEACH SHOP_EXIT
+CQ_READY {"collisions":{"bodies":289,"by_kind":{"refined_structure":289},"created":289,"failed":[],"props":{"method":"deduplicated root-aligned cylinders; foliage excluded","trunks_and_posts":57},"reused":0,"skipped_meshes":3641,"triangles":515985},"engine":"4.6.3-stable (official)","renderer":"forward_plus","spawn":[20.0,9.4995,76.0]}
+DAY1 {"detail":"","name":"world","pass":true}
+DAY1 {"detail":"","name":"practice_isolated","pass":true}
+DAY1 {"detail":[],"name":"all_donor_meshes_found","pass":true}
+DAY1 {"detail":"","name":"frame_01_lower_gate","pass":true}
+PENG_TEACH WALK_COUNTER
+CQ_DELIVERY_STAGE {"distance_m":4.54102365206927,"end":"(-54.95867, 16.46179, 19.50046)","goals":1,"max_frame_displacement_m":0.223615884780884,"name":"cross_lower_gate","pass":true,"reached":1,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":4.54102365206927,"end":"(-54.95867, 16.46179, 19.50046)","goals":1,"max_frame_displacement_m":0.223615884780884,"name":"cross_lower_gate","pass":true,"reached":1,"stall_contacts":[]},"name":"cross_lower_gate","pass":true}
+DAY1 {"detail":16.4617938995361,"name":"lower_court_floor","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":6.99558465741575,"end":"(-62.27112, 19.90409, 19.61615)","goals":1,"max_frame_displacement_m":0.18339878320694,"name":"climb_unit_one","pass":true,"reached":1,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":6.99558465741575,"end":"(-62.27112, 19.90409, 19.61615)","goals":1,"max_frame_displacement_m":0.18339878320694,"name":"climb_unit_one","pass":true,"reached":1,"stall_contacts":[]},"name":"climb_unit_one","pass":true}
+DAY1 {"detail":19.9040908813477,"name":"unit_landing_floor","pass":true}
+PENG_TEACH ORDER
+CQ_DELIVERY_STAGE {"distance_m":5.01310766302049,"end":"(-62.32146, 19.90409, 14.57629)","goals":3,"max_frame_displacement_m":0.0700001865625381,"name":"find_cook_202","pass":true,"reached":3,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":5.01310766302049,"end":"(-62.32146, 19.90409, 14.57629)","goals":3,"max_frame_displacement_m":0.0700001865625381,"name":"find_cook_202","pass":true,"reached":3,"stall_contacts":[]},"name":"find_cook_202","pass":true}
+DAY1 {"detail":"","name":"frame_02_pickup_202","pass":true}
+DAY1 {"detail":"","name":"take_douhua","pass":true}
+DAY1 {"detail":"","name":"202_is_not_recipient","pass":true}
+PENG_TEACH PICK_UP
+PENG_TEACH LIFT_CLEAR
+PENG_TEACH RETURN_BIKE
+CQ_DELIVERY_STAGE {"distance_m":14.2553236987442,"end":"(-70.678, 17.27732, 8.04298)","goals":3,"max_frame_displacement_m":0.125771924853325,"name":"leave_via_back_stairs","pass":true,"reached":3,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":14.2553236987442,"end":"(-70.678, 17.27732, 8.04298)","goals":3,"max_frame_displacement_m":0.125771924853325,"name":"leave_via_back_stairs","pass":true,"reached":3,"stall_contacts":[]},"name":"leave_via_back_stairs","pass":true}
+DAY1 {"detail":17.2773151397705,"name":"back_alley_floor","pass":true}
+DAY1 {"detail":"","name":"frame_03_back_alley","pass":true}
+PENG_TEACH LOAD_BOX
+CQ_DELIVERY_STAGE {"distance_m":14.6101870043203,"end":"(-84.88228, 17.49785, 5.711983)","goals":3,"max_frame_displacement_m":0.281969249248505,"name":"turn_at_blue_corner","pass":true,"reached":3,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":14.6101870043203,"end":"(-84.88228, 17.49785, 5.711983)","goals":3,"max_frame_displacement_m":0.281969249248505,"name":"turn_at_blue_corner","pass":true,"reached":3,"stall_contacts":[]},"name":"turn_at_blue_corner","pass":true}
+DAY1 {"detail":"","name":"frame_03b_blue_door","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":3.79973620222881,"end":"(-84.8322, 17.134, 9.829151)","goals":2,"max_frame_displacement_m":0.0736144855618477,"name":"blue_tile_alley_door","pass":true,"reached":2,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":3.79973620222881,"end":"(-84.8322, 17.134, 9.829151)","goals":2,"max_frame_displacement_m":0.0736144855618477,"name":"blue_tile_alley_door","pass":true,"reached":2,"stall_contacts":[]},"name":"blue_tile_alley_door","pass":true}
+DAY1 {"detail":17.133996963501,"name":"blue_entrance_floor","pass":true}
+DAY1 {"detail":"","name":"frame_04_blue_stair","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":6.94529359554872,"end":"(-84.83987, 20.53385, 17.09249)","goals":1,"max_frame_displacement_m":0.174388587474823,"name":"climb_to_turn","pass":true,"reached":1,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":6.94529359554872,"end":"(-84.83987, 20.53385, 17.09249)","goals":1,"max_frame_displacement_m":0.174388587474823,"name":"climb_to_turn","pass":true,"reached":1,"stall_contacts":[]},"name":"climb_to_turn","pass":true}
+DAY1 {"detail":20.5338459014893,"name":"blue_half_floor","pass":true}
+PENG_TEACH BOARD_AGAIN
+PENG_TEACH RIDING
+CQ_DELIVERY_STAGE {"distance_m":9.09605881990865,"end":"(-82.58848, 23.93396, 9.797668)","goals":2,"max_frame_displacement_m":0.17438842356205,"name":"reverse_flight_to_window","pass":true,"reached":2,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":9.09605881990865,"end":"(-82.58848, 23.93396, 9.797668)","goals":2,"max_frame_displacement_m":0.17438842356205,"name":"reverse_flight_to_window","pass":true,"reached":2,"stall_contacts":[]},"name":"reverse_flight_to_window","pass":true}
+DAY1 {"detail":23.9339599609375,"name":"upper_window_floor","pass":true}
+DAY1 {"detail":"","name":"frame_05_upper_window","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":8.68139111157507,"end":"(-77.76431, 23.93396, 14.36286)","goals":3,"max_frame_displacement_m":0.0700035840272903,"name":"enter_high_crossing","pass":true,"reached":3,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":8.68139111157507,"end":"(-77.76431, 23.93396, 14.36286)","goals":3,"max_frame_displacement_m":0.0700035840272903,"name":"enter_high_crossing","pass":true,"reached":3,"stall_contacts":[]},"name":"enter_high_crossing","pass":true}
+DAY1 {"detail":"","name":"frame_06_crossing","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":5.42192152421921,"end":"(-72.02434, 23.93396, 14.36012)","goals":1,"max_frame_displacement_m":0.0699997022747993,"name":"cross_above_alley","pass":true,"reached":1,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":5.42192152421921,"end":"(-72.02434, 23.93396, 14.36012)","goals":1,"max_frame_displacement_m":0.0699997022747993,"name":"cross_above_alley","pass":true,"reached":1,"stall_contacts":[]},"name":"cross_above_alley","pass":true}
+DAY1 {"detail":23.9339599609375,"name":"bridge_middle_floor","pass":true}
+DAY1 {"detail":"","name":"frame_06b_blue_landing","pass":true}
+DAY1 {"detail":"","name":"frame_07_down_to_alley","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":10.5665319217369,"end":"(-61.1399, 22.91324, 14.34005)","goals":2,"max_frame_displacement_m":0.114890739321709,"name":"cross_into_original_house_and_descend","pass":true,"reached":2,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":10.5665319217369,"end":"(-61.1399, 22.91324, 14.34005)","goals":2,"max_frame_displacement_m":0.114890739321709,"name":"cross_into_original_house_and_descend","pass":true,"reached":2,"stall_contacts":[]},"name":"cross_into_original_house_and_descend","pass":true}
+DAY1 {"detail":22.9132404327393,"name":"home_301_floor","pass":true}
+DAY1 {"detail":"","name":"frame_08_door_301","pass":true}
+CQ_DELIVERY_STAGE {"distance_m":1.58121319487691,"end":"(-59.25772, 22.91324, 14.16485)","goals":1,"max_frame_displacement_m":0.0700020715594292,"name":"knock_at_301","pass":true,"reached":1,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":1.58121319487691,"end":"(-59.25772, 22.91324, 14.16485)","goals":1,"max_frame_displacement_m":0.0700020715594292,"name":"knock_at_301","pass":true,"reached":1,"stall_contacts":[]},"name":"knock_at_301","pass":true}
+DAY1 {"detail":"","name":"recipient_answers","pass":true}
+PENG_TEACH YARD_EXIT
+CQ_DELIVERY_STAGE {"distance_m":0.512621741741896,"end":"(-59.33468, 22.91412, 14.91099)","goals":1,"max_frame_displacement_m":0.0694455578923225,"name":"reach_301_ledge","pass":true,"reached":1,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":0.512621741741896,"end":"(-59.33468, 22.91412, 14.91099)","goals":1,"max_frame_displacement_m":0.0694455578923225,"name":"reach_301_ledge","pass":true,"reached":1,"stall_contacts":[]},"name":"reach_301_ledge","pass":true}
+PENG_TEACH UNLOAD
+DAY1 {"detail":"","name":"pay_only_after_release","pass":true}
+DAY1 {"detail":"","name":"frame_09_placing","pass":true}
+DAY1 {"detail":"","name":"order_paid_once","pass":true}
+DAY1 {"detail":"","name":"frame_10_received","pass":true}
+PENG_TEACH TO_SHELF
+PENG_TEACH PUT_ON_SHELF
+PENG_TEACH CLEAR_SHELF
+PENG_TEACH BACK_TO_SADDLE
+CQ_DELIVERY_STAGE {"distance_m":45.357230361551,"end":"(-84.85036, 17.0696, 8.087803)","goals":9,"max_frame_displacement_m":0.169577583670616,"name":"return_to_back_lane","pass":true,"reached":9,"stall_contacts":[]}
+DAY1 {"detail":{"distance_m":45.357230361551,"end":"(-84.85036, 17.0696, 8.087803)","goals":9,"max_frame_displacement_m":0.169577583670616,"name":"return_to_back_lane","pass":true,"reached":9,"stall_contacts":[]},"name":"return_to_back_lane","pass":true}

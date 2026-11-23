@@ -1,0 +1,78 @@
+{
+  "revision": 15,
+  "scene_sha256": "06c280f56fb58152688aaf058cd87f7a3f71819478bea0ad7ab2869ce5bd5223",
+  "status": "COMPLETE_SCOPED_MANUAL_REVIEW",
+  "completed_at_utc": "2026-11-19T16:11:12.491982+00:00",
+  "runtime_project": "delivery/chongqing_godot_v05",
+  "engine": "Godot 4.6.3.stable.official.7d41c59c4",
+  "renderer": "Forward+ / Vulkan / llvmpipe (LLVM 19.1.7, 256 bits)",
+  "native_window_size": [
+    1280,
+    720
+  ],
+  "method": "Direct native GUI observation and keyboard interaction; no production files were changed.",
+  "observations": [
+    {
+      "action": "Launch exact staged project",
+      "observed": "Scene and HUD loaded; default fixed view 04 central_steps.",
+      "passed": true
+    },
+    {
+      "action": "Press 1",
+      "observed": "Overview image and 01 selector shown; runtime log shadow range 450 m.",
+      "passed": true
+    },
+    {
+      "action": "Press 2",
+      "observed": "Street entry image and 02 selector shown; runtime log shadow range 180 m.",
+      "passed": true
+    },
+    {
+      "action": "Tab toggle",
+      "observed": "Both free-observation and walking HUD states directly seen; walking camera settled at street level.",
+      "passed": true
+    },
+    {
+      "action": "Held movement keys",
+      "observed": "Directly observed street-level perspective changing and distance reaching 46 m from the 47 m spawn state; no visible floor fall in this short manual segment.",
+      "passed": true
+    },
+    {
+      "action": "R in walking mode after displacement",
+      "observed": "Camera returned to the original street spawn perspective and the HUD returned from 46 m to 47 m.",
+      "passed": true
+    },
+    {
+      "action": "F12",
+      "observed": "Engine printed CQ_SCREENSHOT with result=0; exact unmodified 1280x720 output copied into interactive/manual_walk_f12.png.",
+      "passed": true
+    }
+  ],
+  "reset_expected_distance_m": 47.059004996281,
+  "reset_observed_rounded_distance_m": 47,
+  "interpretation_correction": "The earlier 66 m HUD value was a pre-walk/free-mode body state. The 66-to-47 transition is not evidence of travelled distance; actual displaced 46 m and restored 47 m observations are used for movement/reset here.",
+  "screenshot_evidence": {
+    "source_path_reported_by_engine": "/home/agent/.local/share/godot/app_userdata/重庆 · 梯坎里/screenshots/chongqing_walk_1795103888.png",
+    "path": "interactive/manual_walk_f12.png",
+    "sha256": "91a81cbc7c864b5870db14c688d8b94e8ad66137e91719780d69a61b7dfaeeda",
+    "native_size": [
+      1280,
+      720
+    ],
+    "save_error": 0,
+    "modified": false,
+    "note": "Separate original manual-control evidence; not one of the 22 final 1920x1080 images."
+  },
+  "log_sha256": "16e3e89b2f9614fe7d35e2abfdee9f4d404b319362cf2ed1bfd61c4837a03ede",
+  "shutdown": {
+    "window_closure_observed": true,
+    "method": "Dedicated preview was ended after tests using terminal Ctrl+C. Later TERM attempt reported No such process; the window inventory contained only the terminal.",
+    "actual_exit_code": null,
+    "note": "Manual session is not asserted to have exited 0. The separate complete 22-view capture process actually exited 0."
+  },
+  "limitations": [
+    "Software rendering showed substantial input/render latency; no FPS or target-device performance claim is made.",
+    "The manual segment does not replace the separate 12 continuous walking routes and 216 checks.",
+    "This is the available native Linux environment, not a claim of opening the user's separate personal Windows computer."
+  ]
+}

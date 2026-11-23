@@ -1,0 +1,33 @@
+{
+	"framebuffer": [
+		1920,
+		1080
+	],
+	"gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+	"meshes": 5,
+	"passes": [
+		{
+			"image_sha256": "31680a40e476df7c05631a99731cca6a1a50148a4b5a70aa90fd0aef1ce256ad",
+			"mode": "old",
+			"p50_ms": 14.3649997711182,
+			"p95_ms": 16.5289993286133,
+			"samples": 240
+		},
+		{
+			"image_sha256": "c3063e8b1d5dd989de82f3fac8145dfcc333e0cf901bcea0fc5d501cca0ae976",
+			"mode": "new",
+			"p50_ms": 14.2480001449585,
+			"p95_ms": 17.4699993133545,
+			"samples": 240
+		},
+		{
+			"image_sha256": "4f6a44e4b6d15414d67e114689d2debee3f3307fcaf5975b9cdb5f4a56fce568",
+			"mode": "old_repeat",
+			"p50_ms": 14.3190002441406,
+			"p95_ms": 16.5790004730225,
+			"samples": 240
+		}
+	],
+	"scope": "Five actual court meshes and materials in an isolated viewport; main city freed",
+	"warmup": 90
+}

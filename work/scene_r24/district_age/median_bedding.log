@@ -1,0 +1,16 @@
+Blender 4.3.2 (hash 32f5fdce0a0a built 2024-12-17 03:35:23)
+Read blend: "C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\road_and_shift\city_and_grade.blend"
+Info: Read library: 'C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\courtyard_life\black.blend', 'C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\courtyard_life\black.blend', parent '<direct>'
+Info: Read library: 'C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\courtyard_life\kitchen\greens.blend', 'C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\courtyard_life\kitchen\greens.blend', parent '<direct>'
+Info: Read library: 'C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\courtyard_life\red.blend', 'C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\courtyard_life\red.blend', parent '<direct>'
+Traceback (most recent call last):
+  File "C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\district_age\author.py", line 12, in <module>
+    import median_bed
+  File "C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\district_age\median_bed.py", line 46, in <module>
+    bmesh.ops.delete(bm,geom=gone,context='FACES');bm.transform(ob.matrix_world.inverted());bm.to_mesh(ob.data);ob.data.update();changed.add(ob.name);affected[ob.name]=len(gone)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: geom: found the same (BMVert/BMEdge/BMFace) used multiple times
+
+Error: script failed, file: 'work/scene_r24/district_age/author.py', exiting.
+
+Blender quit

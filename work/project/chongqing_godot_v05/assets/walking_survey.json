@@ -1,0 +1,768 @@
+{
+  "coordinate_system": "Godot X east, Y up, Z south; one unit = one metre. Authored paths from district_layout.py, not surveyed terrain.",
+  "description": "Supplemental continuous physical walking tests. The same CharacterBody3D controller drives every waypoint with no teleport between turns. Court gate and stairs target the revision-2 geometry.",
+  "routes": [
+    {
+      "name": "court_east_entry",
+      "from": [
+        -17.8,
+        20.25,
+        0
+      ],
+      "to": [
+        -31,
+        20.85,
+        0
+      ],
+      "frames": 480,
+      "min_progress_m": 11.8,
+      "min_height_gain_m": 0.3,
+      "expected_end_height": 20.58,
+      "height_tolerance": 0.18,
+      "purpose": "Walk from the hillside spine through the east gate and the actual approach stairs, without jumping."
+    },
+    {
+      "name": "court_east_exit",
+      "from": [
+        -31,
+        20.85,
+        0
+      ],
+      "to": [
+        -17.8,
+        20.25,
+        0
+      ],
+      "frames": 480,
+      "min_progress_m": 11.8,
+      "min_height_gain_m": -1.25,
+      "expected_end_height": 19.92,
+      "height_tolerance": 0.3,
+      "purpose": "Walk back down the court stairs onto the central spine; catches sealed gates or a retaining-wall lip."
+    },
+    {
+      "name": "lower_street_to_spine",
+      "from": [
+        16,
+        11.094,
+        66
+      ],
+      "to": [
+        -20,
+        15.58,
+        31
+      ],
+      "frames": 1699,
+      "min_progress_m": 48.32,
+      "min_height_gain_m": 3.91,
+      "waypoints": [
+        [
+          6,
+          11.8138,
+          59.5
+        ],
+        [
+          -20,
+          12.7523,
+          52
+        ]
+      ]
+    },
+    {
+      "name": "east_alley_continuous_ascent",
+      "from": [
+        48,
+        14.1535,
+        49
+      ],
+      "to": [
+        49,
+        18.8626,
+        20
+      ],
+      "frames": 866,
+      "min_progress_m": 28.12,
+      "min_height_gain_m": 4.06,
+      "waypoints": [
+        [
+          52,
+          16.4961,
+          35
+        ]
+      ]
+    },
+    {
+      "name": "upper_courtyard_to_east_connection",
+      "from": [
+        0,
+        21.34,
+        -5
+      ],
+      "to": [
+        41.6,
+        30.2104,
+        -55.1
+      ],
+      "frames": 2282,
+      "min_progress_m": 64.22,
+      "min_height_gain_m": 8.22,
+      "waypoints": [
+        [
+          26,
+          22.2231,
+          -5
+        ],
+        [
+          28,
+          23.6755,
+          -14
+        ],
+        [
+          34,
+          27.496,
+          -38
+        ]
+      ]
+    },
+    {
+      "name": "school_front_connection",
+      "from": [
+        -12,
+        28.8703,
+        -59
+      ],
+      "to": [
+        19,
+        30.052,
+        -59
+      ],
+      "frames": 899,
+      "min_progress_m": 30.1,
+      "min_height_gain_m": 0.53,
+      "waypoints": [
+        [
+          6,
+          29.5646,
+          -59
+        ]
+      ]
+    },
+    {
+      "name": "south_courtyard_connection",
+      "from": [
+        -18,
+        18.8666,
+        8
+      ],
+      "to": [
+        -69,
+        14.2321,
+        33
+      ],
+      "frames": 2162,
+      "min_progress_m": 55.9,
+      "min_height_gain_m": -5.28,
+      "waypoints": [
+        [
+          -18.5,
+          17.2013,
+          19.7
+        ],
+        [
+          -49,
+          16.4673,
+          19.7
+        ],
+        [
+          -50,
+          14.6569,
+          33
+        ]
+      ],
+      "purpose": "Revision-3 path follows the south side of the retaining wall at y=-19.7; continuously verifies the repaired courtyard connection."
+    },
+    {
+      "name": "west_lane_south_threshold",
+      "from": [
+        -93,
+        12.2408,
+        45
+      ],
+      "to": [
+        -88,
+        12.4946,
+        42.1053
+      ],
+      "frames": 300,
+      "min_progress_m": 4.9,
+      "min_height_gain_m": 0.25,
+      "purpose": "Starts at the original western-path endpoint and physically walks across the first tread to distinguish a boundary-ray artifact from a blocked entry."
+    },
+    {
+      "name": "r17_Central_stair_lane_up",
+      "from": [
+        16.0,
+        11.094,
+        66.0
+      ],
+      "to": [
+        -40.0,
+        24.8948,
+        -38.0
+      ],
+      "waypoints": [
+        [
+          6.0,
+          11.8138,
+          59.5
+        ],
+        [
+          -20.0,
+          12.7523,
+          52.0
+        ],
+        [
+          -20.0,
+          15.84,
+          30.0
+        ],
+        [
+          -18.0,
+          18.9866,
+          8.0
+        ],
+        [
+          -18.0,
+          22.1267,
+          -14.0
+        ]
+      ],
+      "frames": 3326,
+      "min_progress_m": 117.3185844818672,
+      "min_height_gain_m": 13.0508,
+      "purpose": "R17 revised whole route, real player controller; no waypoint teleport. Width 3.8 m."
+    },
+    {
+      "name": "r17_Central_stair_lane_down",
+      "from": [
+        -40.0,
+        24.8948,
+        -38.0
+      ],
+      "to": [
+        16.0,
+        11.094,
+        66.0
+      ],
+      "waypoints": [
+        [
+          -18.0,
+          22.1267,
+          -14.0
+        ],
+        [
+          -18.0,
+          18.9866,
+          8.0
+        ],
+        [
+          -20.0,
+          15.84,
+          30.0
+        ],
+        [
+          -20.0,
+          12.7523,
+          52.0
+        ],
+        [
+          6.0,
+          11.8138,
+          59.5
+        ]
+      ],
+      "frames": 3326,
+      "min_progress_m": 117.3185844818672,
+      "min_height_gain_m": -14.5508,
+      "purpose": "R17 revised whole route, real player controller; no waypoint teleport. Width 3.8 m."
+    },
+    {
+      "name": "r17_Narrow_upper_passage_up",
+      "from": [
+        -40.0,
+        24.8948,
+        -38.0
+      ],
+      "to": [
+        -29.0,
+        28.471,
+        -60.0
+      ],
+      "waypoints": [
+        [
+          -37.4,
+          25.6935,
+          -43.0
+        ],
+        [
+          -33.3,
+          26.8775,
+          -50.0
+        ],
+        [
+          -28.7,
+          28.094,
+          -57.0
+        ]
+      ],
+      "frames": 755,
+      "min_progress_m": 23.796747752497687,
+      "min_height_gain_m": 2.8262,
+      "purpose": "R17 revised whole route, real player controller; no waypoint teleport. Width 1.35 m."
+    },
+    {
+      "name": "r17_Narrow_upper_passage_down",
+      "from": [
+        -29.0,
+        28.471,
+        -60.0
+      ],
+      "to": [
+        -40.0,
+        24.8948,
+        -38.0
+      ],
+      "waypoints": [
+        [
+          -28.7,
+          28.094,
+          -57.0
+        ],
+        [
+          -33.3,
+          26.8775,
+          -50.0
+        ],
+        [
+          -37.4,
+          25.6935,
+          -43.0
+        ]
+      ],
+      "frames": 755,
+      "min_progress_m": 23.796747752497687,
+      "min_height_gain_m": -4.3262,
+      "purpose": "R17 revised whole route, real player controller; no waypoint teleport. Width 1.35 m."
+    },
+    {
+      "name": "r17_Upper_terrace_connection_up",
+      "from": [
+        -29.0,
+        28.471,
+        -60.0
+      ],
+      "to": [
+        -27.0,
+        33.2655,
+        -90.0
+      ],
+      "waypoints": [
+        [
+          -25.0,
+          29.2853,
+          -64.0
+        ],
+        [
+          -17.0,
+          31.5439,
+          -77.0
+        ]
+      ],
+      "frames": 1034,
+      "min_progress_m": 29.266592756745816,
+      "min_height_gain_m": 4.044500000000003,
+      "purpose": "R17 revised whole route, real player controller; no waypoint teleport. Width 2.5 m."
+    },
+    {
+      "name": "r17_Upper_terrace_connection_down",
+      "from": [
+        -27.0,
+        33.2655,
+        -90.0
+      ],
+      "to": [
+        -29.0,
+        28.471,
+        -60.0
+      ],
+      "waypoints": [
+        [
+          -17.0,
+          31.5439,
+          -77.0
+        ],
+        [
+          -25.0,
+          29.2853,
+          -64.0
+        ]
+      ],
+      "frames": 1034,
+      "min_progress_m": 29.266592756745816,
+      "min_height_gain_m": -5.544500000000003,
+      "purpose": "R17 revised whole route, real player controller; no waypoint teleport. Width 2.5 m."
+    },
+    {
+      "name": "r17_West_residential_link_up",
+      "from": [
+        -93.0,
+        12.0608,
+        45.0
+      ],
+      "to": [
+        -76.0,
+        30.2507,
+        -77.5
+      ],
+      "waypoints": [
+        [
+          -74.0,
+          14.1002,
+          34.0
+        ],
+        [
+          -73.0,
+          17.7119,
+          8.0
+        ],
+        [
+          -76.0,
+          21.1993,
+          -17.0
+        ],
+        [
+          -69.0,
+          22.2111,
+          -23.5
+        ],
+        [
+          -68.7,
+          22.9961,
+          -28.9
+        ],
+        [
+          -69.0,
+          23.7666,
+          -34.2
+        ],
+        [
+          -74.0,
+          24.5697,
+          -40.0
+        ],
+        [
+          -77.0,
+          27.7003,
+          -61.0
+        ]
+      ],
+      "frames": 3354,
+      "min_progress_m": 122.87396654106313,
+      "min_height_gain_m": 17.439899999999998,
+      "purpose": "R17 revised whole route, real player controller; no waypoint teleport. Width 2.7 m."
+    },
+    {
+      "name": "r17_West_residential_link_down",
+      "from": [
+        -76.0,
+        30.2507,
+        -77.5
+      ],
+      "to": [
+        -93.0,
+        12.0608,
+        45.0
+      ],
+      "waypoints": [
+        [
+          -77.0,
+          27.7003,
+          -61.0
+        ],
+        [
+          -74.0,
+          24.5697,
+          -40.0
+        ],
+        [
+          -69.0,
+          23.7666,
+          -34.2
+        ],
+        [
+          -68.7,
+          22.9961,
+          -28.9
+        ],
+        [
+          -69.0,
+          22.2111,
+          -23.5
+        ],
+        [
+          -76.0,
+          21.1993,
+          -17.0
+        ],
+        [
+          -73.0,
+          17.7119,
+          8.0
+        ],
+        [
+          -74.0,
+          14.1002,
+          34.0
+        ]
+      ],
+      "frames": 3354,
+      "min_progress_m": 122.87396654106313,
+      "min_height_gain_m": -18.939899999999998,
+      "purpose": "R17 revised whole route, real player controller; no waypoint teleport. Width 2.7 m."
+    },
+    {
+      "name": "r17_East_photo_alley_up",
+      "from": [
+        52.0,
+        12.3371,
+        61.7
+      ],
+      "to": [
+        28.0,
+        23.7955,
+        -14.0
+      ],
+      "waypoints": [
+        [
+          48.0,
+          14.2735,
+          49.0
+        ],
+        [
+          52.0,
+          16.6161,
+          35.0
+        ],
+        [
+          49.0,
+          19.1343,
+          19.0
+        ],
+        [
+          51.0,
+          20.465,
+          11.0
+        ],
+        [
+          53.0,
+          21.627,
+          4.0
+        ],
+        [
+          48.0,
+          22.7069,
+          -3.5
+        ],
+        [
+          42.0,
+          22.7668,
+          -4.8
+        ],
+        [
+          35.0,
+          22.6107,
+          -5.0
+        ]
+      ],
+      "frames": 2312,
+      "min_progress_m": 78.61341196548604,
+      "min_height_gain_m": 10.708400000000001,
+      "purpose": "R17 revised whole route, real player controller; no waypoint teleport. Width 2.5 m."
+    },
+    {
+      "name": "r17_East_photo_alley_down",
+      "from": [
+        28.0,
+        23.7955,
+        -14.0
+      ],
+      "to": [
+        52.0,
+        12.3371,
+        61.7
+      ],
+      "waypoints": [
+        [
+          35.0,
+          22.6107,
+          -5.0
+        ],
+        [
+          42.0,
+          22.7668,
+          -4.8
+        ],
+        [
+          48.0,
+          22.7069,
+          -3.5
+        ],
+        [
+          53.0,
+          21.627,
+          4.0
+        ],
+        [
+          51.0,
+          20.465,
+          11.0
+        ],
+        [
+          49.0,
+          19.1343,
+          19.0
+        ],
+        [
+          52.0,
+          16.6161,
+          35.0
+        ],
+        [
+          48.0,
+          14.2735,
+          49.0
+        ]
+      ],
+      "frames": 2312,
+      "min_progress_m": 78.61341196548604,
+      "min_height_gain_m": -12.208400000000001,
+      "purpose": "R17 revised whole route, real player controller; no waypoint teleport. Width 2.5 m."
+    },
+    {
+      "name": "r17_worker_entry",
+      "from": [
+        -68.7,
+        22.9961,
+        -28.9
+      ],
+      "to": [
+        -72.4,
+        22.9518,
+        -28.88
+      ],
+      "waypoints": [
+        [
+          -70.5,
+          22.9752,
+          -28.9
+        ]
+      ],
+      "frames": 300,
+      "min_progress_m": 2.5,
+      "min_height_gain_m": -0.6,
+      "purpose": "Enter repaired vestibule from public approach without crossing rail or stair block."
+    },
+    {
+      "name": "r17_A04_entry",
+      "from": [
+        -50.5,
+        16.5866,
+        19.5
+      ],
+      "to": [
+        -53.6,
+        16.5137,
+        19.5
+      ],
+      "waypoints": [
+        [
+          -52.0,
+          16.5484,
+          19.5
+        ]
+      ],
+      "frames": 300,
+      "min_progress_m": 2.5,
+      "min_height_gain_m": -0.6,
+      "purpose": "Enter repaired vestibule from public approach without crossing rail or stair block."
+    }
+  ],
+  "clearance_samples": [
+    [
+      -17.8,
+      23.5,
+      0
+    ],
+    [
+      -19,
+      23.5,
+      0
+    ],
+    [
+      -20.5,
+      23.5,
+      0
+    ],
+    [
+      -21.9,
+      23.5,
+      0
+    ],
+    [
+      -23.5,
+      23.5,
+      0
+    ],
+    [
+      -26,
+      23.5,
+      0
+    ],
+    [
+      -31,
+      23.5,
+      0
+    ],
+    [
+      -37,
+      23.5,
+      0
+    ]
+  ],
+  "sample_adjustments": [
+    {
+      "match_xz": [
+        -93,
+        45
+      ],
+      "replacement": [
+        -92.2083,
+        14.7293,
+        44.5417
+      ],
+      "reason": "The original ray was exactly on the open end edge of the first stair mesh and hit lower terrain while its capsule overlapped the first riser. This moves the clearance sample 0.915 m to the centre of the actual first tread (Blender x=-92.2083, y=-44.5417, authored tread top=11.9407 m). A separate physical threshold route retains the original endpoint to verify actual access."
+    },
+    {
+      "match_xz": [
+        1.6,
+        60.4
+      ],
+      "replacement": [
+        1.6,
+        14.4,
+        58.2308
+      ],
+      "reason": "R17 reroutes the full 3.8 m public stair envelope away from building 809889623. The former centre sample lies on the new safety rail; relocate this clearance sample to the authored new centreline (6,-59.5) to (-20,-52). Both whole-route directions are independently tested with the player capsule."
+    }
+  ]
+}

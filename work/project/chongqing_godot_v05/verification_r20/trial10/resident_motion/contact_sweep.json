@@ -1,0 +1,496 @@
+{
+  "source_mesh": "Skinned garment and shoes, 17 frames per clip; closest point on the visible curved seat/paving calculated separately for each foot and seated pelvis. Negative values denote penetration.",
+  "model_sha256": "76d3a3cf4a94e017efc5bd2d85ed4b3c6f0aab673116ebe6f3877772c67625a2",
+  "ranges_m": {
+    "seat": [
+      -0.016445159912109375,
+      -0.0040740966796875
+    ],
+    "left": [
+      -0.02716064453125,
+      -0.020483016967773438
+    ],
+    "right": [
+      -0.037349700927734375,
+      -0.016094207763671875
+    ]
+  },
+  "samples": [
+    {
+      "clip": "sit_rest",
+      "frame": 1,
+      "gaps_m": {
+        "left": -0.021717071533203125,
+        "right": -0.018762588500976562,
+        "seat": -0.0049991607666015625
+      },
+      "surface_samples": {
+        "left": 100,
+        "right": 105,
+        "seat": 76
+      }
+    },
+    {
+      "clip": "sit_rest",
+      "frame": 63,
+      "gaps_m": {
+        "left": -0.021501541137695312,
+        "right": -0.018367767333984375,
+        "seat": -0.004528045654296875
+      },
+      "surface_samples": {
+        "left": 100,
+        "right": 103,
+        "seat": 78
+      }
+    },
+    {
+      "clip": "sit_rest",
+      "frame": 126,
+      "gaps_m": {
+        "left": -0.0210418701171875,
+        "right": -0.019834518432617188,
+        "seat": -0.004581451416015625
+      },
+      "surface_samples": {
+        "left": 102,
+        "right": 104,
+        "seat": 81
+      }
+    },
+    {
+      "clip": "sit_rest",
+      "frame": 188,
+      "gaps_m": {
+        "left": -0.020483016967773438,
+        "right": -0.017971038818359375,
+        "seat": -0.00434112548828125
+      },
+      "surface_samples": {
+        "left": 102,
+        "right": 107,
+        "seat": 70
+      }
+    },
+    {
+      "clip": "sit_rest",
+      "frame": 250,
+      "gaps_m": {
+        "left": -0.021266937255859375,
+        "right": -0.016094207763671875,
+        "seat": -0.0041561126708984375
+      },
+      "surface_samples": {
+        "left": 98,
+        "right": 107,
+        "seat": 73
+      }
+    },
+    {
+      "clip": "sit_rest",
+      "frame": 313,
+      "gaps_m": {
+        "left": -0.021640777587890625,
+        "right": -0.017663955688476562,
+        "seat": -0.0040740966796875
+      },
+      "surface_samples": {
+        "left": 101,
+        "right": 103,
+        "seat": 72
+      }
+    },
+    {
+      "clip": "sit_rest",
+      "frame": 375,
+      "gaps_m": {
+        "left": -0.021036148071289062,
+        "right": -0.01857757568359375,
+        "seat": -0.0054683685302734375
+      },
+      "surface_samples": {
+        "left": 100,
+        "right": 107,
+        "seat": 73
+      }
+    },
+    {
+      "clip": "sit_rest",
+      "frame": 437,
+      "gaps_m": {
+        "left": -0.02230072021484375,
+        "right": -0.019956588745117188,
+        "seat": -0.0061511993408203125
+      },
+      "surface_samples": {
+        "left": 98,
+        "right": 104,
+        "seat": 77
+      }
+    },
+    {
+      "clip": "sit_rest",
+      "frame": 500,
+      "gaps_m": {
+        "left": -0.0216522216796875,
+        "right": -0.01937103271484375,
+        "seat": -0.00543975830078125
+      },
+      "surface_samples": {
+        "left": 97,
+        "right": 101,
+        "seat": 76
+      }
+    },
+    {
+      "clip": "sit_rest",
+      "frame": 562,
+      "gaps_m": {
+        "left": -0.023515701293945312,
+        "right": -0.018136978149414062,
+        "seat": -0.007648468017578125
+      },
+      "surface_samples": {
+        "left": 103,
+        "right": 107,
+        "seat": 80
+      }
+    },
+    {
+      "clip": "sit_rest",
+      "frame": 624,
+      "gaps_m": {
+        "left": -0.02194976806640625,
+        "right": -0.01796722412109375,
+        "seat": -0.0058155059814453125
+      },
+      "surface_samples": {
+        "left": 98,
+        "right": 102,
+        "seat": 84
+      }
+    },
+    {
+      "clip": "sit_rest",
+      "frame": 686,
+      "gaps_m": {
+        "left": -0.020673751831054688,
+        "right": -0.020006179809570312,
+        "seat": -0.0052204132080078125
+      },
+      "surface_samples": {
+        "left": 97,
+        "right": 103,
+        "seat": 81
+      }
+    },
+    {
+      "clip": "sit_rest",
+      "frame": 749,
+      "gaps_m": {
+        "left": -0.022127151489257812,
+        "right": -0.018283843994140625,
+        "seat": -0.006732940673828125
+      },
+      "surface_samples": {
+        "left": 99,
+        "right": 108,
+        "seat": 85
+      }
+    },
+    {
+      "clip": "sit_rest",
+      "frame": 811,
+      "gaps_m": {
+        "left": -0.022237777709960938,
+        "right": -0.020189285278320312,
+        "seat": -0.00582122802734375
+      },
+      "surface_samples": {
+        "left": 101,
+        "right": 104,
+        "seat": 83
+      }
+    },
+    {
+      "clip": "sit_rest",
+      "frame": 873,
+      "gaps_m": {
+        "left": -0.0229949951171875,
+        "right": -0.01924896240234375,
+        "seat": -0.0062885284423828125
+      },
+      "surface_samples": {
+        "left": 100,
+        "right": 104,
+        "seat": 82
+      }
+    },
+    {
+      "clip": "sit_rest",
+      "frame": 936,
+      "gaps_m": {
+        "left": -0.020898818969726562,
+        "right": -0.020818710327148438,
+        "seat": -0.00521087646484375
+      },
+      "surface_samples": {
+        "left": 95,
+        "right": 103,
+        "seat": 80
+      }
+    },
+    {
+      "clip": "sit_rest",
+      "frame": 998,
+      "gaps_m": {
+        "left": -0.021717071533203125,
+        "right": -0.018762588500976562,
+        "seat": -0.0049991607666015625
+      },
+      "surface_samples": {
+        "left": 100,
+        "right": 105,
+        "seat": 76
+      }
+    },
+    {
+      "clip": "sit_look",
+      "frame": 1,
+      "gaps_m": {
+        "left": -0.021717071533203125,
+        "right": -0.018762588500976562,
+        "seat": -0.0049991607666015625
+      },
+      "surface_samples": {
+        "left": 100,
+        "right": 105,
+        "seat": 76
+      }
+    },
+    {
+      "clip": "sit_look",
+      "frame": 14,
+      "gaps_m": {
+        "left": -0.023416519165039062,
+        "right": -0.024038314819335938,
+        "seat": -0.00616455078125
+      },
+      "surface_samples": {
+        "left": 100,
+        "right": 110,
+        "seat": 79
+      }
+    },
+    {
+      "clip": "sit_look",
+      "frame": 28,
+      "gaps_m": {
+        "left": -0.022676467895507812,
+        "right": -0.030979156494140625,
+        "seat": -0.0063495635986328125
+      },
+      "surface_samples": {
+        "left": 101,
+        "right": 105,
+        "seat": 72
+      }
+    },
+    {
+      "clip": "sit_look",
+      "frame": 41,
+      "gaps_m": {
+        "left": -0.021160125732421875,
+        "right": -0.03505516052246094,
+        "seat": -0.00846099853515625
+      },
+      "surface_samples": {
+        "left": 100,
+        "right": 101,
+        "seat": 75
+      }
+    },
+    {
+      "clip": "sit_look",
+      "frame": 55,
+      "gaps_m": {
+        "left": -0.02115631103515625,
+        "right": -0.03687858581542969,
+        "seat": -0.0111541748046875
+      },
+      "surface_samples": {
+        "left": 100,
+        "right": 103,
+        "seat": 81
+      }
+    },
+    {
+      "clip": "sit_look",
+      "frame": 68,
+      "gaps_m": {
+        "left": -0.022304534912109375,
+        "right": -0.037349700927734375,
+        "seat": -0.012498855590820312
+      },
+      "surface_samples": {
+        "left": 98,
+        "right": 105,
+        "seat": 88
+      }
+    },
+    {
+      "clip": "sit_look",
+      "frame": 82,
+      "gaps_m": {
+        "left": -0.025333404541015625,
+        "right": -0.03615760803222656,
+        "seat": -0.011722564697265625
+      },
+      "surface_samples": {
+        "left": 103,
+        "right": 103,
+        "seat": 93
+      }
+    },
+    {
+      "clip": "sit_look",
+      "frame": 95,
+      "gaps_m": {
+        "left": -0.026950836181640625,
+        "right": -0.03516960144042969,
+        "seat": -0.010545730590820312
+      },
+      "surface_samples": {
+        "left": 105,
+        "right": 106,
+        "seat": 88
+      }
+    },
+    {
+      "clip": "sit_look",
+      "frame": 108,
+      "gaps_m": {
+        "left": -0.02716064453125,
+        "right": -0.0345458984375,
+        "seat": -0.010221481323242188
+      },
+      "surface_samples": {
+        "left": 106,
+        "right": 104,
+        "seat": 81
+      }
+    },
+    {
+      "clip": "sit_look",
+      "frame": 122,
+      "gaps_m": {
+        "left": -0.025665283203125,
+        "right": -0.03539466857910156,
+        "seat": -0.01390838623046875
+      },
+      "surface_samples": {
+        "left": 100,
+        "right": 108,
+        "seat": 81
+      }
+    },
+    {
+      "clip": "sit_look",
+      "frame": 135,
+      "gaps_m": {
+        "left": -0.0257415771484375,
+        "right": -0.0345001220703125,
+        "seat": -0.015985488891601562
+      },
+      "surface_samples": {
+        "left": 99,
+        "right": 108,
+        "seat": 89
+      }
+    },
+    {
+      "clip": "sit_look",
+      "frame": 149,
+      "gaps_m": {
+        "left": -0.025646209716796875,
+        "right": -0.0339508056640625,
+        "seat": -0.016445159912109375
+      },
+      "surface_samples": {
+        "left": 99,
+        "right": 108,
+        "seat": 90
+      }
+    },
+    {
+      "clip": "sit_look",
+      "frame": 162,
+      "gaps_m": {
+        "left": -0.025442123413085938,
+        "right": -0.033527374267578125,
+        "seat": -0.0160675048828125
+      },
+      "surface_samples": {
+        "left": 99,
+        "right": 108,
+        "seat": 86
+      }
+    },
+    {
+      "clip": "sit_look",
+      "frame": 176,
+      "gaps_m": {
+        "left": -0.02515411376953125,
+        "right": -0.03243827819824219,
+        "seat": -0.013790130615234375
+      },
+      "surface_samples": {
+        "left": 100,
+        "right": 108,
+        "seat": 87
+      }
+    },
+    {
+      "clip": "sit_look",
+      "frame": 189,
+      "gaps_m": {
+        "left": -0.023538589477539062,
+        "right": -0.030118942260742188,
+        "seat": -0.0100555419921875
+      },
+      "surface_samples": {
+        "left": 99,
+        "right": 106,
+        "seat": 84
+      }
+    },
+    {
+      "clip": "sit_look",
+      "frame": 203,
+      "gaps_m": {
+        "left": -0.02317047119140625,
+        "right": -0.023883819580078125,
+        "seat": -0.0057621002197265625
+      },
+      "surface_samples": {
+        "left": 100,
+        "right": 106,
+        "seat": 84
+      }
+    },
+    {
+      "clip": "sit_look",
+      "frame": 216,
+      "gaps_m": {
+        "left": -0.021717071533203125,
+        "right": -0.018762588500976562,
+        "seat": -0.0049991607666015625
+      },
+      "surface_samples": {
+        "left": 100,
+        "right": 105,
+        "seat": 76
+      }
+    }
+  ]
+}
