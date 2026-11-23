@@ -16,7 +16,7 @@ git lfs fsck
 
 在 Godot 4.6.3 中导入 `work/project/chongqing_godot_v05/project.godot`，等待首次资源导入完成，按 F5。默认入口为 `first_shift.tscn`。Blender 4.3.2 的当前完整可编辑场景为 `work/scene_r24/vertical_run/city_and_crossing.blend`。
 
-Blender 源沿用原机器的外部库路径；换目录或机器后，按[库路径说明](docs/VERSION_CONTROL.md#blender-外部库路径)重新定位到仓库内的人物库。
+Blender 源沿用原机器的外部库和部分贴图路径；换目录或机器后，按[路径说明](docs/VERSION_CONTROL.md#blender-外部库路径)重新定位到仓库内的相应文件。
 
 本地快捷入口和验证脚本使用 `work/tools/godot-4.6.3/` 及 `work/tools/blender-4.3.2-windows-x64/`；引擎安装文件不进入版本库，请自行安装到相应位置。不要用 Godot 4.7.2 自动升级工程。
 

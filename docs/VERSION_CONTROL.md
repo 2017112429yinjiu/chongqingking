@@ -23,7 +23,7 @@ GitHub Free / Pro 当前含 10 GiB LFS 存储，后续修改大型二进制会�
 
 ### Blender 外部库路径
 
-已用 Blender 4.3.2 只读重开当前完整源，242 张图片已打包，16 个外部引用均可在本机找到并已纳入 Git。原场景仍有三个绝对路径人物库；更换克隆目录或机器时，需要在 Blender 中重新定位这些库到新仓库的对应文件：
+已用 Blender 4.3.2 只读重开当前完整源，242 张图片已打包，16 个外部引用均可在本机找到并已纳入 Git。这 16 个引用仍为绝对路径：包括 13 张贴图及下列三个人物库。更换克隆目录或机器时，需要在 Blender 中把它们重新定位到新仓库的对应文件；逐项目标路径见下方源引用检查 JSON 的 `reference_paths`。
 
 - `work/scene_r24/courtyard_life/black.blend`
 - `work/scene_r24/courtyard_life/red.blend`
