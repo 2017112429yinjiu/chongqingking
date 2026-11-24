@@ -44,6 +44,9 @@ static func decorate(report: Dictionary, main: Node3D) -> void:
 			report.runtime_sha256[path] = FileAccess.get_sha256(path)
 	if main.art_profile.get("wall_occlusion_r24", false):
 		var wall_resource := "res://assets/district_patrol/interior_wall_faces.res"
+		for shader:String in ["paving_r21.gdshader","street_surface_r19.gdshader","terrace_paving_r24.gdshaderinc"]:
+			var paving_file:="res://shaders/"+shader
+			report.runtime_sha256[paving_file]=FileAccess.get_sha256(paving_file)
 		for part:String in ["scripts/unit_interior.gd","scripts/blue_stair.gd","scripts/passage_order.gd","assets/district_patrol/layout.json","assets/district_patrol/district.glb","shaders/court_paint_r24.gdshader","shaders/court_bank.gdshader","shaders/service_paving.gdshaderinc"]:
 			report.runtime_sha256["res://"+part]=FileAccess.get_sha256("res://"+part)
 		report.runtime_sha256[wall_resource] = FileAccess.get_sha256(wall_resource)

@@ -109,7 +109,7 @@ for ob in terrain_objects:
         bmesh.ops.delete(bm,geom=removed,context='FACES');finish(ob,bm)
     else:bm.free()
 measure['bank_faces']=len(batches[bank][1])
-exec(compile((here/'turns.py').read_text('utf8'),str(here/'turns.py'),'exec'))
+
 exec(compile((here/'grading.py').read_text('utf8'),str(here/'grading.py'),'exec'))
 # Ground exposed tread ends and free sides where a separated stair ribbon floats above the actual hill.
 # Retain the top face and its traffic profile. Build only along the perimeter of level tread polygons.

@@ -120,7 +120,7 @@ for key in list(layout['changed']):
 bpy.ops.object.select_all(action='DESELECT')
 for key in layout['changed']+layout['new']:scene.objects[key].select_set(True)
 bpy.ops.export_scene.gltf(filepath=str(out/'district.glb'),use_selection=True,export_animations=False,export_image_format='NONE')
-scene['street_revision']='R24 build 25 - home stair and district patrol'
+scene['street_revision']='R24 build 25b - joined courtyard and stair approaches'
 bpy.context.preferences.filepaths.save_version=0
 bpy.ops.wm.save_as_mainfile(filepath=str(here/'city_and_patrol.blend'),compress=True,relative_remap=True)
 print('PATROL_BUILD',len(layout['changed']),len(layout['new']),flush=True)

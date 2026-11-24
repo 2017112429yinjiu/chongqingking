@@ -138,4 +138,5 @@ void fragment() {
  }
  if(abs(world_normal.y)<.50){stain_plaster(height_above_pavement,broad,fine,ALBEDO,ROUGHNESS); }
  if(terrace_neighbor){service_finish(world_position,normalize(world_normal),repair_aggregate,ALBEDO,ROUGHNESS);}
+ if(terrace_neighbor){junction_finish(world_position,normalize(world_normal),mat3(VIEW_MATRIX),repair_aggregate,ALBEDO,ROUGHNESS,NORMAL,NORMAL_MAP_DEPTH);}
 }

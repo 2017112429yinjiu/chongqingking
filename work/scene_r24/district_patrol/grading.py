@@ -6,16 +6,16 @@ floors=[o for o in scene.objects if o.type=='MESH' and not o.hide_render and
             'COL_East17_ShoulderReturns','COL_Walk_','Walk_details_','COL_R23_PathFoundations',
             'COL_N13_StairFoundations','COL_R21_Footing_','R21_Dressed_','R20_Hand_laid_treads_','COL_D18_StoneFlights','COL_D18_LaneShoulders'))]
 ground_before=Surfaces(floors)
+bank_returns=scene.objects.get('COL_N13_BankCutFaces')
+if bank_returns and not bank_returns.hide_render:
+    floors.append(bank_returns)
 measure['continuous_paving']=[]
 measure['street_landings']=[]
-exec(compile((here/'join_flights.py').read_text('utf8'),str(here/'join_flights.py'),'exec'))
-sites=[('EastLane',(38.5,51.,1.50,7.25),29.),('StationRear',(23.25,31.75,11.50,24.25),29.),
-       ('LowerLanding',(13.5,19.75,-69.,-63.75),14.),('CentralLanding',(-41.25,-36.75,35.75,40.25),28.),
-       ('UpperLanding',(-31.,-26.50,57.5,62.),32.)]
+exec(compile((here/'entry_corner/grade.py').read_text('utf-8-sig'),str(here/'entry_corner/grade.py'),'exec'))
+author_junctions()
+exec(compile((here/'entry_corner/north.py').read_text('utf-8'),str(here/'entry_corner/north.py'),'exec'))
+sites=[('EastLane',(38.5,51.,1.50,7.25),29.),('StationRear',(23.25,31.75,11.50,24.25),29.)]
 for key,(x0,x1,y0,y1),ceiling in sites:
-    if key.endswith('Landing'):
-        join_flights(key,(x0,x1,y0,y1),ceiling)
-        continue
     nx=round((x1-x0)*4)+1
     ny=round((y1-y0)*4)+1
     xs=np.linspace(x0,x1,nx)

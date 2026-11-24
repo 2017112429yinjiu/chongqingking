@@ -1,0 +1,2620 @@
+{
+  "checks": [
+    {
+      "detail": {
+        "missing": [],
+        "old_steps_or_beds": [],
+        "points": 653
+      },
+      "name": "turn_interior_street_entry",
+      "pass": true
+    },
+    {
+      "detail": {
+        "max_error": 0.000019073486328125,
+        "samples": 25
+      },
+      "name": "full_width_street_entry_0",
+      "pass": true
+    },
+    {
+      "detail": {
+        "max_error": 0.0000000534057617296302,
+        "samples": 25
+      },
+      "name": "full_width_street_entry_1",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "walk_ends_street_entry_-0.42",
+      "pass": true
+    },
+    {
+      "detail": {
+        "waypoints": 6
+      },
+      "name": "both_directions_street_entry_-0.42",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "walk_ends_street_entry_0.0",
+      "pass": true
+    },
+    {
+      "detail": {
+        "waypoints": 6
+      },
+      "name": "both_directions_street_entry_0.0",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "walk_ends_street_entry_0.42",
+      "pass": true
+    },
+    {
+      "detail": {
+        "waypoints": 6
+      },
+      "name": "both_directions_street_entry_0.42",
+      "pass": true
+    },
+    {
+      "detail": {
+        "missing": [],
+        "old_steps_or_beds": [],
+        "points": 407
+      },
+      "name": "turn_interior_central",
+      "pass": true
+    },
+    {
+      "detail": {
+        "max_error": 0.0000438690185546875,
+        "samples": 25
+      },
+      "name": "full_width_central_0",
+      "pass": true
+    },
+    {
+      "detail": {
+        "max_error": 0.00620094299316407,
+        "samples": 25
+      },
+      "name": "full_width_central_1",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "walk_ends_central_-0.42",
+      "pass": true
+    },
+    {
+      "detail": {
+        "waypoints": 6
+      },
+      "name": "both_directions_central_-0.42",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "walk_ends_central_0.0",
+      "pass": true
+    },
+    {
+      "detail": {
+        "waypoints": 6
+      },
+      "name": "both_directions_central_0.0",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "walk_ends_central_0.42",
+      "pass": true
+    },
+    {
+      "detail": {
+        "waypoints": 6
+      },
+      "name": "both_directions_central_0.42",
+      "pass": true
+    },
+    {
+      "detail": {
+        "missing": [],
+        "old_steps_or_beds": [],
+        "points": 316
+      },
+      "name": "turn_interior_upper",
+      "pass": true
+    },
+    {
+      "detail": {
+        "max_error": 0.000362396240234375,
+        "samples": 25
+      },
+      "name": "full_width_upper_0",
+      "pass": true
+    },
+    {
+      "detail": {
+        "max_error": 0.000100982666015631,
+        "samples": 25
+      },
+      "name": "full_width_upper_1",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "walk_ends_upper_-0.42",
+      "pass": true
+    },
+    {
+      "detail": {
+        "waypoints": 6
+      },
+      "name": "both_directions_upper_-0.42",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "walk_ends_upper_0.0",
+      "pass": true
+    },
+    {
+      "detail": {
+        "waypoints": 6
+      },
+      "name": "both_directions_upper_0.0",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "walk_ends_upper_0.42",
+      "pass": true
+    },
+    {
+      "detail": {
+        "waypoints": 6
+      },
+      "name": "both_directions_upper_0.42",
+      "pass": true
+    },
+    {
+      "detail": {
+        "missing": [],
+        "old_steps_or_beds": [],
+        "points": 361
+      },
+      "name": "turn_interior_west_lower",
+      "pass": true
+    },
+    {
+      "detail": {
+        "max_error": 0.000392913818359375,
+        "samples": 25
+      },
+      "name": "full_width_west_lower_0",
+      "pass": true
+    },
+    {
+      "detail": {
+        "max_error": 0.00390018463134767,
+        "samples": 25
+      },
+      "name": "full_width_west_lower_1",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "walk_ends_west_lower_-0.42",
+      "pass": true
+    },
+    {
+      "detail": {
+        "waypoints": 6
+      },
+      "name": "both_directions_west_lower_-0.42",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "walk_ends_west_lower_0.0",
+      "pass": true
+    },
+    {
+      "detail": {
+        "waypoints": 6
+      },
+      "name": "both_directions_west_lower_0.0",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "walk_ends_west_lower_0.42",
+      "pass": true
+    },
+    {
+      "detail": {
+        "waypoints": 6
+      },
+      "name": "both_directions_west_lower_0.42",
+      "pass": true
+    },
+    {
+      "detail": {
+        "missing": [],
+        "old_steps_or_beds": [],
+        "points": 204
+      },
+      "name": "turn_interior_west_upper",
+      "pass": true
+    },
+    {
+      "detail": {
+        "max_error": 0.0000591278076171875,
+        "samples": 25
+      },
+      "name": "full_width_west_upper_0",
+      "pass": true
+    },
+    {
+      "detail": {
+        "max_error": 0.0061022186279297,
+        "samples": 25
+      },
+      "name": "full_width_west_upper_1",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "walk_ends_west_upper_-0.42",
+      "pass": true
+    },
+    {
+      "detail": {
+        "waypoints": 6
+      },
+      "name": "both_directions_west_upper_-0.42",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "walk_ends_west_upper_0.0",
+      "pass": true
+    },
+    {
+      "detail": {
+        "waypoints": 6
+      },
+      "name": "both_directions_west_upper_0.0",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "walk_ends_west_upper_0.42",
+      "pass": true
+    },
+    {
+      "detail": {
+        "waypoints": 6
+      },
+      "name": "both_directions_west_upper_0.42",
+      "pass": true
+    },
+    {
+      "detail": {
+        "missing": [],
+        "old_steps_or_beds": [],
+        "points": 179
+      },
+      "name": "turn_interior_east",
+      "pass": true
+    },
+    {
+      "detail": {
+        "max_error": 0.0000486373901367188,
+        "samples": 25
+      },
+      "name": "full_width_east_0",
+      "pass": true
+    },
+    {
+      "detail": {
+        "max_error": 0.000107154846191393,
+        "samples": 25
+      },
+      "name": "full_width_east_1",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "walk_ends_east_-0.42",
+      "pass": true
+    },
+    {
+      "detail": {
+        "waypoints": 6
+      },
+      "name": "both_directions_east_-0.42",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "walk_ends_east_0.0",
+      "pass": true
+    },
+    {
+      "detail": {
+        "waypoints": 6
+      },
+      "name": "both_directions_east_0.0",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "walk_ends_east_0.42",
+      "pass": true
+    },
+    {
+      "detail": {
+        "waypoints": 6
+      },
+      "name": "both_directions_east_0.42",
+      "pass": true
+    },
+    {
+      "detail": {
+        "missing": [],
+        "points": 216
+      },
+      "name": "east_stair_outer_edge",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "ground_0",
+      "pass": true
+    },
+    {
+      "detail": {
+        "waypoints": 6
+      },
+      "name": "mentor_both_ways_0",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "ground_1",
+      "pass": true
+    },
+    {
+      "detail": {
+        "waypoints": 6
+      },
+      "name": "mentor_both_ways_1",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "ground_2",
+      "pass": true
+    },
+    {
+      "detail": {
+        "waypoints": 6
+      },
+      "name": "mentor_both_ways_2",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "ground_3",
+      "pass": true
+    },
+    {
+      "detail": {
+        "waypoints": 6
+      },
+      "name": "mentor_both_ways_3",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "frame_player",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "frame_from_street",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "frame_from_stairs",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "frame_from_yard",
+      "pass": true
+    }
+  ],
+  "profiles": [
+    {
+      "gate": 0,
+      "heights": [
+        [
+          0,
+          10.3037996292114,
+          10.3037996292114,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          1,
+          10.3037996292114,
+          10.3038005828857,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_OSM_734116594_0_step_concrete"
+        ],
+        [
+          2,
+          10.3037996292114,
+          10.3038005828857,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_OSM_734116594_0_step_concrete"
+        ],
+        [
+          3,
+          10.3037996292114,
+          10.3037996292114,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          4,
+          10.3037996292114,
+          10.3037996292114,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          5,
+          10.3037996292114,
+          10.3037996292114,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          6,
+          10.3037996292114,
+          10.3037996292114,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          7,
+          10.3037996292114,
+          10.3037996292114,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          8,
+          10.3037996292114,
+          10.3037996292114,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          9,
+          10.3037996292114,
+          10.3037996292114,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          10,
+          10.3037996292114,
+          10.3037996292114,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          11,
+          10.3037996292114,
+          10.3037996292114,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          12,
+          10.3037996292114,
+          10.3037996292114,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          13,
+          10.3037996292114,
+          10.3037996292114,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          14,
+          10.3037996292114,
+          10.3037996292114,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          15,
+          10.3037996292114,
+          10.3037996292114,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          16,
+          10.3037996292114,
+          10.3037996292114,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          17,
+          10.3037996292114,
+          10.3037996292114,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          18,
+          10.3037996292114,
+          10.3037996292114,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          19,
+          10.3037996292114,
+          10.3037996292114,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          20,
+          10.3037996292114,
+          10.3037996292114,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          21,
+          10.3037996292114,
+          10.3037996292114,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          22,
+          10.3037996292114,
+          10.3037996292114,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          23,
+          10.3037996292114,
+          10.3037996292114,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          24,
+          10.3037805557251,
+          10.3037996292114,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_OSM_734116594_0_step_concrete"
+        ]
+      ],
+      "site": "street_entry"
+    },
+    {
+      "gate": 1,
+      "heights": [
+        [
+          0,
+          11.0918998718262,
+          11.2358999252319,
+          "COL_Terrain_200m_pavement",
+          "COL_D18_StoneFlights"
+        ],
+        [
+          1,
+          11.0918998718262,
+          11.2358999252319,
+          "COL_Terrain_200m_pavement",
+          "COL_D18_StoneFlights"
+        ],
+        [
+          2,
+          11.0918998718262,
+          11.2358999252319,
+          "COL_Terrain_200m_pavement",
+          "COL_D18_StoneFlights"
+        ],
+        [
+          3,
+          11.0918998718262,
+          11.2358999252319,
+          "COL_Terrain_200m_pavement",
+          "COL_D18_StoneFlights"
+        ],
+        [
+          4,
+          11.0918998718262,
+          11.2358999252319,
+          "COL_Terrain_200m_pavement",
+          "COL_D18_StoneFlights"
+        ],
+        [
+          5,
+          11.0918998718262,
+          11.2358999252319,
+          "COL_Terrain_200m_pavement",
+          "COL_D18_StoneFlights"
+        ],
+        [
+          6,
+          11.0918998718262,
+          11.2358999252319,
+          "COL_Terrain_200m_pavement",
+          "COL_D18_StoneFlights"
+        ],
+        [
+          7,
+          11.0918998718262,
+          11.2358999252319,
+          "COL_Terrain_200m_pavement",
+          "COL_D18_StoneFlights"
+        ],
+        [
+          8,
+          11.0918998718262,
+          11.2358999252319,
+          "COL_Terrain_200m_pavement",
+          "COL_D18_StoneFlights"
+        ],
+        [
+          9,
+          11.0918998718262,
+          11.2358999252319,
+          "COL_Terrain_200m_pavement",
+          "COL_D18_StoneFlights"
+        ],
+        [
+          10,
+          11.0918998718262,
+          11.2358999252319,
+          "COL_Terrain_200m_pavement",
+          "COL_D18_StoneFlights"
+        ],
+        [
+          11,
+          11.0918998718262,
+          11.2358999252319,
+          "COL_Terrain_200m_pavement",
+          "COL_D18_StoneFlights"
+        ],
+        [
+          12,
+          11.0918998718262,
+          11.2358999252319,
+          "COL_Terrain_200m_pavement",
+          "COL_D18_StoneFlights"
+        ],
+        [
+          13,
+          11.0918998718262,
+          11.2358999252319,
+          "COL_Terrain_200m_pavement",
+          "COL_D18_StoneFlights"
+        ],
+        [
+          14,
+          11.0918998718262,
+          11.2358999252319,
+          "COL_Terrain_200m_pavement",
+          "COL_D18_StoneFlights"
+        ],
+        [
+          15,
+          11.0918998718262,
+          11.2358999252319,
+          "COL_Terrain_200m_pavement",
+          "COL_D18_StoneFlights"
+        ],
+        [
+          16,
+          11.0918998718262,
+          11.2358999252319,
+          "COL_Terrain_200m_pavement",
+          "COL_D18_StoneFlights"
+        ],
+        [
+          17,
+          11.0918998718262,
+          11.2358999252319,
+          "COL_Terrain_200m_pavement",
+          "COL_D18_StoneFlights"
+        ],
+        [
+          18,
+          11.0918998718262,
+          11.2358999252319,
+          "COL_Terrain_200m_pavement",
+          "COL_D18_StoneFlights"
+        ],
+        [
+          19,
+          11.0918998718262,
+          11.2358999252319,
+          "COL_Terrain_200m_pavement",
+          "COL_D18_StoneFlights"
+        ],
+        [
+          20,
+          11.0918998718262,
+          11.2358999252319,
+          "COL_Terrain_200m_pavement",
+          "COL_D18_StoneFlights"
+        ],
+        [
+          21,
+          11.0918998718262,
+          11.2358999252319,
+          "COL_Terrain_200m_pavement",
+          "COL_D18_StoneFlights"
+        ],
+        [
+          22,
+          11.0918998718262,
+          11.2358999252319,
+          "COL_Terrain_200m_pavement",
+          "COL_D18_StoneFlights"
+        ],
+        [
+          23,
+          11.0918998718262,
+          11.2358999252319,
+          "COL_Terrain_200m_pavement",
+          "COL_D18_StoneFlights"
+        ],
+        [
+          24,
+          11.0918998718262,
+          11.2358999252319,
+          "COL_Terrain_200m_pavement",
+          "COL_D18_StoneFlights"
+        ]
+      ],
+      "site": "street_entry"
+    },
+    {
+      "gate": 0,
+      "heights": [
+        [
+          0,
+          24.2833995819092,
+          24.2833995819092,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          1,
+          24.2833995819092,
+          24.2833995819092,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          2,
+          24.2833995819092,
+          24.2833995819092,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          3,
+          24.2833995819092,
+          24.2833995819092,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          4,
+          24.2833995819092,
+          24.2833995819092,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          5,
+          24.2833995819092,
+          24.2833995819092,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          6,
+          24.2833995819092,
+          24.2833995819092,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          7,
+          24.2833995819092,
+          24.2833995819092,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          8,
+          24.2833995819092,
+          24.2833995819092,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          9,
+          24.2833995819092,
+          24.2833995819092,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          10,
+          24.2833995819092,
+          24.2833995819092,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          11,
+          24.2833995819092,
+          24.2833995819092,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          12,
+          24.2833995819092,
+          24.2833995819092,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          13,
+          24.2833995819092,
+          24.2833995819092,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          14,
+          24.2833995819092,
+          24.2833995819092,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          15,
+          24.2833995819092,
+          24.2833995819092,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          16,
+          24.2833995819092,
+          24.2833995819092,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          17,
+          24.2833995819092,
+          24.2833995819092,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          18,
+          24.2833995819092,
+          24.2833995819092,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          19,
+          24.2833995819092,
+          24.2833995819092,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          20,
+          24.2833995819092,
+          24.2833995819092,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          21,
+          24.2833995819092,
+          24.2833995819092,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          22,
+          24.2833995819092,
+          24.2833995819092,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          23,
+          24.2833995819092,
+          24.2833995819092,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          24,
+          24.2833995819092,
+          24.2833557128906,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ]
+      ],
+      "site": "central"
+    },
+    {
+      "gate": 1,
+      "heights": [
+        [
+          0,
+          25.0900001525879,
+          25.2437992095947,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Narrow_upper_passage_step_concrete"
+        ],
+        [
+          1,
+          25.0900001525879,
+          25.2437992095947,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Narrow_upper_passage_step_concrete"
+        ],
+        [
+          2,
+          25.0900001525879,
+          25.2437992095947,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Narrow_upper_passage_step_concrete"
+        ],
+        [
+          3,
+          25.0900001525879,
+          25.2437992095947,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Narrow_upper_passage_step_concrete"
+        ],
+        [
+          4,
+          25.0896816253662,
+          25.2437992095947,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Narrow_upper_passage_step_concrete"
+        ],
+        [
+          5,
+          25.0898475646973,
+          25.2437992095947,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Narrow_upper_passage_step_concrete"
+        ],
+        [
+          6,
+          25.0900001525879,
+          25.2437992095947,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Narrow_upper_passage_step_concrete"
+        ],
+        [
+          7,
+          25.0900001525879,
+          25.2437992095947,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Narrow_upper_passage_step_concrete"
+        ],
+        [
+          8,
+          25.0900001525879,
+          25.2437992095947,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Narrow_upper_passage_step_concrete"
+        ],
+        [
+          9,
+          25.0900001525879,
+          25.2437992095947,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Narrow_upper_passage_step_concrete"
+        ],
+        [
+          10,
+          25.0900001525879,
+          25.2437992095947,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Narrow_upper_passage_step_concrete"
+        ],
+        [
+          11,
+          25.0900001525879,
+          25.2437992095947,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Narrow_upper_passage_step_concrete"
+        ],
+        [
+          12,
+          25.0900001525879,
+          25.2437992095947,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Narrow_upper_passage_step_concrete"
+        ],
+        [
+          13,
+          25.0900001525879,
+          25.2437992095947,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Narrow_upper_passage_step_concrete"
+        ],
+        [
+          14,
+          25.0897312164307,
+          25.2437992095947,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Narrow_upper_passage_step_concrete"
+        ],
+        [
+          15,
+          25.0896244049072,
+          25.2437992095947,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Narrow_upper_passage_step_concrete"
+        ],
+        [
+          16,
+          25.0900001525879,
+          25.2437992095947,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Narrow_upper_passage_step_concrete"
+        ],
+        [
+          17,
+          25.0900001525879,
+          25.2437992095947,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Narrow_upper_passage_step_concrete"
+        ],
+        [
+          18,
+          25.0900001525879,
+          25.2437992095947,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Narrow_upper_passage_step_concrete"
+        ],
+        [
+          19,
+          25.0900001525879,
+          25.2437992095947,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Narrow_upper_passage_step_concrete"
+        ],
+        [
+          20,
+          25.0900001525879,
+          25.2437992095947,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Narrow_upper_passage_step_concrete"
+        ],
+        [
+          21,
+          25.0899982452393,
+          25.2437992095947,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Narrow_upper_passage_step_concrete"
+        ],
+        [
+          22,
+          25.0899887084961,
+          25.2437992095947,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Narrow_upper_passage_step_concrete"
+        ],
+        [
+          23,
+          25.0900001525879,
+          25.2437992095947,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Narrow_upper_passage_step_concrete"
+        ],
+        [
+          24,
+          25.089786529541,
+          25.2437992095947,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Narrow_upper_passage_step_concrete"
+        ]
+      ],
+      "site": "central"
+    },
+    {
+      "gate": 0,
+      "heights": [
+        [
+          0,
+          27.6579990386963,
+          27.6579990386963,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          1,
+          27.6579990386963,
+          27.6579990386963,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          2,
+          27.6579875946045,
+          27.6579990386963,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          3,
+          27.6579151153564,
+          27.6579933166504,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          4,
+          27.6578598022461,
+          27.65797996521,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          5,
+          27.6579074859619,
+          27.6578998565674,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          6,
+          27.6579551696777,
+          27.6577339172363,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          7,
+          27.6579895019531,
+          27.6576271057129,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          8,
+          27.6579990386963,
+          27.6578788757324,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          9,
+          27.6579990386963,
+          27.6579990386963,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          10,
+          27.6579990386963,
+          27.6579990386963,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          11,
+          27.6579990386963,
+          27.6579990386963,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          12,
+          27.6579990386963,
+          27.6579990386963,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          13,
+          27.6579685211182,
+          27.6578845977783,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          14,
+          27.657657623291,
+          27.6579837799072,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          15,
+          27.6579074859619,
+          27.6579990386963,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          16,
+          27.6579990386963,
+          27.6579990386963,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          17,
+          27.6579990386963,
+          27.6579990386963,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          18,
+          27.6579990386963,
+          27.6579990386963,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          19,
+          27.6579704284668,
+          27.6579990386963,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          20,
+          27.6579151153564,
+          27.6579742431641,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          21,
+          27.6578998565674,
+          27.6579895019531,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          22,
+          27.6579360961914,
+          27.6578502655029,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          23,
+          27.6579704284668,
+          27.6576499938965,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          24,
+          27.6579990386963,
+          27.6576633453369,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ]
+      ],
+      "site": "upper"
+    },
+    {
+      "gate": 1,
+      "heights": [
+        [
+          0,
+          28.5065994262695,
+          28.6694984436035,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Upper_terrace_connection_step_concrete"
+        ],
+        [
+          1,
+          28.5065994262695,
+          28.6695022583008,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Upper_terrace_connection_step_concrete"
+        ],
+        [
+          2,
+          28.5065994262695,
+          28.6695022583008,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Upper_terrace_connection_step_concrete"
+        ],
+        [
+          3,
+          28.5065994262695,
+          28.6694984436035,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Upper_terrace_connection_step_concrete"
+        ],
+        [
+          4,
+          28.5065994262695,
+          28.6694984436035,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Upper_terrace_connection_step_concrete"
+        ],
+        [
+          5,
+          28.5065994262695,
+          28.6694984436035,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Upper_terrace_connection_step_concrete"
+        ],
+        [
+          6,
+          28.5065994262695,
+          28.6694984436035,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Upper_terrace_connection_step_concrete"
+        ],
+        [
+          7,
+          28.5065994262695,
+          28.6694984436035,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Upper_terrace_connection_step_concrete"
+        ],
+        [
+          8,
+          28.5065994262695,
+          28.6694984436035,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Upper_terrace_connection_step_concrete"
+        ],
+        [
+          9,
+          28.5065994262695,
+          28.6694984436035,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Upper_terrace_connection_step_concrete"
+        ],
+        [
+          10,
+          28.5065994262695,
+          28.6694984436035,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Upper_terrace_connection_step_concrete"
+        ],
+        [
+          11,
+          28.5065994262695,
+          28.6694984436035,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Upper_terrace_connection_step_concrete"
+        ],
+        [
+          12,
+          28.5065994262695,
+          28.6694984436035,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Upper_terrace_connection_step_concrete"
+        ],
+        [
+          13,
+          28.5065994262695,
+          28.6694984436035,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Upper_terrace_connection_step_concrete"
+        ],
+        [
+          14,
+          28.5065994262695,
+          28.6694984436035,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Upper_terrace_connection_step_concrete"
+        ],
+        [
+          15,
+          28.5065994262695,
+          28.6694984436035,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Upper_terrace_connection_step_concrete"
+        ],
+        [
+          16,
+          28.5065994262695,
+          28.6694984436035,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Upper_terrace_connection_step_concrete"
+        ],
+        [
+          17,
+          28.5065994262695,
+          28.6694984436035,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Upper_terrace_connection_step_concrete"
+        ],
+        [
+          18,
+          28.5065994262695,
+          28.6694984436035,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Upper_terrace_connection_step_concrete"
+        ],
+        [
+          19,
+          28.5065994262695,
+          28.6694984436035,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Upper_terrace_connection_step_concrete"
+        ],
+        [
+          20,
+          28.5065994262695,
+          28.6694984436035,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Upper_terrace_connection_step_concrete"
+        ],
+        [
+          21,
+          28.5065994262695,
+          28.6694984436035,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Upper_terrace_connection_step_concrete"
+        ],
+        [
+          22,
+          28.5065994262695,
+          28.6694984436035,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Upper_terrace_connection_step_concrete"
+        ],
+        [
+          23,
+          28.5065994262695,
+          28.6694984436035,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Upper_terrace_connection_step_concrete"
+        ],
+        [
+          24,
+          28.5065994262695,
+          28.6694984436035,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_Upper_terrace_connection_step_concrete"
+        ]
+      ],
+      "site": "upper"
+    },
+    {
+      "gate": 0,
+      "heights": [
+        [
+          0,
+          13.6467895507813,
+          13.6466960906982,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          1,
+          13.6466732025146,
+          13.6467609405518,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          2,
+          13.6467914581299,
+          13.6468000411987,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          3,
+          13.6468000411987,
+          13.6468000411987,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          4,
+          13.6468000411987,
+          13.6468000411987,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          5,
+          13.646785736084,
+          13.6464834213257,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          6,
+          13.6467208862305,
+          13.6467437744141,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          7,
+          13.6467571258545,
+          13.6468000411987,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          8,
+          13.6468000411987,
+          13.6468000411987,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          9,
+          13.6468000411987,
+          13.6468000411987,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          10,
+          13.6467294692993,
+          13.646336555481,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          11,
+          13.6467657089233,
+          13.6467962265015,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          12,
+          13.6467723846436,
+          13.6467905044556,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          13,
+          13.6467895507813,
+          13.6467723846436,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          14,
+          13.6467990875244,
+          13.6467685699463,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          15,
+          13.6465129852295,
+          13.6466331481934,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          16,
+          13.6468000411987,
+          13.6468000411987,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          17,
+          13.6468000411987,
+          13.6468000411987,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          18,
+          13.6468000411987,
+          13.6466798782349,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          19,
+          13.6467218399048,
+          13.6466131210327,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          20,
+          13.6465177536011,
+          13.6467866897583,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          21,
+          13.6468000411987,
+          13.6468000411987,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          22,
+          13.6468000411987,
+          13.6468000411987,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          23,
+          13.6468000411987,
+          13.6467475891113,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          24,
+          13.6467514038086,
+          13.6464061737061,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ]
+      ],
+      "site": "west_lower"
+    },
+    {
+      "gate": 1,
+      "heights": [
+        [
+          0,
+          14.1664543151855,
+          14.3025999069214,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          1,
+          14.1664514541626,
+          14.3025979995728,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          2,
+          14.1664743423462,
+          14.3025979995728,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          3,
+          14.1664724349976,
+          14.3025999069214,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          4,
+          14.1664915084839,
+          14.3025999069214,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          5,
+          14.1665000915527,
+          14.3025999069214,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          6,
+          14.1665000915527,
+          14.3025999069214,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          7,
+          14.1665000915527,
+          14.3025999069214,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          8,
+          14.1665000915527,
+          14.3025999069214,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          9,
+          14.1665000915527,
+          14.3025999069214,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          10,
+          14.1665000915527,
+          14.3025999069214,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          11,
+          14.1665000915527,
+          14.3025999069214,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          12,
+          14.1665000915527,
+          14.3025999069214,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          13,
+          14.1665000915527,
+          14.3025999069214,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          14,
+          14.1665000915527,
+          14.3025999069214,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          15,
+          14.1665000915527,
+          14.3025999069214,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          16,
+          14.1665000915527,
+          14.3025999069214,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          17,
+          14.1665000915527,
+          14.3025999069214,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          18,
+          14.1665000915527,
+          14.3025999069214,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          19,
+          14.1665000915527,
+          14.3025999069214,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          20,
+          14.1665000915527,
+          14.3025999069214,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          21,
+          14.1665000915527,
+          14.3025999069214,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          22,
+          14.1665000915527,
+          14.3025999069214,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          23,
+          14.1665000915527,
+          14.3025999069214,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          24,
+          14.1665000915527,
+          14.3025999069214,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ]
+      ],
+      "site": "west_lower"
+    },
+    {
+      "gate": 0,
+      "heights": [
+        [
+          0,
+          27.0870990753174,
+          27.0870532989502,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          1,
+          27.0870990753174,
+          27.0870990753174,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          2,
+          27.0870990753174,
+          27.0870990753174,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          3,
+          27.0870990753174,
+          27.0870990753174,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          4,
+          27.0870990753174,
+          27.0870990753174,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          5,
+          27.0870990753174,
+          27.0870990753174,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          6,
+          27.0870990753174,
+          27.0870990753174,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          7,
+          27.0870990753174,
+          27.0870990753174,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          8,
+          27.0870990753174,
+          27.0870990753174,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          9,
+          27.0870990753174,
+          27.0870990753174,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          10,
+          27.0870990753174,
+          27.0870990753174,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          11,
+          27.0870990753174,
+          27.0870990753174,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          12,
+          27.0870876312256,
+          27.0870990753174,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          13,
+          27.0870685577393,
+          27.0870971679688,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          14,
+          27.0870914459229,
+          27.0870800018311,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          15,
+          27.0870990753174,
+          27.087085723877,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          16,
+          27.0870990753174,
+          27.0870399475098,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          17,
+          27.0870990753174,
+          27.0870895385742,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          18,
+          27.0870990753174,
+          27.0870990753174,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          19,
+          27.0870990753174,
+          27.0870990753174,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          20,
+          27.0870990753174,
+          27.0870990753174,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          21,
+          27.0870990753174,
+          27.0870990753174,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          22,
+          27.0870990753174,
+          27.0870990753174,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          23,
+          27.0870990753174,
+          27.0870990753174,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          24,
+          27.0870990753174,
+          27.0870990753174,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ]
+      ],
+      "site": "west_upper"
+    },
+    {
+      "gate": 1,
+      "heights": [
+        [
+          0,
+          27.7542991638184,
+          27.8881988525391,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          1,
+          27.7542991638184,
+          27.8881969451904,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          2,
+          27.7542991638184,
+          27.8881969451904,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          3,
+          27.7542991638184,
+          27.8881988525391,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          4,
+          27.7542991638184,
+          27.8881988525391,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          5,
+          27.7542991638184,
+          27.8881988525391,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          6,
+          27.7542991638184,
+          27.8881988525391,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          7,
+          27.7542991638184,
+          27.8881988525391,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          8,
+          27.7542991638184,
+          27.8881988525391,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          9,
+          27.7542991638184,
+          27.8881988525391,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          10,
+          27.7542991638184,
+          27.8881988525391,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          11,
+          27.7542991638184,
+          27.8881988525391,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          12,
+          27.7542991638184,
+          27.8881988525391,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          13,
+          27.7542991638184,
+          27.8881988525391,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          14,
+          27.7542991638184,
+          27.8881988525391,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          15,
+          27.7542991638184,
+          27.8881988525391,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          16,
+          27.7542991638184,
+          27.8881988525391,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          17,
+          27.7542991638184,
+          27.8881988525391,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          18,
+          27.7542991638184,
+          27.8881988525391,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          19,
+          27.7542991638184,
+          27.8881988525391,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          20,
+          27.7542991638184,
+          27.8881988525391,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          21,
+          27.7542991638184,
+          27.8881988525391,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          22,
+          27.7542991638184,
+          27.8881988525391,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          23,
+          27.7542819976807,
+          27.8881988525391,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ],
+        [
+          24,
+          27.7542877197266,
+          27.8881988525391,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_West_residential_link_step_concrete"
+        ]
+      ],
+      "site": "west_upper"
+    },
+    {
+      "gate": 0,
+      "heights": [
+        [
+          0,
+          13.6607999801636,
+          13.6607999801636,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          1,
+          13.6607999801636,
+          13.6607999801636,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          2,
+          13.6607999801636,
+          13.6607513427734,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          3,
+          13.6607999801636,
+          13.6607971191406,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          4,
+          13.6607999801636,
+          13.6607999801636,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          5,
+          13.6607999801636,
+          13.6607999801636,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          6,
+          13.6607999801636,
+          13.6607999801636,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          7,
+          13.6607999801636,
+          13.6607999801636,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          8,
+          13.6607999801636,
+          13.6607999801636,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          9,
+          13.6607942581177,
+          13.6607999801636,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          10,
+          13.6607818603516,
+          13.6607837677002,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          11,
+          13.6607999801636,
+          13.660795211792,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          12,
+          13.6607999801636,
+          13.6607999801636,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          13,
+          13.6607999801636,
+          13.6607999801636,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          14,
+          13.6607999801636,
+          13.6607999801636,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          15,
+          13.6607999801636,
+          13.6607999801636,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          16,
+          13.6607999801636,
+          13.6607999801636,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          17,
+          13.6607961654663,
+          13.6607999801636,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          18,
+          13.6607723236084,
+          13.6607999801636,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          19,
+          13.6607999801636,
+          13.6607999801636,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          20,
+          13.6607999801636,
+          13.6607999801636,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          21,
+          13.6607999801636,
+          13.6607999801636,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          22,
+          13.6607999801636,
+          13.6607999801636,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          23,
+          13.6607999801636,
+          13.6607999801636,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ],
+        [
+          24,
+          13.6607999801636,
+          13.6607999801636,
+          "COL_Terrain_200m_pavement",
+          "COL_Terrain_200m_pavement"
+        ]
+      ],
+      "site": "east"
+    },
+    {
+      "gate": 1,
+      "heights": [
+        [
+          0,
+          14.3454999923706,
+          14.4853992462158,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_East_photo_alley_step_concrete"
+        ],
+        [
+          1,
+          14.3454999923706,
+          14.4853992462158,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_East_photo_alley_step_concrete"
+        ],
+        [
+          2,
+          14.3454999923706,
+          14.4853992462158,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_East_photo_alley_step_concrete"
+        ],
+        [
+          3,
+          14.3454999923706,
+          14.4853992462158,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_East_photo_alley_step_concrete"
+        ],
+        [
+          4,
+          14.3454895019531,
+          14.4853992462158,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_East_photo_alley_step_concrete"
+        ],
+        [
+          5,
+          14.3452920913696,
+          14.4853992462158,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_East_photo_alley_step_concrete"
+        ],
+        [
+          6,
+          14.345477104187,
+          14.4853992462158,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_East_photo_alley_step_concrete"
+        ],
+        [
+          7,
+          14.3454666137695,
+          14.4853992462158,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_East_photo_alley_step_concrete"
+        ],
+        [
+          8,
+          14.3454780578613,
+          14.4853992462158,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_East_photo_alley_step_concrete"
+        ],
+        [
+          9,
+          14.3454999923706,
+          14.4853992462158,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_East_photo_alley_step_concrete"
+        ],
+        [
+          10,
+          14.3454999923706,
+          14.4853992462158,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_East_photo_alley_step_concrete"
+        ],
+        [
+          11,
+          14.3454999923706,
+          14.4853992462158,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_East_photo_alley_step_concrete"
+        ],
+        [
+          12,
+          14.3454999923706,
+          14.4853992462158,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_East_photo_alley_step_concrete"
+        ],
+        [
+          13,
+          14.3454999923706,
+          14.4853992462158,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_East_photo_alley_step_concrete"
+        ],
+        [
+          14,
+          14.3454370498657,
+          14.4853992462158,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_East_photo_alley_step_concrete"
+        ],
+        [
+          15,
+          14.3453712463379,
+          14.4853992462158,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_East_photo_alley_step_concrete"
+        ],
+        [
+          16,
+          14.3454141616821,
+          14.4853992462158,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_East_photo_alley_step_concrete"
+        ],
+        [
+          17,
+          14.3454999923706,
+          14.4853992462158,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_East_photo_alley_step_concrete"
+        ],
+        [
+          18,
+          14.3454999923706,
+          14.4853992462158,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_East_photo_alley_step_concrete"
+        ],
+        [
+          19,
+          14.3454999923706,
+          14.4853992462158,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_East_photo_alley_step_concrete"
+        ],
+        [
+          20,
+          14.3454999923706,
+          14.4853992462158,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_East_photo_alley_step_concrete"
+        ],
+        [
+          21,
+          14.3454999923706,
+          14.4853992462158,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_East_photo_alley_step_concrete"
+        ],
+        [
+          22,
+          14.3454971313477,
+          14.4853992462158,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_East_photo_alley_step_concrete"
+        ],
+        [
+          23,
+          14.3453130722046,
+          14.4853992462158,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_East_photo_alley_step_concrete"
+        ],
+        [
+          24,
+          14.3453540802002,
+          14.4853992462158,
+          "COL_Terrain_200m_pavement",
+          "COL_Walk_East_photo_alley_step_concrete"
+        ]
+      ],
+      "site": "east"
+    }
+  ]
+}

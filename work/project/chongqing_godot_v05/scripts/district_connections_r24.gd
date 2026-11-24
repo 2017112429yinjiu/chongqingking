@@ -269,13 +269,6 @@ static func install(city:Node3D,editor:=false,prior:Dictionary={},block:Node=nul
 			part.material_override=masonry
 		for i in part.mesh.get_surface_count():
 			var mat:=part.mesh.surface_get_material(i)
-			if key in ["COL_Patrol25_TurnLandings","COL_Patrol25_LowerLanding","COL_Patrol25_CentralLanding","COL_Patrol25_UpperLanding"]:
-				var slab:=preload("res://scripts/lane_connection_r24.gd").paver(true)
-				slab.set_shader_parameter("cement",preload("res://assets/district_r21/terraces_washed_sandstone.jpg"))
-				var tint:=Vector3(.68,.61,.52) if key=="COL_Patrol25_TurnLandings" else Vector3(.46,.407,.342)
-				slab.set_shader_parameter("stone_tint",tint)
-				part.set_surface_override_material(i,slab)
-				continue
 			if not mat or not unit_materials.has(mat.resource_name):continue
 			var finish:StandardMaterial3D=unit_materials[mat.resource_name]
 			if key=="COL_Unit22_BackGallery" and mat.resource_name in ["R18_unit22_tread","R18_unit22_edge"]:

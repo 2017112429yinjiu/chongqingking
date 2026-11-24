@@ -40,3 +40,27 @@ void terrace_finish(vec3 p,sampler2D terrace_photo,float weight,inout vec3 colou
 	colour=mix(colour,mix(old_slab,vec3(.043,.04,.035),.7*max(seam.x,seam.y)),weight);
 	rough=mix(rough,.84,weight);
 }
+
+// The resurfaced walk merges with the neighbouring yard. Both terrain batches
+// sample the same course and wear in world metres across the cut perimeter.
+float junction_yard(vec2 p){
+	if(p.y < -69. && p.x > -38. && p.x < -10.){
+		vec2 edge=min(p-vec2(-35.,-91.),vec2(-13.,-71.)-p);
+		return smoothstep(0.,4.,min(edge.x,edge.y));
+	}
+	if(p.x < -62.){
+		return 1.-smoothstep(5.5,10.5,min(distance(p,vec2(-74.,34.)),distance(p,vec2(-77.,-61.))));
+	}
+	if(p.x < -18.){
+		return 1.-smoothstep(6.3,11.,min(distance(p,vec2(-39.,-38.)),distance(p,vec2(-29.,-60.))));
+	}
+	return 1.-smoothstep(7.,12.,min(distance(p,vec2(16.,66.)),distance(p,vec2(48.,49.))));
+}
+void junction_finish(vec3 world_point,vec3 normal,mat3 view_basis,sampler2D photo,
+		inout vec3 pigment,inout float roughness,inout vec3 view_normal,inout float detail_depth){
+	float w=junction_yard(world_point.xz)*smoothstep(.67,.90,normal.y);
+	if(w<.001)return;
+	terrace_finish(world_point,photo,w,pigment,roughness);
+	view_normal=normalize(mix(view_normal,view_basis*normal,w));
+	detail_depth*=1.-.94*w;
+}

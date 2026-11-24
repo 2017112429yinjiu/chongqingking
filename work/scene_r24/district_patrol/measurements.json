@@ -65,59 +65,6 @@
   },
   "service_and_south_smoothed_corners": 119680,
   "bank_faces": 490,
-  "landings": [
-    {
-      "street": "West residential link",
-      "center_xy": [
-        -74.0,
-        -34.0
-      ],
-      "entry": [
-        -75.58334350585938,
-        -34.91667175292969,
-        13.810159683227539
-      ],
-      "exit": [
-        -73.90908813476562,
-        -31.636363983154297,
-        14.138500213623047
-      ]
-    },
-    {
-      "street": "West residential link",
-      "center_xy": [
-        -77.0,
-        61.0
-      ],
-      "entry": [
-        -76.68421173095703,
-        58.78947067260742,
-        27.245500564575195
-      ],
-      "exit": [
-        -76.83317565917969,
-        63.085289001464844,
-        27.72907066345215
-      ]
-    },
-    {
-      "street": "East photo alley",
-      "center_xy": [
-        48.0,
-        -49.0
-      ],
-      "entry": [
-        48.66666793823242,
-        -51.11666488647461,
-        13.822150230407715
-      ],
-      "exit": [
-        48.57143020629883,
-        -47.0,
-        14.318160057067871
-      ]
-    }
-  ],
   "continuous_paving": [
     {
       "site": "EastLane",
@@ -159,201 +106,595 @@
       "max_height_removed_m": 0.18208500058459975
     }
   ],
-  "street_landings": [
-    {
-      "name": "LowerLanding",
-      "perimeter": [
+  "street_landings": [],
+  "walk_junctions": {
+    "street_entry": {
+      "mouth_heights": [
+        10.303813934326172,
+        11.235919952392578
+      ],
+      "upper_rise": 0.144,
+      "portals": [
         [
-          14.72044849395752,
-          -69.0,
-          10.457041379489828
+          [
+            14.7273530960083,
+            -69.38874816894531
+          ],
+          [
+            17.326946258544922,
+            -69.34272003173828
+          ]
         ],
         [
-          17.32085418701172,
-          -69.0,
-          10.47064410981516
-        ],
-        [
-          17.30759620666504,
-          -68.25111389160156,
-          10.560473557453598
-        ],
-        [
-          17.289596557617188,
-          -67.2344970703125,
-          10.682417494137754
-        ],
-        [
-          17.271596908569336,
-          -66.21788787841797,
-          10.8043605149638
-        ],
-        [
-          17.035478591918945,
-          -64.4069595336914,
-          11.02051529156534
-        ],
-        [
-          16.0247745513916,
-          -63.75,
-          11.094091921394252
-        ],
-        [
-          13.5,
-          -63.75,
-          11.080884817807851
-        ],
-        [
-          13.5,
-          -66.64110565185547,
-          10.733826798749037
+          [
+            10.901638984680176,
+            -64.9521713256836
+          ],
+          [
+            12.972594261169434,
+            -61.766082763671875
+          ]
         ]
       ],
-      "tread_samples": 14,
-      "gradient": [
-        0.005231003132189652,
-        0.12004335394525523
+      "terrain_bounds": [
+        7,
+        23,
+        -72,
+        -57
       ],
-      "removed": {
-        "COL_R23_PathFoundations": 240,
-        "COL_Terrain_200m_pavement": 54,
-        "COL_Walk_OSM_734116594_0_step_concrete": 23,
-        "Walk_details_OSM_734116594_0_stone": 20,
-        "COL_Walk_OSM_734116601_0_pavement": 4,
-        "Walk_details_OSM_734116601_0_stone": 7,
-        "COL_Walk_Central_stair_lane_step_concrete": 13,
-        "Walk_details_Central_stair_lane_stone": 10,
-        "R21_Dressed_Central_steps": 250,
-        "COL_R21_Footing_Entry_stair": 16,
-        "COL_N13_StairFoundations": 2
-      }
+      "samples": 4473,
+      "cut": {
+        "COL_R23_PathFoundations": 265,
+        "COL_Terrain_200m_pavement": 190,
+        "COL_Terrain_200m_yard_concrete": 774,
+        "COL_Walk_OSM_734116594_0_step_concrete": 31,
+        "Walk_details_OSM_734116594_0_stone": 32,
+        "COL_Walk_OSM_734116601_0_pavement": 6,
+        "Walk_details_OSM_734116601_0_stone": 12,
+        "COL_Walk_Central_stair_lane_step_concrete": 15,
+        "Walk_details_Central_stair_lane_stone": 24,
+        "R21_Dressed_Central_steps": 517,
+        "COL_R21_Footing_Entry_stair": 18,
+        "COL_N13_StairFoundations": 2,
+        "COL_D18_StoneFlights": 4,
+        "COL_D18_LaneShoulders": 6,
+        "COL_N13_BankCutFaces": 3
+      },
+      "outline": [
+        [
+          12.127760887145996,
+          -69.43477630615234
+        ],
+        [
+          19.926538467407227,
+          -69.29669189453125
+        ],
+        [
+          21.0,
+          -63.5
+        ],
+        [
+          14.389564514160156,
+          -59.58612823486328
+        ],
+        [
+          9.484668731689453,
+          -67.13212585449219
+        ]
+      ]
     },
-    {
-      "name": "CentralLanding",
-      "perimeter": [
+    "central": {
+      "mouth_heights": [
+        24.283447265625,
+        25.250001907348633
+      ],
+      "upper_rise": 0.16,
+      "portals": [
         [
-          -40.51498031616211,
-          35.75,
-          24.413367454217134
+          [
+            -38.761688232421875,
+            33.83729934692383
+          ],
+          [
+            -35.96050262451172,
+            36.405052185058594
+          ]
         ],
         [
-          -36.75,
-          35.75,
-          24.340955462834273
-        ],
-        [
-          -36.75,
-          37.26634216308594,
-          24.55865156066402
-        ],
-        [
-          -38.06919479370117,
-          40.25,
-          25.01237730691077
-        ],
-        [
-          -39.5908088684082,
-          40.25,
-          25.041642560912962
-        ],
-        [
-          -40.598873138427734,
-          38.3114128112793,
-          24.782714311432514
-        ],
-        [
-          -41.25,
-          36.854164123535156,
-          24.586025207831963
-        ],
-        [
-          -41.25,
-          36.55183792114258,
-          24.542621261061395
+          [
+            -39.004268646240234,
+            41.377952575683594
+          ],
+          [
+            -37.80652618408203,
+            40.755126953125
+          ]
         ]
       ],
-      "tread_samples": 10,
-      "gradient": [
-        -0.019233033190642415,
-        0.14356660596096038
+      "terrain_bounds": [
+        -45,
+        -31,
+        30,
+        45
       ],
-      "removed": {
-        "COL_R23_PathFoundations": 258,
-        "COL_Terrain_200m_pavement": 52,
-        "COL_Walk_Central_stair_lane_step_concrete": 18,
-        "Walk_details_Central_stair_lane_stone": 25,
-        "COL_Walk_Narrow_upper_passage_step_concrete": 20,
-        "Walk_details_Narrow_upper_passage_stone": 22,
-        "R20_Hand_laid_treads_slab": 46,
-        "R21_Dressed_Central_steps": 261,
-        "COL_N13_StairFoundations": 2
-      }
-    },
-    {
-      "name": "UpperLanding",
-      "perimeter": [
-        [
-          -29.428367614746094,
-          57.5,
-          27.87496344023768
-        ],
-        [
-          -28.07163429260254,
-          57.5,
-          27.9945283253591
-        ],
-        [
-          -26.5,
-          60.732234954833984,
-          28.560821338862315
-        ],
-        [
-          -26.5,
-          62.0,
-          28.728611316044237
-        ],
-        [
-          -28.767765045166016,
-          62.0,
-          28.52875990627768
-        ],
-        [
-          -29.08388328552246,
-          61.68388366699219,
-          28.459063028800983
-        ],
-        [
-          -29.883882522583008,
-          60.88388442993164,
-          28.282680765330824
-        ]
-      ],
-      "tread_samples": 12,
-      "gradient": [
-        0.08812703511439975,
-        0.13235100448754622
-      ],
-      "removed": {
-        "COL_R23_PathFoundations": 31,
-        "COL_Terrain_200m_pavement": 33,
-        "COL_Walk_Narrow_upper_passage_step_concrete": 23,
+      "samples": 3960,
+      "cut": {
+        "COL_R23_PathFoundations": 409,
+        "COL_Terrain_200m_pavement": 393,
+        "COL_Terrain_200m_yard_concrete": 100,
+        "COL_Walk_Central_stair_lane_step_concrete": 23,
+        "Walk_details_Central_stair_lane_stone": 32,
+        "COL_Walk_Narrow_upper_passage_step_concrete": 31,
         "Walk_details_Narrow_upper_passage_stone": 32,
-        "COL_Walk_Upper_terrace_connection_step_concrete": 22,
-        "Walk_details_Upper_terrace_connection_stone": 20,
-        "R20_Hand_laid_treads_slab": 45
-      }
+        "R20_Hand_laid_treads_slab": 68,
+        "R21_Dressed_Central_steps": 395,
+        "COL_N13_StairFoundations": 5
+      },
+      "outline": [
+        [
+          -40.75200653076172,
+          32.01284408569336
+        ],
+        [
+          -33.970184326171875,
+          38.22950744628906
+        ],
+        [
+          -35.411041259765625,
+          39.50947570800781
+        ],
+        [
+          -41.39975357055664,
+          42.62360382080078
+        ],
+        [
+          -42.70000076293945,
+          37.599998474121094
+        ]
+      ]
+    },
+    "upper": {
+      "mouth_heights": [
+        27.658000946044922,
+        28.669572830200195
+      ],
+      "upper_rise": 0.163,
+      "portals": [
+        [
+          [
+            -29.880290985107422,
+            56.433013916015625
+          ],
+          [
+            -28.75208854675293,
+            55.691627502441406
+          ]
+        ],
+        [
+          [
+            -28.230850219726562,
+            62.53691482543945
+          ],
+          [
+            -26.463083267211914,
+            60.76914978027344
+          ]
+        ]
+      ],
+      "terrain_bounds": [
+        -34,
+        -22,
+        52,
+        67
+      ],
+      "samples": 2989,
+      "cut": {
+        "COL_R23_PathFoundations": 46,
+        "COL_Terrain_200m_pavement": 252,
+        "COL_Terrain_200m_yard_concrete": 108,
+        "COL_Walk_Narrow_upper_passage_step_concrete": 39,
+        "Walk_details_Narrow_upper_passage_stone": 52,
+        "COL_Walk_Upper_terrace_connection_step_concrete": 23,
+        "Walk_details_Upper_terrace_connection_stone": 22,
+        "R20_Hand_laid_treads_slab": 80
+      },
+      "outline": [
+        [
+          -26.704607009887695,
+          54.34614562988281
+        ],
+        [
+          -24.730670928955078,
+          59.036739349365234
+        ],
+        [
+          -29.9632625579834,
+          64.26932525634766
+        ],
+        [
+          -31.927772521972656,
+          57.77849578857422
+        ]
+      ]
+    },
+    "west_lower": {
+      "mouth_heights": [
+        13.646751403808594,
+        14.306468963623047
+      ],
+      "upper_rise": 0.14,
+      "portals": [
+        [
+          [
+            -76.32460021972656,
+            -33.785987854003906
+          ],
+          [
+            -74.9718017578125,
+            -36.12263870239258
+          ]
+        ],
+        [
+          [
+            -75.25523376464844,
+            -31.509532928466797
+          ],
+          [
+            -72.5572280883789,
+            -31.61330223083496
+          ]
+        ]
+      ],
+      "terrain_bounds": [
+        -80,
+        -65,
+        -41,
+        -29
+      ],
+      "samples": 2989,
+      "cut": {
+        "COL_R23_PathFoundations": 38,
+        "COL_Terrain_200m_pavement": 217,
+        "COL_Terrain_200m_yard_concrete": 143,
+        "COL_Walk_West_residential_link_step_concrete": 38,
+        "Walk_details_West_residential_link_stone": 42,
+        "R21_Dressed_West_steps": 270,
+        "COL_N13_StairFoundations": 9
+      },
+      "outline": [
+        [
+          -73.59394836425781,
+          -38.502559661865234
+        ],
+        [
+          -67.0,
+          -35.0
+        ],
+        [
+          -69.80925750732422,
+          -31.718992233276367
+        ],
+        [
+          -77.6969223022461,
+          -31.415620803833008
+        ]
+      ]
+    },
+    "west_upper": {
+      "mouth_heights": [
+        27.08710479736328,
+        27.894290924072266
+      ],
+      "upper_rise": 0.14,
+      "portals": [
+        [
+          [
+            -78.0100326538086,
+            58.52431106567383
+          ],
+          [
+            -75.33716583251953,
+            58.90614700317383
+          ]
+        ],
+        [
+          [
+            -78.21653747558594,
+            63.218929290771484
+          ],
+          [
+            -75.521484375,
+            63.05559158325195
+          ]
+        ]
+      ],
+      "terrain_bounds": [
+        -82,
+        -71,
+        56,
+        66
+      ],
+      "samples": 1845,
+      "cut": {
+        "COL_R23_PathFoundations": 34,
+        "COL_Terrain_200m_pavement": 108,
+        "COL_Terrain_200m_yard_concrete": 112,
+        "COL_Walk_West_residential_link_step_concrete": 46,
+        "Walk_details_West_residential_link_stone": 52,
+        "R21_Dressed_West_steps": 292,
+        "COL_N13_StairFoundations": 12
+      },
+      "outline": [
+        [
+          -79.4454574584961,
+          58.319252014160156
+        ],
+        [
+          -73.90174102783203,
+          59.1112060546875
+        ],
+        [
+          -74.07414245605469,
+          62.967872619628906
+        ],
+        [
+          -79.66387939453125,
+          63.30664825439453
+        ]
+      ]
+    },
+    "east": {
+      "mouth_heights": [
+        13.660785675048828,
+        14.485488891601562
+      ],
+      "upper_rise": 0.14,
+      "portals": [
+        [
+          [
+            47.49694061279297,
+            -51.563716888427734
+          ],
+          [
+            49.881465911865234,
+            -50.81268310546875
+          ]
+        ],
+        [
+          [
+            47.39011001586914,
+            -46.58448028564453
+          ],
+          [
+            49.793922424316406,
+            -47.27128601074219
+          ]
+        ]
+      ],
+      "terrain_bounds": [
+        43,
+        57,
+        -54,
+        -36
+      ],
+      "samples": 5092,
+      "cut": {
+        "COL_R23_PathFoundations": 34,
+        "COL_Terrain_200m_pavement": 171,
+        "COL_Terrain_200m_yard_concrete": 956,
+        "COL_Walk_East_photo_alley_step_concrete": 46,
+        "Walk_details_East_photo_alley_stone": 52
+      },
+      "outline": [
+        [
+          46.11391830444336,
+          -51.99931716918945
+        ],
+        [
+          51.264488220214844,
+          -50.37708282470703
+        ],
+        [
+          51.188133239746094,
+          -47.66963195800781
+        ],
+        [
+          45.99589920043945,
+          -46.186134338378906
+        ]
+      ]
+    }
+  },
+  "landings": [
+    {
+      "street": "West residential link",
+      "center_xy": [
+        -74.0,
+        -34.0
+      ],
+      "entry": [
+        -75.58334,
+        -34.91667,
+        13.646751403808594
+      ],
+      "exit": [
+        -73.90909,
+        -31.63636,
+        14.306468963623047
+      ]
+    },
+    {
+      "street": "West residential link",
+      "center_xy": [
+        -77.0,
+        61.0
+      ],
+      "entry": [
+        -76.68421,
+        58.78947,
+        27.08710479736328
+      ],
+      "exit": [
+        -76.83318,
+        63.08529,
+        27.894290924072266
+      ]
+    },
+    {
+      "street": "East photo alley",
+      "center_xy": [
+        48.0,
+        -49.0
+      ],
+      "entry": [
+        48.666667,
+        -51.11666,
+        13.660785675048828
+      ],
+      "exit": [
+        48.57143,
+        -47.0,
+        14.485488891601562
+      ]
     }
   ],
-  "bedded_edges": [
-    [
-      "COL_Walk_OSM_734116594_0_step_concrete",
-      [
-        16.044,
-        -70.307,
-        10.304
-      ],
-      0.339
+  "north_frontage": {
+    "bounds": [
+      -36,
+      -12,
+      74,
+      94
     ],
+    "sidewalk_edge": [
+      [
+        -29.669084548950195,
+        86.43122100830078,
+        33.05173110961914
+      ],
+      [
+        -28.843290328979492,
+        85.94489288330078,
+        32.997581481933594
+      ],
+      [
+        -28.017494201660156,
+        85.45855712890625,
+        32.943790435791016
+      ],
+      [
+        -27.19169807434082,
+        84.97222137451172,
+        32.89035415649414
+      ],
+      [
+        -26.365901947021484,
+        84.48589324951172,
+        32.837284088134766
+      ],
+      [
+        -25.54010581970215,
+        83.99955749511719,
+        32.78458023071289
+      ],
+      [
+        -24.714309692382812,
+        83.51322174072266,
+        32.73225021362305
+      ],
+      [
+        -23.88851547241211,
+        83.02689361572266,
+        32.680294036865234
+      ],
+      [
+        -23.062719345092773,
+        82.54055786132812,
+        32.62871170043945
+      ],
+      [
+        -22.236923217773438,
+        82.0542221069336,
+        32.57750701904297
+      ],
+      [
+        -21.4111270904541,
+        81.5678939819336,
+        32.52667999267578
+      ],
+      [
+        -20.585330963134766,
+        81.08155822753906,
+        32.476234436035156
+      ],
+      [
+        -19.75953483581543,
+        80.59522247314453,
+        32.42616653442383
+      ],
+      [
+        -18.933740615844727,
+        80.10888671875,
+        32.37648010253906
+      ],
+      [
+        -18.10794448852539,
+        79.62255859375,
+        32.32716751098633
+      ],
+      [
+        -17.282148361206055,
+        79.13622283935547,
+        32.27823257446289
+      ],
+      [
+        -16.45635223388672,
+        78.64988708496094,
+        32.229671478271484
+      ],
+      [
+        -15.630556106567383,
+        78.16355895996094,
+        32.181480407714844
+      ],
+      [
+        -14.804760932922363,
+        77.6772232055664,
+        32.13365936279297
+      ],
+      [
+        -13.978964805603027,
+        77.19088745117188,
+        32.08620071411133
+      ],
+      [
+        -13.153168678283691,
+        76.70455932617188,
+        32.039100646972656
+      ],
+      [
+        -12.327372550964355,
+        76.21822357177734,
+        31.992355346679688
+      ],
+      [
+        -11.501577377319336,
+        75.73188781738281,
+        31.945960998535156
+      ],
+      [
+        -10.67578125,
+        75.24555969238281,
+        31.89990997314453
+      ]
+    ],
+    "samples": 7857,
+    "max_fill_m": 0.8839628045406656,
+    "cut": {
+      "COL_Terrain_200m_pavement": 3760,
+      "COL_Terrain_200m_yard_concrete": 1994
+    }
+  },
+  "bedded_edges": [
     [
       "COL_Walk_OSM_734116594_0_step_concrete",
       [
@@ -402,29 +743,11 @@
     [
       "COL_Walk_OSM_734116594_0_step_concrete",
       [
-        16.962,
-        -69.0,
-        10.458
+        16.044,
+        -70.307,
+        10.304
       ],
-      0.283
-    ],
-    [
-      "COL_Walk_OSM_734116594_0_step_concrete",
-      [
-        15.662,
-        -69.0,
-        10.458
-      ],
-      0.277
-    ],
-    [
-      "COL_Walk_OSM_734116594_0_step_concrete",
-      [
-        16.026,
-        -69.291,
-        10.458
-      ],
-      0.342
+      0.339
     ],
     [
       "COL_Walk_OSM_1328811307_0_step_concrete",
@@ -542,33 +865,6 @@
         15.77
       ],
       0.311
-    ],
-    [
-      "COL_Walk_Central_stair_lane_step_concrete",
-      [
-        15.321,
-        -63.75,
-        10.948
-      ],
-      0.184
-    ],
-    [
-      "COL_Walk_Central_stair_lane_step_concrete",
-      [
-        13.5,
-        -66.343,
-        10.948
-      ],
-      0.304
-    ],
-    [
-      "COL_Walk_Central_stair_lane_step_concrete",
-      [
-        14.826,
-        -63.428,
-        11.092
-      ],
-      0.275
     ],
     [
       "COL_Walk_Central_stair_lane_step_concrete",
@@ -1048,96 +1344,6 @@
       0.375
     ],
     [
-      "COL_Walk_Central_stair_lane_step_concrete",
-      [
-        -39.074,
-        35.75,
-        24.442
-      ],
-      0.213
-    ],
-    [
-      "COL_Walk_Central_stair_lane_step_concrete",
-      [
-        -36.75,
-        36.017,
-        24.442
-      ],
-      0.33
-    ],
-    [
-      "COL_Walk_Central_stair_lane_step_concrete",
-      [
-        13.5,
-        -65.757,
-        10.948
-      ],
-      0.238
-    ],
-    [
-      "COL_Walk_Central_stair_lane_step_concrete",
-      [
-        13.232,
-        -65.881,
-        11.092
-      ],
-      0.378
-    ],
-    [
-      "COL_Walk_Central_stair_lane_step_concrete",
-      [
-        11.965,
-        -65.643,
-        11.092
-      ],
-      0.318
-    ],
-    [
-      "COL_Walk_Central_stair_lane_step_concrete",
-      [
-        -37.657,
-        35.75,
-        24.442
-      ],
-      0.294
-    ],
-    [
-      "COL_Walk_Central_stair_lane_step_concrete",
-      [
-        -40.068,
-        35.75,
-        24.605
-      ],
-      0.34
-    ],
-    [
-      "COL_Walk_Central_stair_lane_step_concrete",
-      [
-        -36.75,
-        36.759,
-        24.442
-      ],
-      0.265
-    ],
-    [
-      "COL_Walk_Narrow_upper_passage_step_concrete",
-      [
-        -39.516,
-        40.25,
-        24.924
-      ],
-      0.194
-    ],
-    [
-      "COL_Walk_Narrow_upper_passage_step_concrete",
-      [
-        -38.44,
-        41.0,
-        25.244
-      ],
-      0.35
-    ],
-    [
       "COL_Walk_Narrow_upper_passage_step_concrete",
       [
         -37.92,
@@ -1302,11 +1508,11 @@
     [
       "COL_Walk_Narrow_upper_passage_step_concrete",
       [
-        -29.275,
-        56.125,
-        27.652
+        -38.366,
+        41.046,
+        25.244
       ],
-      0.164
+      0.339
     ],
     [
       "COL_Walk_Narrow_upper_passage_step_concrete",
@@ -1318,85 +1524,13 @@
       0.334
     ],
     [
-      "COL_Walk_Narrow_upper_passage_step_concrete",
-      [
-        -29.275,
-        56.125,
-        27.804
-      ],
-      0.334
-    ],
-    [
-      "COL_Walk_Narrow_upper_passage_step_concrete",
-      [
-        -39.5,
-        40.281,
-        25.084
-      ],
-      0.35
-    ],
-    [
-      "COL_Walk_Narrow_upper_passage_step_concrete",
-      [
-        -38.755,
-        40.25,
-        25.084
-      ],
-      0.3
-    ],
-    [
-      "COL_Walk_Narrow_upper_passage_step_concrete",
-      [
-        -28.411,
-        57.5,
-        27.93
-      ],
-      0.21
-    ],
-    [
-      "COL_Walk_Narrow_upper_passage_step_concrete",
-      [
-        -29.089,
-        57.5,
-        27.93
-      ],
-      0.256
-    ],
-    [
       "COL_Walk_Upper_terrace_connection_step_concrete",
       [
-        -28.284,
-        62.0,
-        28.507
-      ],
-      0.172
-    ],
-    [
-      "COL_Walk_Upper_terrace_connection_step_concrete",
-      [
-        -28.042,
-        62.242,
-        28.67
-      ],
-      0.291
-    ],
-    [
-      "COL_Walk_Upper_terrace_connection_step_concrete",
-      [
-        -27.4,
-        62.0,
-        28.67
-      ],
-      0.29
-    ],
-    [
-      "COL_Walk_Upper_terrace_connection_step_concrete",
-      [
-        -26.992,
-        62.792,
+        -26.6,
+        62.4,
         28.832
       ],
-      0.15
+      0.146
     ],
     [
       "COL_Walk_Upper_terrace_connection_step_concrete",
@@ -1500,15 +1634,6 @@
     [
       "COL_Walk_Upper_terrace_connection_step_concrete",
       [
-        -18.143,
-        75.143,
-        31.093
-      ],
-      0.108
-    ],
-    [
-      "COL_Walk_Upper_terrace_connection_step_concrete",
-      [
         -23.818,
         85.864,
         32.506
@@ -1527,38 +1652,20 @@
     [
       "COL_Walk_Upper_terrace_connection_step_concrete",
       [
-        -25.852,
-        61.652,
-        28.832
-      ],
-      0.17
-    ],
-    [
-      "COL_Walk_Upper_terrace_connection_step_concrete",
-      [
-        -26.5,
-        61.272,
+        -28.172,
+        62.478,
         28.67
       ],
-      0.232
+      0.252
     ],
     [
       "COL_Walk_Upper_terrace_connection_step_concrete",
       [
-        -26.244,
-        62.044,
-        28.832
-      ],
-      0.122
-    ],
-    [
-      "COL_Walk_Upper_terrace_connection_step_concrete",
-      [
-        -26.75,
-        62.0,
+        -27.288,
+        61.594,
         28.67
       ],
-      0.159
+      0.34
     ],
     [
       "COL_Walk_West_residential_link_step_concrete",
@@ -1644,15 +1751,6 @@
     [
       "COL_Walk_West_residential_link_step_concrete",
       [
-        -75.829,
-        -34.492,
-        13.64
-      ],
-      0.158
-    ],
-    [
-      "COL_Walk_West_residential_link_step_concrete",
-      [
         -77.167,
         -35.833,
         13.64
@@ -1662,11 +1760,11 @@
     [
       "COL_Walk_West_residential_link_step_concrete",
       [
-        -73.909,
-        -31.636,
+        -73.821,
+        -31.565,
         14.303
       ],
-      0.353
+      0.342
     ],
     [
       "COL_Walk_West_residential_link_step_concrete",
@@ -2607,47 +2705,11 @@
     [
       "COL_Walk_West_residential_link_step_concrete",
       [
-        -76.684,
-        58.789,
-        27.081
-      ],
-      0.168
-    ],
-    [
-      "COL_Walk_West_residential_link_step_concrete",
-      [
-        -76.526,
-        57.684,
-        27.081
-      ],
-      0.352
-    ],
-    [
-      "COL_Walk_West_residential_link_step_concrete",
-      [
-        -78.316,
-        61.604,
-        27.57
-      ],
-      0.254
-    ],
-    [
-      "COL_Walk_West_residential_link_step_concrete",
-      [
-        -78.306,
-        61.603,
-        27.57
-      ],
-      0.253
-    ],
-    [
-      "COL_Walk_West_residential_link_step_concrete",
-      [
-        -76.809,
-        63.083,
+        -76.773,
+        63.131,
         27.888
       ],
-      0.348
+      0.341
     ],
     [
       "COL_Walk_West_residential_link_step_concrete",
@@ -2769,11 +2831,29 @@
     [
       "COL_Walk_West_residential_link_step_concrete",
       [
-        -75.153,
-        -35.66,
-        13.64
+        -75.17,
+        -31.513,
+        14.303
       ],
-      0.167
+      0.339
+    ],
+    [
+      "COL_Walk_West_residential_link_step_concrete",
+      [
+        -76.526,
+        57.684,
+        27.081
+      ],
+      0.352
+    ],
+    [
+      "COL_Walk_West_residential_link_step_concrete",
+      [
+        -78.12,
+        63.213,
+        27.888
+      ],
+      0.343
     ],
     [
       "COL_Walk_East_photo_alley_step_concrete",
@@ -2832,29 +2912,11 @@
     [
       "COL_Walk_East_photo_alley_step_concrete",
       [
-        48.667,
-        -51.117,
-        13.661
-      ],
-      0.168
-    ],
-    [
-      "COL_Walk_East_photo_alley_step_concrete",
-      [
-        49.0,
-        -52.175,
-        13.661
-      ],
-      0.351
-    ],
-    [
-      "COL_Walk_East_photo_alley_step_concrete",
-      [
-        48.571,
-        -47.0,
+        48.679,
+        -46.953,
         14.485
       ],
-      0.352
+      0.34
     ],
     [
       "COL_Walk_East_photo_alley_step_concrete",
@@ -3120,6 +3182,24 @@
     [
       "COL_Walk_East_photo_alley_step_concrete",
       [
+        49.0,
+        -52.175,
+        13.661
+      ],
+      0.351
+    ],
+    [
+      "COL_Walk_East_photo_alley_step_concrete",
+      [
+        47.477,
+        -46.609,
+        14.485
+      ],
+      0.339
+    ],
+    [
+      "COL_Walk_East_photo_alley_step_concrete",
+      [
         50.239,
         1.5,
         22.108
@@ -3157,17 +3237,17 @@
     [
       15,
       -62.85,
-      10.951828002929688
+      10.989086151123047
     ],
     [
       17,
       -62.85,
-      11.121026992797852
+      11.08864688873291
     ]
   ],
   "pavement_scatter": {
-    "Planting_leaf_litter_gravel_and_seedlings_gravel_ground": 1308,
+    "Planting_leaf_litter_gravel_and_seedlings_gravel_ground": 1476,
     "Planting_leaf_litter_gravel_and_seedlings_leaf_olive": 0,
-    "Planting_leaf_litter_gravel_and_seedlings_wood": 1648
+    "Planting_leaf_litter_gravel_and_seedlings_wood": 1728
   }
 }

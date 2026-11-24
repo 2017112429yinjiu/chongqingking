@@ -1,6 +1,8 @@
 # 重庆外卖王 · 本地开发
 
-## 当前入口 · R24 构建 25
+## 当前入口 · R24 构建 25b
+
+街口双柱旁的两段楼梯现在接进院坝坡面。中央梯坎、上院窄巷、西侧住区上下两弯和东照相巷使用同样的接坡做法。北侧横街人行道也重新接进院坝。[两处原机位前后实景](work/project/chongqing_godot_v05/verification_r24/district_patrol/rechecked25b/street_comparison.jpg)
 
 在[穿楼托送练习](work/穿楼托送练习.cmd)从下院进门，到 202 取豆花饭。同楼楼梯通 301，也可以从背巷经蓝砖楼和天桥送达。正式入口仍从第一天报到开始。[本轮街区巡检](work/project/chongqing_godot_v05/docs/DISTRICT_PATROL_R24.md) · [完整可编辑场景](work/scene_r24/district_patrol/city_and_patrol.blend)
 

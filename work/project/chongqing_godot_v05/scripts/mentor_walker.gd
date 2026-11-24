@@ -186,7 +186,9 @@ func advance(dt: float, allow: bool, turn_to_path:=true) -> bool:
 		var carry_point:=to_global(Vector3(-.32,.80,.095+swing))
 		_arm(0,carry_start.lerp(carry_point,smoothstep(0.,1.,load_blend)),1.)
 	shape_right(1. if carrying else maxf(0.,hand_pose.closure.x-dt*4.))
-	return index >= path.size()
+	# A descending step can put the rider inside the destination radius one
+	# physics tick before the soles land. Start the next action after contact.
+	return index >= path.size() and is_on_floor()
 
 func begin_carry() -> void:
 	carry_start=grip()

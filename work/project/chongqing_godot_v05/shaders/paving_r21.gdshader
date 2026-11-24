@@ -58,4 +58,5 @@ void fragment(){
 	SPECULAR=mix(SPECULAR,.21,blend);
  }
 	if(terrace_neighbor){service_finish(world,n,repair_aggregate,ALBEDO,ROUGHNESS);}
+ if(terrace_neighbor){junction_finish(world,normalize(wn),mat3(VIEW_MATRIX),repair_aggregate,ALBEDO,ROUGHNESS,NORMAL,NORMAL_MAP_DEPTH);}
 }
