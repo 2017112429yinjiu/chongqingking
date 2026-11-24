@@ -9,6 +9,8 @@ func verify()->void:
 	game=scene.gameplay
 	lesson=game.lesson
 	lesson.set_physics_process(false)
+	var old_joints:=scene.find_child("District_surface_repairs_and_utilities_soil_dark",true,false) as MeshInstance3D
+	check("old_raised_pavement_joints_absent",old_joints==null or old_joints.mesh==null or not old_joints.is_visible_in_tree())
 	var walker:CharacterBody3D=lesson.demo.walker
 	var space:=game.get_world_3d().direct_space_state as PhysicsDirectSpaceState3D
 	RenderingServer.render_loop_enabled=false

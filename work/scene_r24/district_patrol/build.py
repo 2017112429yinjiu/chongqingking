@@ -107,6 +107,9 @@ for k in list(layout['new']):
     if k in layout['changed']:layout['changed'].remove(k)
 # Paint the complete court onto the existing structural slab at 20.530 m.
 for k in ['COL_Community_court_line_white','COL_Community_court_court_red','COL_Community_court_court_green','Street_small_furniture_dark','Street_small_furniture_aluminium']:retire(k)
+# This batch contains only thin cylinders across old paths. The paving now draws
+# its joints on the actual walking surface, including at regraded junctions.
+retire('District_surface_repairs_and_utilities_soil_dark')
 # Baked patch panels represented paving finishes above the underlying one-metre terrain.
 for ob in list(scene.objects):
     if ob.name.startswith('Urban_paving_joints_and_repairs_'):retire(ob.name)

@@ -2,11 +2,11 @@
 
 ## R24 构建 25b · 街口、住区转角与北侧横街
 
-玩家图中两根挡车柱之间的棕色斜板已在同机位对上。拆去板、裁齐相交的旧踏步和压边，两段楼梯直接接回院坝地面。以同样方式逐处修整中央梯坎、上院窄巷、西侧住区上下两弯和东照相巷，补合东巷梯侧见天的缺口。全区复测另查出北侧横街人行道和院坝间的落差，按原人行道的实测外沿放坡。西侧下阶试走还发现老彭脚未落地便报告到点，已改为落稳后再切动作。原图、失败试走、各次近景和读数均保留。[两处同机位对照](work/project/chongqing_godot_v05/verification_r24/district_patrol/rechecked25b/street_comparison.jpg)
+玩家图中两根挡车柱之间的棕色斜板已在同机位对上。拆去板、裁齐相交的旧踏步和压边，两段楼梯直接接回院坝地面。以同样方式逐处修整中央梯坎、上院窄巷、西侧住区上下两弯和东照相巷，补合东巷梯侧见天的缺口。全区复测另查出北侧横街人行道和院坝间的落差，按原人行道的实测外沿放坡。西侧下阶试走还发现老彭脚未落地便报告到点，已改为落稳后再切动作。原图、失败试走、各次近景和读数均保留。[两处同机位对照](work/project/chongqing_godot_v05/verification_r24/district_patrol/final25b/street_comparison.jpg)
 
-最后一轮用 Blender 4.3.2 重开整城，用 Godot 4.6.3 默认场景独立复跑。六个路口左中右各走往返，双柱街口又走四趟往返。2,120 个内侧地面点和上下口 300 组断面均复核，实测相对设计踏高的最大偏差为 6.21 毫米。老彭骑 14 路往返共 3,453.88 米，玩家车完成 26 条地面路线的双向通行。街区三线道路取 16,004 点，院坝网格取 10,000 点。按历史标高有 28 点未命中，另从上方逐点核实脚下及四邻，再实走北侧坡道。四条地下投影未列入地面骑行。复跑本楼和天桥到 301、第一天三单、接单柜台、普通单、午市和桥上续档。[本轮实测汇总](work/project/chongqing_godot_v05/verification_r24/district_patrol/rechecked25b/survey_summary.json)
+最后一轮用 Blender 4.3.2 重开整城，用 Godot 4.6.3 默认场景独立复跑。六个路口左中右各走往返，双柱街口又走四趟往返。2,120 个内侧地面点和上下口 300 组断面均复核，实测相对设计踏高的最大偏差为 6.21 毫米。老彭骑 14 路往返共 3,453.88 米，玩家车完成 26 条地面路线的双向通行。街区三线道路取 16,004 点，院坝网格取 10,000 点。按历史标高有 28 点未命中，另从上方逐点核实脚下及四邻，再实走北侧坡道。四条地下投影未列入地面骑行。复跑本楼和天桥到 301、第一天三单、接单柜台、普通单、午市和桥上续档。[本轮实测汇总](work/project/chongqing_godot_v05/verification_r24/district_patrol/final25b/survey_summary.json)
 
-中央梯坎的斜视画面仍可见一条细线，该处实测有连续地面。已检查的路线、离路抽样和照片机位见[街区巡检说明](work/project/chongqing_godot_v05/docs/DISTRICT_PATROL_R24.md)。本轮为内部制作记录。
+复看中央梯坎斜视机位，脚下虽有连续地面，仍能看见一条横线。逐组单独渲染，定位到早期沿步道横放的细圆杆。已撤掉全街区同一批旧修补缝，铺装材料继续表现灰缝。[单独显影的旧线](work/project/chongqing_godot_v05/verification_r24/district_patrol/old_joint_isolation/isolated.png) · [中央梯坎最终同机位](work/project/chongqing_godot_v05/verification_r24/district_patrol/final25b/older_crossings/turn_02_2.png)
 
 ## 2026-11-24 · R24 构建 25，住户楼梯与全街区往返巡检
 

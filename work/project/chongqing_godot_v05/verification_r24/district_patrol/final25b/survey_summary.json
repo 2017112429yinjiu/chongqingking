@@ -1,0 +1,60 @@
+{
+  "source_and_export": {
+    "source": "city_and_patrol.blend",
+    "blender": "4.3.2",
+    "blender_sha256": "8df0acedf48c6d5e1c1503692fb7070203430d8cb30f0e051a1e943526c552f2",
+    "glb_sha256": "eb568cb1b592d1bd634f6567ce429be2b66132bef4dddf8d4f14f72490bbc179",
+    "retired": [
+      "COL_Community_court_line_white",
+      "COL_Community_court_court_red",
+      "COL_Community_court_court_green",
+      "Street_small_furniture_dark",
+      "Street_small_furniture_aluminium",
+      "Urban_paving_joints_and_repairs_yard_concrete",
+      "Urban_paving_joints_and_repairs_soil_dark",
+      "Urban_paving_joints_and_repairs_paving_slab",
+      "District_surface_repairs_and_utilities_soil_dark"
+    ],
+    "changed": 131,
+    "new": [
+      "COL_Unit22_Stairhall",
+      "Unit22_Fittings",
+      "COL_Unit22_BackGallery",
+      "Unit22_HallNotices",
+      "COL_Blue24_Stair",
+      "Blue24_Fixtures",
+      "COL_Blue24_Crossing",
+      "COL_Blue24_301",
+      "COL_Patrol25_EastLane",
+      "COL_Patrol25_StationRear",
+      "COL_Patrol25_ResidentStair",
+      "Patrol25_ResidentTreads",
+      "COLH_Patrol25_StairSlope",
+      "Patrol25_HallHardware",
+      "COL_Patrol25_CourtBank",
+      "Patrol25_StairBeds"
+    ]
+  },
+  "mentor_routes": 14,
+  "mentor_legs": 28,
+  "mentor_distance_m": 3453.88,
+  "player_surface_routes_completed": {
+    "out": 26,
+    "back": 26
+  },
+  "historical_underground_alignments_excluded": 4,
+  "walk_return_trips_at_six_junctions": 18,
+  "additional_street_entry_return_trips": 4,
+  "inner_surface_points": 2120,
+  "gate_cross_sections": 300,
+  "max_gate_error_m": 0.00620094299316407,
+  "east_stair_edge_points": 216,
+  "district_probes": {
+    "sections": 16004,
+    "grid": 10000
+  },
+  "old_height_misses_rechecked": 28,
+  "north_edge_max_difference_m_over_13cm": 0.0417556762695313,
+  "native_scene": "first_shift.tscn",
+  "engine": "4.6.3-stable (official)"
+}

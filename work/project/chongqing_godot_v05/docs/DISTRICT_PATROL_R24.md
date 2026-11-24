@@ -2,11 +2,13 @@
 
 ## 构建 25b · 双柱街口与院坝接坡
 
-玩家回传的拐角已对位到树池矮墙和两根挡车柱旁。构建 25 的局部平台与两段旧踏步、石板边和路基相交，斜看会露出一块棕色板及黑边。现在两段梯子各自沿完整的踏步边收头，中间直接接回院坝地面。相邻铺地共用一套按米排列的灰缝和表面磨损。中央梯坎上段、上院窄巷、西侧住区上下两个弯和东照相巷也逐处处理。东照相巷的修整延伸到梯段外侧原先透出天空的位置。[玩家原图](../../../scene_r24/district_patrol/entry_corner/player.png) · [街口和中央梯坎原位对照](../verification_r24/district_patrol/rechecked25b/street_comparison.jpg) · [三个方向的街口步行近景](../verification_r24/district_patrol/rechecked25b/junction_profiles/visuals.jpg)
+玩家回传的拐角已对位到树池矮墙和两根挡车柱旁。构建 25 的局部平台与两段旧踏步、石板边和路基相交，斜看会露出一块棕色板及黑边。现在两段梯子各自沿完整的踏步边收头，中间直接接回院坝地面。相邻铺地共用一套按米排列的灰缝和表面磨损。中央梯坎上段、上院窄巷、西侧住区上下两个弯和东照相巷也逐处处理。东照相巷的修整延伸到梯段外侧原先透出天空的位置。[玩家原图](../../../scene_r24/district_patrol/entry_corner/player.png) · [街口和中央梯坎原位对照](../verification_r24/district_patrol/final25b/street_comparison.jpg) · [三个方向的街口步行近景](../verification_r24/district_patrol/final25b/junction_profiles/visuals.jpg)
 
-全区复查另找到了北侧横街人行道和院坝之间的落差。以现有人行道外沿实测高度收坡，两端逐渐接回原来的坡度。以前标高量不到的位置另从上方取样，同时量前后左右四点，老彭沿坡走完往返。检查仍保留首次漏测点、较陡的西端试坡和一次转角下阶时提前报告到点的记录。老彭现在踩稳最后一步才进入下一个动作。[北侧坡上回看](../verification_r24/district_patrol/rechecked25b/north/north_grade_1.png) · [北侧接缝剖面与脚下测量](../verification_r24/district_patrol/rechecked25b/north/north.json)
+全区复查另找到了北侧横街人行道和院坝之间的落差。以现有人行道外沿实测高度收坡，两端逐渐接回原来的坡度。以前标高量不到的位置另从上方取样，同时量前后左右四点，老彭沿坡走完往返。检查仍保留首次漏测点、较陡的西端试坡和一次转角下阶时提前报告到点的记录。老彭现在踩稳最后一步才进入下一个动作。[北侧坡上回看](../verification_r24/district_patrol/final25b/north/north_grade_1.png) · [北侧接缝剖面与脚下测量](../verification_r24/district_patrol/final25b/north/north.json)
 
-以 Godot 4.6.3 正式游戏场景检查六个转角。每个接头分左、中、右步行往返，另从街口斜穿和横穿。上下口各沿全宽取 25 组断面，逐点比较实际高差和该处设计的末级踏高。街区其他道路另用老彭的车和玩家的车双向通行，远离路线的院坝使用间隔两米的地面抽样。四段地下道路投影保留在地图数据中。复验命令为 `work/scene_r24/district_patrol/verify.ps1 -Run 新目录名 -AllRoads -Timing`。[完整范围与读数](../verification_r24/district_patrol/rechecked25b/survey_summary.json) · [14 条带教车路线](../verification_r24/district_patrol/rechecked25b/ride/visuals.jpg)
+中央梯坎前曾残留一道细线。将原位照片中的物件逐组显影，找到了早期沿多条步道横放的一批细圆杆。整批已撤掉，路砖和灰缝继续随地面显示。[旧圆杆单独显影](../verification_r24/district_patrol/old_joint_isolation/isolated.png) · [最后一轮原位近景](../verification_r24/district_patrol/final25b/older_crossings/turn_02_2.png)
+
+以 Godot 4.6.3 正式游戏场景检查六个转角。每个接头分左、中、右步行往返，另从街口斜穿和横穿。上下口各沿全宽取 25 组断面，逐点比较实际高差和该处设计的末级踏高。街区其他道路另用老彭的车和玩家的车双向通行，远离路线的院坝使用间隔两米的地面抽样。四段地下道路投影保留在地图数据中。复验命令为 `work/scene_r24/district_patrol/verify.ps1 -Run 新目录名 -AllRoads -Timing`。[完整范围与读数](../verification_r24/district_patrol/final25b/survey_summary.json) · [14 条带教车路线](../verification_r24/district_patrol/final25b/ride/visuals.jpg)
 
 ## 构建 25 · 楼内路线与街区原始巡检
 
