@@ -1,6 +1,7 @@
 // Original material treatment. Keep the licensed source PBR and metre UVs.
 // Broad mineral variation plus wetness beside authored drain/wall locations.
 shader_type spatial;
+#include "res://shaders/service_paving.gdshaderinc"
 render_mode diffuse_burley, specular_schlick_ggx;
 #include "res://shaders/sky_visibility_r20.gdshaderinc"
 #include "res://shaders/facade_runoff_r21.gdshaderinc"
@@ -136,4 +137,5 @@ void fragment() {
 	SPECULAR=mix(SPECULAR,.21,blend);
  }
  if(abs(world_normal.y)<.50){stain_plaster(height_above_pavement,broad,fine,ALBEDO,ROUGHNESS); }
+ if(terrace_neighbor){service_finish(world_position,normalize(world_normal),repair_aggregate,ALBEDO,ROUGHNESS);}
 }

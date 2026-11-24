@@ -1,0 +1,33 @@
+{
+  "revision": "R24 build 25",
+  "authoring": "Local changes to the existing district, stair flights, landings, cut-outs, welded street surfaces, supports and procedural paint. No new third-party model or source image was downloaded.",
+  "parent": "../vertical_run/assets.json",
+  "source_and_export_checksums": "reopened.json",
+  "reused_surfaces": [
+    {
+      "asset": "Concrete Floor Worn 001",
+      "source": "https://polyhaven.com/a/concrete_floor_worn_001",
+      "author": "Dimitrios Savva (photography), Rico Cilliers (processing)",
+      "license": "CC0 1.0",
+      "modification": "Original project scan sampled in world metres for connected paving and court surface variation.",
+      "runtime_sha256": "e29b45cdcd6d02fae3c087c456196ffa750779a9b62e7071aa3831dc322a0cc4"
+    },
+    {
+      "asset": "Stone Wall 05",
+      "source": "https://polyhaven.com/a/stone_wall_05",
+      "author": "Charlotte Baglioni",
+      "license": "CC0 1.0",
+      "modification": "Reprojected on the court retaining bank with a shared stone-course direction.",
+      "runtime_sha256": "d3680c5ef2657aead18f9bfab93994555b8f05de4f4fecba18194cbe3a116b87"
+    },
+    {
+      "asset": "Sandstone Cracks",
+      "source": "https://polyhaven.com/a/sandstone_cracks",
+      "author": "Rob Tuytel",
+      "license": "CC0 1.0",
+      "modification": "Reused the existing R21 washed-sandstone derivative for the three outdoor landings.",
+      "derivative_sha256": "9792a5261f98aee4a73328e1420585e7d33308a382e7abbb081dcee2b0094924",
+      "previous_record": "../lane_connections/asset_record.json"
+    }
+  ]
+}

@@ -27,6 +27,8 @@ static func furnish(root:Node3D)->void:
 	blue.albedo_color=Color("334f5d")
 	blue.roughness=.68
 	for row:Array in [
+		["三楼住户　301",Vector3(-61.286,21.52,16.14),-PI/2,.95],
+		["三楼　左转到户",Vector3(-54.795,24.50,17.50),-PI/2,1.03],
 		["背巷出口",Vector3(-61.286,21.49,10.72),-PI/2,.56],
 		["蓝砖楼　背巷门",Vector3(-84.85,19.65,8.877),PI,1.02],
 		["上层连廊　折返上楼",Vector3(-82.72,22.08,17.785),PI,1.24],
@@ -54,7 +56,7 @@ static func furnish(root:Node3D)->void:
 		words.text=row[0]
 		words.position.z=.0095
 		plate.add_child(words)
-	for light_at:Vector3 in [Vector3(-84.85,20.51,11.92),Vector3(-84.85,22.22,14.94),Vector3(-84,22.60,17.06),Vector3(-82.55,25.95,11.5),Vector3(-80.18,26.08,14.2),Vector3(-61,26.02,14.36)]:
+	for light_at:Vector3 in [Vector3(-58.50,23.55,17.5),Vector3(-55.5,25.02,16.1),Vector3(-84.85,20.51,11.92),Vector3(-84.85,22.22,14.94),Vector3(-84,22.60,17.06),Vector3(-82.55,25.95,11.5),Vector3(-80.18,26.08,14.2),Vector3(-61,26.02,14.36)]:
 		var lamp:=OmniLight3D.new()
 		lamp.position=light_at
 		lamp.light_color=Color("ffefda")

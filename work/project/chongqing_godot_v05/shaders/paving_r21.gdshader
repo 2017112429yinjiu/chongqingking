@@ -1,4 +1,5 @@
 shader_type spatial;
+#include "res://shaders/service_paving.gdshaderinc"
 render_mode diffuse_burley,specular_schlick_ggx;
 #include "res://shaders/sky_visibility_r20.gdshaderinc"
 uniform sampler2D worn_floor : source_color, filter_linear_mipmap_anisotropic,repeat_enable;
@@ -56,4 +57,5 @@ void fragment(){
 	AO=mix(AO,1.,blend);
 	SPECULAR=mix(SPECULAR,.21,blend);
  }
+	if(terrace_neighbor){service_finish(world,n,repair_aggregate,ALBEDO,ROUGHNESS);}
 }

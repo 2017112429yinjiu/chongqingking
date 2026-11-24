@@ -154,7 +154,7 @@ func _ready() -> void:
 	if art_profile.get("wall_occlusion_r24", false):
 		var walls := OccluderInstance3D.new()
 		walls.name = "OpaqueFacadeOcclusion"
-		walls.occluder = load("res://assets/vertical_run/interior_wall_faces.res")
+		walls.occluder = load("res://assets/district_patrol/interior_wall_faces.res")
 		$City.add_child(walls)
 		get_viewport().use_occlusion_culling = true
 	_build_reflection_probes()

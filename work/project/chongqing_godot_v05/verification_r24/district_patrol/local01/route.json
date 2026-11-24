@@ -1,0 +1,72 @@
+{
+	"checks": [
+		{
+			"detail": "",
+			"name": "isolated",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 17.0949423029087,
+				"end": "(-62.3135, 19.90407, 14.51693)",
+				"goals": 5,
+				"max_frame_displacement_m": 0.223615884780884,
+				"name": "collect_in_202",
+				"pass": true,
+				"reached": 5,
+				"stall_contacts": []
+			},
+			"name": "collect_in_202",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "collected",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 2.768603942357,
+				"end": "(-62.0879, 19.90407, 17.58889)",
+				"goals": 1,
+				"max_frame_displacement_m": 0.0700002610683441,
+				"name": "find_home_stair",
+				"pass": true,
+				"reached": 1,
+				"stall_contacts": []
+			},
+			"name": "find_home_stair",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_01_new_entrance",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_blocked_resident_climb",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 1.11083162948489,
+				"end": "(-60.97731, 20.08102, 17.57172)",
+				"goals": 1,
+				"max_frame_displacement_m": 0.0905206799507141,
+				"name": "resident_climb",
+				"pass": false,
+				"reached": 0,
+				"stall_contacts": [
+					"CQ_StaticCollision"
+				]
+			},
+			"name": "resident_climb",
+			"pass": false
+		}
+	],
+	"floors": {
+
+	},
+	"native_frames_15fps": 0
+}

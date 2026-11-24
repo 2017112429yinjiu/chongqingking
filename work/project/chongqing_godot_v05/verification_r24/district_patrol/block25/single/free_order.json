@@ -1,0 +1,69 @@
+[
+	{
+		"detail": {
+			"distance_m": 42.8451174329966,
+			"end": "(-23.66407, 11.14042, 60.00731)",
+			"goals": 9,
+			"max_frame_displacement_m": 0.0773063153028488,
+			"name": "last_tutorial_bay_to_shop",
+			"pass": true,
+			"reached": 9,
+			"stall_contacts": []
+		},
+		"name": "last_tutorial_bay_to_shop",
+		"pass": true
+	},
+	{
+		"detail": "梯坎小面  008\n小面 · 辣子另装 · 一单元 201",
+		"name": "first_free_order_has_address_and_real_ticket",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "packed_free_order_in_hand",
+		"pass": true
+	},
+	{
+		"detail": {
+			"distance_m": 78.2729179269518,
+			"end": "(-63.95061, 19.90409, 19.64582)",
+			"goals": 13,
+			"max_frame_displacement_m": 0.437614142894745,
+			"name": "carry_order_from_noodle_shop_up_to_201",
+			"pass": true,
+			"reached": 13,
+			"stall_contacts": []
+		},
+		"name": "carry_order_from_noodle_shop_up_to_201",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "201_customer_confirms_order",
+		"pass": true
+	},
+	{
+		"detail": {
+			"distance_m": 0.444089658558369,
+			"end": "(-63.67703, 19.90424, 20.06936)",
+			"goals": 1,
+			"max_frame_displacement_m": 0.0504679083824158,
+			"name": "reach_household_shelf",
+			"pass": true,
+			"reached": 1,
+			"stall_contacts": []
+		},
+		"name": "reach_household_shelf",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "release_still_pending",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "supported_and_paid_once",
+		"pass": true
+	}
+]

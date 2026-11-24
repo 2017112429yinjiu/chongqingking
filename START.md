@@ -1,6 +1,10 @@
 # 重庆外卖王 · 本地开发
 
-## 当前入口 · R24 构建 24
+## 当前入口 · R24 构建 25
+
+在[穿楼托送练习](work/穿楼托送练习.cmd)从下院进门，到 202 取豆花饭。同楼楼梯通 301，也可以从背巷经蓝砖楼和天桥送达。正式入口仍从第一天报到开始。[本轮街区巡检](work/project/chongqing_godot_v05/docs/DISTRICT_PATROL_R24.md) · [完整可编辑场景](work/scene_r24/district_patrol/city_and_patrol.blend)
+
+## 历史入口 · R24 构建 24
 
 [穿楼托送练习](work/穿楼托送练习.cmd) 从下院起步。进楼到 202 取餐，下背巷，借蓝砖楼的折返梯和高连廊回原楼送 301。正式游戏从第一天报到开始，结业后到面馆按 B 看这单，按 G 可选原有午市拼送。[实走录像与复核](work/project/chongqing_godot_v05/docs/VERTICAL_RUN_R24.md) · [完整整城 Blender 源](work/scene_r24/vertical_run/city_and_crossing.blend)
 

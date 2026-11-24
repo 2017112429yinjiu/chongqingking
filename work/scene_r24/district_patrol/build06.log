@@ -1,0 +1,18 @@
+Blender 4.3.2 (hash 32f5fdce0a0a built 2024-12-17 03:35:23)
+Read blend: "C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\vertical_run\city_and_crossing.blend"
+Info: Read library: 'C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\courtyard_life\black.blend', 'C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\courtyard_life\black.blend', parent '<direct>'
+Info: Read library: 'C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\courtyard_life\kitchen\greens.blend', 'C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\courtyard_life\kitchen\greens.blend', parent '<direct>'
+Info: Read library: 'C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\courtyard_life\red.blend', 'C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\courtyard_life\red.blend', parent '<direct>'
+Traceback (most recent call last):
+  File "C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\district_patrol\build.py", line 113, in <module>
+    exec(compile((here/'streets.py').read_text('utf8'),str(here/'streets.py'),'exec'))
+  File "C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\district_patrol\streets.py", line 113, in <module>
+    exec(compile((here/'grading.py').read_text('utf8'),str(here/'grading.py'),'exec'))
+  File "C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\district_patrol\grading.py", line 24, in <module>
+    if len(hits)<2:raise ValueError(('Missing existing pavement',key,x,y))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: ('Missing existing pavement', 'StationRear', 29.5, 12.5)
+
+Error: script failed, file: 'C:\Users\尹久\Documents\重庆外卖王\work\scene_r24\district_patrol/build.py', exiting.
+
+Blender quit

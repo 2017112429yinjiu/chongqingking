@@ -56,8 +56,8 @@ static func install(city:Node3D,editor:=false,prior:Dictionary={},block:Node=nul
 	var yards:Node3D=(load("res://assets/district_age/yard.glb") as PackedScene).instantiate()
 	var terrace_plan:Dictionary=JSON.parse_string(FileAccess.get_file_as_string("res://assets/terrace_gardens/layout.json"))
 	var terrace:Node3D=(load("res://assets/terrace_gardens/terrace.glb") as PackedScene).instantiate()
-	var unit_plan:Dictionary=JSON.parse_string(FileAccess.get_file_as_string("res://assets/vertical_run/layout.json"))
-	var unit:Node3D=(load("res://assets/vertical_run/vertical.glb") as PackedScene).instantiate()
+	var unit_plan:Dictionary=JSON.parse_string(FileAccess.get_file_as_string("res://assets/district_patrol/layout.json"))
+	var unit:Node3D=(load("res://assets/district_patrol/district.glb") as PackedScene).instantiate()
 	var unit_materials:=preload("res://scripts/unit_interior.gd").finishes()
 	unit_materials.merge(preload("res://scripts/blue_stair.gd").finishes())
 	var terrace_finishes:=preload("res://scripts/terrace_gardens_r24.gd").finishes()
@@ -74,12 +74,12 @@ static func install(city:Node3D,editor:=false,prior:Dictionary={},block:Node=nul
 	var cached:={}
 	var missing:Array=[]
 	var changed:=0
-	for key:String in plan.get("retired",[])+grade_plan.retired+yards_plan.retired:
+	for key:String in plan.get("retired",[])+grade_plan.retired+yards_plan.retired+unit_plan.retired:
 		var obsolete:=city.find_child(key,true,false) as MeshInstance3D
 		if editor:hide_source(obsolete,prior,originals)
 		elif obsolete:obsolete.mesh=null;obsolete.hide()
 	for name_key:String in replace:
-		if name_key in grade_plan.retired or name_key in yards_plan.retired:continue
+		if name_key in grade_plan.retired or name_key in yards_plan.retired or name_key in unit_plan.retired:continue
 		var dst:=city.find_child(name_key,true,false) as MeshInstance3D
 		var library:=grade if name_key in grade_plan.changed else lib
 		if name_key in yards_plan.changed:library=yards
@@ -258,8 +258,24 @@ static func install(city:Node3D,editor:=false,prior:Dictionary={},block:Node=nul
 		part.owner=null
 		part.get_parent().remove_child(part)
 		add_visual(city,part,editor,drawings)
+		if key.begins_with("COLH_"):part.hide()
+		if key in ["COL_Patrol25_StationRear","COL_Patrol25_EastLane"]:
+			var ground:=city.find_child("COL_Terrain_200m_yard_concrete",true,false) as MeshInstance3D
+			if ground:part.material_override=ground.get_active_material(0)
+		if key=="COL_Patrol25_CourtBank":
+			var masonry:=ShaderMaterial.new()
+			masonry.shader=preload("res://shaders/court_bank.gdshader")
+			masonry.set_shader_parameter("mineral",preload("res://assets/chongqing_district_stone_wall_05_diff_2k.jpg"))
+			part.material_override=masonry
 		for i in part.mesh.get_surface_count():
 			var mat:=part.mesh.surface_get_material(i)
+			if key in ["COL_Patrol25_TurnLandings","COL_Patrol25_LowerLanding","COL_Patrol25_CentralLanding","COL_Patrol25_UpperLanding"]:
+				var slab:=preload("res://scripts/lane_connection_r24.gd").paver(true)
+				slab.set_shader_parameter("cement",preload("res://assets/district_r21/terraces_washed_sandstone.jpg"))
+				var tint:=Vector3(.68,.61,.52) if key=="COL_Patrol25_TurnLandings" else Vector3(.46,.407,.342)
+				slab.set_shader_parameter("stone_tint",tint)
+				part.set_surface_override_material(i,slab)
+				continue
 			if not mat or not unit_materials.has(mat.resource_name):continue
 			var finish:StandardMaterial3D=unit_materials[mat.resource_name]
 			if key=="COL_Unit22_BackGallery" and mat.resource_name in ["R18_unit22_tread","R18_unit22_edge"]:
@@ -274,6 +290,19 @@ static func install(city:Node3D,editor:=false,prior:Dictionary={},block:Node=nul
 	add_visual(city,common,editor,drawings)
 	preload("res://scripts/unit_interior.gd").furnish(common)
 	preload("res://scripts/blue_stair.gd").furnish(common)
+	var court:=city.find_child("COL_Community_court_pavement",true,false) as MeshInstance3D
+	if court:
+		var paint:=ShaderMaterial.new()
+		paint.shader=preload("res://shaders/court_paint_r24.gdshader")
+		paint.set_shader_parameter("concrete",preload("res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg"))
+		if editor:
+			var proxy:=MeshInstance3D.new()
+			proxy.mesh=court.mesh
+			add_visual(city,proxy,true,drawings)
+			proxy.global_transform=court.global_transform
+			hide_source(court,prior,originals)
+			court=proxy
+		court.material_override=paint
 	unit.free()
 	terrace.free()
 	yards.free()

@@ -1,13 +1,18 @@
 shader_type spatial;
 render_mode diffuse_burley,specular_schlick_ggx;
+#include "res://shaders/service_paving.gdshaderinc"
 uniform sampler2D cement:source_color,filter_linear_mipmap_anisotropic,repeat_enable;
 uniform sampler2D grain:hint_normal,filter_linear_mipmap_anisotropic,repeat_enable;
 uniform bool landing=false;
+uniform vec3 stone_tint=vec3(1.);
 varying vec3 world;
-void vertex(){world=(MODEL_MATRIX*vec4(VERTEX,1.)).xyz;}
+varying vec3 world_normal;
+void vertex(){world=(MODEL_MATRIX*vec4(VERTEX,1.)).xyz;world_normal=normalize(MODEL_NORMAL_MATRIX*NORMAL);}
 void fragment(){
 	vec2 axis=normalize(vec2(.224,-.974));
-	vec2 mat_uv=world.xz*vec2(.53,.51)+vec2(.75,.14);
+	vec2 face_uv=abs(world_normal.x)>abs(world_normal.z)?world.zy:world.xy;
+	float horizontal=smoothstep(.45,.86,world_normal.y);
+	vec2 mat_uv=mix(face_uv,world.xz,horizontal)*vec2(.53,.51)+vec2(.75,.14);
 	vec2 p=vec2(dot(world.xz,vec2(-axis.y,axis.x)),dot(world.xz,axis));
 	vec2 slab=landing?vec2(1.03,.78):vec2(.80,.54);
 	p/=slab;
@@ -20,9 +25,10 @@ void fragment(){
 	float variation=fract(sin(dot(cell,vec2(56.7,11.9)))*1534.61);
 	float raw=dot(texture(cement,mat_uv).rgb,vec3(.29,.54,.17));
 	vec3 color=(vec3(.041,.040,.036)+raw*vec3(.78,.75,.68))*(.95+.09*variation);
-	ALBEDO=mix(color,vec3(.038,.035,.029),seam*.85);
+	ALBEDO=mix(color,vec3(.038,.035,.029),seam*.85*horizontal)*stone_tint;
 	ROUGHNESS=.87+.035*variation;
 	SPECULAR=.22;
 	NORMAL_MAP=texture(grain,mat_uv).rgb;
 	NORMAL_MAP_DEPTH=.24;
+	service_finish(world,normalize(world_normal),cement,ALBEDO,ROUGHNESS);
 }

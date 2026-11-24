@@ -1,0 +1,288 @@
+[
+	{
+		"detail": "",
+		"name": "practice_at_real_counter",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "manifest_before_accept",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "declining_has_no_charge",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "batch_accepted",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "paid_trip_uses_walking_and_riding",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "kitchen_not_ready",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "first_pickup_201",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "third_bag_stays_on_counter",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "reading_tickets_keeps_each_bag_in_its_hand",
+		"pass": true
+	},
+	{
+		"detail": {
+			"distance_m": 52.2454255670309,
+			"end": "(-38.20105, 16.39044, 19.21239)",
+			"goals": 10,
+			"max_frame_displacement_m": 0.0732117518782616,
+			"name": "reach_court_button",
+			"pass": true,
+			"reached": 10,
+			"stall_contacts": []
+		},
+		"name": "reach_court_button",
+		"pass": true
+	},
+	{
+		"detail": {
+			"pos": "(-38.20105, 16.39044, 19.21239)",
+			"prompt": "球友：杂酱是我的，放甲位，我打完这球就来。"
+		},
+		"name": "court_recipient_confirms",
+		"pass": true
+	},
+	{
+		"detail": {
+			"distance_m": 0.740090114530176,
+			"end": "(-37.15923, 16.43038, 19.09972)",
+			"goals": 1,
+			"max_frame_displacement_m": 0.0699459463357925,
+			"name": "try_bay_B",
+			"pass": true,
+			"reached": 1,
+			"stall_contacts": []
+		},
+		"name": "try_bay_B",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "bay_B_refuses_A",
+		"pass": true
+	},
+	{
+		"detail": {
+			"distance_m": 0.59766910970211,
+			"end": "(-38.07071, 16.4102, 19.0651)",
+			"goals": 1,
+			"max_frame_displacement_m": 0.0701718702912331,
+			"name": "reach_bay_A",
+			"pass": true,
+			"reached": 1,
+			"stall_contacts": []
+		},
+		"name": "reach_bay_A",
+		"pass": true
+	},
+	{
+		"detail": {
+			"p": "(-38.07071, 16.4102, 19.0651)",
+			"prompt": "008 已送达 · 准时 +9 元",
+			"t": 39.3333333333324
+		},
+		"name": "court_parcel_released",
+		"pass": true
+	},
+	{
+		"detail": {
+			"distance_m": 52.8467345205136,
+			"end": "(-23.63264, 11.12103, 60.07142)",
+			"goals": 10,
+			"max_frame_displacement_m": 0.271255970001221,
+			"name": "back_to_kitchen",
+			"pass": true,
+			"reached": 10,
+			"stall_contacts": []
+		},
+		"name": "back_to_kitchen",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "collect_remaining_bag",
+		"pass": true
+	},
+	{
+		"detail": {
+			"distance_m": 75.8643972221762,
+			"end": "(-62.27631, 19.90414, 19.61624)",
+			"goals": 12,
+			"max_frame_displacement_m": 0.243485927581787,
+			"name": "shop_to_second_floor",
+			"pass": true,
+			"reached": 12,
+			"stall_contacts": []
+		},
+		"name": "shop_to_second_floor",
+		"pass": true
+	},
+	{
+		"detail": {
+			"distance_m": 1.36233161017299,
+			"end": "(-63.95605, 19.90414, 19.64603)",
+			"goals": 1,
+			"max_frame_displacement_m": 0.0699985027313232,
+			"name": "wrong_door_with_202",
+			"pass": true,
+			"reached": 1,
+			"stall_contacts": []
+		},
+		"name": "wrong_door_with_202",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "wrong_door_does_not_answer_or_pay",
+		"pass": true
+	},
+	{
+		"detail": {
+			"distance_m": 3.51085931342095,
+			"end": "(-63.93645, 19.90414, 19.61187)",
+			"goals": 2,
+			"max_frame_displacement_m": 0.0700002163648605,
+			"name": "knock_1",
+			"pass": true,
+			"reached": 2,
+			"stall_contacts": []
+		},
+		"name": "knock_1",
+		"pass": true
+	},
+	{
+		"detail": "201：清汤抄手是我的，谢谢，放门边搁板。",
+		"name": "resident_answers_1",
+		"pass": true
+	},
+	{
+		"detail": {
+			"distance_m": 0.481665462255478,
+			"end": "(-63.66975, 19.90424, 20.10994)",
+			"goals": 1,
+			"max_frame_displacement_m": 0.0567341521382332,
+			"name": "access_shelf_1",
+			"pass": true,
+			"reached": 1,
+			"stall_contacts": []
+		},
+		"name": "access_shelf_1",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "release_owns_ticket_1",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "placing_with_right",
+		"pass": true
+	},
+	{
+		"detail": {
+			"fee": 12,
+			"time": 76.0833333333303
+		},
+		"name": "paid_1",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "save_contains_distinct_receipts",
+		"pass": true
+	},
+	{
+		"detail": {
+			"distance_m": 7.26259140484035,
+			"end": "(-62.33683, 19.90424, 13.58482)",
+			"goals": 3,
+			"max_frame_displacement_m": 0.074248805642128,
+			"name": "knock_2",
+			"pass": true,
+			"reached": 3,
+			"stall_contacts": []
+		},
+		"name": "knock_2",
+		"pass": true
+	},
+	{
+		"detail": "202：豌杂到了？搁门边，我马上拿。",
+		"name": "resident_answers_2",
+		"pass": true
+	},
+	{
+		"detail": {
+			"distance_m": 0.742566645145416,
+			"end": "(-62.43544, 19.90248, 14.46809)",
+			"goals": 1,
+			"max_frame_displacement_m": 0.0713225901126862,
+			"name": "access_shelf_2",
+			"pass": true,
+			"reached": 1,
+			"stall_contacts": []
+		},
+		"name": "access_shelf_2",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "release_owns_ticket_2",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "placing_with_left",
+		"pass": true
+	},
+	{
+		"detail": {
+			"fee": 11,
+			"time": 80.1499999999967
+		},
+		"name": "paid_2",
+		"pass": true
+	},
+	{
+		"detail": {
+			"awards": [
+				9,
+				12,
+				11
+			],
+			"earnings": 56,
+			"elapsed": 80.1499999999967
+		},
+		"name": "all_receipts_settle_once",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "time_changes_actual_fee",
+		"pass": true
+	}
+]

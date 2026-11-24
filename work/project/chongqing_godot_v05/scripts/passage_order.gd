@@ -60,7 +60,7 @@ func collect()->void:
 	game.shelf_time=-1.
 	game.destination.global_position=DOOR
 	game.destination.radius=.90
-	game._say("蒋嬢嬢：从后门下背巷，进蓝砖楼。过了高连廊，再下半层就是罗师傅家。")
+	game._say("蒋嬢嬢：走廊往院门方向，有楼梯上三楼。你要是从背巷过来，蓝砖楼的天桥也通罗师傅家。")
 	game.toast_time=7.
 	game.lesson._save()
 
@@ -80,7 +80,7 @@ func panel()->String:
 	if offered:return "邻里托送 · 豆花饭\n取　小院一单元 202\n送　小院一单元 301　16 元\nE 接这单　B 返回"
 	if stage==Stage.COLLECT:return "邻里托送 · 到一单元 202 取餐\n从下院进单元，餐在二楼门边。"
 	if stage==Stage.CARRY:
-		return "邻里托送 · 一单元 301\n收餐备注：背巷进蓝砖楼，\n过高连廊，下半层。" if not game.free_answered else "罗师傅已应门\n把豆花饭放在 301 门边搁板。"
+		return "邻里托送 · 一单元 301\n本楼走住户楼梯上三楼。\n从背巷来也可借蓝砖楼天桥。" if not game.free_answered else "罗师傅已应门\n把豆花饭放在 301 门边搁板。"
 	return last_receipt
 
 func save_to(record:ConfigFile)->void:

@@ -4,6 +4,8 @@
 
 ## 纳入范围
 
+构建 25 的完整可编辑源在 `work/scene_r24/district_patrol/city_and_patrol.blend`。Godot 默认入口读取 `assets/district_patrol`。本轮的制作脚本、失败记录、玩家原图和实机路线证据随这个版本保存；构建 24 的基线保留在原位。
+
 - R24 构建 24 Godot 主工程，包括 `first_shift.tscn`、脚本、着色器、所有运行资源、`.import` 导入配置与 `.uid` 标识。
 - 当前完整 Blender 场景 `work/scene_r24/vertical_run/city_and_crossing.blend`，各独立模型和人物制作源、生成与验证脚本。
 - 各轮原生验证记录、原图、录像、失败尝试、素材来源、许可证与交接文档。
