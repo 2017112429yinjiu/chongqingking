@@ -121,6 +121,9 @@ street_plan=run_path(str(BLOCK_STUDY/"street_plan.py"))
 reservation=street_plan["Streets"](segments)
 kerb_stair=run_path(str(BLOCK_STUDY/"kerb_stairs.py"))["stair_frontage"]
 legacy_sites=json.loads((BLOCK_STUDY/"legacy_sites.json").read_text(encoding="utf-8"))
+COURTS_STUDY=HERE.parent/"shancheng_courts"
+real_courts=json.loads((COURTS_STUDY/"registered.json").read_bytes())
+court_ground=run_path(str(COURTS_STUDY/"terrain.py"))
 front_tools = run_path(str(HERE/"occupied_fronts.py"))
 finish_tools = run_path(str(HERE/"house_finishes.py"))
 shop_shade = run_path(str(HERE/"shop_shades.py"))["shade"]
@@ -412,6 +415,7 @@ flyover_reserves = []
 occupied=[]
 destinations=[]
 removed_for_walkway=[]
+removed_for_courts=[]
 def building(x,y,angle,w,d,floors,kind,named=""):
     frame=local_frame(x,y,angle)
     corners=[frame(a,b,0)[:2] for a in (-w/2,w/2) for b in (-d/2,d/2)]
@@ -438,7 +442,7 @@ def building(x,y,angle,w,d,floors,kind,named=""):
     portal = {"南区路车棚修理铺":0.0,"照相巷便民市场":-.78,"江岸茶摊":-1.65}.get(named, (.14 if kind%2 else -.14)*w)
     plot = {"east_north":[float(x),float(y)], "bearing":angle, "width":w, "depth":d,
             "height":base, "roof":top, "floors":floors, "kind":kind, "name":named, "door_u":portal}
-    plot["plot_id"]=len(plots)+len(flyover_reserves)+len(removed_for_walkway)
+    plot["plot_id"]=len(plots)+len(flyover_reserves)+len(removed_for_walkway)+len(removed_for_courts)
     if plot["plot_id"]==32:
         # Its inherited facade crossed the registered centerline for several metres.
         removed_for_walkway.append({"legacy_plot":32,"east_north":plot["east_north"],"way":734116601})
@@ -447,6 +451,10 @@ def building(x,y,angle,w,d,floors,kind,named=""):
     # These are inherited gameplay sites. A new building must use a registered source polygon.
     if legacy_sites.get(str(plot["plot_id"])) != [plot["east_north"],angle,w,d]:
         raise ValueError(("Unregistered building layout", plot["plot_id"],x,y))
+    if str(plot["plot_id"]) in real_courts["retired"]:
+        removed_for_courts.append(plot["plot_id"])
+        rng.random()
+        return
     box(blocks,frame,-w/2,ry,min(levels)-.35,w/2,d/2,base,rock)
     plots.append(plot)
     def draw(*dims):
@@ -707,6 +715,8 @@ for feature,ring in zip(registered_group["buildings"],group_polygons):
         side_values.append(side if np.dot(ring.mean(axis=0)-q,[v[1],-v[0]])<0 else -side)
     rgba[:,:,1]=np.maximum(rgba[:,:,1],np.clip((2.1-np.maximum.reduce(side_values))*2,0,1))
 
+historic_grades=court_ground["prepare"](real_courts,height,xx,yy,heights,mx,my,rgba)
+
 for p in plots:
     frame=local_frame(*p["east_north"],p["bearing"])
     pocket=Geometry("COL_Outer500_Court_%02d"%p["plot_id"]) if p.get("court") else solid
@@ -837,6 +847,16 @@ def outside_surveyed_sites(tree):
         if np.all(side>=-width) or np.all(side<=width):return False
     return True
 tree_sites=list(filter(outside_surveyed_sites,tree_sites))
+for feature in real_courts["buildings"]:
+    ring=np.array(feature["points"])
+    tree_sites=[tree for tree in tree_sites if court_ground["margin"](*tree["east_north_up"][:2],ring)>1.2]
+# Two mature shade trees flank the Jinma entry in the court photograph.
+a,b,c,d=np.array(next(f["points"] for f in real_courts["buildings"] if f["id"]=="jinma_classrooms"))
+outward=(a-d)/np.linalg.norm(a-d)
+for index,fraction in enumerate((.27,.82)):
+    x,y=a+(b-a)*fraction+outward*4.65
+    tree_sites.append(dict(east_north_up=[float(x),float(y),height(x,y)-.045],
+                           rotation_deg=32.+index*74.,species=index,width_scale=1.06,height_scale=1.24))
 run_path(str(HERE / "planting.py"))["place_trees"](ASSETS, tree_sites, materials, material)
 kit=GAME.parent/"chongqing_blender_v05/scanned_assets/prepared_assets.blend"
 household=run_path(str(HERE/"household.py"))["place"](kit,plots,yards["world"],ASSETS/"courtyard_r24/courtyard.glb")
@@ -868,7 +888,13 @@ bpy.ops.export_scene.gltf(filepath=str(OUT / "outer_district.glb"),export_format
 old_meshes=json.loads((HERE.parents[1] / "scene_r21/district_rays.json").read_text(encoding="utf-8-sig"))["meshes"]
 owned=plots+[dict(p,east_north=yards["world"](p,p["court"]["center_u"],p["depth"]/2+6.4),
                  width=p["court"]["half_width"]*2,depth=12.8) for p in courts]
-# Only the confirmed four blocks and the public lane acquire ownership from old generic scenery.
+# Keep cleared sites free of the older distance-only scenery as well.
+for number in removed_for_courts:
+    center,angle,width,depth=legacy_sites[str(number)]
+    owned.append(dict(east_north=center,bearing=angle,width=width,depth=depth))
+for feature in real_courts["buildings"]:
+    a,b,c,d=ring=np.array(feature["points"])
+    owned.append(dict(east_north=ring.mean(axis=0),bearing=atan2(*(b-a)[::-1]),width=np.linalg.norm(b-a),depth=np.linalg.norm(d-a)))
 for ring in group_polygons:
     a,b,c,d=frontage(ring,confirmed_lane);cen=ring.mean(axis=0)
     owned.append(dict(east_north=cen,bearing=atan2(*(b-a)[::-1]),width=np.linalg.norm(b-a)+.8,depth=np.linalg.norm(d-a)+.8))
@@ -877,7 +903,7 @@ for a,b in zip(confirmed_lane,confirmed_lane[1:]):
     corridors.append(dict(east_north=(a+b)*.5,bearing=atan2(*(b-a)[::-1]),width=np.linalg.norm(b-a),depth=3.55))
 generic_old={n:s for n,s in old_meshes.items() if n.startswith("Context_authored_")}
 trail_prefixes,trail_roofs=run_path(str(HERE/"context_owners.py"))["conflicting_context"](corridors,generic_old,legacy_roofs,[])
-prefixes, roof_cuts = run_path(str(HERE/"context_owners.py"))["conflicting_context"](owned,old_meshes,legacy_roofs,mapped_buildings)
+prefixes, roof_cuts = run_path(str(HERE/"context_owners.py"))["conflicting_context"](owned,old_meshes,legacy_roofs,mapped_buildings+[585541371])
 prefixes=sorted(set(prefixes+trail_prefixes))
 roof_cuts=[list(r) for r in dict.fromkeys(tuple(v) for v in roof_cuts+trail_roofs)]
 (OUT / "layout.json").write_text(json.dumps({
@@ -889,5 +915,5 @@ roof_cuts=[list(r) for r in dict.fromkeys(tuple(v) for v in roof_cuts+trail_roof
     "inferred_alignments":design,"registered_ties":ties,"destinations":destinations,
     "osm_building_ids":mapped_buildings,"plots":plots,"lanes":paths,"retired_context_prefixes":prefixes,"retired_roof_positions":roof_cuts,
     "building_count":len(plots)+len(mapped_buildings),"flyover_reserves":flyover_reserves,"household":household,"collidable_surface_tiles":len(chunks),"planting":tree_sites,
-    "building_grades":building_grades,"removed_for_walkway":removed_for_walkway,"public_paving":surface_work,"floor_contact_bake":contact_bake,"interior_rail_return":rail_return,"lamps_in_buildings":retired_lamps,
+    "historic_grades":historic_grades,"retired_for_historic_courts":removed_for_courts,"building_grades":building_grades,"removed_for_walkway":removed_for_walkway,"public_paving":surface_work,"floor_contact_bake":contact_bake,"interior_rail_return":rail_return,"lamps_in_buildings":retired_lamps,
 },ensure_ascii=False,indent=2)+"\n")

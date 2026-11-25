@@ -18,7 +18,11 @@ def local(p,x,y):
 
 def select_courts(plots,patch,roads):
     selected=[]
-    for i,p in enumerate(plots):
+    # Preserve the established upper landings when other plots leave the prototype.
+    stair_sides={0:-1,1:-1,2:1,8:1,40:1,48:-1,52:1,56:1,60:-1,64:1,72:-1}
+    for p in plots:
+        if p["plot_id"] not in stair_sides:
+            continue
         if not p["name"] and (len(selected)>=11 or p["width"]<14 or p["plot_id"]%4!=0):
             continue
         width=min(8.75,p["width"]/2-.28)
@@ -37,7 +41,7 @@ def select_courts(plots,patch,roads):
             return False
         if any(overlaps(q) for q in plots if q is not p):
             continue
-        p["court"]={"half_width":width,"center_u":center,"stair_side":1 if p["name"].endswith("茶摊") or (not p["name"] and i%3) else -1}
+        p["court"]={"half_width":width,"center_u":center,"stair_side":stair_sides[p["plot_id"]]}
         selected.append(p)
     return selected
 

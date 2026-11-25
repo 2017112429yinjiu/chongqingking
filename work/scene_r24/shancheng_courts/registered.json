@@ -1,0 +1,190 @@
+{
+  "registered_plan": "Figure 8. Local fit at way 734116601 vertex 37, bearing from 35 to 36. Scale 50 m / 110 px. Roof diagram is generalized. Positions, heights and interior dimensions are approximate.",
+  "anchor_pixel": [
+    509.0,
+    425.8
+  ],
+  "anchor_east_north": [
+    -129.9929,
+    -8.0577
+  ],
+  "references": [
+    {
+      "id": "plan",
+      "publisher": "众绘山城；图3与图8转载于《“天上街市”，人间烟火：重庆山城巷更新实践》",
+      "url": "https://bbs.co188.com/thread-10503600-1-1.html",
+      "use": "Named buildings, relative plan and scale. Only measurements and site identification transcribed."
+    },
+    {
+      "id": "renai_photo",
+      "publisher": "渝中区人民政府；既象实景",
+      "url": "https://www.cqyz.gov.cn/zjyz/lyyz/lswh/tk/202504/t20250421_14541659.html",
+      "use": "Long wing, return wing, slate roof, red eaves trim, segmented arches, recessed rectangular attic lights and round tracery at the end bay."
+    },
+    {
+      "id": "school_photo",
+      "publisher": "渝中发布，金马寺小学实景，图13",
+      "url": "https://bbs.co188.com/thread-10503600-1-1.html",
+      "use": "Two levels, paired outward opening timber casements and transoms, center through-opening, low eaves, smooth pale masonry and tree-shaded flagstone court."
+    },
+    {
+      "id": "library",
+      "publisher": "重庆日报，山城·时光里图书馆采访及馆内实景",
+      "url": "https://app.cqrb.cn/html/2022-07-21/1253645_pc.html",
+      "use": "Brick piers, display tables, timber cases, donated books and the tree-shaded front court."
+    },
+    {
+      "id": "levels",
+      "publisher": "华龙网，书店主理人采访",
+      "url": "https://www.cqnews.net/1/detail/1270122359964934144/web/content_1270122359964934144.html",
+      "use": "The library is upstairs; the ground floor is the story gallery. Exact stair alignment is not surveyed."
+    },
+    {
+      "id": "garden",
+      "publisher": "道合设计，吉盛生态品牌管理中心摄影",
+      "url": "https://mooool.com/wilderness-garden-theater-by-donehome.html",
+      "use": "Adjacency of the public walk, planted garden and ruins. Garden boundary has not been surveyed."
+    },
+    {
+      "id": "map",
+      "publisher": "© OpenStreetMap contributors; ODbL 1.0",
+      "url": "https://www.openstreetmap.org/way/734116601",
+      "use": "Project coordinates, centerline controls and shared footway junction; the separate outline 585541371 labels the complex and is not the long wing."
+    },
+    {
+      "id": "overhead",
+      "publisher": "Esri World Imagery and its imagery providers",
+      "url": "https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9",
+      "use": "Independent visual check of roof directions, the roadway/bridge and the planted garden. No raster included in the game or public repository."
+    }
+  ],
+  "buildings": [
+    {
+      "id": "renai_long",
+      "plan_pixels": [
+        [
+          431.8,
+          323.2
+        ],
+        [
+          506.2,
+          428.4
+        ],
+        [
+          488.6,
+          441.2
+        ],
+        [
+          414.2,
+          340.4
+        ]
+      ],
+      "points": [
+        [
+          -166.9487,
+          37.1152
+        ],
+        [
+          -131.2166,
+          -9.2902
+        ],
+        [
+          -138.9737,
+          -15.4285
+        ],
+        [
+          -174.6246,
+          28.9786
+        ]
+      ],
+      "photo": "renai_photo"
+    },
+    {
+      "id": "renai_cross",
+      "plan_pixels": [
+        [
+          433,
+          322
+        ],
+        [
+          391.8,
+          362.4
+        ],
+        [
+          369,
+          339.6
+        ],
+        [
+          410.2,
+          299.2
+        ]
+      ],
+      "points": [
+        [
+          -166.4258,
+          37.6824
+        ],
+        [
+          -184.3919,
+          18.5734
+        ],
+        [
+          -195.1679,
+          28.5076
+        ],
+        [
+          -177.2018,
+          47.6166
+        ]
+      ],
+      "photo": "renai_photo"
+    },
+    {
+      "id": "jinma_classrooms",
+      "plan_pixels": [
+        [
+          469.8,
+          290.4
+        ],
+        [
+          535,
+          320.8
+        ],
+        [
+          549.8,
+          292
+        ],
+        [
+          484.6,
+          261.2
+        ]
+      ],
+      "points": [
+        [
+          -150.2956,
+          52.7134
+        ],
+        [
+          -120.1226,
+          40.1101
+        ],
+        [
+          -113.9325,
+          53.4634
+        ],
+        [
+          -144.1129,
+          66.2484
+        ]
+      ],
+      "photo": "school_photo"
+    }
+  ],
+  "retired": {
+    "3": "elevated crossing / road at pickup approach",
+    "5": "elevated crossing / roadside at pickup approach",
+    "47": "planted slope at Renai garden",
+    "48": "garden paths and trees west of the delivery court"
+  },
+  "preserved": "0 is an active repair shop on the garden edge; 4 is attached to a core rail repair. Their in-game identities remain in the migration queue."
+}

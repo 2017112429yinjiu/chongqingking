@@ -4,7 +4,7 @@ from pathlib import Path
 import bpy
 
 folder=Path(os.environ["CQ_QA_DIR"])
-report=json.loads((folder/"market_entry.json").read_text(encoding="utf-8-sig"))
+report=json.loads((folder/os.environ.get("CQ_TAKE_REPORT","market_entry.json")).read_text(encoding="utf-8-sig"))
 frames=sorted(folder.glob("walk_*.jpg"))
 assert len(frames)==report["images"] and all(row["pass"] for row in report["checks"])
 scene=bpy.context.scene

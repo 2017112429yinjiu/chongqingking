@@ -1,0 +1,56 @@
+"""Run an independent survey in a fresh directory on a desktop or cloud checkout."""
+import argparse
+import json
+import os
+from pathlib import Path
+import subprocess
+
+here=Path(__file__).resolve().parent
+root=here.parents[2]
+game=root/"work/project/chongqing_godot_v05"
+
+def main():
+    parser=argparse.ArgumentParser()
+    parser.add_argument("--output",required=True,type=Path)
+    parser.add_argument("--godot",default="godot")
+    parser.add_argument("--blender",default="blender")
+    parser.add_argument("--capture",action="store_true",help="Capture the continuous player camera and fixed views with a graphics display.")
+    args=parser.parse_args()
+    output=args.output.resolve()
+    output.mkdir(parents=True,exist_ok=False)
+    env=os.environ.copy()
+    user=output/"user"
+    user.mkdir()
+    env.update(APPDATA=str(user),XDG_DATA_HOME=str(user))
+    def run(name,argv,extra=None):
+        folder=output/name
+        folder.mkdir()
+        with (folder/"console.log").open("wb") as log:
+            subprocess.run(argv,cwd=root,env=dict(env,CQ_QA_DIR=str(folder),**(extra or {})),
+                           stdout=log,stderr=subprocess.STDOUT,check=True)
+        return folder
+    for executable,expected in ((args.blender,"Blender 4.3.2"),(args.godot,"4.6.3")):
+        version=subprocess.check_output([executable,"--version"],text=True,encoding="utf-8",errors="replace")
+        if not version.startswith(expected):
+            raise RuntimeError(f"Expected {expected}, found {version.splitlines()[0]}")
+    run("source",[args.blender,"-b",str(here/"delivery_courts.blend"),"--python-exit-code","8","-P",str(here/"audit.py")])
+    run("import",[args.godot,"--headless","--editor","--import","--path",str(game)])
+    common=["--fixed-fps","60","--path",str(game)]
+    flags=["--","--explore-500","--shancheng","--day-one-test","--qa-still-frames"]
+    results={}
+    for script,filename in ((here/"walk.gd","walk.json"),(here.parent/"street_blocks/handoff.gd","handoff.json"),
+                             (here.parent/"street_blocks/walk_mapped.gd","walk.json"),(here/"delivery_take.gd","delivery_take.json")):
+        graphics=args.capture and script.stem=="delivery_take"
+        mode=["--resolution","1152x648","--disable-vsync"] if graphics else ["--headless"]
+        folder=run(script.stem,[args.godot,*mode,*common,"--script",str(script),*flags])
+        data=json.loads((folder/filename).read_bytes())
+        checks=data["checks"] if isinstance(data,dict) else data
+        if not checks or not all(check["pass"] for check in checks):
+            raise RuntimeError(f"Incomplete survey: {folder}")
+        results[script.stem]=len(checks)
+    if args.capture:
+        run("views",[args.godot,"--resolution","1152x648",*common,"--script",str(here/"views.gd"),*flags])
+    print(json.dumps(results))
+
+if __name__=="__main__":
+    main()

@@ -1,0 +1,55 @@
+{
+  "checks": [
+    {
+      "detail": "",
+      "name": "spawn_at_pickup",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "pickup_with_E",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 83.5095249684528,
+        "end": "(-162.0283, 20.06787, -37.86453)",
+        "goals": 8,
+        "max_frame_displacement_m": 0.163962334394455,
+        "name": "pickup_to_signed_receipt",
+        "pass": true,
+        "reached": 8,
+        "stall_contacts": []
+      },
+      "name": "walk_to_receiver",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "receipt_with_E",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 53.774444738403,
+        "end": "(-119.9469, 26.46336, -52.51675)",
+        "goals": 13,
+        "max_frame_displacement_m": 0.162894904613495,
+        "name": "receipt_to_upstairs_reading_room",
+        "pass": true,
+        "reached": 13,
+        "stall_contacts": []
+      },
+      "name": "walk_to_upstairs_library",
+      "pass": true
+    },
+    {
+      "detail": "(-119.9469, 26.46336, -52.51675)",
+      "name": "on_reading_floor",
+      "pass": true
+    }
+  ],
+  "images": 237,
+  "physics_hz": 60,
+  "ticks_per_image": 9
+}

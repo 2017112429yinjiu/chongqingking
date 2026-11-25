@@ -23,7 +23,8 @@ func verify() -> void:
 	var layout: Dictionary=JSON.parse_string(FileAccess.get_file_as_string("res://assets/district_500/layout.json"))
 	for id: int in [3,4,13,41]:
 		var arr: Array=layout.plots.filter(func(p):return int(p.plot_id)==id)
-		var p: Dictionary=arr[0]
+		# Retain the original camera frame for retired plot 3.
+		var p: Dictionary=arr[0] if not arr.is_empty() else {"east_north": [-123.37210953257053, -51.71960488954571], "depth": 8.467734446389896, "bearing": 6.000331990948796, "door_u": -1.4891385842996703, "height": 13.315633665507232}
 		var f: float=-p.depth*.5
 		var eye:=world(p,p.door_u-8.1,f-7.8,0)
 		var ground:=public_floor([eye.x,-eye.z],p.height+.2)

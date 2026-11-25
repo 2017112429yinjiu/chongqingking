@@ -1,0 +1,73 @@
+[
+  {
+    "detail": "",
+    "name": "renai_long_collisions",
+    "pass": false
+  },
+  {
+    "detail": "",
+    "name": "renai_cross_collisions",
+    "pass": false
+  },
+  {
+    "detail": "",
+    "name": "jinma_classrooms_collisions",
+    "pass": false
+  },
+  {
+    "detail": {
+      "distance_m": 31.892240146175,
+      "end": "(-181.0395, 19.63099, -33.34457)",
+      "goals": 8,
+      "max_frame_displacement_m": 0.107154861092567,
+      "name": "renai_from_delivery_court_out",
+      "pass": true,
+      "reached": 8,
+      "stall_contacts": []
+    },
+    "name": "renai_from_delivery_court_out",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 32.0791248176247,
+      "end": "(-162.0442, 20.07082, -37.91227)",
+      "goals": 8,
+      "max_frame_displacement_m": 0.0925239622592926,
+      "name": "renai_from_delivery_court_back",
+      "pass": true,
+      "reached": 8,
+      "stall_contacts": []
+    },
+    "name": "renai_from_delivery_court_back",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 46.691782402806,
+      "end": "(-128.9168, 24.21575, -60.25205)",
+      "goals": 10,
+      "max_frame_displacement_m": 0.314007073640823,
+      "name": "school_from_delivery_court_out",
+      "pass": true,
+      "reached": 10,
+      "stall_contacts": []
+    },
+    "name": "school_from_delivery_court_out",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 46.4916045656428,
+      "end": "(-162.099, 20.0748, -37.91411)",
+      "goals": 10,
+      "max_frame_displacement_m": 0.122088752686977,
+      "name": "school_from_delivery_court_back",
+      "pass": true,
+      "reached": 10,
+      "stall_contacts": []
+    },
+    "name": "school_from_delivery_court_back",
+    "pass": true
+  }
+]

@@ -11,6 +11,8 @@ static func install(city: Node3D) -> Dictionary:
 	district.add_child(low_landing)
 	var mapped_lane: PackedScene=load("res://assets/district_500/shancheng_lane.glb")
 	district.add_child(mapped_lane.instantiate())
+	var historic_courts := load("res://assets/district_500/historic_courts.glb") as PackedScene
+	district.add_child(historic_courts.instantiate())
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
