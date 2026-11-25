@@ -1,0 +1,60 @@
+{
+  "commit": "8beb80e07056d8081d567fa91cce3c1251d23acc",
+  "source": "OpenAI persistent workspace; outcome verified after reconnecting to the same checkout",
+  "evidence_directory": "/workspace/work/runtime/forward-plus-8beb80e/",
+  "fast_forward": true,
+  "verified_changed_lfs_objects": 3,
+  "godot": "4.6.3",
+  "import_exit": 0,
+  "default_headless": "pass",
+  "explore_headless": "pass",
+  "sections": {
+    "east_high": 325,
+    "east_main": 325,
+    "north": 325,
+    "south": 325,
+    "southeast": 325,
+    "west_lower": 325,
+    "west_upper": 325,
+    "hits": 2275,
+    "rays": 2275,
+    "outer_hits": 4
+  },
+  "motion": {
+    "passed": 20,
+    "total": 20,
+    "walk_passed": 10,
+    "ride_passed": 10,
+    "max_tick_m": 0.09205
+  },
+  "blender": {
+    "version": "4.3.2",
+    "source_reopened": true,
+    "combined_reopened": true,
+    "footprint_m": [
+      500,
+      500
+    ],
+    "trees": 306
+  },
+  "first_shift": {
+    "passed": 85,
+    "total": 85,
+    "failed": []
+  },
+  "desktop": {
+    "playable": true,
+    "pid": 16461,
+    "godot": "4.6.3",
+    "mode": "explore-500",
+    "renderer": "gl_compatibility",
+    "device": "llvmpipe"
+  },
+  "disk_available": "21G",
+  "disk_use": "33%",
+  "run_notes": [
+    "Git LFS sizes and SHA-256 hashes of three changed assets matched.",
+    "During the first shift the connection dropped. The original wrapper exit code could not be retrieved. After reconnecting, all first-shift checks were recovered from verify/first_shift/first_shift.json, with no SCRIPT ERROR, SHADER ERROR or ERROR in the verification logs.",
+    "The cloud desktop displayed the street, the player's scooter and its interaction prompt. It used Mesa llvmpipe and Dummy audio. Startup was recorded in play.log."
+  ]
+}

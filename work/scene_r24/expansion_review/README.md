@@ -8,7 +8,7 @@
 
 - 东侧斜向接头的车道中央原先露出土色。按旧车道的走向平移实测横断面，只在该边界外侧接合，延续旧沥青的采样比例、法线和颗粒方向。[首次原生画面](rejected/east_dirt_in_carriageway.png) · [相同位置修订后](windows/fixed/east.png)
 - 从北口仰视，原 R21 的屋顶楼梯间在替换住宅上方悬空。用注册画面的三个像素追到旧屋顶组合网格，随后按三个供体的历史标高重建相应屋面。重开整城后，从附件基座向下量到实际屋面，三处高差均小于 1 毫米。[空中楼梯间](rejected/north_detached_stairhead.png) · [像素命中](rejected/pixel_hits.json) · [北口复拍](windows/fixed/north.png) · [屋面读数](windows/blender/combined_source.json)
-- 外圈 306 处树根使用两种项目内的扫描树，邻街保留立体树干、枝叶和贴图，远处复用原项目的多向树冠图。第一次简化把树叶削得过稀，已保留这次截图。新增用地内的原远景植被由相同位置的近、远两档新植被接替。[过度简化的尝试](rejected/north_sparse_leaves.png) · [来源、作者、CC0 许可与输入哈希](plant_sources.json)
+- 外圈 306 处树根使用两种项目内的扫描树，邻街保留立体树干、枝叶和贴图，远处复用原项目的多向树冠图。第一次简化把树叶削得过稀，已保留这次截图。旧远景树在新增用地内退出显示，新植树木的近、远两档共用同一处树根。[过度简化的尝试](rejected/north_sparse_leaves.png) · [来源、作者、CC0 许可与输入哈希](plant_sources.json)
 - 市场门前通过两道梯段和共用台地衔接。三个新地点分别用原玩家控制器从一道入口上行、穿过门前、从另一道下行，再按原路返回，共走 156.60 米。[市场近景](windows/streets/east_market_landing.png) · [六次连续步行](windows/play/destinations.json)
 
 ## 运行范围
@@ -18,6 +18,22 @@ Windows 使用 Godot 4.6.3 Forward+ 和 Blender 4.3.2。7 处路口横断面有 
 10 米网格中，原 200 米范围内部的每一处重叠碰撞面、标高、法线均与基线匹配。区外划作陆地的 2,135 点中有 2,134 点命中，余下的点在西南江岸，距 OSM 岸线约 0.23 米，处于两米岸线网格的取舍范围。另有两个划作水面的采样位置命中岸边几何。核对覆盖时已区分水陆；建筑屋顶和桥面的射线命中不能代替街面通行。[逐点对照](windows/terrain/comparison.json)
 
 本轮门面主要供街面探索，外圈专属配送单和室内尚未制作。部分人行道与土坡仍有较硬的材料边界，临街细节有待玩家在行进中审看。[南侧桥下回看](windows/streets/south_back.png) · [向东出旧区](windows/streets/east_main_out.png) · [区域总览](windows/streets/overview.png)
+
+## OpenAI 云端复测
+
+精修游戏提交为 `8beb80e07056d8081d567fa91cce3c1251d23acc`。云端在已有工作区按 Git LFS 指针核实三项新版资源，重开独立新区及整城 Blender 源，并由 Godot 4.6.3 重新导入。七处断面的 2,275 条射线全部命中。五条路线的双向步行、骑行共 20/20 段通过。首班三单的 85 项也全部通过。工作区曾短暂断连，重连后读到了逐项报告，原验证脚本的退出码未能取回。云桌面用 Mesa llvmpipe 软件渲染打开东侧街口，画面可见电瓶车和上车提示；云端音频回退到 Dummy。云端运行时保留当前游戏和制作需要的资源，32 GiB 卷最近一次读数约余 21 GiB。[云端复测记录](cloud_recheck.json)
+
+## 原城区实机回归与帧时
+
+Windows 在精修提交 `8beb80e0` 上从正常首日入口运行了 25b 全路网巡检（`-AllRoads -Timing`）。导师走完 14 条线、双向 28 段共 3,454.07 米；玩家完成 26 条地面线路的各一次往返。六个旧院坝和楼梯接头完成 18 次步行往返，300 个接头断面采样的最大误差为 6.21 毫米以内。首日三单 85/85 项通过。完整运行的引擎日志未检出脚本、着色器或引擎错误。[原始巡检](../../project/chongqing_godot_v05/verification_r24/district_patrol/exp500_street_final/survey_summary.json) · [三单记录](../../project/chongqing_godot_v05/verification_r24/district_patrol/exp500_street_final/teaching/first_shift.json) · [旧街固定视角](../../project/chongqing_godot_v05/verification_r24/district_patrol/exp500_street_final/street_comparison.jpg)
+
+Godot Forward+ 窗口 1152 × 648，实际渲染 692 × 389。以下为同机位各 150 帧的 GPU 帧时中位数，单位毫秒。24 次外部采样都读到 RTX 4070 Laptop 运行于 P8、210 MHz。本次配置下试玩明显卡顿，尚无正常高频下的帧率结论。[扩建后帧时](../../project/chongqing_godot_v05/verification_r24/district_patrol/exp500_street_final/timing/timing.json) · [GPU 频率采样](../../project/chongqing_godot_v05/verification_r24/district_patrol/exp500_street_final/timing/gpu_clock.csv) · [扩建前帧时](baseline/timing.json)
+
+| 视角 | 原 200 米 | 500 米试作 |
+| --- | ---: | ---: |
+| 折返梯 | 167.1 | 184.8 |
+| 天桥 | 316.4 | 328.4 |
+| 301 门前 | 284.0 | 290.6 |
 
 ## 可编辑源和证据
 

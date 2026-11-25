@@ -1,0 +1,45 @@
+[
+	{
+		"detail": "",
+		"name": "independent_save",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "on_bridge_with_cook_order",
+		"pass": true
+	},
+	{
+		"detail": {
+			"distance_m": 12.4585223197937,
+			"end": "(-59.25423, 22.91319, 14.15458)",
+			"goals": 3,
+			"max_frame_displacement_m": 0.113790161907673,
+			"name": "resume_down_to_301",
+			"pass": true,
+			"reached": 3,
+			"stall_contacts": []
+		},
+		"name": "resume_down_to_301",
+		"pass": true
+	},
+	{
+		"detail": {
+			"distance_m": 0.512254690751433,
+			"end": "(-59.33519, 22.91411, 14.89717)",
+			"goals": 1,
+			"max_frame_displacement_m": 0.0694447457790375,
+			"name": "resume_to_shelf",
+			"pass": true,
+			"reached": 1,
+			"stall_contacts": []
+		},
+		"name": "resume_to_shelf",
+		"pass": true
+	},
+	{
+		"detail": "",
+		"name": "settled_once_after_reopen",
+		"pass": true
+	}
+]
