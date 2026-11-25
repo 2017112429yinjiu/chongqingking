@@ -15,10 +15,14 @@
 
 ### 建筑和可走范围
 
-- 76 栋、305 层延续上一版的 1,624 根柱和逐层梁板。Godot 复测 50,563 项梁柱、楼板和净空取样。2,272 处上层开口和 237 处首层窗均命中上下边。共有 369 处挑出阳台，其中 220 处封窗。Blender 复开组合模型后，检查了 104 台外机的 208 个墙托和 208 处脚垫；87 个导出地板图元同时保有纹理和接触阴影顶点色。[窗洞](evidence/landing_openings/openings.json) · [梁柱](evidence/landing_frame/frame_contacts.json) · [外机与地板](evidence/landing_composition/architecture_source.json) · [楼脚与斜坡](evidence/landing_composition/plinths.json)
+- 76 栋、305 层延续上一版的 1,624 根柱和逐层梁板。Godot 复测 50,563 项梁柱、楼板和净空取样。2,272 处上层开口和 237 处首层窗均命中上下边。共有 369 处挑出阳台，其中 220 处封窗。Blender 复开组合模型后，检查了 104 台外机的 208 个墙托和 208 处脚垫。87 个导出地板图元同时保有纹理和接触阴影顶点色。[窗洞](evidence/landing_openings/openings.json) · [梁柱](evidence/landing_frame/frame_contacts.json) · [外机与地板](evidence/landing_composition/architecture_source.json) · [楼脚与斜坡](evidence/landing_composition/plinths.json)
 - 原生玩家从市场连续步行 48.16 米进 201，经过全部七个目标点。逐栋穿堂及侧房进入、退出共 223 项，院坝路线 37 项。外圈五条主路均完成步行及骑行双向验证。整城 Blender 4.3.2 重开包含五个链接库、13 张外部图、302 株树和三处登记屋顶。[市场实走](evidence/landing_take/market_entry.json) · [住宅](evidence/landing_all/checks.json) · [院坝](evidence/street_courts/checks.json) · [外圈道路](evidence/landing_roads/routes.json) · [整城复开](evidence/landing_composition/combined_source.json)
 - 邻楼全程复走时，4 号返回 53 号的低侧末级石梯卡住，单测却能通过。在末三级踏步侧面加进贴地石砌接坡，3 条断面各取 43 个位置，接缝前后 10 厘米最大高差 4.86 毫米。同次序复走全部 94 段通过。[原卡停](evidence/street_sequence/contact_sequence.json) · [单独走](evidence/street_lane_obstruction/contact.json) · [修后全程](evidence/landing_return/shared_paths.json) · [实机断面](evidence/landing_profile/landing_profile.json) · [面向上坡](evidence/landing_profile/uphill.png)
 - 屋内与临街改造完成后，三个固定机位各连续采 90 帧。窗口 1152 × 648、渲染视口 692 × 389，RTX 4070 Laptop 采样期间处于 P8、210 MHz。街面、菜档和上院的 GPU 帧时中位数依次为 97.49、92.04、100.48 毫秒，上一版同机位为 92.79、86.50、98.32 毫秒。这组测量发生在 53 号接坡加入前。[本轮帧时](evidence/street_timing/timing.json) · [显卡状态](evidence/street_timing/gpu.csv) · [上一版帧时](evidence/frame_finish_timing/timing.json)
+
+最终接坡版单独重测，照相巷街面、菜档、上院的 GPU 帧时中位数依次为 105.91、100.20、105.85 毫秒。显卡采样状态为 P8，核心频率为 210 MHz。三个机位均各测 90 帧。[最终新区帧时](evidence/landing_timing/timing.json) · [同次显卡采样](evidence/landing_timing/gpu.csv)
+
+原 200 米城区用最终组合执行 `outer_architecture_03 -AllRoads -Timing`。师傅带骑 14 条路线、28 段，共 3453.97 米。玩家骑完 26 条地面道路的去程和回程，六处院坝与石梯接头完成 18 次步行往返。首班教学 85 项、午间订单 35 项通过。旧城折返坡、过街处、301 三处机位各采 150 帧，中位数分别为 213.68、337.56、439.44 毫秒。先前的 01 仅跑到带骑，02 巡检期间加入了 53 号接坡。上列数据出自重新开始的 03。[旧城区巡检](../../project/chongqing_godot_v05/verification_r24/district_patrol/outer_architecture_03/survey_summary.json) · [旧城区帧时](../../project/chongqing_godot_v05/verification_r24/district_patrol/outer_architecture_03/timing/timing.json)
 
 原 ChatGPT 云工作区在同一试作的独立检出核对了四个 Blender／GLB 文件的大小和 SHA-256，实际重新导入，并从市场入口走入 201。云端也走通 94 个邻楼方向，记录到玩家与 53 号新接坡的 137 次接触，129 个断面点的最大接缝高差为 4.86 毫米。试玩从照相巷市场开始，使用 Mesa llvmpipe 软件渲染，本轮结束时工作盘剩余 19G。[云端核验摘要和原始结果目录](evidence/architecture_cloud.json)
 
