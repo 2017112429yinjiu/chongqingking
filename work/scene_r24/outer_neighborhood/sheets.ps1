@@ -1,4 +1,4 @@
-param([string]$Final='r6_views')
+param([string]$Final='r6_views',[switch]$Frames)
 $ErrorActionPreference='Stop'
 Add-Type -AssemblyName System.Drawing
 $root=Join-Path $PSScriptRoot evidence
@@ -21,6 +21,17 @@ function Sheet($target,$rows){
         }
         $canvas.Save((Join-Path $root $target),[Drawing.Imaging.ImageFormat]::Jpeg)
     }finally{$font.Dispose();$g.Dispose();$canvas.Dispose()}
+}
+if($Frames){
+    Sheet 'inside_before_after.jpg' @(
+        ,@('r6_views/market_hall','原版 · 照相巷市场穿堂')
+        ,@('r6_views/ordinary_04','原版 · 4 号住宅洗衣间')
+        ,@('r6_views/market_bed','原版 · 院坝二楼 201')
+        ,@('frame_finish_views/market_hall','现版 · 柱网之间的菜档和通道')
+        ,@('frame_finish_views/ordinary_04','现版 · 洗衣间柱脚和工作台')
+        ,@('frame_finish_views/market_bed','现版 · 木搁栅、床架和窗帘')
+    )
+    return
 }
 Sheet 'street_iterations.jpg' @(
     ,@('baseline_views/repair_street','上版 · 修理铺被旧远景楼遮挡')

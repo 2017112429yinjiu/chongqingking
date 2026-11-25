@@ -24,5 +24,5 @@ scene.render.image_settings.file_format="FFMPEG"
 scene.render.ffmpeg.format="MPEG4"
 scene.render.ffmpeg.codec="H264"
 scene.render.ffmpeg.constant_rate_factor="HIGH"
-scene.render.filepath=str(folder.parent/"market_to_201.mp4")
+scene.render.filepath=os.environ.get("CQ_TAKE_OUTPUT",str(folder.parent/"market_to_201.mp4"))
 bpy.ops.render.render(animation=True)
