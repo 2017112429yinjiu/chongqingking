@@ -20,3 +20,10 @@
 4. 撤净基础，将进 11 号楼的院巷绕到梯脚。第一次将相同转弯应用到 55、57 号楼，遇到另一侧的挡墙；这里恢复原来能走通的路线。固定视角还检出坡外浮树和悬空远景楼，现已按外圈地表重新落地。最终采样用灰色石材和原材料法线区分地砖、条石踏步和沥青。[挡墙卡停](shared04/shared_paths.json) · [远景射线](sight04/sightline.json) · [修复前](views04/path_07.png) · [修复后](final_street/path_07.png)
 
 全部 75 个继承的试作地块均已与本次查询的 56 个 OSM 轮廓叠合。其中 18 个有面积交集，最佳交并比为 0.1156。重合度按每个旧地块与单栋登记轮廓的面积交集除以并集计算。该图源有覆盖缺口，旧试作地块仍待逐栋核验；新增四栋另有明确对应记录。[逐地块明细](legacy_coverage.json)
+
+
+## 原 200 米城区和计时
+
+使用 R24 build 25b 的 `verify.ps1 -Run mapped_lane_patrol_03 -AllRoads -Timing` 完整复跑。教练 14 条路共 28 腿，实骑 3,454.04 米；玩家路面骑行两方向各 26 条。六个修复接头的 18 个往返、另 4 个街口往返及 300 个门槛横断面均已重新测量。较早的 `mapped_lane_patrol_02` 在第七条教练路线拍照后提前退出，汇总未通过，保留部分记录。[第三次整套汇总](../../../project/chongqing_godot_v05/verification_r24/district_patrol/mapped_lane_patrol_03/survey_summary.json) · [上次不完整的骑行记录](../../../project/chongqing_godot_v05/verification_r24/district_patrol/mapped_lane_patrol_02/ride/patrol.json)
+
+山城巷另做独立 Forward+ 采样。设备 NVIDIA GeForce RTX 4070 Laptop GPU，窗口 (1152, 648)、内部视口 (692.0, 389.0)。每机位 150 帧，GPU P95 分别为 4.48 ms、4.16 ms、5.66 ms，依次为沿街窗、巷口转弯和交接段。这些数值来自桌面显卡。[原始计时](native_timing/timing.json)
