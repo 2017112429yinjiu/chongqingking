@@ -36,8 +36,8 @@ static func install(city: Node3D) -> Dictionary:
 		var sign := Label3D.new()
 		var northeast: Array = place.east_north
 		var angle: float = place.bearing
-		var offset: float = place.front_offset - 0.14
-		sign.position = Vector3(northeast[0] - sin(angle) * offset, place.height + 2.47,
+		var offset: float = place.front_offset - 0.27
+		sign.position = Vector3(northeast[0] - sin(angle) * offset, place.height + 2.38,
 			-northeast[1] - cos(angle) * offset)
 		sign.rotation.y = angle
 		sign.text = place.name
