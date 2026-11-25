@@ -2,6 +2,8 @@
 
 ## 500 米城区试作分支
 
+[金马寺小学校门前后对照与实走](work/scene_r24/shancheng_courts/forecourt/README.md) · [山城巷制作复盘](work/project/chongqing_godot_v05/docs/DISTRICT_PRODUCTION_STANDARD.md)
+
 [沿山城巷送一单](work/沿山城巷送一单.cmd)。从仁爱堂长翼走到收件院口，再穿金马寺小学校门上二楼图书馆。[本轮同机位与连续录像](work/scene_r24/shancheng_courts/README.md) · [楼位和院巷](work/scene_r24/shancheng_courts/evidence/footprints.jpg)
 
 [沿山城巷取一单](work/沿山城巷送一单.cmd) · [山城巷西北弯道同机位对照、轮廓来源与试玩记录](work/scene_r24/street_blocks/README.md)

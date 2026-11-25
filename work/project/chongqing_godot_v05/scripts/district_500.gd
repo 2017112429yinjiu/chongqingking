@@ -77,8 +77,20 @@ static func install(city: Node3D) -> Dictionary:
 	for plant: MeshInstance3D in district.find_children("Outer500_Plant_*", "MeshInstance3D", true, false):
 		plant.lod_bias = 5.0
 		plant.visibility_range_end = 38.0
-	for tree: Dictionary in layout.get("planting", []):
-		var p: Array = tree.east_north_up
+	var court_data: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://assets/district_500/historic_courts.json"))
+	var replaced_roots: Array[Vector2]=[]
+	for centre: Array in court_data.superseded_outer_roots:
+		replaced_roots.append(Vector2(centre[0],centre[1]))
+	var planting: Array=layout.planting
+	for index in planting.size():
+		var tree: Dictionary=planting[index]
+		var p: Array=tree.east_north_up
+		var centre:=Vector2(p[0],p[1])
+		if replaced_roots.any(func(old: Vector2): return old.distance_squared_to(centre)<.01):
+			var prior:=district.find_child("Outer500_Plant_%03d"%index,true,false) as MeshInstance3D
+			if prior:
+				prior.hide()
+			continue
 		var cylinder := CylinderShape3D.new()
 		cylinder.radius = 0.13 * tree.width_scale
 		cylinder.height = 1.8 * tree.height_scale

@@ -80,6 +80,16 @@ fired=finish("Original fired-brick school piers",(.87,.30,.17),"brick_wall_08_di
 green=finish("Painted school green",(.11,.25,.17))
 pages=finish("Reading room paper",(.72,.61,.41))
 
+court_tools=run_path(str(here/"school_court.py"))
+school_spec=next(row for row in study["buildings"] if row["id"]=="jinma_classrooms")
+school_grade=layout["historic_grades"]["jinma_classrooms"]
+forecourt=court_tools["Forecourt"](school_spec["points"],school_grade,elevation)
+soil=finish("Earth in school tree wells",(.41,.30,.20),"brown_mud_leaves_01_diff_2k.jpg")
+chalkstone=finish("School court light sandstone",(.86,.85,.78),"concrete_floor_worn_001_diff_2k.jpg")
+warmstone=finish("School court warm sandstone",(.76,.72,.64),"concrete_floor_worn_001_diff_2k.jpg")
+coolstone=finish("School court grey sandstone",(.70,.73,.71),"concrete_floor_worn_001_diff_2k.jpg")
+chairpaint=finish("Enamel on courtyard folding chairs",(.78,.79,.72))
+
 class Mesh:
     def __init__(self,name):
         self.name=name
@@ -271,8 +281,7 @@ def build(record):
                     if not entrance:
                         open_leaf=school and not rear and i%3!=1
                         if open_leaf:
-                            facebox(trim,left,sill,center,top,.20,.035,glass)
-                            facebox(trim,center,top-.47,right,top,.20,.035,glass)
+                            facebox(trim,left,top-.47,right,top,.20,.035,glass)
                         else:
                             facebox(trim,left,sill,right,top,.20,.035,glass)
                 if not roundlight:
@@ -294,8 +303,12 @@ def build(record):
                                 p0=point(hinge,y-.035,sill+.06)
                                 p1=point(hinge-sign*rad*.67,y-.34,sill+.06)
                                 hh=np.array([0.,0.,cap-sill-.56])
-                                for r0,r1 in ((p0,p1),(p0+hh,p1+hh),(p0,p0+hh),(p1,p1+hh)):
-                                    beam(trim,np.array(r0),np.array(r1),.033,sash)
+                                p0,p1=np.array(p0),np.array(p1)
+                                pane=[p0,p1,p1+hh,p0+hh]
+                                trim.face(pane,glass)
+                                for r0,r1 in ((p0,p1),(p0+hh,p1+hh),(p0,p0+hh),(p1,p1+hh),
+                                              (p0+hh*.51,p1+hh*.51)):
+                                    beam(trim,np.array(r0),np.array(r1),.026,sash)
                 if portal:
                     for x in (i*pitch+.10,(i+1)*pitch-.10):
                         facebox(trim,x-.12,z,x+.12,upper,-.17,.18,band)
@@ -437,41 +450,80 @@ def build(record):
         stair_route.append([float(v) for v in point(x0+run+1.35,depth*.78,storey)])
         # One green canopy and folding chairs beside the frontage appear in the court photograph.
         ux=length*.83;uy=-2.60
-        ground_z=elevation(xy(ux,uy))-floor
+        def ground(x,y):return forecourt.surface(xy(x,y))-floor+.012
+        ground_z=ground(ux,uy)
         slab(furniture,ux-.026,uy-.026,ground_z,ux+.026,uy+.026,ground_z+2.59,iron)
         for j in range(8):
             l=j*pi/4;r=(j+1)*pi/4
             tri=[point(ux,uy,ground_z+2.64),point(ux+1.46*cos(l),uy+1.46*sin(l),ground_z+2.17),point(ux+1.46*cos(r),uy+1.46*sin(r),ground_z+2.17)]
             furniture.face(tri,green);furniture.face(tri[::-1],green)
         slab(furniture,ux-.45,uy-.36,ground_z+.72,ux+.45,uy+.36,ground_z+.77,timber)
+        seating=Mesh("COLH_Court_Jinma_Seating")
+        slab(seating,ux-.44,uy-.35,ground_z+.08,ux+.44,uy+.35,ground_z+.76,iron)
+        for dx in (-.33,.33):
+            for dy in (-.25,.25):
+                x=ux+dx;y=uy+dy
+                beam(furniture,np.array(point(x,y,ground(x,y))),np.array(point(x,y,ground_z+.74)),.020,chairpaint)
         for side in (-1,1):
             cx=ux+side*.97
-            slab(furniture,cx-.205,uy-.22,ground_z+.44,cx+.205,uy+.22,ground_z+.48,timber)
+            seat_z=ground(cx,uy)+.44
+            back=cx+side*.225
+            slab(seating,cx-.195,uy-.205,seat_z-.41,cx+.195,uy+.205,seat_z+.04,iron)
+            slab(furniture,cx-.205,uy-.22,seat_z,cx+.205,uy+.22,seat_z+.04,chairpaint)
+            for rise in (.22,.34):
+                slab(furniture,back-.017,uy-.21,seat_z+rise,back+.017,uy+.21,seat_z+rise+.072,chairpaint)
             for yy in (uy-.18,uy+.18):
                 for dx in (-1,1):
-                    beam(furniture,np.array(point(cx+dx*.19,yy,ground_z)),np.array(point(cx-dx*.15,yy,ground_z+.46)),.018,iron)
+                    beam(furniture,np.array(point(cx+dx*.19,yy,ground(cx+dx*.19,yy))),np.array(point(cx-dx*.15,yy,seat_z+.01)),.017,chairpaint)
+                beam(furniture,np.array(point(back,yy,seat_z)),np.array(point(back,yy,seat_z+.42)),.015,chairpaint)
+        seating.save()
         # The painted reading-room name is legible in the courtyard photograph.
         from mathutils import Matrix, Vector
-        curve=bpy.data.curves.new("Jinma painted lettering","FONT")
-        curve.body="山城·时光里图书馆"
-        curve.font=bpy.data.fonts.load(str(here.parents[2]/"work/assets_incoming/r20_noto/NotoSansCJKsc-Regular.otf"))
-        curve.size=1.14
-        curve.align_x="CENTER"
-        obj=bpy.data.objects.new("Court_Jinma_painted_name",curve)
-        bpy.context.collection.objects.link(obj)
-        curve.materials.append(mats[red])
-        midpoint=length*.76
-        inward=xy(midpoint,1)-xy(midpoint,0)
-        outward=Vector((-inward[0],-inward[1],0)).normalized()
-        up=Vector((0,0,1))
-        right=up.cross(outward)
-        matrix=Matrix((right,up,outward)).transposed().to_4x4()
-        matrix.translation=Vector(point(midpoint,-.022,3.03))
-        obj.matrix_world=matrix
-        bpy.context.view_layer.objects.active=obj
-        obj.select_set(True)
-        bpy.ops.object.convert(target="MESH")
-        obj.select_set(False)
+        font=bpy.data.fonts.load(str(here.parents[2]/"work/assets_incoming/r20_noto/NotoSansCJKsc-Regular.otf"))
+        def lettering(name,words,midpoint,z,span,offset):
+            curve=bpy.data.curves.new(name,"FONT")
+            curve.body=words
+            curve.font=font
+            curve.align_x="CENTER"
+            curve.space_character=1.14
+            obj=bpy.data.objects.new(name,curve)
+            bpy.context.collection.objects.link(obj)
+            curve.materials.append(mats[red])
+            inward=xy(midpoint,1)-xy(midpoint,0)
+            outward=Vector((-inward[0],-inward[1],0)).normalized()
+            up=Vector((0,0,1))
+            basis=Matrix((up.cross(outward),up,outward)).transposed().to_4x4()
+            bpy.context.view_layer.update()
+            width=obj.dimensions.x
+            height=obj.dimensions.y
+            basis=basis @ Matrix.Diagonal(Vector((span/width,min(span/width,.64/height),1.,1.)))
+            basis.translation=Vector(point(midpoint,offset,z))
+            obj.matrix_world=basis
+            bpy.ops.object.select_all(action="DESELECT")
+            bpy.context.view_layer.objects.active=obj
+            obj.select_set(True)
+            bpy.ops.object.convert(target="MESH")
+            obj.select_set(False)
+        # In the on-site frontal photograph the two inscriptions share the
+        # first-floor spandrel. The smaller name sits directly over the opening.
+        mid=(main_door+.5)*pitch
+        slab(trim,mid-1.55,-.25,2.78,mid+1.55,-.08,3.25,band)
+        for mark in (-1.,1.):
+            u=mid+mark*1.10
+            profile(trim,[(u,2.34),(u+mark*.20,2.50),(u+mark*.20,2.89),(u-mark*.31,2.89),(u-mark*.21,2.74),(u,2.64)],-.26,.04,band)
+        lettering("Court_Jinma_painted_name","山城·时光里图书馆",length*.756,3.43,10.38,-.16)
+        lettering("Court_Jinma_west_inscription","物换星移·我心依旧",length*.246,3.43,10.00,-.16)
+        lettering("Court_Jinma_gate_name","山城时光里图书馆",mid,2.90,2.74,-.265)
+        # Small wall plaques flank the photographed opening. Their inscriptions
+        # are too small to transcribe; model the cases, frame and fixing points.
+        for sign,width,depth_z in ((-1,.34,.53),(1,.24,.89)):
+            x=mid+sign*1.46
+            slab(trim,x-width/2,-.105,1.32,x+width/2,-.035,1.32+depth_z,timber)
+            slab(trim,x-width/2+.027,-.119,1.35,x+width/2-.027,-.106,1.29+depth_z,pages)
+            for dx in (-.5,.5):
+                for z in (1.36,1.28+depth_z):
+                    u=x+dx*(width-.088)
+                    slab(trim,u-.01,-.124,z-.01,u+.01,-.118,z+.01,iron)
     for mesh in (body,trim,interior,furniture):
         if mesh.faces:mesh.save()
     mid=(main_door+.5)*pitch
@@ -483,9 +535,19 @@ def build(record):
 
 buildings=[build(s) for s in study["buildings"]]
 
-paths=run_path(str(here/"court_paths.py"))["pave"](buildings,elevation,Mesh,flags,stone)
-data={"buildings":buildings,"courtyard_connections":paths,"registered_source":"work/scene_r24/shancheng_courts/registered.json"}
+paths=run_path(str(here/"court_paths.py"))["pave"](buildings,elevation,Mesh,flags,stone,forecourt)
+court_tools["paving"](forecourt,Mesh,stone,[chalkstone,warmstone,coolstone],soil)
+court_tools["entrance_planters"](forecourt,Mesh,stone)
+trees=court_tools["shade_trees"](forecourt,Mesh,timber)
+data={"superseded_outer_roots":court_tools["PARENT_TREE_ROOTS"],"school_trees":trees,"buildings":buildings,"courtyard_connections":paths,"registered_source":"work/scene_r24/shancheng_courts/registered.json"}
 (out/"historic_courts.json").write_text(json.dumps(data,indent=2)+"\n",encoding="utf-8")
 bpy.context.preferences.filepaths.save_version=0
+# Physics proxies stay inspectable as wireframes in the authored Blender scene.
+proxies=[obj for obj in bpy.context.scene.objects if obj.name.startswith("COLH_")]
+for obj in proxies:
+    obj.display_type="WIRE"
+    obj.hide_render=True
 bpy.ops.wm.save_as_mainfile(filepath=str(here/"delivery_courts.blend"),compress=True)
+for obj in proxies:
+    obj.hide_render=False
 bpy.ops.export_scene.gltf(filepath=str(out/"historic_courts.glb"),export_format="GLB",export_yup=True)

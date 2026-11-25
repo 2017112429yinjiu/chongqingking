@@ -3,6 +3,18 @@ extends "../../scene_r24/street_blocks/views.gd"
 func level_point(xy: Array, height: float) -> Vector3:
 	return Vector3(xy[0], height + .05, -xy[1])
 
+func apron_point(school: Dictionary, x: float, y: float) -> Vector3:
+	var a:=Vector2(school.ring[0][0],school.ring[0][1])
+	var b:=Vector2(school.ring[1][0],school.ring[1][1])
+	var along:=(b-a).normalized()
+	var out:=Vector2(along.y,-along.x)
+	var xy:=a+along*x+out*y
+	var from:=Vector3(xy.x,school.floor+2,-xy.y)
+	var query:=PhysicsRayQueryParameters3D.create(from,from-Vector3.UP*6.,1)
+	var hit:=scene.get_world_3d().direct_space_state.intersect_ray(query)
+	check("apron_ground_%.2f_%.2f"%[x,y],not hit.is_empty() and hit.collider.get_parent().name==&"COL_Court_Jinma_Apron",str(hit.get("position")))
+	return hit.get("position",from)+Vector3.UP*.045
+
 func verify() -> void:
 	output = OS.get_environment("CQ_QA_DIR")
 	DirAccess.make_dir_recursive_absolute(output)
@@ -42,6 +54,28 @@ func verify() -> void:
 	for step: Array in school.stairs_to_library:
 		upper.append(level_point([step[0],step[1]],step[2]))
 	await trial("reading_room_stair",upper)
+	var across: Array=[]
+	for x: float in [2.1,10.1,16.35,24.,30.4]:
+		across.append(apron_point(school,x,1.14))
+	await trial("walk_beside_school_windows",across)
+	var outside: Array=[]
+	for x: float in [30.5,25.8,16.8,9.1,2.1]:
+		outside.append(apron_point(school,x,5.10))
+	await trial("walk_outside_tree_wells",outside)
+	var outer: Dictionary=JSON.parse_string(FileAccess.get_file_as_string("res://assets/district_500/layout.json"))
+	var old_trunks:=scene.find_child("OuterDistrictTreeTrunks",true,false)
+	for xy: Array in data.superseded_outer_roots:
+		var index: int=outer.planting.find_custom(func(p: Dictionary):
+			return Vector2(p.east_north_up[0],p.east_north_up[1]).distance_to(Vector2(xy[0],xy[1]))<.10)
+		if index<0:
+			continue
+		var old:=scene.find_child("Outer500_Plant_%03d"%index,true,false) as MeshInstance3D
+		var overlaps:=old_trunks.get_children().filter(func(shape: Node3D):
+			return Vector2(shape.global_position.x,-shape.global_position.z).distance_to(Vector2(xy[0],xy[1]))<.15)
+		check("replaced_parent_tree_"+str(index),is_instance_valid(old) and not old.visible and overlaps.is_empty())
+	for name: String in ["COLH_Court_Jinma_Trunks","COLH_Court_Jinma_Seating","COLH_Court_Jinma_PlanterBases"]:
+		var proxy:=scene.find_child(name,true,false) as MeshInstance3D
+		check(name+"_solid",is_instance_valid(proxy) and not proxy.visible and proxy.get_node_or_null("CQ_StaticCollision")!=null)
 	var fs:=FileAccess.open(output.path_join("walk.json"),FileAccess.WRITE)
 	fs.store_string(JSON.stringify(checks,"  "))
 	quit(2 if ever_failed else 0)

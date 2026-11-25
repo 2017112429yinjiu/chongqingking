@@ -62,7 +62,12 @@ with bpy.data.libraries.load(str(here / "outer_district.blend"), link=True, rela
     draft.objects=list(source.objects)
 collection=bpy.data.collections.new("500 m playable expansion")
 bpy.context.scene.collection.children.link(collection)
+court_data=json.loads((root / "work/project/chongqing_godot_v05/assets/district_500/historic_courts.json").read_bytes())
+old_roots=court_data["superseded_outer_roots"]
 for obj in draft.objects:
+    if (obj.name.startswith("Outer500_Plant_") and
+        any((obj.location.x-x)**2+(obj.location.y-y)**2<.01 for x,y in old_roots)):
+        continue
     collection.objects.link(obj)
 with bpy.data.libraries.load(str(here.parent/"outer_neighborhood/landing_53.blend"),link=True,relative=True) as (source,landing):
     landing.objects=["COL_Outer500_53_LowLanding"]

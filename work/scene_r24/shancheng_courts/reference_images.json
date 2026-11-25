@@ -50,5 +50,74 @@
       "credit": "渝中区人民政府“仁爱堂”实景，图上标注既象"
     }
   ],
-  "materials": "Existing project image hashes and licensing are in ../street_blocks/sources.json. New modeled materials, geometry, diagrams and game captures are project-authored."
+  "materials": "Existing project image hashes and licensing are in ../street_blocks/sources.json. New modeled materials, geometry, diagrams and game captures are project-authored.",
+  "school_forecourt": {
+    "references": [
+      "school_court",
+      "school_report_0"
+    ],
+    "source_credits": [
+      {
+        "id": "tree_small_02",
+        "authors": {
+          "Rico Cilliers": "All"
+        },
+        "name": "Tree Small 02",
+        "source_url": "https://polyhaven.com/a/tree_small_02",
+        "license": "CC0 1.0"
+      },
+      {
+        "id": "potted_plant_02",
+        "authors": {
+          "Rico Cilliers": "All"
+        },
+        "name": "Potted Plant 02",
+        "source_url": "https://polyhaven.com/a/potted_plant_02",
+        "license": "CC0 1.0"
+      },
+      {
+        "id": "concrete_floor_worn_001",
+        "source_record": "work/project/chongqing_blender_v05/materials/v04_scans/concrete_floor_worn_001/source_info.json",
+        "license": "CC0 1.0",
+        "source_url": "https://polyhaven.com/a/concrete_floor_worn_001",
+        "authors": {
+          "Dimitrios Savva": "Photography",
+          "Rico Cilliers": "Processing"
+        }
+      },
+      {
+        "id": "brown_mud_leaves_01",
+        "source_record": "work/project/chongqing_blender_v05/materials/v05_scans/brown_mud_leaves_01/source_info.json",
+        "license": "CC0 1.0",
+        "source_url": "https://polyhaven.com/a/brown_mud_leaves_01",
+        "authors": {
+          "Rob Tuytel": "All"
+        }
+      }
+    ],
+    "source_terms": "https://polyhaven.com/license",
+    "changes": "Native captures and model geometry are project-authored. Reused the medium tree scan with linked upper branches rotated at a trunk fork. Scaled and rotated the existing potted plant scan. Paving and planters are fitted to the playable grade. Tree species, nursery stock, pit dimensions, stone sizes and position of each small pot are approximations. No photograph is included in textures.",
+    "sha256": {
+      "work/project/chongqing_blender_v05/scanned_assets/prepared_assets.blend": "b3ca66854942020353725dd82562a0443d450d40bdf12ac9c5a277427e77150d",
+      "work/project/chongqing_blender_v05/scanned_assets/textures/potted_plant_02_leaves_diff_2k.jpg": "f70de9a4b735b740e79d4e7720a47eae5e2bb4a289880cdae5905d156223bd7d",
+      "work/project/chongqing_blender_v05/scanned_assets/textures/potted_plant_02_leaves_nor_gl_2k.jpg": "2ae648b12ea457fb720f9adc6f8dc9feb8d5409e43f3b9f2ce7f089b3eef12f6",
+      "work/project/chongqing_blender_v05/scanned_assets/textures/potted_plant_02_leaves_rough_2k.jpg": "399e61a82069b3e344cece76c128f84a664dd44719331450877b671906e01e27",
+      "work/project/chongqing_blender_v05/scanned_assets/textures/potted_plant_02_pot_diff_2k.jpg": "21672040b5de49e7dae07452431b4fe5cf401494f5ab5157b5f54a146cc68383",
+      "work/project/chongqing_blender_v05/scanned_assets/textures/potted_plant_02_pot_nor_gl_2k.jpg": "8e8c2e96de90e793712a9db8a6cea7a38f7fd5ec489b8134b586a42ebbbfcb11",
+      "work/project/chongqing_blender_v05/scanned_assets/textures/potted_plant_02_pot_rough_2k.jpg": "c1f341bfa5e610dab2fd31aad4068fa20cf957b098912da5949bca996d7649bf",
+      "work/project/chongqing_blender_v05/scanned_assets/textures/tree_small_02_arm_2k.jpg": "e96b4e84e9786b982d01562e0d249f6e58db1b656dd511db7c034d6ed60b1c92",
+      "work/project/chongqing_blender_v05/scanned_assets/textures/tree_small_02_branch_arm_2k.jpg": "82da928cc4e8a45c559f6abe8053227c7ae6cc14eb8d026a30c203aedd087042",
+      "work/project/chongqing_blender_v05/scanned_assets/textures/tree_small_02_branch_diff_2k.jpg": "9032de9e063ee7e3763a6b10d19d89302f5776e85a966b6dd1c3a5634b2a80e1",
+      "work/project/chongqing_blender_v05/scanned_assets/textures/tree_small_02_branch_nor_gl_2k.jpg": "368505992d867bb50eccc00d77940a7a3eaf32f42de9f536d105407b0d6df3fd",
+      "work/project/chongqing_blender_v05/scanned_assets/textures/tree_small_02_diff_2k.jpg": "4ab3210b6ec6bb1181145500bca71d1c1f81ead6baaa8600f5979c2cec50c6a4",
+      "work/project/chongqing_blender_v05/scanned_assets/textures/tree_small_02_leaves_arm_2k.jpg": "a126c0d92b60c44c0664e4d3651831970e259b0d5a1fb39ebb67081cbecaca96",
+      "work/project/chongqing_blender_v05/scanned_assets/textures/tree_small_02_leaves_diff_2k.jpg": "6c984a46861562f2a20381c54106aa5e07ce0d3fce785907f8d263157e7561af",
+      "work/project/chongqing_blender_v05/scanned_assets/textures/tree_small_02_leaves_nor_gl_2k.jpg": "40c956e345430562cdb4d0470c7d499aa160f1fa3dd7555d88be2dedf0d7ff2e",
+      "work/project/chongqing_blender_v05/scanned_assets/textures/tree_small_02_nor_gl_2k.jpg": "cb7897fc0aea602964836116ecf631614ece2970f579647fe1070bccb428fe89",
+      "work/project/chongqing_godot_v05/assets/chongqing_district_brown_mud_leaves_01_diff_2k.jpg": "29c997d77f56e4ea16d3e998a306be0c17fddb28ab4822657c7cd8249040ffda",
+      "work/project/chongqing_godot_v05/assets/chongqing_district_brown_mud_leaves_01_nor_gl_2k.jpg": "b6ec386e00d9d2a1c3a1da6a98a67066b0dfaa88ddb779341df29700cf081bdf",
+      "work/project/chongqing_godot_v05/assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg": "e29b45cdcd6d02fae3c087c456196ffa750779a9b62e7071aa3831dc322a0cc4",
+      "work/project/chongqing_godot_v05/assets/chongqing_district_concrete_floor_worn_001_nor_gl_2k.jpg": "3b782137e34d63fd59b2e92b4e27b2ee4d082caf9dd23f00dc7ab4da5513daef"
+    }
+  }
 }
