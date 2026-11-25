@@ -14,7 +14,7 @@ def split_bays(anchors, span):
     return axes
 
 
-def build(plot, draw, wall, concrete):
+def build(plot, draw, concrete):
     width, depth = plot["width"], plot["depth"]
     half_w, half_d = width / 2, depth / 2
     aisle = plot["door_u"]
@@ -47,13 +47,5 @@ def build(plot, draw, wall, concrete):
         for x in us:
             for a, b in zip(vs, vs[1:]):
                 draw(x-.125, a+radius, underside-depth_v, x+.125, b-radius, underside, concrete)
-        if level < plot["floors"]:
-            # The street windows and balconies retain their exterior dressing.
-            # Each storey has its own perimeter and a clear internal volume.
-            wall_top = top + STOREY - SLAB
-            for y in (-half_d, half_d-.19):
-                draw(-half_w, y, top, half_w, y+.19, wall_top, wall)
-            for x in (-half_w, half_w-.19):
-                draw(x, -half_d+.19, top, x+.19, half_d-.19, wall_top, wall)
     plot["frame"] = {"u": us, "v": vs, "radius": radius, "storey": STOREY,
                      "slab": SLAB, "transverse_drop": depth_u, "longitudinal_drop": depth_v}

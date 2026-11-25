@@ -43,6 +43,8 @@ static func install(city: Node3D) -> Dictionary:
 		item.lod_bias=1.7
 	for mesh: MeshInstance3D in district.find_children("Outer500_CourtDetails_*","MeshInstance3D",true,false):
 		mesh.lod_bias=3.0
+	for unit: MeshInstance3D in district.find_children("Outer500_Condenser_*","MeshInstance3D",true,false):
+		unit.visibility_range_end=55.0
 	var prefixes: Array = layout.get("retired_context_prefixes", [])
 	for prior: MeshInstance3D in city.find_children("Context_*","MeshInstance3D",true,false):
 		for prefix: String in prefixes:

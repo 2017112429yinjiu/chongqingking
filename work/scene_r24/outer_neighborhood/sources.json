@@ -350,5 +350,94 @@
         }
       ]
     }
+  },
+  "occupied_fronts": {
+    "author": "Chongqing district project",
+    "mesh": "Original pierced storey walls, joinery, balconies, rainwater systems, rooftop tanks, shop shades, room finishes and fittings. The outer timber and base geometry retain the previous source records.",
+    "surface_inputs": [
+      {
+        "source": "https://polyhaven.com/a/plastered_wall_04",
+        "authors": {
+          "Rob Tuytel": "All"
+        },
+        "license": "CC0-1.0",
+        "modified": "Resampled mineral colour and wear; locally baked paint, tile aggregate and joints",
+        "input": {
+          "file": "work/project/chongqing_godot_v05/assets/chongqing_district_plastered_wall_04_diff_1k.jpg",
+          "sha256": "52d789111bbe93d311c22e49d28b56256593c8f84c75742642403da857a36503"
+        },
+        "metadata": {
+          "file": "work/project/chongqing_blender_v05/materials/v04_scans/plastered_wall_04/source_info.json",
+          "sha256": "f4425ffce7cadaeacfdc42fab0c807b9572302a7c1eec373f0e582018ba6bbe8"
+        }
+      },
+      {
+        "source": "https://polyhaven.com/a/concrete_floor_worn_001",
+        "authors": {
+          "Dimitrios Savva": "Photography",
+          "Rico Cilliers": "Processing"
+        },
+        "license": "CC0-1.0",
+        "modified": "Resampled mineral colour and wear; locally baked paint, tile aggregate and joints",
+        "input": {
+          "file": "work/project/chongqing_godot_v05/assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+          "sha256": "e29b45cdcd6d02fae3c087c456196ffa750779a9b62e7071aa3831dc322a0cc4"
+        },
+        "metadata": {
+          "file": "work/project/chongqing_blender_v05/materials/v04_scans/concrete_floor_worn_001/source_info.json",
+          "sha256": "4f624057f267773f56f56593a86ed425d1e6eb4bef196555fedc9ce9021b9821"
+        }
+      }
+    ],
+    "printed_paper": {
+      "author": "Chongqing district project",
+      "source": {
+        "file": "work/project/chongqing_godot_v05/assets/district_age/wall_prints.png",
+        "sha256": "2972ddf9b2cef33af5fd4a3c34fc06968393d9c06cf806df52b50015df52ed5d"
+      },
+      "authoring": {
+        "file": "work/scene_r24/district_age/wall_prints.py",
+        "sha256": "eed6425f9b86d75c6b7f57634ceaaf9321cb6ab52e655475337770b19730d022"
+      },
+      "font_license": {
+        "file": "work/project/chongqing_godot_v05/assets/fonts/R20_OFL.txt",
+        "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+      },
+      "use": "Selected existing fictional neighbourhood notices beside public entrances"
+    },
+    "condenser": {
+      "author": "Chongqing district project",
+      "source": {
+        "file": "work/project/chongqing_blender_v05/architecture_full.py",
+        "sha256": "65bd6df0c2851c777836eecdaae0cd73453ec3a03209da0cf5be0e64e875330f"
+      },
+      "used": "Shared original _aircon casing, fan, grille, bracket and tubing geometry. Feet and wall anchors are fitted to the new shells."
+    },
+    "service_hatch": {
+      "authors": {
+        "Amal Kumar": "All"
+      },
+      "license": "CC0-1.0",
+      "source": "https://polyhaven.com/a/rusty_painted_metal",
+      "metadata": {
+        "file": "work/project/chongqing_blender_v05/materials/v04_scans/rusty_painted_metal/source_info.json",
+        "sha256": "c178df331458dcac8b54f5574a33eafb3dfc2d38400056a0b9976b732bdc5bd8"
+      },
+      "use": "District paint, normal and roughness maps on inset service doors",
+      "inputs": [
+        {
+          "file": "work/project/chongqing_godot_v05/assets/chongqing_district_rusty_painted_metal_diff_2k.jpg",
+          "sha256": "883118fafabb56304f9e33ea2da3c183379b1c1b1c5a4702fdc335b0cf84614f"
+        },
+        {
+          "file": "work/project/chongqing_godot_v05/assets/chongqing_district_rusty_painted_metal_nor_gl_2k.jpg",
+          "sha256": "2289c10422d5082aea3cf37661008b281c4aec20f6d0b574df6d7887573eb70c"
+        },
+        {
+          "file": "work/project/chongqing_godot_v05/assets/chongqing_district_rusty_painted_metal_rough_2k.png",
+          "sha256": "4b0d85d4acdebdba8ac4a3c698abb5cc6f0ab3818df7fef1cc7e752cf06a2c6c"
+        }
+      ]
+    }
   }
 }

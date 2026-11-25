@@ -115,6 +115,24 @@ room_finish = {"lime":cream,"dado":material("Cream glazed wall skirting",(.46,.4
                "rubber":material("Used tyre casing",(.022,.022,.020)),
                "clay":material("Brown earthenware",(.31,.115,.051)),"china":cream_metal,
                "jade":green,"greens":leaf[1],"leaf_light":leaf[2],"leaf_dark":leaf[0],"gourd":ochre,"linen":cream_metal}
+from runpy import run_path
+front_tools = run_path(str(HERE/"occupied_fronts.py"))
+finish_tools = run_path(str(HERE/"house_finishes.py"))
+shop_shade = run_path(str(HERE/"shop_shades.py"))["shade"]
+metal=material("Aged galvanized drain pipe",(.31,.32,.30))
+bs=materials[metal].node_tree.nodes.get("Principled BSDF")
+bs.inputs["Metallic"].default_value=.67
+bs.inputs["Roughness"].default_value=.53
+facing=dict(room_finish,trim=cream_metal,metal=metal,panes=window_shades,
+            canvas=material("Sun washed market canvas",(.53,.43,.28)))
+facing.update(wallstone=rock,flags=stone,aged_metal=material("Salvaged service-door steel",(.27,.29,.25),"rusty_painted_metal_diff_2k.jpg",relief=True))
+facing["glass"]=material("Thin residential window glass",(.40,.49,.48))
+glass_bs=materials[facing["glass"]].node_tree.nodes.get("Principled BSDF")
+glass_bs.inputs["Alpha"].default_value=.23
+glass_bs.inputs["Roughness"].default_value=.22
+materials[facing["glass"]].surface_render_method="DITHERED"
+facing["cotton"]=material("Undyed window netting",(.42,.39,.31),"fabric_pattern_07_col_1_2k.jpg",relief="weave")
+facing.update(finish_tools["finishes"](ASSETS,materials,material))
 indoor_floor=material("Worn concrete floors",(.36,.34,.31),"concrete_floor_worn_001_diff_2k.jpg")
 
 class Geometry:
@@ -376,11 +394,13 @@ def tree(x,y,r):
                        "species":int(mean[0]>0), "width_scale":float(r*mean[3]),
                        "height_scale":float(r*mean[2]/4.1)})
 
-from runpy import run_path
 ground_floors = run_path(str(HERE / "ground_floors.py"))
 through_floor = ground_floors["through_floor"]
 build_frame = run_path(str(HERE / "building_frame.py"))["build"]
 furnish = run_path(str(HERE / "shop_rooms.py"))["furnish"]
+floor_batches = {}
+street_windows=run_path(str(HERE/"street_windows.py"))
+plinth=run_path(str(HERE/"street_plinth.py"))["build"]
 plots = []
 lamp_sites = []
 flyover_reserves = []
@@ -419,11 +439,28 @@ def building(x,y,angle,w,d,floors,kind,named=""):
         box(blocks,frame,*dims)
     def ground(u,v):
         return height(*frame(u,v,0)[:2])
-    through_floor(plot,draw,ground,(facade,stone,rock,concrete,indoor_floor))
     structure = Geometry("COL_Outer500_Frame_%02d" % plot["plot_id"])
     def member(*dims):
         box(structure,frame,*dims)
-    build_frame(plot,member,facade,frame_concrete)
+    plot["facade_work"]={"windows":0,"clipped_balconies":0,"enclosed_galleries":0}
+    detail = Geometry("Outer500_Joinery_%02d" % plot["plot_id"])
+    def trim(*dims):
+        box(detail,frame,*dims)
+    floors_geo=Geometry("Outer500_InteriorFloor_%02d"%plot["plot_id"])
+    floor_batches[plot["plot_id"]]=floors_geo
+    def panel(points,mat,uvs=None):
+        (floors_geo if mat in facing["floors"] else detail).face([frame(*pt) for pt in points],mat,uvs)
+    build_frame(plot,member,frame_concrete)
+    plot["street_windows"]=street_windows["plan"](plot)
+    through_floor(plot,draw,ground,(facade,stone,rock,concrete,indoor_floor),street_windows["wall_pieces"])
+    street_windows["install"](plot,trim,panel,facing)
+    for level in range(1,floors):
+        lower=base+2.95*level
+        front_tools["upper_storey"](plot,level,lower,lower+2.80,member,trim,panel,facade,facing)
+    front_tools["rainwater"](plot,trim,panel,facing)
+    finish_tools["main_room"](plot,trim,panel,facing,street_windows["wall_pieces"])
+    shop_shade(plot,panel,facing)
+    detail.finish()
     structure.finish()
     def fitting(*dims):
         box(street,frame,*dims)
@@ -444,63 +481,12 @@ def building(x,y,angle,w,d,floors,kind,named=""):
         for v in (ry,d/2-.22):
             box(facades,frame,-w/2,v,top,w/2,v+.22,top+.75,facade)
         box(facades,frame,-w/4,-1.7,top,-w/4+2.5,1.5,top+2.1,cream)
-        box(facades,frame,w/6,-.9,top+.15,w/6+1.7,.9,top+1.15,cream_metal)
-    bays=max(2,round(w/(2.8+rng.random())))
-    for floor in range(floors):
-        z=base+floor*2.95
-        for bay in range(bays):
-            u=(bay+.5)*w/bays-w/2
-            if floor==0 and named:
-                continue
-            if floor==0 and abs(u-portal)<(1.92 if named else 1.08) + w/bays*.45:
-                continue
-            if floor==0 and (named or kind in (0,2)):
-                span=min(1.3,w/bays*.44)
-                box(facades,frame,u-span,ry-.11,z+.06,u+span,ry-.017,z+2.30,dark)
-                box(facades,frame,u-span+.1,ry-.135,z+.19,u+span-.1,ry-.11,z+2.23,glass if bay%2==0 else concrete)
-                if bay%2:
-                    for row in range(10):
-                        zz=z+.26+row*.186
-                        box(facades,frame,u-span+.10,ry-.156,zz,u+span-.1,ry-.135,zz+.035,cream_metal)
-                if bay==0 or bay==bays-1:
-                    band(facades,frame(u-span,ry-.1,0)[:2],frame(u+span,ry-.1,0)[:2],z+2.65,z+2.65,1.4,(rust,green,ochre)[kind%3])
-                continue
-            if (bay+floor*3+kind)%11==5:
-                continue
-            span=.64 if (bay+kind)%3 else .85
-            for back in (False,True):
-                v=(d/2+.018) if back else (ry-.12)
-                box(facades,frame,u-span-.07,v,z+.83,u+span+.07,v+.10,z+2.22,concrete)
-                gv=v+.11 if back else v-.024
-                shade=window_shades[(bay*7+floor*3+int(abs(x)+abs(y))+(2 if back else 0))%len(window_shades)]
-                box(facades,frame,u-span,gv,z+.92,u+span,gv+.02,z+2.13,shade)
-                box(facades,frame,u-.025,gv-.025,z+.92,u+.025,gv+.055,z+2.13,cream_metal)
-                if not back:
-                    box(facades,frame,u-span-.11,ry-.27,z+.79,u+span+.11,ry-.022,z+.88,concrete)
-                    box(facades,frame,u-span,gv-.025,z+1.83,u+span,gv+.045,z+1.865,dark)
-                    if floor and (bay+kind+floor)%7==2:
-                        for n in range(4):
-                            xbar=u-span+(n+.5)*(2*span)/4
-                            box(facades,frame,xbar-.014,ry-.25,z+.88,xbar+.014,ry-.215,z+1.83,dark)
-            if floor and (bay+kind)%4==0:
-                box(facades,frame,u-1.02,ry-1.10,z+.32,u+1.02,ry,z+.47,concrete)
-                box(facades,frame,u-1.02,ry-1.10,z+1.19,u+1.02,ry-1.02,z+1.26,cream_metal)
-                for bar in range(6):
-                    bx=u-.94+bar*.37
-                    box(facades,frame,bx,ry-1.08,z+.47,bx+.025,ry-1.04,z+1.19,cream_metal)
-            elif floor and (floor+bay+kind)%5==1:
-                box(facades,frame,u+.45,ry-.44,z+.64,u+1.11,ry-.08,z+1.06,cream_metal)
-                for n in range(4):
-                    box(facades,frame,u+.52,ry-.453,z+.70+n*.075,u+1.03,ry-.437,z+.718+n*.075,dark)
-                for xbar in (u+.55,u+1.02):
-                    box(facades,frame,xbar-.022,ry-.47,z+.59,xbar+.022,ry,z+.64,dark)
-        if floor and (kind in (1,2)):
-            box(facades,frame,-w/2,ry-.11,z+.01,w/2,ry,z+.15,concrete)
+
+    # Keep the same downstream seeded plot and planting layout.
+    rng.random()
     if named:
         front = ry-2.35
-        foot_samples = [frame(u,front,0) for u in (-w/2+.65,0,w/2-.65)]
-        face_floor = min(height(*point[:2]) for point in foot_samples)
-        box(solid,frame,-w/2+.42,front,face_floor-.12,w/2-.42,ry,base+.02,stone)
+        plinth(plot,frame,solid,box,ground,facing)
         # Two distinct entrances lead to the common sheltered landing.
         for lane in (-w*.27,w*.22):
             span=1.15
@@ -514,7 +500,15 @@ def building(x,y,angle,w,d,floors,kind,named=""):
                     at=frame(lane,outer,0)[:2]
                     step_level=foot_level+(base-foot_level)*(n+1)/count
                     bottom=min(height(*at)-.12,step_level-.15)
-                    box(solid,frame,lane-span,outer,bottom,lane+span,front,step_level,stone)
+                    left,right=lane-span,lane+span
+                    inner=outer+step_depth
+                    corners=[(left,outer),(right,outer),(right,inner),(left,inner)]
+                    solid.face([frame(u,v,step_level) for u,v in corners],stone,[(u/2.0,v/2.0) for u,v in corners])
+                    for j,(aa,bb) in enumerate(zip(corners,corners[1:]+corners[:1])):
+                        quad=[(*aa,bottom),(*bb,bottom),(*bb,step_level),(*aa,step_level)]
+                        solid.face([frame(*q) for q in quad],concrete if j==0 else rock,
+                                   [(q[0 if j%2==0 else 1]/2.20,q[2]/2.20) for q in quad])
+
         board=room_finish["wood"] if named.endswith("茶摊") else room_finish["iron"] if named.endswith("修理铺") else room_finish["canopy"]
         box(facades,frame,-2.85,ry-2.21,base+2.19,2.85,ry-2.115,base+2.61,board)
         for u in (-2.66,2.66):
@@ -532,9 +526,7 @@ def building(x,y,angle,w,d,floors,kind,named=""):
                     box(street,frame,cx-.26,ry-1.54,display_z+.80,cx+.26,ry-.91,display_z+.85,ochre)
                     for b in range(3):
                         box(street,frame,cx-.27,ry-1.54,display_z+.85+b*.045,cx+.27,ry-1.51,display_z+.88+b*.045,ochre)
-                    for k in range(9):
-                        px,py,_=frame(cx+(k%3-1)*.145,ry-1.42+k//3*.15,0)
-                        ellipsoid(street,px,py,display_z+.94,.070,.067,.068,(leaf[1],ochre,rust)[j])
+            run_path(str(HERE/"market_goods.py"))["create"](plot,frame,materials,material)
         elif named.endswith("茶摊"):
             for u in (-3.6,.32,4.9):
                 for a in (-.41,.41):
@@ -551,6 +543,7 @@ def building(x,y,angle,w,d,floors,kind,named=""):
 
 # Rebuild selected licensed exterior footprints. Retire their far-only
 # representations in this variant, so the plot has one editable owner.
+mapped_elevation=run_path(str(HERE/"mapped_elevations.py"))["elevation"]
 mapped_buildings = []
 # R21's shared rooftop service structures remain visible at their surveyed
 # donor elevations. Rebuild each replaced OSM footprint up to that roof.
@@ -582,26 +575,13 @@ for spec in osm["context_buildings"]:
     for a,b in zip(polygon,polygon[1:]+polygon[:1]):
         az,bz=height(*a)-.28,height(*b)-.28
         blocks.face([(a[0],a[1],az),(b[0],b[1],bz),(b[0],b[1],level),(a[0],a[1],level)],rock)
-        blocks.face([(a[0],a[1],level),(b[0],b[1],level),(b[0],b[1],top),(a[0],a[1],top)],mat)
         length=hypot(b[0]-a[0],b[1]-a[1])
-        if length<1.5:
+        if length<.001:
             continue
         yaw=atan2(b[1]-a[1],b[0]-a[0])
         frame=local_frame(*a,yaw)
-        bays=max(1,int(length/3.15))
         for floor in range(floors):
-            h=level+floor*storey
-            box(facades,frame,0,-.11,h+.10,length,0,h+.23,concrete)
-            for bay in range(bays):
-                if floor==0 and (bay+spec["id"])%3!=0:
-                    continue
-                u=(bay+.5)*length/bays
-                span=min(.66,length/bays*.28)
-                box(facades,frame,u-span-.09,-.16,h+.81,u+span+.09,-.007,h+2.22,concrete)
-                box(facades,frame,u-span,-.19,h+.91,u+span,-.17,h+2.12,glass)
-                if floor>1 and (bay+floor+spec["id"])%4==0:
-                    box(facades,frame,u-span,-.54,h+.52,u+span,-.02,h+.64,concrete)
-                    box(facades,frame,u-span,-.54,h+.64,u+span,-.47,h+1.18,green)
+            mapped_elevation(spec,floor,level+floor*storey,storey,length,frame,facades,blocks,box,mat,facing)
         box(facades,frame,0,-.13,top,length,.15,top+.60,concrete)
     roof_points=[Vector((x,y,top)) for x,y in polygon]
     for triangle in tessellate_polygon([roof_points]):
@@ -678,6 +658,7 @@ court_mats=dict(room_finish,flags=stone,wallstone=rock,brick=brick,
                cloth=material("Woven household cotton",(.36,.30,.26),"fabric_pattern_07_col_1_2k.jpg"),linen=cream_metal)
 for key,color in (("oat",(.38,.34,.26)),("denim",(.115,.15,.17)),("sage",(.24,.30,.23))):
     court_mats[key]=material("Washed cotton "+key,color,"fabric_pattern_07_col_1_2k.jpg",relief="weave")
+court_mats.update({key:facing[key] for key in ("paint","floors")})
 for p in courts:
     yards["terrace_ground"](p,xx,yy,heights)
 for p in plots:
@@ -686,8 +667,9 @@ for p in plots:
     fixtures=Geometry("Outer500_CourtDetails_%02d"%p["plot_id"]) if p.get("court") else street
     def yard_box(x0,y0,z0,x1,y1,z1,mat,physical=True):
         box(pocket if physical else fixtures,frame,x0,y0,z0,x1,y1,z1,mat)
-    def yard_face(verts,mat):
-        fixtures.face([frame(*point) for point in verts],mat)
+    def yard_face(verts,mat,uvs=None):
+        batch=floor_batches[p["plot_id"]] if mat in facing["floors"] else fixtures
+        batch.face([frame(*point) for point in verts],mat,uvs)
     def plot_ground(u,v):
         return height(*frame(u,v,0)[:2])
     if p.get("court"):
@@ -790,6 +772,10 @@ for key in (49182408,1189963598,176034707,830761786):
 run_path(str(HERE / "planting.py"))["place_trees"](ASSETS, tree_sites, materials, material)
 kit=GAME.parent/"chongqing_blender_v05/scanned_assets/prepared_assets.blend"
 household=run_path(str(HERE/"household.py"))["place"](kit,plots,yards["world"],ASSETS/"courtyard_r24/courtyard.glb")
+ac_palette={"offwhite":cream_metal,"painted_metal":green,"aluminium":metal,"dark":dark,
+            "frame":dark,"rust":rust,"paper":cream_metal}
+run_path(str(HERE/"condenser_instances.py"))["place"](GAME.parent/"chongqing_blender_v05",plots,
+    Geometry,box,local_frame,front_tools["tube"],ac_palette)
 contact=Geometry("COLH_Outer500_Household_contact")
 footprints={"potted_plant_02":(.17,.17,.29),"plastic_crate_01":(.146,.20,.26),
             "Court14_BackBasket_and_greens":(.17,.15,.43),
@@ -801,12 +787,16 @@ for item in household:
 contact.finish()
 for batch in (blocks,facades,street,solid,verges,skirt):
     batch.finish()
+for batch in floor_batches.values():
+    batch.finish()
+bpy.context.view_layer.update()
+contact_bake=run_path(str(HERE/"interior_occlusion.py"))["bake"]([materials[i] for i in facing["floors"]])
 bpy.context.scene["scope"] = "500 m local east/north, R24 build 25b centre; see README"
 bpy.context.scene["source_license"] = "ODbL-1.0, © OpenStreetMap contributors"
 bpy.context.preferences.filepaths.save_version=0
 bpy.ops.wm.save_as_mainfile(filepath=str(HERE / "outer_district.blend"),compress=True)
 bpy.ops.export_scene.gltf(filepath=str(OUT / "outer_district.glb"),export_format="GLB",
-                          export_yup=True,export_cameras=False,export_lights=False)
+                          export_yup=True,export_cameras=False,export_lights=False,export_vertex_color="ACTIVE")
 old_meshes=json.loads((HERE.parents[1] / "scene_r21/district_rays.json").read_text(encoding="utf-8-sig"))["meshes"]
 owned=plots+[dict(p,east_north=yards["world"](p,p["court"]["center_u"],p["depth"]/2+6.4),
                  width=p["court"]["half_width"]*2,depth=12.8) for p in courts]
@@ -820,5 +810,5 @@ prefixes, roof_cuts = run_path(str(HERE/"context_owners.py"))["conflicting_conte
     "inferred_alignments":design,"registered_ties":ties,"destinations":destinations,
     "osm_building_ids":mapped_buildings,"plots":plots,"lanes":paths,"retired_context_prefixes":prefixes,"retired_roof_positions":roof_cuts,
     "building_count":len(plots)+len(mapped_buildings),"flyover_reserves":flyover_reserves,"household":household,"collidable_surface_tiles":len(chunks),"planting":tree_sites,
-    "interior_rail_return":rail_return,"lamps_in_buildings":retired_lamps,
+    "floor_contact_bake":contact_bake,"interior_rail_return":rail_return,"lamps_in_buildings":retired_lamps,
 },ensure_ascii=False,indent=2)+"\n")

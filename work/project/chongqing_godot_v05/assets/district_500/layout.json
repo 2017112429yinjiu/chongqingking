@@ -1201,6 +1201,23 @@
       "name": "南区路车棚修理铺",
       "door_u": 0.0,
       "plot_id": 0,
+      "facade_work": {
+        "windows": 32,
+        "clipped_balconies": 4,
+        "enclosed_galleries": 2,
+        "retaining_access": {
+          "u": 10.620000000000001,
+          "recess_m": 0.32,
+          "clear_height_m": 1.7800000000000011
+        },
+        "condensers": [
+          {
+            "u": -8.886666666666667,
+            "floor": 1,
+            "template": 1
+          }
+        ]
+      },
       "frame": {
         "u": [
           -12.31,
@@ -1224,6 +1241,7 @@
         "transverse_drop": 0.39,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [],
       "trade_signs": [
         {
           "text": "补胎打气",
@@ -1276,6 +1294,23 @@
       "name": "照相巷便民市场",
       "door_u": -0.78,
       "plot_id": 1,
+      "facade_work": {
+        "windows": 24,
+        "clipped_balconies": 4,
+        "enclosed_galleries": 2,
+        "retaining_access": {
+          "u": -9.120000000000001,
+          "recess_m": 0.32,
+          "clear_height_m": 1.7800000000000011
+        },
+        "condensers": [
+          {
+            "u": 6.035,
+            "floor": 1,
+            "template": 2
+          }
+        ]
+      },
       "frame": {
         "u": [
           -10.81,
@@ -1297,6 +1332,7 @@
         "transverse_drop": 0.39,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [],
       "trade_signs": [
         {
           "text": "时令蔬菜",
@@ -1349,6 +1385,23 @@
       "name": "江岸茶摊",
       "door_u": -1.65,
       "plot_id": 2,
+      "facade_work": {
+        "windows": 14,
+        "clipped_balconies": 2,
+        "enclosed_galleries": 1,
+        "retaining_access": {
+          "u": -8.620000000000001,
+          "recess_m": 0.32,
+          "clear_height_m": 1.78
+        },
+        "condensers": [
+          {
+            "u": -7.0,
+            "floor": 1,
+            "template": 0
+          }
+        ]
+      },
       "frame": {
         "u": [
           -10.31,
@@ -1371,6 +1424,7 @@
         "transverse_drop": 0.39,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [],
       "trade_signs": [
         {
           "text": "盖碗老荫茶",
@@ -1416,7 +1470,18 @@
       "name": "",
       "door_u": -1.4891385842996703,
       "plot_id": 3,
-      "front_stair_m": 8.12,
+      "facade_work": {
+        "windows": 16,
+        "clipped_balconies": 2,
+        "enclosed_galleries": 0,
+        "condensers": [
+          {
+            "u": -0.08913858429967014,
+            "floor": 1,
+            "template": 1
+          }
+        ]
+      },
       "frame": {
         "u": [
           -5.128352086784536,
@@ -1437,6 +1502,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -4.808352086784535,
+          "right": -3.30913858429967,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 0.2308614157003298,
+          "right": 2.1996067512424324,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": 2.8396067512424326,
+          "right": 4.808352086784535,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 8.12,
       "room": {
         "door_v": -0.45,
         "jamb_u": -0.08913858429967036,
@@ -1460,7 +1549,23 @@
       "name": "",
       "door_u": 1.6530304144465577,
       "plot_id": 4,
-      "front_stair_m": 3.0,
+      "facade_work": {
+        "windows": 50,
+        "clipped_balconies": 10,
+        "enclosed_galleries": 5,
+        "condensers": [
+          {
+            "u": -2.7303248185741453,
+            "floor": 1,
+            "template": 2
+          },
+          {
+            "u": -2.7303248185741453,
+            "floor": 4,
+            "template": 2
+          }
+        ]
+      },
       "frame": {
         "u": [
           -5.7136800515948485,
@@ -1481,6 +1586,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -5.242002435084496,
+          "right": -3.2020024350844962,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -2.258647202063794,
+          "right": -0.21864720206379373,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": 3.4730304144465576,
+          "right": 5.393680051594848,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 3.0,
       "room": {
         "door_v": -0.45,
         "jamb_u": 0.2530304144465578,
@@ -1504,7 +1633,18 @@
       "name": "",
       "door_u": -2.644195312266893,
       "plot_id": 5,
-      "front_stair_m": 3.64,
+      "facade_work": {
+        "windows": 28,
+        "clipped_balconies": 4,
+        "enclosed_galleries": 2,
+        "condensers": [
+          {
+            "u": 2.255054687377896,
+            "floor": 1,
+            "template": 0
+          }
+        ]
+      },
       "frame": {
         "u": [
           -9.253554686667474,
@@ -1527,6 +1667,44 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -8.933554686667474,
+          "right": -7.018874999467183,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": -6.378874999467184,
+          "right": -4.464195312266893,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -0.5145703124444987,
+          "right": 1.5254296875555013,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 2.9846796872002908,
+          "right": 5.02467968720029,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 6.48392968684508,
+          "right": 8.52392968684508,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": true
+        }
+      ],
+      "front_stair_m": 3.64,
       "room": {
         "door_v": -0.45,
         "jamb_u": -1.2441953122668932,
@@ -1550,7 +1728,23 @@
       "name": "",
       "door_u": -2.5926897237570783,
       "plot_id": 6,
-      "front_stair_m": 2.68,
+      "facade_work": {
+        "windows": 50,
+        "clipped_balconies": 8,
+        "enclosed_galleries": 4,
+        "condensers": [
+          {
+            "u": 2.228075569587041,
+            "floor": 1,
+            "template": 1
+          },
+          {
+            "u": 2.228075569587041,
+            "floor": 4,
+            "template": 1
+          }
+        ]
+      },
       "frame": {
         "u": [
           -9.06960615627528,
@@ -1573,6 +1767,44 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -8.749606156275279,
+          "right": -6.901147940016179,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -6.261147940016178,
+          "right": -4.412689723757078,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -0.5023070770850186,
+          "right": 1.5376929229149814,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 2.918458216259101,
+          "right": 4.9584582162591015,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": 6.339223509603221,
+          "right": 8.37922350960322,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 2.68,
       "room": {
         "door_v": -0.45,
         "jamb_u": -1.1926897237570784,
@@ -1596,7 +1828,23 @@
       "name": "",
       "door_u": -1.7071698298916893,
       "plot_id": 7,
-      "front_stair_m": 3.0,
+      "facade_work": {
+        "windows": 50,
+        "clipped_balconies": 10,
+        "enclosed_galleries": 5,
+        "condensers": [
+          {
+            "u": 2.799932638432171,
+            "floor": 1,
+            "template": 2
+          },
+          {
+            "u": 2.799932638432171,
+            "floor": 4,
+            "template": 2
+          }
+        ]
+      },
       "frame": {
         "u": [
           -5.907035106756032,
@@ -1617,6 +1865,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -5.57710246832386,
+          "right": -3.53710246832386,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 0.22638140427024078,
+          "right": 2.266381404270241,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 3.3334838725941016,
+          "right": 5.373483872594102,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": true
+        }
+      ],
+      "front_stair_m": 3.0,
       "room": {
         "door_v": -0.45,
         "jamb_u": -0.3071698298916894,
@@ -1640,7 +1912,18 @@
       "name": "",
       "door_u": -2.738496348865503,
       "plot_id": 8,
-      "front_stair_m": 4.28,
+      "facade_work": {
+        "windows": 28,
+        "clipped_balconies": 4,
+        "enclosed_galleries": 2,
+        "condensers": [
+          {
+            "u": 2.3044504684533584,
+            "floor": 1,
+            "template": 0
+          }
+        ]
+      },
       "frame": {
         "u": [
           -9.590344103091082,
@@ -1663,6 +1946,44 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -9.270344103091082,
+          "right": -7.234420225978292,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -6.594420225978293,
+          "right": -4.5584963488655035,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -0.5370229402060724,
+          "right": 1.5029770597939276,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 3.1059238771127897,
+          "right": 5.145923877112789,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 6.74887069443165,
+          "right": 8.788870694431651,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 4.28,
       "room": {
         "door_v": -0.45,
         "jamb_u": -1.3384963488655033,
@@ -1705,7 +2026,18 @@
       "name": "",
       "door_u": 1.3843391069230653,
       "plot_id": 9,
-      "front_stair_m": 5.56,
+      "facade_work": {
+        "windows": 10,
+        "clipped_balconies": 2,
+        "enclosed_galleries": 2,
+        "condensers": [
+          {
+            "u": -0.015660893076934634,
+            "floor": 1,
+            "template": 1
+          }
+        ]
+      },
       "frame": {
         "u": [
           -4.754068239010946,
@@ -1725,6 +2057,23 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -3.4048645660439405,
+          "right": -1.3648645660439405,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 3.204339106923065,
+          "right": 4.434068239010946,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 5.56,
       "room": {
         "door_v": -0.45,
         "jamb_u": -0.015660893076934634,
@@ -1748,7 +2097,18 @@
       "name": "",
       "door_u": 1.9705890110653925,
       "plot_id": 10,
-      "front_stair_m": 6.84,
+      "facade_work": {
+        "windows": 26,
+        "clipped_balconies": 3,
+        "enclosed_galleries": 3,
+        "condensers": [
+          {
+            "u": -3.138614442798361,
+            "floor": 1,
+            "template": 2
+          }
+        ]
+      },
       "frame": {
         "u": [
           -6.847817896662115,
@@ -1769,6 +2129,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -6.013216169730239,
+          "right": -3.973216169730238,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": -2.304012715866484,
+          "right": -0.264012715866484,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 4.139203453863754,
+          "right": 6.179203453863753,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 6.84,
       "room": {
         "door_v": -0.45,
         "jamb_u": 0.5705890110653926,
@@ -1792,7 +2176,18 @@
       "name": "",
       "door_u": -1.8252175280189553,
       "plot_id": 11,
-      "front_stair_m": 5.88,
+      "facade_work": {
+        "windows": 20,
+        "clipped_balconies": 4,
+        "enclosed_galleries": 2,
+        "condensers": [
+          {
+            "u": 2.9517082503100847,
+            "floor": 1,
+            "template": 0
+          }
+        ]
+      },
       "frame": {
         "u": [
           -6.328634028639125,
@@ -1813,6 +2208,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -5.846925778329039,
+          "right": -3.8069257783290396,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 0.2432453611455645,
+          "right": 2.2832453611455645,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 3.620171139474605,
+          "right": 5.660171139474604,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 5.88,
       "room": {
         "door_v": -0.45,
         "jamb_u": -0.4252175280189554,
@@ -1836,7 +2255,23 @@
       "name": "",
       "door_u": -1.3288919625222377,
       "plot_id": 12,
-      "front_stair_m": 3.32,
+      "facade_work": {
+        "windows": 24,
+        "clipped_balconies": 10,
+        "enclosed_galleries": 5,
+        "condensers": [
+          {
+            "u": 0.07110803747776195,
+            "floor": 1,
+            "template": 1
+          },
+          {
+            "u": 0.07110803747776195,
+            "floor": 4,
+            "template": 1
+          }
+        ]
+      },
       "frame": {
         "u": [
           -4.5560427232937055,
@@ -1856,6 +2291,23 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -4.236042723293705,
+          "right": -3.148891962522237,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 1.2935753803857337,
+          "right": 3.3335753803857338,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 3.32,
       "room": {
         "door_v": -0.45,
         "jamb_u": 0.07110803747776218,
@@ -1879,7 +2331,18 @@
       "name": "",
       "door_u": -1.3555027465323872,
       "plot_id": 13,
-      "front_stair_m": 10.36,
+      "facade_work": {
+        "windows": 12,
+        "clipped_balconies": 2,
+        "enclosed_galleries": 2,
+        "condensers": [
+          {
+            "u": 0.04449725346761291,
+            "floor": 1,
+            "template": 2
+          }
+        ]
+      },
       "frame": {
         "u": [
           -4.651081237615668,
@@ -1899,6 +2362,23 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -4.331081237615668,
+          "right": -3.175502746532387,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 1.3277892455416405,
+          "right": 3.3677892455416405,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": true
+        }
+      ],
+      "front_stair_m": 10.36,
       "room": {
         "door_v": -0.45,
         "jamb_u": 0.044497253467612685,
@@ -1922,7 +2402,18 @@
       "name": "",
       "door_u": 1.386622789603116,
       "plot_id": 14,
-      "front_stair_m": 5.88,
+      "facade_work": {
+        "windows": 18,
+        "clipped_balconies": 3,
+        "enclosed_galleries": 3,
+        "condensers": [
+          {
+            "u": -0.01337721039688411,
+            "floor": 1,
+            "template": 0
+          }
+        ]
+      },
       "frame": {
         "u": [
           -4.762224248582556,
@@ -1942,6 +2433,23 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -3.40780072948972,
+          "right": -1.36780072948972,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 3.2066227896031156,
+          "right": 4.442224248582556,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 5.88,
       "room": {
         "door_v": -0.45,
         "jamb_u": -0.013377210396883887,
@@ -1965,7 +2473,18 @@
       "name": "",
       "door_u": -1.7141885366243155,
       "plot_id": 15,
-      "front_stair_m": 6.52,
+      "facade_work": {
+        "windows": 8,
+        "clipped_balconies": 2,
+        "enclosed_galleries": 1,
+        "condensers": [
+          {
+            "u": 2.808956689945548,
+            "floor": 1,
+            "template": 1
+          }
+        ]
+      },
       "frame": {
         "u": [
           -5.932101916515411,
@@ -1986,6 +2505,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -5.593145226569863,
+          "right": -3.5531452265698635,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": 0.22738407666061633,
+          "right": 2.2673840766606164,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 3.3505293032304793,
+          "right": 5.39052930323048,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 6.52,
       "room": {
         "door_v": -0.45,
         "jamb_u": -0.31418853662431556,
@@ -2009,7 +2552,23 @@
       "name": "",
       "door_u": -1.376625477301056,
       "plot_id": 16,
-      "front_stair_m": 1.72,
+      "facade_work": {
+        "windows": 24,
+        "clipped_balconies": 4,
+        "enclosed_galleries": 4,
+        "condensers": [
+          {
+            "u": 0.023374522698944133,
+            "floor": 1,
+            "template": 2
+          },
+          {
+            "u": 0.023374522698944133,
+            "floor": 4,
+            "template": 2
+          }
+        ]
+      },
       "frame": {
         "u": [
           -4.726519561789485,
@@ -2029,6 +2588,23 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -4.406519561789485,
+          "right": -3.1966254773010556,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 1.3549470422442145,
+          "right": 3.3949470422442145,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 1.72,
       "room": {
         "door_v": -0.45,
         "jamb_u": 0.02337452269894391,
@@ -2052,7 +2628,23 @@
       "name": "",
       "door_u": -1.5871567294385829,
       "plot_id": 17,
-      "front_stair_m": 7.8,
+      "facade_work": {
+        "windows": 40,
+        "clipped_balconies": 8,
+        "enclosed_galleries": 4,
+        "condensers": [
+          {
+            "u": -0.1871567294385832,
+            "floor": 1,
+            "template": 0
+          },
+          {
+            "u": -0.1871567294385832,
+            "floor": 4,
+            "template": 0
+          }
+        ]
+      },
       "frame": {
         "u": [
           -5.478416890852081,
@@ -2073,6 +2665,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -5.158416890852081,
+          "right": -3.407156729438583,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 0.2092366756340831,
+          "right": 2.249236675634083,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 3.042023485779415,
+          "right": 5.082023485779414,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": true
+        }
+      ],
+      "front_stair_m": 7.8,
       "room": {
         "door_v": -0.45,
         "jamb_u": -0.18715672943858297,
@@ -2096,7 +2712,18 @@
       "name": "",
       "door_u": 2.2799137748487612,
       "plot_id": 18,
-      "front_stair_m": 1.72,
+      "facade_work": {
+        "windows": 30,
+        "clipped_balconies": 3,
+        "enclosed_galleries": 3,
+        "condensers": [
+          {
+            "u": -3.5363177105198345,
+            "floor": 1,
+            "template": 1
+          }
+        ]
+      },
       "frame": {
         "u": [
           -7.952549195888431,
@@ -2117,6 +2744,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -6.764433453204132,
+          "right": -4.724433453204133,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -2.348201967835536,
+          "right": -0.3082019678355361,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 4.846231485368596,
+          "right": 6.8862314853685955,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 1.72,
       "room": {
         "door_v": -0.45,
         "jamb_u": 0.8799137748487613,
@@ -2140,7 +2791,18 @@
       "name": "",
       "door_u": 2.601319148915236,
       "plot_id": 21,
-      "front_stair_m": 3.32,
+      "facade_work": {
+        "windows": 42,
+        "clipped_balconies": 6,
+        "enclosed_galleries": 3,
+        "condensers": [
+          {
+            "u": -2.2325957446698856,
+            "floor": 1,
+            "template": 1
+          }
+        ]
+      },
       "frame": {
         "u": [
           -9.100425531840127,
@@ -2163,6 +2825,44 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -8.403468085047567,
+          "right": -6.3634680850475664,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -4.969553191462445,
+          "right": -2.9295531914624457,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -1.535638297877325,
+          "right": 0.504361702122675,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 4.421319148915236,
+          "right": 6.280872340377682,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": 6.920872340377681,
+          "right": 8.780425531840127,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 3.32,
       "room": {
         "door_v": -0.45,
         "jamb_u": 1.201319148915236,
@@ -2186,7 +2886,18 @@
       "name": "",
       "door_u": 2.1762589440056233,
       "plot_id": 22,
-      "front_stair_m": 2.36,
+      "facade_work": {
+        "windows": 30,
+        "clipped_balconies": 3,
+        "enclosed_galleries": 3,
+        "condensers": [
+          {
+            "u": -3.403047213721514,
+            "floor": 1,
+            "template": 2
+          }
+        ]
+      },
       "frame": {
         "u": [
           -7.582353371448653,
@@ -2207,6 +2918,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -6.512700292585084,
+          "right": -4.472700292585083,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -2.333394134857945,
+          "right": -0.29339413485794497,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 4.609306157727138,
+          "right": 6.649306157727137,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": true
+        }
+      ],
+      "front_stair_m": 2.36,
       "room": {
         "door_v": -0.45,
         "jamb_u": 0.7762589440056233,
@@ -2230,7 +2965,23 @@
       "name": "",
       "door_u": -2.2937249794907695,
       "plot_id": 23,
-      "front_stair_m": 7.48,
+      "facade_work": {
+        "windows": 50,
+        "clipped_balconies": 10,
+        "enclosed_galleries": 5,
+        "condensers": [
+          {
+            "u": 3.5540749736309896,
+            "floor": 1,
+            "template": 0
+          },
+          {
+            "u": 3.5540749736309896,
+            "floor": 4,
+            "template": 0
+          }
+        ]
+      },
       "frame": {
         "u": [
           -8.001874926752748,
@@ -2251,6 +3002,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -6.917799953121758,
+          "right": -4.877799953121759,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 0.31017499707011,
+          "right": 2.35017499707011,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": 4.757974950191869,
+          "right": 6.797974950191868,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 7.48,
       "room": {
         "door_v": -0.45,
         "jamb_u": -0.8937249794907696,
@@ -2274,7 +3049,18 @@
       "name": "",
       "door_u": 1.8234889401343832,
       "plot_id": 24,
-      "front_stair_m": 7.16,
+      "facade_work": {
+        "windows": 10,
+        "clipped_balconies": 2,
+        "enclosed_galleries": 1,
+        "condensers": [
+          {
+            "u": -2.9494857801727776,
+            "floor": 1,
+            "template": 1
+          }
+        ]
+      },
       "frame": {
         "u": [
           -6.322460500479939,
@@ -2295,6 +3081,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -5.655973140326358,
+          "right": -3.6159731403263584,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -2.2829984200191973,
+          "right": -0.24299842001919703,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": 3.802974720307161,
+          "right": 5.842974720307161,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 7.16,
       "room": {
         "door_v": -0.45,
         "jamb_u": 0.4234889401343833,
@@ -2318,7 +3128,23 @@
       "name": "",
       "door_u": 1.5198611435213691,
       "plot_id": 25,
-      "front_stair_m": 7.48,
+      "facade_work": {
+        "windows": 50,
+        "clipped_balconies": 5,
+        "enclosed_galleries": 5,
+        "condensers": [
+          {
+            "u": -2.559107184527474,
+            "floor": 1,
+            "template": 2
+          },
+          {
+            "u": -2.559107184527474,
+            "floor": 4,
+            "template": 2
+          }
+        ]
+      },
       "frame": {
         "u": [
           -5.238075512576318,
@@ -2339,6 +3165,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -4.918075512576317,
+          "right": -2.8791071845274736,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": -2.2391071845274744,
+          "right": -0.2001388564786306,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 3.3398611435213694,
+          "right": 4.918075512576317,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 7.48,
       "room": {
         "door_v": -0.45,
         "jamb_u": 0.11986114352136923,
@@ -2362,7 +3212,23 @@
       "name": "",
       "door_u": -2.715941947031607,
       "plot_id": 26,
-      "front_stair_m": 3.32,
+      "facade_work": {
+        "windows": 56,
+        "clipped_balconies": 8,
+        "enclosed_galleries": 4,
+        "condensers": [
+          {
+            "u": 2.2926362579689368,
+            "floor": 1,
+            "template": 0
+          },
+          {
+            "u": 2.2926362579689368,
+            "floor": 4,
+            "template": 0
+          }
+        ]
+      },
       "frame": {
         "u": [
           -9.509792667970023,
@@ -2385,6 +3251,44 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -9.189792667970023,
+          "right": -7.182867307500816,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -6.542867307500815,
+          "right": -4.535941947031608,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -0.5316528445313351,
+          "right": 1.508347155468665,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 3.076925360469209,
+          "right": 5.116925360469208,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": 6.685503565469752,
+          "right": 8.725503565469753,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 3.32,
       "room": {
         "door_v": -0.45,
         "jamb_u": -1.315941947031607,
@@ -2408,7 +3312,18 @@
       "name": "",
       "door_u": 1.42628921480878,
       "plot_id": 27,
-      "front_stair_m": 1.72,
+      "facade_work": {
+        "windows": 16,
+        "clipped_balconies": 2,
+        "enclosed_galleries": 2,
+        "condensers": [
+          {
+            "u": -2.43880041903986,
+            "floor": 1,
+            "template": 1
+          }
+        ]
+      },
       "frame": {
         "u": [
           -4.903890052888499,
@@ -2429,6 +3344,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -4.583890052888499,
+          "right": -2.7588004190398596,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -2.11880041903986,
+          "right": -0.29371078519122007,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 3.2462892148087796,
+          "right": 4.583890052888499,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": true
+        }
+      ],
+      "front_stair_m": 1.72,
       "room": {
         "door_v": -0.45,
         "jamb_u": 0.026289214808780104,
@@ -2452,7 +3391,18 @@
       "name": "",
       "door_u": -1.716671285166646,
       "plot_id": 28,
-      "front_stair_m": 8.12,
+      "facade_work": {
+        "windows": 20,
+        "clipped_balconies": 4,
+        "enclosed_galleries": 2,
+        "condensers": [
+          {
+            "u": 2.8121487952142585,
+            "floor": 1,
+            "template": 2
+          }
+        ]
+      },
       "frame": {
         "u": [
           -5.940968875595163,
@@ -2473,6 +3423,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -5.598820080380904,
+          "right": -3.558820080380904,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 0.22773875502380614,
+          "right": 2.267738755023806,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": 3.356558835404711,
+          "right": 5.396558835404711,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 8.12,
       "room": {
         "door_v": -0.45,
         "jamb_u": -0.316671285166646,
@@ -2496,7 +3470,23 @@
       "name": "",
       "door_u": 1.6204153240653454,
       "plot_id": 29,
-      "front_stair_m": 3.96,
+      "facade_work": {
+        "windows": 50,
+        "clipped_balconies": 10,
+        "enclosed_galleries": 5,
+        "condensers": [
+          {
+            "u": -2.688391130941158,
+            "floor": 1,
+            "template": 0
+          },
+          {
+            "u": -2.688391130941158,
+            "floor": 4,
+            "template": 0
+          }
+        ]
+      },
       "frame": {
         "u": [
           -5.5971975859476615,
@@ -2517,6 +3507,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -5.16279435844441,
+          "right": -3.1227943584444096,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -2.2539879034379062,
+          "right": -0.2139879034379064,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": 3.440415324065345,
+          "right": 5.277197585947661,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 3.96,
       "room": {
         "door_v": -0.45,
         "jamb_u": 0.22041532406534547,
@@ -2540,7 +3554,18 @@
       "name": "",
       "door_u": 1.9327977172474022,
       "plot_id": 30,
-      "front_stair_m": 1.72,
+      "facade_work": {
+        "windows": 10,
+        "clipped_balconies": 1,
+        "enclosed_galleries": 1,
+        "condensers": [
+          {
+            "u": -3.090025636460945,
+            "floor": 1,
+            "template": 1
+          }
+        ]
+      },
       "frame": {
         "u": [
           -6.7128489901692925,
@@ -2561,6 +3586,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -5.921437313315119,
+          "right": -3.8814373133151183,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": -2.2986139596067714,
+          "right": -0.25861395960677136,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 4.052823353708348,
+          "right": 6.092823353708347,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 1.72,
       "room": {
         "door_v": -0.45,
         "jamb_u": 0.5327977172474023,
@@ -2584,7 +3633,18 @@
       "name": "",
       "door_u": -1.7089943228577442,
       "plot_id": 31,
-      "front_stair_m": 2.36,
+      "facade_work": {
+        "windows": 30,
+        "clipped_balconies": 6,
+        "enclosed_galleries": 3,
+        "condensers": [
+          {
+            "u": 2.8022784151028133,
+            "floor": 1,
+            "template": 2
+          }
+        ]
+      },
       "frame": {
         "u": [
           -5.913551153063371,
@@ -2605,6 +3665,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -5.581272737960557,
+          "right": -3.5412727379605573,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 0.22664204612253447,
+          "right": 2.2666420461225343,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 3.337914784083092,
+          "right": 5.377914784083092,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 2.36,
       "room": {
         "door_v": -0.45,
         "jamb_u": -0.3089943228577443,
@@ -2628,7 +3712,18 @@
       "name": "",
       "door_u": 1.4573039310303493,
       "plot_id": 32,
-      "front_stair_m": 3.32,
+      "facade_work": {
+        "windows": 8,
+        "clipped_balconies": 1,
+        "enclosed_galleries": 1,
+        "condensers": [
+          {
+            "u": -2.478676482753306,
+            "floor": 1,
+            "template": 0
+          }
+        ]
+      },
       "frame": {
         "u": [
           -5.014656896536961,
@@ -2649,6 +3744,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -4.69465689653696,
+          "right": -2.798676482753306,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -2.158676482753306,
+          "right": -0.26269606896965103,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 3.2773039310303496,
+          "right": 4.69465689653696,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": true
+        }
+      ],
+      "front_stair_m": 3.32,
       "room": {
         "door_v": -0.45,
         "jamb_u": 0.057303931030349364,
@@ -2672,7 +3791,23 @@
       "name": "",
       "door_u": 1.731504223019242,
       "plot_id": 33,
-      "front_stair_m": 2.36,
+      "facade_work": {
+        "windows": 40,
+        "clipped_balconies": 8,
+        "enclosed_galleries": 4,
+        "condensers": [
+          {
+            "u": -2.8312197153104535,
+            "floor": 1,
+            "template": 1
+          },
+          {
+            "u": -2.8312197153104535,
+            "floor": 4,
+            "template": 1
+          }
+        ]
+      },
       "frame": {
         "u": [
           -5.993943653640149,
@@ -2693,6 +3828,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -5.4325816844753,
+          "right": -3.3925816844753007,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -2.2698577461456058,
+          "right": -0.22985774614560572,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 3.5927239383296956,
+          "right": 5.632723938329695,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 2.36,
       "room": {
         "door_v": -0.45,
         "jamb_u": 0.331504223019242,
@@ -2716,7 +3875,23 @@
       "name": "",
       "door_u": -1.4345779797470624,
       "plot_id": 34,
-      "front_stair_m": 2.36,
+      "facade_work": {
+        "windows": 40,
+        "clipped_balconies": 5,
+        "enclosed_galleries": 5,
+        "condensers": [
+          {
+            "u": -0.03457797974706267,
+            "floor": 1,
+            "template": 2
+          },
+          {
+            "u": -0.03457797974706267,
+            "floor": 4,
+            "template": 2
+          }
+        ]
+      },
       "frame": {
         "u": [
           -4.9334927848109364,
@@ -2737,6 +3912,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -4.613492784810936,
+          "right": -3.2545779797470624,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 0.2854220202529373,
+          "right": 2.1294574025319375,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 2.7694574025319367,
+          "right": 4.613492784810936,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 2.36,
       "room": {
         "door_v": -0.45,
         "jamb_u": -0.03457797974706245,
@@ -2760,7 +3959,18 @@
       "name": "",
       "door_u": 2.7013340604458564,
       "plot_id": 35,
-      "front_stair_m": 6.2,
+      "facade_work": {
+        "windows": 14,
+        "clipped_balconies": 2,
+        "enclosed_galleries": 1,
+        "condensers": [
+          {
+            "u": -5.8713030761510385,
+            "floor": 1,
+            "template": 0
+          }
+        ]
+      },
       "frame": {
         "u": [
           -9.457621644449487,
@@ -2783,6 +3993,44 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -8.684462360300262,
+          "right": -6.644462360300263,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": -5.098143792001814,
+          "right": -3.058143792001814,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -1.511825223703367,
+          "right": 0.5281747762966331,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 4.521334060445858,
+          "right": 6.509477852447672,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 7.1494778524476725,
+          "right": 9.137621644449487,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": true
+        }
+      ],
+      "front_stair_m": 6.2,
       "room": {
         "door_v": -0.45,
         "jamb_u": 1.3013340604458565,
@@ -2806,7 +4054,23 @@
       "name": "",
       "door_u": -1.8719059286303954,
       "plot_id": 36,
-      "front_stair_m": 1.72,
+      "facade_work": {
+        "windows": 40,
+        "clipped_balconies": 8,
+        "enclosed_galleries": 4,
+        "condensers": [
+          {
+            "u": 3.0117361939533644,
+            "floor": 1,
+            "template": 1
+          },
+          {
+            "u": 3.0117361939533644,
+            "floor": 4,
+            "template": 1
+          }
+        ]
+      },
       "frame": {
         "u": [
           -6.495378316537125,
@@ -2827,6 +4091,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -5.95364212258376,
+          "right": -3.91364212258376,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 0.24991513266148457,
+          "right": 2.2899151326614846,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 3.7335572552452443,
+          "right": 5.773557255245244,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 1.72,
       "room": {
         "door_v": -0.45,
         "jamb_u": -0.4719059286303955,
@@ -2850,7 +4138,18 @@
       "name": "",
       "door_u": -1.4536786596539042,
       "plot_id": 37,
-      "front_stair_m": 5.88,
+      "facade_work": {
+        "windows": 20,
+        "clipped_balconies": 6,
+        "enclosed_galleries": 3,
+        "condensers": [
+          {
+            "u": -0.053678659653904504,
+            "floor": 1,
+            "template": 2
+          }
+        ]
+      },
       "frame": {
         "u": [
           -5.001709498763943,
@@ -2871,6 +4170,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -4.681709498763943,
+          "right": -3.2736786596539043,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 0.26632134034609545,
+          "right": 2.15401541955502,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 2.794015419555019,
+          "right": 4.681709498763943,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": true
+        }
+      ],
+      "front_stair_m": 5.88,
       "room": {
         "door_v": -0.45,
         "jamb_u": -0.05367865965390428,
@@ -2894,7 +4217,18 @@
       "name": "",
       "door_u": -1.6128330395973434,
       "plot_id": 38,
-      "front_stair_m": 11.96,
+      "facade_work": {
+        "windows": 30,
+        "clipped_balconies": 3,
+        "enclosed_galleries": 3,
+        "condensers": [
+          {
+            "u": -0.21283303959734345,
+            "floor": 1,
+            "template": 0
+          }
+        ]
+      },
       "frame": {
         "u": [
           -5.57011799856194,
@@ -2915,6 +4249,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -5.250117998561939,
+          "right": -3.4328330395973436,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 0.21290471994247717,
+          "right": 2.252904719942477,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": 3.104380239022118,
+          "right": 5.144380239022118,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 11.96,
       "room": {
         "door_v": -0.45,
         "jamb_u": -0.21283303959734345,
@@ -2938,7 +4296,23 @@
       "name": "",
       "door_u": 2.217548172175122,
       "plot_id": 39,
-      "front_stair_m": 2.36,
+      "facade_work": {
+        "windows": 50,
+        "clipped_balconies": 10,
+        "enclosed_galleries": 5,
+        "condensers": [
+          {
+            "u": -3.456133364225156,
+            "floor": 1,
+            "template": 1
+          },
+          {
+            "u": -3.456133364225156,
+            "floor": 4,
+            "template": 1
+          }
+        ]
+      },
       "frame": {
         "u": [
           -7.729814900625434,
@@ -2959,6 +4333,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -6.612974132425295,
+          "right": -4.572974132425294,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -2.3392925960250173,
+          "right": -0.29929259602501723,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": 4.703681536400278,
+          "right": 6.743681536400278,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 2.36,
       "room": {
         "door_v": -0.45,
         "jamb_u": 0.8175481721751221,
@@ -2982,7 +4380,18 @@
       "name": "",
       "door_u": 2.5862144338726796,
       "plot_id": 40,
-      "front_stair_m": 11.32,
+      "facade_work": {
+        "windows": 38,
+        "clipped_balconies": 3,
+        "enclosed_galleries": 3,
+        "condensers": [
+          {
+            "u": -5.635581936025011,
+            "floor": 1,
+            "template": 2
+          }
+        ]
+      },
       "frame": {
         "u": [
           -9.046480120973856,
@@ -3005,6 +4414,44 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -8.361031028499433,
+          "right": -6.3210310284994335,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": -4.950132843550588,
+          "right": -2.910132843550588,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -1.539234658601743,
+          "right": 0.5007653413982571,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 4.40621443387268,
+          "right": 6.2463472774232685,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 6.886347277423267,
+          "right": 8.726480120973855,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": true
+        }
+      ],
+      "front_stair_m": 11.32,
       "room": {
         "door_v": -0.45,
         "jamb_u": 1.1862144338726797,
@@ -3047,7 +4494,18 @@
       "name": "",
       "door_u": -2.447258737438619,
       "plot_id": 41,
-      "front_stair_m": 7.8,
+      "facade_work": {
+        "windows": 30,
+        "clipped_balconies": 6,
+        "enclosed_galleries": 3,
+        "condensers": [
+          {
+            "u": 3.751475519563939,
+            "floor": 1,
+            "template": 0
+          }
+        ]
+      },
       "frame": {
         "u": [
           -8.550209776566497,
@@ -3068,6 +4526,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -7.268734257002558,
+          "right": -5.228734257002559,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 0.3321083910626599,
+          "right": 2.37210839106266,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 5.130842648065219,
+          "right": 7.170842648065218,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 7.8,
       "room": {
         "door_v": -0.45,
         "jamb_u": -1.0472587374386193,
@@ -3091,7 +4573,18 @@
       "name": "",
       "door_u": -2.25153902073135,
       "plot_id": 42,
-      "front_stair_m": 10.04,
+      "facade_work": {
+        "windows": 20,
+        "clipped_balconies": 2,
+        "enclosed_galleries": 2,
+        "condensers": [
+          {
+            "u": 3.49983588379745,
+            "floor": 1,
+            "template": 1
+          }
+        ]
+      },
       "frame": {
         "u": [
           -7.85121078832625,
@@ -3112,6 +4605,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -6.821374904528799,
+          "right": -4.7813749045288,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 0.3041484315330498,
+          "right": 2.34414843153305,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 4.655523336061851,
+          "right": 6.69552333606185,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": true
+        }
+      ],
+      "front_stair_m": 10.04,
       "room": {
         "door_v": -0.45,
         "jamb_u": -0.8515390207313502,
@@ -3135,7 +4652,18 @@
       "name": "",
       "door_u": -2.568513183443099,
       "plot_id": 43,
-      "front_stair_m": 1.72,
+      "facade_work": {
+        "windows": 42,
+        "clipped_balconies": 6,
+        "enclosed_galleries": 3,
+        "condensers": [
+          {
+            "u": 2.215411667517814,
+            "floor": 1,
+            "template": 2
+          }
+        ]
+      },
       "frame": {
         "u": [
           -8.98326136943964,
@@ -3158,6 +4686,44 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -8.66326136943964,
+          "right": -6.8458872764413705,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -6.20588727644137,
+          "right": -4.388513183443099,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -0.4965507579626427,
+          "right": 1.5434492420373573,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 2.8873740929982703,
+          "right": 4.927374092998271,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 6.271298943959184,
+          "right": 8.311298943959184,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 1.72,
       "room": {
         "door_v": -0.45,
         "jamb_u": -1.1685131834430993,
@@ -3181,7 +4747,23 @@
       "name": "",
       "door_u": 1.5383827714975868,
       "plot_id": 44,
-      "front_stair_m": 11.96,
+      "facade_work": {
+        "windows": 50,
+        "clipped_balconies": 5,
+        "enclosed_galleries": 5,
+        "condensers": [
+          {
+            "u": -2.5829207062111825,
+            "floor": 1,
+            "template": 0
+          },
+          {
+            "u": -2.5829207062111825,
+            "floor": 4,
+            "template": 0
+          }
+        ]
+      },
       "frame": {
         "u": [
           -5.304224183919952,
@@ -3202,6 +4784,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -4.963572445065568,
+          "right": -2.923572445065567,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -2.242268967356798,
+          "right": -0.2022689673567979,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": 3.3583827714975873,
+          "right": 4.9842241839199515,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 11.96,
       "room": {
         "door_v": -0.45,
         "jamb_u": 0.13838277149758693,
@@ -3225,7 +4831,23 @@
       "name": "",
       "door_u": 1.5796221605445813,
       "plot_id": 45,
-      "front_stair_m": 2.04,
+      "facade_work": {
+        "windows": 40,
+        "clipped_balconies": 8,
+        "enclosed_galleries": 4,
+        "condensers": [
+          {
+            "u": -2.6359427778430327,
+            "floor": 1,
+            "template": 1
+          },
+          {
+            "u": -2.6359427778430327,
+            "floor": 4,
+            "template": 1
+          }
+        ]
+      },
       "frame": {
         "u": [
           -5.451507716230647,
@@ -3246,6 +4868,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -5.063725247036839,
+          "right": -3.023725247036839,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": -2.2481603086492257,
+          "right": -0.20816030864922563,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 3.3996221605445816,
+          "right": 5.131507716230647,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 2.04,
       "room": {
         "door_v": -0.45,
         "jamb_u": 0.17962216054458136,
@@ -3269,7 +4915,18 @@
       "name": "",
       "door_u": 1.6991060885014795,
       "plot_id": 46,
-      "front_stair_m": 3.0,
+      "facade_work": {
+        "windows": 20,
+        "clipped_balconies": 2,
+        "enclosed_galleries": 2,
+        "condensers": [
+          {
+            "u": -2.7895649709304733,
+            "floor": 1,
+            "template": 2
+          }
+        ]
+      },
       "frame": {
         "u": [
           -5.878236030362426,
@@ -3290,6 +4947,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -5.35390050064645,
+          "right": -3.3139005006464495,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -2.265229441214497,
+          "right": -0.22522944121449706,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 3.5191060885014798,
+          "right": 5.558236030362425,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 3.0,
       "room": {
         "door_v": -0.45,
         "jamb_u": 0.2991060885014796,
@@ -3313,7 +4994,18 @@
       "name": "",
       "door_u": -2.4995758883249355,
       "plot_id": 47,
-      "front_stair_m": 2.68,
+      "facade_work": {
+        "windows": 10,
+        "clipped_balconies": 2,
+        "enclosed_galleries": 1,
+        "condensers": [
+          {
+            "u": 2.179301655789252,
+            "floor": 1,
+            "template": 0
+          }
+        ]
+      },
       "frame": {
         "u": [
           -8.737056744017627,
@@ -3335,6 +5027,37 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -7.388316316171281,
+          "right": -5.348316316171282,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -0.48013711626784183,
+          "right": 1.5598628837321582,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 2.798740427846345,
+          "right": 4.838740427846345,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": 6.077617971960533,
+          "right": 8.117617971960533,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 2.68,
       "room": {
         "door_v": -0.45,
         "jamb_u": -1.0995758883249356,
@@ -3358,7 +5081,23 @@
       "name": "",
       "door_u": 2.5577109835667615,
       "plot_id": 48,
-      "front_stair_m": 4.92,
+      "facade_work": {
+        "windows": 56,
+        "clipped_balconies": 8,
+        "enclosed_galleries": 4,
+        "condensers": [
+          {
+            "u": -5.577217728255748,
+            "floor": 1,
+            "template": 1
+          },
+          {
+            "u": -5.577217728255748,
+            "floor": 4,
+            "template": 1
+          }
+        ]
+      },
       "frame": {
         "u": [
           -8.944682084167004,
@@ -3381,6 +5120,44 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -8.280949906211376,
+          "right": -6.240949906211377,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -4.91348555030012,
+          "right": -2.87348555030012,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -1.5460211943888655,
+          "right": 0.4939788056111345,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": 4.377710983566763,
+          "right": 6.181196533866883,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 6.821196533866884,
+          "right": 8.624682084167004,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 4.92,
       "room": {
         "door_v": -0.45,
         "jamb_u": 1.1577109835667616,
@@ -3423,7 +5200,23 @@
       "name": "",
       "door_u": 2.1422525333570426,
       "plot_id": 49,
-      "front_stair_m": 4.28,
+      "facade_work": {
+        "windows": 50,
+        "clipped_balconies": 10,
+        "enclosed_galleries": 5,
+        "condensers": [
+          {
+            "u": -3.3593246857447676,
+            "floor": 1,
+            "template": 2
+          },
+          {
+            "u": -3.3593246857447676,
+            "floor": 4,
+            "template": 2
+          }
+        ]
+      },
       "frame": {
         "u": [
           -7.460901904846579,
@@ -3444,6 +5237,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -6.430113295295673,
+          "right": -4.390113295295674,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -2.328536076193862,
+          "right": -0.288536076193862,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": 4.531577219101811,
+          "right": 6.57157721910181,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 4.28,
       "room": {
         "door_v": -0.45,
         "jamb_u": 0.7422525333570427,
@@ -3467,7 +5284,18 @@
       "name": "",
       "door_u": -2.2478041065065124,
       "plot_id": 50,
-      "front_stair_m": 2.36,
+      "facade_work": {
+        "windows": 10,
+        "clipped_balconies": 1,
+        "enclosed_galleries": 1,
+        "condensers": [
+          {
+            "u": 3.4950338512226584,
+            "floor": 1,
+            "template": 0
+          }
+        ]
+      },
       "frame": {
         "u": [
           -7.837871808951829,
@@ -3488,6 +5316,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -6.812837957729171,
+          "right": -4.7728379577291715,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": 0.30361487235807294,
+          "right": 2.343614872358073,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 4.646452830087243,
+          "right": 6.686452830087244,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 2.36,
       "room": {
         "door_v": -0.45,
         "jamb_u": -0.8478041065065125,
@@ -3511,7 +5363,18 @@
       "name": "",
       "door_u": -2.554823205725455,
       "plot_id": 51,
-      "front_stair_m": 1.72,
+      "facade_work": {
+        "windows": 14,
+        "clipped_balconies": 2,
+        "enclosed_galleries": 1,
+        "condensers": [
+          {
+            "u": 2.2082407268085715,
+            "floor": 1,
+            "template": 1
+          }
+        ]
+      },
       "frame": {
         "u": [
           -8.934368591876625,
@@ -3534,6 +5397,44 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -8.614368591876625,
+          "right": -6.8145958988010396,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -6.174595898801041,
+          "right": -4.3748232057254555,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -0.4932912394584419,
+          "right": 1.5467087605415581,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 2.8697726930755842,
+          "right": 4.909772693075585,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": 6.232836625609611,
+          "right": 8.272836625609612,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 1.72,
       "room": {
         "door_v": -0.45,
         "jamb_u": -1.1548232057254553,
@@ -3557,7 +5458,23 @@
       "name": "",
       "door_u": 2.065873958593342,
       "plot_id": 52,
-      "front_stair_m": 3.32,
+      "facade_work": {
+        "windows": 44,
+        "clipped_balconies": 10,
+        "enclosed_galleries": 5,
+        "condensers": [
+          {
+            "u": -3.2611236610485816,
+            "floor": 1,
+            "template": 2
+          },
+          {
+            "u": -3.2611236610485816,
+            "floor": 4,
+            "template": 2
+          }
+        ]
+      },
       "frame": {
         "u": [
           -7.188121280690505,
@@ -3578,6 +5495,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -6.244622470869544,
+          "right": -4.204622470869543,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -2.31762485122762,
+          "right": -0.2776248512276198,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 4.356997619641923,
+          "right": 6.3969976196419225,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": true
+        }
+      ],
+      "front_stair_m": 3.32,
       "room": {
         "door_v": -0.45,
         "jamb_u": 0.665873958593342,
@@ -3620,7 +5561,18 @@
       "name": "",
       "door_u": 2.026433848059373,
       "plot_id": 53,
-      "front_stair_m": 6.52,
+      "facade_work": {
+        "windows": 30,
+        "clipped_balconies": 6,
+        "enclosed_galleries": 3,
+        "condensers": [
+          {
+            "u": -3.2104149475049075,
+            "floor": 1,
+            "template": 0
+          }
+        ]
+      },
       "frame": {
         "u": [
           -7.0472637430691885,
@@ -3641,6 +5593,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -6.148839345287048,
+          "right": -4.108839345287048,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -2.311990549722767,
+          "right": -0.27199054972276704,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 4.266848795564281,
+          "right": 6.30684879556428,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 6.52,
       "room": {
         "door_v": -0.45,
         "jamb_u": 0.626433848059373,
@@ -3664,7 +5640,18 @@
       "name": "",
       "door_u": -1.9236443995526762,
       "plot_id": 54,
-      "front_stair_m": 3.32,
+      "facade_work": {
+        "windows": 30,
+        "clipped_balconies": 3,
+        "enclosed_galleries": 3,
+        "condensers": [
+          {
+            "u": 3.0782570851391546,
+            "floor": 1,
+            "template": 1
+          }
+        ]
+      },
       "frame": {
         "u": [
           -6.6801585698309855,
@@ -3685,6 +5672,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -6.07190148469183,
+          "right": -4.031901484691831,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 0.25730634279323916,
+          "right": 2.297306342793239,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 3.85920782748507,
+          "right": 5.8992078274850694,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 3.32,
       "room": {
         "door_v": -0.45,
         "jamb_u": -0.5236443995526763,
@@ -3708,7 +5719,18 @@
       "name": "",
       "door_u": 1.2960611377193503,
       "plot_id": 55,
-      "front_stair_m": 1.72,
+      "facade_work": {
+        "windows": 18,
+        "clipped_balconies": 0,
+        "enclosed_galleries": 0,
+        "condensers": [
+          {
+            "u": -0.10393886228064986,
+            "floor": 1,
+            "template": 2
+          }
+        ]
+      },
       "frame": {
         "u": [
           -4.438789777569108,
@@ -3728,6 +5750,16 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -3.2913643199248788,
+          "right": -1.2513643199248787,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": true
+        }
+      ],
+      "front_stair_m": 1.72,
       "room": {
         "door_v": -0.45,
         "jamb_u": -0.10393886228064964,
@@ -3751,7 +5783,23 @@
       "name": "",
       "door_u": 2.6705617646589235,
       "plot_id": 56,
-      "front_stair_m": 4.28,
+      "facade_work": {
+        "windows": 70,
+        "clipped_balconies": 10,
+        "enclosed_galleries": 5,
+        "condensers": [
+          {
+            "u": -5.808293137158747,
+            "floor": 1,
+            "template": 0
+          },
+          {
+            "u": -5.808293137158747,
+            "floor": 4,
+            "template": 0
+          }
+        ]
+      },
       "frame": {
         "u": [
           -9.347720588067583,
@@ -3774,6 +5822,44 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -8.598006862613165,
+          "right": -6.558006862613166,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -5.058579411704329,
+          "right": -3.0185794117043296,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -1.5191519607954942,
+          "right": 0.5208480392045058,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 4.490561764658924,
+          "right": 6.439141176363254,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": 7.079141176363253,
+          "right": 9.027720588067583,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 4.28,
       "room": {
         "door_v": -0.45,
         "jamb_u": 1.2705617646589236,
@@ -3816,7 +5902,18 @@
       "name": "",
       "door_u": 2.1917320523090944,
       "plot_id": 57,
-      "front_stair_m": 2.36,
+      "facade_work": {
+        "windows": 30,
+        "clipped_balconies": 6,
+        "enclosed_galleries": 3,
+        "condensers": [
+          {
+            "u": -3.4229412101116923,
+            "floor": 1,
+            "template": 1
+          }
+        ]
+      },
       "frame": {
         "u": [
           -7.637614472532479,
@@ -3837,6 +5934,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -6.550277841322085,
+          "right": -4.510277841322086,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -2.335604578901299,
+          "right": -0.2956045789012989,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 4.6446732624207865,
+          "right": 6.684673262420786,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": true
+        }
+      ],
+      "front_stair_m": 2.36,
       "room": {
         "door_v": -0.45,
         "jamb_u": 0.7917320523090945,
@@ -3860,7 +5981,18 @@
       "name": "",
       "door_u": 1.870844916829678,
       "plot_id": 58,
-      "front_stair_m": 6.52,
+      "facade_work": {
+        "windows": 10,
+        "clipped_balconies": 1,
+        "enclosed_galleries": 1,
+        "condensers": [
+          {
+            "u": -3.0103720359238713,
+            "floor": 1,
+            "template": 2
+          }
+        ]
+      },
       "frame": {
         "u": [
           -6.49158898867742,
@@ -3881,6 +6013,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -5.770980512300646,
+          "right": -3.7309805123006456,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -2.289763559547097,
+          "right": -0.24976355954709684,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 3.911216952753549,
+          "right": 5.9512169527535494,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 6.52,
       "room": {
         "door_v": -0.45,
         "jamb_u": 0.470844916829678,
@@ -3904,7 +6060,18 @@
       "name": "",
       "door_u": 1.4355416877661211,
       "plot_id": 59,
-      "front_stair_m": 2.68,
+      "facade_work": {
+        "windows": 8,
+        "clipped_balconies": 1,
+        "enclosed_galleries": 1,
+        "condensers": [
+          {
+            "u": -2.4506964556992985,
+            "floor": 1,
+            "template": 0
+          }
+        ]
+      },
       "frame": {
         "u": [
           -4.936934599164718,
@@ -3925,6 +6092,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -4.6169345991647175,
+          "right": -2.770696455699299,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -2.1306964556992987,
+          "right": -0.2844583122338792,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": 3.2555416877661214,
+          "right": 4.6169345991647175,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 2.68,
       "room": {
         "door_v": -0.45,
         "jamb_u": 0.03554168776612121,
@@ -3948,7 +6139,18 @@
       "name": "",
       "door_u": 2.3207299864126623,
       "plot_id": 60,
-      "front_stair_m": 3.32,
+      "facade_work": {
+        "windows": 20,
+        "clipped_balconies": 4,
+        "enclosed_galleries": 2,
+        "condensers": [
+          {
+            "u": -3.5887956968162804,
+            "floor": 1,
+            "template": 1
+          }
+        ]
+      },
       "frame": {
         "u": [
           -8.098321380045222,
@@ -3969,6 +6171,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -6.863558538430752,
+          "right": -4.823558538430751,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": -2.3540328552018095,
+          "right": -0.31403285520180946,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 4.939525683228942,
+          "right": 6.9795256832289425,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 3.32,
       "room": {
         "door_v": -0.45,
         "jamb_u": 0.9207299864126623,
@@ -4011,7 +6237,18 @@
       "name": "",
       "door_u": -1.8732234476203813,
       "plot_id": 61,
-      "front_stair_m": 2.36,
+      "facade_work": {
+        "windows": 20,
+        "clipped_balconies": 4,
+        "enclosed_galleries": 2,
+        "condensers": [
+          {
+            "u": 3.0134301469404896,
+            "floor": 1,
+            "template": 2
+          }
+        ]
+      },
       "frame": {
         "u": [
           -6.500083741501361,
@@ -4032,6 +6269,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -5.956653594560871,
+          "right": -3.9166535945608705,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 0.250103349660054,
+          "right": 2.290103349660054,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 3.7367569442209247,
+          "right": 5.776756944220924,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 2.36,
       "room": {
         "door_v": -0.45,
         "jamb_u": -0.4732234476203814,
@@ -4055,7 +6316,23 @@
       "name": "",
       "door_u": 2.530180282274284,
       "plot_id": 62,
-      "front_stair_m": 2.68,
+      "facade_work": {
+        "windows": 48,
+        "clipped_balconies": 8,
+        "enclosed_galleries": 4,
+        "condensers": [
+          {
+            "u": -5.5208453398949615,
+            "floor": 1,
+            "template": 0
+          },
+          {
+            "u": -5.5208453398949615,
+            "floor": 4,
+            "template": 0
+          }
+        ]
+      },
       "frame": {
         "u": [
           -8.846358150979585,
@@ -4077,6 +6354,37 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -8.203601745437274,
+          "right": -6.163601745437273,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -4.87808893435265,
+          "right": -2.83808893435265,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -1.552576123268028,
+          "right": 0.48742387673197207,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 5.418269216626934,
+          "right": 7.458269216626935,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 2.68,
       "room": {
         "door_v": -0.45,
         "jamb_u": 1.1301802822742841,
@@ -4100,7 +6408,23 @@
       "name": "",
       "door_u": -1.7324093514688044,
       "plot_id": 63,
-      "front_stair_m": 2.04,
+      "facade_work": {
+        "windows": 40,
+        "clipped_balconies": 8,
+        "enclosed_galleries": 4,
+        "condensers": [
+          {
+            "u": 2.8323834518884623,
+            "floor": 1,
+            "template": 1
+          },
+          {
+            "u": 2.8323834518884623,
+            "floor": 4,
+            "template": 1
+          }
+        ]
+      },
       "frame": {
         "u": [
           -5.997176255245729,
@@ -4121,6 +6445,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -5.634792803357266,
+          "right": -3.5947928033572665,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 0.2299870502098289,
+          "right": 2.2699870502098287,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": 3.3947798535670954,
+          "right": 5.434779853567095,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 2.04,
       "room": {
         "door_v": -0.45,
         "jamb_u": -0.33240935146880446,
@@ -4144,7 +6492,18 @@
       "name": "",
       "door_u": 2.0822208431420473,
       "plot_id": 64,
-      "front_stair_m": 1.72,
+      "facade_work": {
+        "windows": 30,
+        "clipped_balconies": 6,
+        "enclosed_galleries": 3,
+        "condensers": [
+          {
+            "u": -3.2821410840397744,
+            "floor": 1,
+            "template": 2
+          }
+        ]
+      },
       "frame": {
         "u": [
           -7.246503011221596,
@@ -4165,6 +6524,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -6.284322047630685,
+          "right": -4.2443220476306855,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -2.319960120448864,
+          "right": -0.27996012044886376,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": 4.394361927181821,
+          "right": 6.434361927181822,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 1.72,
       "room": {
         "door_v": -0.45,
         "jamb_u": 0.6822208431420473,
@@ -4207,7 +6590,23 @@
       "name": "",
       "door_u": -1.4138869102382519,
       "plot_id": 65,
-      "front_stair_m": 3.96,
+      "facade_work": {
+        "windows": 26,
+        "clipped_balconies": 8,
+        "enclosed_galleries": 4,
+        "condensers": [
+          {
+            "u": -0.01388691023825217,
+            "floor": 1,
+            "template": 0
+          },
+          {
+            "u": -0.01388691023825217,
+            "floor": 4,
+            "template": 0
+          }
+        ]
+      },
       "frame": {
         "u": [
           -4.859596107993756,
@@ -4228,6 +6627,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -4.539596107993756,
+          "right": -3.233886910238251,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": 0.3061130897617478,
+          "right": 2.102854598877752,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 2.742854598877752,
+          "right": 4.539596107993756,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 3.96,
       "room": {
         "door_v": -0.45,
         "jamb_u": -0.013886910238251948,
@@ -4251,7 +6674,18 @@
       "name": "",
       "door_u": 2.3200759116734795,
       "plot_id": 66,
-      "front_stair_m": 1.72,
+      "facade_work": {
+        "windows": 30,
+        "clipped_balconies": 3,
+        "enclosed_galleries": 3,
+        "condensers": [
+          {
+            "u": -3.5879547435801875,
+            "floor": 1,
+            "template": 1
+          }
+        ]
+      },
       "frame": {
         "u": [
           -8.095985398833855,
@@ -4272,6 +6706,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -6.861970071207022,
+          "right": -4.821970071207021,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -2.3539394159533535,
+          "right": -0.3139394159533535,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 4.938030655253668,
+          "right": 6.978030655253667,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 1.72,
       "room": {
         "door_v": -0.45,
         "jamb_u": 0.9200759116734796,
@@ -4295,7 +6753,23 @@
       "name": "",
       "door_u": -1.3454908189872778,
       "plot_id": 67,
-      "front_stair_m": 6.2,
+      "facade_work": {
+        "windows": 30,
+        "clipped_balconies": 5,
+        "enclosed_galleries": 5,
+        "condensers": [
+          {
+            "u": 0.05450918101272206,
+            "floor": 1,
+            "template": 2
+          },
+          {
+            "u": 0.05450918101272206,
+            "floor": 4,
+            "template": 2
+          }
+        ]
+      },
       "frame": {
         "u": [
           -4.615324353525992,
@@ -4315,6 +6789,23 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -4.2953243535259915,
+          "right": -3.165490818987278,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 1.3149167672693567,
+          "right": 3.3549167672693567,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 6.2,
       "room": {
         "door_v": -0.45,
         "jamb_u": 0.05450918101272206,
@@ -4338,7 +6829,18 @@
       "name": "",
       "door_u": -1.4973659183850654,
       "plot_id": 68,
-      "front_stair_m": 2.04,
+      "facade_work": {
+        "windows": 10,
+        "clipped_balconies": 2,
+        "enclosed_galleries": 1,
+        "condensers": [
+          {
+            "u": -0.0973659183850657,
+            "floor": 1,
+            "template": 0
+          }
+        ]
+      },
       "frame": {
         "u": [
           -5.157735422803804,
@@ -4359,6 +6861,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -4.837735422803804,
+          "right": -3.3173659183850654,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 0.22263408161493425,
+          "right": 2.21018475220937,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": 2.85018475220937,
+          "right": 4.837735422803804,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 2.04,
       "room": {
         "door_v": -0.45,
         "jamb_u": -0.09736591838506548,
@@ -4382,7 +6908,23 @@
       "name": "",
       "door_u": -1.5022802028119078,
       "plot_id": 69,
-      "front_stair_m": 7.8,
+      "facade_work": {
+        "windows": 50,
+        "clipped_balconies": 10,
+        "enclosed_galleries": 5,
+        "condensers": [
+          {
+            "u": -0.10228020281190808,
+            "floor": 1,
+            "template": 1
+          },
+          {
+            "u": -0.10228020281190808,
+            "floor": 4,
+            "template": 1
+          }
+        ]
+      },
       "frame": {
         "u": [
           -5.175286438613956,
@@ -4403,6 +6945,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -4.855286438613955,
+          "right": -3.322280202811907,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 0.21771979718809187,
+          "right": 2.216503117901024,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 2.856503117901024,
+          "right": 4.855286438613955,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 7.8,
       "room": {
         "door_v": -0.45,
         "jamb_u": -0.10228020281190786,
@@ -4426,7 +6992,23 @@
       "name": "",
       "door_u": -2.0460613140973996,
       "plot_id": 70,
-      "front_stair_m": 3.96,
+      "facade_work": {
+        "windows": 50,
+        "clipped_balconies": 5,
+        "enclosed_galleries": 5,
+        "condensers": [
+          {
+            "u": 3.23565026098237,
+            "floor": 1,
+            "template": 2
+          },
+          {
+            "u": 3.23565026098237,
+            "floor": 4,
+            "template": 2
+          }
+        ]
+      },
       "frame": {
         "u": [
           -7.11736183606214,
@@ -4447,6 +7029,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -6.35171157507977,
+          "right": -4.311711575079769,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": 0.2747944734424852,
+          "right": 2.3147944734424852,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 4.156506048522255,
+          "right": 6.196506048522254,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 3.96,
       "room": {
         "door_v": -0.45,
         "jamb_u": -0.6460613140973996,
@@ -4470,7 +7076,18 @@
       "name": "",
       "door_u": 1.5494788143737759,
       "plot_id": 71,
-      "front_stair_m": 3.0,
+      "facade_work": {
+        "windows": 30,
+        "clipped_balconies": 6,
+        "enclosed_galleries": 3,
+        "condensers": [
+          {
+            "u": -2.5971870470519973,
+            "floor": 1,
+            "template": 0
+          }
+        ]
+      },
       "frame": {
         "u": [
           -5.34385290847777,
@@ -4491,6 +7108,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -4.990519977764883,
+          "right": -2.9505199777648836,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -2.2438541163391106,
+          "right": -0.20385411633911077,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 3.3694788143737755,
+          "right": 5.02385290847777,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 3.0,
       "room": {
         "door_v": -0.45,
         "jamb_u": 0.14947881437377597,
@@ -4514,7 +7155,18 @@
       "name": "",
       "door_u": -2.4885759419560003,
       "plot_id": 72,
-      "front_stair_m": 2.36,
+      "facade_work": {
+        "windows": 24,
+        "clipped_balconies": 4,
+        "enclosed_galleries": 2,
+        "condensers": [
+          {
+            "u": 2.1735397791198094,
+            "floor": 1,
+            "template": 1
+          }
+        ]
+      },
       "frame": {
         "u": [
           -8.697771221271429,
@@ -4536,6 +7188,37 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -7.363173581613715,
+          "right": -5.323173581613714,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -0.4775180814180955,
+          "right": 1.5624819185819045,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 2.7845976396577137,
+          "right": 4.824597639657714,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": 6.0467133607335235,
+          "right": 8.086713360733524,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 2.36,
       "room": {
         "door_v": -0.45,
         "jamb_u": -1.0885759419560004,
@@ -4578,7 +7261,18 @@
       "name": "",
       "door_u": 1.4106924910843766,
       "plot_id": 73,
-      "front_stair_m": 3.96,
+      "facade_work": {
+        "windows": 24,
+        "clipped_balconies": 3,
+        "enclosed_galleries": 3,
+        "condensers": [
+          {
+            "u": -2.418747488537055,
+            "floor": 1,
+            "template": 2
+          }
+        ]
+      },
       "frame": {
         "u": [
           -4.8481874681584864,
@@ -4599,6 +7293,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -4.528187468158486,
+          "right": -2.7387474885370553,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -2.098747488537055,
+          "right": -0.30930750891562353,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 3.230692491084377,
+          "right": 4.528187468158486,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 3.96,
       "room": {
         "door_v": -0.45,
         "jamb_u": 0.010692491084376643,
@@ -4622,7 +7340,18 @@
       "name": "",
       "door_u": 2.14059359481864,
       "plot_id": 74,
-      "front_stair_m": 3.32,
+      "facade_work": {
+        "windows": 20,
+        "clipped_balconies": 2,
+        "enclosed_galleries": 2,
+        "condensers": [
+          {
+            "u": -3.3571917647668226,
+            "floor": 1,
+            "template": 0
+          }
+        ]
+      },
       "frame": {
         "u": [
           -7.454977124352285,
@@ -4643,6 +7372,30 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -6.426084444559553,
+          "right": -4.386084444559554,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -2.328299084974091,
+          "right": -0.2882990849740912,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": 4.527785359585463,
+          "right": 6.5677853595854625,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 3.32,
       "room": {
         "door_v": -0.45,
         "jamb_u": 0.7405935948186402,
@@ -4666,7 +7419,18 @@
       "name": "",
       "door_u": -2.502868393375855,
       "plot_id": 75,
-      "front_stair_m": 1.72,
+      "facade_work": {
+        "windows": 10,
+        "clipped_balconies": 2,
+        "enclosed_galleries": 1,
+        "condensers": [
+          {
+            "u": 2.1810263012921145,
+            "floor": 1,
+            "template": 1
+          }
+        ]
+      },
       "frame": {
         "u": [
           -8.748815690628053,
@@ -4688,6 +7452,37 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -7.395842042001954,
+          "right": -5.355842042001955,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": true
+        },
+        {
+          "left": -0.48092104604187025,
+          "right": 1.5590789539581298,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 2.8029736486260988,
+          "right": 4.842973648626099,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 6.086868343294068,
+          "right": 8.126868343294069,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 1.72,
       "room": {
         "door_v": -0.45,
         "jamb_u": -1.102868393375855,
@@ -4711,7 +7506,23 @@
       "name": "",
       "door_u": 1.3033729354784651,
       "plot_id": 76,
-      "front_stair_m": 2.36,
+      "facade_work": {
+        "windows": 24,
+        "clipped_balconies": 0,
+        "enclosed_galleries": 0,
+        "condensers": [
+          {
+            "u": -0.09662706452153458,
+            "floor": 1,
+            "template": 2
+          },
+          {
+            "u": -0.09662706452153458,
+            "floor": 4,
+            "template": 2
+          }
+        ]
+      },
       "frame": {
         "u": [
           -4.464903340994518,
@@ -4731,6 +7542,16 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -3.300765202758026,
+          "right": -1.260765202758026,
+          "sill": 0.77,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 2.36,
       "room": {
         "door_v": -0.45,
         "jamb_u": -0.0966270645215348,
@@ -4754,7 +7575,23 @@
       "name": "",
       "door_u": 2.7927238364102807,
       "plot_id": 77,
-      "front_stair_m": 3.96,
+      "facade_work": {
+        "windows": 56,
+        "clipped_balconies": 8,
+        "enclosed_galleries": 4,
+        "condensers": [
+          {
+            "u": -6.058434522173432,
+            "floor": 1,
+            "template": 0
+          },
+          {
+            "u": -6.058434522173432,
+            "floor": 4,
+            "template": 0
+          }
+        ]
+      },
       "frame": {
         "u": [
           -9.784013701465287,
@@ -4777,6 +7614,44 @@
         "transverse_drop": 0.32,
         "longitudinal_drop": 0.29
       },
+      "street_windows": [
+        {
+          "left": -8.94122411181936,
+          "right": -6.90122411181936,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -5.215644932527503,
+          "right": -3.175644932527504,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": -1.490065753235648,
+          "right": 0.5499342467643519,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 4.645546302674033,
+          "right": 6.685546302674032,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        },
+        {
+          "left": 7.391191235201536,
+          "right": 9.431191235201535,
+          "sill": 0.92,
+          "head": 2.16,
+          "shutter": false
+        }
+      ],
+      "front_stair_m": 3.96,
       "room": {
         "door_v": -0.45,
         "jamb_u": 1.3927238364102807,
@@ -12162,6 +15037,13 @@
       "height_scale": 0.6334453408118271
     }
   ],
+  "floor_contact_bake": {
+    "sample_positions": 100803,
+    "below_90_percent": 32846,
+    "darkest_linear_multiplier": 0.20242548993025533,
+    "rays_per_position": 16,
+    "radius_m": 1.15
+  },
   "interior_rail_return": {
     "original": "R24_LinkRail_R24_link_painted_rail",
     "replacement": "Outer500_LaundryRailReturn",

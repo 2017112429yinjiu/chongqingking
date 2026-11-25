@@ -212,7 +212,6 @@ def furnish(p, cuboid, solid, face, colors):
         bowl_x=aisle+3.68; bowl_y=front+1.68
         vessel(bowl_x,bowl_y,.86,[(0,.16),(.10,.12),(.16,.095)],"jade")
         vessel(bowl_x,bowl_y,1.02,[(0,.08),(.085,.25),(.104,.26)],"zinc")
-        rng=Random(184)
         for i,(x,y) in enumerate(((left+2.0,front+2.4),(left+2.0,front+5.25),(2.85,front+3.6),(right-2,front+2.5))):
             table(x,y,2.35,1.04,.83)
             for j in range(3):
@@ -220,11 +219,6 @@ def furnish(p, cuboid, solid, face, colors):
                 box(xx-.34,y-.44,.83,xx+.34,y+.44,.88,"wood")
                 for yy in (y-.43,y+.43):
                     for k in range(2):box(xx-.35,yy-.024,.87+.075*k,xx+.35,yy+.024,.925+.075*k,"wood")
-                for k in range(20):
-                    px,py=xx+rng.uniform(-.23,.23),y+rng.uniform(-.30,.30)
-                    tone=("greens","clay","gourd","greens")[(i+j)%4]
-                    sz=rng.uniform(.075,.117)
-                    vessel(px,py,.89+rng.uniform(0,.035),[(0,sz*.31),(.022,sz*.83),(.069,sz),(.110,sz*.89),(.143,sz*.48),(.147,sz*.19)],tone,14)
         table(left+1.2,back-1.0,1.55,.68,.82)
         box(left+.97,back-1.16,.82,left+1.32,back-.87,.93,"jade")
         vessel(left+1.15,back-1,.93,[(0,.09),(.105,.20),(.12,.21)],"zinc")
@@ -314,8 +308,14 @@ def domestic_bay(p, box, support, panel, vessel, table):
         else:
             # Slatted front, a recessed drum door, soap bottles and drying pole.
             cabinet(.18,front+1.61,.04,1.05,front+2.37,.91,"linen",True)
-            cabinet(.24,front+2.37,.13,.99,front+2.40,.75,"zinc")
-            cabinet(.35,front+2.40,.23,.88,front+2.42,.67,"rubber")
+            cabinet(.21,front+2.366,.69,1.02,front+2.403,.866,"zinc")
+            cabinet(.28,front+2.402,.745,.54,front+2.414,.825,"rubber")
+            for h,r,y0,key in ((.43,.278,2.395,"zinc"),(.43,.243,2.409,"rubber"),(.43,.203,2.416,"iron"),
+                              (.782,.049,2.418,"china")):
+                cx=edge-side*(.614 if h<.6 else .807)
+                ring=[(cx+r*cos(j*pi/16),front+y0,h+r*sin(j*pi/16)) for j in range(32)]
+                panel(ring,key);panel(ring[::-1],key)
+            cabinet(.75,front+2.417,.38,.815,front+2.455,.51,"zinc")
             for j in range(3):
                 pot(1.72+j*.37,front+.24,1.676,[(0,.067),(.17,.08),(.27,.044),(.30,.033)],("jade","china","clay")[j])
             cabinet(1.60,front+.48,1.43,2.81,front+.51,1.465,"zinc")

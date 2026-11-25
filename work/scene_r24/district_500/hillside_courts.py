@@ -1,6 +1,9 @@
 """Surveyed courts, timber galleries and shared paved access on the outer slopes."""
 from math import cos,sin,hypot,ceil,pi
 import numpy as np
+from pathlib import Path
+from runpy import run_path
+sleep_room=run_path(str(Path(__file__).with_name('house_finishes.py')))['sleep_room']
 
 
 def world(p,u,v):
@@ -54,9 +57,10 @@ def build_court(p,box,face,ground,c):
     def block(x0,v0,h0,x1,v1,h1,material,physical=True):
         a,b=sorted((k*x0,k*x1))
         box(center+a,d+v0,z+h0,center+b,d+v1,z+h1,c[material],physical)
-    def skin(points,key):
+    def skin(points,key,uvs=None):
         verts=[(center+k*x,d+v,z+h) for x,v,h in points]
-        face(verts if k>0 else verts[::-1],c[key])
+        mat=c[key] if isinstance(key,str) else key
+        face(verts if k>0 else verts[::-1],mat,uvs if k>0 or uvs is None else uvs[::-1])
     # Paving, foundations and side retaining faces are bounded by the same slab.
     foot=min(ground(center+k*x,d+v)-z for x in (-w,0,w) for v in (.1,6,12.8))-.32
     block(-w,0,foot,w,12.85,.065,"wallstone")
@@ -143,6 +147,7 @@ def build_court(p,box,face,ground,c):
                 x=lo+j*.25
                 skin([(x-.039,a,za+.01),(x,a,za+.044),(x,b,zb+.044),(x-.039,b,zb+.01)],"tile")
         block(lo-.12,end-.28,head-.12,hi+.12,end+.17,head,"wood",False)
+        sleep_room(p,lo,hi,front,floor,block,skin,c,i)
         # Interior platform bed, quilt and small table are set away from the threshold.
         bedx=hi-2.12
         for xx in (bedx+.07,hi-.39):

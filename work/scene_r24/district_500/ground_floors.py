@@ -2,7 +2,7 @@
 
 
 
-def through_floor(p, draw, ground, mats):
+def through_floor(p, draw, ground, mats, wall_pieces):
     w, d, z = p["width"], p["depth"], p["height"]
     left, right, front, back = -w/2, w/2, -d/2, d/2
     mid = p["door_u"]
@@ -10,6 +10,10 @@ def through_floor(p, draw, ground, mats):
     wall, stone, masonry, slab, lining = mats
     crown = z+2.82
     for edge in (front, back-.23):
+        if not p["name"] and edge==front:
+            for a,b,h0,h1 in wall_pieces(p):
+                draw(a,edge,z+h0,b,edge+.23,z+h1,wall)
+            continue
         if p["name"] and edge==front:
             draw(left,edge,z,left+.49,edge+.28,crown,wall)
             draw(right-.49,edge,z,right,edge+.28,crown,wall)
