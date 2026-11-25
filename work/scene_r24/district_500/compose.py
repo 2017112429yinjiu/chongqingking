@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 
 import bpy
+import bmesh
 
 here = Path(__file__).resolve().parent
 root = here.parents[2]
@@ -35,6 +36,21 @@ for item in bpy.context.scene.objects:
             item.name.startswith("Context_") and any(mark in item.name for mark in retired)):
         item.hide_set(True)
         item.hide_render=True
+    if item.name.startswith(tuple(layout.get("retired_context_prefixes", []))):
+        item.hide_set(True)
+        item.hide_render=True
+    if item.name=="R21_Rooftop_stairheads" and layout.get("retired_roof_positions"):
+        piece=bmesh.new()
+        piece.from_mesh(item.data)
+        unwanted=[]
+        for face in piece.faces:
+            v=item.matrix_world @ face.calc_center_median()
+            if any(abs(v.x-x)<2.35 and abs(v.y+south)<1.65 and up-.10<v.z<up+4.65
+                   for x,up,south in layout["retired_roof_positions"]):
+                unwanted.append(face)
+        bmesh.ops.delete(piece,geom=unwanted,context="FACES")
+        piece.to_mesh(item.data)
+        piece.free()
 
 with bpy.data.libraries.load(str(here / "outer_district.blend"), link=True, relative=True) as (source,draft):
     draft.objects=list(source.objects)

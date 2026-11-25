@@ -30,6 +30,15 @@ static func install(city: Node3D) -> Dictionary:
 		if bank:
 			(bank.get_surface_override_material(0) as ShaderMaterial).set_shader_parameter("outer_district_cut", true)
 	var layout: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(LAYOUT))
+	var prefixes: Array = layout.get("retired_context_prefixes", [])
+	for prior: MeshInstance3D in city.find_children("Context_*","MeshInstance3D",true,false):
+		for prefix: String in prefixes:
+			if str(prior.name).begins_with(prefix):
+				prior.hide()
+				break
+	var roofs := city.find_child("R21_Rooftop_stairheads",true,false) as MeshInstance3D
+	if roofs and not layout.get("retired_roof_positions",[]).is_empty():
+		trim_roofs(roofs,layout.retired_roof_positions)
 	var trunks := StaticBody3D.new()
 	trunks.name = "OuterDistrictTreeTrunks"
 	trunks.collision_layer = 1
@@ -79,6 +88,31 @@ static func install(city: Node3D) -> Dictionary:
 	return {"bounds_east_north_m": layout.bounds_east_north_m,
 		"glb_sha256": FileAccess.get_sha256(MODEL), "retired_internal_context": local_frame != null, "osm_building_ids": retire}
 
+
+static func trim_roofs(node: MeshInstance3D, anchors: Array) -> void:
+	var original := node.mesh
+	var retained := ArrayMesh.new()
+	for surface in original.get_surface_count():
+		var arrays := original.surface_get_arrays(surface)
+		var positions: PackedVector3Array = arrays[Mesh.ARRAY_VERTEX]
+		var indices: PackedInt32Array = arrays[Mesh.ARRAY_INDEX]
+		if indices.is_empty():
+			indices=PackedInt32Array(range(positions.size()))
+		var keep := PackedInt32Array()
+		for i in range(0,indices.size(),3):
+			var center := node.to_global((positions[indices[i]]+positions[indices[i+1]]+positions[indices[i+2]])/3.0)
+			var removed := false
+			for a: Array in anchors:
+				if absf(center.x-a[0])<2.35 and absf(center.z-a[2])<1.65 and center.y>a[1]-.10 and center.y<a[1]+4.65:
+					removed=true
+					break
+			if not removed:
+				keep.append_array(indices.slice(i,i+3))
+		if not keep.is_empty():
+			arrays[Mesh.ARRAY_INDEX]=keep
+			retained.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES,arrays)
+			retained.surface_set_material(retained.get_surface_count()-1,node.get_active_material(surface))
+	node.mesh=retained
 
 static func start_exploration(scene: Node3D) -> void:
 	var collision := preload("res://scripts/build_collisions.gd")

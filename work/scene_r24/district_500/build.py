@@ -86,6 +86,14 @@ white = material("Off-white road pigment", (.74,.70,.57))
 dark = material("Door and shutter recess", (.092,.086,.074))
 leaf = [material("Canopy " + str(i), col) for i,col in enumerate(((.13,.23,.089),(.20,.30,.12),(.26,.32,.12)))]
 waterfront = material("Washed bank aggregate", (.47,.40,.29), "leaf_scattered_gravel_diff_2k.jpg")
+room_finish = {"lime":cream,"dado":material("Cream glazed wall skirting",(.46,.43,.34),"tile_cream_v4_diff.jpg"),
+               "stone":concrete,"tile":roof,"wood":material("Worn timber joinery",(.23,.14,.071),"wood_table_worn_diff_2k.jpg"),
+               "iron":dark,"zinc":material("Weathered sheet metal",(.20,.21,.195)),
+               "canopy":material("Faded covered market roofing",(.18,.22,.17)),
+               "rubber":material("Used tyre casing",(.022,.022,.020)),
+               "clay":material("Brown earthenware",(.31,.115,.051)),"china":cream_metal,
+               "jade":green,"greens":leaf[1],"gourd":ochre}
+indoor_floor=material("Worn concrete floors",(.36,.34,.31),"concrete_floor_worn_001_diff_2k.jpg")
 
 class Geometry:
     def __init__(self, name):
@@ -349,6 +357,10 @@ def tree(x,y,r):
                        "species":int(mean[0]>0), "width_scale":float(r*mean[3]),
                        "height_scale":float(r*mean[2]/4.1)})
 
+from runpy import run_path
+through_floor = run_path(str(HERE / "ground_floors.py"))["through_floor"]
+furnish = run_path(str(HERE / "shop_rooms.py"))["furnish"]
+plots = []
 occupied=[]
 destinations=[]
 def building(x,y,angle,w,d,floors,kind,named=""):
@@ -369,7 +381,20 @@ def building(x,y,angle,w,d,floors,kind,named=""):
     ry=-d/2
     top=base+floors*2.95
     box(blocks,frame,-w/2,ry,min(levels)-.35,w/2,d/2,base,rock)
-    box(blocks,frame,-w/2,ry,base,w/2,d/2,top,facade)
+    portal = {"南区路车棚修理铺":0.0,"照相巷便民市场":-.78,"江岸茶摊":-1.65}.get(named, (.14 if kind%2 else -.14)*w)
+    plot = {"east_north":[float(x),float(y)], "bearing":angle, "width":w, "depth":d,
+            "height":base, "roof":top, "floors":floors, "kind":kind, "name":named, "door_u":portal}
+    plots.append(plot)
+    def draw(*dims):
+        box(blocks,frame,*dims)
+    def ground(u,v):
+        return height(*frame(u,v,0)[:2])
+    through_floor(plot,draw,ground,(facade,stone,rock,concrete,indoor_floor))
+    def fitting(*dims):
+        box(street,frame,*dims)
+    def fit_face(local,mat):
+        street.face([frame(*p) for p in local],mat)
+    furnish(plot,fitting,draw,fit_face,room_finish)
     box(facades,frame,-w/2-.21,ry-.22,top-.12,w/2+.21,d/2+.22,top+.20,concrete)
     if floors<=3 and kind!=2:
         for side in (-1,1):
@@ -390,6 +415,10 @@ def building(x,y,angle,w,d,floors,kind,named=""):
         z=base+floor*2.95
         for bay in range(bays):
             u=(bay+.5)*w/bays-w/2
+            if floor==0 and named:
+                continue
+            if floor==0 and abs(u-portal)<(1.92 if named else 1.08) + w/bays*.45:
+                continue
             if floor==0 and (named or kind in (0,2)):
                 span=min(1.3,w/bays*.44)
                 box(facades,frame,u-span,ry-.11,z+.06,u+span,ry-.017,z+2.30,dark)
@@ -441,12 +470,6 @@ def building(x,y,angle,w,d,floors,kind,named=""):
                     box(solid,frame,lane-span,outer,bottom,lane+span,front,step_level,stone)
         box(facades,frame,-w/2+.7,ry-.22,base+2.18,w/2-.7,ry-.03,base+2.87,
             (rust,green,tile,concrete)[kind])
-        for u in (-w/2+.85,w/2-.85):
-            box(street,frame,u-.09,ry-1.80,base-.06,u+.09,ry-1.62,base+2.55,cream_metal)
-        canopy=[frame(-w/2+.65,ry,base+2.78),frame(-w/2+.65,ry-1.80,base+2.48),
-                frame(w/2-.65,ry-1.80,base+2.48),frame(w/2-.65,ry,base+2.78)]
-        facades.face(canopy,(ochre,green,tile,rust)[kind])
-        facades.face(canopy[::-1],(ochre,green,tile,rust)[kind])
         display_z=base+.02
         if named.endswith("市场"):
             for u,cloth in ((-2.6,ochre),(1.1,green),(5.9,rust)):
@@ -667,7 +690,6 @@ for key in (49182408,1189963598,176034707,830761786):
                 continue
             band(verges,p,q,height(*p)+.025,height(*q)+.025,.12,white)
 
-from runpy import run_path
 run_path(str(HERE / "planting.py"))["place_trees"](ASSETS, tree_sites, materials, material)
 for batch in (blocks,facades,street,solid,verges,skirt):
     batch.finish()
@@ -677,6 +699,8 @@ bpy.context.preferences.filepaths.save_version=0
 bpy.ops.wm.save_as_mainfile(filepath=str(HERE / "outer_district.blend"),compress=True)
 bpy.ops.export_scene.gltf(filepath=str(OUT / "outer_district.glb"),export_format="GLB",
                           export_yup=True,export_cameras=False,export_lights=False)
+old_meshes=json.loads((HERE.parents[1] / "scene_r21/district_rays.json").read_text(encoding="utf-8-sig"))["meshes"]
+prefixes, roof_cuts = run_path(str(HERE/"context_owners.py"))["conflicting_context"](plots,old_meshes,legacy_roofs,mapped_buildings)
 (OUT / "layout.json").write_text(json.dumps({
     "bounds_east_north_m":[-250,-250,250,250],
     "projection_origin_wgs84":[osm["center_lon"],osm["center_lat"]],
@@ -684,6 +708,6 @@ bpy.ops.export_scene.gltf(filepath=str(OUT / "outer_district.glb"),export_format
     "osm_road_ids":mapped_ids,"river_relation":river["river_relation"],
     "attribution":"© OpenStreetMap contributors, ODbL-1.0",
     "inferred_alignments":design,"registered_ties":ties,"destinations":destinations,
-    "osm_building_ids":mapped_buildings,
+    "osm_building_ids":mapped_buildings,"plots":plots,"retired_context_prefixes":prefixes,"retired_roof_positions":roof_cuts,
     "building_count":len(occupied),"collidable_surface_tiles":len(chunks),"planting":tree_sites,
 },ensure_ascii=False,indent=2)+"\n")
