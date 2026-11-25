@@ -35,6 +35,8 @@
 
 首轮校门视线在 0.88 米处、院口视线在 0.99 米处命中同一旧远景体块。撤下重复体块后按固定机位重拍。初版校舍后门接坡移动出现约 0.31 米的单帧跃变，之后重做后门外踏步；首轮碰撞检查也因仅查有属主的节点漏报三个运行时碰撞体，修正后逐体重查。复核楼层用途后将图书馆移至二楼并接通内梯。[原遮挡画面](evidence/first_obstructed_view.png) · [视线命中](evidence/first_sightlines.json) · [首轮步行](evidence/first_walk.json)
 
+原 200 米城区在这次制作提交的独立巡检 authentic_courts_release_02 中，导师走完 14 条双向路线，玩家走完 26 条地面骑行路线的去回程，六处院口梯坎完成 18 次步行往返。同次三个旧城机位各采 150 帧，机型和内部分辨率写在采样文件中。[旧城巡检汇总](evidence/patrol_25b.json) · [三个旧城机位计时](evidence/original_district_timing.json)
+
 ## 可编辑工程与复验
 
 [本批 Blender 源](delivery_courts.blend)保留两翼、校舍、结构、家具和铺地。[新区地形源](../district_500/outer_district.blend)保留旧建筑退场后的地形。运行端使用 historic_courts.glb 与 outer_district.glb，并在正常城区创建通行碰撞。
