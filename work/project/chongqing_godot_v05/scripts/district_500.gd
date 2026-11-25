@@ -7,6 +7,8 @@ static func install(city: Node3D) -> Dictionary:
 	var district := (load(MODEL) as PackedScene).instantiate() as Node3D
 	district.name = "OuterDistrict500"
 	city.add_child(district)
+	var low_landing := (load("res://assets/district_500/landing_53.glb") as PackedScene).instantiate() as Node3D
+	district.add_child(low_landing)
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))

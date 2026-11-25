@@ -61,5 +61,8 @@ collection=bpy.data.collections.new("500 m playable expansion")
 bpy.context.scene.collection.children.link(collection)
 for obj in draft.objects:
     collection.objects.link(obj)
+with bpy.data.libraries.load(str(here.parent/"outer_neighborhood/landing_53.blend"),link=True,relative=True) as (source,landing):
+    landing.objects=["COL_Outer500_53_LowLanding"]
+collection.objects.link(landing.objects[0])
 bpy.context.preferences.filepaths.save_version=0
 bpy.ops.wm.save_as_mainfile(filepath=str(here / "city_and_outer.local.blend"),relative_remap=True,compress=True)
