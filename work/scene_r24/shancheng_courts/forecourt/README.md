@@ -22,4 +22,10 @@
 
 Blender 4.3.2 重新打开了可编辑源和整城组合。两棵树根底部分别埋入土面 3.32 和 3.35 厘米。桌和两把折椅共 12 个支脚，相对可见铺地的实测偏差为 −1.2 至 +13.2 毫米。树干、座椅占位和盆底使用独立碰撞，枝叶保持可穿过。[逐脚与树根数据](evidence/source.json)
 
-复验命令沿用[本区运行说明](../README.md)。启动脚本、角色和公共交接点均与正式试玩共用。可编辑校舍和院坝见 [delivery_courts.blend](../delivery_courts.blend)。
+在最终运行版本上独立执行旧城巡检 jinma_court_finish_04。导师完成 14 条路线的 28 段骑行，玩家完成原 26 条地面骑行路线的全部去程和回程，六处修过的院口完成 18 次步行往返。[旧城全路网与接缝汇总](evidence/original_district.json)
+
+在 RTX 4070 Laptop、Forward+、1152 × 648 窗口和 692 × 389 渲染视口下，单独对收件院口、校门和图书馆楼梯口各采 150 帧。三个机位的 GPU 帧时间 P95 分别为 8.50、6.49、7.44 毫秒。[原始采样](evidence/timing.json)
+
+复验命令沿用[本区运行说明](../README.md)。Windows 两次旧城复跑在转角机位报着色器缓存目录创建错误，移动断言本身通过。现在脚本会报告引擎日志中的错误并逐个核对八个固定机位和连续帧。深目录可用 --user-data 指定短的全新目录，例如 .cloud-dev/jf5b。[此前报错原文](evidence/cache_trials.json) · [短路径复跑、截图指纹与逐项日志检查](evidence/capture.json)
+
+启动脚本、角色和公共交接点均与正式试玩共用。可编辑校舍和院坝见 [delivery_courts.blend](../delivery_courts.blend)。

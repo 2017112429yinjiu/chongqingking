@@ -1,5 +1,7 @@
 # Chongqing district continuation
 
+- On the 500 m trial branch the active Shancheng delivery court uses the Renai wings and Jinma school. Read the Shancheng section of the game’s docs/DISTRICT_PRODUCTION_STANDARD.md and work/scene_r24/shancheng_courts/forecourt/README.md. The 71 pending old plots are recorded in shancheng_courts/evidence/inventory.json. Reopen delivery_courts.blend with Blender 4.3.2 and run shancheng_courts/verify.py with Godot 4.6.3, a fresh output and --capture. Keep the two rejected court views and the full pickup-to-library walk with subsequent work.
+
 - The 500 m prototype now uses mapped Shancheng Lane, four registered one-storey houses and an optional two-route handoff. Read work/scene_r24/street_blocks/README.md. Future expansion must trace actual Chongqing building groups to source polygons or a registered site model. Preserve the prior failed walks, player views, park boundary and footprint attribution.
 
 

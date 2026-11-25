@@ -12,6 +12,7 @@ game=root/"work/project/chongqing_godot_v05"
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument("--output",required=True,type=Path)
+    parser.add_argument("--user-data",type=Path,help="Fresh user-data root, useful for short Windows shader-cache paths.")
     parser.add_argument("--godot",default="godot")
     parser.add_argument("--blender",default="blender")
     parser.add_argument("--capture",action="store_true",help="Capture the continuous player camera and fixed views with a graphics display.")
@@ -19,8 +20,8 @@ def main():
     output=args.output.resolve()
     output.mkdir(parents=True,exist_ok=False)
     env=os.environ.copy()
-    user=output/"user"
-    user.mkdir()
+    user=args.user_data.resolve() if args.user_data else output/"user"
+    user.mkdir(parents=True,exist_ok=False)
     env.update(APPDATA=str(user),XDG_DATA_HOME=str(user))
     def run(name,argv,extra=None):
         folder=output/name
@@ -28,6 +29,11 @@ def main():
         with (folder/"console.log").open("wb") as log:
             subprocess.run(argv,cwd=root,env=dict(env,CQ_QA_DIR=str(folder),**(extra or {})),
                            stdout=log,stderr=subprocess.STDOUT,check=True)
+        if argv[0]==args.godot:
+            errors=[line for line in (folder/"console.log").read_text(encoding="utf-8",errors="replace").splitlines()
+                    if line.startswith(("ERROR:","SCRIPT ERROR:","SHADER ERROR:"))]
+            if errors:
+                raise RuntimeError(f"{folder}: {errors[0]}")
         return folder
     for executable,expected in ((args.blender,"Blender 4.3.2"),(args.godot,"4.6.3")):
         version=subprocess.check_output([executable,"--version"],text=True,encoding="utf-8",errors="replace")
@@ -47,9 +53,14 @@ def main():
         checks=data["checks"] if isinstance(data,dict) else data
         if not checks or not all(check["pass"] for check in checks):
             raise RuntimeError(f"Incomplete survey: {folder}")
+        if graphics and (data["images"] < 2 or len(list(folder.glob("walk_*.jpg")))!=data["images"]):
+            raise RuntimeError(f"Missing frames in {folder}")
         results[script.stem]=len(checks)
     if args.capture:
-        run("views",[args.godot,"--resolution","1152x648",*common,"--script",str(here/"views.gd"),*flags])
+        views=run("views",[args.godot,"--resolution","1152x648",*common,"--script",str(here/"views.gd"),*flags])
+        for name in ("from_pickup","lane_front","school_entry","school_door_detail","school_seating","long_hall","reading_room","upper_court"):
+            if not (views/f"{name}.png").is_file():
+                raise RuntimeError(f"Missing {name} in {views}")
     print(json.dumps(results))
 
 if __name__=="__main__":

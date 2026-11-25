@@ -1,0 +1,31 @@
+{
+  "adapter": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "engine": "4.6.3-stable (official)",
+  "render_method": "forward_plus",
+  "scale_3d": 1.0,
+  "viewport": "(692.0, 389.0)",
+  "views": [
+    {
+      "gpu_p50_ms": 8.14299964904785,
+      "gpu_p95_ms": 8.49699974060059,
+      "samples": 150,
+      "view": "delivery_court",
+      "wall_p95_ms": 10.054
+    },
+    {
+      "gpu_p50_ms": 6.06699991226196,
+      "gpu_p95_ms": 6.49100017547607,
+      "samples": 150,
+      "view": "school_gate",
+      "wall_p95_ms": 7.345
+    },
+    {
+      "gpu_p50_ms": 7.09800004959106,
+      "gpu_p95_ms": 7.44099998474121,
+      "samples": 150,
+      "view": "library_landing",
+      "wall_p95_ms": 8.739
+    }
+  ],
+  "window": "(1152, 648)"
+}

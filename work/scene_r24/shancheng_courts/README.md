@@ -45,7 +45,7 @@
 
 重新制作用 register.py 按原图像素与步道坐标生成 registered.json，在 Blender 4.3.2 后台执行 district_500/build.py 生成新区地形，再打开其 outer_district.blend 执行本目录 architecture.py 导出独立增量。整城编辑时从 district_patrol/city_and_patrol.blend 执行 district_500/compose.py。重建后可运行 inventory.py 更新清单。以上 Python 数据处理使用 NumPy。
 
-从仓库根目录运行以下命令复验。工具可在 PATH 中，或用 --godot 与 --blender 指定可执行文件绝对路径。每次使用新目录。有显示设备时加 --capture，可取得连续玩家画面和六个原生机位。
+从仓库根目录运行以下命令复验。工具可在 PATH 中，或用 --godot 与 --blender 指定可执行文件绝对路径。每次使用新目录。有显示设备时加 --capture，可取得连续玩家画面和八个原生机位。在 Windows 深目录复验可加 --user-data .cloud-dev/qa01，使用短的独立缓存路径。
 
 ```sh
 python work/scene_r24/shancheng_courts/verify.py --output .cloud-dev/shancheng-courts/new-survey --capture
