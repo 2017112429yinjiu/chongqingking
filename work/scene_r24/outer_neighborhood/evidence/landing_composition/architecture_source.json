@@ -1,0 +1,40 @@
+{
+  "blender": "4.3.2",
+  "condensers": 104,
+  "wall_brackets": 208,
+  "mount_overlap_min_max_m": [
+    0.006984524545259774,
+    0.00702618072682526
+  ],
+  "foot_pad_samples": 208,
+  "max_measured_foot_gap_m": 1.8310546892053026e-06,
+  "failures": [],
+  "exported_floor_primitives_with_colour_and_texture": 87,
+  "contact_bake": {
+    "sample_positions": 100803,
+    "below_90_percent": 32846,
+    "darkest_linear_multiplier": 0.20242548993025533,
+    "rays_per_position": 16,
+    "radius_m": 1.15
+  },
+  "pierced_upper_windows": 2272,
+  "projecting_balconies": 369,
+  "enclosed_balconies": 220,
+  "service_recesses": [
+    {
+      "u": 10.620000000000001,
+      "recess_m": 0.32,
+      "clear_height_m": 1.7800000000000011
+    },
+    {
+      "u": -9.120000000000001,
+      "recess_m": 0.32,
+      "clear_height_m": 1.7800000000000011
+    },
+    {
+      "u": -8.620000000000001,
+      "recess_m": 0.32,
+      "clear_height_m": 1.78
+    }
+  ]
+}

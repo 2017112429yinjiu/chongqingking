@@ -1,0 +1,43 @@
+{
+  "engine": "4.3.2",
+  "source": "work/scene_r24/district_500/city_and_outer.local.blend",
+  "libraries": [
+    "work/scene_r24/courtyard_life/black.blend",
+    "work/scene_r24/courtyard_life/kitchen/greens.blend",
+    "work/scene_r24/courtyard_life/red.blend",
+    "work/scene_r24/district_500/outer_district.blend",
+    "work/scene_r24/outer_neighborhood/landing_53.blend"
+  ],
+  "external_image_count": 13,
+  "trees": 302,
+  "unique_tree_meshes": 2,
+  "registered_rooftop_supports": [
+    {
+      "donor": "Context_809889594_tile_cream",
+      "east_north": [
+        146.29680215766493,
+        215.19884006561378
+      ],
+      "fixture_base_m": 104.24019622802734,
+      "roof_m": 104.24019622802734
+    },
+    {
+      "donor": "Context_809889602_plaster_grey",
+      "east_north": [
+        -112.76912403563901,
+        213.70582937794023
+      ],
+      "fixture_base_m": 95.07402038574219,
+      "roof_m": 95.07402038574219
+    },
+    {
+      "donor": "Context_809889621_plaster_grey",
+      "east_north": [
+        187.01966113652415,
+        145.74603838904255
+      ],
+      "fixture_base_m": 72.9407958984375,
+      "roof_m": 72.9407958984375
+    }
+  ]
+}
