@@ -12,6 +12,8 @@ static func install(city: Node3D) -> Dictionary:
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
 	var textures := {
 		"asphalt": "asphalt_02_diff_1k.jpg",
+		"asphalt_normal": "asphalt_02_nor_gl_1k.jpg",
+		"asphalt_rough": "asphalt_02_rough_1k.png",
 		"paving": "stone_floor_diff_2k.jpg",
 		"soil": "brown_mud_leaves_01_diff_2k.jpg",
 		"aggregate": "leaf_scattered_gravel_diff_2k.jpg",
@@ -28,6 +30,31 @@ static func install(city: Node3D) -> Dictionary:
 		if bank:
 			(bank.get_surface_override_material(0) as ShaderMaterial).set_shader_parameter("outer_district_cut", true)
 	var layout: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(LAYOUT))
+	var trunks := StaticBody3D.new()
+	trunks.name = "OuterDistrictTreeTrunks"
+	trunks.collision_layer = 1
+	trunks.collision_mask = 0
+	district.add_child(trunks)
+	# Near trees keep the scanned leaves. Beyond the pavement use the same species'
+	# four-direction atlas as the existing hillside, grouped into small street cells.
+	var distant_trees := []
+	var tree_data: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://assets/district_r21/layout.json"))
+	for plant: MeshInstance3D in district.find_children("Outer500_Plant_*", "MeshInstance3D", true, false):
+		plant.lod_bias = 5.0
+		plant.visibility_range_end = 38.0
+	for tree: Dictionary in layout.get("planting", []):
+		var p: Array = tree.east_north_up
+		var cylinder := CylinderShape3D.new()
+		cylinder.radius = 0.13 * tree.width_scale
+		cylinder.height = 1.8 * tree.height_scale
+		var shape := CollisionShape3D.new()
+		shape.shape = cylinder
+		shape.position = Vector3(p[0], p[2] + cylinder.height / 2.0, -p[1])
+		trunks.add_child(shape)
+		var scan_height := 4.54 if int(tree.species) == 0 else 5.02
+		distant_trees.append({"position":[p[0], p[2], -p[1]], "height":scan_height * float(tree.height_scale),
+			"kind":tree.species, "yaw":deg_to_rad(tree.rotation_deg), "shade":0.94})
+	preload("res://scripts/district_r21.gd").install_canopy(district, distant_trees, tree_data.canopy_pivots, 8.0, 34.0)
 	var retire: Array = layout.get("osm_building_ids", [])
 	for id: int in retire:
 		for prior: Node3D in city.find_children("Context_*%s_*" % id, "MeshInstance3D", true, false):

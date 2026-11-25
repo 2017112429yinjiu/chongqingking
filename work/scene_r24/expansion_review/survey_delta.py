@@ -47,7 +47,8 @@ def main():
         group["before_hit_any"] += bool(previous)
         group["after_hit_any"] += bool(hits)
         # The old core owns its interior. The shared boundary belongs to both surfaces.
-        if extent < 100 and previous != hits:
+        # Coplanar surfaces can be returned in either order by the physics server.
+        if extent < 100 and sorted(previous) != sorted(hits):
             core_changes.append([x, z, previous, hits])
         if zone == "outer_land" and not hits:
             misses.append([x, z])

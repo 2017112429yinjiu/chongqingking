@@ -5,7 +5,7 @@ const MODEL:="res://assets/district_r21/terraces.glb"
 static func point(a: Array) -> Vector3:
 	return Vector3(a[0],a[1],a[2])
 
-static func install(city: Node3D) -> Dictionary:
+static func install(city: Node3D, planted_extent_m: float = 0.0) -> Dictionary:
 	var data: Dictionary=JSON.parse_string(FileAccess.get_file_as_string(LAYOUT))
 	var group:=Node3D.new()
 	group.name="DistrictEnvironmentR21"
@@ -39,43 +39,12 @@ static func install(city: Node3D) -> Dictionary:
 			shape.shape=cylinder
 			body.add_child(shape)
 			shape.position.y=cylinder.height*.5
-	var sectors: Dictionary={}
-	var plane:=QuadMesh.new()
-	plane.size=Vector2.ONE
-	plane.center_offset=Vector3(0,.48,0)
-	var leaves:=ShaderMaterial.new()
-	leaves.shader=preload("res://shaders/canopy_r21.gdshader")
-	leaves.set_shader_parameter("atlas",load("res://assets/district_r21/canopy_atlas.png"))
-	plane.material=leaves
-	for tree: Dictionary in data.outer_canopy:
-		var pos:=point(tree.position)
-		var cell:=Vector2i(floori(pos.x/62.),floori(pos.z/62.))
-		if not sectors.has(cell):sectors[cell]=[]
-		sectors[cell].append(tree)
-	for cell: Vector2i in sectors:
-		var plants: Array=sectors[cell]
-		var batch:=MultiMesh.new()
-		batch.transform_format=MultiMesh.TRANSFORM_3D
-		batch.use_custom_data=true
-		batch.mesh=plane
-		batch.instance_count=plants.size()
-		var min_bound:=Vector3(INF,INF,INF)
-		var max_bound:=-min_bound
-		for i in plants.size():
-			var tree: Dictionary=plants[i]
-			var kind: String="tree_small_02" if tree.kind==0 else "island_tree_01"
-			var width: float=tree.height*data.canopy_pivots[kind].frame_width_over_height
-			var pos:=point(tree.position)
-			batch.set_instance_transform(i,Transform3D(Basis.IDENTITY.scaled(Vector3.ONE*width),pos))
-			batch.set_instance_custom_data(i,Color(fposmod(float(tree.yaw)/TAU,1.),float(tree.kind),float(tree.shade),1.))
-			min_bound=min_bound.min(pos-Vector3(width*.71,width*.04,width*.71))
-			max_bound=max_bound.max(pos+Vector3(width*.71,width,width*.71))
-		var patch:=MultiMeshInstance3D.new()
-		patch.name="Hillside_%d_%d"%[cell.x,cell.y]
-		patch.multimesh=batch
-		patch.custom_aabb=AABB(min_bound,max_bound-min_bound)
-		patch.cast_shadow=GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
-		group.add_child(patch)
+	var background: Array = data.outer_canopy
+	if planted_extent_m > 0.0:
+		background = background.filter(func(tree: Dictionary):
+			var p := point(tree.position)
+			return maxf(absf(p.x), absf(p.z)) > planted_extent_m)
+	var exterior_sectors := install_canopy(group, background, data.canopy_pivots, 62.0)
 	var paving:=ShaderMaterial.new()
 	paving.shader=preload("res://shaders/paving_r21.gdshader")
 	paving.set_shader_parameter("worn_floor",load("res://assets/street_r19/street_life_concrete_floor_worn_001_diff_2k.jpg"))
@@ -132,4 +101,45 @@ static func install(city: Node3D) -> Dictionary:
 		elif label.begins_with("COL_Walk_") and label.ends_with("step_concrete"):
 			mesh.set_surface_override_material(0,stair)
 			changed.append(label)
-	return {"layout_sha256":FileAccess.get_sha256(LAYOUT),"layer_sha256":FileAccess.get_sha256(MODEL),"paving":changed,"weathered_shell_surfaces":weathered_surfaces,"weather_atlas_sha256":FileAccess.get_sha256("res://assets/district_r21/wall_runoff.png"),"near_plantings":data.trees_and_shrubs.size(),"exterior_trees":data.outer_canopy.size(),"exterior_sectors":sectors.size(),"terraces":data.terraces.size(),"roof_structures":data.rooftops.size(),"window_fittings":data.get("facades",[]).size()}
+	return {"layout_sha256":FileAccess.get_sha256(LAYOUT),"layer_sha256":FileAccess.get_sha256(MODEL),"paving":changed,"weathered_shell_surfaces":weathered_surfaces,"weather_atlas_sha256":FileAccess.get_sha256("res://assets/district_r21/wall_runoff.png"),"near_plantings":data.trees_and_shrubs.size(),"exterior_trees":background.size(),"exterior_sectors":exterior_sectors,"terraces":data.terraces.size(),"roof_structures":data.rooftops.size(),"window_fittings":data.get("facades",[]).size()}
+
+static func install_canopy(group: Node3D, trees: Array, pivots: Dictionary, cell_size: float, begin_distance: float = 0.0) -> int:
+	var sectors: Dictionary={}
+	var plane:=QuadMesh.new()
+	plane.size=Vector2.ONE
+	plane.center_offset=Vector3(0,.48,0)
+	var leaves:=ShaderMaterial.new()
+	leaves.shader=preload("res://shaders/canopy_r21.gdshader")
+	leaves.set_shader_parameter("atlas",load("res://assets/district_r21/canopy_atlas.png"))
+	plane.material=leaves
+	for tree: Dictionary in trees:
+		var pos:=point(tree.position)
+		var cell:=Vector2i(floori(pos.x/cell_size),floori(pos.z/cell_size))
+		if not sectors.has(cell):sectors[cell]=[]
+		sectors[cell].append(tree)
+	for cell: Vector2i in sectors:
+		var plants: Array=sectors[cell]
+		var batch:=MultiMesh.new()
+		batch.transform_format=MultiMesh.TRANSFORM_3D
+		batch.use_custom_data=true
+		batch.mesh=plane
+		batch.instance_count=plants.size()
+		var min_bound:=Vector3(INF,INF,INF)
+		var max_bound:=-min_bound
+		for i in plants.size():
+			var tree: Dictionary=plants[i]
+			var kind: String="tree_small_02" if tree.kind==0 else "island_tree_01"
+			var width: float=tree.height*pivots[kind].frame_width_over_height
+			var pos:=point(tree.position)
+			batch.set_instance_transform(i,Transform3D(Basis.IDENTITY.scaled(Vector3.ONE*width),pos))
+			batch.set_instance_custom_data(i,Color(fposmod(float(tree.yaw)/TAU,1.),float(tree.kind),float(tree.shade),1.))
+			min_bound=min_bound.min(pos-Vector3(width*.71,width*.04,width*.71))
+			max_bound=max_bound.max(pos+Vector3(width*.71,width,width*.71))
+		var patch:=MultiMeshInstance3D.new()
+		patch.name="Hillside_%d_%d"%[cell.x,cell.y]
+		patch.visibility_range_begin = begin_distance
+		patch.multimesh=batch
+		patch.custom_aabb=AABB(min_bound,max_bound-min_bound)
+		patch.cast_shadow=GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+		group.add_child(patch)
+	return sectors.size()

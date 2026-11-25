@@ -6,7 +6,7 @@ import bpy
 
 here = Path(__file__).resolve().parent
 root = here.parents[2]
-refs = json.loads((root / "docs/version-control/blender-source-check.json").read_text())["reference_paths"]
+refs = json.loads((root / "docs/version-control/blender-source-check.json").read_text(encoding="utf-8-sig"))["reference_paths"]
 for ref in refs:
     target = root / ref["repository_path"]
     if not target.exists() or target.stat().st_size < 200:
@@ -24,7 +24,7 @@ for ref in refs:
             if "FINISHED" not in result:
                 raise RuntimeError(f"Library relocation failed: {target}")
 
-layout = json.loads((root / "work/project/chongqing_godot_v05/assets/district_500/layout.json").read_text())
+layout = json.loads((root / "work/project/chongqing_godot_v05/assets/district_500/layout.json").read_text(encoding="utf-8-sig"))
 retired = [f"_{oid}_" for oid in layout.get("osm_building_ids", [])]
 local_study = bpy.data.collections.get("R24_11_Local_city_frame")
 if local_study:

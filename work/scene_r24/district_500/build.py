@@ -4,6 +4,7 @@ import json
 from math import atan2, cos, hypot, pi, sin
 from pathlib import Path
 from random import Random
+import sys
 
 from mathutils import Vector
 from mathutils.geometry import tessellate_polygon
@@ -16,10 +17,10 @@ GAME = HERE.parents[1] / "project/chongqing_godot_v05"
 ASSETS = GAME / "assets"
 OUT = ASSETS / "district_500"
 OUT.mkdir(exist_ok=True)
-baseline = json.loads((HERE / "terrain_baseline.json").read_text())["terrain_profiles"]
-osm = json.loads((GAME / "source_data/geo_layout.json").read_text())
-river = json.loads((GAME / "source_data/river_r22/river_plan.json").read_text())
-water_z = json.loads((ASSETS / "river_r22/layout.json").read_text())["river_level_m"]
+baseline = json.loads((HERE / "terrain_baseline.json").read_text(encoding="utf-8-sig"))["terrain_profiles"]
+osm = json.loads((GAME / "source_data/geo_layout.json").read_text(encoding="utf-8-sig"))
+river = json.loads((GAME / "source_data/river_r22/river_plan.json").read_text(encoding="utf-8-sig"))
+water_z = json.loads((ASSETS / "river_r22/layout.json").read_text(encoding="utf-8-sig"))["river_level_m"]
 rings = [r["points"] for r in river["rings"] if r["role"] == "outer"]
 
 # OSM lines are retained whole here and clipped by the playable terrain. The
@@ -41,7 +42,7 @@ design = {
 # Measured inner road edge elevations are optionally supplied by the native
 # baseline probe. Outside those edge corridors the mesh meets the terrain.
 tie_file = HERE / "road_ties.json"
-ties = json.loads(tie_file.read_text()) if tie_file.exists() else []
+ties = json.loads(tie_file.read_text(encoding="utf-8-sig")) if tie_file.exists() else []
 roads = [(mapped[k], 3.15 if k in (49182408,1189963598,734116597,1513362409) else 4.25, k) for k in mapped_ids]
 roads += [(pts, 2.7 if key in ("promenade", "south_link", "north_link") else 4.2, key)
           for key,pts in design.items()]
@@ -83,7 +84,6 @@ green = material("Jade painted steel", (.08,.22,.18))
 ochre = material("Ochre canvas", (.66,.28,.075))
 white = material("Off-white road pigment", (.74,.70,.57))
 dark = material("Door and shutter recess", (.092,.086,.074))
-stems = material("Tree bark", (.19,.13,.081))
 leaf = [material("Canopy " + str(i), col) for i,col in enumerate(((.13,.23,.089),(.20,.30,.12),(.26,.32,.12)))]
 waterfront = material("Washed bank aggregate", (.47,.40,.29), "leaf_scattered_gravel_diff_2k.jpg")
 
@@ -252,10 +252,27 @@ for tie in ties:
     depth=across*sign-100
     profile=tie["profile"]
     keys=[r[0] for r in profile]
-    ak=np.interp(along,keys,[float(r[2].endswith("asphalt")) for r in profile])
-    walk=np.interp(along,keys,[float("pavement" in r[2] or "curb" in r[2]) for r in profile])
-    blend=np.clip(1-depth/8,0,1)*np.clip(6-np.abs(along-tie["center"]),0,1)
-    rgba[:,:,0]=rgba[:,:,0]*(1-blend)+ak*blend
+    # Carry the measured section along its own centreline, including oblique roads.
+    normal_axis = 0 if tie["side"] in ("east", "west") else 1
+    tangent_axis = 1 - normal_axis
+    crossings = []
+    for a, b, _, _ in segments:
+        delta = b - a
+        if abs(delta[normal_axis]) < 1e-6:
+            continue
+        t = (100 * sign - a[normal_axis]) / delta[normal_axis]
+        if 0 <= t <= 1:
+            centre = a[tangent_axis] + t * delta[tangent_axis]
+            crossings.append((abs(centre - tie["center"]), sign * delta[tangent_axis] / delta[normal_axis]))
+    closest = min(crossings, default=(float("inf"), 0.0))
+    slope = closest[1] if closest[0] < 2.0 else 0.0
+    registered = along - slope * depth
+    ak=np.interp(registered,keys,[float(r[2].endswith("asphalt")) for r in profile])
+    walk=np.interp(registered,keys,[float("pavement" in r[2] or "curb" in r[2]) for r in profile])
+    blend=(depth>=0)*np.clip(1-depth/8,0,1)*np.clip(6-np.abs(registered-tie["center"]),0,1)
+    # At the very last centimetres a physics ray can hit the substrate below an
+    # old road lip. Keep the mapped carriageway wherever its centreline continues.
+    rgba[:,:,0]=np.maximum(rgba[:,:,0],ak*blend)
     rgba[:,:,1]=rgba[:,:,1]*(1-blend)+np.maximum(ak,walk)*blend
 mask=bpy.data.images.new("Street surface mask",width=size,height=size,alpha=False)
 mask.colorspace_settings.name="Non-Color"
@@ -264,6 +281,8 @@ mask.filepath_raw=str(OUT/"surface_mask.png")
 mask.file_format="PNG"
 mask.save()
 bpy.data.images.remove(mask)
+if "--surface-mask-only" in sys.argv:
+    raise SystemExit(0)
 
 # Geometry modules are placed on sampled ground, with foundations that follow
 # all four corners. Open storefront profiles are recessed and each row has
@@ -272,7 +291,7 @@ blocks = Geometry("COL_Outer500_Building_envelopes")
 facades = Geometry("Outer500_Facades_and_storefronts")
 street = Geometry("Outer500_Street_furniture")
 solid = Geometry("COL_Outer500_Retaining_and_boundaries")
-greenery = Geometry("Outer500_Tree_canopies")
+tree_sites = []
 verges = Geometry("Outer500_Road_details")
 skirt = Geometry("Outer500_Background_transition")
 
@@ -320,13 +339,15 @@ def ellipsoid(batch,x,y,z,radius,depth,height_radius,mat):
 
 def tree(x,y,r):
     z=height(x,y)
-    post(street,x,y,z-.09,z+4.4*r,.15*r,stems,8)
-    for index in range(5):
-        px=x+r*rng.uniform(-1.35,1.35)
-        py=y+r*rng.uniform(-1.35,1.35)
-        pz=z+r*rng.uniform(3.4,5.0)
-        radius=r*rng.uniform(.8,1.65)
-        ellipsoid(greenery,px,py,pz,radius,radius*.86,radius*.73,leaf[index%3])
+    # Preserve the cloud trial's seeded layout. Its five crown samples now set
+    # the orientation and proportions of the scanned donor at the same root.
+    crown = [(rng.uniform(-1.35,1.35), rng.uniform(-1.35,1.35),
+              rng.uniform(3.4,5.0), rng.uniform(.8,1.65)) for _ in range(5)]
+    mean = np.mean(crown, axis=0)
+    tree_sites.append({"east_north_up":[float(x),float(y),float(z)-.025],
+                       "rotation_deg":float(np.degrees(atan2(mean[1],mean[0]))),
+                       "species":int(mean[0]>0), "width_scale":float(r*mean[3]),
+                       "height_scale":float(r*mean[2]/4.1)})
 
 occupied=[]
 destinations=[]
@@ -463,6 +484,11 @@ def building(x,y,angle,w,d,floors,kind,named=""):
 # Rebuild selected licensed exterior footprints. Retire their far-only
 # representations in this variant, so the plot has one editable owner.
 mapped_buildings = []
+# R21's shared rooftop service structures remain visible at their surveyed
+# donor elevations. Rebuild each replaced OSM footprint up to that roof.
+legacy_roofs = json.loads((ASSETS / "district_r21/layout.json").read_text(encoding="utf-8-sig"))["rooftops"]
+registered_roofs = {int(row["donor"].split("_")[1]): row["position"][1]
+                    for row in legacy_roofs if row["donor"].split("_")[1].isdigit()}
 mapped_footprints = {809889593,809889594,809889602,809889621,809889631,809889632,809889635,704006706}
 for spec in osm["context_buildings"]:
     if spec["id"] not in mapped_footprints:
@@ -481,7 +507,9 @@ for spec in osm["context_buildings"]:
     levels=[height(x,y) for x,y in polygon]
     level=float(max(levels))+.22
     floors=int(spec.get("tags",{}).get("building:levels", str(4+(spec["id"]%4))))
-    top=level+2.92*floors
+    top=registered_roofs.get(spec["id"],level+2.92*floors)
+    floors=max(1,round((top-level)/2.92))
+    storey=(top-level)/floors
     mat=(tile,brick,cream)[spec["id"]%3]
     for a,b in zip(polygon,polygon[1:]+polygon[:1]):
         az,bz=height(*a)-.28,height(*b)-.28
@@ -494,7 +522,7 @@ for spec in osm["context_buildings"]:
         frame=local_frame(*a,yaw)
         bays=max(1,int(length/3.15))
         for floor in range(floors):
-            h=level+floor*2.92
+            h=level+floor*storey
             box(facades,frame,0,-.11,h+.10,length,0,h+.23,concrete)
             for bay in range(bays):
                 if floor==0 and (bay+spec["id"])%3!=0:
@@ -639,7 +667,9 @@ for key in (49182408,1189963598,176034707,830761786):
                 continue
             band(verges,p,q,height(*p)+.025,height(*q)+.025,.12,white)
 
-for batch in (blocks,facades,street,solid,greenery,verges,skirt):
+from runpy import run_path
+run_path(str(HERE / "planting.py"))["place_trees"](ASSETS, tree_sites, materials, material)
+for batch in (blocks,facades,street,solid,verges,skirt):
     batch.finish()
 bpy.context.scene["scope"] = "500 m local east/north, R24 build 25b centre; see README"
 bpy.context.scene["source_license"] = "ODbL-1.0, © OpenStreetMap contributors"
@@ -655,5 +685,5 @@ bpy.ops.export_scene.gltf(filepath=str(OUT / "outer_district.glb"),export_format
     "attribution":"© OpenStreetMap contributors, ODbL-1.0",
     "inferred_alignments":design,"registered_ties":ties,"destinations":destinations,
     "osm_building_ids":mapped_buildings,
-    "building_count":len(occupied),"collidable_surface_tiles":len(chunks),
+    "building_count":len(occupied),"collidable_surface_tiles":len(chunks),"planting":tree_sites,
 },ensure_ascii=False,indent=2)+"\n")

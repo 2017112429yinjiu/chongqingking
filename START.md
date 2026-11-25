@@ -1,5 +1,9 @@
 # 重庆外卖王 · 本地开发
 
+## 500 米城区试作分支
+
+原 200 米城区保留在中心，可沿五条线路向外探索。[直接进入东侧试玩](work/试玩500米城区.cmd) · [原生画面与复核](work/scene_r24/expansion_review/README.md) · [可编辑新区](work/scene_r24/district_500/outer_district.blend)
+
 ## 当前入口 · R24 构建 25b
 
 街口双柱旁的两段楼梯现在接进院坝坡面。中央梯坎、上院窄巷、西侧住区上下两弯和东照相巷使用同样的接坡做法。北侧横街人行道也重新接进院坝。[两处原机位前后实景](work/project/chongqing_godot_v05/verification_r24/district_patrol/final25b/street_comparison.jpg)

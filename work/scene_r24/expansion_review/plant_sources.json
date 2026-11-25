@@ -1,0 +1,73 @@
+{
+  "sources": [
+    {
+      "id": "tree_small_02",
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "name": "Tree Small 02",
+      "source_url": "https://polyhaven.com/a/tree_small_02",
+      "license": "CC0 1.0"
+    },
+    {
+      "id": "island_tree_01",
+      "authors": {
+        "Rob Tuytel": "scanning, processing",
+        "Rico Cilliers": "cleanup, processing"
+      },
+      "name": "Island Tree 01",
+      "source_url": "https://polyhaven.com/a/island_tree_01",
+      "license": "CC0 1.0"
+    }
+  ],
+  "source_credit_record": "work/project/chongqing_blender_v05/scanned_assets/source_credits.json",
+  "license_url": "https://polyhaven.com/license",
+  "reuse": "Existing local R24 UV meshes and diffuse scans. Retained leaf triangles for near views, decimated dense branch meshes, reused the existing four-direction atlas beyond the near zone. Distinct planting roots are shared mesh instances. No new source imagery downloaded.",
+  "files": [
+    {
+      "path": "work/project/chongqing_godot_v05/assets/neighborhood_r24/tree_distances.glb",
+      "bytes": 21272896,
+      "sha256": "a7aa853386928d878bbe15e262f904d1c68e7e7b3a50737aaaa850c8ff6a3525"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/assets/district_r21/canopy_atlas.png",
+      "bytes": 1612978,
+      "sha256": "52c1708c2f236cef1108bc673a85c9e0376e3d524c8d9a57e9f1d463628e9074"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/assets/district_r21/layout.json",
+      "bytes": 148382,
+      "sha256": "ef08224edd2de91299f87bc4534130df8153d6b8c5ee42890763e5feeed2bbcb"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/assets/chongqing_district_tree_small_02_diff_2k.jpg",
+      "bytes": 3170612,
+      "sha256": "4ab3210b6ec6bb1181145500bca71d1c1f81ead6baaa8600f5979c2cec50c6a4"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/assets/chongqing_district_tree_small_02_branch_diff_2k.jpg",
+      "bytes": 1425692,
+      "sha256": "9032de9e063ee7e3763a6b10d19d89302f5776e85a966b6dd1c3a5634b2a80e1"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/assets/chongqing_district_tree_small_02_leaves_diff_2k.jpg",
+      "bytes": 961870,
+      "sha256": "6c984a46861562f2a20381c54106aa5e07ce0d3fce785907f8d263157e7561af"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/assets/chongqing_district_island_tree_01_diff_2k.jpg",
+      "bytes": 2954942,
+      "sha256": "08df798e0cadae17359d480bfda1dba59f757a7b1d03e288d3360c289dd28f78"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/assets/chongqing_district_island_tree_01_branches_diff_2k.jpg",
+      "bytes": 1476655,
+      "sha256": "52cb2c660983836249e3f31ad286ca1bab8033e93070569b23e1867e3ae70b4d"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/assets/chongqing_district_island_tree_01_leaves_diff_2k.jpg",
+      "bytes": 661175,
+      "sha256": "e5c56ca13525aed76572852da5f69ae87cbee9e15abe2e1eff23adf92975f14a"
+    }
+  ]
+}

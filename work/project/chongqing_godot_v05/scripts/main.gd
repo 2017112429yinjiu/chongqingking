@@ -107,7 +107,7 @@ func _ready() -> void:
 	_configure_materials($City)
 	scene_identity["street_r19_surfaces"] = preload("res://scripts/street_detail_r19.gd").surfaces($City, art_profile)
 	if art_profile.get("district_r21",false):
-		scene_identity["district_r21"]=preload("res://scripts/district_r21.gd").install($City)
+		scene_identity["district_r21"]=preload("res://scripts/district_r21.gd").install($City, 250.0 if district_500_enabled else 0.0)
 	if art_profile.get("roofs_r22",false):
 		scene_identity["roofs_r22"]=preload("res://scripts/roofs_r22.gd").install($City)
 		if art_profile.has("surface_import_revision"):

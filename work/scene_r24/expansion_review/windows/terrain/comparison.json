@@ -1,0 +1,29 @@
+{
+  "metric": "Any layer-1 body hit from +130 to -35 m, including roofs. Route trials measure traversability.",
+  "river_source": "work/project/chongqing_godot_v05/source_data/river_r22/river_plan.json",
+  "attribution": "© OpenStreetMap contributors, ODbL 1.0",
+  "counts": {
+    "outer_land": {
+      "sample_count": 2135,
+      "before_hit_any": 11,
+      "after_hit_any": 2134
+    },
+    "outer_mapped_water": {
+      "sample_count": 25,
+      "before_hit_any": 0,
+      "after_hit_any": 2
+    },
+    "core": {
+      "sample_count": 441,
+      "before_hit_any": 441,
+      "after_hit_any": 441
+    }
+  },
+  "outer_land_misses_xz": [
+    [
+      -170.0,
+      240.0
+    ]
+  ],
+  "changed_interior_core_samples": []
+}
