@@ -1,0 +1,121 @@
+{
+  "commit": "8878d17326b9a9a7ad227514944da868cf0fce6b",
+  "engine": "4.6.3",
+  "fresh_import": "passed",
+  "verified_media_sha256": [
+    "c393341b27fe914771d29ae6471f52ab7d90fea1ad191f796ce881384cabe757",
+    "6815cd2cf875c9878325ff967955e3f8995d8df31d49ed8d48f15aa113d2b5e9",
+    "c0b6bd97a5713cd7cbd29e7dcae39b6ae0d7143b26790259d0753ea37ac8306f",
+    "293273b5d23d04304dfe2b33ab170c46fc56c2f48aac7510236a3f3f27c47856"
+  ],
+  "source": {
+    "blender": "4.3.2",
+    "source": "outer_district.blend",
+    "terrain_bounds_east_north_up_m": [
+      [
+        -250,
+        -250,
+        -16.649999618530273
+      ],
+      [
+        250,
+        250,
+        62.36692810058594
+      ]
+    ],
+    "extent_m": [
+      500,
+      500,
+      79.01692771911621
+    ],
+    "terrain_objects": 84,
+    "terrain_triangles": 185166,
+    "mesh_objects": 627,
+    "unpacked_images": []
+  },
+  "combined_outer_objects": 627,
+  "courtyard": {
+    "n": 37,
+    "passed": 37,
+    "failed": [],
+    "through": 6,
+    "home": 22,
+    "shared": 8
+  },
+  "all_halls": {
+    "n": 223,
+    "passed": 223,
+    "failed": [],
+    "hall": 76,
+    "household_in": 73,
+    "household_back": 73
+  },
+  "normal_market_entry": {
+    "checks": [
+      {
+        "detail": "",
+        "name": "exploration_from_normal_scene",
+        "pass": true
+      },
+      {
+        "detail": "(161.1107, 38.14408, -113.9295)",
+        "name": "market_threshold_spawn",
+        "pass": true
+      },
+      {
+        "detail": {
+          "distance_m": 48.143782810308,
+          "end": "(169.4045, 41.0545, -139.5132)",
+          "goals": 7,
+          "max_frame_displacement_m": 0.168415680527687,
+          "name": "market_to_201",
+          "pass": true,
+          "reached": 7,
+          "stall_contacts": []
+        },
+        "name": "uninterrupted_market_to_201",
+        "pass": true
+      },
+      {
+        "detail": "(169.4045, 41.0545, -139.5132)",
+        "name": "upstairs_height",
+        "pass": true
+      },
+      {
+        "detail": [
+          {
+            "clip": "street/watch_street",
+            "foot_origin_gap_m": 0.00615692138671875,
+            "name": "OuterMarketSeller"
+          },
+          {
+            "clip": "street/commuter",
+            "foot_origin_gap_m": 0.00671005249023438,
+            "name": "OuterRepairWorker"
+          }
+        ],
+        "name": "local_worker_clips_and_floor",
+        "pass": true
+      }
+    ],
+    "images": 0,
+    "physics_hz": 60,
+    "ticks_per_image": 9
+  },
+  "cloud_desktop": {
+    "during_verification": true,
+    "window": [
+      800,
+      450
+    ],
+    "renderer": "gl_compatibility",
+    "device": "Mesa llvmpipe",
+    "audio": "Dummy",
+    "sun_shadows": false
+  },
+  "storage": {
+    "df_h": "32G total, 11G used, 20G available, 36% used",
+    "run_size": "602M"
+  },
+  "remote_evidence": "/workspace/work/runtime/outer-neighborhood-8878d173/"
+}

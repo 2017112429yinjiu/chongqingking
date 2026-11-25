@@ -29,6 +29,14 @@
 | 新旧区和外圈主路 | 原七处断面 2,275/2,275 个采样命中；五条出城线双向步行、双向骑行 20/20，2,903.43 米。三个旧门面前的原双侧台阶也复走过。[断面](evidence/r6_seams/sections.json) · [骑行及步行](evidence/r6_roads/routes.json) · [门前台阶](evidence/r6_aprons/destinations.json) |
 | Blender 4.3.2 | 从原 25b 和新区源重建完整组合并实际重开。四个链接库、13 张外部图片和三个登记屋顶附件均核对，场景内有 302 株外圈树。院坝范围内为留出建筑和人行空间腾出四处树位。[重开记录](evidence/r6_source/combined_source.json) |
 
+## 旧区回归、帧时与云端复测
+
+从正常首班场景执行 25b 的 `verify.ps1 -Run outer_homes_r6 -AllRoads -Timing`。师傅 14 条路线往返 28 段，共 3,454.05 米；玩家 26 条地面路线双向骑行全部通过。六处旧接头完成 18 次步行往返，300 个门槛断面样点的最大高差误差为 6.21 毫米以内。首班教学 85/85，午间送单 35/35。[整区巡检](../../project/chongqing_godot_v05/verification_r24/district_patrol/outer_homes_r6/survey_summary.json) · [旧接头原机位复拍](../../project/chongqing_godot_v05/verification_r24/district_patrol/outer_homes_r6/street_comparison.jpg)
+
+另在本机独立测新区的街面、菜摊柜台与上院三个机位，各采 90 帧。RTX 4070 Laptop、Forward+，窗口 1152 × 648，实际视口 692 × 389，采样期间记录到 P8、210 MHz。三个机位的 GPU 帧时中位数依次为 84.95、77.52、86.87 毫秒，95 分位为 95.19、84.06、92.62 毫秒。这次条件下达不到稳定 30 帧。旧区三个不同机位各采 150 帧，中位数为 188.04、304.87 和 261.90 毫秒。[新区原始帧时](evidence/r6_timing/timing.json) · [同时段显卡频率](evidence/r6_timing/gpu_during.csv) · [旧区原始帧时](../../project/chongqing_godot_v05/verification_r24/district_patrol/outer_homes_r6/timing/timing.json)
+
+同一制作提交已在原 OpenAI 云工作区重新导入 Godot 4.6.3，并用 Blender 4.3.2 重开打包源及组合城。云端 37 项院坝巡检和 223 项逐户巡检全部通过，市场自然出生到 201 连续走过 7 个目标、48.14 米。云桌面实开 800 × 450 的市场试玩，使用 Mesa llvmpipe 软件渲染、关闭太阳阴影，声音回退到 Dummy。实测时持久盘剩余 20G，这次原始云端记录用去 602M。[云端实测摘录与四个 LFS 对象指纹](evidence/cloud_r6.json)
+
 ## 制作与复拍
 
 - 编辑[独立新区](../district_500/outer_district.blend)；整城的 `city_and_outer.local.blend` 由[组合脚本](../district_500/compose.py)从 25b 及新区重建。几何、材质和碰撞源见[主构建](../district_500/build.py)、[穿堂](../district_500/ground_floors.py)、[店铺及住房](../district_500/shop_rooms.py)、[院坝与坡巷](../district_500/hillside_courts.py)。集市牌字使用项目既有 OFL 字体重新取子集。
