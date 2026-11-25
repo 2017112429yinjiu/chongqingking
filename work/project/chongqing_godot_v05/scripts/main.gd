@@ -5,6 +5,7 @@ extends Node3D
 const ExplorerScript = preload("res://scripts/explorer.gd")
 const GameplayScript = preload("res://scripts/gameplay.gd")
 @export var first_day_enabled := false
+@export var district_500_enabled := false
 var gameplay: Node3D
 const CollisionBuilder = preload("res://scripts/build_collisions.gd")
 const UI_FONT = preload("res://assets/fonts/cq_district_ui.otf")
@@ -131,7 +132,7 @@ func _ready() -> void:
 		var finish:=preload("res://scripts/city_frame_r24.gd").new()
 		finish.name="StreetFinishR24"
 		$City.add_child(finish)
-		scene_identity["street_finish_r24"]=finish.install($City)
+		scene_identity["street_finish_r24"]=finish.install($City, not district_500_enabled)
 	if art_profile.get("street_use_r24",false):
 		scene_identity["street_use_r24"]=preload("res://scripts/street_use_r24.gd").install($City)
 	if art_profile.get("neighborhood_r24",false):
@@ -158,6 +159,8 @@ func _ready() -> void:
 		$City.add_child(walls)
 		get_viewport().use_occlusion_culling = true
 	_build_reflection_probes()
+	if district_500_enabled:
+		scene_identity["district_500"] = preload("res://scripts/district_500.gd").install($City)
 	collision_stats = CollisionBuilder.attach($City)
 	collision_stats["props"] = preload("res://scripts/prop_collisions.gd").attach($City)
 	_build_hud()
@@ -183,6 +186,10 @@ func _ready() -> void:
 	gameplay.name = "InteractionWorld"
 	add_child(gameplay)
 	gameplay.setup(self)
+	if district_500_enabled:
+		explorer.recovery_half_extent_m = 251.0
+		gameplay.scooter.recovery_half_extent_m = 251.0
+		gameplay.scooter.recovery_min_height_m = -19.0
 	if art_profile.get("market_passing_r24", false):
 		gameplay.scooter.collision_mask |= preload("res://scripts/pedestrian_passing_r24.gd").PEOPLE_LAYER
 	if street_block:
@@ -195,7 +202,9 @@ func _ready() -> void:
 	if courtyard:courtyard.start(self)
 	explorer.mode_changed.connect(_mode_changed)
 	explorer.view_changed.connect(_view_changed)
-	if first_day_enabled and not capture_mode and not Array(OS.get_cmdline_user_args()).any(func(arg: String): return arg == "--r16-performance" or (arg.ends_with("-test") and arg != "--day-one-test")):
+	if district_500_enabled and "--explore-500" in OS.get_cmdline_user_args():
+		preload("res://scripts/district_500.gd").start_exploration(self)
+	elif first_day_enabled and not capture_mode and not Array(OS.get_cmdline_user_args()).any(func(arg: String): return arg == "--r16-performance" or (arg.ends_with("-test") and arg != "--day-one-test")):
 		gameplay.lesson = preload("res://scripts/day_one.gd").new()
 		gameplay.lesson.name = "FirstShift"
 		gameplay.add_child(gameplay.lesson)

@@ -4,7 +4,7 @@ const STREET_ASSET := "res://assets/street_finish_r24/street_finish.glb"
 const STREET_INDEX := "res://assets/street_finish_r24/finish.json"
 const LOCAL_FRAME := "../../scene_r24/city_frame_11864101/city_frame.glb"
 
-func install(city: Node3D) -> Dictionary:
+func install(city: Node3D, include_local_frame: bool = true) -> Dictionary:
 	var info := {"donors":0, "retired":0, "missing":[], "local_frame":false}
 	var originals := {}
 	for item in city.find_children("*","MeshInstance3D",true,false):
@@ -40,7 +40,7 @@ func install(city: Node3D) -> Dictionary:
 		info.donors += 1
 	if not info.missing.is_empty():
 		push_error("Street geometry missing source nodes %s" % [info.missing])
-	if OS.has_feature("editor"):
+	if include_local_frame and OS.has_feature("editor"):
 		var path := ProjectSettings.globalize_path("res://").path_join(LOCAL_FRAME).simplify_path()
 		if FileAccess.file_exists(path):
 			var doc := GLTFDocument.new()
