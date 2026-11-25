@@ -1,0 +1,32 @@
+[
+  {
+    "detail": {
+      "distance_m": 294.375255722553,
+      "end": "(-101.5586, 11.46253, 44.24385)",
+      "goals": 46,
+      "max_frame_displacement_m": 0.461789697408676,
+      "name": "osm_734116601_out",
+      "pass": true,
+      "reached": 46,
+      "stall_contacts": []
+    },
+    "name": "osm_734116601_out",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 205.501472172327,
+      "end": "(-183.6716, 30.74221, -126.084)",
+      "goals": 46,
+      "max_frame_displacement_m": 0.0746903046965599,
+      "name": "osm_734116601_back",
+      "pass": false,
+      "reached": 30,
+      "stall_contacts": [
+        "CQ_StaticCollision"
+      ]
+    },
+    "name": "osm_734116601_back",
+    "pass": false
+  }
+]

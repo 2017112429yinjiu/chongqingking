@@ -26,7 +26,7 @@ for f in json.loads(download)["features"]:
     src=f["properties"]["sources"][0]
     if src["dataset"]!="OpenStreetMap":continue
     rings=f["geometry"]["coordinates"]
-    records.append({"osm":src["record_id"],"gers":f["id"],"rings":[local(p) for p in rings]})
+    records.append({"osm":src["record_id"],"gers":f["id"],"source_storeys":f["properties"].get("num_floors"),"rings":[local(p) for p in rings]})
 result={"source":"mapped_group.json","license":"ODbL-1.0, © OpenStreetMap contributors via Overture Maps",
         "frontages":records,"park":{"osm":1499726225,"name":"滨江公园","boundary":local(way(1499726225))}}
 (here/"frontage_controls.json").write_text(json.dumps(result,ensure_ascii=False,separators=(",",":"))+"\n",encoding="utf-8")

@@ -1,0 +1,42 @@
+[
+  {
+    "detail": {
+      "distance_m": 6.27452532760799,
+      "end": "(-183.6837, 30.73915, -126.064)",
+      "goals": 1,
+      "max_frame_displacement_m": 0.0699913799762726,
+      "name": "northwest_up_out",
+      "pass": false,
+      "reached": 0,
+      "stall_contacts": [
+        {
+          "mesh": "COL_Outer500_Building_envelopes",
+          "normal": "(0.764546, 0.0, 0.64457)",
+          "position": "(-183.9295, 31.3297, -126.2722)"
+        }
+      ]
+    },
+    "name": "northwest_up_out",
+    "pass": false
+  },
+  {
+    "detail": {
+      "distance_m": 5.22543322946876,
+      "end": "(228.5965, 44.99661, -139.4177)",
+      "goals": 1,
+      "max_frame_displacement_m": 0.0700068324804306,
+      "name": "two_entrances_out",
+      "pass": false,
+      "reached": 0,
+      "stall_contacts": [
+        {
+          "mesh": "COL_Outer500_Building_envelopes",
+          "normal": "(0.157037, 0.0, 0.987593)",
+          "position": "(228.5458, 46.44693, -139.7296)"
+        }
+      ]
+    },
+    "name": "two_entrances_out",
+    "pass": false
+  }
+]

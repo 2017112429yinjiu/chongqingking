@@ -1,0 +1,882 @@
+{
+  "blender": "4.3.2",
+  "reopened": "city_and_outer.local.blend",
+  "registered_houses": [
+    {
+      "osm": "w704006733@1",
+      "footprint_corner_error_m": [
+        6.77502330735753e-06,
+        5.580789826024229e-06,
+        7.857574125845831e-06,
+        4.601581245076375e-06
+      ],
+      "structure_faces": 482,
+      "joinery_faces": 1732
+    },
+    {
+      "osm": "w704006741@1",
+      "footprint_corner_error_m": [
+        5.2089563625297966e-06,
+        7.972004551938202e-06,
+        5.227346669879954e-06,
+        7.63000974382344e-06
+      ],
+      "structure_faces": 362,
+      "joinery_faces": 1246
+    },
+    {
+      "osm": "w704006732@1",
+      "footprint_corner_error_m": [
+        5.483661494298598e-06,
+        3.2795819981728587e-06,
+        5.012023308613176e-06,
+        9.395449845094934e-07
+      ],
+      "structure_faces": 266,
+      "joinery_faces": 856
+    },
+    {
+      "osm": "w704006729@1",
+      "footprint_corner_error_m": [
+        1.0052577305374396e-05,
+        7.188521592721899e-06,
+        6.22726120285278e-06,
+        5.097104330861586e-06
+      ],
+      "structure_faces": 266,
+      "joinery_faces": 940
+    }
+  ],
+  "street_front_ground": {
+    "sampling": "Existing street-facing plots, every 0.55 m along the facade, at 2.4 / 3 / 3.6 m, max carriageway mask below .15. Counts of mask samples, not area.",
+    "samples": 5590,
+    "former_paved": 1258,
+    "current_paved": 5590
+  },
+  "roadside_stairs": [
+    {
+      "plot": 3,
+      "end": "front",
+      "clear_m": 4.672,
+      "turned": true
+    },
+    {
+      "plot": 3,
+      "end": "back",
+      "clear_m": 14.76,
+      "turned": false
+    },
+    {
+      "plot": 4,
+      "end": "front",
+      "clear_m": 0.256,
+      "turned": true
+    },
+    {
+      "plot": 4,
+      "end": "back",
+      "clear_m": 10.398,
+      "turned": false
+    },
+    {
+      "plot": 5,
+      "end": "front",
+      "clear_m": 1.316,
+      "turned": false
+    },
+    {
+      "plot": 5,
+      "end": "back",
+      "clear_m": 14.697,
+      "turned": false
+    },
+    {
+      "plot": 6,
+      "end": "front",
+      "clear_m": 6.299,
+      "turned": false
+    },
+    {
+      "plot": 6,
+      "end": "back",
+      "clear_m": 16.087,
+      "turned": false
+    },
+    {
+      "plot": 7,
+      "end": "front",
+      "clear_m": 2.381,
+      "turned": false
+    },
+    {
+      "plot": 7,
+      "end": "back",
+      "clear_m": 14.096,
+      "turned": false
+    },
+    {
+      "plot": 8,
+      "end": "front",
+      "clear_m": 3.681,
+      "turned": false
+    },
+    {
+      "plot": 9,
+      "end": "front",
+      "clear_m": 1.804,
+      "turned": false
+    },
+    {
+      "plot": 9,
+      "end": "back",
+      "clear_m": 15.469,
+      "turned": false
+    },
+    {
+      "plot": 10,
+      "end": "front",
+      "clear_m": 3.012,
+      "turned": false
+    },
+    {
+      "plot": 10,
+      "end": "back",
+      "clear_m": 17.797,
+      "turned": false
+    },
+    {
+      "plot": 11,
+      "end": "front",
+      "clear_m": 4.126,
+      "turned": true
+    },
+    {
+      "plot": 11,
+      "end": "back",
+      "clear_m": 16.267,
+      "turned": false
+    },
+    {
+      "plot": 12,
+      "end": "front",
+      "clear_m": 4.507,
+      "turned": false
+    },
+    {
+      "plot": 12,
+      "end": "back",
+      "clear_m": 10.053,
+      "turned": false
+    },
+    {
+      "plot": 13,
+      "end": "front",
+      "clear_m": 2.021,
+      "turned": true
+    },
+    {
+      "plot": 13,
+      "end": "back",
+      "clear_m": 15.073,
+      "turned": false
+    },
+    {
+      "plot": 14,
+      "end": "front",
+      "clear_m": 3.778,
+      "turned": true
+    },
+    {
+      "plot": 14,
+      "end": "back",
+      "clear_m": 16.52,
+      "turned": false
+    },
+    {
+      "plot": 15,
+      "end": "front",
+      "clear_m": 2.758,
+      "turned": false
+    },
+    {
+      "plot": 15,
+      "end": "back",
+      "clear_m": 16.863,
+      "turned": false
+    },
+    {
+      "plot": 16,
+      "end": "front",
+      "clear_m": 6.099,
+      "turned": false
+    },
+    {
+      "plot": 16,
+      "end": "back",
+      "clear_m": 6.749,
+      "turned": false
+    },
+    {
+      "plot": 17,
+      "end": "front",
+      "clear_m": 3.706,
+      "turned": true
+    },
+    {
+      "plot": 17,
+      "end": "back",
+      "clear_m": 14.805,
+      "turned": false
+    },
+    {
+      "plot": 18,
+      "end": "front",
+      "clear_m": 4.373,
+      "turned": false
+    },
+    {
+      "plot": 18,
+      "end": "back",
+      "clear_m": 15.898,
+      "turned": false
+    },
+    {
+      "plot": 21,
+      "end": "front",
+      "clear_m": 6.343,
+      "turned": false
+    },
+    {
+      "plot": 21,
+      "end": "back",
+      "clear_m": 18.071,
+      "turned": false
+    },
+    {
+      "plot": 22,
+      "end": "front",
+      "clear_m": 4.891,
+      "turned": false
+    },
+    {
+      "plot": 22,
+      "end": "back",
+      "clear_m": 18.02,
+      "turned": false
+    },
+    {
+      "plot": 23,
+      "end": "front",
+      "clear_m": 3.123,
+      "turned": true
+    },
+    {
+      "plot": 23,
+      "end": "back",
+      "clear_m": 2.172,
+      "turned": false
+    },
+    {
+      "plot": 24,
+      "end": "front",
+      "clear_m": 1.47,
+      "turned": true
+    },
+    {
+      "plot": 24,
+      "end": "back",
+      "clear_m": 15.146,
+      "turned": false
+    },
+    {
+      "plot": 25,
+      "end": "front",
+      "clear_m": 5.141,
+      "turned": true
+    },
+    {
+      "plot": 25,
+      "end": "back",
+      "clear_m": 5.559,
+      "turned": false
+    },
+    {
+      "plot": 26,
+      "end": "front",
+      "clear_m": 4.001,
+      "turned": false
+    },
+    {
+      "plot": 26,
+      "end": "back",
+      "clear_m": 17.56,
+      "turned": false
+    },
+    {
+      "plot": 27,
+      "end": "front",
+      "clear_m": 6.958,
+      "turned": false
+    },
+    {
+      "plot": 27,
+      "end": "back",
+      "clear_m": 18.847,
+      "turned": false
+    },
+    {
+      "plot": 28,
+      "end": "front",
+      "clear_m": 2.83,
+      "turned": true
+    },
+    {
+      "plot": 28,
+      "end": "back",
+      "clear_m": 15.85,
+      "turned": false
+    },
+    {
+      "plot": 29,
+      "end": "front",
+      "clear_m": 2.76,
+      "turned": true
+    },
+    {
+      "plot": 29,
+      "end": "back",
+      "clear_m": 14.715,
+      "turned": false
+    },
+    {
+      "plot": 30,
+      "end": "front",
+      "clear_m": 6.374,
+      "turned": false
+    },
+    {
+      "plot": 30,
+      "end": "back",
+      "clear_m": 18.01,
+      "turned": false
+    },
+    {
+      "plot": 31,
+      "end": "front",
+      "clear_m": 2.384,
+      "turned": false
+    },
+    {
+      "plot": 31,
+      "end": "back",
+      "clear_m": 13.878,
+      "turned": false
+    },
+    {
+      "plot": 33,
+      "end": "front",
+      "clear_m": 3.634,
+      "turned": false
+    },
+    {
+      "plot": 33,
+      "end": "back",
+      "clear_m": 15.362,
+      "turned": false
+    },
+    {
+      "plot": 34,
+      "end": "front",
+      "clear_m": 4.603,
+      "turned": false
+    },
+    {
+      "plot": 34,
+      "end": "back",
+      "clear_m": 18.868,
+      "turned": false
+    },
+    {
+      "plot": 35,
+      "end": "front",
+      "clear_m": 1.322,
+      "turned": false
+    },
+    {
+      "plot": 35,
+      "end": "back",
+      "clear_m": 20.231,
+      "turned": false
+    },
+    {
+      "plot": 36,
+      "end": "front",
+      "clear_m": 6.511,
+      "turned": false
+    },
+    {
+      "plot": 36,
+      "end": "back",
+      "clear_m": 11.861,
+      "turned": false
+    },
+    {
+      "plot": 37,
+      "end": "front",
+      "clear_m": 2.427,
+      "turned": false
+    },
+    {
+      "plot": 37,
+      "end": "back",
+      "clear_m": 16.359,
+      "turned": false
+    },
+    {
+      "plot": 38,
+      "end": "front",
+      "clear_m": 3.987,
+      "turned": true
+    },
+    {
+      "plot": 38,
+      "end": "back",
+      "clear_m": 15.441,
+      "turned": false
+    },
+    {
+      "plot": 39,
+      "end": "front",
+      "clear_m": 7.082,
+      "turned": false
+    },
+    {
+      "plot": 39,
+      "end": "back",
+      "clear_m": 18.018,
+      "turned": false
+    },
+    {
+      "plot": 40,
+      "end": "front",
+      "clear_m": 7.945,
+      "turned": true
+    },
+    {
+      "plot": 41,
+      "end": "front",
+      "clear_m": 2.156,
+      "turned": true
+    },
+    {
+      "plot": 41,
+      "end": "back",
+      "clear_m": 14.458,
+      "turned": false
+    },
+    {
+      "plot": 42,
+      "end": "front",
+      "clear_m": 2.73,
+      "turned": true
+    },
+    {
+      "plot": 42,
+      "end": "back",
+      "clear_m": 14.517,
+      "turned": false
+    },
+    {
+      "plot": 43,
+      "end": "front",
+      "clear_m": 3.202,
+      "turned": false
+    },
+    {
+      "plot": 43,
+      "end": "back",
+      "clear_m": 17.752,
+      "turned": false
+    },
+    {
+      "plot": 44,
+      "end": "front",
+      "clear_m": 3.847,
+      "turned": true
+    },
+    {
+      "plot": 44,
+      "end": "back",
+      "clear_m": 18.388,
+      "turned": false
+    },
+    {
+      "plot": 45,
+      "end": "front",
+      "clear_m": 5.12,
+      "turned": false
+    },
+    {
+      "plot": 45,
+      "end": "back",
+      "clear_m": 18.635,
+      "turned": false
+    },
+    {
+      "plot": 46,
+      "end": "front",
+      "clear_m": 2.988,
+      "turned": false
+    },
+    {
+      "plot": 46,
+      "end": "back",
+      "clear_m": 17.907,
+      "turned": false
+    },
+    {
+      "plot": 47,
+      "end": "front",
+      "clear_m": 7.519,
+      "turned": false
+    },
+    {
+      "plot": 47,
+      "end": "back",
+      "clear_m": 17.252,
+      "turned": false
+    },
+    {
+      "plot": 48,
+      "end": "front",
+      "clear_m": 3.225,
+      "turned": true
+    },
+    {
+      "plot": 49,
+      "end": "front",
+      "clear_m": 1.193,
+      "turned": false
+    },
+    {
+      "plot": 49,
+      "end": "back",
+      "clear_m": 11.11,
+      "turned": false
+    },
+    {
+      "plot": 50,
+      "end": "front",
+      "clear_m": 5.32,
+      "turned": false
+    },
+    {
+      "plot": 50,
+      "end": "back",
+      "clear_m": 16.382,
+      "turned": false
+    },
+    {
+      "plot": 51,
+      "end": "front",
+      "clear_m": 3.74,
+      "turned": false
+    },
+    {
+      "plot": 51,
+      "end": "back",
+      "clear_m": 14.325,
+      "turned": false
+    },
+    {
+      "plot": 52,
+      "end": "front",
+      "clear_m": 6.483,
+      "turned": false
+    },
+    {
+      "plot": 53,
+      "end": "front",
+      "clear_m": 4.31,
+      "turned": true
+    },
+    {
+      "plot": 53,
+      "end": "back",
+      "clear_m": 3.792,
+      "turned": false
+    },
+    {
+      "plot": 54,
+      "end": "front",
+      "clear_m": 0.792,
+      "turned": false
+    },
+    {
+      "plot": 54,
+      "end": "back",
+      "clear_m": 14.305,
+      "turned": false
+    },
+    {
+      "plot": 55,
+      "end": "front",
+      "clear_m": 4.714,
+      "turned": false
+    },
+    {
+      "plot": 55,
+      "end": "back",
+      "clear_m": 3.266,
+      "turned": true
+    },
+    {
+      "plot": 56,
+      "end": "front",
+      "clear_m": 1.476,
+      "turned": false
+    },
+    {
+      "plot": 57,
+      "end": "front",
+      "clear_m": 6.341,
+      "turned": false
+    },
+    {
+      "plot": 57,
+      "end": "back",
+      "clear_m": 4.325,
+      "turned": true
+    },
+    {
+      "plot": 58,
+      "end": "front",
+      "clear_m": 4.176,
+      "turned": true
+    },
+    {
+      "plot": 58,
+      "end": "back",
+      "clear_m": 13.164,
+      "turned": false
+    },
+    {
+      "plot": 59,
+      "end": "front",
+      "clear_m": 2.098,
+      "turned": false
+    },
+    {
+      "plot": 59,
+      "end": "back",
+      "clear_m": 0.655,
+      "turned": false
+    },
+    {
+      "plot": 60,
+      "end": "front",
+      "clear_m": 1.742,
+      "turned": false
+    },
+    {
+      "plot": 61,
+      "end": "front",
+      "clear_m": 4.457,
+      "turned": false
+    },
+    {
+      "plot": 61,
+      "end": "back",
+      "clear_m": 1.085,
+      "turned": true
+    },
+    {
+      "plot": 62,
+      "end": "front",
+      "clear_m": 2.077,
+      "turned": false
+    },
+    {
+      "plot": 62,
+      "end": "back",
+      "clear_m": 1.454,
+      "turned": false
+    },
+    {
+      "plot": 63,
+      "end": "front",
+      "clear_m": 2.234,
+      "turned": false
+    },
+    {
+      "plot": 63,
+      "end": "back",
+      "clear_m": 15.658,
+      "turned": false
+    },
+    {
+      "plot": 64,
+      "end": "front",
+      "clear_m": 5.191,
+      "turned": false
+    },
+    {
+      "plot": 65,
+      "end": "front",
+      "clear_m": 1.741,
+      "turned": false
+    },
+    {
+      "plot": 65,
+      "end": "back",
+      "clear_m": 13.083,
+      "turned": false
+    },
+    {
+      "plot": 66,
+      "end": "front",
+      "clear_m": 3.624,
+      "turned": false
+    },
+    {
+      "plot": 66,
+      "end": "back",
+      "clear_m": 17.446,
+      "turned": false
+    },
+    {
+      "plot": 67,
+      "end": "front",
+      "clear_m": 3.607,
+      "turned": true
+    },
+    {
+      "plot": 67,
+      "end": "back",
+      "clear_m": 9.715,
+      "turned": false
+    },
+    {
+      "plot": 68,
+      "end": "front",
+      "clear_m": 5.344,
+      "turned": false
+    },
+    {
+      "plot": 68,
+      "end": "back",
+      "clear_m": 17.73,
+      "turned": false
+    },
+    {
+      "plot": 69,
+      "end": "front",
+      "clear_m": 5.503,
+      "turned": true
+    },
+    {
+      "plot": 69,
+      "end": "back",
+      "clear_m": 9.156,
+      "turned": false
+    },
+    {
+      "plot": 70,
+      "end": "front",
+      "clear_m": 1.021,
+      "turned": false
+    },
+    {
+      "plot": 70,
+      "end": "back",
+      "clear_m": 13.705,
+      "turned": false
+    },
+    {
+      "plot": 71,
+      "end": "front",
+      "clear_m": 1.646,
+      "turned": false
+    },
+    {
+      "plot": 71,
+      "end": "back",
+      "clear_m": 14.685,
+      "turned": false
+    },
+    {
+      "plot": 72,
+      "end": "front",
+      "clear_m": 3.77,
+      "turned": false
+    },
+    {
+      "plot": 73,
+      "end": "front",
+      "clear_m": 4.039,
+      "turned": false
+    },
+    {
+      "plot": 73,
+      "end": "back",
+      "clear_m": 0.904,
+      "turned": false
+    },
+    {
+      "plot": 74,
+      "end": "front",
+      "clear_m": 1.593,
+      "turned": false
+    },
+    {
+      "plot": 74,
+      "end": "back",
+      "clear_m": 16.145,
+      "turned": false
+    },
+    {
+      "plot": 75,
+      "end": "front",
+      "clear_m": 7.767,
+      "turned": false
+    },
+    {
+      "plot": 75,
+      "end": "back",
+      "clear_m": 16.806,
+      "turned": false
+    },
+    {
+      "plot": 76,
+      "end": "front",
+      "clear_m": 2.878,
+      "turned": false
+    },
+    {
+      "plot": 76,
+      "end": "back",
+      "clear_m": 15.892,
+      "turned": false
+    },
+    {
+      "plot": 77,
+      "end": "front",
+      "clear_m": 4.376,
+      "turned": false
+    },
+    {
+      "plot": 77,
+      "end": "back",
+      "clear_m": 17.655,
+      "turned": false
+    }
+  ],
+  "park": "OSM 1499726225 excluded from mapped-footprint paving pass",
+  "inputs_sha256": {
+    "shancheng_lane.blend": "fa9a0570a77900a3a2c6afaf26b6d205b7d932d59b0ef39a6142c1f767a12afb",
+    "shancheng_lane.glb": "c9d2540b0c1e74331f5e3cd936ec1a6a1e6c01e324071c4e3697f074895ca9cf",
+    "outer_district.glb": "93d398b15a38490ddaa15c5694d2e420b4e417ba62f7225203885058e0e087e8",
+    "before_mask.png": "6815cd2cf875c9878325ff967955e3f8995d8df31d49ed8d48f15aa113d2b5e9",
+    "surface_mask.png": "8b031e14e5560151dba4744060f3da5c3b64e00a82ae1d0674bec28288640d38"
+  }
+}

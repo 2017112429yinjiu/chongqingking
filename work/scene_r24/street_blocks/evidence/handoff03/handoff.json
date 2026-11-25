@@ -1,0 +1,98 @@
+[
+  {
+    "detail": "",
+    "name": "primary_starts_at_shelf",
+    "pass": true
+  },
+  {
+    "detail": "",
+    "name": "primary_pickup",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 83.5338231930509,
+      "end": "(-162.0296, 20.01336, -37.88241)",
+      "goals": 8,
+      "max_frame_displacement_m": 0.0729372575879097,
+      "name": "primary_walk",
+      "pass": true,
+      "reached": 8,
+      "stall_contacts": []
+    },
+    "name": "primary_walk",
+    "pass": true
+  },
+  {
+    "detail": "",
+    "name": "primary_drop",
+    "pass": true
+  },
+  {
+    "detail": "",
+    "name": "primary_one_payment",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 83.508167619817,
+      "end": "(-116.5412, 13.72629, 30.57142)",
+      "goals": 8,
+      "max_frame_displacement_m": 0.0760821476578712,
+      "name": "primary_return",
+      "pass": true,
+      "reached": 8,
+      "stall_contacts": []
+    },
+    "name": "primary_return",
+    "pass": true
+  },
+  {
+    "detail": "",
+    "name": "branch_starts_at_shelf",
+    "pass": true
+  },
+  {
+    "detail": "",
+    "name": "branch_pickup",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 93.8317137109116,
+      "end": "(-162.0335, 20.01521, -37.89711)",
+      "goals": 7,
+      "max_frame_displacement_m": 0.0728695914149284,
+      "name": "branch_walk",
+      "pass": true,
+      "reached": 7,
+      "stall_contacts": []
+    },
+    "name": "branch_walk",
+    "pass": true
+  },
+  {
+    "detail": "",
+    "name": "branch_drop",
+    "pass": true
+  },
+  {
+    "detail": "",
+    "name": "branch_one_payment",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 93.8025119500235,
+      "end": "(-116.4412, 13.72983, 30.50007)",
+      "goals": 7,
+      "max_frame_displacement_m": 0.0752190425992012,
+      "name": "branch_return",
+      "pass": true,
+      "reached": 7,
+      "stall_contacts": []
+    },
+    "name": "branch_return",
+    "pass": true
+  }
+]
