@@ -5,6 +5,7 @@ uniform sampler2D asphalt : source_color, filter_linear_mipmap_anisotropic, repe
 uniform sampler2D asphalt_normal : hint_normal, filter_linear_mipmap_anisotropic, repeat_enable;
 uniform sampler2D asphalt_rough : filter_linear_mipmap_anisotropic, repeat_enable;
 uniform sampler2D paving : source_color, filter_linear_mipmap_anisotropic, repeat_enable;
+uniform sampler2D paving_normal : hint_normal, filter_linear_mipmap_anisotropic, repeat_enable;
 uniform sampler2D soil : source_color, filter_linear_mipmap_anisotropic, repeat_enable;
 uniform sampler2D aggregate : source_color, filter_linear_mipmap_anisotropic, repeat_enable;
 uniform float river_level = -15.8;
@@ -26,6 +27,8 @@ void fragment() {
 	float damp = 1.0 - smoothstep(river_level + 0.6, river_level + 4.5, world_position.y);
 	vec3 surface = mix(bank, grit * (0.63 + 0.22 * layout.b), damp);
 	vec3 footway = texture(paving, tile_uv).rgb * 0.91;
+	float stone_value = dot(footway,vec3(0.27,0.58,0.15));
+	footway = mix(footway,stone_value*vec3(.97,.99,1.0),.70);
 	surface = mix(surface, footway, layout.g);
 	// Match the registered old carriageways' world-space aggregate scale and direction.
 	vec2 street_uv = world_position.xz * 0.42;
@@ -34,7 +37,8 @@ void fragment() {
 	vec3 binder = (vec3(0.023, 0.023, 0.022) + grain * vec3(0.52, 0.53, 0.51));
 	binder *= mix(0.82, 1.09, smoothstep(0.07, 0.41, substrate));
 	ALBEDO = mix(surface, binder, layout.r);
-	NORMAL_MAP = mix(vec3(0.5, 0.5, 1.0), texture(asphalt_normal, street_uv).rgb, layout.r);
+	vec3 walk_normal=mix(vec3(.5,.5,1.),texture(paving_normal,tile_uv).rgb,layout.g);
+	NORMAL_MAP = mix(walk_normal, texture(asphalt_normal, street_uv).rgb, layout.r);
 	NORMAL_MAP_DEPTH = 0.55;
 	ROUGHNESS = mix(0.94, 0.70 + 0.21 * texture(asphalt_rough, street_uv).r, layout.r);
 	SPECULAR = mix(0.22, 0.24, layout.r);

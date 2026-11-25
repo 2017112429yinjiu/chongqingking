@@ -41,6 +41,9 @@ static func install(city: Node3D, planted_extent_m: float = 0.0) -> Dictionary:
 			shape.position.y=cylinder.height*.5
 	var background: Array = data.outer_canopy
 	if planted_extent_m > 0.0:
+		var exterior: Dictionary=JSON.parse_string(FileAccess.get_file_as_string("res://assets/district_500/edge_ground.json"))
+		for index: String in exterior.outer_canopy_y:
+			background[int(index)].position[1]=exterior.outer_canopy_y[index]
 		background = background.filter(func(tree: Dictionary):
 			var p := point(tree.position)
 			return maxf(absf(p.x), absf(p.z)) > planted_extent_m)

@@ -116,6 +116,11 @@ room_finish = {"lime":cream,"dado":material("Cream glazed wall skirting",(.46,.4
                "clay":material("Brown earthenware",(.31,.115,.051)),"china":cream_metal,
                "jade":green,"greens":leaf[1],"leaf_light":leaf[2],"leaf_dark":leaf[0],"gourd":ochre,"linen":cream_metal}
 from runpy import run_path
+BLOCK_STUDY=HERE.parent/"street_blocks"
+street_plan=run_path(str(BLOCK_STUDY/"street_plan.py"))
+reservation=street_plan["Streets"](segments)
+kerb_stair=run_path(str(BLOCK_STUDY/"kerb_stairs.py"))["stair_frontage"]
+legacy_sites=json.loads((BLOCK_STUDY/"legacy_sites.json").read_text(encoding="utf-8"))
 front_tools = run_path(str(HERE/"occupied_fronts.py"))
 finish_tools = run_path(str(HERE/"house_finishes.py"))
 shop_shade = run_path(str(HERE/"shop_shades.py"))["shade"]
@@ -406,6 +411,7 @@ lamp_sites = []
 flyover_reserves = []
 occupied=[]
 destinations=[]
+removed_for_walkway=[]
 def building(x,y,angle,w,d,floors,kind,named=""):
     frame=local_frame(x,y,angle)
     corners=[frame(a,b,0)[:2] for a in (-w/2,w/2) for b in (-d/2,d/2)]
@@ -429,11 +435,19 @@ def building(x,y,angle,w,d,floors,kind,named=""):
     facade=(brick,cream,tile,concrete)[kind]
     ry=-d/2
     top=base+floors*2.95
-    box(blocks,frame,-w/2,ry,min(levels)-.35,w/2,d/2,base,rock)
     portal = {"南区路车棚修理铺":0.0,"照相巷便民市场":-.78,"江岸茶摊":-1.65}.get(named, (.14 if kind%2 else -.14)*w)
     plot = {"east_north":[float(x),float(y)], "bearing":angle, "width":w, "depth":d,
             "height":base, "roof":top, "floors":floors, "kind":kind, "name":named, "door_u":portal}
-    plot["plot_id"]=len(plots)+len(flyover_reserves)
+    plot["plot_id"]=len(plots)+len(flyover_reserves)+len(removed_for_walkway)
+    if plot["plot_id"]==32:
+        # Its inherited facade crossed the registered centerline for several metres.
+        removed_for_walkway.append({"legacy_plot":32,"east_north":plot["east_north"],"way":734116601})
+        rng.random()
+        return
+    # These are inherited gameplay sites. A new building must use a registered source polygon.
+    if legacy_sites.get(str(plot["plot_id"])) != [plot["east_north"],angle,w,d]:
+        raise ValueError(("Unregistered building layout", plot["plot_id"],x,y))
+    box(blocks,frame,-w/2,ry,min(levels)-.35,w/2,d/2,base,rock)
     plots.append(plot)
     def draw(*dims):
         box(blocks,frame,*dims)
@@ -453,6 +467,9 @@ def building(x,y,angle,w,d,floors,kind,named=""):
     build_frame(plot,member,frame_concrete)
     plot["street_windows"]=street_windows["plan"](plot)
     through_floor(plot,draw,ground,(facade,stone,rock,concrete,indoor_floor),street_windows["wall_pieces"])
+    if not named:
+        new_run=kerb_stair(plot,draw,ground,stone,ry,-1,reservation,street_plan["xy"])
+        plot["front_stair_m"]=new_run if new_run is not None else ground_floors["apron"](plot,draw,ground,stone,ry,-1)
     street_windows["install"](plot,trim,panel,facing)
     for level in range(1,floors):
         lower=base+2.95*level
@@ -661,6 +678,35 @@ for key,color in (("oat",(.38,.34,.26)),("denim",(.115,.15,.17)),("sage",(.24,.3
 court_mats.update({key:facing[key] for key in ("paint","floors")})
 for p in courts:
     yards["terrace_ground"](p,xx,yy,heights)
+registered_group=json.loads((BLOCK_STUDY/"mapped_group.json").read_text(encoding="utf-8"))
+group_polygons=[np.array(f["points"]) for f in registered_group["buildings"]]
+confirmed_lane=np.array(next(w["points"] for w in osm["paths"] if w["id"]==734116601)[:47])
+frontage=run_path(str(BLOCK_STUDY/"group_models.py"))["frontage"]
+building_grades={}
+for feature,ring in zip(registered_group["buildings"],group_polygons):
+    a,b,c,d=frontage(ring,confirmed_lane)
+    bays=max(3,round(np.linalg.norm(b-a)/3.85));t=(bays//2+.5)/bays
+    entry=(1-t)*a+t*b
+    inward=(d-a)/np.linalg.norm(d-a)
+    level=height(*(entry-inward*.52))+.19
+    building_grades[feature["osm"]]=level
+    # Cut into the high side of the slope, leaving the public lane at its existing grade.
+    normals=[]
+    for q,r in zip(ring,np.roll(ring,-1,axis=0)):
+        v=r-q
+        side=((xx-q[0])*v[1]-(yy-q[1])*v[0])/np.linalg.norm(v)
+        normals.append(side if np.dot(ring.mean(axis=0)-q,[v[1],-v[0]])<0 else -side)
+    outside=np.maximum.reduce(normals)
+    blend=np.clip(1-np.maximum(outside,0)/1.2,0,1)
+    heights-=np.maximum(heights-(level-.12),0)*blend
+    # A narrow paved apron meets the household threshold at the drawn facade.
+    side_values=[]
+    for q,r in zip(ring,np.roll(ring,-1,axis=0)):
+        v=r-q
+        side=((mx-q[0])*v[1]-(my-q[1])*v[0])/np.linalg.norm(v)
+        side_values.append(side if np.dot(ring.mean(axis=0)-q,[v[1],-v[0]])<0 else -side)
+    rgba[:,:,1]=np.maximum(rgba[:,:,1],np.clip((2.1-np.maximum.reduce(side_values))*2,0,1))
+
 for p in plots:
     frame=local_frame(*p["east_north"],p["bearing"])
     pocket=Geometry("COL_Outer500_Court_%02d"%p["plot_id"]) if p.get("court") else solid
@@ -677,10 +723,19 @@ for p in plots:
         pocket.finish()
         fixtures.finish()
     else:
-        p["back_stair_m"]=ground_floors["apron"](p,yard_box,plot_ground,stone,p["depth"]/2,1)
+        new_run=kerb_stair(p,yard_box,plot_ground,stone,p["depth"]/2,1,reservation,street_plan["xy"])
+        p["back_stair_m"]=new_run if new_run is not None else ground_floors["apron"](p,yard_box,plot_ground,stone,p["depth"]/2,1)
 paths=yards["connect_lanes"](plots,segments,patch,road_distance,mx,my,rgba)
+surface_work=run_path(str(BLOCK_STUDY/"surface.py"))["apply"](plots,osm,roads,mx,my,rgba)
 save_surface_mask()
 if "--surface-mask-only" in sys.argv:
+    current=json.loads((OUT/"layout.json").read_bytes())
+    identity=("plot_id","east_north","bearing","width","depth","height","roof","kerb_stairs")
+    def keys(items):return [[p.get(k) for k in identity] for p in items]
+    if keys(current["plots"])!=keys(plots) or current["building_grades"]!=building_grades:
+        raise ValueError("Changed building geometry requires a full export")
+    current.update(lanes=paths,public_paving=surface_work)
+    (OUT/"layout.json").write_text(json.dumps(current,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     raise SystemExit(0)
 lookup={a:i for i,a in enumerate(axis)}
 for batch in chunks.values():
@@ -769,6 +824,19 @@ for key in (49182408,1189963598,176034707,830761786):
                 continue
             band(verges,p,q,height(*p)+.025,height(*q)+.025,.12,white)
 
+def outside_surveyed_sites(tree):
+    xy=np.array(tree["east_north_up"][:2])
+    edges=confirmed_lane[1:]-confirmed_lane[:-1]
+    t=np.clip(np.sum((xy-confirmed_lane[:-1])*edges,axis=1)/np.sum(edges*edges,axis=1),0,1)
+    if np.linalg.norm(xy-confirmed_lane[:-1]-t[:,None]*edges,axis=1).min()<2.1:return False
+    for ring in group_polygons:
+        edges=np.roll(ring,-1,axis=0)-ring
+        delta=xy-ring
+        side=edges[:,0]*delta[:,1]-edges[:,1]*delta[:,0]
+        width=np.linalg.norm(edges,axis=1)*1.35
+        if np.all(side>=-width) or np.all(side<=width):return False
+    return True
+tree_sites=list(filter(outside_surveyed_sites,tree_sites))
 run_path(str(HERE / "planting.py"))["place_trees"](ASSETS, tree_sites, materials, material)
 kit=GAME.parent/"chongqing_blender_v05/scanned_assets/prepared_assets.blend"
 household=run_path(str(HERE/"household.py"))["place"](kit,plots,yards["world"],ASSETS/"courtyard_r24/courtyard.glb")
@@ -800,7 +868,18 @@ bpy.ops.export_scene.gltf(filepath=str(OUT / "outer_district.glb"),export_format
 old_meshes=json.loads((HERE.parents[1] / "scene_r21/district_rays.json").read_text(encoding="utf-8-sig"))["meshes"]
 owned=plots+[dict(p,east_north=yards["world"](p,p["court"]["center_u"],p["depth"]/2+6.4),
                  width=p["court"]["half_width"]*2,depth=12.8) for p in courts]
+# Only the confirmed four blocks and the public lane acquire ownership from old generic scenery.
+for ring in group_polygons:
+    a,b,c,d=frontage(ring,confirmed_lane);cen=ring.mean(axis=0)
+    owned.append(dict(east_north=cen,bearing=atan2(*(b-a)[::-1]),width=np.linalg.norm(b-a)+.8,depth=np.linalg.norm(d-a)+.8))
+corridors=[]
+for a,b in zip(confirmed_lane,confirmed_lane[1:]):
+    corridors.append(dict(east_north=(a+b)*.5,bearing=atan2(*(b-a)[::-1]),width=np.linalg.norm(b-a),depth=3.55))
+generic_old={n:s for n,s in old_meshes.items() if n.startswith("Context_authored_")}
+trail_prefixes,trail_roofs=run_path(str(HERE/"context_owners.py"))["conflicting_context"](corridors,generic_old,legacy_roofs,[])
 prefixes, roof_cuts = run_path(str(HERE/"context_owners.py"))["conflicting_context"](owned,old_meshes,legacy_roofs,mapped_buildings)
+prefixes=sorted(set(prefixes+trail_prefixes))
+roof_cuts=[list(r) for r in dict.fromkeys(tuple(v) for v in roof_cuts+trail_roofs)]
 (OUT / "layout.json").write_text(json.dumps({
     "bounds_east_north_m":[-250,-250,250,250],
     "projection_origin_wgs84":[osm["center_lon"],osm["center_lat"]],
@@ -810,5 +889,5 @@ prefixes, roof_cuts = run_path(str(HERE/"context_owners.py"))["conflicting_conte
     "inferred_alignments":design,"registered_ties":ties,"destinations":destinations,
     "osm_building_ids":mapped_buildings,"plots":plots,"lanes":paths,"retired_context_prefixes":prefixes,"retired_roof_positions":roof_cuts,
     "building_count":len(plots)+len(mapped_buildings),"flyover_reserves":flyover_reserves,"household":household,"collidable_surface_tiles":len(chunks),"planting":tree_sites,
-    "floor_contact_bake":contact_bake,"interior_rail_return":rail_return,"lamps_in_buildings":retired_lamps,
+    "building_grades":building_grades,"removed_for_walkway":removed_for_walkway,"public_paving":surface_work,"floor_contact_bake":contact_bake,"interior_rail_return":rail_return,"lamps_in_buildings":retired_lamps,
 },ensure_ascii=False,indent=2)+"\n")

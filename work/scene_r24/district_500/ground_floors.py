@@ -28,8 +28,6 @@ def through_floor(p, draw, ground, mats, wall_pieces):
         for v0,v1 in ((front+.23,-1.18),(1.18,back-.23)):
             draw(edge, v0, z+.87, edge+.24, v1, z+2.13, wall)
     draw(left+.02,front+.02,z+.005,right-.02,back-.02,z+.035,lining)
-    if not p["name"]:
-        p["front_stair_m"] = apron(p,draw,ground,stone,front,-1)
 
 
 def apron(p,draw,ground,stone,edge,direction):

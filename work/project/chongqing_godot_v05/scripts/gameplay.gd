@@ -5,6 +5,7 @@ var free_answered:=false
 var shelf_time:=-1.0
 var shelf_start:=Vector3.ZERO
 var shelf_yaw:=0.0
+var shancheng: Node3D
 var passage: Node3D
 var lunch: Node3D
 var free_wrist:BoneAttachment3D
@@ -46,7 +47,7 @@ func setup(main: Node3D) -> void:
 	manager = Manager.new()
 	manager.actor = actor
 	add_child(manager)
-	shop = _target("shop.noodle",main._pickup+Vector3.UP,func(): return _shop_prompt(),func(): return (not passage or passage.stage==passage.Stage.IDLE) and ((lunch and lunch.active) or (order != Order.CARRYING and (not lesson or lesson.can_order()))),func(): _shop_action())
+	shop = _target("shop.noodle",main._pickup+Vector3.UP,func(): return _shop_prompt(),func(): return (not shancheng or shancheng.stage!=shancheng.Stage.CARRYING) and (not passage or passage.stage==passage.Stage.IDLE) and ((lunch and lunch.active) or (order != Order.CARRYING and (not lesson or lesson.can_order()))),func(): _shop_action())
 	destination = _target("delivery.home",main._dropoff+Vector3.UP,func(): return lesson.delivery_prompt() if lesson else free_delivery_prompt(),func(): return (not lunch or not lunch.active) and order == Order.CARRYING and (not lesson or (lesson.can_deliver() and (lesson.step==lesson.Step.DONE or lesson.round_index==0))),func(): _deliver())
 	shop_marker = _add_marker(shop,"梯坎小面 · 店主",Color(.83,.65,.3))
 	door_marker = _add_marker(destination,"山城里小院 · 1 号",Color(.4,.7,.7))
@@ -435,6 +436,9 @@ func ui() -> Dictionary:
 	var destination_point: Vector3 = destination.global_position if order==Order.CARRYING else shop.global_position
 	var distance: float = Vector2(actor.body.global_position.x,actor.body.global_position.z).distance_to(Vector2(destination_point.x,destination_point.z))
 	var objective: String = ["到小面馆找店主","等待店主打包","领取餐食","山城里小院 · "+Unit.ADDRESSES[free_flat],"已送达 · 回面馆接下一单"][order]
+	if shancheng:
+		var local_panel: String=shancheng.panel()
+		if not local_panel.is_empty():return {"objective":local_panel,"prompt":prompt}
 	if passage and (passage.offered or passage.stage!=passage.Stage.IDLE or (not passage.last_receipt.is_empty() and not lunch.preview and not lunch.active)):
 		return {"objective":passage.panel(),"prompt":prompt}
 	if lunch:
@@ -447,7 +451,7 @@ func ui() -> Dictionary:
 	return {"objective":objective+" · %d m" % roundi(distance)+("\n今日 %d 单 · %d 元" % [delivered_count,earnings] if delivered_count>0 else ""),"prompt":prompt}
 
 func _unhandled_input(event: InputEvent) -> void:
-	if lunch and event is InputEventKey and event.pressed and not event.echo:
+	if lunch and (not shancheng or shancheng.stage!=shancheng.Stage.CARRYING) and event is InputEventKey and event.pressed and not event.echo:
 		if event.physical_keycode==KEY_B and passage and passage.view_offer():
 			get_viewport().set_input_as_handled()
 			return

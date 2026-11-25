@@ -1,0 +1,126 @@
+{
+  "geodata": "mapped_group.json and frontage_controls.json; derivative coordinates under ODbL 1.0",
+  "references": [
+    {
+      "place": "山城巷",
+      "url": "https://www.cqyz.gov.cn/zjyz/lyyz/ctjq/202210/t20221005_11164462.html"
+    },
+    {
+      "place": "山城巷保护规划",
+      "url": "https://www.cqyz.gov.cn/bm_229/lswhjqgwh/zwxx_97154/dt/202112/t20211206_10082904.html"
+    },
+    {
+      "place": "仁爱堂",
+      "url": "https://www.cqyz.gov.cn/zjyz/lyyz/lswh/tk/202504/t20250421_14541659.html",
+      "reference_image_sha256": "a226561a0cb1a2b538f39959da495b7655dc424b264e6d585dea1ed55fcf6551",
+      "usage": "Visual observation only. No third-party photograph is reproduced."
+    }
+  ],
+  "comparison_photos": {
+    "file": "work/scene_r24/street_photo_study/reference/credits.json",
+    "sha256": "d729c1e8e5ca14f05bd5242cdfde59e6e99e07b683d0ce3a92be6bd11c03b1d6"
+  },
+  "author": "Chongqing district project",
+  "materials": [
+    {
+      "file": "work/project/chongqing_godot_v05/assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+      "sha256": "e29b45cdcd6d02fae3c087c456196ffa750779a9b62e7071aa3831dc322a0cc4",
+      "authors": {
+        "Dimitrios Savva": "Photography",
+        "Rico Cilliers": "Processing"
+      },
+      "source": "https://polyhaven.com/a/concrete_floor_worn_001",
+      "license": "CC0-1.0",
+      "modification": "Reused project diffuse image with authored metric UVs and material tint.",
+      "normal_map": {
+        "file": "work/project/chongqing_godot_v05/assets/chongqing_district_concrete_floor_worn_001_nor_gl_2k.jpg",
+        "sha256": "3b782137e34d63fd59b2e92b4e27b2ee4d082caf9dd23f00dc7ab4da5513daef"
+      }
+    },
+    {
+      "file": "work/project/chongqing_godot_v05/assets/chongqing_district_stone_wall_05_diff_2k.jpg",
+      "sha256": "d3680c5ef2657aead18f9bfab93994555b8f05de4f4fecba18194cbe3a116b87",
+      "authors": {
+        "Charlotte Baglioni": "All"
+      },
+      "source": "https://polyhaven.com/a/stone_wall_05",
+      "license": "CC0-1.0",
+      "modification": "Reused project diffuse image with authored metric UVs and material tint.",
+      "normal_map": {
+        "file": "work/project/chongqing_godot_v05/assets/chongqing_district_stone_wall_05_nor_gl_2k.jpg",
+        "sha256": "14cd6f3fc1dcd1f95962cdf2806866a6608ae69c075a8ffbd1ebd75b2bb679ef"
+      }
+    },
+    {
+      "file": "work/project/chongqing_godot_v05/assets/chongqing_district_plastered_wall_04_diff_1k.jpg",
+      "sha256": "52d789111bbe93d311c22e49d28b56256593c8f84c75742642403da857a36503",
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "source": "https://polyhaven.com/a/plastered_wall_04",
+      "license": "CC0-1.0",
+      "modification": "Reused project diffuse image with authored metric UVs and material tint.",
+      "normal_map": {
+        "file": "work/project/chongqing_godot_v05/assets/chongqing_district_plastered_wall_04_nor_gl_1k.jpg",
+        "sha256": "c0a41dc06e33072ec1156d89f3bd4b481a479616791d4e9df6c5ee7b3283db82"
+      }
+    },
+    {
+      "file": "work/project/chongqing_godot_v05/assets/chongqing_district_brick_wall_08_diff_2k.jpg",
+      "sha256": "e115c64fe0d10393f3cb3bbc46121c180a82ce1a4f8d4be3e8321397385ba89b",
+      "authors": [
+        "Amal Kumar"
+      ],
+      "source": "https://polyhaven.com/a/brick_wall_08",
+      "license": "CC0-1.0",
+      "modification": "Reused project diffuse image with authored metric UVs and material tint.",
+      "normal_map": {
+        "file": "work/project/chongqing_godot_v05/assets/chongqing_district_brick_wall_08_nor_gl_2k.jpg",
+        "sha256": "7e8404b29ef3af7b7cb949fee5441c48451bb21bf5bf24212c209262005f5604"
+      }
+    },
+    {
+      "file": "work/project/chongqing_godot_v05/assets/chongqing_district_wood_table_worn_diff_2k.jpg",
+      "sha256": "165cdba449d56ea8e9675116622b95d7af372b7d7c47b8a98a03fcc630f1d51c",
+      "authors": {
+        "Dimitrios Savva": "Photography",
+        "Rico Cilliers": "Processing"
+      },
+      "source": "https://polyhaven.com/a/wood_table_worn",
+      "license": "CC0-1.0",
+      "modification": "Reused project diffuse image with authored metric UVs and material tint.",
+      "normal_map": {
+        "file": "work/project/chongqing_godot_v05/assets/chongqing_district_wood_table_worn_nor_gl_2k.jpg",
+        "sha256": "a90aaa321194fb41d6e44776c6ee88134e4be416051357a3c9e323cc447c4cf0"
+      }
+    },
+    {
+      "file": "work/project/chongqing_godot_v05/assets/chongqing_district_roof_tiles_diff.jpg",
+      "sha256": "6bd87a97594b57e89cdf17cb0cfd912815b9d707613f56b15d9d07014818a915",
+      "authors": [
+        "Project procedural material authoring"
+      ],
+      "source": "",
+      "license": "Project-authored; no third-party source imagery",
+      "modification": "Reused project diffuse image with authored metric UVs and material tint.",
+      "normal_map": {
+        "file": "work/project/chongqing_godot_v05/assets/chongqing_district_roof_tiles_nor_gl.jpg",
+        "sha256": "d54a00cfbda9ed50bd4ea8a5a2822f7b9bcdcb6c0a3973307bb7e160767f0de7"
+      }
+    }
+  ],
+  "signs": [
+    {
+      "file": "work/assets_incoming/r20_noto/NotoSansCJKsc-Regular.otf",
+      "sha256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b"
+    },
+    {
+      "file": "work/assets_incoming/r20_noto/LICENSE.txt",
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    {
+      "file": "work/assets_incoming/r20_noto/source_commit.txt",
+      "sha256": "7c39656bf78d536b1102fb26d84cd13664862d9306a624fe417bbeb570403366"
+    }
+  ]
+}

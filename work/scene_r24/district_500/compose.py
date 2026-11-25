@@ -31,7 +31,10 @@ local_study = bpy.data.collections.get("R24_11_Local_city_frame")
 if local_study:
     local_study.hide_viewport=True
     local_study.hide_render=True
+edge=json.loads((root/"work/project/chongqing_godot_v05/assets/district_500/edge_ground.json").read_bytes())
 for item in bpy.context.scene.objects:
+    if item.name.startswith(tuple(edge["context_prefixes"])):
+        transform=item.matrix_world.copy();transform.translation.z+=edge["context_shift_z"];item.matrix_world=transform
     if item.name==layout.get("interior_rail_return",{}).get("original"):
         item.hide_set(True)
         item.hide_render=True
@@ -64,5 +67,9 @@ for obj in draft.objects:
 with bpy.data.libraries.load(str(here.parent/"outer_neighborhood/landing_53.blend"),link=True,relative=True) as (source,landing):
     landing.objects=["COL_Outer500_53_LowLanding"]
 collection.objects.link(landing.objects[0])
+with bpy.data.libraries.load(str(here.parent/"street_blocks/shancheng_lane.blend"),link=True,relative=True) as (source,lane):
+    lane.objects=source.objects[:]
+for item in lane.objects:
+    collection.objects.link(item)
 bpy.context.preferences.filepaths.save_version=0
 bpy.ops.wm.save_as_mainfile(filepath=str(here / "city_and_outer.local.blend"),relative_remap=True,compress=True)

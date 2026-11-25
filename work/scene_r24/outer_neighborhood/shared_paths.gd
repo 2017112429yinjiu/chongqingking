@@ -40,9 +40,14 @@ func verify() -> void:
 		var from: Dictionary=data.plots[lane.plots[0]]
 		var to: Dictionary=data.plots[lane.plots[1]]
 		var name:="lane_%d_%d"%[from.plot_id,to.plot_id]
-		var points := [public_floor(lane.points[0],from.height),public_floor(lane.points[1],to.height)]
-		if not points.has(Vector3.INF) and not "--straight" in OS.get_cmdline_user_args():
-			points = paved_route(points[0], points[1], data.planting)
+		var points: Array=[]
+		for i in range(lane.points.size()-1):
+			var a:=public_floor(lane.points[i],lerpf(from.height,to.height,float(i)/(lane.points.size()-1)))
+			var b:=public_floor(lane.points[i+1],lerpf(from.height,to.height,float(i+1)/(lane.points.size()-1)))
+			var leg: Array=[a,b]
+			if not leg.has(Vector3.INF) and not "--straight" in OS.get_cmdline_user_args():
+				leg=paved_route(a,b,data.planting)
+			points.append_array(leg if points.is_empty() else leg.slice(1))
 		if points.has(Vector3.INF):
 			check(name+"_floor",false,points)
 			continue

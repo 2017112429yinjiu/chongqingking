@@ -1,5 +1,8 @@
 # Chongqing district continuation
 
+- The 500 m prototype now uses mapped Shancheng Lane, four registered one-storey houses and an optional two-route handoff. Read work/scene_r24/street_blocks/README.md. Future expansion must trace actual Chongqing building groups to source polygons or a registered site model. Preserve the prior failed walks, player views, park boundary and footprint attribution.
+
+
 - On the 500 m trial branch, reopen the updated outer district and the linked `work/scene_r24/outer_neighborhood/landing_53.blend`. Read the first section of the outer neighborhood README. Keep all four fixed-view trials, the baseline, the shared-lane return failure, the 53 landing profiles and the full-sequence retest.
 
 - The current 500 m trial includes the rebuilt storey frames, working interiors and the clipped laundry-side rail. Use the same market shortcut and Blender outer layer. Read the opening section of `work/scene_r24/outer_neighborhood/README.md` before editing; preserve the original pixel hits, fixed-camera trials, frame checks, contact probes and passage walks.

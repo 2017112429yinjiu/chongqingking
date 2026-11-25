@@ -95,6 +95,9 @@ func setup(world: Node3D, checkpoint: String = RECORD) -> void:
 		if step==Step.DONE and not record.has_section_key("shift","round"):
 			round_index=1
 			step=Step.RETURN
+		if game.shancheng:
+			game.shancheng.stage=clampi(int(record.get_value("shancheng","stage",0)),0,2)
+			game.shancheng.rest_parcel()
 		game.earnings = maxi(0,int(record.get_value("shift","earnings",0)))
 	game.owner_scene.hud.theme.default_font = preload("res://assets/fonts/first_shift.otf")
 	game.owner_scene.objective_label.add_theme_font_size_override("font_size",21)
@@ -150,6 +153,9 @@ func setup(world: Node3D, checkpoint: String = RECORD) -> void:
 			_walk_from(game.owner_scene._pickup+Vector3(.7,0,-.2),game.shop.global_position)
 		game.lunch.restore(record)
 		game.passage.restore(record)
+		if game.shancheng and game.shancheng.stage==game.shancheng.Stage.CARRYING:
+			var approach: Array=game.shancheng.stops[0].approach
+			_walk_from(Vector3(approach[0],approach[2],-approach[1]),game.shancheng.sender.global_position)
 		if practice_passage:
 			_place_vehicle(player_bike,YARD_STOP+Vector3(3.6,0,0),PI/2)
 			_walk_from(Unit.COURT+Vector3(1.2,0,0),Vector3(-54.9,17.8,19.5))
@@ -242,6 +248,7 @@ func _save() -> void:
 		record.set_value("shift","door_shown",demo.door_shown)
 		record.set_value("shift","knocked",demo.student_knocked)
 	if game.lunch:game.lunch.store_progress(record)
+	if game.shancheng:record.set_value("shancheng","stage",game.shancheng.stage)
 	if game.passage:game.passage.save_to(record)
 	var temp := record_path+".%d.tmp" % OS.get_process_id()
 	var err := record.save(temp)

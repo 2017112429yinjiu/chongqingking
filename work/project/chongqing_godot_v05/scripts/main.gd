@@ -187,6 +187,9 @@ func _ready() -> void:
 	add_child(gameplay)
 	gameplay.setup(self)
 	if district_500_enabled:
+		gameplay.shancheng=preload("res://scripts/shancheng_delivery.gd").new()
+		gameplay.add_child(gameplay.shancheng)
+		gameplay.shancheng.setup(gameplay)
 		explorer.recovery_half_extent_m = 251.0
 		gameplay.scooter.recovery_half_extent_m = 251.0
 		gameplay.scooter.recovery_min_height_m = -19.0

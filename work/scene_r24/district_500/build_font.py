@@ -10,6 +10,7 @@ out = work / "project/chongqing_godot_v05/assets/district_500"
 layout = json.loads((out / "layout.json").read_text(encoding="utf-8"))
 text = "".join(place["name"] for place in layout["destinations"])+"0123456789"
 text += "".join(sign["text"] for plot in layout.get("plots",[]) for sign in plot.get("trade_signs",[]))
+text += "山城巷取件台仁爱堂外公共步道交接架托送已签收·"
 font = TTFont(work / "assets_incoming/r20_noto/NotoSansCJKsc-Regular.otf", recalcTimestamp=False)
 writer = subset.Subsetter()
 writer.populate(text=text)

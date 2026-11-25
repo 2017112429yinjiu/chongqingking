@@ -78,7 +78,8 @@ static func _walk(main: Node3D, points: Array, name: String) -> Dictionary:
 			if frame==1899:
 				for index in range(actor.body.get_slide_collision_count()):
 					var collision: KinematicCollision3D=actor.body.get_slide_collision(index)
-					stalled.append(str(collision.get_collider().name))
+					var collider: Node3D=collision.get_collider()
+					stalled.append({"mesh":str(collider.get_parent().name),"position":str(collision.get_position()),"normal":str(collision.get_normal())})
 		if reached<points.find(point)+1:break
 	actor.automation_axis=Vector2.ZERO
 	for frame in range(20):await main.get_tree().physics_frame

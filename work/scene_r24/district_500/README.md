@@ -1,5 +1,7 @@
 # 重庆外卖王 · 500 米城区试作
 
+[山城巷按图复原、两条托送线路及草地调整](../street_blocks/README.md)。
+
 桌面可[从市场进院上楼](../../逛照相巷院坝.cmd)，也可[从东侧街口骑行](../../试玩500米城区.cmd)。现版街巷、住宅和店内实走见[院坝与住户](../outer_neighborhood/README.md)。第一版树种、屋顶和接缝的历史对照见[街面复核](../expansion_review/README.md)。
 
 默认项目是 `work/project/chongqing_godot_v05/project.godot`。Godot 4.6.3 运行项目进入 `first_shift.tscn`，按原来的方式向老彭报到，完成教学后可沿出区道路自由活动。独立检出从 R24 build 25b 游戏提交 `ce1841b079b78c1f876bfa0da3b8b6a404ac9532` 开始，云端工具安装脚本来自 `0253cada1833dc66fa6a93f12e6af373451e99a4`。
@@ -31,6 +33,8 @@ blender -b work/scene_r24/district_patrol/city_and_patrol.blend \
   -P work/scene_r24/district_500/measure_baseline.py
 blender -b -P work/scene_r24/district_500/build.py
 blender -b work/scene_r24/district_500/outer_district.blend -P work/scene_r24/outer_neighborhood/landing_53.py
+blender -b work/scene_r24/district_500/outer_district.blend -P work/scene_r24/street_blocks/mapped_lane.py
+blender -b work/scene_r24/district_500/outer_district.blend -P work/scene_r24/street_blocks/ground_context.py
 python work/scene_r24/district_500/build_font.py
 blender -b work/scene_r24/district_patrol/city_and_patrol.blend \
   -P work/scene_r24/district_500/compose.py

@@ -9,6 +9,8 @@ static func install(city: Node3D) -> Dictionary:
 	city.add_child(district)
 	var low_landing := (load("res://assets/district_500/landing_53.glb") as PackedScene).instantiate() as Node3D
 	district.add_child(low_landing)
+	var mapped_lane: PackedScene=load("res://assets/district_500/shancheng_lane.glb")
+	district.add_child(mapped_lane.instantiate())
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -17,6 +19,7 @@ static func install(city: Node3D) -> Dictionary:
 		"asphalt_normal": "asphalt_02_nor_gl_1k.jpg",
 		"asphalt_rough": "asphalt_02_rough_1k.png",
 		"paving": "stone_floor_diff_2k.jpg",
+		"paving_normal": "stone_floor_nor_gl_2k.jpg",
 		"soil": "brown_mud_leaves_01_diff_2k.jpg",
 		"aggregate": "leaf_scattered_gravel_diff_2k.jpg",
 	}
@@ -47,6 +50,10 @@ static func install(city: Node3D) -> Dictionary:
 		mesh.lod_bias=3.0
 	for unit: MeshInstance3D in district.find_children("Outer500_Condenser_*","MeshInstance3D",true,false):
 		unit.visibility_range_end=55.0
+	var edge: Dictionary=JSON.parse_string(FileAccess.get_file_as_string("res://assets/district_500/edge_ground.json"))
+	for prefix: String in edge.context_prefixes:
+		for mesh: MeshInstance3D in city.find_children(prefix+"*","MeshInstance3D",true,false):
+			mesh.global_position.y+=float(edge.context_shift_z)
 	var prefixes: Array = layout.get("retired_context_prefixes", [])
 	for prior: MeshInstance3D in city.find_children("Context_*","MeshInstance3D",true,false):
 		for prefix: String in prefixes:
@@ -199,6 +206,11 @@ static func start_exploration(scene: Node3D) -> void:
 	bike.safe_park_position = bike.global_position
 	bike.rotation.y = -0.87
 	scene.explorer.set_walk_origin(shoulder.position + Vector3.UP * 0.035, bike.global_position + Vector3.UP)
+	if "--shancheng" in OS.get_cmdline_user_args():
+		var layout: Dictionary=JSON.parse_string(FileAccess.get_file_as_string("res://assets/district_500/shancheng_lane.json"))
+		var a: Array=layout.public_stops[0].approach
+		var b: Array=layout.public_stops[0].target
+		scene.explorer.set_walk_origin(Vector3(a[0],a[2],-a[1]),Vector3(b[0],b[1],b[2]))
 	if "--outer-market" in OS.get_cmdline_user_args():
 		var layout: Dictionary=JSON.parse_string(FileAccess.get_file_as_string(LAYOUT))
 		for i in layout.plots.size():

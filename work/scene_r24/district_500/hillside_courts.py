@@ -320,6 +320,9 @@ def connect_lanes(plots,segments,patch,road_distance,mask_x,mask_y,rgba):
         u=p["door_u"]
         front=world(p,u if not p["name"] else -.27*p["width"],f-p.get("front_stair_m",8.7)-.18)
         back=world(p,*p["court"]["exit_local"]) if p.get("court") else world(p,u,-f+p["back_stair_m"]+.21)
+        stairs=p.get("kerb_stairs",{})
+        if "front" in stairs:front=world(p,*stairs["front"]["toe"])
+        if "back" in stairs:back=world(p,*stairs["back"]["toe"])
         points.extend([(i,front),(i,back)])
         candidates=[]
         for a,b,w,_ in segments:
@@ -339,5 +342,28 @@ def connect_lanes(plots,segments,patch,road_distance,mask_x,mask_y,rgba):
         i,p=points[a];j,q=points[b];pair=tuple(sorted((i,j)))
         if pair in seen or degree.get(a,0)>=2 or degree.get(b,0)>=2 or not clear(p,q,True):continue
         seen.add(pair);degree[a]=degree.get(a,0)+1;degree[b]=degree.get(b,0)+1
-        visible_walk(p,q,.94);paths.append({"type":"shared","plots":[i,j],"points":[p,q]})
+        route=[p,q]
+        # A sideways entrance needs room to approach the toe past the cheek wall.
+        # Route the paving along the outside edge only when the direct segment intersects it.
+        # The runoff wall bounds the 55/57 lane. Its previously walked straight
+        # approach clears both low treads inside the paving.
+        ends=() if {plots[i]["plot_id"],plots[j]["plot_id"]}=={55,57} else ((0,plots[i]),(-1,plots[j]))
+        for end,owner in ends:
+            for key,stair in owner.get("kerb_stairs",{}).items():
+                toe=stair["toe"]
+                if hypot(*(np.array(route[end])-world(owner,*toe)))>.05:continue
+                direction=-1 if key=="front" else 1
+                mid=stair["pad"][0];edge=stair["edge"]
+                side=stair["direction"];last=toe[0]-side*.24
+                local_line=np.array([local(owner,*pt) for pt in np.linspace(route[0],route[-1],81)])
+                near=(local_line[:,0]>min(mid-.97,last)-.36)&(local_line[:,0]<max(mid+.97,last)+.36)
+                depth=direction*(local_line[:,1]-edge)
+                if not np.any(near&(depth>-.30)&(depth<stair["width_m"]+.37)):continue
+                outer=edge+direction*(stair["width_m"]+.91)
+                upstream=mid-side*1.68
+                bends=[world(owner,toe[0]+side*.38,outer),world(owner,upstream,outer)]
+                if end==0:route[1:1]=bends
+                else:route[-1:-1]=reversed(bends)
+        for u,v in zip(route[:-1],route[1:]):visible_walk(u,v,.94)
+        paths.append({"type":"shared","plots":[i,j],"points":route})
     return paths
