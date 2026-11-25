@@ -27,3 +27,7 @@
 使用 R24 build 25b 的 `verify.ps1 -Run mapped_lane_patrol_03 -AllRoads -Timing` 完整复跑。教练 14 条路共 28 腿，实骑 3,454.04 米；玩家路面骑行两方向各 26 条。六个修复接头的 18 个往返、另 4 个街口往返及 300 个门槛横断面均已重新测量。较早的 `mapped_lane_patrol_02` 在第七条教练路线拍照后提前退出，汇总未通过，保留部分记录。[第三次整套汇总](../../../project/chongqing_godot_v05/verification_r24/district_patrol/mapped_lane_patrol_03/survey_summary.json) · [上次不完整的骑行记录](../../../project/chongqing_godot_v05/verification_r24/district_patrol/mapped_lane_patrol_02/ride/patrol.json)
 
 山城巷另做独立 Forward+ 采样。设备 NVIDIA GeForce RTX 4070 Laptop GPU，窗口 (1152, 648)、内部视口 (692.0, 389.0)。每机位 150 帧，GPU P95 分别为 4.48 ms、4.16 ms、5.66 ms，依次为沿街窗、巷口转弯和交接段。这些数值来自桌面显卡。[原始计时](native_timing/timing.json)
+
+## 原 ChatGPT 云工作区
+
+云端以制作提交 `9d382a3d` 重新校验六项 LFS 资产。Blender 4.3.2 复开源文件并量测四栋建筑，Godot 4.6.3 完成导入。玩家控制器沿山城巷两个方向各到达 46 个目标点，另走通四栋房屋的 8 个进出方向、24 段楼梯的 48 个上下行方向和两条送单路线的 12 项检查。图形窗口使用 Mesa llvmpipe 软件渲染，取件台标牌和桌上纸袋均已目视确认。云端随后快进至公开提交 `2e9f884d`，复核六项资产一致；当时 /workspace 可用空间为 17G。[云端实测摘要及原始文件位置](cloud.json)

@@ -1,0 +1,81 @@
+{
+  "date_local": "2026-11-26",
+  "source": "Transcribed from the final report of the original ChatGPT cloud workspace. Raw evidence is retained in that workspace.",
+  "product_commit": "9d382a3d7af5c30f2fc85bb5db56c3b21eb59a2c",
+  "checkout_after_tests": "2e9f884d623f91fffdb7c9dfdf3e04e7bc53dbe4",
+  "checkout": "/workspace/chongqing-500",
+  "evidence_directory": "/workspace/work/runtime/shancheng-9d382a3d/",
+  "asset_transfer": {
+    "bytes": 328972798,
+    "sha256": "b3d905b1f34ceb31ca7988e5981564c6f0b938c07150076d0eccab944d62966a",
+    "lfs_objects_verified_by_size_and_sha256": 6,
+    "rechecked_after_fast_forward": true
+  },
+  "blender": {
+    "version": "4.3.2",
+    "source": "shancheng_lane.blend",
+    "reopened_and_measured_buildings": 4,
+    "raw": "blender/blender-outlines.json"
+  },
+  "godot": {
+    "version": "4.6.3",
+    "import_passed": true,
+    "tests": [
+      {
+        "script": "walk_mapped.gd",
+        "exit_code": 0,
+        "targets_per_direction": [
+          46,
+          46
+        ],
+        "distance_m": [
+          294.34,
+          294.3
+        ],
+        "raw": "walk_mapped/walk.json"
+      },
+      {
+        "script": "doorways.gd",
+        "exit_code": 0,
+        "directions_passed": 8,
+        "distance_m": 20.66,
+        "raw": "doorways/doors.json"
+      },
+      {
+        "script": "walk_stairs.gd",
+        "exit_code": 0,
+        "flights": 24,
+        "directions_passed": 48,
+        "distance_m": 304.4,
+        "raw": "walk_stairs/stairs.json"
+      },
+      {
+        "script": "handoff.gd",
+        "exit_code": 0,
+        "checks_passed": 12,
+        "primary_out_and_back_m": [
+          83.53,
+          83.51
+        ],
+        "branch_out_and_back_m": [
+          93.83,
+          93.8
+        ],
+        "raw": "handoff/handoff.json"
+      }
+    ]
+  },
+  "graphical_play": {
+    "checkpoint": "Shancheng Lane pickup table",
+    "observed": [
+      "pickup sign",
+      "paper bag on the table"
+    ],
+    "renderer": "OpenGL 4.5 Compatibility, Mesa llvmpipe (software)",
+    "raw": "play.log"
+  },
+  "filesystem": {
+    "mount": "/workspace",
+    "available_at_verification": "17G"
+  }
+}
