@@ -1200,7 +1200,43 @@
       "kind": 0,
       "name": "南区路车棚修理铺",
       "door_u": 0.0,
-      "back_stair_m": 3.32
+      "plot_id": 0,
+      "trade_signs": [
+        {
+          "text": "补胎打气",
+          "u": 3.27,
+          "v": -4.811,
+          "h": 2.2,
+          "width": 1.48
+        },
+        {
+          "text": "修车配件",
+          "u": -3.67,
+          "v": -3.621,
+          "h": 2.2,
+          "width": 1.35
+        }
+      ],
+      "court": {
+        "half_width": 7.2,
+        "center_u": 4.8,
+        "stair_side": -1,
+        "room_u": 9.1208,
+        "stair_u": -1.0200000000000005,
+        "stair_v": 7.66,
+        "landing_v": 14.008,
+        "room_v": 15.927999999999999,
+        "upper_m": 2.916,
+        "bed_local": [
+          5.92,
+          18.02
+        ],
+        "other_room_u": 0.22479999999999922,
+        "exit_local": [
+          17.61,
+          8.58
+        ]
+      }
     },
     {
       "east_north": [
@@ -1216,7 +1252,43 @@
       "kind": 0,
       "name": "照相巷便民市场",
       "door_u": -0.78,
-      "back_stair_m": 2.36
+      "plot_id": 1,
+      "trade_signs": [
+        {
+          "text": "时令蔬菜",
+          "u": 2.4400000000000004,
+          "v": -4.801,
+          "h": 2.2,
+          "width": 1.4
+        },
+        {
+          "text": "干货杂粮",
+          "u": -4.4,
+          "v": -3.621,
+          "h": 2.18,
+          "width": 1.36
+        }
+      ],
+      "court": {
+        "half_width": 8.75,
+        "center_u": 0.0,
+        "stair_side": -1,
+        "room_u": 5.3128,
+        "stair_u": -7.37,
+        "stair_v": 7.66,
+        "landing_v": 14.008,
+        "room_v": 15.927999999999999,
+        "upper_m": 2.916,
+        "bed_local": [
+          1.12,
+          18.02
+        ],
+        "other_room_u": -5.567199999999999,
+        "exit_local": [
+          9.41,
+          8.58
+        ]
+      }
     },
     {
       "east_north": [
@@ -1232,7 +1304,36 @@
       "kind": 1,
       "name": "江岸茶摊",
       "door_u": -1.65,
-      "back_stair_m": 2.68
+      "plot_id": 2,
+      "trade_signs": [
+        {
+          "text": "盖碗老荫茶",
+          "u": 1.62,
+          "v": -4.321,
+          "h": 2.2,
+          "width": 1.48
+        }
+      ],
+      "court": {
+        "half_width": 8.75,
+        "center_u": 0.0,
+        "stair_side": 1,
+        "room_u": -5.3128,
+        "stair_u": 7.37,
+        "stair_v": 7.16,
+        "landing_v": 13.508,
+        "room_v": 15.427999999999999,
+        "upper_m": 2.916,
+        "bed_local": [
+          -1.12,
+          17.52
+        ],
+        "other_room_u": 5.567199999999999,
+        "exit_local": [
+          -12.38,
+          8.08
+        ]
+      }
     },
     {
       "east_north": [
@@ -1248,8 +1349,15 @@
       "kind": 2,
       "name": "",
       "door_u": -1.4891385842996703,
-      "back_stair_m": 2.68,
-      "front_stair_m": 8.12
+      "plot_id": 3,
+      "front_stair_m": 8.12,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -0.08913858429967036,
+        "inside_u": 2.464606751242433,
+        "use": "kitchen"
+      },
+      "back_stair_m": 2.68
     },
     {
       "east_north": [
@@ -1265,8 +1373,15 @@
       "kind": 1,
       "name": "",
       "door_u": 1.6530304144465577,
-      "back_stair_m": 8.76,
-      "front_stair_m": 3.0
+      "plot_id": 4,
+      "front_stair_m": 3.0,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 0.2530304144465578,
+        "inside_u": -2.6753248185741456,
+        "use": "washroom"
+      },
+      "back_stair_m": 8.76
     },
     {
       "east_north": [
@@ -1282,8 +1397,15 @@
       "kind": 2,
       "name": "",
       "door_u": -2.644195312266893,
-      "back_stair_m": 2.68,
-      "front_stair_m": 3.64
+      "plot_id": 5,
+      "front_stair_m": 3.64,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -1.2441953122668932,
+        "inside_u": 3.94967968720029,
+        "use": "kitchen"
+      },
+      "back_stair_m": 2.68
     },
     {
       "east_north": [
@@ -1299,8 +1421,15 @@
       "kind": 0,
       "name": "",
       "door_u": -2.5926897237570783,
-      "back_stair_m": 6.52,
-      "front_stair_m": 2.68
+      "plot_id": 6,
+      "front_stair_m": 2.68,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -1.1926897237570784,
+        "inside_u": 3.8834582162590996,
+        "use": "bedroom"
+      },
+      "back_stair_m": 6.52
     },
     {
       "east_north": [
@@ -1316,8 +1445,15 @@
       "kind": 0,
       "name": "",
       "door_u": -1.7071698298916893,
-      "back_stair_m": 8.12,
-      "front_stair_m": 3.0
+      "plot_id": 7,
+      "front_stair_m": 3.0,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -0.3071698298916894,
+        "inside_u": 2.7449326384321715,
+        "use": "bedroom"
+      },
+      "back_stair_m": 8.12
     },
     {
       "east_north": [
@@ -1333,8 +1469,34 @@
       "kind": 2,
       "name": "",
       "door_u": -2.738496348865503,
-      "back_stair_m": 4.92,
-      "front_stair_m": 4.28
+      "plot_id": 8,
+      "front_stair_m": 4.28,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -1.3384963488655033,
+        "inside_u": 4.070923877112789,
+        "use": "kitchen"
+      },
+      "court": {
+        "half_width": 8.75,
+        "center_u": 0.0,
+        "stair_side": 1,
+        "room_u": -5.3128,
+        "stair_u": 7.37,
+        "stair_v": 5.361866381115912,
+        "landing_v": 11.709866381115912,
+        "room_v": 13.62986638111591,
+        "upper_m": 2.916,
+        "bed_local": [
+          -1.12,
+          15.721866381115913
+        ],
+        "other_room_u": 5.567199999999999,
+        "exit_local": [
+          -10.4,
+          6.281866381115912
+        ]
+      }
     },
     {
       "east_north": [
@@ -1350,8 +1512,15 @@
       "kind": 3,
       "name": "",
       "door_u": 1.3843391069230653,
-      "back_stair_m": 4.92,
-      "front_stair_m": 5.56
+      "plot_id": 9,
+      "front_stair_m": 5.56,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -0.015660893076934634,
+        "inside_u": -2.3298645660439408,
+        "use": "sitting_room"
+      },
+      "back_stair_m": 4.92
     },
     {
       "east_north": [
@@ -1367,8 +1536,15 @@
       "kind": 1,
       "name": "",
       "door_u": 1.9705890110653925,
-      "back_stair_m": 4.28,
-      "front_stair_m": 6.84
+      "plot_id": 10,
+      "front_stair_m": 6.84,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 0.5705890110653926,
+        "inside_u": -3.0836144427983614,
+        "use": "washroom"
+      },
+      "back_stair_m": 4.28
     },
     {
       "east_north": [
@@ -1384,8 +1560,15 @@
       "kind": 2,
       "name": "",
       "door_u": -1.8252175280189553,
-      "back_stair_m": 1.72,
-      "front_stair_m": 5.88
+      "plot_id": 11,
+      "front_stair_m": 5.88,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -0.4252175280189554,
+        "inside_u": 2.896708250310085,
+        "use": "kitchen"
+      },
+      "back_stair_m": 1.72
     },
     {
       "east_north": [
@@ -1401,8 +1584,15 @@
       "kind": 0,
       "name": "",
       "door_u": -1.3288919625222377,
-      "back_stair_m": 9.72,
-      "front_stair_m": 3.32
+      "plot_id": 12,
+      "front_stair_m": 3.32,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 0.07110803747776218,
+        "inside_u": 2.258575380385734,
+        "use": "bedroom"
+      },
+      "back_stair_m": 9.72
     },
     {
       "east_north": [
@@ -1418,8 +1608,15 @@
       "kind": 0,
       "name": "",
       "door_u": -1.3555027465323872,
-      "back_stair_m": 2.36,
-      "front_stair_m": 10.36
+      "plot_id": 13,
+      "front_stair_m": 10.36,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 0.044497253467612685,
+        "inside_u": 2.2927892455416408,
+        "use": "bedroom"
+      },
+      "back_stair_m": 2.36
     },
     {
       "east_north": [
@@ -1435,8 +1632,15 @@
       "kind": 3,
       "name": "",
       "door_u": 1.386622789603116,
-      "back_stair_m": 8.44,
-      "front_stair_m": 5.88
+      "plot_id": 14,
+      "front_stair_m": 5.88,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -0.013377210396883887,
+        "inside_u": -2.3328007294897204,
+        "use": "sitting_room"
+      },
+      "back_stair_m": 8.44
     },
     {
       "east_north": [
@@ -1452,8 +1656,15 @@
       "kind": 0,
       "name": "",
       "door_u": -1.7141885366243155,
-      "back_stair_m": 2.04,
-      "front_stair_m": 6.52
+      "plot_id": 15,
+      "front_stair_m": 6.52,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -0.31418853662431556,
+        "inside_u": 2.7539566899455483,
+        "use": "bedroom"
+      },
+      "back_stair_m": 2.04
     },
     {
       "east_north": [
@@ -1469,8 +1680,15 @@
       "kind": 2,
       "name": "",
       "door_u": -1.376625477301056,
-      "back_stair_m": 8.44,
-      "front_stair_m": 1.72
+      "plot_id": 16,
+      "front_stair_m": 1.72,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 0.02337452269894391,
+        "inside_u": 2.3199470422442148,
+        "use": "kitchen"
+      },
+      "back_stair_m": 8.44
     },
     {
       "east_north": [
@@ -1486,8 +1704,15 @@
       "kind": 0,
       "name": "",
       "door_u": -1.5871567294385829,
-      "back_stair_m": 2.04,
-      "front_stair_m": 7.8
+      "plot_id": 17,
+      "front_stair_m": 7.8,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -0.18715672943858297,
+        "inside_u": 2.5906300807067493,
+        "use": "bedroom"
+      },
+      "back_stair_m": 2.04
     },
     {
       "east_north": [
@@ -1503,42 +1728,15 @@
       "kind": 1,
       "name": "",
       "door_u": 2.2799137748487612,
-      "back_stair_m": 8.12,
-      "front_stair_m": 1.72
-    },
-    {
-      "east_north": [
-        158.0241031056041,
-        -17.238580378957177
-      ],
-      "bearing": -2.4685063615863982,
-      "width": 9.455024176210852,
-      "depth": 9.935571343177184,
-      "height": 20.2993342675479,
-      "roof": 32.0993342675479,
-      "floors": 4,
-      "kind": 0,
-      "name": "",
-      "door_u": -1.3237033846695194,
-      "back_stair_m": 7.8,
-      "front_stair_m": 1.72
-    },
-    {
-      "east_north": [
-        136.40434237370908,
-        -33.39175666123314
-      ],
-      "bearing": -2.4685063615863982,
-      "width": 16.26163728580213,
-      "depth": 10.12674225357032,
-      "height": 19.90767743544579,
-      "roof": 34.65767743544579,
-      "floors": 5,
-      "kind": 0,
-      "name": "",
-      "door_u": -2.2766292200122984,
-      "back_stair_m": 5.56,
-      "front_stair_m": 2.68
+      "plot_id": 18,
+      "front_stair_m": 1.72,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 0.8799137748487613,
+        "inside_u": -3.481317710519835,
+        "use": "washroom"
+      },
+      "back_stair_m": 8.12
     },
     {
       "east_north": [
@@ -1554,8 +1752,15 @@
       "kind": 3,
       "name": "",
       "door_u": 2.601319148915236,
-      "back_stair_m": 6.84,
-      "front_stair_m": 3.32
+      "plot_id": 21,
+      "front_stair_m": 3.32,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 1.201319148915236,
+        "inside_u": -3.894553191462445,
+        "use": "sitting_room"
+      },
+      "back_stair_m": 6.84
     },
     {
       "east_north": [
@@ -1571,8 +1776,15 @@
       "kind": 3,
       "name": "",
       "door_u": 2.1762589440056233,
-      "back_stair_m": 6.84,
-      "front_stair_m": 2.36
+      "plot_id": 22,
+      "front_stair_m": 2.36,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 0.7762589440056233,
+        "inside_u": -3.348047213721515,
+        "use": "sitting_room"
+      },
+      "back_stair_m": 6.84
     },
     {
       "east_north": [
@@ -1588,8 +1800,15 @@
       "kind": 0,
       "name": "",
       "door_u": -2.2937249794907695,
-      "back_stair_m": 3.96,
-      "front_stair_m": 7.48
+      "plot_id": 23,
+      "front_stair_m": 7.48,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -0.8937249794907696,
+        "inside_u": 3.4990749736309894,
+        "use": "bedroom"
+      },
+      "back_stair_m": 3.96
     },
     {
       "east_north": [
@@ -1605,8 +1824,15 @@
       "kind": 3,
       "name": "",
       "door_u": 1.8234889401343832,
-      "back_stair_m": 1.72,
-      "front_stair_m": 7.16
+      "plot_id": 24,
+      "front_stair_m": 7.16,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 0.4234889401343833,
+        "inside_u": -2.894485780172778,
+        "use": "sitting_room"
+      },
+      "back_stair_m": 1.72
     },
     {
       "east_north": [
@@ -1622,8 +1848,15 @@
       "kind": 3,
       "name": "",
       "door_u": 1.5198611435213691,
-      "back_stair_m": 2.04,
-      "front_stair_m": 7.48
+      "plot_id": 25,
+      "front_stair_m": 7.48,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 0.11986114352136923,
+        "inside_u": -2.5041071845274745,
+        "use": "sitting_room"
+      },
+      "back_stair_m": 2.04
     },
     {
       "east_north": [
@@ -1639,8 +1872,15 @@
       "kind": 2,
       "name": "",
       "door_u": -2.715941947031607,
-      "back_stair_m": 11.96,
-      "front_stair_m": 3.32
+      "plot_id": 26,
+      "front_stair_m": 3.32,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -1.315941947031607,
+        "inside_u": 4.041925360469207,
+        "use": "kitchen"
+      },
+      "back_stair_m": 11.96
     },
     {
       "east_north": [
@@ -1656,8 +1896,15 @@
       "kind": 3,
       "name": "",
       "door_u": 1.42628921480878,
-      "back_stair_m": 8.76,
-      "front_stair_m": 1.72
+      "plot_id": 27,
+      "front_stair_m": 1.72,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 0.026289214808780104,
+        "inside_u": -2.38380041903986,
+        "use": "sitting_room"
+      },
+      "back_stair_m": 8.76
     },
     {
       "east_north": [
@@ -1673,8 +1920,15 @@
       "kind": 2,
       "name": "",
       "door_u": -1.716671285166646,
-      "back_stair_m": 3.32,
-      "front_stair_m": 8.12
+      "plot_id": 28,
+      "front_stair_m": 8.12,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -0.316671285166646,
+        "inside_u": 2.757148795214259,
+        "use": "kitchen"
+      },
+      "back_stair_m": 3.32
     },
     {
       "east_north": [
@@ -1690,8 +1944,15 @@
       "kind": 1,
       "name": "",
       "door_u": 1.6204153240653454,
-      "back_stair_m": 2.04,
-      "front_stair_m": 3.96
+      "plot_id": 29,
+      "front_stair_m": 3.96,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 0.22041532406534547,
+        "inside_u": -2.6333911309411584,
+        "use": "washroom"
+      },
+      "back_stair_m": 2.04
     },
     {
       "east_north": [
@@ -1707,8 +1968,15 @@
       "kind": 3,
       "name": "",
       "door_u": 1.9327977172474022,
-      "back_stair_m": 7.48,
-      "front_stair_m": 1.72
+      "plot_id": 30,
+      "front_stair_m": 1.72,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 0.5327977172474023,
+        "inside_u": -3.0350256364609454,
+        "use": "sitting_room"
+      },
+      "back_stair_m": 7.48
     },
     {
       "east_north": [
@@ -1724,8 +1992,15 @@
       "kind": 2,
       "name": "",
       "door_u": -1.7089943228577442,
-      "back_stair_m": 2.36,
-      "front_stair_m": 2.36
+      "plot_id": 31,
+      "front_stair_m": 2.36,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -0.3089943228577443,
+        "inside_u": 2.7472784151028136,
+        "use": "kitchen"
+      },
+      "back_stair_m": 2.36
     },
     {
       "east_north": [
@@ -1741,8 +2016,15 @@
       "kind": 3,
       "name": "",
       "door_u": 1.4573039310303493,
-      "back_stair_m": 4.6,
-      "front_stair_m": 3.32
+      "plot_id": 32,
+      "front_stair_m": 3.32,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 0.057303931030349364,
+        "inside_u": -2.423676482753306,
+        "use": "sitting_room"
+      },
+      "back_stair_m": 4.6
     },
     {
       "east_north": [
@@ -1758,8 +2040,15 @@
       "kind": 1,
       "name": "",
       "door_u": 1.731504223019242,
-      "back_stair_m": 4.92,
-      "front_stair_m": 2.36
+      "plot_id": 33,
+      "front_stair_m": 2.36,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 0.331504223019242,
+        "inside_u": -2.7762197153104538,
+        "use": "washroom"
+      },
+      "back_stair_m": 4.92
     },
     {
       "east_north": [
@@ -1775,8 +2064,15 @@
       "kind": 0,
       "name": "",
       "door_u": -1.4345779797470624,
-      "back_stair_m": 11.96,
-      "front_stair_m": 2.36
+      "plot_id": 34,
+      "front_stair_m": 2.36,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -0.03457797974706245,
+        "inside_u": 2.394457402531937,
+        "use": "bedroom"
+      },
+      "back_stair_m": 11.96
     },
     {
       "east_north": [
@@ -1792,8 +2088,15 @@
       "kind": 1,
       "name": "",
       "door_u": 2.7013340604458564,
-      "back_stair_m": 2.68,
-      "front_stair_m": 6.2
+      "plot_id": 35,
+      "front_stair_m": 6.2,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 1.3013340604458565,
+        "inside_u": -4.0231437920018145,
+        "use": "washroom"
+      },
+      "back_stair_m": 2.68
     },
     {
       "east_north": [
@@ -1809,8 +2112,15 @@
       "kind": 0,
       "name": "",
       "door_u": -1.8719059286303954,
-      "back_stair_m": 11.96,
-      "front_stair_m": 1.72
+      "plot_id": 36,
+      "front_stair_m": 1.72,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -0.4719059286303955,
+        "inside_u": 2.956736193953365,
+        "use": "bedroom"
+      },
+      "back_stair_m": 11.96
     },
     {
       "east_north": [
@@ -1826,8 +2136,15 @@
       "kind": 2,
       "name": "",
       "door_u": -1.4536786596539042,
-      "back_stair_m": 2.68,
-      "front_stair_m": 5.88
+      "plot_id": 37,
+      "front_stair_m": 5.88,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -0.05367865965390428,
+        "inside_u": 2.4190154195550195,
+        "use": "kitchen"
+      },
+      "back_stair_m": 2.68
     },
     {
       "east_north": [
@@ -1843,8 +2160,15 @@
       "kind": 0,
       "name": "",
       "door_u": -1.6128330395973434,
-      "back_stair_m": 2.68,
-      "front_stair_m": 11.96
+      "plot_id": 38,
+      "front_stair_m": 11.96,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -0.21283303959734345,
+        "inside_u": 2.6236424794822986,
+        "use": "bedroom"
+      },
+      "back_stair_m": 2.68
     },
     {
       "east_north": [
@@ -1860,8 +2184,15 @@
       "kind": 3,
       "name": "",
       "door_u": 2.217548172175122,
-      "back_stair_m": 3.96,
-      "front_stair_m": 2.36
+      "plot_id": 39,
+      "front_stair_m": 2.36,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 0.8175481721751221,
+        "inside_u": -3.4011333642251564,
+        "use": "sitting_room"
+      },
+      "back_stair_m": 3.96
     },
     {
       "east_north": [
@@ -1877,8 +2208,34 @@
       "kind": 1,
       "name": "",
       "door_u": 2.5862144338726796,
-      "back_stair_m": 2.04,
-      "front_stair_m": 11.32
+      "plot_id": 40,
+      "front_stair_m": 11.32,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 1.1862144338726797,
+        "inside_u": -3.8751328435505874,
+        "use": "washroom"
+      },
+      "court": {
+        "half_width": 8.75,
+        "center_u": 0.0,
+        "stair_side": 1,
+        "room_u": -5.3128,
+        "stair_u": 7.37,
+        "stair_v": 4.837108954560172,
+        "landing_v": 11.185108954560173,
+        "room_v": 13.10510895456017,
+        "upper_m": 2.916,
+        "bed_local": [
+          -1.12,
+          15.197108954560171
+        ],
+        "other_room_u": 5.567199999999999,
+        "exit_local": [
+          -9.41,
+          5.757108954560172
+        ]
+      }
     },
     {
       "east_north": [
@@ -1894,8 +2251,15 @@
       "kind": 0,
       "name": "",
       "door_u": -2.447258737438619,
-      "back_stair_m": 3.0,
-      "front_stair_m": 7.8
+      "plot_id": 41,
+      "front_stair_m": 7.8,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -1.0472587374386193,
+        "inside_u": 3.696475519563938,
+        "use": "bedroom"
+      },
+      "back_stair_m": 3.0
     },
     {
       "east_north": [
@@ -1911,8 +2275,15 @@
       "kind": 0,
       "name": "",
       "door_u": -2.25153902073135,
-      "back_stair_m": 4.6,
-      "front_stair_m": 10.04
+      "plot_id": 42,
+      "front_stair_m": 10.04,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -0.8515390207313502,
+        "inside_u": 3.4448358837974498,
+        "use": "bedroom"
+      },
+      "back_stair_m": 4.6
     },
     {
       "east_north": [
@@ -1928,8 +2299,15 @@
       "kind": 0,
       "name": "",
       "door_u": -2.568513183443099,
-      "back_stair_m": 11.96,
-      "front_stair_m": 1.72
+      "plot_id": 43,
+      "front_stair_m": 1.72,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -1.1685131834430993,
+        "inside_u": 3.8523740929982697,
+        "use": "bedroom"
+      },
+      "back_stair_m": 11.96
     },
     {
       "east_north": [
@@ -1945,8 +2323,15 @@
       "kind": 3,
       "name": "",
       "door_u": 1.5383827714975868,
-      "back_stair_m": 2.68,
-      "front_stair_m": 11.96
+      "plot_id": 44,
+      "front_stair_m": 11.96,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 0.13838277149758693,
+        "inside_u": -2.527920706211183,
+        "use": "sitting_room"
+      },
+      "back_stair_m": 2.68
     },
     {
       "east_north": [
@@ -1962,8 +2347,15 @@
       "kind": 1,
       "name": "",
       "door_u": 1.5796221605445813,
-      "back_stair_m": 9.08,
-      "front_stair_m": 2.04
+      "plot_id": 45,
+      "front_stair_m": 2.04,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 0.17962216054458136,
+        "inside_u": -2.580942777843033,
+        "use": "washroom"
+      },
+      "back_stair_m": 9.08
     },
     {
       "east_north": [
@@ -1979,8 +2371,15 @@
       "kind": 1,
       "name": "",
       "door_u": 1.6991060885014795,
-      "back_stair_m": 11.96,
-      "front_stair_m": 3.0
+      "plot_id": 46,
+      "front_stair_m": 3.0,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 0.2991060885014796,
+        "inside_u": -2.7345649709304736,
+        "use": "washroom"
+      },
+      "back_stair_m": 11.96
     },
     {
       "east_north": [
@@ -1996,8 +2395,15 @@
       "kind": 0,
       "name": "",
       "door_u": -2.4995758883249355,
-      "back_stair_m": 6.2,
-      "front_stair_m": 2.68
+      "plot_id": 47,
+      "front_stair_m": 2.68,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -1.0995758883249356,
+        "inside_u": 3.7637404278463453,
+        "use": "bedroom"
+      },
+      "back_stair_m": 6.2
     },
     {
       "east_north": [
@@ -2013,8 +2419,34 @@
       "kind": 1,
       "name": "",
       "door_u": 2.5577109835667615,
-      "back_stair_m": 5.24,
-      "front_stair_m": 4.92
+      "plot_id": 48,
+      "front_stair_m": 4.92,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 1.1577109835667616,
+        "inside_u": -3.8384855503001205,
+        "use": "washroom"
+      },
+      "court": {
+        "half_width": 8.75,
+        "center_u": 0.0,
+        "stair_side": 1,
+        "room_u": -5.3128,
+        "stair_u": 7.37,
+        "stair_v": 6.487397169819728,
+        "landing_v": 12.835397169819728,
+        "room_v": 14.755397169819727,
+        "upper_m": 2.916,
+        "bed_local": [
+          -1.12,
+          16.84739716981973
+        ],
+        "other_room_u": 5.567199999999999,
+        "exit_local": [
+          -10.4,
+          7.407397169819728
+        ]
+      }
     },
     {
       "east_north": [
@@ -2030,8 +2462,15 @@
       "kind": 1,
       "name": "",
       "door_u": 2.1422525333570426,
-      "back_stair_m": 6.2,
-      "front_stair_m": 4.28
+      "plot_id": 49,
+      "front_stair_m": 4.28,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 0.7422525333570427,
+        "inside_u": -3.3043246857447683,
+        "use": "washroom"
+      },
+      "back_stair_m": 6.2
     },
     {
       "east_north": [
@@ -2047,8 +2486,15 @@
       "kind": 0,
       "name": "",
       "door_u": -2.2478041065065124,
-      "back_stair_m": 6.2,
-      "front_stair_m": 2.36
+      "plot_id": 50,
+      "front_stair_m": 2.36,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -0.8478041065065125,
+        "inside_u": 3.4400338512226583,
+        "use": "bedroom"
+      },
+      "back_stair_m": 6.2
     },
     {
       "east_north": [
@@ -2064,8 +2510,15 @@
       "kind": 2,
       "name": "",
       "door_u": -2.554823205725455,
-      "back_stair_m": 8.12,
-      "front_stair_m": 1.72
+      "plot_id": 51,
+      "front_stair_m": 1.72,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -1.1548232057254553,
+        "inside_u": 3.8347726930755845,
+        "use": "kitchen"
+      },
+      "back_stair_m": 8.12
     },
     {
       "east_north": [
@@ -2081,8 +2534,34 @@
       "kind": 1,
       "name": "",
       "door_u": 2.065873958593342,
-      "back_stair_m": 8.76,
-      "front_stair_m": 3.32
+      "plot_id": 52,
+      "front_stair_m": 3.32,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 0.665873958593342,
+        "inside_u": -3.206123661048582,
+        "use": "washroom"
+      },
+      "court": {
+        "half_width": 7.098121280690505,
+        "center_u": 0.0,
+        "stair_side": 1,
+        "room_u": -4.255597619641923,
+        "stair_u": 5.7181212806905055,
+        "stair_v": 5.156440653582634,
+        "landing_v": 11.504440653582634,
+        "room_v": 13.424440653582632,
+        "upper_m": 2.916,
+        "bed_local": [
+          -1.12,
+          15.516440653582634
+        ],
+        "other_room_u": 4.509997619641924,
+        "exit_local": [
+          -17.658121280690505,
+          6.076440653582634
+        ]
+      }
     },
     {
       "east_north": [
@@ -2098,8 +2577,15 @@
       "kind": 3,
       "name": "",
       "door_u": 2.026433848059373,
-      "back_stair_m": 8.44,
-      "front_stair_m": 6.52
+      "plot_id": 53,
+      "front_stair_m": 6.52,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 0.626433848059373,
+        "inside_u": -3.155414947504908,
+        "use": "sitting_room"
+      },
+      "back_stair_m": 8.44
     },
     {
       "east_north": [
@@ -2115,8 +2601,15 @@
       "kind": 2,
       "name": "",
       "door_u": -1.9236443995526762,
-      "back_stair_m": 3.0,
-      "front_stair_m": 3.32
+      "plot_id": 54,
+      "front_stair_m": 3.32,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -0.5236443995526763,
+        "inside_u": 3.023257085139155,
+        "use": "kitchen"
+      },
+      "back_stair_m": 3.0
     },
     {
       "east_north": [
@@ -2132,8 +2625,15 @@
       "kind": 3,
       "name": "",
       "door_u": 1.2960611377193503,
-      "back_stair_m": 11.96,
-      "front_stair_m": 1.72
+      "plot_id": 55,
+      "front_stair_m": 1.72,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -0.10393886228064964,
+        "inside_u": -2.216364319924879,
+        "use": "sitting_room"
+      },
+      "back_stair_m": 11.96
     },
     {
       "east_north": [
@@ -2149,8 +2649,34 @@
       "kind": 3,
       "name": "",
       "door_u": 2.6705617646589235,
-      "back_stair_m": 1.72,
-      "front_stair_m": 4.28
+      "plot_id": 56,
+      "front_stair_m": 4.28,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 1.2705617646589236,
+        "inside_u": -3.983579411704329,
+        "use": "sitting_room"
+      },
+      "court": {
+        "half_width": 8.75,
+        "center_u": 0.0,
+        "stair_side": -1,
+        "room_u": 5.3128,
+        "stair_u": -7.37,
+        "stair_v": 5.659101467323833,
+        "landing_v": 12.007101467323832,
+        "room_v": 13.927101467323832,
+        "upper_m": 2.916,
+        "bed_local": [
+          1.12,
+          16.019101467323832
+        ],
+        "other_room_u": -5.567199999999999,
+        "exit_local": [
+          10.73,
+          6.579101467323833
+        ]
+      }
     },
     {
       "east_north": [
@@ -2166,8 +2692,15 @@
       "kind": 1,
       "name": "",
       "door_u": 2.1917320523090944,
-      "back_stair_m": 11.32,
-      "front_stair_m": 2.36
+      "plot_id": 57,
+      "front_stair_m": 2.36,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 0.7917320523090945,
+        "inside_u": -3.3679412101116926,
+        "use": "washroom"
+      },
+      "back_stair_m": 11.32
     },
     {
       "east_north": [
@@ -2183,8 +2716,15 @@
       "kind": 3,
       "name": "",
       "door_u": 1.870844916829678,
-      "back_stair_m": 3.96,
-      "front_stair_m": 6.52
+      "plot_id": 58,
+      "front_stair_m": 6.52,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 0.470844916829678,
+        "inside_u": -2.9553720359238715,
+        "use": "sitting_room"
+      },
+      "back_stair_m": 3.96
     },
     {
       "east_north": [
@@ -2200,8 +2740,15 @@
       "kind": 3,
       "name": "",
       "door_u": 1.4355416877661211,
-      "back_stair_m": 4.28,
-      "front_stair_m": 2.68
+      "plot_id": 59,
+      "front_stair_m": 2.68,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 0.03554168776612121,
+        "inside_u": -2.395696455699299,
+        "use": "sitting_room"
+      },
+      "back_stair_m": 4.28
     },
     {
       "east_north": [
@@ -2217,8 +2764,34 @@
       "kind": 1,
       "name": "",
       "door_u": 2.3207299864126623,
-      "back_stair_m": 2.04,
-      "front_stair_m": 3.32
+      "plot_id": 60,
+      "front_stair_m": 3.32,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 0.9207299864126623,
+        "inside_u": -3.53379569681628,
+        "use": "washroom"
+      },
+      "court": {
+        "half_width": 8.008321380045222,
+        "center_u": 0.0,
+        "stair_side": 1,
+        "room_u": -4.8381256832289425,
+        "stair_u": 6.6283213800452225,
+        "stair_v": 6.260204461599551,
+        "landing_v": 12.608204461599552,
+        "room_v": 14.52820446159955,
+        "upper_m": 2.916,
+        "bed_local": [
+          -1.12,
+          16.62020446159955
+        ],
+        "other_room_u": 5.092525683228943,
+        "exit_local": [
+          -8.668321380045223,
+          7.180204461599551
+        ]
+      }
     },
     {
       "east_north": [
@@ -2234,8 +2807,15 @@
       "kind": 0,
       "name": "",
       "door_u": -1.8732234476203813,
-      "back_stair_m": 5.88,
-      "front_stair_m": 2.36
+      "plot_id": 61,
+      "front_stair_m": 2.36,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -0.4732234476203814,
+        "inside_u": 2.95843014694049,
+        "use": "bedroom"
+      },
+      "back_stair_m": 5.88
     },
     {
       "east_north": [
@@ -2251,8 +2831,15 @@
       "kind": 3,
       "name": "",
       "door_u": 2.530180282274284,
-      "back_stair_m": 7.48,
-      "front_stair_m": 2.68
+      "plot_id": 62,
+      "front_stair_m": 2.68,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 1.1301802822742841,
+        "inside_u": -3.8030889343526497,
+        "use": "sitting_room"
+      },
+      "back_stair_m": 7.48
     },
     {
       "east_north": [
@@ -2268,8 +2855,15 @@
       "kind": 0,
       "name": "",
       "door_u": -1.7324093514688044,
-      "back_stair_m": 2.04,
-      "front_stair_m": 2.04
+      "plot_id": 63,
+      "front_stair_m": 2.04,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -0.33240935146880446,
+        "inside_u": 2.7773834518884626,
+        "use": "bedroom"
+      },
+      "back_stair_m": 2.04
     },
     {
       "east_north": [
@@ -2285,8 +2879,34 @@
       "kind": 3,
       "name": "",
       "door_u": 2.0822208431420473,
-      "back_stair_m": 9.4,
-      "front_stair_m": 1.72
+      "plot_id": 64,
+      "front_stair_m": 1.72,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 0.6822208431420473,
+        "inside_u": -3.2271410840397747,
+        "use": "sitting_room"
+      },
+      "court": {
+        "half_width": 7.156503011221596,
+        "center_u": 0.0,
+        "stair_side": 1,
+        "room_u": -4.292961927181821,
+        "stair_u": 5.776503011221596,
+        "stair_v": 6.0875203431895715,
+        "landing_v": 12.435520343189571,
+        "room_v": 14.355520343189571,
+        "upper_m": 2.916,
+        "bed_local": [
+          -1.12,
+          16.44752034318957
+        ],
+        "other_room_u": 4.5473619271818215,
+        "exit_local": [
+          -12.436503011221596,
+          7.007520343189571
+        ]
+      }
     },
     {
       "east_north": [
@@ -2302,8 +2922,15 @@
       "kind": 0,
       "name": "",
       "door_u": -1.4138869102382519,
-      "back_stair_m": 2.36,
-      "front_stair_m": 3.96
+      "plot_id": 65,
+      "front_stair_m": 3.96,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -0.013886910238251948,
+        "inside_u": 2.367854598877752,
+        "use": "bedroom"
+      },
+      "back_stair_m": 2.36
     },
     {
       "east_north": [
@@ -2319,8 +2946,15 @@
       "kind": 1,
       "name": "",
       "door_u": 2.3200759116734795,
-      "back_stair_m": 10.68,
-      "front_stair_m": 1.72
+      "plot_id": 66,
+      "front_stair_m": 1.72,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 0.9200759116734796,
+        "inside_u": -3.532954743580188,
+        "use": "washroom"
+      },
+      "back_stair_m": 10.68
     },
     {
       "east_north": [
@@ -2336,8 +2970,15 @@
       "kind": 0,
       "name": "",
       "door_u": -1.3454908189872778,
-      "back_stair_m": 3.0,
-      "front_stair_m": 6.2
+      "plot_id": 67,
+      "front_stair_m": 6.2,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 0.05450918101272206,
+        "inside_u": 2.2799167672693574,
+        "use": "bedroom"
+      },
+      "back_stair_m": 3.0
     },
     {
       "east_north": [
@@ -2353,8 +2994,15 @@
       "kind": 0,
       "name": "",
       "door_u": -1.4973659183850654,
-      "back_stair_m": 10.68,
-      "front_stair_m": 2.04
+      "plot_id": 68,
+      "front_stair_m": 2.04,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -0.09736591838506548,
+        "inside_u": 2.4751847522093695,
+        "use": "bedroom"
+      },
+      "back_stair_m": 10.68
     },
     {
       "east_north": [
@@ -2370,8 +3018,15 @@
       "kind": 0,
       "name": "",
       "door_u": -1.5022802028119078,
-      "back_stair_m": 3.0,
-      "front_stair_m": 7.8
+      "plot_id": 69,
+      "front_stair_m": 7.8,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -0.10228020281190786,
+        "inside_u": 2.481503117901024,
+        "use": "bedroom"
+      },
+      "back_stair_m": 3.0
     },
     {
       "east_north": [
@@ -2387,8 +3042,15 @@
       "kind": 0,
       "name": "",
       "door_u": -2.0460613140973996,
-      "back_stair_m": 3.32,
-      "front_stair_m": 3.96
+      "plot_id": 70,
+      "front_stair_m": 3.96,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -0.6460613140973996,
+        "inside_u": 3.180650260982371,
+        "use": "bedroom"
+      },
+      "back_stair_m": 3.32
     },
     {
       "east_north": [
@@ -2404,8 +3066,15 @@
       "kind": 1,
       "name": "",
       "door_u": 1.5494788143737759,
-      "back_stair_m": 8.12,
-      "front_stair_m": 3.0
+      "plot_id": 71,
+      "front_stair_m": 3.0,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 0.14947881437377597,
+        "inside_u": -2.5421870470519976,
+        "use": "washroom"
+      },
+      "back_stair_m": 8.12
     },
     {
       "east_north": [
@@ -2421,8 +3090,34 @@
       "kind": 2,
       "name": "",
       "door_u": -2.4885759419560003,
-      "back_stair_m": 4.28,
-      "front_stair_m": 2.36
+      "plot_id": 72,
+      "front_stair_m": 2.36,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -1.0885759419560004,
+        "inside_u": 3.749597639657714,
+        "use": "kitchen"
+      },
+      "court": {
+        "half_width": 8.60777122127143,
+        "center_u": 0.0,
+        "stair_side": 1,
+        "room_u": -5.221773581613715,
+        "stair_u": 7.227771221271429,
+        "stair_v": 6.993673428064234,
+        "landing_v": 13.341673428064233,
+        "room_v": 15.261673428064233,
+        "upper_m": 2.916,
+        "bed_local": [
+          -1.12,
+          17.353673428064234
+        ],
+        "other_room_u": 5.476173581613714,
+        "exit_local": [
+          -10.25777122127143,
+          7.913673428064234
+        ]
+      }
     },
     {
       "east_north": [
@@ -2438,8 +3133,15 @@
       "kind": 1,
       "name": "",
       "door_u": 1.4106924910843766,
-      "back_stair_m": 10.68,
-      "front_stair_m": 3.96
+      "plot_id": 73,
+      "front_stair_m": 3.96,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 0.010692491084376643,
+        "inside_u": -2.3637474885370553,
+        "use": "washroom"
+      },
+      "back_stair_m": 10.68
     },
     {
       "east_north": [
@@ -2455,8 +3157,15 @@
       "kind": 3,
       "name": "",
       "door_u": 2.14059359481864,
-      "back_stair_m": 7.16,
-      "front_stair_m": 3.32
+      "plot_id": 74,
+      "front_stair_m": 3.32,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 0.7405935948186402,
+        "inside_u": -3.302191764766823,
+        "use": "sitting_room"
+      },
+      "back_stair_m": 7.16
     },
     {
       "east_north": [
@@ -2472,8 +3181,15 @@
       "kind": 2,
       "name": "",
       "door_u": -2.502868393375855,
-      "back_stair_m": 7.16,
-      "front_stair_m": 1.72
+      "plot_id": 75,
+      "front_stair_m": 1.72,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -1.102868393375855,
+        "inside_u": 3.767973648626098,
+        "use": "kitchen"
+      },
+      "back_stair_m": 7.16
     },
     {
       "east_north": [
@@ -2489,8 +3205,15 @@
       "kind": 3,
       "name": "",
       "door_u": 1.3033729354784651,
-      "back_stair_m": 5.24,
-      "front_stair_m": 2.36
+      "plot_id": 76,
+      "front_stair_m": 2.36,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": -0.0966270645215348,
+        "inside_u": -2.2257652027580264,
+        "use": "sitting_room"
+      },
+      "back_stair_m": 5.24
     },
     {
       "east_north": [
@@ -2506,8 +3229,1845 @@
       "kind": 1,
       "name": "",
       "door_u": 2.7927238364102807,
-      "back_stair_m": 3.96,
-      "front_stair_m": 3.96
+      "plot_id": 77,
+      "front_stair_m": 3.96,
+      "room": {
+        "door_v": -0.45,
+        "jamb_u": 1.3927238364102807,
+        "inside_u": -4.140644932527502,
+        "use": "washroom"
+      },
+      "back_stair_m": 3.96
+    }
+  ],
+  "lanes": [
+    {
+      "type": "street",
+      "plots": [
+        0
+      ],
+      "points": [
+        [
+          -189.40312405419553,
+          -28.623233583757006
+        ],
+        [
+          -191.40667380010325,
+          -31.08332721269501
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        1
+      ],
+      "points": [
+        [
+          161.9438904511316,
+          107.01951266927136
+        ],
+        [
+          157.5065899304164,
+          103.4588306323555
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        2
+      ],
+      "points": [
+        [
+          77.98058278177855,
+          -185.89100652995882
+        ],
+        [
+          86.25062646787725,
+          -200.5933064163565
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        3
+      ],
+      "points": [
+        [
+          -128.30023538046697,
+          -63.339800108182345
+        ],
+        [
+          -127.51662938721137,
+          -60.64371735503512
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        4
+      ],
+      "points": [
+        [
+          -131.32643421153477,
+          -73.16454824153978
+        ],
+        [
+          -132.17016304030707,
+          -75.99983152975902
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        5
+      ],
+      "points": [
+        [
+          -145.76064663520373,
+          -54.10729634456455
+        ],
+        [
+          -145.88276213329362,
+          -54.420066112335284
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        6
+      ],
+      "points": [
+        [
+          -211.49355631363835,
+          -42.550450546604296
+        ],
+        [
+          -208.18637711937262,
+          -38.38505660403061
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        7
+      ],
+      "points": [
+        [
+          203.86669988431441,
+          202.0637854381702
+        ],
+        [
+          205.2512660896136,
+          202.27500997281373
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        8
+      ],
+      "points": [
+        [
+          217.23547373777447,
+          208.60038008762024
+        ],
+        [
+          214.56528947992328,
+          208.19302619936383
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        9
+      ],
+      "points": [
+        [
+          219.1480836227949,
+          183.61959310575494
+        ],
+        [
+          218.33309337853058,
+          183.49526106989788
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        10
+      ],
+      "points": [
+        [
+          224.34488814617208,
+          157.5620101297025
+        ],
+        [
+          222.3361294324657,
+          157.25556098852758
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        11
+      ],
+      "points": [
+        [
+          223.87167370779613,
+          139.96575215976034
+        ],
+        [
+          223.24788583242594,
+          140.46569112513373
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        12
+      ],
+      "points": [
+        [
+          214.00572353458418,
+          105.85089254374596
+        ],
+        [
+          217.53258873621868,
+          105.8001610781184
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        13
+      ],
+      "points": [
+        [
+          219.97158250527642,
+          108.44975028085106
+        ],
+        [
+          220.6539793001005,
+          109.98100842802765
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        14
+      ],
+      "points": [
+        [
+          220.34306412417084,
+          73.0730517391321
+        ],
+        [
+          221.74495135623428,
+          72.65790462481579
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        15
+      ],
+      "points": [
+        [
+          182.72143692153008,
+          32.159605429576956
+        ],
+        [
+          184.03001447283003,
+          30.956439609508685
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        16
+      ],
+      "points": [
+        [
+          197.32523097369827,
+          22.93092099365964
+        ],
+        [
+          193.55694383186164,
+          26.395655876782612
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        17
+      ],
+      "points": [
+        [
+          164.59499692877287,
+          9.985306221141794
+        ],
+        [
+          162.4834548878159,
+          12.718460962194763
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        18
+      ],
+      "points": [
+        [
+          170.18432009414013,
+          1.6174262209866352
+        ],
+        [
+          168.1100557653754,
+          4.302329137620477
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        19
+      ],
+      "points": [
+        [
+          116.76928938039543,
+          -43.354418686952506
+        ],
+        [
+          113.38834271951754,
+          -39.19127273348506
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        20
+      ],
+      "points": [
+        [
+          123.94391763503155,
+          92.25509542857804
+        ],
+        [
+          122.41443099517268,
+          95.85423501677226
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        21
+      ],
+      "points": [
+        [
+          -52.000044259975965,
+          128.58186654705108
+        ],
+        [
+          -48.68698562511568,
+          130.26746618306035
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        22
+      ],
+      "points": [
+        [
+          128.55095938300246,
+          -105.90805535602034
+        ],
+        [
+          130.2019319516176,
+          -112.06168038449499
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        23
+      ],
+      "points": [
+        [
+          171.84074621054694,
+          -115.42062941634856
+        ],
+        [
+          172.32976842338903,
+          -113.79372703206111
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        24
+      ],
+      "points": [
+        [
+          192.32086968588055,
+          -133.50413817980595
+        ],
+        [
+          193.19062549673143,
+          -130.61059313162207
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        25
+      ],
+      "points": [
+        [
+          205.85986409577527,
+          -140.66063529344248
+        ],
+        [
+          207.58060211062977,
+          -134.93600212630898
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        26
+      ],
+      "points": [
+        [
+          208.87147274332753,
+          -129.6327167256219
+        ],
+        [
+          210.20991444765403,
+          -125.17992512880853
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        27
+      ],
+      "points": [
+        [
+          232.65330610238726,
+          -132.51129334173447
+        ],
+        [
+          232.81463912583746,
+          -131.9745629568507
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        28
+      ],
+      "points": [
+        [
+          -212.47088578450447,
+          102.33093542268234
+        ],
+        [
+          -217.32842198418854,
+          104.67595289839188
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        29
+      ],
+      "points": [
+        [
+          -227.5010175618217,
+          109.83537922246221
+        ],
+        [
+          -226.23664003119356,
+          109.22499006974519
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        30
+      ],
+      "points": [
+        [
+          -197.55150472503047,
+          134.78302238198876
+        ],
+        [
+          -197.12920750345822,
+          134.42670910128717
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        31
+      ],
+      "points": [
+        [
+          -204.74444031522185,
+          145.02430264308302
+        ],
+        [
+          -202.71575262927533,
+          143.31259740806564
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        32
+      ],
+      "points": [
+        [
+          -110.60908046238214,
+          168.55641885787293
+        ],
+        [
+          -111.1659471267844,
+          172.13627598617322
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        33
+      ],
+      "points": [
+        [
+          -85.85652941807437,
+          178.07934284598912
+        ],
+        [
+          -85.94603775081274,
+          177.7488505404936
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        34
+      ],
+      "points": [
+        [
+          -67.17726921573897,
+          156.57484626656748
+        ],
+        [
+          -65.73131205045749,
+          161.91376503068375
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        35
+      ],
+      "points": [
+        [
+          -65.9487057420736,
+          173.8325332496147
+        ],
+        [
+          -66.32709923983683,
+          172.4353880271043
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        36
+      ],
+      "points": [
+        [
+          -48.24730733419098,
+          152.489914535464
+        ],
+        [
+          -48.345930536509904,
+          153.4828626248978
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        37
+      ],
+      "points": [
+        [
+          2.480694251154783,
+          140.87223858688571
+        ],
+        [
+          1.1440749372885708,
+          146.82627007592612
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        38
+      ],
+      "points": [
+        [
+          4.239801682616503,
+          154.9673639584463
+        ],
+        [
+          3.6408007601415733,
+          157.63564079492554
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        39
+      ],
+      "points": [
+        [
+          55.56281584476532,
+          171.46068754714275
+        ],
+        [
+          66.7465744376326,
+          178.3716219858248
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        40
+      ],
+      "points": [
+        [
+          81.65977598781984,
+          181.38395117025627
+        ],
+        [
+          82.29917581741434,
+          178.11590759677327
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        41
+      ],
+      "points": [
+        [
+          105.61029132996399,
+          180.41276468957298
+        ],
+        [
+          105.1836634191322,
+          182.59330734493545
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        42
+      ],
+      "points": [
+        [
+          103.68753752367408,
+          184.8752347807328
+        ],
+        [
+          104.17270099930094,
+          182.39551034975108
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        43
+      ],
+      "points": [
+        [
+          148.83988711316942,
+          176.01685901192258
+        ],
+        [
+          149.4497871595201,
+          180.11190218027713
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        44
+      ],
+      "points": [
+        [
+          169.30273893854763,
+          174.35108249850475
+        ],
+        [
+          169.81552041393124,
+          176.2923266553141
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        45
+      ],
+      "points": [
+        [
+          -206.4605952925513,
+          11.945282038094513
+        ],
+        [
+          -213.0,
+          11.945282038094511
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        46
+      ],
+      "points": [
+        [
+          -219.53978873685074,
+          37.92225784605087
+        ],
+        [
+          -218.5798039137422,
+          38.35861458382747
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        47
+      ],
+      "points": [
+        [
+          -229.82187372456502,
+          38.41129878338144
+        ],
+        [
+          -229.6283274297795,
+          38.49927437192032
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        48
+      ],
+      "points": [
+        [
+          -221.06032564656556,
+          79.55272963036668
+        ],
+        [
+          -225.3702486683303,
+          80.05977939763312
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        49
+      ],
+      "points": [
+        [
+          -190.82030081891565,
+          -61.57448522079031
+        ],
+        [
+          -188.2105619060183,
+          -60.67738746948185
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        50
+      ],
+      "points": [
+        [
+          -176.28744113500176,
+          -95.63961904250326
+        ],
+        [
+          -171.79132716567622,
+          -92.46589153474405
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        51
+      ],
+      "points": [
+        [
+          -162.5445537019073,
+          -90.94789904364647
+        ],
+        [
+          -161.26168338153016,
+          -90.04234352338027
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        52
+      ],
+      "points": [
+        [
+          -143.65236590374,
+          -118.556119976822
+        ],
+        [
+          -143.48554927253483,
+          -118.47002107039353
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        53
+      ],
+      "points": [
+        [
+          -138.63753081936807,
+          -151.10203378881437
+        ],
+        [
+          -136.1620511545975,
+          -148.30713739310565
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        54
+      ],
+      "points": [
+        [
+          -126.23314844440466,
+          -143.07960788671744
+        ],
+        [
+          -126.56233168171066,
+          -143.45126638045002
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        55
+      ],
+      "points": [
+        [
+          -118.77641702206516,
+          -170.86727727894007
+        ],
+        [
+          -115.22190770149481,
+          -166.85412159442515
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        56
+      ],
+      "points": [
+        [
+          -106.68036130676984,
+          -163.33768152748513
+        ],
+        [
+          -105.55035814839154,
+          -162.06187150996124
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        57
+      ],
+      "points": [
+        [
+          -71.56106410232947,
+          -183.2167933293777
+        ],
+        [
+          -71.3517938643068,
+          -182.1181245797587
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        58
+      ],
+      "points": [
+        [
+          -65.64812753026794,
+          -172.24885552722498
+        ],
+        [
+          -65.79074225390072,
+          -172.99758282629702
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        59
+      ],
+      "points": [
+        [
+          -42.914221185620164,
+          -184.7656293507923
+        ],
+        [
+          -43.448664171281294,
+          -181.32992444297074
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        60
+      ],
+      "points": [
+        [
+          -24.990110522287303,
+          -179.5688036538737
+        ],
+        [
+          -25.158729654512538,
+          -178.48482351814005
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        61
+      ],
+      "points": [
+        [
+          -26.100246651493528,
+          -167.24200887276
+        ],
+        [
+          -25.90750912214889,
+          -168.4810358471184
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        62
+      ],
+      "points": [
+        [
+          -1.0017688390340538,
+          -174.93882486540227
+        ],
+        [
+          -2.845944397647151,
+          -171.15341187667013
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        63
+      ],
+      "points": [
+        [
+          -6.958200162861398,
+          -161.18648274447048
+        ],
+        [
+          -6.624813195763417,
+          -161.87080336114528
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        64
+      ],
+      "points": [
+        [
+          17.777659995719002,
+          -164.0475495767793
+        ],
+        [
+          16.619489314642447,
+          -161.67025186299057
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        65
+      ],
+      "points": [
+        [
+          13.794954148495359,
+          -153.64728632143715
+        ],
+        [
+          13.115937206490212,
+          -152.2535147036371
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        66
+      ],
+      "points": [
+        [
+          46.34229194178433,
+          -153.10783404562122
+        ],
+        [
+          44.61025416160887,
+          -149.10249667896548
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        67
+      ],
+      "points": [
+        [
+          38.54561078599059,
+          -142.6354839299651
+        ],
+        [
+          37.887896357022996,
+          -141.1145193129775
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        68
+      ],
+      "points": [
+        [
+          70.10211770986633,
+          -128.834845758287
+        ],
+        [
+          70.11339726637992,
+          -128.87389037698784
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        69
+      ],
+      "points": [
+        [
+          94.87187994900975,
+          -132.82396418090198
+        ],
+        [
+          94.68694067564311,
+          -132.1837897730944
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        70
+      ],
+      "points": [
+        [
+          117.71829463655176,
+          -128.65366401239226
+        ],
+        [
+          116.9952270781918,
+          -125.9585940221415
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        71
+      ],
+      "points": [
+        [
+          139.7231016440075,
+          -123.02798771829448
+        ],
+        [
+          138.93044383078404,
+          -120.073535869007
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        72
+      ],
+      "points": [
+        [
+          154.9789791622989,
+          -94.77935024022034
+        ],
+        [
+          155.43228782218614,
+          -95.191449021936
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        73
+      ],
+      "points": [
+        [
+          213.40057672531418,
+          -77.46021880054371
+        ],
+        [
+          208.90339142229087,
+          -72.37644411016953
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        74
+      ],
+      "points": [
+        [
+          200.1216418117628,
+          -64.2596061884004
+        ],
+        [
+          201.37923462557256,
+          -65.68123284748971
+        ]
+      ]
+    },
+    {
+      "type": "street",
+      "plots": [
+        75
+      ],
+      "points": [
+        [
+          217.78452014849998,
+          -26.83038439740167
+        ],
+        [
+          221.1212615559642,
+          -27.461659798813823
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        72,
+        22
+      ],
+      "points": [
+        [
+          138.62452579482016,
+          -79.9116653606942
+        ],
+        [
+          134.68986535303173,
+          -85.48485064817596
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        64,
+        62
+      ],
+      "points": [
+        [
+          28.679526916733813,
+          -186.425065888336
+        ],
+        [
+          18.10974160494945,
+          -181.01762916415572
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        66,
+        2
+      ],
+      "points": [
+        [
+          55.652314733256596,
+          -174.63726175090085
+        ],
+        [
+          64.78513099480138,
+          -165.93942132633248
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        25,
+        24
+      ],
+      "points": [
+        [
+          199.80336822818515,
+          -160.80967414822987
+        ],
+        [
+          184.86284216760015,
+          -158.31585926923174
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        63,
+        61
+      ],
+      "points": [
+        [
+          -13.129964643329037,
+          -148.5181240740369
+        ],
+        [
+          -28.53711355611859,
+          -151.57643591445603
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        11,
+        10
+      ],
+      "points": [
+        [
+          242.15450341479269,
+          142.86226488310675
+        ],
+        [
+          243.57729899834973,
+          160.49603886503928
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        44,
+        43
+      ],
+      "points": [
+        [
+          162.3384208165,
+          147.98616389361004
+        ],
+        [
+          145.45399396197945,
+          153.28300499678988
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        49,
+        6
+      ],
+      "points": [
+        [
+          -208.87885891599205,
+          -67.78211456666031
+        ],
+        [
+          -221.87660460920114,
+          -55.62790536089953
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        5,
+        3
+      ],
+      "points": [
+        [
+          -139.7773773682766,
+          -38.78257697316361
+        ],
+        [
+          -122.81382627288413,
+          -44.463205111493565
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        51,
+        4
+      ],
+      "points": [
+        [
+          -142.28609724214576,
+          -76.64781213087363
+        ],
+        [
+          -137.33673167896615,
+          -93.84363885939403
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        71,
+        70
+      ],
+      "points": [
+        [
+          146.47504557944956,
+          -148.19432420494223
+        ],
+        [
+          129.44263308435183,
+          -142.3714608785589
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        48,
+        28
+      ],
+      "points": [
+        [
+          -203.5287981194885,
+          77.49019698012233
+        ],
+        [
+          -194.90486129731784,
+          93.85078567024742
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        60,
+        59
+      ],
+      "points": [
+        [
+          -24.990110522287303,
+          -179.5688036538737
+        ],
+        [
+          -42.914221185620164,
+          -184.7656293507923
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        52,
+        4
+      ],
+      "points": [
+        [
+          -128.6324751289716,
+          -110.80391828661895
+        ],
+        [
+          -137.33673167896615,
+          -93.84363885939403
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        38,
+        36
+      ],
+      "points": [
+        [
+          -12.05049609241391,
+          172.7655896736919
+        ],
+        [
+          -31.0997065918057,
+          170.49489531496855
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        73,
+        26
+      ],
+      "points": [
+        [
+          224.39202247379995,
+          -89.88533138578855
+        ],
+        [
+          215.5583480378306,
+          -107.38650157552854
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        56,
+        54
+      ],
+      "points": [
+        [
+          -94.58796484124932,
+          -149.6849758406071
+        ],
+        [
+          -109.89757204835595,
+          -136.79158443602742
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        75,
+        18
+      ],
+      "points": [
+        [
+          200.46228438391915,
+          -23.55320465815665
+        ],
+        [
+          182.43307353440335,
+          -14.23721360520949
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        35,
+        33
+      ],
+      "points": [
+        [
+          -61.50436011974931,
+          190.2424247781967
+        ],
+        [
+          -80.1109053684329,
+          199.29395472158842
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        48,
+        46
+      ],
+      "points": [
+        [
+          -203.5287981194885,
+          77.49019698012233
+        ],
+        [
+          -208.6655287940069,
+          57.09861395888794
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        58,
+        56
+      ],
+      "points": [
+        [
+          -73.49039091895125,
+          -154.6909666831598
+        ],
+        [
+          -94.58796484124932,
+          -149.6849758406071
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        42,
+        40
+      ],
+      "points": [
+        [
+          98.32066551121657,
+          212.30591395551565
+        ],
+        [
+          76.82166131360681,
+          206.1120928384562
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        65,
+        63
+      ],
+      "points": [
+        [
+          4.079167163081124,
+          -133.70435514085003
+        ],
+        [
+          -13.129964643329037,
+          -148.5181240740369
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        70,
+        69
+      ],
+      "points": [
+        [
+          117.71829463655176,
+          -128.65366401239226
+        ],
+        [
+          94.87187994900975,
+          -132.82396418090198
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        27,
+        26
+      ],
+      "points": [
+        [
+          237.4678729870199,
+          -116.49396296649948
+        ],
+        [
+          215.5583480378306,
+          -107.38650157552854
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        72,
+        19
+      ],
+      "points": [
+        [
+          138.62452579482016,
+          -79.9116653606942
+        ],
+        [
+          128.7207324483775,
+          -58.07088920164756
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        62,
+        60
+      ],
+      "points": [
+        [
+          -1.0017688390340538,
+          -174.93882486540227
+        ],
+        [
+          -24.990110522287303,
+          -179.5688036538737
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        17,
+        15
+      ],
+      "points": [
+        [
+          152.54556200636495,
+          25.581950543820096
+        ],
+        [
+          170.5492506951503,
+          43.35126801658787
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        10,
+        9
+      ],
+      "points": [
+        [
+          243.57729899834973,
+          160.49603886503928
+        ],
+        [
+          237.90611179620703,
+          186.4812516935454
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        55,
+        53
+      ],
+      "points": [
+        [
+          -118.77641702206516,
+          -170.86727727894007
+        ],
+        [
+          -138.63753081936807,
+          -151.10203378881437
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        22,
+        19
+      ],
+      "points": [
+        [
+          134.68986535303173,
+          -85.48485064817596
+        ],
+        [
+          128.7207324483775,
+          -58.07088920164756
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        66,
+        64
+      ],
+      "points": [
+        [
+          55.652314733256596,
+          -174.63726175090085
+        ],
+        [
+          28.679526916733813,
+          -186.425065888336
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        75,
+        74
+      ],
+      "points": [
+        [
+          200.46228438391915,
+          -23.55320465815665
+        ],
+        [
+          187.76897106164165,
+          -50.2957175143504
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        73,
+        27
+      ],
+      "points": [
+        [
+          224.39202247379995,
+          -89.88533138578855
+        ],
+        [
+          237.4678729870199,
+          -116.49396296649948
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        30,
+        28
+      ],
+      "points": [
+        [
+          -181.7207145384607,
+          121.4257931620705
+        ],
+        [
+          -194.90486129731784,
+          93.85078567024742
+        ]
+      ]
+    },
+    {
+      "type": "shared",
+      "plots": [
+        12,
+        1
+      ],
+      "points": [
+        [
+          193.33385313277358,
+          106.14824280319468
+        ],
+        [
+          161.9438904511316,
+          107.01951266927136
+        ]
+      ]
     }
   ],
   "retired_context_prefixes": [
@@ -2672,7 +5232,1548 @@
       -170.8589379709154
     ]
   ],
-  "building_count": 81,
+  "building_count": 79,
+  "flyover_reserves": [
+    [
+      158.0241031056041,
+      -17.238580378957177
+    ],
+    [
+      136.40434237370908,
+      -33.39175666123314
+    ]
+  ],
+  "household": [
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        -179.61902989809522,
+        1.4458685236316295,
+        19.077308148617234
+      ],
+      "plot": 0,
+      "scale": 1.18,
+      "yaw": 1.47
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        -179.41685868600695,
+        2.9648243495208355,
+        19.667308148617234
+      ],
+      "plot": 0,
+      "scale": 0.69,
+      "yaw": -0.5
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        -180.6369096335122,
+        4.52388165619417,
+        21.903308148617235
+      ],
+      "plot": 0,
+      "scale": 0.82,
+      "yaw": 0.53
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        -180.37081498719488,
+        2.8875755603791937,
+        19.077308148617234
+      ],
+      "plot": 0,
+      "scale": 0.97,
+      "yaw": -0.53
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        -187.97415648716643,
+        2.204788598867342,
+        19.077308148617234
+      ],
+      "plot": 0,
+      "scale": 1.26,
+      "yaw": 0.38
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        -188.80687520712615,
+        1.8394400893198277,
+        19.077308148617234
+      ],
+      "plot": 0,
+      "scale": 0.89,
+      "yaw": -0.26
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        -187.59174795356364,
+        -17.92240106371168,
+        19.022308148617235
+      ],
+      "plot": 0,
+      "scale": 1.0,
+      "yaw": -0.42999999999999994
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        -181.6000107374652,
+        -15.952861743662275,
+        19.022308148617235
+      ],
+      "plot": 0,
+      "scale": 1.35,
+      "yaw": 0.27
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        -180.98319736379102,
+        -15.782153624181426,
+        19.022308148617235
+      ],
+      "plot": 0,
+      "scale": 1.35,
+      "yaw": 0.37
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        -180.36638399011684,
+        -15.611445504700573,
+        19.022308148617235
+      ],
+      "plot": 0,
+      "scale": 1.35,
+      "yaw": 0.47000000000000003
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        172.08078717900608,
+        134.80282285233645,
+        38.21465654592418
+      ],
+      "plot": 1,
+      "scale": 1.18,
+      "yaw": 1.3199999999999998
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        172.50767814824104,
+        136.27451035326374,
+        38.804656545924175
+      ],
+      "plot": 1,
+      "scale": 0.69,
+      "yaw": -0.65
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        171.53430967006796,
+        137.99838326206503,
+        41.04065654592417
+      ],
+      "plot": 1,
+      "scale": 0.82,
+      "yaw": 0.38
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        171.5528898332264,
+        136.34068643286585,
+        38.21465654592418
+      ],
+      "plot": 1,
+      "scale": 0.97,
+      "yaw": -0.68
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        162.39403786840452,
+        136.61624166594805,
+        38.21465654592418
+      ],
+      "plot": 1,
+      "scale": 1.26,
+      "yaw": 0.22999999999999998
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        161.51607268308362,
+        136.379435556727,
+        38.21465654592418
+      ],
+      "plot": 1,
+      "scale": 0.89,
+      "yaw": -0.41000000000000003
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        162.49031289409774,
+        116.85566143359081,
+        38.15965654592417
+      ],
+      "plot": 1,
+      "scale": 1.55,
+      "yaw": -0.09
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        162.15317259196505,
+        117.47978995935924,
+        38.15965654592417
+      ],
+      "plot": 1,
+      "scale": 1.55,
+      "yaw": -0.09
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        171.43397047129275,
+        117.8635746946813,
+        38.15965654592417
+      ],
+      "plot": 1,
+      "scale": 1.55,
+      "yaw": -0.09
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        171.8617241970074,
+        117.82450104451581,
+        38.15965654592417
+      ],
+      "plot": 1,
+      "scale": 1.55,
+      "yaw": -0.09
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        162.15317259196505,
+        117.47978995935924,
+        38.56885654592418
+      ],
+      "plot": 1,
+      "scale": 1.5,
+      "yaw": -0.09
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        170.09795565447735,
+        119.25363383344111,
+        38.15965654592417
+      ],
+      "plot": 1,
+      "scale": 0.91,
+      "yaw": 0.5
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        68.78273618813678,
+        -162.18014576869936,
+        1.2074942230917822
+      ],
+      "plot": 2,
+      "scale": 1.18,
+      "yaw": 1.5
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        67.79285080326893,
+        -161.0104334430291,
+        1.7974942230917823
+      ],
+      "plot": 2,
+      "scale": 0.69,
+      "yaw": -0.47000000000000003
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        67.97869559722746,
+        -159.03948298384486,
+        4.0334942230917825
+      ],
+      "plot": 2,
+      "scale": 0.82,
+      "yaw": 0.56
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        68.63767346584795,
+        -160.5606838807248,
+        1.2074942230917822
+      ],
+      "plot": 2,
+      "scale": 0.97,
+      "yaw": 1.1
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        76.88815937419992,
+        -156.57445981827098,
+        1.2074942230917822
+      ],
+      "plot": 2,
+      "scale": 1.26,
+      "yaw": 0.41
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        77.78637984127893,
+        -156.43268537586212,
+        1.2074942230917822
+      ],
+      "plot": 2,
+      "scale": 0.89,
+      "yaw": -0.23000000000000004
+    },
+    {
+      "asset": "chinese_tea_table",
+      "origin": [
+        81.27569931099895,
+        -173.56679024417178,
+        1.152494223091782
+      ],
+      "plot": 2,
+      "scale": 1.08,
+      "yaw": 0.42
+    },
+    {
+      "asset": "chinese_armchair",
+      "origin": [
+        80.41933526424297,
+        -173.67468194646509,
+        1.152494223091782
+      ],
+      "plot": 2,
+      "scale": 0.92,
+      "yaw": -1.1507963267948964
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        82.03316617217385,
+        -173.2068680939478,
+        1.152494223091782
+      ],
+      "plot": 2,
+      "scale": 1.0,
+      "yaw": 1.9907963267948967
+    },
+    {
+      "asset": "chinese_tea_table",
+      "origin": [
+        75.01026117942443,
+        -171.65287148429402,
+        1.152494223091782
+      ],
+      "plot": 2,
+      "scale": 1.08,
+      "yaw": -0.020000000000000018
+    },
+    {
+      "asset": "chinese_armchair",
+      "origin": [
+        74.15389713266848,
+        -171.7607631865873,
+        1.152494223091782
+      ],
+      "plot": 2,
+      "scale": 0.92,
+      "yaw": -1.5907963267948966
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        75.76772804059932,
+        -171.29294933407002,
+        1.152494223091782
+      ],
+      "plot": 2,
+      "scale": 1.0,
+      "yaw": 1.5507963267948965
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        -120.01797214266983,
+        -50.26402605302969,
+        13.350633665507232
+      ],
+      "plot": 3,
+      "scale": 0.89,
+      "yaw": 7.260375149772139
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        -129.72180846653202,
+        -85.44521054272572,
+        9.920920788317646
+      ],
+      "plot": 4,
+      "scale": 1.2,
+      "yaw": 2.9587393373590034
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        -135.0511311462831,
+        -45.77000115216675,
+        14.709385542743142
+      ],
+      "plot": 5,
+      "scale": 0.89,
+      "yaw": 7.159377842824593
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        -221.8564187819809,
+        -44.62459730234884,
+        14.11702385165187
+      ],
+      "plot": 6,
+      "scale": 0.89,
+      "yaw": 3.2717125899249586
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        193.26148807361346,
+        205.30355361937066,
+        52.96396081957534
+      ],
+      "plot": 7,
+      "scale": 0.89,
+      "yaw": 2.4260696696669775
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        229.15353272946786,
+        203.17630376770185,
+        55.17345908185217
+      ],
+      "plot": 8,
+      "scale": 0.89,
+      "yaw": -1.123930028889489
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        233.6801740983693,
+        215.8751403921158,
+        55.22845908185218
+      ],
+      "plot": 8,
+      "scale": 1.18,
+      "yaw": -0.21940710521193707
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        234.9835602872785,
+        216.68092227486122,
+        55.818459081852176
+      ],
+      "plot": 8,
+      "scale": 0.69,
+      "yaw": -2.189407105211937
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        236.90526939957877,
+        216.2052983817459,
+        58.05445908185217
+      ],
+      "plot": 8,
+      "scale": 0.82,
+      "yaw": -1.159407105211937
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        235.30326445444666,
+        215.77881959473254,
+        55.22845908185218
+      ],
+      "plot": 8,
+      "scale": 0.97,
+      "yaw": -0.619407105211937
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        230.9720753206686,
+        189.82800053108636,
+        52.85952805401533
+      ],
+      "plot": 9,
+      "scale": 1.2,
+      "yaw": -1.319407105211937
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        237.07385501208296,
+        165.26398069474783,
+        49.66809414532932
+      ],
+      "plot": 10,
+      "scale": 1.2,
+      "yaw": -1.319407105211937
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        239.16531957163483,
+        137.25351180843117,
+        46.765939052685326
+      ],
+      "plot": 11,
+      "scale": 0.89,
+      "yaw": -1.1174518119177583
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        205.2192612913884,
+        109.91515426745802,
+        39.460518296227356
+      ],
+      "plot": 12,
+      "scale": 0.89,
+      "yaw": 2.238746718069625
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        239.9838939638053,
+        104.16318170128878,
+        44.47669221411311
+      ],
+      "plot": 13,
+      "scale": 0.89,
+      "yaw": -1.3112529804868414
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        236.88563554801226,
+        72.7207845034677,
+        35.76111662798204
+      ],
+      "plot": 14,
+      "scale": 1.2,
+      "yaw": -1.7587029894712995
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        176.86529972159585,
+        44.08920305428052,
+        26.32700715250349
+      ],
+      "plot": 15,
+      "scale": 0.89,
+      "yaw": 1.4148954507314888
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        201.17167132806992,
+        13.89727137647894,
+        20.517976667856786
+      ],
+      "plot": 16,
+      "scale": 0.89,
+      "yaw": -2.1351042478249775
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        158.66578681057257,
+        25.066003120056898,
+        25.41101797859249
+      ],
+      "plot": 17,
+      "scale": 0.89,
+      "yaw": 1.2232999101959017
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        181.6601077668025,
+        -2.7663466610159753,
+        20.17798762703987
+      ],
+      "plot": 18,
+      "scale": 1.2,
+      "yaw": -2.3838051224429773
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        129.04652480365098,
+        -47.1526735324362,
+        17.176717944501693
+      ],
+      "plot": 21,
+      "scale": 1.2,
+      "yaw": -2.3595090057814363
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        134.3456028593585,
+        83.53928785497422,
+        35.73096722447547
+      ],
+      "plot": 22,
+      "scale": 1.2,
+      "yaw": 3.6434285448132457
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        -36.200431901659776,
+        129.7281734174799,
+        38.47246247257707
+      ],
+      "plot": 23,
+      "scale": 0.89,
+      "yaw": 6.3368255912066225
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        128.65191869049505,
+        -86.9591617428276,
+        12.110653789043658
+      ],
+      "plot": 24,
+      "scale": 1.2,
+      "yaw": -0.19199326978823575
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        171.80217032104355,
+        -99.34685034123618,
+        18.014300708315265
+      ],
+      "plot": 25,
+      "scale": 1.2,
+      "yaw": -0.19199326978823575
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        182.1060507613134,
+        -142.7953316105707,
+        11.237760413266404
+      ],
+      "plot": 26,
+      "scale": 0.89,
+      "yaw": 3.7000473036957597
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        206.9984050993395,
+        -152.33200688818619,
+        9.231572735979451
+      ],
+      "plot": 27,
+      "scale": 1.2,
+      "yaw": 2.9495993838015573
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        218.61489642464548,
+        -113.9752535155355,
+        13.671380863193601
+      ],
+      "plot": 28,
+      "scale": 0.89,
+      "yaw": 0.15004760513929355
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        231.78233152970822,
+        -118.40834536201334,
+        10.543033075880356
+      ],
+      "plot": 29,
+      "scale": 1.2,
+      "yaw": -0.19199326978823575
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        -200.4907804129553,
+        102.77453434442874,
+        30.102280039120934
+      ],
+      "plot": 30,
+      "scale": 1.2,
+      "yaw": 4.362629367314851
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        -234.21392710001805,
+        118.41312599096996,
+        31.14091882118312
+      ],
+      "plot": 31,
+      "scale": 0.89,
+      "yaw": 1.7467714865093151
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        -183.41394329842757,
+        128.76971175286633,
+        31.364859199086215
+      ],
+      "plot": 32,
+      "scale": 1.2,
+      "yaw": 4.111534572500239
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        -216.2326755629528,
+        147.9822122423912,
+        30.392862238991306
+      ],
+      "plot": 33,
+      "scale": 1.2,
+      "yaw": 0.9699419189104465
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        -112.80009680784835,
+        155.45320322513146,
+        40.65145242535142
+      ],
+      "plot": 34,
+      "scale": 0.89,
+      "yaw": 4.20437991535298
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        -88.29371121227912,
+        197.25206281428572,
+        46.950735694105916
+      ],
+      "plot": 35,
+      "scale": 1.2,
+      "yaw": -0.16448838254923256
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        -74.38692614778039,
+        149.76458044065186,
+        42.087237887754625
+      ],
+      "plot": 36,
+      "scale": 0.89,
+      "yaw": 3.7311278262758334
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        -58.68068456268529,
+        184.5151128751286,
+        48.112466261195216
+      ],
+      "plot": 37,
+      "scale": 0.89,
+      "yaw": 0.18112812771936715
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        -31.081913974541123,
+        163.86318806043087,
+        47.10926545495967
+      ],
+      "plot": 38,
+      "scale": 0.89,
+      "yaw": -0.3799444122739447
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        10.754908004005014,
+        132.58782921617,
+        37.25211605806738
+      ],
+      "plot": 39,
+      "scale": 1.2,
+      "yaw": 3.4624214233191415
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        -6.551668126415001,
+        170.61788962954338,
+        44.45795836571657
+      ],
+      "plot": 40,
+      "scale": 1.2,
+      "yaw": 0.3208287697293484
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        -10.665974643269708,
+        175.5463809921586,
+        44.51295836571658
+      ],
+      "plot": 40,
+      "scale": 1.18,
+      "yaw": 1.4208287697293482
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        -11.560248457178327,
+        176.79071790222648,
+        45.102958365716574
+      ],
+      "plot": 40,
+      "scale": 0.69,
+      "yaw": -0.5491712302706517
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        -11.219106195323896,
+        178.74079635120663,
+        47.33895836571657
+      ],
+      "plot": 40,
+      "scale": 0.82,
+      "yaw": 0.48082876972934835
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        -10.682502081825579,
+        177.17224286937162,
+        44.51295836571658
+      ],
+      "plot": 40,
+      "scale": 0.97,
+      "yaw": 1.0208287697293483
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        52.27951140063053,
+        189.13393002767782,
+        42.73902328193489
+      ],
+      "plot": 41,
+      "scale": 0.89,
+      "yaw": 1.1052225876141906
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        84.0439271122891,
+        200.6879222825739,
+        45.61661627811532
+      ],
+      "plot": 42,
+      "scale": 0.89,
+      "yaw": 0.6983289767480209
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        101.42885624916133,
+        166.52163773336994,
+        41.27543629557187
+      ],
+      "plot": 43,
+      "scale": 0.89,
+      "yaw": 4.248328675304487
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        94.49110154889605,
+        207.3687252531477,
+        49.435021403976094
+      ],
+      "plot": 44,
+      "scale": 1.2,
+      "yaw": 0.29321148384780604
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        151.75042738628557,
+        162.97116528969156,
+        41.2002136970879
+      ],
+      "plot": 45,
+      "scale": 1.2,
+      "yaw": 3.0937432883310376
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        170.66352502878973,
+        159.63635178367574,
+        44.3262288196554
+      ],
+      "plot": 46,
+      "scale": 1.2,
+      "yaw": 2.9833404337787544
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        -198.44848213653648,
+        5.331965721923231,
+        21.43655837644106
+      ],
+      "plot": 47,
+      "scale": 0.89,
+      "yaw": 5.804999547834699
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        -209.21939805562567,
+        50.34231599187684,
+        25.112074388844277
+      ],
+      "plot": 48,
+      "scale": 1.2,
+      "yaw": 5.239016473511565
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        -205.25082689763352,
+        55.41029794613911,
+        25.167074388844277
+      ],
+      "plot": 48,
+      "scale": 1.18,
+      "yaw": 6.339016473511566
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        -204.21549193099196,
+        56.53997998408134,
+        25.757074388844277
+      ],
+      "plot": 48,
+      "scale": 0.69,
+      "yaw": 4.369016473511566
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        -202.2368517725214,
+        56.604533243392325,
+        27.993074388844278
+      ],
+      "plot": 48,
+      "scale": 0.82,
+      "yaw": 5.3990164735115656
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        -203.66265119740558,
+        55.758720025240706,
+        25.167074388844277
+      ],
+      "plot": 48,
+      "scale": 0.97,
+      "yaw": 5.939016473511566
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        -238.98530880361986,
+        27.56024716924373,
+        25.472304180313515
+      ],
+      "plot": 49,
+      "scale": 1.2,
+      "yaw": 2.0974238199217727
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        -212.48734816100244,
+        72.46466533088507,
+        29.429669892284114
+      ],
+      "plot": 50,
+      "scale": 0.89,
+      "yaw": 5.672666666474143
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        -201.3953912797435,
+        -58.08300300856611,
+        14.097400994394226
+      ],
+      "plot": 51,
+      "scale": 0.89,
+      "yaw": 2.629138415953902
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        -181.27070533459832,
+        -106.393729146216,
+        11.566791842953348
+      ],
+      "plot": 52,
+      "scale": 1.2,
+      "yaw": 2.2854592787170622
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        -184.80990760484005,
+        -111.28130952892108,
+        11.621791842953348
+      ],
+      "plot": 52,
+      "scale": 1.18,
+      "yaw": 3.385459278717062
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        -185.61582237348418,
+        -112.58461355549404,
+        12.211791842953348
+      ],
+      "plot": 52,
+      "scale": 0.69,
+      "yaw": 1.4154592787170621
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        -187.54751885770713,
+        -113.01789486462317,
+        14.447791842953349
+      ],
+      "plot": 52,
+      "scale": 0.82,
+      "yaw": 2.4454592787170624
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        -186.30495879461458,
+        -111.92046673959292,
+        11.621791842953348
+      ],
+      "plot": 52,
+      "scale": 0.97,
+      "yaw": 2.9854592787170624
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        -153.70693243193085,
+        -77.58341192040969,
+        13.35533872125023
+      ],
+      "plot": 53,
+      "scale": 1.2,
+      "yaw": -0.8561333748727311
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        -130.7439403238475,
+        -117.85451968432668,
+        5.322142419428448
+      ],
+      "plot": 54,
+      "scale": 0.89,
+      "yaw": -0.7565916652729446
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        -143.23288853184502,
+        -162.55309310841344,
+        0.6545535511798383
+      ],
+      "plot": 55,
+      "scale": 1.2,
+      "yaw": 2.516726509974452
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        -123.57909642878539,
+        -129.08196113918433,
+        4.263926110713504
+      ],
+      "plot": 56,
+      "scale": 1.2,
+      "yaw": -0.6248661436153412
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        -110.75502633816002,
+        -132.81273131723847,
+        4.3189261107135035
+      ],
+      "plot": 56,
+      "scale": 1.18,
+      "yaw": 0.47513385638465877
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        -109.37099373418843,
+        -132.15504313037204,
+        4.908926110713503
+      ],
+      "plot": 56,
+      "scale": 0.69,
+      "yaw": -1.4948661436153412
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        -108.72789232271852,
+        -130.28271715059037,
+        7.144926110713504
+      ],
+      "plot": 56,
+      "scale": 0.82,
+      "yaw": -0.4648661436153412
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        -109.95532027939788,
+        -131.3970441273624,
+        4.3189261107135035
+      ],
+      "plot": 56,
+      "scale": 0.97,
+      "yaw": -1.5248661436153412
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        -121.33204990518031,
+        -183.1031122351316,
+        -0.5859992695737306
+      ],
+      "plot": 57,
+      "scale": 1.2,
+      "yaw": 2.516726509974452
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        -102.25367021448946,
+        -150.0955716336291,
+        3.534345560340801
+      ],
+      "plot": 58,
+      "scale": 1.2,
+      "yaw": -0.6248661436153412
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        -69.5940075656302,
+        -196.7857850625314,
+        1.325281669771401
+      ],
+      "plot": 59,
+      "scale": 1.2,
+      "yaw": 3.0533711482850223
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        -69.69271495857612,
+        -158.77366412690864,
+        2.2263434973857525
+      ],
+      "plot": 60,
+      "scale": 1.2,
+      "yaw": -0.08822150530477074
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        -71.1140671487483,
+        -152.690270469546,
+        2.2813434973857523
+      ],
+      "plot": 60,
+      "scale": 1.18,
+      "yaw": 1.0117784946952293
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        -71.4396422164769,
+        -151.19290582615633,
+        2.8713434973857526
+      ],
+      "plot": 60,
+      "scale": 0.69,
+      "yaw": -0.9582215053047708
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        -70.35102397277292,
+        -149.53939612873245,
+        5.107343497385752
+      ],
+      "plot": 60,
+      "scale": 0.82,
+      "yaw": 0.07177849469522926
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        -70.48256378461957,
+        -151.19197026561685,
+        2.2813434973857523
+      ],
+      "plot": 60,
+      "scale": 0.97,
+      "yaw": 0.6117784946952293
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        -46.20099413697941,
+        -197.3476134671238,
+        2.7604010770661307
+      ],
+      "plot": 61,
+      "scale": 0.89,
+      "yaw": 4.20437991535298
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        -16.278454746603284,
+        -190.20502230609526,
+        2.381282372752371
+      ],
+      "plot": 62,
+      "scale": 1.2,
+      "yaw": 3.395911429515912
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        -23.097188175343096,
+        -154.93013505766456,
+        2.522216978235183
+      ],
+      "plot": 63,
+      "scale": 0.89,
+      "yaw": 0.6543802167965145
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        8.960672953190176,
+        -181.80408109811555,
+        -0.19666469002397596
+      ],
+      "plot": 64,
+      "scale": 1.2,
+      "yaw": 3.694931349444356
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        13.249894578104279,
+        -186.06603355323395,
+        -0.14166469002397597
+      ],
+      "plot": 64,
+      "scale": 1.18,
+      "yaw": 4.794931349444356
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        14.406825386231013,
+        -187.07082761432665,
+        0.4483353099760241
+      ],
+      "plot": 64,
+      "scale": 0.69,
+      "yaw": 2.824931349444356
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        14.52420119166997,
+        -189.04703785625375,
+        2.684335309976024
+      ],
+      "plot": 64,
+      "scale": 0.82,
+      "yaw": 3.854931349444356
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        13.640609405714326,
+        -187.64433704860028,
+        -0.14166469002397597
+      ],
+      "plot": 64,
+      "scale": 0.97,
+      "yaw": 4.394931349444356
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        -7.4578475639191,
+        -150.72703234185119,
+        3.1603294400658872
+      ],
+      "plot": 65,
+      "scale": 0.89,
+      "yaw": 0.9922727263156559
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        29.212885977939568,
+        -172.69454968529786,
+        -0.1297253338780024
+      ],
+      "plot": 66,
+      "scale": 1.2,
+      "yaw": 3.694931349444356
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        9.891042060583906,
+        -136.55708640275392,
+        4.116806554706302
+      ],
+      "plot": 67,
+      "scale": 0.89,
+      "yaw": 0.9922727263156559
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        46.60833756969014,
+        -164.6135388215325,
+        1.3223308712575061
+      ],
+      "plot": 68,
+      "scale": 0.89,
+      "yaw": 4.491208185799717
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        36.41241792000122,
+        -126.7837010033444,
+        5.988639966737797
+      ],
+      "plot": 69,
+      "scale": 0.89,
+      "yaw": 0.9412084872432509
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        72.41675884601311,
+        -116.75367835277298,
+        6.808370445925274
+      ],
+      "plot": 70,
+      "scale": 0.89,
+      "yaw": 0.7977923881676736
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        102.7477248608135,
+        -143.03789223907373,
+        7.7776701567618485
+      ],
+      "plot": 71,
+      "scale": 1.2,
+      "yaw": 3.5228248555080883
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        114.54433951545971,
+        -142.24781079208466,
+        8.828372005559693
+      ],
+      "plot": 72,
+      "scale": 0.89,
+      "yaw": 4.32619511918645
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        127.21789655878007,
+        -145.46357138625217,
+        8.883372005559693
+      ],
+      "plot": 72,
+      "scale": 1.18,
+      "yaw": 4.603712494855266
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        128.16277353930403,
+        -146.66993264710064,
+        9.473372005559693
+      ],
+      "plot": 72,
+      "scale": 0.69,
+      "yaw": 2.6337124948552657
+    },
+    {
+      "asset": "potted_plant_02",
+      "origin": [
+        127.90242000181337,
+        -148.63243106379198,
+        11.709372005559693
+      ],
+      "plot": 72,
+      "scale": 0.82,
+      "yaw": 3.6637124948552655
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        127.30152441419918,
+        -147.08736520992497,
+        8.883372005559693
+      ],
+      "plot": 72,
+      "scale": 0.97,
+      "yaw": 4.2037124948552655
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        147.6006538788515,
+        -135.35405994403243,
+        12.038748358674793
+      ],
+      "plot": 73,
+      "scale": 1.2,
+      "yaw": 3.503712494855266
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        140.88888680217912,
+        -90.19082130654597,
+        15.531863599085595
+      ],
+      "plot": 74,
+      "scale": 1.2,
+      "yaw": 0.9329812666744317
+    },
+    {
+      "asset": "plastic_monobloc_chair_01",
+      "origin": [
+        213.29097465552664,
+        -87.32893026672498,
+        16.67271848017094
+      ],
+      "plot": 75,
+      "scale": 0.89,
+      "yaw": 4.848402199401872
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        189.0656687218492,
+        -58.05388662785331,
+        18.593863803889597
+      ],
+      "plot": 76,
+      "scale": 1.2,
+      "yaw": 0.824250000748147
+    },
+    {
+      "asset": "plastic_crate_01",
+      "origin": [
+        204.35051185459534,
+        -31.996527561291487,
+        17.600033378565097
+      ],
+      "plot": 77,
+      "scale": 1.2,
+      "yaw": 1.4838170568759856
+    }
+  ],
   "collidable_surface_tiles": 84,
   "planting": [
     {
@@ -4019,17 +8120,6 @@
     },
     {
       "east_north_up": [
-        14.201917690533321,
-        -194.06949590297896,
-        -4.465762829390192
-      ],
-      "rotation_deg": 172.50530846627805,
-      "species": 0,
-      "width_scale": 1.4394523184376786,
-      "height_scale": 1.136606499641255
-    },
-    {
-      "east_north_up": [
         213.1440878749927,
         -240.6710818442402,
         -4.696552533659913
@@ -4228,17 +8318,6 @@
     },
     {
       "east_north_up": [
-        6.522031851683749,
-        -195.6130148141099,
-        -4.055495152386292
-      ],
-      "rotation_deg": 157.3897288253546,
-      "species": 0,
-      "width_scale": 1.5343598310226068,
-      "height_scale": 1.2749547118474094
-    },
-    {
-      "east_north_up": [
         -51.30390678749649,
         -165.43327966141945,
         2.4480729043670615
@@ -4434,17 +8513,6 @@
       "species": 0,
       "width_scale": 1.1944654037234508,
       "height_scale": 1.1337775599303301
-    },
-    {
-      "east_north_up": [
-        -181.02152257987927,
-        6.40262440928754,
-        18.172140801796186
-      ],
-      "rotation_deg": -100.99458506423801,
-      "species": 0,
-      "width_scale": 1.05816380168616,
-      "height_scale": 0.8849409027834988
     },
     {
       "east_north_up": [
@@ -5864,17 +9932,6 @@
       "species": 1,
       "width_scale": 0.8666734673525225,
       "height_scale": 0.781534631315293
-    },
-    {
-      "east_north_up": [
-        119.97777003798393,
-        -156.81391598018067,
-        5.297166859462112
-      ],
-      "rotation_deg": -90.75693549692376,
-      "species": 0,
-      "width_scale": 1.21625731770249,
-      "height_scale": 1.2001615026575185
     },
     {
       "east_north_up": [

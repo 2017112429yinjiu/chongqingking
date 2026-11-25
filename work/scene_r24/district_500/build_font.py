@@ -7,8 +7,9 @@ from fontTools.ttLib import TTFont
 
 work = Path(__file__).resolve().parents[2]
 out = work / "project/chongqing_godot_v05/assets/district_500"
-layout = json.loads((out / "layout.json").read_text())
-text = "".join(place["name"] for place in layout["destinations"])
+layout = json.loads((out / "layout.json").read_text(encoding="utf-8"))
+text = "".join(place["name"] for place in layout["destinations"])+"0123456789"
+text += "".join(sign["text"] for plot in layout.get("plots",[]) for sign in plot.get("trade_signs",[]))
 font = TTFont(work / "assets_incoming/r20_noto/NotoSansCJKsc-Regular.otf", recalcTimestamp=False)
 writer = subset.Subsetter()
 writer.populate(text=text)

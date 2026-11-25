@@ -48,16 +48,42 @@ def furnish(p, cuboid, solid, face, colors):
         for v0,v1 in ((front+.25,-1.19),(1.19,back-.25)):
             box(x-.026,v0,.09,x+.026,v1,1.02,"dado")
     if not site:
-        # Different resident uses leave the through route between the two thresholds.
         side=1 if p["door_u"]<0 else -1
-        x=side*(w/2-1.1)
-        table(x,back-1.0,1.45,.45,.43)
-        if p["kind"]%2:
-            for i in range(3):
-                box(x-.58+i*.39,back-.37,1.18,x-.24+i*.39,back-.26,1.49,"iron")
+        # A side room opens off the public passage. The threshold and the
+        # household furniture follow the same measured floor as the street door.
+        jamb=p["door_u"]+side*1.40
+        opening=-.45
+        for a,b in ((front+.24,opening-.70),(opening+.70,back-.24)):
+            support(jamb-.105,a,.035,jamb+.105,b,2.77,"lime")
+            box(jamb-.124,a,.04,jamb+.124,b,.62,"dado")
+        support(jamb-.105,opening-.70,2.13,jamb+.105,opening+.70,2.77,"wood")
+        edge=side*(w/2-.30);mid=(jamb+edge)/2
+        p["room"]={"door_v":opening,"jamb_u":jamb,"inside_u":mid,"use":("bedroom","washroom","kitchen","sitting_room")[p["kind"]]}
+        # A panel folds into the room. Sill, frames and small cupboard close
+        # the unused service bays while leaving the side window open to daylight.
+        x0,x1=sorted((jamb+side*.12,jamb+side*.90))
+        box(x0,opening+.70,.09,x1,opening+.77,2.09,"wood")
+        for y in (-1.13,0,1.13):box(edge-.025,y-.026,.88,edge+.025,y+.026,2.10,"wood")
+        table(mid,back-1.02,1.24,.52,.73,"wood","wood")
+        x=side*(w/2-1.03)
+        if p["kind"]==0:
+            support(x-.67,front+.55,.14,x+.67,front+2.47,.44,"wood")
+            box(x-.64,front+.58,.44,x+.64,front+2.43,.55,"linen")
+            box(x-.62,front+.64,.55,x+.62,front+1.55,.60,"jade")
+            box(x-.44,front+1.93,.55,x+.44,front+2.36,.66,"linen")
+        elif p["kind"] in (1,2):
+            support(x-.65,front+.42,.035,x+.65,front+1.71,.84,"dado")
+            box(x-.70,front+.38,.84,x+.70,front+1.76,.91,"stone")
+            if p["kind"]==2:
+                vessel(x,front+.93,.91,[(0,.12),(.085,.24),(.18,.25),(.22,.22)],"iron")
+                vessel(x,front+.93,1.13,[(0,.24),(.04,.10),(.074,.037)],"zinc")
+            else:
+                vessel(x,front+.96,.91,[(0,.12),(.13,.25),(.15,.25)],"china")
+                box(x+.26,front+.61,.91,x+.295,front+.66,1.23,"zinc")
+                box(x+.12,front+.61,1.20,x+.295,front+.66,1.23,"zinc")
         else:
-            for i in range(2):
-                vessel(x-.36+i*.73,back-.87,.43,[(0,.12),(.29,.17),(.31,.18)],"clay")
+            table(x,front+1.28,1.23,.54,.43,"wood","wood")
+            for i in range(2):vessel(mid-.23+i*.45,back-1.02,.73,[(0,.044),(.075,.065)],"china")
         return
     left,right=-w/2+.32,w/2-.32
     # Paired columns and beams expose the depth of the shop. Outside each
@@ -91,7 +117,45 @@ def furnish(p, cuboid, solid, face, colors):
     support(stock,back-3.15,.035,stock+.17,back-.20,2.78,"lime")
     support(stock+1.28,back-3.15,.035,right,back-2.98,2.78,"dado")
     box(stock,back-3.15,2.16,stock+1.28,back-2.98,2.78,"lime")
+    # Two working bays flank a narrower public passage. Sills and partitions
+    # enclose the stock areas without closing the sightline between entrances.
+    aisle=p["door_u"]
+    signs=[]
+    p["trade_signs"]=signs
+    def board(x,v,h,width,text,tone):
+        box(x-width/2,v-.055,h-.20,x+width/2,v+.025,h+.20,tone)
+        signs.append({"text":text,"u":x,"v":v-.061,"h":h,"width":width})
+    for side in (-1,1):
+        x=aisle+side*(2.14 if side>0 else 2.53)
+        v=front+(1.48 if side>0 else 2.67)
+        outer=right-.25 if side>0 else left+.25
+        endx=x+side*2.32
+        low,high=sorted((x,endx))
+        support(low,v,.035,high,v+.40,.78,"dado" if not site.endswith("修理铺") else "iron")
+        support(low-.055,v-.07,.78,high+.055,v+.45,.86,"wood")
+        for end in (low+.065,high-.065):
+            box(end-.04,v+.36,.86,end+.04,v+.44,2.63,"wood")
+        box(low,v+.32,2.39,high,v+.46,2.61,"wood")
+        # A solid return at the side wall makes a deep shopfront, with a
+        # side door to the public aisle between the counter and back room.
+        lo,hi=sorted((outer,outer-side*1.12))
+        support(lo,front+.30,.035,hi,front+.58,2.51,"lime")
+        box(lo,front+.274,.035,hi,front+.30,.87,"dado")
+        # A hanging reflector, short cable and ceiling rose use the same axis.
+        sx=(low+high)/2; sy=v+1.27
+        box(sx-.07,sy-.07,2.75,sx+.07,sy+.07,2.80,"wood")
+        box(sx-.009,sy-.009,2.34,sx+.009,sy+.009,2.76,"rubber")
+        vessel(sx,sy,2.15,[(0,.18),(.06,.16),(.16,.047),(.19,.035)],"jade",16)
+        vessel(sx,sy,2.135,[(0,.105),(.012,.165)],"china",16)
     if site.endswith("市场"):
+        board(aisle+3.22,front+1.76,2.20,1.40,"时令蔬菜","jade")
+        board(aisle-3.62,front+2.94,2.18,1.36,"干货杂粮","wood")
+        # Sack lips and hanging balance on the grain stall.
+        for j in range(5):
+            vessel(aisle-2.86-j*.39,front+2.86,.86,[(0,.14),(.28,.21),(.41,.17),(.43,.20)],"linen" if j%2 else "gourd",12)
+        bowl_x=aisle+3.68; bowl_y=front+1.68
+        vessel(bowl_x,bowl_y,.86,[(0,.16),(.10,.12),(.16,.095)],"jade")
+        vessel(bowl_x,bowl_y,1.02,[(0,.08),(.085,.25),(.104,.26)],"zinc")
         rng=Random(184)
         for i,(x,y) in enumerate(((left+2.0,front+2.4),(left+2.0,front+5.25),(2.85,front+3.6),(right-2,front+2.5))):
             table(x,y,2.35,1.04,.83)
@@ -109,6 +173,11 @@ def furnish(p, cuboid, solid, face, colors):
         box(left+.97,back-1.16,.82,left+1.32,back-.87,.93,"jade")
         vessel(left+1.15,back-1,.93,[(0,.09),(.105,.20),(.12,.21)],"zinc")
     elif site.endswith("茶摊"):
+        board(aisle+3.27,front+1.74,2.20,1.48,"盖碗老荫茶","wood")
+        for j in range(3):
+            vessel(aisle+2.5+j*.41,front+1.64,.86,[(0,.075),(.18,.09),(.29,.08),(.33,.059)],"jade" if j!=1 else "china")
+        for j in range(4):
+            vessel(aisle-2.86-j*.38,front+2.86,.86,[(0,.062),(.043,.099),(.053,.105)],"china")
         for x,y in [(left+2.5,front+2.8),(3.05,front+3.7),(left+3,back-2.3),(3.6,back-2.0)]:
             table(x,y,1.43,.91,.73)
             vessel(x+.1,y,.73,[(0,.095),(.08,.14),(.19,.115),(.205,.07),(.23,.08)],"clay")
@@ -120,6 +189,16 @@ def furnish(p, cuboid, solid, face, colors):
                 vessel(x+side*.41,y,.73,[(0,.039),(.065,.052),(.076,.052)],"china")
         table(right-1.0,front+1.9,1.20,1.65,.82,"stone")
     else:
+        board(aisle+3.27,front+1.75,2.20,1.48,"补胎打气","jade")
+        board(aisle-3.67,front+2.94,2.20,1.35,"修车配件","wood")
+        # Tool board sits behind the low workbench, each spanner on a peg.
+        box(aisle+2.24,front+1.94,1.05,aisle+4.18,front+2.03,1.98,"wood")
+        for j in range(8):
+            x=aisle+2.38+j*.225;bottom=1.29+(j%3)*.065
+            box(x-.021,front+1.907,bottom,x+.021,front+1.937,1.69,"zinc")
+            box(x-.058,front+1.906,1.65,x+.058,front+1.937,1.70,"zinc")
+            for dx in (-.045,.045):
+                box(x+dx-.014,front+1.906,1.68,x+dx+.014,front+1.937,1.75,"zinc")
         table(left+3.1,front+3.6,3.55,.88,.90)
         for x in (left+1.8,left+2.55,left+3.3):
             wheel(x,front+3.82,1.40,.46)

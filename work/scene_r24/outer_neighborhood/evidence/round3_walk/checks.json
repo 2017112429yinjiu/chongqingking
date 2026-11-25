@@ -1,0 +1,501 @@
+[
+  {
+    "detail": "",
+    "name": "first_shift",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 15.5399352703243,
+      "end": "(-188.9023, 19.02639, 4.891559)",
+      "goals": 3,
+      "max_frame_displacement_m": 0.0735170319676399,
+      "name": "repair_through",
+      "pass": true,
+      "reached": 3,
+      "stall_contacts": []
+    },
+    "name": "repair_through",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 15.5422029532492,
+      "end": "(-184.8033, 19.02037, 20.17216)",
+      "goals": 3,
+      "max_frame_displacement_m": 0.0744734555482864,
+      "name": "repair_return",
+      "pass": true,
+      "reached": 3,
+      "stall_contacts": []
+    },
+    "name": "repair_return",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 15.564888715744,
+      "end": "(164.3742, 38.22795, -130.2685)",
+      "goals": 3,
+      "max_frame_displacement_m": 0.0720586031675339,
+      "name": "market_through",
+      "pass": true,
+      "reached": 3,
+      "stall_contacts": []
+    },
+    "name": "market_through",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 15.5948450025171,
+      "end": "(166.2062, 38.15689, -114.4734)",
+      "goals": 3,
+      "max_frame_displacement_m": 0.0792439356446266,
+      "name": "market_return",
+      "pass": true,
+      "reached": 3,
+      "stall_contacts": []
+    },
+    "name": "market_return",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 14.5490993112326,
+      "end": "(75.45908, 1.220535, 163.9136)",
+      "goals": 3,
+      "max_frame_displacement_m": 0.0725783407688141,
+      "name": "tea_through",
+      "pass": true,
+      "reached": 3,
+      "stall_contacts": []
+    },
+    "name": "tea_through",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 14.5772290751338,
+      "end": "(79.72134, 1.150839, 178.1382)",
+      "goals": 3,
+      "max_frame_displacement_m": 0.0789808109402657,
+      "name": "tea_return",
+      "pass": true,
+      "reached": 3,
+      "stall_contacts": []
+    },
+    "name": "tea_return",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 42.0740935932845,
+      "end": "(169.4125, 41.05399, -139.5052)",
+      "goals": 5,
+      "max_frame_displacement_m": 0.167284682393074,
+      "name": "market_home_out",
+      "pass": true,
+      "reached": 5,
+      "stall_contacts": []
+    },
+    "name": "market_home_out",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 42.2778843054548,
+      "end": "(166.0812, 38.14628, -115.5142)",
+      "goals": 5,
+      "max_frame_displacement_m": 0.121054567396641,
+      "name": "market_home_back",
+      "pass": true,
+      "reached": 5,
+      "stall_contacts": []
+    },
+    "name": "market_home_back",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 43.4926861571148,
+      "end": "(69.42567, 4.046621, 156.8027)",
+      "goals": 5,
+      "max_frame_displacement_m": 0.165053367614746,
+      "name": "tea_home_out",
+      "pass": true,
+      "reached": 5,
+      "stall_contacts": []
+    },
+    "name": "tea_home_out",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 43.589072983712,
+      "end": "(79.42109, 1.142014, 177.1677)",
+      "goals": 5,
+      "max_frame_displacement_m": 0.117146700620651,
+      "name": "tea_home_back",
+      "pass": true,
+      "reached": 5,
+      "stall_contacts": []
+    },
+    "name": "tea_home_back",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 40.9439810886979,
+      "end": "(238.9225, 58.06733, -214.4684)",
+      "goals": 5,
+      "max_frame_displacement_m": 0.166156053543091,
+      "name": "residence_08_home_out",
+      "pass": true,
+      "reached": 5,
+      "stall_contacts": []
+    },
+    "name": "residence_08_home_out",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 41.299548683688,
+      "end": "(220.7033, 55.17696, -209.1765)",
+      "goals": 5,
+      "max_frame_displacement_m": 0.121334262192249,
+      "name": "residence_08_home_back",
+      "pass": true,
+      "reached": 5,
+      "stall_contacts": []
+    },
+    "name": "residence_08_home_back",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 5.83769427154584,
+      "end": "(138.1646, 19.95154, 28.34022)",
+      "goals": 5,
+      "max_frame_displacement_m": 0.0709409639239311,
+      "name": "residence_20_home_out",
+      "pass": false,
+      "reached": 0,
+      "stall_contacts": [
+        "CQ_StaticCollision",
+        "CQ_StaticCollision",
+        "CQ_StaticCollision"
+      ]
+    },
+    "name": "residence_20_home_out",
+    "pass": false
+  },
+  {
+    "detail": {
+      "distance_m": 34.6478943508118,
+      "end": "(-9.619292, 47.35274, -180.9035)",
+      "goals": 5,
+      "max_frame_displacement_m": 0.168425992131233,
+      "name": "residence_40_home_out",
+      "pass": true,
+      "reached": 5,
+      "stall_contacts": []
+    },
+    "name": "residence_40_home_out",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 34.7064855732024,
+      "end": "(1.870725, 44.4617, -165.2547)",
+      "goals": 5,
+      "max_frame_displacement_m": 0.1213119328022,
+      "name": "residence_40_home_back",
+      "pass": true,
+      "reached": 5,
+      "stall_contacts": []
+    },
+    "name": "residence_40_home_back",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 43.1311300303787,
+      "end": "(-195.5018, 28.00715, -45.76014)",
+      "goals": 5,
+      "max_frame_displacement_m": 0.169578030705452,
+      "name": "residence_48_home_out",
+      "pass": true,
+      "reached": 5,
+      "stall_contacts": []
+    },
+    "name": "residence_48_home_out",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 43.1529040131718,
+      "end": "(-215.7885, 25.11392, -39.69979)",
+      "goals": 5,
+      "max_frame_displacement_m": 0.119001612067223,
+      "name": "residence_48_home_back",
+      "pass": true,
+      "reached": 5,
+      "stall_contacts": []
+    },
+    "name": "residence_48_home_back",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 31.7409932035953,
+      "end": "(-189.722, 14.46093, 112.7995)",
+      "goals": 5,
+      "max_frame_displacement_m": 0.167280048131943,
+      "name": "residence_52_home_out",
+      "pass": true,
+      "reached": 5,
+      "stall_contacts": []
+    },
+    "name": "residence_52_home_out",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 31.6358376387507,
+      "end": "(-178.4035, 11.57025, 97.17567)",
+      "goals": 5,
+      "max_frame_displacement_m": 0.121391996741295,
+      "name": "residence_52_home_back",
+      "pass": true,
+      "reached": 5,
+      "stall_contacts": []
+    },
+    "name": "residence_52_home_back",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 36.4774836190045,
+      "end": "(-117.0772, 7.158698, 120.7153)",
+      "goals": 5,
+      "max_frame_displacement_m": 0.171950772404671,
+      "name": "residence_56_home_out",
+      "pass": true,
+      "reached": 5,
+      "stall_contacts": []
+    },
+    "name": "residence_56_home_out",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 36.458672689274,
+      "end": "(-123.8483, 4.26731, 140.416)",
+      "goals": 5,
+      "max_frame_displacement_m": 0.121236249804497,
+      "name": "residence_56_home_back",
+      "pass": true,
+      "reached": 5,
+      "stall_contacts": []
+    },
+    "name": "residence_56_home_back",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 40.5121572623029,
+      "end": "(-58.89608, 5.120984, 149.9833)",
+      "goals": 5,
+      "max_frame_displacement_m": 0.167278453707695,
+      "name": "residence_60_home_out",
+      "pass": true,
+      "reached": 5,
+      "stall_contacts": []
+    },
+    "name": "residence_60_home_out",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 40.4325810503215,
+      "end": "(-65.12318, 2.230096, 169.7773)",
+      "goals": 5,
+      "max_frame_displacement_m": 0.118812620639801,
+      "name": "residence_60_home_back",
+      "pass": true,
+      "reached": 5,
+      "stall_contacts": []
+    },
+    "name": "residence_60_home_back",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 33.6310089528561,
+      "end": "(13.94181, 2.697872, 191.2087)",
+      "goals": 5,
+      "max_frame_displacement_m": 0.16728138923645,
+      "name": "residence_64_home_out",
+      "pass": true,
+      "reached": 5,
+      "stall_contacts": []
+    },
+    "name": "residence_64_home_out",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 33.6359650176018,
+      "end": "(-0.527732, -0.193073, 175.7725)",
+      "goals": 5,
+      "max_frame_displacement_m": 0.121335573494434,
+      "name": "residence_64_home_back",
+      "pass": true,
+      "reached": 5,
+      "stall_contacts": []
+    },
+    "name": "residence_64_home_back",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 38.6899700742215,
+      "end": "(116.3394, 11.72342, 153.5203)",
+      "goals": 5,
+      "max_frame_displacement_m": 0.168426319956779,
+      "name": "residence_72_home_out",
+      "pass": true,
+      "reached": 5,
+      "stall_contacts": []
+    },
+    "name": "residence_72_home_out",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 38.7363840937614,
+      "end": "(118.1965, 8.831819, 130.1986)",
+      "goals": 5,
+      "max_frame_displacement_m": 0.124059662222862,
+      "name": "residence_72_home_back",
+      "pass": true,
+      "reached": 5,
+      "stall_contacts": []
+    },
+    "name": "residence_72_home_back",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 6.07216784078628,
+      "end": "(100.883, 4.581416, 153.5095)",
+      "goals": 1,
+      "max_frame_displacement_m": 0.124038673937321,
+      "name": "shared_72.0_71.0_out",
+      "pass": true,
+      "reached": 1,
+      "stall_contacts": []
+    },
+    "name": "shared_72.0_71.0_out",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 6.08085935655981,
+      "end": "(105.1013, 6.104996, 148.899)",
+      "goals": 1,
+      "max_frame_displacement_m": 0.110380195081234,
+      "name": "shared_72.0_71.0_back",
+      "pass": true,
+      "reached": 1,
+      "stall_contacts": []
+    },
+    "name": "shared_72.0_71.0_back",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 12.621566218324,
+      "end": "(-128.5741, 4.575132, 110.6773)",
+      "goals": 1,
+      "max_frame_displacement_m": 0.236758306622505,
+      "name": "shared_56.0_54.0_out",
+      "pass": true,
+      "reached": 1,
+      "stall_contacts": []
+    },
+    "name": "shared_56.0_54.0_out",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 12.7184033533558,
+      "end": "(-125.3262, 4.093831, 123.2046)",
+      "goals": 1,
+      "max_frame_displacement_m": 0.23049858212471,
+      "name": "shared_56.0_54.0_back",
+      "pass": true,
+      "reached": 1,
+      "stall_contacts": []
+    },
+    "name": "shared_56.0_54.0_back",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 14.0333276963793,
+      "end": "(-189.6956, 18.18853, 2.345113)",
+      "goals": 1,
+      "max_frame_displacement_m": 0.0731606334447861,
+      "name": "shared_47.0_0.0_out",
+      "pass": true,
+      "reached": 1,
+      "stall_contacts": []
+    },
+    "name": "shared_47.0_0.0_out",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 14.036471885629,
+      "end": "(-190.0548, 19.07769, -11.96434)",
+      "goals": 1,
+      "max_frame_displacement_m": 0.0708162039518356,
+      "name": "shared_47.0_0.0_back",
+      "pass": true,
+      "reached": 1,
+      "stall_contacts": []
+    },
+    "name": "shared_47.0_0.0_back",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 17.4390337048098,
+      "end": "(243.5617, 48.43965, -160.5654)",
+      "goals": 1,
+      "max_frame_displacement_m": 0.453817486763,
+      "name": "shared_11.0_10.0_out",
+      "pass": true,
+      "reached": 1,
+      "stall_contacts": []
+    },
+    "name": "shared_11.0_10.0_out",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 17.5117686199956,
+      "end": "(242.1737, 46.90337, -142.7924)",
+      "goals": 1,
+      "max_frame_displacement_m": 0.143068537116051,
+      "name": "shared_11.0_10.0_back",
+      "pass": true,
+      "reached": 1,
+      "stall_contacts": []
+    },
+    "name": "shared_11.0_10.0_back",
+    "pass": true
+  }
+]

@@ -30,6 +30,11 @@ static func install(city: Node3D) -> Dictionary:
 		if bank:
 			(bank.get_surface_override_material(0) as ShaderMaterial).set_shader_parameter("outer_district_cut", true)
 	var layout: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(LAYOUT))
+	for item: MeshInstance3D in district.find_children("Outer500_Household_*","MeshInstance3D",true,false):
+		item.visibility_range_end=39.0
+		item.lod_bias=1.7
+	for mesh: MeshInstance3D in district.find_children("Outer500_CourtDetails_*","MeshInstance3D",true,false):
+		mesh.lod_bias=3.0
 	var prefixes: Array = layout.get("retired_context_prefixes", [])
 	for prior: MeshInstance3D in city.find_children("Context_*","MeshInstance3D",true,false):
 		for prefix: String in prefixes:
@@ -72,7 +77,7 @@ static func install(city: Node3D) -> Dictionary:
 		var sign := Label3D.new()
 		var northeast: Array = place.east_north
 		var angle: float = place.bearing
-		var offset: float = place.front_offset - 0.27
+		var offset: float = place.front_offset - 2.235
 		sign.position = Vector3(northeast[0] - sin(angle) * offset, place.height + 2.38,
 			-northeast[1] - cos(angle) * offset)
 		sign.rotation.y = angle
@@ -85,9 +90,65 @@ static func install(city: Node3D) -> Dictionary:
 		sign.pixel_size = 0.0051
 		sign.no_depth_test = false
 		district.add_child(sign)
+	for plot: Dictionary in layout.get("plots",[]):
+		for spec: Dictionary in plot.get("trade_signs",[]):
+			var lettering:=Label3D.new()
+			var yaw: float=plot.bearing
+			lettering.text=spec.text
+			lettering.font=load("res://assets/district_500/district_signs.otf")
+			lettering.font_size=64
+			lettering.pixel_size=.00325
+			lettering.modulate=Color("#e8dec4")
+			lettering.outline_size=3
+			lettering.rotation.y=yaw
+			lettering.position=Vector3(plot.east_north[0]+cos(yaw)*spec.u-sin(yaw)*spec.v,plot.height+spec.h,
+				-plot.east_north[1]-sin(yaw)*spec.u-cos(yaw)*spec.v)
+			district.add_child(lettering)
+		if plot.name=="照相巷便民市场" or plot.name=="南区路车棚修理铺":
+			place_worker(district,plot)
+		if not plot.has("court"):
+			continue
+		var court: Dictionary=plot.court
+		var label:=Label3D.new()
+		var u: float=court.room_u+.83*court.stair_side
+		var v: float=court.room_v-1.05
+		var a: float=plot.bearing
+		label.text="201"
+		label.font_size=48
+		label.pixel_size=.0022
+		label.modulate=Color("#e7dcc7")
+		label.outline_modulate=Color("#27433d")
+		label.outline_size=9
+		label.rotation.y=a
+		label.position=Vector3(plot.east_north[0]+cos(a)*u-sin(a)*v,plot.height+court.upper_m+1.76,
+			-plot.east_north[1]-sin(a)*u-cos(a)*v)
+		district.add_child(label)
 	return {"bounds_east_north_m": layout.bounds_east_north_m,
 		"glb_sha256": FileAccess.get_sha256(MODEL), "retired_internal_context": local_frame != null, "osm_building_ids": retire}
 
+
+static func place_worker(district: Node3D,p: Dictionary) -> void:
+	var market: bool=p.name=="照相巷便民市场"
+	var model: Node3D=(load("res://assets/block_r23/neighbor.glb" if market else "res://assets/block_r23/commuter.glb") as PackedScene).instantiate()
+	model.name="OuterMarketSeller" if market else "OuterRepairWorker"
+	district.add_child(model)
+	var a: float=p.bearing
+	var u:=2.90 if market else 2.13
+	var v: float=-p.depth/2.0+4.65 if market else -.45
+	model.position=Vector3(p.east_north[0]+cos(a)*u-sin(a)*v,p.height+.041,-p.east_north[1]-sin(a)*u-cos(a)*v)
+	model.rotation.y=a+(.11 if market else PI*.55)
+	var player:=model.find_child("AnimationPlayer",true,false) as AnimationPlayer
+	var library: AnimationLibrary=load("res://assets/frontage_r24/stall_clips.res" if market else "res://assets/courtyard_r24/wait_clips.res")
+	var clip: StringName=&"street/watch_street" if market else &"street/commuter"
+	player.add_animation_library("street",library)
+	player.play(clip)
+	player.seek(.57,true)
+	var enabler:=VisibleOnScreenEnabler3D.new()
+	model.add_child(enabler)
+	enabler.aabb=AABB(Vector3(-.65,0,-.65),Vector3(1.3,2.15,1.3))
+	enabler.enable_node_path=enabler.get_path_to(player)
+	for part: MeshInstance3D in model.find_children("*","MeshInstance3D",true,false):
+		part.visibility_range_end=45.
 
 static func trim_roofs(node: MeshInstance3D, anchors: Array) -> void:
 	var original := node.mesh
@@ -126,3 +187,24 @@ static func start_exploration(scene: Node3D) -> void:
 	bike.safe_park_position = bike.global_position
 	bike.rotation.y = -0.87
 	scene.explorer.set_walk_origin(shoulder.position + Vector3.UP * 0.035, bike.global_position + Vector3.UP)
+	if "--outer-market" in OS.get_cmdline_user_args():
+		var layout: Dictionary=JSON.parse_string(FileAccess.get_file_as_string(LAYOUT))
+		for i in layout.plots.size():
+			var p: Dictionary=layout.plots[i]
+			if p.name!="照相巷便民市场": continue
+			var a: float=p.bearing
+			var v: float=-p.depth/2.0-1.92
+			var u: float=-p.width*.27
+			var landing:=Vector3(p.east_north[0]+cos(a)*u-sin(a)*v,p.height+.075,
+				-p.east_north[1]-sin(a)*u-cos(a)*v)
+			var focus:=Vector3(p.east_north[0],p.height+1.14,-p.east_north[1])
+			scene.explorer.set_walk_origin(landing,focus)
+			for lane: Dictionary in layout.lanes:
+				if lane.type=="street" and lane.plots[0]==i:
+					var xy: Array=lane.points[1]
+					var ground:=collision.raycast_ground(scene,Vector3(xy[0],p.height+4.0,-xy[1]),22.0)
+					if not ground.is_empty():
+						bike.global_position=ground.position+Vector3.UP*.035
+						bike.safe_park_position=bike.global_position
+					break
+			break

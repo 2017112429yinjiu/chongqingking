@@ -77,7 +77,9 @@ brick = material("Red infill brick", (.38,.21,.15), "brick_wall_08_diff_2k.jpg")
 tile = material("Glazed blue tile", (.23,.43,.46), "tile_blue_v4_diff.jpg")
 concrete = material("Concrete bands", (.48,.45,.40), "concrete_wall_006_diff_2k.jpg")
 roof = material("Grey overlapping roof tiles", (.22,.22,.21), "roof_tiles_diff.jpg")
-glass = material("Deep blue grey glazing", (.08,.15,.17))
+glass = material("Blue grey street reflection", (.038,.061,.072))
+window_shades=[glass,material("Shaded window beyond mesh",(.025,.029,.027)),
+               material("Flax curtain behind glazing",(.19,.16,.115)),material("Cloud reflection",(.14,.18,.19))]
 cream_metal = material("Painted window and rail trim", (.63,.66,.57))
 rust = material("Red painted steel", (.33,.07,.035))
 green = material("Jade painted steel", (.08,.22,.18))
@@ -92,7 +94,7 @@ room_finish = {"lime":cream,"dado":material("Cream glazed wall skirting",(.46,.4
                "canopy":material("Faded covered market roofing",(.18,.22,.17)),
                "rubber":material("Used tyre casing",(.022,.022,.020)),
                "clay":material("Brown earthenware",(.31,.115,.051)),"china":cream_metal,
-               "jade":green,"greens":leaf[1],"gourd":ochre}
+               "jade":green,"greens":leaf[1],"gourd":ochre,"linen":cream_metal}
 indoor_floor=material("Worn concrete floors",(.36,.34,.31),"concrete_floor_worn_001_diff_2k.jpg")
 
 class Geometry:
@@ -231,8 +233,6 @@ for i,(x,nx) in enumerate(zip(axis,axis[1:])):
         mat = asphalt if d<w else stone if d<w+2 else waterfront if min(p[2] for p in points)<water_z+3 else grass if sin(mx/13+my/21)+cos(my/17)>.35 else soil
         for ids in ((0,1,2),(0,2,3)):
             batch.face([points[k] for k in ids],mat,[(points[k][0]/2.4,points[k][1]/2.4) for k in ids])
-for batch in chunks.values():
-    batch.finish()
 
 # Bake a world-coordinate road / sidewalk mask for the engine. Pixel centres
 # are south-to-north in Blender; Godot flips V when sampling the exported PNG.
@@ -282,15 +282,14 @@ for tie in ties:
     # old road lip. Keep the mapped carriageway wherever its centreline continues.
     rgba[:,:,0]=np.maximum(rgba[:,:,0],ak*blend)
     rgba[:,:,1]=rgba[:,:,1]*(1-blend)+np.maximum(ak,walk)*blend
-mask=bpy.data.images.new("Street surface mask",width=size,height=size,alpha=False)
-mask.colorspace_settings.name="Non-Color"
-mask.pixels.foreach_set(rgba.ravel())
-mask.filepath_raw=str(OUT/"surface_mask.png")
-mask.file_format="PNG"
-mask.save()
-bpy.data.images.remove(mask)
-if "--surface-mask-only" in sys.argv:
-    raise SystemExit(0)
+def save_surface_mask():
+    mask=bpy.data.images.new("Street surface mask",width=rgba.shape[1],height=rgba.shape[0],alpha=False)
+    mask.colorspace_settings.name="Non-Color"
+    mask.pixels.foreach_set(rgba.ravel())
+    mask.filepath_raw=str(OUT/"surface_mask.png")
+    mask.file_format="PNG"
+    mask.save()
+    bpy.data.images.remove(mask)
 
 # Geometry modules are placed on sampled ground, with foundations that follow
 # all four corners. Open storefront profiles are recessed and each row has
@@ -358,9 +357,11 @@ def tree(x,y,r):
                        "height_scale":float(r*mean[2]/4.1)})
 
 from runpy import run_path
-through_floor = run_path(str(HERE / "ground_floors.py"))["through_floor"]
+ground_floors = run_path(str(HERE / "ground_floors.py"))
+through_floor = ground_floors["through_floor"]
 furnish = run_path(str(HERE / "shop_rooms.py"))["furnish"]
 plots = []
+flyover_reserves = []
 occupied=[]
 destinations=[]
 def building(x,y,angle,w,d,floors,kind,named=""):
@@ -377,6 +378,12 @@ def building(x,y,angle,w,d,floors,kind,named=""):
     if max(levels)-min(levels)>5.8:
         return
     occupied.append((x,y,w))
+    # The native hall sweeps met the existing R24 flyover deck here at chest
+    # height. Keep its two reservations open and preserve the seeded neighbours.
+    if (round(x,2),round(y,2)) in ((158.02,-17.24),(136.40,-33.39)):
+        flyover_reserves.append([x,y])
+        rng.random()
+        return
     facade=(brick,cream,tile,concrete)[kind]
     ry=-d/2
     top=base+floors*2.95
@@ -384,6 +391,7 @@ def building(x,y,angle,w,d,floors,kind,named=""):
     portal = {"南区路车棚修理铺":0.0,"照相巷便民市场":-.78,"江岸茶摊":-1.65}.get(named, (.14 if kind%2 else -.14)*w)
     plot = {"east_north":[float(x),float(y)], "bearing":angle, "width":w, "depth":d,
             "height":base, "roof":top, "floors":floors, "kind":kind, "name":named, "door_u":portal}
+    plot["plot_id"]=len(plots)+len(flyover_reserves)
     plots.append(plot)
     def draw(*dims):
         box(blocks,frame,*dims)
@@ -437,8 +445,16 @@ def building(x,y,angle,w,d,floors,kind,named=""):
                 v=(d/2+.018) if back else (ry-.12)
                 box(facades,frame,u-span-.07,v,z+.83,u+span+.07,v+.10,z+2.22,concrete)
                 gv=v+.11 if back else v-.024
-                box(facades,frame,u-span,gv,z+.92,u+span,gv+.02,z+2.13,glass)
+                shade=window_shades[(bay*7+floor*3+int(abs(x)+abs(y))+(2 if back else 0))%len(window_shades)]
+                box(facades,frame,u-span,gv,z+.92,u+span,gv+.02,z+2.13,shade)
                 box(facades,frame,u-.025,gv-.025,z+.92,u+.025,gv+.055,z+2.13,cream_metal)
+                if not back:
+                    box(facades,frame,u-span-.11,ry-.27,z+.79,u+span+.11,ry-.022,z+.88,concrete)
+                    box(facades,frame,u-span,gv-.025,z+1.83,u+span,gv+.045,z+1.865,dark)
+                    if floor and (bay+kind+floor)%7==2:
+                        for n in range(4):
+                            xbar=u-span+(n+.5)*(2*span)/4
+                            box(facades,frame,xbar-.014,ry-.25,z+.88,xbar+.014,ry-.215,z+1.83,dark)
             if floor and (bay+kind)%4==0:
                 box(facades,frame,u-1.02,ry-1.10,z+.32,u+1.02,ry,z+.47,concrete)
                 box(facades,frame,u-1.02,ry-1.10,z+1.19,u+1.02,ry-1.02,z+1.26,cream_metal)
@@ -447,6 +463,10 @@ def building(x,y,angle,w,d,floors,kind,named=""):
                     box(facades,frame,bx,ry-1.08,z+.47,bx+.025,ry-1.04,z+1.19,cream_metal)
             elif floor and (floor+bay+kind)%5==1:
                 box(facades,frame,u+.45,ry-.44,z+.64,u+1.11,ry-.08,z+1.06,cream_metal)
+                for n in range(4):
+                    box(facades,frame,u+.52,ry-.453,z+.70+n*.075,u+1.03,ry-.437,z+.718+n*.075,dark)
+                for xbar in (u+.55,u+1.02):
+                    box(facades,frame,xbar-.022,ry-.47,z+.59,xbar+.022,ry,z+.64,dark)
         if floor and (kind in (1,2)):
             box(facades,frame,-w/2,ry-.11,z+.01,w/2,ry,z+.15,concrete)
     if named:
@@ -468,8 +488,10 @@ def building(x,y,angle,w,d,floors,kind,named=""):
                     step_level=foot_level+(base-foot_level)*(n+1)/count
                     bottom=min(height(*at)-.12,step_level-.15)
                     box(solid,frame,lane-span,outer,bottom,lane+span,front,step_level,stone)
-        box(facades,frame,-w/2+.7,ry-.22,base+2.18,w/2-.7,ry-.03,base+2.87,
-            (rust,green,tile,concrete)[kind])
+        board=room_finish["wood"] if named.endswith("茶摊") else room_finish["iron"] if named.endswith("修理铺") else room_finish["canopy"]
+        box(facades,frame,-2.85,ry-2.21,base+2.19,2.85,ry-2.115,base+2.61,board)
+        for u in (-2.66,2.66):
+            box(street,frame,u-.025,ry-2.16,base+2.54,u+.025,ry-2.08,base+2.66,room_finish["iron"])
         display_z=base+.02
         if named.endswith("市场"):
             for u,cloth in ((-2.6,ochre),(1.1,green),(5.9,rust)):
@@ -498,10 +520,6 @@ def building(x,y,angle,w,d,floors,kind,named=""):
             for u in (-3.4,2.6):
                 box(street,frame,u-.60,ry-1.33,display_z,u+.60,ry-.69,display_z+.45,rock)
                 box(street,frame,u-.59,ry-1.32,display_z+.45,u+.59,ry-.70,display_z+.51,grass)
-        else:
-            for u in (-3.6,1.7,6.1):
-                box(street,frame,u-.38,ry-1.43,display_z,u+.38,ry-.74,display_z+.58,rust)
-                box(street,frame,u-.31,ry-1.43,display_z+.18,u+.31,ry-1.40,display_z+.23,cream_metal)
         destinations.append({"name":named,"east_north":[x,y],"height":round(base,3),"bearing":angle,"front_offset":ry})
 
 # Rebuild selected licensed exterior footprints. Retire their far-only
@@ -614,6 +632,43 @@ for _ in range(970):
         continue
     tree(x,y,rng.uniform(.52,1.25))
 
+yards=run_path(str(HERE/"hillside_courts.py"))
+courts=yards["select_courts"](plots,patch,road_distance)
+court_mats=dict(room_finish,flags=stone,wallstone=rock,brick=brick,
+               cloth=material("Woven household cotton",(.36,.30,.26),"fabric_pattern_07_col_1_2k.jpg"),linen=cream_metal)
+for p in courts:
+    yards["terrace_ground"](p,xx,yy,heights)
+for p in plots:
+    frame=local_frame(*p["east_north"],p["bearing"])
+    pocket=Geometry("COL_Outer500_Court_%02d"%p["plot_id"]) if p.get("court") else solid
+    fixtures=Geometry("Outer500_CourtDetails_%02d"%p["plot_id"]) if p.get("court") else street
+    def yard_box(x0,y0,z0,x1,y1,z1,mat,physical=True):
+        box(pocket if physical else fixtures,frame,x0,y0,z0,x1,y1,z1,mat)
+    def yard_face(verts,mat):
+        fixtures.face([frame(*point) for point in verts],mat)
+    def plot_ground(u,v):
+        return height(*frame(u,v,0)[:2])
+    if p.get("court"):
+        yards["build_court"](p,yard_box,yard_face,plot_ground,court_mats)
+        pocket.finish()
+        fixtures.finish()
+    else:
+        p["back_stair_m"]=ground_floors["apron"](p,yard_box,plot_ground,stone,p["depth"]/2,1)
+paths=yards["connect_lanes"](plots,segments,patch,road_distance,mx,my,rgba)
+save_surface_mask()
+if "--surface-mask-only" in sys.argv:
+    raise SystemExit(0)
+lookup={a:i for i,a in enumerate(axis)}
+for batch in chunks.values():
+    batch.vertices=[(x,y,float(heights[lookup[x],lookup[y]])) for x,y,_ in batch.vertices]
+    batch.finish()
+for p in courts:
+    def outside_court(tree):
+        x,y,_=tree["east_north_up"]
+        u,v=yards["local"](p,x,y)
+        return abs(u-p["court"]["center_u"])>p["court"]["half_width"]+1.0 or not p["depth"]/2-.5<v<p["depth"]/2+13.6
+    tree_sites=list(filter(outside_court,tree_sites))
+
 # Surveyed rectangle has a physical boundary. Landward routes turn back
 # inside the boundary. Waterfront land cuts use the licensed river polygon.
 for side in range(4):
@@ -691,6 +746,16 @@ for key in (49182408,1189963598,176034707,830761786):
             band(verges,p,q,height(*p)+.025,height(*q)+.025,.12,white)
 
 run_path(str(HERE / "planting.py"))["place_trees"](ASSETS, tree_sites, materials, material)
+kit=GAME.parent/"chongqing_blender_v05/scanned_assets/prepared_assets.blend"
+household=run_path(str(HERE/"household.py"))["place"](kit,plots,yards["world"])
+contact=Geometry("COLH_Outer500_Household_contact")
+footprints={"potted_plant_02":(.17,.17,.29),"plastic_crate_01":(.146,.20,.26),
+            "chinese_armchair":(.36,.30,.44),"plastic_monobloc_chair_01":(.25,.24,.42),"chinese_tea_table":(.38,.38,.499)}
+for item in household:
+    x,y,z=item["origin"]
+    w,d,h=[t*item["scale"] for t in footprints[item["asset"]]]
+    box(contact,local_frame(x,y,item["yaw"]),-w,-d,z,w,d,z+h,dark)
+contact.finish()
 for batch in (blocks,facades,street,solid,verges,skirt):
     batch.finish()
 bpy.context.scene["scope"] = "500 m local east/north, R24 build 25b centre; see README"
@@ -700,7 +765,9 @@ bpy.ops.wm.save_as_mainfile(filepath=str(HERE / "outer_district.blend"),compress
 bpy.ops.export_scene.gltf(filepath=str(OUT / "outer_district.glb"),export_format="GLB",
                           export_yup=True,export_cameras=False,export_lights=False)
 old_meshes=json.loads((HERE.parents[1] / "scene_r21/district_rays.json").read_text(encoding="utf-8-sig"))["meshes"]
-prefixes, roof_cuts = run_path(str(HERE/"context_owners.py"))["conflicting_context"](plots,old_meshes,legacy_roofs,mapped_buildings)
+owned=plots+[dict(p,east_north=yards["world"](p,p["court"]["center_u"],p["depth"]/2+6.4),
+                 width=p["court"]["half_width"]*2,depth=12.8) for p in courts]
+prefixes, roof_cuts = run_path(str(HERE/"context_owners.py"))["conflicting_context"](owned,old_meshes,legacy_roofs,mapped_buildings)
 (OUT / "layout.json").write_text(json.dumps({
     "bounds_east_north_m":[-250,-250,250,250],
     "projection_origin_wgs84":[osm["center_lon"],osm["center_lat"]],
@@ -708,6 +775,6 @@ prefixes, roof_cuts = run_path(str(HERE/"context_owners.py"))["conflicting_conte
     "osm_road_ids":mapped_ids,"river_relation":river["river_relation"],
     "attribution":"© OpenStreetMap contributors, ODbL-1.0",
     "inferred_alignments":design,"registered_ties":ties,"destinations":destinations,
-    "osm_building_ids":mapped_buildings,"plots":plots,"retired_context_prefixes":prefixes,"retired_roof_positions":roof_cuts,
-    "building_count":len(occupied),"collidable_surface_tiles":len(chunks),"planting":tree_sites,
+    "osm_building_ids":mapped_buildings,"plots":plots,"lanes":paths,"retired_context_prefixes":prefixes,"retired_roof_positions":roof_cuts,
+    "building_count":len(plots)+len(mapped_buildings),"flyover_reserves":flyover_reserves,"household":household,"collidable_surface_tiles":len(chunks),"planting":tree_sites,
 },ensure_ascii=False,indent=2)+"\n")
