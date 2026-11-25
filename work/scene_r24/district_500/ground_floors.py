@@ -9,7 +9,6 @@ def through_floor(p, draw, ground, mats):
     half = 1.92 if p["name"] else 1.08
     wall, stone, masonry, slab, lining = mats
     crown = z+2.82
-    draw(left, front, crown, right, back, p["roof"], wall)
     for edge in (front, back-.23):
         if p["name"] and edge==front:
             draw(left,edge,z,left+.49,edge+.28,crown,wall)

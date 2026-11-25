@@ -30,6 +30,14 @@ static func install(city: Node3D) -> Dictionary:
 		if bank:
 			(bank.get_surface_override_material(0) as ShaderMaterial).set_shader_parameter("outer_district_cut", true)
 	var layout: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(LAYOUT))
+	var cut: Dictionary = layout.get("interior_rail_return", {})
+	if not cut.is_empty():
+		var old_rail := city.find_child(cut.original,true,false) as MeshInstance3D
+		var new_rail := district.find_child(cut.replacement,true,false) as MeshInstance3D
+		if old_rail and new_rail:
+			for surface in mini(old_rail.mesh.get_surface_count(),new_rail.mesh.get_surface_count()):
+				new_rail.set_surface_override_material(surface,old_rail.get_active_material(surface))
+			old_rail.hide()
 	for item: MeshInstance3D in district.find_children("Outer500_Household_*","MeshInstance3D",true,false):
 		item.visibility_range_end=39.0
 		item.lod_bias=1.7

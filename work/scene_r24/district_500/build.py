@@ -52,7 +52,7 @@ segments = [(np.array(a), np.array(b), width, key) for points,width,key in roads
 bpy.ops.wm.read_factory_settings(use_empty=True)
 rng = Random(52425)
 materials = []
-def material(name, color, scan=None):
+def material(name, color, scan=None, relief=False):
     m = bpy.data.materials.new(name)
     m.diffuse_color = (*color, 1)
     m.use_nodes = True
@@ -64,6 +64,25 @@ def material(name, color, scan=None):
         tex.image = bpy.data.images.load(str(ASSETS / ("chongqing_district_"+scan)), check_existing=True)
         tex.image.pack()
         m.node_tree.links.new(tex.outputs["Color"], shader.inputs["Base Color"])
+        if relief:
+            for suffix in ("nor_gl", "rough"):
+                path = scan.replace("_diff_", "_"+suffix+"_").replace("_col_1_", "_"+suffix+"_")
+                if suffix == "rough":
+                    path = str(Path(path).with_suffix(".png"))
+                channel = m.node_tree.nodes.new("ShaderNodeTexImage")
+                channel.image = bpy.data.images.load(str(ASSETS / ("chongqing_district_"+path)),check_existing=True)
+                channel.image.colorspace_settings.name = "Non-Color"
+                channel.image.pack()
+                if suffix == "rough":
+                    m.node_tree.links.new(channel.outputs["Color"], shader.inputs["Roughness"])
+                else:
+                    normal = m.node_tree.nodes.new("ShaderNodeNormalMap")
+                    normal.inputs["Strength"].default_value = .60
+                    m.node_tree.links.new(channel.outputs["Color"],normal.inputs["Color"])
+                    m.node_tree.links.new(normal.outputs["Normal"],shader.inputs["Normal"])
+            if relief=="weave":
+                m.node_tree.links.remove(shader.inputs["Base Color"].links[0])
+                m.node_tree.nodes.remove(tex)
     materials.append(m)
     return len(materials)-1
 
@@ -88,13 +107,14 @@ white = material("Off-white road pigment", (.74,.70,.57))
 dark = material("Door and shutter recess", (.092,.086,.074))
 leaf = [material("Canopy " + str(i), col) for i,col in enumerate(((.13,.23,.089),(.20,.30,.12),(.26,.32,.12)))]
 waterfront = material("Washed bank aggregate", (.47,.40,.29), "leaf_scattered_gravel_diff_2k.jpg")
+frame_concrete = material("Formed concrete frame",(.48,.45,.40),"concrete_wall_006_diff_2k.jpg",relief=True)
 room_finish = {"lime":cream,"dado":material("Cream glazed wall skirting",(.46,.43,.34),"tile_cream_v4_diff.jpg"),
-               "stone":concrete,"tile":roof,"wood":material("Worn timber joinery",(.23,.14,.071),"wood_table_worn_diff_2k.jpg"),
+               "stone":concrete,"tile":roof,"wood":material("Worn timber joinery",(.23,.14,.071),"wood_table_worn_diff_2k.jpg",relief=True),
                "iron":dark,"zinc":material("Weathered sheet metal",(.20,.21,.195)),
                "canopy":material("Faded covered market roofing",(.18,.22,.17)),
                "rubber":material("Used tyre casing",(.022,.022,.020)),
                "clay":material("Brown earthenware",(.31,.115,.051)),"china":cream_metal,
-               "jade":green,"greens":leaf[1],"gourd":ochre,"linen":cream_metal}
+               "jade":green,"greens":leaf[1],"leaf_light":leaf[2],"leaf_dark":leaf[0],"gourd":ochre,"linen":cream_metal}
 indoor_floor=material("Worn concrete floors",(.36,.34,.31),"concrete_floor_worn_001_diff_2k.jpg")
 
 class Geometry:
@@ -359,8 +379,10 @@ def tree(x,y,r):
 from runpy import run_path
 ground_floors = run_path(str(HERE / "ground_floors.py"))
 through_floor = ground_floors["through_floor"]
+build_frame = run_path(str(HERE / "building_frame.py"))["build"]
 furnish = run_path(str(HERE / "shop_rooms.py"))["furnish"]
 plots = []
+lamp_sites = []
 flyover_reserves = []
 occupied=[]
 destinations=[]
@@ -398,6 +420,11 @@ def building(x,y,angle,w,d,floors,kind,named=""):
     def ground(u,v):
         return height(*frame(u,v,0)[:2])
     through_floor(plot,draw,ground,(facade,stone,rock,concrete,indoor_floor))
+    structure = Geometry("COL_Outer500_Frame_%02d" % plot["plot_id"])
+    def member(*dims):
+        box(structure,frame,*dims)
+    build_frame(plot,member,facade,frame_concrete)
+    structure.finish()
     def fitting(*dims):
         box(street,frame,*dims)
     def fit_face(local,mat):
@@ -616,10 +643,7 @@ for pts,width,key in roads:
                         tree(tx,ty,rng.uniform(.65,1.17))
                     else:
                         z=height(tx,ty)
-                        post(street,tx,ty,z,z+4.8,.07,dark)
-                        frame=local_frame(tx,ty,angle)
-                        box(street,frame,-.13,-.39,z+4.66,.17,.39,z+4.88,dark)
-                        box(street,frame,-.09,-.33,z+4.62,.13,.30,z+4.66,white)
+                        lamp_sites.append((tx,ty,z,angle))
 
 for _ in range(970):
     x,y=rng.uniform(-246,246),rng.uniform(-246,246)
@@ -634,8 +658,26 @@ for _ in range(970):
 
 yards=run_path(str(HERE/"hillside_courts.py"))
 courts=yards["select_courts"](plots,patch,road_distance)
+retired_lamps=[]
+for tx,ty,z,angle in lamp_sites:
+    occupied_by=[]
+    for p in plots:
+        u,v=yards["local"](p,tx,ty)
+        if abs(u)<p["width"]/2+.40 and abs(v)<p["depth"]/2+.40 and z+4.88>p["height"] and z<p["roof"]:
+            occupied_by.append(p["plot_id"])
+    if occupied_by:
+        retired_lamps.append({"east_north":[tx,ty],"plots":occupied_by})
+        continue
+    post(street,tx,ty,z,z+4.8,.07,dark)
+    frame=local_frame(tx,ty,angle)
+    box(street,frame,-.13,-.39,z+4.66,.17,.39,z+4.88,dark)
+    box(street,frame,-.09,-.33,z+4.62,.13,.30,z+4.66,white)
+rail_return = run_path(str(HERE/"rail_return.py"))["fit"](HERE.parent/"district_patrol/city_and_patrol.blend",
+                                                        next(p for p in plots if p["plot_id"]==4))
 court_mats=dict(room_finish,flags=stone,wallstone=rock,brick=brick,
                cloth=material("Woven household cotton",(.36,.30,.26),"fabric_pattern_07_col_1_2k.jpg"),linen=cream_metal)
+for key,color in (("oat",(.38,.34,.26)),("denim",(.115,.15,.17)),("sage",(.24,.30,.23))):
+    court_mats[key]=material("Washed cotton "+key,color,"fabric_pattern_07_col_1_2k.jpg",relief="weave")
 for p in courts:
     yards["terrace_ground"](p,xx,yy,heights)
 for p in plots:
@@ -747,9 +789,10 @@ for key in (49182408,1189963598,176034707,830761786):
 
 run_path(str(HERE / "planting.py"))["place_trees"](ASSETS, tree_sites, materials, material)
 kit=GAME.parent/"chongqing_blender_v05/scanned_assets/prepared_assets.blend"
-household=run_path(str(HERE/"household.py"))["place"](kit,plots,yards["world"])
+household=run_path(str(HERE/"household.py"))["place"](kit,plots,yards["world"],ASSETS/"courtyard_r24/courtyard.glb")
 contact=Geometry("COLH_Outer500_Household_contact")
 footprints={"potted_plant_02":(.17,.17,.29),"plastic_crate_01":(.146,.20,.26),
+            "Court14_BackBasket_and_greens":(.17,.15,.43),
             "chinese_armchair":(.36,.30,.44),"plastic_monobloc_chair_01":(.25,.24,.42),"chinese_tea_table":(.38,.38,.499)}
 for item in household:
     x,y,z=item["origin"]
@@ -777,4 +820,5 @@ prefixes, roof_cuts = run_path(str(HERE/"context_owners.py"))["conflicting_conte
     "inferred_alignments":design,"registered_ties":ties,"destinations":destinations,
     "osm_building_ids":mapped_buildings,"plots":plots,"lanes":paths,"retired_context_prefixes":prefixes,"retired_roof_positions":roof_cuts,
     "building_count":len(plots)+len(mapped_buildings),"flyover_reserves":flyover_reserves,"household":household,"collidable_surface_tiles":len(chunks),"planting":tree_sites,
+    "interior_rail_return":rail_return,"lamps_in_buildings":retired_lamps,
 },ensure_ascii=False,indent=2)+"\n")

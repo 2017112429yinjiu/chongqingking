@@ -32,6 +32,9 @@ if local_study:
     local_study.hide_viewport=True
     local_study.hide_render=True
 for item in bpy.context.scene.objects:
+    if item.name==layout.get("interior_rail_return",{}).get("original"):
+        item.hide_set(True)
+        item.hide_render=True
     if item.name in ("Outer_ground_context_ground_dirt","R22_Bank_Outer","R22_Bank_Relief") or (
             item.name.startswith("Context_") and any(mark in item.name for mark in retired)):
         item.hide_set(True)

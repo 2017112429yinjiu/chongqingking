@@ -257,5 +257,98 @@
     "file": "work/scene_r24/street_photo_study/reference/credits.json",
     "sha256": "d729c1e8e5ca14f05bd5242cdfde59e6e99e07b683d0ce3a92be6bd11c03b1d6"
   },
-  "geography": "© OpenStreetMap contributors, ODbL 1.0. Courts, businesses, occupants and interiors are game designs."
+  "geography": "© OpenStreetMap contributors, ODbL 1.0. Courts, businesses, occupants and interiors are game designs.",
+  "interior_frame": {
+    "surface_channels": [
+      {
+        "asset": "concrete_wall_006",
+        "source": "https://polyhaven.com/a/concrete_wall_006",
+        "authors": [
+          "Charlotte Baglioni",
+          "Dario Barresi"
+        ],
+        "license": "CC0-1.0",
+        "use": "Existing diffuse, normal and roughness images packed into the editable layer",
+        "inputs": [
+          {
+            "file": "work/project/chongqing_godot_v05/assets/chongqing_district_concrete_wall_006_diff_2k.jpg",
+            "sha256": "daee26f5b5dae37e3fb2947c64f4045fd4e6d3b89884eb0d878ba6414746e8e8"
+          },
+          {
+            "file": "work/project/chongqing_godot_v05/assets/chongqing_district_concrete_wall_006_nor_gl_2k.jpg",
+            "sha256": "22bd9c17a6dfe3441f671cba1b40e2329767c79b6472004d1633aeac368d5210"
+          },
+          {
+            "file": "work/project/chongqing_godot_v05/assets/chongqing_district_concrete_wall_006_rough_2k.png",
+            "sha256": "ca7a817ef12b6ea577ea505d528ef0bbc5d6440310129bbf72ab43e986e57bc8"
+          }
+        ]
+      },
+      {
+        "asset": "wood_table_worn",
+        "source": "https://polyhaven.com/a/wood_table_worn",
+        "authors": [
+          "Dimitrios Savva",
+          "Rico Cilliers"
+        ],
+        "license": "CC0-1.0",
+        "use": "Existing diffuse, normal and roughness images packed into the editable layer",
+        "inputs": [
+          {
+            "file": "work/project/chongqing_godot_v05/assets/chongqing_district_wood_table_worn_diff_2k.jpg",
+            "sha256": "165cdba449d56ea8e9675116622b95d7af372b7d7c47b8a98a03fcc630f1d51c"
+          },
+          {
+            "file": "work/project/chongqing_godot_v05/assets/chongqing_district_wood_table_worn_nor_gl_2k.jpg",
+            "sha256": "a90aaa321194fb41d6e44776c6ee88134e4be416051357a3c9e323cc447c4cf0"
+          },
+          {
+            "file": "work/project/chongqing_godot_v05/assets/chongqing_district_wood_table_worn_rough_2k.png",
+            "sha256": "c4659c925c955f3f726c84e0b283f2a783249e462781740a55f32754d79d612b"
+          }
+        ]
+      },
+      {
+        "asset": "fabric_pattern_07",
+        "source": "https://polyhaven.com/a/fabric_pattern_07",
+        "authors": [
+          "Rob Tuytel"
+        ],
+        "license": "CC0-1.0",
+        "use": "Project-dyed cloth with the existing weave normals and roughness",
+        "inputs": [
+          {
+            "file": "work/project/chongqing_godot_v05/assets/chongqing_district_fabric_pattern_07_col_1_2k.jpg",
+            "sha256": "1f4941638b890d4535b1078067be8a831ca302d1e696ed959b4e4512de893cba"
+          },
+          {
+            "file": "work/project/chongqing_godot_v05/assets/chongqing_district_fabric_pattern_07_nor_gl_2k.jpg",
+            "sha256": "84f15ee5f6b63e7e224051a22426c751cc1fe15a794efd001ebfdb5f84828602"
+          },
+          {
+            "file": "work/project/chongqing_godot_v05/assets/chongqing_district_fabric_pattern_07_rough_2k.png",
+            "sha256": "305928b2ccd182e2d6eee047dfeb0e1be8a1058903204b654c261d2cdfb98965"
+          }
+        ]
+      }
+    ],
+    "household_basket": {
+      "owner": "Existing project-authored R24 courtyard prop",
+      "use": "Woven basket and attached greens, grounded and instanced in the market and 22 upper households",
+      "mesh_names": [
+        "Court14_BackBasket",
+        "Court14_BasketGreens"
+      ],
+      "inputs": [
+        {
+          "file": "work/project/chongqing_godot_v05/assets/courtyard_r24/courtyard.glb",
+          "sha256": "d91421262708814d053599d1773fc2854a1ba19dde04e89dd36ac76d65a6cbff"
+        },
+        {
+          "file": "work/scene_r24/courtyard_life/window_and_basket.py",
+          "sha256": "68a8ea251f71f895c81495faad682ffe1b8ddd06f74464a6fdb6288418658145"
+        }
+      ]
+    }
+  }
 }

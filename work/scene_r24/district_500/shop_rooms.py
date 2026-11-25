@@ -84,21 +84,14 @@ def furnish(p, cuboid, solid, face, colors):
         else:
             table(x,front+1.28,1.23,.54,.43,"wood","wood")
             for i in range(2):vessel(mid-.23+i*.45,back-1.02,.73,[(0,.044),(.075,.065)],"china")
+        domestic_bay(p, box, support, panel, vessel, table)
         return
     left,right=-w/2+.32,w/2-.32
     # Paired columns and beams expose the depth of the shop. Outside each
     # opening the timber shutters fold back onto the actual masonry piers.
-    bays=5 if w>23 else 4
-    for i in range(1,bays):
-        x=left+i*(right-left)/bays
-        if abs(x-p["door_u"])<1.42: continue
-        support(x-.165,front+.09,.04,x+.165,front+.42,2.79,"lime")
-        box(x-.18,front+.07,.04,x+.18,front+.45,.38,"stone")
+    for x in p["frame"]["u"][1:-1]:
         for j in range(3):
-            box(x+.18+j*.07,front+.10,.16,x+.234+j*.07,front+.56,2.21,"wood")
-    box(left,front+.05,2.41,right,front+.39,2.77,"wood")
-    for v in (front+2.9,back-2.5):
-        box(left,v-.09,2.55,right,v+.09,2.80,"wood")
+            box(x+.20+j*.07,front+.10,.16,x+.254+j*.07,front+.56,2.21,"wood")
     # Eaves fall towards an outer gutter; exposed underside, fascia and
     # transverse purlins have physical thickness. Crests overlap by one sheet.
     sheet="zinc" if site.endswith("修理铺") else "tile" if site.endswith("茶摊") else "canopy"
@@ -117,6 +110,27 @@ def furnish(p, cuboid, solid, face, colors):
     support(stock,back-3.15,.035,stock+.17,back-.20,2.78,"lime")
     support(stock+1.28,back-3.15,.035,right,back-2.98,2.78,"dado")
     box(stock,back-3.15,2.16,stock+1.28,back-2.98,2.78,"lime")
+    # Use the rear bay for the stock that belongs to this particular business.
+    # Uprights sit on the floor; each shelf and its goods share a height.
+    rack_x=left+.57
+    for y in (back-4.10,back-2.55,back-1.0):
+        for x in (rack_x,rack_x+.66):
+            support(x-.035,y-.035,.035,x+.035,y+.035,2.01,"iron")
+    for level in (.30,.92,1.53):
+        box(rack_x-.04,back-4.16,level-.065,rack_x+.70,back-.94,level,"wood")
+        for j in range(4):
+            v=back-3.86+j*.76
+            if site.endswith("茶摊"):
+                vessel(rack_x+.33,v,level,[(0,.13),(.05,.18),(.29,.18),(.35,.13),(.37,.14)],"clay" if j%2 else "jade")
+                vessel(rack_x+.33,v,level+.37,[(0,.14),(.03,.12),(.055,.04)],"wood")
+            elif site.endswith("修理铺"):
+                wheel(rack_x+.32,v,level+.264,.26)
+            else:
+                for delta in (-.24,.24):
+                    box(rack_x+.05,v+delta,level,rack_x+.59,v+delta+.035,level+.26,"wood")
+                for xx in (rack_x+.05,rack_x+.56):
+                    for h in (.03,.145):
+                        box(xx,v-.23,level+h,xx+.035,v+.25,level+h+.065,"wood")
     # Two working bays flank a narrower public passage. Sills and partitions
     # enclose the stock areas without closing the sightline between entrances.
     aisle=p["door_u"]
@@ -148,6 +162,48 @@ def furnish(p, cuboid, solid, face, colors):
         vessel(sx,sy,2.15,[(0,.18),(.06,.16),(.16,.047),(.19,.035)],"jade",16)
         vessel(sx,sy,2.135,[(0,.105),(.012,.165)],"china",16)
     if site.endswith("市场"):
+        # Two permanent wet-market counters flank the central run between
+        # the columns. Rear working strips stay clear for restocking.
+        for sign in (-1,1):
+            inner=aisle+sign*1.91
+            outer=inner+sign*.91
+            lo,hi=sorted((inner,outer))
+            support(lo,-1.51,.035,hi,1.51,.68,"dado")
+            support(lo-.055,-1.55,.68,hi+.055,1.55,.76,"stone")
+            for v in (-1.49,-.52,.50,1.48):
+                box(lo-.02,v-.025,.76,hi+.02,v+.025,.87,"wood")
+            for sx in (lo,hi):
+                box(sx-.021,-1.5,.76,sx+.021,1.5,.84,"wood")
+            if sign>0:
+                produce=Random(704)
+                for idx in range(16):
+                    yy=-1.34+(idx%8)*.37+produce.uniform(-.055,.055)
+                    xx=lo+.25+(idx//8)*.36+produce.uniform(-.045,.045)
+                    for leaf in range(6):
+                        a=leaf*pi/3+produce.uniform(-.52,.52)
+                        length=produce.uniform(.12,.23)
+                        rows=[]
+                        for t,wide,h in ((0,.009,0),(.28,.024,.065),(.52,.049,.123),(.79,.041,.16),(1,.003,.13)):
+                            cx=xx+length*t*t*cos(a);cy=yy+length*t*t*sin(a)
+                            rows.append([(cx-sin(a)*wide,cy+cos(a)*wide,.76+h+wide*.35),
+                                         (cx,cy,.76+h),(cx+sin(a)*wide,cy-cos(a)*wide,.76+h+wide*.38)])
+                        for lower,upper in zip(rows,rows[1:]):
+                            for k in (0,1):
+                                blade=[lower[k],lower[k+1],upper[k+1],upper[k]]
+                                panel(blade,("greens","leaf_light","leaf_dark")[leaf%3])
+                                panel(blade[::-1],"leaf_dark")
+        # A pack-out bench with a wall shelf faces the return aisle.
+        x=aisle+4.15
+        support(x,back-.90,.035,x+2.56,back-.28,.83,"dado")
+        box(x-.05,back-.96,.83,x+2.61,back-.27,.90,"stone")
+        for j in range(3):
+            xx=x+.20+j*.79
+            box(xx,back-.80,.90,xx+.55,back-.38,.94,"wood")
+        box(x,back-.61,1.57,x+2.56,back-.27,1.64,"wood")
+        for xx in (x+.13,x+2.31):
+            box(xx,back-.39,1.31,xx+.06,back-.26,1.57,"iron")
+        for j in range(6):
+            vessel(x+.28+j*.40,back-.44,1.64,[(0,.09),(.20,.12),(.25,.085)],"clay" if j%2 else "china")
         board(aisle+3.22,front+1.76,2.20,1.40,"时令蔬菜","jade")
         board(aisle-3.62,front+2.94,2.18,1.36,"干货杂粮","wood")
         # Sack lips and hanging balance on the grain stall.
@@ -168,7 +224,7 @@ def furnish(p, cuboid, solid, face, colors):
                     px,py=xx+rng.uniform(-.23,.23),y+rng.uniform(-.30,.30)
                     tone=("greens","clay","gourd","greens")[(i+j)%4]
                     sz=rng.uniform(.075,.117)
-                    vessel(px,py,.91+rng.uniform(0,.065),[(0,.03),(.035,sz),(.105,sz*.79),(.13,.027)],tone,7)
+                    vessel(px,py,.89+rng.uniform(0,.035),[(0,sz*.31),(.022,sz*.83),(.069,sz),(.110,sz*.89),(.143,sz*.48),(.147,sz*.19)],tone,14)
         table(left+1.2,back-1.0,1.55,.68,.82)
         box(left+.97,back-1.16,.82,left+1.32,back-.87,.93,"jade")
         vessel(left+1.15,back-1,.93,[(0,.09),(.105,.20),(.12,.21)],"zinc")
@@ -211,3 +267,81 @@ def furnish(p, cuboid, solid, face, colors):
             for y in (front+1.64,front+2.17):box(x-.035,y-.035,.035,x+.035,y+.035,1.35,"iron")
         table(3.1,-.48,1.88,.72,.32,"iron")
         wheel(3.05,-.48,.77,.42)
+
+
+def domestic_bay(p, box, support, panel, vessel, table):
+    """Work surfaces, storage and domestic fittings set against actual walls."""
+    side = 1 if p["door_u"] < 0 else -1
+    edge = side * (p["width"]/2-.27)
+    front, back = -p["depth"]/2+.24, p["depth"]/2-.24
+    mid = p["room"]["inside_u"]
+    # The kitchen runs along the street wall with the sink beside the cooker.
+    # Work in distances from the outside corner so either handedness fits.
+    def cabinet(a, v0, bottom, b, v1, top, mat, physical=False):
+        lo, hi = sorted((edge-side*a, edge-side*b))
+        (support if physical else box)(lo,v0,bottom,hi,v1,top,mat)
+    def pot(a,v,h,profile,mat):
+        vessel(edge-side*a,v,h,profile,mat)
+    def shelf(a,b,v,h):
+        cabinet(a,v,h,b,v+.38,h+.055,"wood")
+        for at in (a+.12,b-.12):
+            cabinet(at,v,h-.22,at+.037,v+.062,h,"iron")
+            cabinet(at,v,h-.042,at+.037,v+.36,h,"iron")
+    use=p["room"]["use"]
+    if use in ("kitchen","washroom"):
+        cabinet(.08,front+.02,.92,3.00,front+.052,1.55,"dado")
+        cabinet(1.43,front+.06,.045,3.0,front+.77,.83,"wood",True)
+        for a,b in ((1.48,2.18),(2.22,2.94)):
+            cabinet(a,front+.76,.14,b,front+.80,.74,"jade")
+            cabinet(a+.12,front+.80,.62,a+.35,front+.837,.645,"zinc")
+        # A recessed basin has four raised lips, a bowl bottom and wall faucet.
+        for a,b,v0,v1 in ((1.38,1.57,.02,.82),(2.43,3.04,.02,.82),(1.57,2.43,.02,.17),(1.57,2.43,.67,.82)):
+            cabinet(a,front+v0,.83,b,front+v1,.895,"stone")
+        cabinet(1.57,front+.17,.78,2.43,front+.67,.835,"zinc")
+        cabinet(1.92,front+.09,.89,1.96,front+.13,1.22,"zinc")
+        cabinet(1.92,front+.09,1.19,1.96,front+.40,1.22,"zinc")
+        cabinet(1.92,front+.37,1.145,1.96,front+.40,1.22,"zinc")
+        shelf(1.43,2.96,front+.06,1.62)
+        if use=="kitchen":
+            for j in range(4):
+                pot(1.70,front+.25,1.676+j*.034,[(0,.07),(.046,.13),(.052,.128)],"china")
+            for j in range(3):
+                pot(2.07+j*.25,front+.23,1.676,[(0,.055),(.16,.058),(.19,.034)],("jade","clay","china")[j])
+            cabinet(.12,front+.07,1.72,1.29,front+.64,1.84,"zinc")
+            cabinet(.32,front+.08,1.84,1.08,front+.37,2.03,"iron")
+            cabinet(.56,front+.09,2.03,.84,front+.34,2.80,"zinc")
+            cabinet(2.57,front+.20,.897,2.92,front+.63,.93,"wood")
+        else:
+            # Slatted front, a recessed drum door, soap bottles and drying pole.
+            cabinet(.18,front+1.61,.04,1.05,front+2.37,.91,"linen",True)
+            cabinet(.24,front+2.37,.13,.99,front+2.40,.75,"zinc")
+            cabinet(.35,front+2.40,.23,.88,front+2.42,.67,"rubber")
+            for j in range(3):
+                pot(1.72+j*.37,front+.24,1.676,[(0,.067),(.17,.08),(.27,.044),(.30,.033)],("jade","china","clay")[j])
+            cabinet(1.60,front+.48,1.43,2.81,front+.51,1.465,"zinc")
+            cabinet(2.23,front+.48,1.07,2.63,front+.515,1.46,"canopy")
+    else:
+        # Panelled cupboard and built-in storage are on the street wall,
+        # outside both the side-door swing and the approach to the window.
+        cabinet(1.63,front+.07,.07,2.92,front+.62,1.98,"wood",True)
+        for j in range(2):
+            a=1.67+j*.62
+            cabinet(a,front+.62,.17,a+.58,front+.65,1.88,"wood")
+            cabinet(a+.08,front+.65,.70,a+.50,front+.67,1.64,"canopy")
+            cabinet(a+.49,front+.67,.93,a+.52,front+.71,1.06,"zinc")
+        if use=="sitting_room":
+            cabinet(.12,front+.06,.095,1.29,front+.55,.64,"wood",True)
+            cabinet(.28,front+.10,.64,1.15,front+.32,1.22,"rubber")
+            cabinet(.32,front+.32,.72,1.11,front+.34,1.17,"iron")
+        else:
+            shelf(.17,1.23,front+.08,1.44)
+            for j in range(5):
+                a=.31+j*.115
+                cabinet(a,front+.11,1.50,a+.08,front+.35,1.77-(j%3)*.036,("jade","clay","linen")[j%3])
+    # A chair at the existing table, along with its working surface.
+    table(mid+.56*side,back-1.38,.42,.41,.43,"wood","wood")
+    for dx in (-.18,.18):
+        x=mid+.56*side+dx
+        box(x-.022,back-1.61,.43,x+.022,back-1.566,.84,"wood")
+    box(mid+.56*side-.20,back-1.61,.72,mid+.56*side+.20,back-1.566,.84,"wood")
+    vessel(mid-.26,back-.78,.73,[(0,.059),(.18,.075),(.22,.043)],"clay")

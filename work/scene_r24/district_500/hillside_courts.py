@@ -72,8 +72,15 @@ def build_court(p,box,face,ground,c):
     floor=.09+count*.157
     front=end+1.74
     block(-w+.28,end,floor-.19,w-.22,front+.09,floor,"wood")
-    for x in (-w+.48,-1.75,2.25,w-.48):
-        block(x-.085,end+.13,.09,x+.085,end+.30,floor-.18,"wood")
+    edges=(-w+.28,.30,w-.22)
+    posts=[edges[0]+.24,(edges[0]+edges[1])*.5,edges[1],(edges[1]+edges[2])*.5,edges[2]-.24]
+    for x in posts:
+        block(x-.12,end+.085,.09,x+.12,end+.335,.29,"wallstone")
+        block(x-.095,end+.11,.29,x+.095,end+.31,floor-.40,"wood")
+    block(posts[0]-.10,end+.09,floor-.40,posts[-1]+.10,end+.33,floor-.19,"wood")
+    for j in range(1,ceil((2*w-.58)/.60)):
+        x=-w+.28+j*.60
+        block(x-.039,end+.34,floor-.31,x+.039,front+.11,floor-.19,"wood")
     # The balcony rail ends at the stair opening.
     block(-w+.37,end+.10,floor+.87,stair_x-1.02,end+.18,floor+.95,"wood")
     for i in range(max(1,int((stair_x+w-1.45)/.38))):
@@ -121,7 +128,7 @@ def build_court(p,box,face,ground,c):
         block(lo,front,.09+2.32,hi,12.81,floor,"lime")
         block(lo,front,floor+2.30,hi,12.83,head,"lime")
         block(lo,front,head-.04,hi,front+.20,head+.35,"wood")
-        for px in (lo+.24,hi-.24):
+        for px in [x for x in posts if lo<=x<hi]:
             block(px-.07,end+.12,floor,px+.07,end+.27,head,"wood")
             skin([(px,end+.16,head-.55),(px,end+.80,head+.10),(px,end+.16,head+.03)],"wood")
         # The pitched tiled overhang covers the usable gallery outside the doors.
@@ -138,18 +145,106 @@ def build_court(p,box,face,ground,c):
         block(lo-.12,end-.28,head-.12,hi+.12,end+.17,head,"wood",False)
         # Interior platform bed, quilt and small table are set away from the threshold.
         bedx=hi-2.12
-        block(bedx,10.55,floor+.16,hi-.26,12.28,floor+.45,"wood")
-        block(bedx+.03,10.58,floor+.45,hi-.29,12.26,floor+.54,"cloth",False)
-        block(bedx+.12,11.85,floor+.54,hi-.46,12.19,floor+.65,"linen",False)
+        for xx in (bedx+.07,hi-.39):
+            for yy in (10.61,12.15):
+                block(xx,yy,floor,xx+.09,yy+.09,floor+.32,"wood")
+        block(bedx,10.55,floor+.29,hi-.26,12.28,floor+.45,"wood")
+        block(bedx+.03,10.58,floor+.45,hi-.29,12.26,floor+.54,"linen",False)
+        # Folded cotton drops over the bed rail with a loose hem, leaving the
+        # pillow and bed frame visible from the doorway.
+        layers=[(bedx-.055,.32),(bedx-.035,.49),(bedx+.05,.57),(bedx+.70,.588),(hi-.81,.57)]
+        for j in range(9):
+            va=10.61+j*.173; vb=va+.173
+            for (a,ha),(b,hb) in zip(layers,layers[1:]):
+                skin([(a,va,floor+ha+.014*cos(j)),(b,va,floor+hb+.014*cos(j)),
+                      (b,vb,floor+hb+.014*cos(j+1)),(a,vb,floor+ha+.014*cos(j+1))],"cloth")
+        for yy in (10.78,11.57):
+            pillow=[(hi-.80,yy),(hi-.47,yy-.045),(hi-.34,yy+.065),(hi-.34,yy+.47),
+                    (hi-.44,yy+.55),(hi-.78,yy+.50),(hi-.86,yy+.36),(hi-.86,yy+.09)]
+            rings=[]
+            for ratio,lift in ((1,.545),(.94,.589),(.77,.633),(.44,.646)):
+                rings.append([(hi-.595+(x-hi+.595)*ratio, yy+.25+(y-yy-.25)*ratio,floor+lift) for x,y in pillow])
+            for outer,inner in zip(rings,rings[1:]):
+                for j in range(len(outer)):
+                    n=(j+1)%len(outer)
+                    skin([outer[j],outer[n],inner[n],inner[j]],"oat")
+            skin(rings[-1],"oat")
         block(hi-.37,10.54,floor+.39,hi-.23,12.29,floor+.78,"wood",False)
         block(bedx-.61,11.65,floor+.03,bedx-.09,12.22,floor+.56,"wood")
         for j in range(2):
             block(bedx-.55,11.624,floor+.17+j*.22,bedx-.17,11.65,floor+.32+j*.22,"wood",False)
             block(bedx-.40,11.60,floor+.22+j*.22,bedx-.32,11.624,floor+.25+j*.22,"zinc",False)
+        # Enamel flask, lid, cup and side handle above the bedside drawers.
+        tx,ty=bedx-.42,11.99
+        for dh,dt,r0,r1,key in ((.56,.61,.085,.10,"iron"),(.61,.87,.10,.093,"jade"),(.87,.92,.093,.056,"zinc"),(.92,.952,.058,.058,"clay")):
+            for j in range(12):
+                a,b=j*pi/6,(j+1)*pi/6
+                skin([(tx+r0*cos(a),ty+r0*sin(a),floor+dh),(tx+r0*cos(b),ty+r0*sin(b),floor+dh),
+                      (tx+r1*cos(b),ty+r1*sin(b),floor+dt),(tx+r1*cos(a),ty+r1*sin(a),floor+dt)],key)
+        block(tx-.15,ty-.014,floor+.64,tx-.12,ty+.014,floor+.84,"iron",False)
+        for h in (.64,.82): block(tx-.15,ty-.014,floor+h,tx-.065,ty+.014,floor+h+.025,"iron",False)
+        # A wash towel doubles back over a rail fixed to the masonry by the bed.
+        block(hi-.23,9.19,floor+1.57,hi-.16,10.34,floor+1.68,"wood",False)
+        for yy in (9.24,10.27):
+            block(hi-.18,yy-.024,floor+1.58,hi+.015,yy+.024,floor+1.65,"iron",False)
+        for yy in (9.34,9.64,9.97,10.20):
+            block(hi-.31,yy-.018,floor+1.58,hi-.18,yy+.018,floor+1.62,"iron",False)
+        block(hi-.32,9.24,floor+1.60,hi-.29,9.72,floor+1.634,"zinc",False)
+        for j in range(12):
+            def hem(n):
+                yy=9.29+n*.031
+                fold=.009*cos(n*1.70)
+                return [(hi-.31+fold,yy,floor+1.03+.012*sin(n*.45)),(hi-.325+fold,yy,floor+1.39),
+                        (hi-.316,yy,floor+1.638),(hi-.29,yy,floor+1.638),(hi-.283+fold,yy,floor+1.20)]
+            a,b=hem(j),hem(j+1)
+            for h in range(len(a)-1):
+                strip=[a[h],b[h],b[h+1],a[h+1]]
+                skin(strip,"denim");skin(strip[::-1],"denim")
+        for y in (9.96,10.19):
+            block(hi-.32,y,floor+1.12,hi-.28,y+.028,floor+1.57,"wood",False)
+        block(hi-.37,9.90,floor+.85,hi-.24,10.30,floor+1.14,"clay",False)
         block(lo+.35,10.91,floor+.06,lo+1.02,12.23,floor+1.78,"wood")
         block(lo+1.021,10.94,floor+.14,lo+1.045,11.54,floor+1.69,"wood",False)
         for ipeg in (11.49,11.65):
             block(lo+1.04,ipeg,floor+.89,lo+1.08,ipeg+.039,floor+1.03,"zinc",False)
+        # Exposed ceiling joists bear into front and rear wall plates.
+        for j in range(1,ceil((hi-lo)/.77)):
+            x=lo+j*.77
+            block(x-.044,front+.12,floor+2.17,x+.044,12.72,floor+2.31,"wood")
+        for face_v in (front+.18,12.44):
+            block(lo,face_v,floor+2.09,hi,face_v+.17,floor+2.22,"wood")
+        # A writing ledge, drawer and stool share the wall with the wardrobe.
+        block(lo+.20,9.15,floor+.73,lo+.83,10.54,floor+.80,"wood")
+        for vy in (9.21,10.39):
+            block(lo+.25,vy,floor,lo+.76,vy+.08,floor+.73,"wood")
+        block(lo+.23,9.21,floor+.58,lo+.81,9.71,floor+.73,"wood")
+        block(lo+.845,9.34,floor+.65,lo+.88,9.56,floor+.68,"iron",False)
+        block(lo+.88,9.50,floor+.39,lo+1.30,9.92,floor+.45,"wood")
+        for xx in (lo+.92,lo+1.24):
+            for vy in (9.54,9.85):
+                block(xx,vy,floor,xx+.045,vy+.045,floor+.39,"wood",False)
+        for j in range(3):
+            block(lo+.28,10.08,floor+.80+j*.036,lo+.68,10.40,floor+.834+j*.036,("jade","linen","clay")[j],False)
+        # A drawn pair of cotton curtains leaves the middle of the rear window open.
+        block(edge_l-.16,12.37,floor+2.02,edge_r+.16,12.40,floor+2.055,"iron",False)
+        for x in (edge_l-.12,edge_r+.12):
+            block(x-.018,12.38,floor+2.018,x+.018,12.60,floor+2.055,"iron",False)
+        for start in (edge_l-.10,edge_r-.28):
+            for j in range(8):
+                x=start+j*.048
+                va=12.38+.040*cos(j*pi/2)
+                vb=12.38+.040*cos((j+1)*pi/2)
+                textile=[(x,va,floor+2.025),(x,va-.035,floor+.74),(x+.048,vb-.035,floor+.75),(x+.048,vb,floor+2.025)]
+                curtain=("sage","oat","denim")[(p["plot_id"]+i)%3]
+                skin(textile,curtain);skin(textile[::-1],curtain)
+        # Beneath the sleeping bay is a work/storage room with a deep slated rack.
+        for hh in (.30,.94,1.58):
+            block(lo+.38,11.68,hh,lo+1.72,12.33,hh+.065,"wood")
+        for xx in (lo+.41,lo+1.65):
+            for yy in (11.72,12.24):
+                block(xx,yy,.09,xx+.055,yy+.055,1.68,"wood")
+        for j in range(3):
+            block(lo+.48+j*.34,11.76,1.005,lo+.76+j*.34,12.17,1.34,"canopy",False)
         if i==0:
             p["court"].update({"room_u":center+k*mid,"stair_u":center+k*stair_x,
                 "stair_v":d+start,"landing_v":d+end+.84,"room_v":d+front+1.02,"upper_m":floor,
