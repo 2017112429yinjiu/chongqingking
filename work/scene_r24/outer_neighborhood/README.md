@@ -1,10 +1,32 @@
 # 照相巷市场、山坡住宅和共用院坝
 
-在 Windows 双击[逛照相巷院坝](../../逛照相巷院坝.cmd)。穿过市场柱间的菜档和后院，沿石梯走上木廊，201 就在廊边。云桌面在独立检出运行 `bash work/scene_r24/district_500/play.sh --software -- --explore-500 --outer-market`。[本版连续实走](evidence/frame_finish_entry/market_to_201.mp4) · [市场、洗衣间、卧室同机位前后对照](evidence/inside_before_after.jpg) · [照相巷市场结构剖视](evidence/frame_cutaway/market_frame.png)
+在 Windows 双击[逛照相巷院坝](../../逛照相巷院坝.cmd)，或在[原 ChatGPT 云工作区](https://chatgpt.com/local/6b06ade0-5d00-83e8-8943-7283f30c5008)从市场出发。穿过柱间菜档和后院，沿石梯上木廊就到 201。[同机位前后对照](evidence/architecture_before_after.jpg) · [从市场进 201 的原生实录](evidence/landing_take/market_to_201.mp4)
 
-## 室内梁柱与住用空间
+## 临街窗洞、挑廊与室内质感
 
-本版制作提交为 `13d236ee696993cd6d2ff0952d64520798450465`。旧市场宽 22 米、进深 13 米，店面内两条横梁缺少中间支点，普通楼从首层上方到屋顶原是一整块建筑体量。76 栋现已用逐层边墙、楼板、纵横梁和连续立柱重建，首层改造沿用原有出入口。照相巷市场有三层、24 根柱，每层 38 段梁。剖视直接取自重开的 Blender 模型，为看清接头而隐去上层围墙、仅显示后侧楼板，灰色为柱、棕色为梁、蓝灰色为板。[市场原生视角](evidence/frame_finish_views/market_hall.png) · [剖视数据](evidence/frame_cutaway/cutaway.json)
+按玩家指出的新旧区差距，以老城的[门面](evidence/landing_views/old_service.png)、[出挑空间](evidence/landing_views/old_overhang.png)、[原 202 室内](../../project/chongqing_godot_v05/verification_r24/district_patrol/final25b/bridge/02_pickup_202.png)和项目存档的[重庆老街实拍](../street_photo_study/重庆老街八张实拍.jpg)对照。建筑制作提交 `32acad57`，补齐 53 号楼末级石梯后的可玩版本为 `1436ceaf`。[老城区与新区并排实录](evidence/old_and_outer.jpg)保留各自地点和机位。修改前后对照板上排是前一版，下排是本版，三列分别为市场、5 号住宅和 201 卧室。画面来自 Godot 4.6.3 Forward+ 的固定玩家视高。
+
+| 轮次 | 在同一机位看到的问题和改动 |
+| --- | --- |
+| 一 | 原窗扇都贴着墙皮，挑檐和床脚下少有阴影。上层在柱间开洞，增加窗台、窗框和可见窗扇厚度。市场装布棚，修理铺用金属雨罩，茶摊用卷竹帘。内墙加入旧灰泥和腰墙，地面使用有磨损与拼缝的砖。复拍仍看到市场脚下单调的大平台。[原先的市场](evidence/architecture_reference/market_facade.png) · [初改市场](evidence/architecture_trial/market_facade.png) |
+| 二 | 将台基做成分层砌石，开出三处有 32 厘米进深的百叶检修口。在挑廊补封窗、旧区同源的空调外机和墙托。按屋内家具、台面和柱脚的实形，把接触处阴影烘到地面。[住宅临街面](evidence/architecture_fitted/home_05_facade.png) · [201 卧室](evidence/architecture_fitted/market_bed.png) |
+| 三 | 原有三处远景大楼的实测占地和屋顶附件保留，立面退进形成窗带与廊口。市场梯坎的踏面、踢面和侧墙分别铺石。菜摊里的瓜、茄子和橘子重新做表皮起伏、果蒂和堆叠。此时住宅首层仍像几块深色贴片。[第三轮临街面](evidence/architecture_final/home_05_facade.png) · [菜档](evidence/architecture_final/market_hall.png) |
+| 四 | 打通 237 处首层临街窗，墙面、内侧抹灰、窗台、过梁在同一洞口收边。从街上可以看见窗帘、卷起的百叶和屋内墙面。楼上部分晒台封窗，玻璃后挂晾晒布。按原机位重拍市场、修理铺、茶摊和三栋普通住宅。[住宅外](evidence/landing_views/home_05_facade.png) · [住宅内](evidence/landing_views/home_05_inside.png) · [修理铺](evidence/landing_views/repair_facade.png) · [茶摊](evidence/landing_views/tea_facade.png) |
+
+### 建筑和可走范围
+
+- 76 栋、305 层延续上一版的 1,624 根柱和逐层梁板。Godot 复测 50,563 项梁柱、楼板和净空取样。2,272 处上层开口和 237 处首层窗均命中上下边。共有 369 处挑出阳台，其中 220 处封窗。Blender 复开组合模型后，检查了 104 台外机的 208 个墙托和 208 处脚垫；87 个导出地板图元同时保有纹理和接触阴影顶点色。[窗洞](evidence/landing_openings/openings.json) · [梁柱](evidence/landing_frame/frame_contacts.json) · [外机与地板](evidence/landing_composition/architecture_source.json) · [楼脚与斜坡](evidence/landing_composition/plinths.json)
+- 原生玩家从市场连续步行 48.16 米进 201，经过全部七个目标点。逐栋穿堂及侧房进入、退出共 223 项，院坝路线 37 项。外圈五条主路均完成步行及骑行双向验证。整城 Blender 4.3.2 重开包含五个链接库、13 张外部图、302 株树和三处登记屋顶。[市场实走](evidence/landing_take/market_entry.json) · [住宅](evidence/landing_all/checks.json) · [院坝](evidence/street_courts/checks.json) · [外圈道路](evidence/landing_roads/routes.json) · [整城复开](evidence/landing_composition/combined_source.json)
+- 邻楼全程复走时，4 号返回 53 号的低侧末级石梯卡住，单测却能通过。在末三级踏步侧面加进贴地石砌接坡，3 条断面各取 43 个位置，接缝前后 10 厘米最大高差 4.86 毫米。同次序复走全部 94 段通过。[原卡停](evidence/street_sequence/contact_sequence.json) · [单独走](evidence/street_lane_obstruction/contact.json) · [修后全程](evidence/landing_return/shared_paths.json) · [实机断面](evidence/landing_profile/landing_profile.json) · [面向上坡](evidence/landing_profile/uphill.png)
+- 屋内与临街改造完成后，三个固定机位各连续采 90 帧。窗口 1152 × 648、渲染视口 692 × 389，RTX 4070 Laptop 采样期间处于 P8、210 MHz。街面、菜档和上院的 GPU 帧时中位数依次为 97.49、92.04、100.48 毫秒，上一版同机位为 92.79、86.50、98.32 毫秒。这组测量发生在 53 号接坡加入前。[本轮帧时](evidence/street_timing/timing.json) · [显卡状态](evidence/street_timing/gpu.csv) · [上一版帧时](evidence/frame_finish_timing/timing.json)
+
+原 ChatGPT 云工作区在同一试作的独立检出核对了四个 Blender／GLB 文件的大小和 SHA-256，实际重新导入，并从市场入口走入 201。云端也走通 94 个邻楼方向，记录到玩家与 53 号新接坡的 137 次接触，129 个断面点的最大接缝高差为 4.86 毫米。试玩从照相巷市场开始，使用 Mesa llvmpipe 软件渲染，本轮结束时工作盘剩余 19G。[云端核验摘要和原始结果目录](evidence/architecture_cloud.json)
+
+临街窗后已有空间，远看的楼体比例和成排窗格仍相似。有些坡脚只见成片草地，缺少旧街沿墙长期使用留下的小构筑物。普通住宅楼上的房间只做了外部可见部分。视觉审看仍以玩家在街上行走的感受为准。素材的作者、许可、项目来源与文件指纹见[来源记录](sources.json)。
+
+## 上一版室内梁柱与住用空间
+
+上次制作提交为 `13d236ee696993cd6d2ff0952d64520798450465`。旧市场宽 22 米、进深 13 米，店面内两条横梁缺少中间支点，普通楼从首层上方到屋顶原是一整块建筑体量。76 栋现已用逐层边墙、楼板、纵横梁和连续立柱重建，首层改造沿用原有出入口。照相巷市场有三层、24 根柱，每层 38 段梁。剖视直接取自重开的 Blender 模型，为看清接头而隐去上层围墙、仅显示后侧楼板，灰色为柱、棕色为梁、蓝灰色为板。[市场原生视角](evidence/frame_finish_views/market_hall.png) · [剖视数据](evidence/frame_cutaway/cutaway.json)
 
 | 修订 | 原位观察及修改 |
 | --- | --- |

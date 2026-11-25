@@ -1,5 +1,7 @@
 # Chongqing district continuation
 
+- On the 500 m trial branch, reopen the updated outer district and the linked `work/scene_r24/outer_neighborhood/landing_53.blend`. Read the first section of the outer neighborhood README. Keep all four fixed-view trials, the baseline, the shared-lane return failure, the 53 landing profiles and the full-sequence retest.
+
 - The current 500 m trial includes the rebuilt storey frames, working interiors and the clipped laundry-side rail. Use the same market shortcut and Blender outer layer. Read the opening section of `work/scene_r24/outer_neighborhood/README.md` before editing; preserve the original pixel hits, fixed-camera trials, frame checks, contact probes and passage walks.
 
 - On the public `prototype/district-500` trial branch, the outer district uses `work/scene_r24/district_500/outer_district.blend` and the same normal Godot entry. Read `work/scene_r24/outer_neighborhood/README.md` for the six street and housing trials, original blocked flyover sites, fixed views, through-house tests and continuous market-to-201 route. The original 200 m center follows the 25b instructions below.

@@ -2,7 +2,7 @@
 
 ## 500 米城区试作分支
 
-本版可直接看[市场、洗衣间和卧室的同机位对照](work/scene_r24/outer_neighborhood/evidence/inside_before_after.jpg)，或[从市场走到二楼 201](work/scene_r24/outer_neighborhood/evidence/frame_finish_entry/market_to_201.mp4)。新楼的逐层梁板、院坝木廊和室内修订见[本版复核](work/scene_r24/outer_neighborhood/README.md)。
+新区最新一轮对照了老街和住宅实拍，重做临街窗洞、阳台、市场台基和室内表面。打开[市场、5 号住宅和 201 同机位前后对照](work/scene_r24/outer_neighborhood/evidence/architecture_before_after.jpg)，或看[从街上走进 201 的连续画面](work/scene_r24/outer_neighborhood/evidence/landing_take/market_to_201.mp4)。[四轮实机记录与 53 号石梯修复](work/scene_r24/outer_neighborhood/README.md)
 
 直接[从照相巷市场进院上二楼](work/逛照相巷院坝.cmd)。这一版把普通住宅穿堂接入住用房，在市场、修理铺、江岸茶摊和周边住区接通 11 处共用院坝。[玩家视角连续实走](work/scene_r24/outer_neighborhood/evidence/market_to_201.mp4) · [六轮实景复核](work/scene_r24/outer_neighborhood/README.md)
 

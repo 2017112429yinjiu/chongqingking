@@ -19,7 +19,7 @@ bash work/scene_r24/district_500/play.sh --software -- --explore-500
 ## 文件和重建
 
 - `outer_district.blend` 是可独立打开的 Blender 4.3.2 新区，打包了源纹理。它含道路支撑、建筑和梯坎、路灯与树、南侧桥下接坡及范围外视觉过渡。
-- `city_and_outer.local.blend` 是云端可重开的整城组合，由 `compose.py` 产出。它重定位原三个人物库及现有外链图片，并相对链接 `outer_district.blend`。它在本地保留，工作站可用同一脚本生成。
+- `city_and_outer.local.blend` 是云端可重开的整城组合，由 `compose.py` 产出。它重定位原三个人物库及现有外链图片，并相对链接 `outer_district.blend` 和 53 号楼的 `../outer_neighborhood/landing_53.blend`。它在本地保留，工作站可用同一脚本生成。
 - Godot 增量在 `work/project/chongqing_godot_v05/assets/district_500/`，包含 `outer_district.glb`、表面分区纹理、路牌子集字体和布局。场景启用后由标准碰撞构建器用导出网格建立支撑。
 - `terrain_baseline.json` 来自原 Blender 200 米地形五个网格，内接基准覆盖四个边界。 `road_ties.json` 来自原生 Godot 25b 横断面，用旧路边标高和坡度收头。桥下使用低位射线，避免把桥面量作地面。
 - `evidence/` 保存本轮实跑文件。 `probe.gd` 重新量横断面并拍固定视角。 `routes.gd` 使用玩家控制器跑代表路径；每段只有起始就位，往返两腿分别就位。路线固定输入由脚本给出。软件图像的条件见随附报告。
@@ -30,6 +30,7 @@ bash work/scene_r24/district_500/play.sh --software -- --explore-500
 blender -b work/scene_r24/district_patrol/city_and_patrol.blend \
   -P work/scene_r24/district_500/measure_baseline.py
 blender -b -P work/scene_r24/district_500/build.py
+blender -b work/scene_r24/district_500/outer_district.blend -P work/scene_r24/outer_neighborhood/landing_53.py
 python work/scene_r24/district_500/build_font.py
 blender -b work/scene_r24/district_patrol/city_and_patrol.blend \
   -P work/scene_r24/district_500/compose.py

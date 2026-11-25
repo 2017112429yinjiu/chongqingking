@@ -1,0 +1,109 @@
+{
+  "source": "Reported by the original ChatGPT cloud workspace after running the checks in its independent checkout.",
+  "architecture": {
+    "commit": "32acad578bb5f33ec2791d41763c797d971a77ca",
+    "proof_dir": "/workspace/work/runtime/outer-neighborhood-32acad57/",
+    "blender": "4.3.2",
+    "godot_reimport": "4.6.3, succeeded",
+    "lfs": [
+      {
+        "file": "outer_district.blend",
+        "bytes": 140487282,
+        "sha256": "7f51cf4c66fc1a3ac1a34af6361563bb8c05e6d93d35b3db90477388572b4df7"
+      },
+      {
+        "file": "outer_district.glb",
+        "bytes": 238984956,
+        "sha256": "3f33a470fca86dc9f3ce518c11a7f6b78cd82c609494446979664354ffb6cca1"
+      }
+    ],
+    "blender_source": {
+      "condensers": 104,
+      "wall_brackets": 208,
+      "foot_samples": 208,
+      "failed": 0,
+      "coloured_and_textured_floor_primitives": 87
+    },
+    "openings": {
+      "buildings": 76,
+      "upper_passed": 2272,
+      "street_passed": 237
+    },
+    "all_halls": {
+      "passed": 223,
+      "total": 223
+    },
+    "market": {
+      "passed": 5,
+      "total": 5,
+      "reached": 7,
+      "goals": 7,
+      "distance_m": 48.16,
+      "stalls": 0
+    },
+    "play": {
+      "entry": "照相巷便民市场",
+      "renderer": "OpenGL 4.5 Compatibility, Mesa llvmpipe",
+      "audio": "Dummy",
+      "workspace_space_available": "19G",
+      "use": "39%"
+    },
+    "reports": [
+      "blender/architecture_source.json",
+      "openings/openings.json",
+      "all-halls/checks.json",
+      "market/market_entry.json",
+      "import.log",
+      "play.log"
+    ]
+  },
+  "landing": {
+    "commit": "1436ceafc8ab18a1fd9605350b0328d577927dba",
+    "proof_dir": "/workspace/work/runtime/landing-53-1436ceaf/",
+    "godot": "4.6.3, reimport succeeded",
+    "lfs": [
+      {
+        "file": "landing_53.glb",
+        "bytes": 7353320,
+        "sha256": "13ae6afcc12bb422b8ee4a9ffca0475ee11526bb70e6ecc6f3de856621ba9c91"
+      },
+      {
+        "file": "landing_53.blend",
+        "bytes": 7409791,
+        "sha256": "4063dac3292644a31f8de826fd8573a055ed2226cf141d9ea1ccea3f01b8dd1f"
+      }
+    ],
+    "directions": {
+      "passed": 94,
+      "shared_lane": 72,
+      "neighbour_gallery": 22,
+      "house_53_to_4_m": 17.64,
+      "house_4_to_53_m": 17.73,
+      "new_landing_contacts": 137
+    },
+    "joint": {
+      "profiles": 3,
+      "points": 129,
+      "max_difference_mm": 4.86
+    },
+    "market": {
+      "passed": 5,
+      "total": 5,
+      "distance_m": 48.16,
+      "targets": 7,
+      "stalls": 0
+    },
+    "play": {
+      "entry": "照相巷便民市场",
+      "renderer": "OpenGL Compatibility / Mesa llvmpipe",
+      "workspace_space_available": "19G",
+      "use": "39%"
+    },
+    "reports": [
+      "lane-headless/shared_paths.json",
+      "lane-headless/contact_sequence.json",
+      "profile/landing_profile.json",
+      "market/market_entry.json"
+    ]
+  }
+}
