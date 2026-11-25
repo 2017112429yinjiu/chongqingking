@@ -1,0 +1,85 @@
+{
+  "checks": [
+    {
+      "detail": "",
+      "name": "first_shift_loaded",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "frame_service_front",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "frame_west",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "frame_east",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "frame_north",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "frame_south",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "frame_oblique",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "frame_plan",
+      "pass": true
+    }
+  ],
+  "device": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "entry": "res://first_shift.tscn",
+  "local_registration_model_visible": false,
+  "viewport": "(1152, 648)",
+  "views": [
+    {
+      "camera": "(-6.82, 23.98, -12.58)",
+      "site": "service_front",
+      "target": "(3.9, 23.38, -12.5)"
+    },
+    {
+      "camera": "(-92.22, 9.18, 74.53)",
+      "site": "west",
+      "target": "(-119.27, 8.4, 67.29)"
+    },
+    {
+      "camera": "(93.89, 16.91, 48.88)",
+      "site": "east",
+      "target": "(115.26, 18.4, 30.86)"
+    },
+    {
+      "camera": "(-30.26, 35.09, -93.24)",
+      "site": "north",
+      "target": "(-46.3, 37.2, -116.17)"
+    },
+    {
+      "camera": "(41.95, 8.9, 92.18)",
+      "site": "south",
+      "target": "(47.5, 6.7, 119.62)"
+    },
+    {
+      "camera": "(282.0, 271.0, 368.0)",
+      "site": "oblique",
+      "target": "(0.0, 10.0, 0.0)"
+    },
+    {
+      "camera": "(0.0, 530.0, 0.0)",
+      "site": "plan",
+      "target": "(0.0, 0.0, 0.0)"
+    }
+  ]
+}
