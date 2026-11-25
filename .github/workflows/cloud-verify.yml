@@ -1,0 +1,80 @@
+name: Chongqing cloud verification
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      revision:
+        description: 'Full commit on main, branch, or tag to verify (blank uses selected revision)'
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+env:
+  GIT_LFS_SKIP_SMUDGE: '1'
+
+jobs:
+  configuration:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Check cloud setup and committed LFS pointers
+        run: |
+          python3 -m json.tool .devcontainer/devcontainer.json > /dev/null
+          python3 -m py_compile tools/cloud/verify.py tools/cloud/blender_scene.py
+          bash -n tools/cloud/setup-linux.sh
+          git lfs fsck --pointers HEAD
+
+  engines:
+    if: github.event_name == 'workflow_dispatch'
+    needs: configuration
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    env:
+      CQ_PROJECT_ROOT: ${{ github.workspace }}/district
+    steps:
+      - name: Available storage on disposable runner
+        shell: bash
+        run: |
+          if (( $(df --output=avail -B1 . | tail -1) < 36000000000 )); then
+            sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc
+          fi
+          df -h .
+      - name: Checkout verification scripts
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          path: harness
+          sparse-checkout: tools/cloud
+          persist-credentials: false
+      - name: Checkout candidate in an independent directory
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          path: district
+          ref: ${{ inputs.revision || github.sha }}
+          fetch-depth: 0
+          lfs: false
+      - name: Install pinned engines
+        working-directory: district
+        run: bash ../harness/tools/cloud/setup-linux.sh
+      - name: Verify LFS, Blender and Godot
+        working-directory: district
+        run: |
+          export PATH="$CQ_PROJECT_ROOT/.cloud-dev/tools/bin:$PATH"
+          python3 ../harness/tools/cloud/verify.py
+      - name: Preserve verification reports
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: district-reports-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            district/.cloud-dev/runs/*/*.json
+            district/.cloud-dev/runs/*/import.log
+            district/.cloud-dev/runs/*/startup.log
+          include-hidden-files: true
+          if-no-files-found: warn
+          retention-days: 7

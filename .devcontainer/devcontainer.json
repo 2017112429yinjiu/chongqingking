@@ -1,0 +1,7 @@
+{
+  "name": "Chongqing R24 · Godot 4.6.3 / Blender 4.3.2",
+  "build": { "dockerfile": "Dockerfile" },
+  "remoteUser": "vscode",
+  "postCreateCommand": "bash tools/cloud/setup-linux.sh && git lfs pull --include= --exclude= origin",
+  "remoteEnv": { "PATH": "${containerWorkspaceFolder}/.cloud-dev/tools/bin:${containerEnv:PATH}" }
+}

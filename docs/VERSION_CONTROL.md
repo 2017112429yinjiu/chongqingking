@@ -25,6 +25,8 @@ GitHub Free / Pro 当前含 10 GiB LFS 存储，后续修改大型二进制会�
 
 ## 日常开发
 
+跨机器克隆、Git LFS 全量校验、Blender 相对引用和 Godot 冷导入见[云端开发与基线复验](CLOUD_DEVELOPMENT.md)。
+
 ### Blender 外部库路径
 
 已用 Blender 4.3.2 只读重开当前完整源，242 张图片已打包，16 个外部引用均可在本机找到并已纳入 Git。这 16 个引用仍为绝对路径：包括 13 张贴图及下列三个人物库。更换克隆目录或机器时，需要在 Blender 中把它们重新定位到新仓库的对应文件；逐项目标路径见下方源引用检查 JSON 的 `reference_paths`。
