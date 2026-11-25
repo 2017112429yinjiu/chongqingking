@@ -1,5 +1,7 @@
 # Chongqing district continuation
 
+- On the public `prototype/district-500` trial branch, the outer district uses `work/scene_r24/district_500/outer_district.blend` and the same normal Godot entry. Read `work/scene_r24/outer_neighborhood/README.md` for the six street and housing trials, original blocked flyover sites, fixed views, through-house tests and continuous market-to-201 route. The original 200 m center follows the 25b instructions below.
+
 - Current district is R24 build 25b. Use the build 25 Blender and Godot entries below. For the six repaired courtyard and stair junctions, preserve the registered player view, intermediate failures, edge profiles, walking and riding evidence. Run `work/scene_r24/district_patrol/verify.ps1 -Run <fresh_name> -AllRoads -Timing`; see the build 25b section of the district report.
 
 - Current district is R24 build 25. Open `work/scene_r24/district_patrol/city_and_patrol.blend` with Blender 4.3.2 and the normal `first_shift.tscn` with Godot 4.6.3. Read START.md, the latest handoff, the game's docs/DISTRICT_PATROL_R24.md and docs/FIRST_SHIFT.md. Keep the ten original defect images, failed build and native movement trials, both approaches to 301, 14 bidirectional mentor rides, post-ride site close-ups and support measurements. Run `work/scene_r24/district_patrol/verify.ps1 -Run <fresh_name>` for a new independent survey.

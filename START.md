@@ -2,6 +2,8 @@
 
 ## 500 米城区试作分支
 
+直接[从照相巷市场进院上二楼](work/逛照相巷院坝.cmd)。这一版把普通住宅穿堂接入住用房，在市场、修理铺、江岸茶摊和周边住区接通 11 处共用院坝。[玩家视角连续实走](work/scene_r24/outer_neighborhood/evidence/market_to_201.mp4) · [六轮实景复核](work/scene_r24/outer_neighborhood/README.md)
+
 原 200 米城区保留在中心，可沿五条线路向外探索。[直接进入东侧试玩](work/试玩500米城区.cmd) · [原生画面与复核](work/scene_r24/expansion_review/README.md) · [可编辑新区](work/scene_r24/district_500/outer_district.blend)
 
 ## 当前入口 · R24 构建 25b

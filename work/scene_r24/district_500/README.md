@@ -1,6 +1,6 @@
 # 重庆外卖王 · 500 米城区试作
 
-桌面可[直接试玩东侧入口](../../试玩500米城区.cmd)。当前修订的树种、屋顶、接缝及原生图见[街面复核](../expansion_review/README.md)。
+桌面可[从市场进院上楼](../../逛照相巷院坝.cmd)，也可[从东侧街口骑行](../../试玩500米城区.cmd)。现版街巷、住宅和店内实走见[院坝与住户](../outer_neighborhood/README.md)。第一版树种、屋顶和接缝的历史对照见[街面复核](../expansion_review/README.md)。
 
 默认项目是 `work/project/chongqing_godot_v05/project.godot`。Godot 4.6.3 运行项目进入 `first_shift.tscn`，按原来的方式向老彭报到，完成教学后可沿出区道路自由活动。独立检出从 R24 build 25b 游戏提交 `ce1841b079b78c1f876bfa0da3b8b6a404ac9532` 开始，云端工具安装脚本来自 `0253cada1833dc66fa6a93f12e6af373451e99a4`。
 
