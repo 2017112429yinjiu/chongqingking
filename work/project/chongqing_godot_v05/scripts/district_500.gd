@@ -63,5 +63,5 @@ static func start_exploration(scene: Node3D) -> void:
 		return
 	bike.global_position = road.position + Vector3.UP * 0.035
 	bike.safe_park_position = bike.global_position
-	bike.rotation.y = -2.21
+	bike.rotation.y = -0.87
 	scene.explorer.set_walk_origin(shoulder.position + Vector3.UP * 0.035, bike.global_position + Vector3.UP)

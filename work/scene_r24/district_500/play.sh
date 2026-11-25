@@ -14,6 +14,12 @@ fi
 if [[ "${1:-}" == "--software" ]]; then
     shift
     export LIBGL_ALWAYS_SOFTWARE=1
-    exec "$engine" --path "$project" --rendering-method gl_compatibility --resolution 960x540 "$@"
+    engine_args=()
+    for arg in "$@"; do
+        shift
+        [[ "$arg" == "--" ]] && break
+        engine_args+=("$arg")
+    done
+    exec "$engine" --path "$project" --rendering-method gl_compatibility --resolution 800x450 "${engine_args[@]}" -- --qa-no-sun-shadows "$@"
 fi
 exec "$engine" --path "$project" "$@"
