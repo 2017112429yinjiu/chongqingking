@@ -58,6 +58,14 @@ func run() -> void:
 			for fixture: Light3D in scene.find_children("*", "Light3D", true, false):
 				fixture.shadow_enabled=false
 			scene.get_viewport().use_occlusion_culling = false
+		if "--market-only" in OS.get_cmdline_user_args():
+			var landing := Vector2(161.46,-113.49)
+			var floor_hit := ground(space,landing,40.3)
+			if floor_hit[0] != null:
+				await capture(output,"east_market_landing",Vector3(landing.x,floor_hit[0]+1.65,landing.y),
+					Vector3(166.82,40.45,-116.28),70)
+			quit()
+			return
 		await capture(output,"core",Vector3(-26.5,13.2,77),Vector3(-38,15.2,54),60)
 		if "--baseline" not in OS.get_cmdline_user_args():
 			await capture(output,"overview",Vector3(303,332,392),Vector3(0,15,0),64)

@@ -827,7 +827,8 @@ func _save_current_view() -> void:
 
 func _mode_changed(walking: bool) -> void:
 	mode_button.text = "Tab  自由观察" if walking else "Tab  落地步行"
-	mode_label.text = "步行探索   /   200 × 200 米街区" if walking else "自由观察   /   200 × 200 米街区"
+	var dimension := "500 × 500" if district_500_enabled else "200 × 200"
+	mode_label.text = "%s   /   %s 米街区" % ["步行探索" if walking else "自由观察", dimension]
 	controls_label.text = "W A S D 移动    鼠标转向    Esc 释放    Shift 快跑    空格跳跃    E 交互\nR 回到街口    1–0 固定机位   [ / ] 切换    Tab 自由观察    H 隐藏界面    F12 截图" if walking else "W A S D 移动    单击场景后鼠标转向    Esc 释放    Q 下降 / E 上升    Shift 加速    滚轮缩放\n1–0 固定机位   [ / ] 切换    Tab 落地步行    H 隐藏界面    F12 截图"
 
 
