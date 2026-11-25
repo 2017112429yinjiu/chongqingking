@@ -18,6 +18,12 @@
 - Blender 4.3.2 重新生成并打开整城组合，复查四个链接库、13 张外部图、原三处屋顶附件和 302 株树。另测 47 处新增竹篓和木椅的模型底部，均落在柜面或地板。原栏杆在房外的 5,212 个面中心与修后网格的最大距离约 0.26 毫米。[组合源重开](evidence/frame_finish_source/combined_source.json) · [摆设和房外栏杆量测](evidence/frame_finish_source/furnishing_contacts.json)
 - 逐栋穿堂和侧房检查 223/223、院坝路线 37/37、邻楼和串门路线 94/94 通过。玩家从市场自然出生，连续走完通往 201 的 7 个目标，48.16 米，全程没有卡停。短片取 82 张原生玩家画面，按每 9 个物理步一帧播放。五条外圈主路步行、骑行双向 20/20，共 2,903.44 米。[逐户](evidence/frame_finish_all/checks.json) · [院坝](evidence/frame_finish_walk/checks.json) · [邻楼](evidence/frame_finish_shared/shared_paths.json) · [玩家短片记录](evidence/frame_finish_entry/market_entry.json) · [外圈骑步与断面](evidence/frame_finish_roads/routes.json)
 
+原 25b 巡检用 `outer_frame_03 -AllRoads -Timing` 重跑。师傅带骑 28 段共 3,454.08 米，玩家骑完 26 条地面线路的去程和回程，六个院坝与楼梯接头完成 18 次步行往返。旧区三处机位各采 150 帧，GPU 帧时中位数为 197.07、304.75、425.75 毫秒。[旧区巡检](../../project/chongqing_godot_v05/verification_r24/district_patrol/outer_frame_03/survey_summary.json) · [旧区帧时](../../project/chongqing_godot_v05/verification_r24/district_patrol/outer_frame_03/timing/timing.json)
+
+新区另开 Godot 单独采样，街面、菜档、上院三个固定机位各 90 帧。RTX 4070 Laptop 在全部 29 次显卡采样中均为 P8、210 MHz，窗口 1152 × 648，实际视口 692 × 389。GPU 帧时中位数依次为 92.79、86.50、98.32 毫秒，95 分位为 97.98、94.77、104.55 毫秒。同机位上一版中位数为 84.95、77.52、86.87 毫秒。这次三个机位均有退步，当前实测条件下没有达到稳定 30 帧。[新区帧时](evidence/frame_finish_timing/timing.json) · [同次显卡采样](evidence/frame_finish_timing/gpu.csv)
+
+在原 OpenAI 云工作区，Godot 4.6.3 重新导入同一提交，Blender 4.3.2 复开新版打包源并测得 500 × 500 米地表。梁柱等 50,563 项几何取样、逐户 223 项及市场入口到 201 的 5 项检查均通过。新试玩窗口在照相巷市场实际打开，软件渲染使用 Mesa llvmpipe，声音回退到 Dummy；当时云盘剩余 19G。[云端实测与资产指纹](evidence/frame_cloud.json)
+
 首层住户和共廊户型仍有重复，市场的部分货物、洗衣机及橱柜近景仍显简化，普通住宅上层的自由入户仍未制作。三处登记外景建筑维持原范围。来源、作者、许可和所用文件的 SHA-256 见[素材记录](sources.json)。
 
 ## 实景对照与六轮修改
@@ -47,7 +53,7 @@
 | 新旧区和外圈主路 | 原七处断面 2,275/2,275 个采样命中；五条出城线双向步行、双向骑行 20/20，2,903.43 米。三个旧门面前的原双侧台阶也复走过。[断面](evidence/r6_seams/sections.json) · [骑行及步行](evidence/r6_roads/routes.json) · [门前台阶](evidence/r6_aprons/destinations.json) |
 | Blender 4.3.2 | 从原 25b 和新区源重建完整组合并实际重开。四个链接库、13 张外部图片和三个登记屋顶附件均核对，场景内有 302 株外圈树。院坝范围内为留出建筑和人行空间腾出四处树位。[重开记录](evidence/r6_source/combined_source.json) |
 
-## 旧区回归、帧时与云端复测
+## 上一版六轮试作的旧区回归、帧时与云端复测
 
 从正常首班场景执行 25b 的 `verify.ps1 -Run outer_homes_r6 -AllRoads -Timing`。师傅 14 条路线往返 28 段，共 3,454.05 米；玩家 26 条地面路线双向骑行全部通过。六处旧接头完成 18 次步行往返，300 个门槛断面样点的最大高差误差为 6.21 毫米以内。首班教学 85/85，午间送单 35/35。[整区巡检](../../project/chongqing_godot_v05/verification_r24/district_patrol/outer_homes_r6/survey_summary.json) · [旧接头原机位复拍](../../project/chongqing_godot_v05/verification_r24/district_patrol/outer_homes_r6/street_comparison.jpg)
 

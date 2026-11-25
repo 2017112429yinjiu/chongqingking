@@ -1,0 +1,351 @@
+{
+	"checks": [
+		{
+			"detail": "",
+			"name": "world",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "practice_isolated",
+			"pass": true
+		},
+		{
+			"detail": [],
+			"name": "all_donor_meshes_found",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_01_lower_gate",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 4.54142319178209,
+				"end": "(-54.95908, 16.46181, 19.50046)",
+				"goals": 1,
+				"max_frame_displacement_m": 0.223615884780884,
+				"name": "cross_lower_gate",
+				"pass": true,
+				"reached": 1,
+				"stall_contacts": []
+			},
+			"name": "cross_lower_gate",
+			"pass": true
+		},
+		{
+			"detail": 16.4618148803711,
+			"name": "lower_court_floor",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 7.02572143450379,
+				"end": "(-62.30166, 19.90398, 19.61665)",
+				"goals": 1,
+				"max_frame_displacement_m": 0.180751249194145,
+				"name": "climb_unit_one",
+				"pass": true,
+				"reached": 1,
+				"stall_contacts": []
+			},
+			"name": "climb_unit_one",
+			"pass": true
+		},
+		{
+			"detail": 19.9039783477783,
+			"name": "unit_landing_floor",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 5.02129709348083,
+				"end": "(-62.32103, 19.90398, 14.57681)",
+				"goals": 3,
+				"max_frame_displacement_m": 0.0699999406933784,
+				"name": "find_cook_202",
+				"pass": true,
+				"reached": 3,
+				"stall_contacts": []
+			},
+			"name": "find_cook_202",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_02_pickup_202",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "take_douhua",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "202_is_not_recipient",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 14.2556360410526,
+				"end": "(-70.67781, 17.27732, 8.042978)",
+				"goals": 3,
+				"max_frame_displacement_m": 0.125771924853325,
+				"name": "leave_via_back_stairs",
+				"pass": true,
+				"reached": 3,
+				"stall_contacts": []
+			},
+			"name": "leave_via_back_stairs",
+			"pass": true
+		},
+		{
+			"detail": 17.2773246765137,
+			"name": "back_alley_floor",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_03_back_alley",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 14.6105565940961,
+				"end": "(-84.88256, 17.49789, 5.711623)",
+				"goals": 3,
+				"max_frame_displacement_m": 0.281969100236893,
+				"name": "turn_at_blue_corner",
+				"pass": true,
+				"reached": 3,
+				"stall_contacts": []
+			},
+			"name": "turn_at_blue_corner",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_03b_blue_door",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 3.79989874735475,
+				"end": "(-84.83221, 17.134, 9.828946)",
+				"goals": 2,
+				"max_frame_displacement_m": 0.0736119821667671,
+				"name": "blue_tile_alley_door",
+				"pass": true,
+				"reached": 2,
+				"stall_contacts": []
+			},
+			"name": "blue_tile_alley_door",
+			"pass": true
+		},
+		{
+			"detail": 17.1339988708496,
+			"name": "blue_entrance_floor",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_04_blue_stair",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 6.91823208937421,
+				"end": "(-84.83981, 20.53389, 17.06523)",
+				"goals": 1,
+				"max_frame_displacement_m": 0.174388587474823,
+				"name": "climb_to_turn",
+				"pass": true,
+				"reached": 1,
+				"stall_contacts": []
+			},
+			"name": "climb_to_turn",
+			"pass": true
+		},
+		{
+			"detail": 20.5338935852051,
+			"name": "blue_half_floor",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 9.1064977357164,
+				"end": "(-82.58928, 23.93384, 9.786104)",
+				"goals": 2,
+				"max_frame_displacement_m": 0.174388363957405,
+				"name": "reverse_flight_to_window",
+				"pass": true,
+				"reached": 2,
+				"stall_contacts": []
+			},
+			"name": "reverse_flight_to_window",
+			"pass": true
+		},
+		{
+			"detail": 23.9338359832764,
+			"name": "upper_window_floor",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_05_upper_window",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 8.68339685630053,
+				"end": "(-77.76443, 23.93384, 14.36305)",
+				"goals": 3,
+				"max_frame_displacement_m": 0.0700018331408501,
+				"name": "enter_high_crossing",
+				"pass": true,
+				"reached": 3,
+				"stall_contacts": []
+			},
+			"name": "enter_high_crossing",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_06_crossing",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 5.42192155728117,
+				"end": "(-72.02445, 23.93384, 14.36012)",
+				"goals": 1,
+				"max_frame_displacement_m": 0.0699997022747993,
+				"name": "cross_above_alley",
+				"pass": true,
+				"reached": 1,
+				"stall_contacts": []
+			},
+			"name": "cross_above_alley",
+			"pass": true
+		},
+		{
+			"detail": 23.9338359832764,
+			"name": "bridge_middle_floor",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_06b_blue_landing",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_07_down_to_alley",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 10.5684392852709,
+				"end": "(-61.13811, 22.9132, 14.34005)",
+				"goals": 2,
+				"max_frame_displacement_m": 0.113720573484898,
+				"name": "cross_into_original_house_and_descend",
+				"pass": true,
+				"reached": 2,
+				"stall_contacts": []
+			},
+			"name": "cross_into_original_house_and_descend",
+			"pass": true
+		},
+		{
+			"detail": 22.9131984710693,
+			"name": "home_301_floor",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_08_door_301",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 1.58123256452382,
+				"end": "(-59.25593, 22.9132, 14.16471)",
+				"goals": 1,
+				"max_frame_displacement_m": 0.0700025036931038,
+				"name": "knock_at_301",
+				"pass": true,
+				"reached": 1,
+				"stall_contacts": []
+			},
+			"name": "knock_at_301",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "recipient_answers",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 0.512454038485885,
+				"end": "(-59.33488, 22.91411, 14.9092)",
+				"goals": 1,
+				"max_frame_displacement_m": 0.0694450438022614,
+				"name": "reach_301_ledge",
+				"pass": true,
+				"reached": 1,
+				"stall_contacts": []
+			},
+			"name": "reach_301_ledge",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "pay_only_after_release",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_09_placing",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "order_paid_once",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_10_received",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 45.4017820563167,
+				"end": "(-84.85036, 17.06973, 8.086764)",
+				"goals": 9,
+				"max_frame_displacement_m": 0.170754104852676,
+				"name": "return_to_back_lane",
+				"pass": true,
+				"reached": 9,
+				"stall_contacts": []
+			},
+			"name": "return_to_back_lane",
+			"pass": true
+		}
+	],
+	"floors": {
+		"back_alley": 17.2773246765137,
+		"blue_entrance": 17.1339988708496,
+		"blue_half": 20.5338935852051,
+		"bridge_middle": 23.9338359832764,
+		"home_301": 22.9131984710693,
+		"lower_court": 16.4618148803711,
+		"unit_landing": 19.9039783477783,
+		"upper_window": 23.9338359832764
+	},
+	"native_frames_15fps": 0
+}

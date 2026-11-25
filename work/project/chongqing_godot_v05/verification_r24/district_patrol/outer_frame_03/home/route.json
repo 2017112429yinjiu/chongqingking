@@ -1,0 +1,127 @@
+{
+	"checks": [
+		{
+			"detail": "",
+			"name": "isolated",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 17.0994607969187,
+				"end": "(-62.31311, 19.90412, 14.51695)",
+				"goals": 5,
+				"max_frame_displacement_m": 0.223615884780884,
+				"name": "collect_in_202",
+				"pass": true,
+				"reached": 5,
+				"stall_contacts": []
+			},
+			"name": "collect_in_202",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "collected",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 2.76860741432756,
+				"end": "(-62.08787, 19.90412, 17.58894)",
+				"goals": 1,
+				"max_frame_displacement_m": 0.0700006633996964,
+				"name": "find_home_stair",
+				"pass": true,
+				"reached": 1,
+				"stall_contacts": []
+			},
+			"name": "find_home_stair",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_01_new_entrance",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 6.29501360235736,
+				"end": "(-55.47533, 22.91402, 17.52165)",
+				"goals": 1,
+				"max_frame_displacement_m": 0.0860284939408302,
+				"name": "resident_climb",
+				"pass": true,
+				"reached": 1,
+				"stall_contacts": []
+			},
+			"name": "resident_climb",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_02_look_back",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 7.93598502129316,
+				"end": "(-59.28812, 22.91245, 14.207)",
+				"goals": 4,
+				"max_frame_displacement_m": 0.0726704001426697,
+				"name": "resident_to_301",
+				"pass": true,
+				"reached": 4,
+				"stall_contacts": []
+			},
+			"name": "resident_to_301",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "frame_03_recipient",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "door_answered",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 0.449130341410637,
+				"end": "(-59.32971, 22.91402, 14.86523)",
+				"goals": 1,
+				"max_frame_displacement_m": 0.0694904178380966,
+				"name": "reach_shelf",
+				"pass": true,
+				"reached": 1,
+				"stall_contacts": []
+			},
+			"name": "reach_shelf",
+			"pass": true
+		},
+		{
+			"detail": "",
+			"name": "home_delivery_settled",
+			"pass": true
+		},
+		{
+			"detail": {
+				"distance_m": 17.1607916913927,
+				"end": "(-62.10799, 19.89013, 14.57974)",
+				"goals": 6,
+				"max_frame_displacement_m": 0.090893343091011,
+				"name": "home_stair_down",
+				"pass": true,
+				"reached": 6,
+				"stall_contacts": []
+			},
+			"name": "home_stair_down",
+			"pass": true
+		}
+	],
+	"floors": {
+
+	},
+	"native_frames_15fps": 0
+}

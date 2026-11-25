@@ -1,0 +1,130 @@
+{
+  "commit": "13d236ee696993cd6d2ff0952d64520798450465",
+  "verified_lfs": {
+    "outer_blend": "a72a23a9d7b56a59278568c9c801fc9305519ea607e5aaa9dfe011ff94a10c38",
+    "outer_glb": "9f7a8340327776b6aecc2c891c0d69fe339c9d779e719212f8786613e5d396ea"
+  },
+  "godot_import": "4.6.3, completed",
+  "blender": {
+    "blender": "4.3.2",
+    "source": "outer_district.blend",
+    "terrain_bounds_east_north_up_m": [
+      [
+        -250,
+        -250,
+        -16.649999618530273
+      ],
+      [
+        250,
+        250,
+        62.36692810058594
+      ]
+    ],
+    "extent_m": [
+      500,
+      500,
+      79.01692771911621
+    ],
+    "terrain_objects": 84,
+    "terrain_triangles": 185166,
+    "mesh_objects": 776,
+    "unpacked_images": []
+  },
+  "frame": {
+    "columns": 1624,
+    "engine": "4.6.3-stable (official)",
+    "failures": [],
+    "max_bay_axis_m": 4.8161778687053,
+    "max_surface_error_m": 0.000366846157703549,
+    "plots": 76,
+    "samples": {
+      "bedroom_joist": 217,
+      "clear_bay": 3924,
+      "column": 6452,
+      "cross_beam": 15696,
+      "gallery_girder": 44,
+      "gallery_lower_post": 55,
+      "gallery_shoe": 55,
+      "gallery_upper_post": 55,
+      "ground_floor": 76,
+      "long_beam": 14517,
+      "post_base": 1624,
+      "slab_bottom": 3924,
+      "slab_top": 3924
+    },
+    "storeys": 305,
+    "total_samples": 50563,
+    "failure_count": 0
+  },
+  "all_halls": {
+    "checks": 223,
+    "passed": 223,
+    "failed": [],
+    "hall": 76,
+    "household_in": 73,
+    "household_back": 73
+  },
+  "market_entry": {
+    "checks": [
+      {
+        "detail": "",
+        "name": "exploration_from_normal_scene",
+        "pass": true
+      },
+      {
+        "detail": "(161.1107, 38.14408, -113.9295)",
+        "name": "market_threshold_spawn",
+        "pass": true
+      },
+      {
+        "detail": {
+          "distance_m": 48.1605866644531,
+          "end": "(169.4126, 41.05437, -139.5049)",
+          "goals": 7,
+          "max_frame_displacement_m": 0.169580519199371,
+          "name": "market_to_201",
+          "pass": true,
+          "reached": 7,
+          "stall_contacts": []
+        },
+        "name": "uninterrupted_market_to_201",
+        "pass": true
+      },
+      {
+        "detail": "(169.4126, 41.05437, -139.5049)",
+        "name": "upstairs_height",
+        "pass": true
+      },
+      {
+        "detail": [
+          {
+            "clip": "street/watch_street",
+            "foot_origin_gap_m": 0.00615692138671875,
+            "name": "OuterMarketSeller"
+          },
+          {
+            "clip": "street/commuter",
+            "foot_origin_gap_m": 0.00671005249023438,
+            "name": "OuterRepairWorker"
+          }
+        ],
+        "name": "local_worker_clips_and_floor",
+        "pass": true
+      }
+    ],
+    "images": 0,
+    "physics_hz": 60,
+    "ticks_per_image": 9
+  },
+  "cloud_desktop": {
+    "renderer": "gl_compatibility",
+    "device": "Mesa llvmpipe",
+    "audio": "Dummy",
+    "view": "Market entrance; frame, dry goods and vegetable stalls inspected."
+  },
+  "workspace": {
+    "available_df_h": "19G",
+    "used_percent": 37
+  },
+  "remote_evidence": "/workspace/work/runtime/outer-neighborhood-13d236ee/"
+}
