@@ -11,7 +11,8 @@ mkdir -p "$tools/bin"
 scratch=$(mktemp -d "$tools/install.XXXXXXXX")
 trap 'rm -rf -- "$scratch"' EXIT
 fetch() {
-    curl --fail --location --silent --show-error --retry 4 "$1" -o "$scratch/$2"
+    echo "Downloading $2 from $1"
+    curl --fail --location --silent --show-error --retry 4 "$1" -o "$scratch/$2" || return 1
     (cd "$scratch" && echo "$3  $2" | sha256sum --check -)
 }
 
@@ -32,8 +33,10 @@ if [[ ! -x "$tools/bin/godot" ]]; then
 fi
 if [[ ! -x "$tools/blender-4.3.2-linux-x64/blender" ]]; then
     file=blender-4.3.2-linux-x64.tar.xz
-    fetch "https://download.blender.org/release/Blender4.3/$file" "$file" \
-        4da1c956673c0485e63054e563ee69198cc8f80d8157dd7592dffc8a6a5592e6
+    blender_sha=4da1c956673c0485e63054e563ee69198cc8f80d8157dd7592dffc8a6a5592e6
+    fetch "https://download.blender.org/release/Blender4.3/$file" "$file" "$blender_sha" ||
+        fetch "https://mirror.clarkson.edu/blender/release/Blender4.3/$file" "$file" "$blender_sha" ||
+        fetch "https://ftp.halifax.rwth-aachen.de/blender/release/Blender4.3/$file" "$file" "$blender_sha"
     tar -xJf "$scratch/$file" -C "$scratch"
     mv "$scratch/blender-4.3.2-linux-x64" "$tools/"
 fi
