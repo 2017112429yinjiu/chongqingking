@@ -12,6 +12,8 @@ var test_throttle: float = 0.0
 var test_steer: float = 0.0
 var test_brake: bool = false
 var safe_park_position: Vector3
+var recovery_half_extent_m := 102.0
+var recovery_min_height_m := -10.0
 var last_exit: Vector3
 var last_obstacle: Dictionary = {}
 var supported_last_tick:=false
@@ -215,7 +217,7 @@ func _physics_process(delta: float) -> void:
 			last_obstacle = {"body":str(hit.get_collider().get_parent().name),"normal":str(hit.get_normal()),"position":str(hit.get_position())}
 			if hit.get_normal().dot(forward * signf(speed)) < -.62:
 				speed = 0.0
-	if global_position.y < -10 or absf(global_position.x)>102 or absf(global_position.z)>102:
+	if global_position.y < recovery_min_height_m or maxf(absf(global_position.x), absf(global_position.z)) > recovery_half_extent_m:
 		global_position = safe_park_position
 		velocity = Vector3.ZERO
 		speed = 0.0

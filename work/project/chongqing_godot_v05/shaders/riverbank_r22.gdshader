@@ -3,6 +3,7 @@ uniform sampler2D shore : filter_linear_mipmap, repeat_disable;
 uniform sampler2D gravel : source_color, filter_linear_mipmap_anisotropic,repeat_enable;
 uniform sampler2D mud : source_color, filter_linear_mipmap_anisotropic,repeat_enable;
 uniform bool outer_ground=false;
+uniform bool outer_district_cut=false;
 uniform bool shoal=false;
 uniform sampler2D land : filter_linear_mipmap,repeat_disable;
 uniform sampler2D tree_shade : filter_linear_mipmap,repeat_disable;
@@ -11,6 +12,8 @@ varying vec3 p;
 void vertex(){p=(MODEL_MATRIX*vec4(VERTEX,1.)).xyz;}
 void fragment(){
 	vec2 xy=vec2(p.x,-p.z);
+	float core_distance=max(abs(xy.x),abs(xy.y));
+	if(outer_district_cut && core_distance>=100. && core_distance<250.){discard;}
 	vec2 uv=(xy-vec2(-1650.,-1690.))/vec2(2910.,2166.);
 	vec3 field=texture(shore,clamp(uv,vec2(0.),vec2(1.))).rgb;
 	float local=smoothstep(345.,438.,length(xy))*(1.-smoothstep(0.,.015,length(uv-clamp(uv,vec2(0.),vec2(1.)))));

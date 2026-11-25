@@ -24,6 +24,8 @@ static func decorate(report: Dictionary, main: Node3D) -> void:
 	if main.scene_identity.has("court_resident"):
 		report["court_resident"]=main.scene_identity.court_resident
 	report["runtime_sha256"]={}
+	if main.scene_identity.has("district_500"):
+		report["district_500"] = main.scene_identity.district_500
 	if main.scene_identity.has("district_connections"):
 		report["district_connections"]=main.scene_identity.district_connections
 		for path in ["res://scripts/district_connections_r24.gd","res://assets/connections_r24/connections.glb","res://assets/connections_r24/layout.json","res://shaders/joined_stone_r24.gdshader","res://shaders/noodle_surfaces_r24.gdshader","res://shaders/noodle_steam_r24.gdshader","res://assets/connections_r24/soup_notice.jpg"]:

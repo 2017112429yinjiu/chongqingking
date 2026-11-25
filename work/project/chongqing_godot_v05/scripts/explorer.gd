@@ -7,6 +7,7 @@ signal mode_changed(walking: bool)
 signal view_changed(name: String)
 
 var walk_collision_mask: int = 5
+var recovery_half_extent_m := 115.0
 
 const EYE_HEIGHT: float = 1.65
 const WALK_SPEED: float = 4.2
@@ -347,7 +348,7 @@ func _move_walking(delta: float, input_axis: Vector2, active: bool) -> void:
 		body.velocity.z = requested_velocity.z
 	if grounded and not body.is_on_floor() and body.velocity.y <= 0.0:
 		body.apply_floor_snap()
-	if body.global_position.y < -20.0 or absf(body.global_position.x) > 115.0 or absf(body.global_position.z) > 115.0:
+	if body.global_position.y < -20.0 or maxf(absf(body.global_position.x), absf(body.global_position.z)) > recovery_half_extent_m:
 		_reset_walk()
 	camera.global_position = body.global_position + Vector3.UP * EYE_HEIGHT - basis.z * .14
 	camera.global_rotation = Vector3(_pitch, _yaw, 0.0)
