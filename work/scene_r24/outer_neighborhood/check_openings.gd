@@ -31,6 +31,8 @@ func verify() -> void:
 	var street_edges:=0
 	var facade: StaticBody3D=scene.find_child("COL_Outer500_Building_envelopes",true,false).get_node("CQ_StaticCollision")
 	for p: Dictionary in layout.plots:
+		if p.has("superseded_by"):
+			continue
 		var mesh:=scene.find_child("COL_Outer500_Frame_%02d"%int(p.plot_id),true,false)
 		var body: StaticBody3D=mesh.get_node("CQ_StaticCollision")
 		body.collision_layer |= FRAME_LAYER

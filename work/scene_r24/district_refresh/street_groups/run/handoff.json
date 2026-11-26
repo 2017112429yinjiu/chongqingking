@@ -1,0 +1,98 @@
+[
+  {
+    "detail": "",
+    "name": "primary_starts_at_shelf",
+    "pass": true
+  },
+  {
+    "detail": "",
+    "name": "primary_pickup",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 83.5114914821461,
+      "end": "(-162.0289, 20.06798, -37.86631)",
+      "goals": 8,
+      "max_frame_displacement_m": 0.16396190226078,
+      "name": "primary_walk",
+      "pass": true,
+      "reached": 8,
+      "stall_contacts": []
+    },
+    "name": "primary_walk",
+    "pass": true
+  },
+  {
+    "detail": "",
+    "name": "primary_drop",
+    "pass": true
+  },
+  {
+    "detail": "",
+    "name": "primary_one_payment",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 83.5184939000756,
+      "end": "(-116.5355, 13.72376, 30.58696)",
+      "goals": 8,
+      "max_frame_displacement_m": 0.108073987066746,
+      "name": "primary_return",
+      "pass": true,
+      "reached": 8,
+      "stall_contacts": []
+    },
+    "name": "primary_return",
+    "pass": true
+  },
+  {
+    "detail": "",
+    "name": "branch_starts_at_shelf",
+    "pass": true
+  },
+  {
+    "detail": "",
+    "name": "branch_pickup",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 93.8681986965239,
+      "end": "(-162.039, 20.06972, -37.90126)",
+      "goals": 7,
+      "max_frame_displacement_m": 0.0867159739136696,
+      "name": "branch_walk",
+      "pass": true,
+      "reached": 7,
+      "stall_contacts": []
+    },
+    "name": "branch_walk",
+    "pass": true
+  },
+  {
+    "detail": "",
+    "name": "branch_drop",
+    "pass": true
+  },
+  {
+    "detail": "",
+    "name": "branch_one_payment",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 93.8130388110876,
+      "end": "(-116.4425, 13.72924, 30.50177)",
+      "goals": 7,
+      "max_frame_displacement_m": 0.106918156147003,
+      "name": "branch_return",
+      "pass": true,
+      "reached": 7,
+      "stall_contacts": []
+    },
+    "name": "branch_return",
+    "pass": true
+  }
+]

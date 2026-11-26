@@ -58,6 +58,8 @@ func verify() -> void:
 	if all_halls:
 		for i in layout.plots.size():
 			var plot: Dictionary=layout.plots[i]
+			if plot.has("superseded_by"):
+				continue
 			var front: float=-plot.depth/2.0
 			var door: float=plot.door_u
 			var test := [world(plot,door,front-.94,.072),world(plot,door,front+.75,.072),
@@ -121,6 +123,8 @@ func verify() -> void:
 			var key:=str(signf(one.east_north[0]))+"_"+str(signf(one.east_north[1]))
 			if tested.has(key): continue
 			var two: Dictionary=layout.plots[lane.plots[1]]
+			if one.has("superseded_by") or two.has("superseded_by"):
+				continue
 			var points: Array=[public_floor(lane.points[0],one.height), public_floor(lane.points[1],two.height)]
 			if not points.has(Vector3.INF):
 				await trial("shared_%s_%s"%[lane.plots[0],lane.plots[1]],points)

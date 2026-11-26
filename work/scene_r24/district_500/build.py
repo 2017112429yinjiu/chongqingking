@@ -1,7 +1,9 @@
 """Blender 4.3.2: blender -b -t 4 -P build.py. Coordinates are east, north, up."""
 from bisect import bisect_right
+from hashlib import sha256
 import json
 from math import atan2, cos, hypot, pi, sin
+import os
 from pathlib import Path
 from random import Random
 import sys
@@ -418,7 +420,33 @@ occupied=[]
 destinations=[]
 removed_for_walkway=[]
 removed_for_courts=[]
-def building(x,y,angle,w,d,floors,kind,named=""):
+ownership_output = os.environ.get("CQ_OUTER_PLOT_OWNERSHIP")
+ownership = {}
+owned_batches = (blocks, facades, street, solid)
+ownership_plots = {int(value) for value in os.environ.get("CQ_OUTER_PLOT_IDS", "").split(",") if value}
+
+def record_faces(plot_id, starts):
+    if ownership_plots and plot_id not in ownership_plots:
+        return
+    for batch, start in zip(owned_batches, starts):
+        faces = batch.faces[start:]
+        if faces:
+            hashes = []
+            for face in faces:
+                vertices = sorted(tuple(batch.vertices[index]) for index in face)
+                hashes.append(sha256(np.array(vertices, dtype="<f4").tobytes()).hexdigest()[:24])
+            ownership.setdefault(plot_id, {}).setdefault(batch.name, []).append({"start": start, "faces": hashes})
+
+def building(*args):
+    if not ownership_output:
+        return build_plot(*args)
+    starts = [len(batch.faces) for batch in owned_batches]
+    previous = len(plots)
+    build_plot(*args)
+    if len(plots) > previous:
+        record_faces(plots[-1]["plot_id"], starts)
+
+def build_plot(x,y,angle,w,d,floors,kind,named=""):
     frame=local_frame(x,y,angle)
     corners=[frame(a,b,0)[:2] for a in (-w/2,w/2) for b in (-d/2,d/2)]
     if any(not patch(a,b) or max(abs(a),abs(b))<113 or max(abs(a),abs(b))>245 for a,b in corners):
@@ -451,8 +479,19 @@ def building(x,y,angle,w,d,floors,kind,named=""):
         rng.random()
         return
     # These are inherited gameplay sites. A new building must use a registered source polygon.
-    if legacy_sites.get(str(plot["plot_id"])) != [plot["east_north"],angle,w,d]:
+    site = legacy_sites.get(str(plot["plot_id"]))
+    if site is None or any(abs(a-b) > 1e-9 for a, b in zip((x, y, angle, w, d), (*site[0], *site[1:]))):
         raise ValueError(("Unregistered building layout", plot["plot_id"],x,y))
+    if site != [plot["east_north"], angle, w, d]:
+        (x, y), angle, w, d = site
+        frame = local_frame(x, y, angle)
+        ry = -d/2
+        levels = [height(*frame(u, v, 0)[:2]) for u in (-w/2, w/2) for v in (ry, -ry)]
+        base = max(levels) + .17
+        top = base + floors*2.95
+        if not named:
+            portal = (.14 if kind%2 else -.14)*w
+        plot.update(east_north=[x, y], bearing=angle, width=w, depth=d, height=base, roof=top, door_u=portal)
     if str(plot["plot_id"]) in real_courts["retired"]:
         removed_for_courts.append(plot["plot_id"])
         rng.random()
@@ -744,6 +783,8 @@ repair["grade"](plots[0],repair_site,xx,yy,heights,mx,my,rgba)
 historic_grades=court_ground["prepare"](real_courts,height,xx,yy,heights,mx,my,rgba)
 
 for p in plots:
+    if ownership_output:
+        starts = [len(batch.faces) for batch in owned_batches]
     frame=local_frame(*p["east_north"],p["bearing"])
     pocket=Geometry("COL_Outer500_Court_%02d"%p["plot_id"]) if p.get("court") else solid
     fixtures=Geometry("Outer500_CourtDetails_%02d"%p["plot_id"]) if p.get("court") else street
@@ -781,6 +822,11 @@ for p in plots:
     else:
         new_run=kerb_stair(p,yard_box,plot_ground,stone,p["depth"]/2,1,reservation,street_plan["xy"])
         p["back_stair_m"]=new_run if new_run is not None else ground_floors["apron"](p,yard_box,plot_ground,stone,p["depth"]/2,1)
+    if ownership_output:
+        record_faces(p["plot_id"], starts)
+if ownership_output:
+    Path(ownership_output).write_text(json.dumps(ownership, indent=2) + "\n", encoding="utf-8")
+    raise SystemExit(0)
 paths=yards["connect_lanes"](plots,segments,patch,road_distance,mx,my,rgba)
 surface_work=run_path(str(BLOCK_STUDY/"surface.py"))["apply"](plots,osm,roads,mx,my,rgba)
 save_surface_mask()
@@ -967,6 +1013,10 @@ trail_prefixes,trail_roofs=run_path(str(HERE/"context_owners.py"))["conflicting_
 prefixes, roof_cuts = run_path(str(HERE/"context_owners.py"))["conflicting_context"](owned,old_meshes,legacy_roofs,mapped_buildings+[585541371])
 prefixes=sorted(set(prefixes+trail_prefixes))
 roof_cuts=[list(r) for r in dict.fromkeys(tuple(v) for v in roof_cuts+trail_roofs)]
+match_factory = json.loads((HERE.parent / "district_refresh/street_groups/factory.json").read_bytes())
+for plot in plots:
+    if plot["plot_id"] in match_factory["replaced_trial_plots"]:
+        plot["superseded_by"] = match_factory["way"]
 (OUT / "layout.json").write_text(json.dumps({
     "bounds_east_north_m":[-250,-250,250,250],
     "projection_origin_wgs84":[osm["center_lon"],osm["center_lat"]],

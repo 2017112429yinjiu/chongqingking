@@ -62,13 +62,22 @@ with bpy.data.libraries.load(str(here / "outer_district.blend"), link=True, rela
     draft.objects=list(source.objects)
 collection=bpy.data.collections.new("500 m playable expansion")
 bpy.context.scene.collection.children.link(collection)
+factory_dir = here.parent / "district_refresh/street_groups"
+factory_plan = json.loads((root / "work/project/chongqing_godot_v05/assets/district_500/match_factory.json").read_bytes())
+factory_override = set(factory_plan["replacement_meshes"])
+factory_retired = set(factory_plan["retired_objects"])
+with bpy.data.libraries.load(str(factory_dir / "match_factory.blend"), link=True, relative=True) as (source, factory):
+    factory.objects = factory_plan["new_meshes"] + factory_plan["replacement_meshes"]
+for item in factory.objects:
+    collection.objects.link(item)
 court_data=json.loads((root / "work/project/chongqing_godot_v05/assets/district_500/historic_courts.json").read_bytes())
 old_roots=court_data["superseded_outer_roots"]
 with bpy.data.libraries.load(str(here / "interior_terrain.blend"), link=True, relative=True) as (source, corrected):
     corrected.objects = source.objects[:]
-replaced = {obj.name for obj in corrected.objects}
+replaced = {obj.name for obj in corrected.objects} | factory_override | factory_retired
 for obj in corrected.objects:
-    collection.objects.link(obj)
+    if obj.name not in factory_override:
+        collection.objects.link(obj)
 for obj in draft.objects:
     if obj.name in replaced:
         continue

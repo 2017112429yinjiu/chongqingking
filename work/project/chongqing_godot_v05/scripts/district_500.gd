@@ -4,6 +4,8 @@ const MODEL := "res://assets/district_500/outer_district.glb"
 const LAYOUT := "res://assets/district_500/layout.json"
 const INTERIOR_TERRAIN := "res://assets/district_500/interior_terrain.json"
 const RIVERSIDE := "res://assets/district_500/riverside.glb"
+const MATCH_FACTORY := "res://assets/district_500/match_factory.glb"
+const MATCH_FACTORY_SITE := "res://assets/district_500/match_factory.json"
 
 static func install(city: Node3D) -> Dictionary:
 	var district := (load(MODEL) as PackedScene).instantiate() as Node3D
@@ -29,6 +31,8 @@ static func install(city: Node3D) -> Dictionary:
 	var riverside := (load(RIVERSIDE) as PackedScene).instantiate()
 	riverside.name = "RiversideWalk"
 	district.add_child(riverside)
+	if not "--qa-without-match-factory" in OS.get_cmdline_user_args():
+		install_match_factory(district)
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -177,7 +181,25 @@ static func install(city: Node3D) -> Dictionary:
 		district.add_child(label)
 	return {"bounds_east_north_m": layout.bounds_east_north_m,
 		"glb_sha256": FileAccess.get_sha256(MODEL), "riverside_sha256": FileAccess.get_sha256(RIVERSIDE),
+		"match_factory_sha256": FileAccess.get_sha256(MATCH_FACTORY),
 		"retired_internal_context": local_frame != null, "osm_building_ids": retire}
+
+
+static func install_match_factory(district: Node3D) -> void:
+	var plan: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(MATCH_FACTORY_SITE))
+	var layer := (load(MATCH_FACTORY) as PackedScene).instantiate() as Node3D
+	layer.name = "MatchFactory"
+	for mesh_name: String in plan.replacement_meshes:
+		var original := district.find_child(mesh_name, true, false) as MeshInstance3D
+		var updated := layer.find_child(mesh_name, true, false) as MeshInstance3D
+		assert(original and updated, mesh_name)
+		original.mesh = updated.mesh
+		updated.free()
+	for mesh_name: String in plan.retired_objects:
+		var old := district.find_child(mesh_name, true, false)
+		assert(old, mesh_name)
+		old.free()
+	district.add_child(layer)
 
 
 static func place_worker(district: Node3D,p: Dictionary) -> void:
@@ -258,6 +280,12 @@ static func start_exploration(scene: Node3D) -> void:
 		var park := collision.raycast_ground(scene, Vector3(-205.0, -12.0, 210.0), 6.0)
 		if not park.is_empty():
 			scene.explorer.set_walk_origin(park.position + Vector3.UP * 0.035, Vector3(-191.0, -13.5, 214.0))
+	elif "--match-factory" in OS.get_cmdline_user_args():
+		var plan: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(MATCH_FACTORY_SITE))
+		var point: Array = plan.walks_east_north.lower_frontage[0]
+		var factory := collision.raycast_ground(scene, Vector3(point[0], 20.0, -point[1]), 15.0)
+		if not factory.is_empty():
+			scene.explorer.set_walk_origin(factory.position + Vector3.UP * .035, Vector3(230, 14, 119))
 	if "--outer-market" in OS.get_cmdline_user_args():
 		var layout: Dictionary=JSON.parse_string(FileAccess.get_file_as_string(LAYOUT))
 		for i in layout.plots.size():
