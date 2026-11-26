@@ -82,7 +82,8 @@ def make():
     for idx in range(64):
         group,vol=divmod(idx,8)
         series,names=families[group];title=names.split()[vol]
-        bg,accent,ink=palette[(group*5+vol*7+vol//3)%len(palette)]
+        family_color=(1,3,6,9,2,5,11,8)[group]
+        bg,accent,ink=palette[family_color if vol in (0,1,2,4,5) else (group*3+vol*7)%len(palette)]
         plate=Image.new("RGB",(512,256),bg)
         d=ImageDraw.Draw(plate)
         # Back / spine / front are distinct press plates; both sides have print.
@@ -115,8 +116,8 @@ def make():
             strip=strip.rotate(90,expand=True)
             plate.paste(strip,(230,25),strip)
         if vol%3!=1:d.line((222,17,273,17),fill=spineink,width=2)
-        if (idx+group)%5 in (0,2,3):
-            d.rectangle((218,198,279,235),fill="#ece4cb")
+        if (idx+group)%5 in (0,3):
+            d.rectangle((218,198,279,235),fill=("#c9b99c","#d6c9af","#d3cbbb")[group%3])
             d.rectangle((218,198,279,204),fill=("#873d39","#44625a","#546380")[group%3])
             d.text((248,207),f"{'IKJGTZFP'[group]} {idx+12}",font=font(12,True),fill="#292b29",anchor="mt")
             d.text((248,222),f"{idx+152:03}·{vol+1}",font=font(8),fill="#45473f",anchor="mt")
@@ -134,7 +135,13 @@ def make():
         fabric=np.asarray(weave.crop(((vol*49)%480,group*67,(vol*49)%480+512,group*67+256))).astype(float)
         grain=(fabric-fabric.mean())*(.17 if vol%3==0 else .027)+rng.normal(0,1.65,(256,512))
         yy,xx=np.indices((256,512));scuff=np.exp(-np.minimum(abs(xx-217),abs(xx-279))/2.2)
-        color=np.asarray(plate).astype(float)+grain[:,:,None]+(5.5*scuff)[:,:,None]
+        # Paper yellows most at exposed corners. Faded cloth retains a little of its
+        # dyed surface in the recessed hinge; keep the type and catalogue tickets legible.
+        base=np.asarray(plate).astype(float)
+        paper=np.clip((base.mean(axis=2)-125)/90,0,1)
+        ends=np.exp(-np.minimum(yy,255-yy)/10)
+        base-=paper[:,:,None]*np.array([10.,14.,21.])*(.65+ends[:,:,None]*.7)
+        color=base+grain[:,:,None]+(4.5*scuff)[:,:,None]
         pos=(idx%8*512,idx//8*256)
         diffuse.paste(Image.fromarray(np.uint8(np.clip(color,0,255))),pos)
         surface=164+vol%3*18+grain*1.2-12*scuff
@@ -147,7 +154,7 @@ def make():
     value=layers[bent]+rng.normal(0,1.7,xx.shape)-7*np.exp(-np.minimum(yy,255-yy)/15)
     for i in range(5,510,14): value[np.abs(bent-i)<1]-=11
     samples=[]
-    for color in ((228,220,201),(211,191,156),(235,231,218),(216,212,194)):
+    for color in ((209,199,176),(188,168,135),(222,215,199),(202,197,173)):
         samples.append(np.array(color)[None,None,:]+value[:,:,None])
     paper=np.concatenate(samples,axis=0)
     Image.fromarray(np.uint8(np.clip(paper,0,255))).save(here/"cut_paper.png",optimize=True)

@@ -151,39 +151,65 @@ class Volumes:
         obj["printed_designs"]=len(self.prints)
         bpy.context.collection.objects.link(obj)
 
-def fill_case(index,start,end,y,bays,storey,point,mats):
+def fill_case(index,start,end,y,bays,storey,point,mats,tiers,pitch,deck):
     rng=Random(1864+index)
     unit=(end-start)/bays
     reverse=index==2
+    direction=-1 if reverse else 1
     batch=Volumes("Court_Jinma_Books_Case_%d"%(index+1),point,mats)
-    for k in range(5):
-        base=storey+.198+k*.43
+    for k in range(tiers):
+        base=storey+.16+k*pitch+deck
         for j in range(bays):
-            left,right=start+j*unit+.051,start+(j+1)*unit-.053
-            # Some donated volumes face out, others form short subject runs.
-            feature=(j+k*3+index*2)%7==2
-            lean_group=rng.randrange(2,6)
-            x=left+rng.uniform(.004,.035)
-            n=0
-            editions=list(range(64))
-            rng.shuffle(editions)
-            while x<right-.028:
-                edition=editions[n]
-                w=rng.uniform(.018,.047) if n%7 else rng.uniform(.041,.060)
-                h=rng.uniform(.187,.308)
-                d=h*rng.uniform(.63,.80)
-                face=feature and n==3
-                mode="display" if face else "standing"
-                angle=rng.uniform(.055,.095) if n%13==lean_group and not face else 0.
-                advance=d if face else w*cos(angle)+h*sin(angle)
-                if x+advance>right:break
-                # Reverse the entire book frame on the case against the front wall.
-                u=x+advance if reverse else x
-                v=rng.uniform(-.172,-.125) if not face else -.117
-                batch.book((u,y-v if reverse else y+v,base),(w,d,h),edition,mode,angle,reverse=reverse,aged=n%3==0)
-                x+=advance+rng.uniform(.001,.005)
-                if n%8==5:x+=rng.uniform(.005,.031)
-                n+=1
+            x=start+j*unit+.049
+            right=start+(j+1)*unit-.049
+            feature=(j*3+k+index)%11==2
+            flat=(j+3*k+2*index)%12==3
+            if flat:
+                # One returned stack per few bays. A flat book's height becomes its shelf depth.
+                height=.0
+                for m in range(3+(j+k)%3):
+                    thick=rng.uniform(.018,.033)
+                    batch.book((x+(.205 if reverse else 0),y-direction*.156,base+height),
+                               (thick,.18,.243),(7*j+5*k+m)%64,"flat",reverse=reverse,yaw=.014*sin(m+j))
+                    height+=thick
+                x+=.21
+            # Acquisition runs share trim size, stock and publication design. Mix in
+            # individually donated books; leave the occasional book-width space.
+            run=0
+            while x<right-.025:
+                family=(j+2*k+3*index+run*3)%8
+                count=rng.randint(3,7)
+                first=rng.randrange(8)
+                h0=rng.choice((.225,.249,.268,.286,.301))
+                w0=rng.uniform(.021,.038)
+                d0=h0*rng.uniform(.63,.72)
+                inset=rng.uniform(.016,.049)
+                leaning=(run+2*k+j)%6==1
+                for n in range(count):
+                    edition=family*8+(first+n)%8
+                    h=h0+rng.uniform(-.006,.006)
+                    w=w0*rng.uniform(.72,1.24)
+                    d=d0+rng.uniform(-.005,.005)
+                    if n==count-1 and rng.random()<.62:
+                        edition=rng.randrange(64)
+                        h=rng.uniform(.202,.304)
+                        d=h*.71
+                    face=feature and n==0 and run==1
+                    angle=.064 if leaning and not face else 0.
+                    # Parallel tilted bindings share a slope. Reserve the last
+                    # book's complete swept width before starting the next run.
+                    width=d if face else w*cos(angle)+h*sin(angle)
+                    if x+width>right:
+                        x=right
+                        break
+                    u=x+width if reverse else x
+                    v=y+direction*(-.211+inset+rng.uniform(-.004,.004))
+                    batch.book((u,v,base),(w,d,h),edition,"display" if face else "standing",
+                               angle,reverse=reverse,aged=(family+n)%4<2)
+                    advance=width if face or n==count-1 else w/max(.99,cos(angle))
+                    x+=advance+rng.uniform(.0006,.0028)
+                x+=rng.uniform(.005,.019) if rng.random()<.77 else rng.uniform(.025,.055)
+                run+=1
     batch.save()
 
 def fill_tables(length,depth,storey,point,mats):

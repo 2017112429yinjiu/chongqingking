@@ -1,0 +1,502 @@
+{
+  "previous_commit": "ebf7b830d212656184839b9623b11c7d2a2a0e60",
+  "engine": "Godot 4.6.3 Forward+",
+  "entry": "first_shift.tscn",
+  "scope": "Jinma former school. Room layout and entrance alignments inherited from the registered site. Books are original game designs. Rear steps fit the existing game grade.",
+  "source_before": {
+    "source": "outer_prior.blend",
+    "tiles": {
+      "COL_Outer500_Surface_01_06": 3,
+      "COL_Outer500_Surface_02_05": 171,
+      "COL_Outer500_Surface_02_06": 396
+    },
+    "floor_area_m2": 484.23117086500133,
+    "covered_area_m2": 484.23117086500315,
+    "minimum_slab_top_to_earth_m": -1.2643081041289612
+  },
+  "source_after": {
+    "source": "outer_district.blend",
+    "tiles": {
+      "COL_Outer500_Surface_01_06": 3,
+      "COL_Outer500_Surface_02_05": 2676,
+      "COL_Outer500_Surface_02_06": 5296
+    },
+    "floor_area_m2": 484.23117086500133,
+    "covered_area_m2": 484.23117110661315,
+    "minimum_slab_top_to_earth_m": 0.16000053100585987
+  },
+  "reopened_city": {
+    "source": "city_and_outer.local.blend",
+    "tiles": {
+      "COL_Outer500_Surface_02_06": 5296,
+      "COL_Outer500_Surface_02_05": 2676,
+      "COL_Outer500_Surface_01_06": 3
+    },
+    "floor_area_m2": 484.23117086500133,
+    "covered_area_m2": 484.23117110661315,
+    "minimum_slab_top_to_earth_m": 0.16000053100585987
+  },
+  "native_50cm_grid": {
+    "before": {
+      "COL_Court_Structure_jinma_classrooms/CQ_StaticCollision": 59,
+      "COL_Court_jinma_classrooms/CQ_StaticCollision": 1704,
+      "COL_Outer500_Surface_02_05/CQ_StaticCollision": 2,
+      "COL_Outer500_Surface_02_06/CQ_StaticCollision": 27
+    },
+    "after": {
+      "COL_Court_Structure_jinma_classrooms/CQ_StaticCollision": 59,
+      "COL_Court_jinma_classrooms/CQ_StaticCollision": 1733
+    },
+    "missing": 0,
+    "highest_prior_outer_hit_m": 0.473
+  },
+  "former_rear_iteration": "Indoor surface passed, rear-passage photograph still showed soil over the approach. Regraded the entire width and fitted 19 stone treads.",
+  "rear_treads": {
+    "detail": {
+      "failed": [],
+      "probes": 95,
+      "treads": 19
+    },
+    "name": "rear_tread_support",
+    "pass": true
+  },
+  "books": {
+    "Case_1": {
+      "volumes": 1595,
+      "printed_plate_cells": 64,
+      "full_cover_faces": 3190,
+      "rounded_spine_strips": 6380,
+      "paper_faces": 4785,
+      "support": {
+        "on_timber": 1577,
+        "on_lower_volume": 18
+      }
+    },
+    "Case_2": {
+      "volumes": 1893,
+      "printed_plate_cells": 64,
+      "full_cover_faces": 3786,
+      "rounded_spine_strips": 7572,
+      "paper_faces": 5679,
+      "support": {
+        "on_timber": 1875,
+        "on_lower_volume": 18
+      }
+    },
+    "Case_3": {
+      "volumes": 1048,
+      "printed_plate_cells": 64,
+      "full_cover_faces": 2096,
+      "rounded_spine_strips": 4192,
+      "paper_faces": 3144,
+      "support": {
+        "on_timber": 1041,
+        "on_lower_volume": 7
+      }
+    },
+    "DisplayTables": {
+      "volumes": 19,
+      "printed_plate_cells": 18,
+      "full_cover_faces": 36,
+      "rounded_spine_strips": 72,
+      "paper_faces": 76
+    }
+  },
+  "material_checks": [
+    {
+      "detail": "",
+      "name": "cabinet_grain_contact_1",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "cabinet_grain_contact_2",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "cabinet_grain_contact_3",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "mesh_Case_1",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "contact": true,
+          "name": "Jinma printed bookcloth and jackets",
+          "pixels": [
+            4096,
+            2048
+          ],
+          "roughness_map": true
+        },
+        {
+          "contact": true,
+          "name": "Jinma cut paper signatures",
+          "pixels": [
+            512,
+            1024
+          ],
+          "roughness_map": false
+        }
+      ],
+      "name": "bound_print_Case_1",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "baked_contact_Case_1",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "cut_paper_Case_1",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "mesh_Case_2",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "contact": true,
+          "name": "Jinma printed bookcloth and jackets",
+          "pixels": [
+            4096,
+            2048
+          ],
+          "roughness_map": true
+        },
+        {
+          "contact": true,
+          "name": "Jinma cut paper signatures",
+          "pixels": [
+            512,
+            1024
+          ],
+          "roughness_map": false
+        }
+      ],
+      "name": "bound_print_Case_2",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "baked_contact_Case_2",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "cut_paper_Case_2",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "mesh_Case_3",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "contact": true,
+          "name": "Jinma printed bookcloth and jackets",
+          "pixels": [
+            4096,
+            2048
+          ],
+          "roughness_map": true
+        },
+        {
+          "contact": true,
+          "name": "Jinma cut paper signatures",
+          "pixels": [
+            512,
+            1024
+          ],
+          "roughness_map": false
+        }
+      ],
+      "name": "bound_print_Case_3",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "baked_contact_Case_3",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "cut_paper_Case_3",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "mesh_DisplayTables",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "contact": true,
+          "name": "Jinma printed bookcloth and jackets",
+          "pixels": [
+            4096,
+            2048
+          ],
+          "roughness_map": true
+        },
+        {
+          "contact": true,
+          "name": "Jinma cut paper signatures",
+          "pixels": [
+            512,
+            1024
+          ],
+          "roughness_map": false
+        },
+        {
+          "contact": true,
+          "name": "Jinma printed reading spread",
+          "pixels": [
+            768,
+            512
+          ],
+          "roughness_map": false
+        }
+      ],
+      "name": "bound_print_DisplayTables",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "baked_contact_DisplayTables",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "cut_paper_DisplayTables",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "printed_open_spread",
+      "pass": true
+    }
+  ],
+  "walks": [
+    {
+      "detail": {
+        "distance_m": 31.891280519776,
+        "end": "(-181.0399, 19.631, -33.34448)",
+        "goals": 8,
+        "max_frame_displacement_m": 0.10720232874155,
+        "name": "renai_from_delivery_court_out",
+        "pass": true,
+        "reached": 8,
+        "stall_contacts": []
+      },
+      "name": "renai_from_delivery_court_out",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 32.0788292977959,
+        "end": "(-162.0441, 20.07078, -37.91202)",
+        "goals": 8,
+        "max_frame_displacement_m": 0.0925210937857628,
+        "name": "renai_from_delivery_court_back",
+        "pass": true,
+        "reached": 8,
+        "stall_contacts": []
+      },
+      "name": "renai_from_delivery_court_back",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 52.4197245752439,
+        "end": "(-126.4879, 26.0438, -65.5236)",
+        "goals": 14,
+        "max_frame_displacement_m": 0.167281523346901,
+        "name": "school_from_delivery_court_out",
+        "pass": true,
+        "reached": 14,
+        "stall_contacts": []
+      },
+      "name": "school_from_delivery_court_out",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 52.300026576966,
+        "end": "(-162.0934, 20.07433, -37.91757)",
+        "goals": 14,
+        "max_frame_displacement_m": 0.119423255324364,
+        "name": "school_from_delivery_court_back",
+        "pass": true,
+        "reached": 14,
+        "stall_contacts": []
+      },
+      "name": "school_from_delivery_court_back",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 14.6212659925222,
+        "end": "(-119.9476, 26.46329, -52.51738)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.165048196911812,
+        "name": "reading_room_stair_out",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "name": "reading_room_stair_out",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 14.6938876938075,
+        "end": "(-132.0331, 22.982, -53.35514)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.117057703435421,
+        "name": "reading_room_stair_back",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "name": "reading_room_stair_back",
+      "pass": true
+    }
+  ],
+  "delivery": {
+    "checks": [
+      {
+        "detail": "",
+        "name": "spawn_at_pickup",
+        "pass": true
+      },
+      {
+        "detail": "",
+        "name": "pickup_with_E",
+        "pass": true
+      },
+      {
+        "detail": {
+          "distance_m": 83.5099775353447,
+          "end": "(-162.0284, 20.06787, -37.86493)",
+          "goals": 8,
+          "max_frame_displacement_m": 0.16396190226078,
+          "name": "pickup_to_signed_receipt",
+          "pass": true,
+          "reached": 8,
+          "stall_contacts": []
+        },
+        "name": "walk_to_receiver",
+        "pass": true
+      },
+      {
+        "detail": "",
+        "name": "receipt_with_E",
+        "pass": true
+      },
+      {
+        "detail": {
+          "distance_m": 53.848698085174,
+          "end": "(-119.9485, 26.46329, -52.51754)",
+          "goals": 14,
+          "max_frame_displacement_m": 0.161844298243523,
+          "name": "receipt_to_upstairs_reading_room",
+          "pass": true,
+          "reached": 14,
+          "stall_contacts": []
+        },
+        "name": "walk_to_upstairs_library",
+        "pass": true
+      },
+      {
+        "detail": "(-119.9485, 26.46329, -52.51754)",
+        "name": "on_reading_floor",
+        "pass": true
+      }
+    ],
+    "images": 237,
+    "physics_hz": 60,
+    "ticks_per_image": 9
+  },
+  "native_checks": {
+    "walk": 28,
+    "handoff": 12,
+    "walk_mapped": 2,
+    "delivery_take": 6,
+    "library_books": 22
+  },
+  "digests": {
+    "delivery_courts.blend": "10dea278ac89a517ae2d26beb5b2cf583da229bb5fd8610c03deea31486b8eb9",
+    "outer_district.blend": "ac0208b4ef2cbcc42db199f9d4d1908e76fea929b06230aba95976f9b5e9b612",
+    "outer_district.glb": "b0180ce3a8d821253181725ad4516c04f58fe057529680e22a081f89fdd62122",
+    "historic_courts.glb": "d0989b3f6ea84ee16c7f34894769dcb2b8224c16e14d8394ac2b26ea0e311502",
+    "delivery.mp4": "7b2ebe171f9f93544d81fb3ab6b69eb850b0b98e68efa303ff40cc4529a834bb"
+  },
+  "all_roads": {
+    "mentor_legs": 28,
+    "player_surface_routes_completed": {
+      "out": 26,
+      "back": 26
+    },
+    "walk_return_trips_at_six_junctions": 18,
+    "additional_street_entry_return_trips": 4,
+    "gate_cross_sections": 300,
+    "run": "jinma_room_exit_01"
+  },
+  "library_timing": {
+    "adapter": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "engine": "4.6.3-stable (official)",
+    "render_method": "forward_plus",
+    "scale_3d": 1.0,
+    "viewport": "(692.0, 389.0)",
+    "views": [
+      {
+        "gpu_p50_ms": 6.74700021743774,
+        "gpu_p95_ms": 7.30100011825562,
+        "samples": 150,
+        "view": "aisle",
+        "wall_p95_ms": 7.748
+      },
+      {
+        "gpu_p50_ms": 6.67500019073486,
+        "gpu_p95_ms": 7.13100004196167,
+        "samples": 150,
+        "view": "spines",
+        "wall_p95_ms": 8.077
+      },
+      {
+        "gpu_p50_ms": 7.18699979782104,
+        "gpu_p95_ms": 7.74900007247925,
+        "samples": 150,
+        "view": "desk",
+        "wall_p95_ms": 8.585
+      }
+    ],
+    "window": "(1152, 648)"
+  },
+  "independent_headless_recheck": {
+    "walk": 28,
+    "handoff": 12,
+    "walk_mapped": 2,
+    "delivery_take": 6,
+    "library_books": 22
+  },
+  "delivery_video": {
+    "frames": 237,
+    "fps": 6.666666507720947,
+    "width": 1152,
+    "height": 648
+  }
+}

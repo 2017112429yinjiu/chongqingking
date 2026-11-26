@@ -40,6 +40,7 @@ def main():
         if not version.startswith(expected):
             raise RuntimeError(f"Expected {expected}, found {version.splitlines()[0]}")
     run("source",[args.blender,"-b",str(here/"delivery_courts.blend"),"--python-exit-code","8","-P",str(here/"audit.py")])
+    run("subgrade",[args.blender,"-b",str(here.parent/"district_500/outer_district.blend"),"--python-exit-code","8","-P",str(here/"library_books/subgrade.py")])
     run("import",[args.godot,"--headless","--editor","--import","--path",str(game)])
     common=["--fixed-fps","60","--path",str(game)]
     flags=["--","--explore-500","--shancheng","--day-one-test","--qa-still-frames"]
@@ -61,9 +62,15 @@ def main():
     inspected=json.loads((books/"materials.json").read_bytes())["checks"]
     if not inspected or not all(row["pass"] for row in inspected):
         raise RuntimeError(f"Missing printed bindings in {books}")
-    results["library_books"]=len(inspected)
+    ground=json.loads((books/"ground.json").read_bytes())
+    if ground["missing"] or ground["unexpected"]:
+        raise RuntimeError(f"Unowned or obstructed floor in {books}")
+    rear=json.loads((books/"rear_steps.json").read_bytes())
+    if not rear["pass"]:
+        raise RuntimeError(f"Obstructed rear treads in {books}")
+    results["library_books"]=len(ground["checks"])+1
     if args.capture:
-        for view in ("player_shelf","spines","opposing_case","far_case","table","page_edges"):
+        for view in ("player_shelf","spines","opposing_case","far_case","table","page_edges","entry","east","west","rear","rear_threshold","reading_aisle"):
             if not (books/f"{view}.png").is_file():
                 raise RuntimeError(f"Missing book view {view}")
         views=run("views",[args.godot,"--resolution","1152x648",*common,"--script",str(here/"views.gd"),*flags])

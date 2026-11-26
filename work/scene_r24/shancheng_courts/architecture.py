@@ -403,21 +403,15 @@ def build(record):
                 slab(furniture,x-.15,y-.15,storey,x+.15,y+.15,height-.20,fired)
         bindings=run_path(str(here/"library_books/bindings.py"))
         book_mats=bindings["materials"]()
+        joinery=run_path(str(here/"library_books/casework.py"))
+        wood=finish("Jinma rubbed cabinet lacquer",(1.,.97,.90),"wood_table_worn_diff_2k.jpg")
+        mats[wood].node_tree.nodes.get("Principled BSDF").inputs["Roughness"].default_value=.52
         cases=[(1.1,11.7,depth-.72),(19.,length-1.0,depth-.72),(1.1,8.0,1.0)]
         for index,(start,end,y) in enumerate(cases):
-            bays_n=max(1,int((end-start)/1.22))
-            unit=(end-start)/bays_n
-            for j in range(bays_n+1):
-                x=start+j*unit
-                slab(interior,x-.035,y-.20,storey+.10,x+.035,y+.19,storey+2.38,timber)
-            for k in range(6):
-                z=storey+.16+k*.43
-                slab(interior,start,y-.22,z,end,y+.20,z+.038,timber)
-            back=y+(.175 if index<2 else -.180)
-            for j in range(bays_n):
-                a0=start+j*unit+.035
-                slab(furniture,a0,back,storey+.16,a0+unit-.070,back+.010,storey+2.35,timber)
-            bindings["fill_case"](index,start,end,y,bays_n,storey,point,book_mats)
+            bays_n=round((end-start)/.98)
+            joinery["build"](index,start,end,y,bays_n,storey,point,mats[wood])
+            bindings["fill_case"](index,start,end,y,bays_n,storey,point,book_mats,
+                                  joinery["TIERS"],joinery["PITCH"],joinery["DECK"])
         bindings["fill_tables"](length,depth,storey,point,book_mats)
         for frac in (.23,.40,.84):
             x=length*frac;y=depth*.40
@@ -528,7 +522,9 @@ def build(record):
 
 buildings=[build(s) for s in study["buildings"]]
 
-paths=run_path(str(here/"court_paths.py"))["pave"](buildings,elevation,Mesh,flags,stone,forecourt)
+run_path(str(here/"library_books/contact.py"))["bake"]()
+
+paths=run_path(str(here/"court_paths.py"))["pave"](buildings,elevation,Mesh,flags,stone,forecourt,layout["jinma_rear_landing_m"])
 court_tools["paving"](forecourt,Mesh,stone,[chalkstone,warmstone,coolstone],soil)
 court_tools["entrance_planters"](forecourt,Mesh,stone)
 trees=court_tools["shade_trees"](forecourt,Mesh,timber)
@@ -543,4 +539,4 @@ for obj in proxies:
 bpy.ops.wm.save_as_mainfile(filepath=str(here/"delivery_courts.blend"),compress=True)
 for obj in proxies:
     obj.hide_render=False
-bpy.ops.export_scene.gltf(filepath=str(out/"historic_courts.glb"),export_format="GLB",export_yup=True)
+bpy.ops.export_scene.gltf(filepath=str(out/"historic_courts.glb"),export_format="GLB",export_yup=True,export_vertex_color="ACTIVE")

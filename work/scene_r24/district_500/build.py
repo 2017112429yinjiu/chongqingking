@@ -793,9 +793,19 @@ if "--surface-mask-only" in sys.argv:
     current.update(lanes=paths,public_paving=surface_work)
     (OUT/"layout.json").write_text(json.dumps(current,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     raise SystemExit(0)
+school=next(f["points"] for f in real_courts["buildings"] if f["id"]=="jinma_classrooms")
+rear=(np.array(school[2])+school[3])*.5
+rear_axis=rear-(np.array(school[0])+school[1])*.5
+rear_axis/=np.linalg.norm(rear_axis)
+rear_landing=height(*(rear+6.2*rear_axis))+.055
+cut_bounds=np.vstack([school,rear+rear_axis*7])
+tile_min=np.floor((np.min(cut_bounds,axis=0)+250-4)/50).astype(int)
+tile_max=np.floor((np.max(cut_bounds,axis=0)+250+4)/50).astype(int)
 lookup={a:i for i,a in enumerate(axis)}
-for batch in chunks.values():
+for tile,batch in chunks.items():
     batch.vertices=[(x,y,float(heights[lookup[x],lookup[y]])) for x,y,_ in batch.vertices]
+    if all(tile_min[k]<=tile[k]<=tile_max[k] for k in (0,1)):
+        batch=court_ground["fit_school_perimeter"](batch,school,historic_grades["jinma_classrooms"],rear_landing)
     batch.finish()
 for p in courts:
     def outside_court(tree):
@@ -966,5 +976,5 @@ roof_cuts=[list(r) for r in dict.fromkeys(tuple(v) for v in roof_cuts+trail_roof
     "inferred_alignments":design,"registered_ties":ties,"destinations":destinations,
     "osm_building_ids":mapped_buildings,"plots":plots,"lanes":paths,"retired_context_prefixes":prefixes,"retired_roof_positions":roof_cuts,
     "building_count":len(plots)+len(mapped_buildings),"flyover_reserves":flyover_reserves,"household":household,"collidable_surface_tiles":len(chunks),"planting":tree_sites,
-    "historic_grades":historic_grades,"retired_for_historic_courts":removed_for_courts,"building_grades":building_grades,"removed_for_walkway":removed_for_walkway,"public_paving":surface_work,"floor_contact_bake":contact_bake,"interior_rail_return":rail_return,"lamps_in_buildings":retired_lamps,
+    "historic_grades":historic_grades,"jinma_rear_landing_m":rear_landing,"retired_for_historic_courts":removed_for_courts,"building_grades":building_grades,"removed_for_walkway":removed_for_walkway,"public_paving":surface_work,"floor_contact_bake":contact_bake,"interior_rail_return":rail_return,"lamps_in_buildings":retired_lamps,
 },ensure_ascii=False,indent=2)+"\n")

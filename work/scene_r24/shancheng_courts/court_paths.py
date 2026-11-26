@@ -1,7 +1,7 @@
 """Stone courses from the public lane to the Renai threshold and the Jinma court."""
 import numpy as np
 
-def pave(buildings,elevation,Mesh,flags,stone,court):
+def pave(buildings,elevation,Mesh,flags,stone,court,rear_landing):
     by_id={p["id"]:p for p in buildings}
     long=by_id["renai_long"]
     school=by_id["jinma_classrooms"]
@@ -79,9 +79,43 @@ def pave(buildings,elevation,Mesh,flags,stone,court):
                 if np.cross(np.subtract(pts[1],pts[0]),np.subtract(pts[2],pts[0]))[2]<0:pts.reverse()
                 stones.face(pts,stone if row==3 else flags[(i+row+j)%len(flags)])
     rear=np.array(school["back"])
-    rear_rec=dict(school,entry=rear.tolist(),inward=(-inward).tolist())
-    apron=approach(rear_rec,[rear+inward*6.2,rear+inward*3.8],.99)
-    results["school_back"]=apron
+    side=np.array([-inward[1],inward[0]])
+    foot=school["floor"]+.012
+    count=int(np.ceil((rear_landing-foot)/.165))
+    going=(6.2-.54)/count
+    rise=(rear_landing-foot)/count
+    def step_point(t,w,h):
+        return [*(rear+inward*t+side*w),h]
+    def top(mesh,t0,t1,w0,w1,low,high,mat):
+        mesh.face([step_point(t0,w0,low),step_point(t1,w0,high),
+                   step_point(t1,w1,high),step_point(t0,w1,low)],mat)
+    top(pavement,-.20,.54,-1.0,1.0,foot,foot,stone)
+    for i in range(count):
+        t=.54+going*i
+        h=foot+rise*(i+1)
+        top(pavement,t,t+going,-1.11,1.11,h,h,stone)
+        pavement.face([step_point(t,1.11,h-rise),step_point(t,-1.11,h-rise),
+                       step_point(t,-1.11,h),step_point(t,1.11,h)],flags[i%3])
+        joint=(-.20 if i%2 else .20)
+        for j,(l,r) in enumerate(((-.985,joint),(joint,.985))):
+            top(stones,t+.002,t+going-.004,l+.003,r-.003,h+.003,h+.003,flags[(i+j)%3])
+        for sign in (-1,1):
+            l,r=sorted((sign*.991,sign*1.11))
+            top(stones,t,t+going,l,r,h+.012,h+.012,stone)
+            w=sign*1.11
+            pts=[step_point(t,w,h-.38),step_point(t+going,w,h-.38),
+                 step_point(t+going,w,h+.012),step_point(t,w,h+.012)]
+            if sign>0:pts.reverse()
+            pavement.face(pts,stone)
+    # Beyond the last tread, stitch the complete landing width into the old grade.
+    for j in range(4):
+        l=-1.11+j*.555
+        r=l+.555
+        near=[step_point(6.2,w,rear_landing) for w in (l,r)]
+        far=[step_point(6.88,w,elevation(rear+inward*6.88+side*w)+.016) for w in (l,r)]
+        pavement.face([near[0],far[0],far[1],near[1]],stone)
+    results["school_back"]=[step_point(6.20,0,rear_landing),step_point(.54+going*(count//2+.5),0,foot+rise*(count//2+1)),
+                            step_point(.30,0,foot),step_point(-.20,0,foot)]
     pavement.save()
     stones.save()
     return results
