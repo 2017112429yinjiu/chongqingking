@@ -426,13 +426,6 @@ def build(record):
                     for dy in (-.15,.15):
                         slab(furniture,xx+dx-.025,yy+dy-.025,storey,xx+dx+.025,yy+dy+.025,storey+.43,timber)
                 slab(furniture,xx-.20,yy-.19,storey+.67,xx+.20,yy-.13,storey+.87,timber)
-        # Short display partitions on the ground level leave the front to rear passage open.
-        for x in (pitch*2,pitch*10):
-            slab(interior,x-.10,depth*.38,0,x+.10,depth*.61,2.43,chalk)
-            slab(trim,x-.115,depth*.38,0,x+.115,depth*.61,.91,green)
-            for y in (depth*.42,depth*.50,depth*.58):
-                slab(trim,x+.105,y-.30,1.12,x+.16,y+.30,1.92,timber)
-                slab(trim,x+.162,y-.255,1.18,x+.175,y+.255,1.85,pages)
         stair_route=[[float(v) for v in point(x,stair_y,h)] for x,h in ((x0-.64,0),(x0+.56,.30),(x0+run+.40,storey),(x0+run+1.32,storey))]
         stair_route.append([float(v) for v in point(x0+run+1.35,depth*.78,storey)])
         # One green canopy and folding chairs beside the frontage appear in the court photograph.

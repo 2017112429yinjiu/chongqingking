@@ -1,6 +1,12 @@
 # 金马寺小学旧址 · 一楼展厅与二楼阅览室
 
-从市场取餐，经仁爱堂签收后进馆。当前版本的连续录像保留了从街上到二楼书架的玩家视角。[这次实走](evidence/room_fit/delivery.mp4)
+## 一楼楼梯旁的绿白短墙
+
+箭头指向原先为故事馆加的独立展墙。模型里有两处，每处高 2.43 米，木框里只有空白面片。实景照片里的绿色墙裙沿入口走廊的墙面延伸；馆方志愿者记载的展馆约一间教室大小。现有资料无法确认这两处独立展墙的位置和做法，已连同六幅空框和墙体碰撞撤掉。[玩家标注](evidence/story_wall/player.png) · [入口走廊实拍](https://gochina.com.tw/chongqing-jinmasi-primary-school-shancheng-lane/) · [志愿者的故事馆记录](https://www.meipian.cn/4h4zwp4k)
+
+重开整城组合，核对原墙位和旁边的木柱，又从原来的两个方向看过一楼。Godot 实测中，旧版本在两处都会挡住角色，修改后角色可以从两处横穿再走回来。[楼梯旁同机位对照](evidence/story_wall/east.jpg) · [另一侧同机位对照](evidence/story_wall/west.jpg) · [网格与实走检查](evidence/story_wall/inspection.json)
+
+从市场取餐，经仁爱堂签收后进馆。上一轮修地板和书架时录下了从街上到二楼的玩家视角。[上一轮实走](evidence/room_fit/delivery.mp4)
 
 ## 一楼地板与后门
 

@@ -15,6 +15,28 @@ func apron_point(school: Dictionary, x: float, y: float) -> Vector3:
 	check("apron_ground_%.2f_%.2f"%[x,y],not hit.is_empty() and hit.collider.get_parent().name==&"COL_Court_Jinma_Apron",str(hit.get("position")))
 	return hit.get("position",from)+Vector3.UP*.045
 
+# These two former display walls were part of the structural collision mesh.
+# Cross their footprints clear of the stair, including the height of the old frames.
+func check_exhibit_crossings(school: Dictionary) -> void:
+	var ring:=PackedVector3Array()
+	for p: Array in school.ring:
+		ring.append(level_point(p,school.floor))
+	var along:=(ring[1]-ring[0]).normalized()
+	var space:=scene.get_world_3d().direct_space_state
+	for bay: int in [2,10]:
+		var near:=ring[0].lerp(ring[1],bay/13.0)
+		var far:=ring[3].lerp(ring[2],bay/13.0)
+		var obstructions: Array=[]
+		for depth_fraction: float in [.395,.425,.45]:
+			for height: float in [.35,1.45,2.15]:
+				var p:=near.lerp(far,depth_fraction)+Vector3.UP*height
+				var hit:=space.intersect_ray(PhysicsRayQueryParameters3D.create(p-along*.7,p+along*.7,1))
+				if not hit.is_empty():
+					obstructions.append(str(hit.collider.get_parent().name))
+		check("former_display_clear_%d"%bay,obstructions.is_empty(),{"rays":9,"blocked":obstructions})
+		var mid:=near.lerp(far,.425)
+		await trial("former_display_%d"%bay,[mid-along*1.25,mid+along*1.25])
+
 func verify() -> void:
 	output = OS.get_environment("CQ_QA_DIR")
 	DirAccess.make_dir_recursive_absolute(output)
@@ -50,6 +72,7 @@ func verify() -> void:
 				pts.append(level_point([step[0],step[1]],step[2]))
 		await trial(key+"_from_delivery_court",pts)
 	var school: Dictionary=buildings.jinma_classrooms
+	await check_exhibit_crossings(school)
 	var upper: Array=[level_point(school.inside,school.floor)]
 	for step: Array in school.stairs_to_library:
 		upper.append(level_point([step[0],step[1]],step[2]))

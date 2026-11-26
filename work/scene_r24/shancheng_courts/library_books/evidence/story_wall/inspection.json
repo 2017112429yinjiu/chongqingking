@@ -1,0 +1,231 @@
+{
+  "scene": "first_shift.tscn",
+  "godot": "4.6.3 Forward+",
+  "player_image_sha256": "0b207c5190d26e5286aef06cc07f9efa3a8a70b84bf47145db108050e34749c6",
+  "previous_mesh": {
+    "baseline": "8ad70a70",
+    "mesh_nodes": 49,
+    "removed_triangle_count": {
+      "Court_Millwork_jinma_classrooms": 168,
+      "COL_Court_Structure_jinma_classrooms": 24
+    }
+  },
+  "reopened_city": {
+    "file": "city_and_outer.local.blend",
+    "blender": "4.3.2",
+    "meshes": [
+      {
+        "mesh": "COL_Court_Structure_jinma_classrooms",
+        "unobstructed_rays": 36
+      },
+      {
+        "mesh": "Court_Millwork_jinma_classrooms",
+        "unobstructed_rays": 36
+      }
+    ]
+  },
+  "previous_walk": [
+    {
+      "detail": {
+        "blocked": [
+          "COL_Court_Structure_jinma_classrooms",
+          "COL_Court_Structure_jinma_classrooms",
+          "COL_Court_Structure_jinma_classrooms",
+          "COL_Court_Structure_jinma_classrooms",
+          "COL_Court_Structure_jinma_classrooms",
+          "COL_Court_Structure_jinma_classrooms",
+          "COL_Court_Structure_jinma_classrooms",
+          "COL_Court_Structure_jinma_classrooms",
+          "COL_Court_Structure_jinma_classrooms"
+        ],
+        "rays": 9
+      },
+      "name": "former_display_clear_2",
+      "pass": false
+    },
+    {
+      "detail": {
+        "distance_m": 1.45402796869166,
+        "end": "(-143.6302, 22.96987, -56.17097)",
+        "goals": 1,
+        "max_frame_displacement_m": 0.0699986219406128,
+        "name": "former_display_2_out",
+        "pass": false,
+        "reached": 0,
+        "stall_contacts": [
+          {
+            "mesh": "COL_Court_Structure_jinma_classrooms",
+            "normal": "(-0.909264, 0.0, -0.41622)",
+            "position": "(-143.3522, 24.43178, -56.04145)"
+          }
+        ]
+      },
+      "name": "former_display_2_out",
+      "pass": false
+    },
+    {
+      "detail": {
+        "blocked": [
+          "COL_Court_Structure_jinma_classrooms",
+          "COL_Court_Structure_jinma_classrooms",
+          "COL_Court_Structure_jinma_classrooms",
+          "COL_Court_Structure_jinma_classrooms",
+          "COL_Court_Structure_jinma_classrooms",
+          "COL_Court_Structure_jinma_classrooms",
+          "COL_Court_Structure_jinma_classrooms",
+          "COL_Court_Structure_jinma_classrooms",
+          "COL_Court_Structure_jinma_classrooms"
+        ],
+        "rays": 9
+      },
+      "name": "former_display_clear_10",
+      "pass": false
+    },
+    {
+      "detail": {
+        "distance_m": 1.45195832126774,
+        "end": "(-125.0608, 22.96987, -48.37146)",
+        "goals": 1,
+        "max_frame_displacement_m": 0.0699986219406128,
+        "name": "former_display_10_out",
+        "pass": false,
+        "reached": 0,
+        "stall_contacts": [
+          {
+            "mesh": "COL_Court_Structure_jinma_classrooms",
+            "normal": "(-0.907802, 0.0, -0.419398)",
+            "position": "(-124.7834, 24.43178, -48.24088)"
+          }
+        ]
+      },
+      "name": "former_display_10_out",
+      "pass": false
+    }
+  ],
+  "current_walk": [
+    {
+      "detail": {
+        "blocked": [],
+        "rays": 9
+      },
+      "name": "former_display_clear_2",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 2.26279268041253,
+        "end": "(-141.8272, 22.97047, -56.08816)",
+        "goals": 1,
+        "max_frame_displacement_m": 0.0699986219406128,
+        "name": "former_display_2_out",
+        "pass": true,
+        "reached": 1,
+        "stall_contacts": []
+      },
+      "name": "former_display_2_out",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 2.25741320475936,
+        "end": "(-144.202, 22.97047, -56.9337)",
+        "goals": 1,
+        "max_frame_displacement_m": 0.0700066909193993,
+        "name": "former_display_2_back",
+        "pass": true,
+        "reached": 1,
+        "stall_contacts": []
+      },
+      "name": "former_display_2_back",
+      "pass": true
+    },
+    {
+      "detail": {
+        "blocked": [],
+        "rays": 9
+      },
+      "name": "former_display_clear_10",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 2.26279258541763,
+        "end": "(-123.2573, 22.97047, -48.28476)",
+        "goals": 1,
+        "max_frame_displacement_m": 0.0699986219406128,
+        "name": "former_display_10_out",
+        "pass": true,
+        "reached": 1,
+        "stall_contacts": []
+      },
+      "name": "former_display_10_out",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 2.25758064724505,
+        "end": "(-125.6323, 22.97047, -49.13036)",
+        "goals": 1,
+        "max_frame_displacement_m": 0.070002056658268,
+        "name": "former_display_10_back",
+        "pass": true,
+        "reached": 1,
+        "stall_contacts": []
+      },
+      "name": "former_display_10_back",
+      "pass": true
+    }
+  ],
+  "delivery_and_court_checks": {
+    "walk": 34,
+    "handoff": 12,
+    "walk_mapped": 2,
+    "delivery_take": 6
+  },
+  "reference": {
+    "site": "金马寺小学旧址入口走廊",
+    "publisher": "GO CHINA",
+    "article": "https://gochina.com.tw/chongqing-jinmasi-primary-school-shancheng-lane/",
+    "image_url": "https://gochina.com.tw/wp-content/uploads/2026/11/jinmasi-primary-school-c09.jpg.webp",
+    "sha256": "825d57b6c4fc69866bfee2426db059e6d7d90a40124e91ce573c6221e877691b",
+    "use": "Reference for the existing painted corridor wall. No reference photograph is included in the game."
+  },
+  "candidate_sha256": {
+    "delivery_courts.blend": "fa3ac2f7b298ad060550707869b7b0e9bd8295f936a74030d67f15da13e02339",
+    "historic_courts.glb": "12c48f32706007da6ad46c45e8c7a6dccce1d1d6db00afb6610bfc583c6c67f4"
+  },
+  "district_patrol": {
+    "mentor_legs": 28,
+    "player_surface_routes_completed": {
+      "out": 26,
+      "back": 26
+    },
+    "walk_return_trips_at_six_junctions": 18,
+    "gate_cross_sections": 300,
+    "run": "jinma_story_wall_01"
+  },
+  "gpu": {
+    "adapter": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "engine": "4.6.3-stable (official)",
+    "render_method": "forward_plus",
+    "scale_3d": 1.0,
+    "viewport": "(692.0, 389.0)",
+    "views": [
+      {
+        "gpu_p50_ms": 5.52699995040894,
+        "gpu_p95_ms": 5.75600004196167,
+        "samples": 150,
+        "view": "east",
+        "wall_p95_ms": 6.816
+      },
+      {
+        "gpu_p50_ms": 10.039999961853,
+        "gpu_p95_ms": 10.5080003738403,
+        "samples": 150,
+        "view": "west",
+        "wall_p95_ms": 13.786
+      }
+    ],
+    "window": "(1152, 648)"
+  }
+}
