@@ -2,10 +2,22 @@ extends RefCounted
 
 const MODEL := "res://assets/district_500/outer_district.glb"
 const LAYOUT := "res://assets/district_500/layout.json"
+const INTERIOR_TERRAIN := "res://assets/district_500/interior_terrain.json"
 
 static func install(city: Node3D) -> Dictionary:
 	var district := (load(MODEL) as PackedScene).instantiate() as Node3D
 	district.name = "OuterDistrict500"
+	var correction: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(INTERIOR_TERRAIN))
+	var mesh_layer := (load("res://assets/district_500/interior_terrain.glb") as PackedScene).instantiate()
+	for mesh_name: String in correction.tiles_and_wall:
+		var original := district.find_child(mesh_name, true, false) as MeshInstance3D
+		var replacement := mesh_layer.find_child(mesh_name, true, false) as MeshInstance3D
+		assert(original and replacement, mesh_name)
+		original.mesh = replacement.mesh
+	mesh_layer.free()
+	var relocated: Array = correction.tree_east_north_up
+	var tree_mesh := district.find_child("Outer500_Plant_036", true, false) as MeshInstance3D
+	tree_mesh.position = enu(relocated)
 	city.add_child(district)
 	var low_landing := (load("res://assets/district_500/landing_53.glb") as PackedScene).instantiate() as Node3D
 	district.add_child(low_landing)
@@ -87,7 +99,7 @@ static func install(city: Node3D) -> Dictionary:
 	var planting: Array=layout.planting
 	for index in planting.size():
 		var tree: Dictionary=planting[index]
-		var p: Array=tree.east_north_up
+		var p: Array=relocated if index == 36 else tree.east_north_up
 		var centre:=Vector2(p[0],p[1])
 		if replaced_roots.any(func(old: Vector2): return old.distance_squared_to(centre)<.01):
 			var prior:=district.find_child("Outer500_Plant_%03d"%index,true,false) as MeshInstance3D

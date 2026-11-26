@@ -64,7 +64,14 @@ collection=bpy.data.collections.new("500 m playable expansion")
 bpy.context.scene.collection.children.link(collection)
 court_data=json.loads((root / "work/project/chongqing_godot_v05/assets/district_500/historic_courts.json").read_bytes())
 old_roots=court_data["superseded_outer_roots"]
+with bpy.data.libraries.load(str(here / "interior_terrain.blend"), link=True, relative=True) as (source, corrected):
+    corrected.objects = source.objects[:]
+replaced = {obj.name for obj in corrected.objects}
+for obj in corrected.objects:
+    collection.objects.link(obj)
 for obj in draft.objects:
+    if obj.name in replaced:
+        continue
     if (obj.name.startswith("Outer500_Plant_") and
         any((obj.location.x-x)**2+(obj.location.y-y)**2<.01 for x,y in old_roots)):
         continue
