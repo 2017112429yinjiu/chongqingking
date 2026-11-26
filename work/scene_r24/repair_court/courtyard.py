@@ -27,6 +27,7 @@ def upper(p, member, trim, m):
             for u in np.linspace(l,r,7)[1:-1]:
                 trim(u-.016,v+.07,z+1.75,u+.016,v+.11,z+2.15,m["wood"])
             trim(l,v+.09,z+.8,r,v+.10,z+2.12,m["glass"])
+            p["facade_work"]["windows"] += 1
     # Enclosed timber bays overhang the street on the two roof lots, as on the
     # cliff-walk frontage photograph. Joinery is a reconstruction at this scale.
     axes=p["frame"]["u"]
