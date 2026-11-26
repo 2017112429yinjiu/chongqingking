@@ -33,8 +33,12 @@ godot --headless --editor --import --path work/project/chongqing_godot_v05
 
 ## 云端第一批复测
 
-组合源复开成功，含 8 个修正对象。78 处室内采样中，高于完成面 15 mm 的采样从 466 个降到 0 个。Godot 在原六个内点命中外区真实地形碰撞，净低 78–102 mm。四栋西北房门洞 8/8 向通过。
+组合源复开成功，含 8 个修正对象。78 处室内共 48,868 对有效样本，高于完成面 15 mm 的采样从 466 个降到 0 个。Godot 在原六个内点命中外区真实地形碰撞，净低 78–102 mm。四栋西北房门洞 8/8 向通过。
 
 37 号两侧及中线从街上进门与反向出门均通过，合计 6/6，单程 6.91–7.01 m。原入口复查共 38 向通过 36 向。1、2 号右侧直接斜切仍撞柱，两栋经平台转折的进出均通过。保留失败轨迹。山城巷取送与修理院的交互分别通过 12/12 和 10/10。
 
-首轮缓存导入缺 53 号的两张提取纹理，复跑前重新导入该 GLB。下列数据来自完整资产的复跑。[地面前](evidence/floors-before.json) · [地面后](evidence/floors-after.json) · [运行时碰撞](evidence/floor-contacts.json) · [入口与失败](evidence/stairs.json) · [门洞](evidence/mapped-doors.json) · [送单](evidence/handoff.json) · [修车](evidence/repair-walk.json) · [地块索引](evidence/plot-sources.json)
+全区 71 个穿堂、68 间普通房共 136 次进出和首班初始化均通过。71 个正门双向直走由 132/142 增至 133/142，仅 37 号进门的结果变化。跨区步行、骑行各 10 段全部通过，实走 1,452.73 m、实骑 1,450.63 m，轨迹采样进入 25 个分区中的 13 个。其余分区不能由该路线集的通过推定。
+
+Godot 实际保存 18 张云端原生图。56 号露出原地砖，42 号窗内无原枝叶，37 号梯脚与反望可见净宽和两翼挡墙。固定机位保存了其余七处植被候选的画面，待补窗内反向及不透明像素的逐点查验。640 × 360 请求下，游戏生成 1180 × 663 的图。Compatibility 渲染日志保留了 Forward+ 次表面散射提示、V-Sync 提示和程序退出时的两条纹理资源告警。正常试玩加载至山城巷取件台。
+
+首轮缓存导入缺 53 号的两张提取纹理，复跑前重新导入该 GLB。下列数据来自完整资产的复跑。[地面前](evidence/floors-before.json) · [地面后](evidence/floors-after.json) · [运行时碰撞](evidence/floor-contacts.json) · [石梯与失败](evidence/stairs.json) · [门洞](evidence/mapped-doors.json) · [正门直走](evidence/approaches.json) · [穿堂与普通房](evidence/all-halls.json) · [跨区步行骑行](evidence/outer-roads.json) · [送单](evidence/handoff.json) · [修车](evidence/repair-walk.json) · [镜头坐标](evidence/views.json) · [地块索引](evidence/plot-sources.json)

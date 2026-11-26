@@ -2,6 +2,7 @@ extends "../map_review/survey.gd"
 
 func verify() -> void:
 	output = OS.get_environment("CQ_QA_DIR")
+	RenderingServer.render_loop_enabled = false
 	scene = load("res://first_shift.tscn").instantiate()
 	root.add_child(scene)
 	for i in range(1600):
@@ -10,10 +11,10 @@ func verify() -> void:
 		await physics_frame
 	assert(scene.gameplay != null)
 	await frames(25)
-	RenderingServer.render_loop_enabled = false
 	scene.hud.hide()
 	cam = Camera3D.new()
 	scene.add_child(cam)
+	cam.far = 145.0
 	cam.make_current()
 
 	var names := ["plot_01_street", "plot_02_street", "plot_37_street", "plot_42_room",

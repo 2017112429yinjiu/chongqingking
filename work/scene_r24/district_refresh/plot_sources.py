@@ -35,6 +35,26 @@ def outline(plot):
     return [[x + c*u - s*v, y + s*u + c*v] for u, v in [(-w, -d), (w, -d), (w, d), (-w, d)]]
 
 
+def nearest_way(point, ways):
+    def segment_distance_sq(start, end):
+        dx, dy = end[0] - start[0], end[1] - start[1]
+        span_sq = dx * dx + dy * dy
+        x, y = point[0] - start[0], point[1] - start[1]
+        t = min(1., max(0., (x * dx + y * dy) / span_sq)) if span_sq else 0.
+        return (x - dx * t) ** 2 + (y - dy * t) ** 2
+
+    distance, way = min(
+        ((min(segment_distance_sq(a, b) for a, b in zip(w["points"], w["points"][1:])), w)
+         for w in ways if len(w["points"]) > 1),
+        key=lambda candidate: candidate[0],
+    )
+    tags = way["tags"]
+    return {"osm": way["id"], "name": tags.get("name"), "type": way["type"],
+            "centre_distance_m": round(sqrt(distance), 2), "layer": tags.get("layer"),
+            "bridge": tags.get("bridge"), "tunnel": tags.get("tunnel"),
+            "source": way["source_url"]}
+
+
 def atlas(image, output, geo, park, plots):
     """Keep the imagery and annotated atlas outside the versioned assets."""
     from PIL import Image, ImageDraw, ImageFont
@@ -73,12 +93,17 @@ def main():
     park = load(SITE / "frontage_controls.json")["park"]
     plots = []
     sectors = defaultdict(list)
+    mapped_buildings = geo["buildings"] + geo["context_buildings"]
     for p in sorted(load(GAME / "assets/district_500/layout.json")["plots"], key=lambda p: p["plot_id"]):
         xy = p["east_north"]
         sector = cell(*xy)
         row = {"id": p["plot_id"], "centre": xy, "sector": sector,
                "footprint": outline(p), "inside_park_boundary": inside(xy, park["boundary"]),
-               "registered_site": p.get("registered_site"), "building_type_confirmed": False}
+               "registered_site": p.get("registered_site"), "building_type_confirmed": False,
+               "mapped_buildings_at_centre": sorted({b["id"] for b in mapped_buildings
+                                                     if inside(xy, b["points"])}),
+               "nearest_mapped_road": nearest_way(xy, geo["roads"]),
+               "nearest_mapped_path": nearest_way(xy, geo["paths"])}
         plots.append(row)
         sectors[sector].append(row["id"])
     footprints = defaultdict(list)
