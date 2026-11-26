@@ -31,9 +31,9 @@
 
 ## 验证和后续批次
 
-- [组合 Blender 源复开检查](evidence/source.json)涵盖五段檐口、承重件、院廊以及台阶与项目内南区路车道外缘的净距。檐口误差只衡量模型对描图的贴合程度。
+- [组合 Blender 源复开检查](evidence/source.json)涵盖五段檐口、承重件、院廊以及台阶与项目内南区路车道外缘的净距。檐口误差只衡量模型对描图的贴合程度。复开的修理铺网格有 32 根底部接基座、顶部接檐板的通柱。柜台上方同一轴线上有 7 段横梁，最大净跨 4.37 米。
 - [连续实走物理记录](evidence/walk.json)涵盖从街入铺、充气、进院和原路返回。各段记录距离、抵达点和停滞碰撞。录像使用同一次运行的玩家镜头，按记录下来的物理帧频编码。
 - [送单和旧城区回归](evidence/regression.json)另行记录接单、签收、结算、学校楼上通路及既有道路巡检。
-- [原 75 个地块的台账](evidence/inventory.json)记录 4 个已经撤下的占位、1 个首次按图重建且保留原编号的地块、70 个待核地块。本院的两片临街屋面和三面屋廊共计一次地块替换。
+- [原 75 个地块的台账](evidence/inventory.json)记录 4 个已经撤下的占位、1 个首次按图重建且保留原编号的地块、70 个待核地块。本院的两片临街屋面和三面屋廊共计一次地块替换。按旧墙到送单线中心线的距离，待核队列中最近的是 4 号，约 48.24 米；其与旧城相接的栏杆已有维修记录。
 
 在 Windows 独立克隆中打开 Godot 4.6.3 的默认 `first_shift.tscn`。用 `work/scene_r24/repair_court/verify.ps1 -Run <新名> -Capture` 可用 Blender 4.3.2 重开组合源、导入 Godot 并重新走一次。楼位由 `register.py` 生成，主要建模文件是 `courtyard.py`。修改几何后先让 Blender 后台运行 `../district_500/build.py`，导出同版的 `outer_district.blend` 和 `outer_district.glb`。山城巷送单单独运行 `../shancheng_courts/verify.py`，旧城区巡检运行 `../district_patrol/verify.ps1 -Run <新名> -AllRoads -Timing`。

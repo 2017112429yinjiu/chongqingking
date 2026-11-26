@@ -24,6 +24,28 @@ def vertices(o):
 court=vertices(parts["Outer500_RepairCourt_TimberAndStone"])
 front=bpy.data.objects["Outer500_Facades_and_storefronts"]
 front_vertices=vertices(front)
+# Detect the exact four-corner column boxes in the re-opened mesh from foot to roof.
+bearing=p["bearing"]
+rot=np.array([[np.cos(bearing),-np.sin(bearing)],[np.sin(bearing),np.cos(bearing)]])
+frame_verts=vertices(parts["COL_Outer500_Frame_00"])
+local_xy=(frame_verts[:,:2]-p["east_north"])@rot
+local_verts=np.column_stack([local_xy,frame_verts[:,2]])
+verts_set=set(map(tuple,np.round(local_verts,3)))
+r=p["frame"]["radius"]
+columns=0
+for u in p["frame"]["u"]:
+    for v in p["frame"]["v"]:
+        pts=[(u+dx,v+dy,h) for dx in (-r,r) for dy in (-r,r) for h in (p["height"]-.18,p["roof"])]
+        assert all(tuple(np.round(pt,3)) in verts_set for pt in pts)
+        columns+=1
+beams=[]
+v=p["frame"]["v"][1]
+for a,b in zip(p["frame"]["u"],p["frame"]["u"][1:]):
+    top=p["height"]+p["frame"]["storey"]-p["frame"]["slab"]
+    for u in (a+r,b-r):
+        for edge in (v-.145,v+.145):
+            assert tuple(np.round([u,edge,top-p["frame"]["transverse_drop"]],3)) in verts_set
+    beams.append(b-a-2*r)
 roof_residuals={}
 for key,ring in site["roof_rings"].items():
     mesh=front_vertices if key.startswith("front") else court
@@ -49,6 +71,7 @@ assert per_plot==71 and sum("registered_site" not in q for q in layout["plots"])
 record={"blender":bpy.app.version_string,"source":Path(bpy.data.filepath).name,"linked":reopened_libraries,
         "members":{o.name:len(o.data.polygons) for o in parts.values()},"eaves_to_digitized_plan_max_m":roof_residuals,
         "stair_outer_edge_to_motor_road_edge_m":round(road_margin,3),
-        "treads":route["risers"],"rise_m":route["rise_m"],"going_m":route["going_m"],
+        "registered_columns_from_ground_to_eaves":columns,"upper_floor_beams_over_counter":len(beams),
+        "max_clear_beam_span_m":round(max(beams),3),"treads":route["risers"],"rise_m":route["rise_m"],"going_m":route["going_m"],
         "pending_old_plots":70}
 (Path(os.environ["CQ_QA_DIR"])/"source.json").write_text(json.dumps(record,indent=2)+"\n",encoding="utf-8")

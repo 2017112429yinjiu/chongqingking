@@ -162,5 +162,97 @@
   "patrol_initial": {
     "run": "repair_court_01",
     "note": "The district was under revision during this first survey. See the final patrol and exact-build rechecks for the accepted observations."
+  },
+  "patrol": {
+    "run": "repair_court_final04",
+    "options": [
+      "-AllRoads",
+      "-Timing"
+    ],
+    "summary": {
+      "mentor_routes": 14,
+      "mentor_legs": 28,
+      "mentor_distance_m": 3453.93,
+      "player_surface_routes_completed": {
+        "out": 26,
+        "back": 26
+      },
+      "historical_underground_alignments_excluded": 4,
+      "walk_return_trips_at_six_junctions": 18,
+      "additional_street_entry_return_trips": 4,
+      "inner_surface_points": 2120,
+      "gate_cross_sections": 300,
+      "max_gate_error_m": 0.00620094299316407,
+      "east_stair_edge_points": 216,
+      "north_edge_max_difference_m_over_13cm": 0.0417556762695313,
+      "native_scene": "first_shift.tscn",
+      "engine": "4.6.3-stable (official)"
+    },
+    "timing": {
+      "device": "NVIDIA GeForce RTX 4070 Laptop GPU",
+      "viewport": "(692.0, 389.0)",
+      "views": [
+        {
+          "gpu_p50_ms": 4.62099981307983,
+          "gpu_p95_ms": 5.13000011444092,
+          "samples": 150,
+          "view": "switchback",
+          "wall_p95_ms": 9.745
+        },
+        {
+          "gpu_p50_ms": 7.48099994659424,
+          "gpu_p95_ms": 8.01599979400635,
+          "samples": 150,
+          "view": "crossing",
+          "wall_p95_ms": 12.524
+        },
+        {
+          "gpu_p50_ms": 6.35300016403198,
+          "gpu_p95_ms": 6.88700008392334,
+          "samples": 150,
+          "view": "301",
+          "wall_p95_ms": 9.929
+        }
+      ],
+      "window": "(1152, 648)"
+    },
+    "local_run_summary_sha256": "0ba30a78161100d8a6fb2ac2ca52fa0d74b4c319b0f7798025e98ad548e61d3b",
+    "scope": "Only the two outer-court paving materials changed while this run was in progress; all early cases were independently reopened on the final export.",
+    "final_geometry_rechecks": {
+      "junction_profiles": {
+        "file": "corner.json",
+        "sha256": "6b1f5fd28adf475a7fdb106b3f18fdc28b77d1976d78d9205f2a262bfc83fadb"
+      },
+      "older_crossings": {
+        "file": "crossings.json",
+        "sha256": "9bb59f81c4f7f216c61ed02bb4fd10ae84711bd2081cf5811c54b9d4a20569c9",
+        "checks_passed": 19
+      },
+      "pavement": {
+        "file": "pavement.json",
+        "sha256": "05d906128e8f2114d25ccc5da5a00986cb28b1acfecedf2eb902b03ecd95e3e5",
+        "checks_passed": 10
+      },
+      "ride": {
+        "file": "patrol.json",
+        "sha256": "0c974904c93764ebdcb2994b997b3ae005a7c2d50b2681b925fb3366a0f9d36d"
+      },
+      "sites": {
+        "file": "sites.json",
+        "sha256": "1d0851c3de2a94ee064c8ed898df69fe07292c5d61515e2a6b9c1eec402bd223",
+        "checks_passed": 15
+      },
+      "turns": {
+        "file": "turns.json",
+        "sha256": "d773d976437be6a17347bf8b540de237671db20745c8b4d920e3c673defb4b6a",
+        "checks_passed": 7
+      }
+    }
+  },
+  "captured_route": {
+    "mp4": "street_court_return.mp4",
+    "frames": 101,
+    "seconds": 15.15,
+    "sha256": "785c78b1caf5897fde0697b715a2f74230c632b301eb1bb0f784e4b7834c8379"
   }
 }
