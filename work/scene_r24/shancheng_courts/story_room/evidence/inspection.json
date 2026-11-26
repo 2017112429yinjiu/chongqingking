@@ -1,0 +1,152 @@
+{
+  "engine": "Godot 4.6.3 Forward+",
+  "entry": "first_shift.tscn --explore-500 --shancheng",
+  "before_commit": "b8d99a7cf99c3ff7e3d305f4a797893e4f42a629",
+  "checks": {
+    "walk": 34,
+    "handoff": 12,
+    "walk_mapped": 2,
+    "delivery_take": 6,
+    "story_walk": 8,
+    "library_books": 22
+  },
+  "source": {
+    "heights_above_floor_m": {
+      "joined_desk_1": 0.769,
+      "joined_desk_2": 0.769,
+      "bench_1": 0.429,
+      "bench_2": 0.429,
+      "window_desk": 0.776,
+      "fare_box_stand": 0.933,
+      "window_case_glass": 1.192
+    },
+    "desk_foot_gaps_m": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "support_below_four_glass_case_posts_m": [
+      0.776,
+      0.776,
+      0.776,
+      0.776
+    ],
+    "original_print_tiles_used": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "packed_printwork_sha256": "ba4e91d2de33d856bff86bb8812c54462abe2134a1fc4c3c014daeaadca55c6c"
+  },
+  "district_blend": {
+    "blender": "4.3.2",
+    "source": "city_and_outer.local.blend",
+    "linked_school": "delivery_courts.blend",
+    "collection": {
+      "heights_above_floor_m": {
+        "joined_desk_1": 0.769,
+        "joined_desk_2": 0.769,
+        "bench_1": 0.429,
+        "bench_2": 0.429,
+        "window_desk": 0.776,
+        "fare_box_stand": 0.933,
+        "window_case_glass": 1.192
+      },
+      "desk_foot_gaps_m": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "support_below_four_glass_case_posts_m": [
+        0.776,
+        0.776,
+        0.776,
+        0.776
+      ],
+      "original_print_tiles_used": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "packed_printwork_sha256": "ba4e91d2de33d856bff86bb8812c54462abe2134a1fc4c3c014daeaadca55c6c"
+    }
+  },
+  "downstairs_floor": {
+    "missing": 0,
+    "unexpected": []
+  },
+  "rear_treads": true,
+  "reopened_movie": {
+    "frames": 76,
+    "fps": 6.666666507720947,
+    "width": 1152,
+    "height": 648
+  },
+  "gpu_sampling": {
+    "adapter": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "engine": "4.6.3-stable (official)",
+    "render_method": "forward_plus",
+    "scale_3d": 1.0,
+    "viewport": "(692.0, 389.0)",
+    "views": [
+      {
+        "gpu_p50_ms": 9.11900043487549,
+        "gpu_p95_ms": 9.6560001373291,
+        "samples": 150,
+        "view": "end_shelves",
+        "wall_p95_ms": 13.318
+      },
+      {
+        "gpu_p50_ms": 5.56099987030029,
+        "gpu_p95_ms": 5.81300020217896,
+        "samples": 150,
+        "view": "window_desks",
+        "wall_p95_ms": 7.946
+      },
+      {
+        "gpu_p50_ms": 6.55100011825562,
+        "gpu_p95_ms": 7.09299993515015,
+        "samples": 150,
+        "view": "stair_foot",
+        "wall_p95_ms": 9.645
+      }
+    ],
+    "window": "(1152, 648)"
+  }
+}

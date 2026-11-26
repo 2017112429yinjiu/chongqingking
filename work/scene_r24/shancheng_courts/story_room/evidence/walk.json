@@ -1,0 +1,93 @@
+{
+  "checks": [
+    {
+      "detail": "",
+      "name": "original_collection_prints_imported",
+      "pass": true
+    },
+    {
+      "detail": {
+        "spots": [
+          {
+            "energy": 1.14999997615814,
+            "name": "Story exhibit spot 1",
+            "shadow": true
+          },
+          {
+            "energy": 1.14999997615814,
+            "name": "Story exhibit spot 2",
+            "shadow": true
+          }
+        ]
+      },
+      "name": "imported_track_lighting",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "display_furniture_has_physics",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 5.32244458328933,
+        "end": "(-131.0203, 22.98178, -46.31608)",
+        "goals": 4,
+        "max_frame_displacement_m": 0.0726755112409592,
+        "name": "door_to_ticket_stand",
+        "pass": true,
+        "reached": 4,
+        "stall_contacts": []
+      },
+      "name": "door_to_ticket_stand",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 4.65457078441978,
+        "end": "(-127.2542, 22.98178, -46.91435)",
+        "goals": 3,
+        "max_frame_displacement_m": 0.0726475790143013,
+        "name": "window_to_end_display",
+        "pass": true,
+        "reached": 3,
+        "stall_contacts": []
+      },
+      "name": "window_to_end_display",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 8.53865479119122,
+        "end": "(-130.5826, 22.98337, -53.1005)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0730449184775352,
+        "name": "display_to_stair",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "name": "display_to_stair",
+      "pass": true
+    },
+    {
+      "detail": {
+        "walk_m": 18.5156701589003
+      },
+      "name": "arrived_at_stair",
+      "pass": true
+    },
+    {
+      "detail": {
+        "end": "(-130.5826, 22.98337, -53.1005)",
+        "foot_shift_m": 0.0,
+        "turn_degrees": 156.08634860763
+      },
+      "name": "look_back_from_stair_foot",
+      "pass": true
+    }
+  ],
+  "images": 76,
+  "physics_hz": 60,
+  "ticks_per_image": 9
+}

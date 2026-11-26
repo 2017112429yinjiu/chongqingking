@@ -47,10 +47,15 @@ func inspect_floor() -> void:
 	var unexpected := []
 	var missing := 0
 	var space := scene.get_world_3d().direct_space_state
+	# Probe the ground under the documented display furniture as well as the aisles.
+	var furniture:=scene.find_child("COL_Court_Jinma_Story_Furniture",true,false)
+	var excluded: Array[RID]=[]
+	if furniture:
+		for body: StaticBody3D in furniture.find_children("*","StaticBody3D",true,false): excluded.append(body.get_rid())
 	for i in range(1,65):
 		for j in range(1,29):
 			var pos := ground(i*.5,j*.5,0)
-			var ray := PhysicsRayQueryParameters3D.create(pos+Vector3.UP*2.8,pos-Vector3.UP*.12,1)
+			var ray := PhysicsRayQueryParameters3D.create(pos+Vector3.UP*2.8,pos-Vector3.UP*.12,1,excluded)
 			var hit := space.intersect_ray(ray)
 			if hit.is_empty():
 				missing+=1

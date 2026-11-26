@@ -413,6 +413,7 @@ def build(record):
             bindings["fill_case"](index,start,end,y,bays_n,storey,point,book_mats,
                                   joinery["TIERS"],joinery["PITCH"],joinery["DECK"])
         bindings["fill_tables"](length,depth,storey,point,book_mats)
+        run_path(str(here/"story_room/room.py"))["build"](point,slab,interior,mats,finish,chalk,wood,timber,length,depth,storey)
         for frac in (.23,.40,.84):
             x=length*frac;y=depth*.40
             slab(interior,x-1.05,y-.48,storey+.77,x+1.05,y+.48,storey+.86,timber)
@@ -532,4 +533,4 @@ for obj in proxies:
 bpy.ops.wm.save_as_mainfile(filepath=str(here/"delivery_courts.blend"),compress=True)
 for obj in proxies:
     obj.hide_render=False
-bpy.ops.export_scene.gltf(filepath=str(out/"historic_courts.glb"),export_format="GLB",export_yup=True,export_vertex_color="ACTIVE")
+bpy.ops.export_scene.gltf(filepath=str(out/"historic_courts.glb"),export_format="GLB",export_yup=True,export_lights=True,export_vertex_color="ACTIVE")

@@ -46,8 +46,9 @@ def main():
     flags=["--","--explore-500","--shancheng","--day-one-test","--qa-still-frames"]
     results={}
     for script,filename in ((here/"walk.gd","walk.json"),(here.parent/"street_blocks/handoff.gd","handoff.json"),
-                             (here.parent/"street_blocks/walk_mapped.gd","walk.json"),(here/"delivery_take.gd","delivery_take.json")):
-        graphics=args.capture and script.stem=="delivery_take"
+                             (here.parent/"street_blocks/walk_mapped.gd","walk.json"),(here/"delivery_take.gd","delivery_take.json"),
+                             (here/"story_room/story_walk.gd","story_walk.json")):
+        graphics=args.capture and script.stem in ("delivery_take","story_walk")
         mode=["--resolution","1152x648","--disable-vsync"] if graphics else ["--headless"]
         folder=run(script.stem,[args.godot,*mode,*common,"--script",str(script),*flags])
         data=json.loads((folder/filename).read_bytes())
@@ -56,6 +57,10 @@ def main():
             raise RuntimeError(f"Incomplete survey: {folder}")
         if graphics and (data["images"] < 2 or len(list(folder.glob("walk_*.jpg")))!=data["images"]):
             raise RuntimeError(f"Missing frames in {folder}")
+        if graphics and script.stem=="story_walk":
+            for view in ("look_back","exhibit_corner","window_collection","glass_case","fare_box","reverse_cabinets"):
+                if not (folder/f"{view}.png").is_file():
+                    raise RuntimeError(f"Missing story room view {view}")
         results[script.stem]=len(checks)
     mode=["--resolution","1152x648","--disable-vsync"] if args.capture else ["--headless"]
     books=run("library_books",[args.godot,*mode,*common,"--script",str(here/"library_books/views.gd"),*flags])
