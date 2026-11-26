@@ -28,6 +28,10 @@ def cell(x, y):
     return "%d,%d" % (floor((x + 250) / 100), floor((y + 250) / 100))
 
 
+def intersects_district(points):
+    return all(min(p[i] for p in points) <= 250 and max(p[i] for p in points) >= -250 for i in (0, 1))
+
+
 def outline(plot):
     x, y = plot["east_north"]
     c, s = cos(plot["bearing"]), sin(plot["bearing"])
@@ -90,7 +94,20 @@ def atlas(image, output, geo, park, plots):
 
 def main():
     geo = load(GAME / "source_data/geo_layout.json")
-    park = load(SITE / "frontage_controls.json")["park"]
+    registry = load(SITE / "frontage_controls.json")
+    park = registry["park"]
+    frontages = [f for f in registry["frontages"] if any(intersects_district(r) for r in f["rings"])]
+    frontage_records = {}
+    for f in frontages:
+        osm = f["osm"]
+        osm_id = osm.split("@")[0]
+        kind = {"w": "way", "r": "relation"}[osm_id[0]]
+        frontage_records[osm] = {"gers": f["gers"], "mapped_storeys": f["source_storeys"],
+                                  "source": f"https://www.openstreetmap.org/{kind}/{osm_id[1:]}"}
+    court = load(SITE.parent / "shancheng_courts/registered.json")
+    photos = {ref["id"]: ref["url"] for ref in court["references"]}
+    named = {b["id"]: {"ring": b["points"], "reference": photos[b["photo"]]}
+             for b in court["buildings"]}
     plots = []
     sectors = defaultdict(list)
     mapped_buildings = geo["buildings"] + geo["context_buildings"]
@@ -102,6 +119,8 @@ def main():
                "registered_site": p.get("registered_site"), "building_type_confirmed": False,
                "mapped_buildings_at_centre": sorted({b["id"] for b in mapped_buildings
                                                      if inside(xy, b["points"])}),
+               "overture_frontages_at_centre": sorted(f["osm"] for f in frontages
+                                                       if any(inside(xy, r) for r in f["rings"])),
                "nearest_mapped_road": nearest_way(xy, geo["roads"]),
                "nearest_mapped_path": nearest_way(xy, geo["paths"])}
         plots.append(row)
@@ -110,9 +129,11 @@ def main():
     for category in ("buildings", "context_buildings"):
         for building in geo[category]:
             points = building["points"]
-            if all(min(p[i] for p in points) <= 250 and max(p[i] for p in points) >= -250 for i in (0, 1)):
+            if intersects_district(points):
                 footprints[str(building["id"])].append(category)
     result = {"plots": plots, "registered_osm_ids": dict(footprints),
+              "overture_frontages": frontage_records, "frontage_attribution": registry["license"],
+              "named_courts": named,
               "park": {"osm": park["osm"], "name": park["name"]},
               "sectors": {f"{i},{j}": sectors[f"{i},{j}"] for i in range(5) for j in range(5)}}
     Path(sys.argv[1]).write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n")
