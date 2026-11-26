@@ -1,0 +1,51 @@
+{
+  "osm_source": "https://api.openstreetmap.org/api/0.6/map?bbox=106.56130,29.55067,106.56756,29.55576",
+  "osm_sha256": "37c269b570deb778828e26766a62cde853d02a5e4663954612383426115e51a8",
+  "attribution": "© OpenStreetMap contributors, ODbL 1.0",
+  "projection_control_way": 734116601,
+  "oblique_photo_camera": {
+    "east_north": [
+      83.7406,
+      185.2222
+    ],
+    "datum_tag": null,
+    "distance_to_way_boundary_m": {
+      "809889603": 44.038,
+      "809889604": 65.645,
+      "809889631": 4.122,
+      "809889635": 2.937
+    }
+  },
+  "way_809889635": {
+    "area_m2": 880.382,
+    "bounds_east_north": [
+      21.2393,
+      186.4641,
+      81.8705,
+      202.2487
+    ],
+    "tags": {
+      "building": "residential"
+    }
+  },
+  "plots": [
+    {
+      "id": 41,
+      "overlap_with_809889635_m2": 36.779,
+      "centre_distance_to_809889635_m": 3.609,
+      "camera_distance_to_plot_centre_m": 33.115
+    },
+    {
+      "id": 42,
+      "overlap_with_809889635_m2": 89.956,
+      "centre_distance_to_809889635_m": 0.0,
+      "camera_distance_to_plot_centre_m": 11.948
+    },
+    {
+      "id": 43,
+      "overlap_with_809889635_m2": 0.0,
+      "centre_distance_to_809889635_m": 27.764,
+      "camera_distance_to_plot_centre_m": 24.899
+    }
+  ]
+}
