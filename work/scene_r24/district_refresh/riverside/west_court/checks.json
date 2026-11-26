@@ -1,0 +1,190 @@
+{
+  "scene": "res://first_shift.tscn",
+  "engine": "4.6.3-stable (official)",
+  "candidate": {
+    "bounds_east_north_m": [
+      -250.0,
+      -250.0,
+      250.0,
+      250.0
+    ],
+    "glb_sha256": "b0180ce3a8d821253181725ad4516c04f58fe057529680e22a081f89fdd62122",
+    "match_factory_sha256": "ab742e6b12ad0b52c4cffef0f8342e1a957b59de5cfe3abde4dd691f853d76c6",
+    "matix_streets_sha256": "3b57fcf46931ff28ce1ab2be4a7250d31af30d302e362816265be8e38852e33b",
+    "osm_building_ids": [
+      809889594.0,
+      809889602.0,
+      809889621.0
+    ],
+    "retired_internal_context": false,
+    "riverside_sha256": "12f304d468c56fb429d4a4db948f5297b7ca4284f29fc494442c9b2a146f67d1",
+    "west_court_sha256": "32eea2dd1f34b7f5dacbb546a46c6cf106ac3896804677ef9b2ee1dabfb2c683",
+    "zhongxing_wall_sha256": "72fa4f4c800a8e27c19d580da66524160c4c2111bd82191706b6c8da142b8d42"
+  },
+  "footprint": {
+    "within_osm_park_1499726225": true,
+    "new_work_to_plot57_m": 6.8995,
+    "deck_m2": 203.52,
+    "blue_m2": 142.695
+  },
+  "on_site": {
+    "pass": 13,
+    "total": 13,
+    "sha256": "f297ae11db1a611c9fcb23db76915455de5a524c5b6e111f6987d02c18afa3f8",
+    "deck_support_samples": 108,
+    "ramp_support_samples": 18,
+    "riser_count": 18,
+    "riser_min_max_m": [
+      0.155,
+      0.156
+    ],
+    "lamp": {
+      "base_clearance_m": -0.000499694824218189,
+      "old_root_vertices": 0
+    },
+    "walks": [
+      {
+        "id": "ramp_out",
+        "pass": true,
+        "distance_m": 19.5100199929439,
+        "goals": 3,
+        "reached": 3,
+        "stall_contacts": []
+      },
+      {
+        "id": "ramp_back",
+        "pass": true,
+        "distance_m": 19.5356495510787,
+        "goals": 3,
+        "reached": 3,
+        "stall_contacts": []
+      },
+      {
+        "id": "stair_out",
+        "pass": true,
+        "distance_m": 18.3300390662625,
+        "goals": 3,
+        "reached": 3,
+        "stall_contacts": []
+      },
+      {
+        "id": "stair_back",
+        "pass": true,
+        "distance_m": 18.2722958754748,
+        "goals": 3,
+        "reached": 3,
+        "stall_contacts": []
+      },
+      {
+        "id": "through_out",
+        "pass": true,
+        "distance_m": 38.0852911034599,
+        "goals": 6,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      {
+        "id": "through_back",
+        "pass": true,
+        "distance_m": 38.1101744859479,
+        "goals": 6,
+        "reached": 6,
+        "stall_contacts": []
+      }
+    ]
+  },
+  "east_ride": {
+    "sha256": "3824cebddf84663410961d254c82387b22508dc97f28b8ad405a28c3ce0a69ff",
+    "routes": [
+      {
+        "reverse": false,
+        "riding": false,
+        "passed": true,
+        "mounted": null,
+        "parked": null,
+        "dismounted": null,
+        "distance_m": 19.338076279033,
+        "reached": 3,
+        "targets": 3
+      },
+      {
+        "reverse": false,
+        "riding": true,
+        "passed": true,
+        "mounted": true,
+        "parked": true,
+        "dismounted": true,
+        "distance_m": 18.9948145492526,
+        "reached": 3,
+        "targets": 3
+      },
+      {
+        "reverse": true,
+        "riding": false,
+        "passed": true,
+        "mounted": null,
+        "parked": null,
+        "dismounted": null,
+        "distance_m": 19.4182758359239,
+        "reached": 3,
+        "targets": 3
+      },
+      {
+        "reverse": true,
+        "riding": true,
+        "passed": true,
+        "mounted": true,
+        "parked": true,
+        "dismounted": true,
+        "distance_m": 19.1029002670548,
+        "reached": 3,
+        "targets": 3
+      }
+    ]
+  },
+  "riverside": {
+    "pass": 14,
+    "total": 14,
+    "sha256": "b7c3de74af33fac3aaadc1ed1a0728e930521412371b23fb10a70d0d760cb4ed",
+    "walk_m": 2151.0701
+  },
+  "district_500_suite": {
+    "section_count": 7,
+    "section_hits": 2275,
+    "section_sha256": "3f6f015c444bd4f2d8641fb985a70b6a75157f0ddf7c8756b1e59b09ee89d612",
+    "legs": 20,
+    "legs_pass": 20,
+    "route_sha256": "683320f28720216e9ecec1cf019ae8873bf92a0c2f4ed5ec2ef8c874ce3834d2",
+    "first_shift": {
+      "pass": 85,
+      "total": 85,
+      "sha256": "395558d8b6acea773ef97bbdcb9f9bbdfca03de9e0855d8e9ce32340d102312d"
+    }
+  },
+  "school_delivery": {
+    "pass": 6,
+    "total": 6,
+    "sha256": "b5383b76eceff5e7e7c3a53cc7ac03da9f2ffaffeb89a444d4ef26e9e3147b1d"
+  },
+  "scooter_service": {
+    "pass": 10,
+    "total": 10,
+    "sha256": "989809eaffd88b7de64799eb8afc47a7b70439dee912cf951eef4889d6024e53"
+  },
+  "earlier_trial": {
+    "sha256": "b0ad0e445e7e2f13f30075d41c9078b5fd9fb30030f19bbcc42ba241bae3dc09",
+    "failed": [
+      "west_stair_profile"
+    ],
+    "notes": "The first section started in the approach wedge. Retest measured the height change immediately before the first nosing."
+  },
+  "native": {
+    "proof": "Godot Compatibility on Mesa llvmpipe",
+    "sha256": {
+      "from_park_after.png": "90b86d619585b4ad3c8134e9164faf59d63df88f7cf4d2b201495575a676f100",
+      "from_park_before.png": "711f893ad18e2f7424fa7d9b1632ba549072b2ddfc7e89ed610404d6630d4b07",
+      "stair_join.png": "baeed3910f96dd019762175786e4cb55a4b3e24d2e377a486f39af98972c7b0c",
+      "terrace_reverse.png": "9b5845f76a434f9a54f2fbcf2062c42a75ad21dc5096dd9415df23346f43e7a3"
+    }
+  }
+}

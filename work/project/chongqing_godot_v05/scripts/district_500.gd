@@ -10,6 +10,8 @@ const MATIX_STREETS := "res://assets/district_500/matix_streets.glb"
 const MATIX_SITE := "res://assets/district_500/matix_streets.json"
 const ZHONGXING_WALL := "res://assets/district_500/zhongxing-retaining.glb"
 const ZHONGXING_SITE := "res://assets/district_500/zhongxing-retaining.json"
+const WEST_COURT := "res://assets/district_500/west-court.glb"
+const WEST_COURT_SITE := "res://assets/district_500/west-court.json"
 
 static func install(city: Node3D) -> Dictionary:
 	var district := (load(MODEL) as PackedScene).instantiate() as Node3D
@@ -40,6 +42,7 @@ static func install(city: Node3D) -> Dictionary:
 		if not "--qa-without-matix-streets" in OS.get_cmdline_user_args():
 			install_street_group(district, MATIX_STREETS, MATIX_SITE, "MatixStreets")
 			install_street_group(district, ZHONGXING_WALL, ZHONGXING_SITE, "ZhongxingStreetWall")
+			install_street_group(district, WEST_COURT, WEST_COURT_SITE, "RiversideWestCourt")
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -193,6 +196,7 @@ static func install(city: Node3D) -> Dictionary:
 		"match_factory_sha256": FileAccess.get_sha256(MATCH_FACTORY),
 		"matix_streets_sha256": FileAccess.get_sha256(MATIX_STREETS),
 		"zhongxing_wall_sha256": FileAccess.get_sha256(ZHONGXING_WALL),
+		"west_court_sha256": FileAccess.get_sha256(WEST_COURT),
 		"retired_internal_context": local_frame != null, "osm_building_ids": retire}
 
 
@@ -287,6 +291,18 @@ static func start_exploration(scene: Node3D) -> void:
 		var a: Array=layout.public_stops[0].approach
 		var b: Array=layout.public_stops[0].target
 		scene.explorer.set_walk_origin(Vector3(a[0],a[2],-a[1]),Vector3(b[0],b[1],b[2]))
+	elif "--west-court" in OS.get_cmdline_user_args():
+		var plan: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(WEST_COURT_SITE))
+		var join: Array = plan.walk_plan.ramp[0]
+		var centre: Array = plan.deck_east_north
+		var trail := collision.raycast_ground(scene, Vector3(join[0] - .9, -4., -join[1] + 1.5), 10.)
+		var park := collision.raycast_ground(scene, Vector3(join[0] + 4.5, -4., -join[1] + 2.), 10.)
+		if not trail.is_empty() and not park.is_empty():
+			bike.global_position = park.position + Vector3.UP * .035
+			bike.safe_park_position = bike.global_position
+			bike.rotation.y = -1.72
+			scene.explorer.set_walk_origin(trail.position + Vector3.UP * .035,
+				Vector3(centre[0], float(plan.deck_elevation_m) + .53, -centre[1]))
 	elif "--riverside" in OS.get_cmdline_user_args():
 		var park := collision.raycast_ground(scene, Vector3(-205.0, -12.0, 210.0), 6.0)
 		if not park.is_empty():

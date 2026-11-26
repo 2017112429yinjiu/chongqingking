@@ -67,11 +67,13 @@ group_assets = root / "work/project/chongqing_godot_v05/assets/district_500"
 factory_plan = json.loads((group_assets / "match_factory.json").read_bytes())
 matix_plan = json.loads((group_assets / "matix_streets.json").read_bytes())
 zhongxing_plan = json.loads((group_assets / "zhongxing-retaining.json").read_bytes())
+west_court_plan = json.loads((group_assets / "west-court.json").read_bytes())
 factory_override = set(factory_plan["replacement_meshes"])
 factory_retired = set(factory_plan["retired_objects"])
 matix_override = set(matix_plan["replacement_meshes"])
 matix_retired = set(matix_plan["retired_objects"])
 zhongxing_override = set(zhongxing_plan["replacement_meshes"])
+west_court_override = set(west_court_plan["replacement_meshes"])
 with bpy.data.libraries.load(str(factory_dir / "match_factory.blend"), link=True, relative=True) as (source, factory):
     factory.objects = factory_plan["new_meshes"] + [name for name in factory_plan["replacement_meshes"]
                                                       if name not in matix_override]
@@ -79,7 +81,7 @@ for item in factory.objects:
     collection.objects.link(item)
 with bpy.data.libraries.load(str(factory_dir / "matix/matix_streets.blend"), link=True, relative=True) as (source, matix):
     matix.objects = matix_plan["new_meshes"] + [name for name in matix_plan["replacement_meshes"]
-                                                 if name not in zhongxing_override]
+                                                 if name not in zhongxing_override and name not in west_court_override]
 for item in matix.objects:
     collection.objects.link(item)
 with bpy.data.libraries.load(str(factory_dir / "zhongxing/zhongxing-retaining.blend"), link=True, relative=True) as (source, zhongxing):
@@ -90,9 +92,10 @@ court_data=json.loads((root / "work/project/chongqing_godot_v05/assets/district_
 old_roots=court_data["superseded_outer_roots"]
 with bpy.data.libraries.load(str(here / "interior_terrain.blend"), link=True, relative=True) as (source, corrected):
     corrected.objects = source.objects[:]
-replaced = {obj.name for obj in corrected.objects} | factory_override | factory_retired | matix_override | matix_retired
+replaced = ({obj.name for obj in corrected.objects} | factory_override | factory_retired | matix_override
+            | matix_retired | west_court_override)
 for obj in corrected.objects:
-    if obj.name not in factory_override and obj.name not in matix_override:
+    if obj.name not in factory_override and obj.name not in matix_override and obj.name not in west_court_override:
         collection.objects.link(obj)
 for obj in draft.objects:
     if obj.name in replaced:
@@ -115,6 +118,11 @@ for item in courts.objects:
 with bpy.data.libraries.load(str(here / "riverside.blend"), link=True, relative=True) as (source, riverside):
     riverside.objects = list(source.objects)
 for item in riverside.objects:
+    collection.objects.link(item)
+with bpy.data.libraries.load(str(here.parent / "district_refresh/riverside/west_court/west-court.blend"),
+                             link=True, relative=True) as (source, west_court):
+    west_court.objects = west_court_plan["replacement_meshes"] + west_court_plan["new_meshes"]
+for item in west_court.objects:
     collection.objects.link(item)
 bpy.context.preferences.filepaths.save_version=0
 bpy.ops.wm.save_as_mainfile(filepath=str(here / "city_and_outer.local.blend"),relative_remap=True,compress=True)

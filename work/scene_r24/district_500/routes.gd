@@ -45,17 +45,21 @@ func run() -> void:
 	bike = scene.gameplay.scooter
 	space = scene.get_world_3d().direct_space_state
 	var only := OS.get_environment("CQ_ROUTE")
-	for key: String in ROUTES:
+	var plan := route_plan()
+	for key: String in plan:
 		if not only.is_empty() and key != only:
 			continue
 		for reverse: bool in [false,true]:
 			for riding: bool in [false,true]:
-				await leg(key,reverse,riding)
+				await leg(key,reverse,riding,plan[key])
 	var failed := records.any(func(item: Dictionary) -> bool: return not item.passed)
 	quit(1 if failed or records.is_empty() else 0)
 
-func leg(key: String, reverse: bool, riding: bool) -> void:
-	var coordinates: Array = ROUTES[key].duplicate()
+func route_plan() -> Dictionary:
+	return ROUTES
+
+func leg(key: String, reverse: bool, riding: bool, route: Array) -> void:
+	var coordinates := route.duplicate()
 	if reverse:
 		coordinates.reverse()
 	var points: Array[Vector3] = []
