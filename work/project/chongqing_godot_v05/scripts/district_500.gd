@@ -6,6 +6,8 @@ const INTERIOR_TERRAIN := "res://assets/district_500/interior_terrain.json"
 const RIVERSIDE := "res://assets/district_500/riverside.glb"
 const MATCH_FACTORY := "res://assets/district_500/match_factory.glb"
 const MATCH_FACTORY_SITE := "res://assets/district_500/match_factory.json"
+const MATIX_STREETS := "res://assets/district_500/matix_streets.glb"
+const MATIX_SITE := "res://assets/district_500/matix_streets.json"
 
 static func install(city: Node3D) -> Dictionary:
 	var district := (load(MODEL) as PackedScene).instantiate() as Node3D
@@ -32,7 +34,9 @@ static func install(city: Node3D) -> Dictionary:
 	riverside.name = "RiversideWalk"
 	district.add_child(riverside)
 	if not "--qa-without-match-factory" in OS.get_cmdline_user_args():
-		install_match_factory(district)
+		install_street_group(district, MATCH_FACTORY, MATCH_FACTORY_SITE, "MatchFactory")
+		if not "--qa-without-matix-streets" in OS.get_cmdline_user_args():
+			install_street_group(district, MATIX_STREETS, MATIX_SITE, "MatixStreets")
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -147,6 +151,8 @@ static func install(city: Node3D) -> Dictionary:
 		sign.no_depth_test = false
 		district.add_child(sign)
 	for plot: Dictionary in layout.get("plots",[]):
+		if plot.has("superseded_by"):
+			continue
 		for spec: Dictionary in plot.get("trade_signs",[]):
 			var lettering:=Label3D.new()
 			var yaw: float=plot.bearing
@@ -182,13 +188,14 @@ static func install(city: Node3D) -> Dictionary:
 	return {"bounds_east_north_m": layout.bounds_east_north_m,
 		"glb_sha256": FileAccess.get_sha256(MODEL), "riverside_sha256": FileAccess.get_sha256(RIVERSIDE),
 		"match_factory_sha256": FileAccess.get_sha256(MATCH_FACTORY),
+		"matix_streets_sha256": FileAccess.get_sha256(MATIX_STREETS),
 		"retired_internal_context": local_frame != null, "osm_building_ids": retire}
 
 
-static func install_match_factory(district: Node3D) -> void:
-	var plan: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(MATCH_FACTORY_SITE))
-	var layer := (load(MATCH_FACTORY) as PackedScene).instantiate() as Node3D
-	layer.name = "MatchFactory"
+static func install_street_group(district: Node3D, model_path: String, plan_path: String, group_name: String) -> void:
+	var plan: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(plan_path))
+	var layer := (load(model_path) as PackedScene).instantiate() as Node3D
+	layer.name = group_name
 	for mesh_name: String in plan.replacement_meshes:
 		var original := district.find_child(mesh_name, true, false) as MeshInstance3D
 		var updated := layer.find_child(mesh_name, true, false) as MeshInstance3D
@@ -286,6 +293,12 @@ static func start_exploration(scene: Node3D) -> void:
 		var factory := collision.raycast_ground(scene, Vector3(point[0], 20.0, -point[1]), 15.0)
 		if not factory.is_empty():
 			scene.explorer.set_walk_origin(factory.position + Vector3.UP * .035, Vector3(230, 14, 119))
+	elif "--matix-streets" in OS.get_cmdline_user_args():
+		var plan: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(MATIX_SITE))
+		var point: Array = plan.spawn_east_north
+		var street := collision.raycast_ground(scene, Vector3(point[0], 48.0, -point[1]), 16.0)
+		if not street.is_empty():
+			scene.explorer.set_walk_origin(street.position + Vector3.UP * .035, Vector3(-64, 42, -145))
 	if "--outer-market" in OS.get_cmdline_user_args():
 		var layout: Dictionary=JSON.parse_string(FileAccess.get_file_as_string(LAYOUT))
 		for i in layout.plots.size():

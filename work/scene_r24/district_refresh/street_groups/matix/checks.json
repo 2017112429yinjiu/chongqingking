@@ -1,0 +1,316 @@
+{
+  "engine": "Godot 4.6.3",
+  "fixed_fps": 60,
+  "checks": {
+    "streets": {
+      "passed": 8,
+      "total": 8,
+      "walks": [
+        {
+          "name": "osm_59146654_out",
+          "metres": 236.51,
+          "reached": 89,
+          "goals": 89
+        },
+        {
+          "name": "osm_59146654_back",
+          "metres": 237.087,
+          "reached": 89,
+          "goals": 89
+        },
+        {
+          "name": "osm_1025797976_out",
+          "metres": 172.442,
+          "reached": 61,
+          "goals": 61
+        },
+        {
+          "name": "osm_1025797976_back",
+          "metres": 172.412,
+          "reached": 61,
+          "goals": 61
+        },
+        {
+          "name": "osm_1025797980_out",
+          "metres": 70.583,
+          "reached": 25,
+          "goals": 25
+        },
+        {
+          "name": "osm_1025797980_back",
+          "metres": 70.594,
+          "reached": 25,
+          "goals": 25
+        },
+        {
+          "name": "joined_streets_out",
+          "metres": 413.751,
+          "reached": 152,
+          "goals": 152
+        },
+        {
+          "name": "joined_streets_back",
+          "metres": 414.313,
+          "reached": 152,
+          "goals": 152
+        }
+      ],
+      "cross_sections": {
+        "1025797976": 62,
+        "1025797980": 30,
+        "59146654": 90
+      }
+    },
+    "approaches": {
+      "passed": 4,
+      "total": 4,
+      "walks": [
+        {
+          "name": "street_43_out",
+          "metres": 4.576,
+          "reached": 3,
+          "goals": 3
+        },
+        {
+          "name": "street_43_back",
+          "metres": 4.567,
+          "reached": 3,
+          "goals": 3
+        },
+        {
+          "name": "rear_stair_43_out",
+          "metres": 17.728,
+          "reached": 6,
+          "goals": 6
+        },
+        {
+          "name": "rear_stair_43_back",
+          "metres": 17.666,
+          "reached": 6,
+          "goals": 6
+        }
+      ]
+    },
+    "factory": {
+      "passed": 18,
+      "total": 18
+    },
+    "delivery": {
+      "passed": 6,
+      "total": 6,
+      "walks": [
+        {
+          "name": "walk_to_receiver",
+          "metres": 83.511,
+          "reached": 8,
+          "goals": 8
+        },
+        {
+          "name": "walk_to_upstairs_library",
+          "metres": 53.812,
+          "reached": 14,
+          "goals": 14
+        }
+      ]
+    },
+    "repair": {
+      "passed": 10,
+      "total": 10
+    },
+    "first-shift": {
+      "passed": 85,
+      "total": 85
+    },
+    "openings": {
+      "exit": 2,
+      "failures": [
+        [
+          0.0,
+          14,
+          0.0
+        ]
+      ],
+      "openings": 1856,
+      "paired_sills_and_lintels": 1856,
+      "street_sills_and_lintels": 196,
+      "street_windows": 196,
+      "plots": 64
+    },
+    "openings-control": {
+      "exit": 2,
+      "failures": [
+        [
+          0.0,
+          14,
+          0.0
+        ]
+      ],
+      "openings": 1856,
+      "paired_sills_and_lintels": 1856,
+      "street_sills_and_lintels": 196,
+      "street_windows": 196,
+      "plots": 64
+    },
+    "halls": {
+      "exit": 0,
+      "passed": 187,
+      "total": 187,
+      "failures": []
+    }
+  },
+  "frames": {
+    "before": {
+      "size": 555482,
+      "sha256": "01bc9d3de3ad7df11f25cd466ac1b0ee78d327b007d6101e597741d7fb66eaaa"
+    },
+    "after": {
+      "size": 533821,
+      "sha256": "ecb62cb85e65b382c6eab0b2be944e31774b8cf445827377c5c9a1833789a366"
+    },
+    "return": {
+      "size": 531057,
+      "sha256": "038325bb256cad2e8a3da840e454c26e2679bdfae349847c4a9f52c98f66067b"
+    }
+  },
+  "native": {
+    "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "cameras": [
+      {
+        "eye": [
+          52.5,
+          38.4129981994629,
+          -147.199996948242
+        ],
+        "id": "matix_liangtingzi_join",
+        "target": [
+          65.0,
+          37.0970001220703,
+          -140.800003051758
+        ]
+      },
+      {
+        "eye": [
+          102.0,
+          37.109001159668,
+          -154.199996948242
+        ],
+        "id": "liangtingzi_43",
+        "target": [
+          115.0,
+          37.6349983215332,
+          -162.300003051758
+        ]
+      },
+      {
+        "eye": [
+          116.099998474121,
+          38.0800018310547,
+          -162.800003051758
+        ],
+        "id": "liangtingzi_43_reverse",
+        "target": [
+          105.0,
+          36.7910003662109,
+          -156.199996948242
+        ]
+      }
+    ],
+    "renderer": "gl_compatibility",
+    "scene": {
+      "bounds_east_north_m": [
+        -250.0,
+        -250.0,
+        250.0,
+        250.0
+      ],
+      "glb_sha256": "b0180ce3a8d821253181725ad4516c04f58fe057529680e22a081f89fdd62122",
+      "match_factory_sha256": "ab742e6b12ad0b52c4cffef0f8342e1a957b59de5cfe3abde4dd691f853d76c6",
+      "matix_streets_sha256": "3b57fcf46931ff28ce1ab2be4a7250d31af30d302e362816265be8e38852e33b",
+      "osm_building_ids": [
+        809889594.0,
+        809889602.0,
+        809889621.0
+      ],
+      "retired_internal_context": false,
+      "riverside_sha256": "12f304d468c56fb429d4a4db948f5297b7ca4284f29fc494442c9b2a146f67d1"
+    }
+  },
+  "before": {
+    "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "cameras": [
+      {
+        "eye": [
+          -68.6999969482422,
+          43.4770011901855,
+          -156.0
+        ],
+        "id": "matix_36_downhill",
+        "target": [
+          -64.0,
+          40.3380012512207,
+          -144.800003051758
+        ]
+      },
+      {
+        "eye": [
+          52.5,
+          38.4129981994629,
+          -147.199996948242
+        ],
+        "id": "matix_liangtingzi_join",
+        "target": [
+          65.0,
+          37.0970001220703,
+          -140.800003051758
+        ]
+      },
+      {
+        "eye": [
+          102.0,
+          37.109001159668,
+          -154.199996948242
+        ],
+        "id": "liangtingzi_43",
+        "target": [
+          115.0,
+          37.6349983215332,
+          -162.300003051758
+        ]
+      },
+      {
+        "eye": [
+          116.099998474121,
+          38.0800018310547,
+          -162.800003051758
+        ],
+        "id": "liangtingzi_43_reverse",
+        "target": [
+          105.0,
+          36.7910003662109,
+          -156.199996948242
+        ]
+      }
+    ],
+    "renderer": "gl_compatibility",
+    "trial": {}
+  },
+  "source_and_export": {
+    "matix_streets.blend": {
+      "size": 50465356,
+      "sha256": "2ba162d3feba182c7cfe6eae880a213b77dc135f29a42e4f3af14f612099b2b9"
+    },
+    "matix_streets.glb": {
+      "size": 52792340,
+      "sha256": "3b57fcf46931ff28ce1ab2be4a7250d31af30d302e362816265be8e38852e33b"
+    }
+  },
+  "blender": {
+    "version": "4.3.2",
+    "standalone_objects": 9,
+    "composed_libraries": 11
+  },
+  "native_exit_cleanup": [
+    "ERROR: Texture with GL ID of 547: leaked 349524 bytes.",
+    "ERROR: Texture with GL ID of 548: leaked 349524 bytes."
+  ]
+}

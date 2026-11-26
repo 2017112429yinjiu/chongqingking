@@ -63,20 +63,29 @@ with bpy.data.libraries.load(str(here / "outer_district.blend"), link=True, rela
 collection=bpy.data.collections.new("500 m playable expansion")
 bpy.context.scene.collection.children.link(collection)
 factory_dir = here.parent / "district_refresh/street_groups"
-factory_plan = json.loads((root / "work/project/chongqing_godot_v05/assets/district_500/match_factory.json").read_bytes())
+group_assets = root / "work/project/chongqing_godot_v05/assets/district_500"
+factory_plan = json.loads((group_assets / "match_factory.json").read_bytes())
+matix_plan = json.loads((group_assets / "matix_streets.json").read_bytes())
 factory_override = set(factory_plan["replacement_meshes"])
 factory_retired = set(factory_plan["retired_objects"])
+matix_override = set(matix_plan["replacement_meshes"])
+matix_retired = set(matix_plan["retired_objects"])
 with bpy.data.libraries.load(str(factory_dir / "match_factory.blend"), link=True, relative=True) as (source, factory):
-    factory.objects = factory_plan["new_meshes"] + factory_plan["replacement_meshes"]
+    factory.objects = factory_plan["new_meshes"] + [name for name in factory_plan["replacement_meshes"]
+                                                      if name not in matix_override]
 for item in factory.objects:
+    collection.objects.link(item)
+with bpy.data.libraries.load(str(factory_dir / "matix/matix_streets.blend"), link=True, relative=True) as (source, matix):
+    matix.objects = matix_plan["new_meshes"] + matix_plan["replacement_meshes"]
+for item in matix.objects:
     collection.objects.link(item)
 court_data=json.loads((root / "work/project/chongqing_godot_v05/assets/district_500/historic_courts.json").read_bytes())
 old_roots=court_data["superseded_outer_roots"]
 with bpy.data.libraries.load(str(here / "interior_terrain.blend"), link=True, relative=True) as (source, corrected):
     corrected.objects = source.objects[:]
-replaced = {obj.name for obj in corrected.objects} | factory_override | factory_retired
+replaced = {obj.name for obj in corrected.objects} | factory_override | factory_retired | matix_override | matix_retired
 for obj in corrected.objects:
-    if obj.name not in factory_override:
+    if obj.name not in factory_override and obj.name not in matix_override:
         collection.objects.link(obj)
 for obj in draft.objects:
     if obj.name in replaced:

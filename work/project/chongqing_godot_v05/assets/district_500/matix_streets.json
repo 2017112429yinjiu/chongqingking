@@ -1,0 +1,150 @@
+{
+  "replacement_meshes": [
+    "COL_Outer500_Building_envelopes",
+    "Outer500_Facades_and_storefronts",
+    "Outer500_Street_furniture",
+    "COL_Outer500_Retaining_and_boundaries",
+    "COLH_Outer500_Household_contact"
+  ],
+  "retired_objects": [
+    "COL_Outer500_Frame_07",
+    "COL_Outer500_Frame_23",
+    "COL_Outer500_Frame_36",
+    "COL_Outer500_Frame_37",
+    "COL_Outer500_Frame_39",
+    "Outer500_Condenser_07_01",
+    "Outer500_Condenser_07_04",
+    "Outer500_Condenser_23_01",
+    "Outer500_Condenser_23_04",
+    "Outer500_Condenser_36_01",
+    "Outer500_Condenser_36_04",
+    "Outer500_Condenser_37_01",
+    "Outer500_Condenser_39_01",
+    "Outer500_Condenser_39_04",
+    "Outer500_Household_041_chair_0",
+    "Outer500_Household_063_chair_0",
+    "Outer500_Household_075_chair_0",
+    "Outer500_Household_076_chair_0",
+    "Outer500_Household_078_crate_0",
+    "Outer500_InteriorFloor_07",
+    "Outer500_InteriorFloor_23",
+    "Outer500_InteriorFloor_36",
+    "Outer500_InteriorFloor_37",
+    "Outer500_InteriorFloor_39",
+    "Outer500_Joinery_07",
+    "Outer500_Joinery_23",
+    "Outer500_Joinery_36",
+    "Outer500_Joinery_37",
+    "Outer500_Joinery_39"
+  ],
+  "retired_by": {
+    "7": 1025797976,
+    "23": 59146654,
+    "36": 59146654,
+    "37": 59146654,
+    "39": 59146654
+  },
+  "new_meshes": [
+    "Outer500_Matix_cartway",
+    "Outer500_Liangtingzi_lane",
+    "COL_Liangtingzi_RearStair_43",
+    "COL_Matix_StreetEdges"
+  ],
+  "wall_openings": [
+    {
+      "way": "1025797980",
+      "face": 7816,
+      "width_m": 2.6,
+      "centre_east_north": [
+        145.60003662109375,
+        192.85577392578125
+      ],
+      "removed_fragment_count": 2
+    },
+    {
+      "way": "1025797976",
+      "face": 7824,
+      "width_m": 2.8,
+      "centre_east_north": [
+        160.9205322265625,
+        190.88917541503906
+      ],
+      "removed_fragment_count": 3
+    }
+  ],
+  "rear_stair": {
+    "path_east_north_up": [
+      [
+        108.33297729492188,
+        166.49684143066406,
+        41.265436295571874
+      ],
+      [
+        108.66515350341797,
+        164.7990264892578,
+        41.265436295571874
+      ],
+      [
+        109.01846313476562,
+        162.99327087402344,
+        40.56543629557188
+      ],
+      [
+        109.80042266845703,
+        163.28115844726562,
+        40.46543629557188
+      ],
+      [
+        114.21686553955078,
+        166.02615356445312,
+        39.64046026367125
+      ],
+      [
+        117.96234893798828,
+        168.35411071777344,
+        38.918606235758205
+      ],
+      [
+        121.31714630126953,
+        170.4392547607422,
+        38.57772735595703
+      ]
+    ],
+    "steps": [
+      6,
+      14
+    ],
+    "width_m": 1.72,
+    "rise_m": 2.862440079751565
+  },
+  "curbs": [
+    {
+      "way": "59146654",
+      "segment": 6,
+      "length_m": 14.15,
+      "blocks": 18
+    },
+    {
+      "way": "59146654",
+      "segment": 18,
+      "length_m": 5.87,
+      "blocks": 8
+    },
+    {
+      "way": "1025797976",
+      "segment": 3,
+      "length_m": 29.0,
+      "blocks": 36
+    }
+  ],
+  "walk_ways": [
+    59146654,
+    1025797976,
+    1025797980
+  ],
+  "source_sha256": "37c269b570deb778828e26766a62cde853d02a5e4663954612383426115e51a8",
+  "spawn_east_north": [
+    -68.7771,
+    158.3986
+  ]
+}

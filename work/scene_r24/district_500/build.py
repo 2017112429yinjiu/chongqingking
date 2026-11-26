@@ -1014,9 +1014,13 @@ prefixes, roof_cuts = run_path(str(HERE/"context_owners.py"))["conflicting_conte
 prefixes=sorted(set(prefixes+trail_prefixes))
 roof_cuts=[list(r) for r in dict.fromkeys(tuple(v) for v in roof_cuts+trail_roofs)]
 match_factory = json.loads((HERE.parent / "district_refresh/street_groups/factory.json").read_bytes())
+matix_plan = OUT / "matix_streets.json"
+matix_retired = json.loads(matix_plan.read_bytes())["retired_by"] if matix_plan.exists() else {}
 for plot in plots:
     if plot["plot_id"] in match_factory["replaced_trial_plots"]:
         plot["superseded_by"] = match_factory["way"]
+    elif str(plot["plot_id"]) in matix_retired:
+        plot["superseded_by"] = matix_retired[str(plot["plot_id"])]
 (OUT / "layout.json").write_text(json.dumps({
     "bounds_east_north_m":[-250,-250,250,250],
     "projection_origin_wgs84":[osm["center_lon"],osm["center_lat"]],

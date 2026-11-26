@@ -10,6 +10,8 @@ func verify() -> void:
 		await physics_frame
 	await frames(24)
 	var registration_path := OS.get_environment("CQ_STREET_GROUP_REGISTRATION")
+	if registration_path.is_empty():
+		registration_path = get_script().resource_path.get_base_dir().path_join("run/plot-registration.json")
 	var scope: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(registration_path))
 	var results := []
 	for plot: Dictionary in scope.plots:
@@ -36,6 +38,7 @@ func verify() -> void:
 		results.append({"plot": plot.plot, "centre": profile(plot.centre_east_north, Vector2.ZERO),
 			"road_profiles": crossing_profiles, "building_profiles": wall_profiles})
 	var street_profiles := {}
+	var street_routes := {}
 	if "--walk-registered-streets" in OS.get_cmdline_user_args():
 		for way: String in ["59146654", "1025797976", "1025797980"]:
 			var points: Array = scope.ways[way].east_north
@@ -52,9 +55,24 @@ func verify() -> void:
 					samples.append(profile(en, transverse))
 					if absf(p.x) < 249.0 and absf(p.y) < 249.0:
 						path.append(ground_point(en, .045))
+			var last := to_vector(points[-1])
+			var tangent := (last - to_vector(points[-2])).normalized()
+			samples.append(profile(points[-1], tangent.orthogonal()))
+			if absf(last.x) < 249.0 and absf(last.y) < 249.0:
+				path.append(ground_point(points[-1], .045))
 			if path.size() > 1:
 				await walk_pair("osm_"+way, path)
+				street_routes[way] = path
 			street_profiles[way] = samples
+	if "--walk-joined-streets" in OS.get_cmdline_user_args():
+		var route: Array[Vector3] = street_routes["59146654"].duplicate()
+		var link: Array[Vector3] = street_routes["1025797976"]
+		var lane: Array[Vector3] = street_routes["1025797980"]
+		var junction := link.find(lane[0])
+		assert(route[-1].is_equal_approx(link[0]) and junction > 0)
+		route.append_array(link.slice(1, junction + 1))
+		route.append_array(lane.slice(1))
+		await walk_pair("joined_streets", route)
 	var measurements := {"outer": scene.scene_identity.get("district_500", {}),
 		"source_sha256": scope.source_sha256, "plots": results,
 		"streets": street_profiles, "walks": walks, "checks": checks}
