@@ -5,6 +5,8 @@ var rider: Node3D
 var visual: Node3D
 var articulation: Node3D
 var rider_collision: CollisionShape3D
+const FULL_PRESSURE := 2.4
+var tyre_pressure := FULL_PRESSURE
 var parked: bool = true
 var speed: float = 0.0
 var automation: bool = false
@@ -193,7 +195,8 @@ func _physics_process(delta: float) -> void:
 		speed = move_toward(speed,0.0,9.0*delta)
 	elif throttle != 0.0:
 		var acceleration: float = 7.0 if throttle * speed < 0.0 else 2.8
-		speed = move_toward(speed,6.0 if throttle>0 else -1.8,acceleration*delta)
+		var traction:=clampf(tyre_pressure/1.7,.65,1.0)
+		speed = move_toward(speed,(6.0 if throttle>0 else -1.8)*traction,acceleration*traction*delta)
 	else:
 		speed = move_toward(speed,0.0,1.2*delta)
 	var effective_steer: float=articulation.steer_angle/.32
@@ -224,6 +227,8 @@ func _physics_process(delta: float) -> void:
 		parked = true
 	_fit_wheels()
 	var travel: float=(global_position-before_move).dot(forward)
+	if has_driver() and absf(travel)<1.0:
+		tyre_pressure=maxf(1.1,tyre_pressure-absf(travel)*.000018)
 	articulation.update_motion(delta,speed,steer,travel if absf(travel)<1.0 else 0.0)
 	if is_instance_valid(rider):
 		rider.body.global_position = global_position

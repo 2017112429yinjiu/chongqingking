@@ -19,7 +19,7 @@ def local(p,x,y):
 def select_courts(plots,patch,roads):
     selected=[]
     # Preserve the established upper landings when other plots leave the prototype.
-    stair_sides={0:-1,1:-1,2:1,8:1,40:1,48:-1,52:1,56:1,60:-1,64:1,72:-1}
+    stair_sides={1:-1,2:1,8:1,40:1,48:-1,52:1,56:1,60:-1,64:1,72:-1}
     for p in plots:
         if p["plot_id"] not in stair_sides:
             continue
@@ -327,6 +327,8 @@ def connect_lanes(plots,segments,patch,road_distance,mask_x,mask_y,rgba):
         stairs=p.get("kerb_stairs",{})
         if "front" in stairs:front=world(p,*stairs["front"]["toe"])
         if "back" in stairs:back=world(p,*stairs["back"]["toe"])
+        if "repair_court" in p:
+            front,back=(p["repair_court"][key][:2] for key in ("street","court"))
         points.extend([(i,front),(i,back)])
         candidates=[]
         for a,b,w,_ in segments:

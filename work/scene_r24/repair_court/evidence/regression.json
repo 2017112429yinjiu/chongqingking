@@ -1,0 +1,166 @@
+{
+  "normal_scene": "first_shift.tscn",
+  "engine": "Godot 4.6.3 Forward+ on Windows",
+  "shancheng": {
+    "fresh_run": "delivery05",
+    "checks_passed": {
+      "walk": 28,
+      "walk_mapped": 2,
+      "handoff": 12,
+      "delivery_take": 6
+    },
+    "service_independent": true,
+    "handoff": [
+      {
+        "detail": "",
+        "name": "primary_starts_at_shelf",
+        "pass": true
+      },
+      {
+        "detail": "",
+        "name": "primary_pickup",
+        "pass": true
+      },
+      {
+        "detail": {
+          "distance_m": 83.5096999304369,
+          "end": "(-162.0284, 20.06791, -37.8647)",
+          "goals": 8,
+          "max_frame_displacement_m": 0.16396276652813,
+          "name": "primary_walk",
+          "pass": true,
+          "reached": 8,
+          "stall_contacts": []
+        },
+        "name": "primary_walk",
+        "pass": true
+      },
+      {
+        "detail": "",
+        "name": "primary_drop",
+        "pass": true
+      },
+      {
+        "detail": "",
+        "name": "primary_one_payment",
+        "pass": true
+      },
+      {
+        "detail": {
+          "distance_m": 83.5138925416395,
+          "end": "(-116.536, 13.72391, 30.58532)",
+          "goals": 8,
+          "max_frame_displacement_m": 0.10597238689661,
+          "name": "primary_return",
+          "pass": true,
+          "reached": 8,
+          "stall_contacts": []
+        },
+        "name": "primary_return",
+        "pass": true
+      },
+      {
+        "detail": "",
+        "name": "branch_starts_at_shelf",
+        "pass": true
+      },
+      {
+        "detail": "",
+        "name": "branch_pickup",
+        "pass": true
+      },
+      {
+        "detail": {
+          "distance_m": 93.854317702353,
+          "end": "(-162.0354, 20.06883, -37.88787)",
+          "goals": 7,
+          "max_frame_displacement_m": 0.0849226638674736,
+          "name": "branch_walk",
+          "pass": true,
+          "reached": 7,
+          "stall_contacts": []
+        },
+        "name": "branch_walk",
+        "pass": true
+      },
+      {
+        "detail": "",
+        "name": "branch_drop",
+        "pass": true
+      },
+      {
+        "detail": "",
+        "name": "branch_one_payment",
+        "pass": true
+      },
+      {
+        "detail": {
+          "distance_m": 93.8054822310805,
+          "end": "(-116.4412, 13.72928, 30.50014)",
+          "goals": 7,
+          "max_frame_displacement_m": 0.0980752557516098,
+          "name": "branch_return",
+          "pass": true,
+          "reached": 7,
+          "stall_contacts": []
+        },
+        "name": "branch_return",
+        "pass": true
+      }
+    ],
+    "continuous_delivery": [
+      {
+        "detail": "",
+        "name": "spawn_at_pickup",
+        "pass": true
+      },
+      {
+        "detail": "",
+        "name": "pickup_with_E",
+        "pass": true
+      },
+      {
+        "detail": {
+          "distance_m": 83.5096999304369,
+          "end": "(-162.0284, 20.06791, -37.8647)",
+          "goals": 8,
+          "max_frame_displacement_m": 0.16396276652813,
+          "name": "pickup_to_signed_receipt",
+          "pass": true,
+          "reached": 8,
+          "stall_contacts": []
+        },
+        "name": "walk_to_receiver",
+        "pass": true
+      },
+      {
+        "detail": "",
+        "name": "receipt_with_E",
+        "pass": true
+      },
+      {
+        "detail": {
+          "distance_m": 53.8252255395055,
+          "end": "(-119.9477, 26.46325, -52.51754)",
+          "goals": 14,
+          "max_frame_displacement_m": 0.166156947612762,
+          "name": "receipt_to_upstairs_reading_room",
+          "pass": true,
+          "reached": 14,
+          "stall_contacts": []
+        },
+        "name": "walk_to_upstairs_library",
+        "pass": true
+      },
+      {
+        "detail": "(-119.9477, 26.46325, -52.51754)",
+        "name": "on_reading_floor",
+        "pass": true
+      }
+    ]
+  },
+  "patrol_initial": {
+    "run": "repair_court_01",
+    "note": "The district was under revision during this first survey. See the final patrol and exact-build rechecks for the accepted observations."
+  }
+}

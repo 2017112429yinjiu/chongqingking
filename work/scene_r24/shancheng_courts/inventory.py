@@ -11,6 +11,7 @@ batch=json.loads((here/"registered.json").read_bytes())
 walks=json.loads((game/"assets/district_500/shancheng_lane.json").read_bytes())
 current=json.loads((game/"assets/district_500/layout.json").read_bytes())
 actual={x["plot_id"] for x in current["plots"]}
+registered={str(p["plot_id"]):p["registered_site"] for p in current["plots"] if "registered_site" in p}
 ways=[np.array(walks[k])[:,:2] for k in ("primary","branch")]
 def point_segment(p,a,b):
     delta=b-a
@@ -31,8 +32,8 @@ for key,(center,ang,width,depth) in old.items():
     ring=np.array([[-width,-depth],[width,-depth],[width,depth],[-width,depth]])/2@tr+center
     near=min(distance(a,b,c,d) for a,b in zip(ring,np.roll(ring,-1,axis=0)) for path in ways for c,d in zip(path,path[1:]))
     rows.append({"legacy_plot":int(key),"center_en":center,"wall_to_delivery_centreline_m":round(near,2),
-                 "state":"withdrawn" if key in batch["retired"] else "pending",
-                 "observation":batch["retired"].get(key)})
-assert len(rows)==75 and actual=={r["legacy_plot"] for r in rows if r["state"]=="pending"}
+                 "state":"withdrawn" if key in batch["retired"] else "registered" if key in registered else "pending",
+                 "observation":batch["retired"].get(key,registered.get(key))})
+assert len(rows)==75 and actual=={r["legacy_plot"] for r in rows if r["state"]!="withdrawn"}
 rows.sort(key=lambda r:r["wall_to_delivery_centreline_m"])
-(here/"evidence/inventory.json").write_text(json.dumps(rows,indent=2)+"\n",encoding="utf-8")
+(here.parent/"repair_court/evidence/inventory.json").write_text(json.dumps(rows,indent=2)+"\n",encoding="utf-8")

@@ -37,6 +37,9 @@ static func install(city: Node3D) -> Dictionary:
 		if bank:
 			(bank.get_surface_override_material(0) as ShaderMaterial).set_shader_parameter("outer_district_cut", true)
 	var layout: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(LAYOUT))
+	for plot: Dictionary in layout.plots:
+		if plot.has("repair_court"):
+			district.set_meta("repair_court",plot.repair_court)
 	var cut: Dictionary = layout.get("interior_rail_return", {})
 	if not cut.is_empty():
 		var old_rail := city.find_child(cut.original,true,false) as MeshInstance3D
@@ -208,6 +211,9 @@ static func trim_roofs(node: MeshInstance3D, anchors: Array) -> void:
 			retained.surface_set_material(retained.get_surface_count()-1,node.get_active_material(surface))
 	node.mesh=retained
 
+static func enu(p: Array) -> Vector3:
+	return Vector3(p[0],p[2],-float(p[1]))
+
 static func start_exploration(scene: Node3D) -> void:
 	var collision := preload("res://scripts/build_collisions.gd")
 	var bike := scene.gameplay.scooter as CharacterBody3D
@@ -220,7 +226,13 @@ static func start_exploration(scene: Node3D) -> void:
 	bike.safe_park_position = bike.global_position
 	bike.rotation.y = -0.87
 	scene.explorer.set_walk_origin(shoulder.position + Vector3.UP * 0.035, bike.global_position + Vector3.UP)
-	if "--shancheng" in OS.get_cmdline_user_args():
+	if "--repair-court" in OS.get_cmdline_user_args():
+		var site: Dictionary=scene.get_node("City/OuterDistrict500").get_meta("repair_court")
+		bike.global_position=enu(site.bike)
+		bike.safe_park_position=bike.global_position
+		bike.tyre_pressure=1.15
+		scene.explorer.set_walk_origin(enu(site.street)+Vector3.UP*.035,enu(site.porch)+Vector3.UP)
+	elif "--shancheng" in OS.get_cmdline_user_args():
 		var layout: Dictionary=JSON.parse_string(FileAccess.get_file_as_string("res://assets/district_500/shancheng_lane.json"))
 		var a: Array=layout.public_stops[0].approach
 		var b: Array=layout.public_stops[0].target

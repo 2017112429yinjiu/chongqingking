@@ -28,7 +28,8 @@ for source,asset in zip(spec["buildings"],layout["buildings"]):
     assert max(errors)<.12 and len(frame.data.polygons)>35 and abs(levels[0]-asset["floor"])<.23
     records.append(report)
 remaining={v["plot_id"] for v in plots["plots"]}
-assert len(remaining)==71 and set(plots["retired_for_historic_courts"])=={3,5,47,48}
+registered={v["plot_id"] for v in plots["plots"] if v.get("registered_site")}
+assert registered=={0} and len(remaining-registered)==70 and set(plots["retired_for_historic_courts"])=={3,5,47,48}
 assert bpy.data.objects.get("Court_Jinma_painted_name")
 # Sample the actual saved mesh at each foot, against the finish in the saved
 # scene. A shared centre elevation previously left chair feet hanging on slopes.
@@ -76,4 +77,4 @@ for name in ("Seating","Trunks","PlanterBases"):
 forecourt={"root_contacts":roots,"table_and_chair_foot_gaps_m":contacts}
 output=Path(os.environ["CQ_QA_DIR"])
 output.mkdir(exist_ok=True,parents=True)
-(output/"blender.json").write_text(json.dumps({"blender":bpy.app.version_string,"source":Path(bpy.data.filepath).name,"remaining":len(remaining),"buildings":records,"forecourt":forecourt},indent=2)+"\n",encoding="utf-8")
+(output/"blender.json").write_text(json.dumps({"blender":bpy.app.version_string,"source":Path(bpy.data.filepath).name,"remaining":len(remaining-registered),"buildings":records,"forecourt":forecourt},indent=2)+"\n",encoding="utf-8")

@@ -18,6 +18,10 @@ def through_floor(p, draw, ground, mats, wall_pieces):
             draw(left,edge,z,left+.49,edge+.28,crown,wall)
             draw(right-.49,edge,z,right,edge+.28,crown,wall)
             continue
+        if p.get("registered_site"):
+            # Individual masonry and window openings are fitted between the workshop frames.
+            draw(mid-half,edge,z+2.45,mid+half,edge+.23,crown,slab)
+            continue
         draw(left, edge, z, mid-half, edge+.23, crown, wall)
         draw(mid+half, edge, z, right, edge+.23, crown, wall)
         draw(mid-half, edge, z+2.45, mid+half, edge+.23, crown, slab)

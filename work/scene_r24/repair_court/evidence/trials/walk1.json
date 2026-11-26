@@ -1,0 +1,79 @@
+{
+  "checks": [
+    {
+      "detail": "(-193.8725, 16.0236, 26.5521)",
+      "name": "start_on_734116598",
+      "pass": true
+    },
+    {
+      "detail": "(-185.2189, 16.44909, 20.1647)",
+      "name": "underinflated_scooter_parked",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 14.9252644469962,
+        "end": "(-185.8956, 16.48857, 13.6673)",
+        "goals": 2,
+        "max_frame_displacement_m": 0.0749786794185638,
+        "name": "public_walk_to_repair_counter",
+        "pass": true,
+        "reached": 2,
+        "stall_contacts": []
+      },
+      "name": "walk_in_through_front",
+      "pass": true
+    },
+    {
+      "detail": "@Node3D@894:<Node3D#489844395302>",
+      "name": "workbench_within_reach",
+      "pass": true
+    },
+    {
+      "detail": 2.4,
+      "name": "E_inflates_player_scooter",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "repeat_check_preserves_bike_and_wallet",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 12.9343728478998,
+        "end": "(-179.8839, 16.45921, 1.955808)",
+        "goals": 2,
+        "max_frame_displacement_m": 0.0758705586194992,
+        "name": "workshop_to_court",
+        "pass": true,
+        "reached": 2,
+        "stall_contacts": []
+      },
+      "name": "reach_inner_court",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 28.0816088654101,
+        "end": "(-193.8116, 16.03036, 26.54592)",
+        "goals": 4,
+        "max_frame_displacement_m": 0.0939192920923233,
+        "name": "return_to_same_street",
+        "pass": true,
+        "reached": 4,
+        "stall_contacts": []
+      },
+      "name": "walk_back_from_court",
+      "pass": true
+    },
+    {
+      "detail": "(-193.8116, 16.03036, 26.54592)",
+      "name": "back_at_start",
+      "pass": true
+    }
+  ],
+  "images": 0,
+  "physics_hz": 60,
+  "ticks_per_image": 9
+}

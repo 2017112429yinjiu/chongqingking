@@ -86,7 +86,7 @@ def main_room(p,box,face,m,wall_pieces):
     # The back wall returns on either side of the door. Keep its opening and lintel.
     gap=1.92 if p["name"] else 1.08
     for a,b in ((-w+.24,p["door_u"]-gap),(p["door_u"]+gap,w-.24)):
-        if b-a<.05: continue
+        if b-a<.05 or p.get("registered_site"): continue
         for edge,sign in ((d-.234,-1),(-d+.234,1)):
             if sign==1:continue
             pts=[(a,edge,z+.04),(b,edge,z+.04),(b,edge,z+2.74),(a,edge,z+2.74)]

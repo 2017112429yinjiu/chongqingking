@@ -123,6 +123,8 @@ kerb_stair=run_path(str(BLOCK_STUDY/"kerb_stairs.py"))["stair_frontage"]
 legacy_sites=json.loads((BLOCK_STUDY/"legacy_sites.json").read_text(encoding="utf-8"))
 COURTS_STUDY=HERE.parent/"shancheng_courts"
 real_courts=json.loads((COURTS_STUDY/"registered.json").read_bytes())
+repair_site=json.loads((HERE.parent/"repair_court/site.json").read_bytes())
+repair=run_path(str(HERE.parent/"repair_court/courtyard.py"))
 court_ground=run_path(str(COURTS_STUDY/"terrain.py"))
 front_tools = run_path(str(HERE/"occupied_fronts.py"))
 finish_tools = run_path(str(HERE/"house_finishes.py"))
@@ -455,7 +457,19 @@ def building(x,y,angle,w,d,floors,kind,named=""):
         removed_for_courts.append(plot["plot_id"])
         rng.random()
         return
-    box(blocks,frame,-w/2,ry,min(levels)-.35,w/2,d/2,base,rock)
+    if plot["plot_id"]==0:
+        x,y=repair_site["center"]
+        angle,w,d=(repair_site[k] for k in ("bearing","width","depth"))
+        frame=local_frame(x,y,angle)
+        ry=-d/2
+        floors=2
+        levels=[height(*frame(u,v,0)[:2]) for u in (-w/2,w/2) for v in (ry,-ry)]
+        base=height(*frame(0,ry,0)[:2])+.18
+        top=base+floors*2.95
+        facade=cream
+        plot.update(east_north=[x,y],bearing=angle,width=w,depth=d,height=base,roof=top,
+                    street_grade=height(*repair_site["street_en"]),floors=floors,registered_site="cliff_walk_repair_court")
+    box(blocks,frame,-w/2,ry,min(min(levels),base)-.35,w/2,d/2,base,rock)
     plots.append(plot)
     def draw(*dims):
         box(blocks,frame,*dims)
@@ -481,10 +495,16 @@ def building(x,y,angle,w,d,floors,kind,named=""):
     street_windows["install"](plot,trim,panel,facing)
     for level in range(1,floors):
         lower=base+2.95*level
-        front_tools["upper_storey"](plot,level,lower,lower+2.80,member,trim,panel,facade,facing)
+        if plot.get("registered_site"):
+            repair["upper"](plot,member,trim,facing)
+        else:
+            front_tools["upper_storey"](plot,level,lower,lower+2.80,member,trim,panel,facade,facing)
     front_tools["rainwater"](plot,trim,panel,facing)
     finish_tools["main_room"](plot,trim,panel,facing,street_windows["wall_pieces"])
-    shop_shade(plot,panel,facing)
+    if plot.get("registered_site"):
+        repair["shopfront"](plot,member,trim,panel,facing)
+    else:
+        shop_shade(plot,panel,facing)
     detail.finish()
     structure.finish()
     def fitting(*dims):
@@ -492,8 +512,12 @@ def building(x,y,angle,w,d,floors,kind,named=""):
     def fit_face(local,mat):
         street.face([frame(*p) for p in local],mat)
     furnish(plot,fitting,draw,fit_face,room_finish)
-    box(facades,frame,-w/2-.21,ry-.22,top-.12,w/2+.21,d/2+.22,top+.20,concrete)
-    if floors<=3 and kind!=2:
+    if not plot.get("registered_site"):
+        box(facades,frame,-w/2-.21,ry-.22,top-.12,w/2+.21,d/2+.22,top+.20,concrete)
+    if plot.get("registered_site"):
+        for name,rise in (("front_west",1.66),("front_east",1.91)):
+            repair["tiled_roof"](facades,repair_site["roof_rings"][name]["en"],top+.22,rise,facing)
+    elif floors<=3 and kind!=2:
         for side in (-1,1):
             polygon=[frame(-w/2-.38,0,top+1.65),frame(w/2+.38,0,top+1.65),
                      frame(w/2+.38,side*(d/2+.45),top+.15),frame(-w/2-.38,side*(d/2+.45),top+.15)]
@@ -511,28 +535,29 @@ def building(x,y,angle,w,d,floors,kind,named=""):
     rng.random()
     if named:
         front = ry-2.35
-        plinth(plot,frame,solid,box,ground,facing)
-        # Two distinct entrances lead to the common sheltered landing.
-        for lane in (-w*.27,w*.22):
-            span=1.15
-            foot=frame(lane,front-6.25,0)[:2]
-            foot_level=height(*foot)
-            count=max(1,min(28,round((base-foot_level)/.153)))
-            if base-foot_level>.13:
-                step_depth=min(.315,6.20/count)
-                for n in range(count):
-                    outer=front-(count-n)*step_depth
-                    at=frame(lane,outer,0)[:2]
-                    step_level=foot_level+(base-foot_level)*(n+1)/count
-                    bottom=min(height(*at)-.12,step_level-.15)
-                    left,right=lane-span,lane+span
-                    inner=outer+step_depth
-                    corners=[(left,outer),(right,outer),(right,inner),(left,inner)]
-                    solid.face([frame(u,v,step_level) for u,v in corners],stone,[(u/2.0,v/2.0) for u,v in corners])
-                    for j,(aa,bb) in enumerate(zip(corners,corners[1:]+corners[:1])):
-                        quad=[(*aa,bottom),(*bb,bottom),(*bb,step_level),(*aa,step_level)]
-                        solid.face([frame(*q) for q in quad],concrete if j==0 else rock,
-                                   [(q[0 if j%2==0 else 1]/2.20,q[2]/2.20) for q in quad])
+        if not plot.get("registered_site"):
+            plinth(plot,frame,solid,box,ground,facing)
+            # Two distinct entrances lead to the common sheltered landing.
+            for lane in (-w*.27,w*.22):
+                span=1.15
+                foot=frame(lane,front-6.25,0)[:2]
+                foot_level=height(*foot)
+                count=max(1,min(28,round((base-foot_level)/.153)))
+                if base-foot_level>.13:
+                    step_depth=min(.315,6.20/count)
+                    for n in range(count):
+                        outer=front-(count-n)*step_depth
+                        at=frame(lane,outer,0)[:2]
+                        step_level=foot_level+(base-foot_level)*(n+1)/count
+                        bottom=min(height(*at)-.12,step_level-.15)
+                        left,right=lane-span,lane+span
+                        inner=outer+step_depth
+                        corners=[(left,outer),(right,outer),(right,inner),(left,inner)]
+                        solid.face([frame(u,v,step_level) for u,v in corners],stone,[(u/2.0,v/2.0) for u,v in corners])
+                        for j,(aa,bb) in enumerate(zip(corners,corners[1:]+corners[:1])):
+                            quad=[(*aa,bottom),(*bb,bottom),(*bb,step_level),(*aa,step_level)]
+                            solid.face([frame(*q) for q in quad],concrete if j==0 else rock,
+                                       [(q[0 if j%2==0 else 1]/2.20,q[2]/2.20) for q in quad])
 
         board=room_finish["wood"] if named.endswith("茶摊") else room_finish["iron"] if named.endswith("修理铺") else room_finish["canopy"]
         box(facades,frame,-2.85,ry-2.21,base+2.19,2.85,ry-2.115,base+2.61,board)
@@ -715,6 +740,7 @@ for feature,ring in zip(registered_group["buildings"],group_polygons):
         side_values.append(side if np.dot(ring.mean(axis=0)-q,[v[1],-v[0]])<0 else -side)
     rgba[:,:,1]=np.maximum(rgba[:,:,1],np.clip((2.1-np.maximum.reduce(side_values))*2,0,1))
 
+repair["grade"](plots[0],repair_site,xx,yy,heights,mx,my,rgba)
 historic_grades=court_ground["prepare"](real_courts,height,xx,yy,heights,mx,my,rgba)
 
 for p in plots:
@@ -728,7 +754,27 @@ for p in plots:
         batch.face([frame(*point) for point in verts],mat,uvs)
     def plot_ground(u,v):
         return height(*frame(u,v,0)[:2])
-    if p.get("court"):
+    if p.get("registered_site"):
+        court_body=Geometry("COL_Outer500_RepairCourt")
+        court_finish=Geometry("Outer500_RepairCourt_TimberAndStone")
+        yard_mats=dict(court_mats)
+        for key,tint in (("sillstone",(.79,.80,.77)),("weathered_flag",(.74,.75,.71))):
+            slot=material("Cliff walk sandstone "+key,tint,"concrete_floor_worn_001_diff_2k.jpg",relief=True)
+            nodes=materials[slot].node_tree
+            shader=nodes.nodes.get("Principled BSDF")
+            texture=shader.inputs["Base Color"].links[0].from_node
+            mix=nodes.nodes.new("ShaderNodeMix")
+            mix.data_type="RGBA"
+            mix.blend_type="MULTIPLY"
+            mix.inputs[0].default_value=1
+            mix.inputs[7].default_value=(*tint,1)
+            nodes.links.new(texture.outputs["Color"],mix.inputs[6])
+            nodes.links.new(mix.outputs[2],shader.inputs["Base Color"])
+            yard_mats[key]=slot
+        repair["outside"](p,repair_site,frame,plot_ground,box,court_body,court_finish,yard_mats)
+        court_body.finish()
+        court_finish.finish()
+    elif p.get("court"):
         yards["build_court"](p,yard_box,yard_face,plot_ground,court_mats)
         pocket.finish()
         fixtures.finish()
@@ -857,6 +903,8 @@ for index,fraction in enumerate((.27,.82)):
     x,y=a+(b-a)*fraction+outward*4.65
     tree_sites.append(dict(east_north_up=[float(x),float(y),height(x,y)-.045],
                            rotation_deg=32.+index*74.,species=index,width_scale=1.06,height_scale=1.24))
+x,y=repair_site["tree_en"]
+tree_sites.append(dict(east_north_up=[x,y,plots[0]["height"]+.072],rotation_deg=37.,species=1,width_scale=.91,height_scale=1.0))
 run_path(str(HERE / "planting.py"))["place_trees"](ASSETS, tree_sites, materials, material)
 kit=GAME.parent/"chongqing_blender_v05/scanned_assets/prepared_assets.blend"
 household=run_path(str(HERE/"household.py"))["place"](kit,plots,yards["world"],ASSETS/"courtyard_r24/courtyard.glb")
@@ -892,6 +940,9 @@ owned=plots+[dict(p,east_north=yards["world"](p,p["court"]["center_u"],p["depth"
 for number in removed_for_courts:
     center,angle,width,depth=legacy_sites[str(number)]
     owned.append(dict(east_north=center,bearing=angle,width=width,depth=depth))
+for name in ("upper","west_return","east_return"):
+    a,b,c,d=ring=np.array(repair_site["roof_rings"][name]["en"])
+    owned.append(dict(east_north=ring.mean(axis=0),bearing=atan2(*(b-a)[::-1]),width=np.linalg.norm(b-a),depth=np.linalg.norm(d-a)))
 for feature in real_courts["buildings"]:
     a,b,c,d=ring=np.array(feature["points"])
     owned.append(dict(east_north=ring.mean(axis=0),bearing=atan2(*(b-a)[::-1]),width=np.linalg.norm(b-a),depth=np.linalg.norm(d-a)))

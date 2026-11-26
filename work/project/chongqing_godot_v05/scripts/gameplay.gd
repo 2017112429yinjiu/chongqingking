@@ -94,6 +94,12 @@ func setup(main: Node3D) -> void:
 	table.add_child(task_light)
 	task_light.position=Vector3(-.11,1.87,.03)
 	_make_scooter(main.get_node("City"))
+	var district=main.get_node_or_null("City/OuterDistrict500")
+	if district and district.has_meta("repair_court") and scooter:
+		var site: Dictionary=district.get_meta("repair_court")
+		var valve:=preload("res://scripts/district_500.gd").enu(site.valve)
+		var service:=_target("workshop.tyre",valve,func():return "找师傅检查车胎",func():return not riding(),func():_service_tyre(valve))
+		service.radius=2.15
 	_make_doorbells()
 	var board := main.get_node("City").find_child("R20_Post_notice", true, false) as MeshInstance3D
 	if board != null:
@@ -186,6 +192,15 @@ func _target(id: String, point: Vector3, label: Callable, enabled: Callable, act
 	target.global_position = point
 	manager.register(target)
 	return target
+
+func _service_tyre(counter: Vector3) -> void:
+	if not scooter.parked or scooter.global_position.distance_to(counter)>8.5:
+		_say("师傅：把车停在门前檐下，我给你看胎。")
+		return
+	var prior: float=scooter.tyre_pressure
+	scooter.tyre_pressure=scooter.FULL_PRESSURE
+	if lesson: lesson._save()
+	_say("师傅：胎压正常，可以走了。" if prior>=scooter.FULL_PRESSURE-.02 else "师傅：车胎已充好，%.1f → %.1f bar。" % [prior,scooter.tyre_pressure])
 
 func _make_scooter(city: Node3D) -> void:
 	var meshes: Array[Node] = city.find_children("CQF_Scooter_99_*","MeshInstance3D",true,false)

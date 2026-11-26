@@ -95,13 +95,14 @@ def furnish(p, cuboid, solid, face, colors):
     # Eaves fall towards an outer gutter; exposed underside, fascia and
     # transverse purlins have physical thickness. Crests overlap by one sheet.
     sheet="zinc" if site.endswith("修理铺") else "tile" if site.endswith("茶摊") else "canopy"
+    hood_left,hood_right=(-4.36,4.48) if p.get("registered_site") else (left,right)
     for i in range(32):
-        a=left+(right-left)*i/32;b=left+(right-left)*(i+1)/32
+        a=hood_left+(hood_right-hood_left)*i/32;b=hood_left+(hood_right-hood_left)*(i+1)/32
         for x0,x1,lift0,lift1 in ((a,a+.045,0,.045),(a+.045,a+.094,.045,0),(a+.094,b,0,0)):
             pts=[(x0,front,2.98+lift0),(x0,front-2.14,2.56+lift0),(x1,front-2.14,2.56+lift1),(x1,front,2.98+lift1)]
             panel(pts,sheet);panel(pts[::-1],sheet)
-    box(left,front-2.15,2.46,right,front-2.07,2.56,"zinc")
-    for x in (left+.14,(left+right)*.5+2.5,right-.14):
+    box(hood_left,front-2.15,2.46,hood_right,front-2.07,2.56,"zinc")
+    for x in (hood_left+.14,(hood_left+hood_right)*.5+2.5,hood_right-.14):
         box(x-.046,front-2.03,.035,x+.046,front-1.94,2.57,"iron")
         panel([(x,front-2.03,2.13),(x,front-1.57,2.62),(x,front-2.03,2.57)],"iron")
     # The rear service side has one enclosed stock room; its open doorway

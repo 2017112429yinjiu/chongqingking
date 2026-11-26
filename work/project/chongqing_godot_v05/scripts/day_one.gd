@@ -89,6 +89,7 @@ func setup(world: Node3D, checkpoint: String = RECORD) -> void:
 		game.earnings=24
 	var record := ConfigFile.new()
 	if not record_path.is_empty() and record.load(record_path) == OK:
+		player_bike.tyre_pressure=clampf(float(record.get_value("shift","tyre_pressure",player_bike.FULL_PRESSURE)),1.1,player_bike.FULL_PRESSURE)
 		step = clampi(int(record.get_value("shift","step",0)),Step.CHECK_IN,Step.RETURN)
 		game.delivered_count = maxi(0,int(record.get_value("shift","deliveries",0)))
 		round_index=clampi(int(record.get_value("shift","round",0)),0,2)
@@ -239,6 +240,7 @@ func _save() -> void:
 		record.set_value("shift","guide_yaw",mentor.rotation.y)
 		record.set_value("shift","pupil_stop",player_bike.global_position)
 		record.set_value("shift","pupil_yaw",player_bike.rotation.y)
+		record.set_value("shift","tyre_pressure",player_bike.tyre_pressure)
 	record.set_value("shift","deliveries",game.delivered_count)
 	record.set_value("shift","earnings",game.earnings)
 	if demo:
