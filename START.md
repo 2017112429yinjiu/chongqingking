@@ -1,5 +1,9 @@
 # 重庆外卖王 · 本地开发
 
+## 当前地图检查
+
+[500 米全图巡检 · 已定位的穿地、挡墙、陈设重复与证据范围](work/scene_r24/map_review/README.md) · [71 个试作地块逐项记录](work/scene_r24/map_review/PLOTS.md)
+
 ## 500 米城区试作分支
 
 [金马寺小学一楼 · 故事馆现版墙地、木楼板与实走回望](work/scene_r24/shancheng_courts/story_room/README.md)

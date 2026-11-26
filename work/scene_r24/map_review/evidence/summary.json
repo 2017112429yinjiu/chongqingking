@@ -1,0 +1,211 @@
+{
+  "play": {
+    "geometry": 5532,
+    "visible": 5066,
+    "visible_surfaces": 8391,
+    "null_surfaces": 0,
+    "material_count": 796,
+    "no_bound_texture": 366,
+    "source_scenes": [
+      "res://assets/block_r23/block.glb",
+      "res://assets/block_r23/body_view.glb",
+      "res://assets/block_r23/commuter.glb",
+      "res://assets/block_r23/microvan.glb",
+      "res://assets/block_r23/neighbor.glb",
+      "res://assets/block_r23/taxi.glb",
+      "res://assets/characters/serving_counter_r18.glb",
+      "res://assets/characters/shopkeeper_r21.glb",
+      "res://assets/chongqing_district.glb",
+      "res://assets/counter_r21/chilli_station.glb",
+      "res://assets/courtyard_r24/kitchen/courtyard.glb",
+      "res://assets/district_500/historic_courts.glb",
+      "res://assets/district_500/landing_53.glb",
+      "res://assets/district_500/outer_district.glb",
+      "res://assets/district_500/shancheng_lane.glb",
+      "res://assets/district_r21/terraces.glb",
+      "res://assets/frontage_r24/frontage.glb",
+      "res://assets/lane_r20/meter_lods.glb",
+      "res://assets/lane_r20/upper_lane.glb",
+      "res://assets/neighborhood_r24/street.glb",
+      "res://assets/river_r22/river_context.glb",
+      "res://assets/roofs_r22/roofs_and_breakfast.glb",
+      "res://assets/rooms_r24/rooms.glb",
+      "res://assets/street_finish_r24/street_finish.glb",
+      "res://assets/street_r19/street_life.glb",
+      "res://assets/street_use_r24/workday.glb",
+      "res://assets/vehicles/scooter_r18.glb",
+      "res://first_shift.tscn"
+    ]
+  },
+  "art": {
+    "geometry": 4257,
+    "visible": 4167,
+    "visible_surfaces": 4924,
+    "null_surfaces": 0,
+    "material_count": 667,
+    "no_bound_texture": 317,
+    "source_scenes": [
+      "res://assets/block_r23/block.glb",
+      "res://assets/block_r23/commuter.glb",
+      "res://assets/block_r23/microvan.glb",
+      "res://assets/block_r23/neighbor.glb",
+      "res://assets/block_r23/taxi.glb",
+      "res://assets/characters/serving_counter_r18.glb",
+      "res://assets/characters/shopkeeper_r21.glb",
+      "res://assets/chongqing_district.glb",
+      "res://assets/counter_r21/chilli_station.glb",
+      "res://assets/courtyard_r24/kitchen/courtyard.glb",
+      "res://assets/district_r21/terraces.glb",
+      "res://assets/frontage_r24/frontage.glb",
+      "res://assets/lane_r20/meter_lods.glb",
+      "res://assets/lane_r20/upper_lane.glb",
+      "res://assets/neighborhood_r24/street.glb",
+      "res://assets/river_r22/river_context.glb",
+      "res://assets/roofs_r22/roofs_and_breakfast.glb",
+      "res://assets/rooms_r24/rooms.glb",
+      "res://assets/street_finish_r24/street_finish.glb",
+      "res://assets/street_r19/street_life.glb",
+      "res://assets/street_use_r24/workday.glb",
+      "res://assets/vehicles/scooter_r18.glb",
+      "res://main.tscn"
+    ]
+  },
+  "frames": {
+    "play": 366,
+    "art_views": 132,
+    "terrain_views": 80,
+    "road_views_full": 33
+  },
+  "rooms": {
+    "washroom": 17,
+    "bedroom": 21,
+    "kitchen": 11,
+    "sitting_room": 19
+  },
+  "water_grid": {
+    "misses": 16,
+    "in_registered_water": 16
+  },
+  "dominant_surface_metres_along_lane_centres": {
+    "street": {
+      "paving": 231.97
+    },
+    "shared": {
+      "paving": 791.53
+    }
+  },
+  "paired_floor_points": 48868,
+  "unpaired_floor_points": 0,
+  "intrusions": {
+    "plot_56": {
+      "hit": "City/OuterDistrict500/COL_Outer500_Surface_02_02/CQ_StaticCollision",
+      "rise_m": 0.109,
+      "source_gap_m": 0.109,
+      "xy": [
+        -122.103,
+        -132.13,
+        4.268
+      ]
+    },
+    "renai_cross": {
+      "hit": "City/OuterDistrict500/COL_Outer500_Surface_01_05/CQ_StaticCollision",
+      "rise_m": 0.452,
+      "source_gap_m": 0.452,
+      "xy": [
+        -177.171,
+        46.579,
+        19.617
+      ]
+    },
+    "w704006729@1": {
+      "hit": "City/OuterDistrict500/COL_Outer500_Surface_00_08/CQ_StaticCollision",
+      "rise_m": 0.056,
+      "source_gap_m": 0.055,
+      "xy": [
+        -223.4,
+        168.403,
+        29.078
+      ]
+    },
+    "w704006732@1": {
+      "hit": "City/OuterDistrict500/COL_Outer500_Surface_00_08/CQ_StaticCollision",
+      "rise_m": 0.256,
+      "source_gap_m": 0.257,
+      "xy": [
+        -241.439,
+        188.768,
+        33.226
+      ]
+    },
+    "w704006733@1": {
+      "hit": "City/OuterDistrict500/COL_Outer500_Surface_00_08/CQ_StaticCollision",
+      "rise_m": 0.817,
+      "source_gap_m": 0.818,
+      "xy": [
+        -217.0,
+        192.864,
+        31.669
+      ]
+    },
+    "w704006741@1": {
+      "hit": "City/OuterDistrict500/COL_Outer500_Surface_00_09/CQ_StaticCollision",
+      "rise_m": 1.139,
+      "source_gap_m": 1.139,
+      "xy": [
+        -202.803,
+        241.203,
+        43.352
+      ]
+    }
+  },
+  "failed_direct": [
+    "street_00_in",
+    "street_00_out",
+    "street_01_in",
+    "street_02_in",
+    "street_33_out",
+    "street_37_in",
+    "street_38_in",
+    "street_40_in",
+    "street_41_in",
+    "street_44_in"
+  ],
+  "failed_stairs": [
+    "stair_01_right_in",
+    "stair_02_right_in",
+    "stair_37_front_-52_in",
+    "stair_37_front_0_in",
+    "stair_37_front_52_in"
+  ],
+  "visible_scene_file_sha256": {
+    "res://assets/block_r23/block.glb": "f0796f06598586cfdbb6fab09f18dc28287a6951f3e2a092134ab7feb75fb686",
+    "res://assets/block_r23/body_view.glb": "8c11273f814658f3e44b22442da165b3442f071ed98ac6fd264f74df6fb24d06",
+    "res://assets/block_r23/commuter.glb": "210bf68072fc9365d36b02f457bbabc21cd6c4a01ca7fd990b5692e9ce7631a0",
+    "res://assets/block_r23/microvan.glb": "a2c5750c13b58b0019ba724f9b62377acf30698edacb39c5f24961237912e599",
+    "res://assets/block_r23/neighbor.glb": "f416ea09f010f3fdb8dfb286f2aebffa0ceeab61e0ff6f15bf9f68284983fecf",
+    "res://assets/block_r23/taxi.glb": "6ba1b7ef263404413ea27bee5a92d976511f766abaa4f74f1f2fdbec2984589d",
+    "res://assets/characters/serving_counter_r18.glb": "dbc89c838cb3dfc835790fc1336fa3f6e8784d41ec972c76e7359119c8e41f54",
+    "res://assets/characters/shopkeeper_r21.glb": "ac585e8a037fcf950fc51d46e0fa34c3c46f40ccf1241250273f2af4d4fc6cbc",
+    "res://assets/chongqing_district.glb": "88b5be04c0c72ae2b54bb02f55f2186f7b7ec2937389a59697e7306dbd7e7c13",
+    "res://assets/counter_r21/chilli_station.glb": "e2a11e6c8ac2b26c1b077d38f343f1cb810855c89f7539898c9d41ef8df661ec",
+    "res://assets/courtyard_r24/kitchen/courtyard.glb": "fe1cf574d2396922b35d00070a6335da648fb00eaeed9c3524ad9edc02bc7f42",
+    "res://assets/district_500/historic_courts.glb": "2b66e9411fdc1ad9a3a13644838cb3c6b2eb961d5709ad905cb311f5e86e1f9a",
+    "res://assets/district_500/landing_53.glb": "13ae6afcc12bb422b8ee4a9ffca0475ee11526bb70e6ecc6f3de856621ba9c91",
+    "res://assets/district_500/outer_district.glb": "b0180ce3a8d821253181725ad4516c04f58fe057529680e22a081f89fdd62122",
+    "res://assets/district_500/shancheng_lane.glb": "0fc0ef5a6ca694ce53d2996a51fbeff705dbcd75b563ba570148e23f79cb60f6",
+    "res://assets/district_r21/terraces.glb": "fdb98c3bd8b65364f2d76c30a6263cbfca46c2cc991436662197d56faa76346c",
+    "res://assets/frontage_r24/frontage.glb": "225e217815de12639bb7dbb58245ffabea2eb0502d3e2b1964ef5ceef7fb1cf6",
+    "res://assets/lane_r20/meter_lods.glb": "931e72fa0f34fe7bcdd65257f2b1c55316cde4ac61805fc81799cd777efc0ecc",
+    "res://assets/lane_r20/upper_lane.glb": "16dabbe6c51b1ff130153d68092dc84daa509ba4538f10152f85d4e8ae53be37",
+    "res://assets/neighborhood_r24/street.glb": "72e5de5ac664d3c3d2ab31282792d98e5138c60f1566c5e8c324d539e77494e7",
+    "res://assets/river_r22/river_context.glb": "7e6e4ebf4f54513ae6492baba5c02e1a6571735ef7e7cd5e4a6dff7847232f87",
+    "res://assets/roofs_r22/roofs_and_breakfast.glb": "1bd3e44caf3cddd9ce47095815698725b45fed697f122c636a4def0b67b85c44",
+    "res://assets/rooms_r24/rooms.glb": "b87a03a74ee4e5230d888a97a0dc5bed6690aed42c382f8a89f05864ba8f4fe0",
+    "res://assets/street_finish_r24/street_finish.glb": "a4bfb13de2bf37cc61e57fbf30c3bee2986a6a6d95cede5f01a23f6b0996751b",
+    "res://assets/street_r19/street_life.glb": "1c40ae7ed04e8bf3f5f7956eaf630a098890e62a9c142f3e846c9ee15d530bad",
+    "res://assets/street_use_r24/workday.glb": "608094aa95d077dc3ea4601febcc77ce698e2317e6a2ecd64291c26043ac8a61",
+    "res://assets/vehicles/scooter_r18.glb": "6536538dde0cc547e4a4461d1cef58ed7cd3f17620b4ac9eaa2e428bad6cea19",
+    "res://first_shift.tscn": "774ca1a31c34676c9bd0cbb187f88c3c52194c3aba9bf335e8acf590539c4b64",
+    "res://main.tscn": "78b72fdcddf565af1cab1ea7463c1f09a4ee0b49ae2b3b3b5ffaf9790cbfe8fe"
+  }
+}
