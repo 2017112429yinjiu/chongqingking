@@ -1,0 +1,43 @@
+{
+  "method": "Interpretive observations only. No imagery or perimeter geometry is supplied as a game asset.",
+  "imagery_sha256": "54ba3944fea775e513e9c23e304db170c7ab7a48eb9880fdc619dc6a6f790273",
+  "imagery_epsg_3857_extent": [
+    11862384.4391,
+    3445935.1103,
+    11863016.1823,
+    3446570.0754
+  ],
+  "image_width_height_px": [
+    1600,
+    1600
+  ],
+  "ground_reference": "West of line 10, between the observed carriageway and the muted grey park route. The 2023 photo separately confirms the blue surface in this area.",
+  "blue_area_observed_centre_east_north": [
+    -145.75,
+    -184.248
+  ],
+  "blue_area_observed_bounds_east_north": [
+    -156.75,
+    -191.811,
+    -137.5,
+    -174.279
+  ],
+  "park_way": 1499726225,
+  "centre_in_open_park": true,
+  "distance_to_park_boundary_m": 20.074,
+  "observed_blue_to_legacy_57_footprint_m": 9.502,
+  "centre_to_rail_m": {
+    "878019566": 37.951,
+    "1134456893": 47.872
+  },
+  "surface_role": "Blue play surface. Sport, fixtures and exact field boundaries unresolved.",
+  "photo": "https://www.cq.gov.cn/sy/lb/202310/t20231026_12473668.html",
+  "game_support_sample": {
+    "points": 156,
+    "ground_range_m": [
+      -9.217,
+      -2.794
+    ],
+    "probe": "2 m grid in projected vicinity. Heights are Godot local game data, not site elevations."
+  }
+}

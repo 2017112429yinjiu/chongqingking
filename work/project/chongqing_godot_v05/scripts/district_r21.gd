@@ -44,9 +44,10 @@ static func install(city: Node3D, planted_extent_m: float = 0.0) -> Dictionary:
 		var exterior: Dictionary=JSON.parse_string(FileAccess.get_file_as_string("res://assets/district_500/edge_ground.json"))
 		for index: String in exterior.outer_canopy_y:
 			background[int(index)].position[1]=exterior.outer_canopy_y[index]
+		var retired: Array = exterior.get("retired_wet_canopy_positions", [])
 		background = background.filter(func(tree: Dictionary):
 			var p := point(tree.position)
-			return maxf(absf(p.x), absf(p.z)) > planted_extent_m)
+			return maxf(absf(p.x), absf(p.z)) > planted_extent_m and not retired.has(tree.position))
 	var exterior_sectors := install_canopy(group, background, data.canopy_pivots, 62.0)
 	var paving:=ShaderMaterial.new()
 	paving.shader=preload("res://shaders/paving_r21.gdshader")

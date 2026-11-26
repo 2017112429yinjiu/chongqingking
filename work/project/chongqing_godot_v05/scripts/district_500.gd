@@ -8,6 +8,8 @@ const MATCH_FACTORY := "res://assets/district_500/match_factory.glb"
 const MATCH_FACTORY_SITE := "res://assets/district_500/match_factory.json"
 const MATIX_STREETS := "res://assets/district_500/matix_streets.glb"
 const MATIX_SITE := "res://assets/district_500/matix_streets.json"
+const ZHONGXING_WALL := "res://assets/district_500/zhongxing-retaining.glb"
+const ZHONGXING_SITE := "res://assets/district_500/zhongxing-retaining.json"
 
 static func install(city: Node3D) -> Dictionary:
 	var district := (load(MODEL) as PackedScene).instantiate() as Node3D
@@ -37,6 +39,7 @@ static func install(city: Node3D) -> Dictionary:
 		install_street_group(district, MATCH_FACTORY, MATCH_FACTORY_SITE, "MatchFactory")
 		if not "--qa-without-matix-streets" in OS.get_cmdline_user_args():
 			install_street_group(district, MATIX_STREETS, MATIX_SITE, "MatixStreets")
+			install_street_group(district, ZHONGXING_WALL, ZHONGXING_SITE, "ZhongxingStreetWall")
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -189,6 +192,7 @@ static func install(city: Node3D) -> Dictionary:
 		"glb_sha256": FileAccess.get_sha256(MODEL), "riverside_sha256": FileAccess.get_sha256(RIVERSIDE),
 		"match_factory_sha256": FileAccess.get_sha256(MATCH_FACTORY),
 		"matix_streets_sha256": FileAccess.get_sha256(MATIX_STREETS),
+		"zhongxing_wall_sha256": FileAccess.get_sha256(ZHONGXING_WALL),
 		"retired_internal_context": local_frame != null, "osm_building_ids": retire}
 
 

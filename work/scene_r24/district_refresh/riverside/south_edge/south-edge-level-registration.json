@@ -1,0 +1,1758 @@
+{
+  "source_sha256": "37c269b570deb778828e26766a62cde853d02a5e4663954612383426115e51a8",
+  "source_bytes": 1058302,
+  "attribution": "© OpenStreetMap contributors, ODbL 1.0",
+  "plot_count": 26,
+  "sports_nodes": [
+    {
+      "node": 14232203723,
+      "tags": {
+        "leisure": "pitch"
+      },
+      "east_north": [
+        13.1672,
+        238.3621
+      ]
+    },
+    {
+      "node": 14232203724,
+      "tags": {
+        "hoops": "2",
+        "leisure": "pitch",
+        "sport": "basketball"
+      },
+      "east_north": [
+        -30.5757,
+        7.9701
+      ]
+    },
+    {
+      "node": 14232203725,
+      "tags": {
+        "hoops": "2",
+        "leisure": "pitch",
+        "sport": "basketball"
+      },
+      "east_north": [
+        -39.8024,
+        -6.3289
+      ]
+    }
+  ],
+  "plots": [
+    {
+      "plot": 2,
+      "east_north": [
+        79.0,
+        -170.0
+      ],
+      "bearing": 0.3,
+      "width": 21,
+      "depth": 12,
+      "in_game_layers": {
+        "plot": "2",
+        "park_centre_1499726225": "False",
+        "game_ground_m": "-1.394",
+        "game_envelope_hit_m": "1.152",
+        "game_frame_hit_m": "7.017",
+        "other_game_layer_hits_m": "",
+        "best_mapped_footprint": "",
+        "best_footprint_iou": "",
+        "closest_registered_road_osm": "1256840008",
+        "aerial_observation": "细长铺面和车辆落在试作轮廓内，需查桥上桥下"
+      },
+      "mapped_routes": [
+        {
+          "way": 1256859184,
+          "tags": {
+            "highway": "primary",
+            "name": "长江滨江路"
+          },
+          "crossing_m": 14.227,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              81.4917474174661,
+              -174.79162652824357
+            ],
+            [
+              76.12031547871808,
+              -174.17923675288608
+            ],
+            [
+              70.74888353997008,
+              -173.56684697752857
+            ]
+          ]
+        },
+        {
+          "way": 1375242613,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "1"
+          },
+          "crossing_m": 0.0,
+          "edge_distance_m": 0.56,
+          "stations_east_north": []
+        }
+      ],
+      "mapped_areas": []
+    },
+    {
+      "plot": 4,
+      "east_north": [
+        -131.93625401527726,
+        -81.18548753211908
+      ],
+      "bearing": 2.8587393373590033,
+      "width": 11.807360103189698,
+      "depth": 9.384819814162366,
+      "in_game_layers": {
+        "plot": "4",
+        "park_centre_1499726225": "False",
+        "game_ground_m": "7.933",
+        "game_envelope_hit_m": "9.92",
+        "game_frame_hit_m": "27.586",
+        "other_game_layer_hits_m": "COL_R24_LinkDeck_R24_link_asphalt 8.699 | COL_R24_FlyoverBox_R24_link_concrete 7.789",
+        "best_mapped_footprint": "",
+        "best_footprint_iou": "",
+        "closest_registered_road_osm": "59146775",
+        "aerial_observation": "桥梁投影与路面相交，桥下地面被遮"
+      },
+      "mapped_routes": [
+        {
+          "way": 1151519554,
+          "tags": {
+            "railway": "construction",
+            "name": "27号线",
+            "ref": "27",
+            "tunnel": "yes",
+            "layer": "-5"
+          },
+          "crossing_m": 11.944,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              -136.83383152091992,
+              -81.9600061973247
+            ],
+            [
+              -132.71610560617728,
+              -83.86865285032285
+            ],
+            [
+              -128.59837969143467,
+              -85.77729950332099
+            ]
+          ]
+        },
+        {
+          "way": 59146775,
+          "tags": {
+            "highway": "secondary_link",
+            "bridge": "yes",
+            "layer": "1"
+          },
+          "crossing_m": 11.807,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              -136.61516921542125,
+              -81.20767444425955
+            ],
+            [
+              -132.31139566119356,
+              -82.47620369591479
+            ],
+            [
+              -128.00762210696584,
+              -83.74473294757003
+            ]
+          ]
+        },
+        {
+          "way": 878019566,
+          "tags": {
+            "railway": "subway",
+            "name": "10号线",
+            "ref": "10",
+            "bridge": "yes",
+            "layer": "5"
+          },
+          "crossing_m": 4.023,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              -126.63146874683287,
+              -78.28789111553927
+            ],
+            [
+              -126.33989702472456,
+              -79.78869454998092
+            ],
+            [
+              -126.04832530261626,
+              -81.28949798442257
+            ]
+          ]
+        },
+        {
+          "way": 1256840005,
+          "tags": {
+            "highway": "primary_link",
+            "tunnel": "yes",
+            "layer": "-1"
+          },
+          "crossing_m": 0.0,
+          "edge_distance_m": 0.574,
+          "stations_east_north": []
+        },
+        {
+          "way": 1324001441,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "3"
+          },
+          "crossing_m": 0.0,
+          "edge_distance_m": 2.837,
+          "stations_east_north": []
+        }
+      ],
+      "mapped_areas": []
+    },
+    {
+      "plot": 6,
+      "east_north": [
+        -217.51239375821402,
+        -45.9615881928301
+      ],
+      "bearing": 2.4705421149778393,
+      "width": 18.519212312550557,
+      "depth": 7.108129126579515,
+      "in_game_layers": {
+        "plot": "6",
+        "park_centre_1499726225": "False",
+        "game_ground_m": "12.646",
+        "game_envelope_hit_m": "14.117",
+        "game_frame_hit_m": "28.832",
+        "other_game_layer_hits_m": "",
+        "best_mapped_footprint": "",
+        "best_footprint_iou": "",
+        "closest_registered_road_osm": "1189963598",
+        "aerial_observation": "道路边线和树带斜切地块"
+      },
+      "mapped_routes": [
+        {
+          "way": 1151519554,
+          "tags": {
+            "railway": "construction",
+            "name": "27号线",
+            "ref": "27",
+            "tunnel": "yes",
+            "layer": "-5"
+          },
+          "crossing_m": 7.694,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              -217.3002897624165,
+              -50.28577646870171
+            ],
+            [
+              -214.544811357286,
+              -51.263004919330676
+            ],
+            [
+              -211.78933295215552,
+              -52.24023336995964
+            ]
+          ]
+        }
+      ],
+      "mapped_areas": []
+    },
+    {
+      "plot": 51,
+      "east_north": [
+        -197.6397187869926,
+        -61.217106368714624
+      ],
+      "bearing": 1.9018924034990285,
+      "width": 18.24873718375325,
+      "depth": 8.86571110593134,
+      "in_game_layers": {
+        "plot": "51",
+        "park_centre_1499726225": "False",
+        "game_ground_m": "12.718",
+        "game_envelope_hit_m": "14.097",
+        "game_frame_hit_m": "19.962",
+        "other_game_layer_hits_m": "",
+        "best_mapped_footprint": "",
+        "best_footprint_iou": "",
+        "closest_registered_road_osm": "59146775",
+        "aerial_observation": "车道边线与树带斜切地块"
+      },
+      "mapped_routes": [
+        {
+          "way": 1151519554,
+          "tags": {
+            "railway": "construction",
+            "name": "27号线",
+            "ref": "27",
+            "tunnel": "yes",
+            "layer": "-5"
+          },
+          "crossing_m": 11.328,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              -203.24651789375577,
+              -55.26993663600083
+            ],
+            [
+              -199.18945959708756,
+              -56.708769466620204
+            ],
+            [
+              -195.13240130041936,
+              -58.14760229723958
+            ]
+          ]
+        },
+        {
+          "way": 59146775,
+          "tags": {
+            "highway": "secondary_link",
+            "bridge": "yes",
+            "layer": "1"
+          },
+          "crossing_m": 1.687,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              -197.23440158739038,
+              -51.59706685544257
+            ],
+            [
+              -196.6945261084848,
+              -51.942517642667326
+            ],
+            [
+              -196.15465062957927,
+              -52.287968429892075
+            ]
+          ]
+        }
+      ],
+      "mapped_areas": []
+    },
+    {
+      "plot": 52,
+      "east_north": [
+        -181.22043743757285,
+        -101.65044304294616
+      ],
+      "bearing": 2.185459278717062,
+      "width": 14.756242561381011,
+      "depth": 7.992881307165268,
+      "in_game_layers": null,
+      "mapped_routes": [],
+      "mapped_areas": []
+    },
+    {
+      "plot": 53,
+      "east_north": [
+        -154.38047948993068,
+        -82.70459037402229
+      ],
+      "bearing": -0.9561333748727311,
+      "width": 14.474527486138378,
+      "depth": 9.447127733770103,
+      "in_game_layers": {
+        "plot": "53",
+        "park_centre_1499726225": "False",
+        "game_ground_m": "11.464",
+        "game_envelope_hit_m": "13.355",
+        "game_frame_hit_m": "25.12",
+        "other_game_layer_hits_m": "",
+        "best_mapped_footprint": "",
+        "best_footprint_iou": "",
+        "closest_registered_road_osm": "59146775",
+        "aerial_observation": "两条弯车道及匝坡边缘，车道层级待核"
+      },
+      "mapped_routes": [
+        {
+          "way": 59146775,
+          "tags": {
+            "highway": "secondary_link",
+            "bridge": "yes",
+            "layer": "1"
+          },
+          "crossing_m": 1.007,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              -155.02836990595696,
+              -74.42762363671812
+            ],
+            [
+              -154.6735715239039,
+              -74.57107071987116
+            ],
+            [
+              -154.31877314185078,
+              -74.71451780302418
+            ]
+          ]
+        },
+        {
+          "way": 1151519554,
+          "tags": {
+            "railway": "construction",
+            "name": "27号线",
+            "ref": "27",
+            "tunnel": "yes",
+            "layer": "-5"
+          },
+          "crossing_m": 0.0,
+          "edge_distance_m": 0.238,
+          "stations_east_north": []
+        },
+        {
+          "way": 1256839997,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "3"
+          },
+          "crossing_m": 0.0,
+          "edge_distance_m": 1.362,
+          "stations_east_north": []
+        },
+        {
+          "way": 1256840006,
+          "tags": {
+            "highway": "primary_link",
+            "tunnel": "yes",
+            "layer": "-1"
+          },
+          "crossing_m": 0.0,
+          "edge_distance_m": 2.067,
+          "stations_east_north": []
+        }
+      ],
+      "mapped_areas": []
+    },
+    {
+      "plot": 54,
+      "east_north": [
+        -135.1313046370723,
+        -116.3229060586242
+      ],
+      "bearing": -1.09432890732119,
+      "width": 13.740317139661972,
+      "depth": 10.192477627009588,
+      "in_game_layers": {
+        "plot": "54",
+        "park_centre_1499726225": "False",
+        "game_ground_m": "4.9",
+        "game_envelope_hit_m": "5.322",
+        "game_frame_hit_m": "17.087",
+        "other_game_layer_hits_m": "",
+        "best_mapped_footprint": "",
+        "best_footprint_iou": "",
+        "closest_registered_road_osm": "1256840005",
+        "aerial_observation": "车辆和匝道边线落在轮廓内，靠主桥边"
+      },
+      "mapped_routes": [
+        {
+          "way": 1256839997,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "3"
+          },
+          "crossing_m": 0.676,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              -136.69910991058748,
+              -124.30096114910718
+            ],
+            [
+              -136.47638544948256,
+              -124.42885945460213
+            ],
+            [
+              -136.25366098837767,
+              -124.55675776009707
+            ]
+          ]
+        },
+        {
+          "way": 1324001441,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "3"
+          },
+          "crossing_m": 0.0,
+          "edge_distance_m": 2.052,
+          "stations_east_north": []
+        }
+      ],
+      "mapped_areas": []
+    },
+    {
+      "plot": 55,
+      "east_north": [
+        -142.5535569181115,
+        -157.47809300810897
+      ],
+      "bearing": 2.4167265099744517,
+      "width": 9.257579555138216,
+      "depth": 10.939011785229676,
+      "in_game_layers": {
+        "plot": "55",
+        "park_centre_1499726225": "False",
+        "game_ground_m": "-0.994",
+        "game_envelope_hit_m": "3.389",
+        "game_frame_hit_m": "12.42",
+        "other_game_layer_hits_m": "",
+        "best_mapped_footprint": "",
+        "best_footprint_iou": "",
+        "closest_registered_road_osm": "1256840005",
+        "aerial_observation": "顺行道路的车道线穿过轮廓"
+      },
+      "mapped_routes": [
+        {
+          "way": 59146737,
+          "tags": {
+            "highway": "primary",
+            "name": "长江滨江路"
+          },
+          "crossing_m": 10.44,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              -145.68898858191173,
+              -155.7123751884357
+            ],
+            [
+              -141.8397236633395,
+              -156.67215223659218
+            ],
+            [
+              -137.99045874476724,
+              -157.63192928474865
+            ]
+          ]
+        },
+        {
+          "way": 1324001438,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "1"
+          },
+          "crossing_m": 0.0,
+          "edge_distance_m": 1.742,
+          "stations_east_north": []
+        }
+      ],
+      "mapped_areas": [
+        {
+          "way": 1499726225,
+          "tags": {
+            "name": "滨江公园",
+            "leisure": "park"
+          },
+          "overlap_m2": 0.096,
+          "contains_centre": false
+        }
+      ]
+    },
+    {
+      "plot": 56,
+      "east_north": [
+        -122.29209937682984,
+        -134.6022538485974
+      ],
+      "bearing": -0.7248661436153412,
+      "width": 19.075441176135165,
+      "depth": 8.998202934647665,
+      "in_game_layers": {
+        "plot": "56",
+        "park_centre_1499726225": "False",
+        "game_ground_m": "4.156",
+        "game_envelope_hit_m": "4.264",
+        "game_frame_hit_m": "21.929",
+        "other_game_layer_hits_m": "",
+        "best_mapped_footprint": "",
+        "best_footprint_iou": "",
+        "closest_registered_road_osm": "59146775",
+        "aerial_observation": "车道湾和高架投影相交，地表待核"
+      },
+      "mapped_routes": [
+        {
+          "way": 1256839997,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "3"
+          },
+          "crossing_m": 14.677,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              -127.96253207954175,
+              -129.16963333214977
+            ],
+            [
+              -122.81321803620186,
+              -131.31232507978527
+            ],
+            [
+              -117.66390399286198,
+              -133.45501682742076
+            ]
+          ]
+        },
+        {
+          "way": 878019566,
+          "tags": {
+            "railway": "subway",
+            "name": "10号线",
+            "ref": "10",
+            "bridge": "yes",
+            "layer": "5"
+          },
+          "crossing_m": 6.487,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              -115.8326115611456,
+              -134.9616296844249
+            ],
+            [
+              -115.40847645927313,
+              -137.39002293029563
+            ],
+            [
+              -114.98434135740067,
+              -139.81841617616638
+            ]
+          ]
+        },
+        {
+          "way": 1256859184,
+          "tags": {
+            "highway": "primary",
+            "name": "长江滨江路"
+          },
+          "crossing_m": 2.14,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              -117.72301777275023,
+              -143.4860346329426
+            ],
+            [
+              -118.51282392018955,
+              -143.29311651826947
+            ],
+            [
+              -119.30263006762887,
+              -143.10019840359638
+            ]
+          ]
+        }
+      ],
+      "mapped_areas": []
+    },
+    {
+      "plot": 57,
+      "east_north": [
+        -121.9805360789063,
+        -177.7904351935349
+      ],
+      "bearing": 2.4167265099744517,
+      "width": 15.655228945064959,
+      "depth": 9.534076098297954,
+      "in_game_layers": {
+        "plot": "57",
+        "park_centre_1499726225": "True",
+        "game_ground_m": "-2.924",
+        "game_envelope_hit_m": "-0.586",
+        "game_frame_hit_m": "11.179",
+        "other_game_layer_hits_m": "",
+        "best_mapped_footprint": "",
+        "best_footprint_iou": "",
+        "closest_registered_road_osm": "1256840005",
+        "aerial_observation": "公园边界内，位于蓝面设施及折线路径旁"
+      },
+      "mapped_routes": [],
+      "mapped_areas": [
+        {
+          "way": 1499726225,
+          "tags": {
+            "name": "滨江公园",
+            "leisure": "park"
+          },
+          "overlap_m2": 149.258,
+          "contains_centre": true
+        }
+      ]
+    },
+    {
+      "plot": 58,
+      "east_north": [
+        -101.19591588038558,
+        -154.3239285177857
+      ],
+      "bearing": -0.7248661436153412,
+      "width": 13.363177977354841,
+      "depth": 7.367939161315468,
+      "in_game_layers": {
+        "plot": "58",
+        "park_centre_1499726225": "False",
+        "game_ground_m": "2.462",
+        "game_envelope_hit_m": "3.534",
+        "game_frame_hit_m": "9.399",
+        "other_game_layer_hits_m": "",
+        "best_mapped_footprint": "",
+        "best_footprint_iou": "",
+        "closest_registered_road_osm": "1256840005",
+        "aerial_observation": "被主桥跨过，桥下地面被遮"
+      },
+      "mapped_routes": [
+        {
+          "way": 1256840000,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "1"
+          },
+          "crossing_m": 12.084,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              -97.18626931405235,
+              -153.86662621512647
+            ],
+            [
+              -101.65262513071926,
+              -152.800356889306
+            ],
+            [
+              -106.11898094738616,
+              -151.73408756348553
+            ]
+          ]
+        },
+        {
+          "way": 1134456893,
+          "tags": {
+            "railway": "subway",
+            "name": "10号线",
+            "ref": "10",
+            "bridge": "yes",
+            "layer": "5"
+          },
+          "crossing_m": 11.82,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              -101.82358697741861,
+              -157.50812095448947
+            ],
+            [
+              -102.59642797452292,
+              -153.08347494869264
+            ],
+            [
+              -103.36926897162722,
+              -148.6588289428958
+            ]
+          ]
+        },
+        {
+          "way": 1324001438,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "1"
+          },
+          "crossing_m": 5.69,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              -101.73530124575095,
+              -158.3398162320536
+            ],
+            [
+              -99.63357974442064,
+              -158.84729255166968
+            ],
+            [
+              -97.53185824309034,
+              -159.35476887128578
+            ]
+          ]
+        },
+        {
+          "way": 1256859184,
+          "tags": {
+            "highway": "primary",
+            "name": "长江滨江路"
+          },
+          "crossing_m": 0.0,
+          "edge_distance_m": 0.231,
+          "stations_east_north": []
+        }
+      ],
+      "mapped_areas": []
+    },
+    {
+      "plot": 59,
+      "east_north": [
+        -71.74519140446822,
+        -191.8555557056673
+      ],
+      "bearing": 2.9533711482850222,
+      "width": 10.253869198329436,
+      "depth": 11.321283792024001,
+      "in_game_layers": {
+        "plot": "59",
+        "park_centre_1499726225": "True",
+        "game_ground_m": "0.553",
+        "game_envelope_hit_m": "4.06",
+        "game_frame_hit_m": "7.19",
+        "other_game_layer_hits_m": "",
+        "best_mapped_footprint": "",
+        "best_footprint_iou": "",
+        "closest_registered_road_osm": "1256840005",
+        "aerial_observation": "公园边界内，靠浅色小体块、曲边铺地和桥影"
+      },
+      "mapped_routes": [],
+      "mapped_areas": [
+        {
+          "way": 1499726225,
+          "tags": {
+            "name": "滨江公园",
+            "leisure": "park"
+          },
+          "overlap_m2": 116.087,
+          "contains_centre": true
+        }
+      ]
+    },
+    {
+      "plot": 60,
+      "east_north": [
+        -66.31866771307938,
+        -163.3663063258759
+      ],
+      "bearing": -0.18822150530477075,
+      "width": 16.576642760090444,
+      "depth": 10.200408923199102,
+      "in_game_layers": {
+        "plot": "60",
+        "park_centre_1499726225": "False",
+        "game_ground_m": "1.208",
+        "game_envelope_hit_m": "2.226",
+        "game_frame_hit_m": "11.041",
+        "other_game_layer_hits_m": "",
+        "best_mapped_footprint": "",
+        "best_footprint_iou": "",
+        "closest_registered_road_osm": "1256840005",
+        "aerial_observation": "道路下方的大暗面见一组细长线，需地面角度"
+      },
+      "mapped_routes": [
+        {
+          "way": 1324001438,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "1"
+          },
+          "crossing_m": 16.767,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              -73.01013890181989,
+              -164.95351829628922
+            ],
+            [
+              -66.68892478937605,
+              -165.7231369474812
+            ],
+            [
+              -60.32181086041221,
+              -165.84876031092475
+            ]
+          ]
+        },
+        {
+          "way": 1256840000,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "1"
+          },
+          "crossing_m": 7.529,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              -67.36696801510628,
+              -158.31080014574013
+            ],
+            [
+              -70.1787839243553,
+              -158.83944081236532
+            ],
+            [
+              -73.00510633797603,
+              -158.98781400969716
+            ]
+          ]
+        },
+        {
+          "way": 1256859184,
+          "tags": {
+            "highway": "primary",
+            "name": "长江滨江路"
+          },
+          "crossing_m": 0.0,
+          "edge_distance_m": 1.899,
+          "stations_east_north": []
+        }
+      ],
+      "mapped_areas": []
+    },
+    {
+      "plot": 61,
+      "east_north": [
+        -43.507302419377744,
+        -193.1399393074638
+      ],
+      "bearing": 3.295911429515912,
+      "width": 13.380167483002722,
+      "depth": 11.287265686794239,
+      "in_game_layers": {
+        "plot": "61",
+        "park_centre_1499726225": "True",
+        "game_ground_m": "2.184",
+        "game_envelope_hit_m": "2.76",
+        "game_frame_hit_m": "11.575",
+        "other_game_layer_hits_m": "",
+        "best_mapped_footprint": "",
+        "best_footprint_iou": "",
+        "closest_registered_road_osm": "1256840006",
+        "aerial_observation": "公园边界内，树冠和桥影遮住试作轮廓"
+      },
+      "mapped_routes": [],
+      "mapped_areas": [
+        {
+          "way": 1499726225,
+          "tags": {
+            "name": "滨江公园",
+            "leisure": "park"
+          },
+          "overlap_m2": 151.026,
+          "contains_centre": true
+        }
+      ]
+    },
+    {
+      "plot": 62,
+      "east_north": [
+        -21.26580861299274,
+        -187.04968430775327
+      ],
+      "bearing": 3.295911429515912,
+      "width": 18.07271630195917,
+      "depth": 10.208865346703767,
+      "in_game_layers": {
+        "plot": "62",
+        "park_centre_1499726225": "False",
+        "game_ground_m": "0.742",
+        "game_envelope_hit_m": "2.381",
+        "game_frame_hit_m": "17.096",
+        "other_game_layer_hits_m": "",
+        "best_mapped_footprint": "a7dcc339-4d9c-417b-839c-9f1ecbb29740",
+        "best_footprint_iou": "0.01998",
+        "closest_registered_road_osm": "1256840006",
+        "aerial_observation": "长条树冠外接人行带"
+      },
+      "mapped_routes": [
+        {
+          "way": 59146737,
+          "tags": {
+            "highway": "primary",
+            "name": "长江滨江路"
+          },
+          "crossing_m": 10.898,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              -22.156536420668345,
+              -182.39547468260716
+            ],
+            [
+              -18.051120983906188,
+              -182.9381908461388
+            ],
+            [
+              -13.945705547144028,
+              -183.48090700967043
+            ]
+          ]
+        }
+      ],
+      "mapped_areas": [
+        {
+          "way": 1499726225,
+          "tags": {
+            "name": "滨江公园",
+            "leisure": "park"
+          },
+          "overlap_m2": 56.795,
+          "contains_centre": false
+        }
+      ]
+    },
+    {
+      "plot": 63,
+      "east_north": [
+        -25.604552287554057,
+        -159.15776068557335
+      ],
+      "bearing": 0.15431877592611903,
+      "width": 12.374352510491459,
+      "depth": 11.3839741523317,
+      "in_game_layers": {
+        "plot": "63",
+        "park_centre_1499726225": "False",
+        "game_ground_m": "1.811",
+        "game_envelope_hit_m": "2.522",
+        "game_frame_hit_m": "17.237",
+        "other_game_layer_hits_m": "",
+        "best_mapped_footprint": "",
+        "best_footprint_iou": "",
+        "closest_registered_road_osm": "1256840006",
+        "aerial_observation": "路口弯道和分隔边线，旁有车辆"
+      },
+      "mapped_routes": [
+        {
+          "way": 1256839997,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "3"
+          },
+          "crossing_m": 13.128,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              -31.02406765547412,
+              -155.05678523277103
+            ],
+            [
+              -26.11621449198243,
+              -155.95171160751613
+            ],
+            [
+              -21.20836132849074,
+              -156.84663798226123
+            ]
+          ]
+        },
+        {
+          "way": 1375242615,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "3"
+          },
+          "crossing_m": 11.249,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              -30.022416615140493,
+              -154.8454510299737
+            ],
+            [
+              -25.77406922975205,
+              -154.37251262489042
+            ],
+            [
+              -21.525721844363613,
+              -153.89957421980716
+            ]
+          ]
+        },
+        {
+          "way": 1256859184,
+          "tags": {
+            "highway": "primary",
+            "name": "长江滨江路"
+          },
+          "crossing_m": 8.406,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              -24.0249622563115,
+              -164.43129071228083
+            ],
+            [
+              -27.157983192954532,
+              -163.819780795224
+            ],
+            [
+              -30.285764173056386,
+              -163.17218270738158
+            ]
+          ]
+        },
+        {
+          "way": 1375242613,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "1"
+          },
+          "crossing_m": 3.275,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              -28.737445932660297,
+              -165.1786649730745
+            ],
+            [
+              -29.85680071666804,
+              -164.63434557566745
+            ],
+            [
+              -30.86912257589948,
+              -163.92910236038864
+            ]
+          ]
+        }
+      ],
+      "mapped_areas": []
+    },
+    {
+      "plot": 64,
+      "east_north": [
+        3.860371750769568,
+        -180.16474742139815
+      ],
+      "bearing": 3.594931349444356,
+      "width": 14.873006022443192,
+      "depth": 9.855040686379143,
+      "in_game_layers": {
+        "plot": "64",
+        "park_centre_1499726225": "False",
+        "game_ground_m": "-1.123",
+        "game_envelope_hit_m": "-0.197",
+        "game_frame_hit_m": "11.568",
+        "other_game_layer_hits_m": "",
+        "best_mapped_footprint": "",
+        "best_footprint_iou": "",
+        "closest_registered_road_osm": "1256840006",
+        "aerial_observation": "平行路面与红色铺带，南端邻绿化"
+      },
+      "mapped_routes": [
+        {
+          "way": 1324001436,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "1"
+          },
+          "crossing_m": 10.081,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              1.9502029879994285,
+              -176.33813641281282
+            ],
+            [
+              5.755733566210043,
+              -176.7767267397819
+            ],
+            [
+              9.561264144420658,
+              -177.21531706675103
+            ]
+          ]
+        },
+        {
+          "way": 59146737,
+          "tags": {
+            "highway": "primary",
+            "name": "长江滨江路"
+          },
+          "crossing_m": 5.633,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              -1.35854634582025,
+              -185.14486888069908
+            ],
+            [
+              0.7634052221734318,
+              -185.4253806661494
+            ],
+            [
+              2.8853567901671133,
+              -185.7058924515997
+            ]
+          ]
+        },
+        {
+          "way": 1375242613,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "1"
+          },
+          "crossing_m": 0.0,
+          "edge_distance_m": 0.743,
+          "stations_east_north": []
+        }
+      ],
+      "mapped_areas": []
+    },
+    {
+      "plot": 65,
+      "east_north": [
+        -9.11681839238396,
+        -153.52735712755668
+      ],
+      "bearing": 0.4533386958545628,
+      "width": 10.099192215987513,
+      "depth": 7.381770229645086,
+      "in_game_layers": {
+        "plot": "65",
+        "park_centre_1499726225": "False",
+        "game_ground_m": "2.574",
+        "game_envelope_hit_m": "5.895",
+        "game_frame_hit_m": "17.875",
+        "other_game_layer_hits_m": "",
+        "best_mapped_footprint": "",
+        "best_footprint_iou": "",
+        "closest_registered_road_osm": "1256840006",
+        "aerial_observation": "弯道路缘、车辆和小型浅色构件"
+      },
+      "mapped_routes": [
+        {
+          "way": 1375242615,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "3"
+          },
+          "crossing_m": 10.63,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              -13.643472791797613,
+              -153.02209929668504
+            ],
+            [
+              -9.6290571629698,
+              -152.57520285611406
+            ],
+            [
+              -5.641782969992686,
+              -151.96999069501555
+            ]
+          ]
+        },
+        {
+          "way": 1151519554,
+          "tags": {
+            "railway": "construction",
+            "name": "27号线",
+            "ref": "27",
+            "tunnel": "yes",
+            "layer": "-5"
+          },
+          "crossing_m": 8.502,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              -11.761782106530836,
+              -151.68044737510905
+            ],
+            [
+              -9.045236527472941,
+              -153.4290159114858
+            ],
+            [
+              -6.423073272788107,
+              -155.3142216791779
+            ]
+          ]
+        },
+        {
+          "way": 1256839997,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "3"
+          },
+          "crossing_m": 1.11,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              -12.19672156531817,
+              -158.48987257692198
+            ],
+            [
+              -11.781661833986085,
+              -158.5655569725813
+            ],
+            [
+              -11.366602102654001,
+              -158.64124136824066
+            ]
+          ]
+        },
+        {
+          "way": 1375242617,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "3"
+          },
+          "crossing_m": 0.0,
+          "edge_distance_m": 2.997,
+          "stations_east_north": []
+        }
+      ],
+      "mapped_areas": []
+    },
+    {
+      "plot": 66,
+      "east_north": [
+        23.34564563811203,
+        -170.17922596313338
+      ],
+      "bearing": 3.594931349444356,
+      "width": 16.57197079766771,
+      "depth": 12.101844821899078,
+      "in_game_layers": {
+        "plot": "66",
+        "park_centre_1499726225": "False",
+        "game_ground_m": "-1.388",
+        "game_envelope_hit_m": "-0.13",
+        "game_frame_hit_m": "11.635",
+        "other_game_layer_hits_m": "",
+        "best_mapped_footprint": "",
+        "best_footprint_iou": "",
+        "closest_registered_road_osm": "1375242616",
+        "aerial_observation": "浅色铺带、红色路面及边缘格栅"
+      },
+      "mapped_routes": [
+        {
+          "way": 1256859184,
+          "tags": {
+            "highway": "primary",
+            "name": "长江滨江路"
+          },
+          "crossing_m": 17.501,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              29.976651671100658,
+              -168.9900755996446
+            ],
+            [
+              23.349679382818692,
+              -168.43063044755326
+            ],
+            [
+              16.722707094536723,
+              -167.87118529546194
+            ]
+          ]
+        },
+        {
+          "way": 1375242613,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "1"
+          },
+          "crossing_m": 13.624,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              27.197392138766457,
+              -174.0434345221181
+            ],
+            [
+              22.059079936456204,
+              -173.41139462715478
+            ],
+            [
+              16.92076773414595,
+              -172.77935473219142
+            ]
+          ]
+        },
+        {
+          "way": 1151519554,
+          "tags": {
+            "railway": "construction",
+            "name": "27号线",
+            "ref": "27",
+            "tunnel": "yes",
+            "layer": "-5"
+          },
+          "crossing_m": 10.702,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              15.422443382315292,
+              -171.47983898679158
+            ],
+            [
+              18.69147731407413,
+              -173.89891436691408
+            ],
+            [
+              21.96051124583297,
+              -176.3179897470366
+            ]
+          ]
+        },
+        {
+          "way": 1324001436,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "1"
+          },
+          "crossing_m": 2.184,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              18.29247143045139,
+              -178.22159542392455
+            ],
+            [
+              19.116952514182238,
+              -178.31661750314888
+            ],
+            [
+              19.941433597913083,
+              -178.4116395823732
+            ]
+          ]
+        }
+      ],
+      "mapped_areas": []
+    },
+    {
+      "plot": 67,
+      "east_north": [
+        9.452461734773047,
+        -141.66163795101653
+      ],
+      "bearing": 0.4533386958545628,
+      "width": 9.610648707051984,
+      "depth": 12.593710708976944,
+      "in_game_layers": {
+        "plot": "67",
+        "park_centre_1499726225": "False",
+        "game_ground_m": "3.137",
+        "game_envelope_hit_m": "6.852",
+        "game_frame_hit_m": "21.782",
+        "other_game_layer_hits_m": "",
+        "best_mapped_footprint": "",
+        "best_footprint_iou": "",
+        "closest_registered_road_osm": "59146775",
+        "aerial_observation": "曲线车道和高架阴影，附近可见青蓝小面"
+      },
+      "mapped_routes": [
+        {
+          "way": 1366610737,
+          "tags": {
+            "railway": "construction",
+            "name": "27号线",
+            "ref": "27",
+            "tunnel": "yes",
+            "layer": "-5"
+          },
+          "crossing_m": 14.394,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              13.043865184005607,
+              -145.20921484462215
+            ],
+            [
+              8.659224335018386,
+              -141.93940252287368
+            ],
+            [
+              4.117468828142304,
+              -138.89666560417206
+            ]
+          ]
+        },
+        {
+          "way": 1375242617,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "3"
+          },
+          "crossing_m": 9.871,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              10.965955070357248,
+              -136.22598005490673
+            ],
+            [
+              8.017146298973277,
+              -138.43685116835476
+            ],
+            [
+              4.745811851745737,
+              -140.2723404949127
+            ]
+          ]
+        },
+        {
+          "way": 1375242615,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "3"
+          },
+          "crossing_m": 9.674,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              8.303458472220303,
+              -147.62688258399317
+            ],
+            [
+              11.541825268289031,
+              -145.91816286960722
+            ],
+            [
+              14.59469939331057,
+              -143.87044903607355
+            ]
+          ]
+        }
+      ],
+      "mapped_areas": []
+    },
+    {
+      "plot": 68,
+      "east_north": [
+        47.90232565570231,
+        -160.48795887703724
+      ],
+      "bearing": 3.5497417573448824,
+      "width": 10.695470845607609,
+      "depth": 10.34618855855732,
+      "in_game_layers": null,
+      "mapped_routes": [
+        {
+          "way": 1366610737,
+          "tags": {
+            "railway": "construction",
+            "name": "27号线",
+            "ref": "27",
+            "tunnel": "yes",
+            "layer": "-5"
+          },
+          "crossing_m": 0.0,
+          "edge_distance_m": 1.376,
+          "stations_east_north": []
+        }
+      ],
+      "mapped_areas": []
+    },
+    {
+      "plot": 69,
+      "east_north": [
+        34.9082549661227,
+        -130.43917040738438
+      ],
+      "bearing": 0.4081491037550893,
+      "width": 10.730572877227912,
+      "depth": 9.316358526785525,
+      "in_game_layers": {
+        "plot": "69",
+        "park_centre_1499726225": "False",
+        "game_ground_m": "5.191",
+        "game_envelope_hit_m": "8.723",
+        "game_frame_hit_m": "23.654",
+        "other_game_layer_hits_m": "",
+        "best_mapped_footprint": "",
+        "best_footprint_iou": "",
+        "closest_registered_road_osm": "1375242616",
+        "aerial_observation": "多条车道与斜向隔离带，立面被遮"
+      },
+      "mapped_routes": [
+        {
+          "way": 1375242615,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "3"
+          },
+          "crossing_m": 3.122,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              28.96576238032203,
+              -129.37590198887088
+            ],
+            [
+              29.701999822185158,
+              -128.4458932381577
+            ],
+            [
+              30.422311856859714,
+              -127.50328093894106
+            ]
+          ]
+        },
+        {
+          "way": 1256839997,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "3"
+          },
+          "crossing_m": 2.361,
+          "edge_distance_m": 0.0,
+          "stations_east_north": [
+            [
+              39.892160983003066,
+              -133.23409773301205
+            ],
+            [
+              40.50114085351977,
+              -132.57514410620723
+            ],
+            [
+              41.11012072403648,
+              -131.91619047940245
+            ]
+          ]
+        }
+      ],
+      "mapped_areas": []
+    },
+    {
+      "plot": 70,
+      "east_north": [
+        69.7081356979402,
+        -120.09892137379975
+      ],
+      "bearing": 0.28123220191829523,
+      "width": 14.614723672124281,
+      "depth": 8.724144174424602,
+      "in_game_layers": null,
+      "mapped_routes": [],
+      "mapped_areas": [
+        {
+          "way": 1128648941,
+          "tags": {
+            "building": "apartments",
+            "building:levels": "40"
+          },
+          "overlap_m2": 116.595,
+          "contains_centre": true
+        }
+      ]
+    },
+    {
+      "plot": 71,
+      "east_north": [
+        98.6361066633296,
+        -140.27107005026593
+      ],
+      "bearing": 3.4228248555080882,
+      "width": 11.067705816955542,
+      "depth": 10.038524810496988,
+      "in_game_layers": null,
+      "mapped_routes": [],
+      "mapped_areas": [
+        {
+          "way": 1128648941,
+          "tags": {
+            "building": "apartments",
+            "building:levels": "40"
+          },
+          "overlap_m2": 35.44,
+          "contains_centre": false
+        }
+      ]
+    },
+    {
+      "plot": 72,
+      "east_north": [
+        117.48457937639706,
+        -137.3861776296689
+      ],
+      "bearing": 3.4037124948552657,
+      "width": 17.775542442542857,
+      "depth": 11.667346856128468,
+      "in_game_layers": null,
+      "mapped_routes": [],
+      "mapped_areas": [
+        {
+          "way": 704006726,
+          "tags": {
+            "building": "yes",
+            "building:levels": "29"
+          },
+          "overlap_m2": 6.82,
+          "contains_centre": false
+        }
+      ]
+    },
+    {
+      "plot": 73,
+      "east_north": [
+        143.5870219392383,
+        -131.98588566354647
+      ],
+      "bearing": 3.4037124948552657,
+      "width": 10.076374936316974,
+      "depth": 11.026347385359502,
+      "in_game_layers": null,
+      "mapped_routes": [
+        {
+          "way": 1245700070,
+          "tags": {
+            "railway": "construction",
+            "name": "18号线",
+            "ref": "18",
+            "tunnel": "yes",
+            "layer": "-4"
+          },
+          "crossing_m": 0.0,
+          "edge_distance_m": 2.502,
+          "stations_east_north": []
+        }
+      ],
+      "mapped_areas": []
+    }
+  ]
+}

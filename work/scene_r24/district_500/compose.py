@@ -66,18 +66,25 @@ factory_dir = here.parent / "district_refresh/street_groups"
 group_assets = root / "work/project/chongqing_godot_v05/assets/district_500"
 factory_plan = json.loads((group_assets / "match_factory.json").read_bytes())
 matix_plan = json.loads((group_assets / "matix_streets.json").read_bytes())
+zhongxing_plan = json.loads((group_assets / "zhongxing-retaining.json").read_bytes())
 factory_override = set(factory_plan["replacement_meshes"])
 factory_retired = set(factory_plan["retired_objects"])
 matix_override = set(matix_plan["replacement_meshes"])
 matix_retired = set(matix_plan["retired_objects"])
+zhongxing_override = set(zhongxing_plan["replacement_meshes"])
 with bpy.data.libraries.load(str(factory_dir / "match_factory.blend"), link=True, relative=True) as (source, factory):
     factory.objects = factory_plan["new_meshes"] + [name for name in factory_plan["replacement_meshes"]
                                                       if name not in matix_override]
 for item in factory.objects:
     collection.objects.link(item)
 with bpy.data.libraries.load(str(factory_dir / "matix/matix_streets.blend"), link=True, relative=True) as (source, matix):
-    matix.objects = matix_plan["new_meshes"] + matix_plan["replacement_meshes"]
+    matix.objects = matix_plan["new_meshes"] + [name for name in matix_plan["replacement_meshes"]
+                                                 if name not in zhongxing_override]
 for item in matix.objects:
+    collection.objects.link(item)
+with bpy.data.libraries.load(str(factory_dir / "zhongxing/zhongxing-retaining.blend"), link=True, relative=True) as (source, zhongxing):
+    zhongxing.objects = zhongxing_plan["replacement_meshes"]
+for item in zhongxing.objects:
     collection.objects.link(item)
 court_data=json.loads((root / "work/project/chongqing_godot_v05/assets/district_500/historic_courts.json").read_bytes())
 old_roots=court_data["superseded_outer_roots"]

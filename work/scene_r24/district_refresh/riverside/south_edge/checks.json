@@ -1,0 +1,260 @@
+{
+  "scene": "res://first_shift.tscn",
+  "engine": "4.6.3-stable (official)",
+  "seven_routes": {
+    "passed": 14,
+    "total": 14,
+    "sha256": "6185c1ef3500ee35e6b7529140fc520022cd0f920dfec3c2d37601e6663f0b22",
+    "distance_m": 2151.0332,
+    "walks": [
+      {
+        "id": "lower_promenade_out",
+        "pass": true,
+        "distance_m": 213.490457742475,
+        "goals": 16,
+        "reached": 16,
+        "stall_contacts": []
+      },
+      {
+        "id": "lower_promenade_back",
+        "pass": true,
+        "distance_m": 213.461397616193,
+        "goals": 16,
+        "reached": 16,
+        "stall_contacts": []
+      },
+      {
+        "id": "upper_promenade_out",
+        "pass": true,
+        "distance_m": 142.037524890155,
+        "goals": 12,
+        "reached": 12,
+        "stall_contacts": []
+      },
+      {
+        "id": "upper_promenade_back",
+        "pass": true,
+        "distance_m": 142.023150997236,
+        "goals": 12,
+        "reached": 12,
+        "stall_contacts": []
+      },
+      {
+        "id": "west_join_out",
+        "pass": true,
+        "distance_m": 20.1876709060743,
+        "goals": 5,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      {
+        "id": "west_join_back",
+        "pass": true,
+        "distance_m": 20.1658483999781,
+        "goals": 5,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      {
+        "id": "east_bank_reconnaissance_out",
+        "pass": true,
+        "distance_m": 170.860441987403,
+        "goals": 14,
+        "reached": 14,
+        "stall_contacts": []
+      },
+      {
+        "id": "east_bank_reconnaissance_back",
+        "pass": true,
+        "distance_m": 170.858037526719,
+        "goals": 14,
+        "reached": 14,
+        "stall_contacts": []
+      },
+      {
+        "id": "east_garden_out",
+        "pass": true,
+        "distance_m": 64.0276843607426,
+        "goals": 6,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      {
+        "id": "east_garden_back",
+        "pass": true,
+        "distance_m": 64.0462200697511,
+        "goals": 6,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      {
+        "id": "shancheng_registered_out",
+        "pass": true,
+        "distance_m": 294.33710268978,
+        "goals": 46,
+        "reached": 46,
+        "stall_contacts": []
+      },
+      {
+        "id": "shancheng_registered_back",
+        "pass": true,
+        "distance_m": 294.363820318133,
+        "goals": 46,
+        "reached": 46,
+        "stall_contacts": []
+      },
+      {
+        "id": "zhongxing_northeast_out",
+        "pass": true,
+        "distance_m": 170.537964026444,
+        "goals": 9,
+        "reached": 9,
+        "stall_contacts": []
+      },
+      {
+        "id": "zhongxing_northeast_back",
+        "pass": true,
+        "distance_m": 170.635874325875,
+        "goals": 9,
+        "reached": 9,
+        "stall_contacts": []
+      }
+    ]
+  },
+  "original_wall_control": {
+    "passed": 13,
+    "total": 14,
+    "sha256": "b30bffd05cfaa9db2ea1843120c46ffa673c4e0749884341e239ec93130ad605",
+    "blocked": [
+      {
+        "id": "zhongxing_northeast_back",
+        "pass": false,
+        "distance_m": 101.479806598392,
+        "goals": 9,
+        "reached": 4,
+        "stall_contacts": [
+          {
+            "mesh": "COL_Outer500_Retaining_and_boundaries",
+            "normal": "(-0.255066, 0.0, 0.966924)",
+            "position": "(208.3412, 50.07025, -178.1135)"
+          }
+        ]
+      }
+    ]
+  },
+  "zhongxing_details": {
+    "passed": 4,
+    "total": 4,
+    "sha256": "4fa7c901f25fd14340357846f5ba87b63c5998c7dcce54456a4a08c9e607c890",
+    "walks": [
+      {
+        "id": "zhongxing_northeast_out",
+        "pass": true,
+        "distance_m": 170.532801988535,
+        "goals": 9,
+        "reached": 9,
+        "stall_contacts": []
+      },
+      {
+        "id": "zhongxing_northeast_back",
+        "pass": true,
+        "distance_m": 170.635933960322,
+        "goals": 9,
+        "reached": 9,
+        "stall_contacts": []
+      },
+      {
+        "id": "zhongxing_subdivided_out",
+        "pass": true,
+        "distance_m": 170.529178607278,
+        "goals": 27,
+        "reached": 27,
+        "stall_contacts": []
+      },
+      {
+        "id": "zhongxing_subdivided_back",
+        "pass": true,
+        "distance_m": 170.630338466261,
+        "goals": 27,
+        "reached": 27,
+        "stall_contacts": []
+      }
+    ]
+  },
+  "south_parcel_layers": {
+    "plots": 26,
+    "plot_columns": 234,
+    "road_columns": 111,
+    "sha256": "3a4664bf016b92ab4ac6148473af82a1c668e11341a4703ad2eb6ca80a6d57d7"
+  },
+  "library_delivery": {
+    "passed": 6,
+    "total": 6,
+    "sha256": "b5383b76eceff5e7e7c3a53cc7ac03da9f2ffaffeb89a444d4ef26e9e3147b1d"
+  },
+  "repair_court": {
+    "passed": 10,
+    "total": 10,
+    "sha256": "cdca68c010627aaee68ab240988d8c294f7e915b7f38341d5f349f091e6b59b9"
+  },
+  "first_shift": {
+    "passed": 85,
+    "total": 85,
+    "sha256": "c9a39013fbdb21b416357fa2d9ec2a8e3b5105739468ac0db52f5dd0bb875370"
+  },
+  "historical_first_day_script": {
+    "passed": 50,
+    "total": 52,
+    "failed": [
+      "handover_once",
+      "credit_and_regular_order_unlocked"
+    ],
+    "log_sha256": "dd5f5b4928acdd62b1e6a9ea7a6a1a76821071dba2dbe3539c561c1799c85265"
+  },
+  "blender": {
+    "version": "4.3.2",
+    "reopened_wall_mesh_faces": 7111,
+    "composed_linked_libraries": 12
+  },
+  "native_record": {
+    "renderer": "Godot Compatibility, OpenGL 4.5, Mesa 25.0.7 llvmpipe",
+    "preview_frames": 5,
+    "notes": "Five raw engine PNGs reviewed. Two Mesa texture allocations reported at shutdown."
+  },
+  "district_500_verify": {
+    "exit_code": 0,
+    "logs": [
+      "default.log",
+      "explore.log",
+      "first_shift/engine.log",
+      "routes/engine.log",
+      "sections/engine.log",
+      "user-data/godot/app_userdata/重庆外卖王 · 梯坎里 R20 开发中/logs/godot.log",
+      "user-data/godot/app_userdata/重庆外卖王 · 梯坎里 R20 开发中/logs/godot2026-11-27T00.43.51.log",
+      "user-data/godot/app_userdata/重庆外卖王 · 梯坎里 R20 开发中/logs/godot2026-11-27T00.44.33.log",
+      "user-data/godot/app_userdata/重庆外卖王 · 梯坎里 R20 开发中/logs/godot2026-11-27T00.45.10.log",
+      "user-data/godot/app_userdata/重庆外卖王 · 梯坎里 R20 开发中/logs/godot2026-11-27T00.47.30.log"
+    ],
+    "sections/sections.json": {
+      "sha256": "8b47332ae8a294131a7d34bcaaae6bd5a4d8a26ff38c8317dcc6cb5564f45d37"
+    },
+    "routes/routes.json": {
+      "sha256": "b512627cf0270bd07d5912983a6410a2f8a677e449cd64624178293ef4e55cbe"
+    },
+    "first_shift/first_shift.json": {
+      "sha256": "c9a39013fbdb21b416357fa2d9ec2a8e3b5105739468ac0db52f5dd0bb875370"
+    },
+    "section_places": 7,
+    "section_hits": 2275,
+    "section_points": 2275,
+    "legs_passed": 20,
+    "legs_total": 20,
+    "walk_distance_m": 1452.7183,
+    "ride_distance_m": 1450.7188,
+    "first_shift": {
+      "passed": 85,
+      "total": 85,
+      "sha256": "c9a39013fbdb21b416357fa2d9ec2a8e3b5105739468ac0db52f5dd0bb875370"
+    }
+  }
+}
