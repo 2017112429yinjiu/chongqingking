@@ -1,0 +1,379 @@
+{
+  "engine": "4.6.3-stable (official)",
+  "headless_project_renderer": "forward_plus",
+  "verify_exit": 0,
+  "sections": {
+    "east_high": 325,
+    "east_main": 325,
+    "north": 325,
+    "south": 325,
+    "southeast": 325,
+    "west_lower": 325,
+    "west_upper": 325
+  },
+  "walking_and_riding": {
+    "pass": 20,
+    "total": 20
+  },
+  "first_shift": {
+    "pass": 85,
+    "total": 85,
+    "checks": [
+      {
+        "name": "district_booted",
+        "pass": true
+      },
+      {
+        "name": "default_game_starts_at_registration",
+        "pass": true
+      },
+      {
+        "name": "early_order_and_bike_locked",
+        "pass": true
+      },
+      {
+        "name": "register_at_mentor",
+        "pass": true
+      },
+      {
+        "name": "mentor_on_foot_at_check_in",
+        "pass": true
+      },
+      {
+        "name": "watched_RIDING",
+        "pass": true
+      },
+      {
+        "name": "walk_to_own_bike",
+        "pass": true
+      },
+      {
+        "name": "mount_own_scooter",
+        "pass": true
+      },
+      {
+        "name": "guide_waits_when_learner_stops",
+        "pass": true
+      },
+      {
+        "name": "follow_to_noodle_shop",
+        "pass": true
+      },
+      {
+        "name": "parked_at_shop",
+        "pass": true
+      },
+      {
+        "name": "saved_shop",
+        "pass": true
+      },
+      {
+        "name": "pupil_cannot_order_before_demo",
+        "pass": true
+      },
+      {
+        "name": "watched_PUPIL_PICKUP",
+        "pass": true
+      },
+      {
+        "name": "mentor_took_separate_order",
+        "pass": true
+      },
+      {
+        "name": "walk_to_counter",
+        "pass": true
+      },
+      {
+        "name": "place_real_order",
+        "pass": true
+      },
+      {
+        "name": "packed_meal_in_view_from_pickup",
+        "pass": true
+      },
+      {
+        "name": "take_packed_order",
+        "pass": true
+      },
+      {
+        "name": "cannot_deliver_before_second_leg",
+        "pass": true
+      },
+      {
+        "name": "watched_RIDING",
+        "pass": true
+      },
+      {
+        "name": "saved_carrying",
+        "pass": true
+      },
+      {
+        "name": "return_to_parked_scooter",
+        "pass": true
+      },
+      {
+        "name": "pupil_loads_separate_box",
+        "pass": true
+      },
+      {
+        "name": "mount_with_order",
+        "pass": true
+      },
+      {
+        "name": "follow_to_courtyard_approach",
+        "pass": true
+      },
+      {
+        "name": "riders_park_at_real_address",
+        "pass": true
+      },
+      {
+        "name": "saved_last_mile",
+        "pass": true
+      },
+      {
+        "name": "watched_PUPIL_UNLOAD",
+        "pass": true
+      },
+      {
+        "name": "pupil_retrieves_second_bag",
+        "pass": true
+      },
+      {
+        "name": "watched_PUPIL_DELIVERS",
+        "pass": true
+      },
+      {
+        "name": "mentor_delivers_first",
+        "pass": true
+      },
+      {
+        "name": "walk_to_house_one",
+        "pass": true
+      },
+      {
+        "name": "rapid_input_cannot_skip_knock",
+        "pass": true
+      },
+      {
+        "name": "student_knocks_before_handover",
+        "pass": true
+      },
+      {
+        "name": "pupil_knuckle_contacts_wood",
+        "pass": true
+      },
+      {
+        "name": "saved_knocked",
+        "pass": true
+      },
+      {
+        "name": "reach_second_hook",
+        "pass": true
+      },
+      {
+        "name": "credit_waits_for_release",
+        "pass": true
+      },
+      {
+        "name": "order_one_credited_once",
+        "pass": true
+      },
+      {
+        "name": "saved_after_door",
+        "pass": true
+      },
+      {
+        "name": "order_2_back_to_vehicle",
+        "pass": true
+      },
+      {
+        "name": "order_2_remount",
+        "pass": true
+      },
+      {
+        "name": "order_2_back_to_shop",
+        "pass": true
+      },
+      {
+        "name": "watched_PUPIL_PICKUP",
+        "pass": true
+      },
+      {
+        "name": "order_2_counter",
+        "pass": true
+      },
+      {
+        "name": "spice_portion_required",
+        "pass": true
+      },
+      {
+        "name": "order_2_collected",
+        "pass": true
+      },
+      {
+        "name": "watched_RIDING",
+        "pass": true
+      },
+      {
+        "name": "order_2_leave_counter",
+        "pass": true
+      },
+      {
+        "name": "order_2_load",
+        "pass": true
+      },
+      {
+        "name": "order_2_mounted_with_own_parcel",
+        "pass": true
+      },
+      {
+        "name": "order_2_to_address",
+        "pass": true
+      },
+      {
+        "name": "watched_PUPIL_UNLOAD",
+        "pass": true
+      },
+      {
+        "name": "watched_PUPIL_SHELF",
+        "pass": true
+      },
+      {
+        "name": "order_2_wrong_bay",
+        "pass": true
+      },
+      {
+        "name": "order_2_wrong_bay_rejected",
+        "pass": true
+      },
+      {
+        "name": "order_2_correct_bay",
+        "pass": true
+      },
+      {
+        "name": "aborted_placement_keeps_order",
+        "pass": true
+      },
+      {
+        "name": "order_2_both_real_bags_at_shelf",
+        "pass": true
+      },
+      {
+        "name": "order_3_back_to_vehicle",
+        "pass": true
+      },
+      {
+        "name": "order_3_remount",
+        "pass": true
+      },
+      {
+        "name": "order_3_back_to_shop",
+        "pass": true
+      },
+      {
+        "name": "watched_PUPIL_PICKUP",
+        "pass": true
+      },
+      {
+        "name": "order_3_counter",
+        "pass": true
+      },
+      {
+        "name": "order_3_collected",
+        "pass": true
+      },
+      {
+        "name": "watched_RIDING",
+        "pass": true
+      },
+      {
+        "name": "order_3_leave_counter",
+        "pass": true
+      },
+      {
+        "name": "order_3_load",
+        "pass": true
+      },
+      {
+        "name": "order_3_mounted_with_own_parcel",
+        "pass": true
+      },
+      {
+        "name": "order_3_to_address",
+        "pass": true
+      },
+      {
+        "name": "watched_PUPIL_UNLOAD",
+        "pass": true
+      },
+      {
+        "name": "watched_PUPIL_SHELF",
+        "pass": true
+      },
+      {
+        "name": "unconfirmed_bays_locked",
+        "pass": true
+      },
+      {
+        "name": "order_3_call",
+        "pass": true
+      },
+      {
+        "name": "customer_confirms_slot",
+        "pass": true
+      },
+      {
+        "name": "order_3_wrong_bay",
+        "pass": true
+      },
+      {
+        "name": "order_3_wrong_bay_rejected",
+        "pass": true
+      },
+      {
+        "name": "order_3_correct_bay",
+        "pass": true
+      },
+      {
+        "name": "order_3_both_real_bags_at_shelf",
+        "pass": true
+      },
+      {
+        "name": "three_orders_paid_once",
+        "pass": true
+      },
+      {
+        "name": "saved_completed",
+        "pass": true
+      },
+      {
+        "name": "repeat_interact_no_duplicate_credit",
+        "pass": true
+      },
+      {
+        "name": "instructor_starts_own_next_job",
+        "pass": true
+      },
+      {
+        "name": "empty_route_issue_log",
+        "pass": true
+      }
+    ]
+  },
+  "blender": {
+    "version": "4.3.2",
+    "editable_mesh_objects": 14,
+    "combined_objects": 4549,
+    "combined_libraries": 15
+  },
+  "native_capture": {
+    "resolution_px": [
+      900,
+      506
+    ],
+    "renderer": "gl_compatibility",
+    "device": "llvmpipe"
+  },
+  "raw_runtime_dir": "/workspace/work/runtime/district-refresh/patched/xingchen-district-suite"
+}

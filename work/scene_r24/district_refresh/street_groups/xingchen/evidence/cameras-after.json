@@ -1,0 +1,176 @@
+{
+  "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "district": {
+    "bounds_east_north_m": [
+      -250.0,
+      -250.0,
+      250.0,
+      250.0
+    ],
+    "glb_sha256": "b0180ce3a8d821253181725ad4516c04f58fe057529680e22a081f89fdd62122",
+    "guoco_sha256": "4dcb3d55080b02d8a0cf02585626bed2dfc3cdb37ae2f987110b55dd56435853",
+    "match_factory_sha256": "ab742e6b12ad0b52c4cffef0f8342e1a957b59de5cfe3abde4dd691f853d76c6",
+    "matix_streets_sha256": "3b57fcf46931ff28ce1ab2be4a7250d31af30d302e362816265be8e38852e33b",
+    "osm_building_ids": [
+      809889594.0,
+      809889602.0,
+      809889621.0,
+      704006725
+    ],
+    "public_edges_sha256": "d585e52e0d927a9639e7285ffecc4932603a4d56b039504f1600763f72cc1be4",
+    "retired_internal_context": false,
+    "riverside_sha256": "12f304d468c56fb429d4a4db948f5297b7ca4284f29fc494442c9b2a146f67d1",
+    "west_court_sha256": "32eea2dd1f34b7f5dacbb546a46c6cf106ac3896804677ef9b2ee1dabfb2c683",
+    "xingchen_sha256": "af156281216128407550442694d4dc45ea8507dfc7da4c80efd549a0ffbe127b",
+    "zhongxing_wall_sha256": "72fa4f4c800a8e27c19d580da66524160c4c2111bd82191706b6c8da142b8d42"
+  },
+  "renderer": "gl_compatibility",
+  "scene": "res://first_shift.tscn",
+  "sections": [
+    {
+      "east_north": [
+        170.0,
+        -121.8
+      ],
+      "layers": [
+        [
+          "COL_Outer500_Surface_08_02",
+          13.85,
+          0.982
+        ]
+      ]
+    },
+    {
+      "east_north": [
+        178.0,
+        -124.3
+      ],
+      "layers": [
+        [
+          "COL_Outer500_Surface_08_02",
+          13.249,
+          0.975
+        ]
+      ]
+    },
+    {
+      "east_north": [
+        188.0,
+        -128.4
+      ],
+      "layers": [
+        [
+          "COL_Outer500_Surface_08_02",
+          11.761,
+          0.975
+        ]
+      ]
+    },
+    {
+      "east_north": [
+        197.0,
+        -131.5
+      ],
+      "layers": [
+        [
+          "COL_Outer500_Surface_08_02",
+          10.653,
+          0.984
+        ]
+      ]
+    },
+    {
+      "east_north": [
+        200.6,
+        -136.1
+      ],
+      "layers": [
+        [
+          "COL_Outer500_Surface_09_02",
+          9.746,
+          0.984
+        ]
+      ]
+    },
+    {
+      "east_north": [
+        201.2,
+        -141.9
+      ],
+      "layers": [
+        [
+          "COL_Outer500_Surface_09_02",
+          8.918,
+          0.989
+        ]
+      ]
+    },
+    {
+      "east_north": [
+        201.5,
+        -146.1
+      ],
+      "layers": [
+        [
+          "COL_Outer500_Surface_09_02",
+          8.344,
+          0.986
+        ]
+      ]
+    }
+  ],
+  "view_stations": [
+    {
+      "eye_xyz": [
+        191.0,
+        12.8850002288818,
+        130.0
+      ],
+      "id": "jiefang_approach",
+      "target_xyz": [
+        205.0,
+        17.4479999542236,
+        151.5
+      ]
+    },
+    {
+      "eye_xyz": [
+        203.800003051758,
+        11.0520000457764,
+        138.800003051758
+      ],
+      "id": "front_eye_height",
+      "target_xyz": [
+        196.0,
+        16.4309997558594,
+        150.0
+      ]
+    },
+    {
+      "eye_xyz": [
+        219.0,
+        10.6960000991821,
+        140.899993896484
+      ],
+      "id": "east_look_back",
+      "target_xyz": [
+        198.300003051758,
+        18.1119995117188,
+        152.399993896484
+      ]
+    },
+    {
+      "eye_xyz": [
+        148.5,
+        10.2159996032715,
+        144.0
+      ],
+      "id": "tower_from_west",
+      "target_xyz": [
+        189.0,
+        43.9679985046387,
+        159.0
+      ]
+    }
+  ]
+}

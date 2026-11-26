@@ -16,6 +16,8 @@ const GUOCO := "res://assets/district_500/guoco-frontages.glb"
 const GUOCO_SITE := "res://assets/district_500/guoco-frontages.json"
 const PUBLIC_EDGES := "res://assets/district_500/public-edges.glb"
 const PUBLIC_EDGES_SITE := "res://assets/district_500/public-edges.json"
+const XINGCHEN := "res://assets/district_500/xingchen.glb"
+const XINGCHEN_SITE := "res://assets/district_500/xingchen.json"
 
 static func install(city: Node3D) -> Dictionary:
 	var district := (load(MODEL) as PackedScene).instantiate() as Node3D
@@ -42,6 +44,7 @@ static func install(city: Node3D) -> Dictionary:
 	riverside.name = "RiversideWalk"
 	district.add_child(riverside)
 	var guoco_plant_roots: Array = []
+	var xingchen_way: Array = []
 	if not "--qa-without-match-factory" in OS.get_cmdline_user_args():
 		install_street_group(district, MATCH_FACTORY, MATCH_FACTORY_SITE, "MatchFactory")
 		if not "--qa-without-matix-streets" in OS.get_cmdline_user_args():
@@ -54,6 +57,10 @@ static func install(city: Node3D) -> Dictionary:
 				guoco_plant_roots = guoco.retired_roots_east_north
 				if not "--qa-without-public-edges" in OS.get_cmdline_user_args():
 					install_street_group(district, PUBLIC_EDGES, PUBLIC_EDGES_SITE, "PublicEdges")
+					if not "--qa-without-xingchen" in OS.get_cmdline_user_args():
+						install_street_group(district, XINGCHEN, XINGCHEN_SITE, "Xingchen")
+						var site: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(XINGCHEN_SITE))
+						xingchen_way.append(int(site.way))
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -146,7 +153,7 @@ static func install(city: Node3D) -> Dictionary:
 		distant_trees.append({"position":[p[0], p[2], -p[1]], "height":scan_height * float(tree.height_scale),
 			"kind":tree.species, "yaw":deg_to_rad(tree.rotation_deg), "shade":0.94})
 	preload("res://scripts/district_r21.gd").install_canopy(district, distant_trees, tree_data.canopy_pivots, 8.0, 34.0)
-	var retire: Array = layout.get("osm_building_ids", [])
+	var retire: Array = layout.get("osm_building_ids", []) + xingchen_way
 	for id: int in retire:
 		for prior: Node3D in city.find_children("Context_*%s_*" % id, "MeshInstance3D", true, false):
 			prior.hide()
@@ -210,6 +217,7 @@ static func install(city: Node3D) -> Dictionary:
 		"west_court_sha256": FileAccess.get_sha256(WEST_COURT),
 		"guoco_sha256": FileAccess.get_sha256(GUOCO),
 		"public_edges_sha256": FileAccess.get_sha256(PUBLIC_EDGES),
+		"xingchen_sha256": FileAccess.get_sha256(XINGCHEN),
 		"retired_internal_context": local_frame != null, "osm_building_ids": retire}
 
 

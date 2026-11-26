@@ -1,0 +1,127 @@
+{
+  "replacement_meshes": [
+    "COLH_Outer500_Household_contact",
+    "COL_Outer500_Building_envelopes",
+    "COL_Outer500_Retaining_and_boundaries",
+    "Outer500_Facades_and_storefronts",
+    "Outer500_Street_furniture"
+  ],
+  "retired_objects": [
+    "COL_Outer500_Frame_27",
+    "Outer500_Condenser_27_01",
+    "Outer500_Household_067_crate_0",
+    "Outer500_InteriorFloor_27",
+    "Outer500_Joinery_27"
+  ],
+  "new_meshes": [
+    "COL_Xingchen_704006725_Podium",
+    "Xingchen_Square_Panels_and_Shaded_Shops",
+    "COL_Xingchen_704006725_Tower",
+    "Xingchen_Continuous_Balconies_and_Caged_Rails",
+    "Xingchen_Roof_Edges_and_Podium_Tubs",
+    "Xingchen_Podium_Planter_Tree_0",
+    "Xingchen_Podium_Planter_Tree_1",
+    "Xingchen_Podium_Planter_Tree_2",
+    "Xingchen_Street_Approach_830761786"
+  ],
+  "source_plot": 27,
+  "way": 704006725,
+  "removed_faces": {
+    "COLH_Outer500_Household_contact": 6,
+    "COL_Outer500_Building_envelopes": 210,
+    "COL_Outer500_Retaining_and_boundaries": 144,
+    "Outer500_Facades_and_storefronts": 10,
+    "Outer500_Street_furniture": 299
+  },
+  "model_podium_levels": 3,
+  "model_upper_levels": 23,
+  "nominal_storey_pitch_m": 2.92,
+  "ground_sections_m": [
+    [
+      7.821403503417969,
+      7.0829925537109375,
+      6.3988800048828125,
+      5.786064147949219,
+      5.2487945556640625,
+      4.7375640869140625,
+      4.21893310546875,
+      3.6554718017578125,
+      3.027069091796875,
+      2.3165740966796875,
+      1.547821044921875
+    ],
+    [
+      1.547821044921875,
+      1.946868896484375,
+      2.3321685791015625,
+      2.7547607421875,
+      3.222198486328125,
+      3.689483642578125,
+      4.0771026611328125,
+      4.310081481933594,
+      4.357856750488281,
+      4.25384521484375,
+      4.0884552001953125
+    ],
+    [
+      4.0884552001953125,
+      4.626518249511719,
+      5.158447265625,
+      5.648773193359375,
+      6.0709228515625,
+      6.4175872802734375,
+      6.713905334472656,
+      6.988563537597656,
+      7.282081604003906,
+      7.6233367919921875,
+      8.02728271484375
+    ],
+    [
+      8.02728271484375,
+      7.931060791015625,
+      7.877899169921875,
+      7.81707763671875,
+      7.702674865722656,
+      7.5281524658203125,
+      7.339546203613281,
+      7.219078063964844,
+      7.247886657714844,
+      7.4593658447265625,
+      7.821403503417969
+    ]
+  ],
+  "foundation_m": 1.027821044921875,
+  "street_datum_m": 7.601676940917969,
+  "podium_top_m": 16.751676940917967,
+  "roof_m": 84.25167694091797,
+  "game_approach_east_north": [
+    [
+      170.0,
+      -121.8
+    ],
+    [
+      178.0,
+      -124.3
+    ],
+    [
+      188.0,
+      -128.4
+    ],
+    [
+      197.0,
+      -131.5
+    ],
+    [
+      200.6,
+      -136.1
+    ],
+    [
+      201.2,
+      -141.9
+    ],
+    [
+      201.5,
+      -146.1
+    ]
+  ]
+}

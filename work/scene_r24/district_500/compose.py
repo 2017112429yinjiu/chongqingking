@@ -26,7 +26,9 @@ for ref in refs:
                 raise RuntimeError(f"Library relocation failed: {target}")
 
 layout = json.loads((root / "work/project/chongqing_godot_v05/assets/district_500/layout.json").read_text(encoding="utf-8-sig"))
-retired = [f"_{oid}_" for oid in layout.get("osm_building_ids", [])]
+group_assets = root / "work/project/chongqing_godot_v05/assets/district_500"
+xingchen_plan = json.loads((group_assets / "xingchen.json").read_bytes())
+retired = [f"_{oid}_" for oid in layout.get("osm_building_ids", []) + [xingchen_plan["way"]]]
 local_study = bpy.data.collections.get("R24_11_Local_city_frame")
 if local_study:
     local_study.hide_viewport=True
@@ -63,7 +65,6 @@ with bpy.data.libraries.load(str(here / "outer_district.blend"), link=True, rela
 collection=bpy.data.collections.new("500 m playable expansion")
 bpy.context.scene.collection.children.link(collection)
 factory_dir = here.parent / "district_refresh/street_groups"
-group_assets = root / "work/project/chongqing_godot_v05/assets/district_500"
 factory_plan = json.loads((group_assets / "match_factory.json").read_bytes())
 matix_plan = json.loads((group_assets / "matix_streets.json").read_bytes())
 zhongxing_plan = json.loads((group_assets / "zhongxing-retaining.json").read_bytes())
@@ -72,7 +73,8 @@ guoco_plan = json.loads((group_assets / "guoco-frontages.json").read_bytes())
 public_plan = json.loads((group_assets / "public-edges.json").read_bytes())
 public_override = set(public_plan["replacement_meshes"])
 public_retired = set(public_plan["retired_objects"])
-later_public_meshes = public_override | public_retired
+xingchen_override = set(xingchen_plan["replacement_meshes"] + xingchen_plan["retired_objects"])
+later_public_meshes = public_override | public_retired | xingchen_override
 guoco_override = set(guoco_plan["replacement_meshes"])
 guoco_retired = set(guoco_plan["retired_objects"])
 factory_override = set(factory_plan["replacement_meshes"])
@@ -141,8 +143,13 @@ with bpy.data.libraries.load(str(factory_dir / "guoco/guoco-frontages.blend"), l
 for item in guoco.objects:
     collection.objects.link(item)
 with bpy.data.libraries.load(str(factory_dir / "matix/public-edges.blend"), link=True, relative=True) as (_, public):
-    public.objects = public_plan["replacement_meshes"] + public_plan["new_meshes"]
+    public.objects = [name for name in public_plan["replacement_meshes"] + public_plan["new_meshes"]
+                      if name not in xingchen_override]
 for item in public.objects:
+    collection.objects.link(item)
+with bpy.data.libraries.load(str(factory_dir / "xingchen/xingchen.blend"), link=True, relative=True) as (_, xingchen):
+    xingchen.objects = xingchen_plan["replacement_meshes"] + xingchen_plan["new_meshes"]
+for item in xingchen.objects:
     collection.objects.link(item)
 bpy.context.preferences.filepaths.save_version=0
 bpy.ops.wm.save_as_mainfile(filepath=str(here / "city_and_outer.local.blend"),relative_remap=True,compress=True)
