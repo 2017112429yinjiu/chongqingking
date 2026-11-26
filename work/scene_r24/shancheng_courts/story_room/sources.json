@@ -85,5 +85,109 @@
       "sha256": "a90aaa321194fb41d6e44776c6ee88134e4be416051357a3c9e323cc447c4cf0"
     }
   ],
-  "printwork_sha256": "ba4e91d2de33d856bff86bb8812c54462abe2134a1fc4c3c014daeaadca55c6c"
+  "printwork_sha256": "ba4e91d2de33d856bff86bb8812c54462abe2134a1fc4c3c014daeaadca55c6c",
+  "ground_floor_finishes": {
+    "photo_uses": {
+      "v06": "两向全景中的粉白墙、深色窗框、露明暖棕色梁板、深色旧桌和偏褐地面。",
+      "n06": "背墙与桌面、木框和地面之间的明暗；新闻照片带色偏与边缘淡化，仅作为交叉对照。",
+      "entrance": {
+        "site": "金马寺小学旧址入口走廊",
+        "publisher": "GO CHINA",
+        "article": "https://gochina.com.tw/chongqing-jinmasi-primary-school-shancheng-lane/",
+        "image_url": "https://gochina.com.tw/wp-content/uploads/2026/11/jinmasi-primary-school-c09.jpg.webp",
+        "sha256": "825d57b6c4fc69866bfee2426db059e6d7d90a40124e91ce573c6221e877691b",
+        "use": "Reference for the existing painted corridor wall. No reference photograph is included in the game."
+      }
+    },
+    "limits": "墙地颜料、原木树种、地坪成分和精确色号无测绘或色卡。依据照片中的相对明暗与冷暖拟合游戏材质。",
+    "material_sources": [
+      {
+        "asset": "Plastered Wall 04",
+        "url": "https://polyhaven.com/a/plastered_wall_04",
+        "credit": {
+          "Rob Tuytel": "All"
+        },
+        "license": "CC0 1.0",
+        "inputs": [
+          {
+            "file": "chongqing_district_plastered_wall_04_diff_1k.jpg",
+            "sha256": "52d789111bbe93d311c22e49d28b56256593c8f84c75742642403da857a36503"
+          },
+          {
+            "file": "chongqing_district_plastered_wall_04_nor_gl_1k.jpg",
+            "sha256": "c0a41dc06e33072ec1156d89f3bd4b481a479616791d4e9df6c5ee7b3283db82"
+          },
+          {
+            "file": "chongqing_district_plastered_wall_04_rough_1k.png",
+            "sha256": "8f4567033ff863f9f79e9c54a89c91d2ede7979ffb649ac5886448a1f7abdadc"
+          }
+        ]
+      },
+      {
+        "asset": "Concrete Floor Worn 001",
+        "url": "https://polyhaven.com/a/concrete_floor_worn_001",
+        "credit": {
+          "Dimitrios Savva": "Photography",
+          "Rico Cilliers": "Processing"
+        },
+        "license": "CC0 1.0",
+        "inputs": [
+          {
+            "file": "chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+            "sha256": "e29b45cdcd6d02fae3c087c456196ffa750779a9b62e7071aa3831dc322a0cc4"
+          },
+          {
+            "file": "chongqing_district_concrete_floor_worn_001_nor_gl_2k.jpg",
+            "sha256": "3b782137e34d63fd59b2e92b4e27b2ee4d082caf9dd23f00dc7ab4da5513daef"
+          },
+          {
+            "file": "chongqing_district_concrete_floor_worn_001_rough_2k.png",
+            "sha256": "7ce8796fded6cfc0969044065657ec358f6e5e0e4fa011ddbf9cddb4d2bc0025"
+          }
+        ]
+      },
+      {
+        "asset": "Wood Table Worn",
+        "url": "https://polyhaven.com/a/wood_table_worn",
+        "credit": {
+          "Dimitrios Savva": "Photography",
+          "Rico Cilliers": "Processing"
+        },
+        "license": "CC0 1.0",
+        "inputs": [
+          {
+            "file": "chongqing_district_wood_table_worn_diff_2k.jpg",
+            "sha256": "165cdba449d56ea8e9675116622b95d7af372b7d7c47b8a98a03fcc630f1d51c"
+          },
+          {
+            "file": "chongqing_district_wood_table_worn_nor_gl_2k.jpg",
+            "sha256": "a90aaa321194fb41d6e44776c6ee88134e4be416051357a3c9e323cc447c4cf0"
+          },
+          {
+            "file": "chongqing_district_wood_table_worn_rough_2k.png",
+            "sha256": "c4659c925c955f3f726c84e0b283f2a783249e462781740a55f32754d79d612b"
+          }
+        ]
+      }
+    ],
+    "use": "保留扫描的微观起伏和粗糙度，提取打包图的绿色粗糙度通道。surface_maps.py 生成粉刷、通道漆、旧木和地坪反照率。",
+    "maps": [
+      {
+        "file": "school_lime.jpg",
+        "sha256": "b818b3fbec523c8e58a27fb672934e620863eda4032e58da5fea65de291baed1"
+      },
+      {
+        "file": "school_passage.jpg",
+        "sha256": "742b1ff54a4f139e05d905605c6c50eeacc7ad7dec660280bcaeb9cb27bc3f5d"
+      },
+      {
+        "file": "school_pine.jpg",
+        "sha256": "aabda8d38b481a763e161dc16664a9eaf6a402869e5ae6efd13f24d0a9bfbd38"
+      },
+      {
+        "file": "school_screed.jpg",
+        "sha256": "9a1f85cadc61e4a373689d7a8fda7636d8e9041e303620529c797d544f9fc09c"
+      }
+    ]
+  }
 }

@@ -1,0 +1,386 @@
+{
+  "baseline": "38d49b19a30e8c5e626430fd280056c413508b0d",
+  "entry": "Godot 4.6.3 first_shift.tscn --explore-500 --shancheng",
+  "source": {
+    "finishes": {
+      "floor": "Jinma warm worn school floor",
+      "case_wall": "Jinma ivory limewash",
+      "passage_low": "Jinma aged teal passage paint",
+      "passage_high": "Jinma ivory limewash",
+      "window_pier": "Jinma ivory limewash",
+      "outer_pier": "Weathered school limewash",
+      "upstairs_floor": "Dark oiled timber",
+      "ceiling_board": "Jinma exposed floorboards",
+      "joist": "Jinma old fir joists",
+      "open_stairwell": null
+    },
+    "heights_above_floor_m": {
+      "joined_desk_1": 0.769,
+      "joined_desk_2": 0.769,
+      "bench_1": 0.429,
+      "bench_2": 0.429,
+      "window_desk": 0.776,
+      "fare_box_stand": 0.933,
+      "window_case_glass": 1.192
+    },
+    "desk_foot_gaps_m": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "support_below_four_glass_case_posts_m": [
+      0.776,
+      0.776,
+      0.776,
+      0.776
+    ],
+    "original_print_tiles_used": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "packed_printwork_sha256": "ba4e91d2de33d856bff86bb8812c54462abe2134a1fc4c3c014daeaadca55c6c"
+  },
+  "reopened_city": {
+    "floor": "Jinma warm worn school floor",
+    "case_wall": "Jinma ivory limewash",
+    "passage_low": "Jinma aged teal passage paint",
+    "passage_high": "Jinma ivory limewash",
+    "window_pier": "Jinma ivory limewash",
+    "outer_pier": "Weathered school limewash",
+    "upstairs_floor": "Dark oiled timber",
+    "ceiling_board": "Jinma exposed floorboards",
+    "joist": "Jinma old fir joists",
+    "open_stairwell": null
+  },
+  "registered_camera_samples": {
+    "before": {
+      "lit_plaster": {
+        "xyxy": [
+          177,
+          73,
+          221,
+          130
+        ],
+        "median_srgb": [
+          122,
+          120,
+          115
+        ]
+      },
+      "aisle_floor": {
+        "xyxy": [
+          330,
+          568,
+          381,
+          612
+        ],
+        "median_srgb": [
+          67,
+          68,
+          66
+        ]
+      },
+      "ceiling": {
+        "xyxy": [
+          408,
+          18,
+          451,
+          39
+        ],
+        "median_srgb": [
+          33,
+          23,
+          19
+        ]
+      }
+    },
+    "pale_trial": {
+      "lit_plaster": {
+        "xyxy": [
+          177,
+          73,
+          221,
+          130
+        ],
+        "median_srgb": [
+          241,
+          240,
+          236
+        ]
+      },
+      "aisle_floor": {
+        "xyxy": [
+          330,
+          568,
+          381,
+          612
+        ],
+        "median_srgb": [
+          203,
+          191,
+          172
+        ]
+      },
+      "ceiling": {
+        "xyxy": [
+          408,
+          18,
+          451,
+          39
+        ],
+        "median_srgb": [
+          192,
+          153,
+          108
+        ]
+      }
+    },
+    "floor_trial": {
+      "lit_plaster": {
+        "xyxy": [
+          177,
+          73,
+          221,
+          130
+        ],
+        "median_srgb": [
+          222,
+          220,
+          216
+        ]
+      },
+      "aisle_floor": {
+        "xyxy": [
+          330,
+          568,
+          381,
+          612
+        ],
+        "median_srgb": [
+          155,
+          145,
+          133
+        ]
+      },
+      "ceiling": {
+        "xyxy": [
+          408,
+          18,
+          451,
+          39
+        ],
+        "median_srgb": [
+          132,
+          106,
+          81
+        ]
+      }
+    },
+    "current": {
+      "lit_plaster": {
+        "xyxy": [
+          177,
+          73,
+          221,
+          130
+        ],
+        "median_srgb": [
+          222,
+          220,
+          216
+        ]
+      },
+      "aisle_floor": {
+        "xyxy": [
+          330,
+          568,
+          381,
+          612
+        ],
+        "median_srgb": [
+          130,
+          120,
+          111
+        ]
+      },
+      "ceiling": {
+        "xyxy": [
+          408,
+          18,
+          451,
+          39
+        ],
+        "median_srgb": [
+          131,
+          106,
+          81
+        ]
+      }
+    }
+  },
+  "ground": {
+    "missing": 0,
+    "unexpected": []
+  },
+  "rear_stair_pass": true,
+  "court_routes": {
+    "walk": 34,
+    "handoff": 12,
+    "walk_mapped": 2,
+    "delivery_take": 6,
+    "story_walk": 9,
+    "library_books": 22
+  },
+  "original_district": {
+    "run": "jinma_room_finish_01",
+    "survey": {
+      "source_and_export": {
+        "source": "city_and_patrol.blend",
+        "blender": "4.3.2",
+        "blender_sha256": "8df0acedf48c6d5e1c1503692fb7070203430d8cb30f0e051a1e943526c552f2",
+        "glb_sha256": "eb568cb1b592d1bd634f6567ce429be2b66132bef4dddf8d4f14f72490bbc179",
+        "retired": [
+          "COL_Community_court_line_white",
+          "COL_Community_court_court_red",
+          "COL_Community_court_court_green",
+          "Street_small_furniture_dark",
+          "Street_small_furniture_aluminium",
+          "Urban_paving_joints_and_repairs_yard_concrete",
+          "Urban_paving_joints_and_repairs_soil_dark",
+          "Urban_paving_joints_and_repairs_paving_slab",
+          "District_surface_repairs_and_utilities_soil_dark"
+        ],
+        "changed": 131,
+        "new": [
+          "COL_Unit22_Stairhall",
+          "Unit22_Fittings",
+          "COL_Unit22_BackGallery",
+          "Unit22_HallNotices",
+          "COL_Blue24_Stair",
+          "Blue24_Fixtures",
+          "COL_Blue24_Crossing",
+          "COL_Blue24_301",
+          "COL_Patrol25_EastLane",
+          "COL_Patrol25_StationRear",
+          "COL_Patrol25_ResidentStair",
+          "Patrol25_ResidentTreads",
+          "COLH_Patrol25_StairSlope",
+          "Patrol25_HallHardware",
+          "COL_Patrol25_CourtBank",
+          "Patrol25_StairBeds"
+        ]
+      },
+      "mentor_routes": 14,
+      "mentor_legs": 28,
+      "mentor_distance_m": 3454.11,
+      "player_surface_routes_completed": {
+        "out": 26,
+        "back": 26
+      },
+      "historical_underground_alignments_excluded": 4,
+      "walk_return_trips_at_six_junctions": 18,
+      "additional_street_entry_return_trips": 4,
+      "inner_surface_points": 2120,
+      "gate_cross_sections": 300,
+      "max_gate_error_m": 0.00620094299316407,
+      "east_stair_edge_points": 216,
+      "district_probes": {
+        "sections": 16004,
+        "grid": 10000
+      },
+      "old_height_misses_rechecked": 28,
+      "north_edge_max_difference_m_over_13cm": 0.0417556762695313,
+      "native_scene": "first_shift.tscn",
+      "engine": "4.6.3-stable (official)"
+    },
+    "timing": {
+      "device": "NVIDIA GeForce RTX 4070 Laptop GPU",
+      "viewport": "(692.0, 389.0)",
+      "views": [
+        {
+          "gpu_p50_ms": 68.8199996948242,
+          "gpu_p95_ms": 77.4250030517578,
+          "samples": 150,
+          "view": "switchback",
+          "wall_p95_ms": 77.543
+        },
+        {
+          "gpu_p50_ms": 65.6729965209961,
+          "gpu_p95_ms": 77.9069976806641,
+          "samples": 150,
+          "view": "crossing",
+          "wall_p95_ms": 78.264
+        },
+        {
+          "gpu_p50_ms": 72.2269973754883,
+          "gpu_p95_ms": 89.4010009765625,
+          "samples": 150,
+          "view": "301",
+          "wall_p95_ms": 90.467
+        }
+      ],
+      "window": "(1152, 648)"
+    }
+  },
+  "room_gpu": {
+    "adapter": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "engine": "4.6.3-stable (official)",
+    "render_method": "forward_plus",
+    "scale_3d": 1.0,
+    "viewport": "(692.0, 389.0)",
+    "views": [
+      {
+        "gpu_p50_ms": 10.1169996261597,
+        "gpu_p95_ms": 10.6719999313354,
+        "samples": 150,
+        "view": "end_shelves",
+        "wall_p95_ms": 14.592
+      },
+      {
+        "gpu_p50_ms": 6.36700010299683,
+        "gpu_p95_ms": 6.62099981307983,
+        "samples": 150,
+        "view": "window_desks",
+        "wall_p95_ms": 8.867
+      },
+      {
+        "gpu_p50_ms": 6.74100017547607,
+        "gpu_p95_ms": 7.24399995803833,
+        "samples": 150,
+        "view": "stair_foot",
+        "wall_p95_ms": 9.665
+      }
+    ],
+    "window": "(1152, 648)"
+  },
+  "reopened_movie": {
+    "frames": 76,
+    "fps": 6.666666507720947,
+    "width": 1152,
+    "height": 648
+  },
+  "digests": {
+    "delivery_courts.blend": "6647657adae2a4fde0958c5879799be7e556f0a2f190010f41f0978a881fabc0",
+    "historic_courts.glb": "2b66e9411fdc1ad9a3a13644838cb3c6b2eb961d5709ad905cb311f5e86e1f9a",
+    "door_to_stair.mp4": "6dce3174c25d7244ff3cda1f3a9c5a35e6c3b692d62b147fe5070a25a51a57f9"
+  }
+}

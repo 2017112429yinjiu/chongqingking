@@ -1,6 +1,7 @@
 """Reopen the scene and measure surfaces carrying the photographed collection."""
 from pathlib import Path
 from hashlib import sha256
+from runpy import run_path
 import bpy
 import numpy as np
 from mathutils.bvhtree import BVHTree
@@ -60,6 +61,7 @@ def audit(school):
             u,v=np.mean([uv[i].uv[:] for i in face.loop_indices],axis=0)
             tiles.add(int(4*u)+(3-int(4*v))*4)
     assert tiles==set(range(16)),tiles
-    return {"heights_above_floor_m":heights,"desk_foot_gaps_m":feet,
+    finishes=run_path(str(Path(__file__).with_name("finish_audit.py")))["audit"](xy,floor,length,depth)
+    return {"finishes":finishes,"heights_above_floor_m":heights,"desk_foot_gaps_m":feet,
             "support_below_four_glass_case_posts_m":[round(z,4) for z in corners],
             "original_print_tiles_used":sorted(tiles),"packed_printwork_sha256":sha256(atlas).hexdigest()}

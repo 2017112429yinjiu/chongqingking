@@ -124,9 +124,12 @@ class Mesh:
         bpy.context.collection.objects.link(obj)
         return obj
 
+school_finishes=run_path(str(here/"story_room/finishes.py"))
+
 def build(record):
     key=record["id"]
     school=key=="jinma_classrooms"
+    paint=school_finishes["materials"](mats) if school else {}
     long_wing=key=="renai_long"
     a,b,c,d=np.asarray(record["points"])
     length=np.linalg.norm(b-a)
@@ -217,17 +220,30 @@ def build(record):
         if school and level==1:
             x0=length*.56-.38;x1=length*.56+23*.35+.91
             y0=depth*.54-1.00;y1=depth*.54+1.00
-            for l,r,v,w in ((.05,x0,.05,depth-.05),(x1,length-.05,.05,depth-.05),(x0,x1,.05,y0),(x0,x1,y1,depth-.05)):
+            deck_panels=((.05,x0,.05,depth-.05),(x1,length-.05,.05,depth-.05),(x0,x1,.05,y0),(x0,x1,y1,depth-.05))
+            school_finishes["underside"](point,deck_panels,length,storey,mats,paint)
+            for l,r,v,w in deck_panels:
                 slab(body,l,v,z-.115,r,w,z,timber)
             for y in (y0,y1):slab(interior,x0,y-.08,z-.24,x1,y+.08,z,timber)
         else:
+            start=len(body.faces)
             slab(body,.05,.05,z-.115,length-.05,depth-.05,z,stone if level==0 else timber)
+            if school and level==0:body.slots[start+1]=paint["floor"]  # The exposed, upward floor face.
         upper=height if not school and level==2 else z+storey
         for rear in (False,True):
             y=depth if rear else 0
             inside=-1 if rear else 1
             def wallbox(x0,h0,x1,h1,slot=wall):
+                start=len(body.faces)
                 slab(body,x0,y,h0,x1,y+inside*.31,h1,slot) if inside>0 else slab(body,x0,y-.31,h0,x1,y,h1,slot)
+                if school and level==0:
+                    inner=y+inside*.31
+                    # End the passage paint at the adjacent window reveals.
+                    # A bay-number boundary alone cuts the paint across a solid pier.
+                    passage=not rear and (i==main_door or (i==main_door-1 and x0>=right-.0001)
+                                          or (i==main_door+1 and x1<=left+.0001))
+                    school_finishes["coat"](body,start,point(x0,inner,0),point(x1,inner,0),
+                                           paint["lime"],paint["skirt"] if passage else None,floor+1.04)
             def facebox(mesh,x0,h0,x1,h1,offset,thick,slot):
                 ys=sorted((y+inside*offset,y+inside*(offset+thick)))
                 slab(mesh,x0,ys[0],h0,x1,ys[1],h1,slot)
@@ -320,6 +336,7 @@ def build(record):
                     facebox(trim,mid-pitch*.51,2.86,mid+pitch*.51,3.08,-.14,.17,band)
             facebox(trim,0,upper-.16,length,upper-.07,-.10,.12,stone if school else band)
         # Wall ends and the load-bearing timbers remain visible from the open passage.
+        ends_start=len(body.faces)
         if long_wing and level==0:
             # The public hall continues through the transverse wing at the shared seam.
             gate=depth*.36
@@ -329,6 +346,10 @@ def build(record):
         else:
             slab(body,0,.28,z,.25,depth-.28,upper,wall)
         end_wall(length,-1,z,upper,level)
+        if school and level==0:
+            for x in (.25,length-.30):
+                school_finishes["coat"](body,ends_start,point(x,0,0),point(x,depth,0),paint["lime"])
+        beam_finish=paint["joist"] if school and level==0 else timber
         for i in range(0,bays+1,2):
             x=min(length-.18,max(.18,i*pitch))
             for frac in (.32,.70):
@@ -336,11 +357,11 @@ def build(record):
                 slab(trim,x-.19,depth*frac-.19,z,x+.19,depth*frac+.19,z+.22,stone)
             if school and level==0 and length*.56-.4<x<length*.56+23*.35+.95:
                 for l,r in ((.20,depth*.54-1),(depth*.54+1,depth-.20)):
-                    slab(interior,x-.105,l,upper-.31,x+.105,r,upper-.10,timber)
+                    slab(interior,x-.105,l,upper-.31,x+.105,r,upper-.10,beam_finish)
             else:
-                slab(interior,x-.105,.20,upper-.31,x+.105,depth-.20,upper-.10,timber)
+                slab(interior,x-.105,.20,upper-.31,x+.105,depth-.20,upper-.10,beam_finish)
         for frac in (.32,.70):
-            slab(interior,.15,depth*frac-.13,upper-.23,length-.15,depth*frac+.13,upper-.04,timber)
+            slab(interior,.15,depth*frac-.13,upper-.23,length-.15,depth*frac+.13,upper-.04,beam_finish)
     # Pitched, hipped roof, projected drip edge and a visible ridge.
     e=.41; ridge=height+min(depth*.26,3.15)
     ridge_in=min(depth*.38,length*.21)
@@ -413,7 +434,8 @@ def build(record):
             bindings["fill_case"](index,start,end,y,bays_n,storey,point,book_mats,
                                   joinery["TIERS"],joinery["PITCH"],joinery["DECK"])
         bindings["fill_tables"](length,depth,storey,point,book_mats)
-        run_path(str(here/"story_room/room.py"))["build"](point,slab,interior,mats,finish,chalk,wood,timber,length,depth,storey)
+        run_path(str(here/"story_room/room.py"))["build"](point,slab,interior,mats,finish,paint,wood,timber,length,depth,storey)
+        school_finishes["daylight"](point,length)
         for frac in (.23,.40,.84):
             x=length*frac;y=depth*.40
             slab(interior,x-1.05,y-.48,storey+.77,x+1.05,y+.48,storey+.86,timber)

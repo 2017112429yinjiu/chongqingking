@@ -1,5 +1,17 @@
 # 金马寺小学旧址 · 山城故事馆一楼
 
+## 当前一楼的墙、地面和木楼板
+
+入口走廊的一面墙下段留着暗绿色旧漆，上方是粉白墙面；馆方志愿者从教室两端拍到的展厅墙面则一直浅到窗台以下。窗框、深色课桌、黄褐色木梁板和暖灰褐地面各有明暗。晚报全景有偏色，不能直接拿单张照片的 RGB 当作原校舍色号。[志愿者教室全景](https://www.meipian.cn/4h4zwp4k) · [晚报展厅与桌面](https://finance.sina.com.cn/tech/roll/2023-02-01/doc-imyeeens9958577.shtml) · [入口走廊照片](https://gochina.com.tw/chongqing-jinmasi-primary-school-shancheng-lane/)
+
+一楼的墙面现在有带细小砂眼的暖白粉刷，通道侧的绿漆止于门洞、窗边。走在长桌旁能看见旧地坪的擦痕和色差；抬头能看到木板的纵向纹理和板缝、横向的搁栅与主梁。楼梯井的开口由原上层楼板边界控制。窗边采用局部漫反射补光，保留展品及桌下的阴影。颜色和表面光泽按照片估计，地坪配方、木材树种和原漆色号均未作现场鉴定。[原版与本版对照](evidence/finishes/before_after.jpg) · [梁板与通道近景](evidence/finishes/details.jpg) · [源图用途及扫描材质授权](sources.json)
+
+![一楼展厅与梯脚，同机位前后对照](evidence/finishes/before_after.jpg)
+
+在 Godot 的常规游戏入口连续走了 18.52 米，从校门外经过售票盒、窗下课桌和端墙格柜，绕到楼梯脚，原地回头 156.09°。两次中间试色都留下了同机位，第一次窗边泛白，第二次地坪仍偏浅。复开 Blender 校舍源文件与整区场景后，分别从内、外检查粉刷与墙裙所在面，从下方检查楼梯井开口；另记录了游戏导入后的法线与粗糙度贴图、走线及三个视角的独立 GPU 样本。[本版实走录像](evidence/finishes/door_to_stair.mp4) · [梯脚玩家回望](evidence/finishes/look_back.jpg) · [试色过程](evidence/finishes/trials.jpg) · [核对记录](evidence/finishes/inspection.json)
+
+## 上一版的一楼陈列与布置
+
 这次做的是原校舍一楼的一间教室。玩家从校门进来，从拼桌与窗下课桌之间走到馆名横匾前，再绕过板凳，经玻璃高柜一侧的门去楼梯。站在梯脚转身，能隔着真实门框看见中央的长桌和窗边的收录机。[门口至楼梯的连续实走](evidence/door_to_stair.mp4) · [梯脚回望](evidence/look_back.jpg)
 
 ![同一机位的空厅与新陈列](evidence/comparison.jpg)

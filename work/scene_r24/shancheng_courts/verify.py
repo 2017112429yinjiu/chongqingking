@@ -58,7 +58,7 @@ def main():
         if graphics and (data["images"] < 2 or len(list(folder.glob("walk_*.jpg")))!=data["images"]):
             raise RuntimeError(f"Missing frames in {folder}")
         if graphics and script.stem=="story_walk":
-            for view in ("look_back","exhibit_corner","window_collection","glass_case","fare_box","reverse_cabinets"):
+            for view in ("look_back","exhibit_corner","window_collection","glass_case","fare_box","reverse_cabinets","timber_detail","passage_finish"):
                 if not (folder/f"{view}.png").is_file():
                     raise RuntimeError(f"Missing story room view {view}")
         results[script.stem]=len(checks)

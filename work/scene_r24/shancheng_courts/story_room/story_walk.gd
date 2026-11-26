@@ -21,6 +21,18 @@ func study_object(target: Vector3) -> void:
 		await physics_frame
 	await frames(46)
 
+func check_room_surfaces() -> void:
+	var states: Dictionary={}
+	for mesh_name: String in ["Court_Jinma_Story_Exposed_Deck","COL_Court_jinma_classrooms","COL_Court_Structure_jinma_classrooms","COL_Court_Jinma_Story_Furniture"]:
+		var obj:=scene.find_child(mesh_name,true,false) as MeshInstance3D
+		if not obj:continue
+		for i in obj.mesh.get_surface_count():
+			var mat:=obj.get_active_material(i) as StandardMaterial3D
+			if mat and mat.resource_name.begins_with("Jinma "):
+				states[mat.resource_name]=mat.albedo_texture!=null and mat.normal_enabled and mat.normal_texture!=null and mat.roughness_texture!=null
+	var expected:=["ivory limewash","aged teal passage paint","warm worn school floor","exposed floorboards","old fir joists","amber shellac shelving"]
+	check("room_finishes_survive_import",expected.all(func(n):return states.get("Jinma "+n,false)),{"materials":states})
+
 func verify() -> void:
 	output=OS.get_environment("CQ_QA_DIR")
 	var graphics:=DisplayServer.get_name()!="headless"
@@ -36,6 +48,7 @@ func verify() -> void:
 	span=ring[0].distance_to(ring[1])
 	depth=(ring[0].distance_to(ring[3])+ring[1].distance_to(ring[2]))*.5
 	floor_y=room.floor
+	check_room_surfaces()
 	var collection:=scene.find_child("Court_Jinma_Story_Collection",true,false) as MeshInstance3D
 	var print_found:=false
 	if collection:
@@ -96,6 +109,8 @@ func verify() -> void:
 		await shot("glass_case",local_spot(22.98,1.33,1.38),local_spot(23.40,.72,.924))
 		await shot("fare_box",local_spot(8*span/13-.21,1.04,1.31),local_spot(8*span/13,.69,1.035))
 		await shot("reverse_cabinets",local_spot(23.84,1.18,1.57),local_spot(20.22,4.29,1.04))
+		await shot("timber_detail",local_spot(18.81,2.42,1.55),local_spot(22.85,2.56,3.20))
+		await shot("passage_finish",local_spot(18.13,6.40,1.56),local_spot(21.32,4.59,1.11))
 	FileAccess.open(output.path_join("story_walk.json"),FileAccess.WRITE).store_string(JSON.stringify(
 		{"checks":checks,"physics_hz":Engine.physics_ticks_per_second,"ticks_per_image":9,"images":saved_frames},"  "))
 	quit(2 if ever_failed else 0)

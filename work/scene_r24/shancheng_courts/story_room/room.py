@@ -24,8 +24,9 @@ def finish(name,color,rough=.65,metal=0,alpha=1):
     mat.diffuse_color=(*color,alpha)
     return mat
 
-def build(point,slab,structure,mats,scan,chalk,wood,walnut,length,depth,storey):
+def build(point,slab,structure,mats,scan,paint,wood,walnut,length,depth,storey):
     m={"wood":mats[wood],"walnut":mats[walnut]}
+    chalk=paint["lime"]
     lacquer=scan("Old ink-dark school desktop",(.19,.15,.13),"wood_table_worn_diff_2k.jpg")
     m["lacquer"]=mats[lacquer]
     m["lacquer"].node_tree.nodes.get("Principled BSDF").inputs["Roughness"].default_value=.54
@@ -60,8 +61,12 @@ def build(point,slab,structure,mats,scan,chalk,wood,walnut,length,depth,storey):
     # picture shows cupboards between two doorways opposite the exterior windows.
     # The bays, opening widths and offset from the playable stair are fitted here.
     slab(structure,back-.10,.30,0,back+.10,flank+.092,storey-.19,chalk)
+    start=len(structure.faces)
     for lo,hi in ((18.33,18.54),(19.99,22.96),(24.10,back-.10)):
         slab(structure,lo,flank-.085,0,hi,flank+.085,storey-.19,chalk)
+    coat=run_path(str(here/"finishes.py"))["coat"]
+    coat(structure,start,point(0,flank+.085,0),point(length,flank+.085,0),
+         chalk,paint["skirt"],point(0,0,1.04)[2])
     for lo,hi in ((18.54,19.99),(22.96,24.10)):
         slab(structure,lo,flank-.085,2.86,hi,flank+.085,storey-.19,chalk)
         for x in (lo+.028,hi-.028):
@@ -73,11 +78,12 @@ def build(point,slab,structure,mats,scan,chalk,wood,walnut,length,depth,storey):
     def place(x,y,angle):
         for g in (supports,detail,glass):g.place(x,y,angle)
     place(back-.298,2.55,-pi/2)
-    f["back_shelves"](supports,detail,m)
+    cabinet=dict(m,wood=mats[paint["case"]])
+    f["back_shelves"](supports,detail,cabinet)
     # The two glazed cupboards sit between the doorways. Their lower cupboards
     # take the weight, with the shallow shelves and pulls modelled on both leaves.
     place(21.49,flank-.319,0)
-    for k in (-1,1):f["tall_case"](supports,glass,detail,k*.647,0,1.26,m,k+2)
+    for k in (-1,1):f["tall_case"](supports,glass,detail,k*.647,0,1.26,cabinet,k+2)
     # Two separate reused desks underneath the windows; turntable to the left
     # of the yellow boombox when facing the windows, as in the 2023 press view.
     place(22.13,.723,pi)
