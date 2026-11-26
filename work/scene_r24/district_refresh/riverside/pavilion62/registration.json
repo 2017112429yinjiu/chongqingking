@@ -1,0 +1,132 @@
+{
+  "site": "长滨路242号 滨江公园4号公共厕所",
+  "poi_uid": "1408a1467da26dabd12dd6dd",
+  "feature_id": "a7dcc339-4d9c-417b-839c-9f1ecbb29740",
+  "feature_source": [
+    {
+      "property": "",
+      "dataset": "doi:10.5281/zenodo.8174931",
+      "license": "CC-BY-4.0",
+      "record_id": null,
+      "update_time": null,
+      "confidence": null,
+      "between": null,
+      "provider": "zenodo",
+      "resource": "east_asian_buildings",
+      "version": "2024-11-01"
+    }
+  ],
+  "feature_sha256": "4270a1a4a7ca7adc745a543135be5c2fbaaa487bb02c35321f63eca2bde75a9d",
+  "footprint": [
+    [
+      -7.4071,
+      -197.4377
+    ],
+    [
+      -6.7286,
+      -190.9976
+    ],
+    [
+      -16.6043,
+      -189.878
+    ],
+    [
+      -17.4767,
+      -196.307
+    ]
+  ],
+  "center": [
+    -12.056796298593289,
+    -193.66527685616538
+  ],
+  "old_plot": [
+    -21.26580861299274,
+    -187.04968430775327
+  ],
+  "candidate_old_overlap_m2": 4.889019022324076,
+  "candidate_dimensions_m": [
+    6.475743220665874,
+    9.938961447253934,
+    6.487921297303169,
+    10.132883432172704
+  ],
+  "old_center_to_poi_m": 1.8839111561331943,
+  "nearest_distances_m": [
+    4.482560010752777,
+    80.63879618130467
+  ],
+  "poi_east_north": [
+    -19.4827,
+    -186.4417
+  ],
+  "photo_eye_east_north": [
+    -18.4165,
+    -181.3429
+  ],
+  "photo_to_poi_m": 5.209082825219822,
+  "photo_to_outline_m": 8.725365370573314,
+  "photo_sha256": "e8866ba8a39cff4c37891522694bba119affb4a4595d53af3780abb2e457a58a",
+  "roads": {
+    "59146737": {
+      "tags": {
+        "alt_name": "长滨路",
+        "highway": "primary",
+        "name": "长江滨江路",
+        "name:en": "Changjiang Binjiang Road",
+        "name:zh": "长江滨江路",
+        "oneway": "yes",
+        "source": "bing;Yahoo hires",
+        "surface": "asphalt"
+      },
+      "candidate_clearance_m": 6.506024351992269,
+      "old_crossing_m": 10.897716584177392,
+      "nearest_to_shell_center": [
+        -10.766038110165631,
+        -183.9012437427696
+      ],
+      "nearby_polyline": [
+        [
+          -74.8604,
+          -173.3728
+        ],
+        [
+          -35.3187,
+          -180.6555
+        ],
+        [
+          16.7543,
+          -187.5393
+        ],
+        [
+          59.1358,
+          -191.5521
+        ]
+      ]
+    },
+    "1256840006": {
+      "tags": {
+        "highway": "primary_link",
+        "layer": "-1",
+        "oneway": "yes",
+        "tunnel": "yes"
+      },
+      "candidate_clearance_m": 57.118146070841604,
+      "old_crossing_m": 0.0,
+      "nearest_to_shell_center": [
+        -40.1927,
+        -137.8581
+      ],
+      "nearby_polyline": [
+        [
+          -40.1927,
+          -137.8581
+        ],
+        [
+          -38.7577,
+          -105.6908
+        ]
+      ]
+    }
+  },
+  "osm_sha256": "37c269b570deb778828e26766a62cde853d02a5e4663954612383426115e51a8"
+}

@@ -1,0 +1,40 @@
+{
+  "walk_directions": [
+    8.04143,
+    8.00203,
+    3.24744,
+    3.2807
+  ],
+  "pavilion_checks": {
+    "passed": 6,
+    "total": 6
+  },
+  "repair": {
+    "passed": 10,
+    "total": 10
+  },
+  "signed_delivery": {
+    "passed": 6,
+    "total": 6
+  },
+  "blender": {
+    "version": "4.3.2",
+    "delta_meshes": 9,
+    "composed_objects": 4547,
+    "linked_libraries": 16
+  },
+  "native_retry": {
+    "resolution_px": [
+      720,
+      405
+    ],
+    "renderer": "gl_compatibility",
+    "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)"
+  },
+  "first_native_attempt": {
+    "status": 124,
+    "raw_log": "/workspace/work/runtime/district-refresh/patched/pavilion62-native/before/engine.log"
+  },
+  "rejected_initial_reverse_view": "/workspace/work/runtime/district-refresh/patched/pavilion62-native-retry/after/look_back_toward_street.png",
+  "same_field_view_baseline_occlusion": "The old placeholder wall occupies the registered field camera."
+}

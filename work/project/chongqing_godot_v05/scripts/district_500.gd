@@ -18,6 +18,8 @@ const PUBLIC_EDGES := "res://assets/district_500/public-edges.glb"
 const PUBLIC_EDGES_SITE := "res://assets/district_500/public-edges.json"
 const XINGCHEN := "res://assets/district_500/xingchen.glb"
 const XINGCHEN_SITE := "res://assets/district_500/xingchen.json"
+const PAVILION_62 := "res://assets/district_500/pavilion62.glb"
+const PAVILION_62_SITE := "res://assets/district_500/pavilion62.json"
 
 static func install(city: Node3D) -> Dictionary:
 	var district := (load(MODEL) as PackedScene).instantiate() as Node3D
@@ -61,6 +63,8 @@ static func install(city: Node3D) -> Dictionary:
 						install_street_group(district, XINGCHEN, XINGCHEN_SITE, "Xingchen")
 						var site: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(XINGCHEN_SITE))
 						xingchen_way.append(int(site.way))
+						if not "--qa-without-pavilion62" in OS.get_cmdline_user_args():
+							install_street_group(district, PAVILION_62, PAVILION_62_SITE, "RiversidePavilion62")
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -218,6 +222,7 @@ static func install(city: Node3D) -> Dictionary:
 		"guoco_sha256": FileAccess.get_sha256(GUOCO),
 		"public_edges_sha256": FileAccess.get_sha256(PUBLIC_EDGES),
 		"xingchen_sha256": FileAccess.get_sha256(XINGCHEN),
+		"pavilion_62_sha256": FileAccess.get_sha256(PAVILION_62),
 		"retired_internal_context": local_frame != null, "osm_building_ids": retire}
 
 
