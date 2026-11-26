@@ -87,5 +87,9 @@ with bpy.data.libraries.load(str(here.parent/"shancheng_courts/delivery_courts.b
     courts.objects=source.objects[:]
 for item in courts.objects:
     collection.objects.link(item)
+with bpy.data.libraries.load(str(here / "riverside.blend"), link=True, relative=True) as (source, riverside):
+    riverside.objects = list(source.objects)
+for item in riverside.objects:
+    collection.objects.link(item)
 bpy.context.preferences.filepaths.save_version=0
 bpy.ops.wm.save_as_mainfile(filepath=str(here / "city_and_outer.local.blend"),relative_remap=True,compress=True)

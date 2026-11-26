@@ -1,0 +1,581 @@
+{
+  "scene": "res://first_shift.tscn",
+  "engine": "4.6.3-stable (official)",
+  "headless_project_renderer": "forward_plus",
+  "asset_identity": {
+    "E": [
+      16.8593597412109,
+      "COL_Outer500_Surface_09_04"
+    ],
+    "N": [
+      49.0603370666504,
+      "COL_Outer500_Surface_05_09"
+    ],
+    "S": [
+      -12.797477722168,
+      "COL_Outer500_Surface_07_00"
+    ],
+    "W": [
+      5.58744812011719,
+      "COL_Outer500_Surface_00_03"
+    ]
+  },
+  "default_and_explore_started": true,
+  "sections": {
+    "east_high": {
+      "samples": 325,
+      "contact_hits": 325
+    },
+    "east_main": {
+      "samples": 325,
+      "contact_hits": 325
+    },
+    "north": {
+      "samples": 325,
+      "contact_hits": 325
+    },
+    "south": {
+      "samples": 325,
+      "contact_hits": 325
+    },
+    "southeast": {
+      "samples": 325,
+      "contact_hits": 325
+    },
+    "west_lower": {
+      "samples": 325,
+      "contact_hits": 325
+    },
+    "west_upper": {
+      "samples": 325,
+      "contact_hits": 325
+    }
+  },
+  "routes": [
+    {
+      "route": "west",
+      "reverse": false,
+      "riding": false,
+      "distance_m": 135.066889613867,
+      "passed": true,
+      "reached": 7,
+      "targets": 7
+    },
+    {
+      "route": "west",
+      "reverse": false,
+      "riding": true,
+      "distance_m": 134.600294521486,
+      "passed": true,
+      "reached": 7,
+      "targets": 7
+    },
+    {
+      "route": "west",
+      "reverse": true,
+      "riding": false,
+      "distance_m": 135.732636279427,
+      "passed": true,
+      "reached": 7,
+      "targets": 7
+    },
+    {
+      "route": "west",
+      "reverse": true,
+      "riding": true,
+      "distance_m": 134.66545563098,
+      "passed": true,
+      "reached": 7,
+      "targets": 7
+    },
+    {
+      "route": "east",
+      "reverse": false,
+      "riding": false,
+      "distance_m": 187.850827571936,
+      "passed": true,
+      "reached": 8,
+      "targets": 8
+    },
+    {
+      "route": "east",
+      "reverse": false,
+      "riding": true,
+      "distance_m": 187.358571922348,
+      "passed": true,
+      "reached": 8,
+      "targets": 8
+    },
+    {
+      "route": "east",
+      "reverse": true,
+      "riding": false,
+      "distance_m": 188.526140973903,
+      "passed": true,
+      "reached": 8,
+      "targets": 8
+    },
+    {
+      "route": "east",
+      "reverse": true,
+      "riding": true,
+      "distance_m": 187.598125251709,
+      "passed": true,
+      "reached": 8,
+      "targets": 8
+    },
+    {
+      "route": "east_high",
+      "reverse": false,
+      "riding": false,
+      "distance_m": 103.152272376232,
+      "passed": true,
+      "reached": 8,
+      "targets": 8
+    },
+    {
+      "route": "east_high",
+      "reverse": false,
+      "riding": true,
+      "distance_m": 102.837307644193,
+      "passed": true,
+      "reached": 8,
+      "targets": 8
+    },
+    {
+      "route": "east_high",
+      "reverse": true,
+      "riding": false,
+      "distance_m": 102.931730915792,
+      "passed": true,
+      "reached": 8,
+      "targets": 8
+    },
+    {
+      "route": "east_high",
+      "reverse": true,
+      "riding": true,
+      "distance_m": 102.772144691553,
+      "passed": true,
+      "reached": 8,
+      "targets": 8
+    },
+    {
+      "route": "north",
+      "reverse": false,
+      "riding": false,
+      "distance_m": 154.073031992652,
+      "passed": true,
+      "reached": 7,
+      "targets": 7
+    },
+    {
+      "route": "north",
+      "reverse": false,
+      "riding": true,
+      "distance_m": 154.282856523641,
+      "passed": true,
+      "reached": 7,
+      "targets": 7
+    },
+    {
+      "route": "north",
+      "reverse": true,
+      "riding": false,
+      "distance_m": 154.032725381665,
+      "passed": true,
+      "reached": 7,
+      "targets": 7
+    },
+    {
+      "route": "north",
+      "reverse": true,
+      "riding": true,
+      "distance_m": 154.277547196718,
+      "passed": true,
+      "reached": 7,
+      "targets": 7
+    },
+    {
+      "route": "south",
+      "reverse": false,
+      "riding": false,
+      "distance_m": 145.614325168543,
+      "passed": true,
+      "reached": 6,
+      "targets": 6
+    },
+    {
+      "route": "south",
+      "reverse": false,
+      "riding": true,
+      "distance_m": 146.16297900991,
+      "passed": true,
+      "reached": 6,
+      "targets": 6
+    },
+    {
+      "route": "south",
+      "reverse": true,
+      "riding": false,
+      "distance_m": 145.74742685724,
+      "passed": true,
+      "reached": 6,
+      "targets": 6
+    },
+    {
+      "route": "south",
+      "reverse": true,
+      "riding": true,
+      "distance_m": 146.076033105142,
+      "passed": true,
+      "reached": 6,
+      "targets": 6
+    }
+  ],
+  "first_shift": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "district_booted",
+        "pass": true
+      },
+      {
+        "name": "default_game_starts_at_registration",
+        "pass": true
+      },
+      {
+        "name": "early_order_and_bike_locked",
+        "pass": true
+      },
+      {
+        "name": "register_at_mentor",
+        "pass": true
+      },
+      {
+        "name": "mentor_on_foot_at_check_in",
+        "pass": true
+      },
+      {
+        "name": "watched_RIDING",
+        "pass": true
+      },
+      {
+        "name": "walk_to_own_bike",
+        "pass": true
+      },
+      {
+        "name": "mount_own_scooter",
+        "pass": true
+      },
+      {
+        "name": "guide_waits_when_learner_stops",
+        "pass": true
+      },
+      {
+        "name": "follow_to_noodle_shop",
+        "pass": true
+      },
+      {
+        "name": "parked_at_shop",
+        "pass": true
+      },
+      {
+        "name": "saved_shop",
+        "pass": true
+      },
+      {
+        "name": "pupil_cannot_order_before_demo",
+        "pass": true
+      },
+      {
+        "name": "watched_PUPIL_PICKUP",
+        "pass": true
+      },
+      {
+        "name": "mentor_took_separate_order",
+        "pass": true
+      },
+      {
+        "name": "walk_to_counter",
+        "pass": true
+      },
+      {
+        "name": "place_real_order",
+        "pass": true
+      },
+      {
+        "name": "packed_meal_in_view_from_pickup",
+        "pass": true
+      },
+      {
+        "name": "take_packed_order",
+        "pass": true
+      },
+      {
+        "name": "cannot_deliver_before_second_leg",
+        "pass": true
+      },
+      {
+        "name": "watched_RIDING",
+        "pass": true
+      },
+      {
+        "name": "saved_carrying",
+        "pass": true
+      },
+      {
+        "name": "return_to_parked_scooter",
+        "pass": true
+      },
+      {
+        "name": "pupil_loads_separate_box",
+        "pass": true
+      },
+      {
+        "name": "mount_with_order",
+        "pass": true
+      },
+      {
+        "name": "follow_to_courtyard_approach",
+        "pass": true
+      },
+      {
+        "name": "riders_park_at_real_address",
+        "pass": true
+      },
+      {
+        "name": "saved_last_mile",
+        "pass": true
+      },
+      {
+        "name": "watched_PUPIL_UNLOAD",
+        "pass": true
+      },
+      {
+        "name": "pupil_retrieves_second_bag",
+        "pass": true
+      },
+      {
+        "name": "watched_PUPIL_DELIVERS",
+        "pass": true
+      },
+      {
+        "name": "mentor_delivers_first",
+        "pass": true
+      },
+      {
+        "name": "walk_to_house_one",
+        "pass": true
+      },
+      {
+        "name": "rapid_input_cannot_skip_knock",
+        "pass": true
+      },
+      {
+        "name": "student_knocks_before_handover",
+        "pass": true
+      },
+      {
+        "name": "pupil_knuckle_contacts_wood",
+        "pass": true
+      },
+      {
+        "name": "saved_knocked",
+        "pass": true
+      },
+      {
+        "name": "reach_second_hook",
+        "pass": true
+      },
+      {
+        "name": "credit_waits_for_release",
+        "pass": true
+      },
+      {
+        "name": "order_one_credited_once",
+        "pass": true
+      },
+      {
+        "name": "saved_after_door",
+        "pass": true
+      },
+      {
+        "name": "order_2_back_to_vehicle",
+        "pass": true
+      },
+      {
+        "name": "order_2_remount",
+        "pass": true
+      },
+      {
+        "name": "order_2_back_to_shop",
+        "pass": true
+      },
+      {
+        "name": "watched_PUPIL_PICKUP",
+        "pass": true
+      },
+      {
+        "name": "order_2_counter",
+        "pass": true
+      },
+      {
+        "name": "spice_portion_required",
+        "pass": true
+      },
+      {
+        "name": "order_2_collected",
+        "pass": true
+      },
+      {
+        "name": "watched_RIDING",
+        "pass": true
+      },
+      {
+        "name": "order_2_leave_counter",
+        "pass": true
+      },
+      {
+        "name": "order_2_load",
+        "pass": true
+      },
+      {
+        "name": "order_2_mounted_with_own_parcel",
+        "pass": true
+      },
+      {
+        "name": "order_2_to_address",
+        "pass": true
+      },
+      {
+        "name": "watched_PUPIL_UNLOAD",
+        "pass": true
+      },
+      {
+        "name": "watched_PUPIL_SHELF",
+        "pass": true
+      },
+      {
+        "name": "order_2_wrong_bay",
+        "pass": true
+      },
+      {
+        "name": "order_2_wrong_bay_rejected",
+        "pass": true
+      },
+      {
+        "name": "order_2_correct_bay",
+        "pass": true
+      },
+      {
+        "name": "aborted_placement_keeps_order",
+        "pass": true
+      },
+      {
+        "name": "order_2_both_real_bags_at_shelf",
+        "pass": true
+      },
+      {
+        "name": "order_3_back_to_vehicle",
+        "pass": true
+      },
+      {
+        "name": "order_3_remount",
+        "pass": true
+      },
+      {
+        "name": "order_3_back_to_shop",
+        "pass": true
+      },
+      {
+        "name": "watched_PUPIL_PICKUP",
+        "pass": true
+      },
+      {
+        "name": "order_3_counter",
+        "pass": true
+      },
+      {
+        "name": "order_3_collected",
+        "pass": true
+      },
+      {
+        "name": "watched_RIDING",
+        "pass": true
+      },
+      {
+        "name": "order_3_leave_counter",
+        "pass": true
+      },
+      {
+        "name": "order_3_load",
+        "pass": true
+      },
+      {
+        "name": "order_3_mounted_with_own_parcel",
+        "pass": true
+      },
+      {
+        "name": "order_3_to_address",
+        "pass": true
+      },
+      {
+        "name": "watched_PUPIL_UNLOAD",
+        "pass": true
+      },
+      {
+        "name": "watched_PUPIL_SHELF",
+        "pass": true
+      },
+      {
+        "name": "unconfirmed_bays_locked",
+        "pass": true
+      },
+      {
+        "name": "order_3_call",
+        "pass": true
+      },
+      {
+        "name": "customer_confirms_slot",
+        "pass": true
+      },
+      {
+        "name": "order_3_wrong_bay",
+        "pass": true
+      },
+      {
+        "name": "order_3_wrong_bay_rejected",
+        "pass": true
+      },
+      {
+        "name": "order_3_correct_bay",
+        "pass": true
+      },
+      {
+        "name": "order_3_both_real_bags_at_shelf",
+        "pass": true
+      },
+      {
+        "name": "three_orders_paid_once",
+        "pass": true
+      },
+      {
+        "name": "saved_completed",
+        "pass": true
+      },
+      {
+        "name": "repeat_interact_no_duplicate_credit",
+        "pass": true
+      },
+      {
+        "name": "instructor_starts_own_next_job",
+        "pass": true
+      },
+      {
+        "name": "empty_route_issue_log",
+        "pass": true
+      }
+    ]
+  }
+}

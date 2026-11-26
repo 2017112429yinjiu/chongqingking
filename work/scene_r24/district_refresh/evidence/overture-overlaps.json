@@ -1,0 +1,717 @@
+{
+  "input": {
+    "release": "2026-11-18.0",
+    "bbox": [
+      106.5618,
+      29.55095,
+      106.56715,
+      29.55553
+    ],
+    "input_sha256": "4270a1a4a7ca7adc745a543135be5c2fbaaa487bb02c35321f63eca2bde75a9d",
+    "prior_cli_sha256": "1f333f879a902364cf1526efbf4b61d99a12f165c9716c6078686599c5de2b7b",
+    "exact_osm_control_matches": 56,
+    "source_feature_counts": {
+      "OpenStreetMap": 56,
+      "doi:10.5281/zenodo.8174931": 110
+    }
+  },
+  "plots": [
+    {
+      "id": 0,
+      "cell": "0,2",
+      "matches": [
+        {
+          "gers": "c817dd4e-0760-4523-a035-6acedb69690d",
+          "dataset": "doi:10.5281/zenodo.8174931",
+          "license": "CC-BY-4.0",
+          "source_record_id": null,
+          "mapped_storeys": null,
+          "overlap_m2": 103.367,
+          "intersection_over_union": 0.31467
+        },
+        {
+          "gers": "b960a6ef-4af8-41e6-ba38-73853bb1fca3",
+          "dataset": "doi:10.5281/zenodo.8174931",
+          "license": "CC-BY-4.0",
+          "source_record_id": null,
+          "mapped_storeys": null,
+          "overlap_m2": 74.346,
+          "intersection_over_union": 0.22477
+        },
+        {
+          "gers": "357e66fa-3213-45ea-82d7-173ad6a98f3a",
+          "dataset": "doi:10.5281/zenodo.8174931",
+          "license": "CC-BY-4.0",
+          "source_record_id": null,
+          "mapped_storeys": null,
+          "overlap_m2": 1.101,
+          "intersection_over_union": 0.00312
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "cell": "4,3",
+      "matches": [
+        {
+          "gers": "896cf23a-7aa9-4994-b482-e80d06c7498c",
+          "dataset": "doi:10.5281/zenodo.8174931",
+          "license": "CC-BY-4.0",
+          "source_record_id": null,
+          "mapped_storeys": null,
+          "overlap_m2": 0.787,
+          "intersection_over_union": 0.00232
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "cell": "3,0",
+      "matches": []
+    },
+    {
+      "id": 4,
+      "cell": "1,1",
+      "matches": []
+    },
+    {
+      "id": 6,
+      "cell": "0,2",
+      "matches": []
+    },
+    {
+      "id": 7,
+      "cell": "4,4",
+      "matches": [
+        {
+          "gers": "9b6cd90f-6e63-47c1-bb35-e45e05709c96",
+          "dataset": "OpenStreetMap",
+          "license": "ODbL-1.0",
+          "source_record_id": "w809889593@1",
+          "mapped_storeys": null,
+          "overlap_m2": 7.017,
+          "intersection_over_union": 0.00639
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "cell": "4,4",
+      "matches": []
+    },
+    {
+      "id": 9,
+      "cell": "4,4",
+      "matches": []
+    },
+    {
+      "id": 10,
+      "cell": "4,4",
+      "matches": [
+        {
+          "gers": "e3b0f3e9-86ce-42e6-9e90-95b3fcd7dbd4",
+          "dataset": "doi:10.5281/zenodo.8174931",
+          "license": "CC-BY-4.0",
+          "source_record_id": null,
+          "mapped_storeys": null,
+          "overlap_m2": 6.296,
+          "intersection_over_union": 0.051
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "cell": "4,3",
+      "matches": []
+    },
+    {
+      "id": 12,
+      "cell": "4,3",
+      "matches": []
+    },
+    {
+      "id": 13,
+      "cell": "4,3",
+      "matches": []
+    },
+    {
+      "id": 14,
+      "cell": "4,3",
+      "matches": []
+    },
+    {
+      "id": 15,
+      "cell": "4,2",
+      "matches": []
+    },
+    {
+      "id": 16,
+      "cell": "4,2",
+      "matches": []
+    },
+    {
+      "id": 17,
+      "cell": "4,2",
+      "matches": []
+    },
+    {
+      "id": 18,
+      "cell": "4,2",
+      "matches": []
+    },
+    {
+      "id": 21,
+      "cell": "3,2",
+      "matches": []
+    },
+    {
+      "id": 22,
+      "cell": "3,3",
+      "matches": []
+    },
+    {
+      "id": 23,
+      "cell": "2,3",
+      "matches": []
+    },
+    {
+      "id": 24,
+      "cell": "3,1",
+      "matches": []
+    },
+    {
+      "id": 25,
+      "cell": "4,1",
+      "matches": []
+    },
+    {
+      "id": 26,
+      "cell": "4,1",
+      "matches": []
+    },
+    {
+      "id": 27,
+      "cell": "4,1",
+      "matches": [
+        {
+          "gers": "ac5a6c63-c5f2-4a21-bd94-ac09ebfd7f77",
+          "dataset": "OpenStreetMap",
+          "license": "ODbL-1.0",
+          "source_record_id": "w704006725@2",
+          "mapped_storeys": 26,
+          "overlap_m2": 33.864,
+          "intersection_over_union": 0.02859
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "cell": "4,1",
+      "matches": [
+        {
+          "gers": "3c163c20-f947-415d-93da-838e9b59d7a7",
+          "dataset": "OpenStreetMap",
+          "license": "ODbL-1.0",
+          "source_record_id": "w704006706@2",
+          "mapped_storeys": 1,
+          "overlap_m2": 12.804,
+          "intersection_over_union": 0.01368
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "cell": "4,1",
+      "matches": [
+        {
+          "gers": "3c163c20-f947-415d-93da-838e9b59d7a7",
+          "dataset": "OpenStreetMap",
+          "license": "ODbL-1.0",
+          "source_record_id": "w704006706@2",
+          "mapped_storeys": 1,
+          "overlap_m2": 37.943,
+          "intersection_over_union": 0.0426
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "cell": "0,3",
+      "matches": [
+        {
+          "gers": "a2409cdb-29bf-4658-8341-a70a3c762ea4",
+          "dataset": "OpenStreetMap",
+          "license": "ODbL-1.0",
+          "source_record_id": "w704006730@1",
+          "mapped_storeys": 1,
+          "overlap_m2": 24.134,
+          "intersection_over_union": 0.04542
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "cell": "0,3",
+      "matches": [
+        {
+          "gers": "73b6dd5f-1b1a-4c7e-9bd6-8041cf500c17",
+          "dataset": "OpenStreetMap",
+          "license": "ODbL-1.0",
+          "source_record_id": "w704006731@1",
+          "mapped_storeys": 1,
+          "overlap_m2": 6.881,
+          "intersection_over_union": 0.01299
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "cell": "0,3",
+      "matches": [
+        {
+          "gers": "73b6dd5f-1b1a-4c7e-9bd6-8041cf500c17",
+          "dataset": "OpenStreetMap",
+          "license": "ODbL-1.0",
+          "source_record_id": "w704006731@1",
+          "mapped_storeys": 1,
+          "overlap_m2": 1.751,
+          "intersection_over_union": 0.00325
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "cell": "1,4",
+      "matches": [
+        {
+          "gers": "05b025fb-435d-47ba-b095-eefee7eaec30",
+          "dataset": "doi:10.5281/zenodo.8174931",
+          "license": "CC-BY-4.0",
+          "source_record_id": null,
+          "mapped_storeys": null,
+          "overlap_m2": 6.511,
+          "intersection_over_union": 0.04551
+        },
+        {
+          "gers": "4a4b2136-63a7-4204-969a-5693a44710b0",
+          "dataset": "doi:10.5281/zenodo.8174931",
+          "license": "CC-BY-4.0",
+          "source_record_id": null,
+          "mapped_storeys": null,
+          "overlap_m2": 6.804,
+          "intersection_over_union": 0.04356
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "cell": "1,4",
+      "matches": [
+        {
+          "gers": "cfe40011-a27d-4683-ad91-d4ec78dfc040",
+          "dataset": "doi:10.5281/zenodo.8174931",
+          "license": "CC-BY-4.0",
+          "source_record_id": null,
+          "mapped_storeys": null,
+          "overlap_m2": 53.815,
+          "intersection_over_union": 0.21945
+        },
+        {
+          "gers": "a2af3139-4fbc-4393-9796-4099ca87dfd9",
+          "dataset": "doi:10.5281/zenodo.8174931",
+          "license": "CC-BY-4.0",
+          "source_record_id": null,
+          "mapped_storeys": null,
+          "overlap_m2": 10.582,
+          "intersection_over_union": 0.03558
+        },
+        {
+          "gers": "23a6210c-2116-4aec-972e-821e91d9b3e0",
+          "dataset": "doi:10.5281/zenodo.8174931",
+          "license": "CC-BY-4.0",
+          "source_record_id": null,
+          "mapped_storeys": null,
+          "overlap_m2": 4.631,
+          "intersection_over_union": 0.01324
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "cell": "1,4",
+      "matches": [
+        {
+          "gers": "352e0c41-8a38-4aba-b6b0-f4bf99e6d3e0",
+          "dataset": "doi:10.5281/zenodo.8174931",
+          "license": "CC-BY-4.0",
+          "source_record_id": null,
+          "mapped_storeys": null,
+          "overlap_m2": 4.062,
+          "intersection_over_union": 0.01953
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "cell": "1,4",
+      "matches": []
+    },
+    {
+      "id": 38,
+      "cell": "2,4",
+      "matches": [
+        {
+          "gers": "5ae027f9-e836-4428-b3b7-d16356046bfa",
+          "dataset": "OpenStreetMap",
+          "license": "ODbL-1.0",
+          "source_record_id": "r11155555@1",
+          "mapped_storeys": null,
+          "overlap_m2": 29.541,
+          "intersection_over_union": 0.02351
+        },
+        {
+          "gers": "2d14a14d-5d45-4bc1-9eb1-b48dd914ed43",
+          "dataset": "OpenStreetMap",
+          "license": "ODbL-1.0",
+          "source_record_id": "w809889632@1",
+          "mapped_storeys": null,
+          "overlap_m2": 4.881,
+          "intersection_over_union": 0.00428
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "cell": "2,3",
+      "matches": []
+    },
+    {
+      "id": 40,
+      "cell": "2,4",
+      "matches": [
+        {
+          "gers": "2d14a14d-5d45-4bc1-9eb1-b48dd914ed43",
+          "dataset": "OpenStreetMap",
+          "license": "ODbL-1.0",
+          "source_record_id": "w809889632@1",
+          "mapped_storeys": null,
+          "overlap_m2": 1.099,
+          "intersection_over_union": 0.00094
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "cell": "3,4",
+      "matches": [
+        {
+          "gers": "ba3afcfa-267d-4638-9ded-6774333204c4",
+          "dataset": "OpenStreetMap",
+          "license": "ODbL-1.0",
+          "source_record_id": "w809889635@1",
+          "mapped_storeys": null,
+          "overlap_m2": 36.779,
+          "intersection_over_union": 0.0357
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "cell": "3,4",
+      "matches": [
+        {
+          "gers": "ba3afcfa-267d-4638-9ded-6774333204c4",
+          "dataset": "OpenStreetMap",
+          "license": "ODbL-1.0",
+          "source_record_id": "w809889635@1",
+          "mapped_storeys": null,
+          "overlap_m2": 89.956,
+          "intersection_over_union": 0.0943
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "cell": "3,4",
+      "matches": [
+        {
+          "gers": "066a5276-5cc4-422a-bd9a-b0d253c0f5c5",
+          "dataset": "OpenStreetMap",
+          "license": "ODbL-1.0",
+          "source_record_id": "w809889631@1",
+          "mapped_storeys": null,
+          "overlap_m2": 125.761,
+          "intersection_over_union": 0.11564
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "cell": "3,4",
+      "matches": []
+    },
+    {
+      "id": 45,
+      "cell": "3,4",
+      "matches": []
+    },
+    {
+      "id": 46,
+      "cell": "4,4",
+      "matches": [
+        {
+          "gers": "9b6cd90f-6e63-47c1-bb35-e45e05709c96",
+          "dataset": "OpenStreetMap",
+          "license": "ODbL-1.0",
+          "source_record_id": "w809889593@1",
+          "mapped_storeys": null,
+          "overlap_m2": 33.77,
+          "intersection_over_union": 0.03042
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "cell": "0,2",
+      "matches": []
+    },
+    {
+      "id": 50,
+      "cell": "0,3",
+      "matches": []
+    },
+    {
+      "id": 51,
+      "cell": "0,1",
+      "matches": []
+    },
+    {
+      "id": 52,
+      "cell": "0,1",
+      "matches": [
+        {
+          "gers": "e0aa4683-d3c1-48cf-9a97-015232b0eea4",
+          "dataset": "doi:10.5281/zenodo.8174931",
+          "license": "CC-BY-4.0",
+          "source_record_id": null,
+          "mapped_storeys": null,
+          "overlap_m2": 0.056,
+          "intersection_over_union": 0.00039
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "cell": "0,1",
+      "matches": []
+    },
+    {
+      "id": 54,
+      "cell": "1,1",
+      "matches": []
+    },
+    {
+      "id": 55,
+      "cell": "1,0",
+      "matches": []
+    },
+    {
+      "id": 56,
+      "cell": "1,1",
+      "matches": []
+    },
+    {
+      "id": 57,
+      "cell": "1,0",
+      "matches": []
+    },
+    {
+      "id": 58,
+      "cell": "1,0",
+      "matches": []
+    },
+    {
+      "id": 59,
+      "cell": "1,0",
+      "matches": []
+    },
+    {
+      "id": 60,
+      "cell": "1,0",
+      "matches": []
+    },
+    {
+      "id": 61,
+      "cell": "2,0",
+      "matches": []
+    },
+    {
+      "id": 62,
+      "cell": "2,0",
+      "matches": [
+        {
+          "gers": "a7dcc339-4d9c-417b-839c-9f1ecbb29740",
+          "dataset": "doi:10.5281/zenodo.8174931",
+          "license": "CC-BY-4.0",
+          "source_record_id": null,
+          "mapped_storeys": null,
+          "overlap_m2": 4.889,
+          "intersection_over_union": 0.01998
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "cell": "2,0",
+      "matches": []
+    },
+    {
+      "id": 64,
+      "cell": "2,0",
+      "matches": []
+    },
+    {
+      "id": 65,
+      "cell": "2,0",
+      "matches": []
+    },
+    {
+      "id": 66,
+      "cell": "2,0",
+      "matches": []
+    },
+    {
+      "id": 67,
+      "cell": "2,1",
+      "matches": []
+    },
+    {
+      "id": 68,
+      "cell": "2,0",
+      "matches": []
+    },
+    {
+      "id": 69,
+      "cell": "2,1",
+      "matches": []
+    },
+    {
+      "id": 70,
+      "cell": "3,1",
+      "matches": [
+        {
+          "gers": "4aa53b4a-d6ad-4557-ad05-00772dafd66b",
+          "dataset": "OpenStreetMap",
+          "license": "ODbL-1.0",
+          "source_record_id": "w1128648941@1",
+          "mapped_storeys": 40,
+          "overlap_m2": 116.595,
+          "intersection_over_union": 0.1087
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "cell": "3,1",
+      "matches": [
+        {
+          "gers": "4aa53b4a-d6ad-4557-ad05-00772dafd66b",
+          "dataset": "OpenStreetMap",
+          "license": "ODbL-1.0",
+          "source_record_id": "w1128648941@1",
+          "mapped_storeys": 40,
+          "overlap_m2": 35.44,
+          "intersection_over_union": 0.03116
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "cell": "3,1",
+      "matches": [
+        {
+          "gers": "af82a74e-aff1-4421-adbf-282e06faf485",
+          "dataset": "OpenStreetMap",
+          "license": "ODbL-1.0",
+          "source_record_id": "w704006726@2",
+          "mapped_storeys": 29,
+          "overlap_m2": 6.82,
+          "intersection_over_union": 0.00504
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "cell": "3,1",
+      "matches": []
+    },
+    {
+      "id": 74,
+      "cell": "3,1",
+      "matches": [
+        {
+          "gers": "2be0da24-9baf-45e9-9f66-0ef313997034",
+          "dataset": "doi:10.5281/zenodo.8174931",
+          "license": "CC-BY-4.0",
+          "source_record_id": null,
+          "mapped_storeys": null,
+          "overlap_m2": 66.27,
+          "intersection_over_union": 0.33743
+        },
+        {
+          "gers": "d6a433eb-dcd2-483c-a950-89aa1ade5767",
+          "dataset": "OpenStreetMap",
+          "license": "ODbL-1.0",
+          "source_record_id": "w1374780313@1",
+          "mapped_storeys": 42,
+          "overlap_m2": 17.349,
+          "intersection_over_union": 0.01471
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "cell": "4,1",
+      "matches": [
+        {
+          "gers": "04f8ec26-ac54-4bb4-9564-55c2fb9e7d38",
+          "dataset": "OpenStreetMap",
+          "license": "ODbL-1.0",
+          "source_record_id": "w1374780314@1",
+          "mapped_storeys": 42,
+          "overlap_m2": 98.662,
+          "intersection_over_union": 0.08352
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "cell": "4,1",
+      "matches": [
+        {
+          "gers": "d6b3e2db-20d1-442a-b85e-a42c821c6c7c",
+          "dataset": "doi:10.5281/zenodo.8174931",
+          "license": "CC-BY-4.0",
+          "source_record_id": null,
+          "mapped_storeys": null,
+          "overlap_m2": 46.867,
+          "intersection_over_union": 0.30128
+        },
+        {
+          "gers": "c60c6320-1512-437d-b647-ae66f7caee40",
+          "dataset": "doi:10.5281/zenodo.8174931",
+          "license": "CC-BY-4.0",
+          "source_record_id": null,
+          "mapped_storeys": null,
+          "overlap_m2": 12.782,
+          "intersection_over_union": 0.04101
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "cell": "4,2",
+      "matches": []
+    }
+  ]
+}

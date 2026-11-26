@@ -3,6 +3,7 @@ extends RefCounted
 const MODEL := "res://assets/district_500/outer_district.glb"
 const LAYOUT := "res://assets/district_500/layout.json"
 const INTERIOR_TERRAIN := "res://assets/district_500/interior_terrain.json"
+const RIVERSIDE := "res://assets/district_500/riverside.glb"
 
 static func install(city: Node3D) -> Dictionary:
 	var district := (load(MODEL) as PackedScene).instantiate() as Node3D
@@ -25,6 +26,9 @@ static func install(city: Node3D) -> Dictionary:
 	district.add_child(mapped_lane.instantiate())
 	var historic_courts := load("res://assets/district_500/historic_courts.glb") as PackedScene
 	district.add_child(historic_courts.instantiate())
+	var riverside := (load(RIVERSIDE) as PackedScene).instantiate()
+	riverside.name = "RiversideWalk"
+	district.add_child(riverside)
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -172,7 +176,8 @@ static func install(city: Node3D) -> Dictionary:
 			-plot.east_north[1]-sin(a)*u-cos(a)*v)
 		district.add_child(label)
 	return {"bounds_east_north_m": layout.bounds_east_north_m,
-		"glb_sha256": FileAccess.get_sha256(MODEL), "retired_internal_context": local_frame != null, "osm_building_ids": retire}
+		"glb_sha256": FileAccess.get_sha256(MODEL), "riverside_sha256": FileAccess.get_sha256(RIVERSIDE),
+		"retired_internal_context": local_frame != null, "osm_building_ids": retire}
 
 
 static func place_worker(district: Node3D,p: Dictionary) -> void:
@@ -249,6 +254,10 @@ static func start_exploration(scene: Node3D) -> void:
 		var a: Array=layout.public_stops[0].approach
 		var b: Array=layout.public_stops[0].target
 		scene.explorer.set_walk_origin(Vector3(a[0],a[2],-a[1]),Vector3(b[0],b[1],b[2]))
+	elif "--riverside" in OS.get_cmdline_user_args():
+		var park := collision.raycast_ground(scene, Vector3(-205.0, -12.0, 210.0), 6.0)
+		if not park.is_empty():
+			scene.explorer.set_walk_origin(park.position + Vector3.UP * 0.035, Vector3(-191.0, -13.5, 214.0))
 	if "--outer-market" in OS.get_cmdline_user_args():
 		var layout: Dictionary=JSON.parse_string(FileAccess.get_file_as_string(LAYOUT))
 		for i in layout.plots.size():
