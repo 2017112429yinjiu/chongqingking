@@ -69,6 +69,10 @@ matix_plan = json.loads((group_assets / "matix_streets.json").read_bytes())
 zhongxing_plan = json.loads((group_assets / "zhongxing-retaining.json").read_bytes())
 west_court_plan = json.loads((group_assets / "west-court.json").read_bytes())
 guoco_plan = json.loads((group_assets / "guoco-frontages.json").read_bytes())
+public_plan = json.loads((group_assets / "public-edges.json").read_bytes())
+public_override = set(public_plan["replacement_meshes"])
+public_retired = set(public_plan["retired_objects"])
+later_public_meshes = public_override | public_retired
 guoco_override = set(guoco_plan["replacement_meshes"])
 guoco_retired = set(guoco_plan["retired_objects"])
 factory_override = set(factory_plan["replacement_meshes"])
@@ -79,17 +83,19 @@ zhongxing_override = set(zhongxing_plan["replacement_meshes"])
 west_court_override = set(west_court_plan["replacement_meshes"])
 with bpy.data.libraries.load(str(factory_dir / "match_factory.blend"), link=True, relative=True) as (source, factory):
     factory.objects = [name for name in factory_plan["new_meshes"] + factory_plan["replacement_meshes"]
-                       if name not in matix_override and name not in guoco_override]
+                       if name not in matix_override and name not in guoco_override
+                       and name not in later_public_meshes]
 for item in factory.objects:
     collection.objects.link(item)
 with bpy.data.libraries.load(str(factory_dir / "matix/matix_streets.blend"), link=True, relative=True) as (source, matix):
     matix.objects = matix_plan["new_meshes"] + [name for name in matix_plan["replacement_meshes"]
                                                  if name not in zhongxing_override and name not in west_court_override
-                                                 and name not in guoco_override]
+                                                 and name not in guoco_override and name not in later_public_meshes]
 for item in matix.objects:
     collection.objects.link(item)
 with bpy.data.libraries.load(str(factory_dir / "zhongxing/zhongxing-retaining.blend"), link=True, relative=True) as (source, zhongxing):
-    zhongxing.objects = [name for name in zhongxing_plan["replacement_meshes"] if name not in guoco_override]
+    zhongxing.objects = [name for name in zhongxing_plan["replacement_meshes"]
+                         if name not in guoco_override and name not in later_public_meshes]
 for item in zhongxing.objects:
     collection.objects.link(item)
 court_data=json.loads((root / "work/project/chongqing_godot_v05/assets/district_500/historic_courts.json").read_bytes())
@@ -97,9 +103,9 @@ old_roots=court_data["superseded_outer_roots"] + guoco_plan["retired_roots_east_
 with bpy.data.libraries.load(str(here / "interior_terrain.blend"), link=True, relative=True) as (source, corrected):
     corrected.objects = source.objects[:]
 replaced = ({obj.name for obj in corrected.objects} | factory_override | factory_retired | matix_override
-            | matix_retired | west_court_override | guoco_override | guoco_retired)
+            | matix_retired | west_court_override | guoco_override | guoco_retired | later_public_meshes)
 for obj in corrected.objects:
-    if obj.name not in factory_override | matix_override | west_court_override | guoco_override:
+    if obj.name not in factory_override | matix_override | west_court_override | guoco_override | later_public_meshes:
         collection.objects.link(obj)
 for obj in draft.objects:
     if obj.name in replaced:
@@ -126,12 +132,17 @@ for item in riverside.objects:
 with bpy.data.libraries.load(str(here.parent / "district_refresh/riverside/west_court/west-court.blend"),
                              link=True, relative=True) as (source, west_court):
     west_court.objects = [name for name in west_court_plan["replacement_meshes"] + west_court_plan["new_meshes"]
-                          if name not in guoco_override]
+                          if name not in guoco_override and name not in later_public_meshes]
 for item in west_court.objects:
     collection.objects.link(item)
 with bpy.data.libraries.load(str(factory_dir / "guoco/guoco-frontages.blend"), link=True, relative=True) as (source, guoco):
-    guoco.objects = guoco_plan["replacement_meshes"] + guoco_plan["new_meshes"]
+    guoco.objects = [name for name in guoco_plan["replacement_meshes"] + guoco_plan["new_meshes"]
+                     if name not in later_public_meshes]
 for item in guoco.objects:
+    collection.objects.link(item)
+with bpy.data.libraries.load(str(factory_dir / "matix/public-edges.blend"), link=True, relative=True) as (_, public):
+    public.objects = public_plan["replacement_meshes"] + public_plan["new_meshes"]
+for item in public.objects:
     collection.objects.link(item)
 bpy.context.preferences.filepaths.save_version=0
 bpy.ops.wm.save_as_mainfile(filepath=str(here / "city_and_outer.local.blend"),relative_remap=True,compress=True)

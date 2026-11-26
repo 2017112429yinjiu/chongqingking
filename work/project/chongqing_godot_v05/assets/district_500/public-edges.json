@@ -1,0 +1,128 @@
+{
+  "way": 809889613,
+  "retired_plots": [
+    44
+  ],
+  "retired_objects": [
+    "COL_Outer500_Frame_44",
+    "Outer500_Condenser_44_01",
+    "Outer500_Condenser_44_04",
+    "Outer500_Household_091_crate_0",
+    "Outer500_InteriorFloor_44",
+    "Outer500_Joinery_44"
+  ],
+  "replacement_meshes": [
+    "COLH_Outer500_Household_contact",
+    "COL_Outer500_Building_envelopes",
+    "COL_Outer500_Retaining_and_boundaries",
+    "Outer500_Facades_and_storefronts",
+    "Outer500_Street_furniture"
+  ],
+  "new_meshes": [
+    "Caijiashibao_ServicePath_809889613"
+  ],
+  "face_counts": {
+    "COLH_Outer500_Household_contact": 6,
+    "COL_Outer500_Building_envelopes": 330,
+    "COL_Outer500_Retaining_and_boundaries": 30,
+    "Outer500_Facades_and_storefronts": 36,
+    "Outer500_Street_furniture": 299
+  },
+  "route_en": [
+    [
+      90.8,
+      216.4
+    ],
+    [
+      92.99,
+      211.57
+    ],
+    [
+      94.88,
+      209.69
+    ],
+    [
+      98.09,
+      208.0
+    ],
+    [
+      101.88,
+      207.88
+    ],
+    [
+      109.0,
+      210.89
+    ],
+    [
+      116.0,
+      213.84
+    ]
+  ],
+  "zhongxing": {
+    "way": 176034707,
+    "residual_removed": [
+      {
+        "source_index": 6802,
+        "fingerprint": "9e048a45ef5e4fd57a4f11a7",
+        "vertices": [
+          [
+            215.96115112304688,
+            176.1007843017578,
+            48.8574104309082
+          ],
+          [
+            217.8948211669922,
+            175.5900115966797,
+            48.851318359375
+          ],
+          [
+            217.8948211669922,
+            175.5900115966797,
+            50.201316833496094
+          ],
+          [
+            215.96115112304688,
+            176.1007843017578,
+            50.2074089050293
+          ]
+        ]
+      }
+    ],
+    "wheel_trace_followup": {
+      "game_contact_east_north_up": [
+        215.92660522460938,
+        176.1157989501953,
+        50.18458938598633
+      ],
+      "confirmed_fragments": [
+        {
+          "index": 6771,
+          "sha": "cc88d8facd6186feea81c9f4",
+          "nearest_distance_m": 0.008445091545581818,
+          "vertices": [
+            [
+              215.93067932128906,
+              176.1088409423828,
+              48.85724639892578
+            ],
+            [
+              215.96115112304688,
+              176.1007843017578,
+              48.8574104309082
+            ],
+            [
+              215.96115112304688,
+              176.1007843017578,
+              50.2074089050293
+            ],
+            [
+              215.93067932128906,
+              176.1088409423828,
+              50.207244873046875
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

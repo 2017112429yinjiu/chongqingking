@@ -58,6 +58,9 @@ func run() -> void:
 func route_plan() -> Dictionary:
 	return ROUTES
 
+func ground_ray_top_m() -> float:
+	return 50.0
+
 func leg(key: String, reverse: bool, riding: bool, route: Array) -> void:
 	var coordinates := route.duplicate()
 	if reverse:
@@ -66,7 +69,7 @@ func leg(key: String, reverse: bool, riding: bool, route: Array) -> void:
 	for value: Array in coordinates:
 		points.append(Vector3(value[0],0,-value[1]))
 	var start := points[0]
-	var query := PhysicsRayQueryParameters3D.create(start+Vector3.UP*50,start-Vector3.UP*21,1)
+	var query := PhysicsRayQueryParameters3D.create(start+Vector3.UP*ground_ray_top_m(),start-Vector3.UP*21,1)
 	var contact := space.intersect_ray(query)
 	if not contact.is_empty():
 		start.y = contact.position.y + .045

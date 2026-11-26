@@ -14,6 +14,8 @@ const WEST_COURT := "res://assets/district_500/west-court.glb"
 const WEST_COURT_SITE := "res://assets/district_500/west-court.json"
 const GUOCO := "res://assets/district_500/guoco-frontages.glb"
 const GUOCO_SITE := "res://assets/district_500/guoco-frontages.json"
+const PUBLIC_EDGES := "res://assets/district_500/public-edges.glb"
+const PUBLIC_EDGES_SITE := "res://assets/district_500/public-edges.json"
 
 static func install(city: Node3D) -> Dictionary:
 	var district := (load(MODEL) as PackedScene).instantiate() as Node3D
@@ -50,6 +52,8 @@ static func install(city: Node3D) -> Dictionary:
 				install_street_group(district, GUOCO, GUOCO_SITE, "GuocoFrontages")
 				var guoco: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(GUOCO_SITE))
 				guoco_plant_roots = guoco.retired_roots_east_north
+				if not "--qa-without-public-edges" in OS.get_cmdline_user_args():
+					install_street_group(district, PUBLIC_EDGES, PUBLIC_EDGES_SITE, "PublicEdges")
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -205,6 +209,7 @@ static func install(city: Node3D) -> Dictionary:
 		"zhongxing_wall_sha256": FileAccess.get_sha256(ZHONGXING_WALL),
 		"west_court_sha256": FileAccess.get_sha256(WEST_COURT),
 		"guoco_sha256": FileAccess.get_sha256(GUOCO),
+		"public_edges_sha256": FileAccess.get_sha256(PUBLIC_EDGES),
 		"retired_internal_context": local_frame != null, "osm_building_ids": retire}
 
 

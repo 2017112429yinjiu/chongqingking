@@ -30,12 +30,41 @@
   },
   "site_sources": [
     "https://www.cqyz.gov.cn/bm_229/lswhjqgwh/zwxx_97154/dt/202307/t20230712_12145003.html",
-    "https://www.cqyz.gov.cn/zwxx_229/gggs/202502/t20250214_14305760.html"
+    "https://www.cqyz.gov.cn/zwxx_229/gggs/202502/t20250214_14305760.html",
+    "https://18t-mansion.cn/traffic.php"
   ],
+  "baidu_access_control": {
+    "source": "桌面按项目投影登记的百度地图 POI",
+    "entries": [
+      {
+        "name": "国浩18T南门",
+        "uid": "f09a3ea1a68c525e3be4a6f1"
+      },
+      {
+        "name": "云尊车库出入口",
+        "uid": "6e8947febc1b2e8402294f23"
+      }
+    ],
+    "registered_east_north_m": [
+      184.72,
+      -107.41
+    ],
+    "to_legacy_25_center_m": 11.57,
+    "photo_at_pin": false,
+    "use": "两条 POI 在桌面定位重合，用作车库和南门的待核入口控制点。"
+  },
   "photo_identification": "两个旧试作楼的同址照片仍待登记。",
   "source_observations": [
     "2023年地面道路移交消息确认厚慈街、响水桥、凤凰台路等地面道路已投用。从中兴路、解放西路方向可到达十八梯传统风貌区及国浩1、2号地块。",
-    "2025年1月占挖审批第18项将施工路段记为凤凰台街与解放西路交叉口至国浩车库入口，并分别登记人行道与车行道。"
+    "2025年1月占挖审批第18项将施工路段记为凤凰台街与解放西路交叉口至国浩车库入口，并分别登记人行道与车行道。",
+    "业主交通页确认地面接驳解放西路和中兴路、车库连接解放碑地下环道。街眼复核仍需带路口或门牌锚点的画面。"
   ],
-  "scope": "公文确认路网和车库入口关系。两栋旧试作楼的实物身份、地面或裙房层位仍待同址街眼照片。"
+  "scope": "公文确认路网和车库入口关系。两栋旧试作楼的实物身份、地面或裙房层位仍待同址街眼照片。",
+  "retest": {
+    "trace": "guoco-legacy-low-frontage-walk-recheck.json",
+    "passed_directions": 1,
+    "total_directions": 4,
+    "goals": "继续使用原路线和稍后起步的同线作为两组固定复测。记录去回地面接触及楼体碰撞，核对路缘与实际门、车道的高差。",
+    "previous_trace": "guoco-legacy-low-frontage-walk.json"
+  }
 }
