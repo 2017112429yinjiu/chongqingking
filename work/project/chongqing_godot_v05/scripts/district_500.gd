@@ -12,6 +12,8 @@ const ZHONGXING_WALL := "res://assets/district_500/zhongxing-retaining.glb"
 const ZHONGXING_SITE := "res://assets/district_500/zhongxing-retaining.json"
 const WEST_COURT := "res://assets/district_500/west-court.glb"
 const WEST_COURT_SITE := "res://assets/district_500/west-court.json"
+const GUOCO := "res://assets/district_500/guoco-frontages.glb"
+const GUOCO_SITE := "res://assets/district_500/guoco-frontages.json"
 
 static func install(city: Node3D) -> Dictionary:
 	var district := (load(MODEL) as PackedScene).instantiate() as Node3D
@@ -37,12 +39,17 @@ static func install(city: Node3D) -> Dictionary:
 	var riverside := (load(RIVERSIDE) as PackedScene).instantiate()
 	riverside.name = "RiversideWalk"
 	district.add_child(riverside)
+	var guoco_plant_roots: Array = []
 	if not "--qa-without-match-factory" in OS.get_cmdline_user_args():
 		install_street_group(district, MATCH_FACTORY, MATCH_FACTORY_SITE, "MatchFactory")
 		if not "--qa-without-matix-streets" in OS.get_cmdline_user_args():
 			install_street_group(district, MATIX_STREETS, MATIX_SITE, "MatixStreets")
 			install_street_group(district, ZHONGXING_WALL, ZHONGXING_SITE, "ZhongxingStreetWall")
 			install_street_group(district, WEST_COURT, WEST_COURT_SITE, "RiversideWestCourt")
+			if not "--qa-without-guoco" in OS.get_cmdline_user_args():
+				install_street_group(district, GUOCO, GUOCO_SITE, "GuocoFrontages")
+				var guoco: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(GUOCO_SITE))
+				guoco_plant_roots = guoco.retired_roots_east_north
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -112,7 +119,7 @@ static func install(city: Node3D) -> Dictionary:
 		plant.visibility_range_end = 38.0
 	var court_data: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://assets/district_500/historic_courts.json"))
 	var replaced_roots: Array[Vector2]=[]
-	for centre: Array in court_data.superseded_outer_roots:
+	for centre: Array in court_data.superseded_outer_roots + guoco_plant_roots:
 		replaced_roots.append(Vector2(centre[0],centre[1]))
 	var planting: Array=layout.planting
 	for index in planting.size():
@@ -197,6 +204,7 @@ static func install(city: Node3D) -> Dictionary:
 		"matix_streets_sha256": FileAccess.get_sha256(MATIX_STREETS),
 		"zhongxing_wall_sha256": FileAccess.get_sha256(ZHONGXING_WALL),
 		"west_court_sha256": FileAccess.get_sha256(WEST_COURT),
+		"guoco_sha256": FileAccess.get_sha256(GUOCO),
 		"retired_internal_context": local_frame != null, "osm_building_ids": retire}
 
 

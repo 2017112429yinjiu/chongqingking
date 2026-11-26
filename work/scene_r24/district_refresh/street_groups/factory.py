@@ -67,7 +67,7 @@ def terrain():
     return BVHTree.FromPolygons(vertices, faces)
 
 
-def build(spec, ground):
+def build(spec, ground, window_finish=None):
     wall = material("Match Factory grey coursed bricks", (.84, .86, .88), "brick_wall_08_diff_2k.jpg")
     piers = material("Match Factory raised brick piers", (.94, .90, .85), "brick_wall_08_diff_2k.jpg")
     stone = material("Match Factory grey stone sills", (.61, .64, .66), "stone_wall_05_diff_2k.jpg")
@@ -145,6 +145,8 @@ def build(spec, ground):
                     block(trim, x-.028, sill, x+.028, head, .245, .308, sash)
                 for h in (sill+.04, sill+(head-sill)*.37, sill+(head-sill)*.69, head-.025):
                     block(trim, low, h-.022, high, h+.022, .241, .310, sash)
+                if window_finish:
+                    window_finish(trim, point, low, high, sill, head, index, bay, story)
                 block(trim, low-.083, sill-.098, high+.083, sill-.016, -.15, .072, flags)
                 block(trim, left, top-.16, right, top-.052, -.079, .07, piers)
             for j in range(4):

@@ -1,0 +1,178 @@
+{
+  "engine": "4.6.3-stable (official)",
+  "guoco_glb_sha256": "4dcb3d55080b02d8a0cf02585626bed2dfc3cdb37ae2f987110b55dd56435853",
+  "renderer": {
+    "physics": "headless",
+    "native": "gl_compatibility",
+    "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)"
+  },
+  "guoco_checks": {
+    "passed": 25,
+    "total": 25
+  },
+  "walk_metres": {
+    "frontage_lower_out": 78.8713,
+    "frontage_lower_back": 78.8324,
+    "between_towers_out": 47.7871,
+    "between_towers_back": 47.8266,
+    "frontage_upper_out": 43.512,
+    "frontage_upper_back": 43.496
+  },
+  "factory": {
+    "passed": 18,
+    "total": 18
+  },
+  "delivery": {
+    "passed": 6,
+    "total": 6
+  },
+  "repair": {
+    "passed": 10,
+    "total": 10
+  },
+  "first_shift": {
+    "passed": 85,
+    "total": 85
+  },
+  "sections": {
+    "east_high": 325,
+    "east_main": 325,
+    "north": 325,
+    "south": 325,
+    "southeast": 325,
+    "west_lower": 325,
+    "west_upper": 325
+  },
+  "city_routes": {
+    "passed": 20,
+    "total": 20,
+    "metres": 2903.4738,
+    "walks": 10,
+    "rides": 10
+  },
+  "native_cameras": {
+    "factory_return": {
+      "eye": [
+        244.066101074219,
+        10.2720003128052,
+        127.010688781738
+      ],
+      "id": "factory_return",
+      "target": [
+        226.5,
+        13.8999996185303,
+        115.0
+      ]
+    },
+    "factory_window": {
+      "eye": [
+        234.699996948242,
+        11.1800003051758,
+        124.300003051758
+      ],
+      "id": "factory_window",
+      "target": [
+        233.699996948242,
+        13.3000001907349,
+        119.5
+      ]
+    },
+    "tower_silhouette": {
+      "eye": [
+        193.0,
+        61.0,
+        -67.0
+      ],
+      "id": "tower_silhouette",
+      "target": [
+        190.0,
+        106.0,
+        72.0
+      ]
+    },
+    "podium_underpass": {
+      "eye": [
+        192.0,
+        19.8540000915527,
+        88.0
+      ],
+      "id": "podium_underpass",
+      "target": [
+        192.0,
+        21.3999996185303,
+        66.0
+      ]
+    }
+  },
+  "preserved_failures": {
+    "guoco-trial-walk": [
+      {
+        "detail": {
+          "distance_m": 3.45922001299914,
+          "end": "(134.0974, 10.31623, 99.5811)",
+          "goals": 6,
+          "max_frame_displacement_m": 0.0692300200462341,
+          "name": "frontage_lower_out",
+          "pass": false,
+          "reached": 0,
+          "stall_contacts": [
+            {
+              "mesh": "COL_Outer500_Surface_07_03",
+              "normal": "(-0.187938, 0.981135, 0.045319)",
+              "position": "(134.1702, 10.32606, 99.57285)"
+            },
+            {
+              "mesh": "COL_Outer500_Surface_07_03",
+              "normal": "(-0.187938, 0.981135, 0.045319)",
+              "position": "(134.1702, 10.32606, 99.57285)"
+            }
+          ]
+        },
+        "name": "frontage_lower_out",
+        "pass": false
+      },
+      {
+        "detail": {
+          "distance_m": 81.2223823933164,
+          "end": "(135.7879, 10.67061, 99.21262)",
+          "goals": 6,
+          "max_frame_displacement_m": 0.0970467552542686,
+          "name": "frontage_lower_back",
+          "pass": false,
+          "reached": 5,
+          "stall_contacts": [
+            {
+              "mesh": "COL_Outer500_Building_envelopes",
+              "normal": "(0.95771, 0.0, 0.287736)",
+              "position": "(135.4826, 12.0751, 99.11906)"
+            }
+          ]
+        },
+        "name": "frontage_lower_back",
+        "pass": false
+      }
+    ],
+    "guoco-final-walk": [
+      {
+        "detail": {
+          "distance_m": 32.2479145488469,
+          "end": "(169.4906, 16.94629, 97.98087)",
+          "goals": 6,
+          "max_frame_displacement_m": 0.070519894361496,
+          "name": "frontage_lower_out",
+          "pass": false,
+          "reached": 2,
+          "stall_contacts": [
+            {
+              "mesh": "COL_Outer500_Building_envelopes",
+              "normal": "(-0.957609, 0.0, -0.288071)",
+              "position": "(169.7965, 17.9784, 98.07109)"
+            }
+          ]
+        },
+        "name": "frontage_lower_out",
+        "pass": false
+      }
+    ]
+  }
+}
