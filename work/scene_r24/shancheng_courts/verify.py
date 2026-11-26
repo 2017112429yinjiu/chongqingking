@@ -56,7 +56,16 @@ def main():
         if graphics and (data["images"] < 2 or len(list(folder.glob("walk_*.jpg")))!=data["images"]):
             raise RuntimeError(f"Missing frames in {folder}")
         results[script.stem]=len(checks)
+    mode=["--resolution","1152x648","--disable-vsync"] if args.capture else ["--headless"]
+    books=run("library_books",[args.godot,*mode,*common,"--script",str(here/"library_books/views.gd"),*flags])
+    inspected=json.loads((books/"materials.json").read_bytes())["checks"]
+    if not inspected or not all(row["pass"] for row in inspected):
+        raise RuntimeError(f"Missing printed bindings in {books}")
+    results["library_books"]=len(inspected)
     if args.capture:
+        for view in ("player_shelf","spines","opposing_case","far_case","table","page_edges"):
+            if not (books/f"{view}.png").is_file():
+                raise RuntimeError(f"Missing book view {view}")
         views=run("views",[args.godot,"--resolution","1152x648",*common,"--script",str(here/"views.gd"),*flags])
         for name in ("from_pickup","lane_front","school_entry","school_door_detail","school_seating","long_hall","reading_room","upper_court"):
             if not (views/f"{name}.png").is_file():

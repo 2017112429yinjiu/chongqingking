@@ -1,0 +1,63 @@
+{
+  "scene": "first_shift.tscn",
+  "candidate_source_sha256": "445a9114a86be40034c8ac2212606b0ba78f1cb962728734f91a556c5a8d3fa4",
+  "export_sha256": "ebb2a6e7eae17074df380a67fa702f1934be764db6fafcff8423cab8d78cbeb0",
+  "pass_counts": {
+    "walk": 28,
+    "handoff": 12,
+    "walk_mapped": 2,
+    "delivery_take": 6,
+    "library_books": 13
+  },
+  "headless_material_checks": 13,
+  "arrival_and_take": {
+    "historical_run": "forecourt-exact-release",
+    "historical_last_frame_sha256": "d482ad3c0d3247c6b9b26fcb412f6b2c7c9b17ed4417038e091874afe5d89146",
+    "new_last_frame_sha256": "2c7b1d55264938f47c46f8d59e46cc8ebbb1789832c31a83e1e2ab08cb5c5f63",
+    "frames": 237,
+    "playback_seconds": 35.55,
+    "video_sha256": "3f1867b58c5f47bac98b849e4998247908acd60caea825e1ae2c2acda4d0bfe3"
+  },
+  "all_roads": {
+    "mentor_legs": 28,
+    "player_surface_routes_completed": {
+      "out": 26,
+      "back": 26
+    },
+    "walk_return_trips_at_six_junctions": 18,
+    "additional_street_entry_return_trips": 4,
+    "gate_cross_sections": 300
+  },
+  "patrol_run": "jinma_bindings_02",
+  "timing_in_reading_room": {
+    "adapter": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "engine": "4.6.3-stable (official)",
+    "render_method": "forward_plus",
+    "scale_3d": 1.0,
+    "viewport": "(692.0, 389.0)",
+    "views": [
+      {
+        "gpu_p50_ms": 6.10699987411499,
+        "gpu_p95_ms": 6.50400018692017,
+        "samples": 150,
+        "view": "aisle",
+        "wall_p95_ms": 7.02
+      },
+      {
+        "gpu_p50_ms": 6.29199981689453,
+        "gpu_p95_ms": 6.76599979400635,
+        "samples": 150,
+        "view": "spines",
+        "wall_p95_ms": 7.315
+      },
+      {
+        "gpu_p50_ms": 6.91200017929077,
+        "gpu_p95_ms": 7.34700012207031,
+        "samples": 150,
+        "view": "desk",
+        "wall_p95_ms": 8.069
+      }
+    ],
+    "window": "(1152, 648)"
+  }
+}

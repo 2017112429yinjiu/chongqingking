@@ -2,6 +2,8 @@
 
 ## 500 米城区试作分支
 
+[金马寺小学二楼书架 · 玩家到达画面与装帧近景](work/scene_r24/shancheng_courts/library_books/README.md)。
+
 [从临崖步道走进 0 号修理院](work/scene_r24/repair_court/README.md)。双击 `work/进修理院给车充气.cmd`，到柜台按 E 检查停在檐下的电瓶车，穿过后门可进院。
 
 [金马寺小学校门前后对照与实走](work/scene_r24/shancheng_courts/forecourt/README.md) · [山城巷制作复盘](work/project/chongqing_godot_v05/docs/DISTRICT_PRODUCTION_STANDARD.md)

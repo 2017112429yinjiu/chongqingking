@@ -1,5 +1,7 @@
 # Chongqing district continuation
 
+- The Jinma reading room on the 500 m trial uses packed, UV-mapped book jackets, paper edges and printed spreads. Keep the three cases, three display tables and the original delivery arrival view in shancheng_courts/library_books. Run shancheng_courts/verify.py with a fresh output and --capture to check printing in the exported game.
+
 - The 500 m trial registers plot 0 at the Shancheng cliff walk. Read work/scene_r24/repair_court/README.md. Keep the plan registration, intermediate streets, full return walk, actual scooter service and separate delivery regression. Run repair_court/verify.ps1 -Run <fresh_name> -Capture. The original 75-site queue now has 70 pending, one registered and four withdrawn.
 
 - On the 500 m trial branch the active Shancheng delivery court uses the Renai wings and Jinma school. Read the Shancheng section of the game’s docs/DISTRICT_PRODUCTION_STANDARD.md and work/scene_r24/shancheng_courts/forecourt/README.md. The 71 pending old plots are recorded in shancheng_courts/evidence/inventory.json. Reopen delivery_courts.blend with Blender 4.3.2 and run shancheng_courts/verify.py with Godot 4.6.3, a fresh output and --capture. Keep the two rejected court views and the full pickup-to-library walk with subsequent work.

@@ -401,8 +401,10 @@ def build(record):
             x=pitch*branch
             for y in (depth*.25,depth*.77):
                 slab(furniture,x-.15,y-.15,storey,x+.15,y+.15,height-.20,fired)
-        bookcols=[red,sash,pages,iron,roof,band,timber,green]
-        for start,end,y in [(1.1,11.7,depth-.72),(19.,length-1.0,depth-.72),(1.1,8.0,1.0)]:
+        bindings=run_path(str(here/"library_books/bindings.py"))
+        book_mats=bindings["materials"]()
+        cases=[(1.1,11.7,depth-.72),(19.,length-1.0,depth-.72),(1.1,8.0,1.0)]
+        for index,(start,end,y) in enumerate(cases):
             bays_n=max(1,int((end-start)/1.22))
             unit=(end-start)/bays_n
             for j in range(bays_n+1):
@@ -411,27 +413,18 @@ def build(record):
             for k in range(6):
                 z=storey+.16+k*.43
                 slab(interior,start,y-.22,z,end,y+.20,z+.038,timber)
-                if k==5:continue
-                for j in range(bays_n):
-                    x=start+j*unit+.065
-                    for idx in range(26):
-                        bw=.035+.014*((idx*7+j+k)%5)
-                        if x+bw>start+(j+1)*unit-.055:break
-                        hh=.214+.027*((idx*13+j*3+k)%5)
-                        slab(furniture,x,y-.182,z+.038,x+bw-.006,y+.085,z+hh,bookcols[(idx*7+j*3+k*5)%len(bookcols)])
-                        x+=bw
+            back=y+(.175 if index<2 else -.180)
+            for j in range(bays_n):
+                a0=start+j*unit+.035
+                slab(furniture,a0,back,storey+.16,a0+unit-.070,back+.010,storey+2.35,timber)
+            bindings["fill_case"](index,start,end,y,bays_n,storey,point,book_mats)
+        bindings["fill_tables"](length,depth,storey,point,book_mats)
         for frac in (.23,.40,.84):
             x=length*frac;y=depth*.40
             slab(interior,x-1.05,y-.48,storey+.77,x+1.05,y+.48,storey+.86,timber)
             for dx in (-.82,.82):
                 for dy in (-.32,.32):
                     slab(furniture,x+dx-.05,y+dy-.05,storey,x+dx+.05,y+dy+.05,storey+.78,timber)
-            for pile in range(3):
-                for layer in range(2+pile%2):
-                    z=storey+.86+.055*layer
-                    xx=x-.64+pile*.50
-                    slab(furniture,xx,y-.20,z,xx+.33,y+.17,z+.045,pages)
-                    slab(furniture,xx-.005,y-.205,z+.042,xx+.335,y+.174,z+.053,bookcols[(pile+layer)%8])
             for delta in (-.73,.77):
                 xx=x+delta;yy=y-.90
                 slab(furniture,xx-.21,yy-.19,storey+.42,xx+.21,yy+.19,storey+.47,timber)

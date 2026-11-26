@@ -1,5 +1,6 @@
 """Reopen the candidate Blender library and compare its actual meshes with the plan."""
 from pathlib import Path
+from runpy import run_path
 import bpy, json, os
 import numpy as np
 
@@ -77,4 +78,4 @@ for name in ("Seating","Trunks","PlanterBases"):
 forecourt={"root_contacts":roots,"table_and_chair_foot_gaps_m":contacts}
 output=Path(os.environ["CQ_QA_DIR"])
 output.mkdir(exist_ok=True,parents=True)
-(output/"blender.json").write_text(json.dumps({"blender":bpy.app.version_string,"source":Path(bpy.data.filepath).name,"remaining":len(remaining-registered),"buildings":records,"forecourt":forecourt},indent=2)+"\n",encoding="utf-8")
+(output/"blender.json").write_text(json.dumps({"blender":bpy.app.version_string,"source":Path(bpy.data.filepath).name,"remaining":len(remaining-registered),"buildings":records,"forecourt":forecourt,"books":run_path(str(here/"library_books/audit.py"))["audit"]()},indent=2)+"\n",encoding="utf-8")

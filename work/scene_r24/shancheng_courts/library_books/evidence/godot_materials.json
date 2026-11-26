@@ -1,0 +1,239 @@
+{
+  "checks": [
+    {
+      "detail": "",
+      "name": "mesh_Case_1",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "name": "Jinma printed bookcloth and jackets",
+          "pixels": [
+            4096,
+            2048
+          ],
+          "roughness_map": true
+        },
+        {
+          "name": "Jinma cut paper signatures",
+          "pixels": [
+            512,
+            1024
+          ],
+          "roughness_map": false
+        }
+      ],
+      "name": "bound_print_Case_1",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "cut_paper_Case_1",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "mesh_Case_2",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "name": "Jinma printed bookcloth and jackets",
+          "pixels": [
+            4096,
+            2048
+          ],
+          "roughness_map": true
+        },
+        {
+          "name": "Jinma cut paper signatures",
+          "pixels": [
+            512,
+            1024
+          ],
+          "roughness_map": false
+        }
+      ],
+      "name": "bound_print_Case_2",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "cut_paper_Case_2",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "mesh_Case_3",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "name": "Jinma printed bookcloth and jackets",
+          "pixels": [
+            4096,
+            2048
+          ],
+          "roughness_map": true
+        },
+        {
+          "name": "Jinma cut paper signatures",
+          "pixels": [
+            512,
+            1024
+          ],
+          "roughness_map": false
+        }
+      ],
+      "name": "bound_print_Case_3",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "cut_paper_Case_3",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "mesh_DisplayTables",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "name": "Jinma printed bookcloth and jackets",
+          "pixels": [
+            4096,
+            2048
+          ],
+          "roughness_map": true
+        },
+        {
+          "name": "Jinma cut paper signatures",
+          "pixels": [
+            512,
+            1024
+          ],
+          "roughness_map": false
+        },
+        {
+          "name": "Jinma printed reading spread",
+          "pixels": [
+            768,
+            512
+          ],
+          "roughness_map": false
+        }
+      ],
+      "name": "bound_print_DisplayTables",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "cut_paper_DisplayTables",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "printed_open_spread",
+      "pass": true
+    }
+  ],
+  "meshes": [
+    {
+      "mesh": "Case_1",
+      "surfaces": [
+        {
+          "name": "Jinma printed bookcloth and jackets",
+          "pixels": [
+            4096,
+            2048
+          ],
+          "roughness_map": true
+        },
+        {
+          "name": "Jinma cut paper signatures",
+          "pixels": [
+            512,
+            1024
+          ],
+          "roughness_map": false
+        }
+      ]
+    },
+    {
+      "mesh": "Case_2",
+      "surfaces": [
+        {
+          "name": "Jinma printed bookcloth and jackets",
+          "pixels": [
+            4096,
+            2048
+          ],
+          "roughness_map": true
+        },
+        {
+          "name": "Jinma cut paper signatures",
+          "pixels": [
+            512,
+            1024
+          ],
+          "roughness_map": false
+        }
+      ]
+    },
+    {
+      "mesh": "Case_3",
+      "surfaces": [
+        {
+          "name": "Jinma printed bookcloth and jackets",
+          "pixels": [
+            4096,
+            2048
+          ],
+          "roughness_map": true
+        },
+        {
+          "name": "Jinma cut paper signatures",
+          "pixels": [
+            512,
+            1024
+          ],
+          "roughness_map": false
+        }
+      ]
+    },
+    {
+      "mesh": "DisplayTables",
+      "surfaces": [
+        {
+          "name": "Jinma printed bookcloth and jackets",
+          "pixels": [
+            4096,
+            2048
+          ],
+          "roughness_map": true
+        },
+        {
+          "name": "Jinma cut paper signatures",
+          "pixels": [
+            512,
+            1024
+          ],
+          "roughness_map": false
+        },
+        {
+          "name": "Jinma printed reading spread",
+          "pixels": [
+            768,
+            512
+          ],
+          "roughness_map": false
+        }
+      ]
+    }
+  ]
+}
