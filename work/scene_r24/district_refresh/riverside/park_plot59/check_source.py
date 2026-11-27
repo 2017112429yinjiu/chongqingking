@@ -29,7 +29,7 @@ for point, name in (([-71.75,-191.86],"old house centre"),([-70.4,-194.4],"shall
     finish = found.data.materials[found.data.polygons[index].material_index]
     tests.append({"spot":name,"contact_enu":list(pos),"material":finish.name})
 if bpy.data.filepath.endswith("city_and_outer.local.blend"):
-    assert objects.get("COL_Outer500_Frame_61")
+    assert objects.get("COL_Outer500_Frame_61") or objects.get("Park61_WestParkEdgePath")
     assert objects.get("COL_Nanjimen_NorthRailSteelBox")
     assert objects.get("COL_Riverside_62_registered_body")
     assert paving.library and paving.library.filepath.endswith("/park-plot59.blend")

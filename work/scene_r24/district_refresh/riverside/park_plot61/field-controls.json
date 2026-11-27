@@ -1,0 +1,220 @@
+{
+  "parent": "b03bf949e2ec249166ffe9898f2381c256d2d68b",
+  "history": "Old editable geometry is retained in district_500/outer_district.blend and the parent composition.",
+  "projection_way": 734116601,
+  "old_plot_center_east_north": [
+    -43.507302419377744,
+    -193.1399393074638
+  ],
+  "old_footprint_east_north": [
+    [
+      -37.76418640462556,
+      -186.53506000648724
+    ],
+    [
+      -50.985350251955154,
+      -188.59168549384964
+    ],
+    [
+      -49.25041843412993,
+      -199.74481860844037
+    ],
+    [
+      -36.029254586800334,
+      -197.68819312107797
+    ]
+  ],
+  "camera": {
+    "panoid": "0902920012230514163423679AU",
+    "date": "2023-05-14",
+    "heading_deg": 130,
+    "pitch_deg": 0,
+    "vertical_fov_deg": 80,
+    "frame_px": [
+      900,
+      560
+    ],
+    "device_height_m": 2.32,
+    "east_north_from_prior_registration_m": [
+      -64.1416,
+      -175.7522
+    ],
+    "source_planar_offset_rounding_check_m": 0.101,
+    "frame_url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=0902920012230514163423679AU&heading=130&pitch=0&fovy=80&width=900&height=560",
+    "metadata_url": "https://mapsv0.bdimg.com/?qt=sdata&sid=0902920012230514163423679AU",
+    "frame_sha256": "d1617c7dfe6d60441949f2e34d0099a208998ebd00ecef66aea2805b8cf96e29"
+  },
+  "sky_samples": [
+    {
+      "pixel": [
+        479,
+        156
+      ],
+      "rgb": [
+        244,
+        243,
+        248
+      ]
+    },
+    {
+      "pixel": [
+        500,
+        163
+      ],
+      "rgb": [
+        243,
+        242,
+        250
+      ]
+    },
+    {
+      "pixel": [
+        511,
+        210
+      ],
+      "rgb": [
+        242,
+        240,
+        251
+      ]
+    },
+    {
+      "pixel": [
+        514,
+        212
+      ],
+      "rgb": [
+        244,
+        248,
+        251
+      ]
+    }
+  ],
+  "source_comparison": [
+    {
+      "source": "https://www.cqnews.net/web/content_1572174477726445568.html",
+      "independent_image_sha256": "cee447156e1d9b5c1518e1023d47a423cc498938d0f746a6c39a15464f41ea6d",
+      "focus": "reverse view of the park-side paths, green strip, tree crowns and bridge piers"
+    },
+    {
+      "source": "https://epaper.cqrb.cn/cqrb/2023-10/26/004/cqrb20231026004.pdf",
+      "focus": "61近地在梁与连续树冠之后"
+    },
+    {
+      "item": "https://www.arcgis.com/home/item.html?id=24efa4fabd92463d805bfd82ef8f8b32",
+      "layer": 6543,
+      "src_date_from_desktop": "2024-03-25",
+      "tiles_zoom_row_cols": [
+        19,
+        217060,
+        [
+          417337,
+          417338,
+          417339
+        ]
+      ],
+      "tile_sha256": {
+        "417337": "cc2231e3fee2f3cb0ad99a2b753a47a676ea3d3888bded54c371a0c982acac42",
+        "417338": "3b1ef75efd5e8205af4d595187626b6a3b070703130a1b19558cfb21f8a19b4e",
+        "417339": "1a8fe00f70e7c73541da4e34d2859fa7c899b2b0be28bd5b2254cd70aba79b48"
+      },
+      "local_observation": "叠加旧59旋转轮廓，可辨浅砂边、蓝白折线路和窄草带，形态跨过旧住宅中心及轮廓。",
+      "observation": "2024 图独立投回旧61中心与四角，绿色树冠连续占大部，西南见零碎浅色园路；看不清正交立面或屋檐。"
+    },
+    {
+      "item": "https://www.arcgis.com/home/item.html?id=b4c5c1b59c4141c5b503335b5baa2df4",
+      "layer": 22869,
+      "src_date_from_desktop": "2025-05-20",
+      "tiles_zoom_row_cols": [
+        19,
+        217060,
+        [
+          417337,
+          417338,
+          417339
+        ]
+      ],
+      "tile_sha256": {
+        "417337": "765f016e5c20d3d173023e4573340d78d3011e1384e40a6605092026f4874dd9",
+        "417338": "c5cf0f9d111ce6429b2db276ea109db8d72a5df6eaac199adf98a5ebb7667215",
+        "417339": "acd6056e10b4890883e593cd01285aa4cb4802adad70b892a4aa6fcc4210517f"
+      },
+      "local_observation": "叠加旧59旋转轮廓，可辨浅砂边、蓝白折线路和窄草带，形态跨过旧住宅中心及轮廓。",
+      "observation": "2025 图树冠与阴影密集，屋位内无可配准的四条边。61与开放的59浅砂区相隔约28米。"
+    },
+    {
+      "panoid": "0902920012230514163422320AU",
+      "date": "2023-05-14",
+      "source": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=0902920012230514163422320AU&heading=130&pitch=0&fovy=80&width=900&height=560",
+      "sha256": "d22d7e39b98e34dac5f6e36617154c60d598e03d923ca462698a10368ba83ac1",
+      "observation": "同向近侧道路、树列、围挡和轨道。此机冠层更密，单列为空间关系参照。"
+    }
+  ],
+  "interpretation_limit": "近地、树下底板和用途尚不可辨。以稳定天空视线检验原高楼遮挡。设备只提供路上眼高，场景的地面绝对高度仍是游戏坐标。",
+  "edge_path_game_east_north": [
+    [
+      -52.45,
+      -185.1
+    ],
+    [
+      -52.2,
+      -187.9
+    ],
+    [
+      -52.9,
+      -191.4
+    ],
+    [
+      -52.65,
+      -195.0
+    ],
+    [
+      -50.8,
+      -199.1
+    ],
+    [
+      -48.3,
+      -202.22
+    ],
+    [
+      -45.1,
+      -203.78
+    ]
+  ],
+  "near_tree_belt_game_east_north": [
+    [
+      -48.15,
+      -188.2
+    ],
+    [
+      -47.8,
+      -190.7
+    ],
+    [
+      -46.33,
+      -193.8
+    ],
+    [
+      -45.3,
+      -196.2
+    ]
+  ],
+  "trees_game_east_north_scale": [
+    [
+      -48.07,
+      -189.1,
+      0.62
+    ],
+    [
+      -46.79,
+      -192.95,
+      0.67
+    ],
+    [
+      -40.13,
+      -198.65,
+      0.65
+    ]
+  ],
+  "game_fit_note": "只补外围树带与近侧、江侧已辨灰铺接头。未在旧屋中心登记设施、底板或用途。"
+}

@@ -1,0 +1,80 @@
+{
+  "replaced_plot": 61,
+  "route_east_north": [
+    [
+      -52.45,
+      -185.1
+    ],
+    [
+      -52.2,
+      -187.9
+    ],
+    [
+      -52.9,
+      -191.4
+    ],
+    [
+      -52.65,
+      -195.0
+    ],
+    [
+      -50.8,
+      -199.1
+    ],
+    [
+      -48.3,
+      -202.22
+    ],
+    [
+      -45.1,
+      -203.78
+    ]
+  ],
+  "destination_game_m": 0.9404869079589844,
+  "new_meshes": [
+    "Park61_WestParkEdgePath",
+    "Park61_NearTreeBelt",
+    "Park61_PerimeterTree_1",
+    "Park61_PerimeterTree_2",
+    "Park61_PerimeterTree_3"
+  ],
+  "replacement_meshes": [
+    "COLH_Outer500_Household_contact",
+    "COL_Outer500_Building_envelopes",
+    "COL_Outer500_Retaining_and_boundaries",
+    "Outer500_Facades_and_storefronts",
+    "Outer500_Street_furniture"
+  ],
+  "retired_objects": [
+    "COL_Outer500_Frame_61",
+    "Outer500_Condenser_61_01",
+    "Outer500_Household_130_chair_0",
+    "Outer500_InteriorFloor_61",
+    "Outer500_Joinery_61"
+  ],
+  "removed_shared_geometry": {
+    "COLH_Outer500_Household_contact": 6,
+    "COL_Outer500_Building_envelopes": 216,
+    "COL_Outer500_Retaining_and_boundaries": 60,
+    "Outer500_Facades_and_storefronts": 10,
+    "Outer500_Street_furniture": 299
+  },
+  "old_center_enu": [
+    -43.507302419377744,
+    -193.1399393074638
+  ],
+  "street_view": {
+    "eye_enu": [
+      -64.1416,
+      -175.7522,
+      3.694347686767578
+    ],
+    "heading_deg": 130,
+    "pitch_deg": 0,
+    "vertical_fov_deg": 80,
+    "frame_px": [
+      900,
+      560
+    ]
+  }
+}

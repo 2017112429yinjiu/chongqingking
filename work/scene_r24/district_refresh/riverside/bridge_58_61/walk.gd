@@ -21,6 +21,8 @@ func site_plan() -> Dictionary:
 		var name := "COL_Outer500_Frame_%02d" % id
 		if id == 59 and scene.find_child("RiversideParkPlot59",true,false):
 			name = "COL_Park59_PublicPaving"
+		if id == 61 and scene.find_child("RiversideParkPlot61",true,false):
+			name = "Park61_WestParkEdgePath"
 		if id == 62:
 			var pavilion: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(
 				"res://assets/district_500/pavilion62.json"))

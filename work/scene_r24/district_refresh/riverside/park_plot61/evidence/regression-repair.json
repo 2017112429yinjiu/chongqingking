@@ -1,0 +1,160 @@
+{
+  "checks": [
+    {
+      "detail": "(-193.8725, 16.0236, 26.5521)",
+      "name": "start_on_734116598",
+      "pass": true
+    },
+    {
+      "detail": "(-185.2189, 16.44909, 20.1647)",
+      "name": "underinflated_scooter_parked",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "offset": -1.3,
+          "step": 0,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": 0.0,
+          "step": 0,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": 1.3,
+          "step": 0,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": -1.3,
+          "step": 1,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": 0.0,
+          "step": 1,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": 1.3,
+          "step": 1,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": -1.3,
+          "step": 2,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": 0.0,
+          "step": 2,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": 1.3,
+          "step": 2,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": -1.3,
+          "step": 3,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": 0.0,
+          "step": 3,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": 1.3,
+          "step": 3,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": -1.3,
+          "step": 4,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": 0.0,
+          "step": 4,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": 1.3,
+          "step": 4,
+          "support": "COL_Outer500_RepairCourt"
+        }
+      ],
+      "name": "all_stone_treads_exposed_across_lane",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 14.881261610426,
+        "end": "(-185.9178, 16.48899, 13.7053)",
+        "goals": 2,
+        "max_frame_displacement_m": 0.0750535055994987,
+        "name": "public_walk_to_repair_counter",
+        "pass": true,
+        "reached": 2,
+        "stall_contacts": []
+      },
+      "name": "walk_in_through_front",
+      "pass": true
+    },
+    {
+      "detail": "@Node3D@892:<Node3D#598795636813>",
+      "name": "workbench_within_reach",
+      "pass": true
+    },
+    {
+      "detail": 2.4,
+      "name": "E_inflates_player_scooter",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "repeat_check_preserves_bike_and_wallet",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 12.9322417657822,
+        "end": "(-179.9034, 16.45911, 1.997735)",
+        "goals": 2,
+        "max_frame_displacement_m": 0.0760086923837662,
+        "name": "workshop_to_court",
+        "pass": true,
+        "reached": 2,
+        "stall_contacts": []
+      },
+      "name": "reach_inner_court",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 28.0195349920541,
+        "end": "(-193.8031, 16.03066, 26.53272)",
+        "goals": 4,
+        "max_frame_displacement_m": 0.0994313731789589,
+        "name": "return_to_same_street",
+        "pass": true,
+        "reached": 4,
+        "stall_contacts": []
+      },
+      "name": "walk_back_from_court",
+      "pass": true
+    },
+    {
+      "detail": "(-193.8031, 16.03066, 26.53272)",
+      "name": "back_at_start",
+      "pass": true
+    }
+  ],
+  "images": 0,
+  "physics_hz": 60,
+  "ticks_per_image": 9
+}

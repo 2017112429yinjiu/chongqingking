@@ -1,0 +1,1403 @@
+{
+  "registered_view_old_and_new_agree": true,
+  "before": {
+    "blender": "4.3.2",
+    "street_game_height_m": 1.3743476867675781,
+    "camera_enu_m": [
+      -64.1416015625,
+      -175.752197265625,
+      3.694347620010376
+    ],
+    "camera_model": "rectilinear, 80 degree vertical field, top-left pixel center plus half",
+    "variables_with_positive_amplitude": {
+      "east_m": 0.9,
+      "north_m": 0.9,
+      "street_height_m": 0.75,
+      "heading_deg": 2.0,
+      "pitch_deg": 1.0,
+      "vertical_fov_deg": 2.0
+    },
+    "joint_variants_per_pixel": 729,
+    "rays": [
+      {
+        "pixel_xy": [
+          479,
+          156
+        ],
+        "unit_ray_east_north_up": [
+          0.6628525853157043,
+          -0.6640593409538269,
+          0.34590691328048706
+        ],
+        "azimuth_deg": 135.05210744175022,
+        "elevation_deg": 20.237167470438553,
+        "footprint_crossing": {
+          "near_far_horizontal_m": [
+            18.7115643241063,
+            32.176633950582875
+          ],
+          "near_far_game_height_m": [
+            10.592647334428428,
+            15.556747842010063
+          ],
+          "near_far_above_camera_street_m": [
+            9.21829964766085,
+            14.182400155242485
+          ]
+        },
+        "hit": {
+          "object": "COL_Outer500_Frame_61",
+          "game_enu": [
+            -50.922569274902344,
+            -188.99530029296875,
+            10.592645645141602
+          ],
+          "normal": [
+            -0.9881161451339722,
+            -0.15370933711528778,
+            0.0
+          ],
+          "distance_from_eye_m": 19.942645422443647,
+          "material": "Red infill brick",
+          "shader_alpha": 1.0
+        },
+        "direct_old_frame_hit": {
+          "object": "COL_Outer500_Frame_61",
+          "game_enu": [
+            -50.922569274902344,
+            -188.99530029296875,
+            10.592645645141602
+          ],
+          "normal": [
+            -0.9881160855293274,
+            -0.1537093222141266,
+            0.0
+          ],
+          "distance_from_eye_m": 19.942645422443647,
+          "material": "Red infill brick",
+          "shader_alpha": 1.0
+        },
+        "primary_class": "old_61",
+        "joint_perturbation": {
+          "old_61": 569,
+          "open": 24,
+          "other:Outer500_Facades_and_storefronts": 136
+        },
+        "variants_hitting_opaque_old_frame_independently_of_leaves": 593,
+        "one_variable_at_a_time": {
+          "east_m": {
+            "-0.9": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.75641632080078,
+                -190.06338500976562,
+                11.14901351928711
+              ],
+              "normal": [
+                -0.9881166815757751,
+                -0.1537059098482132,
+                0.0
+              ],
+              "distance_from_eye_m": 21.551071809459376,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            },
+            "0.9": {
+              "object": "Outer500_Joinery_61",
+              "game_enu": [
+                -50.6826171875,
+                -188.33404541015625,
+                10.248202323913574
+              ],
+              "normal": [
+                -0.520263135433197,
+                0.8540060520172119,
+                0.0
+              ],
+              "distance_from_eye_m": 18.946872016193016,
+              "material": "Aged galvanized drain pipe",
+              "shader_alpha": 1.0
+            }
+          },
+          "north_m": {
+            "-0.9": {
+              "object": "Outer500_Joinery_61",
+              "game_enu": [
+                -50.601104736328125,
+                -190.21734619140625,
+                10.760400772094727
+              ],
+              "normal": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "distance_from_eye_m": 20.42761822171538,
+              "material": "Worn timber joinery",
+              "shader_alpha": 1.0
+            },
+            "0.9": {
+              "object": "Outer500_Joinery_61",
+              "game_enu": [
+                -50.68363952636719,
+                -188.3346710205078,
+                10.717330932617188
+              ],
+              "normal": [
+                -0.520263135433197,
+                0.8540060520172119,
+                0.0
+              ],
+              "distance_from_eye_m": 20.303102543709684,
+              "material": "Aged galvanized drain pipe",
+              "shader_alpha": 1.0
+            }
+          },
+          "street_height_m": {
+            "-0.75": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.922569274902344,
+                -188.99530029296875,
+                9.842646598815918
+              ],
+              "normal": [
+                -0.9881161451339722,
+                -0.15370933711528778,
+                0.0
+              ],
+              "distance_from_eye_m": 19.942645805010468,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            },
+            "0.75": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.922569274902344,
+                -188.99530029296875,
+                11.342646598815918
+              ],
+              "normal": [
+                -0.9881161451339722,
+                -0.15370933711528778,
+                0.0
+              ],
+              "distance_from_eye_m": 19.942645805010468,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            }
+          },
+          "heading_deg": {
+            "-2.0": {
+              "object": "Outer500_Joinery_61",
+              "game_enu": [
+                -50.67728042602539,
+                -188.33079528808594,
+                10.487284660339355
+              ],
+              "normal": [
+                -0.520263135433197,
+                0.8540060520172119,
+                0.0
+              ],
+              "distance_from_eye_m": 19.638051740737293,
+              "material": "Aged galvanized drain pipe",
+              "shader_alpha": 1.0
+            },
+            "2.0": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.74355697631836,
+                -190.14605712890625,
+                10.943946838378906
+              ],
+              "normal": [
+                -0.9881166815757751,
+                -0.1537059098482132,
+                0.0
+              ],
+              "distance_from_eye_m": 20.958232032526006,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            }
+          },
+          "pitch_deg": {
+            "-1.0": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.92524719238281,
+                -188.97805786132812,
+                10.220512390136719
+              ],
+              "normal": [
+                -0.9881161451339722,
+                -0.15370933711528778,
+                0.0
+              ],
+              "distance_from_eye_m": 19.80369261400263,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            },
+            "1.0": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.919715881347656,
+                -189.0136260986328,
+                10.970407485961914
+              ],
+              "normal": [
+                -0.9881161451339722,
+                -0.15370933711528778,
+                0.0
+              ],
+              "distance_from_eye_m": 20.090415950891458,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            }
+          },
+          "vertical_fov_deg": {
+            "-2.0": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.93746566772461,
+                -188.89952087402344,
+                10.32557487487793
+              ],
+              "normal": [
+                -0.9881161451339722,
+                -0.15370933711528778,
+                0.0
+              ],
+              "distance_from_eye_m": 19.77813156159163,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            },
+            "2.0": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.907100677490234,
+                -189.09471130371094,
+                10.86986255645752
+              ],
+              "normal": [
+                -0.9881161451339722,
+                -0.15370933711528778,
+                0.0
+              ],
+              "distance_from_eye_m": 20.11622978226974,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            }
+          }
+        }
+      },
+      {
+        "pixel_xy": [
+          500,
+          163
+        ],
+        "unit_ray_east_north_up": [
+          0.6250450015068054,
+          -0.7091166973114014,
+          0.32630085945129395
+        ],
+        "azimuth_deg": 138.6057043983819,
+        "elevation_deg": 19.044405849186973,
+        "footprint_crossing": {
+          "near_far_horizontal_m": [
+            20.492408654275547,
+            30.841637262473395
+          ],
+          "near_far_game_height_m": [
+            10.76821974142797,
+            14.340719244283326
+          ],
+          "near_far_above_camera_street_m": [
+            9.393872054660392,
+            12.966371557515748
+          ]
+        },
+        "hit": {
+          "object": "COL_Outer500_Frame_61",
+          "game_enu": [
+            -50.50088119506836,
+            -191.2276611328125,
+            10.815401077270508
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "distance_from_eye_m": 21.82357987615322,
+          "material": "Red infill brick",
+          "shader_alpha": 1.0
+        },
+        "direct_old_frame_hit": {
+          "object": "COL_Outer500_Frame_61",
+          "game_enu": [
+            -50.50088119506836,
+            -191.2276611328125,
+            10.815401077270508
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "distance_from_eye_m": 21.82357987615322,
+          "material": "Red infill brick",
+          "shader_alpha": 1.0
+        },
+        "primary_class": "old_61",
+        "joint_perturbation": {
+          "old_61": 552,
+          "open": 4,
+          "other:Outer500_Facades_and_storefronts": 173
+        },
+        "variants_hitting_opaque_old_frame_independently_of_leaves": 574,
+        "one_variable_at_a_time": {
+          "east_m": {
+            "-0.9": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.39839172363281,
+                -192.364990234375,
+                11.338746070861816
+              ],
+              "normal": [
+                -0.9881165027618408,
+                -0.15370707213878632,
+                0.0
+              ],
+              "distance_from_eye_m": 23.427449098148475,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            },
+            "0.9": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.78412628173828,
+                -189.88526916503906,
+                10.197693824768066
+              ],
+              "normal": [
+                -0.9881161451339722,
+                -0.15370933711528778,
+                0.0
+              ],
+              "distance_from_eye_m": 19.930526901147722,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            }
+          },
+          "north_m": {
+            "-0.9": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.42125701904297,
+                -192.21798706054688,
+                10.85696792602539
+              ],
+              "normal": [
+                -0.9881165027618408,
+                -0.15370707213878632,
+                0.0
+              ],
+              "distance_from_eye_m": 21.950967855122272,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            },
+            "0.9": {
+              "object": "Outer500_Joinery_61",
+              "game_enu": [
+                -50.60623550415039,
+                -190.20814514160156,
+                10.760400772094727
+              ],
+              "normal": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "distance_from_eye_m": 21.655026884341943,
+              "material": "Worn timber joinery",
+              "shader_alpha": 1.0
+            }
+          },
+          "street_height_m": {
+            "-0.75": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.494850158691406,
+                -191.23451232910156,
+                10.068550109863281
+              ],
+              "normal": [
+                -0.1537104994058609,
+                0.9881159663200378,
+                0.0
+              ],
+              "distance_from_eye_m": 21.83323527695086,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            },
+            "0.75": {
+              "object": "Outer500_Facades_and_storefronts",
+              "game_enu": [
+                -50.71158981323242,
+                -190.98861694335938,
+                11.455402374267578
+              ],
+              "normal": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "distance_from_eye_m": 21.486474684329945,
+              "material": "Concrete bands.003",
+              "shader_alpha": 1.0
+            }
+          },
+          "heading_deg": {
+            "-2.0": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.78507995605469,
+                -189.87913513183594,
+                10.405409812927246
+              ],
+              "normal": [
+                -0.9881161451339722,
+                -0.15370933711528778,
+                0.0
+              ],
+              "distance_from_eye_m": 20.567095118448986,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            },
+            "2.0": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.37500762939453,
+                -192.51531982421875,
+                11.182144165039062
+              ],
+              "normal": [
+                -0.9881165027618408,
+                -0.15370707213878632,
+                0.0
+              ],
+              "distance_from_eye_m": 22.94751606050572,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            }
+          },
+          "pitch_deg": {
+            "-1.0": {
+              "object": "Outer500_Joinery_61",
+              "game_enu": [
+                -50.49932098388672,
+                -191.2021942138672,
+                10.413393020629883
+              ],
+              "normal": [
+                -0.9881167411804199,
+                -0.1537054181098938,
+                0.0
+              ],
+              "distance_from_eye_m": 21.678556153616817,
+              "material": "Worn timber joinery",
+              "shader_alpha": 1.0
+            },
+            "1.0": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.58580780029297,
+                -191.16017150878906,
+                11.177276611328125
+              ],
+              "normal": [
+                -0.9881166815757751,
+                -0.1537059098482132,
+                0.0
+              ],
+              "distance_from_eye_m": 21.84397973197663,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            }
+          },
+          "vertical_fov_deg": {
+            "-2.0": {
+              "object": "Outer500_Joinery_61",
+              "game_enu": [
+                -50.52442932128906,
+                -191.04078674316406,
+                10.520062446594238
+              ],
+              "normal": [
+                -0.9881165027618408,
+                -0.15370701253414154,
+                0.0
+              ],
+              "distance_from_eye_m": 21.5814442439967,
+              "material": "Worn timber joinery",
+              "shader_alpha": 1.0
+            },
+            "2.0": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.55986785888672,
+                -191.3269500732422,
+                11.078324317932129
+              ],
+              "normal": [
+                -0.9881165027618408,
+                -0.15370707213878632,
+                0.0
+              ],
+              "distance_from_eye_m": 21.944464553416037,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            }
+          }
+        }
+      },
+      {
+        "pixel_xy": [
+          511,
+          210
+        ],
+        "unit_ray_east_north_up": [
+          0.6238983869552612,
+          -0.7553052306175232,
+          0.2006608247756958
+        ],
+        "azimuth_deg": 140.44256002692234,
+        "elevation_deg": 11.575605181064185,
+        "footprint_crossing": {
+          "near_far_horizontal_m": [
+            21.58746536804534,
+            30.2384438183182
+          ],
+          "near_far_game_height_m": [
+            8.116040126881266,
+            9.887992782670825
+          ],
+          "near_far_above_camera_street_m": [
+            6.741692440113688,
+            8.513645095903247
+          ]
+        },
+        "hit": {
+          "object": "COL_Outer500_Frame_61",
+          "game_enu": [
+            -50.393592834472656,
+            -192.39584350585938,
+            8.116040229797363
+          ],
+          "normal": [
+            -0.9881163835525513,
+            -0.1537076085805893,
+            0.0
+          ],
+          "distance_from_eye_m": 22.035654609777783,
+          "material": "Red infill brick",
+          "shader_alpha": 1.0
+        },
+        "direct_old_frame_hit": {
+          "object": "COL_Outer500_Frame_61",
+          "game_enu": [
+            -50.393592834472656,
+            -192.39584350585938,
+            8.116040229797363
+          ],
+          "normal": [
+            -0.9881163835525513,
+            -0.1537076085805893,
+            0.0
+          ],
+          "distance_from_eye_m": 22.035654609777783,
+          "material": "Red infill brick",
+          "shader_alpha": 1.0
+        },
+        "primary_class": "old_61",
+        "joint_perturbation": {
+          "old_61": 681,
+          "other:BridgePark_Plant_10": 48
+        },
+        "variants_hitting_opaque_old_frame_independently_of_leaves": 729,
+        "one_variable_at_a_time": {
+          "east_m": {
+            "-0.9": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.18478012084961,
+                -193.73818969726562,
+                8.472661018371582
+              ],
+              "normal": [
+                -0.9881166815757751,
+                -0.1537059098482132,
+                0.0
+              ],
+              "distance_from_eye_m": 23.812882668131266,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            },
+            "0.9": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.60240173339844,
+                -191.05349731445312,
+                7.7594194412231445
+              ],
+              "normal": [
+                -0.9881163835525513,
+                -0.1537076085805893,
+                0.0
+              ],
+              "distance_from_eye_m": 20.25842825604379,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            }
+          },
+          "north_m": {
+            "-0.9": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.221107482910156,
+                -193.50465393066406,
+                8.171514511108398
+              ],
+              "normal": [
+                -0.9881163835525513,
+                -0.1537076085805893,
+                0.0
+              ],
+              "distance_from_eye_m": 22.312119339118734,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            },
+            "0.9": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.566070556640625,
+                -191.28704833984375,
+                8.060566902160645
+              ],
+              "normal": [
+                -0.9881163835525513,
+                -0.1537076085805893,
+                0.0
+              ],
+              "distance_from_eye_m": 21.759205941690304,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            }
+          },
+          "street_height_m": {
+            "-0.75": {
+              "object": "BridgePark_Plant_10",
+              "game_enu": [
+                -55.78071594238281,
+                -185.87411499023438,
+                5.633415222167969
+              ],
+              "normal": [
+                0.20627398788928986,
+                -0.11593198776245117,
+                0.971602201461792
+              ],
+              "distance_from_eye_m": 13.401071308497079,
+              "material": "Scan tree_small_02_leaves",
+              "shader_alpha": 1.0
+            },
+            "0.75": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.393592834472656,
+                -192.39584350585938,
+                8.866039276123047
+              ],
+              "normal": [
+                -0.9881165027618408,
+                -0.15370707213878632,
+                0.0
+              ],
+              "distance_from_eye_m": 22.035654436663012,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            }
+          },
+          "heading_deg": {
+            "-2.0": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.607852935791016,
+                -191.01844787597656,
+                7.87312126159668
+              ],
+              "normal": [
+                -0.9881163835525513,
+                -0.1537076085805893,
+                0.0
+              ],
+              "distance_from_eye_m": 20.825054975530957,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            },
+            "2.0": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.15257263183594,
+                -193.9452667236328,
+                8.395025253295898
+              ],
+              "normal": [
+                -0.9881166815757751,
+                -0.1537059098482132,
+                0.0
+              ],
+              "distance_from_eye_m": 23.425991274318537,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            }
+          },
+          "pitch_deg": {
+            "-1.0": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.397605895996094,
+                -192.37002563476562,
+                7.727056503295898
+              ],
+              "normal": [
+                -0.9881163835525513,
+                -0.1537076085805893,
+                0.0
+              ],
+              "distance_from_eye_m": 21.938832690848347,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            },
+            "1.0": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.389190673828125,
+                -192.42416381835938,
+                8.508983612060547
+              ],
+              "normal": [
+                -0.9881165027618408,
+                -0.15370717644691467,
+                0.0
+              ],
+              "distance_from_eye_m": 22.141905710549693,
+              "material": "Formed concrete frame",
+              "shader_alpha": 1.0
+            }
+          },
+          "vertical_fov_deg": {
+            "-2.0": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.43367385864258,
+                -192.13818359375,
+                7.922097206115723
+              ],
+              "normal": [
+                -0.9881163835525513,
+                -0.1537076085805893,
+                0.0
+              ],
+              "distance_from_eye_m": 21.778009685375824,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            },
+            "2.0": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.35152816772461,
+                -192.66624450683594,
+                8.319568634033203
+              ],
+              "normal": [
+                -0.9881163835525513,
+                -0.1537076085805893,
+                0.0
+              ],
+              "distance_from_eye_m": 22.30793099946036,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            }
+          }
+        }
+      },
+      {
+        "pixel_xy": [
+          514,
+          212
+        ],
+        "unit_ray_east_north_up": [
+          0.6180630326271057,
+          -0.7616103887557983,
+          0.19480201601982117
+        ],
+        "azimuth_deg": 140.93993538010247,
+        "elevation_deg": 11.23315746035774,
+        "footprint_crossing": {
+          "near_far_horizontal_m": [
+            21.908392938927193,
+            30.084418704686755
+          ],
+          "near_far_game_height_m": [
+            8.045503362359703,
+            9.669317649398087
+          ],
+          "near_far_above_camera_street_m": [
+            6.671155675592125,
+            8.294969962630509
+          ]
+        },
+        "hit": {
+          "object": "BridgePark_Plant_10",
+          "game_enu": [
+            -55.58211135864258,
+            -186.29969787597656,
+            6.392143726348877
+          ],
+          "normal": [
+            0.8502693176269531,
+            -0.5257947444915771,
+            0.024123767390847206
+          ],
+          "distance_from_eye_m": 13.84892575749237,
+          "material": "Scan tree_small_02_leaves",
+          "shader_alpha": 1.0
+        },
+        "direct_old_frame_hit": {
+          "object": "COL_Outer500_Frame_61",
+          "game_enu": [
+            -50.336360931396484,
+            -192.76376342773438,
+            8.045503616333008
+          ],
+          "normal": [
+            -0.9881163835525513,
+            -0.1537076085805893,
+            0.0
+          ],
+          "distance_from_eye_m": 22.336306824754626,
+          "material": "Red infill brick",
+          "shader_alpha": 1.0
+        },
+        "primary_class": "other:BridgePark_Plant_10",
+        "joint_perturbation": {
+          "old_61": 679,
+          "other:BridgePark_Plant_10": 50
+        },
+        "variants_hitting_opaque_old_frame_independently_of_leaves": 729,
+        "one_variable_at_a_time": {
+          "east_m": {
+            "-0.9": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.1229362487793,
+                -194.13577270507812,
+                8.396434783935547
+              ],
+              "normal": [
+                -0.9881166815757751,
+                -0.1537059098482132,
+                0.0
+              ],
+              "distance_from_eye_m": 24.13777304780869,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            },
+            "0.9": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.54978942871094,
+                -191.3917236328125,
+                7.694571495056152
+              ],
+              "normal": [
+                -0.9881163835525513,
+                -0.1537076085805893,
+                0.0
+              ],
+              "distance_from_eye_m": 20.534815369828607,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            }
+          },
+          "north_m": {
+            "-0.9": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.16316223144531,
+                -193.87716674804688,
+                8.100092887878418
+              ],
+              "normal": [
+                -0.9881166815757751,
+                -0.1537059098482132,
+                0.0
+              ],
+              "distance_from_eye_m": 22.616523840989014,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            },
+            "0.9": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.509559631347656,
+                -191.65032958984375,
+                7.990915298461914
+              ],
+              "normal": [
+                -0.9881163835525513,
+                -0.1537076085805893,
+                0.0
+              ],
+              "distance_from_eye_m": 22.05606702867575,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            }
+          },
+          "street_height_m": {
+            "-0.75": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.336360931396484,
+                -192.7637481689453,
+                7.295503616333008
+              ],
+              "normal": [
+                -0.9881163835525513,
+                -0.1537076085805893,
+                0.0
+              ],
+              "distance_from_eye_m": 22.33629521139869,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            },
+            "0.75": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.336360931396484,
+                -192.76376342773438,
+                8.795503616333008
+              ],
+              "normal": [
+                -0.9881165027618408,
+                -0.15370707213878632,
+                0.0
+              ],
+              "distance_from_eye_m": 22.336306824754626,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            }
+          },
+          "heading_deg": {
+            "-2.0": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.55679702758789,
+                -191.3466796875,
+                7.801884651184082
+              ],
+              "normal": [
+                -0.9881163835525513,
+                -0.1537076085805893,
+                0.0
+              ],
+              "distance_from_eye_m": 21.085698106953746,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            },
+            "2.0": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.087806701660156,
+                -194.36158752441406,
+                8.325841903686523
+              ],
+              "normal": [
+                -0.9881166815757751,
+                -0.1537059098482132,
+                0.0
+              ],
+              "distance_from_eye_m": 23.7753930317094,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            }
+          },
+          "pitch_deg": {
+            "-1.0": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.340553283691406,
+                -192.73680114746094,
+                7.652270317077637
+              ],
+              "normal": [
+                -0.9881163835525513,
+                -0.1537076085805893,
+                0.0
+              ],
+              "distance_from_eye_m": 22.23984851068593,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            },
+            "1.0": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.331748962402344,
+                -192.79339599609375,
+                8.442695617675781
+              ],
+              "normal": [
+                -0.9881163835525513,
+                -0.1537076085805893,
+                0.0
+              ],
+              "distance_from_eye_m": 22.442399873972292,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            }
+          },
+          "vertical_fov_deg": {
+            "-2.0": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.37948989868164,
+                -192.4864959716797,
+                7.85224723815918
+              ],
+              "normal": [
+                -0.9881163835525513,
+                -0.1537076085805893,
+                0.0
+              ],
+              "distance_from_eye_m": 22.06174508767329,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            },
+            "2.0": {
+              "object": "COL_Outer500_Frame_61",
+              "game_enu": [
+                -50.291046142578125,
+                -193.0550537109375,
+                8.248553276062012
+              ],
+              "normal": [
+                -0.9881163835525513,
+                -0.1537076085805893,
+                0.0
+              ],
+              "distance_from_eye_m": 22.62669964723688,
+              "material": "Red infill brick",
+              "shader_alpha": 1.0
+            }
+          }
+        }
+      }
+    ]
+  },
+  "after": {
+    "blender": "4.3.2",
+    "street_game_height_m": 1.3743476867675781,
+    "camera_enu_m": [
+      -64.1416015625,
+      -175.752197265625,
+      3.694347620010376
+    ],
+    "camera_model": "rectilinear, 80 degree vertical field, top-left pixel center plus half",
+    "variables_with_positive_amplitude": {
+      "east_m": 0.9,
+      "north_m": 0.9,
+      "street_height_m": 0.75,
+      "heading_deg": 2.0,
+      "pitch_deg": 1.0,
+      "vertical_fov_deg": 2.0
+    },
+    "joint_variants_per_pixel": 729,
+    "rays": [
+      {
+        "pixel_xy": [
+          479,
+          156
+        ],
+        "unit_ray_east_north_up": [
+          0.6628525853157043,
+          -0.6640593409538269,
+          0.34590691328048706
+        ],
+        "azimuth_deg": 135.05210744175022,
+        "elevation_deg": 20.237167470438553,
+        "footprint_crossing": {
+          "near_far_horizontal_m": [
+            18.7115643241063,
+            32.176633950582875
+          ],
+          "near_far_game_height_m": [
+            10.592647334428428,
+            15.556747842010063
+          ],
+          "near_far_above_camera_street_m": [
+            9.21829964766085,
+            14.182400155242485
+          ]
+        },
+        "hit": {},
+        "direct_old_frame_hit": {},
+        "primary_class": "open",
+        "joint_perturbation": {
+          "open": 729
+        },
+        "variants_hitting_opaque_old_frame_independently_of_leaves": 0,
+        "one_variable_at_a_time": {
+          "east_m": {
+            "-0.9": {},
+            "0.9": {}
+          },
+          "north_m": {
+            "-0.9": {},
+            "0.9": {}
+          },
+          "street_height_m": {
+            "-0.75": {},
+            "0.75": {}
+          },
+          "heading_deg": {
+            "-2.0": {},
+            "2.0": {}
+          },
+          "pitch_deg": {
+            "-1.0": {},
+            "1.0": {}
+          },
+          "vertical_fov_deg": {
+            "-2.0": {},
+            "2.0": {}
+          }
+        }
+      },
+      {
+        "pixel_xy": [
+          500,
+          163
+        ],
+        "unit_ray_east_north_up": [
+          0.6250450015068054,
+          -0.7091166973114014,
+          0.32630085945129395
+        ],
+        "azimuth_deg": 138.6057043983819,
+        "elevation_deg": 19.044405849186973,
+        "footprint_crossing": {
+          "near_far_horizontal_m": [
+            20.492408654275547,
+            30.841637262473395
+          ],
+          "near_far_game_height_m": [
+            10.76821974142797,
+            14.340719244283326
+          ],
+          "near_far_above_camera_street_m": [
+            9.393872054660392,
+            12.966371557515748
+          ]
+        },
+        "hit": {},
+        "direct_old_frame_hit": {},
+        "primary_class": "open",
+        "joint_perturbation": {
+          "open": 729
+        },
+        "variants_hitting_opaque_old_frame_independently_of_leaves": 0,
+        "one_variable_at_a_time": {
+          "east_m": {
+            "-0.9": {},
+            "0.9": {}
+          },
+          "north_m": {
+            "-0.9": {},
+            "0.9": {}
+          },
+          "street_height_m": {
+            "-0.75": {},
+            "0.75": {}
+          },
+          "heading_deg": {
+            "-2.0": {},
+            "2.0": {}
+          },
+          "pitch_deg": {
+            "-1.0": {},
+            "1.0": {}
+          },
+          "vertical_fov_deg": {
+            "-2.0": {},
+            "2.0": {}
+          }
+        }
+      },
+      {
+        "pixel_xy": [
+          511,
+          210
+        ],
+        "unit_ray_east_north_up": [
+          0.6238983869552612,
+          -0.7553052306175232,
+          0.2006608247756958
+        ],
+        "azimuth_deg": 140.44256002692234,
+        "elevation_deg": 11.575605181064185,
+        "footprint_crossing": {
+          "near_far_horizontal_m": [
+            21.58746536804534,
+            30.2384438183182
+          ],
+          "near_far_game_height_m": [
+            8.116040126881266,
+            9.887992782670825
+          ],
+          "near_far_above_camera_street_m": [
+            6.741692440113688,
+            8.513645095903247
+          ]
+        },
+        "hit": {},
+        "direct_old_frame_hit": {},
+        "primary_class": "open",
+        "joint_perturbation": {
+          "open": 681,
+          "other:BridgePark_Plant_10": 48
+        },
+        "variants_hitting_opaque_old_frame_independently_of_leaves": 0,
+        "one_variable_at_a_time": {
+          "east_m": {
+            "-0.9": {},
+            "0.9": {}
+          },
+          "north_m": {
+            "-0.9": {},
+            "0.9": {}
+          },
+          "street_height_m": {
+            "-0.75": {
+              "object": "BridgePark_Plant_10",
+              "game_enu": [
+                -55.78071594238281,
+                -185.87411499023438,
+                5.633415222167969
+              ],
+              "normal": [
+                0.20627398788928986,
+                -0.11593198776245117,
+                0.971602201461792
+              ],
+              "distance_from_eye_m": 13.401071308497079,
+              "material": "Scan tree_small_02_leaves",
+              "shader_alpha": 1.0
+            },
+            "0.75": {}
+          },
+          "heading_deg": {
+            "-2.0": {},
+            "2.0": {}
+          },
+          "pitch_deg": {
+            "-1.0": {},
+            "1.0": {}
+          },
+          "vertical_fov_deg": {
+            "-2.0": {},
+            "2.0": {}
+          }
+        }
+      },
+      {
+        "pixel_xy": [
+          514,
+          212
+        ],
+        "unit_ray_east_north_up": [
+          0.6180630326271057,
+          -0.7616103887557983,
+          0.19480201601982117
+        ],
+        "azimuth_deg": 140.93993538010247,
+        "elevation_deg": 11.23315746035774,
+        "footprint_crossing": {
+          "near_far_horizontal_m": [
+            21.908392938927193,
+            30.084418704686755
+          ],
+          "near_far_game_height_m": [
+            8.045503362359703,
+            9.669317649398087
+          ],
+          "near_far_above_camera_street_m": [
+            6.671155675592125,
+            8.294969962630509
+          ]
+        },
+        "hit": {
+          "object": "BridgePark_Plant_10",
+          "game_enu": [
+            -55.58211135864258,
+            -186.29969787597656,
+            6.392143726348877
+          ],
+          "normal": [
+            0.8502693176269531,
+            -0.5257947444915771,
+            0.024123767390847206
+          ],
+          "distance_from_eye_m": 13.84892575749237,
+          "material": "Scan tree_small_02_leaves",
+          "shader_alpha": 1.0
+        },
+        "direct_old_frame_hit": {},
+        "primary_class": "other:BridgePark_Plant_10",
+        "joint_perturbation": {
+          "open": 679,
+          "other:BridgePark_Plant_10": 50
+        },
+        "variants_hitting_opaque_old_frame_independently_of_leaves": 0,
+        "one_variable_at_a_time": {
+          "east_m": {
+            "-0.9": {},
+            "0.9": {}
+          },
+          "north_m": {
+            "-0.9": {},
+            "0.9": {}
+          },
+          "street_height_m": {
+            "-0.75": {},
+            "0.75": {}
+          },
+          "heading_deg": {
+            "-2.0": {},
+            "2.0": {}
+          },
+          "pitch_deg": {
+            "-1.0": {},
+            "1.0": {}
+          },
+          "vertical_fov_deg": {
+            "-2.0": {},
+            "2.0": {}
+          }
+        }
+      }
+    ]
+  }
+}

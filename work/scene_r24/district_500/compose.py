@@ -84,7 +84,9 @@ market_override = set(market_plan["replacement_meshes"] + market_plan["retired_o
 park57_plan = json.loads((group_assets / "park-plot57.json").read_bytes())
 bridge_park_plan = json.loads((group_assets / "bridge-park.json").read_bytes())
 park59_plan = json.loads((group_assets / "park-plot59.json").read_bytes())
-park59_override = set(park59_plan["replacement_meshes"] + park59_plan["retired_objects"])
+park61_plan = json.loads((group_assets / "park-plot61.json").read_bytes())
+park61_override = set(park61_plan["replacement_meshes"] + park61_plan["retired_objects"])
+park59_override = set(park59_plan["replacement_meshes"] + park59_plan["retired_objects"]) | park61_override
 bridge_park_override = set(bridge_park_plan["replacement_meshes"] + bridge_park_plan["retired_objects"]) | park59_override
 park57_override = set(park57_plan["replacement_meshes"] + park57_plan["retired_objects"]) | bridge_park_override
 later_public_meshes = public_override | public_retired | xingchen_override | pavilion_override | market_override | park57_override
@@ -204,8 +206,14 @@ for item in bridge_park.objects:
     collection.objects.link(item)
 with bpy.data.libraries.load(str(factory_dir.parent / "riverside/park_plot59/park-plot59.blend"),
                              link=True, relative=True) as (_, park59):
-    park59.objects = park59_plan["replacement_meshes"] + park59_plan["new_meshes"]
+    park59.objects = [name for name in park59_plan["replacement_meshes"] + park59_plan["new_meshes"]
+                      if name not in park61_override]
 for item in park59.objects:
+    collection.objects.link(item)
+with bpy.data.libraries.load(str(factory_dir.parent / "riverside/park_plot61/park-plot61.blend"),
+                             link=True, relative=True) as (_, park61):
+    park61.objects = park61_plan["replacement_meshes"] + park61_plan["new_meshes"]
+for item in park61.objects:
     collection.objects.link(item)
 bpy.context.preferences.filepaths.save_version=0
 bpy.ops.wm.save_as_mainfile(filepath=str(here / "city_and_outer.local.blend"),relative_remap=True,compress=True)

@@ -17,7 +17,9 @@ func site_plan() -> Dictionary:
 		if scene.find_child(name,true,false) != null:
 			present.append(name)
 	check("old_59_and_attached_objects",present.size()==(plan.retired_objects.size() if before else 0),present)
-	check("independent_61_still_present",scene.find_child("COL_Outer500_Frame_61",true,false)!=null)
+	check("independent_61_in_its_active_version",
+		scene.find_child("COL_Outer500_Frame_61",true,false)!=null
+		or scene.find_child("Park61_WestParkEdgePath",true,false)!=null)
 	check("bridge_and_pavilion_still_present",
 		scene.find_child("COL_Nanjimen_NorthRailSteelBox",true,false)!=null
 		and scene.find_child("COL_Riverside_62_registered_body",true,false)!=null)
