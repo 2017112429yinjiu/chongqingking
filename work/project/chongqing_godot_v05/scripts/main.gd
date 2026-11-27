@@ -190,6 +190,13 @@ func _ready() -> void:
 		gameplay.shancheng=preload("res://scripts/shancheng_delivery.gd").new()
 		gameplay.add_child(gameplay.shancheng)
 		gameplay.shancheng.setup(gameplay)
+		var outer_district := $City.get_node("OuterDistrict500")
+		if outer_district.has_meta("riverside_tea"):
+			var tea: Dictionary=outer_district.get_meta("riverside_tea")
+			gameplay.riverside_tea=preload("res://scripts/shancheng_delivery.gd").new()
+			gameplay.riverside_tea.name="RiversideTeaHandoff"
+			gameplay.add_child(gameplay.riverside_tea)
+			gameplay.riverside_tea.setup(gameplay,tea.public_stops)
 		explorer.recovery_half_extent_m = 251.0
 		gameplay.scooter.recovery_half_extent_m = 251.0
 		gameplay.scooter.recovery_min_height_m = -19.0

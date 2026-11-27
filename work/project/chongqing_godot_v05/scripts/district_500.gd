@@ -36,6 +36,8 @@ const MATI34_35 := "res://assets/district_500/mati-34-35.glb"
 const MATI34_35_SITE := "res://assets/district_500/mati-34-35.json"
 const ZHONGXING_PUBLIC_EDGES := "res://assets/district_500/zhongxing-public-10-12-13-22.glb"
 const ZHONGXING_PUBLIC_EDGES_SITE := "res://assets/district_500/zhongxing-public-10-12-13-22.json"
+const JIEFANG_PUBLIC_EDGES := "res://assets/district_500/jiefang-public-02-24-25-26.glb"
+const JIEFANG_PUBLIC_EDGES_SITE := "res://assets/district_500/jiefang-public-02-24-25-26.json"
 const NANQU := "res://assets/district_500/nanqu-04-06-51.glb"
 const NANQU_SITE := "res://assets/district_500/nanqu-04-06-51.json"
 const WILDERNESS_50 := "res://assets/district_500/wilderness-50.glb"
@@ -70,7 +72,7 @@ const BINJIANG := "res://assets/district_500/binjiang-70-73.glb"
 const BINJIANG_SITE := "res://assets/district_500/binjiang-70-73.json"
 
 static func north_edge_mode() -> String:
-	for id: String in ["10","12","13","22","34","35","38","40","41","45","46"]:
+	for id: String in ["02","10","12","13","22","24","25","26","34","35","38","40","41","45","46"]:
 		if ("--north-edge="+id) in OS.get_cmdline_user_args():
 			return id
 	return ""
@@ -264,6 +266,13 @@ static func install(city: Node3D) -> Dictionary:
 		var plaza: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(ZHONGXING_PUBLIC_EDGES_SITE))
 		retired_bridge_plots.append_array(plaza.retired_plots)
 		add_public_edge_trees(district, district.get_node("ZhongxingPublicEdges"), plaza.trees)
+	var jiefang_public_active := zhongxing_public_active and not "--qa-without-jiefang-public-edges" in OS.get_cmdline_user_args()
+	if jiefang_public_active:
+		install_street_group(district, JIEFANG_PUBLIC_EDGES, JIEFANG_PUBLIC_EDGES_SITE, "JiefangAndChangbinPublicEdges")
+		var frontage: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(JIEFANG_PUBLIC_EDGES_SITE))
+		retired_bridge_plots.append_array(frontage.retired_plots)
+		district.set_meta("riverside_tea", frontage.tea)
+		place_worker(district,{"name":"江岸茶摊","bearing":.30},frontage.tea.stand_east_north_up)
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -368,6 +377,8 @@ static func install(city: Node3D) -> Dictionary:
 		for prior: Node3D in city.find_children("Context_*%s_*" % id, "MeshInstance3D", true, false):
 			prior.hide()
 	for place: Dictionary in layout.destinations:
+		if jiefang_public_active and place.name=="江岸茶摊":
+			continue
 		var sign := Label3D.new()
 		var northeast: Array = place.east_north
 		var angle: float = place.bearing
@@ -438,6 +449,7 @@ static func install(city: Node3D) -> Dictionary:
 		"liangtingzi_45_46_sha256": FileAccess.get_sha256(LIANGTINGZI) if liangtingzi_active else "",
 		"mati_34_35_sha256": FileAccess.get_sha256(MATI34_35) if mati34_active else "",
 		"zhongxing_public_edges_sha256": FileAccess.get_sha256(ZHONGXING_PUBLIC_EDGES) if zhongxing_public_active else "",
+		"jiefang_public_edges_sha256": FileAccess.get_sha256(JIEFANG_PUBLIC_EDGES) if jiefang_public_active else "",
 		"nanqu_04_06_51_sha256": FileAccess.get_sha256(NANQU) if nanqu_active else "",
 		"changbin_55_sha256": FileAccess.get_sha256(CHANGBIN_55) if changbin55_active else "",
 		"public_edges_sha256": FileAccess.get_sha256(PUBLIC_EDGES),
@@ -570,15 +582,19 @@ static func add_collectibles_details(district: Node3D, plan: Dictionary) -> void
 		light.omni_range = 6.2
 		district.add_child(light)
 
-static func place_worker(district: Node3D,p: Dictionary) -> void:
-	var market: bool=p.name=="照相巷便民市场"
+static func place_worker(district: Node3D,p: Dictionary, tea_site: Array = []) -> void:
+	var tea := not tea_site.is_empty()
+	var market: bool=p.name=="照相巷便民市场" or tea
 	var model: Node3D=(load("res://assets/block_r23/neighbor.glb" if market else "res://assets/block_r23/commuter.glb") as PackedScene).instantiate()
-	model.name="OuterMarketSeller" if market else "OuterRepairWorker"
+	model.name="RiversideTeaWorker" if tea else ("OuterMarketSeller" if market else "OuterRepairWorker")
 	district.add_child(model)
 	var a: float=p.bearing
-	var u:=2.90 if market else 2.13
-	var v: float=-p.depth/2.0+4.65 if market else -.45
-	model.position=Vector3(p.east_north[0]+cos(a)*u-sin(a)*v,p.height+.041,-p.east_north[1]-sin(a)*u-cos(a)*v)
+	if tea:
+		model.position = enu(tea_site) + Vector3.UP*.024
+	else:
+		var u:=2.90 if market else 2.13
+		var v: float=-p.depth/2.0+4.65 if market else -.45
+		model.position=Vector3(p.east_north[0]+cos(a)*u-sin(a)*v,p.height+.041,-p.east_north[1]-sin(a)*u-cos(a)*v)
 	model.rotation.y=a+(.11 if market else PI*.55)
 	var player:=model.find_child("AnimationPlayer",true,false) as AnimationPlayer
 	var library: AnimationLibrary=load("res://assets/frontage_r24/stall_clips.res" if market else "res://assets/courtyard_r24/wait_clips.res")
@@ -743,6 +759,8 @@ static func start_exploration(scene: Node3D) -> void:
 		var paths := {"34":MATI34_35_SITE,"35":MATI34_35_SITE,"45":LIANGTINGZI_SITE,"46":LIANGTINGZI_SITE}
 		for id: String in ["10","12","13","22"]:
 			paths[id]=ZHONGXING_PUBLIC_EDGES_SITE
+		for id: String in ["02","24","25","26"]:
+			paths[id]=JIEFANG_PUBLIC_EDGES_SITE
 		var path: String = paths.get(plot,NORTH_EDGES_SITE)
 		var north: Dictionary=JSON.parse_string(FileAccess.get_file_as_string(path))
 		var rows: Array=north.walks[plot]

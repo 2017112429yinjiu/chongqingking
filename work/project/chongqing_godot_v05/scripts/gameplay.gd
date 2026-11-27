@@ -6,6 +6,7 @@ var shelf_time:=-1.0
 var shelf_start:=Vector3.ZERO
 var shelf_yaw:=0.0
 var shancheng: Node3D
+var riverside_tea: Node3D
 var passage: Node3D
 var lunch: Node3D
 var free_wrist:BoneAttachment3D
@@ -41,13 +42,17 @@ const RESIDENT_NOTICES = [
 	"借竹篮　菜场的蓝绳竹篮已洗净，放在门房。取用请记得归还。"
 ]
 
+func public_handoff_in_progress() -> bool:
+	return (shancheng != null and shancheng.stage==shancheng.Stage.CARRYING) or \
+		(riverside_tea != null and riverside_tea.stage==riverside_tea.Stage.CARRYING)
+
 func setup(main: Node3D) -> void:
 	owner_scene = main
 	actor = main.explorer
 	manager = Manager.new()
 	manager.actor = actor
 	add_child(manager)
-	shop = _target("shop.noodle",main._pickup+Vector3.UP,func(): return _shop_prompt(),func(): return (not shancheng or shancheng.stage!=shancheng.Stage.CARRYING) and (not passage or passage.stage==passage.Stage.IDLE) and ((lunch and lunch.active) or (order != Order.CARRYING and (not lesson or lesson.can_order()))),func(): _shop_action())
+	shop = _target("shop.noodle",main._pickup+Vector3.UP,func(): return _shop_prompt(),func(): return not public_handoff_in_progress() and (not passage or passage.stage==passage.Stage.IDLE) and ((lunch and lunch.active) or (order != Order.CARRYING and (not lesson or lesson.can_order()))),func(): _shop_action())
 	destination = _target("delivery.home",main._dropoff+Vector3.UP,func(): return lesson.delivery_prompt() if lesson else free_delivery_prompt(),func(): return (not lunch or not lunch.active) and order == Order.CARRYING and (not lesson or (lesson.can_deliver() and (lesson.step==lesson.Step.DONE or lesson.round_index==0))),func(): _deliver())
 	shop_marker = _add_marker(shop,"梯坎小面 · 店主",Color(.83,.65,.3))
 	door_marker = _add_marker(destination,"山城里小院 · 1 号",Color(.4,.7,.7))
@@ -454,6 +459,9 @@ func ui() -> Dictionary:
 	if shancheng:
 		var local_panel: String=shancheng.panel()
 		if not local_panel.is_empty():return {"objective":local_panel,"prompt":prompt}
+	if riverside_tea:
+		var tea_panel: String=riverside_tea.panel()
+		if not tea_panel.is_empty():return {"objective":tea_panel,"prompt":prompt}
 	if passage and (passage.offered or passage.stage!=passage.Stage.IDLE or (not passage.last_receipt.is_empty() and not lunch.preview and not lunch.active)):
 		return {"objective":passage.panel(),"prompt":prompt}
 	if lunch:
@@ -466,7 +474,7 @@ func ui() -> Dictionary:
 	return {"objective":objective+" · %d m" % roundi(distance)+("\n今日 %d 单 · %d 元" % [delivered_count,earnings] if delivered_count>0 else ""),"prompt":prompt}
 
 func _unhandled_input(event: InputEvent) -> void:
-	if lunch and (not shancheng or shancheng.stage!=shancheng.Stage.CARRYING) and event is InputEventKey and event.pressed and not event.echo:
+	if lunch and not public_handoff_in_progress() and event is InputEventKey and event.pressed and not event.echo:
 		if event.physical_keycode==KEY_B and passage and passage.view_offer():
 			get_viewport().set_input_as_handled()
 			return
