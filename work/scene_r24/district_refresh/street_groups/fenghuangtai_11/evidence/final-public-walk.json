@@ -1,0 +1,478 @@
+{
+  "candidate": {
+    "binjiang_sha256": "9130bc07a8b0707f01129a2e2df391eb676364fe951a45fc2d100ff55a4b0f54",
+    "bounds_east_north_m": [
+      -250.0,
+      -250.0,
+      250.0,
+      250.0
+    ],
+    "bridge_park_sha256": "d7610bb70365b506b084810a925ede54321bbb5812b840d8c0810ed1ecb4426c",
+    "changbin_bend_sha256": "59f467c674151e7e2f55366257a28b12260d9c1eb23ceccc7359b07e18a6af9f",
+    "collectibles_market_sha256": "a23f881d0e9206b40fedc8f262cfdb132194e59825e4728b39800471b684e175",
+    "fenghuangtai_11_sha256": "4e0af537b800faf7856af3659ea9dbe082f587dd3523824015e93fa8fb24d6a2",
+    "glb_sha256": "b0180ce3a8d821253181725ad4516c04f58fe057529680e22a081f89fdd62122",
+    "guoco_sha256": "4dcb3d55080b02d8a0cf02585626bed2dfc3cdb37ae2f987110b55dd56435853",
+    "houci_14_16_sha256": "b41a35494e9c984fa5df55393e597c036efeb49454f674749f6fc3037354c11f",
+    "houci_77_sha256": "71e594772c8218538934c7ebeff75eb965ab0c9754d726c88481dfd5ff72f17a",
+    "market_stall_row_sha256": "42fffbc9c4a98d3fa615e48fa9ce4eecdf66bf225decbd3d44d40eddf5a41646",
+    "match_factory_sha256": "ab742e6b12ad0b52c4cffef0f8342e1a957b59de5cfe3abde4dd691f853d76c6",
+    "matix_streets_sha256": "3b57fcf46931ff28ce1ab2be4a7250d31af30d302e362816265be8e38852e33b",
+    "osm_building_ids": [
+      809889594.0,
+      809889602.0,
+      809889621.0,
+      704006725,
+      809889619,
+      809889620
+    ],
+    "panda_15_17_sha256": "165c8b1ec9e31dbf2bbda447e1d5db4a37e766a97f1ad1bc45c9e8a60693775f",
+    "park_edge_finish_sha256": "52ba8de0a1bd4ee57439d86b5f0e7efad002311679d486b3b0dbc75bdc0e6d33",
+    "park_plot57_sha256": "b67c6b5fc91cdc8b8fa0e6808f8cedd8b15a49ad36a2566631ae67a1671f9f60",
+    "park_plot59_sha256": "fa02d99cf8eda6971b3b148e8c3fc5031108e134806e25b0e71e3f320cd4747c",
+    "park_plot61_sha256": "b6e7b1a3baf336235be5d553e2c3d24caf36b949a34bbf296d4b2eed31ddeceb",
+    "pavilion_62_sha256": "08d702b1a9ce0464b3bc62f33808befa5b58e5dcd082659b06c4cbc0bbab3e76",
+    "public_edges_sha256": "d585e52e0d927a9639e7285ffecc4932603a4d56b039504f1600763f72cc1be4",
+    "raijiapo_east_sha256": "c230f7e3a225f9e8446cb43b66eebd4cd05fac72cbb6b02787d8d0090038e81d",
+    "retired_internal_context": false,
+    "riverside_sha256": "12f304d468c56fb429d4a4db948f5297b7ca4284f29fc494442c9b2a146f67d1",
+    "west_court_sha256": "32eea2dd1f34b7f5dacbb546a46c6cf106ac3896804677ef9b2ee1dabfb2c683",
+    "west_ramp_sha256": "2a2ae2a4745096ea849dbb5f2365ce1cf437a8dcd974ed4cb47dddd5d5aae8b2",
+    "xingchen_sha256": "af156281216128407550442694d4dc45ea8507dfc7da4c80efd549a0ffbe127b",
+    "zhongxing_18_21_sha256": "7622184407e04b8641e479be3c549d357de74eaa649baf78eab41bdcc19203af",
+    "zhongxing_wall_sha256": "72fa4f4c800a8e27c19d580da66524160c4c2111bd82191706b6c8da142b8d42"
+  },
+  "checks": [
+    {
+      "detail": "",
+      "name": "first_shift",
+      "pass": true
+    },
+    {
+      "detail": {
+        "enu": [
+          231.139999389648,
+          137.449996948242,
+          45.0749816894531
+        ],
+        "gap_m": 0.0
+      },
+      "name": "normal_street_spawn",
+      "pass": true
+    },
+    {
+      "detail": "street.png",
+      "name": "frame_street",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 9.54403812251985,
+        "end": "(240.1937, 46.53993, -141.1768)",
+        "goals": 4,
+        "max_frame_displacement_m": 0.0697984471917152,
+        "name": "fenghuangtai_public_turn_out",
+        "pass": true,
+        "reached": 4,
+        "stall_contacts": []
+      },
+      "name": "fenghuangtai_public_turn_out",
+      "pass": true
+    },
+    {
+      "detail": {
+        "missed": [],
+        "samples": 15
+      },
+      "name": "fenghuangtai_public_turn_out_stone_support",
+      "pass": true
+    },
+    {
+      "detail": [
+        240.19367980957,
+        141.176788330078,
+        46.5399284362793
+      ],
+      "name": "on_destination_floor",
+      "pass": true
+    },
+    {
+      "detail": "inside_look_back.png",
+      "name": "frame_inside_look_back",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 9.53117887955159,
+        "end": "(231.1285, 45.093, -137.5164)",
+        "goals": 4,
+        "max_frame_displacement_m": 0.0751056224107742,
+        "name": "fenghuangtai_public_turn_back",
+        "pass": true,
+        "reached": 4,
+        "stall_contacts": []
+      },
+      "name": "fenghuangtai_public_turn_back",
+      "pass": true
+    },
+    {
+      "detail": {
+        "missed": [],
+        "samples": 15
+      },
+      "name": "fenghuangtai_public_turn_back_stone_support",
+      "pass": true
+    },
+    {
+      "detail": [
+        231.128479003906,
+        137.516418457031,
+        45.0929985046387
+      ],
+      "name": "returned_to_same_street",
+      "pass": true
+    },
+    {
+      "detail": "street_return.png",
+      "name": "frame_street_return",
+      "pass": true
+    }
+  ],
+  "device": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "engine": "4.6.3-stable (official)",
+  "native_frames": [
+    {
+      "direction_xyz": "(0.76077, -0.538743, -0.361919)",
+      "eye_enu": [
+        231.266418457031,
+        137.510147094727,
+        46.724983215332
+      ],
+      "frame": "street.png",
+      "pixel_size": "(900, 560)"
+    },
+    {
+      "direction_xyz": "(-0.942504, 0.0, 0.334196)",
+      "eye_enu": [
+        240.061721801758,
+        141.130004882812,
+        48.1899299621582
+      ],
+      "frame": "inside_look_back.png",
+      "pixel_size": "(900, 560)"
+    },
+    {
+      "direction_xyz": "(-0.905515, 0.0, 0.424314)",
+      "eye_enu": [
+        231.001708984375,
+        137.457015991211,
+        46.7430000305176
+      ],
+      "frame": "street_return.png",
+      "pixel_size": "(900, 560)"
+    }
+  ],
+  "renderer": "gl_compatibility",
+  "scene": "res://first_shift.tscn",
+  "sections": [
+    {
+      "contacts": [
+        [
+          "COL_Fenghuangtai11_StoneTurn",
+          45.074,
+          0.996
+        ],
+        [
+          "COL_Outer500_Surface_09_07",
+          44.99,
+          0.996
+        ]
+      ],
+      "east_north": [
+        231.14,
+        137.45,
+        45.0736005859375
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Fenghuangtai11_StoneTurn",
+          45.3,
+          0.995
+        ],
+        [
+          "COL_Outer500_Surface_09_07",
+          45.217,
+          0.995
+        ]
+      ],
+      "east_north": [
+        233.2,
+        138.43,
+        45.2997739868164
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Fenghuangtai11_StoneTurn",
+          45.638,
+          0.989
+        ],
+        [
+          "COL_Outer500_Surface_09_07",
+          45.555,
+          0.989
+        ]
+      ],
+      "east_north": [
+        235.5,
+        139.37,
+        45.6377637939453
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Fenghuangtai11_StoneTurn",
+          46.076,
+          0.985
+        ],
+        [
+          "COL_Outer500_Surface_09_07",
+          45.993,
+          0.985
+        ]
+      ],
+      "east_north": [
+        237.91,
+        140.37,
+        46.0761564331055
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Fenghuangtai11_StoneTurn",
+          46.525,
+          0.982
+        ],
+        [
+          "COL_Outer500_Surface_09_07",
+          46.442,
+          0.982
+        ]
+      ],
+      "east_north": [
+        240.2,
+        141.25,
+        46.5246809082031
+      ]
+    }
+  ],
+  "start": "normal first_shift exploration spawn",
+  "teleports_between_legs": 0,
+  "walks": [
+    {
+      "finish_enu": [
+        240.19367980957,
+        141.176788330078,
+        46.5399284362793
+      ],
+      "id": "fenghuangtai_public_turn_out",
+      "result": {
+        "distance_m": 9.54403812251985,
+        "end": "(240.1937, 46.53993, -141.1768)",
+        "goals": 4,
+        "max_frame_displacement_m": 0.0697984471917152,
+        "name": "fenghuangtai_public_turn_out",
+        "pass": true,
+        "reached": 4,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        231.139999389648,
+        137.449996948242,
+        45.0749816894531
+      ],
+      "trace_enu": [
+        [
+          231.139999389648,
+          137.449996948242,
+          45.0749816894531
+        ],
+        [
+          231.576644897461,
+          137.714782714844,
+          45.1347579956055
+        ],
+        [
+          232.338012695312,
+          138.049728393555,
+          45.2175979614258
+        ],
+        [
+          233.099411010742,
+          138.382751464844,
+          45.3032455444336
+        ],
+        [
+          233.86750793457,
+          138.699890136719,
+          45.3892555236816
+        ],
+        [
+          234.627059936523,
+          139.0146484375,
+          45.5103034973145
+        ],
+        [
+          235.385711669922,
+          139.327117919922,
+          45.6358032226562
+        ],
+        [
+          236.142852783203,
+          139.643157958984,
+          45.7626800537109
+        ],
+        [
+          236.895782470703,
+          139.955551147461,
+          45.9041366577148
+        ],
+        [
+          237.650100708008,
+          140.266098022461,
+          46.0446739196777
+        ],
+        [
+          238.407455444336,
+          140.562606811523,
+          46.192569732666
+        ],
+        [
+          239.166900634766,
+          140.855255126953,
+          46.3402404785156
+        ],
+        [
+          239.925750732422,
+          141.146835327148,
+          46.4880981445312
+        ],
+        [
+          240.19367980957,
+          141.176788330078,
+          46.5399284362793
+        ],
+        [
+          240.19367980957,
+          141.176788330078,
+          46.5399284362793
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        231.128479003906,
+        137.516418457031,
+        45.0929985046387
+      ],
+      "id": "fenghuangtai_public_turn_back",
+      "result": {
+        "distance_m": 9.53117887955159,
+        "end": "(231.1285, 45.093, -137.5164)",
+        "goals": 4,
+        "max_frame_displacement_m": 0.0751056224107742,
+        "name": "fenghuangtai_public_turn_back",
+        "pass": true,
+        "reached": 4,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        240.19367980957,
+        141.176788330078,
+        46.5399284362793
+      ],
+      "trace_enu": [
+        [
+          240.19367980957,
+          141.176788330078,
+          46.5399284362793
+        ],
+        [
+          239.735229492188,
+          140.954360961914,
+          46.4452018737793
+        ],
+        [
+          238.922744750977,
+          140.694229125977,
+          46.2913932800293
+        ],
+        [
+          238.111663818359,
+          140.428573608398,
+          46.1346549987793
+        ],
+        [
+          237.320983886719,
+          140.108093261719,
+          45.9823112487793
+        ],
+        [
+          236.529769897461,
+          139.787384033203,
+          45.8343620300293
+        ],
+        [
+          235.739410400391,
+          139.467041015625,
+          45.6908073425293
+        ],
+        [
+          234.94938659668,
+          139.144409179688,
+          45.5633659362793
+        ],
+        [
+          234.159790039062,
+          138.821960449219,
+          45.4315299987793
+        ],
+        [
+          233.374267578125,
+          138.497085571289,
+          45.3353385925293
+        ],
+        [
+          232.606018066406,
+          138.137023925781,
+          45.2420768737793
+        ],
+        [
+          231.836456298828,
+          137.776382446289,
+          45.1590690612793
+        ],
+        [
+          231.174377441406,
+          137.517028808594,
+          45.0838737487793
+        ],
+        [
+          231.128479003906,
+          137.516418457031,
+          45.0929985046387
+        ],
+        [
+          231.128479003906,
+          137.516418457031,
+          45.0929985046387
+        ]
+      ]
+    }
+  ]
+}

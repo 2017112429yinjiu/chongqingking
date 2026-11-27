@@ -1,0 +1,162 @@
+{
+  "parent_commit": "8a4d413c9d9f8e22a60a332c24fd35bb40cb7e73",
+  "source_blend_sha256": "77b3c84846c396cd8dceb894a980a110b7f98b8327855ec9427fff206bcd37a2",
+  "runtime_glb_sha256": "4e0af537b800faf7856af3659ea9dbe082f587dd3523824015e93fa8fb24d6a2",
+  "native_frames": [
+    {
+      "frame": {
+        "eye_enu": [
+          232.98,
+          125.94,
+          45.830458984375
+        ],
+        "file": "11-main-street.png",
+        "fov_deg": 68.0,
+        "target_enu": [
+          235.34,
+          139.93,
+          46.1944831848145
+        ]
+      },
+      "pixels": [
+        900,
+        506
+      ],
+      "save_code": 0
+    },
+    {
+      "frame": {
+        "eye_enu": [
+          246.2,
+          137.49,
+          48.7376397705078
+        ],
+        "file": "11-south-spur-return.png",
+        "fov_deg": 66.0,
+        "target_enu": [
+          231.2,
+          133.48,
+          45.3998245239258
+        ]
+      },
+      "pixels": [
+        900,
+        506
+      ],
+      "save_code": 0
+    },
+    {
+      "frame": {
+        "eye_enu": [
+          246.3,
+          148.84,
+          49.6111940002441
+        ],
+        "file": "11-north-spur-return.png",
+        "fov_deg": 67.0,
+        "target_enu": [
+          230.04,
+          145.16,
+          46.1451171875
+        ]
+      },
+      "pixels": [
+        900,
+        506
+      ],
+      "save_code": 0
+    },
+    {
+      "frame": {
+        "eye_enu": [
+          226.8,
+          140.8,
+          46.5931886291504
+        ],
+        "file": "11-public-footway.png",
+        "fov_deg": 69.0,
+        "target_enu": [
+          237.8,
+          146.88,
+          46.7703727722168
+        ]
+      },
+      "pixels": [
+        900,
+        506
+      ],
+      "save_code": 0
+    }
+  ],
+  "public_walk_m": [
+    9.54403812251985,
+    9.53117887955159
+  ],
+  "public_walk_supports": [
+    15,
+    15
+  ],
+  "ride_results": {
+    "1017606351": {
+      "forward": {
+        "reached": 10,
+        "targets": 10,
+        "distance_m": 19.5681606537401,
+        "airborne_frames": 0,
+        "intended_surface_samples": 35,
+        "sample_count": 35
+      },
+      "reverse": {
+        "reached": 10,
+        "targets": 10,
+        "distance_m": 19.5445978614734,
+        "airborne_frames": 0,
+        "intended_surface_samples": 35,
+        "sample_count": 35
+      }
+    },
+    "59146751": {
+      "forward": {
+        "reached": 11,
+        "targets": 11,
+        "distance_m": 21.6688231474254,
+        "airborne_frames": 0,
+        "intended_surface_samples": 38,
+        "sample_count": 38
+      },
+      "reverse": {
+        "reached": 11,
+        "targets": 11,
+        "distance_m": 21.7234687802847,
+        "airborne_frames": 0,
+        "intended_surface_samples": 37,
+        "sample_count": 37
+      }
+    }
+  },
+  "grades_m": {
+    "1017606351": [
+      44.498871032714845,
+      43.174530212402345
+    ],
+    "59146751": [
+      45.50320349121094,
+      48.41593084716797
+    ]
+  },
+  "blender_points": {
+    "1017606351": 27,
+    "59146751": 30
+  },
+  "regressions": {
+    "cut-teaching": 85,
+    "cut-market": 5,
+    "cut-repair": 10,
+    "cut-collectibles": 15
+  },
+  "native_device": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "raw_cloud_test_directories": {
+    "site": "/workspace/work/runtime/district-refresh/remaining-33-KxMhkZe8/B1-field",
+    "game": "/workspace/work/runtime/district-refresh/remaining-33-KxMhkZe8/A3-work-o0ZuuBt5"
+  }
+}

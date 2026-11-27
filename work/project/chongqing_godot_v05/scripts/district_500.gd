@@ -24,6 +24,8 @@ const ZHONGXING_BRIDGE := "res://assets/district_500/zhongxing-bridge-18-21.glb"
 const ZHONGXING_BRIDGE_SITE := "res://assets/district_500/zhongxing-bridge-18-21.json"
 const HOUCI_CONNECTORS := "res://assets/district_500/houci-14-16.glb"
 const HOUCI_CONNECTORS_SITE := "res://assets/district_500/houci-14-16.json"
+const FENGHUANGTAI_11 := "res://assets/district_500/fenghuangtai-11.glb"
+const FENGHUANGTAI_11_SITE := "res://assets/district_500/fenghuangtai-11.json"
 const PUBLIC_EDGES := "res://assets/district_500/public-edges.glb"
 const PUBLIC_EDGES_SITE := "res://assets/district_500/public-edges.json"
 const XINGCHEN := "res://assets/district_500/xingchen.glb"
@@ -189,6 +191,11 @@ static func install(city: Node3D) -> Dictionary:
 		install_street_group(district, HOUCI_CONNECTORS, HOUCI_CONNECTORS_SITE, "HouciConnectors1416")
 		var connectors: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(HOUCI_CONNECTORS_SITE))
 		retired_bridge_plots.append_array(connectors.retired_plots)
+	var lower_junction_active := connectors_active and not "--qa-without-fenghuangtai-11" in OS.get_cmdline_user_args()
+	if lower_junction_active:
+		install_street_group(district, FENGHUANGTAI_11, FENGHUANGTAI_11_SITE, "FenghuangtaiLowerJunction")
+		var junction: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(FENGHUANGTAI_11_SITE))
+		retired_bridge_plots.append_array(junction.retired_plots)
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -351,6 +358,7 @@ static func install(city: Node3D) -> Dictionary:
 		"panda_15_17_sha256": FileAccess.get_sha256(PANDA) if panda_active else "",
 		"zhongxing_18_21_sha256": FileAccess.get_sha256(ZHONGXING_BRIDGE) if bridge_margins_active else "",
 		"houci_14_16_sha256": FileAccess.get_sha256(HOUCI_CONNECTORS) if connectors_active else "",
+		"fenghuangtai_11_sha256": FileAccess.get_sha256(FENGHUANGTAI_11) if lower_junction_active else "",
 		"public_edges_sha256": FileAccess.get_sha256(PUBLIC_EDGES),
 		"xingchen_sha256": FileAccess.get_sha256(XINGCHEN),
 		"pavilion_62_sha256": FileAccess.get_sha256(PAVILION_62),
@@ -561,6 +569,12 @@ static func start_exploration(scene: Node3D) -> void:
 		var street := collision.raycast_ground(scene, origin + Vector3.UP * 1.1, 3.0)
 		if not street.is_empty():
 			scene.explorer.set_walk_origin(street.position + Vector3.UP * .035, enu(plan.lower_walk_21[1]))
+	elif "--fenghuangtai-11" in OS.get_cmdline_user_args():
+		var plan: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(FENGHUANGTAI_11_SITE))
+		var points: Array = plan.site_walk
+		var street := collision.raycast_ground(scene, enu(points[0]) + Vector3.UP * .9, 3.0)
+		if not street.is_empty():
+			scene.explorer.set_walk_origin(street.position + Vector3.UP * .035, enu(points[1]))
 	elif not zhongxing_public_view().is_empty():
 		var plan: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(HOUCI_CONNECTORS_SITE))
 		var points: Array = plan.public_walks[zhongxing_public_view()]

@@ -1,0 +1,413 @@
+{
+  "plot": 11,
+  "old_footprint_enu": [
+    [
+      229.12261550792888,
+      145.54960107067407
+    ],
+    [
+      231.16264113501634,
+      132.67293015625856
+    ],
+    [
+      241.55389415937017,
+      134.3191959192129
+    ],
+    [
+      239.51386853228271,
+      147.1958668336284
+    ]
+  ],
+  "old_center_enu": [
+    235.33825483364953,
+    139.93439849494348
+  ],
+  "ways": [
+    {
+      "way": 1017606351,
+      "name": "凤凰台路",
+      "tags": {
+        "highway": "residential",
+        "name": "凤凰台路"
+      },
+      "distance_m": 5.142,
+      "crossing_m": 10.587,
+      "overlap_m2": null,
+      "east_north": [
+        [
+          229.1335,
+          132.8917
+        ],
+        [
+          295.6572,
+          151.2142
+        ],
+        [
+          311.6679,
+          154.8831
+        ],
+        [
+          328.0371,
+          157.4657
+        ],
+        [
+          348.9711,
+          160.3033
+        ],
+        [
+          363.0627,
+          160.9572
+        ],
+        [
+          374.8284,
+          159.6713
+        ],
+        [
+          382.4847,
+          156.0688
+        ],
+        [
+          387.03,
+          152.0673
+        ],
+        [
+          390.1118,
+          147.578
+        ],
+        [
+          390.8289,
+          140.3842
+        ],
+        [
+          390.2085,
+          133.2679
+        ],
+        [
+          388.774,
+          125.8413
+        ],
+        [
+          379.3047,
+          98.4071
+        ],
+        [
+          366.3947,
+          60.9968
+        ],
+        [
+          359.1934,
+          40.1357
+        ],
+        [
+          357.2355,
+          32.5428
+        ],
+        [
+          349.3556,
+          2.1934
+        ],
+        [
+          332.336,
+          -53.9609
+        ],
+        [
+          326.4817,
+          -79.6326
+        ],
+        [
+          323.2248,
+          -106.0693
+        ],
+        [
+          320.0258,
+          -145.5746
+        ]
+      ]
+    },
+    {
+      "way": 59146751,
+      "name": "下回水沟",
+      "tags": {
+        "highway": "service",
+        "name": "下回水沟"
+      },
+      "distance_m": 6.244,
+      "crossing_m": 9.474,
+      "overlap_m2": null,
+      "east_north": [
+        [
+          227.3117,
+          144.5416
+        ],
+        [
+          278.0379,
+          155.8587
+        ],
+        [
+          282.3411,
+          158.4635
+        ],
+        [
+          284.1923,
+          162.1325
+        ],
+        [
+          284.7254,
+          166.2227
+        ],
+        [
+          261.4477,
+          248.1708
+        ]
+      ]
+    },
+    {
+      "way": 176034697,
+      "name": "中兴路",
+      "tags": {
+        "highway": "tertiary",
+        "name": "中兴路",
+        "name:en": "Zhongxing Road",
+        "oneway": "yes",
+        "source": "bing, gps",
+        "surface": "asphalt"
+      },
+      "distance_m": 7.218,
+      "crossing_m": 0.0,
+      "overlap_m2": null,
+      "east_north": [
+        [
+          212.3264,
+          44.2931
+        ],
+        [
+          215.0887,
+          49.7466
+        ],
+        [
+          217.8218,
+          54.9231
+        ],
+        [
+          222.6,
+          66.0963
+        ],
+        [
+          226.6126,
+          80.9939
+        ],
+        [
+          228.2603,
+          87.1126
+        ],
+        [
+          229.5205,
+          100.8242
+        ],
+        [
+          229.928,
+          121.2862
+        ],
+        [
+          229.1335,
+          132.8917
+        ],
+        [
+          227.3117,
+          144.5416
+        ],
+        [
+          223.1061,
+          171.1113
+        ],
+        [
+          216.0709,
+          217.0567
+        ],
+        [
+          216.1679,
+          224.1619
+        ],
+        [
+          217.9513,
+          232.3423
+        ],
+        [
+          221.5277,
+          239.0595
+        ],
+        [
+          226.2961,
+          245.1782
+        ],
+        [
+          233.6522,
+          251.9175
+        ],
+        [
+          243.7219,
+          258.6791
+        ],
+        [
+          254.0436,
+          262.8246
+        ],
+        [
+          257.1159,
+          263.6892
+        ],
+        [
+          263.871,
+          265.5846
+        ],
+        [
+          273.6983,
+          266.4381
+        ],
+        [
+          445.405,
+          268.1776
+        ],
+        [
+          502.8377,
+          269.0309
+        ],
+        [
+          534.7135,
+          271.9016
+        ],
+        [
+          552.6721,
+          271.8905
+        ],
+        [
+          571.3866,
+          268.9419
+        ]
+      ]
+    }
+  ],
+  "aerial_metadata": {
+    "plot": 11,
+    "query": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2026_r11/MapServer/4/query?f=json&where=1%3D1&inSR=4326&geometry=106.56687822014598%2C29.55451243590947&geometryType=esriGeometryPoint&spatialRel=esriSpatialRelIntersects&returnGeometry=false&outFields=SRC_DATE%2CSRC_RES%2CSRC_ACC%2CSRC_DESC%2CReleaseName",
+    "records": [
+      {
+        "SRC_DATE": 20251028,
+        "SRC_RES": 0.34,
+        "SRC_ACC": 8.47,
+        "SRC_DESC": "LG05",
+        "ReleaseName": "Raster Basemaps 2026.R09",
+        "acquired_utc": "2025-10-28"
+      }
+    ]
+  },
+  "views": [
+    {
+      "plot": 11,
+      "date": "20190629",
+      "range_m": 14.19,
+      "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200121906291717329631L&heading=10&pitch=0&fovy=78&width=900&height=560",
+      "heading": 10,
+      "offset": 0,
+      "camera_en": [
+        232.9808,
+        125.93931999999998
+      ],
+      "sha256": "ed5639986c977f31787cbeb9bef80fff0312ec592ed2e6a55267c098ac08d9ea"
+    },
+    {
+      "plot": 11,
+      "date": "20190629",
+      "range_m": 14.19,
+      "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200121906291717329631L&heading=40&pitch=0&fovy=78&width=900&height=560",
+      "heading": 40,
+      "offset": 30,
+      "camera_en": [
+        232.9808,
+        125.93931999999998
+      ],
+      "sha256": "7f8c99119a5e2906405397ca5fbf5271e7ce7bde1c41004e51e6f808c00da1c1"
+    },
+    {
+      "plot": 13,
+      "date": "20230515",
+      "range_m": 18.92,
+      "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=0902920012230515131739642AU&heading=8&pitch=0&fovy=78&width=900&height=560",
+      "heading": 8,
+      "offset": 0,
+      "camera_en": [
+        233.4941,
+        88.13323999999997
+      ],
+      "sha256": "06fb5b92c2c94b8844e0dfa79201d55c41732709830e40f4c1f6ea3cea7e1259"
+    },
+    {
+      "plot": 13,
+      "date": "20230515",
+      "range_m": 18.92,
+      "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=0902920012230515131739642AU&heading=38&pitch=0&fovy=78&width=900&height=560",
+      "heading": 38,
+      "offset": 30,
+      "camera_en": [
+        233.4941,
+        88.13323999999997
+      ],
+      "sha256": "c6506539e98d5312b507715466fa865042d941f2fb5392e501a0f844770ce3f1"
+    }
+  ],
+  "sources": {
+    "public_road_transfer": "https://www.cqyz.gov.cn/bm_229/lswhjqgwh/zwxx_97154/dt/202307/t20230712_12145003.html",
+    "collocated_podium_and_garage_notice": "https://www.cqyz.gov.cn/zwgk_229/jytabl/rddbjy/202506/t20250627_14754277.html",
+    "osm_license": "https://www.openstreetmap.org/copyright"
+  },
+  "observations": [
+    "2019 registered same-location view shows charcoal window strips, brick corner, grey paved verge and branch along the side of the building. 2023 registered corroborates the main frontage and the turn geometry.",
+    "On the 2025 aerial two different branch alignments can be read with the western main roadside. The off-map garage opening and later yard permissions remain unlocated.",
+    "All levels are measured inside the parent game. Photographic position fields do not supply survey heights. No outside pixels are included.",
+    "2023 near road mouth and 2019 inside the side lane both show the south-side branch descending away from the main street, with stepped street frontage, brick on the north and grey edge across the lane. Exact survey heights are unknown."
+  ],
+  "junction_supplement": [
+    {
+      "which": "2023-near",
+      "sid": "0902920012230515131744752AU",
+      "heading": 20,
+      "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=0902920012230515131744752AU&heading=20&pitch=0&fovy=78&width=900&height=560",
+      "photo_sha256": "49a9d9e0e3a7db023acfbff54bb747ba5539e0556a6d18b2591894ab881ca707"
+    },
+    {
+      "which": "2023-near",
+      "sid": "0902920012230515131744752AU",
+      "heading": 56,
+      "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=0902920012230515131744752AU&heading=56&pitch=0&fovy=78&width=900&height=560",
+      "photo_sha256": "0a6d8603ab9fa620cdfd69c8b7ee537e0be3eb8f4b60ad1cff542876fce60afb"
+    },
+    {
+      "which": "2023-near",
+      "sid": "0902920012230515131744752AU",
+      "heading": 93,
+      "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=0902920012230515131744752AU&heading=93&pitch=0&fovy=78&width=900&height=560",
+      "photo_sha256": "304a3383f4a13e8fcab38e198cb7cc4523dc101bf01629415b22444d6ece78ac"
+    },
+    {
+      "which": "2019-side",
+      "sid": "09029200121906291717399251L",
+      "heading": 318,
+      "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200121906291717399251L&heading=318&pitch=0&fovy=78&width=900&height=560",
+      "photo_sha256": "40ba4fe7923ce7a523b6ac43f4634cbff09e189809c321e295e8037e9dc6f7e4"
+    },
+    {
+      "which": "2019-side",
+      "sid": "09029200121906291717399251L",
+      "heading": 255,
+      "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200121906291717399251L&heading=255&pitch=0&fovy=78&width=900&height=560",
+      "photo_sha256": "ccc9b130a786309fd1030c8a278945644c44c6d441c8c2ac54fa4877db43f26b"
+    },
+    {
+      "which": "2019-side",
+      "sid": "09029200121906291717399251L",
+      "heading": 58,
+      "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200121906291717399251L&heading=58&pitch=0&fovy=78&width=900&height=560",
+      "photo_sha256": "bc27f37c6184f3b402ab68f2e809568af0480f99c420fd8ff2b4286540afbdf3"
+    }
+  ]
+}
