@@ -28,6 +28,8 @@ const MARKET_STALL_ROW := "res://assets/district_500/market-stall-row.glb"
 const MARKET_STALL_ROW_SITE := "res://assets/district_500/market-stall-row.json"
 const PARK_PLOT_57 := "res://assets/district_500/park-plot57.glb"
 const PARK_PLOT_57_SITE := "res://assets/district_500/park-plot57.json"
+const BRIDGE_PARK := "res://assets/district_500/bridge-park.glb"
+const BRIDGE_PARK_SITE := "res://assets/district_500/bridge-park.json"
 
 static func install(city: Node3D) -> Dictionary:
 	var district := (load(MODEL) as PackedScene).instantiate() as Node3D
@@ -56,6 +58,7 @@ static func install(city: Node3D) -> Dictionary:
 	var guoco_plant_roots: Array = []
 	var xingchen_way: Array = []
 	var market_ways: Array = []
+	var retired_bridge_plots: Array = []
 	if not "--qa-without-match-factory" in OS.get_cmdline_user_args():
 		install_street_group(district, MATCH_FACTORY, MATCH_FACTORY_SITE, "MatchFactory")
 		if not "--qa-without-matix-streets" in OS.get_cmdline_user_args():
@@ -85,6 +88,10 @@ static func install(city: Node3D) -> Dictionary:
 									install_street_group(district, MARKET_STALL_ROW, MARKET_STALL_ROW_SITE, "ZhongxingMarketEastStalls")
 								if not "--qa-without-west-ramp" in OS.get_cmdline_user_args() and not "--qa-without-park-plot57" in OS.get_cmdline_user_args():
 									install_street_group(district, PARK_PLOT_57, PARK_PLOT_57_SITE, "RiversideParkPlot57")
+									if not "--qa-without-bridge-park" in OS.get_cmdline_user_args():
+										install_street_group(district, BRIDGE_PARK, BRIDGE_PARK_SITE, "NanjimenBridgePark")
+										var bridge: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(BRIDGE_PARK_SITE))
+										retired_bridge_plots = bridge.parking.retired_trial_plots
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -201,7 +208,7 @@ static func install(city: Node3D) -> Dictionary:
 		sign.no_depth_test = false
 		district.add_child(sign)
 	for plot: Dictionary in layout.get("plots",[]):
-		if plot.has("superseded_by"):
+		if plot.has("superseded_by") or plot.plot_id in retired_bridge_plots:
 			continue
 		for spec: Dictionary in plot.get("trade_signs",[]):
 			var lettering:=Label3D.new()
@@ -249,6 +256,7 @@ static func install(city: Node3D) -> Dictionary:
 		"collectibles_market_sha256": FileAccess.get_sha256(COLLECTIBLES),
 		"market_stall_row_sha256": FileAccess.get_sha256(MARKET_STALL_ROW),
 		"park_plot57_sha256": FileAccess.get_sha256(PARK_PLOT_57),
+		"bridge_park_sha256": FileAccess.get_sha256(BRIDGE_PARK),
 		"retired_internal_context": local_frame != null, "osm_building_ids": retire}
 
 

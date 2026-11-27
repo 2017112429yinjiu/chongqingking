@@ -30,7 +30,8 @@ if bpy.data.filepath.endswith("city_and_outer.local.blend"):
     assert all(name in objects for name in pavilion)
     assert seal.library and seal.library.filepath.endswith("/park-plot57.blend")
     assert entry.library==objects["COL_WestPlayground_PerimeterSupport"].library==seal.library
-    assert objects["COL_Outer500_Retaining_and_boundaries"].library.filepath.endswith("/park-plot57.blend")
+    retaining=objects["COL_Outer500_Retaining_and_boundaries"]
+    assert retaining.library.filepath.endswith(("/park-plot57.blend","/bridge-park.blend"))
     assert objects["Huihuigou_TerrazzoPaving"].library.filepath.endswith("/collectibles-market.blend")
 print("CQ_PARK57_REOPEN",json.dumps({
     "version":bpy.app.version_string,"objects":len(objects),"libraries":len(bpy.data.libraries),

@@ -1,0 +1,1037 @@
+{
+  "candidate": {
+    "bounds_east_north_m": [
+      -250.0,
+      -250.0,
+      250.0,
+      250.0
+    ],
+    "bridge_park_sha256": "6592a009c7423949f8f00c7cfd22c3d7814d8d163558595c9cd2020a1e28fbee",
+    "collectibles_market_sha256": "a23f881d0e9206b40fedc8f262cfdb132194e59825e4728b39800471b684e175",
+    "glb_sha256": "b0180ce3a8d821253181725ad4516c04f58fe057529680e22a081f89fdd62122",
+    "guoco_sha256": "4dcb3d55080b02d8a0cf02585626bed2dfc3cdb37ae2f987110b55dd56435853",
+    "market_stall_row_sha256": "42fffbc9c4a98d3fa615e48fa9ce4eecdf66bf225decbd3d44d40eddf5a41646",
+    "match_factory_sha256": "ab742e6b12ad0b52c4cffef0f8342e1a957b59de5cfe3abde4dd691f853d76c6",
+    "matix_streets_sha256": "3b57fcf46931ff28ce1ab2be4a7250d31af30d302e362816265be8e38852e33b",
+    "osm_building_ids": [
+      809889594.0,
+      809889602.0,
+      809889621.0,
+      704006725,
+      809889619,
+      809889620
+    ],
+    "park_plot57_sha256": "b67c6b5fc91cdc8b8fa0e6808f8cedd8b15a49ad36a2566631ae67a1671f9f60",
+    "pavilion_62_sha256": "08d702b1a9ce0464b3bc62f33808befa5b58e5dcd082659b06c4cbc0bbab3e76",
+    "public_edges_sha256": "d585e52e0d927a9639e7285ffecc4932603a4d56b039504f1600763f72cc1be4",
+    "retired_internal_context": false,
+    "riverside_sha256": "12f304d468c56fb429d4a4db948f5297b7ca4284f29fc494442c9b2a146f67d1",
+    "west_court_sha256": "32eea2dd1f34b7f5dacbb546a46c6cf106ac3896804677ef9b2ee1dabfb2c683",
+    "west_ramp_sha256": "2a2ae2a4745096ea849dbb5f2365ce1cf437a8dcd974ed4cb47dddd5d5aae8b2",
+    "xingchen_sha256": "af156281216128407550442694d4dc45ea8507dfc7da4c80efd549a0ffbe127b",
+    "zhongxing_wall_sha256": "72fa4f4c800a8e27c19d580da66524160c4c2111bd82191706b6c8da142b8d42"
+  },
+  "checks": [
+    {
+      "detail": "",
+      "name": "first_shift",
+      "pass": true
+    },
+    {
+      "detail": [],
+      "name": "old_trial_geometry_58_and_60",
+      "pass": true
+    },
+    {
+      "detail": "COL_Outer500_Frame_59",
+      "name": "adjacent_plot_59",
+      "pass": true
+    },
+    {
+      "detail": "COL_Outer500_Frame_61",
+      "name": "adjacent_plot_61",
+      "pass": true
+    },
+    {
+      "detail": "Riverside_62_red_tiles_open_reveal_and_vents",
+      "name": "adjacent_plot_62",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "contacts": [
+            [
+              "COL_Outer500_Surface_02_01",
+              -2.598,
+              0.984
+            ]
+          ],
+          "en": [
+            -102.4,
+            -188.47
+          ],
+          "ground": [
+            "COL_Outer500_Surface_02_01",
+            -2.598,
+            0.984
+          ]
+        },
+        {
+          "contacts": [
+            [
+              "COL_Outer500_Surface_02_01",
+              -2.441,
+              0.974
+            ]
+          ],
+          "en": [
+            -102.4,
+            -187.6
+          ],
+          "ground": [
+            "COL_Outer500_Surface_02_01",
+            -2.441,
+            0.974
+          ]
+        },
+        {
+          "contacts": [
+            [
+              "COL_Outer500_Surface_02_01",
+              -2.255,
+              0.973
+            ]
+          ],
+          "en": [
+            -102.4,
+            -186.73
+          ],
+          "ground": [
+            "COL_Outer500_Surface_02_01",
+            -2.255,
+            0.973
+          ]
+        }
+      ],
+      "name": "walkable_ground_58",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "contacts": [
+            [
+              "COL_Outer500_Surface_03_00",
+              0.479,
+              0.994
+            ]
+          ],
+          "en": [
+            -68.1,
+            -203.27
+          ],
+          "ground": [
+            "COL_Outer500_Surface_03_00",
+            0.479,
+            0.994
+          ]
+        },
+        {
+          "contacts": [
+            [
+              "COL_Outer500_Surface_03_00",
+              0.541,
+              0.994
+            ]
+          ],
+          "en": [
+            -68.1,
+            -202.4
+          ],
+          "ground": [
+            "COL_Outer500_Surface_03_00",
+            0.541,
+            0.994
+          ]
+        },
+        {
+          "contacts": [
+            [
+              "COL_Outer500_Surface_03_00",
+              0.598,
+              0.994
+            ]
+          ],
+          "en": [
+            -68.1,
+            -201.53
+          ],
+          "ground": [
+            "COL_Outer500_Surface_03_00",
+            0.598,
+            0.994
+          ]
+        }
+      ],
+      "name": "walkable_ground_59",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "contacts": [
+            [
+              "COL_Outer500_Surface_03_01",
+              -0.449,
+              0.996
+            ]
+          ],
+          "en": [
+            -83.8,
+            -185.37
+          ],
+          "ground": [
+            "COL_Outer500_Surface_03_01",
+            -0.449,
+            0.996
+          ]
+        },
+        {
+          "contacts": [
+            [
+              "COL_Outer500_Surface_03_01",
+              -0.447,
+              0.996
+            ]
+          ],
+          "en": [
+            -83.8,
+            -184.5
+          ],
+          "ground": [
+            "COL_Outer500_Surface_03_01",
+            -0.447,
+            0.996
+          ]
+        },
+        {
+          "contacts": [
+            [
+              "COL_Outer500_Surface_03_01",
+              -0.427,
+              0.994
+            ]
+          ],
+          "en": [
+            -83.8,
+            -183.63
+          ],
+          "ground": [
+            "COL_Outer500_Surface_03_01",
+            -0.427,
+            0.994
+          ]
+        }
+      ],
+      "name": "walkable_ground_60",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "contacts": [
+            [
+              "COL_Outer500_Surface_04_00",
+              0.811,
+              0.989
+            ]
+          ],
+          "en": [
+            -44.0,
+            -204.37
+          ],
+          "ground": [
+            "COL_Outer500_Surface_04_00",
+            0.811,
+            0.989
+          ]
+        },
+        {
+          "contacts": [
+            [
+              "COL_Outer500_Surface_04_00",
+              0.929,
+              0.991
+            ]
+          ],
+          "en": [
+            -44.0,
+            -203.5
+          ],
+          "ground": [
+            "COL_Outer500_Surface_04_00",
+            0.929,
+            0.991
+          ]
+        },
+        {
+          "contacts": [
+            [
+              "COL_Outer500_Surface_04_00",
+              1.042,
+              0.991
+            ]
+          ],
+          "en": [
+            -44.0,
+            -202.63
+          ],
+          "ground": [
+            "COL_Outer500_Surface_04_00",
+            1.042,
+            0.991
+          ]
+        }
+      ],
+      "name": "walkable_ground_61",
+      "pass": true
+    },
+    {
+      "detail": {
+        "clear_height_from_player_head_m": null,
+        "mesh": ""
+      },
+      "name": "rail_above_public_ground",
+      "pass": true
+    },
+    {
+      "detail": [
+        [
+          "COL_Outer500_Frame_58",
+          9.399,
+          1.0
+        ],
+        [
+          "COL_Outer500_Building_envelopes",
+          3.534,
+          1.0
+        ],
+        [
+          "COL_Outer500_Surface_02_01",
+          2.462,
+          0.983
+        ]
+      ],
+      "name": "garage_at_superseded_plot_58",
+      "pass": true
+    },
+    {
+      "detail": [
+        [
+          "COL_Outer500_Frame_60",
+          11.041,
+          1.0
+        ],
+        [
+          "COL_Outer500_Building_envelopes",
+          2.226,
+          1.0
+        ],
+        [
+          "COL_Outer500_Surface_03_01",
+          1.208,
+          0.995
+        ]
+      ],
+      "name": "garage_at_superseded_plot_60",
+      "pass": true
+    },
+    {
+      "detail": {
+        "enu": [
+          -158.965316772461,
+          -159.07014465332,
+          -3.7451388835907
+        ],
+        "gap_m": 0.0
+      },
+      "name": "normal_street_spawn",
+      "pass": true
+    },
+    {
+      "detail": "street.png",
+      "name": "frame_street",
+      "pass": true
+    },
+    {
+      "detail": "street-plot-58.png",
+      "name": "registered_native_58",
+      "pass": true
+    },
+    {
+      "detail": "street-plot-59.png",
+      "name": "registered_native_59",
+      "pass": true
+    },
+    {
+      "detail": "street-plot-60.png",
+      "name": "registered_native_60",
+      "pass": true
+    },
+    {
+      "detail": "street-plot-61.png",
+      "name": "registered_native_61",
+      "pass": true
+    }
+  ],
+  "device": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "engine": "4.6.3-stable (official)",
+  "native_frames": [
+    {
+      "direction_xyz": "(0.378027, -0.23144, 0.896399)",
+      "eye_enu": [
+        -158.910919189453,
+        -159.199142456055,
+        -2.09513902664185
+      ],
+      "frame": "street.png",
+      "pixel_size": "(900, 560)"
+    },
+    {
+      "eye_enu": [
+        -100.463203430176,
+        -168.304702758789,
+        2.04994171142578
+      ],
+      "fov_deg": 76.0,
+      "frame": "street-plot-58.png",
+      "pixel_size": "(900, 560)",
+      "registered_heading_deg": 357.0,
+      "target_enu": [
+        -101.300575256348,
+        -152.326629638672,
+        2.04994171142578
+      ]
+    },
+    {
+      "eye_enu": [
+        -64.1416015625,
+        -175.752197265625,
+        3.05434387207031
+      ],
+      "fov_deg": 76.0,
+      "frame": "street-plot-59.png",
+      "pixel_size": "(900, 560)",
+      "registered_heading_deg": 205.0,
+      "target_enu": [
+        -70.9034957885742,
+        -190.253128051758,
+        3.05434387207031
+      ]
+    },
+    {
+      "eye_enu": [
+        -64.1416015625,
+        -175.752197265625,
+        3.05434387207031
+      ],
+      "fov_deg": 76.0,
+      "frame": "street-plot-60.png",
+      "pixel_size": "(900, 560)",
+      "registered_heading_deg": 350.0,
+      "target_enu": [
+        -66.9199752807617,
+        -159.995269775391,
+        3.05434387207031
+      ]
+    },
+    {
+      "eye_enu": [
+        -64.1416015625,
+        -175.752197265625,
+        3.05434387207031
+      ],
+      "fov_deg": 76.0,
+      "frame": "street-plot-61.png",
+      "pixel_size": "(900, 560)",
+      "registered_heading_deg": 130.0,
+      "target_enu": [
+        -51.8848915100098,
+        -186.036804199219,
+        3.05434387207031
+      ]
+    }
+  ],
+  "renderer": "gl_compatibility",
+  "scene": "res://first_shift.tscn",
+  "sections": [
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_01_01",
+          -3.762,
+          0.969
+        ]
+      ],
+      "east_north": [
+        -158.965316772461,
+        -159.07014465332
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_01_01",
+          -3.208,
+          0.97
+        ]
+      ],
+      "east_north": [
+        -154.965301513672,
+        -160.067504882812
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_WestPlayground_GradedSurfaces",
+          -4.261,
+          0.919
+        ]
+      ],
+      "east_north": [
+        -154.842666625977,
+        -162.864822387695
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_WestPlayground_GradedSurfaces",
+          -5.265,
+          0.949
+        ]
+      ],
+      "east_north": [
+        -154.715637207031,
+        -165.76203918457
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_WestPlayground_GradedSurfaces",
+          -5.851,
+          0.999
+        ]
+      ],
+      "east_north": [
+        -154.550003051758,
+        -169.539993286133
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_WestPlayground_GradedSurfaces",
+          -6.062,
+          0.997
+        ]
+      ],
+      "east_north": [
+        -158.1,
+        -171.3
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_WestPlayground_GradedSurfaces",
+          -5.905,
+          0.999
+        ]
+      ],
+      "east_north": [
+        -156.0,
+        -175.9
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_WestPlayground_GradedSurfaces",
+          -5.83,
+          1.0
+        ]
+      ],
+      "east_north": [
+        -151.2,
+        -176.6
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_WestCourt_Paving",
+          -5.83,
+          1.0
+        ]
+      ],
+      "east_north": [
+        -147.4,
+        -177.8
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_WestCourt_Paving",
+          -5.83,
+          1.0
+        ]
+      ],
+      "east_north": [
+        -144.8,
+        -181.4
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_WestCourt_Paving",
+          -5.83,
+          1.0
+        ]
+      ],
+      "east_north": [
+        -141.55,
+        -183.73
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_WestCourt_Paving",
+          -5.83,
+          1.0
+        ]
+      ],
+      "east_north": [
+        -140.17,
+        -183.7
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_WestCourt_Paving",
+          -5.83,
+          1.0
+        ]
+      ],
+      "east_north": [
+        -137.83,
+        -183.49
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Park57_EastWalkGrade",
+          -5.14,
+          0.94
+        ]
+      ],
+      "east_north": [
+        -135.14,
+        -183.22
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Park57_EastWalkGrade",
+          -4.273,
+          0.915
+        ]
+      ],
+      "east_north": [
+        -132.92,
+        -183.14
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_02_01",
+          -3.64,
+          0.983
+        ]
+      ],
+      "east_north": [
+        -129.33,
+        -181.43
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_02_01",
+          -3.235,
+          0.99
+        ]
+      ],
+      "east_north": [
+        -125.62,
+        -179.84
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_02_01",
+          -2.925,
+          0.974
+        ]
+      ],
+      "east_north": [
+        -121.9,
+        -177.82
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_02_01",
+          -2.834,
+          0.973
+        ]
+      ],
+      "east_north": [
+        -116.8,
+        -179.7
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_02_01",
+          -2.542,
+          0.971
+        ]
+      ],
+      "east_north": [
+        -109.0,
+        -184.8
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_02_01",
+          -2.441,
+          0.974
+        ]
+      ],
+      "east_north": [
+        -102.4,
+        -187.6
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_03_01",
+          -1.807,
+          0.986
+        ]
+      ],
+      "east_north": [
+        -93.8,
+        -190.1
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_03_01",
+          -1.165,
+          0.996
+        ]
+      ],
+      "east_north": [
+        -94.0,
+        -183.1
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_03_01",
+          -0.678,
+          0.993
+        ]
+      ],
+      "east_north": [
+        -91.2,
+        -179.1
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_03_01",
+          -0.408,
+          0.993
+        ]
+      ],
+      "east_north": [
+        -90.0,
+        -177.197900390625
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_03_01",
+          0.109,
+          0.995
+        ]
+      ],
+      "east_north": [
+        -80.0,
+        -179.691293334961
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_03_01",
+          -0.408,
+          0.993
+        ]
+      ],
+      "east_north": [
+        -90.0,
+        -177.197900390625
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_03_01",
+          -0.678,
+          0.993
+        ]
+      ],
+      "east_north": [
+        -91.2,
+        -179.1
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_03_01",
+          -1.165,
+          0.996
+        ]
+      ],
+      "east_north": [
+        -94.0,
+        -183.1
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_03_01",
+          -1.807,
+          0.986
+        ]
+      ],
+      "east_north": [
+        -93.8,
+        -190.1
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_03_01",
+          -0.666,
+          0.986
+        ]
+      ],
+      "east_north": [
+        -85.9,
+        -190.7
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_03_01",
+          -0.335,
+          0.984
+        ]
+      ],
+      "east_north": [
+        -81.7,
+        -193.4
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_03_01",
+          -0.383,
+          0.99
+        ]
+      ],
+      "east_north": [
+        -84.2,
+        -188.7
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_03_01",
+          -0.447,
+          0.996
+        ]
+      ],
+      "east_north": [
+        -83.8,
+        -184.5
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_03_01",
+          -0.383,
+          0.99
+        ]
+      ],
+      "east_north": [
+        -84.2,
+        -188.7
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_03_01",
+          -0.335,
+          0.984
+        ]
+      ],
+      "east_north": [
+        -81.7,
+        -193.4
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_03_01",
+          -0.507,
+          0.99
+        ]
+      ],
+      "east_north": [
+        -80.1,
+        -197.3
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Retaining_and_boundaries",
+          0.377,
+          1.0
+        ],
+        [
+          "COL_Outer500_Surface_03_00",
+          -0.044,
+          0.992
+        ]
+      ],
+      "east_north": [
+        -75.0,
+        -200.5
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_03_00",
+          0.541,
+          0.994
+        ]
+      ],
+      "east_north": [
+        -68.1,
+        -202.4
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_03_00",
+          0.896,
+          0.994
+        ]
+      ],
+      "east_north": [
+        -58.5,
+        -204.8
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_03_00",
+          0.991,
+          0.992
+        ]
+      ],
+      "east_north": [
+        -51.2,
+        -204.6
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_04_00",
+          0.929,
+          0.991
+        ]
+      ],
+      "east_north": [
+        -44.0,
+        -203.5
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_04_00",
+          0.843,
+          0.989
+        ]
+      ],
+      "east_north": [
+        -39.3,
+        -202.2
+      ]
+    }
+  ],
+  "start": "normal first_shift exploration spawn",
+  "teleports_between_legs": 0,
+  "walks": []
+}
