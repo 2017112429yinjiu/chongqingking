@@ -1,6 +1,7 @@
 extends "../../continuous_site_walk.gd"
 
 const SITE := "res://assets/district_500/wilderness-50.json"
+const FINISH := "res://assets/district_500/wilderness-50-finish.json"
 
 var plan: Dictionary
 var parent_run := "--qa-without-wilderness-50" in OS.get_cmdline_user_args()
@@ -19,7 +20,13 @@ func site_plan() -> Dictionary:
 				var finish := part.mesh.surface_get_material(index) as BaseMaterial3D
 				if finish!=null and finish.albedo_texture!=null:
 					reused[finish.resource_name]=finish.albedo_texture.resource_path
-		check("uses_registered_stock_texture_resources",reused==plan.surface_textures,reused)
+		var expected: Dictionary=plan.surface_textures.duplicate()
+		if not "--qa-without-wilderness-50-finish" in OS.get_cmdline_user_args():
+			var finish_plan: Dictionary=JSON.parse_string(FileAccess.get_file_as_string(FINISH))
+			for legacy: String in ["Renai remnant damp coursed rubble","Renai remnant worn upper stones"]:
+				expected.erase(legacy)
+			expected.merge(finish_plan.surface_textures)
+		check("uses_registered_stock_texture_resources",reused==expected,reused)
 	return {"id":"renai50_public_ruin_edge", "stations":points,
 		"destination_y":last[2] - (.074 if parent_run else 0.),
 		"street_focus":[points[2][0],points[2][1],points[2][2]+1.35],

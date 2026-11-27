@@ -28,6 +28,8 @@ const FENGHUANGTAI_11 := "res://assets/district_500/fenghuangtai-11.glb"
 const FENGHUANGTAI_11_SITE := "res://assets/district_500/fenghuangtai-11.json"
 const WILDERNESS_50 := "res://assets/district_500/wilderness-50.glb"
 const WILDERNESS_50_SITE := "res://assets/district_500/wilderness-50.json"
+const WILDERNESS_FINISH := "res://assets/district_500/wilderness-50-finish.glb"
+const WILDERNESS_FINISH_SITE := "res://assets/district_500/wilderness-50-finish.json"
 const PUBLIC_EDGES := "res://assets/district_500/public-edges.glb"
 const PUBLIC_EDGES_SITE := "res://assets/district_500/public-edges.json"
 const XINGCHEN := "res://assets/district_500/xingchen.glb"
@@ -203,6 +205,9 @@ static func install(city: Node3D) -> Dictionary:
 		install_street_group(district, WILDERNESS_50, WILDERNESS_50_SITE, "RenaiGardenRelicEdge")
 		var garden_edge: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(WILDERNESS_50_SITE))
 		retired_bridge_plots.append_array(garden_edge.retired_plots)
+	var wilderness_finish_active := wilderness_active and not "--qa-without-wilderness-50-finish" in OS.get_cmdline_user_args()
+	if wilderness_finish_active:
+		install_street_group(district, WILDERNESS_FINISH, WILDERNESS_FINISH_SITE, "RenaiGardenPublicFinish")
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -367,6 +372,7 @@ static func install(city: Node3D) -> Dictionary:
 		"houci_14_16_sha256": FileAccess.get_sha256(HOUCI_CONNECTORS) if connectors_active else "",
 		"fenghuangtai_11_sha256": FileAccess.get_sha256(FENGHUANGTAI_11) if lower_junction_active else "",
 		"wilderness_50_sha256": FileAccess.get_sha256(WILDERNESS_50) if wilderness_active else "",
+		"wilderness_50_finish_sha256": FileAccess.get_sha256(WILDERNESS_FINISH) if wilderness_finish_active else "",
 		"public_edges_sha256": FileAccess.get_sha256(PUBLIC_EDGES),
 		"xingchen_sha256": FileAccess.get_sha256(XINGCHEN),
 		"pavilion_62_sha256": FileAccess.get_sha256(PAVILION_62),
@@ -387,6 +393,13 @@ static func install_street_group(district: Node3D, model_path: String, plan_path
 	var plan: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(plan_path))
 	var layer := (load(model_path) as PackedScene).instantiate() as Node3D
 	layer.name = group_name
+	var textures: Dictionary = plan.get("surface_textures", {})
+	if not textures.is_empty():
+		for part: MeshInstance3D in layer.find_children("*", "MeshInstance3D", true, false):
+			for index in part.mesh.get_surface_count():
+				var finish := part.mesh.surface_get_material(index) as BaseMaterial3D
+				if finish != null and textures.has(finish.resource_name):
+					finish.albedo_texture = load(textures[finish.resource_name]) as Texture2D
 	for mesh_name: String in plan.replacement_meshes:
 		var original := district.find_child(mesh_name, true, false) as MeshInstance3D
 		var updated := layer.find_child(mesh_name, true, false) as MeshInstance3D
@@ -400,13 +413,6 @@ static func install_street_group(district: Node3D, model_path: String, plan_path
 		var old := district.find_child(mesh_name, true, false)
 		assert(old, mesh_name)
 		old.free()
-	var textures: Dictionary = plan.get("surface_textures", {})
-	if not textures.is_empty():
-		for part: MeshInstance3D in layer.find_children("*", "MeshInstance3D", true, false):
-			for index in part.mesh.get_surface_count():
-				var finish := part.mesh.surface_get_material(index) as BaseMaterial3D
-				if finish != null and textures.has(finish.resource_name):
-					finish.albedo_texture = load(textures[finish.resource_name]) as Texture2D
 	district.add_child(layer)
 
 static func restore_street_materials(original: MeshInstance3D, updated: MeshInstance3D, slots: Dictionary) -> void:

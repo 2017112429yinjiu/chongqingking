@@ -17,3 +17,9 @@ bash work/scene_r24/district_500/play.sh --software -- --explore-500 --wildernes
 ```
 
 同矩阵采用 [视点](views.json)，沿 `walk.gd` 实际走至端点原地转身。父版加入 `--qa-without-wilderness-50` 后仍从同一公开接头起步。 [原生前后图、路线记录](evidence/README.md)
+
+## 公共外缘表面复查
+
+道合近景可辨灰石横向错缝、磨钝的棱边、靠墙的低植和石件落地关系。本批在原有四段残墙、四件座石及其紧邻的墙脚落叶区重做这些细节，沿用首次发布的铺路边界与实际去回起终点。石面用原项目已有石墙及磨损矿物纹理，草叶独立制作。来源图及照片内观察见登记。 [同址地面观察](finish-field.json)
+
+重建时用 `CQ_WILDERNESS_50_FINISH_PARENT=1` 生成父版组合，打开组合后用 Blender 4.3.2 执行 `finish.py -- 导出目录`。将生成的 `wilderness-50-finish.blend` 放在本目录，GLB 和 JSON 放入运行资产目录。用 `check_finish_source.py` 复开独立文件和组合。正常试玩仍用 `--explore-500 --wilderness-50`。用 `finish_views_and_walk.gd` 加 `--fixed-views=views.json的绝对路径` 取三张同矩阵图和实际玩家往返。父版标记为 `--qa-without-wilderness-50-finish`。

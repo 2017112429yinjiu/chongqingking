@@ -96,6 +96,7 @@ bridge_margins = None if not panda_plan or os.environ.get("CQ_ZHONGXING_PARENT")
 houci_connectors = None if not bridge_margins or os.environ.get("CQ_HOUCI_14_16_PARENT") == "1" else json.loads((group_assets / "houci-14-16.json").read_bytes())
 fenghuangtai = None if not houci_connectors or os.environ.get("CQ_FENGHUANGTAI_11_PARENT") == "1" else json.loads((group_assets / "fenghuangtai-11.json").read_bytes())
 wilderness = None if not fenghuangtai or os.environ.get("CQ_WILDERNESS_50_PARENT") == "1" else json.loads((group_assets / "wilderness-50.json").read_bytes())
+wilderness_finish = None if not wilderness or os.environ.get("CQ_WILDERNESS_50_FINISH_PARENT") == "1" else json.loads((group_assets / "wilderness-50-finish.json").read_bytes())
 binjiang_override = set() if not binjiang_plan else set(binjiang_plan["replacement_meshes"] + binjiang_plan["retired_objects"])
 east_override = set() if east_plan is None else set(east_plan["replacement_meshes"] + east_plan["retired_objects"]) | binjiang_override
 changbin_override = set(changbin_plan["replacement_meshes"] + changbin_plan["retired_objects"]) | east_override
@@ -335,6 +336,14 @@ if wilderness:
                                  link=True, relative=True) as (_, edge):
         edge.objects = wilderness["replacement_meshes"] + wilderness["new_meshes"]
     for item in edge.objects:
+        collection.objects.link(item)
+if wilderness_finish:
+    for name in wilderness_finish["replacement_meshes"]:
+        collection.objects.unlink(collection.objects[name])
+    with bpy.data.libraries.load(str(factory_dir / "wilderness_50/wilderness-50-finish.blend"),
+                                 link=True, relative=True) as (_, finish):
+        finish.objects = wilderness_finish["replacement_meshes"] + wilderness_finish["new_meshes"]
+    for item in finish.objects:
         collection.objects.link(item)
 bpy.context.preferences.filepaths.save_version=0
 output_name = "city_and_outer.local.blend" if wilderness else (
