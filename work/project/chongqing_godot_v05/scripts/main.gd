@@ -213,6 +213,7 @@ func _ready() -> void:
 	explorer.mode_changed.connect(_mode_changed)
 	explorer.view_changed.connect(_view_changed)
 	if district_500_enabled and "--explore-500" in OS.get_cmdline_user_args():
+		preload("res://scripts/outer_market_handoff.gd").install(gameplay)
 		preload("res://scripts/district_500.gd").start_exploration(self)
 	elif first_day_enabled and not capture_mode and not Array(OS.get_cmdline_user_args()).any(func(arg: String): return arg == "--r16-performance" or (arg.ends_with("-test") and arg != "--day-one-test")):
 		gameplay.lesson = preload("res://scripts/day_one.gd").new()

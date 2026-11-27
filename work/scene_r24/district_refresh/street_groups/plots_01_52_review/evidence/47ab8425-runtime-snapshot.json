@@ -1,0 +1,1154 @@
+{
+  "commit": "47ab84257a64e9465af4edd37bdbd10f6eaa155e",
+  "source_head": "bb91ddda0823942662bf9941b3e61fd10e5a1ae0",
+  "same_content_project_inputs": 11596,
+  "replaced_git_blobs": [
+    {
+      "path": "work/project/chongqing_godot_v05/scripts/day_one.gd",
+      "git_blob": "137535cec8bc49bd1371d4a0273d48c4d81f05d3"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/scripts/district_500.gd",
+      "git_blob": "99906c5c18603872fa5f700209784d346306f6b4"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/scripts/gameplay.gd",
+      "git_blob": "0011cb1fb519d3b6587b7d747b124b0e91be6838"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/scripts/main.gd",
+      "git_blob": "7fb6b1b00124412d97fe9c59cb738ae3f7dcb5eb"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/scripts/shancheng_delivery.gd",
+      "git_blob": "d6734f1ea4501671cd80a96e6a6bfd262c67516b"
+    }
+  ],
+  "linked_import_objects": 401,
+  "witness": [
+    {
+      "path": "work/project/chongqing_godot_v05/assets/connections_r24/layout.json",
+      "git_blob": "526f1aa481f7ce35d13f765fa6b69b609506137e",
+      "bytes": 169224,
+      "sha256": "48cb60ee25a424592124e40051195484c194307c24412491976b3c76fd24b536"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/assets/courtyard_grade/layout.json",
+      "git_blob": "290064233cbc8508aeb15acf2a593fb43fb53f93",
+      "bytes": 4208,
+      "sha256": "5fd7558f1b8ad3694bd2275a42c1ae2c1b883452b128cd135209b86a3dfb67dd"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/assets/courtyard_r24/kitchen/layout.json",
+      "git_blob": "3149aa7c4abd6b0587dc15bbd257e3440c5041e1",
+      "bytes": 8798,
+      "sha256": "9e570e390a13828a3ff3b13c94cd56b9dd1b463c40daf9de5f639f22333a39ae"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/assets/courtyard_r24/layout.json",
+      "git_blob": "ca5a781b43c83d69c18a48571c60cd3bc1ab034c",
+      "bytes": 8687,
+      "sha256": "3f6f0abdc96db4a6ba688c30d0b53e572ab43f4912a0a0517fa1ecd36d61ef28"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/assets/district_500/layout.json",
+      "git_blob": "50eeab60aa9b4f6e2bfff4d56807276ced7fb1fa",
+      "bytes": 346549,
+      "sha256": "8da8872b30395e43699930038fbb2bb48db6ce669c8f1062e699a486d15b4369"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/assets/district_500/outer_district.glb",
+      "git_blob": "88ba60f7382022eb37e2d57d9cea0a37e4dc5896",
+      "bytes": 241590308,
+      "sha256": "b0180ce3a8d821253181725ad4516c04f58fe057529680e22a081f89fdd62122"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/assets/district_age/layout.json",
+      "git_blob": "f1ee3bd916284189af0bcf85f2050e6a0964b959",
+      "bytes": 13092,
+      "sha256": "6f97363e33e5829ebcb4068f0088901260f95a0f10abf6a623324b2ae00a632e"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/assets/district_patrol/layout.json",
+      "git_blob": "2d977b5adca3084ab6cf59c19af1018386ce2e37",
+      "bytes": 6832,
+      "sha256": "a559f4f86d70320dcfac00b0b680a214d2d6e4c8be9214da2bcf79e1436ba422"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/assets/district_r21/layout.json",
+      "git_blob": "670780a80f98f4e713865c7f6a1de289abddb836",
+      "bytes": 148382,
+      "sha256": "ef08224edd2de91299f87bc4534130df8153d6b8c5ee42890763e5feeed2bbcb"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/assets/indoor_delivery/layout.json",
+      "git_blob": "b79c390b9da5c32c0b891b362c80fd0a71cc2ee4",
+      "bytes": 1904,
+      "sha256": "803ad05f7fd278daf89ee2a915deff11f18f180360b7b5a43ad5f71c341e7885"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/assets/lane_connection_r24/layout.json",
+      "git_blob": "0c7a8b5421e8537b546d78e733f3882e48c55243",
+      "bytes": 17368,
+      "sha256": "00a9fab21ea326f421728b9f7ae4303463161a09ff47f0dbbe3cb28ccb0cadf5"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/assets/neighborhood_r24/layout.json",
+      "git_blob": "de6d11d4fe5d20ab9acc5ae69df6320a564c0985",
+      "bytes": 388230,
+      "sha256": "9bb11fb881f1e15f8d11f271c752343662ad25e1521a2d14889090b815ec2e9c"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/assets/river_r22/layout.json",
+      "git_blob": "48c3cbb87fa08622d885024cccc65e2756566b0e",
+      "bytes": 9098,
+      "sha256": "ff239e78712fbf074fb9a50d180f6288fd4198ac926f30e8054cb51b91ef6a45"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/assets/roofs_r22/layout.json",
+      "git_blob": "b036c51db08aca6dffbae167da1f3dbd704d8fc8",
+      "bytes": 9021,
+      "sha256": "226528a93e1282d3c6185db6c62c0cfcdb50c5383076a9705ce07ef6f0f81031"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/assets/rooms_r24/layout.json",
+      "git_blob": "44957be968c59960efb1c06941a4c2b43cdec3a6",
+      "bytes": 2975,
+      "sha256": "ce535a2e3cb911b4554569d5aa2f61be0c5434098bab81b68b869bd443387c86"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/assets/street_use_r24/layout.json",
+      "git_blob": "8c18d2c64368da1a9af73adf21fb0dd816e862a0",
+      "bytes": 702,
+      "sha256": "2c75656562fc4a8c32c9ec970b965db26c0e80f82abdff433517b3873b1c1d7f"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/assets/terrace_gardens/layout.json",
+      "git_blob": "6acf76085ce80b79c930e0dea909d19c61df5bb1",
+      "bytes": 27887,
+      "sha256": "ed3479a307b3ae220ff46d14ef3c01f617846adc7b92feaf20765c83e0f8f3c4"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/assets/vertical_run/layout.json",
+      "git_blob": "6166a3bdc8386c40ee05cfc5ce87ae1ebbb508c4",
+      "bytes": 3896,
+      "sha256": "f8d594b21ba580d6dfeaa74703e06f11794bfa3dfbbe0014e2e63e0a10c748b8"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/first_shift.tscn",
+      "git_blob": "55451e372b92c14a8351623882dbc19cf7e0493e",
+      "bytes": 235,
+      "sha256": "774ca1a31c34676c9bd0cbb187f88c3c52194c3aba9bf335e8acf590539c4b64"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/project.godot",
+      "git_blob": "34b3e263e985602af34c44d7dbf36f69cab0af53",
+      "bytes": 1247,
+      "sha256": "04457eebbbead5fa8064016da84aa2b10c24035ad59a97a161b1a0e202e49198"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/scripts/district_500.gd",
+      "git_blob": "99906c5c18603872fa5f700209784d346306f6b4",
+      "bytes": 31584,
+      "sha256": "aa75bcd6afa175dadc42f37790c936205bba6c174d8240342381a2e21500e53a"
+    },
+    {
+      "path": "work/project/chongqing_godot_v05/scripts/main.gd",
+      "git_blob": "7fb6b1b00124412d97fe9c59cb738ae3f7dcb5eb",
+      "bytes": 79497,
+      "sha256": "852ce5ee2be3e3b6600f81ab0cbaa00d5a243dd018de74ebe929922bcc1721b8"
+    }
+  ],
+  "same_sha_generated_glb_textures": [
+    {
+      "runtime_path": "assets/district_500/pavilion62_chongqing_district_brick_wall_08_diff_2k.jpg",
+      "owner_glb": "assets/district_500/pavilion62.glb",
+      "bytes": 2939913
+    },
+    {
+      "runtime_path": "assets/district_500/pavilion62_chongqing_district_stone_wall_05_diff_2k.jpg",
+      "owner_glb": "assets/district_500/pavilion62.glb",
+      "bytes": 3504038
+    },
+    {
+      "runtime_path": "assets/district_500/pavilion62_chongqing_district_wood_table_worn_diff_2k.jpg",
+      "owner_glb": "assets/district_500/pavilion62.glb",
+      "bytes": 3108339
+    },
+    {
+      "runtime_path": "assets/district_500/pavilion62_chongqing_district_concrete_wall_006_diff_2k.jpg",
+      "owner_glb": "assets/district_500/pavilion62.glb",
+      "bytes": 3109558
+    },
+    {
+      "runtime_path": "assets/district_500/pavilion62_chongqing_district_wood_table_worn_rough_2k.png",
+      "owner_glb": "assets/district_500/pavilion62.glb",
+      "bytes": 4471551
+    },
+    {
+      "runtime_path": "assets/district_500/pavilion62_chongqing_district_roof_tiles_diff.jpg",
+      "owner_glb": "assets/district_500/pavilion62.glb",
+      "bytes": 384174
+    },
+    {
+      "runtime_path": "assets/district_500/pavilion62_chongqing_district_rusty_painted_metal_diff_2k.jpg",
+      "owner_glb": "assets/district_500/pavilion62.glb",
+      "bytes": 1930544
+    },
+    {
+      "runtime_path": "assets/district_500/pavilion62_chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+      "owner_glb": "assets/district_500/pavilion62.glb",
+      "bytes": 482906
+    },
+    {
+      "runtime_path": "assets/district_500/pavilion62_chongqing_district_plastered_wall_04_diff_2k.jpg",
+      "owner_glb": "assets/district_500/pavilion62.glb",
+      "bytes": 1465312
+    },
+    {
+      "runtime_path": "assets/district_500/pavilion62_chongqing_district_plastered_wall_04_diff_1k.jpg",
+      "owner_glb": "assets/district_500/pavilion62.glb",
+      "bytes": 299230
+    },
+    {
+      "runtime_path": "assets/district_500/pavilion62_chongqing_district_rusty_painted_metal_rough_2k.png",
+      "owner_glb": "assets/district_500/pavilion62.glb",
+      "bytes": 2880902
+    },
+    {
+      "runtime_path": "assets/district_500/pavilion62_chongqing_district_stone_floor_diff_2k.jpg",
+      "owner_glb": "assets/district_500/pavilion62.glb",
+      "bytes": 3800807
+    },
+    {
+      "runtime_path": "assets/district_500/pavilion62_chongqing_district_tile_blue_v4_diff.jpg",
+      "owner_glb": "assets/district_500/pavilion62.glb",
+      "bytes": 838708
+    },
+    {
+      "runtime_path": "assets/district_500/pavilion62_chongqing_district_tile_cream_v4_diff.jpg",
+      "owner_glb": "assets/district_500/pavilion62.glb",
+      "bytes": 944116
+    },
+    {
+      "runtime_path": "assets/district_500/pavilion62_chongqing_district_rusty_painted_metal_nor_gl_2k.jpg",
+      "owner_glb": "assets/district_500/pavilion62.glb",
+      "bytes": 2293576
+    },
+    {
+      "runtime_path": "assets/district_500/pavilion62_chongqing_district_wood_table_worn_nor_gl_2k.jpg",
+      "owner_glb": "assets/district_500/pavilion62.glb",
+      "bytes": 3142587
+    },
+    {
+      "runtime_path": "assets/district_500/collectibles-market_chongqing_district_tile_blue_v4_diff.jpg",
+      "owner_glb": "assets/district_500/collectibles-market.glb",
+      "bytes": 838708
+    },
+    {
+      "runtime_path": "assets/district_500/collectibles-market_chongqing_district_stone_floor_nor_gl_2k.jpg",
+      "owner_glb": "assets/district_500/collectibles-market.glb",
+      "bytes": 4090235
+    },
+    {
+      "runtime_path": "assets/district_500/collectibles-market_chongqing_district_plastered_wall_04_diff_2k.jpg",
+      "owner_glb": "assets/district_500/collectibles-market.glb",
+      "bytes": 1465312
+    },
+    {
+      "runtime_path": "assets/district_500/collectibles-market_chongqing_district_stone_floor_diff_2k.jpg",
+      "owner_glb": "assets/district_500/collectibles-market.glb",
+      "bytes": 3800807
+    },
+    {
+      "runtime_path": "assets/district_500/collectibles-market_chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+      "owner_glb": "assets/district_500/collectibles-market.glb",
+      "bytes": 482906
+    },
+    {
+      "runtime_path": "assets/district_500/collectibles-market_chongqing_district_roof_tiles_diff.jpg",
+      "owner_glb": "assets/district_500/collectibles-market.glb",
+      "bytes": 384174
+    },
+    {
+      "runtime_path": "assets/district_500/collectibles-market_chongqing_district_plastered_wall_04_diff_1k.jpg",
+      "owner_glb": "assets/district_500/collectibles-market.glb",
+      "bytes": 299230
+    },
+    {
+      "runtime_path": "assets/district_500/collectibles-market_chongqing_district_brick_wall_08_diff_2k.jpg",
+      "owner_glb": "assets/district_500/collectibles-market.glb",
+      "bytes": 2939913
+    },
+    {
+      "runtime_path": "assets/district_500/collectibles-market_chongqing_district_wood_table_worn_rough_2k.png",
+      "owner_glb": "assets/district_500/collectibles-market.glb",
+      "bytes": 4471551
+    },
+    {
+      "runtime_path": "assets/district_500/collectibles-market_chongqing_district_wood_table_worn_diff_2k.jpg",
+      "owner_glb": "assets/district_500/collectibles-market.glb",
+      "bytes": 3108339
+    },
+    {
+      "runtime_path": "assets/district_500/collectibles-market_chongqing_district_rusty_painted_metal_nor_gl_2k.jpg",
+      "owner_glb": "assets/district_500/collectibles-market.glb",
+      "bytes": 2293576
+    },
+    {
+      "runtime_path": "assets/district_500/collectibles-market_chongqing_district_rusty_painted_metal_rough_2k.png",
+      "owner_glb": "assets/district_500/collectibles-market.glb",
+      "bytes": 2880902
+    },
+    {
+      "runtime_path": "assets/district_500/collectibles-market_chongqing_district_rusty_painted_metal_diff_2k.jpg",
+      "owner_glb": "assets/district_500/collectibles-market.glb",
+      "bytes": 1930544
+    },
+    {
+      "runtime_path": "assets/district_500/collectibles-market_chongqing_district_tile_cream_v4_diff.jpg",
+      "owner_glb": "assets/district_500/collectibles-market.glb",
+      "bytes": 944116
+    },
+    {
+      "runtime_path": "assets/district_500/collectibles-market_chongqing_district_stone_wall_05_diff_2k.jpg",
+      "owner_glb": "assets/district_500/collectibles-market.glb",
+      "bytes": 3504038
+    },
+    {
+      "runtime_path": "assets/district_500/collectibles-market_chongqing_district_concrete_wall_006_nor_gl_2k.jpg",
+      "owner_glb": "assets/district_500/collectibles-market.glb",
+      "bytes": 4939794
+    },
+    {
+      "runtime_path": "assets/district_500/collectibles-market_chongqing_district_concrete_wall_006_diff_2k.jpg",
+      "owner_glb": "assets/district_500/collectibles-market.glb",
+      "bytes": 3109558
+    },
+    {
+      "runtime_path": "assets/district_500/collectibles-market_Market terrazzo authored from worn concrete.png",
+      "owner_glb": "assets/district_500/collectibles-market.glb",
+      "bytes": 106990
+    },
+    {
+      "runtime_path": "assets/district_500/collectibles-market_chongqing_district_wood_table_worn_nor_gl_2k.jpg",
+      "owner_glb": "assets/district_500/collectibles-market.glb",
+      "bytes": 3142587
+    },
+    {
+      "runtime_path": "assets/district_500/collectibles-market_chongqing_district_plastered_wall_04_nor_gl_2k.jpg",
+      "owner_glb": "assets/district_500/collectibles-market.glb",
+      "bytes": 1760685
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot57_chongqing_district_roof_tiles_diff.jpg",
+      "owner_glb": "assets/district_500/park-plot57.glb",
+      "bytes": 384174
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot57_chongqing_district_rusty_painted_metal_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot57.glb",
+      "bytes": 1930544
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot57_chongqing_district_tile_cream_v4_diff.jpg",
+      "owner_glb": "assets/district_500/park-plot57.glb",
+      "bytes": 944116
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot57_chongqing_district_stone_floor_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot57.glb",
+      "bytes": 3800807
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot57_chongqing_district_wood_table_worn_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot57.glb",
+      "bytes": 3108339
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot57_chongqing_district_wood_table_worn_rough_2k.png",
+      "owner_glb": "assets/district_500/park-plot57.glb",
+      "bytes": 4471551
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot57_chongqing_district_rusty_painted_metal_nor_gl_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot57.glb",
+      "bytes": 2293576
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot57_chongqing_district_brick_wall_08_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot57.glb",
+      "bytes": 2939913
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot57_chongqing_district_island_tree_01_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot57.glb",
+      "bytes": 2954942
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot57_chongqing_district_plastered_wall_04_diff_1k.jpg",
+      "owner_glb": "assets/district_500/park-plot57.glb",
+      "bytes": 299230
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot57_chongqing_district_rusty_painted_metal_rough_2k.png",
+      "owner_glb": "assets/district_500/park-plot57.glb",
+      "bytes": 2880902
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot57_chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot57.glb",
+      "bytes": 482906
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot57_chongqing_district_asphalt_02_diff_1k.jpg",
+      "owner_glb": "assets/district_500/park-plot57.glb",
+      "bytes": 731707
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot57_chongqing_district_wood_table_worn_nor_gl_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot57.glb",
+      "bytes": 3142587
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot57_chongqing_district_island_tree_01_leaves_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot57.glb",
+      "bytes": 661175
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot57_chongqing_district_island_tree_01_branches_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot57.glb",
+      "bytes": 1476655
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot57_chongqing_district_concrete_wall_006_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot57.glb",
+      "bytes": 3109558
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot57_chongqing_district_tile_blue_v4_diff.jpg",
+      "owner_glb": "assets/district_500/park-plot57.glb",
+      "bytes": 838708
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot57_chongqing_district_stone_wall_05_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot57.glb",
+      "bytes": 3504038
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot57_chongqing_district_brown_mud_leaves_01_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot57.glb",
+      "bytes": 4539452
+    },
+    {
+      "runtime_path": "assets/district_500/binjiang-70-73_Binjiang-grey-entry-flags.png",
+      "owner_glb": "assets/district_500/binjiang-70-73.glb",
+      "bytes": 799956
+    },
+    {
+      "runtime_path": "assets/district_500/binjiang-70-73_Binjiang-pale-honey-limestone.png",
+      "owner_glb": "assets/district_500/binjiang-70-73.glb",
+      "bytes": 640443
+    },
+    {
+      "runtime_path": "assets/district_500/binjiang-70-73_Binjiang-warm-paving-edge.png",
+      "owner_glb": "assets/district_500/binjiang-70-73.glb",
+      "bytes": 640146
+    },
+    {
+      "runtime_path": "assets/district_500/binjiang-70-73_Binjiang-entry-asphalt-wear.png",
+      "owner_glb": "assets/district_500/binjiang-70-73.glb",
+      "bytes": 226810
+    },
+    {
+      "runtime_path": "assets/district_500/binjiang-70-73_Binjiang-warm-slate-panels.png",
+      "owner_glb": "assets/district_500/binjiang-70-73.glb",
+      "bytes": 640391
+    },
+    {
+      "runtime_path": "assets/district_500/binjiang-70-73_Binjiang-pale-limestone-trim.png",
+      "owner_glb": "assets/district_500/binjiang-70-73.glb",
+      "bytes": 640371
+    },
+    {
+      "runtime_path": "assets/district_500/binjiang-70-73_Binjiang-textured-stone-base.png",
+      "owner_glb": "assets/district_500/binjiang-70-73.glb",
+      "bytes": 756222
+    },
+    {
+      "runtime_path": "assets/district_500/binjiang-70-73_Binjiang-red-podium-coping.png",
+      "owner_glb": "assets/district_500/binjiang-70-73.glb",
+      "bytes": 640556
+    },
+    {
+      "runtime_path": "assets/district_500/binjiang-70-73_Binjiang-adjacent-red-brown-veneer.png",
+      "owner_glb": "assets/district_500/binjiang-70-73.glb",
+      "bytes": 708110
+    },
+    {
+      "runtime_path": "assets/district_500/binjiang-70-73_Binjiang-small-grey-street-flags.png",
+      "owner_glb": "assets/district_500/binjiang-70-73.glb",
+      "bytes": 165214
+    },
+    {
+      "runtime_path": "assets/district_500/landing_53_chongqing_district_stone_floor_diff_2k.jpg",
+      "owner_glb": "assets/district_500/landing_53.glb",
+      "bytes": 3800807
+    },
+    {
+      "runtime_path": "assets/district_500/landing_53_chongqing_district_stone_wall_05_diff_2k.jpg",
+      "owner_glb": "assets/district_500/landing_53.glb",
+      "bytes": 3504038
+    },
+    {
+      "runtime_path": "assets/district_500/market-stall-row_chongqing_district_wood_table_worn_diff_2k.jpg",
+      "owner_glb": "assets/district_500/market-stall-row.glb",
+      "bytes": 3108339
+    },
+    {
+      "runtime_path": "assets/district_500/market-stall-row_chongqing_district_concrete_wall_006_diff_2k.jpg",
+      "owner_glb": "assets/district_500/market-stall-row.glb",
+      "bytes": 3109558
+    },
+    {
+      "runtime_path": "assets/district_500/market-stall-row_chongqing_district_rusty_painted_metal_nor_gl_2k.jpg",
+      "owner_glb": "assets/district_500/market-stall-row.glb",
+      "bytes": 2293576
+    },
+    {
+      "runtime_path": "assets/district_500/market-stall-row_chongqing_district_plastered_wall_04_diff_2k.jpg",
+      "owner_glb": "assets/district_500/market-stall-row.glb",
+      "bytes": 1465312
+    },
+    {
+      "runtime_path": "assets/district_500/market-stall-row_chongqing_district_rusty_painted_metal_diff_2k.jpg",
+      "owner_glb": "assets/district_500/market-stall-row.glb",
+      "bytes": 1930544
+    },
+    {
+      "runtime_path": "assets/district_500/xingchen_chongqing_district_island_tree_01_diff_2k.jpg",
+      "owner_glb": "assets/district_500/xingchen.glb",
+      "bytes": 2954942
+    },
+    {
+      "runtime_path": "assets/district_500/xingchen_chongqing_district_stone_wall_05_diff_2k.jpg",
+      "owner_glb": "assets/district_500/xingchen.glb",
+      "bytes": 3504038
+    },
+    {
+      "runtime_path": "assets/district_500/xingchen_chongqing_district_tile_cream_v4_diff.jpg",
+      "owner_glb": "assets/district_500/xingchen.glb",
+      "bytes": 944116
+    },
+    {
+      "runtime_path": "assets/district_500/xingchen_chongqing_district_wood_table_worn_rough_2k.png",
+      "owner_glb": "assets/district_500/xingchen.glb",
+      "bytes": 4471551
+    },
+    {
+      "runtime_path": "assets/district_500/xingchen_chongqing_district_brick_wall_08_diff_2k.jpg",
+      "owner_glb": "assets/district_500/xingchen.glb",
+      "bytes": 2939913
+    },
+    {
+      "runtime_path": "assets/district_500/xingchen_chongqing_district_tile_blue_v4_diff.jpg",
+      "owner_glb": "assets/district_500/xingchen.glb",
+      "bytes": 838708
+    },
+    {
+      "runtime_path": "assets/district_500/xingchen_chongqing_district_island_tree_01_branches_diff_2k.jpg",
+      "owner_glb": "assets/district_500/xingchen.glb",
+      "bytes": 1476655
+    },
+    {
+      "runtime_path": "assets/district_500/xingchen_chongqing_district_wood_table_worn_diff_2k.jpg",
+      "owner_glb": "assets/district_500/xingchen.glb",
+      "bytes": 3108339
+    },
+    {
+      "runtime_path": "assets/district_500/xingchen_chongqing_district_roof_tiles_diff.jpg",
+      "owner_glb": "assets/district_500/xingchen.glb",
+      "bytes": 384174
+    },
+    {
+      "runtime_path": "assets/district_500/xingchen_chongqing_district_island_tree_01_leaves_diff_2k.jpg",
+      "owner_glb": "assets/district_500/xingchen.glb",
+      "bytes": 661175
+    },
+    {
+      "runtime_path": "assets/district_500/xingchen_chongqing_district_plastered_wall_04_diff_1k.jpg",
+      "owner_glb": "assets/district_500/xingchen.glb",
+      "bytes": 299230
+    },
+    {
+      "runtime_path": "assets/district_500/xingchen_chongqing_district_rusty_painted_metal_nor_gl_2k.jpg",
+      "owner_glb": "assets/district_500/xingchen.glb",
+      "bytes": 2293576
+    },
+    {
+      "runtime_path": "assets/district_500/xingchen_chongqing_district_stone_floor_diff_2k.jpg",
+      "owner_glb": "assets/district_500/xingchen.glb",
+      "bytes": 3800807
+    },
+    {
+      "runtime_path": "assets/district_500/xingchen_chongqing_district_wood_table_worn_nor_gl_2k.jpg",
+      "owner_glb": "assets/district_500/xingchen.glb",
+      "bytes": 3142587
+    },
+    {
+      "runtime_path": "assets/district_500/xingchen_chongqing_district_rusty_painted_metal_rough_2k.png",
+      "owner_glb": "assets/district_500/xingchen.glb",
+      "bytes": 2880902
+    },
+    {
+      "runtime_path": "assets/district_500/xingchen_chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+      "owner_glb": "assets/district_500/xingchen.glb",
+      "bytes": 482906
+    },
+    {
+      "runtime_path": "assets/district_500/xingchen_chongqing_district_rusty_painted_metal_diff_2k.jpg",
+      "owner_glb": "assets/district_500/xingchen.glb",
+      "bytes": 1930544
+    },
+    {
+      "runtime_path": "assets/district_500/xingchen_chongqing_district_concrete_wall_006_diff_2k.jpg",
+      "owner_glb": "assets/district_500/xingchen.glb",
+      "bytes": 3109558
+    },
+    {
+      "runtime_path": "assets/district_500/west-ramp_chongqing_district_island_tree_01_branches_diff_2k.jpg",
+      "owner_glb": "assets/district_500/west-ramp.glb",
+      "bytes": 1476655
+    },
+    {
+      "runtime_path": "assets/district_500/west-ramp_chongqing_district_stone_floor_diff_2k.jpg",
+      "owner_glb": "assets/district_500/west-ramp.glb",
+      "bytes": 3800807
+    },
+    {
+      "runtime_path": "assets/district_500/west-ramp_chongqing_district_island_tree_01_diff_2k.jpg",
+      "owner_glb": "assets/district_500/west-ramp.glb",
+      "bytes": 2954942
+    },
+    {
+      "runtime_path": "assets/district_500/west-ramp_chongqing_district_asphalt_02_diff_1k.jpg",
+      "owner_glb": "assets/district_500/west-ramp.glb",
+      "bytes": 731707
+    },
+    {
+      "runtime_path": "assets/district_500/west-ramp_chongqing_district_island_tree_01_leaves_diff_2k.jpg",
+      "owner_glb": "assets/district_500/west-ramp.glb",
+      "bytes": 661175
+    },
+    {
+      "runtime_path": "assets/district_500/west-ramp_chongqing_district_stone_wall_05_diff_2k.jpg",
+      "owner_glb": "assets/district_500/west-ramp.glb",
+      "bytes": 3504038
+    },
+    {
+      "runtime_path": "assets/district_500/west-ramp_chongqing_district_brown_mud_leaves_01_diff_2k.jpg",
+      "owner_glb": "assets/district_500/west-ramp.glb",
+      "bytes": 4539452
+    },
+    {
+      "runtime_path": "assets/district_500/west-ramp_West play fine blue rubber aggregate.png",
+      "owner_glb": "assets/district_500/west-ramp.glb",
+      "bytes": 111309
+    },
+    {
+      "runtime_path": "assets/district_500/west-ramp_West play pale aggregate.png",
+      "owner_glb": "assets/district_500/west-ramp.glb",
+      "bytes": 109804
+    },
+    {
+      "runtime_path": "assets/district_500/west-ramp_West play muted rose aggregate.png",
+      "owner_glb": "assets/district_500/west-ramp.glb",
+      "bytes": 106432
+    },
+    {
+      "runtime_path": "assets/district_500/west-ramp_chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+      "owner_glb": "assets/district_500/west-ramp.glb",
+      "bytes": 482906
+    },
+    {
+      "runtime_path": "assets/district_500/west-ramp_chongqing_district_leaf_scattered_gravel_diff_2k.jpg",
+      "owner_glb": "assets/district_500/west-ramp.glb",
+      "bytes": 3713229
+    },
+    {
+      "runtime_path": "assets/district_500/interior_terrain_chongqing_district_rusty_painted_metal_nor_gl_2k.jpg",
+      "owner_glb": "assets/district_500/interior_terrain.glb",
+      "bytes": 2293576
+    },
+    {
+      "runtime_path": "assets/district_500/interior_terrain_chongqing_district_concrete_wall_006_diff_2k.jpg",
+      "owner_glb": "assets/district_500/interior_terrain.glb",
+      "bytes": 3109558
+    },
+    {
+      "runtime_path": "assets/district_500/interior_terrain_chongqing_district_stone_floor_diff_2k.jpg",
+      "owner_glb": "assets/district_500/interior_terrain.glb",
+      "bytes": 3800807
+    },
+    {
+      "runtime_path": "assets/district_500/interior_terrain_chongqing_district_asphalt_02_diff_1k.jpg",
+      "owner_glb": "assets/district_500/interior_terrain.glb",
+      "bytes": 731707
+    },
+    {
+      "runtime_path": "assets/district_500/interior_terrain_chongqing_district_rusty_painted_metal_diff_2k.jpg",
+      "owner_glb": "assets/district_500/interior_terrain.glb",
+      "bytes": 1930544
+    },
+    {
+      "runtime_path": "assets/district_500/interior_terrain_chongqing_district_brown_mud_leaves_01_diff_2k.jpg",
+      "owner_glb": "assets/district_500/interior_terrain.glb",
+      "bytes": 4539452
+    },
+    {
+      "runtime_path": "assets/district_500/interior_terrain_chongqing_district_stone_wall_05_diff_2k.jpg",
+      "owner_glb": "assets/district_500/interior_terrain.glb",
+      "bytes": 3504038
+    },
+    {
+      "runtime_path": "assets/district_500/interior_terrain_chongqing_district_rusty_painted_metal_rough_2k.png",
+      "owner_glb": "assets/district_500/interior_terrain.glb",
+      "bytes": 2880902
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot59_chongqing_district_rusty_painted_metal_rough_2k.png",
+      "owner_glb": "assets/district_500/park-plot59.glb",
+      "bytes": 2880902
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot59_chongqing_district_brown_mud_leaves_01_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot59.glb",
+      "bytes": 4539452
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot59_chongqing_district_wood_table_worn_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot59.glb",
+      "bytes": 3108339
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot59_chongqing_district_island_tree_01_branches_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot59.glb",
+      "bytes": 1476655
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot59_chongqing_district_rusty_painted_metal_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot59.glb",
+      "bytes": 1930544
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot59_chongqing_district_wood_table_worn_nor_gl_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot59.glb",
+      "bytes": 3142587
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot59_chongqing_district_tile_blue_v4_diff.jpg",
+      "owner_glb": "assets/district_500/park-plot59.glb",
+      "bytes": 838708
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot59_chongqing_district_wood_table_worn_rough_2k.png",
+      "owner_glb": "assets/district_500/park-plot59.glb",
+      "bytes": 4471551
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot59_chongqing_district_brick_wall_08_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot59.glb",
+      "bytes": 2939913
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot59_chongqing_district_plastered_wall_04_diff_1k.jpg",
+      "owner_glb": "assets/district_500/park-plot59.glb",
+      "bytes": 299230
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot59_chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot59.glb",
+      "bytes": 482906
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot59_chongqing_district_island_tree_01_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot59.glb",
+      "bytes": 2954942
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot59_chongqing_district_stone_wall_05_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot59.glb",
+      "bytes": 3504038
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot59_chongqing_district_rusty_painted_metal_nor_gl_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot59.glb",
+      "bytes": 2293576
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot59_chongqing_district_island_tree_01_leaves_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot59.glb",
+      "bytes": 661175
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot59_chongqing_district_stone_floor_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot59.glb",
+      "bytes": 3800807
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot59_chongqing_district_tile_cream_v4_diff.jpg",
+      "owner_glb": "assets/district_500/park-plot59.glb",
+      "bytes": 944116
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot59_chongqing_district_concrete_wall_006_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot59.glb",
+      "bytes": 3109558
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot59_chongqing_district_roof_tiles_diff.jpg",
+      "owner_glb": "assets/district_500/park-plot59.glb",
+      "bytes": 384174
+    },
+    {
+      "runtime_path": "assets/district_500/park-edge-finish_skirt-park-edge.png",
+      "owner_glb": "assets/district_500/park-edge-finish.glb",
+      "bytes": 169996
+    },
+    {
+      "runtime_path": "assets/district_500/park-edge-finish_chongqing_district_stone_floor_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-edge-finish.glb",
+      "bytes": 3800807
+    },
+    {
+      "runtime_path": "assets/district_500/park-edge-finish_chongqing_district_stone_wall_05_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-edge-finish.glb",
+      "bytes": 3504038
+    },
+    {
+      "runtime_path": "assets/district_500/park-edge-finish_bluegreen-park-edge.png",
+      "owner_glb": "assets/district_500/park-edge-finish.glb",
+      "bytes": 167230
+    },
+    {
+      "runtime_path": "assets/district_500/park-edge-finish_grass-park-edge.png",
+      "owner_glb": "assets/district_500/park-edge-finish.glb",
+      "bytes": 233815
+    },
+    {
+      "runtime_path": "assets/district_500/park-edge-finish_stone-park-edge.png",
+      "owner_glb": "assets/district_500/park-edge-finish.glb",
+      "bytes": 188826
+    },
+    {
+      "runtime_path": "assets/district_500/park-edge-finish_sand-park-edge.png",
+      "owner_glb": "assets/district_500/park-edge-finish.glb",
+      "bytes": 174753
+    },
+    {
+      "runtime_path": "assets/district_500/park-edge-finish_pale-park-edge.png",
+      "owner_glb": "assets/district_500/park-edge-finish.glb",
+      "bytes": 170463
+    },
+    {
+      "runtime_path": "assets/district_500/bridge-park_chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+      "owner_glb": "assets/district_500/bridge-park.glb",
+      "bytes": 482906
+    },
+    {
+      "runtime_path": "assets/district_500/bridge-park_chongqing_district_tree_small_02_leaves_diff_2k.jpg",
+      "owner_glb": "assets/district_500/bridge-park.glb",
+      "bytes": 961870
+    },
+    {
+      "runtime_path": "assets/district_500/bridge-park_chongqing_district_stone_wall_05_diff_2k.jpg",
+      "owner_glb": "assets/district_500/bridge-park.glb",
+      "bytes": 3504038
+    },
+    {
+      "runtime_path": "assets/district_500/bridge-park_chongqing_district_asphalt_02_diff_1k.jpg",
+      "owner_glb": "assets/district_500/bridge-park.glb",
+      "bytes": 731707
+    },
+    {
+      "runtime_path": "assets/district_500/bridge-park_chongqing_district_wood_table_worn_nor_gl_2k.jpg",
+      "owner_glb": "assets/district_500/bridge-park.glb",
+      "bytes": 3142587
+    },
+    {
+      "runtime_path": "assets/district_500/bridge-park_chongqing_district_tile_blue_v4_diff.jpg",
+      "owner_glb": "assets/district_500/bridge-park.glb",
+      "bytes": 838708
+    },
+    {
+      "runtime_path": "assets/district_500/bridge-park_chongqing_district_tree_small_02_branch_diff_2k.jpg",
+      "owner_glb": "assets/district_500/bridge-park.glb",
+      "bytes": 1425692
+    },
+    {
+      "runtime_path": "assets/district_500/bridge-park_chongqing_district_island_tree_01_branches_diff_2k.jpg",
+      "owner_glb": "assets/district_500/bridge-park.glb",
+      "bytes": 1476655
+    },
+    {
+      "runtime_path": "assets/district_500/bridge-park_chongqing_district_island_tree_01_leaves_diff_2k.jpg",
+      "owner_glb": "assets/district_500/bridge-park.glb",
+      "bytes": 661175
+    },
+    {
+      "runtime_path": "assets/district_500/bridge-park_chongqing_district_wood_table_worn_diff_2k.jpg",
+      "owner_glb": "assets/district_500/bridge-park.glb",
+      "bytes": 3108339
+    },
+    {
+      "runtime_path": "assets/district_500/bridge-park_chongqing_district_roof_tiles_diff.jpg",
+      "owner_glb": "assets/district_500/bridge-park.glb",
+      "bytes": 384174
+    },
+    {
+      "runtime_path": "assets/district_500/bridge-park_chongqing_district_rusty_painted_metal_diff_2k.jpg",
+      "owner_glb": "assets/district_500/bridge-park.glb",
+      "bytes": 1930544
+    },
+    {
+      "runtime_path": "assets/district_500/bridge-park_chongqing_district_wood_table_worn_rough_2k.png",
+      "owner_glb": "assets/district_500/bridge-park.glb",
+      "bytes": 4471551
+    },
+    {
+      "runtime_path": "assets/district_500/bridge-park_chongqing_district_rusty_painted_metal_nor_gl_2k.jpg",
+      "owner_glb": "assets/district_500/bridge-park.glb",
+      "bytes": 2293576
+    },
+    {
+      "runtime_path": "assets/district_500/bridge-park_chongqing_district_brick_wall_08_diff_2k.jpg",
+      "owner_glb": "assets/district_500/bridge-park.glb",
+      "bytes": 2939913
+    },
+    {
+      "runtime_path": "assets/district_500/bridge-park_chongqing_district_rusty_painted_metal_rough_2k.png",
+      "owner_glb": "assets/district_500/bridge-park.glb",
+      "bytes": 2880902
+    },
+    {
+      "runtime_path": "assets/district_500/bridge-park_chongqing_district_island_tree_01_diff_2k.jpg",
+      "owner_glb": "assets/district_500/bridge-park.glb",
+      "bytes": 2954942
+    },
+    {
+      "runtime_path": "assets/district_500/bridge-park_chongqing_district_concrete_wall_006_diff_2k.jpg",
+      "owner_glb": "assets/district_500/bridge-park.glb",
+      "bytes": 3109558
+    },
+    {
+      "runtime_path": "assets/district_500/bridge-park_chongqing_district_plastered_wall_04_diff_1k.jpg",
+      "owner_glb": "assets/district_500/bridge-park.glb",
+      "bytes": 299230
+    },
+    {
+      "runtime_path": "assets/district_500/bridge-park_chongqing_district_tree_small_02_diff_2k.jpg",
+      "owner_glb": "assets/district_500/bridge-park.glb",
+      "bytes": 3170612
+    },
+    {
+      "runtime_path": "assets/district_500/bridge-park_chongqing_district_stone_floor_diff_2k.jpg",
+      "owner_glb": "assets/district_500/bridge-park.glb",
+      "bytes": 3800807
+    },
+    {
+      "runtime_path": "assets/district_500/bridge-park_chongqing_district_brown_mud_leaves_01_diff_2k.jpg",
+      "owner_glb": "assets/district_500/bridge-park.glb",
+      "bytes": 4539452
+    },
+    {
+      "runtime_path": "assets/district_500/bridge-park_chongqing_district_tile_cream_v4_diff.jpg",
+      "owner_glb": "assets/district_500/bridge-park.glb",
+      "bytes": 944116
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot61_chongqing_district_wood_table_worn_nor_gl_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot61.glb",
+      "bytes": 3142587
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot61_chongqing_district_island_tree_01_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot61.glb",
+      "bytes": 2954942
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot61_chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot61.glb",
+      "bytes": 482906
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot61_chongqing_district_rusty_painted_metal_rough_2k.png",
+      "owner_glb": "assets/district_500/park-plot61.glb",
+      "bytes": 2880902
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot61_chongqing_district_rusty_painted_metal_nor_gl_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot61.glb",
+      "bytes": 2293576
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot61_chongqing_district_tree_small_02_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot61.glb",
+      "bytes": 3170612
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot61_chongqing_district_stone_floor_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot61.glb",
+      "bytes": 3800807
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot61_chongqing_district_plastered_wall_04_diff_1k.jpg",
+      "owner_glb": "assets/district_500/park-plot61.glb",
+      "bytes": 299230
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot61_chongqing_district_brick_wall_08_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot61.glb",
+      "bytes": 2939913
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot61_chongqing_district_tile_blue_v4_diff.jpg",
+      "owner_glb": "assets/district_500/park-plot61.glb",
+      "bytes": 838708
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot61_chongqing_district_brown_mud_leaves_01_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot61.glb",
+      "bytes": 4539452
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot61_chongqing_district_island_tree_01_leaves_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot61.glb",
+      "bytes": 661175
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot61_chongqing_district_wood_table_worn_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot61.glb",
+      "bytes": 3108339
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot61_chongqing_district_rusty_painted_metal_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot61.glb",
+      "bytes": 1930544
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot61_chongqing_district_stone_wall_05_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot61.glb",
+      "bytes": 3504038
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot61_chongqing_district_tree_small_02_branch_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot61.glb",
+      "bytes": 1425692
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot61_chongqing_district_tile_cream_v4_diff.jpg",
+      "owner_glb": "assets/district_500/park-plot61.glb",
+      "bytes": 944116
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot61_chongqing_district_tree_small_02_leaves_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot61.glb",
+      "bytes": 961870
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot61_chongqing_district_concrete_wall_006_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot61.glb",
+      "bytes": 3109558
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot61_chongqing_district_roof_tiles_diff.jpg",
+      "owner_glb": "assets/district_500/park-plot61.glb",
+      "bytes": 384174
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot61_chongqing_district_island_tree_01_branches_diff_2k.jpg",
+      "owner_glb": "assets/district_500/park-plot61.glb",
+      "bytes": 1476655
+    },
+    {
+      "runtime_path": "assets/district_500/park-plot61_chongqing_district_wood_table_worn_rough_2k.png",
+      "owner_glb": "assets/district_500/park-plot61.glb",
+      "bytes": 4471551
+    },
+    {
+      "runtime_path": "assets/district_500/public-edges_chongqing_district_rusty_painted_metal_nor_gl_2k.jpg",
+      "owner_glb": "assets/district_500/public-edges.glb",
+      "bytes": 2293576
+    },
+    {
+      "runtime_path": "assets/district_500/public-edges_chongqing_district_wood_table_worn_diff_2k.jpg",
+      "owner_glb": "assets/district_500/public-edges.glb",
+      "bytes": 3108339
+    },
+    {
+      "runtime_path": "assets/district_500/public-edges_chongqing_district_plastered_wall_04_diff_1k.jpg",
+      "owner_glb": "assets/district_500/public-edges.glb",
+      "bytes": 299230
+    },
+    {
+      "runtime_path": "assets/district_500/public-edges_chongqing_district_stone_floor_diff_2k.jpg",
+      "owner_glb": "assets/district_500/public-edges.glb",
+      "bytes": 3800807
+    },
+    {
+      "runtime_path": "assets/district_500/public-edges_chongqing_district_stone_wall_05_diff_2k.jpg",
+      "owner_glb": "assets/district_500/public-edges.glb",
+      "bytes": 3504038
+    },
+    {
+      "runtime_path": "assets/district_500/public-edges_chongqing_district_rusty_painted_metal_rough_2k.png",
+      "owner_glb": "assets/district_500/public-edges.glb",
+      "bytes": 2880902
+    },
+    {
+      "runtime_path": "assets/district_500/public-edges_chongqing_district_concrete_wall_006_diff_2k.jpg",
+      "owner_glb": "assets/district_500/public-edges.glb",
+      "bytes": 3109558
+    },
+    {
+      "runtime_path": "assets/district_500/public-edges_chongqing_district_brick_wall_08_diff_2k.jpg",
+      "owner_glb": "assets/district_500/public-edges.glb",
+      "bytes": 2939913
+    },
+    {
+      "runtime_path": "assets/district_500/public-edges_chongqing_district_tile_cream_v4_diff.jpg",
+      "owner_glb": "assets/district_500/public-edges.glb",
+      "bytes": 944116
+    },
+    {
+      "runtime_path": "assets/district_500/public-edges_chongqing_district_wood_table_worn_nor_gl_2k.jpg",
+      "owner_glb": "assets/district_500/public-edges.glb",
+      "bytes": 3142587
+    },
+    {
+      "runtime_path": "assets/district_500/public-edges_chongqing_district_tile_blue_v4_diff.jpg",
+      "owner_glb": "assets/district_500/public-edges.glb",
+      "bytes": 838708
+    },
+    {
+      "runtime_path": "assets/district_500/public-edges_chongqing_district_roof_tiles_diff.jpg",
+      "owner_glb": "assets/district_500/public-edges.glb",
+      "bytes": 384174
+    },
+    {
+      "runtime_path": "assets/district_500/public-edges_chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+      "owner_glb": "assets/district_500/public-edges.glb",
+      "bytes": 482906
+    },
+    {
+      "runtime_path": "assets/district_500/public-edges_chongqing_district_wood_table_worn_rough_2k.png",
+      "owner_glb": "assets/district_500/public-edges.glb",
+      "bytes": 4471551
+    },
+    {
+      "runtime_path": "assets/district_500/public-edges_chongqing_district_rusty_painted_metal_diff_2k.jpg",
+      "owner_glb": "assets/district_500/public-edges.glb",
+      "bytes": 1930544
+    }
+  ]
+}

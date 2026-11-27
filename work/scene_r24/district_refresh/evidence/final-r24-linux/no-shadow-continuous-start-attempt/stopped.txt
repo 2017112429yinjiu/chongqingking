@@ -1,0 +1,1 @@
+2026-11-28T05:29:07+08:00 Separate Linux Mesa no-sun-shadows warmup reached CQ_READY in north but showed no DAY1 tests in over 3 minutes. Stopped only this verified wrapper and its north process; retained raw. Retry same SHA with engine --disable-render-loop for the still-frame cases, preserving actual script force_draw. Timing retains continuous rendering and runs alone.

@@ -25,14 +25,14 @@ const RIVERSIDE_TEA := {
 	"done":"茶饮已送达 · 6 元", "collected":"茶饮已领取 · 沿铺带送往交接架", "paid":"茶饮已签收 · 配送收入 +6 元",
 }
 
-func setup(world: Node3D, tea_stops: Array = []) -> void:
+func setup(world: Node3D, configured_stops: Array = [], configured_job: Dictionary = {}) -> void:
 	game=world
-	job=SHANCHENG if tea_stops.is_empty() else RIVERSIDE_TEA
-	if tea_stops.is_empty():
+	job=configured_job if not configured_job.is_empty() else (SHANCHENG if configured_stops.is_empty() else RIVERSIDE_TEA)
+	if configured_stops.is_empty():
 		var layout: Dictionary=JSON.parse_string(FileAccess.get_file_as_string("res://assets/district_500/shancheng_lane.json"))
 		stops=layout.public_stops
 	else:
-		stops=tea_stops
+		stops=configured_stops
 	sender=register_stop(0,job.sender,func():return available(),func():pick_up())
 	receiver=register_stop(1,job.receiver,func():return stage==Stage.CARRYING,func():deliver())
 	parcel=preload("res://scripts/takeaway_bag.gd").new()
@@ -52,7 +52,7 @@ func register_stop(index: int, title: String, allowed: Callable, action: Callabl
 	label.text=title
 	label.billboard=BaseMaterial3D.BILLBOARD_ENABLED
 	label.font_size=32
-	label.pixel_size=.0032 if job.id=="riverside_tea" else .006
+	label.pixel_size=.006 if job.id=="shancheng" else .0032
 	label.outline_size=5
 	label.visibility_range_end=22.
 	target.add_child(label)
@@ -67,10 +67,10 @@ func available() -> bool:
 
 func rest_parcel() -> void:
 	var completed: Array=stops[1].target
-	delivered_parcel.global_position=Vector3(completed[0],completed[1]-.066,completed[2])
+	delivered_parcel.global_position=Vector3(completed[0],stops[1].get("parcel_y",completed[1]-.066),completed[2])
 	delivered_parcel.visible=stage==Stage.DELIVERED
 	var p: Array=stops[0].target
-	parcel.global_position=Vector3(p[0],p[1]-.066,p[2])
+	parcel.global_position=Vector3(p[0],stops[0].get("parcel_y",p[1]-.066),p[2])
 
 func pick_up() -> void:
 	if not available():return

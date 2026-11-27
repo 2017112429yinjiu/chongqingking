@@ -7,6 +7,7 @@ var shelf_start:=Vector3.ZERO
 var shelf_yaw:=0.0
 var shancheng: Node3D
 var riverside_tea: Node3D
+var outer_market_handoff: Node3D
 var passage: Node3D
 var lunch: Node3D
 var free_wrist:BoneAttachment3D
@@ -43,8 +44,10 @@ const RESIDENT_NOTICES = [
 ]
 
 func public_handoff_in_progress() -> bool:
-	return (shancheng != null and shancheng.stage==shancheng.Stage.CARRYING) or \
-		(riverside_tea != null and riverside_tea.stage==riverside_tea.Stage.CARRYING)
+	for handoff: Node3D in [shancheng,riverside_tea,outer_market_handoff]:
+		if handoff and handoff.stage==handoff.Stage.CARRYING:
+			return true
+	return false
 
 func setup(main: Node3D) -> void:
 	owner_scene = main
@@ -456,12 +459,11 @@ func ui() -> Dictionary:
 	var destination_point: Vector3 = destination.global_position if order==Order.CARRYING else shop.global_position
 	var distance: float = Vector2(actor.body.global_position.x,actor.body.global_position.z).distance_to(Vector2(destination_point.x,destination_point.z))
 	var objective: String = ["到小面馆找店主","等待店主打包","领取餐食","山城里小院 · "+Unit.ADDRESSES[free_flat],"已送达 · 回面馆接下一单"][order]
-	if shancheng:
-		var local_panel: String=shancheng.panel()
-		if not local_panel.is_empty():return {"objective":local_panel,"prompt":prompt}
-	if riverside_tea:
-		var tea_panel: String=riverside_tea.panel()
-		if not tea_panel.is_empty():return {"objective":tea_panel,"prompt":prompt}
+	for handoff: Node3D in [shancheng,riverside_tea,outer_market_handoff]:
+		if handoff:
+			var local_panel: String=handoff.panel()
+			if not local_panel.is_empty():
+				return {"objective":local_panel,"prompt":prompt}
 	if passage and (passage.offered or passage.stage!=passage.Stage.IDLE or (not passage.last_receipt.is_empty() and not lunch.preview and not lunch.active)):
 		return {"objective":passage.panel(),"prompt":prompt}
 	if lunch:

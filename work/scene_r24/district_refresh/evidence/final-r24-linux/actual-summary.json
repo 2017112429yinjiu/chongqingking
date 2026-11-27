@@ -1,0 +1,230 @@
+{
+  "commit": "bb91ddda0823942662bf9941b3e61fd10e5a1ae0",
+  "engine": "4.6.3.stable.official.7d41c59c4",
+  "blender": "Blender 4.3.2",
+  "started": "2026-11-28T05:29:08+08:00",
+  "completed": "2026-11-28T06:13:22+08:00",
+  "cases": {
+    "bridge": {
+      "exit": 0,
+      "logged_error_count": 0,
+      "substantive_errors": [],
+      "checks": 42,
+      "passed": 42,
+      "failed": []
+    },
+    "counter": {
+      "exit": 0,
+      "logged_error_count": 0,
+      "substantive_errors": [],
+      "checks": 7,
+      "passed": 7,
+      "failed": []
+    },
+    "ground": {
+      "exit": 0,
+      "logged_error_count": 0,
+      "substantive_errors": [],
+      "routes": 30,
+      "sections": 16004,
+      "grid": 10000,
+      "visual_miss_followup": 28
+    },
+    "home": {
+      "exit": 0,
+      "logged_error_count": 0,
+      "substantive_errors": [],
+      "checks": 13,
+      "passed": 13,
+      "failed": []
+    },
+    "junction_profiles": {
+      "exit": 0,
+      "logged_error_count": 0,
+      "substantive_errors": [],
+      "checks": 67,
+      "passed": 67,
+      "failed": []
+    },
+    "lunch": {
+      "exit": 0,
+      "logged_error_count": 0,
+      "substantive_errors": [],
+      "checks": 35,
+      "passed": 35,
+      "failed": []
+    },
+    "market": {
+      "exit": 0,
+      "logged_error_count": 0,
+      "substantive_errors": [],
+      "checks": 5,
+      "passed": 5,
+      "failed": []
+    },
+    "north": {
+      "exit": 0,
+      "logged_error_count": 0,
+      "substantive_errors": [],
+      "checks": 45,
+      "passed": 45,
+      "failed": []
+    },
+    "older_crossings": {
+      "exit": 0,
+      "logged_error_count": 0,
+      "substantive_errors": [],
+      "checks": 19,
+      "passed": 19,
+      "failed": []
+    },
+    "pavement": {
+      "exit": 0,
+      "logged_error_count": 0,
+      "substantive_errors": [],
+      "checks": 10,
+      "passed": 10,
+      "failed": []
+    },
+    "player_back_0": {
+      "exit": 0,
+      "logged_error_count": 0,
+      "substantive_errors": []
+    },
+    "player_back_1": {
+      "exit": 0,
+      "logged_error_count": 0,
+      "substantive_errors": []
+    },
+    "player_back_2": {
+      "exit": 0,
+      "logged_error_count": 0,
+      "substantive_errors": []
+    },
+    "player_out_0": {
+      "exit": 0,
+      "logged_error_count": 0,
+      "substantive_errors": []
+    },
+    "player_out_1": {
+      "exit": 0,
+      "logged_error_count": 0,
+      "substantive_errors": []
+    },
+    "player_out_2": {
+      "exit": 0,
+      "logged_error_count": 0,
+      "substantive_errors": []
+    },
+    "repair": {
+      "exit": 0,
+      "logged_error_count": 0,
+      "substantive_errors": [],
+      "checks": 10,
+      "passed": 10,
+      "failed": []
+    },
+    "restore": {
+      "exit": 0,
+      "logged_error_count": 0,
+      "substantive_errors": [],
+      "checks": 5,
+      "passed": 5,
+      "failed": []
+    },
+    "ride": {
+      "exit": 137,
+      "logged_error_count": 0,
+      "substantive_errors": []
+    },
+    "sections": {
+      "exit": 0,
+      "logged_error_count": 0,
+      "substantive_errors": [],
+      "checks": 3,
+      "passed": 3,
+      "failed": []
+    },
+    "shancheng": {
+      "exit": 0,
+      "logged_error_count": 0,
+      "substantive_errors": [],
+      "checks": 12,
+      "passed": 12,
+      "failed": []
+    },
+    "single": {
+      "exit": 0,
+      "logged_error_count": 0,
+      "substantive_errors": [],
+      "checks": 8,
+      "passed": 8,
+      "failed": []
+    },
+    "sites": {
+      "exit": 0,
+      "logged_error_count": 0,
+      "substantive_errors": [],
+      "checks": 15,
+      "passed": 15,
+      "failed": []
+    },
+    "teaching": {
+      "exit": 0,
+      "logged_error_count": 0,
+      "substantive_errors": [],
+      "checks": 85,
+      "passed": 85,
+      "failed": []
+    },
+    "timing": {
+      "exit": 124,
+      "logged_error_count": 0,
+      "substantive_errors": []
+    },
+    "turns": {
+      "exit": 0,
+      "logged_error_count": 0,
+      "substantive_errors": [],
+      "checks": 7,
+      "passed": 7,
+      "failed": []
+    }
+  },
+  "expected_surface_routes": 26,
+  "drives": {
+    "out": {
+      "batches": {
+        "0": 9,
+        "1": 9,
+        "2": 8
+      },
+      "count": 26,
+      "unique": 26,
+      "passed": 26,
+      "missing_sorted": [],
+      "not_passed": []
+    },
+    "back": {
+      "batches": {
+        "0": 9,
+        "1": 9,
+        "2": 8
+      },
+      "count": 26,
+      "unique": 26,
+      "passed": 26,
+      "missing_sorted": [],
+      "not_passed": []
+    }
+  },
+  "mentor": {
+    "routes": 10,
+    "legs": 20,
+    "complete": 20,
+    "distance_m": 2721.58
+  },
+  "timing": null,
+  "official_report_exit": "1",
+  "disk": "Filesystem      Size  Used Avail Use% Mounted on\noverlay          32G   30G  195M 100% /workspace\nshm             8.8G  748M  8.1G   9% /dev/shm"
+}

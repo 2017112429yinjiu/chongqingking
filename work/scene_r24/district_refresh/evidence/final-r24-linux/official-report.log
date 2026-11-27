@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/chongqing-refresh/work/scene_r24/district_patrol/entry_corner/report.py", line 21, in <module>
+    assert len(mentor_legs) == 28 and all(leg['completed'] for leg in mentor_legs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
