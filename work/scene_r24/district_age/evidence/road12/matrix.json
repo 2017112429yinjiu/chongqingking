@@ -1,0 +1,615 @@
+{
+  "baseline_commit": "d7a47f31bfedd7f9129003aad9fd2bb5665606a4",
+  "run": "road12-20261127T124818Z",
+  "engine": "Godot 4.6.3 official Linux, headless physics, fixed 60 Hz",
+  "scene": "res://first_shift.tscn",
+  "road_queries_sha256": "f298574e4248cb55771b0e231195d05f911c09faab5bf78c7ee1076492543f00",
+  "expected_surface_routes_per_direction": 26,
+  "excluded_historical_underground_ids": [
+    10,
+    11,
+    20,
+    21
+  ],
+  "batch_results": [
+    {
+      "direction": "out",
+      "batch": 0,
+      "raw_directory": "registered-out-0",
+      "exit_code": 0,
+      "passed": 9,
+      "routes": [
+        {
+          "id": 0,
+          "route": "49182408",
+          "part": 0.0,
+          "reached": 75,
+          "targets": 75,
+          "state": "passed"
+        },
+        {
+          "id": 3,
+          "route": "176034707",
+          "part": 0.0,
+          "reached": 42,
+          "targets": 42,
+          "state": "passed"
+        },
+        {
+          "id": 6,
+          "route": "830761786",
+          "part": 0.0,
+          "reached": 4,
+          "targets": 4,
+          "state": "passed"
+        },
+        {
+          "id": 9,
+          "route": "1189963598",
+          "part": 0.0,
+          "reached": 106,
+          "targets": 106,
+          "state": "passed"
+        },
+        {
+          "id": 12,
+          "route": "1256840008",
+          "part": 0.0,
+          "reached": 3,
+          "targets": 3,
+          "state": "passed"
+        },
+        {
+          "id": 15,
+          "route": "1375242618",
+          "part": 0.0,
+          "reached": 18,
+          "targets": 18,
+          "state": "passed"
+        },
+        {
+          "id": 18,
+          "route": "734116598",
+          "part": 0.0,
+          "reached": 119,
+          "targets": 119,
+          "state": "passed"
+        },
+        {
+          "id": 24,
+          "route": "Main hillside lane",
+          "part": 0.0,
+          "reached": 110,
+          "targets": 110,
+          "state": "passed"
+        },
+        {
+          "id": 27,
+          "route": "Upper courtyard walk",
+          "part": 0.0,
+          "reached": 68,
+          "targets": 68,
+          "state": "passed"
+        }
+      ]
+    },
+    {
+      "direction": "out",
+      "batch": 1,
+      "raw_directory": "fixed-out-1",
+      "exit_code": 0,
+      "passed": 9,
+      "routes": [
+        {
+          "id": 1,
+          "route": "59146775",
+          "part": 0.0,
+          "reached": 32,
+          "targets": 32,
+          "state": "passed"
+        },
+        {
+          "id": 4,
+          "route": "734116595",
+          "part": 0.0,
+          "reached": 52,
+          "targets": 52,
+          "state": "passed"
+        },
+        {
+          "id": 7,
+          "route": "1189963547",
+          "part": 0.0,
+          "reached": 36,
+          "targets": 36,
+          "state": "passed"
+        },
+        {
+          "id": 13,
+          "route": "1324001442",
+          "part": 0.0,
+          "reached": 7,
+          "targets": 7,
+          "state": "passed"
+        },
+        {
+          "id": 16,
+          "route": "1513362409",
+          "part": 0.0,
+          "reached": 6,
+          "targets": 6,
+          "state": "passed"
+        },
+        {
+          "id": 19,
+          "route": "734116601",
+          "part": 0.0,
+          "reached": 70,
+          "targets": 70,
+          "state": "passed"
+        },
+        {
+          "id": 22,
+          "route": "1328811307",
+          "part": 0.0,
+          "reached": 4,
+          "targets": 4,
+          "state": "passed"
+        },
+        {
+          "id": 25,
+          "route": "West residential link",
+          "part": 0.0,
+          "reached": 92,
+          "targets": 92,
+          "state": "passed"
+        },
+        {
+          "id": 28,
+          "route": "Old school approach",
+          "part": 0.0,
+          "reached": 38,
+          "targets": 38,
+          "state": "passed"
+        }
+      ]
+    },
+    {
+      "direction": "out",
+      "batch": 2,
+      "raw_directory": "fixed-out-2",
+      "exit_code": 0,
+      "passed": 8,
+      "routes": [
+        {
+          "id": 2,
+          "route": "59146775",
+          "part": 1.0,
+          "reached": 40,
+          "targets": 40,
+          "state": "passed"
+        },
+        {
+          "id": 5,
+          "route": "734116597",
+          "part": 0.0,
+          "reached": 74,
+          "targets": 74,
+          "state": "passed"
+        },
+        {
+          "id": 8,
+          "route": "1189963552",
+          "part": 0.0,
+          "reached": 19,
+          "targets": 19,
+          "state": "passed"
+        },
+        {
+          "id": 14,
+          "route": "1375242616",
+          "part": 0.0,
+          "reached": 10,
+          "targets": 10,
+          "state": "passed"
+        },
+        {
+          "id": 17,
+          "route": "734116594",
+          "part": 0.0,
+          "reached": 6,
+          "targets": 6,
+          "state": "passed"
+        },
+        {
+          "id": 23,
+          "route": "1328811309",
+          "part": 0.0,
+          "reached": 39,
+          "targets": 39,
+          "state": "passed"
+        },
+        {
+          "id": 26,
+          "route": "Courtyard approach",
+          "part": 0.0,
+          "reached": 55,
+          "targets": 55,
+          "state": "passed"
+        },
+        {
+          "id": 29,
+          "route": "East photo alley",
+          "part": 0.0,
+          "reached": 48,
+          "targets": 48,
+          "state": "passed"
+        }
+      ]
+    },
+    {
+      "direction": "back",
+      "batch": 0,
+      "raw_directory": "registered-back-0",
+      "exit_code": 0,
+      "passed": 9,
+      "routes": [
+        {
+          "id": 0,
+          "route": "49182408",
+          "part": 0.0,
+          "reached": 75,
+          "targets": 75,
+          "state": "passed"
+        },
+        {
+          "id": 3,
+          "route": "176034707",
+          "part": 0.0,
+          "reached": 42,
+          "targets": 42,
+          "state": "passed"
+        },
+        {
+          "id": 6,
+          "route": "830761786",
+          "part": 0.0,
+          "reached": 4,
+          "targets": 4,
+          "state": "passed"
+        },
+        {
+          "id": 9,
+          "route": "1189963598",
+          "part": 0.0,
+          "reached": 106,
+          "targets": 106,
+          "state": "passed"
+        },
+        {
+          "id": 12,
+          "route": "1256840008",
+          "part": 0.0,
+          "reached": 3,
+          "targets": 3,
+          "state": "passed"
+        },
+        {
+          "id": 15,
+          "route": "1375242618",
+          "part": 0.0,
+          "reached": 18,
+          "targets": 18,
+          "state": "passed"
+        },
+        {
+          "id": 18,
+          "route": "734116598",
+          "part": 0.0,
+          "reached": 119,
+          "targets": 119,
+          "state": "passed"
+        },
+        {
+          "id": 24,
+          "route": "Main hillside lane",
+          "part": 0.0,
+          "reached": 110,
+          "targets": 110,
+          "state": "passed"
+        },
+        {
+          "id": 27,
+          "route": "Upper courtyard walk",
+          "part": 0.0,
+          "reached": 68,
+          "targets": 68,
+          "state": "passed"
+        }
+      ]
+    },
+    {
+      "direction": "back",
+      "batch": 1,
+      "raw_directory": "fixed-back-1",
+      "exit_code": 0,
+      "passed": 9,
+      "routes": [
+        {
+          "id": 1,
+          "route": "59146775",
+          "part": 0.0,
+          "reached": 32,
+          "targets": 32,
+          "state": "passed"
+        },
+        {
+          "id": 4,
+          "route": "734116595",
+          "part": 0.0,
+          "reached": 52,
+          "targets": 52,
+          "state": "passed"
+        },
+        {
+          "id": 7,
+          "route": "1189963547",
+          "part": 0.0,
+          "reached": 36,
+          "targets": 36,
+          "state": "passed"
+        },
+        {
+          "id": 13,
+          "route": "1324001442",
+          "part": 0.0,
+          "reached": 7,
+          "targets": 7,
+          "state": "passed"
+        },
+        {
+          "id": 16,
+          "route": "1513362409",
+          "part": 0.0,
+          "reached": 6,
+          "targets": 6,
+          "state": "passed"
+        },
+        {
+          "id": 19,
+          "route": "734116601",
+          "part": 0.0,
+          "reached": 70,
+          "targets": 70,
+          "state": "passed"
+        },
+        {
+          "id": 22,
+          "route": "1328811307",
+          "part": 0.0,
+          "reached": 4,
+          "targets": 4,
+          "state": "passed"
+        },
+        {
+          "id": 25,
+          "route": "West residential link",
+          "part": 0.0,
+          "reached": 92,
+          "targets": 92,
+          "state": "passed"
+        },
+        {
+          "id": 28,
+          "route": "Old school approach",
+          "part": 0.0,
+          "reached": 38,
+          "targets": 38,
+          "state": "passed"
+        }
+      ]
+    },
+    {
+      "direction": "back",
+      "batch": 2,
+      "raw_directory": "fixed-back-2",
+      "exit_code": 0,
+      "passed": 8,
+      "routes": [
+        {
+          "id": 2,
+          "route": "59146775",
+          "part": 1.0,
+          "reached": 40,
+          "targets": 40,
+          "state": "passed"
+        },
+        {
+          "id": 5,
+          "route": "734116597",
+          "part": 0.0,
+          "reached": 74,
+          "targets": 74,
+          "state": "passed"
+        },
+        {
+          "id": 8,
+          "route": "1189963552",
+          "part": 0.0,
+          "reached": 19,
+          "targets": 19,
+          "state": "passed"
+        },
+        {
+          "id": 14,
+          "route": "1375242616",
+          "part": 0.0,
+          "reached": 10,
+          "targets": 10,
+          "state": "passed"
+        },
+        {
+          "id": 17,
+          "route": "734116594",
+          "part": 0.0,
+          "reached": 6,
+          "targets": 6,
+          "state": "passed"
+        },
+        {
+          "id": 23,
+          "route": "1328811309",
+          "part": 0.0,
+          "reached": 39,
+          "targets": 39,
+          "state": "passed"
+        },
+        {
+          "id": 26,
+          "route": "Courtyard approach",
+          "part": 0.0,
+          "reached": 55,
+          "targets": 55,
+          "state": "passed"
+        },
+        {
+          "id": 29,
+          "route": "East photo alley",
+          "part": 0.0,
+          "reached": 48,
+          "targets": 48,
+          "state": "passed"
+        }
+      ]
+    }
+  ],
+  "case_12": {
+    "out": {
+      "end": "(88.24778, 7.988192, 97.2047)",
+      "goal": "(89.102, 7.9363, 96.955)",
+      "history": [
+        [
+          84.0820007324219,
+          8.33577346801758,
+          98.4169998168945,
+          1
+        ],
+        [
+          84.3168258666992,
+          8.31392192840576,
+          98.3489608764648,
+          1
+        ],
+        [
+          84.9755172729492,
+          8.23554992675781,
+          98.1572341918945,
+          2
+        ],
+        [
+          86.060432434082,
+          8.12340831756592,
+          97.8412704467773,
+          2
+        ],
+        [
+          87.5052337646484,
+          8.02040863037109,
+          97.4204940795898,
+          3
+        ]
+      ],
+      "id": 12,
+      "last_contact": {},
+      "part": 0.0,
+      "reached": 3,
+      "route": "1256840008",
+      "spawn_fixture": {
+        "body": "COL_EastRoad_1256840008",
+        "historical_point": "(84.082, 7.8529, 98.417)",
+        "normal": "(0.110191, 0.993513, -0.02811)",
+        "on_ceiling": false,
+        "on_floor": true,
+        "position": "(84.082, 8.278996, 98.417)",
+        "settled_clearance_m": 0.0567770004272461,
+        "valid": true,
+        "vertical_window_m": [
+          8.19290003180504,
+          8.36290001869202
+        ]
+      },
+      "start": "(84.082, 8.335773, 98.417)",
+      "state": "passed",
+      "targets": 3
+    },
+    "back": {
+      "end": "(84.97076, 8.229779, 98.15918)",
+      "goal": "(84.082, 7.8529, 98.417)",
+      "history": [
+        [
+          89.1019973754883,
+          7.95882034301758,
+          96.9550018310547,
+          1
+        ],
+        [
+          88.8807830810547,
+          7.96935081481934,
+          97.0228500366211,
+          1
+        ],
+        [
+          88.2316055297852,
+          7.98860025405884,
+          97.2168731689453,
+          2
+        ],
+        [
+          87.1560134887695,
+          8.0405797958374,
+          97.5329742431641,
+          2
+        ],
+        [
+          85.7129211425781,
+          8.15071678161621,
+          97.9460296630859,
+          3
+        ]
+      ],
+      "id": 12,
+      "last_contact": {},
+      "part": 0.0,
+      "reached": 3,
+      "route": "1256840008",
+      "spawn_fixture": {
+        "body": "COL_EastRoad_1256840008",
+        "historical_point": "(89.102, 7.9363, 96.955)",
+        "normal": "(-0.003702, 0.999993, 0.001039)",
+        "on_ceiling": false,
+        "on_floor": true,
+        "position": "(89.102, 7.951555, 96.955)",
+        "settled_clearance_m": 0.00726509094238281,
+        "valid": true,
+        "vertical_window_m": [
+          7.94029980106279,
+          8.01629979908466
+        ]
+      },
+      "start": "(89.102, 7.95882, 96.955)",
+      "state": "passed",
+      "targets": 3
+    }
+  },
+  "totals": {
+    "out": {
+      "passed": 26,
+      "expected": 26
+    },
+    "back": {
+      "passed": 26,
+      "expected": 26
+    }
+  },
+  "other_directional_cases_still_passing": 50
+}
