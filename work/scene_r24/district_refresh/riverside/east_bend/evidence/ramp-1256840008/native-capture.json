@@ -1,0 +1,45 @@
+{
+  "Hz": 60,
+  "baseline": false,
+  "controller": "res://scripts/scooter_controller.gd",
+  "engine": "4.6.3-stable (official)",
+  "initial_placements_per_leg": 1,
+  "native_frames": {
+    "downhill-brake-stop": {
+      "rider_enu": [
+        66.6450805664062,
+        -105.406761169434,
+        10.5789947509766
+      ],
+      "saved": true,
+      "size": [
+        900,
+        506
+      ]
+    },
+    "toward-jiefang-merge": {
+      "rider_enu": [
+        89.1236953735352,
+        -97.0667190551758,
+        7.96541452407837
+      ],
+      "saved": true,
+      "size": [
+        900,
+        506
+      ]
+    }
+  },
+  "normal_one_way": "1256839997 → 1256840008 → 830761786",
+  "reverse_test_closed": true,
+  "scene": "res://first_shift.tscn",
+  "teleports_while_riding": 0,
+  "vehicle": "PlayerElectricScooter",
+  "backend": [
+    "WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.",
+    "OpenGL API 4.5 (Core Profile) Mesa 25.0.7-2+deb13u1 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 19.1.7, 256 bits)",
+    "WARNING: Subsurface scattering is only available when using the Forward+ renderer.",
+    "ERROR: Texture with GL ID of 667: leaked 349524 bytes.",
+    "ERROR: Texture with GL ID of 668: leaked 349524 bytes."
+  ]
+}

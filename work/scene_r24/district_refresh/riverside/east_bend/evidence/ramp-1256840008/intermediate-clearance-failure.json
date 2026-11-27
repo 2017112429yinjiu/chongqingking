@@ -1,0 +1,37 @@
+{
+  "ramp_grade": 0.167310794802967,
+  "adjacent_clearance_m": 0.246908187866211,
+  "failed_points": [
+    {
+      "floor": {
+        "enu": [
+          85.4080505371094,
+          -97.2756118774414,
+          7.87227153778076
+        ],
+        "name": "COL_Road_1189963598_0_asphalt",
+        "normal": [
+          -0.0171009283512831,
+          0.00245615234598517,
+          0.999850809574127
+        ]
+      },
+      "lane": "1189963598",
+      "offset_m": -1.2,
+      "overhead": {
+        "enu": [
+          85.4080505371094,
+          -97.2756118774414,
+          8.11917972564697
+        ],
+        "name": "COL_EastRoad_1256840008",
+        "normal": [
+          -0.077644057571888,
+          -0.0226087309420109,
+          -0.996724784374237
+        ]
+      }
+    }
+  ],
+  "cloud_output": "/workspace/work/runtime/district-refresh/new-priority/west/riverside-east-67-69/ramp-1256840008/candidate-01"
+}

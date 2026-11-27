@@ -22,3 +22,5 @@ bash work/scene_r24/district_500/play.sh --software -- --explore-500 --raijiapo-
 ```
 
 `walk.gd` 使用正常 `first_shift.tscn`，用全新 `CQ_QA_DIR` 和 `--fixed-fps 60`，游戏参数为 `--day-one-test --qa-still-frames --explore-500 --raijiapo-east`。原机位用 Compatibility、900×560 窗体和 `--qa-no-sun-shadows` 复拍。 [画面、检测及实走](evidence)
+
+外弯 `1256840008` 已沿全长接到节点 `1865946191` 的现有南区路和解放西路沥青面，照测得的车面高程修平纵断面。正常场景里的玩家电瓶车通过顺行与封闭反向验收，三条原步行线路也已重走。 [断面、骑行和复核入口](evidence/ramp-1256840008)

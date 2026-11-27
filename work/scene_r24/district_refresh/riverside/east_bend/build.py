@@ -220,22 +220,34 @@ def paint_polygon(mesh, row, width, depth, offsets, finish):
     mesh.face([(*(p+t*a+l*b),z+.023+depth*a) for a,b in offsets],finish)
 
 
-def make_road(name, points, elevation, half_width, finish, fascia, pale, red=None, warm=None, split=False, arrow_dir=1):
+def make_road(name, points, elevation, half_width, finish, fascia, pale, red=None, warm=None,
+              split=False, arrow_dir=1, thickness=None, station_spacing=2.25, centre_seam=False):
     """Road and paint share one graded section, with no floating road markings."""
-    guide=samples(points)
+    guide=samples(points,station_spacing)
     rows=[(*row,elevation(row,guide[-1][3])) for row in guide]
     shape=Mesh("COL_EastRoad_"+name)
     stripes=Mesh("EastRoad_Lines_"+name)
+    def widths(s):
+        w=half_width(s,guide[-1][3]) if callable(half_width) else half_width
+        return w if isinstance(w,tuple) else (w,w)
+
+    def coords(row):
+        p,t,side,s,z=row
+        right,left=widths(s)
+        return [(*(p-side*right),z),(*(p+side*left),z)]
+
     for j,(a,b) in enumerate(zip(rows,rows[1:])):
-        def coords(row):
-            p,t,side,s,z=row
-            w=half_width(s,guide[-1][3]) if callable(half_width) else half_width
-            return [(*(p-side*w),z),(*(p+side*w),z)]
         a0,a1=coords(a)
         b0,b1=coords(b)
         coating = red[0] if red and red[1]<=.5*(a[3]+b[3])<=red[2] else finish
-        shape.face([a0,b0,b1,a1],coating)
-        va0,va1,vb0,vb1=[(*p[:2],p[2]-.54) for p in (a0,a1,b0,b1)]
+        if centre_seam:
+            centre_a,centre_b=(*a[0],a[4]),(*b[0],b[4])
+            shape.face([a0,b0,centre_b,centre_a],coating)
+            shape.face([centre_a,centre_b,b1,a1],coating)
+        else:
+            shape.face([a0,b0,b1,a1],coating)
+        da,db=(thickness(a[3]),thickness(b[3])) if thickness else (.54,.54)
+        va0,va1,vb0,vb1=[(*p[:2],p[2]-d) for p,d in zip((a0,a1,b0,b1),(da,da,db,db))]
         shape.face([a0,va0,vb0,b0],fascia)
         shape.face([a1,b1,vb1,va1],fascia)
         shape.face([va0,va1,vb1,vb0],fascia)
@@ -248,9 +260,10 @@ def make_road(name, points, elevation, half_width, finish, fascia, pale, red=Non
             bc=Vector(b0).lerp(Vector(b1),(fraction+1.)*.5)
             stripes.face([ac+Vector((*(a[2]*-.042),.016)),bc+Vector((*(b[2]*-.042),.016)),
                           bc+Vector((*(b[2]*.042),.016)),ac+Vector((*(a[2]*.042),.016))],pale)
-        if j%3==1 and not callable(half_width) and half_width>=2.34:
+        if j%3==1 and min(widths(a[3]))>=2.34:
             paint_polygon(stripes,a,0.,(b[4]-a[4])/(b[3]-a[3]),
-                          ((0,-.056),(1.66,-.056),(1.66,.056),(0,.056)),pale)
+                          ((0,-.056),(1.16,-.056),(1.16,.056),(0,.056)) if station_spacing<1.5
+                          else ((0,-.056),(1.66,-.056),(1.66,.056),(0,.056)),pale)
         if red and j%7==3 and red[1]<a[3]<red[2]:
             arrow = ((-1.60,-.115),(.35,-.115),(.35,-.445),(1.30,0),(.35,.445),(.35,.115),(-1.60,.115))
             paint_polygon(stripes,a,0.,(b[4]-a[4])/(b[3]-a[3]),
@@ -261,11 +274,11 @@ def make_road(name, points, elevation, half_width, finish, fascia, pale, red=Non
     return [shape.save(),stripes.save()], [(list(r[0]),r[3],r[4]) for r in rows]
 
 
-def columns_for(name, rows, ground, concrete, start=5):
+def columns_for(name, rows, ground, concrete, start=5, stop=None):
     caps=Mesh("COL_EastRoadPiers_"+name)
     kept=[]
     for p,d,z in rows:
-        if d<start or d>rows[-1][1]-3. or (kept and d<kept[-1]+9.):
+        if d<start or d>rows[-1][1]-3. or (stop is not None and d>stop) or (kept and d<kept[-1]+9.):
             continue
         foot=ground(p)
         soffit=z-.534
@@ -277,6 +290,69 @@ def columns_for(name, rows, ground, concrete, start=5):
         caps.solid(ring(foot-.22,.55),ring(soffit-.23,.49),concrete)
         caps.solid(ring(soffit-.23,.49),ring(soffit+.04,.72),concrete)
     return [caps.save()] if kept else []
+
+
+def rounded_axis(points):
+    """Smooth each bend through its exact registered vertices before laying out cross-sections."""
+    points=list(map(Vector,points))
+    tangents=[]
+    for i,p in enumerate(points):
+        before=(p-points[i-1]).normalized() if i else Vector((0.,0.))
+        after=(points[i+1]-p).normalized() if i+1<len(points) else Vector((0.,0.))
+        tangents.append((before+after).normalized())
+    result=[list(points[0])]
+    for i,(a,b) in enumerate(zip(points,points[1:])):
+        length=(b-a).length
+        count=ceil(length/.94)
+        u,v=tangents[i]*length,tangents[i+1]*length
+        for j in range(1,count+1):
+            t=j/count
+            centre=((2*t**3-3*t*t+1)*a+(t**3-2*t*t+t)*u+
+                    (-2*t**3+3*t*t)*b+(t**3-t*t)*v)
+            result.append(list(centre))
+    return result
+
+
+def full_length_ramp(points, control, ground, asphalt, concrete, pale):
+    z0,z1=control["road_deck_heights"]
+    g0,g1=control["end_tangents"]
+    entry,exit=control["easing_lengths_m"]
+
+    def elevation(row,total):
+        station=row[3]
+        grade=(z1-z0-(g0*entry+g1*exit)*.5)/(total-(entry+exit)*.5)
+        if station<entry:
+            return z0+g0*station+(grade-g0)*station**2/(2*entry)
+        if station>total-exit:
+            return z1-g1*(total-station)+(g1-grade)*(total-station)**2/(2*exit)
+        return z0+(g0+grade)*entry*.5+(station-entry)*grade
+
+    def width(s,total):
+        departure=clamp((s-13.8)/16.)
+        merge=clamp((s-(total-1.6))/1.6)
+        return lerp(3.14,2.68,departure),lerp(lerp(3.14,.62,departure),2.34,merge)
+
+    def thickness(s):
+        return lerp(.54,.228,clamp((s-31.3)/7.8))
+
+    road,rows=make_road("1256840008",rounded_axis(points),elevation,width,asphalt,concrete,pale,
+                       thickness=thickness,station_spacing=1.28,centre_seam=True)
+    return road+columns_for("1256840008",rows,ground,concrete,stop=28.7),rows
+
+
+def ramp_merge(control, asphalt):
+    """Fill the local seam between the measured Nanqu and West Jiefang asphalt faces."""
+    mesh=Mesh("COL_EastRoad_RampMerge_1865946191")
+    rows=[]
+    node=Vector(control["node_enu"])
+    axis=Vector(control["join_direction"]).normalized()
+    normal=Vector((-axis.y,axis.x))
+    for station,half,deck in control["merge_sections"]:
+        center=node+axis*station
+        rows.append([(*(center-normal*half),deck),(*(center+normal*half),deck)])
+    for a,b in zip(rows,rows[1:]):
+        mesh.face([a[0],b[0],b[1],a[1]],asphalt)
+    return mesh.save()
 
 
 def portal(way, tunnel, axes, bridge, ground, concrete, asphalt, pale, shade):
@@ -354,6 +430,7 @@ def ground_strokes(name, points, ground_faces, project, white):
 def build(temp):
     assert Path(bpy.data.filepath).name in ("city_and_outer.before_east.local.blend","city_and_outer.local.blend")
     c=read(HERE/"field-controls.json")
+    ramp_grade=read(HERE/"grade-1256840008.json")
     retired=read(HERE/"retired-faces.json")
     bridge=read(ASSETS/"bridge-park.json")
     scene=bpy.context.scene
@@ -408,15 +485,15 @@ def build(temp):
         pieces.extend(new+columns_for(way,rows,ground,concrete))
         profiles[way]=rows
 
-    # The east outer ramp follows its registered approach to a land-supported end.
+    new,rows=full_length_ramp(axes["1256840008"],ramp_grade,ground,asphalt,concrete,white)
+    profiles["1256840008"]=rows
+    pieces.extend(new+[ramp_merge(ramp_grade,asphalt)])
+
     for way,following,start_height,half in (
-        ("1256840008",[],z_at_old(bridge,"1256839997",axes["1256840008"][0]),3.14),
         ("1375242615",axes["1375242616"][1:3],z_at_old(bridge,"1256839997",axes["1375242615"][0]),2.29),
         ("1375242617",[[30.46,-102.73]],15.82,2.36),
     ):
         coords=(axes[way][::-1] if way=="1375242617" else axes[way])+following
-        if way=="1256840008":
-            coords=coords[:4]+[list(prior["centre_at"](coords,76.2))]
         def approach(row,total,initial=start_height,way=way):
             p,t,l,s=row
             land=ground(p)
