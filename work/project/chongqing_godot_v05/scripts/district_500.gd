@@ -253,6 +253,8 @@ static func install(city: Node3D) -> Dictionary:
 	var liangtingzi_active := north_active and not "--qa-without-liangtingzi-45-46" in OS.get_cmdline_user_args()
 	if liangtingzi_active:
 		install_street_group(district, LIANGTINGZI, LIANGTINGZI_SITE, "LiangtingziPublicEdges")
+		var liangtingzi: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(LIANGTINGZI_SITE))
+		add_public_edge_trees(district, district.get_node("LiangtingziPublicEdges"), liangtingzi.get("trees", []))
 	var mati34_active := liangtingzi_active and not "--qa-without-mati-34-35" in OS.get_cmdline_user_args()
 	if mati34_active:
 		install_street_group(district, MATI34_35, MATI34_35_SITE, "Mati34And35PublicEdges")
@@ -261,16 +263,7 @@ static func install(city: Node3D) -> Dictionary:
 		install_street_group(district, ZHONGXING_PUBLIC_EDGES, ZHONGXING_PUBLIC_EDGES_SITE, "ZhongxingPublicEdges")
 		var plaza: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(ZHONGXING_PUBLIC_EDGES_SITE))
 		retired_bridge_plots.append_array(plaza.retired_plots)
-		var public_layer := district.get_node("ZhongxingPublicEdges")
-		for row: Dictionary in plaza.trees:
-			var donor := district.find_child(row.donor,true,false) as MeshInstance3D
-			assert(donor,row.donor)
-			var tree := donor.duplicate() as MeshInstance3D
-			tree.name = row.name
-			tree.position = enu(row.enu)
-			tree.scale *= float(row.scale)
-			tree.rotation.y += float(row.yaw)
-			public_layer.add_child(tree)
+		add_public_edge_trees(district, district.get_node("ZhongxingPublicEdges"), plaza.trees)
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -461,6 +454,18 @@ static func install(city: Node3D) -> Dictionary:
 		"raijiapo_east_sha256": FileAccess.get_sha256(RAIJIAPO_EAST),
 		"binjiang_sha256": FileAccess.get_sha256(BINJIANG),
 		"retired_internal_context": local_frame != null, "osm_building_ids": retire}
+
+
+static func add_public_edge_trees(district: Node3D, layer: Node, trees: Array) -> void:
+	for row: Dictionary in trees:
+		var donor := district.find_child(row.donor,true,false) as MeshInstance3D
+		assert(donor,row.donor)
+		var tree := donor.duplicate() as MeshInstance3D
+		tree.name = row.name
+		tree.position = enu(row.enu)
+		tree.scale *= float(row.scale)
+		tree.rotation.y += float(row.yaw)
+		layer.add_child(tree)
 
 
 static func install_street_group(district: Node3D, model_path: String, plan_path: String, group_name: String) -> void:

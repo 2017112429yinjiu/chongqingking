@@ -597,34 +597,5257 @@
           179.64
         ],
         [
-          155.2,
-          177.9
+          154.55,
+          177.36
         ],
         [
-          156.8,
-          176.03
+          155.5,
+          174.94
         ],
         [
-          158.4,
-          174.36
+          156.4,
+          172.86
         ],
         [
-          159.9,
-          172.71
+          157.2,
+          170.6
         ],
         [
-          161.7,
-          170.92
+          157.64,
+          168.84
         ]
       ],
       "marks": [
         0.35,
-        2.1,
-        4.0,
-        6.4,
-        8.0,
-        10.65
+        2.4,
+        4.7,
+        6.95,
+        9.0,
+        11.1
       ]
     }
-  }
+  },
+  "observations": {
+    "brick_pier_45_46": {
+      "match_en": [
+        156.34967270185956,
+        169.08323259125504
+      ],
+      "projected_azimuths_deg": [
+        150.19069897320674,
+        168.60304954642228
+      ],
+      "distance_along_ray_m": [
+        13.911377159366923,
+        11.89359810806774
+      ],
+      "lateral_residual_m": [
+        -8.526512829121202e-14,
+        -5.684341886080802e-14
+      ],
+      "source_poses": [
+        {
+          "plot": 45,
+          "pano": "09029200121906291518058701L",
+          "heading": 149,
+          "control_pixel_x": 409,
+          "files": {
+            "09029200121906291518058701L.json": {
+              "url": "https://mapsv0.bdimg.com/?qt=sdata&sid=09029200121906291518058701L",
+              "bytes": 2378,
+              "sha256": "e834735ad9020cd1c0f53571da01b958df8bc68625b20d5ca52a6338d1e8311b"
+            },
+            "09029200121906291518058701L-149.jpg": {
+              "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200121906291518058701L&heading=149&pitch=0&fovy=60&width=800&height=500",
+              "bytes": 117634,
+              "sha256": "fbd2dd760395de6a22668a489ccf18d1ce4007575245e42d5c282abec327d2aa"
+            }
+          },
+          "date": "20190629",
+          "raw_mc_cm": [
+            1186412961,
+            342562673
+          ],
+          "source_height_metadata": 1.8,
+          "bd09": [
+            106.5761299654424,
+            29.55829345201806
+          ],
+          "gcj02": [
+            106.56968845465605,
+            29.5520082250019
+          ],
+          "wgs84": [
+            106.56599183761251,
+            29.554884297359163
+          ],
+          "gcj_roundtrip_max_degrees": 4.192202140984591e-12,
+          "en": [
+            149.43412092264853,
+            181.15392263197793
+          ],
+          "legacy_en": [
+            149.3999,
+            163.39595999999997
+          ],
+          "legacy_published_angle": 358,
+          "legacy_reference": "857d4b738a3487d4ba0879773dd736e01e9eda26db384a5b3176d69a696989e5",
+          "delta_east_north_m": [
+            0.034220922648529495,
+            17.75796263197796
+          ],
+          "old_centre_range_m": 13.241825236864834,
+          "old_centre_bearing_deg": 180.88291807010452,
+          "road_controls": [
+            {
+              "way": 1025797976,
+              "name": "凉亭子",
+              "version": "2",
+              "tags": {
+                "highway": "residential",
+                "name": "凉亭子"
+              },
+              "corrected_m": 2.204910501458813,
+              "legacy_m": 17.268986415509858,
+              "corrected_projection_en": [
+                148.27018599555174,
+                183.02659072988732
+              ]
+            },
+            {
+              "way": 1025797980,
+              "name": "管家巷",
+              "version": "1",
+              "tags": {
+                "highway": "footway",
+                "name": "管家巷"
+              },
+              "corrected_m": 3.179322272833368,
+              "legacy_m": 20.855711103846186,
+              "corrected_projection_en": [
+                150.2155596080788,
+                184.2357149182048
+              ]
+            },
+            {
+              "way": 809889613,
+              "name": null,
+              "version": "2",
+              "tags": {
+                "highway": "service"
+              },
+              "corrected_m": 43.81576332163042,
+              "legacy_m": 59.469454308517705,
+              "corrected_projection_en": [
+                125.48317905353096,
+                217.844159739951
+              ]
+            },
+            {
+              "way": 176034707,
+              "name": "中兴路",
+              "version": "15",
+              "tags": {
+                "highway": "tertiary",
+                "name": "中兴路",
+                "name:en": "Zhongxing Road",
+                "oneway": "yes",
+                "source": "bing, gps",
+                "surface": "asphalt"
+              },
+              "corrected_m": 63.42405161872077,
+              "legacy_m": 66.13538171161593,
+              "corrected_projection_en": [
+                212.13309174160764,
+                190.71683965438643
+              ]
+            },
+            {
+              "way": 1025797981,
+              "name": null,
+              "version": "1",
+              "tags": {
+                "highway": "service"
+              },
+              "corrected_m": 67.35908978264114,
+              "legacy_m": 84.7168107016887,
+              "corrected_projection_en": [
+                134.77038790097387,
+                246.8975300034552
+              ]
+            }
+          ],
+          "horizontal_pixel": 409
+        },
+        {
+          "plot": 46,
+          "pano": "09029200121906291518255991L",
+          "heading": 169,
+          "control_pixel_x": 397,
+          "files": {
+            "09029200121906291518255991L.json": {
+              "url": "https://mapsv0.bdimg.com/?qt=sdata&sid=09029200121906291518255991L",
+              "bytes": 2909,
+              "sha256": "d86f4e868bd700c1e96ad3d131d47c314d6e7ba7ff5e26e52fcea5580114f8a5"
+            },
+            "09029200121906291518255991L-169.jpg": {
+              "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200121906291518255991L&heading=169&pitch=0&fovy=60&width=800&height=500",
+              "bytes": 94466,
+              "sha256": "cc1791f2aed9fdc7c3539d1ea206dda082880b57e23cd5edad6dcc8677c318d0"
+            }
+          },
+          "date": "20190629",
+          "raw_mc_cm": [
+            1186413486,
+            342562620
+          ],
+          "source_height_metadata": 1.8,
+          "bd09": [
+            106.57617712648167,
+            29.55828928927054
+          ],
+          "gcj02": [
+            106.56973550917671,
+            29.552004444263385
+          ],
+          "wgs84": [
+            106.56603894342824,
+            29.554880584140722
+          ],
+          "gcj_roundtrip_max_degrees": 4.163780431554187e-12,
+          "en": [
+            153.99943627893467,
+            180.74230908609758
+          ],
+          "legacy_en": [
+            153.9674,
+            162.95499999999996
+          ],
+          "legacy_published_angle": 82,
+          "legacy_reference": "857d4b738a3487d4ba0879773dd736e01e9eda26db384a5b3176d69a696989e5",
+          "delta_east_north_m": [
+            0.03203627893466887,
+            17.787309086097622
+          ],
+          "old_centre_range_m": 21.419515807788503,
+          "old_centre_bearing_deg": 136.98605572713328,
+          "road_controls": [
+            {
+              "way": 1025797976,
+              "name": "凉亭子",
+              "version": "2",
+              "tags": {
+                "highway": "residential",
+                "name": "凉亭子"
+              },
+              "corrected_m": 4.964445758018369,
+              "legacy_m": 20.054607192364543,
+              "corrected_projection_en": [
+                151.37881354076737,
+                184.95871254740285
+              ]
+            },
+            {
+              "way": 1025797980,
+              "name": "管家巷",
+              "version": "1",
+              "tags": {
+                "highway": "footway",
+                "name": "管家巷"
+              },
+              "corrected_m": 5.149913297138898,
+              "legacy_m": 21.608913294202402,
+              "corrected_projection_en": [
+                150.2155596080788,
+                184.2357149182048
+              ]
+            },
+            {
+              "way": 809889613,
+              "name": null,
+              "version": "2",
+              "tags": {
+                "highway": "service"
+              },
+              "corrected_m": 46.79448950556287,
+              "legacy_m": 61.83987952676759,
+              "corrected_projection_en": [
+                125.48317905353096,
+                217.844159739951
+              ]
+            },
+            {
+              "way": 176034707,
+              "name": "中兴路",
+              "version": "15",
+              "tags": {
+                "highway": "tertiary",
+                "name": "中兴路",
+                "name:en": "Zhongxing Road",
+                "oneway": "yes",
+                "source": "bing, gps",
+                "surface": "asphalt"
+              },
+              "corrected_m": 58.972990216720234,
+              "legacy_m": 61.68658542497018,
+              "corrected_projection_en": [
+                212.298231425814,
+                189.6341064029272
+              ]
+            },
+            {
+              "way": 176034697,
+              "name": "中兴路",
+              "version": "16",
+              "tags": {
+                "highway": "tertiary",
+                "name": "中兴路",
+                "name:en": "Zhongxing Road",
+                "oneway": "yes",
+                "source": "bing, gps",
+                "surface": "asphalt"
+              },
+              "corrected_m": 66.85276180150696,
+              "legacy_m": 69.57665907309955,
+              "corrected_projection_en": [
+                220.08200051483485,
+                190.8609287793736
+              ]
+            }
+          ],
+          "horizontal_pixel": 397
+        }
+      ]
+    },
+    "trunk_45_46": {
+      "match_en": [
+        150.0401279733036,
+        171.06912596901662
+      ],
+      "projected_azimuths_deg": [
+        176.56116576658928,
+        202.25966317336602
+      ],
+      "distance_along_ray_m": [
+        10.10298808663651,
+        10.452109541887657
+      ],
+      "lateral_residual_m": [
+        0.0,
+        4.263256414560601e-14
+      ],
+      "source_poses": [
+        {
+          "plot": 45,
+          "pano": "09029200121906291518058701L",
+          "heading": 149,
+          "control_pixel_x": 409,
+          "files": {
+            "09029200121906291518058701L.json": {
+              "url": "https://mapsv0.bdimg.com/?qt=sdata&sid=09029200121906291518058701L",
+              "bytes": 2378,
+              "sha256": "e834735ad9020cd1c0f53571da01b958df8bc68625b20d5ca52a6338d1e8311b"
+            },
+            "09029200121906291518058701L-149.jpg": {
+              "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200121906291518058701L&heading=149&pitch=0&fovy=60&width=800&height=500",
+              "bytes": 117634,
+              "sha256": "fbd2dd760395de6a22668a489ccf18d1ce4007575245e42d5c282abec327d2aa"
+            }
+          },
+          "date": "20190629",
+          "raw_mc_cm": [
+            1186412961,
+            342562673
+          ],
+          "source_height_metadata": 1.8,
+          "bd09": [
+            106.5761299654424,
+            29.55829345201806
+          ],
+          "gcj02": [
+            106.56968845465605,
+            29.5520082250019
+          ],
+          "wgs84": [
+            106.56599183761251,
+            29.554884297359163
+          ],
+          "gcj_roundtrip_max_degrees": 4.192202140984591e-12,
+          "en": [
+            149.43412092264853,
+            181.15392263197793
+          ],
+          "legacy_en": [
+            149.3999,
+            163.39595999999997
+          ],
+          "legacy_published_angle": 358,
+          "legacy_reference": "857d4b738a3487d4ba0879773dd736e01e9eda26db384a5b3176d69a696989e5",
+          "delta_east_north_m": [
+            0.034220922648529495,
+            17.75796263197796
+          ],
+          "old_centre_range_m": 13.241825236864834,
+          "old_centre_bearing_deg": 180.88291807010452,
+          "road_controls": [
+            {
+              "way": 1025797976,
+              "name": "凉亭子",
+              "version": "2",
+              "tags": {
+                "highway": "residential",
+                "name": "凉亭子"
+              },
+              "corrected_m": 2.204910501458813,
+              "legacy_m": 17.268986415509858,
+              "corrected_projection_en": [
+                148.27018599555174,
+                183.02659072988732
+              ]
+            },
+            {
+              "way": 1025797980,
+              "name": "管家巷",
+              "version": "1",
+              "tags": {
+                "highway": "footway",
+                "name": "管家巷"
+              },
+              "corrected_m": 3.179322272833368,
+              "legacy_m": 20.855711103846186,
+              "corrected_projection_en": [
+                150.2155596080788,
+                184.2357149182048
+              ]
+            },
+            {
+              "way": 809889613,
+              "name": null,
+              "version": "2",
+              "tags": {
+                "highway": "service"
+              },
+              "corrected_m": 43.81576332163042,
+              "legacy_m": 59.469454308517705,
+              "corrected_projection_en": [
+                125.48317905353096,
+                217.844159739951
+              ]
+            },
+            {
+              "way": 176034707,
+              "name": "中兴路",
+              "version": "15",
+              "tags": {
+                "highway": "tertiary",
+                "name": "中兴路",
+                "name:en": "Zhongxing Road",
+                "oneway": "yes",
+                "source": "bing, gps",
+                "surface": "asphalt"
+              },
+              "corrected_m": 63.42405161872077,
+              "legacy_m": 66.13538171161593,
+              "corrected_projection_en": [
+                212.13309174160764,
+                190.71683965438643
+              ]
+            },
+            {
+              "way": 1025797981,
+              "name": null,
+              "version": "1",
+              "tags": {
+                "highway": "service"
+              },
+              "corrected_m": 67.35908978264114,
+              "legacy_m": 84.7168107016887,
+              "corrected_projection_en": [
+                134.77038790097387,
+                246.8975300034552
+              ]
+            }
+          ],
+          "horizontal_pixel": 626
+        },
+        {
+          "plot": 46,
+          "pano": "09029200121906291518255991L",
+          "heading": 169,
+          "control_pixel_x": 397,
+          "files": {
+            "09029200121906291518255991L.json": {
+              "url": "https://mapsv0.bdimg.com/?qt=sdata&sid=09029200121906291518255991L",
+              "bytes": 2909,
+              "sha256": "d86f4e868bd700c1e96ad3d131d47c314d6e7ba7ff5e26e52fcea5580114f8a5"
+            },
+            "09029200121906291518255991L-169.jpg": {
+              "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200121906291518255991L&heading=169&pitch=0&fovy=60&width=800&height=500",
+              "bytes": 94466,
+              "sha256": "cc1791f2aed9fdc7c3539d1ea206dda082880b57e23cd5edad6dcc8677c318d0"
+            }
+          },
+          "date": "20190629",
+          "raw_mc_cm": [
+            1186413486,
+            342562620
+          ],
+          "source_height_metadata": 1.8,
+          "bd09": [
+            106.57617712648167,
+            29.55828928927054
+          ],
+          "gcj02": [
+            106.56973550917671,
+            29.552004444263385
+          ],
+          "wgs84": [
+            106.56603894342824,
+            29.554880584140722
+          ],
+          "gcj_roundtrip_max_degrees": 4.163780431554187e-12,
+          "en": [
+            153.99943627893467,
+            180.74230908609758
+          ],
+          "legacy_en": [
+            153.9674,
+            162.95499999999996
+          ],
+          "legacy_published_angle": 82,
+          "legacy_reference": "857d4b738a3487d4ba0879773dd736e01e9eda26db384a5b3176d69a696989e5",
+          "delta_east_north_m": [
+            0.03203627893466887,
+            17.787309086097622
+          ],
+          "old_centre_range_m": 21.419515807788503,
+          "old_centre_bearing_deg": 136.98605572713328,
+          "road_controls": [
+            {
+              "way": 1025797976,
+              "name": "凉亭子",
+              "version": "2",
+              "tags": {
+                "highway": "residential",
+                "name": "凉亭子"
+              },
+              "corrected_m": 4.964445758018369,
+              "legacy_m": 20.054607192364543,
+              "corrected_projection_en": [
+                151.37881354076737,
+                184.95871254740285
+              ]
+            },
+            {
+              "way": 1025797980,
+              "name": "管家巷",
+              "version": "1",
+              "tags": {
+                "highway": "footway",
+                "name": "管家巷"
+              },
+              "corrected_m": 5.149913297138898,
+              "legacy_m": 21.608913294202402,
+              "corrected_projection_en": [
+                150.2155596080788,
+                184.2357149182048
+              ]
+            },
+            {
+              "way": 809889613,
+              "name": null,
+              "version": "2",
+              "tags": {
+                "highway": "service"
+              },
+              "corrected_m": 46.79448950556287,
+              "legacy_m": 61.83987952676759,
+              "corrected_projection_en": [
+                125.48317905353096,
+                217.844159739951
+              ]
+            },
+            {
+              "way": 176034707,
+              "name": "中兴路",
+              "version": "15",
+              "tags": {
+                "highway": "tertiary",
+                "name": "中兴路",
+                "name:en": "Zhongxing Road",
+                "oneway": "yes",
+                "source": "bing, gps",
+                "surface": "asphalt"
+              },
+              "corrected_m": 58.972990216720234,
+              "legacy_m": 61.68658542497018,
+              "corrected_projection_en": [
+                212.298231425814,
+                189.6341064029272
+              ]
+            },
+            {
+              "way": 176034697,
+              "name": "中兴路",
+              "version": "16",
+              "tags": {
+                "highway": "tertiary",
+                "name": "中兴路",
+                "name:en": "Zhongxing Road",
+                "oneway": "yes",
+                "source": "bing, gps",
+                "surface": "asphalt"
+              },
+              "corrected_m": 66.85276180150696,
+              "legacy_m": 69.57665907309955,
+              "corrected_projection_en": [
+                220.08200051483485,
+                190.8609287793736
+              ]
+            }
+          ],
+          "horizontal_pixel": 684
+        }
+      ]
+    },
+    "notes": "Photos share a white sign on the grey fence head, a tree near a blue sign, and the lower shop edge left of the descent. Pixel picks are visual controls; property extent and floor heights are unresolved.",
+    "balcony_45": {
+      "en": [
+        150.73276755664818,
+        170.09580208117998
+      ],
+      "azimuths_deg": [
+        180.73536401204274,
+        140.02514554265417,
+        182.82759145178844,
+        191.60304954642228
+      ],
+      "residual_m": [
+        1.4404614841513137,
+        -0.31508003338066715,
+        -0.16213836034430074,
+        -1.0585802880817425
+      ],
+      "forward_ranges_m": [
+        11.040542736145506,
+        12.765702991373605,
+        15.172996126037567,
+        11.085966070695374
+      ],
+      "controls": [
+        {
+          "plot": 45,
+          "pano": "09029200121906291518058701L",
+          "heading": 181,
+          "control_pixel_x": 398,
+          "vertical_fov_deg": 60,
+          "track": "balcony",
+          "files": {
+            "09029200121906291518058701L.json": {
+              "url": "https://mapsv0.bdimg.com/?qt=sdata&sid=09029200121906291518058701L",
+              "bytes": 2378,
+              "sha256": "e834735ad9020cd1c0f53571da01b958df8bc68625b20d5ca52a6338d1e8311b"
+            },
+            "09029200121906291518058701L-181.jpg": {
+              "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200121906291518058701L&heading=181&pitch=0&fovy=60&width=800&height=500",
+              "bytes": 121595,
+              "sha256": "cce0c72d81767a770744c3f1600608604a890b8b45fcc066ba2aac094a1acb62"
+            }
+          },
+          "date": "20190629",
+          "raw_mc_cm": [
+            1186412961,
+            342562673
+          ],
+          "source_height_metadata": 1.8,
+          "bd09": [
+            106.5761299654424,
+            29.55829345201806
+          ],
+          "gcj02": [
+            106.56968845465605,
+            29.5520082250019
+          ],
+          "wgs84": [
+            106.56599183761251,
+            29.554884297359163
+          ],
+          "gcj_roundtrip_max_degrees": 4.192202140984591e-12,
+          "en": [
+            149.43412092264853,
+            181.15392263197793
+          ],
+          "legacy_en": [
+            149.3999,
+            163.39595999999997
+          ],
+          "legacy_published_angle": 358,
+          "legacy_reference": "857d4b738a3487d4ba0879773dd736e01e9eda26db384a5b3176d69a696989e5",
+          "delta_east_north_m": [
+            0.034220922648529495,
+            17.75796263197796
+          ],
+          "old_centre_range_m": 13.241825236864834,
+          "old_centre_bearing_deg": 180.88291807010452,
+          "road_controls": [
+            {
+              "way": 1025797976,
+              "name": "凉亭子",
+              "version": "2",
+              "tags": {
+                "highway": "residential",
+                "name": "凉亭子"
+              },
+              "corrected_m": 2.204910501458813,
+              "legacy_m": 17.268986415509858,
+              "corrected_projection_en": [
+                148.27018599555174,
+                183.02659072988732
+              ]
+            },
+            {
+              "way": 1025797980,
+              "name": "管家巷",
+              "version": "1",
+              "tags": {
+                "highway": "footway",
+                "name": "管家巷"
+              },
+              "corrected_m": 3.179322272833368,
+              "legacy_m": 20.855711103846186,
+              "corrected_projection_en": [
+                150.2155596080788,
+                184.2357149182048
+              ]
+            },
+            {
+              "way": 809889613,
+              "name": null,
+              "version": "2",
+              "tags": {
+                "highway": "service"
+              },
+              "corrected_m": 43.81576332163042,
+              "legacy_m": 59.469454308517705,
+              "corrected_projection_en": [
+                125.48317905353096,
+                217.844159739951
+              ]
+            },
+            {
+              "way": 176034707,
+              "name": "中兴路",
+              "version": "15",
+              "tags": {
+                "highway": "tertiary",
+                "name": "中兴路",
+                "name:en": "Zhongxing Road",
+                "oneway": "yes",
+                "source": "bing, gps",
+                "surface": "asphalt"
+              },
+              "corrected_m": 63.42405161872077,
+              "legacy_m": 66.13538171161593,
+              "corrected_projection_en": [
+                212.13309174160764,
+                190.71683965438643
+              ]
+            },
+            {
+              "way": 1025797981,
+              "name": null,
+              "version": "1",
+              "tags": {
+                "highway": "service"
+              },
+              "corrected_m": 67.35908978264114,
+              "legacy_m": 84.7168107016887,
+              "corrected_projection_en": [
+                134.77038790097387,
+                246.8975300034552
+              ]
+            }
+          ]
+        },
+        {
+          "plot": 45,
+          "pano": "09029200121906291519159841L",
+          "heading": 161,
+          "control_pixel_x": 234,
+          "vertical_fov_deg": 60,
+          "track": "balcony",
+          "files": {
+            "09029200121906291519159841L.json": {
+              "url": "https://mapsv0.bdimg.com/?qt=sdata&sid=09029200121906291519159841L",
+              "bytes": 2378,
+              "sha256": "29869ea85c028215e11b32229fa93d5f89e946104dba6d8808aa2a3a75b4dbfd"
+            },
+            "09029200121906291519159841L-161.jpg": {
+              "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200121906291519159841L&heading=161&pitch=0&fovy=60&width=800&height=500",
+              "bytes": 125984,
+              "sha256": "afa5aea5c196d7623bfbb886b50a8c11314bb278300b28735af42e7234e58bd9"
+            }
+          },
+          "date": "20190629",
+          "raw_mc_cm": [
+            1186412195,
+            342562558
+          ],
+          "source_height_metadata": 1.8,
+          "bd09": [
+            106.57606115524037,
+            29.55828441964115
+          ],
+          "gcj02": [
+            106.56961979715666,
+            29.551998637815814
+          ],
+          "wgs84": [
+            106.56592310595755,
+            29.554874616938946
+          ],
+          "gcj_roundtrip_max_degrees": 4.231281991451397e-12,
+          "en": [
+            142.77287858141838,
+            180.08092179971192
+          ],
+          "legacy_en": [
+            142.7357,
+            162.43916
+          ],
+          "legacy_published_angle": null,
+          "legacy_reference": null,
+          "delta_east_north_m": [
+            0.037178581418373824,
+            17.64176179971193
+          ],
+          "old_centre_range_m": 13.774520279590432,
+          "old_centre_bearing_deg": 152.0449775802182,
+          "road_controls": [
+            {
+              "way": 1025797976,
+              "name": "凉亭子",
+              "version": "2",
+              "tags": {
+                "highway": "residential",
+                "name": "凉亭子"
+              },
+              "corrected_m": 0.4001286542795744,
+              "legacy_m": 14.563694612902795,
+              "corrected_projection_en": [
+                142.98409972429022,
+                179.74108570866287
+              ]
+            },
+            {
+              "way": 1025797980,
+              "name": "管家巷",
+              "version": "1",
+              "tags": {
+                "highway": "footway",
+                "name": "管家巷"
+              },
+              "corrected_m": 8.523837558405639,
+              "legacy_m": 23.044264059823792,
+              "corrected_projection_en": [
+                150.2155596080788,
+                184.2357149182048
+              ]
+            },
+            {
+              "way": 809889613,
+              "name": null,
+              "version": "2",
+              "tags": {
+                "highway": "service"
+              },
+              "corrected_m": 41.533069348360755,
+              "legacy_m": 57.75491980665121,
+              "corrected_projection_en": [
+                125.48317905353096,
+                217.844159739951
+              ]
+            },
+            {
+              "way": 1025797981,
+              "name": null,
+              "version": "1",
+              "tags": {
+                "highway": "service"
+              },
+              "corrected_m": 67.15815053384802,
+              "legacy_m": 84.6552281130084,
+              "corrected_projection_en": [
+                133.2758268852733,
+                246.56417677574132
+              ]
+            },
+            {
+              "way": 176034707,
+              "name": "中兴路",
+              "version": "15",
+              "tags": {
+                "highway": "tertiary",
+                "name": "中兴路",
+                "name:en": "Zhongxing Road",
+                "oneway": "yes",
+                "source": "bing, gps",
+                "surface": "asphalt"
+              },
+              "corrected_m": 70.17092518124846,
+              "legacy_m": 72.8676586545275,
+              "corrected_projection_en": [
+                212.14159089149453,
+                190.66111524001627
+              ]
+            }
+          ]
+        },
+        {
+          "plot": 45,
+          "pano": "09029200121906291519131171L",
+          "heading": 186,
+          "control_pixel_x": 376,
+          "vertical_fov_deg": 60,
+          "track": "balcony",
+          "files": {
+            "09029200121906291519131171L.json": {
+              "url": "https://mapsv0.bdimg.com/?qt=sdata&sid=09029200121906291519131171L",
+              "bytes": 2378,
+              "sha256": "2f30501ae1ca96c0caedd7ecc262f7c24a22799fac6375dfed6231e3595dee5e"
+            },
+            "09029200121906291519131171L-186.jpg": {
+              "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200121906291519131171L&heading=186&pitch=0&fovy=60&width=800&height=500",
+              "bytes": 150869,
+              "sha256": "32e5f8571bd6008c4faa28e9a39958e3dac92f4bbffba617f7385a426676a411"
+            }
+          },
+          "date": "20190629",
+          "raw_mc_cm": [
+            1186413215,
+            342563140
+          ],
+          "source_height_metadata": 1.8,
+          "bd09": [
+            106.57615278240236,
+            29.558330131314154
+          ],
+          "gcj02": [
+            106.56971122495635,
+            29.552045090204935
+          ],
+          "wgs84": [
+            106.56601463047778,
+            29.55492118127674
+          ],
+          "gcj_roundtrip_max_degrees": 4.177991286269389e-12,
+          "en": [
+            151.64320380500706,
+            185.2423266372067
+          ],
+          "legacy_en": [
+            151.60969999999998,
+            167.2814
+          ],
+          "legacy_published_angle": null,
+          "legacy_reference": null,
+          "delta_east_north_m": [
+            0.033503805007086385,
+            17.96092663720671
+          ],
+          "old_centre_range_m": 17.495872286216166,
+          "old_centre_bearing_deg": 187.92782859422337,
+          "road_controls": [
+            {
+              "way": 1025797976,
+              "name": "凉亭子",
+              "version": "2",
+              "tags": {
+                "highway": "residential",
+                "name": "凉亭子"
+              },
+              "corrected_m": 0.10131328172838508,
+              "legacy_m": 15.135531960406007,
+              "corrected_projection_en": [
+                151.69668487876982,
+                185.15627923280798
+              ]
+            },
+            {
+              "way": 1025797980,
+              "name": "管家巷",
+              "version": "1",
+              "tags": {
+                "highway": "footway",
+                "name": "管家巷"
+              },
+              "corrected_m": 1.7337368175773071,
+              "legacy_m": 17.011537901613952,
+              "corrected_projection_en": [
+                150.11477090271865,
+                184.42395250771256
+              ]
+            },
+            {
+              "way": 809889613,
+              "name": null,
+              "version": "2",
+              "tags": {
+                "highway": "service"
+              },
+              "corrected_m": 41.799837519505225,
+              "legacy_m": 56.91386271626884,
+              "corrected_projection_en": [
+                125.48317905353096,
+                217.844159739951
+              ]
+            },
+            {
+              "way": 176034707,
+              "name": "中兴路",
+              "version": "15",
+              "tags": {
+                "highway": "tertiary",
+                "name": "中兴路",
+                "name:en": "Zhongxing Road",
+                "oneway": "yes",
+                "source": "bing, gps",
+                "surface": "asphalt"
+              },
+              "corrected_m": 60.6237844188038,
+              "legacy_m": 63.36500798829142,
+              "corrected_projection_en": [
+                211.5739208310934,
+                194.38302650082565
+              ]
+            },
+            {
+              "way": 1025797981,
+              "name": null,
+              "version": "1",
+              "tags": {
+                "highway": "service"
+              },
+              "corrected_m": 63.88699714627825,
+              "legacy_m": 81.37251833359778,
+              "corrected_projection_en": [
+                135.6115212489572,
+                247.08513995282658
+              ]
+            }
+          ]
+        },
+        {
+          "plot": 45,
+          "pano": "09029200121906291518255991L",
+          "heading": 192,
+          "control_pixel_x": 397,
+          "vertical_fov_deg": 60,
+          "track": "balcony",
+          "files": {
+            "09029200121906291518255991L.json": {
+              "url": "https://mapsv0.bdimg.com/?qt=sdata&sid=09029200121906291518255991L",
+              "bytes": 2909,
+              "sha256": "d86f4e868bd700c1e96ad3d131d47c314d6e7ba7ff5e26e52fcea5580114f8a5"
+            },
+            "09029200121906291518255991L-192.jpg": {
+              "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200121906291518255991L&heading=192&pitch=0&fovy=60&width=800&height=500",
+              "bytes": 96968,
+              "sha256": "8cf12642d53dc955c737da5f68471184458d275c9c00d7810755bf38b1fbccb1"
+            }
+          },
+          "date": "20190629",
+          "raw_mc_cm": [
+            1186413486,
+            342562620
+          ],
+          "source_height_metadata": 1.8,
+          "bd09": [
+            106.57617712648167,
+            29.55828928927054
+          ],
+          "gcj02": [
+            106.56973550917671,
+            29.552004444263385
+          ],
+          "wgs84": [
+            106.56603894342824,
+            29.554880584140722
+          ],
+          "gcj_roundtrip_max_degrees": 4.163780431554187e-12,
+          "en": [
+            153.99943627893467,
+            180.74230908609758
+          ],
+          "legacy_en": [
+            153.9674,
+            162.95499999999996
+          ],
+          "legacy_published_angle": 82,
+          "legacy_reference": "857d4b738a3487d4ba0879773dd736e01e9eda26db384a5b3176d69a696989e5",
+          "delta_east_north_m": [
+            0.03203627893466887,
+            17.787309086097622
+          ],
+          "old_centre_range_m": 13.686518943344986,
+          "old_centre_bearing_deg": 200.39385251102496,
+          "road_controls": [
+            {
+              "way": 1025797976,
+              "name": "凉亭子",
+              "version": "2",
+              "tags": {
+                "highway": "residential",
+                "name": "凉亭子"
+              },
+              "corrected_m": 4.964445758018369,
+              "legacy_m": 20.054607192364543,
+              "corrected_projection_en": [
+                151.37881354076737,
+                184.95871254740285
+              ]
+            },
+            {
+              "way": 1025797980,
+              "name": "管家巷",
+              "version": "1",
+              "tags": {
+                "highway": "footway",
+                "name": "管家巷"
+              },
+              "corrected_m": 5.149913297138898,
+              "legacy_m": 21.608913294202402,
+              "corrected_projection_en": [
+                150.2155596080788,
+                184.2357149182048
+              ]
+            },
+            {
+              "way": 809889613,
+              "name": null,
+              "version": "2",
+              "tags": {
+                "highway": "service"
+              },
+              "corrected_m": 46.79448950556287,
+              "legacy_m": 61.83987952676759,
+              "corrected_projection_en": [
+                125.48317905353096,
+                217.844159739951
+              ]
+            },
+            {
+              "way": 176034707,
+              "name": "中兴路",
+              "version": "15",
+              "tags": {
+                "highway": "tertiary",
+                "name": "中兴路",
+                "name:en": "Zhongxing Road",
+                "oneway": "yes",
+                "source": "bing, gps",
+                "surface": "asphalt"
+              },
+              "corrected_m": 58.972990216720234,
+              "legacy_m": 61.68658542497018,
+              "corrected_projection_en": [
+                212.298231425814,
+                189.6341064029272
+              ]
+            },
+            {
+              "way": 176034697,
+              "name": "中兴路",
+              "version": "16",
+              "tags": {
+                "highway": "tertiary",
+                "name": "中兴路",
+                "name:en": "Zhongxing Road",
+                "oneway": "yes",
+                "source": "bing, gps",
+                "surface": "asphalt"
+              },
+              "corrected_m": 66.85276180150696,
+              "legacy_m": 69.57665907309955,
+              "corrected_projection_en": [
+                220.08200051483485,
+                190.8609287793736
+              ]
+            }
+          ]
+        }
+      ],
+      "scope": "Upper protruding façade detail, not a wall-foot or public access measurement. Use to compare sightlines; no sufficient basis to retopologize the framing or open a private area."
+    }
+  },
+  "tree_anchor": [
+    150.4,
+    174.65
+  ],
+  "tree_anchor_game_fit_gap_m": 3.5989118774109676,
+  "tree_anchor_reason": "The old trial 45 upper and frame overlap the triangulated tree position at E150.040/N171.069. Current and Wayback images are roof and tree-canopy limited. The closest clean outdoor rooting representative is retained on the lower frontage without cutting the old building. The discrepancy is explicit.",
+  "placement_columns": {
+    "pier": [
+      {
+        "expected_enu": [
+          156.35,
+          169.08,
+          0
+        ],
+        "layers": [
+          {
+            "en": [
+              156.35,
+              169.08
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  156.35000610351562,
+                  169.0800018310547,
+                  40.434059143066406
+                ],
+                "normal": [
+                  -0.18388020992279053,
+                  -0.11030539870262146,
+                  0.9767399430274963
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              155.98999999999998,
+              169.08
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  155.99000549316406,
+                  169.0800018310547,
+                  40.366451263427734
+                ],
+                "normal": [
+                  -0.16794319450855255,
+                  -0.11062499135732651,
+                  0.9795699119567871
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              156.71,
+              169.08
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  156.7100067138672,
+                  169.0800018310547,
+                  40.501827239990234
+                ],
+                "normal": [
+                  -0.18388020992279053,
+                  -0.11030539870262146,
+                  0.9767399430274963
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              156.35,
+              168.72
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  156.35000610351562,
+                  168.72000122070312,
+                  40.39339828491211
+                ],
+                "normal": [
+                  -0.18388020992279053,
+                  -0.11030539870262146,
+                  0.9767399430274963
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              156.35,
+              169.44000000000003
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  156.35000610351562,
+                  169.44000244140625,
+                  40.474708557128906
+                ],
+                "normal": [
+                  -0.18388020992279053,
+                  -0.11030539870262146,
+                  0.9767399430274963
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "expected_enu": [
+          156.85,
+          169.08,
+          0
+        ],
+        "layers": [
+          {
+            "en": [
+              156.85,
+              169.08
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  156.85000610351562,
+                  169.0800018310547,
+                  40.52818298339844
+                ],
+                "normal": [
+                  -0.18388020992279053,
+                  -0.11030539870262146,
+                  0.9767399430274963
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              156.48999999999998,
+              169.08
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  156.49000549316406,
+                  169.0800018310547,
+                  40.460411071777344
+                ],
+                "normal": [
+                  -0.18388020992279053,
+                  -0.11030539870262146,
+                  0.9767399430274963
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              157.21,
+              169.08
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  157.2100067138672,
+                  169.0800018310547,
+                  40.595062255859375
+                ],
+                "normal": [
+                  -0.1772548109292984,
+                  -0.1170627623796463,
+                  0.9771780967712402
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              156.85,
+              168.72
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  156.85000610351562,
+                  168.72000122070312,
+                  40.486637115478516
+                ],
+                "normal": [
+                  -0.1772548109292984,
+                  -0.1170627623796463,
+                  0.9771780967712402
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              156.85,
+              169.44000000000003
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  156.85000610351562,
+                  169.44000244140625,
+                  40.56884002685547
+                ],
+                "normal": [
+                  -0.18388020992279053,
+                  -0.11030539870262146,
+                  0.9767399430274963
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "expected_enu": [
+          155.85,
+          169.08,
+          0
+        ],
+        "layers": [
+          {
+            "en": [
+              155.85,
+              169.08
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  155.85000610351562,
+                  169.0800018310547,
+                  40.342445373535156
+                ],
+                "normal": [
+                  -0.16794319450855255,
+                  -0.11062499135732651,
+                  0.9795699119567871
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              155.48999999999998,
+              169.08
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  155.49000549316406,
+                  169.0800018310547,
+                  40.28072738647461
+                ],
+                "normal": [
+                  -0.16794319450855255,
+                  -0.11062499135732651,
+                  0.9795699119567871
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              156.21,
+              169.08
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  156.2100067138672,
+                  169.0800018310547,
+                  40.40769958496094
+                ],
+                "normal": [
+                  -0.18388020992279053,
+                  -0.11030539870262146,
+                  0.9767399430274963
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              155.85,
+              168.72
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  155.85000610351562,
+                  168.72000122070312,
+                  40.301795959472656
+                ],
+                "normal": [
+                  -0.16794319450855255,
+                  -0.11062499135732651,
+                  0.9795699119567871
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              155.85,
+              169.44000000000003
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  155.85000610351562,
+                  169.44000244140625,
+                  40.38310241699219
+                ],
+                "normal": [
+                  -0.16794319450855255,
+                  -0.11062499135732651,
+                  0.9795699119567871
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tree": [
+      {
+        "expected_enu": [
+          150.04,
+          171.07,
+          0
+        ],
+        "layers": [
+          {
+            "en": [
+              150.04,
+              171.07
+            ],
+            "hits": [
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  150.0399932861328,
+                  171.07000732421875,
+                  56.11521530151367
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  150.0399932861328,
+                  171.07000732421875,
+                  55.91521453857422
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  150.0399932861328,
+                  171.07000732421875,
+                  55.79521179199219
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  150.0399932861328,
+                  171.07000732421875,
+                  55.76521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  150.0399932861328,
+                  171.07000732421875,
+                  52.965213775634766
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  150.0399932861328,
+                  171.07000732421875,
+                  52.81521224975586
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  150.0399932861328,
+                  171.07000732421875,
+                  50.01521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              149.67999999999998,
+              171.07
+            ],
+            "hits": [
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  149.67999267578125,
+                  171.07000732421875,
+                  56.11521530151367
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  149.67999267578125,
+                  171.07000732421875,
+                  55.91521453857422
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  149.67999267578125,
+                  171.07000732421875,
+                  55.79521179199219
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  149.67999267578125,
+                  171.07000732421875,
+                  55.76521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  149.67999267578125,
+                  171.07000732421875,
+                  52.965213775634766
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  149.67999267578125,
+                  171.07000732421875,
+                  52.81521224975586
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  149.67999267578125,
+                  171.07000732421875,
+                  50.01521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              150.4,
+              171.07
+            ],
+            "hits": [
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  150.39999389648438,
+                  171.07000732421875,
+                  56.11521530151367
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  150.39999389648438,
+                  171.07000732421875,
+                  55.91521453857422
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  150.39999389648438,
+                  171.07000732421875,
+                  55.79521179199219
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  150.39999389648438,
+                  171.07000732421875,
+                  55.76521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  150.39999389648438,
+                  171.07000732421875,
+                  52.965213775634766
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  150.39999389648438,
+                  171.07000732421875,
+                  52.81521224975586
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  150.39999389648438,
+                  171.07000732421875,
+                  50.01521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              150.04,
+              170.70999999999998
+            ],
+            "hits": [
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  150.0399932861328,
+                  170.7100067138672,
+                  56.11521911621094
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  150.0399932861328,
+                  170.7100067138672,
+                  55.91521453857422
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  150.0399932861328,
+                  170.7100067138672,
+                  55.79521179199219
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  150.0399932861328,
+                  170.7100067138672,
+                  55.76521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  150.0399932861328,
+                  170.7100067138672,
+                  52.965213775634766
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  150.0399932861328,
+                  170.7100067138672,
+                  52.81521224975586
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  150.0399932861328,
+                  170.7100067138672,
+                  50.01521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              150.04,
+              171.43
+            ],
+            "hits": [
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  150.0399932861328,
+                  171.42999267578125,
+                  56.11521530151367
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  150.0399932861328,
+                  171.42999267578125,
+                  55.91521453857422
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  150.0399932861328,
+                  171.42999267578125,
+                  55.79521179199219
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  150.0399932861328,
+                  171.42999267578125,
+                  55.76521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  150.0399932861328,
+                  171.42999267578125,
+                  52.965213775634766
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  150.0399932861328,
+                  171.42999267578125,
+                  52.81521224975586
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  150.0399932861328,
+                  171.42999267578125,
+                  50.01521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "expected_enu": [
+          149.9,
+          172.2,
+          0
+        ],
+        "layers": [
+          {
+            "en": [
+              149.9,
+              172.2
+            ],
+            "hits": [
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  149.89999389648438,
+                  172.1999969482422,
+                  56.115211486816406
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  149.89999389648438,
+                  172.1999969482422,
+                  55.91521453857422
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  149.89999389648438,
+                  172.1999969482422,
+                  55.79521179199219
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  149.89999389648438,
+                  172.1999969482422,
+                  55.76521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  149.89999389648438,
+                  172.1999969482422,
+                  52.965213775634766
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  149.89999389648438,
+                  172.1999969482422,
+                  52.81521224975586
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  149.89999389648438,
+                  172.1999969482422,
+                  50.01521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              149.54,
+              172.2
+            ],
+            "hits": [
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  149.5399932861328,
+                  172.1999969482422,
+                  56.11521530151367
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  149.5399932861328,
+                  172.1999969482422,
+                  55.91521453857422
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  149.5399932861328,
+                  172.1999969482422,
+                  55.79521179199219
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  149.5399932861328,
+                  172.1999969482422,
+                  55.76521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  149.5399932861328,
+                  172.1999969482422,
+                  52.965213775634766
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  149.5399932861328,
+                  172.1999969482422,
+                  52.81521224975586
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  149.5399932861328,
+                  172.1999969482422,
+                  50.01521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              150.26000000000002,
+              172.2
+            ],
+            "hits": [
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  150.25999450683594,
+                  172.1999969482422,
+                  56.11521530151367
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  150.25999450683594,
+                  172.1999969482422,
+                  55.91521453857422
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  150.25999450683594,
+                  172.1999969482422,
+                  55.79521179199219
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  150.25999450683594,
+                  172.1999969482422,
+                  55.76521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  150.25999450683594,
+                  172.1999969482422,
+                  52.965213775634766
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  150.25999450683594,
+                  172.1999969482422,
+                  52.81521224975586
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  150.25999450683594,
+                  172.1999969482422,
+                  50.01521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              149.9,
+              171.83999999999997
+            ],
+            "hits": [
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  149.89999389648438,
+                  171.83999633789062,
+                  56.11521530151367
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  149.89999389648438,
+                  171.83999633789062,
+                  55.91521453857422
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  149.89999389648438,
+                  171.83999633789062,
+                  55.79521179199219
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  149.89999389648438,
+                  171.83999633789062,
+                  55.76521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  149.89999389648438,
+                  171.83999633789062,
+                  52.965213775634766
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  149.89999389648438,
+                  171.83999633789062,
+                  52.81521224975586
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  149.89999389648438,
+                  171.83999633789062,
+                  50.01521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              149.9,
+              172.56
+            ],
+            "hits": [
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  149.89999389648438,
+                  172.55999755859375,
+                  56.11521530151367
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  149.89999389648438,
+                  172.55999755859375,
+                  55.91521453857422
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  149.89999389648438,
+                  172.55999755859375,
+                  55.79521179199219
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  149.89999389648438,
+                  172.55999755859375,
+                  55.76521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  149.89999389648438,
+                  172.55999755859375,
+                  52.965213775634766
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  149.89999389648438,
+                  172.55999755859375,
+                  52.81521224975586
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  149.89999389648438,
+                  172.55999755859375,
+                  50.01521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "expected_enu": [
+          151.7,
+          171.2,
+          0
+        ],
+        "layers": [
+          {
+            "en": [
+              151.7,
+              171.2
+            ],
+            "hits": [
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  151.6999969482422,
+                  171.1999969482422,
+                  56.11521530151367
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  151.6999969482422,
+                  171.1999969482422,
+                  55.91521453857422
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  151.6999969482422,
+                  171.1999969482422,
+                  55.79521179199219
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  151.6999969482422,
+                  171.1999969482422,
+                  55.76521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  151.6999969482422,
+                  171.1999969482422,
+                  52.965213775634766
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  151.6999969482422,
+                  171.1999969482422,
+                  52.81521224975586
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  151.6999969482422,
+                  171.1999969482422,
+                  50.01521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              151.33999999999997,
+              171.2
+            ],
+            "hits": [
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  151.33999633789062,
+                  171.1999969482422,
+                  56.11521530151367
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  151.33999633789062,
+                  171.1999969482422,
+                  55.91521453857422
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  151.33999633789062,
+                  171.1999969482422,
+                  55.79521179199219
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  151.33999633789062,
+                  171.1999969482422,
+                  55.76521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  151.33999633789062,
+                  171.1999969482422,
+                  52.965213775634766
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  151.33999633789062,
+                  171.1999969482422,
+                  52.81521224975586
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  151.33999633789062,
+                  171.1999969482422,
+                  50.01521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              152.06,
+              171.2
+            ],
+            "hits": [
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  152.05999755859375,
+                  171.1999969482422,
+                  56.115211486816406
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  152.05999755859375,
+                  171.1999969482422,
+                  55.91521453857422
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  152.05999755859375,
+                  171.1999969482422,
+                  55.79521179199219
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  152.05999755859375,
+                  171.1999969482422,
+                  55.76521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  152.05999755859375,
+                  171.1999969482422,
+                  52.965213775634766
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  152.05999755859375,
+                  171.1999969482422,
+                  52.81521224975586
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  152.05999755859375,
+                  171.1999969482422,
+                  50.01521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              151.7,
+              170.83999999999997
+            ],
+            "hits": [
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  151.6999969482422,
+                  170.83999633789062,
+                  56.11521530151367
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  151.6999969482422,
+                  170.83999633789062,
+                  55.91521453857422
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  151.6999969482422,
+                  170.83999633789062,
+                  55.79521179199219
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  151.6999969482422,
+                  170.83999633789062,
+                  55.76521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  151.6999969482422,
+                  170.83999633789062,
+                  52.965213775634766
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  151.6999969482422,
+                  170.83999633789062,
+                  52.81521224975586
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  151.6999969482422,
+                  170.83999633789062,
+                  50.01521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              151.7,
+              171.56
+            ],
+            "hits": [
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  151.6999969482422,
+                  171.55999755859375,
+                  56.11521530151367
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  151.6999969482422,
+                  171.55999755859375,
+                  55.91521453857422
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  151.6999969482422,
+                  171.55999755859375,
+                  55.79521179199219
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  151.6999969482422,
+                  171.55999755859375,
+                  55.76521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  151.6999969482422,
+                  171.55999755859375,
+                  52.965213775634766
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  151.6999969482422,
+                  171.55999755859375,
+                  52.81521224975586
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  151.6999969482422,
+                  171.55999755859375,
+                  50.01521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "expected_enu": [
+          152.7,
+          172.27,
+          0
+        ],
+        "layers": [
+          {
+            "en": [
+              152.7,
+              172.27
+            ],
+            "hits": [
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  152.6999969482422,
+                  172.27000427246094,
+                  56.11521530151367
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  152.6999969482422,
+                  172.27000427246094,
+                  55.91521453857422
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  152.6999969482422,
+                  172.27000427246094,
+                  55.79521179199219
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  152.6999969482422,
+                  172.27000427246094,
+                  55.76521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  152.6999969482422,
+                  172.27000427246094,
+                  52.965213775634766
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  152.6999969482422,
+                  172.27000427246094,
+                  52.81521224975586
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  152.6999969482422,
+                  172.27000427246094,
+                  50.01521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              152.33999999999997,
+              172.27
+            ],
+            "hits": [
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  152.33999633789062,
+                  172.27000427246094,
+                  56.11521530151367
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  152.33999633789062,
+                  172.27000427246094,
+                  55.91521453857422
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  152.33999633789062,
+                  172.27000427246094,
+                  55.79521179199219
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  152.33999633789062,
+                  172.27000427246094,
+                  55.76521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  152.33999633789062,
+                  172.27000427246094,
+                  52.965213775634766
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  152.33999633789062,
+                  172.27000427246094,
+                  52.81521224975586
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  152.33999633789062,
+                  172.27000427246094,
+                  50.01521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              153.06,
+              172.27
+            ],
+            "hits": [
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  153.05999755859375,
+                  172.27000427246094,
+                  56.11521530151367
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  153.05999755859375,
+                  172.27000427246094,
+                  55.91521453857422
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  153.05999755859375,
+                  172.27000427246094,
+                  55.79521179199219
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  153.05999755859375,
+                  172.27000427246094,
+                  55.76521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  153.05999755859375,
+                  172.27000427246094,
+                  52.965213775634766
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  153.05999755859375,
+                  172.27000427246094,
+                  52.81521224975586
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  153.05999755859375,
+                  172.27000427246094,
+                  50.01521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              152.7,
+              171.91
+            ],
+            "hits": [
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  152.6999969482422,
+                  171.91000366210938,
+                  56.11521530151367
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  152.6999969482422,
+                  171.91000366210938,
+                  55.91521453857422
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  152.6999969482422,
+                  171.91000366210938,
+                  55.79521179199219
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  152.6999969482422,
+                  171.91000366210938,
+                  55.76521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  152.6999969482422,
+                  171.91000366210938,
+                  52.965213775634766
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  152.6999969482422,
+                  171.91000366210938,
+                  52.81521224975586
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  152.6999969482422,
+                  171.91000366210938,
+                  50.01521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              152.7,
+              172.63000000000002
+            ],
+            "hits": [
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  152.6999969482422,
+                  172.6300048828125,
+                  56.11521911621094
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  152.6999969482422,
+                  172.6300048828125,
+                  55.91521453857422
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  152.6999969482422,
+                  172.6300048828125,
+                  55.79521179199219
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  152.6999969482422,
+                  172.6300048828125,
+                  55.76521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  152.6999969482422,
+                  172.6300048828125,
+                  55.47521209716797
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  152.6999969482422,
+                  172.6300048828125,
+                  52.965213775634766
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  152.6999969482422,
+                  172.6300048828125,
+                  52.81521224975586
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "expected_enu": [
+          150.1,
+          174.7,
+          0
+        ],
+        "layers": [
+          {
+            "en": [
+              150.1,
+              174.7
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  150.10000610351562,
+                  174.6999969482422,
+                  40.82990646362305
+                ],
+                "normal": [
+                  -0.10484576970338821,
+                  -0.3083861172199249,
+                  0.9454657435417175
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              149.73999999999998,
+              174.7
+            ],
+            "hits": [
+              {
+                "mesh": "Outer500_Joinery_45",
+                "point_enu": [
+                  149.74000549316406,
+                  174.6999969482422,
+                  55.320682525634766
+                ],
+                "normal": [
+                  -0.013933840207755566,
+                  -0.09355653822422028,
+                  -0.9955164790153503
+                ]
+              },
+              {
+                "mesh": "Outer500_Joinery_45",
+                "point_enu": [
+                  149.74000549316406,
+                  174.6999969482422,
+                  54.10684585571289
+                ],
+                "normal": [
+                  0.7422330379486084,
+                  0.5498738884925842,
+                  0.38305211067199707
+                ]
+              },
+              {
+                "mesh": "Outer500_Joinery_45",
+                "point_enu": [
+                  149.74000549316406,
+                  174.6999969482422,
+                  52.37067794799805
+                ],
+                "normal": [
+                  -0.013933840207755566,
+                  -0.09355653822422028,
+                  -0.9955164790153503
+                ]
+              },
+              {
+                "mesh": "Outer500_Joinery_45",
+                "point_enu": [
+                  149.74000549316406,
+                  174.6999969482422,
+                  51.15684509277344
+                ],
+                "normal": [
+                  0.7422330379486084,
+                  0.5498738884925842,
+                  0.38305211067199707
+                ]
+              },
+              {
+                "mesh": "Outer500_Joinery_45",
+                "point_enu": [
+                  149.74000549316406,
+                  174.6999969482422,
+                  49.420677185058594
+                ],
+                "normal": [
+                  -0.013933840207755566,
+                  -0.09355653822422028,
+                  -0.9955164790153503
+                ]
+              },
+              {
+                "mesh": "Outer500_Joinery_45",
+                "point_enu": [
+                  149.74000549316406,
+                  174.6999969482422,
+                  48.20684814453125
+                ],
+                "normal": [
+                  0.7422330379486084,
+                  0.5498738884925842,
+                  0.38305211067199707
+                ]
+              },
+              {
+                "mesh": "Outer500_Joinery_45",
+                "point_enu": [
+                  149.74000549316406,
+                  174.6999969482422,
+                  46.47067642211914
+                ],
+                "normal": [
+                  -0.013933840207755566,
+                  -0.09355653822422028,
+                  -0.9955164790153503
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              150.46,
+              174.7
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  150.4600067138672,
+                  174.6999969482422,
+                  40.86983108520508
+                ],
+                "normal": [
+                  -0.10484576970338821,
+                  -0.3083861172199249,
+                  0.9454657435417175
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              150.1,
+              174.33999999999997
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  150.10000610351562,
+                  174.33999633789062,
+                  40.71248245239258
+                ],
+                "normal": [
+                  -0.10484576970338821,
+                  -0.3083861172199249,
+                  0.9454657435417175
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              150.1,
+              175.06
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  150.10000610351562,
+                  175.05999755859375,
+                  40.94732666015625
+                ],
+                "normal": [
+                  -0.10484576970338821,
+                  -0.3083861172199249,
+                  0.9454657435417175
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "lane": [
+      {
+        "expected_enu": [
+          154.6,
+          173.3,
+          0
+        ],
+        "layers": [
+          {
+            "en": [
+              154.6,
+              173.3
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  154.60000610351562,
+                  173.3000030517578,
+                  40.97505569458008
+                ],
+                "normal": [
+                  -0.1461276262998581,
+                  -0.26830384135246277,
+                  0.9521868824958801
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              154.23999999999998,
+              173.3
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  154.24000549316406,
+                  173.3000030517578,
+                  40.91980743408203
+                ],
+                "normal": [
+                  -0.1461276262998581,
+                  -0.26830384135246277,
+                  0.9521868824958801
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              154.96,
+              173.3
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  154.9600067138672,
+                  173.3000030517578,
+                  41.030303955078125
+                ],
+                "normal": [
+                  -0.1461276262998581,
+                  -0.26830384135246277,
+                  0.9521868824958801
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              154.6,
+              172.94
+            ],
+            "hits": [
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  154.60000610351562,
+                  172.94000244140625,
+                  56.11521911621094
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  154.60000610351562,
+                  172.94000244140625,
+                  55.79521179199219
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Joinery_45",
+                "point_enu": [
+                  154.60000610351562,
+                  172.94000244140625,
+                  53.827213287353516
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Joinery_45",
+                "point_enu": [
+                  154.60000610351562,
+                  172.94000244140625,
+                  53.76021194458008
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Joinery_45",
+                "point_enu": [
+                  154.60000610351562,
+                  172.94000244140625,
+                  50.87721252441406
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Joinery_45",
+                "point_enu": [
+                  154.60000610351562,
+                  172.94000244140625,
+                  50.81021499633789
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Joinery_45",
+                "point_enu": [
+                  154.60000610351562,
+                  172.94000244140625,
+                  47.927215576171875
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              154.6,
+              173.66000000000003
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  154.60000610351562,
+                  173.66000366210938,
+                  41.076499938964844
+                ],
+                "normal": [
+                  -0.1461276262998581,
+                  -0.26830384135246277,
+                  0.9521868824958801
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "expected_enu": [
+          155.2,
+          172.2,
+          0
+        ],
+        "layers": [
+          {
+            "en": [
+              155.2,
+              172.2
+            ],
+            "hits": [
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  155.1999969482422,
+                  172.1999969482422,
+                  56.11521530151367
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  155.1999969482422,
+                  172.1999969482422,
+                  55.91521453857422
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  155.1999969482422,
+                  172.1999969482422,
+                  55.79521179199219
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  155.1999969482422,
+                  172.1999969482422,
+                  55.76521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  155.1999969482422,
+                  172.1999969482422,
+                  52.965213775634766
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  155.1999969482422,
+                  172.1999969482422,
+                  52.81521224975586
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  155.1999969482422,
+                  172.1999969482422,
+                  50.01521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              154.83999999999997,
+              172.2
+            ],
+            "hits": [
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  154.83999633789062,
+                  172.1999969482422,
+                  56.11521530151367
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  154.83999633789062,
+                  172.1999969482422,
+                  55.91521453857422
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  154.83999633789062,
+                  172.1999969482422,
+                  55.79521179199219
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  154.83999633789062,
+                  172.1999969482422,
+                  55.76521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  154.83999633789062,
+                  172.1999969482422,
+                  52.965213775634766
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  154.83999633789062,
+                  172.1999969482422,
+                  52.81521224975586
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  154.83999633789062,
+                  172.1999969482422,
+                  50.01521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              155.56,
+              172.2
+            ],
+            "hits": [
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  155.55999755859375,
+                  172.1999969482422,
+                  56.66521072387695
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  155.55999755859375,
+                  172.1999969482422,
+                  56.11521530151367
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  155.55999755859375,
+                  172.1999969482422,
+                  55.91521453857422
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  155.55999755859375,
+                  172.1999969482422,
+                  55.79521179199219
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  155.55999755859375,
+                  172.1999969482422,
+                  55.76521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  155.55999755859375,
+                  172.1999969482422,
+                  52.965213775634766
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  155.55999755859375,
+                  172.1999969482422,
+                  52.81521224975586
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              155.2,
+              171.83999999999997
+            ],
+            "hits": [
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  155.1999969482422,
+                  171.83999633789062,
+                  56.11521530151367
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  155.1999969482422,
+                  171.83999633789062,
+                  55.91521453857422
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  155.1999969482422,
+                  171.83999633789062,
+                  55.79521179199219
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  155.1999969482422,
+                  171.83999633789062,
+                  55.76521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  155.1999969482422,
+                  171.83999633789062,
+                  52.965213775634766
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  155.1999969482422,
+                  171.83999633789062,
+                  52.81521224975586
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  155.1999969482422,
+                  171.83999633789062,
+                  50.01521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              155.2,
+              172.56
+            ],
+            "hits": [
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  155.1999969482422,
+                  172.55999755859375,
+                  56.11521530151367
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  155.1999969482422,
+                  172.55999755859375,
+                  55.91521453857422
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  155.1999969482422,
+                  172.55999755859375,
+                  55.79521179199219
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  155.1999969482422,
+                  172.55999755859375,
+                  55.76521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  155.1999969482422,
+                  172.55999755859375,
+                  55.445213317871094
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  155.1999969482422,
+                  172.55999755859375,
+                  52.965213775634766
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  155.1999969482422,
+                  172.55999755859375,
+                  52.81521224975586
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "expected_enu": [
+          155.6,
+          171.2,
+          0
+        ],
+        "layers": [
+          {
+            "en": [
+              155.6,
+              171.2
+            ],
+            "hits": [
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  155.60000610351562,
+                  171.1999969482422,
+                  56.11521530151367
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  155.60000610351562,
+                  171.1999969482422,
+                  55.79521179199219
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  155.60000610351562,
+                  171.1999969482422,
+                  40.62932586669922
+                ],
+                "normal": [
+                  -0.16604647040367126,
+                  -0.18235518038272858,
+                  0.9691105484962463
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              155.23999999999998,
+              171.2
+            ],
+            "hits": [
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  155.24000549316406,
+                  171.1999969482422,
+                  56.665218353271484
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  155.24000549316406,
+                  171.1999969482422,
+                  56.11521530151367
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  155.24000549316406,
+                  171.1999969482422,
+                  55.91521453857422
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  155.24000549316406,
+                  171.1999969482422,
+                  55.79521179199219
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  155.24000549316406,
+                  171.1999969482422,
+                  55.76521301269531
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  155.24000549316406,
+                  171.1999969482422,
+                  55.47521209716797
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Frame_45",
+                "point_enu": [
+                  155.24000549316406,
+                  171.1999969482422,
+                  52.965213775634766
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              155.96,
+              171.2
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  155.9600067138672,
+                  171.1999969482422,
+                  40.691009521484375
+                ],
+                "normal": [
+                  -0.16604647040367126,
+                  -0.18235518038272858,
+                  0.9691105484962463
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              155.6,
+              170.83999999999997
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  155.60000610351562,
+                  170.83999633789062,
+                  40.56158447265625
+                ],
+                "normal": [
+                  -0.16604647040367126,
+                  -0.18235518038272858,
+                  0.9691105484962463
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              155.6,
+              171.56
+            ],
+            "hits": [
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  155.60000610351562,
+                  171.55999755859375,
+                  56.11521911621094
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "mesh": "Outer500_Facades_and_storefronts",
+                "point_enu": [
+                  155.60000610351562,
+                  171.55999755859375,
+                  55.79521179199219
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              },
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  155.60000610351562,
+                  171.55999755859375,
+                  40.69706726074219
+                ],
+                "normal": [
+                  -0.16604647040367126,
+                  -0.18235518038272858,
+                  0.9691105484962463
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "expected_enu": [
+          156.4,
+          170.05,
+          0
+        ],
+        "layers": [
+          {
+            "en": [
+              156.4,
+              170.05
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  156.39999389648438,
+                  170.0500030517578,
+                  40.55658721923828
+                ],
+                "normal": [
+                  -0.18204286694526672,
+                  -0.17835228145122528,
+                  0.9669802784919739
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              156.04,
+              170.05
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  156.0399932861328,
+                  170.0500030517578,
+                  40.48884963989258
+                ],
+                "normal": [
+                  -0.1784408688545227,
+                  -0.18195438385009766,
+                  0.9669805765151978
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              156.76000000000002,
+              170.05
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  156.75999450683594,
+                  170.0500030517578,
+                  40.624359130859375
+                ],
+                "normal": [
+                  -0.18204286694526672,
+                  -0.17835228145122528,
+                  0.9669802784919739
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              156.4,
+              169.69
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  156.39999389648438,
+                  169.69000244140625,
+                  40.51235580444336
+                ],
+                "normal": [
+                  -0.18388020992279053,
+                  -0.11030539870262146,
+                  0.9767399430274963
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              156.4,
+              170.41000000000003
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  156.39999389648438,
+                  170.41000366210938,
+                  40.62302017211914
+                ],
+                "normal": [
+                  -0.1784408688545227,
+                  -0.18195438385009766,
+                  0.9669805765151978
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "expected_enu": [
+          157.3,
+          169.65,
+          0
+        ],
+        "layers": [
+          {
+            "en": [
+              157.3,
+              169.65
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  157.3000030517578,
+                  169.64999389648438,
+                  40.67727279663086
+                ],
+                "normal": [
+                  -0.18388020992279053,
+                  -0.11030539870262146,
+                  0.9767399430274963
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              156.94,
+              169.65
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  156.94000244140625,
+                  169.64999389648438,
+                  40.6094970703125
+                ],
+                "normal": [
+                  -0.18388020992279053,
+                  -0.11030539870262146,
+                  0.9767399430274963
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              157.66000000000003,
+              169.65
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  157.66000366210938,
+                  169.64999389648438,
+                  40.74497985839844
+                ],
+                "normal": [
+                  -0.1772548109292984,
+                  -0.1170627623796463,
+                  0.9771780967712402
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              157.3,
+              169.29
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  157.3000030517578,
+                  169.2899932861328,
+                  40.63655090332031
+                ],
+                "normal": [
+                  -0.1772548109292984,
+                  -0.1170627623796463,
+                  0.9771780967712402
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              157.3,
+              170.01000000000002
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  157.3000030517578,
+                  170.00999450683594,
+                  40.7186393737793
+                ],
+                "normal": [
+                  -0.18204286694526672,
+                  -0.17835228145122528,
+                  0.9669802784919739
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "expected_enu": [
+          159,
+          170,
+          0
+        ],
+        "layers": [
+          {
+            "en": [
+              159,
+              170
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  159.0,
+                  170.0,
+                  41.04871368408203
+                ],
+                "normal": [
+                  -0.19322513043880463,
+                  -0.17469225823879242,
+                  0.965477466583252
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              158.64,
+              170
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  158.63999938964844,
+                  170.0,
+                  40.97666549682617
+                ],
+                "normal": [
+                  -0.19322513043880463,
+                  -0.17469225823879242,
+                  0.965477466583252
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              159.36,
+              170
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  159.36000061035156,
+                  170.0,
+                  41.12076187133789
+                ],
+                "normal": [
+                  -0.19322513043880463,
+                  -0.17469225823879242,
+                  0.965477466583252
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              159,
+              169.64
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  159.0,
+                  169.63999938964844,
+                  41.005584716796875
+                ],
+                "normal": [
+                  -0.19490265846252441,
+                  -0.11666519939899445,
+                  0.973859429359436
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              159,
+              170.36
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  159.0,
+                  170.36000061035156,
+                  41.113853454589844
+                ],
+                "normal": [
+                  -0.19322513043880463,
+                  -0.17469225823879242,
+                  0.965477466583252
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "expected_enu": [
+          159.4,
+          170.8,
+          0
+        ],
+        "layers": [
+          {
+            "en": [
+              159.4,
+              170.8
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  159.39999389648438,
+                  170.8000030517578,
+                  41.273521423339844
+                ],
+                "normal": [
+                  -0.19322513043880463,
+                  -0.17469225823879242,
+                  0.965477466583252
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              159.04,
+              170.8
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  159.0399932861328,
+                  170.8000030517578,
+                  41.20146942138672
+                ],
+                "normal": [
+                  -0.19322513043880463,
+                  -0.17469225823879242,
+                  0.965477466583252
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              159.76000000000002,
+              170.8
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  159.75999450683594,
+                  170.8000030517578,
+                  41.34556579589844
+                ],
+                "normal": [
+                  -0.19322513043880463,
+                  -0.17469225823879242,
+                  0.965477466583252
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              159.4,
+              170.44
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  159.39999389648438,
+                  170.44000244140625,
+                  41.208377838134766
+                ],
+                "normal": [
+                  -0.19322513043880463,
+                  -0.17469225823879242,
+                  0.965477466583252
+                ]
+              }
+            ]
+          },
+          {
+            "en": [
+              159.4,
+              171.16000000000003
+            ],
+            "hits": [
+              {
+                "mesh": "COL_Outer500_Surface_08_08",
+                "point_enu": [
+                  159.39999389648438,
+                  171.16000366210938,
+                  41.338653564453125
+                ],
+                "normal": [
+                  -0.19322513043880463,
+                  -0.17469225823879242,
+                  0.965477466583252
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "orthographic_source_refs": [
+    {
+      "source": "current",
+      "z": 19,
+      "x": 417341,
+      "y": 217054,
+      "sha256": "8163b409917df92a1e6222607bb27e8ec38d56bc27ef8665f76869e78946f57a",
+      "bytes": 14735,
+      "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/217054/417341"
+    },
+    {
+      "source": "current",
+      "z": 19,
+      "x": 417341,
+      "y": 217055,
+      "sha256": "60a79c111b754a3f63b39b91acea642c256e3d0c222fcdef761191a29401db62",
+      "bytes": 16231,
+      "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/217055/417341"
+    },
+    {
+      "source": "current",
+      "z": 19,
+      "x": 417342,
+      "y": 217054,
+      "sha256": "75ee471fc43656204367b3582765f4ce39c03775600121982a7173f9ec0b621a",
+      "bytes": 14066,
+      "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/217054/417342"
+    },
+    {
+      "source": "current",
+      "z": 19,
+      "x": 417342,
+      "y": 217055,
+      "sha256": "2049f1e637f9bb64e96da393540843f68e31ae1a866a0fa276336845e096c299",
+      "bytes": 14987,
+      "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/217055/417342"
+    },
+    {
+      "source": "Wayback6543",
+      "z": 19,
+      "x": 417341,
+      "y": 217054,
+      "sha256": "7a092fa0adc05939315a8e81280fcc9826f3ad739e73c981f7f2f2685d83eb63",
+      "bytes": 15275,
+      "url": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/6543/19/217054/417341"
+    },
+    {
+      "source": "Wayback6543",
+      "z": 19,
+      "x": 417341,
+      "y": 217055,
+      "sha256": "e6ddc130523bdc56b71224f414640128ce4859073394991e495a626aa31cc66b",
+      "bytes": 14451,
+      "url": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/6543/19/217055/417341"
+    },
+    {
+      "source": "Wayback6543",
+      "z": 19,
+      "x": 417342,
+      "y": 217054,
+      "sha256": "a3158c6bebaf2868ea4711edccc975ac520bfb7035291802dc00d64816e62ff5",
+      "bytes": 12218,
+      "url": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/6543/19/217054/417342"
+    },
+    {
+      "source": "Wayback6543",
+      "z": 19,
+      "x": 417342,
+      "y": 217055,
+      "sha256": "69bcce1a6c91a7d4c1eb7147ce7f7cac862b1a6dc015cd451c9b66274fe133ef",
+      "bytes": 15197,
+      "url": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/6543/19/217055/417342"
+    },
+    {
+      "source": "Wayback22869",
+      "z": 19,
+      "x": 417341,
+      "y": 217054,
+      "sha256": "391a5835bbcac06d65cffd4c714130d783d7fbe735bdee1a5ecf49296272baa5",
+      "bytes": 10400,
+      "url": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/22869/19/217054/417341"
+    },
+    {
+      "source": "Wayback22869",
+      "z": 19,
+      "x": 417341,
+      "y": 217055,
+      "sha256": "69c832f86d42fa4845e76a72a631ff6fc0bbcb99c4163f928e98d0a890b3ae31",
+      "bytes": 11318,
+      "url": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/22869/19/217055/417341"
+    },
+    {
+      "source": "Wayback22869",
+      "z": 19,
+      "x": 417342,
+      "y": 217054,
+      "sha256": "1b57fa88fa51694144768453cd6b35511b2b4c81816b358f6cd9e36470b32391",
+      "bytes": 9754,
+      "url": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/22869/19/217054/417342"
+    },
+    {
+      "source": "Wayback22869",
+      "z": 19,
+      "x": 417342,
+      "y": 217055,
+      "sha256": "03dd1c1c9a7bf2c59e3d2c4108e5ba0931282bae1783002b23b75833be0d6262",
+      "bytes": 10677,
+      "url": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/22869/19/217055/417342"
+    }
+  ]
 }

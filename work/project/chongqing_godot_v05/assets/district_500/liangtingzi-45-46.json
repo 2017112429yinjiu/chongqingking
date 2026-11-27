@@ -4,12 +4,16 @@
   "new_meshes": [
     "COL_Liangtingzi45_PublicFlags",
     "Liangtingzi45_PavingRimAndJoints",
-    "COL_Liangtingzi45_PublicSideFence",
-    "Liangtingzi45_RustMetalUprights",
     "COL_Liangtingzi46_PublicDescent",
     "COL_Liangtingzi46_LaneEdgeParapet",
     "COL_Liangtingzi46_SeparateStoneStair",
-    "Liangtingzi46_WornStoneReturns"
+    "Liangtingzi46_WornStoneReturns",
+    "COL_Liangtingzi46_SunkShopStreetEdge",
+    "Liangtingzi46_EavesAndWindowRecesses",
+    "COL_Liangtingzi_LowerLaneBrickPierAndWall",
+    "Liangtingzi_LowerLaneRustFenceAndPlaque",
+    "COL_Liangtingzi45_TreeSideFlags",
+    "Liangtingzi45_StoneTreeWell"
   ],
   "replacement_meshes": [],
   "walks": {
@@ -47,34 +51,34 @@
     ],
     "46": [
       [
-        154.10948181152344,
-        179.359619140625,
-        42.679313934326174
+        153.99595642089844,
+        179.3034210205078,
+        42.65379360961914
       ],
       [
-        155.1569061279297,
-        177.95767211914062,
-        42.473469055175784
+        154.56065368652344,
+        177.33285522460938,
+        42.22510174560547
       ],
       [
-        156.388427734375,
-        176.5110321044922,
-        42.237968719482424
+        155.40110778808594,
+        175.19190979003906,
+        41.718410766601565
       ],
       [
-        158.02236938476562,
-        174.754150390625,
-        42.000095642089846
+        156.28602600097656,
+        173.12339782714844,
+        41.261982238769534
       ],
       [
-        159.10910034179688,
-        173.57998657226562,
-        41.87530163574219
+        156.98829650878906,
+        171.1980438232422,
+        40.94286755371094
       ],
       [
-        160.94534301757812,
-        171.67047119140625,
-        41.80598095703125
+        157.55545043945312,
+        169.17816162109375,
+        40.73248699951172
       ]
     ]
   },
@@ -84,7 +88,22 @@
     "Liangtingzi blue-grey stone fence base": "res://assets/chongqing_district_brick_wall_08_diff_2k.jpg",
     "Liangtingzi pale step tread": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
     "Liangtingzi worn descending concrete": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
-    "Liangtingzi soil in shaded pits": "res://assets/chongqing_district_leaf_scattered_gravel_diff_2k.jpg"
+    "Liangtingzi soil in shaded pits": "res://assets/chongqing_district_leaf_scattered_gravel_diff_2k.jpg",
+    "Liangtingzi worn shop-side rendered wall": "res://assets/chongqing_district_concrete_wall_006_diff_2k.jpg",
+    "Liangtingzi lower trim and door frames": "res://assets/chongqing_district_wood_table_worn_diff_2k.jpg"
   },
-  "borrowed_materials": {}
+  "borrowed_materials": {},
+  "trees": [
+    {
+      "name": "Liangtingzi45_LaneTree",
+      "donor": "Outer500_Plant_036",
+      "enu": [
+        150.4,
+        174.65,
+        40.91786279296875
+      ],
+      "yaw": 0.78,
+      "scale": 1.04
+    }
+  ]
 }

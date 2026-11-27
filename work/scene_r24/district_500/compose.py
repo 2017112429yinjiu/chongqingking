@@ -388,6 +388,13 @@ if liangtingzi:
         public_lane.objects = liangtingzi["new_meshes"]
     for item in public_lane.objects:
         collection.objects.link(item)
+    for entry in liangtingzi.get("trees", []):
+        planted=collection.objects[entry["donor"]].copy()
+        planted.name=entry["name"]
+        planted.location=entry["enu"]
+        planted.scale*=entry["scale"]
+        planted.rotation_euler.z+=entry["yaw"]
+        collection.objects.link(planted)
 if mati34:
     with bpy.data.libraries.load(str(factory_dir / "matix_34_35/mati-34-35.blend"),
                                  link=True, relative=True) as (_, mati_margin):

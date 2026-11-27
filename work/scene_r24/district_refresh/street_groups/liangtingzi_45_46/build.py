@@ -24,39 +24,75 @@ def make_materials():
         ("step", "Liangtingzi pale step tread", (.76,.77,.72), "concrete_floor_worn_001_diff_2k.jpg"),
         ("concrete", "Liangtingzi worn descending concrete", (.60,.64,.59), "concrete_floor_worn_001_diff_2k.jpg"),
         ("planting", "Liangtingzi soil in shaded pits", (.35,.43,.29), "leaf_scattered_gravel_diff_2k.jpg"),
+        ("stucco", "Liangtingzi worn shop-side rendered wall", (.81,.77,.66), "concrete_wall_006_diff_2k.jpg"),
+        ("wood", "Liangtingzi lower trim and door frames", (.54,.39,.29), "wood_table_worn_diff_2k.jpg"),
     )
     for key, label, color, texture in specifications:
         finishes[key] = make_material(label, color, texture)
         textures[label] = f"res://assets/chongqing_district_{texture}"
     finishes["fence"] = tint("Liangtingzi oxide red closed boundary", (.22,.075,.055))
     finishes["joint"] = tint("Liangtingzi damp stone joints", (.19,.19,.16))
+    finishes["notice"] = tint("Liangtingzi pale vertical plaque", (.77,.79,.73))
+    finishes["blue"] = tint("Liangtingzi faded blue eave", (.15,.33,.45))
+    finishes["opening"] = tint("Liangtingzi shaded street-side shop recess", (.093,.087,.074))
     return finishes, textures
 
 
 def frontage(edge, tiles, m):
     stones = edge.strip("COL_Liangtingzi45_PublicFlags", 0., 1.76, .053, tiles, m["flag"], m["kerb"])
     rim = Mesh("Liangtingzi45_PavingRimAndJoints")
-    fence = Mesh("COL_Liangtingzi45_PublicSideFence")
-    uprights = Mesh("Liangtingzi45_RustMetalUprights")
     for k in range(ceil((edge.stations[-1]-1.)/.53)):
         a = .38+k*.53
         b = a+.53
         box(rim,edge,a,b,.83,.98,.015,.123,m["kerb"])
         box(rim,edge,a+.48,a+.488,-.73,.77,.054,.003,m["joint"])
-    for a,b in ((3.12,6.91),(6.91,10.72),(10.72,12.18)):
-        box(fence,edge,a,b,-1.50,-1.12,-.16,.60,m["brick"])
-        box(fence,edge,a-.055,b+.045,-1.55,-1.075,.44,.095,m["kerb"])
-        box(fence,edge,a-.128,a+.145,-1.63,-1.045,.40,1.48,m["brick"])
-        box(fence,edge,a-.186,a+.183,-1.68,-1.005,1.86,.105,m["kerb"])
-        box(uprights,edge,a+.19,b-.11,-1.36,-1.314,.61,.043,m["fence"])
-        box(uprights,edge,a+.19,b-.11,-1.36,-1.314,1.35,.040,m["fence"])
-        for k in range(ceil((b-a-.30)/.155)):
-            st=a+.20+k*.155
-            box(uprights,edge,st,st+.027,-1.36,-1.315,.53,.94,m["fence"])
-    for s in (4.7,9.35):
-        box(rim,edge,s-.45,s+.45,-1.03,-.76,.012,.13,m["kerb"])
-        box(rim,edge,s-.45,s+.45,-1.28,-1.02,.035,.044,m["planting"])
-    return [stones,rim.save(),fence.save(),uprights.save()]
+    return [stones,rim.save()]
+
+
+def shared_lower_edge(field, ground, tiles, m):
+    e,n=field["observations"]["brick_pier_45_46"]["match_en"]
+    head=Edge([(e-1.28,n+.19),(e,n)],ground)
+    pier=Mesh("COL_Liangtingzi_LowerLaneBrickPierAndWall")
+    metal=Mesh("Liangtingzi_LowerLaneRustFenceAndPlaque")
+    s=head.stations[-1]
+    box(pier,head,s-.27,s+.27,-.275,.275,-.10,2.32,m["brick"])
+    box(pier,head,s-.32,s+.32,-.34,.34,2.16,.175,m["kerb"])
+    box(metal,head,s-.13,s+.13,.279,.309,1.05,.68,m["notice"])
+    box(metal,head,s-.15,s+.15,.281,.295,1.185,.048,m["fence"])
+    box(pier,head,.19,s-.30,-.27,.24,-.14,.58,m["brick"])
+    box(pier,head,.14,s-.26,-.30,.30,.42,.113,m["kerb"])
+    for h in (.64,1.28):
+        box(metal,head,.19,s-.23,-.033,.032,h,.042,m["fence"])
+    for k in range(ceil((s-.46)/.14)):
+        x=.23+k*.143
+        box(metal,head,x,x+.026,-.024,.019,.51,.86,m["fence"])
+
+    tree=field["tree_anchor"]
+    south=Edge([(tree[0]-1.42,tree[1]-.08),(tree[0]+1.67,tree[1]+.04)],ground)
+    apron=south.strip("COL_Liangtingzi45_TreeSideFlags",0.,1.26,.052,tiles,m["flag"],m["kerb"])
+    rim=Mesh("Liangtingzi45_StoneTreeWell")
+    for lo,hi,near,far in ((1.01,1.09,-.45,.43),(1.77,1.85,-.45,.43),(1.09,1.77,-.45,-.36),(1.09,1.77,.35,.43)):
+        box(rim,south,lo,hi,near,far,.058,.10,m["kerb"])
+    box(rim,south,1.09,1.77,-.36,.35,.056,.026,m["planting"])
+    y=ground.ray_cast(Vector((*tree,92.)),Vector((0.,0.,-1.)),110.)[0].z
+    tree_row={"name":"Liangtingzi45_LaneTree","donor":"Outer500_Plant_036","enu":[*tree,y+.071],"yaw":.78,"scale":1.04}
+    return [pier.save(),metal.save(),apron,rim.save()],tree_row
+
+
+def low_shops(edge,m):
+    front=Mesh("COL_Liangtingzi46_SunkShopStreetEdge")
+    trim=Mesh("Liangtingzi46_EavesAndWindowRecesses")
+    for a,b in ((4.4,7.0),(7.0,9.62),(9.62,12.22)):
+        for x in (a,b-.20):
+            box(front,edge,x,x+.20,.99,1.26,-.78,2.54,m["stucco"])
+        box(front,edge,a,b,1.38,1.55,-.75,2.53,m["stucco"])
+        box(trim,edge,a+.24,b-.20,1.316,1.381,-.481,1.24,m["opening"])
+        box(trim,edge,a+.07,b-.10,.89,1.28,.91,.173,m["wood"])
+        box(trim,edge,a-.04,b+.055,.73,1.57,1.79,.115,m["blue"])
+        for k in range(7):
+            x=a+.20+k*.313
+            box(trim,edge,x,x+.025,.735,1.52,1.911,.038,m["blue"])
+    return [front.save(),trim.save()]
 
 
 def descent(edge, tiles, m):
@@ -64,11 +100,11 @@ def descent(edge, tiles, m):
     returns = Mesh("COL_Liangtingzi46_LaneEdgeParapet")
     stair = Mesh("COL_Liangtingzi46_SeparateStoneStair")
     cap = Mesh("Liangtingzi46_WornStoneReturns")
-    for i in range(16):
+    for i in range(18):
         a=.70+i*.60
         b=a+.60
-        box(returns,edge,a,b,-1.045,-.82,-.12,.91,m["brick"])
-        box(cap,edge,a,b,-1.10,-.76,.77,.105,m["kerb"])
+        box(returns,edge,a,b,-1.045,-.83,-.12,.72,m["brick"])
+        box(cap,edge,a,b,-1.10,-.79,.59,.105,m["kerb"])
     for i in range(8):
         a=1.2+i*.34
         b=a+.34
@@ -93,6 +129,10 @@ def build(output):
         edge=Edge(shape["path"],field_terrain)
         layer.extend(method(edge,cache,mats))
         routes[key]=[edge.at(station,0.,rise) for station in shape["marks"]]
+        if key=="46":
+            layer.extend(low_shops(edge,mats))
+    shared,tree=shared_lower_edge(field,field_terrain,cache,mats)
+    layer.extend(shared)
     retained=set(layer)
     for obj in list(bpy.data.objects):
         if obj not in retained:
@@ -105,7 +145,7 @@ def build(output):
     bpy.ops.export_scene.gltf(filepath=str(output/f"{name}.glb"),export_format="GLB",export_image_format="NONE",
                              export_cameras=False,export_lights=False)
     plan={"retired_plots":[],"retired_objects":[],"new_meshes":[x.name for x in layer],"replacement_meshes":[],
-          "walks":routes,"surface_textures":textures,"borrowed_materials":{}}
+          "walks":routes,"surface_textures":textures,"borrowed_materials":{},"trees":[tree]}
     (output/f"{name}.json").write_text(json.dumps(plan,ensure_ascii=False,indent=2)+"\n")
     print("CQ_LIANGTINGZI",json.dumps(routes))
 

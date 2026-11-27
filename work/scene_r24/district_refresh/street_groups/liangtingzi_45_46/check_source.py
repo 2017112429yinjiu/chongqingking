@@ -1,5 +1,6 @@
 """Reopen the Liangtingzi source and check both public walking surfaces."""
 import json
+import os
 from pathlib import Path
 
 import bpy
@@ -7,11 +8,16 @@ from mathutils import Vector
 from mathutils.bvhtree import BVHTree
 
 here=Path(__file__).resolve().parent
-plan_path=here.parents[4]/"work/project/chongqing_godot_v05/assets/district_500/liangtingzi-45-46.json"
+default_plan=here.parents[4]/"work/project/chongqing_godot_v05/assets/district_500/liangtingzi-45-46.json"
+plan_path=Path(os.environ.get("CQ_LIANGTINGZI_PLAN",default_plan))
 plan=json.loads(plan_path.read_text())
 objects=bpy.context.scene.objects
 assert all(objects[name].data.polygons for name in plan["new_meshes"])
 assert not any(image.is_missing for image in bpy.data.images)
+if plan.get("trees") and "Outer500_Plant_036" in objects:
+    for spec in plan["trees"]:
+        tree=objects[spec["name"]]
+        assert (tree.location-Vector(spec["enu"])).length<.01, tree.name
 measures={}
 for key,name in (("45","COL_Liangtingzi45_PublicFlags"),("46","COL_Liangtingzi46_PublicDescent")):
     mesh=objects[name]

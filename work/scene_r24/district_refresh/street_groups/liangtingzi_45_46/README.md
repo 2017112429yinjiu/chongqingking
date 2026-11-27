@@ -12,3 +12,5 @@
 原始图片用于观察。坐标用完整百度 Mercator → BD09 → GCJ02 → WGS84 → 项目 E/N；照片 Z 未参与游戏高度。轮廓、门位和地表高度引用项目原数据及已观察公共面。贴纹沿用仓库现有许可资源。
 
 重建时先用 `CQ_LIANGTINGZI_PARENT=1 blender -b --factory-startup -P work/scene_r24/district_500/compose.py` 生成父组合，再用 Blender 4.3.2 打开它并执行本目录的 `build.py -- <导出目录>`。可用 `CQ_LIANGTINGZI_SOURCE` 指定独立模型保存路径。把导出 GLB/JSON 装入 Godot `assets/district_500`，组合城使用不带父版参数的 `compose.py`。本目录 `check_source.py` 核支撑，Godot 4.6.3 导入并运行 `walk.gd`。要重拍加 `--site-fixed-views=<views.json>`；父版用 `--qa-without-liangtingzi-45-46`。
+
+后续共同砖墩、下沉店边和树下铺地已经复拍。独立两眼和四眼的配准、树位与旧楼冲突及可达范围见 [精修实测与图片](evidence/refined-lane/README.md)。
