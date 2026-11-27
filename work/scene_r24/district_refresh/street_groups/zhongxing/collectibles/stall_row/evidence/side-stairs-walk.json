@@ -1,0 +1,1303 @@
+{
+  "candidate": {
+    "bounds_east_north_m": [
+      -250.0,
+      -250.0,
+      250.0,
+      250.0
+    ],
+    "collectibles_market_sha256": "a23f881d0e9206b40fedc8f262cfdb132194e59825e4728b39800471b684e175",
+    "glb_sha256": "b0180ce3a8d821253181725ad4516c04f58fe057529680e22a081f89fdd62122",
+    "guoco_sha256": "4dcb3d55080b02d8a0cf02585626bed2dfc3cdb37ae2f987110b55dd56435853",
+    "market_stall_row_sha256": "42fffbc9c4a98d3fa615e48fa9ce4eecdf66bf225decbd3d44d40eddf5a41646",
+    "match_factory_sha256": "ab742e6b12ad0b52c4cffef0f8342e1a957b59de5cfe3abde4dd691f853d76c6",
+    "matix_streets_sha256": "3b57fcf46931ff28ce1ab2be4a7250d31af30d302e362816265be8e38852e33b",
+    "osm_building_ids": [
+      809889594.0,
+      809889602.0,
+      809889621.0,
+      704006725,
+      809889619,
+      809889620
+    ],
+    "park_plot57_sha256": "6c96e60d7d630f871ca3e11b7a6946b1f546ee536d68c3308815e2d4c0414136",
+    "pavilion_62_sha256": "08d702b1a9ce0464b3bc62f33808befa5b58e5dcd082659b06c4cbc0bbab3e76",
+    "public_edges_sha256": "d585e52e0d927a9639e7285ffecc4932603a4d56b039504f1600763f72cc1be4",
+    "retired_internal_context": false,
+    "riverside_sha256": "12f304d468c56fb429d4a4db948f5297b7ca4284f29fc494442c9b2a146f67d1",
+    "west_court_sha256": "32eea2dd1f34b7f5dacbb546a46c6cf106ac3896804677ef9b2ee1dabfb2c683",
+    "west_ramp_sha256": "2a2ae2a4745096ea849dbb5f2365ce1cf437a8dcd974ed4cb47dddd5d5aae8b2",
+    "xingchen_sha256": "af156281216128407550442694d4dc45ea8507dfc7da4c80efd549a0ffbe127b",
+    "zhongxing_wall_sha256": "72fa4f4c800a8e27c19d580da66524160c4c2111bd82191706b6c8da142b8d42"
+  },
+  "checks": [
+    {
+      "detail": "",
+      "name": "first_shift",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "Huihuigou_TerrazzoPaving_exists",
+      "pass": true
+    },
+    {
+      "detail": {
+        "bbox_m": "(10.23999, 0.000011, 12.78)",
+        "materials": [
+          {
+            "albedo_size": "(256.0, 256.0)",
+            "name": "Market terrazzo panel finish 1",
+            "normal_enabled": false,
+            "pass": true,
+            "repeat_m": 0.949930906295776,
+            "uv_count": 72,
+            "uv_edge_samples": 72,
+            "vertex_count": 72
+          },
+          {
+            "albedo_size": "(256.0, 256.0)",
+            "name": "Market terrazzo panel finish 0",
+            "normal_enabled": false,
+            "pass": true,
+            "repeat_m": 0.949930906295776,
+            "uv_count": 472,
+            "uv_edge_samples": 472,
+            "vertex_count": 472
+          },
+          {
+            "albedo_size": "(256.0, 256.0)",
+            "name": "Market terrazzo panel finish 3",
+            "normal_enabled": false,
+            "pass": true,
+            "repeat_m": 0.949930906295776,
+            "uv_count": 36,
+            "uv_edge_samples": 36,
+            "vertex_count": 36
+          },
+          {
+            "albedo_size": "(256.0, 256.0)",
+            "name": "Market terrazzo panel finish 2",
+            "normal_enabled": false,
+            "pass": true,
+            "repeat_m": 0.949930906295776,
+            "uv_count": 36,
+            "uv_edge_samples": 36,
+            "vertex_count": 36
+          }
+        ]
+      },
+      "name": "Huihuigou_TerrazzoPaving_uv_and_scale",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "Huihuigou_WainscotAndShutters_exists",
+      "pass": true
+    },
+    {
+      "detail": {
+        "bbox_m": "(9.380005, 2.658001, 12.61301)",
+        "materials": [
+          {
+            "albedo_size": "(2048.0, 2048.0)",
+            "name": "Market wall exposed plaster and grout",
+            "normal_enabled": true,
+            "pass": true,
+            "repeat_m": 1.44106817245483,
+            "uv_count": 12,
+            "uv_edge_samples": 12,
+            "vertex_count": 12
+          }
+        ]
+      },
+      "name": "Huihuigou_WainscotAndShutters_uv_and_scale",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "entry_finish_imported",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "enu": [
+            223.779998779297,
+            193.649993896484,
+            53.2999992370605
+          ],
+          "levels": [
+            {
+              "clear_width_m": 3.50990295410156,
+              "height_above_floor_m": 0.22,
+              "sides": [
+                {
+                  "clear_m": 1.42979431152344,
+                  "contact": "COL_Huihuigou_SharedPodium"
+                },
+                {
+                  "clear_m": 2.08010864257812,
+                  "contact": "COL_Huihuigou_HighStreetHall"
+                }
+              ]
+            },
+            {
+              "clear_width_m": 3.50990295410156,
+              "height_above_floor_m": 0.95,
+              "sides": [
+                {
+                  "clear_m": 1.42979431152344,
+                  "contact": "COL_Huihuigou_SharedPodium"
+                },
+                {
+                  "clear_m": 2.08010864257812,
+                  "contact": "COL_Huihuigou_HighStreetHall"
+                }
+              ]
+            },
+            {
+              "clear_width_m": 3.50990295410156,
+              "height_above_floor_m": 1.48,
+              "sides": [
+                {
+                  "clear_m": 1.42979431152344,
+                  "contact": "COL_Huihuigou_SharedPodium"
+                },
+                {
+                  "clear_m": 2.08010864257812,
+                  "contact": "COL_Huihuigou_HighStreetHall"
+                }
+              ]
+            }
+          ],
+          "station": "threshold"
+        },
+        {
+          "enu": [
+            225.809997558594,
+            193.649993896484,
+            53.2999992370605
+          ],
+          "levels": [
+            {
+              "clear_width_m": 5.8,
+              "height_above_floor_m": 0.22,
+              "sides": [
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                },
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                }
+              ]
+            },
+            {
+              "clear_width_m": 5.8,
+              "height_above_floor_m": 0.95,
+              "sides": [
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                },
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                }
+              ]
+            },
+            {
+              "clear_width_m": 5.8,
+              "height_above_floor_m": 1.48,
+              "sides": [
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                },
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                }
+              ]
+            }
+          ],
+          "station": "main_1"
+        },
+        {
+          "enu": [
+            228.199996948242,
+            193.649993896484,
+            53.2999992370605
+          ],
+          "levels": [
+            {
+              "clear_width_m": 5.34822692871094,
+              "height_above_floor_m": 0.22,
+              "sides": [
+                {
+                  "clear_m": 2.44822692871094,
+                  "contact": "COL_Huihuigou_MarketFurnishings"
+                },
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                }
+              ]
+            },
+            {
+              "clear_width_m": 5.8,
+              "height_above_floor_m": 0.95,
+              "sides": [
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                },
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                }
+              ]
+            },
+            {
+              "clear_width_m": 5.8,
+              "height_above_floor_m": 1.48,
+              "sides": [
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                },
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                }
+              ]
+            }
+          ],
+          "station": "main_2"
+        },
+        {
+          "enu": [
+            230.649993896484,
+            193.649993896484,
+            53.2999992370605
+          ],
+          "levels": [
+            {
+              "clear_width_m": 5.8,
+              "height_above_floor_m": 0.22,
+              "sides": [
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                },
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                }
+              ]
+            },
+            {
+              "clear_width_m": 5.8,
+              "height_above_floor_m": 0.95,
+              "sides": [
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                },
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                }
+              ]
+            },
+            {
+              "clear_width_m": 5.8,
+              "height_above_floor_m": 1.48,
+              "sides": [
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                },
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                }
+              ]
+            }
+          ],
+          "station": "main_3"
+        },
+        {
+          "enu": [
+            231.220001220703,
+            195.139999389648,
+            53.2999992370605
+          ],
+          "levels": [
+            {
+              "clear_width_m": 5.45055832862854,
+              "height_above_floor_m": 0.22,
+              "sides": [
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                },
+                {
+                  "clear_m": 2.55055832862854,
+                  "contact": "COL_Huihuigou_HighStreetHall"
+                }
+              ]
+            },
+            {
+              "clear_width_m": 5.45055832862854,
+              "height_above_floor_m": 0.95,
+              "sides": [
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                },
+                {
+                  "clear_m": 2.55055832862854,
+                  "contact": "COL_Huihuigou_HighStreetHall"
+                }
+              ]
+            },
+            {
+              "clear_width_m": 5.45055832862854,
+              "height_above_floor_m": 1.48,
+              "sides": [
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                },
+                {
+                  "clear_m": 2.55055832862854,
+                  "contact": "COL_Huihuigou_HighStreetHall"
+                }
+              ]
+            }
+          ],
+          "station": "main_turn"
+        },
+        {
+          "enu": [
+            231.520004272461,
+            195.860000610352,
+            53.2999992370605
+          ],
+          "levels": [
+            {
+              "clear_width_m": 5.12768473625183,
+              "height_above_floor_m": 0.22,
+              "sides": [
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                },
+                {
+                  "clear_m": 2.22768473625183,
+                  "contact": "COL_Huihuigou_HighStreetHall"
+                }
+              ]
+            },
+            {
+              "clear_width_m": 5.12768473625183,
+              "height_above_floor_m": 0.95,
+              "sides": [
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                },
+                {
+                  "clear_m": 2.22768473625183,
+                  "contact": "COL_Huihuigou_HighStreetHall"
+                }
+              ]
+            },
+            {
+              "clear_width_m": 5.12768473625183,
+              "height_above_floor_m": 1.48,
+              "sides": [
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                },
+                {
+                  "clear_m": 2.22768473625183,
+                  "contact": "COL_Huihuigou_HighStreetHall"
+                }
+              ]
+            }
+          ],
+          "station": "main_end"
+        },
+        {
+          "enu": [
+            227.220001220703,
+            190.559997558594,
+            53.2999992370605
+          ],
+          "levels": [
+            {
+              "clear_width_m": 5.8,
+              "height_above_floor_m": 0.22,
+              "sides": [
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                },
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                }
+              ]
+            },
+            {
+              "clear_width_m": 5.8,
+              "height_above_floor_m": 0.95,
+              "sides": [
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                },
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                }
+              ]
+            },
+            {
+              "clear_width_m": 5.8,
+              "height_above_floor_m": 1.48,
+              "sides": [
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                },
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                }
+              ]
+            }
+          ],
+          "station": "side_hall"
+        },
+        {
+          "enu": [
+            227.220001220703,
+            187.960006713867,
+            53.2999992370605
+          ],
+          "levels": [
+            {
+              "clear_width_m": 5.8,
+              "height_above_floor_m": 0.22,
+              "sides": [
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                },
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                }
+              ]
+            },
+            {
+              "clear_width_m": 5.8,
+              "height_above_floor_m": 0.95,
+              "sides": [
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                },
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                }
+              ]
+            },
+            {
+              "clear_width_m": 5.8,
+              "height_above_floor_m": 1.48,
+              "sides": [
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                },
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                }
+              ]
+            }
+          ],
+          "station": "side_door"
+        },
+        {
+          "enu": [
+            227.220001220703,
+            186.550003051758,
+            52.7145004272461
+          ],
+          "levels": [
+            {
+              "clear_width_m": 2.37998962402344,
+              "height_above_floor_m": 0.22,
+              "sides": [
+                {
+                  "clear_m": 1.44000244140625,
+                  "contact": "COL_Huihuigou_StreetSteps"
+                },
+                {
+                  "clear_m": 0.939987182617188,
+                  "contact": "COL_Huihuigou_StreetSteps"
+                }
+              ]
+            },
+            {
+              "clear_width_m": 5.8,
+              "height_above_floor_m": 0.95,
+              "sides": [
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                },
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                }
+              ]
+            },
+            {
+              "clear_width_m": 5.8,
+              "height_above_floor_m": 1.48,
+              "sides": [
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                },
+                {
+                  "clear_m": 2.9,
+                  "contact": ""
+                }
+              ]
+            }
+          ],
+          "station": "side_midstep"
+        },
+        {
+          "enu": [
+            227.220001220703,
+            184.320007324219,
+            51.6898002624512
+          ],
+          "levels": [
+            {
+              "clear_width_m": 2.37998962402344,
+              "height_above_floor_m": 0.22,
+              "sides": [
+                {
+                  "clear_m": 1.44000244140625,
+                  "contact": "COL_Huihuigou_StreetSteps"
+                },
+                {
+                  "clear_m": 0.939987182617188,
+                  "contact": "COL_Huihuigou_StreetSteps"
+                }
+              ]
+            },
+            {
+              "clear_width_m": 2.37998962402344,
+              "height_above_floor_m": 0.95,
+              "sides": [
+                {
+                  "clear_m": 1.44000244140625,
+                  "contact": "COL_Huihuigou_StreetSteps"
+                },
+                {
+                  "clear_m": 0.939987182617188,
+                  "contact": "COL_Huihuigou_StreetSteps"
+                }
+              ]
+            },
+            {
+              "clear_width_m": 2.37998962402344,
+              "height_above_floor_m": 1.48,
+              "sides": [
+                {
+                  "clear_m": 1.44000244140625,
+                  "contact": "COL_Huihuigou_StreetSteps"
+                },
+                {
+                  "clear_m": 0.939987182617188,
+                  "contact": "COL_Huihuigou_StreetSteps"
+                }
+              ]
+            }
+          ],
+          "station": "side_lowstep"
+        }
+      ],
+      "name": "sampled_aisle_clearances",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "Huihuigou_EastRowGreenGlaze_treatment",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "Huihuigou_EastRowSteelShopfront_treatment",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "Huihuigou_EastRowPrintedCards_treatment",
+      "pass": true
+    },
+    {
+      "detail": {
+        "enu": [
+          216.5,
+          184.5,
+          50.8796844482422
+        ],
+        "gap_m": 0.0
+      },
+      "name": "normal_street_spawn",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 26.3874143622816,
+        "end": "(227.2199, 51.5573, -184.0221)",
+        "goals": 9,
+        "max_frame_displacement_m": 0.374395132064819,
+        "name": "zhongxing_collectibles_side_out",
+        "pass": true,
+        "reached": 9,
+        "stall_contacts": []
+      },
+      "name": "zhongxing_collectibles_side_out",
+      "pass": true
+    },
+    {
+      "detail": [
+        227.219940185547,
+        184.022125244141,
+        51.5572967529297
+      ],
+      "name": "on_destination_floor",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 26.51869700104,
+        "end": "(216.5593, 50.87931, -184.4762)",
+        "goals": 9,
+        "max_frame_displacement_m": 0.180749475955963,
+        "name": "zhongxing_collectibles_side_back",
+        "pass": true,
+        "reached": 9,
+        "stall_contacts": []
+      },
+      "name": "zhongxing_collectibles_side_back",
+      "pass": true
+    },
+    {
+      "detail": [
+        216.559310913086,
+        184.476150512695,
+        50.8793144226074
+      ],
+      "name": "returned_to_same_street",
+      "pass": true
+    }
+  ],
+  "device": "",
+  "engine": "4.6.3-stable (official)",
+  "native_frames": [],
+  "renderer": "forward_plus",
+  "scene": "res://first_shift.tscn",
+  "sections": [
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_09_08",
+          50.863,
+          0.991
+        ]
+      ],
+      "east_north": [
+        216.5,
+        184.5
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_09_08",
+          51.553,
+          0.991
+        ]
+      ],
+      "east_north": [
+        217.85,
+        189.42
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_09_08",
+          52.111,
+          0.992
+        ]
+      ],
+      "east_north": [
+        218.9,
+        193.65
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Huihuigou_StreetSteps",
+          52.844,
+          1.0
+        ],
+        [
+          "COL_Outer500_Surface_09_08",
+          52.218,
+          0.99
+        ]
+      ],
+      "east_north": [
+        220.85,
+        193.65
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Huihuigou_SharedPodium",
+          60.95,
+          1.0
+        ],
+        [
+          "COL_Huihuigou_HighStreetHall",
+          57.11,
+          1.0
+        ],
+        [
+          "COL_Outer500_Surface_09_08",
+          52.515,
+          0.987
+        ]
+      ],
+      "east_north": [
+        223.78,
+        193.65
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Huihuigou_HighStreetHall",
+          57.11,
+          1.0
+        ],
+        [
+          "COL_Outer500_Surface_09_08",
+          52.804,
+          0.994
+        ]
+      ],
+      "east_north": [
+        226.65,
+        193.65
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Huihuigou_HighStreetHall",
+          57.11,
+          1.0
+        ],
+        [
+          "COL_Outer500_Surface_09_08",
+          52.503,
+          0.991
+        ]
+      ],
+      "east_north": [
+        227.22,
+        190.56
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Huihuigou_HighStreetHall",
+          57.11,
+          1.0
+        ],
+        [
+          "COL_Outer500_Surface_09_08",
+          52.128,
+          0.984
+        ]
+      ],
+      "east_north": [
+        227.22,
+        187.98
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Huihuigou_StreetSteps",
+          52.422,
+          1.0
+        ],
+        [
+          "COL_Outer500_Surface_09_08",
+          51.743,
+          0.981
+        ]
+      ],
+      "east_north": [
+        227.22,
+        185.84
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Huihuigou_StreetSteps",
+          51.543,
+          1.0
+        ],
+        [
+          "COL_Outer500_Surface_09_08",
+          51.402,
+          0.979
+        ]
+      ],
+      "east_north": [
+        227.22,
+        184.15
+      ]
+    }
+  ],
+  "start": "normal first_shift exploration spawn",
+  "teleports_between_legs": 0,
+  "walks": [
+    {
+      "finish_enu": [
+        227.219940185547,
+        184.022125244141,
+        51.5572967529297
+      ],
+      "id": "zhongxing_collectibles_side_out",
+      "result": {
+        "distance_m": 26.3874143622816,
+        "end": "(227.2199, 51.5573, -184.0221)",
+        "goals": 9,
+        "max_frame_displacement_m": 0.374395132064819,
+        "name": "zhongxing_collectibles_side_out",
+        "pass": true,
+        "reached": 9,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        216.5,
+        184.5,
+        50.8796844482422
+      ],
+      "trace_enu": [
+        [
+          216.5,
+          184.5,
+          50.8796844482422
+        ],
+        [
+          216.696823120117,
+          185.005874633789,
+          50.953498840332
+        ],
+        [
+          216.905014038086,
+          185.803482055664,
+          51.0674362182617
+        ],
+        [
+          217.113311767578,
+          186.601211547852,
+          51.1794509887695
+        ],
+        [
+          217.321411132812,
+          187.399749755859,
+          51.2912139892578
+        ],
+        [
+          217.529983520508,
+          188.197845458984,
+          51.4017295837402
+        ],
+        [
+          217.738922119141,
+          188.996551513672,
+          51.5107574462891
+        ],
+        [
+          217.940292358398,
+          189.797149658203,
+          51.6199684143066
+        ],
+        [
+          218.140487670898,
+          190.59880065918,
+          51.726863861084
+        ],
+        [
+          218.339248657227,
+          191.400756835938,
+          51.8334541320801
+        ],
+        [
+          218.53840637207,
+          192.202590942383,
+          51.9390678405762
+        ],
+        [
+          218.738067626953,
+          193.005432128906,
+          52.0425643920898
+        ],
+        [
+          219.154830932617,
+          193.694549560547,
+          52.4770317077637
+        ],
+        [
+          219.995849609375,
+          193.694931030273,
+          52.7056045532227
+        ],
+        [
+          220.814361572266,
+          193.66178894043,
+          52.9851150512695
+        ],
+        [
+          221.695175170898,
+          193.658218383789,
+          53.1913719177246
+        ],
+        [
+          222.448883056641,
+          193.655075073242,
+          53.313835144043
+        ],
+        [
+          223.2890625,
+          193.651870727539,
+          53.313835144043
+        ],
+        [
+          224.129104614258,
+          193.650817871094,
+          53.313835144043
+        ],
+        [
+          224.969192504883,
+          193.650543212891,
+          53.313835144043
+        ],
+        [
+          225.809280395508,
+          193.650268554688,
+          53.313835144043
+        ],
+        [
+          226.579879760742,
+          193.580535888672,
+          53.313835144043
+        ],
+        [
+          226.78385925293,
+          192.85595703125,
+          53.313835144043
+        ],
+        [
+          226.94059753418,
+          192.030700683594,
+          53.313835144043
+        ],
+        [
+          227.09733581543,
+          191.205444335938,
+          53.313835144043
+        ],
+        [
+          227.186782836914,
+          190.372863769531,
+          53.313835144043
+        ],
+        [
+          227.198501586914,
+          189.532958984375,
+          53.313835144043
+        ],
+        [
+          227.21012878418,
+          188.693054199219,
+          53.313835144043
+        ],
+        [
+          227.216613769531,
+          187.853057861328,
+          53.313835144043
+        ],
+        [
+          227.21809387207,
+          186.983062744141,
+          53.088249206543
+        ],
+        [
+          227.219589233398,
+          186.097320556641,
+          52.629753112793
+        ],
+        [
+          227.219772338867,
+          185.208908081055,
+          52.163932800293
+        ],
+        [
+          227.219940185547,
+          184.311096191406,
+          51.691276550293
+        ],
+        [
+          227.219940185547,
+          184.022125244141,
+          51.5572967529297
+        ],
+        [
+          227.219940185547,
+          184.022125244141,
+          51.5572967529297
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        216.559310913086,
+        184.476150512695,
+        50.8793144226074
+      ],
+      "id": "zhongxing_collectibles_side_back",
+      "result": {
+        "distance_m": 26.51869700104,
+        "end": "(216.5593, 50.87931, -184.4762)",
+        "goals": 9,
+        "max_frame_displacement_m": 0.180749475955963,
+        "name": "zhongxing_collectibles_side_back",
+        "pass": true,
+        "reached": 9,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        227.219940185547,
+        184.022125244141,
+        51.5572967529297
+      ],
+      "trace_enu": [
+        [
+          227.219940185547,
+          184.022125244141,
+          51.5572967529297
+        ],
+        [
+          227.219955444336,
+          184.711959838867,
+          51.9574165344238
+        ],
+        [
+          227.219955444336,
+          185.421112060547,
+          52.2881050109863
+        ],
+        [
+          227.219970703125,
+          186.185577392578,
+          52.7042427062988
+        ],
+        [
+          227.219970703125,
+          186.980834960938,
+          53.1031723022461
+        ],
+        [
+          227.219985961914,
+          187.734191894531,
+          53.3137397766113
+        ],
+        [
+          227.219985961914,
+          188.574279785156,
+          53.3137397766113
+        ],
+        [
+          227.219985961914,
+          189.414367675781,
+          53.3137397766113
+        ],
+        [
+          227.219985961914,
+          190.254455566406,
+          53.3137397766113
+        ],
+        [
+          227.093765258789,
+          191.083084106445,
+          53.3137397766113
+        ],
+        [
+          226.95068359375,
+          191.910720825195,
+          53.3137397766113
+        ],
+        [
+          226.807601928711,
+          192.738357543945,
+          53.3137397766113
+        ],
+        [
+          226.622848510742,
+          193.524337768555,
+          53.3137397766113
+        ],
+        [
+          225.864959716797,
+          193.664459228516,
+          53.3137397766113
+        ],
+        [
+          225.025054931641,
+          193.658599853516,
+          53.3137397766113
+        ],
+        [
+          224.185150146484,
+          193.652770996094,
+          53.3137397766113
+        ],
+        [
+          223.345092773438,
+          193.651382446289,
+          53.3137397766113
+        ],
+        [
+          222.505004882812,
+          193.650894165039,
+          53.3137397766113
+        ],
+        [
+          221.647445678711,
+          193.650421142578,
+          53.1491889953613
+        ],
+        [
+          220.790069580078,
+          193.650146484375,
+          52.9755783081055
+        ],
+        [
+          219.91357421875,
+          193.650100708008,
+          52.7044258117676
+        ],
+        [
+          219.052597045898,
+          193.62614440918,
+          52.4324569702148
+        ],
+        [
+          218.576416015625,
+          193.254959106445,
+          52.0541191101074
+        ],
+        [
+          218.417175292969,
+          192.438003540039,
+          51.9501152038574
+        ],
+        [
+          218.259857177734,
+          191.601028442383,
+          51.8431816101074
+        ],
+        [
+          218.102554321289,
+          190.763916015625,
+          51.7333183288574
+        ],
+        [
+          217.945175170898,
+          189.926422119141,
+          51.6234550476074
+        ],
+        [
+          217.744003295898,
+          189.097930908203,
+          51.5121269226074
+        ],
+        [
+          217.521499633789,
+          188.275527954102,
+          51.3993339538574
+        ],
+        [
+          217.298919677734,
+          187.452926635742,
+          51.2850761413574
+        ],
+        [
+          217.076385498047,
+          186.630432128906,
+          51.1693534851074
+        ],
+        [
+          216.853622436523,
+          185.807113647461,
+          51.0536308288574
+        ],
+        [
+          216.631057739258,
+          184.984466552734,
+          50.9349784851074
+        ],
+        [
+          216.559310913086,
+          184.476150512695,
+          50.8793144226074
+        ],
+        [
+          216.559310913086,
+          184.476150512695,
+          50.8793144226074
+        ]
+      ]
+    }
+  ]
+}

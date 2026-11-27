@@ -261,10 +261,8 @@ def case(f,w,d,h,m,lid):
     f.box(-w*.48,w*.48,d-.018,d-.011,.20,h-.043,m["case_glass"])
 
 
-def build(floor):
+def build_stock(floor, moves=None, additional_devices=()):
     stock=Mesh("COL_Huihuigou_MarketFurnishings")
-    ducts=Mesh("Huihuigou_SuspendedDuctsAndConduit")
-    partitions=Mesh("Huihuigou_WainscotAndShutters")
     stock_collections={
         "timber":textured("Market scuffed varnished wood",(.78,.59,.38),"wood_table_worn_diff_2k.jpg",.74),
         "rust":textured("Market oxidised painted steel",(.62,.55,.47),"rusty_painted_metal_diff_2k.jpg",.69,
@@ -293,6 +291,9 @@ def build(floor):
             "audio_receiver":receiver,"fan":fan,"dvd_player":disc_player}
 
     def device(kind,e,n,width,depth,height,colour,heading=0.,shelf=0.):
+        if moves:
+            station=(kind,round(e,3),round(n,3),round(shelf,3))
+            e,n,heading,shelf=moves.get(station,(e,n,heading,shelf))
         f=Fixture(stock,e,n,floor,heading)
         shapes[kind](f,width,depth,height,m[colour],m,shelf)
         inventory.append({"item":kind,"origin_east_north_up":[e,n,floor+shelf],
@@ -350,7 +351,16 @@ def build(floor):
     device("fan",231.40,190.48,.45,.36,.58,"green",-.12,.91)
     device("audio_receiver",231.47,190.52,.48,.37,.12,"tobacco",-.12,.50)
     device("television",232.40,191.89,.55,.43,.42,"graphite",pi/2,1.00)
+    for entry in additional_devices:
+        device(*entry)
 
+    return stock,inventory,m
+
+
+def build(floor):
+    stock,inventory,m=build_stock(floor)
+    ducts=Mesh("Huihuigou_SuspendedDuctsAndConduit")
+    partitions=Mesh("Huihuigou_WainscotAndShutters")
     wall_tile=textured("Market wall exposed plaster and grout",(.71,.76,.70),"plastered_wall_04_diff_2k.jpg",
                        .88,"plastered_wall_04_nor_gl_2k.jpg")
     damp=textured("Market green-grey worn lower wall",(.51,.55,.46),"concrete_wall_006_diff_2k.jpg",

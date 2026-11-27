@@ -19,3 +19,5 @@ Blender 4.3.2 打开 `work/scene_r24/district_500/outer_district.blend` 后执�
 器具型号、数量和摆位按玩法拟合。每件的朝向、尺寸和底部 ENU 坐标见游戏 `assets/district_500/collectibles-market.json` 的 `interior_art.inventory`。入口加了分块石鼻、门轨、铺地收口和小排水带，原阶高、门槛与碰撞承面保留。灰绿水磨石按约 0.95 米分格，墙上磨损面和贴图沿用既有许可；正常 Godot 导入测了每个地面材质、墙面 UV 和启用的法线图。
 
 [室内和街面前后、门内近视、实走与材质结果](evidence/art-refresh)。
+
+东侧靠墙摊位的收尾单独建模、验证和发布，保留主厅与侧阶通道。见 [东侧摊位源、重建与原生对照](stall_row/README.md)。

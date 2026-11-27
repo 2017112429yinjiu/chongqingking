@@ -30,6 +30,7 @@ group_assets = root / "work/project/chongqing_godot_v05/assets/district_500"
 xingchen_plan = json.loads((group_assets / "xingchen.json").read_bytes())
 pavilion_plan = json.loads((group_assets / "pavilion62.json").read_bytes())
 market_plan = json.loads((group_assets / "collectibles-market.json").read_bytes())
+stall_plan = json.loads((group_assets / "market-stall-row.json").read_bytes())
 retired = [f"_{oid}_" for oid in layout.get("osm_building_ids", []) +
            [xingchen_plan["way"], *market_plan["mapped_residential_ways"]]]
 local_study = bpy.data.collections.get("R24_11_Local_city_frame")
@@ -177,8 +178,13 @@ for item in pavilion.objects:
 with bpy.data.libraries.load(str(factory_dir / "zhongxing/collectibles/collectibles-market.blend"),
                              link=True, relative=True) as (_, market):
     market.objects = [name for name in market_plan["replacement_meshes"] + market_plan["new_meshes"]
-                      if name not in park57_override] + ["Huihuigou_Sign_Anchor"]
+                      if name not in park57_override and name not in stall_plan["replacement_meshes"]] + ["Huihuigou_Sign_Anchor"]
 for item in market.objects:
+    collection.objects.link(item)
+with bpy.data.libraries.load(str(factory_dir / "zhongxing/collectibles/stall_row/stall-row.blend"),
+                             link=True, relative=True) as (_, stalls):
+    stalls.objects = stall_plan["replacement_meshes"] + stall_plan["new_meshes"]
+for item in stalls.objects:
     collection.objects.link(item)
 with bpy.data.libraries.load(str(factory_dir.parent / "riverside/park_plot57/park-plot57.blend"),
                              link=True, relative=True) as (_, park57):

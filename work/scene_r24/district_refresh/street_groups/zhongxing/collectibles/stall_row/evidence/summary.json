@@ -1,0 +1,147 @@
+{
+  "parent_git": "3695697b0adc7e1d421b20873cfea36cb1f794a9",
+  "field_photo": "https://imagepphcloud.thepaper.cn/pph/image/87/183/882.jpg",
+  "field_photo_sha256": "ddc2889f761e5c920ebdd6236fdc83f5d2e4496ef4194940ee161220284eb5b7",
+  "blender": "4.3.2",
+  "godot": "4.6.3-stable (official)",
+  "renderer": "gl_compatibility",
+  "device": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "software_capture": {
+    "resolution": [
+      860,
+      484
+    ],
+    "native_window": "Xvfb",
+    "qa_sun_shadows": false
+  },
+  "sha256": {
+    "blend": "f45ae4270c05a0bf96f1d1d6e5d035da1b74bba21396cd12893e1cb785b0b450",
+    "glb": "42fffbc9c4a98d3fa615e48fa9ce4eecdf66bf225decbd3d44d40eddf5a41646"
+  },
+  "sizes_bytes": {
+    "blend": 12386301,
+    "glb": 13480628
+  },
+  "changed_stock": {
+    "moved": 6,
+    "added": 14
+  },
+  "stock_faces_unchanged_outside_bay": 3312,
+  "composed_source": "CQ_STALL_REOPEN 4.3.2 4576 20 ['旧电器回收', '音响寄售', '台扇 35 元', '碟机 45 元', '音响 60 元']",
+  "match_width_samples": 30,
+  "min_sampled_clear_width_m": 2.37998962402344,
+  "maximum_transverse_sample_extent_each_side_m": 2.9,
+  "native_matching_cameras": {
+    "doorway_stock_eye.png": {
+      "eye_enu": [
+        225.809997558594,
+        193.339996337891,
+        55.0200004577637
+      ],
+      "frame": "doorway_stock_eye.png",
+      "pixel_size": "(860, 484)",
+      "target_enu": [
+        230.839996337891,
+        189.740005493164,
+        54.5800018310547
+      ]
+    },
+    "guest_entering_eye.png": {
+      "eye_enu": [
+        225.879272460938,
+        193.650253295898,
+        54.9638366699219
+      ],
+      "frame": "guest_entering_eye.png",
+      "pixel_size": "(860, 484)",
+      "target_enu": [
+        233.220001220703,
+        193.449996948242,
+        55.0200004577637
+      ]
+    },
+    "inside_look_back.png": {
+      "direction_xyz": "(-0.343038, 0.0, 0.939321)",
+      "eye_enu": [
+        231.418258666992,
+        195.774307250977,
+        54.9638366699219
+      ],
+      "frame": "inside_look_back.png",
+      "pixel_size": "(860, 484)"
+    }
+  },
+  "new_route": {
+    "main": [
+      {
+        "distance_m": 23.2080074511468,
+        "end": "(231.4663, 53.31384, -195.9058)",
+        "goals": 7,
+        "max_frame_displacement_m": 0.374395132064819,
+        "name": "zhongxing_collectibles_out",
+        "pass": true,
+        "reached": 7,
+        "stall_contacts": []
+      },
+      {
+        "distance_m": 23.2046062760055,
+        "end": "(216.5499, 50.87316, -184.4382)",
+        "goals": 7,
+        "max_frame_displacement_m": 0.295301079750061,
+        "name": "zhongxing_collectibles_back",
+        "pass": true,
+        "reached": 7,
+        "stall_contacts": []
+      }
+    ],
+    "side_stairs": [
+      {
+        "distance_m": 26.3874143622816,
+        "end": "(227.2199, 51.5573, -184.0221)",
+        "goals": 9,
+        "max_frame_displacement_m": 0.374395132064819,
+        "name": "zhongxing_collectibles_side_out",
+        "pass": true,
+        "reached": 9,
+        "stall_contacts": []
+      },
+      {
+        "distance_m": 26.51869700104,
+        "end": "(216.5593, 50.87931, -184.4762)",
+        "goals": 9,
+        "max_frame_displacement_m": 0.180749475955963,
+        "name": "zhongxing_collectibles_side_back",
+        "pass": true,
+        "reached": 9,
+        "stall_contacts": []
+      }
+    ]
+  },
+  "park57_smoke": [
+    {
+      "distance_m": 60.736203385517,
+      "end": "(-121.9122, -2.920566, 177.8961)",
+      "goals": 17,
+      "max_frame_displacement_m": 0.535356342792511,
+      "name": "riverside_street_to_plot57_out",
+      "pass": true,
+      "reached": 17,
+      "stall_contacts": []
+    },
+    {
+      "distance_m": 60.0944335209206,
+      "end": "(-159.0049, -3.760077, 159.1243)",
+      "goals": 17,
+      "max_frame_displacement_m": 0.486806780099869,
+      "name": "riverside_street_to_plot57_back",
+      "pass": true,
+      "reached": 17,
+      "stall_contacts": []
+    }
+  ],
+  "software_exit_warnings": [
+    "ERROR: Texture with GL ID of 599: leaked 349524 bytes.",
+    "ERROR: Texture with GL ID of 600: leaked 349524 bytes."
+  ],
+  "retained_earlier_preview": "/workspace/work/runtime/district-refresh/new-priority/market/stall-row/after"
+}
