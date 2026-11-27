@@ -1,0 +1,28 @@
+{
+  "park_boundary_osm_way": 1499726225,
+  "register": {
+    "id": "1526167225863589888",
+    "facility": "滑梯类",
+    "longitude_latitude": [106.56307064544963,29.551559104993164],
+    "approx_east_north": [-133.685,-187.427],
+    "url": "https://park-tool.pre.paramst.cn/api/tourApp/TourTbParkActivityZone/selectById?id=1526167225863589888",
+    "json_sha256": "9dafc883e934a45f1c35f5636e20d9403bf14bcbf63aa39247d9e43b2f5092a1",
+    "photos": [
+      {"url":"https://park-tool.pre.paramst.cn/api/resourceApp/resource/park-register/69d63f82519c6ef3b6ff71dd74172b49%282%29.jpg","sha256":"7066d3efc1cb5ba0022919f2be02af45c4cced4e3d5f839022c1c72f29d4ffb1","observation":"蓝地、开放端面钢网、弧壳、溜槽和三色转盘，近处白色收边"},
+      {"url":"https://park-tool.pre.paramst.cn/api/resourceApp/resource/park-register/cd480498bd067284588d8d8f8dc7758f%281%29.jpg","sha256":"d463b9d2247a4507162c135b70b2b7b4bfcdcdf89ef53e67c2e3be4b084c8228","observation":"背面蓝色条板、攀爬踩点、弧壳相连与有翻边的滑槽"},
+      {"url":"https://park-tool.pre.paramst.cn/api/resourceApp/resource/park-register/cabc07c821a549ff3e69c36926786fd7%281%29.jpg","sha256":"59b383dac915bd1bb3cd14c0f8b3a9defd46f0ecb811a63478ea30b8c29f01dd","observation":"双槽嵌在浅砂及粉灰色缓坡，转盘在邻场地可见"}
+    ]
+  },
+  "orthophoto": {
+    "url":"https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/217060/417337",
+    "sha256":"a088b191880c6a930015ec59051b3e9a6a8d5e8cc936143a91d3e0cbe650d9e5",
+    "method":"256px north-up Web Mercator tile, observed at 3x with no rotation. Inverse Web Mercator then project by the existing source_ground.registration control way 734116601.",
+    "control_pixels_at_3x":{"blue":[[263,547],[305,393],[355,356],[467,379],[509,607]],"pale":[[4,228],[336,288],[348,324],[192,402],[78,458]],"planted_wedge":[[119,491],[140,477],[213,433],[265,406],[291,411],[249,544],[131,516]],"climber":[387,467],"twin_slides":[131,302]},
+    "blue_ring_east_north":[[-158.8064,-190.6041],[-155.1668,-177.3276],[-150.8342,-174.1378],[-141.1295,-176.1207],[-137.4906,-195.7769]],
+    "pale_ring_east_north":[[-181.2482,-163.1026],[-152.4805,-168.2754],[-151.4407,-171.3791],[-164.9583,-178.1035],[-174.8365,-182.9313]],
+    "wedge_ring_east_north":[[-171.2839,-185.7763],[-169.4642,-184.5693],[-163.1387,-180.776],[-158.6328,-178.4483],[-156.3799,-178.8794],[-160.0195,-190.3455],[-170.2441,-187.9315]],
+    "centre_readings_east_north":{"climber":[-148.0616,-183.7073],"slides":[-170.2437,-169.4823]},
+    "additional_user_controls_east_north":{"climber":[-146.8,-183.8],"pale_centre":[-169.1,-171.9],"wedge":[-165.2,-184.6],"river_path":[-145.7,-201.1],"north_street_edge":[-145.7,-161.3]}
+  },
+  "rights": "Reference images are for observation. The repository contains independent authored geometry and texture work, plus previously attributed project materials."
+}

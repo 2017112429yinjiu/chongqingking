@@ -1,0 +1,305 @@
+{
+  "parent_git": "c3f79f4eba49a262e7a36a53082a27d39786a2ec",
+  "engine": "4.6.3-stable (official)",
+  "renderer": "gl_compatibility",
+  "device": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "capture_conditions": {
+    "xvfb": true,
+    "size_px": [
+      860,
+      484
+    ],
+    "fixed_physics_fps": 60,
+    "qa_sun_shadows": false
+  },
+  "asset_sha256": "2a2ae2a4745096ea849dbb5f2365ce1cf437a8dcd974ed4cb47dddd5d5aae8b2",
+  "source_sha256": "7994697e0483b92a9b72ed1241ab3196dc024915c0e7c967498594a0f4ba710b",
+  "blender": "4.3.2",
+  "source_support_check": {
+    "before": {
+      "COL_Outer500_WestCourt_Paving": [
+        241,
+        "cbb96f9b603535e80df6edc633dda3c68766824d7e04cd0214da6e8e0b1818ad"
+      ],
+      "COL_Outer500_WestCourt_Retaining": [
+        268,
+        "60267fbd240254179f6200c980f6d5a02c2ecd20e5c7367a2b0bb4140bdc6ad4"
+      ],
+      "Outer500_WestCourt_BlueFinish": [
+        1,
+        "38e5755466435a640c1c34ba9e659f8c48f99ffa66cd6f77da58a50c0f5b2ceb"
+      ]
+    },
+    "after": {
+      "COL_Outer500_WestCourt_Paving": [
+        241,
+        "cbb96f9b603535e80df6edc633dda3c68766824d7e04cd0214da6e8e0b1818ad"
+      ],
+      "COL_Outer500_WestCourt_Retaining": [
+        246,
+        "3e091f1b04d0df5773576257514df68713b28d65d93060f5de26be329846f9bf"
+      ],
+      "Outer500_WestCourt_BlueFinish": [
+        124,
+        "7767702a7dd1a268c96fdfe0c2b15f29194aaed5e375ee0cfa183e2e19207a5f"
+      ]
+    },
+    "internal_wall_faces": [
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      186,
+      187,
+      188,
+      193,
+      194,
+      197,
+      198,
+      201,
+      202,
+      209,
+      210,
+      211,
+      212,
+      223
+    ]
+  },
+  "source_equipment_check": {
+    "fixtures": {
+      "COL_WestPlayground_PerforatedBlueClimber": {
+        "faces": 1431,
+        "size_m": [
+          3.125885009765625,
+          4.6809539794921875,
+          2.28006911277771
+        ],
+        "materials": [
+          "West climb blue panel 0",
+          "West climb blue panel 1",
+          "West climb blue panel 2",
+          "West climb blue panel 3",
+          "West playground powdered pale steel",
+          "West playground woven steel rope",
+          "West playground rolled tray edges",
+          "West playground brushed stainless tray"
+        ]
+      },
+      "COL_WestPlayground_PaleAndRoseMound": {
+        "faces": 540,
+        "size_m": [
+          4.734405517578125,
+          3.532623291015625,
+          1.0609064102172852
+        ],
+        "materials": [
+          "West play pale aggregate",
+          "West play muted rose aggregate"
+        ]
+      },
+      "WestPlayground_PairEmbeddedChutes": {
+        "faces": 342,
+        "size_m": [
+          2.695953369140625,
+          2.6321258544921875,
+          1.0719513893127441
+        ],
+        "materials": [
+          "West playground rolled tray edges",
+          "West playground brushed stainless tray"
+        ]
+      },
+      "COL_WestPlayground_ThreeRotatingBowls": {
+        "faces": 1218,
+        "size_m": [
+          1.4770355224609375,
+          4.5914459228515625,
+          0.8129997253417969
+        ],
+        "materials": [
+          "West playground inset tarmac footings",
+          "West playground woven steel rope",
+          "West rotator blue",
+          "West rotator oxide-red handles",
+          "West rotator green",
+          "West rotator red"
+        ]
+      }
+    },
+    "packed_aggregate": {
+      "West play fine blue rubber aggregate": [
+        256,
+        256
+      ],
+      "West play muted rose aggregate": [
+        256,
+        256
+      ],
+      "West play pale aggregate": [
+        256,
+        256
+      ]
+    }
+  },
+  "composed_reopen": "4554 18 ['COL_WestPlayground_PerforatedBlueClimber', 'COL_WestPlayground_GradedSurfaces', 'COL_WestParkStreet_SouthKerb', 'COL_Outer500_Surface_01_01', 'COL_Outer500_WestCourt_Paving']",
+  "street_route": {
+    "axis_osm_way": 59146737,
+    "start_axis_m": 6.47,
+    "curb_axis_m": 5.424,
+    "native": [
+      {
+        "distance_m": 27.5687510333955,
+        "goals": 7,
+        "reached": 7,
+        "stall_contacts": []
+      },
+      {
+        "distance_m": 27.5947581268847,
+        "goals": 7,
+        "reached": 7,
+        "stall_contacts": []
+      }
+    ],
+    "headless": [
+      {
+        "distance_m": 27.5687510333955,
+        "goals": 7,
+        "reached": 7,
+        "stall_contacts": []
+      },
+      {
+        "distance_m": 27.5947581268847,
+        "goals": 7,
+        "reached": 7,
+        "stall_contacts": []
+      }
+    ],
+    "native_trace_clearance": [
+      {
+        "min_axis_distance_m": 6.47000503540039
+      },
+      {
+        "min_axis_distance_m": 6.47209548950195
+      }
+    ],
+    "teleports_between_legs": 0
+  },
+  "original_park_route": {
+    "start_axis_m": 39.404,
+    "native_pre_street_extension": [
+      {
+        "distance_m": 60.76804321073,
+        "goals": 14,
+        "reached": 14,
+        "stall_contacts": []
+      },
+      {
+        "distance_m": 60.8594606081024,
+        "goals": 14,
+        "reached": 14,
+        "stall_contacts": []
+      }
+    ],
+    "final_headless": [
+      {
+        "distance_m": 60.7639863416553,
+        "goals": 14,
+        "reached": 14,
+        "stall_contacts": []
+      },
+      {
+        "distance_m": 60.8585429266095,
+        "goals": 14,
+        "reached": 14,
+        "stall_contacts": []
+      }
+    ],
+    "teleports_between_legs": 0
+  },
+  "retained_walking": {
+    "deck_support_checks": 108,
+    "west_stair_stations": 19,
+    "east_ramp_section_samples": 18,
+    "legs": [
+      {
+        "id": "ramp_out",
+        "distance_m": 19.5097096986137,
+        "pass": true
+      },
+      {
+        "id": "ramp_back",
+        "distance_m": 19.5349073857069,
+        "pass": true
+      },
+      {
+        "id": "stair_out",
+        "distance_m": 18.3250475618988,
+        "pass": true
+      },
+      {
+        "id": "stair_back",
+        "distance_m": 18.2708305418491,
+        "pass": true
+      },
+      {
+        "id": "through_out",
+        "distance_m": 38.0390553791076,
+        "pass": true
+      },
+      {
+        "id": "through_back",
+        "distance_m": 38.1123942411505,
+        "pass": true
+      }
+    ]
+  },
+  "retained_riding": [
+    {
+      "reverse": false,
+      "distance_m": 18.9948386183532,
+      "parked": true,
+      "dismounted": true
+    },
+    {
+      "reverse": true,
+      "distance_m": 19.1019294243888,
+      "parked": true,
+      "dismounted": true
+    }
+  ],
+  "published_frames": {
+    "blue-after.png": "registered_blue.png",
+    "sand-after.png": "registered_sand.png",
+    "street-edge.png": "street.png",
+    "street-edge-return.png": "street_return.png",
+    "sand-return-look.png": "inside_look_back.png",
+    "sand-player-eye.png": "player_sand_turn.png"
+  },
+  "failures_retained": [
+    {
+      "stage": "one play sector before orthophoto registration",
+      "reason": "sand feature put in same blue court; readjusted to northwest",
+      "cloud_path": "/workspace/work/runtime/district-refresh/new-priority/west/playground-final"
+    },
+    {
+      "stage": "baseline native multi-view capture",
+      "exit": 137,
+      "reason": "software renderer process killed under concurrent load; blue frame survived, sand baseline recovered separately",
+      "cloud_path": "/workspace/work/runtime/district-refresh/new-priority/west/registered-two-zones/native-before"
+    },
+    {
+      "stage": "first northwest mound geometry",
+      "reason": "angular grid edge visible in native eye-level view; rebuilt along elliptical contours",
+      "cloud_frame": "/workspace/work/runtime/district-refresh/new-priority/west/registered-two-zones/native-after/player_sand_turn.png"
+    },
+    {
+      "stage": "legacy fixed ramp-margin view",
+      "reason": "main equipment now occludes much of this view at its orthophoto-derived position",
+      "cloud_frame": "/workspace/work/runtime/district-refresh/new-priority/west/registered-two-zones/native-after/registered_ramp_margin.png"
+    }
+  ]
+}

@@ -72,6 +72,7 @@ factory_plan = json.loads((group_assets / "match_factory.json").read_bytes())
 matix_plan = json.loads((group_assets / "matix_streets.json").read_bytes())
 zhongxing_plan = json.loads((group_assets / "zhongxing-retaining.json").read_bytes())
 west_court_plan = json.loads((group_assets / "west-court.json").read_bytes())
+west_ramp_plan = json.loads((group_assets / "west-ramp.json").read_bytes())
 guoco_plan = json.loads((group_assets / "guoco-frontages.json").read_bytes())
 public_plan = json.loads((group_assets / "public-edges.json").read_bytes())
 public_override = set(public_plan["replacement_meshes"])
@@ -88,6 +89,7 @@ matix_override = set(matix_plan["replacement_meshes"])
 matix_retired = set(matix_plan["retired_objects"])
 zhongxing_override = set(zhongxing_plan["replacement_meshes"])
 west_court_override = set(west_court_plan["replacement_meshes"])
+west_ramp_override = set(west_ramp_plan["replacement_meshes"])
 with bpy.data.libraries.load(str(factory_dir / "match_factory.blend"), link=True, relative=True) as (source, factory):
     factory.objects = [name for name in factory_plan["new_meshes"] + factory_plan["replacement_meshes"]
                        if name not in matix_override and name not in guoco_override
@@ -139,8 +141,14 @@ for item in riverside.objects:
 with bpy.data.libraries.load(str(here.parent / "district_refresh/riverside/west_court/west-court.blend"),
                              link=True, relative=True) as (source, west_court):
     west_court.objects = [name for name in west_court_plan["replacement_meshes"] + west_court_plan["new_meshes"]
-                          if name not in guoco_override and name not in later_public_meshes]
+                          if name not in guoco_override and name not in later_public_meshes
+                          and name not in west_ramp_override]
 for item in west_court.objects:
+    collection.objects.link(item)
+with bpy.data.libraries.load(str(factory_dir.parent / "riverside/west_ramp/west-ramp.blend"),
+                             link=True, relative=True) as (_, west_ramp):
+    west_ramp.objects = west_ramp_plan["replacement_meshes"] + west_ramp_plan["new_meshes"]
+for item in west_ramp.objects:
     collection.objects.link(item)
 with bpy.data.libraries.load(str(factory_dir / "guoco/guoco-frontages.blend"), link=True, relative=True) as (source, guoco):
     guoco.objects = [name for name in guoco_plan["replacement_meshes"] + guoco_plan["new_meshes"]

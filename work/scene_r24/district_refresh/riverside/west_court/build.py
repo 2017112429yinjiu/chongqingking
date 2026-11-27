@@ -225,7 +225,7 @@ def rim(mesh):
             u = left + (i + .5) * (right - left) / rail_count
             beam(u - .019, u + .019, -6.33, -6.27, LEVEL + .22, LEVEL + .95, 3)
 
-def build_terrain(tiles, patches, path, walls):
+def build_terrain(tiles, patches, path, walls, *, require_full_coverage=True):
     objects = []
     support = {patch.name: 0. for patch in patches}
     for tile in tiles:
@@ -258,8 +258,9 @@ def build_terrain(tiles, patches, path, walls):
                 terrain.face(piece, face.material_index)
         if changed:
             objects.append(terrain.make(tile.name + '_CourtCut', old.materials[:], tile))
-    for patch in patches:
-        assert abs(support[patch.name] - area(patch.ring)) < .018, (patch.name, support[patch.name], area(patch.ring))
+    if require_full_coverage:
+        for patch in patches:
+            assert abs(support[patch.name] - area(patch.ring)) < .018, (patch.name, support[patch.name], area(patch.ring))
     return objects, support
 
 
