@@ -99,6 +99,7 @@ wilderness = None if not fenghuangtai or os.environ.get("CQ_WILDERNESS_50_PARENT
 wilderness_finish = None if not wilderness or os.environ.get("CQ_WILDERNESS_50_FINISH_PARENT") == "1" else json.loads((group_assets / "wilderness-50-finish.json").read_bytes())
 nanqu = None if not wilderness or os.environ.get("CQ_NANQU_PARENT") == "1" else json.loads((group_assets / "nanqu-04-06-51.json").read_bytes())
 roadside_55 = None if not nanqu or os.environ.get("CQ_CHANGBIN_55_PARENT") == "1" else json.loads((group_assets / "changbin-55.json").read_bytes())
+north_edges = None if not roadside_55 or os.environ.get("CQ_NORTH_EDGE_PARENT") == "1" else json.loads((group_assets / "north-38-40-41.json").read_bytes())
 binjiang_override = set() if not binjiang_plan else set(binjiang_plan["replacement_meshes"] + binjiang_plan["retired_objects"])
 east_override = set() if east_plan is None else set(east_plan["replacement_meshes"] + east_plan["retired_objects"]) | binjiang_override
 changbin_override = set(changbin_plan["replacement_meshes"] + changbin_plan["retired_objects"]) | east_override
@@ -369,6 +370,14 @@ if roadside_55:
                                  link=True, relative=True) as (_, roadside):
         roadside.objects = roadside_55["replacement_meshes"] + roadside_55["new_meshes"]
     for item in roadside.objects:
+        collection.objects.link(item)
+if north_edges:
+    for name in north_edges["replacement_meshes"] + north_edges["retired_objects"]:
+        collection.objects.unlink(collection.objects[name])
+    with bpy.data.libraries.load(str(factory_dir / "north_edges/north-38-40-41.blend"),
+                                 link=True, relative=True) as (_, public_north):
+        public_north.objects = north_edges["replacement_meshes"] + north_edges["new_meshes"]
+    for item in public_north.objects:
         collection.objects.link(item)
 bpy.context.preferences.filepaths.save_version=0
 output_name = "city_and_outer.local.blend" if nanqu else (

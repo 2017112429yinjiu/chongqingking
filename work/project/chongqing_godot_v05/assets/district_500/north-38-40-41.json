@@ -1,0 +1,240 @@
+{
+  "retired_plots": [
+    38
+  ],
+  "retired_objects": [
+    "COL_Outer500_Frame_38",
+    "Outer500_Condenser_38_01",
+    "Outer500_Household_077_chair_0",
+    "Outer500_InteriorFloor_38",
+    "Outer500_Joinery_38"
+  ],
+  "replacement_meshes": [
+    "COLH_Outer500_Household_contact",
+    "COL_Outer500_Building_envelopes",
+    "COL_Outer500_Retaining_and_boundaries",
+    "Outer500_Facades_and_storefronts",
+    "Outer500_Street_furniture"
+  ],
+  "new_meshes": [
+    "COL_North38_Street",
+    "COL_North38_Footway",
+    "North38_StoneJointsAndKerb",
+    "North38_StoneFlagJoint",
+    "COL_North38_StreetFacade",
+    "North38_ShuttersRevealsAndBays",
+    "COL_North40_Street",
+    "COL_North40_Footway",
+    "North40_StoneJointsAndKerb",
+    "North40_StoneFlagJoint",
+    "COL_North40_PublicRetaining",
+    "North40_CoursesAndWeathering",
+    "North40_WallCoping",
+    "COL_North41_Street",
+    "COL_North41_Footway",
+    "North41_StoneJointsAndKerb",
+    "North41_StoneFlagJoint",
+    "COL_North41_PublicRetaining",
+    "North41_CoursesAndWeathering",
+    "North41_WallCoping",
+    "North41_HistoricDisplayWall"
+  ],
+  "affected_faces": {
+    "COLH_Outer500_Household_contact": 6,
+    "COL_Outer500_Building_envelopes": 282,
+    "COL_Outer500_Retaining_and_boundaries": 30,
+    "Outer500_Facades_and_storefronts": 36,
+    "Outer500_Street_furniture": 299
+  },
+  "walks": {
+    "38": [
+      [
+        -41.701839447021484,
+        151.94631958007812,
+        41.60193441459833
+      ],
+      [
+        -39.71668243408203,
+        154.32875061035156,
+        42.324487125541864
+      ],
+      [
+        -38.01511764526367,
+        156.37083435058594,
+        42.997951755217834
+      ],
+      [
+        -35.8875846862793,
+        158.3728485107422,
+        43.845474276726364
+      ],
+      [
+        -33.08506393432617,
+        159.60804748535156,
+        44.382046633966915
+      ],
+      [
+        -29.932231903076172,
+        160.99766540527344,
+        44.67945339197692
+      ],
+      [
+        -27.48002815246582,
+        162.07847595214844,
+        44.757352870707834
+      ]
+    ],
+    "40": [
+      [
+        17.238788604736328,
+        163.43417358398438,
+        40.30704791259765
+      ],
+      [
+        13.739277839660645,
+        163.522705078125,
+        40.628981658935544
+      ],
+      [
+        9.442215919494629,
+        163.6136474609375,
+        41.036799499511716
+      ],
+      [
+        5.346463203430176,
+        163.68936157226562,
+        41.36331469726562
+      ],
+      [
+        1.7501925230026245,
+        163.75582885742188,
+        41.561789581298825
+      ],
+      [
+        -1.341176152229309,
+        163.9293670654297,
+        41.694472381591794
+      ]
+    ],
+    "41": [
+      [
+        51.33656311035156,
+        167.04246520996094,
+        39.27244479370117
+      ],
+      [
+        54.654541015625,
+        169.6299591064453,
+        39.52299029541015
+      ],
+      [
+        57.88982391357422,
+        172.1339111328125,
+        39.798720428466794
+      ],
+      [
+        60.7457275390625,
+        171.93490600585938,
+        39.74782092285156
+      ],
+      [
+        63.69682312011719,
+        171.729248046875,
+        39.69414431762695
+      ],
+      [
+        66.45753479003906,
+        171.53689575195312,
+        39.6410933227539
+      ],
+      [
+        69.50382232666016,
+        171.32460021972656,
+        39.58833605957031
+      ]
+    ]
+  },
+  "surface_textures": {
+    "North lane small aggregate": "res://assets/chongqing_district_asphalt_02_diff_1k.jpg",
+    "North lane split stone flag": "res://assets/chongqing_district_stone_floor_diff_2k.jpg",
+    "North lane curb limestone": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+    "North lane clay-red edging": "res://assets/chongqing_district_brick_wall_08_diff_2k.jpg",
+    "North lane ashlar top": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+    "North lane dark joint mortar": "res://assets/chongqing_district_stone_wall_05_diff_2k.jpg",
+    "North38 narrow springing brick 0": "res://assets/chongqing_district_brick_wall_08_diff_2k.jpg",
+    "North38 narrow springing brick 1": "res://assets/chongqing_district_brick_wall_08_diff_2k.jpg",
+    "North38 narrow springing brick 2": "res://assets/chongqing_district_brick_wall_08_diff_2k.jpg",
+    "North38 old concrete render 0": "res://assets/chongqing_district_concrete_wall_006_diff_2k.jpg",
+    "North38 old concrete render 1": "res://assets/chongqing_district_concrete_wall_006_diff_2k.jpg",
+    "North public coursed ashlar 0": "res://assets/chongqing_district_stone_wall_05_diff_2k.jpg",
+    "North public coursed ashlar 1": "res://assets/chongqing_district_stone_wall_05_diff_2k.jpg",
+    "North public coursed ashlar 2": "res://assets/chongqing_district_stone_wall_05_diff_2k.jpg",
+    "North public coursed ashlar 3": "res://assets/chongqing_district_stone_wall_05_diff_2k.jpg",
+    "North40 faded pink stone 0": "res://assets/chongqing_district_stone_wall_05_diff_2k.jpg",
+    "North40 faded pink stone 1": "res://assets/chongqing_district_stone_wall_05_diff_2k.jpg",
+    "North40 faded pink stone 2": "res://assets/chongqing_district_stone_wall_05_diff_2k.jpg",
+    "North40 faded pink stone 3": "res://assets/chongqing_district_stone_wall_05_diff_2k.jpg"
+  },
+  "borrowed_materials": {
+    "COLH_Outer500_Household_contact": {
+      "CQEastParentSlot000": "Door and shutter recess.001"
+    },
+    "COL_Outer500_Building_envelopes": {
+      "CQEastParentSlot001": "Grey stone walkway.001",
+      "CQEastParentSlot002": "Coursed retaining masonry.001",
+      "CQEastParentSlot003": "Aged stucco.001",
+      "CQEastParentSlot004": "Red infill brick.001",
+      "CQEastParentSlot005": "Glazed blue tile.001",
+      "CQEastParentSlot006": "Concrete bands.001",
+      "CQEastParentSlot007": "Blue grey street reflection.001",
+      "CQEastParentSlot008": "Shaded window beyond mesh.001",
+      "CQEastParentSlot009": "Flax curtain behind glazing.001",
+      "CQEastParentSlot010": "Cloud reflection.001",
+      "CQEastParentSlot011": "Painted window and rail trim.001",
+      "CQEastParentSlot012": "Door and shutter recess.002",
+      "CQEastParentSlot013": "Cream glazed wall skirting.001",
+      "CQEastParentSlot014": "Worn timber joinery.001",
+      "CQEastParentSlot015": "Worn concrete floors.001"
+    },
+    "COL_Outer500_Retaining_and_boundaries": {
+      "CQEastParentSlot016": "Grey stone walkway.002",
+      "CQEastParentSlot017": "Coursed retaining masonry.002",
+      "CQEastParentSlot018": "Concrete bands.002",
+      "CQEastParentSlot019": "Door and shutter recess.003",
+      "CQEastParentSlot020": "Aged galvanized drain pipe.001",
+      "CQEastParentSlot021": "Salvaged service-door steel.001"
+    },
+    "Outer500_Facades_and_storefronts": {
+      "CQEastParentSlot022": "Aged stucco.002",
+      "CQEastParentSlot023": "Red infill brick.002",
+      "CQEastParentSlot024": "Glazed blue tile.002",
+      "CQEastParentSlot025": "Concrete bands.003",
+      "CQEastParentSlot026": "Grey overlapping roof tiles.001",
+      "CQEastParentSlot027": "Painted window and rail trim.002",
+      "CQEastParentSlot028": "Door and shutter recess.004",
+      "CQEastParentSlot029": "Worn timber joinery.002",
+      "CQEastParentSlot030": "Faded covered market roofing.001",
+      "CQEastParentSlot031": "Aged galvanized drain pipe.002"
+    },
+    "Outer500_Street_furniture": {
+      "CQEastParentSlot032": "Aged stucco.004",
+      "CQEastParentSlot033": "Concrete bands.005",
+      "CQEastParentSlot034": "Grey overlapping roof tiles.003",
+      "CQEastParentSlot035": "Painted window and rail trim.004",
+      "CQEastParentSlot036": "Red painted steel.002",
+      "CQEastParentSlot037": "Jade painted steel.002",
+      "CQEastParentSlot038": "Ochre canvas.002",
+      "CQEastParentSlot039": "Off-white road pigment.002",
+      "CQEastParentSlot040": "Door and shutter recess.006",
+      "CQEastParentSlot041": "Canopy 0.002",
+      "CQEastParentSlot042": "Canopy 1.002",
+      "CQEastParentSlot043": "Canopy 2.002",
+      "CQEastParentSlot044": "Cream glazed wall skirting.003",
+      "CQEastParentSlot045": "Worn timber joinery.004",
+      "CQEastParentSlot046": "Weathered sheet metal.002",
+      "CQEastParentSlot047": "Faded covered market roofing.003",
+      "CQEastParentSlot048": "Used tyre casing.002",
+      "CQEastParentSlot049": "Brown earthenware.002"
+    }
+  }
+}
