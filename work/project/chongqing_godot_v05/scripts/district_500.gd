@@ -157,7 +157,7 @@ static func install(city: Node3D) -> Dictionary:
 		site_font.font_names = PackedStringArray(["Noto Sans CJK SC", "Microsoft YaHei"])
 		var landmark := Label3D.new()
 		landmark.name = "PandaArcadeName"
-		landmark.text = "熊猫古玩文化金街"
+		landmark.text = panda.portal_sign.get("text", "熊猫古玩文化金街")
 		landmark.font = site_font
 		landmark.font_size = 62
 		landmark.pixel_size = .006
@@ -166,6 +166,17 @@ static func install(city: Node3D) -> Dictionary:
 		landmark.position = enu(panda.portal_sign.enu)
 		landmark.rotation.y = panda.portal_sign.yaw
 		frontage.add_child(landmark)
+		for spec: Dictionary in panda.get("visual_signs", []):
+			var board := Label3D.new()
+			board.text = spec.text
+			board.font = site_font
+			board.font_size = 60
+			board.pixel_size = spec.pixel_size
+			board.modulate = Color(spec.color)
+			board.outline_size = 1
+			board.position = enu(spec.enu)
+			board.rotation.y = panda.portal_sign.yaw
+			frontage.add_child(board)
 	var bridge_margins_active := panda_active and not "--qa-without-zhongxing-18-21" in OS.get_cmdline_user_args()
 	if bridge_margins_active:
 		install_street_group(district, ZHONGXING_BRIDGE, ZHONGXING_BRIDGE_SITE, "ZhongxingBridgeMargins")

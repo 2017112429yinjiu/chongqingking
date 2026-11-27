@@ -27,3 +27,5 @@ bash work/scene_r24/district_500/play.sh --software -- --explore-500 --panda-17
 ```
 
 从 Godot 正常场景用 `walk.gd` 走双向并原地转身。用全新 `CQ_QA_DIR`、`--fixed-fps 60`、游戏参数 `--day-one-test --qa-still-frames --explore-500 --panda-15` 或 `--panda-17`，父版用 `--qa-without-panda-frontage`。 [返图与实走](evidence)
+
+第二轮按 15、17 的同址店面与候车带补折纹石柱、窗台招牌和暗门廊，保留公共入口。换立树、封树池边沿、分格触砖。站牌和浅陈列用独立制作内容。钢石和树材使用项目已有许可素材。正常玩家回望沿用 Explorer；独立静帧排除第一人称身体网格。固定镜头诊断用 `camera_audit.gd`，成对父版用 `fixed_cameras.gd`、`--qa-without-panda-frontage` 及 `--a2-views` 参数指向 `views.json`。17 的 `--panda-visual-details` 追加近看。 [同机位、取图诊断和正常玩法](evidence/visual-review/README.md)

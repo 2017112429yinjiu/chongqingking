@@ -1,6 +1,6 @@
 # 熊猫古玩城临街 15、17 号复核
 
-Godot 4.6.3 从正常 `first_shift.tscn` 运行。三组固定机位的眼位、朝向、FOV、分辨率逐个比对。改前与改后原帧均为 Mesa llvmpipe、Xvfb、Compatibility 的 900 × 560 PNG，沿用原软件模式日照条件。
+Godot 4.6.3 从正常 `first_shift.tscn` 运行。三组固定机位的眼位、朝向、FOV、分辨率逐个比对。改前与改后原帧均为 Mesa llvmpipe、Xvfb、Compatibility 模式，窗口请求 900 × 560，PNG 实存 900 × 506，沿用原软件模式日照条件。
 
 | 固定机位 | 父版 | 新版 |
 | --- | --- | --- |
@@ -20,3 +20,5 @@ Godot 4.6.3 从正常 `first_shift.tscn` 运行。三组固定机位的眼位、
 [相邻厚慈街 77，14/14](regression-houci-77.json) · [修车，10/10](regression-repair.json) · [山城巷取送，12/12](regression-shancheng.json) · [当前首班，85/85](regression-first-shift.json)
 
 首轮并行软件返图两进程都退出 137，串行重拍保留完整原帧。云端完整日志、街景对照及逐地块下一轮注册位于 `/workspace/work/runtime/district-refresh/remaining-33-KxMhkZe8`。 [A 组其余机位](../A-pending.md) · [上下文恢复](../../../evidence/REFRESH_RESUME.md)
+
+补充视觉复核保留以上原图和行走结果。原 `15-portal-after.png` 的固定相机含第一人称身体图层。新增诊断、无遮挡改前改后、正常玩家回望在 [视觉复拍](visual-review/README.md)。

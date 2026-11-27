@@ -1,0 +1,1517 @@
+{
+  "candidate": {
+    "binjiang_sha256": "9130bc07a8b0707f01129a2e2df391eb676364fe951a45fc2d100ff55a4b0f54",
+    "bounds_east_north_m": [
+      -250.0,
+      -250.0,
+      250.0,
+      250.0
+    ],
+    "bridge_park_sha256": "d7610bb70365b506b084810a925ede54321bbb5812b840d8c0810ed1ecb4426c",
+    "changbin_bend_sha256": "59f467c674151e7e2f55366257a28b12260d9c1eb23ceccc7359b07e18a6af9f",
+    "collectibles_market_sha256": "a23f881d0e9206b40fedc8f262cfdb132194e59825e4728b39800471b684e175",
+    "glb_sha256": "b0180ce3a8d821253181725ad4516c04f58fe057529680e22a081f89fdd62122",
+    "guoco_sha256": "4dcb3d55080b02d8a0cf02585626bed2dfc3cdb37ae2f987110b55dd56435853",
+    "houci_77_sha256": "71e594772c8218538934c7ebeff75eb965ab0c9754d726c88481dfd5ff72f17a",
+    "market_stall_row_sha256": "42fffbc9c4a98d3fa615e48fa9ce4eecdf66bf225decbd3d44d40eddf5a41646",
+    "match_factory_sha256": "ab742e6b12ad0b52c4cffef0f8342e1a957b59de5cfe3abde4dd691f853d76c6",
+    "matix_streets_sha256": "3b57fcf46931ff28ce1ab2be4a7250d31af30d302e362816265be8e38852e33b",
+    "osm_building_ids": [
+      809889594.0,
+      809889602.0,
+      809889621.0,
+      704006725,
+      809889619,
+      809889620
+    ],
+    "panda_15_17_sha256": "165c8b1ec9e31dbf2bbda447e1d5db4a37e766a97f1ad1bc45c9e8a60693775f",
+    "park_edge_finish_sha256": "52ba8de0a1bd4ee57439d86b5f0e7efad002311679d486b3b0dbc75bdc0e6d33",
+    "park_plot57_sha256": "b67c6b5fc91cdc8b8fa0e6808f8cedd8b15a49ad36a2566631ae67a1671f9f60",
+    "park_plot59_sha256": "fa02d99cf8eda6971b3b148e8c3fc5031108e134806e25b0e71e3f320cd4747c",
+    "park_plot61_sha256": "b6e7b1a3baf336235be5d553e2c3d24caf36b949a34bbf296d4b2eed31ddeceb",
+    "pavilion_62_sha256": "08d702b1a9ce0464b3bc62f33808befa5b58e5dcd082659b06c4cbc0bbab3e76",
+    "public_edges_sha256": "d585e52e0d927a9639e7285ffecc4932603a4d56b039504f1600763f72cc1be4",
+    "raijiapo_east_sha256": "c230f7e3a225f9e8446cb43b66eebd4cd05fac72cbb6b02787d8d0090038e81d",
+    "retired_internal_context": false,
+    "riverside_sha256": "12f304d468c56fb429d4a4db948f5297b7ca4284f29fc494442c9b2a146f67d1",
+    "west_court_sha256": "32eea2dd1f34b7f5dacbb546a46c6cf106ac3896804677ef9b2ee1dabfb2c683",
+    "west_ramp_sha256": "2a2ae2a4745096ea849dbb5f2365ce1cf437a8dcd974ed4cb47dddd5d5aae8b2",
+    "xingchen_sha256": "af156281216128407550442694d4dc45ea8507dfc7da4c80efd549a0ffbe127b",
+    "zhongxing_18_21_sha256": "7622184407e04b8641e479be3c549d357de74eaa649baf78eab41bdcc19203af",
+    "zhongxing_wall_sha256": "72fa4f4c800a8e27c19d580da66524160c4c2111bd82191706b6c8da142b8d42"
+  },
+  "checks": [
+    {
+      "detail": "",
+      "name": "first_shift",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "both_context_frontages_present",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "previous_COL_Outer500_Frame_15",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "previous_COL_Outer500_Frame_17",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "previous_Outer500_Condenser_15_01",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "previous_Outer500_Condenser_17_01",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "previous_Outer500_Condenser_17_04",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "previous_Outer500_Household_057_chair_0",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "previous_Outer500_Household_059_chair_0",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "previous_Outer500_InteriorFloor_15",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "previous_Outer500_InteriorFloor_17",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "previous_Outer500_Joinery_15",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "previous_Outer500_Joinery_17",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "previous_Outer500_Plant_014",
+      "pass": true
+    },
+    {
+      "detail": 0,
+      "name": "shared_street_trees",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "upright_Panda228_TreeCrown_01",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "upright_Panda228_TreeCrown_02",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "upright_Panda228_TreeCrown_03",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "upright_Panda228_TreeCrown_04",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "upright_Panda228_TreeCrown_05",
+      "pass": true
+    },
+    {
+      "detail": {
+        "count": 48,
+        "sections": [
+          [
+            {
+              "enu": [
+                153.945907592773,
+                10.7312107086182
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  23.429,
+                  0.996
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  23.343,
+                  0.998
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                153.118865966797,
+                11.7982139587402
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  23.514,
+                  0.999
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  23.395,
+                  1.0
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                151.954879760742,
+                13.2999229431152
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  23.529,
+                  0.999
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  23.409,
+                  0.999
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                150.852142333984,
+                14.7225942611694
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  23.558,
+                  0.997
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  23.447,
+                  0.996
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                150.208892822266,
+                15.5524854660034
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  23.64,
+                  0.992
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  23.532,
+                  0.992
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                149.167434692383,
+                16.8961200714111
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  23.869,
+                  0.988
+                ],
+                [
+                  "COL_Outer500_Surface_07_05",
+                  23.766,
+                  0.987
+                ]
+              ],
+              "paving": true
+            }
+          ],
+          [
+            {
+              "enu": [
+                160.664077758789,
+                15.938530921936
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  23.597,
+                  0.987
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  23.509,
+                  0.99
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                159.837036132812,
+                17.0055351257324
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  23.803,
+                  0.992
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  23.684,
+                  0.994
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                158.673049926758,
+                18.5072422027588
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  23.97,
+                  0.996
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  23.85,
+                  0.996
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                157.5703125,
+                19.9299144744873
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  24.106,
+                  0.994
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  23.995,
+                  0.992
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                156.927062988281,
+                20.7598056793213
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  24.214,
+                  0.99
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  24.106,
+                  0.989
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                155.885604858398,
+                22.1034393310547
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  24.445,
+                  0.987
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  24.342,
+                  0.985
+                ]
+              ],
+              "paving": true
+            }
+          ],
+          [
+            {
+              "enu": [
+                165.011123657227,
+                19.307975769043
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  23.681,
+                  0.978
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  23.594,
+                  0.98
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                164.18408203125,
+                20.374979019165
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  23.958,
+                  0.982
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  23.84,
+                  0.986
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                163.020095825195,
+                21.8766860961914
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  24.23,
+                  0.993
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  24.109,
+                  0.992
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                161.917358398438,
+                23.2993583679199
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  24.44,
+                  0.992
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  24.329,
+                  0.992
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                161.274108886719,
+                24.1292495727539
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  24.564,
+                  0.991
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  24.457,
+                  0.991
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                160.232650756836,
+                25.4728832244873
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  24.805,
+                  0.987
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  24.702,
+                  0.986
+                ]
+              ],
+              "paving": true
+            }
+          ],
+          [
+            {
+              "enu": [
+                170.148544311523,
+                23.2900428771973
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  23.744,
+                  0.972
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  23.656,
+                  0.977
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                169.321502685547,
+                24.3570461273193
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  24.055,
+                  0.976
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  23.937,
+                  0.98
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                168.157516479492,
+                25.8587532043457
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  24.39,
+                  0.988
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  24.27,
+                  0.987
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                167.054779052734,
+                27.2814254760742
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  24.632,
+                  0.991
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  24.521,
+                  0.991
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                166.411529541016,
+                28.1113166809082
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  24.773,
+                  0.991
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  24.665,
+                  0.991
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                165.370071411133,
+                29.4549503326416
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  25.021,
+                  0.988
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  24.918,
+                  0.988
+                ]
+              ],
+              "paving": true
+            }
+          ],
+          [
+            {
+              "enu": [
+                175.048858642578,
+                27.0883255004883
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  23.798,
+                  0.975
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  23.71,
+                  0.98
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                174.221817016602,
+                28.1553287506104
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  24.084,
+                  0.982
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  23.967,
+                  0.987
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                173.057830810547,
+                29.6570358276367
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  24.377,
+                  0.992
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  24.257,
+                  0.991
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                171.955093383789,
+                31.0797080993652
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  24.595,
+                  0.993
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  24.484,
+                  0.992
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                171.31184387207,
+                31.9095993041992
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  24.73,
+                  0.99
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  24.622,
+                  0.989
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                170.270385742188,
+                33.2532348632812
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  24.982,
+                  0.988
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  24.878,
+                  0.986
+                ]
+              ],
+              "paving": true
+            }
+          ],
+          [
+            {
+              "enu": [
+                181.055694580078,
+                31.7442817687988
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  23.974,
+                  0.981
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  23.886,
+                  0.988
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                180.228652954102,
+                32.8112831115723
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  24.196,
+                  0.988
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  24.078,
+                  0.991
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                179.064666748047,
+                34.3129920959473
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  24.391,
+                  0.997
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  24.271,
+                  0.996
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                177.961929321289,
+                35.7356643676758
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  24.509,
+                  0.997
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  24.398,
+                  0.996
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                177.31867980957,
+                36.5655555725098
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  24.608,
+                  0.995
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  24.498,
+                  0.995
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                176.277221679688,
+                37.9091911315918
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  24.828,
+                  0.989
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  24.725,
+                  0.989
+                ]
+              ],
+              "paving": true
+            }
+          ],
+          [
+            {
+              "enu": [
+                184.849472045898,
+                34.684886932373
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  24.244,
+                  0.981
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  24.156,
+                  0.987
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                184.022430419922,
+                35.7518882751465
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  24.457,
+                  0.988
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  24.339,
+                  0.991
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                182.858444213867,
+                37.2535972595215
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  24.612,
+                  0.996
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  24.492,
+                  0.995
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                181.755706787109,
+                38.67626953125
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  24.671,
+                  0.998
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  24.56,
+                  0.998
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                181.112457275391,
+                39.506160736084
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  24.724,
+                  0.997
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  24.614,
+                  0.998
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                180.070999145508,
+                40.849796295166
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  24.875,
+                  0.99
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  24.769,
+                  0.992
+                ]
+              ],
+              "paving": true
+            }
+          ],
+          [
+            {
+              "enu": [
+                188.406158447266,
+                37.4417037963867
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  24.602,
+                  0.978
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  24.514,
+                  0.983
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                187.579116821289,
+                38.5087051391602
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  24.832,
+                  0.984
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  24.714,
+                  0.987
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                186.415130615234,
+                40.0104141235351
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  24.995,
+                  0.994
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  24.872,
+                  0.991
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                185.312393188477,
+                41.4330863952637
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  25.04,
+                  0.995
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  24.929,
+                  0.995
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                184.669143676758,
+                42.2629776000977
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  25.06,
+                  0.995
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  24.951,
+                  0.994
+                ]
+              ],
+              "paving": true
+            },
+            {
+              "enu": [
+                183.627685546875,
+                43.6066131591797
+              ],
+              "layers": [
+                [
+                  "COL_Panda228_PublicFlagstones",
+                  25.155,
+                  0.993
+                ],
+                [
+                  "COL_Outer500_Surface_08_05",
+                  25.052,
+                  0.993
+                ]
+              ],
+              "paving": true
+            }
+          ]
+        ]
+      },
+      "name": "eight_walkway_cross_sections",
+      "pass": true
+    },
+    {
+      "detail": {
+        "vertical_clearance_m": 4.18392372131348
+      },
+      "name": "portal_clear_height",
+      "pass": true
+    },
+    {
+      "detail": {
+        "enu": [
+          187.145370483398,
+          38.7418518066406,
+          24.8896770477295
+        ],
+        "gap_m": 0.0
+      },
+      "name": "normal_street_spawn",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "original_camera_15-portal.png",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 10.43641782552,
+        "end": "(176.8822, 25.01652, -39.75588)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.072289451956749,
+        "name": "panda_public_15_out",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "name": "panda_public_15_out",
+      "pass": true
+    },
+    {
+      "detail": [
+        176.882217407227,
+        39.7558784484863,
+        25.0165157318115
+      ],
+      "name": "on_destination_floor",
+      "pass": true
+    },
+    {
+      "detail": "inside_look_back.png",
+      "name": "frame_inside_look_back",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 10.3993204860017,
+        "end": "(187.2269, 24.88448, -38.70901)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0769504308700562,
+        "name": "panda_public_15_back",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "name": "panda_public_15_back",
+      "pass": true
+    },
+    {
+      "detail": [
+        187.226913452148,
+        38.7090148925781,
+        24.8844795227051
+      ],
+      "name": "returned_to_same_street",
+      "pass": true
+    }
+  ],
+  "device": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "engine": "4.6.3-stable (official)",
+  "native_frames": [
+    {
+      "err": 0.0,
+      "eye_enu": [
+        188.535507202148,
+        38.7439193725586,
+        26.3840007781982
+      ],
+      "file": "15-portal.png",
+      "fov_deg": 64.0,
+      "target_enu": [
+        177.398483276367,
+        39.7272186279297,
+        27.2430000305176
+      ]
+    },
+    {
+      "direction_xyz": "(0.723384, 0.0, 0.690446)",
+      "eye_enu": [
+        176.983489990234,
+        39.6592178344727,
+        26.6665153503418
+      ],
+      "frame": "inside_look_back.png",
+      "pixel_size": "(900, 560)"
+    }
+  ],
+  "renderer": "gl_compatibility",
+  "scene": "res://first_shift.tscn",
+  "sections": [
+    {
+      "contacts": [
+        [
+          "COL_Panda228_PublicFlagstones",
+          24.873,
+          0.987
+        ],
+        [
+          "COL_Outer500_Surface_08_05",
+          24.746,
+          0.993
+        ]
+      ],
+      "east_north": [
+        187.145370483398,
+        38.7418518066406
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Panda228_PublicFlagstones",
+          24.751,
+          0.996
+        ],
+        [
+          "COL_Outer500_Surface_08_05",
+          24.63,
+          0.996
+        ]
+      ],
+      "east_north": [
+        184.433670043945,
+        38.3227424621582
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Panda228_PublicFlagstones",
+          24.675,
+          0.998
+        ],
+        [
+          "COL_Outer500_Surface_08_05",
+          24.563,
+          0.998
+        ]
+      ],
+      "east_north": [
+        181.70671081543,
+        38.7394981384277
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Panda228_PublicFlagstones",
+          24.687,
+          0.997
+        ],
+        [
+          "COL_Outer500_Surface_08_05",
+          24.579,
+          0.992
+        ]
+      ],
+      "east_north": [
+        179.048950195312,
+        38.577278137207
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Panda228_PublicFlagstones",
+          24.85,
+          0.987
+        ],
+        [
+          "COL_Outer500_Surface_08_05",
+          24.747,
+          0.986
+        ]
+      ],
+      "east_north": [
+        177.542190551758,
+        39.1174278259277
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Panda228_PodiumStructure",
+          39.2,
+          1.0
+        ],
+        [
+          "COL_Panda228_PublicFlagstones",
+          25.012,
+          0.986
+        ],
+        [
+          "COL_Outer500_Surface_08_05",
+          24.916,
+          0.985
+        ]
+      ],
+      "east_north": [
+        176.832931518555,
+        39.820255279541
+      ]
+    }
+  ],
+  "start": "normal first_shift exploration spawn",
+  "teleports_between_legs": 0,
+  "walks": [
+    {
+      "finish_enu": [
+        176.882217407227,
+        39.7558784484863,
+        25.0165157318115
+      ],
+      "id": "panda_public_15_out",
+      "result": {
+        "distance_m": 10.43641782552,
+        "end": "(176.8822, 25.01652, -39.75588)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.072289451956749,
+        "name": "panda_public_15_out",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        187.145370483398,
+        38.7418518066406,
+        24.8896770477295
+      ],
+      "trace_enu": [
+        [
+          187.145370483398,
+          38.7418518066406,
+          24.8896770477295
+        ],
+        [
+          186.690322875977,
+          38.6347427368164,
+          24.8579387664795
+        ],
+        [
+          185.855941772461,
+          38.5193824768066,
+          24.8247356414795
+        ],
+        [
+          185.021514892578,
+          38.4040107727051,
+          24.7915325164795
+        ],
+        [
+          184.18684387207,
+          38.4045944213867,
+          24.7597942352295
+        ],
+        [
+          183.352722167969,
+          38.5172309875488,
+          24.7295207977295
+        ],
+        [
+          182.517654418945,
+          38.629997253418,
+          24.6977825164795
+        ],
+        [
+          181.681930541992,
+          38.6971130371094,
+          24.685338973999
+        ],
+        [
+          180.842239379883,
+          38.6576881408691,
+          24.6759834289551
+        ],
+        [
+          180.003082275391,
+          38.6188507080078,
+          24.6703491210938
+        ],
+        [
+          179.171936035156,
+          38.6020088195801,
+          24.6997337341309
+        ],
+        [
+          178.376022338867,
+          38.8477058410645,
+          24.7674293518066
+        ],
+        [
+          177.619857788086,
+          39.1407699584961,
+          24.8629913330078
+        ],
+        [
+          177.007339477539,
+          39.6675148010254,
+          24.9916076660156
+        ],
+        [
+          176.882217407227,
+          39.7558784484863,
+          25.0165157318115
+        ],
+        [
+          176.882217407227,
+          39.7558784484863,
+          25.0165157318115
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        187.226913452148,
+        38.7090148925781,
+        24.8844795227051
+      ],
+      "id": "panda_public_15_back",
+      "result": {
+        "distance_m": 10.3993204860017,
+        "end": "(187.2269, 24.88448, -38.70901)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0769504308700562,
+        "name": "panda_public_15_back",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        176.882217407227,
+        39.7558784484863,
+        25.0165157318115
+      ],
+      "trace_enu": [
+        [
+          176.882217407227,
+          39.7558784484863,
+          25.0165157318115
+        ],
+        [
+          177.290603637695,
+          39.3573455810547,
+          24.9217891693115
+        ],
+        [
+          178.059204101562,
+          38.9857864379883,
+          24.7987422943115
+        ],
+        [
+          178.849182128906,
+          38.6688423156738,
+          24.7098751068115
+        ],
+        [
+          179.693756103516,
+          38.6721954345703,
+          24.6766719818115
+        ],
+        [
+          180.533813476562,
+          38.6994552612305,
+          24.6759738922119
+        ],
+        [
+          181.373352050781,
+          38.7278099060059,
+          24.6834278106689
+        ],
+        [
+          182.205780029297,
+          38.629581451416,
+          24.6929035186768
+        ],
+        [
+          183.036880493164,
+          38.5133628845215,
+          24.72336769104
+        ],
+        [
+          183.86833190918,
+          38.3986434936523,
+          24.7468109130859
+        ],
+        [
+          184.699096679688,
+          38.4160270690918,
+          24.786262512207
+        ],
+        [
+          185.530639648438,
+          38.523567199707,
+          24.8222026824951
+        ],
+        [
+          186.362152099609,
+          38.6327972412109,
+          24.8602714538574
+        ],
+        [
+          187.123626708984,
+          38.7111434936523,
+          24.8866386413574
+        ],
+        [
+          187.226913452148,
+          38.7090148925781,
+          24.8844795227051
+        ],
+        [
+          187.226913452148,
+          38.7090148925781,
+          24.8844795227051
+        ]
+      ]
+    }
+  ]
+}

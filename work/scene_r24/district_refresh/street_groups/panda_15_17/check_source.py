@@ -16,6 +16,12 @@ for name in plan["new_meshes"]:
     obj=objects[name]
     assert obj.data.uv_layers.active and obj.data.uv_layers.active.data, name
     assert all(m.use_nodes for m in obj.data.materials), name
+for spec in plan.get("upright_trees", []):
+    node=objects[spec["name"]]
+    assert (node.location-Vector(spec["enu"])).length < .001
+    live_vertices={i for face in node.data.polygons for i in face.vertices}
+    heights=[node.data.vertices[i].co.z for i in live_vertices]
+    assert min(heights)>1.5 and max(heights)>4., (node.name,min(heights),max(heights))
 if Path(bpy.data.filepath).name=="city_and_outer.local.blend":
     for spec in plan["trees"]:
         tree,original = objects[spec["name"]],objects[spec["donor"]]

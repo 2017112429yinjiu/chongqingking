@@ -14,7 +14,8 @@
     "Outer500_InteriorFloor_15",
     "Outer500_InteriorFloor_17",
     "Outer500_Joinery_15",
-    "Outer500_Joinery_17"
+    "Outer500_Joinery_17",
+    "Outer500_Plant_014"
   ],
   "removed_face_counts": {
     "COLH_Outer500_Household_contact": 12,
@@ -35,7 +36,12 @@
     "COL_Panda228_CurbsAndLedge",
     "Panda228_TactileAndShelter",
     "COL_Panda228_PodiumStructure",
-    "Panda228_StoneRevealsAndShops"
+    "Panda228_StoneRevealsAndShops",
+    "Panda228_TreeCrown_01",
+    "Panda228_TreeCrown_02",
+    "Panda228_TreeCrown_03",
+    "Panda228_TreeCrown_04",
+    "Panda228_TreeCrown_05"
   ],
   "route": {
     "15": {
@@ -393,50 +399,109 @@
       ]
     ]
   ],
-  "trees": [
+  "trees": [],
+  "upright_trees": [
     {
-      "name": "Panda228_Tree_01",
-      "donor": "Outer500_Plant_014",
+      "name": "Panda228_TreeCrown_01",
       "enu": [
         150.7268524169922,
         9.00788402557373,
-        23.308480529785154
+        25.068480529785155
       ],
       "yaw": 0.2,
-      "scale": 0.96
+      "scale": 1.08
     },
     {
-      "name": "Panda228_Tree_02",
-      "donor": "Outer500_Plant_014",
+      "name": "Panda228_TreeCrown_02",
       "enu": [
         163.37281799316406,
         18.809900283813477,
-        23.70964935302734
+        25.469649353027343
       ],
-      "yaw": 1.0,
-      "scale": 1.09
+      "yaw": 1.12,
+      "scale": 1.2
     },
     {
-      "name": "Panda228_Tree_03",
-      "donor": "Outer500_Plant_014",
+      "name": "Panda228_TreeCrown_03",
       "enu": [
         171.197509765625,
         24.874897003173828,
-        23.82987335205078
+        25.58987335205078
       ],
-      "yaw": -0.4,
-      "scale": 0.91
+      "yaw": -0.42,
+      "scale": 1.06
     },
     {
-      "name": "Panda228_Tree_04",
-      "donor": "Outer500_Plant_014",
+      "name": "Panda228_TreeCrown_04",
       "enu": [
         177.87615966796875,
         30.051586151123047,
-        23.904191284179685
+        25.664191284179687
       ],
-      "yaw": 0.6,
-      "scale": 1.02
+      "yaw": 0.63,
+      "scale": 1.16
+    },
+    {
+      "name": "Panda228_TreeCrown_05",
+      "enu": [
+        183.31304931640625,
+        33.944400787353516,
+        25.890807189941405
+      ],
+      "yaw": -0.13,
+      "scale": 1.11
+    }
+  ],
+  "visual_signs": [
+    {
+      "text": "玉雕商行",
+      "enu": [
+        152.84324645996094,
+        20.41332244873047,
+        26.47
+      ],
+      "color": "#262b27",
+      "pixel_size": 0.0037
+    },
+    {
+      "text": "旧物陈列",
+      "enu": [
+        158.80661010742188,
+        25.035585403442383,
+        29.159999999999997
+      ],
+      "color": "#f1e6d2",
+      "pixel_size": 0.0037
+    },
+    {
+      "text": "古玩交流",
+      "enu": [
+        167.60345458984375,
+        31.85411262512207,
+        29.159999999999997
+      ],
+      "color": "#f1e6d2",
+      "pixel_size": 0.0037
+    },
+    {
+      "text": "小酒馆",
+      "enu": [
+        180.6762237548828,
+        41.9869499206543,
+        29.159999999999997
+      ],
+      "color": "#f1e6d2",
+      "pixel_size": 0.0037
+    },
+    {
+      "text": "中兴路站",
+      "enu": [
+        158.54193115234375,
+        15.199546813964844,
+        25.549267883300782
+      ],
+      "color": "#e9edea",
+      "pixel_size": 0.0018
     }
   ],
   "portal_sign": {
@@ -445,7 +510,8 @@
       39.126502990722656,
       29.18
     ],
-    "yaw": 0.6593787970956674
+    "yaw": 0.6593787970956674,
+    "text": "中兴路熊猫古玩文化金街"
   },
   "nonpublic_depth_behind_portal": 7.93,
   "route_axis": "OpenStreetMap footway 734116598",

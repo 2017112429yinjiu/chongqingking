@@ -2,6 +2,7 @@ extends "../../continuous_site_walk.gd"
 
 const SITE := "res://assets/district_500/panda-15-17.json"
 const VIEWS := "res://../../scene_r24/district_refresh/street_groups/panda_15_17/views.json"
+const VISUAL_DETAILS := "res://../../scene_r24/district_refresh/street_groups/panda_15_17/visual-detail-views.json"
 const PAVING := &"COL_Panda228_PublicFlagstones"
 
 var plot := "15"
@@ -22,6 +23,10 @@ func site_plan() -> Dictionary:
 		if mesh!=null and donor!=null and mesh.mesh==donor.mesh:
 			trees_supported+=1
 	check("shared_street_trees",trees_supported==(0 if legacy else registered.trees.size()), trees_supported)
+	for specification: Dictionary in registered.get("upright_trees",[]):
+		var crown := scene.find_child(specification.name,true,false) as MeshInstance3D
+		var anchored := crown!=null and crown.global_position.distance_to(Vector3(specification.enu[0],specification.enu[2],-specification.enu[1]))<.015
+		check("upright_"+specification.name,(crown==null) if legacy else anchored)
 	var sections := []
 	var supported := 0
 	for transect: Array in registered.minor_cross_sections:
@@ -51,8 +56,13 @@ func eye_frame(label: String, focus: Variant) -> void:
 	if label!="street":
 		return
 	var camera := Camera3D.new()
+	# The walking body belongs only in its actual first-person view.
+	camera.cull_mask &= ~int(scene.explorer.FIRST_PERSON_BODY_LAYER)
 	scene.add_child(camera)
 	var views: Array=JSON.parse_string(FileAccess.get_file_as_string(VIEWS))
+	if "--panda-visual-details" in OS.get_cmdline_user_args():
+		var detail_views: Array=JSON.parse_string(FileAccess.get_file_as_string(VISUAL_DETAILS))
+		views=detail_views+views
 	for view: Dictionary in views:
 		if not String(view.file).begins_with(plot+"-"):continue
 		camera.global_position=Vector3(view.eye_enu[0],view.eye_enu[2],-view.eye_enu[1])

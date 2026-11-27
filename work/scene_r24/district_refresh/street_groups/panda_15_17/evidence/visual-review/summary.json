@@ -1,0 +1,49 @@
+{
+  "scene": "res://first_shift.tscn",
+  "engine": "Godot 4.6.3",
+  "rendering": "Mesa llvmpipe / OpenGL Compatibility / Xvfb",
+  "window_requested": [
+    900,
+    560
+  ],
+  "saved_raster": [
+    900,
+    506
+  ],
+  "base_before_panda": "4f5a988cc191effc876705a2b0aa40f9114ac071",
+  "reproduced_diagnostic": "5b7705100cae57972a968dc9887a53909b762656",
+  "verified_sha256": "165c8b1ec9e31dbf2bbda447e1d5db4a37e766a97f1ad1bc45c9e8a60693775f",
+  "superseded_pose_only_in_fixed_capture": true,
+  "matched_camera_frames": 3,
+  "same_daylight_inputs_sha256": {
+    "work/project/chongqing_godot_v05/first_shift.tscn": "774ca1a31c34676c9bd0cbb187f88c3c52194c3aba9bf335e8acf590539c4b64",
+    "work/project/chongqing_godot_v05/scripts/main.gd": "852ce5ee2be3e3b6600f81ab0cbaa00d5a243dd018de74ebe929922bcc1721b8"
+  },
+  "plots": {
+    "15": {
+      "actual_round_trip_m": [
+        10.43641782552,
+        10.3993204860017
+      ],
+      "targets_each_direction": 5,
+      "walkway_contacts": 48,
+      "actual_player_look_back": true,
+      "clearance_m": 4.18392372131348
+    },
+    "17": {
+      "actual_round_trip_m": [
+        14.4868179932237,
+        14.4625979261473
+      ],
+      "targets_each_direction": 5,
+      "walkway_contacts": 48,
+      "actual_player_look_back": true
+    }
+  },
+  "regressions": {
+    "neighbor-21": 11,
+    "first-shift": 85
+  },
+  "native_shutdown_warnings": "two legacy GL texture cleanup warnings after successful output in some software runs",
+  "logs": "/workspace/work/runtime/district-refresh/remaining-33-KxMhkZe8/A1-visual"
+}
