@@ -1,0 +1,342 @@
+{
+  "new_meshes": [
+    "COL_Western30_OutdoorStoneFlags",
+    "Western30_SteppedMargins",
+    "COL_Western30_ExistingStreetJoins",
+    "COL_Western31_OutdoorStoneFlags",
+    "Western31_SteppedMargins",
+    "COL_Western31_ExistingStreetJoins",
+    "COL_Western33_OutdoorStoneFlags",
+    "Western33_SteppedMargins",
+    "COL_Western49_OutdoorStoneFlags",
+    "Western49_SteppedMargins",
+    "COL_Western49_ExistingStreetJoins",
+    "COL_Western30-garden_OutdoorStoneFlags",
+    "Western30-garden_SteppedMargins",
+    "COL_Western31-garden_OutdoorStoneFlags",
+    "Western31-garden_SteppedMargins",
+    "COL_Western33_SurveyedWall",
+    "Western33_RoughStoneCoursesAndDamp",
+    "Western33_ClimbingIvy",
+    "Western33_LocatedPipeAndClamps"
+  ],
+  "replacement_meshes": [
+    "COLH_Outer500_Household_contact",
+    "COL_Outer500_Building_envelopes",
+    "COL_Outer500_Retaining_and_boundaries",
+    "Outer500_Facades_and_storefronts",
+    "Outer500_Street_furniture"
+  ],
+  "retired_plots": [
+    33
+  ],
+  "retired_objects": [
+    "COL_Outer500_Frame_33",
+    "Outer500_Condenser_33_01",
+    "Outer500_Condenser_33_04",
+    "Outer500_Household_072_crate_0",
+    "Outer500_InteriorFloor_33",
+    "Outer500_Joinery_33"
+  ],
+  "borrowed_materials": {
+    "COLH_Outer500_Household_contact": {
+      "CQEastParentSlot000": "Door and shutter recess.001"
+    },
+    "COL_Outer500_Building_envelopes": {
+      "CQEastParentSlot001": "Grey stone walkway.001",
+      "CQEastParentSlot002": "Coursed retaining masonry.001",
+      "CQEastParentSlot003": "Aged stucco.001",
+      "CQEastParentSlot004": "Red infill brick.001",
+      "CQEastParentSlot005": "Glazed blue tile.001",
+      "CQEastParentSlot006": "Concrete bands.001",
+      "CQEastParentSlot007": "Blue grey street reflection.001",
+      "CQEastParentSlot008": "Shaded window beyond mesh.001",
+      "CQEastParentSlot009": "Flax curtain behind glazing.001",
+      "CQEastParentSlot010": "Cloud reflection.001",
+      "CQEastParentSlot011": "Painted window and rail trim.001",
+      "CQEastParentSlot012": "Door and shutter recess.002",
+      "CQEastParentSlot013": "Cream glazed wall skirting.001",
+      "CQEastParentSlot014": "Worn timber joinery.001",
+      "CQEastParentSlot015": "Worn concrete floors.001"
+    },
+    "COL_Outer500_Retaining_and_boundaries": {
+      "CQEastParentSlot016": "Grey stone walkway.002",
+      "CQEastParentSlot017": "Coursed retaining masonry.002",
+      "CQEastParentSlot018": "Concrete bands.002",
+      "CQEastParentSlot019": "Door and shutter recess.003",
+      "CQEastParentSlot020": "Aged galvanized drain pipe.001",
+      "CQEastParentSlot021": "Salvaged service-door steel.001"
+    },
+    "Outer500_Facades_and_storefronts": {
+      "CQEastParentSlot022": "Aged stucco.002",
+      "CQEastParentSlot023": "Red infill brick.002",
+      "CQEastParentSlot024": "Glazed blue tile.002",
+      "CQEastParentSlot025": "Concrete bands.003",
+      "CQEastParentSlot026": "Grey overlapping roof tiles.001",
+      "CQEastParentSlot027": "Painted window and rail trim.002",
+      "CQEastParentSlot028": "Door and shutter recess.004",
+      "CQEastParentSlot029": "Worn timber joinery.002",
+      "CQEastParentSlot030": "Faded covered market roofing.001",
+      "CQEastParentSlot031": "Aged galvanized drain pipe.002"
+    },
+    "Outer500_Street_furniture": {
+      "CQEastParentSlot032": "Aged stucco.004",
+      "CQEastParentSlot033": "Concrete bands.005",
+      "CQEastParentSlot034": "Grey overlapping roof tiles.003",
+      "CQEastParentSlot035": "Painted window and rail trim.004",
+      "CQEastParentSlot036": "Red painted steel.002",
+      "CQEastParentSlot037": "Jade painted steel.002",
+      "CQEastParentSlot038": "Ochre canvas.002",
+      "CQEastParentSlot039": "Off-white road pigment.002",
+      "CQEastParentSlot040": "Door and shutter recess.006",
+      "CQEastParentSlot041": "Canopy 0.002",
+      "CQEastParentSlot042": "Canopy 1.002",
+      "CQEastParentSlot043": "Canopy 2.002",
+      "CQEastParentSlot044": "Cream glazed wall skirting.003",
+      "CQEastParentSlot045": "Worn timber joinery.004",
+      "CQEastParentSlot046": "Weathered sheet metal.002",
+      "CQEastParentSlot047": "Faded covered market roofing.003",
+      "CQEastParentSlot048": "Used tyre casing.002",
+      "CQEastParentSlot049": "Brown earthenware.002"
+    }
+  },
+  "retired_plot_faces": {
+    "COLH_Outer500_Household_contact": 6,
+    "COL_Outer500_Building_envelopes": 222,
+    "COL_Outer500_Retaining_and_boundaries": 72,
+    "Outer500_Facades_and_storefronts": 36,
+    "Outer500_Street_furniture": 507
+  },
+  "walks": {
+    "30": [
+      [
+        -204.41734313964844,
+        138.8234100341797,
+        30.241947065704014
+      ],
+      [
+        -204.78018188476562,
+        137.25685119628906,
+        30.2389874397501
+      ],
+      [
+        -205.1538543701172,
+        135.69288635253906,
+        30.23954671318525
+      ],
+      [
+        -205.53518676757812,
+        134.1307373046875,
+        30.239039163426902
+      ],
+      [
+        -205.90966796875,
+        132.56692504882812,
+        30.242965043205917
+      ],
+      [
+        -206.27142333984375,
+        131.0003662109375,
+        30.246036071228904
+      ],
+      [
+        -206.57260131835938,
+        129.42080688476562,
+        30.250353482211956
+      ]
+    ],
+    "31": [
+      [
+        -205.46681213378906,
+        138.94142150878906,
+        30.170296260435006
+      ],
+      [
+        -206.68675231933594,
+        137.7156219482422,
+        30.119109614874148
+      ],
+      [
+        -208.0327911376953,
+        136.64207458496094,
+        30.068072171630906
+      ],
+      [
+        -209.46441650390625,
+        135.67189025878906,
+        30.020310381877586
+      ],
+      [
+        -210.8098907470703,
+        134.58636474609375,
+        29.986027957521646
+      ],
+      [
+        -212.149658203125,
+        133.4928436279297,
+        29.96260095372778
+      ],
+      [
+        -213.495361328125,
+        132.4066162109375,
+        29.945735241825048
+      ]
+    ],
+    "33": [
+      [
+        -205.41375732421875,
+        143.70132446289062,
+        30.11173351333731
+      ],
+      [
+        -206.05050659179688,
+        144.926025390625,
+        30.0765741203413
+      ],
+      [
+        -206.77243041992188,
+        146.10711669921875,
+        30.033067042488906
+      ],
+      [
+        -207.5211181640625,
+        147.27166748046875,
+        29.95321508745674
+      ],
+      [
+        -208.28700256347656,
+        148.4250946044922,
+        29.83292923031831
+      ],
+      [
+        -208.99838256835938,
+        149.61294555664062,
+        29.673650754618883
+      ],
+      [
+        -209.76043701171875,
+        150.75970458984375,
+        29.505473894253697
+      ]
+    ],
+    "49": [
+      [
+        -240.92462158203125,
+        14.730737686157227,
+        20.746183978885544
+      ],
+      [
+        -242.08676147460938,
+        15.912351608276367,
+        20.932315276993904
+      ],
+      [
+        -243.2933349609375,
+        17.04804229736328,
+        21.11667511306893
+      ],
+      [
+        -244.51145935058594,
+        18.17179298400879,
+        21.29529507950428
+      ],
+      [
+        -245.67718505859375,
+        19.349864959716797,
+        21.49889692191701
+      ],
+      [
+        -246.84188842773438,
+        20.528966903686523,
+        21.697969329373553
+      ],
+      [
+        -248.00503540039062,
+        21.709577560424805,
+        21.908865227954966
+      ]
+    ],
+    "30-garden": [
+      [
+        -219.90139770507812,
+        92.40011596679688,
+        30.28082379345928
+      ],
+      [
+        -218.59762573242188,
+        93.93883514404297,
+        30.26958378400248
+      ],
+      [
+        -217.2938690185547,
+        95.47755432128906,
+        30.26319282531285
+      ],
+      [
+        -215.99612426757812,
+        97.02134704589844,
+        30.26640187465511
+      ],
+      [
+        -214.6996612548828,
+        98.56623077392578,
+        30.26196248014726
+      ],
+      [
+        -213.35072326660156,
+        100.06415557861328,
+        30.252461957609956
+      ],
+      [
+        -211.95887756347656,
+        101.523681640625,
+        30.221373911313275
+      ]
+    ],
+    "31-garden": [
+      [
+        -220.64852905273438,
+        91.68479919433594,
+        30.299536460258608
+      ],
+      [
+        -221.6422119140625,
+        90.91455078125,
+        30.337668185071895
+      ],
+      [
+        -222.70611572265625,
+        90.25395965576172,
+        30.399218299041017
+      ],
+      [
+        -223.86692810058594,
+        89.81898498535156,
+        30.477588885904954
+      ],
+      [
+        -225.1141357421875,
+        89.66028594970703,
+        30.57298507415976
+      ],
+      [
+        -226.1961212158203,
+        90.12439727783203,
+        30.68783071207
+      ],
+      [
+        -227.20069885253906,
+        90.8803939819336,
+        30.818706254932952
+      ]
+    ]
+  },
+  "surface_textures": {
+    "West slope weathered grey flags": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+    "West slope dressed stone lip": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+    "West slope irregular damp ashlar": "res://assets/chongqing_district_stone_wall_05_diff_2k.jpg",
+    "West slope shaded lower stone courses": "res://assets/chongqing_district_stone_wall_05_diff_2k.jpg",
+    "West slope cold grey dressed stones": "res://assets/chongqing_district_stone_wall_05_diff_2k.jpg",
+    "West slope grey brown ashlar accents": "res://assets/chongqing_district_stone_wall_05_diff_2k.jpg"
+  }
+}

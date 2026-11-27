@@ -1,0 +1,690 @@
+{
+  "checks": [
+    {
+      "detail": [
+        [
+          160.589767456055,
+          -102.878746032715,
+          15.331798409252
+        ],
+        "COL_Jiefang25_JoinedFlags",
+        [
+          [
+            "COL_Jiefang25_JoinedFlags",
+            15.332,
+            0.978
+          ],
+          [
+            "COL_Outer500_Surface_08_02",
+            15.278,
+            0.984
+          ]
+        ]
+      ],
+      "name": "public_stair_support_0",
+      "pass": true
+    },
+    {
+      "detail": [
+        [
+          161.214782714844,
+          -101.438522338867,
+          15.5409036254883
+        ],
+        "COL_Jiefang25_RegisteredStoneSteps",
+        [
+          [
+            "COL_Jiefang25_RegisteredStoneSteps",
+            15.54,
+            0.991
+          ],
+          [
+            "COL_Outer500_Surface_08_02",
+            15.478,
+            0.983
+          ]
+        ]
+      ],
+      "name": "public_stair_support_1",
+      "pass": true
+    },
+    {
+      "detail": [
+        [
+          161.578140258789,
+          -100.601234436035,
+          15.7342641657049
+        ],
+        "COL_Jiefang25_RegisteredStoneSteps",
+        [
+          [
+            "COL_Jiefang25_RegisteredStoneSteps",
+            15.733,
+            0.991
+          ],
+          [
+            "COL_Outer500_Surface_08_02",
+            15.593,
+            0.983
+          ]
+        ]
+      ],
+      "name": "public_stair_support_2",
+      "pass": true
+    },
+    {
+      "detail": [
+        [
+          161.914001464844,
+          -99.8273315429688,
+          15.9276247059215
+        ],
+        "COL_Jiefang25_RegisteredStoneSteps",
+        [
+          [
+            "COL_Jiefang25_RegisteredStoneSteps",
+            15.927,
+            0.991
+          ],
+          [
+            "COL_Outer500_Surface_08_03",
+            15.699,
+            0.983
+          ]
+        ]
+      ],
+      "name": "public_stair_support_3",
+      "pass": true
+    },
+    {
+      "detail": [
+        [
+          162.249847412109,
+          -99.0534286499023,
+          16.1209852461381
+        ],
+        "COL_Jiefang25_RegisteredStoneSteps",
+        [
+          [
+            "COL_Jiefang25_RegisteredStoneSteps",
+            16.12,
+            0.99
+          ],
+          [
+            "COL_Outer500_Surface_08_03",
+            15.801,
+            0.984
+          ]
+        ]
+      ],
+      "name": "public_stair_support_4",
+      "pass": true
+    },
+    {
+      "detail": [
+        [
+          162.585708618164,
+          -98.2795333862305,
+          16.3143457863548
+        ],
+        "COL_Jiefang25_RegisteredStoneSteps",
+        [
+          [
+            "COL_Jiefang25_RegisteredStoneSteps",
+            16.314,
+            0.99
+          ],
+          [
+            "COL_Outer500_Surface_08_03",
+            15.902,
+            0.984
+          ]
+        ]
+      ],
+      "name": "public_stair_support_5",
+      "pass": true
+    },
+    {
+      "detail": [
+        [
+          162.92155456543,
+          -97.5056304931641,
+          16.5077063265714
+        ],
+        "COL_Jiefang25_RegisteredStoneSteps",
+        [
+          [
+            "COL_Jiefang25_RegisteredStoneSteps",
+            16.508,
+            0.99
+          ],
+          [
+            "COL_Outer500_Surface_08_03",
+            16.002,
+            0.984
+          ]
+        ]
+      ],
+      "name": "public_stair_support_6",
+      "pass": true
+    },
+    {
+      "detail": [
+        [
+          163.089477539062,
+          -97.1186752319336,
+          16.6043865966797
+        ],
+        "COL_Jiefang25_RegisteredStoneSteps",
+        [
+          [
+            "COL_Jiefang25_RegisteredStoneSteps",
+            16.604,
+            0.99
+          ],
+          [
+            "COL_Outer500_Surface_08_03",
+            16.05,
+            0.984
+          ]
+        ]
+      ],
+      "name": "public_stair_support_7",
+      "pass": true
+    },
+    {
+      "detail": [
+        [
+          163.28092956543,
+          -96.6775207519531,
+          16.6043865966797
+        ],
+        "COL_Jiefang25_RegisteredStoneSteps",
+        [
+          [
+            "COL_Jiefang25_StoneWingsAndHead",
+            20.879,
+            1.0
+          ],
+          [
+            "COL_Jiefang25_RegisteredStoneSteps",
+            16.604,
+            0.99
+          ],
+          [
+            "COL_Outer500_Surface_08_03",
+            16.105,
+            0.984
+          ]
+        ]
+      ],
+      "name": "public_stair_support_8",
+      "pass": true
+    },
+    {
+      "detail": [
+        160.589767456055,
+        -102.878746032715,
+        15.3484964370728
+      ],
+      "name": "normal_spawn_on_street_flags",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 6.5336637571454,
+        "end": "(163.2265, 16.61172, 96.63039)",
+        "goals": 8,
+        "max_frame_displacement_m": 0.072549968957901,
+        "name": "25_street_to_exterior_door",
+        "pass": true,
+        "reached": 8,
+        "stall_contacts": []
+      },
+      "name": "25_street_to_exterior_door",
+      "pass": true
+    },
+    {
+      "detail": [
+        163.226531982422,
+        -96.6303939819336,
+        16.6117172241211
+      ],
+      "name": "stopped_on_top_landing",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 6.52701782435179,
+        "end": "(160.6495, 15.35972, 102.9142)",
+        "goals": 8,
+        "max_frame_displacement_m": 0.0954617187380791,
+        "name": "25_door_back_to_street",
+        "pass": true,
+        "reached": 8,
+        "stall_contacts": []
+      },
+      "name": "25_door_back_to_street",
+      "pass": true
+    },
+    {
+      "detail": [
+        160.649490356445,
+        -102.914222717285,
+        15.359715461731
+      ],
+      "name": "returned_to_street_flags",
+      "pass": true
+    }
+  ],
+  "day_one_engine": "4.6.3-stable (official)",
+  "native_frames": [],
+  "paths": {
+    "back": {
+      "distance_m": 6.52701782435179,
+      "end": "(160.6495, 15.35972, 102.9142)",
+      "goals": 8,
+      "max_frame_displacement_m": 0.0954617187380791,
+      "name": "25_door_back_to_street",
+      "pass": true,
+      "reached": 8,
+      "stall_contacts": []
+    },
+    "out": {
+      "distance_m": 6.5336637571454,
+      "end": "(163.2265, 16.61172, 96.63039)",
+      "goals": 8,
+      "max_frame_displacement_m": 0.072549968957901,
+      "name": "25_street_to_exterior_door",
+      "pass": true,
+      "reached": 8,
+      "stall_contacts": []
+    },
+    "reposition_between_legs": 0,
+    "sections": [
+      {
+        "expected": "COL_Jiefang25_JoinedFlags",
+        "hits": [
+          [
+            "COL_Jiefang25_JoinedFlags",
+            15.332,
+            0.978
+          ],
+          [
+            "COL_Outer500_Surface_08_02",
+            15.278,
+            0.984
+          ]
+        ],
+        "pass": true,
+        "point": [
+          160.589767456055,
+          -102.878746032715,
+          15.331798409252
+        ]
+      },
+      {
+        "expected": "COL_Jiefang25_RegisteredStoneSteps",
+        "hits": [
+          [
+            "COL_Jiefang25_RegisteredStoneSteps",
+            15.54,
+            0.991
+          ],
+          [
+            "COL_Outer500_Surface_08_02",
+            15.478,
+            0.983
+          ]
+        ],
+        "pass": true,
+        "point": [
+          161.214782714844,
+          -101.438522338867,
+          15.5409036254883
+        ]
+      },
+      {
+        "expected": "COL_Jiefang25_RegisteredStoneSteps",
+        "hits": [
+          [
+            "COL_Jiefang25_RegisteredStoneSteps",
+            15.733,
+            0.991
+          ],
+          [
+            "COL_Outer500_Surface_08_02",
+            15.593,
+            0.983
+          ]
+        ],
+        "pass": true,
+        "point": [
+          161.578140258789,
+          -100.601234436035,
+          15.7342641657049
+        ]
+      },
+      {
+        "expected": "COL_Jiefang25_RegisteredStoneSteps",
+        "hits": [
+          [
+            "COL_Jiefang25_RegisteredStoneSteps",
+            15.927,
+            0.991
+          ],
+          [
+            "COL_Outer500_Surface_08_03",
+            15.699,
+            0.983
+          ]
+        ],
+        "pass": true,
+        "point": [
+          161.914001464844,
+          -99.8273315429688,
+          15.9276247059215
+        ]
+      },
+      {
+        "expected": "COL_Jiefang25_RegisteredStoneSteps",
+        "hits": [
+          [
+            "COL_Jiefang25_RegisteredStoneSteps",
+            16.12,
+            0.99
+          ],
+          [
+            "COL_Outer500_Surface_08_03",
+            15.801,
+            0.984
+          ]
+        ],
+        "pass": true,
+        "point": [
+          162.249847412109,
+          -99.0534286499023,
+          16.1209852461381
+        ]
+      },
+      {
+        "expected": "COL_Jiefang25_RegisteredStoneSteps",
+        "hits": [
+          [
+            "COL_Jiefang25_RegisteredStoneSteps",
+            16.314,
+            0.99
+          ],
+          [
+            "COL_Outer500_Surface_08_03",
+            15.902,
+            0.984
+          ]
+        ],
+        "pass": true,
+        "point": [
+          162.585708618164,
+          -98.2795333862305,
+          16.3143457863548
+        ]
+      },
+      {
+        "expected": "COL_Jiefang25_RegisteredStoneSteps",
+        "hits": [
+          [
+            "COL_Jiefang25_RegisteredStoneSteps",
+            16.508,
+            0.99
+          ],
+          [
+            "COL_Outer500_Surface_08_03",
+            16.002,
+            0.984
+          ]
+        ],
+        "pass": true,
+        "point": [
+          162.92155456543,
+          -97.5056304931641,
+          16.5077063265714
+        ]
+      },
+      {
+        "expected": "COL_Jiefang25_RegisteredStoneSteps",
+        "hits": [
+          [
+            "COL_Jiefang25_RegisteredStoneSteps",
+            16.604,
+            0.99
+          ],
+          [
+            "COL_Outer500_Surface_08_03",
+            16.05,
+            0.984
+          ]
+        ],
+        "pass": true,
+        "point": [
+          163.089477539062,
+          -97.1186752319336,
+          16.6043865966797
+        ]
+      },
+      {
+        "expected": "COL_Jiefang25_RegisteredStoneSteps",
+        "hits": [
+          [
+            "COL_Jiefang25_StoneWingsAndHead",
+            20.879,
+            1.0
+          ],
+          [
+            "COL_Jiefang25_RegisteredStoneSteps",
+            16.604,
+            0.99
+          ],
+          [
+            "COL_Outer500_Surface_08_03",
+            16.105,
+            0.984
+          ]
+        ],
+        "pass": true,
+        "point": [
+          163.28092956543,
+          -96.6775207519531,
+          16.6043865966797
+        ]
+      }
+    ],
+    "start_enu": [
+      160.589767456055,
+      -102.878746032715,
+      15.3484964370728
+    ],
+    "trace": [
+      {
+        "finish_enu": [
+          163.226531982422,
+          -96.6303939819336,
+          16.6117172241211
+        ],
+        "id": "25_street_to_exterior_door",
+        "result": {
+          "distance_m": 6.5336637571454,
+          "end": "(163.2265, 16.61172, 96.63039)",
+          "goals": 8,
+          "max_frame_displacement_m": 0.072549968957901,
+          "name": "25_street_to_exterior_door",
+          "pass": true,
+          "reached": 8,
+          "stall_contacts": []
+        },
+        "start_enu": [
+          160.589767456055,
+          -102.878746032715,
+          15.3484964370728
+        ],
+        "trace_enu": [
+          [
+            160.589767456055,
+            -102.878746032715,
+            15.3484964370728
+          ],
+          [
+            160.845504760742,
+            -102.380706787109,
+            15.448805809021
+          ],
+          [
+            161.143951416016,
+            -101.614868164062,
+            15.5578708648682
+          ],
+          [
+            161.426635742188,
+            -100.929054260254,
+            15.7111902236938
+          ],
+          [
+            161.735534667969,
+            -100.213088989258,
+            15.8449182510376
+          ],
+          [
+            162.022338867188,
+            -99.5420608520508,
+            16.0383148193359
+          ],
+          [
+            162.310806274414,
+            -98.8689804077148,
+            16.2309169769287
+          ],
+          [
+            162.604156494141,
+            -98.1949157714844,
+            16.3990859985352
+          ],
+          [
+            162.916961669922,
+            -97.4904327392578,
+            16.5330181121826
+          ],
+          [
+            163.219879150391,
+            -96.7860565185547,
+            16.6057090759277
+          ],
+          [
+            163.226531982422,
+            -96.6303939819336,
+            16.6117172241211
+          ],
+          [
+            163.226531982422,
+            -96.6303939819336,
+            16.6117172241211
+          ]
+        ]
+      },
+      {
+        "finish_enu": [
+          160.649490356445,
+          -102.914222717285,
+          15.359715461731
+        ],
+        "id": "25_door_back_to_street",
+        "result": {
+          "distance_m": 6.52701782435179,
+          "end": "(160.6495, 15.35972, 102.9142)",
+          "goals": 8,
+          "max_frame_displacement_m": 0.0954617187380791,
+          "name": "25_door_back_to_street",
+          "pass": true,
+          "reached": 8,
+          "stall_contacts": []
+        },
+        "start_enu": [
+          163.226531982422,
+          -96.6303939819336,
+          16.6117172241211
+        ],
+        "trace_enu": [
+          [
+            163.226531982422,
+            -96.6303939819336,
+            16.6117172241211
+          ],
+          [
+            163.03450012207,
+            -97.1423416137695,
+            16.6134281158447
+          ],
+          [
+            162.717315673828,
+            -97.9519348144531,
+            16.4133453369141
+          ],
+          [
+            162.376403808594,
+            -98.7494277954102,
+            16.2322196960449
+          ],
+          [
+            162.034790039062,
+            -99.5411682128906,
+            16.0389595031738
+          ],
+          [
+            161.688827514648,
+            -100.338897705078,
+            15.8454189300537
+          ],
+          [
+            161.344131469727,
+            -101.134155273438,
+            15.6515560150146
+          ],
+          [
+            161.003479003906,
+            -101.920059204102,
+            15.5241670608521
+          ],
+          [
+            160.672073364258,
+            -102.697486877441,
+            15.3820772171021
+          ],
+          [
+            160.649490356445,
+            -102.914222717285,
+            15.359715461731
+          ],
+          [
+            160.649490356445,
+            -102.914222717285,
+            15.359715461731
+          ]
+        ]
+      }
+    ],
+    "turn_enu": [
+      163.226531982422,
+      -96.6303939819336,
+      16.6117172241211
+    ]
+  },
+  "scene": "res://first_shift.tscn",
+  "site": {
+    "center_enu": [
+      163.173446655273,
+      -96.9252014160156,
+      16.6043865966797
+    ],
+    "front_t": -0.068,
+    "glass_t": 0.745,
+    "stair_risers": 11.0,
+    "stone_head_height_m": 1.03
+  }
+}

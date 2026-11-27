@@ -1,0 +1,2963 @@
+{
+  "checks": [
+    {
+      "detail": 7,
+      "name": "public_support_30",
+      "pass": true
+    },
+    {
+      "detail": [
+        -204.417343139648,
+        138.82341003418,
+        30.2419471740723
+      ],
+      "name": "street_origin_30",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 9.37008517142385,
+        "end": "(-206.5238, 30.26413, -129.3962)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0717507302761078,
+        "name": "30_public_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "name": "30_public_out",
+      "pass": true
+    },
+    {
+      "detail": [
+        -206.523803710938,
+        129.396179199219,
+        30.2641334533691
+      ],
+      "name": "at_public_turn_30",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 9.42722554132342,
+        "end": "(-204.4613, 30.25372, -138.889)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0716154798865318,
+        "name": "30_public_return",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "name": "30_public_return",
+      "pass": true
+    },
+    {
+      "detail": [
+        -204.46125793457,
+        138.889007568359,
+        30.2537231445312
+      ],
+      "name": "same_street_30",
+      "pass": true
+    },
+    {
+      "detail": 7,
+      "name": "public_support_31",
+      "pass": true
+    },
+    {
+      "detail": [
+        -205.466812133789,
+        138.941421508789,
+        30.170295715332
+      ],
+      "name": "street_origin_31",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 10.0946613270789,
+        "end": "(-213.4718, 29.96083, -132.4583)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0719493851065636,
+        "name": "31_public_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "name": "31_public_out",
+      "pass": true
+    },
+    {
+      "detail": [
+        -213.471817016602,
+        132.458312988281,
+        29.9608325958252
+      ],
+      "name": "at_public_turn_31",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 10.0649880282581,
+        "end": "(-205.49, 30.18297, -138.9133)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0701780170202255,
+        "name": "31_public_return",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "name": "31_public_return",
+      "pass": true
+    },
+    {
+      "detail": [
+        -205.489974975586,
+        138.913269042969,
+        30.1829662322998
+      ],
+      "name": "same_street_31",
+      "pass": true
+    },
+    {
+      "detail": 7,
+      "name": "public_support_33",
+      "pass": true
+    },
+    {
+      "detail": [
+        -205.304946899414,
+        142.677093505859,
+        30.1280975341797
+      ],
+      "name": "street_origin_33",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 9.27601084299386,
+        "end": "(-209.7051, 29.52388, -150.7636)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.377282798290253,
+        "name": "33_public_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "name": "33_public_out",
+      "pass": true
+    },
+    {
+      "detail": 1.04030692577362,
+      "name": "walked_to_2015_pipe",
+      "pass": true
+    },
+    {
+      "detail": [
+        -210.492025779217,
+        150.083102936391
+      ],
+      "name": "2015_pipe_loaded",
+      "pass": true
+    },
+    {
+      "detail": [
+        -209.705123901367,
+        150.763565063477,
+        29.5238838195801
+      ],
+      "name": "at_public_turn_33",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 9.00331426598132,
+        "end": "(-205.3903, 30.53691, -142.6533)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.342951774597168,
+        "name": "33_public_return",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "name": "33_public_return",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 3.74128983262926,
+        "end": "(-204.4754, 30.25406, -138.7863)",
+        "goals": 4,
+        "max_frame_displacement_m": 0.0970475301146507,
+        "name": "33_to_30_public_junction",
+        "pass": true,
+        "reached": 4,
+        "stall_contacts": []
+      },
+      "name": "33_to_30_public_junction",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 3.79079860821366,
+        "end": "(-205.2181, 30.53115, -142.7053)",
+        "goals": 4,
+        "max_frame_displacement_m": 0.313008904457092,
+        "name": "30_junction_back_to_33",
+        "pass": true,
+        "reached": 4,
+        "stall_contacts": []
+      },
+      "name": "30_junction_back_to_33",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 4.00545590464026,
+        "end": "(-205.4968, 30.18489, -138.9812)",
+        "goals": 4,
+        "max_frame_displacement_m": 0.0970523208379745,
+        "name": "33_to_31_public_junction",
+        "pass": true,
+        "reached": 4,
+        "stall_contacts": []
+      },
+      "name": "33_to_31_public_junction",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 4.02267932519317,
+        "end": "(-205.2339, 30.53925, -142.7369)",
+        "goals": 4,
+        "max_frame_displacement_m": 0.329776883125305,
+        "name": "31_junction_back_to_33",
+        "pass": true,
+        "reached": 4,
+        "stall_contacts": []
+      },
+      "name": "31_junction_back_to_33",
+      "pass": true
+    },
+    {
+      "detail": [
+        -205.23388671875,
+        142.736862182617,
+        30.539249420166
+      ],
+      "name": "same_street_33",
+      "pass": false
+    },
+    {
+      "detail": 7,
+      "name": "public_support_49",
+      "pass": true
+    },
+    {
+      "detail": [
+        -240.924621582031,
+        14.7307376861572,
+        20.7461833953857
+      ],
+      "name": "street_origin_49",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 9.65529028233141,
+        "end": "(-247.95, 21.91607, -21.65674)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0698773786425591,
+        "name": "49_public_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "name": "49_public_out",
+      "pass": true
+    },
+    {
+      "detail": [
+        -247.950042724609,
+        21.65673828125,
+        21.9160690307617
+      ],
+      "name": "at_public_turn_49",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 9.58127486798912,
+        "end": "(-240.9712, 20.76912, -14.77639)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0730840489268303,
+        "name": "49_public_return",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "name": "49_public_return",
+      "pass": true
+    },
+    {
+      "detail": [
+        -240.971176147461,
+        14.7763862609863,
+        20.7691192626953
+      ],
+      "name": "same_street_49",
+      "pass": true
+    },
+    {
+      "detail": 7,
+      "name": "public_support_30-garden",
+      "pass": true
+    },
+    {
+      "detail": [
+        -219.901397705078,
+        92.4001159667969,
+        30.2808246612549
+      ],
+      "name": "street_origin_30-garden",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 11.827206870541,
+        "end": "(-212.0037, 30.23568, -101.4869)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0718612000346184,
+        "name": "30-garden_public_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "name": "30-garden_public_out",
+      "pass": true
+    },
+    {
+      "detail": [
+        -212.003707885742,
+        101.486907958984,
+        30.2356777191162
+      ],
+      "name": "at_public_turn_30-garden",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 11.7554688584059,
+        "end": "(-219.8417, 30.29394, -92.43945)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0719328075647354,
+        "name": "30-garden_public_return",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "name": "30-garden_public_return",
+      "pass": true
+    },
+    {
+      "detail": [
+        -219.841735839844,
+        92.4394454956055,
+        30.2939414978027
+      ],
+      "name": "same_street_30-garden",
+      "pass": true
+    },
+    {
+      "detail": 7,
+      "name": "public_support_31-garden",
+      "pass": true
+    },
+    {
+      "detail": [
+        -220.648529052734,
+        91.6847991943359,
+        30.2995357513428
+      ],
+      "name": "street_origin_31-garden",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 7.14372785575688,
+        "end": "(-227.201, 30.83016, -90.82932)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0718963220715523,
+        "name": "31-garden_public_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "name": "31-garden_public_out",
+      "pass": true
+    },
+    {
+      "detail": [
+        -227.200973510742,
+        90.8293228149414,
+        30.8301582336426
+      ],
+      "name": "at_public_turn_31-garden",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 7.10659293923527,
+        "end": "(-220.6561, 30.31475, -91.63435)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0746617019176483,
+        "name": "31-garden_public_return",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "name": "31-garden_public_return",
+      "pass": true
+    },
+    {
+      "detail": [
+        -220.656066894531,
+        91.6343536376953,
+        30.3147468566895
+      ],
+      "name": "same_street_31-garden",
+      "pass": true
+    }
+  ],
+  "engine": "4.6.3-stable (official)",
+  "identity": {
+    "binjiang_sha256": "9130bc07a8b0707f01129a2e2df391eb676364fe951a45fc2d100ff55a4b0f54",
+    "bounds_east_north_m": [
+      -250.0,
+      -250.0,
+      250.0,
+      250.0
+    ],
+    "bridge_park_sha256": "d7610bb70365b506b084810a925ede54321bbb5812b840d8c0810ed1ecb4426c",
+    "changbin_55_sha256": "b24dbc38c8c06c6dd7556479254d5073519713c336041eb7ab4c5c3a0aae312f",
+    "changbin_bend_sha256": "59f467c674151e7e2f55366257a28b12260d9c1eb23ceccc7359b07e18a6af9f",
+    "collectibles_market_sha256": "a23f881d0e9206b40fedc8f262cfdb132194e59825e4728b39800471b684e175",
+    "fenghuangtai_11_sha256": "4e0af537b800faf7856af3659ea9dbe082f587dd3523824015e93fa8fb24d6a2",
+    "glb_sha256": "b0180ce3a8d821253181725ad4516c04f58fe057529680e22a081f89fdd62122",
+    "guoco_sha256": "4dcb3d55080b02d8a0cf02585626bed2dfc3cdb37ae2f987110b55dd56435853",
+    "houci_14_16_sha256": "b41a35494e9c984fa5df55393e597c036efeb49454f674749f6fc3037354c11f",
+    "houci_77_sha256": "71e594772c8218538934c7ebeff75eb965ab0c9754d726c88481dfd5ff72f17a",
+    "jiefang_public_edges_sha256": "8281850d827cb6061d7b6f78ba6f78accc1d3d10275d53c3e3c9abbc7a3bb98e",
+    "liangtingzi_45_46_sha256": "477f4cdb2ffd3266408efd7e8b99cbccdaceec94db6b9a80588009674e5039d7",
+    "market_stall_row_sha256": "42fffbc9c4a98d3fa615e48fa9ce4eecdf66bf225decbd3d44d40eddf5a41646",
+    "match_factory_sha256": "ab742e6b12ad0b52c4cffef0f8342e1a957b59de5cfe3abde4dd691f853d76c6",
+    "mati_34_35_sha256": "3a0c3f8e3598d88d7bbf414c2f1ee6567ef9f749762fa6bbbcade43a97916b39",
+    "matix_streets_sha256": "3b57fcf46931ff28ce1ab2be4a7250d31af30d302e362816265be8e38852e33b",
+    "nanqu_04_06_51_sha256": "df14048f69e2fba27d69e9673fbe85c27361cfb72eb0fae371e26fd21bccf7d0",
+    "north_38_40_41_sha256": "73b67982d9f9f93fea1c044f76e91ac5f82ad8bdb77a057a25425e41a7be1f10",
+    "osm_building_ids": [
+      809889594.0,
+      809889602.0,
+      809889621.0,
+      704006725,
+      809889619,
+      809889620
+    ],
+    "panda_15_17_sha256": "165c8b1ec9e31dbf2bbda447e1d5db4a37e766a97f1ad1bc45c9e8a60693775f",
+    "park_edge_finish_sha256": "52ba8de0a1bd4ee57439d86b5f0e7efad002311679d486b3b0dbc75bdc0e6d33",
+    "park_plot57_sha256": "b67c6b5fc91cdc8b8fa0e6808f8cedd8b15a49ad36a2566631ae67a1671f9f60",
+    "park_plot59_sha256": "fa02d99cf8eda6971b3b148e8c3fc5031108e134806e25b0e71e3f320cd4747c",
+    "park_plot61_sha256": "b6e7b1a3baf336235be5d553e2c3d24caf36b949a34bbf296d4b2eed31ddeceb",
+    "pavilion_62_sha256": "08d702b1a9ce0464b3bc62f33808befa5b58e5dcd082659b06c4cbc0bbab3e76",
+    "public_edges_sha256": "d585e52e0d927a9639e7285ffecc4932603a4d56b039504f1600763f72cc1be4",
+    "raijiapo_east_sha256": "c230f7e3a225f9e8446cb43b66eebd4cd05fac72cbb6b02787d8d0090038e81d",
+    "retired_internal_context": false,
+    "riverside_sha256": "12f304d468c56fb429d4a4db948f5297b7ca4284f29fc494442c9b2a146f67d1",
+    "west_court_sha256": "32eea2dd1f34b7f5dacbb546a46c6cf106ac3896804677ef9b2ee1dabfb2c683",
+    "west_ramp_sha256": "2a2ae2a4745096ea849dbb5f2365ce1cf437a8dcd974ed4cb47dddd5d5aae8b2",
+    "wilderness_50_finish_sha256": "92c0e84bacfc84b05ab13fe30618222bfff34b64586f5af5a5055526ee769b7f",
+    "wilderness_50_sha256": "ffde86e0c90b8c1b07766fad72b2bf8a3286d91b2f463ca885866a248fa266fa",
+    "xingchen_sha256": "af156281216128407550442694d4dc45ea8507dfc7da4c80efd549a0ffbe127b",
+    "zhongxing_18_21_sha256": "7622184407e04b8641e479be3c549d357de74eaa649baf78eab41bdcc19203af",
+    "zhongxing_public_edges_sha256": "c77fe6be06d123aea15dfeacea0987608af695da8ae90839e060b18baffcae66",
+    "zhongxing_wall_sha256": "72fa4f4c800a8e27c19d580da66524160c4c2111bd82191706b6c8da142b8d42"
+  },
+  "native_frames": [],
+  "renderer": "forward_plus",
+  "reports": {
+    "30": {
+      "back": {
+        "distance_m": 9.42722554132342,
+        "end": "(-204.4613, 30.25372, -138.889)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0716154798865318,
+        "name": "30_public_return",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "old_outline_edge_distance_m": 19.9382190704346,
+      "out": {
+        "distance_m": 9.37008517142385,
+        "end": "(-206.5238, 30.26413, -129.3962)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0717507302761078,
+        "name": "30_public_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "scope": "public street and outdoor path",
+      "sections": [
+        {
+          "enu": [
+            -204.417343139648,
+            138.82341003418,
+            30.241947065704
+          ],
+          "hits": [
+            [
+              "COL_Western30_OutdoorStoneFlags",
+              30.242,
+              1.0
+            ],
+            [
+              "COL_Outer500_Surface_00_07",
+              30.096,
+              0.998
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -204.780181884766,
+            137.256851196289,
+            30.2389874397501
+          ],
+          "hits": [
+            [
+              "COL_Western30_OutdoorStoneFlags",
+              30.239,
+              1.0
+            ],
+            [
+              "COL_Outer500_Surface_00_07",
+              30.099,
+              0.998
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -205.153854370117,
+            135.692886352539,
+            30.2395467131852
+          ],
+          "hits": [
+            [
+              "COL_Western30_OutdoorStoneFlags",
+              30.24,
+              1.0
+            ],
+            [
+              "COL_Outer500_Surface_00_07",
+              30.099,
+              0.999
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -205.535186767578,
+            134.130737304688,
+            30.2390391634269
+          ],
+          "hits": [
+            [
+              "COL_Western30_OutdoorStoneFlags",
+              30.239,
+              1.0
+            ],
+            [
+              "COL_Outer500_Surface_00_07",
+              30.104,
+              0.999
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -205.90966796875,
+            132.566925048828,
+            30.2429650432059
+          ],
+          "hits": [
+            [
+              "COL_Western30_OutdoorStoneFlags",
+              30.243,
+              1.0
+            ],
+            [
+              "COL_Outer500_Surface_00_07",
+              30.11,
+              0.999
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -206.271423339844,
+            131.000366210938,
+            30.2460360712289
+          ],
+          "hits": [
+            [
+              "COL_Western30_OutdoorStoneFlags",
+              30.246,
+              1.0
+            ],
+            [
+              "COL_Outer500_Surface_00_07",
+              30.118,
+              1.0
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -206.572601318359,
+            129.420806884766,
+            30.250353482212
+          ],
+          "hits": [
+            [
+              "COL_Western30_OutdoorStoneFlags",
+              30.25,
+              1.0
+            ],
+            [
+              "COL_Outer500_Surface_00_07",
+              30.131,
+              1.0
+            ]
+          ]
+        }
+      ],
+      "start_enu": [
+        -204.417343139648,
+        138.82341003418,
+        30.2427272796631
+      ],
+      "turn_enu": [
+        -206.523803710938,
+        129.396179199219,
+        30.2641334533691
+      ]
+    },
+    "30-garden": {
+      "back": {
+        "distance_m": 11.7554688584059,
+        "end": "(-219.8417, 30.29394, -92.43945)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0719328075647354,
+        "name": "30-garden_public_return",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "old_outline_edge_distance_m": 1.11234438419342,
+      "out": {
+        "distance_m": 11.827206870541,
+        "end": "(-212.0037, 30.23568, -101.4869)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0718612000346184,
+        "name": "30-garden_public_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "scope": "public street and outdoor path",
+      "sections": [
+        {
+          "enu": [
+            -219.901397705078,
+            92.4001159667969,
+            30.2808237934593
+          ],
+          "hits": [
+            [
+              "COL_Western30-garden_OutdoorStoneFlags",
+              30.281,
+              1.0
+            ],
+            [
+              "COL_Outer500_Surface_00_06",
+              30.117,
+              0.997
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -218.597625732422,
+            93.938835144043,
+            30.2695837840025
+          ],
+          "hits": [
+            [
+              "COL_Western30-garden_OutdoorStoneFlags",
+              30.27,
+              1.0
+            ],
+            [
+              "COL_Outer500_Surface_00_06",
+              30.12,
+              0.998
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -217.293869018555,
+            95.4775543212891,
+            30.2631928253128
+          ],
+          "hits": [
+            [
+              "COL_Western30-garden_OutdoorStoneFlags",
+              30.263,
+              1.0
+            ],
+            [
+              "COL_Outer500_Surface_00_06",
+              30.124,
+              0.999
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -215.996124267578,
+            97.0213470458984,
+            30.2664018746551
+          ],
+          "hits": [
+            [
+              "COL_Western30-garden_OutdoorStoneFlags",
+              30.266,
+              1.0
+            ],
+            [
+              "COL_Outer500_Surface_00_06",
+              30.133,
+              0.999
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -214.699661254883,
+            98.5662307739258,
+            30.2619624801473
+          ],
+          "hits": [
+            [
+              "COL_Western30-garden_OutdoorStoneFlags",
+              30.262,
+              1.0
+            ],
+            [
+              "COL_Outer500_Surface_00_06",
+              30.129,
+              0.998
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -213.350723266602,
+            100.064155578613,
+            30.25246195761
+          ],
+          "hits": [
+            [
+              "COL_Western30-garden_OutdoorStoneFlags",
+              30.252,
+              1.0
+            ],
+            [
+              "COL_Outer500_Surface_00_07",
+              30.106,
+              0.997
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -211.958877563477,
+            101.523681640625,
+            30.2213739113133
+          ],
+          "hits": [
+            [
+              "COL_Western30-garden_OutdoorStoneFlags",
+              30.221,
+              1.0
+            ],
+            [
+              "COL_Outer500_Building_envelopes",
+              30.092,
+              1.0
+            ],
+            [
+              "COL_Outer500_Surface_00_07",
+              30.076,
+              0.994
+            ]
+          ]
+        }
+      ],
+      "start_enu": [
+        -219.901397705078,
+        92.4001159667969,
+        30.2816143035889
+      ],
+      "turn_enu": [
+        -212.003707885742,
+        101.486907958984,
+        30.2356777191162
+      ]
+    },
+    "31": {
+      "back": {
+        "distance_m": 10.0649880282581,
+        "end": "(-205.49, 30.18297, -138.9133)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0701780170202255,
+        "name": "31_public_return",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "old_outline_edge_distance_m": 19.4084625244141,
+      "out": {
+        "distance_m": 10.0946613270789,
+        "end": "(-213.4718, 29.96083, -132.4583)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0719493851065636,
+        "name": "31_public_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "scope": "public street and outdoor path",
+      "sections": [
+        {
+          "enu": [
+            -205.466812133789,
+            138.941421508789,
+            30.170296260435
+          ],
+          "hits": [
+            [
+              "COL_Western31_OutdoorStoneFlags",
+              30.17,
+              0.999
+            ],
+            [
+              "COL_Outer500_Surface_00_07",
+              30.029,
+              0.998
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -206.686752319336,
+            137.715621948242,
+            30.1191096148741
+          ],
+          "hits": [
+            [
+              "COL_Western31_OutdoorStoneFlags",
+              30.119,
+              1.0
+            ],
+            [
+              "COL_Outer500_Surface_00_07",
+              29.979,
+              0.998
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -208.032791137695,
+            136.642074584961,
+            30.0680721716309
+          ],
+          "hits": [
+            [
+              "COL_Western31_OutdoorStoneFlags",
+              30.068,
+              0.999
+            ],
+            [
+              "COL_Outer500_Surface_00_07",
+              29.927,
+              0.998
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -209.464416503906,
+            135.671890258789,
+            30.0203103818776
+          ],
+          "hits": [
+            [
+              "COL_Western31_OutdoorStoneFlags",
+              30.02,
+              1.0
+            ],
+            [
+              "COL_Outer500_Surface_00_07",
+              29.878,
+              0.998
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -210.80989074707,
+            134.586364746094,
+            29.9860279575216
+          ],
+          "hits": [
+            [
+              "COL_Western31_OutdoorStoneFlags",
+              29.986,
+              1.0
+            ],
+            [
+              "COL_Outer500_Surface_00_07",
+              29.845,
+              0.998
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -212.149658203125,
+            133.49284362793,
+            29.9626009537278
+          ],
+          "hits": [
+            [
+              "COL_Western31_OutdoorStoneFlags",
+              29.963,
+              1.0
+            ],
+            [
+              "COL_Outer500_Surface_00_07",
+              29.82,
+              0.998
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -213.495361328125,
+            132.406616210938,
+            29.945735241825
+          ],
+          "hits": [
+            [
+              "COL_Western31_OutdoorStoneFlags",
+              29.946,
+              1.0
+            ],
+            [
+              "COL_Outer500_Surface_00_07",
+              29.804,
+              0.998
+            ]
+          ]
+        }
+      ],
+      "start_enu": [
+        -205.466812133789,
+        138.941421508789,
+        30.1712970733643
+      ],
+      "turn_enu": [
+        -213.471817016602,
+        132.458312988281,
+        29.9608325958252
+      ]
+    },
+    "31-garden": {
+      "back": {
+        "distance_m": 7.10659293923527,
+        "end": "(-220.6561, 30.31475, -91.63435)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0746617019176483,
+        "name": "31-garden_public_return",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "old_outline_edge_distance_m": 16.7673645019531,
+      "out": {
+        "distance_m": 7.14372785575688,
+        "end": "(-227.201, 30.83016, -90.82932)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0718963220715523,
+        "name": "31-garden_public_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "scope": "public street and outdoor path",
+      "sections": [
+        {
+          "enu": [
+            -220.648529052734,
+            91.6847991943359,
+            30.2995364602586
+          ],
+          "hits": [
+            [
+              "COL_Western31-garden_OutdoorStoneFlags",
+              30.299,
+              1.0
+            ],
+            [
+              "COL_Outer500_Surface_00_06",
+              30.136,
+              0.995
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -221.642211914062,
+            90.91455078125,
+            30.3376681850719
+          ],
+          "hits": [
+            [
+              "COL_Western31-garden_OutdoorStoneFlags",
+              30.337,
+              0.999
+            ],
+            [
+              "COL_Outer500_Surface_00_06",
+              30.17,
+              0.995
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -222.706115722656,
+            90.2539596557617,
+            30.399218299041
+          ],
+          "hits": [
+            [
+              "COL_Western31-garden_OutdoorStoneFlags",
+              30.399,
+              0.998
+            ],
+            [
+              "COL_Outer500_Surface_00_06",
+              30.231,
+              0.993
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -223.866928100586,
+            89.8189849853516,
+            30.477588885905
+          ],
+          "hits": [
+            [
+              "COL_Western31-garden_OutdoorStoneFlags",
+              30.473,
+              0.996
+            ],
+            [
+              "COL_Outer500_Surface_00_06",
+              30.321,
+              0.993
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -225.114135742188,
+            89.660285949707,
+            30.5729850741598
+          ],
+          "hits": [
+            [
+              "COL_Western31-garden_OutdoorStoneFlags",
+              30.569,
+              0.998
+            ],
+            [
+              "COL_Outer500_Surface_00_06",
+              30.44,
+              0.993
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -226.19612121582,
+            90.124397277832,
+            30.68783071207
+          ],
+          "hits": [
+            [
+              "COL_Western31-garden_OutdoorStoneFlags",
+              30.686,
+              0.996
+            ],
+            [
+              "COL_Outer500_Surface_00_06",
+              30.575,
+              0.994
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -227.200698852539,
+            90.8803939819336,
+            30.818706254933
+          ],
+          "hits": [
+            [
+              "COL_Western31-garden_OutdoorStoneFlags",
+              30.817,
+              0.995
+            ],
+            [
+              "COL_Outer500_Surface_00_06",
+              30.706,
+              0.995
+            ]
+          ]
+        }
+      ],
+      "start_enu": [
+        -220.648529052734,
+        91.6847991943359,
+        30.3001556396484
+      ],
+      "turn_enu": [
+        -227.200973510742,
+        90.8293228149414,
+        30.8301582336426
+      ]
+    },
+    "33": {
+      "back": {
+        "distance_m": 9.00331426598132,
+        "end": "(-205.3903, 30.53691, -142.6533)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.342951774597168,
+        "name": "33_public_return",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "old_outline_edge_distance_m": 3.26497220993042,
+      "out": {
+        "distance_m": 9.27601084299386,
+        "end": "(-209.7051, 29.52388, -150.7636)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.377282798290253,
+        "name": "33_public_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "scope": "public street and outdoor path",
+      "sections": [
+        {
+          "enu": [
+            -205.304946899414,
+            142.677093505859,
+            30.1280967528052
+          ],
+          "hits": [
+            [
+              "COL_Western33_OutdoorStoneFlags",
+              30.128,
+              1.0
+            ],
+            [
+              "COL_Outer500_Surface_00_07",
+              29.979,
+              0.997
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -205.64225769043,
+            144.171020507812,
+            30.0985472760224
+          ],
+          "hits": [
+            [
+              "COL_Western33_OutdoorStoneFlags",
+              30.098,
+              1.0
+            ],
+            [
+              "COL_Outer500_Surface_00_07",
+              29.953,
+              0.998
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -206.408828735352,
+            145.524627685547,
+            30.0583278552751
+          ],
+          "hits": [
+            [
+              "COL_Western33_OutdoorStoneFlags",
+              30.058,
+              1.0
+            ],
+            [
+              "COL_Outer500_Surface_00_07",
+              29.911,
+              0.997
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -207.235427856445,
+            146.843154907227,
+            29.9924851320398
+          ],
+          "hits": [
+            [
+              "COL_Western33_OutdoorStoneFlags",
+              29.992,
+              0.997
+            ],
+            [
+              "COL_Outer500_Surface_00_07",
+              29.833,
+              0.992
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -208.098693847656,
+            148.138061523438,
+            29.8649324282704
+          ],
+          "hits": [
+            [
+              "COL_Western33_OutdoorStoneFlags",
+              29.865,
+              0.996
+            ],
+            [
+              "COL_Outer500_Surface_00_07",
+              29.689,
+              0.986
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -208.910186767578,
+            149.465667724609,
+            29.6940184881506
+          ],
+          "hits": [
+            [
+              "COL_Western33_OutdoorStoneFlags",
+              29.694,
+              0.993
+            ],
+            [
+              "COL_Outer500_Surface_00_07",
+              29.51,
+              0.984
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -209.760437011719,
+            150.759704589844,
+            29.5054738942537
+          ],
+          "hits": [
+            [
+              "COL_Western33_OutdoorStoneFlags",
+              29.501,
+              0.986
+            ],
+            [
+              "COL_Outer500_Surface_00_08",
+              29.325,
+              0.987
+            ]
+          ]
+        }
+      ],
+      "start_enu": [
+        -205.097457885742,
+        142.502655029297,
+        30.1332302093506
+      ],
+      "turn_enu": [
+        -209.705123901367,
+        150.763565063477,
+        29.5238838195801
+      ]
+    },
+    "49": {
+      "back": {
+        "distance_m": 9.58127486798912,
+        "end": "(-240.9712, 20.76912, -14.77639)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0730840489268303,
+        "name": "49_public_return",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "old_outline_edge_distance_m": 9.38408088684082,
+      "out": {
+        "distance_m": 9.65529028233141,
+        "end": "(-247.95, 21.91607, -21.65674)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0698773786425591,
+        "name": "49_public_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "scope": "public street and outdoor path",
+      "sections": [
+        {
+          "enu": [
+            -240.924621582031,
+            14.7307376861572,
+            20.7461839788855
+          ],
+          "hits": [
+            [
+              "COL_Western49_OutdoorStoneFlags",
+              20.746,
+              0.994
+            ],
+            [
+              "COL_Outer500_Surface_00_05",
+              20.549,
+              0.986
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -242.086761474609,
+            15.9123516082764,
+            20.9323152769939
+          ],
+          "hits": [
+            [
+              "COL_Western49_OutdoorStoneFlags",
+              20.932,
+              0.994
+            ],
+            [
+              "COL_Outer500_Surface_00_05",
+              20.726,
+              0.985
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -243.293334960938,
+            17.0480422973633,
+            21.1166751130689
+          ],
+          "hits": [
+            [
+              "COL_Western49_OutdoorStoneFlags",
+              21.117,
+              0.994
+            ],
+            [
+              "COL_Outer500_Surface_00_05",
+              20.91,
+              0.981
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -244.511459350586,
+            18.1717929840088,
+            21.2952950795043
+          ],
+          "hits": [
+            [
+              "COL_Western49_OutdoorStoneFlags",
+              21.295,
+              0.992
+            ],
+            [
+              "COL_Outer500_Surface_00_05",
+              21.097,
+              0.983
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -245.677185058594,
+            19.3498649597168,
+            21.498896921917
+          ],
+          "hits": [
+            [
+              "COL_Western49_OutdoorStoneFlags",
+              21.499,
+              0.993
+            ],
+            [
+              "COL_Outer500_Surface_00_05",
+              21.303,
+              0.984
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -246.841888427734,
+            20.5289669036865,
+            21.6979693293736
+          ],
+          "hits": [
+            [
+              "COL_Western49_OutdoorStoneFlags",
+              21.698,
+              0.992
+            ],
+            [
+              "COL_Outer500_Surface_00_05",
+              21.516,
+              0.985
+            ]
+          ]
+        },
+        {
+          "enu": [
+            -248.005035400391,
+            21.7095775604248,
+            21.908865227955
+          ],
+          "hits": [
+            [
+              "COL_Western49_OutdoorStoneFlags",
+              21.909,
+              0.993
+            ],
+            [
+              "COL_Outer500_Surface_00_05",
+              21.735,
+              0.986
+            ]
+          ]
+        }
+      ],
+      "start_enu": [
+        -240.924621582031,
+        14.7307376861572,
+        20.7500438690186
+      ],
+      "turn_enu": [
+        -247.950042724609,
+        21.65673828125,
+        21.9160690307617
+      ]
+    }
+  },
+  "scene": "res://first_shift.tscn",
+  "teleports_between_legs": 0,
+  "traces": [
+    {
+      "finish_enu": [
+        -206.523803710938,
+        129.396179199219,
+        30.2641334533691
+      ],
+      "id": "30_public_out",
+      "result": {
+        "distance_m": 9.37008517142385,
+        "end": "(-206.5238, 30.26413, -129.3962)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0717507302761078,
+        "name": "30_public_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -204.417343139648,
+        138.82341003418,
+        30.2427272796631
+      ],
+      "trace_enu": [
+        [
+          -204.417343139648,
+          138.82341003418,
+          30.2427272796631
+        ],
+        [
+          -204.576751708984,
+          138.304718017578,
+          30.254322052002
+        ],
+        [
+          -204.739471435547,
+          137.480758666992,
+          30.254322052002
+        ],
+        [
+          -204.929260253906,
+          136.662033081055,
+          30.252836227417
+        ],
+        [
+          -205.12028503418,
+          135.844055175781,
+          30.252836227417
+        ],
+        [
+          -205.31803894043,
+          135.027587890625,
+          30.252836227417
+        ],
+        [
+          -205.515274047852,
+          134.211029052734,
+          30.252836227417
+        ],
+        [
+          -205.711212158203,
+          133.394195556641,
+          30.2547092437744
+        ],
+        [
+          -205.905151367188,
+          132.576889038086,
+          30.2565307617188
+        ],
+        [
+          -206.09521484375,
+          131.758728027344,
+          30.2565307617188
+        ],
+        [
+          -206.273574829102,
+          130.938064575195,
+          30.2588748931885
+        ],
+        [
+          -206.435989379883,
+          130.113906860352,
+          30.2615756988525
+        ],
+        [
+          -206.523803710938,
+          129.435546875,
+          30.2641334533691
+        ],
+        [
+          -206.523803710938,
+          129.396179199219,
+          30.2641334533691
+        ],
+        [
+          -206.523803710938,
+          129.396179199219,
+          30.2641334533691
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -204.46125793457,
+        138.889007568359,
+        30.2537231445312
+      ],
+      "id": "30_public_return",
+      "result": {
+        "distance_m": 9.42722554132342,
+        "end": "(-204.4613, 30.25372, -138.889)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0716154798865318,
+        "name": "30_public_return",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -206.523803710938,
+        129.396179199219,
+        30.2641334533691
+      ],
+      "trace_enu": [
+        [
+          -206.523803710938,
+          129.396179199219,
+          30.2641334533691
+        ],
+        [
+          -206.412368774414,
+          129.916915893555,
+          30.2489967346191
+        ],
+        [
+          -206.303985595703,
+          130.749893188477,
+          30.247350692749
+        ],
+        [
+          -206.12580871582,
+          131.570495605469,
+          30.2570114135742
+        ],
+        [
+          -205.946380615234,
+          132.391052246094,
+          30.2570114135742
+        ],
+        [
+          -205.753204345703,
+          133.208480834961,
+          30.2570114135742
+        ],
+        [
+          -205.55908203125,
+          134.02571105957,
+          30.2537231445312
+        ],
+        [
+          -205.36067199707,
+          134.841995239258,
+          30.2537231445312
+        ],
+        [
+          -205.162979125977,
+          135.658432006836,
+          30.2537231445312
+        ],
+        [
+          -204.967376708984,
+          136.47526550293,
+          30.2537231445312
+        ],
+        [
+          -204.773513793945,
+          137.292541503906,
+          30.2537231445312
+        ],
+        [
+          -204.583160400391,
+          138.110656738281,
+          30.2537231445312
+        ],
+        [
+          -204.46125793457,
+          138.824630737305,
+          30.2537231445312
+        ],
+        [
+          -204.46125793457,
+          138.889007568359,
+          30.2537231445312
+        ],
+        [
+          -204.46125793457,
+          138.889007568359,
+          30.2537231445312
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -213.471817016602,
+        132.458312988281,
+        29.9608325958252
+      ],
+      "id": "31_public_out",
+      "result": {
+        "distance_m": 10.0946613270789,
+        "end": "(-213.4718, 29.96083, -132.4583)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0719493851065636,
+        "name": "31_public_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -205.466812133789,
+        138.941421508789,
+        30.1712970733643
+      ],
+      "trace_enu": [
+        [
+          -205.466812133789,
+          138.941421508789,
+          30.1712970733643
+        ],
+        [
+          -205.910095214844,
+          138.496734619141,
+          30.1616802215576
+        ],
+        [
+          -206.504180908203,
+          137.899261474609,
+          30.1314067840576
+        ],
+        [
+          -207.154251098633,
+          137.364868164062,
+          30.111421585083
+        ],
+        [
+          -207.804214477539,
+          136.830139160156,
+          30.078218460083
+        ],
+        [
+          -208.495681762695,
+          136.348022460938,
+          30.063081741333
+        ],
+        [
+          -209.185897827148,
+          135.8662109375,
+          30.0425395965576
+        ],
+        [
+          -209.848022460938,
+          135.347244262695,
+          30.0228157043457
+        ],
+        [
+          -210.507766723633,
+          134.825332641602,
+          30.0052871704102
+        ],
+        [
+          -211.161544799805,
+          134.296142578125,
+          29.9799575805664
+        ],
+        [
+          -211.814361572266,
+          133.765411376953,
+          29.98193359375
+        ],
+        [
+          -212.468215942383,
+          133.236557006836,
+          29.9720821380615
+        ],
+        [
+          -213.121734619141,
+          132.708511352539,
+          29.9647121429443
+        ],
+        [
+          -213.471817016602,
+          132.458312988281,
+          29.9608325958252
+        ],
+        [
+          -213.471817016602,
+          132.458312988281,
+          29.9608325958252
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -205.489974975586,
+        138.913269042969,
+        30.1829662322998
+      ],
+      "id": "31_public_return",
+      "result": {
+        "distance_m": 10.0649880282581,
+        "end": "(-205.49, 30.18297, -138.9133)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0701780170202255,
+        "name": "31_public_return",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -213.471817016602,
+        132.458312988281,
+        29.9608325958252
+      ],
+      "trace_enu": [
+        [
+          -213.471817016602,
+          132.458312988281,
+          29.9608325958252
+        ],
+        [
+          -212.997787475586,
+          132.856369018555,
+          29.9646434783936
+        ],
+        [
+          -212.32763671875,
+          133.362579345703,
+          29.9707832336426
+        ],
+        [
+          -211.673843383789,
+          133.889770507812,
+          29.9829483032227
+        ],
+        [
+          -211.020095825195,
+          134.416854858398,
+          29.9959335327148
+        ],
+        [
+          -210.366485595703,
+          134.944137573242,
+          30.0098724365234
+        ],
+        [
+          -209.712966918945,
+          135.471374511719,
+          30.0264987945557
+        ],
+        [
+          -209.02604675293,
+          135.953353881836,
+          30.0480632781982
+        ],
+        [
+          -208.336135864258,
+          136.431686401367,
+          30.0699577331543
+        ],
+        [
+          -207.672805786133,
+          136.945251464844,
+          30.097339630127
+        ],
+        [
+          -207.011444091797,
+          137.4619140625,
+          30.1230163574219
+        ],
+        [
+          -206.399612426758,
+          138.035766601562,
+          30.1448135375977
+        ],
+        [
+          -205.797500610352,
+          138.620407104492,
+          30.1694164276123
+        ],
+        [
+          -205.489974975586,
+          138.913269042969,
+          30.1829662322998
+        ],
+        [
+          -205.489974975586,
+          138.913269042969,
+          30.1829662322998
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -209.705123901367,
+        150.763565063477,
+        29.5238838195801
+      ],
+      "id": "33_public_out",
+      "result": {
+        "distance_m": 9.27601084299386,
+        "end": "(-209.7051, 29.52388, -150.7636)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.377282798290253,
+        "name": "33_public_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -205.097457885742,
+        142.502655029297,
+        30.1332302093506
+      ],
+      "trace_enu": [
+        [
+          -205.097457885742,
+          142.502655029297,
+          30.1332302093506
+        ],
+        [
+          -205.375244140625,
+          143.109313964844,
+          30.4275608062744
+        ],
+        [
+          -205.580581665039,
+          143.925476074219,
+          30.1053466796875
+        ],
+        [
+          -205.961456298828,
+          144.670989990234,
+          30.0887451171875
+        ],
+        [
+          -206.360198974609,
+          145.411178588867,
+          30.0736083984375
+        ],
+        [
+          -206.799621582031,
+          146.130126953125,
+          30.0350685119629
+        ],
+        [
+          -207.247131347656,
+          146.843963623047,
+          30.0033302307129
+        ],
+        [
+          -207.712554931641,
+          147.551254272461,
+          29.9383888244629
+        ],
+        [
+          -208.168090820312,
+          148.265594482422,
+          29.8661231994629
+        ],
+        [
+          -208.614288330078,
+          148.987167358398,
+          29.7635841369629
+        ],
+        [
+          -209.073348999023,
+          149.704223632812,
+          29.6610450744629
+        ],
+        [
+          -209.537963867188,
+          150.41796875,
+          29.5614356994629
+        ],
+        [
+          -209.705123901367,
+          150.763565063477,
+          29.5238838195801
+        ],
+        [
+          -209.705123901367,
+          150.763565063477,
+          29.5238838195801
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -205.390289306641,
+        142.653259277344,
+        30.5369091033936
+      ],
+      "id": "33_public_return",
+      "result": {
+        "distance_m": 9.00331426598132,
+        "end": "(-205.3903, 30.53691, -142.6533)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.342951774597168,
+        "name": "33_public_return",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -209.705123901367,
+        150.763565063477,
+        29.5238838195801
+      ],
+      "trace_enu": [
+        [
+          -209.705123901367,
+          150.763565063477,
+          29.5238838195801
+        ],
+        [
+          -209.366088867188,
+          150.276977539062,
+          29.599552154541
+        ],
+        [
+          -208.957061767578,
+          149.556701660156,
+          29.6974582672119
+        ],
+        [
+          -208.528091430664,
+          148.846786499023,
+          29.794189453125
+        ],
+        [
+          -208.088607788086,
+          148.141265869141,
+          29.8806304931641
+        ],
+        [
+          -207.630386352539,
+          147.444030761719,
+          29.9511032104492
+        ],
+        [
+          -207.177261352539,
+          146.742538452148,
+          30.0148448944092
+        ],
+        [
+          -206.729751586914,
+          146.033111572266,
+          30.0503768920898
+        ],
+        [
+          -206.29914855957,
+          145.312789916992,
+          30.076847076416
+        ],
+        [
+          -205.88053894043,
+          144.585250854492,
+          30.0975074768066
+        ],
+        [
+          -205.601425170898,
+          143.794860839844,
+          30.1202697753906
+        ],
+        [
+          -205.386184692383,
+          142.936279296875,
+          30.4804706573486
+        ],
+        [
+          -205.390289306641,
+          142.653259277344,
+          30.5369091033936
+        ],
+        [
+          -205.390289306641,
+          142.653259277344,
+          30.5369091033936
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -204.47541809082,
+        138.786346435547,
+        30.2540607452393
+      ],
+      "id": "33_to_30_public_junction",
+      "result": {
+        "distance_m": 3.74128983262926,
+        "end": "(-204.4754, 30.25406, -138.7863)",
+        "goals": 4,
+        "max_frame_displacement_m": 0.0970475301146507,
+        "name": "33_to_30_public_junction",
+        "pass": true,
+        "reached": 4,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -205.390289306641,
+        142.653259277344,
+        30.5369091033936
+      ],
+      "trace_enu": [
+        [
+          -205.390289306641,
+          142.653259277344,
+          30.5369091033936
+        ],
+        [
+          -205.162307739258,
+          142.136032104492,
+          30.3635559082031
+        ],
+        [
+          -204.938812255859,
+          141.32958984375,
+          30.0389747619629
+        ],
+        [
+          -204.71662902832,
+          140.520278930664,
+          30.063175201416
+        ],
+        [
+          -204.683670043945,
+          139.713882446289,
+          30.199348449707
+        ],
+        [
+          -204.478973388672,
+          138.953964233398,
+          30.2540607452393
+        ],
+        [
+          -204.47541809082,
+          138.786346435547,
+          30.2540607452393
+        ],
+        [
+          -204.47541809082,
+          138.786346435547,
+          30.2540607452393
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -205.218063354492,
+        142.705322265625,
+        30.5311546325684
+      ],
+      "id": "30_junction_back_to_33",
+      "result": {
+        "distance_m": 3.79079860821366,
+        "end": "(-205.2181, 30.53115, -142.7053)",
+        "goals": 4,
+        "max_frame_displacement_m": 0.313008904457092,
+        "name": "30_junction_back_to_33",
+        "pass": true,
+        "reached": 4,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -204.47541809082,
+        138.786346435547,
+        30.2540607452393
+      ],
+      "trace_enu": [
+        [
+          -204.47541809082,
+          138.786346435547,
+          30.2540607452393
+        ],
+        [
+          -204.64387512207,
+          139.308120727539,
+          30.2567272186279
+        ],
+        [
+          -204.6748046875,
+          140.156463623047,
+          30.0960826873779
+        ],
+        [
+          -204.857116699219,
+          140.984603881836,
+          30.0506725311279
+        ],
+        [
+          -205.072494506836,
+          141.798599243164,
+          30.0203990936279
+        ],
+        [
+          -205.231246948242,
+          142.582763671875,
+          30.487548828125
+        ],
+        [
+          -205.218063354492,
+          142.705322265625,
+          30.5311546325684
+        ],
+        [
+          -205.218063354492,
+          142.705322265625,
+          30.5311546325684
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -205.496765136719,
+        138.981201171875,
+        30.184886932373
+      ],
+      "id": "33_to_31_public_junction",
+      "result": {
+        "distance_m": 4.00545590464026,
+        "end": "(-205.4968, 30.18489, -138.9812)",
+        "goals": 4,
+        "max_frame_displacement_m": 0.0970523208379745,
+        "name": "33_to_31_public_junction",
+        "pass": true,
+        "reached": 4,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -205.218063354492,
+        142.705322265625,
+        30.5311546325684
+      ],
+      "trace_enu": [
+        [
+          -205.218063354492,
+          142.705322265625,
+          30.5311546325684
+        ],
+        [
+          -205.065734863281,
+          142.235366821289,
+          30.3085823059082
+        ],
+        [
+          -204.937118530273,
+          141.432189941406,
+          30.0350589752197
+        ],
+        [
+          -204.732070922852,
+          140.61848449707,
+          30.063009262085
+        ],
+        [
+          -204.671722412109,
+          139.811126708984,
+          30.1797142028809
+        ],
+        [
+          -205.026412963867,
+          139.218566894531,
+          30.2417011260986
+        ],
+        [
+          -205.496765136719,
+          138.981201171875,
+          30.184886932373
+        ],
+        [
+          -205.496765136719,
+          138.981201171875,
+          30.184886932373
+        ],
+        [
+          -205.496765136719,
+          138.981201171875,
+          30.184886932373
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -205.23388671875,
+        142.736862182617,
+        30.539249420166
+      ],
+      "id": "31_junction_back_to_33",
+      "result": {
+        "distance_m": 4.02267932519317,
+        "end": "(-205.2339, 30.53925, -142.7369)",
+        "goals": 4,
+        "max_frame_displacement_m": 0.329776883125305,
+        "name": "31_junction_back_to_33",
+        "pass": true,
+        "reached": 4,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -205.496765136719,
+        138.981201171875,
+        30.184886932373
+      ],
+      "trace_enu": [
+        [
+          -205.496765136719,
+          138.981201171875,
+          30.184886932373
+        ],
+        [
+          -205.009613037109,
+          139.253463745117,
+          30.2562255859375
+        ],
+        [
+          -204.635635375977,
+          139.916015625,
+          30.1454811096191
+        ],
+        [
+          -204.801208496094,
+          140.749114990234,
+          30.0571022033691
+        ],
+        [
+          -205.009017944336,
+          141.565277099609,
+          30.0268287658691
+        ],
+        [
+          -205.217742919922,
+          142.339065551758,
+          30.1480884552002
+        ],
+        [
+          -205.23388671875,
+          142.736862182617,
+          30.539249420166
+        ],
+        [
+          -205.23388671875,
+          142.736862182617,
+          30.539249420166
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -247.950042724609,
+        21.65673828125,
+        21.9160690307617
+      ],
+      "id": "49_public_out",
+      "result": {
+        "distance_m": 9.65529028233141,
+        "end": "(-247.95, 21.91607, -21.65674)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0698773786425591,
+        "name": "49_public_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -240.924621582031,
+        14.7307376861572,
+        20.7500438690186
+      ],
+      "trace_enu": [
+        [
+          -240.924621582031,
+          14.7307376861572,
+          20.7500438690186
+        ],
+        [
+          -241.357391357422,
+          15.1683168411255,
+          20.8297843933105
+        ],
+        [
+          -241.93928527832,
+          15.7583150863647,
+          20.9238567352295
+        ],
+        [
+          -242.54020690918,
+          16.3304653167725,
+          21.0152626037598
+        ],
+        [
+          -243.141143798828,
+          16.9013538360596,
+          21.1084327697754
+        ],
+        [
+          -243.749664306641,
+          17.4652366638184,
+          21.1995506286621
+        ],
+        [
+          -244.356552124023,
+          18.0317344665527,
+          21.2873821258545
+        ],
+        [
+          -244.941879272461,
+          18.6160011291504,
+          21.3882160186768
+        ],
+        [
+          -245.527008056641,
+          19.2005882263184,
+          21.4889888763428
+        ],
+        [
+          -246.109786987305,
+          19.7891750335693,
+          21.5859622955322
+        ],
+        [
+          -246.691589355469,
+          20.3771228790283,
+          21.6860332489014
+        ],
+        [
+          -247.27165222168,
+          20.9654407501221,
+          21.7915000915527
+        ],
+        [
+          -247.84440612793,
+          21.5466251373291,
+          21.8974571228027
+        ],
+        [
+          -247.950042724609,
+          21.65673828125,
+          21.9160690307617
+        ],
+        [
+          -247.950042724609,
+          21.65673828125,
+          21.9160690307617
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -240.971176147461,
+        14.7763862609863,
+        20.7691192626953
+      ],
+      "id": "49_public_return",
+      "result": {
+        "distance_m": 9.58127486798912,
+        "end": "(-240.9712, 20.76912, -14.77639)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0730840489268303,
+        "name": "49_public_return",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -247.950042724609,
+        21.65673828125,
+        21.9160690307617
+      ],
+      "trace_enu": [
+        [
+          -247.950042724609,
+          21.65673828125,
+          21.9160690307617
+        ],
+        [
+          -247.502319335938,
+          21.2036476135254,
+          21.8315963745117
+        ],
+        [
+          -246.905288696289,
+          20.5945625305176,
+          21.7217330932617
+        ],
+        [
+          -246.306777954102,
+          19.9879817962646,
+          21.6133346557617
+        ],
+        [
+          -245.708160400391,
+          19.3816566467285,
+          21.5151901245117
+        ],
+        [
+          -245.108993530273,
+          18.7759075164795,
+          21.4126510620117
+        ],
+        [
+          -244.501861572266,
+          18.1781272888184,
+          21.3071823120117
+        ],
+        [
+          -243.881317138672,
+          17.597864151001,
+          21.2075729370117
+        ],
+        [
+          -243.259201049805,
+          17.0149898529053,
+          21.1138229370117
+        ],
+        [
+          -242.638656616211,
+          16.4313831329346,
+          21.0186080932617
+        ],
+        [
+          -242.026885986328,
+          15.8394565582275,
+          20.9248580932617
+        ],
+        [
+          -241.426300048828,
+          15.2353372573853,
+          20.8281784057617
+        ],
+        [
+          -240.972503662109,
+          14.7780113220215,
+          20.7632369995117
+        ],
+        [
+          -240.971176147461,
+          14.7763862609863,
+          20.7691192626953
+        ],
+        [
+          -240.971176147461,
+          14.7763862609863,
+          20.7691192626953
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -212.003707885742,
+        101.486907958984,
+        30.2356777191162
+      ],
+      "id": "30-garden_public_out",
+      "result": {
+        "distance_m": 11.827206870541,
+        "end": "(-212.0037, 30.23568, -101.4869)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0718612000346184,
+        "name": "30-garden_public_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -219.901397705078,
+        92.4001159667969,
+        30.2816143035889
+      ],
+      "trace_enu": [
+        [
+          -219.901397705078,
+          92.4001159667969,
+          30.2816143035889
+        ],
+        [
+          -219.487411499023,
+          92.8643569946289,
+          30.2742710113525
+        ],
+        [
+          -218.951141357422,
+          93.5116806030273,
+          30.2839984893799
+        ],
+        [
+          -218.4111328125,
+          94.1551361083984,
+          30.2839984893799
+        ],
+        [
+          -217.869186401367,
+          94.7966918945312,
+          30.2812557220459
+        ],
+        [
+          -217.327423095703,
+          95.4386596679688,
+          30.2762680053711
+        ],
+        [
+          -216.786712646484,
+          96.0814514160156,
+          30.2775135040283
+        ],
+        [
+          -216.246002197266,
+          96.7242736816406,
+          30.2791347503662
+        ],
+        [
+          -215.705871582031,
+          97.367546081543,
+          30.2810001373291
+        ],
+        [
+          -215.165802001953,
+          98.0109252929688,
+          30.277853012085
+        ],
+        [
+          -214.617385864258,
+          98.6471176147461,
+          30.2747611999512
+        ],
+        [
+          -214.057601928711,
+          99.2733688354492,
+          30.2768115997314
+        ],
+        [
+          -213.495223999023,
+          99.8991317749023,
+          30.2693500518799
+        ],
+        [
+          -212.917709350586,
+          100.509857177734,
+          30.2555656433105
+        ],
+        [
+          -212.339416503906,
+          101.121337890625,
+          30.2297954559326
+        ],
+        [
+          -212.003707885742,
+          101.486907958984,
+          30.2356777191162
+        ],
+        [
+          -212.003707885742,
+          101.486907958984,
+          30.2356777191162
+        ],
+        [
+          -212.003707885742,
+          101.486907958984,
+          30.2356777191162
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -219.841735839844,
+        92.4394454956055,
+        30.2939414978027
+      ],
+      "id": "30-garden_public_return",
+      "result": {
+        "distance_m": 11.7554688584059,
+        "end": "(-219.8417, 30.29394, -92.43945)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0719328075647354,
+        "name": "30-garden_public_return",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -212.003707885742,
+        101.486907958984,
+        30.2356777191162
+      ],
+      "trace_enu": [
+        [
+          -212.003707885742,
+          101.486907958984,
+          30.2356777191162
+        ],
+        [
+          -212.436981201172,
+          101.037391662598,
+          30.2438087463379
+        ],
+        [
+          -213.011810302734,
+          100.425140380859,
+          30.2575664520264
+        ],
+        [
+          -213.578125,
+          99.8051376342773,
+          30.2727966308594
+        ],
+        [
+          -214.141876220703,
+          99.1823806762695,
+          30.2727966308594
+        ],
+        [
+          -214.698638916016,
+          98.5533828735352,
+          30.2760677337646
+        ],
+        [
+          -215.241546630859,
+          97.9123306274414,
+          30.2787113189697
+        ],
+        [
+          -215.784454345703,
+          97.2712936401367,
+          30.2815589904785
+        ],
+        [
+          -216.325820922852,
+          96.6281127929688,
+          30.2796001434326
+        ],
+        [
+          -216.866638183594,
+          95.9853210449219,
+          30.2796001434326
+        ],
+        [
+          -217.408950805664,
+          95.3428115844727,
+          30.2772521972656
+        ],
+        [
+          -217.951675415039,
+          94.7017669677734,
+          30.2790203094482
+        ],
+        [
+          -218.49446105957,
+          94.0607452392578,
+          30.2821178436279
+        ],
+        [
+          -219.037414550781,
+          93.4198684692383,
+          30.2837028503418
+        ],
+        [
+          -219.580368041992,
+          92.7790298461914,
+          30.288911819458
+        ],
+        [
+          -219.841735839844,
+          92.4394454956055,
+          30.2939414978027
+        ],
+        [
+          -219.841735839844,
+          92.4394454956055,
+          30.2939414978027
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -227.200973510742,
+        90.8293228149414,
+        30.8301582336426
+      ],
+      "id": "31-garden_public_out",
+      "result": {
+        "distance_m": 7.14372785575688,
+        "end": "(-227.201, 30.83016, -90.82932)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0718963220715523,
+        "name": "31-garden_public_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -220.648529052734,
+        91.6847991943359,
+        30.3001556396484
+      ],
+      "trace_enu": [
+        [
+          -220.648529052734,
+          91.6847991943359,
+          30.3001556396484
+        ],
+        [
+          -221.124130249023,
+          91.2919235229492,
+          30.3288192749023
+        ],
+        [
+          -221.819000244141,
+          90.8223648071289,
+          30.3567562103271
+        ],
+        [
+          -222.530242919922,
+          90.3773574829102,
+          30.3991718292236
+        ],
+        [
+          -223.302810668945,
+          90.054557800293,
+          30.4474544525146
+        ],
+        [
+          -224.104263305664,
+          89.8296432495117,
+          30.5103302001953
+        ],
+        [
+          -224.924453735352,
+          89.6980361938477,
+          30.5711727142334
+        ],
+        [
+          -225.7060546875,
+          89.9424896240234,
+          30.6456565856934
+        ],
+        [
+          -226.422134399414,
+          90.3443450927734,
+          30.7300701141357
+        ],
+        [
+          -227.084869384766,
+          90.7944946289062,
+          30.8180713653564
+        ],
+        [
+          -227.200973510742,
+          90.8293228149414,
+          30.8301582336426
+        ],
+        [
+          -227.200973510742,
+          90.8293228149414,
+          30.8301582336426
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -220.656066894531,
+        91.6343536376953,
+        30.3147468566895
+      ],
+      "id": "31-garden_public_return",
+      "result": {
+        "distance_m": 7.10659293923527,
+        "end": "(-220.6561, 30.31475, -91.63435)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0746617019176483,
+        "name": "31-garden_public_return",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -227.200973510742,
+        90.8293228149414,
+        30.8301582336426
+      ],
+      "trace_enu": [
+        [
+          -227.200973510742,
+          90.8293228149414,
+          30.8301582336426
+        ],
+        [
+          -226.708068847656,
+          90.4533386230469,
+          30.7486152648926
+        ],
+        [
+          -225.959686279297,
+          90.0518417358398,
+          30.6778144836426
+        ],
+        [
+          -225.169921875,
+          89.7371292114258,
+          30.5830879211426
+        ],
+        [
+          -224.326126098633,
+          89.7878952026367,
+          30.5108222961426
+        ],
+        [
+          -223.51220703125,
+          89.9877014160156,
+          30.4580879211426
+        ],
+        [
+          -222.734085083008,
+          90.2966690063477,
+          30.4038887023926
+        ],
+        [
+          -221.998382568359,
+          90.7129974365234,
+          30.3570137023926
+        ],
+        [
+          -221.310333251953,
+          91.1983032226562,
+          30.3252754211426
+        ],
+        [
+          -220.701248168945,
+          91.6275329589844,
+          30.3101387023926
+        ],
+        [
+          -220.656066894531,
+          91.6343536376953,
+          30.3147468566895
+        ],
+        [
+          -220.656066894531,
+          91.6343536376953,
+          30.3147468566895
+        ]
+      ]
+    }
+  ]
+}

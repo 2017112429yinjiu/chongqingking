@@ -1,0 +1,82 @@
+{
+  "replacement_meshes": [
+    "COL_Jiefang25_RegisteredStoneSteps"
+  ],
+  "new_meshes": [
+    "COL_Jiefang25_StoneWingsAndHead",
+    "Jiefang25_SoffitVerticalsAndGlass",
+    "COL_Jiefang25_JoinedFlags",
+    "Jiefang25_StoneTreadNoses",
+    "COL_Jiefang25_StreetEdgeIronRail"
+  ],
+  "retired_objects": [
+    "COL_Jiefang25_DoorPiersAndStepReturns"
+  ],
+  "surface_textures": {
+    "Gate25 warm grey stair tread": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+    "Gate25 grey street flags": "res://assets/chongqing_district_stone_floor_diff_2k.jpg",
+    "Gate25 wide granite lintel and wings": "res://assets/chongqing_district_stone_wall_05_diff_2k.jpg",
+    "Gate25 darker recessed granite joints": "res://assets/chongqing_district_stone_wall_05_diff_2k.jpg",
+    "Gate25 pale sawn stair edges": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg"
+  },
+  "walks": {
+    "25": [
+      [
+        160.5897674560547,
+        -102.87874603271484,
+        15.33179840925196
+      ],
+      [
+        161.21478271484375,
+        -101.43852233886719,
+        15.540903625488282
+      ],
+      [
+        161.57814025878906,
+        -100.60123443603516,
+        15.734264165704902
+      ],
+      [
+        161.91400146484375,
+        -99.82733154296875,
+        15.92762470592152
+      ],
+      [
+        162.24984741210938,
+        -99.05342864990234,
+        16.12098524613814
+      ],
+      [
+        162.58570861816406,
+        -98.27953338623047,
+        16.31434578635476
+      ],
+      [
+        162.9215545654297,
+        -97.50563049316406,
+        16.50770632657138
+      ],
+      [
+        163.0894775390625,
+        -97.1186752319336,
+        16.60438659667969
+      ],
+      [
+        163.2809295654297,
+        -96.67752075195312,
+        16.60438659667969
+      ]
+    ]
+  },
+  "eye_controls": {
+    "front_t": -0.068,
+    "glass_t": 0.745,
+    "stone_head_height_m": 1.0300000000000011,
+    "stair_risers": 11,
+    "center_enu": [
+      163.17344665527344,
+      -96.92520141601562,
+      16.60438659667969
+    ]
+  }
+}

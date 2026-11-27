@@ -38,8 +38,12 @@ const ZHONGXING_PUBLIC_EDGES := "res://assets/district_500/zhongxing-public-10-1
 const ZHONGXING_PUBLIC_EDGES_SITE := "res://assets/district_500/zhongxing-public-10-12-13-22.json"
 const JIEFANG_PUBLIC_EDGES := "res://assets/district_500/jiefang-public-02-24-25-26.glb"
 const JIEFANG_PUBLIC_EDGES_SITE := "res://assets/district_500/jiefang-public-02-24-25-26.json"
+const JIEFANG_GATE25 := "res://assets/district_500/jiefang-gate25-finish.glb"
+const JIEFANG_GATE25_SITE := "res://assets/district_500/jiefang-gate25-finish.json"
 const ZHONGXING22_FINISH := "res://assets/district_500/zhongxing-plaza-22-finish.glb"
 const ZHONGXING22_FINISH_SITE := "res://assets/district_500/zhongxing-plaza-22-finish.json"
+const WESTERN_PUBLIC := "res://assets/district_500/western-public-30-31-33-49.glb"
+const WESTERN_PUBLIC_SITE := "res://assets/district_500/western-public-30-31-33-49.json"
 const NANQU := "res://assets/district_500/nanqu-04-06-51.glb"
 const NANQU_SITE := "res://assets/district_500/nanqu-04-06-51.json"
 const WILDERNESS_50 := "res://assets/district_500/wilderness-50.glb"
@@ -74,7 +78,7 @@ const BINJIANG := "res://assets/district_500/binjiang-70-73.glb"
 const BINJIANG_SITE := "res://assets/district_500/binjiang-70-73.json"
 
 static func north_edge_mode() -> String:
-	for id: String in ["02","10","12","13","22","24","25","26","34","35","38","40","41","45","46"]:
+	for id: String in ["02","10","12","13","22","24","25","26","30","31","33","34","35","38","40","41","45","46","49","30-garden","31-garden"]:
 		if ("--north-edge="+id) in OS.get_cmdline_user_args():
 			return id
 	return ""
@@ -279,6 +283,12 @@ static func install(city: Node3D) -> Dictionary:
 		install_street_group(district, ZHONGXING22_FINISH, ZHONGXING22_FINISH_SITE, "Zhongxing22PublicApron")
 		var finish: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(ZHONGXING22_FINISH_SITE))
 		add_public_edge_trees(district, district.get_node("Zhongxing22PublicApron"), finish.trees)
+	if jiefang_public_active and not "--qa-without-western-public" in OS.get_cmdline_user_args():
+		install_street_group(district, WESTERN_PUBLIC, WESTERN_PUBLIC_SITE, "WesternSlopePublicEdges")
+		var western: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(WESTERN_PUBLIC_SITE))
+		retired_bridge_plots.append_array(western.retired_plots)
+	if jiefang_public_active and not "--qa-without-jiefang-gate25" in OS.get_cmdline_user_args():
+		install_street_group(district, JIEFANG_GATE25, JIEFANG_GATE25_SITE, "Jiefang25StreetGate")
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -769,6 +779,10 @@ static func start_exploration(scene: Node3D) -> void:
 			paths[id]=JIEFANG_PUBLIC_EDGES_SITE
 		if plot == "22" and not "--qa-without-zhongxing22-finish" in OS.get_cmdline_user_args():
 			paths["22"]=ZHONGXING22_FINISH_SITE
+		for id: String in ["30","31","33","49","30-garden","31-garden"]:
+			paths[id]=WESTERN_PUBLIC_SITE
+		if plot == "25" and not "--qa-without-jiefang-gate25" in OS.get_cmdline_user_args():
+			paths["25"]=JIEFANG_GATE25_SITE
 		var path: String = paths.get(plot,NORTH_EDGES_SITE)
 		var north: Dictionary=JSON.parse_string(FileAccess.get_file_as_string(path))
 		var rows: Array=north.walks[plot]

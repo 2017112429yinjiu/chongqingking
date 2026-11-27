@@ -441,6 +441,24 @@ if public_zhongxing22:
         planted.scale*=entry["scale"]
         planted.rotation_euler.z+=entry["yaw"]
         collection.objects.link(planted)
+if public_jiefang and os.environ.get("CQ_WESTERN_PUBLIC_PARENT") != "1":
+    western = json.loads((group_assets / "western-public-30-31-33-49.json").read_bytes())
+    for name in western["replacement_meshes"] + western["retired_objects"]:
+        collection.objects.unlink(collection.objects[name])
+    with bpy.data.libraries.load(str(factory_dir / "western_public_30_31_33_49/western-public-30-31-33-49.blend"),
+                                 link=True, relative=True) as (_, western_margin):
+        western_margin.objects = western["new_meshes"] + western["replacement_meshes"]
+    for item in western_margin.objects:
+        collection.objects.link(item)
+if public_jiefang and os.environ.get("CQ_JIEFANG_GATE25_PARENT") != "1":
+    gate25 = json.loads((group_assets / "jiefang-gate25-finish.json").read_bytes())
+    for name in gate25["replacement_meshes"] + gate25["retired_objects"]:
+        collection.objects.unlink(collection.objects[name])
+    with bpy.data.libraries.load(str(factory_dir / "jiefang_gate25_finish/jiefang-gate25-finish.blend"),
+                                 link=True, relative=True) as (_, gate_model):
+        gate_model.objects = gate25["new_meshes"] + gate25["replacement_meshes"]
+    for item in gate_model.objects:
+        collection.objects.link(item)
 bpy.context.preferences.filepaths.save_version=0
 output_name = "city_and_outer.local.blend" if nanqu else (
     "city_and_outer.before_nanqu.local.blend" if wilderness else
