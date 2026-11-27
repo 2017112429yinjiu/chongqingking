@@ -1,0 +1,26 @@
+{
+  "script": "work/scene_r24/day_one/verify.gd",
+  "current_regression_script": "work/scene_r24/indoor_delivery/verify_shift.gd",
+  "results": [
+    {
+      "run": "first-shift",
+      "checks": 52,
+      "passed": 50,
+      "failed": [
+        "handover_once",
+        "credit_and_regular_order_unlocked"
+      ],
+      "exit_code": 2
+    },
+    {
+      "run": "early-day-one-baseline",
+      "checks": 52,
+      "passed": 50,
+      "failed": [
+        "handover_once",
+        "credit_and_regular_order_unlocked"
+      ],
+      "exit_code": 2
+    }
+  ]
+}

@@ -16,6 +16,8 @@ const WEST_RAMP := "res://assets/district_500/west-ramp.glb"
 const WEST_RAMP_SITE := "res://assets/district_500/west-ramp.json"
 const GUOCO := "res://assets/district_500/guoco-frontages.glb"
 const GUOCO_SITE := "res://assets/district_500/guoco-frontages.json"
+const HOUCI := "res://assets/district_500/houci-77.glb"
+const HOUCI_SITE := "res://assets/district_500/houci-77.json"
 const PUBLIC_EDGES := "res://assets/district_500/public-edges.glb"
 const PUBLIC_EDGES_SITE := "res://assets/district_500/public-edges.json"
 const XINGCHEN := "res://assets/district_500/xingchen.glb"
@@ -129,6 +131,10 @@ static func install(city: Node3D) -> Dictionary:
 																var binjiang := load_binjiang_plan()
 																retired_bridge_plots.append_array(binjiang.retired_plots)
 																hide_replaced_binjiang_facades(city,binjiang.retired_runtime_frontage)
+	var houci_active := district.has_node("BinjiangFrontages") and not "--qa-without-houci-77" in OS.get_cmdline_user_args()
+	if houci_active:
+		install_street_group(district, HOUCI, HOUCI_SITE, "HouciStreet77")
+		retired_bridge_plots.append(77)
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -287,6 +293,7 @@ static func install(city: Node3D) -> Dictionary:
 		"west_court_sha256": FileAccess.get_sha256(WEST_COURT),
 		"west_ramp_sha256": FileAccess.get_sha256(WEST_RAMP),
 		"guoco_sha256": FileAccess.get_sha256(GUOCO),
+		"houci_77_sha256": FileAccess.get_sha256(HOUCI) if houci_active else "",
 		"public_edges_sha256": FileAccess.get_sha256(PUBLIC_EDGES),
 		"xingchen_sha256": FileAccess.get_sha256(XINGCHEN),
 		"pavilion_62_sha256": FileAccess.get_sha256(PAVILION_62),
@@ -479,6 +486,12 @@ static func start_exploration(scene: Node3D) -> void:
 		if not street.is_empty():
 			scene.explorer.set_walk_origin(street.position + Vector3.UP * .035,
 				enu(plan.street_eye_target_east_north_up))
+	elif "--houci-77" in OS.get_cmdline_user_args():
+		var plan: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(HOUCI_SITE))
+		var point: Array = plan.walk.stations[0]
+		var street := collision.raycast_ground(scene, Vector3(point[0], plan.walk.start_ray_y, -point[1]), 3.0)
+		if not street.is_empty():
+			scene.explorer.set_walk_origin(street.position + Vector3.UP * .035, enu(plan.walk.start_aim_enu))
 	elif binjiang_plot() in ["70","71","72","73"]:
 		var route: Dictionary = load_binjiang_plan().public_routes[binjiang_plot()]
 		var start: Array = route.stations[0]

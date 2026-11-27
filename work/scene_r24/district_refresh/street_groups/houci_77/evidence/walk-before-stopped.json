@@ -1,0 +1,2514 @@
+{
+  "candidate": {
+    "binjiang_sha256": "9130bc07a8b0707f01129a2e2df391eb676364fe951a45fc2d100ff55a4b0f54",
+    "bounds_east_north_m": [
+      -250.0,
+      -250.0,
+      250.0,
+      250.0
+    ],
+    "bridge_park_sha256": "d7610bb70365b506b084810a925ede54321bbb5812b840d8c0810ed1ecb4426c",
+    "changbin_bend_sha256": "59f467c674151e7e2f55366257a28b12260d9c1eb23ceccc7359b07e18a6af9f",
+    "collectibles_market_sha256": "a23f881d0e9206b40fedc8f262cfdb132194e59825e4728b39800471b684e175",
+    "glb_sha256": "b0180ce3a8d821253181725ad4516c04f58fe057529680e22a081f89fdd62122",
+    "guoco_sha256": "4dcb3d55080b02d8a0cf02585626bed2dfc3cdb37ae2f987110b55dd56435853",
+    "houci_77_sha256": "",
+    "market_stall_row_sha256": "42fffbc9c4a98d3fa615e48fa9ce4eecdf66bf225decbd3d44d40eddf5a41646",
+    "match_factory_sha256": "ab742e6b12ad0b52c4cffef0f8342e1a957b59de5cfe3abde4dd691f853d76c6",
+    "matix_streets_sha256": "3b57fcf46931ff28ce1ab2be4a7250d31af30d302e362816265be8e38852e33b",
+    "osm_building_ids": [
+      809889594.0,
+      809889602.0,
+      809889621.0,
+      704006725,
+      809889619,
+      809889620
+    ],
+    "park_edge_finish_sha256": "52ba8de0a1bd4ee57439d86b5f0e7efad002311679d486b3b0dbc75bdc0e6d33",
+    "park_plot57_sha256": "b67c6b5fc91cdc8b8fa0e6808f8cedd8b15a49ad36a2566631ae67a1671f9f60",
+    "park_plot59_sha256": "fa02d99cf8eda6971b3b148e8c3fc5031108e134806e25b0e71e3f320cd4747c",
+    "park_plot61_sha256": "b6e7b1a3baf336235be5d553e2c3d24caf36b949a34bbf296d4b2eed31ddeceb",
+    "pavilion_62_sha256": "08d702b1a9ce0464b3bc62f33808befa5b58e5dcd082659b06c4cbc0bbab3e76",
+    "public_edges_sha256": "d585e52e0d927a9639e7285ffecc4932603a4d56b039504f1600763f72cc1be4",
+    "raijiapo_east_sha256": "c230f7e3a225f9e8446cb43b66eebd4cd05fac72cbb6b02787d8d0090038e81d",
+    "retired_internal_context": false,
+    "riverside_sha256": "12f304d468c56fb429d4a4db948f5297b7ca4284f29fc494442c9b2a146f67d1",
+    "west_court_sha256": "32eea2dd1f34b7f5dacbb546a46c6cf106ac3896804677ef9b2ee1dabfb2c683",
+    "west_ramp_sha256": "2a2ae2a4745096ea849dbb5f2365ce1cf437a8dcd974ed4cb47dddd5d5aae8b2",
+    "xingchen_sha256": "af156281216128407550442694d4dc45ea8507dfc7da4c80efd549a0ffbe127b",
+    "zhongxing_wall_sha256": "72fa4f4c800a8e27c19d580da66524160c4c2111bd82191706b6c8da142b8d42"
+  },
+  "checks": [
+    {
+      "detail": "",
+      "name": "first_shift",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "retained_COL_Guoco_T1_1374780314",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "retained_COL_Guoco_T2_1374780313",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "retained_COL_Guoco_PodiumPublicPassage",
+      "pass": true
+    },
+    {
+      "detail": [
+        "COL_Outer500_Frame_77",
+        "Outer500_Condenser_77_01",
+        "Outer500_Condenser_77_04",
+        "Outer500_Household_162_crate_0",
+        "Outer500_InteriorFloor_77",
+        "Outer500_Joinery_77"
+      ],
+      "name": "intended_old_nodes",
+      "pass": true
+    },
+    {
+      "detail": [
+        [
+          "COL_Outer500_Frame_77",
+          32.315,
+          1.0
+        ],
+        [
+          "COL_Outer500_Building_envelopes",
+          17.6,
+          1.0
+        ],
+        [
+          "COL_Outer500_Surface_09_04",
+          16.253,
+          0.998
+        ]
+      ],
+      "name": "centre_legacy_roof_collision",
+      "pass": true
+    },
+    {
+      "detail": {
+        "passed": 0,
+        "profiles": [
+          [
+            {
+              "en": [
+                186.00163269043,
+                -34.7977066040039
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_08_04",
+                  16.31,
+                  1.0
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                186.927474975586,
+                -33.3719329833984
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_08_04",
+                  16.318,
+                  1.0
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                187.281478881836,
+                -32.8267860412598
+              ],
+              "expected": "COL_Houci_Street_Kerbs",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_08_04",
+                  16.32,
+                  1.0
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                187.635467529297,
+                -32.2816390991211
+              ],
+              "expected": "COL_Houci_1306489251_Asphalt",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_08_04",
+                  16.327,
+                  1.0
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                189.269302368164,
+                -29.7655715942383
+              ],
+              "expected": "COL_Houci_1306489251_Asphalt",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_08_04",
+                  16.355,
+                  0.999
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                190.903137207031,
+                -27.2495040893555
+              ],
+              "expected": "COL_Houci_1306489251_Asphalt",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_08_04",
+                  16.383,
+                  0.998
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                191.257125854492,
+                -26.7043571472168
+              ],
+              "expected": "COL_Houci_Street_Kerbs",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_08_04",
+                  16.387,
+                  0.999
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                191.801742553711,
+                -25.8656673431396
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_08_04",
+                  16.392,
+                  0.998
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                192.210205078125,
+                -25.2366504669189
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_08_04",
+                  16.393,
+                  0.999
+                ]
+              ],
+              "pass": false
+            }
+          ],
+          [
+            {
+              "en": [
+                194.318801879883,
+                -38.1244201660156
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_08_04",
+                  16.348,
+                  0.999
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                194.742141723633,
+                -36.4779739379883
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_08_04",
+                  16.368,
+                  1.0
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                194.904006958008,
+                -35.8484497070312
+              ],
+              "expected": "COL_Houci_Street_Kerbs",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_08_04",
+                  16.38,
+                  1.0
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                195.065872192383,
+                -35.2189254760742
+              ],
+              "expected": "COL_Houci_1306489251_Asphalt",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_08_04",
+                  16.392,
+                  1.0
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                195.812927246094,
+                -32.3134307861328
+              ],
+              "expected": "COL_Houci_1306489251_Asphalt",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_08_04",
+                  16.46,
+                  1.0
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                196.559982299805,
+                -29.4079360961914
+              ],
+              "expected": "COL_Houci_1306489251_Asphalt",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_08_04",
+                  16.518,
+                  1.0
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                196.72184753418,
+                -28.7784118652344
+              ],
+              "expected": "COL_Houci_Street_Kerbs",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_08_04",
+                  16.527,
+                  1.0
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                196.97087097168,
+                -27.8099136352539
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_08_04",
+                  16.536,
+                  1.0
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                197.157638549805,
+                -27.0835399627686
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_08_04",
+                  16.539,
+                  1.0
+                ]
+              ],
+              "pass": false
+            }
+          ],
+          [
+            {
+              "en": [
+                201.107574462891,
+                -39.511833190918
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.807,
+                  0.992
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                201.373657226562,
+                -37.8327827453613
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.701,
+                  0.995
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                201.475387573242,
+                -37.1907920837402
+              ],
+              "expected": "COL_Houci_Street_Kerbs",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.662,
+                  0.997
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                201.577117919922,
+                -36.5488052368164
+              ],
+              "expected": "COL_Houci_1306489251_Asphalt",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.629,
+                  0.996
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                202.046661376953,
+                -33.5857772827148
+              ],
+              "expected": "COL_Houci_1306489251_Asphalt",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.512,
+                  0.999
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                202.516204833984,
+                -30.6227493286133
+              ],
+              "expected": "COL_Houci_1306489251_Asphalt",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.447,
+                  1.0
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                202.617935180664,
+                -29.9807605743408
+              ],
+              "expected": "COL_Houci_Street_Kerbs",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.441,
+                  1.0
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                202.774444580078,
+                -28.9930839538574
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.431,
+                  1.0
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                202.891830444336,
+                -28.2523288726807
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.423,
+                  1.0
+                ]
+              ],
+              "pass": false
+            }
+          ],
+          [
+            {
+              "en": [
+                206.471923828125,
+                -40.1391754150391
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  17.364,
+                  0.99
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                206.578475952148,
+                -38.4425201416016
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  17.171,
+                  0.99
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                206.619216918945,
+                -37.7937965393066
+              ],
+              "expected": "COL_Houci_Street_Kerbs",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  17.097,
+                  0.989
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                206.659957885742,
+                -37.145076751709
+              ],
+              "expected": "COL_Houci_1306489251_Asphalt",
+              "layers": [
+                [
+                  "COL_Outer500_Frame_77",
+                  32.315,
+                  1.0
+                ],
+                [
+                  "COL_Outer500_Building_envelopes",
+                  17.6,
+                  1.0
+                ],
+                [
+                  "COL_Outer500_Surface_09_04",
+                  17.025,
+                  0.991
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                206.847991943359,
+                -34.1509742736816
+              ],
+              "expected": "COL_Houci_1306489251_Asphalt",
+              "layers": [
+                [
+                  "COL_Outer500_Frame_77",
+                  32.315,
+                  1.0
+                ],
+                [
+                  "COL_Outer500_Building_envelopes",
+                  17.6,
+                  1.0
+                ],
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.71,
+                  0.995
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                207.036026000977,
+                -31.1568737030029
+              ],
+              "expected": "COL_Houci_1306489251_Asphalt",
+              "layers": [
+                [
+                  "COL_Outer500_Frame_77",
+                  32.315,
+                  1.0
+                ],
+                [
+                  "COL_Outer500_Building_envelopes",
+                  17.6,
+                  1.0
+                ],
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.462,
+                  0.998
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                207.076766967773,
+                -30.5081520080566
+              ],
+              "expected": "COL_Houci_Street_Kerbs",
+              "layers": [
+                [
+                  "COL_Outer500_Frame_77",
+                  32.315,
+                  1.0
+                ],
+                [
+                  "COL_Outer500_Building_envelopes",
+                  17.6,
+                  1.0
+                ],
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.416,
+                  0.997
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                207.139450073242,
+                -29.5101165771484
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Frame_77",
+                  32.315,
+                  1.0
+                ],
+                [
+                  "COL_Outer500_Building_envelopes",
+                  17.6,
+                  1.0
+                ],
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.358,
+                  0.998
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                207.186462402344,
+                -28.7615928649902
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Frame_77",
+                  32.315,
+                  1.0
+                ],
+                [
+                  "COL_Outer500_Building_envelopes",
+                  17.6,
+                  1.0
+                ],
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.323,
+                  0.998
+                ]
+              ],
+              "pass": false
+            }
+          ],
+          [
+            {
+              "en": [
+                212.712280273438,
+                -39.9761772155762
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  17.422,
+                  0.995
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                212.51091003418,
+                -38.2881469726562
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  17.32,
+                  0.994
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                212.43391418457,
+                -37.6427230834961
+              ],
+              "expected": "COL_Houci_Street_Kerbs",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  17.272,
+                  0.994
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                212.356903076172,
+                -36.9972991943359
+              ],
+              "expected": "COL_Houci_1306489251_Asphalt",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  17.213,
+                  0.996
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                212.001541137695,
+                -34.0184211730957
+              ],
+              "expected": "COL_Houci_1306489251_Asphalt",
+              "layers": [
+                [
+                  "COL_Outer500_Frame_77",
+                  32.315,
+                  1.0
+                ],
+                [
+                  "COL_Outer500_Building_envelopes",
+                  20.384,
+                  1.0
+                ],
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.895,
+                  0.993
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                211.646179199219,
+                -31.0395431518555
+              ],
+              "expected": "COL_Houci_1306489251_Asphalt",
+              "layers": [
+                [
+                  "COL_Outer500_Frame_77",
+                  32.315,
+                  1.0
+                ],
+                [
+                  "COL_Outer500_Building_envelopes",
+                  17.6,
+                  1.0
+                ],
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.53,
+                  0.994
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                211.56916809082,
+                -30.3941192626953
+              ],
+              "expected": "COL_Houci_Street_Kerbs",
+              "layers": [
+                [
+                  "COL_Outer500_Frame_77",
+                  32.315,
+                  1.0
+                ],
+                [
+                  "COL_Outer500_Building_envelopes",
+                  17.6,
+                  1.0
+                ],
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.456,
+                  0.993
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                211.450714111328,
+                -29.4011611938477
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Frame_77",
+                  32.315,
+                  1.0
+                ],
+                [
+                  "COL_Outer500_Building_envelopes",
+                  17.6,
+                  1.0
+                ],
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.35,
+                  0.994
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                211.361877441406,
+                -28.6564407348633
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Frame_77",
+                  32.315,
+                  1.0
+                ],
+                [
+                  "COL_Outer500_Building_envelopes",
+                  17.6,
+                  1.0
+                ],
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.28,
+                  0.995
+                ]
+              ],
+              "pass": false
+            }
+          ],
+          [
+            {
+              "en": [
+                220.019592285156,
+                -38.3893241882324
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  17.085,
+                  0.999
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                219.510040283203,
+                -36.7674865722656
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  17.019,
+                  0.999
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                219.315216064453,
+                -36.1473693847656
+              ],
+              "expected": "COL_Houci_Street_Kerbs",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.992,
+                  0.999
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                219.120376586914,
+                -35.5272560119629
+              ],
+              "expected": "COL_Houci_1306489251_Asphalt",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.963,
+                  0.999
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                218.221176147461,
+                -32.6651878356934
+              ],
+              "expected": "COL_Houci_1306489251_Asphalt",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.814,
+                  0.998
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                217.321975708008,
+                -29.8031196594238
+              ],
+              "expected": "COL_Houci_1306489251_Asphalt",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.624,
+                  0.997
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                217.127136230469,
+                -29.1830062866211
+              ],
+              "expected": "COL_Houci_Street_Kerbs",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.572,
+                  0.995
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                216.827407836914,
+                -28.228982925415
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.482,
+                  0.993
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                216.602600097656,
+                -27.5134658813477
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Building_envelopes",
+                  16.871,
+                  1.0
+                ],
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.41,
+                  0.993
+                ]
+              ],
+              "pass": false
+            }
+          ],
+          [
+            {
+              "en": [
+                226.898254394531,
+                -35.5387802124023
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  17.138,
+                  1.0
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                226.111999511719,
+                -34.0315322875977
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  17.099,
+                  1.0
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                225.811370849609,
+                -33.4552307128906
+              ],
+              "expected": "COL_Houci_Street_Kerbs",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  17.082,
+                  0.999
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                225.5107421875,
+                -32.8789291381836
+              ],
+              "expected": "COL_Houci_1306489251_Asphalt",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  17.061,
+                  0.999
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                224.123229980469,
+                -30.2190799713135
+              ],
+              "expected": "COL_Houci_1306489251_Asphalt",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.944,
+                  0.999
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                222.735717773438,
+                -27.5592308044434
+              ],
+              "expected": "COL_Houci_1306489251_Asphalt",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.796,
+                  0.998
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                222.435089111328,
+                -26.9829292297363
+              ],
+              "expected": "COL_Houci_Street_Kerbs",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.76,
+                  0.998
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                221.972579956055,
+                -26.0963134765625
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.703,
+                  0.998
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                221.625701904297,
+                -25.4313507080078
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.66,
+                  0.998
+                ]
+              ],
+              "pass": false
+            }
+          ],
+          [
+            {
+              "en": [
+                233.666748046875,
+                -31.2459850311279
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  17.248,
+                  0.999
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                232.627655029297,
+                -29.9005088806152
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  17.263,
+                  1.0
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                232.230361938477,
+                -29.3860626220703
+              ],
+              "expected": "COL_Houci_Street_Kerbs",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  17.258,
+                  1.0
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                231.833068847656,
+                -28.8716163635254
+              ],
+              "expected": "COL_Houci_1306489251_Asphalt",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  17.246,
+                  0.999
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                229.999389648438,
+                -26.4972476959229
+              ],
+              "expected": "COL_Houci_1306489251_Asphalt",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  17.146,
+                  0.999
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                228.165710449219,
+                -24.1228790283203
+              ],
+              "expected": "COL_Houci_1306489251_Asphalt",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  17.007,
+                  0.998
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                227.768417358398,
+                -23.6084327697754
+              ],
+              "expected": "COL_Houci_Street_Kerbs",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.972,
+                  0.998
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                227.157196044922,
+                -22.8169765472412
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.918,
+                  0.998
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                226.698776245117,
+                -22.2233848571777
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  16.875,
+                  0.997
+                ]
+              ],
+              "pass": false
+            }
+          ],
+          [
+            {
+              "en": [
+                241.983703613281,
+                -23.8824138641357
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  17.966,
+                  0.99
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                240.866607666016,
+                -22.6009654998779
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  18.013,
+                  0.99
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                240.439483642578,
+                -22.1110000610352
+              ],
+              "expected": "COL_Houci_Street_Kerbs",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  18.003,
+                  0.992
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                240.012359619141,
+                -21.6210346221924
+              ],
+              "expected": "COL_Houci_1306489251_Asphalt",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  17.987,
+                  0.99
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                238.041030883789,
+                -19.359655380249
+              ],
+              "expected": "COL_Houci_1306489251_Asphalt",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  17.779,
+                  0.987
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                236.069702148438,
+                -17.0982761383057
+              ],
+              "expected": "COL_Houci_1306489251_Asphalt",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  17.551,
+                  0.992
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                235.642578125,
+                -16.6083106994629
+              ],
+              "expected": "COL_Houci_Street_Kerbs",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  17.514,
+                  0.996
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                234.985458374023,
+                -15.8545169830322
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  17.458,
+                  0.996
+                ]
+              ],
+              "pass": false
+            },
+            {
+              "en": [
+                234.492630004883,
+                -15.2891731262207
+              ],
+              "expected": "COL_Houci_Public_Flagstones",
+              "layers": [
+                [
+                  "COL_Outer500_Surface_09_04",
+                  17.416,
+                  0.996
+                ]
+              ],
+              "pass": false
+            }
+          ]
+        ],
+        "total": 81
+      },
+      "name": "street_cross_sections",
+      "pass": true
+    },
+    {
+      "detail": {
+        "enu": [
+          193.807907104492,
+          -26.7204265594482,
+          16.4899120330811
+        ],
+        "gap_m": 0.0
+      },
+      "name": "normal_street_spawn",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 10.1928510488942,
+        "end": "(203.3321, 16.41833, 29.15026)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0719397887587547,
+        "name": "houci_77_public_walk_out",
+        "pass": false,
+        "reached": 3,
+        "stall_contacts": [
+          {
+            "mesh": "COL_Outer500_Building_envelopes",
+            "normal": "(-0.982576, 0.0, -0.185861)",
+            "position": "(203.6336, 16.73591, 29.20921)"
+          }
+        ]
+      },
+      "name": "houci_77_public_walk_out",
+      "pass": false
+    }
+  ],
+  "device": "",
+  "engine": "4.6.3-stable (official)",
+  "native_frames": [],
+  "renderer": "forward_plus",
+  "scene": "res://first_shift.tscn",
+  "sections": [
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_08_04",
+          16.49,
+          0.999
+        ]
+      ],
+      "east_north": [
+        193.807907104492,
+        -26.7204265594482
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_08_04",
+          16.537,
+          1.0
+        ]
+      ],
+      "east_north": [
+        196.203170776367,
+        -27.4812164306641
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_08_04",
+          16.5,
+          1.0
+        ]
+      ],
+      "east_north": [
+        199.929046630859,
+        -28.3627948760986
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Surface_09_04",
+          16.429,
+          1.0
+        ]
+      ],
+      "east_north": [
+        202.793228149414,
+        -28.8745651245117
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Frame_77",
+          32.315,
+          1.0
+        ],
+        [
+          "COL_Outer500_Building_envelopes",
+          17.6,
+          1.0
+        ],
+        [
+          "COL_Outer500_Surface_09_04",
+          16.37,
+          0.999
+        ]
+      ],
+      "east_north": [
+        205.614288330078,
+        -29.2582626342773
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Frame_77",
+          32.315,
+          1.0
+        ],
+        [
+          "COL_Outer500_Building_envelopes",
+          17.6,
+          1.0
+        ],
+        [
+          "COL_Outer500_Surface_09_04",
+          16.347,
+          0.998
+        ]
+      ],
+      "east_north": [
+        208.258239746094,
+        -29.4384536743164
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Outer500_Frame_77",
+          32.315,
+          1.0
+        ],
+        [
+          "COL_Outer500_Building_envelopes",
+          17.6,
+          1.0
+        ],
+        [
+          "COL_Outer500_Surface_09_04",
+          16.34,
+          0.996
+        ]
+      ],
+      "east_north": [
+        210.735061645508,
+        -29.3560066223145
+      ]
+    }
+  ],
+  "start": "normal first_shift exploration spawn",
+  "teleports_between_legs": 0,
+  "walks": [
+    {
+      "finish_enu": [
+        203.332107543945,
+        -29.1502628326416,
+        16.4183349609375
+      ],
+      "id": "houci_77_public_walk_out",
+      "result": {
+        "distance_m": 10.1928510488942,
+        "end": "(203.3321, 16.41833, 29.15026)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0719397887587547,
+        "name": "houci_77_public_walk_out",
+        "pass": false,
+        "reached": 3,
+        "stall_contacts": [
+          {
+            "mesh": "COL_Outer500_Building_envelopes",
+            "normal": "(-0.982576, 0.0, -0.185861)",
+            "position": "(203.6336, 16.73591, 29.20921)"
+          }
+        ]
+      },
+      "start_enu": [
+        193.807907104492,
+        -26.7204265594482,
+        16.4899120330811
+      ],
+      "trace_enu": [
+        [
+          193.807907104492,
+          -26.7204265594482,
+          16.4899120330811
+        ],
+        [
+          194.3212890625,
+          -26.9388446807861,
+          16.5199604034424
+        ],
+        [
+          195.128143310547,
+          -27.1714038848877,
+          16.5364112854004
+        ],
+        [
+          195.935089111328,
+          -27.4039726257324,
+          16.5488624572754
+        ],
+        [
+          196.751968383789,
+          -27.5999774932861,
+          16.551025390625
+        ],
+        [
+          197.568801879883,
+          -27.7961673736572,
+          16.5479469299316
+        ],
+        [
+          198.386123657227,
+          -27.9923763275146,
+          16.5328102111816
+        ],
+        [
+          199.203750610352,
+          -28.1887474060059,
+          16.5137214660645
+        ],
+        [
+          200.025634765625,
+          -28.366548538208,
+          16.5135402679443
+        ],
+        [
+          200.854202270508,
+          -28.5186367034912,
+          16.4818019866943
+        ],
+        [
+          201.681518554688,
+          -28.6704387664795,
+          16.4700813293457
+        ],
+        [
+          202.509674072266,
+          -28.8224906921387,
+          16.4504737854004
+        ],
+        [
+          203.342727661133,
+          -28.9387626647949,
+          16.4307537078857
+        ],
+        [
+          203.352264404297,
+          -29.0057411193848,
+          16.4309501647949
+        ],
+        [
+          203.348083496094,
+          -29.0657482147217,
+          16.4302444458008
+        ],
+        [
+          203.334930419922,
+          -29.0973110198975,
+          16.4299373626709
+        ],
+        [
+          203.32958984375,
+          -29.1255340576172,
+          16.4301052093506
+        ],
+        [
+          203.332870483398,
+          -29.1461334228516,
+          16.4302082061768
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ],
+        [
+          203.332107543945,
+          -29.1502628326416,
+          16.4183349609375
+        ]
+      ]
+    }
+  ]
+}
