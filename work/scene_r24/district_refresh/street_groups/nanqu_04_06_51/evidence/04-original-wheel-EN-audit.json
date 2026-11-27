@@ -1,0 +1,190 @@
+{
+  "manifest_baseline_sha256": "e8bd3fbd7bc1fa5f87e0d74c5e5d5922ed28dbbe1592ee2321cacfbdc58cfa99",
+  "original_drive_points": [
+    [
+      -224.47381591796875,
+      -33.27229309082031,
+      12.819446631607622
+    ],
+    [
+      -219.6363983154297,
+      -36.82654571533203,
+      11.756402045112502
+    ],
+    [
+      -214.7989501953125,
+      -40.380794525146484,
+      10.686864393423637
+    ],
+    [
+      -209.96151733398438,
+      -43.93504333496094,
+      9.705934686934368
+    ],
+    [
+      -205.1240997314453,
+      -47.489295959472656,
+      8.921375853400145
+    ],
+    [
+      -201.89913940429688,
+      -49.858795166015625,
+      8.565681457519531
+    ],
+    [
+      -196.82627868652344,
+      -53.104766845703125,
+      8.179420471191406
+    ],
+    [
+      -191.75343322753906,
+      -56.35073471069336,
+      7.8691864013671875
+    ],
+    [
+      -186.6805877685547,
+      -59.596702575683594,
+      7.618568420410156
+    ],
+    [
+      -181.54159545898438,
+      -62.7284049987793,
+      7.42694091796875
+    ],
+    [
+      -176.17623901367188,
+      -65.46900939941406,
+      7.378898620605469
+    ],
+    [
+      -170.81088256835938,
+      -68.20960235595703,
+      7.3541412353515625
+    ],
+    [
+      -165.44552612304688,
+      -70.9501953125,
+      7.3808746337890625
+    ],
+    [
+      -160.01223754882812,
+      -73.5451889038086,
+      7.4806060791015625
+    ],
+    [
+      -154.42262268066406,
+      -75.80510711669922,
+      7.6606292724609375
+    ],
+    [
+      -148.8330078125,
+      -78.06501007080078,
+      7.880912780761719
+    ],
+    [
+      -143.24337768554688,
+      -80.32493591308594,
+      8.108688354492188
+    ],
+    [
+      -137.47781372070312,
+      -82.0480728149414,
+      8.423225402832031
+    ],
+    [
+      -131.7051544189453,
+      -83.74955749511719,
+      8.749198913574219
+    ],
+    [
+      -126.89458465576172,
+      -85.16746520996094,
+      8.992240905761719
+    ],
+    [
+      -122.08403015136719,
+      -86.58536529541016,
+      9.227470397949219
+    ]
+  ],
+  "original_forward_stall": {
+    "enu": [
+      -145.110931396484,
+      -79.6075744628906,
+      8.04745960235596
+    ],
+    "station_m": 64.04985917016165,
+    "river_side_offset_from_osm_m": 1.084951703480578,
+    "remaining_width_to_modeled_curb_m": 1.5050482965194218,
+    "waypoints_reached": 3,
+    "targets": 8,
+    "travel_m": 23.2701731334091
+  },
+  "reverse_contact": {
+    "object": "COL_Outer500_Retaining_and_boundaries",
+    "probe": [
+      -144.526,
+      -79.75064,
+      9.743299
+    ],
+    "face": 2648,
+    "distance": 0.0007152557373046875,
+    "owner53": true,
+    "fingerprint": "bcff5af69551042b38c34871",
+    "normal": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "found": [
+      -144.5260009765625,
+      -79.75064086914062,
+      9.744013786315918
+    ],
+    "vertices": [
+      [
+        -145.79281616210938,
+        -77.59309387207031,
+        9.744013786315918
+      ],
+      [
+        -144.35110473632812,
+        -79.63551330566406,
+        9.744013786315918
+      ],
+      [
+        -144.61253356933594,
+        -79.82005310058594,
+        9.744013786315918
+      ],
+      [
+        -146.0542449951172,
+        -77.77763366699219,
+        9.744013786315918
+      ]
+    ]
+  },
+  "reverse_contact_projection": {
+    "station_m": 64.64577060443958,
+    "river_side_offset_from_osm_m": 0.9983373340148614,
+    "remaining_width_to_modeled_curb_m": 1.5916626659851385
+  },
+  "classification": "The former route remains in the carriageway, on the river side of the lane divider and inside the observed concrete-barrier edge. The scene contact is the stock plot 53 apron, whose face is absent from the 2023 roadway view.",
+  "street_views": [
+    "https://mapsv0.bdimg.com/?qt=pr3d&panoid=0902920012230515142928988AU&heading=188&pitch=0&fovy=78&width=900&height=560",
+    "https://mapsv0.bdimg.com/?qt=pr3d&panoid=0902920012230515142930784AU&heading=110&pitch=0&fovy=78&width=900&height=560"
+  ],
+  "caveat": "OSM projection and game cross-section are in local metres; photo interpretation confirms the lane type. No surveyed lane width is inferred.",
+  "unchanged_drive_points_sha256": "54800c7b077feec1b01c7106766c6436f03f68eac6853de1a6dac4acbde0a33d",
+  "fixed_export_sha256": "df14048f69e2fba27d69e9673fbe85c27361cfb72eb0fae371e26fd21bccf7d0",
+  "low_edge_cut_counts": {
+    "COLH_Outer500_Household_contact": 18,
+    "COL_Outer500_Building_envelopes": 726,
+    "COL_Outer500_Retaining_and_boundaries": 378,
+    "Outer500_Facades_and_storefronts": 108,
+    "Outer500_Street_furniture": 1404,
+    "plot53_lower_lip_only": 3,
+    "plot53_over_04_inner_wheel_line": 57,
+    "Outer500_LaundryRailReturn": 1160
+  }
+}

@@ -26,6 +26,8 @@ const HOUCI_CONNECTORS := "res://assets/district_500/houci-14-16.glb"
 const HOUCI_CONNECTORS_SITE := "res://assets/district_500/houci-14-16.json"
 const FENGHUANGTAI_11 := "res://assets/district_500/fenghuangtai-11.glb"
 const FENGHUANGTAI_11_SITE := "res://assets/district_500/fenghuangtai-11.json"
+const NANQU := "res://assets/district_500/nanqu-04-06-51.glb"
+const NANQU_SITE := "res://assets/district_500/nanqu-04-06-51.json"
 const WILDERNESS_50 := "res://assets/district_500/wilderness-50.glb"
 const WILDERNESS_50_SITE := "res://assets/district_500/wilderness-50.json"
 const WILDERNESS_FINISH := "res://assets/district_500/wilderness-50-finish.glb"
@@ -208,6 +210,19 @@ static func install(city: Node3D) -> Dictionary:
 	var wilderness_finish_active := wilderness_active and not "--qa-without-wilderness-50-finish" in OS.get_cmdline_user_args()
 	if wilderness_finish_active:
 		install_street_group(district, WILDERNESS_FINISH, WILDERNESS_FINISH_SITE, "RenaiGardenPublicFinish")
+	var nanqu_active := wilderness_active and not "--qa-without-nanqu-04-06-51" in OS.get_cmdline_user_args()
+	var nanqu_rebased_trees := {}
+	var nanqu_retired_meshes: Array=[]
+	if nanqu_active:
+		install_street_group(district, NANQU, NANQU_SITE, "NanquRiverFootway")
+		var nanqu: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(NANQU_SITE))
+		retired_bridge_plots.append_array(nanqu.retired_plots)
+		nanqu_retired_meshes=nanqu.retired_objects
+		for spec: Dictionary in nanqu.get("rebase_trees",[]):
+			var plant := district.find_child(spec.name,true,false) as Node3D
+			assert(plant,spec.name)
+			plant.position.y += float(spec.shift_z)
+			nanqu_rebased_trees[spec.name]=plant.position.y
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -282,7 +297,12 @@ static func install(city: Node3D) -> Dictionary:
 	var planting: Array=layout.planting
 	for index in planting.size():
 		var tree: Dictionary=planting[index]
-		var p: Array=relocated if index == 36 else tree.east_north_up
+		var name := "Outer500_Plant_%03d"%index
+		if name in nanqu_retired_meshes:
+			continue
+		var p: Array=(relocated if index==36 else tree.east_north_up).duplicate()
+		if nanqu_rebased_trees.has(name):
+			p[2]=nanqu_rebased_trees[name]
 		var centre:=Vector2(p[0],p[1])
 		if replaced_roots.any(func(old: Vector2): return old.distance_squared_to(centre)<.01):
 			var prior:=district.find_child("Outer500_Plant_%03d"%index,true,false) as MeshInstance3D
@@ -373,6 +393,7 @@ static func install(city: Node3D) -> Dictionary:
 		"fenghuangtai_11_sha256": FileAccess.get_sha256(FENGHUANGTAI_11) if lower_junction_active else "",
 		"wilderness_50_sha256": FileAccess.get_sha256(WILDERNESS_50) if wilderness_active else "",
 		"wilderness_50_finish_sha256": FileAccess.get_sha256(WILDERNESS_FINISH) if wilderness_finish_active else "",
+		"nanqu_04_06_51_sha256": FileAccess.get_sha256(NANQU) if nanqu_active else "",
 		"public_edges_sha256": FileAccess.get_sha256(PUBLIC_EDGES),
 		"xingchen_sha256": FileAccess.get_sha256(XINGCHEN),
 		"pavilion_62_sha256": FileAccess.get_sha256(PAVILION_62),
@@ -590,6 +611,19 @@ static func start_exploration(scene: Node3D) -> void:
 		var street := collision.raycast_ground(scene, origin + Vector3.UP * 1.1, 3.0)
 		if not street.is_empty():
 			scene.explorer.set_walk_origin(street.position + Vector3.UP * .035, enu(plan.lower_walk_21[1]))
+	elif "--nanqu-riverwalk" in OS.get_cmdline_user_args():
+		var plan: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(NANQU_SITE))
+		var points: Array = plan.public_walk
+		var parent := "--qa-without-nanqu-04-06-51" in OS.get_cmdline_user_args()
+		var from := enu(points[0]) + Vector3.UP * (8.0 if parent else 0.8)
+		var street := collision.raycast_ground(scene, from, 12.0 if parent else 2.4)
+		if not street.is_empty():
+			scene.explorer.set_walk_origin(street.position + Vector3.UP * .035, enu(points[1]))
+		var parking := enu(plan.bike_path[1])
+		var vehicle := collision.raycast_ground(scene, parking + Vector3.UP * (8.0 if parent else 0.8), 12.0 if parent else 2.4)
+		if not vehicle.is_empty():
+			bike.global_position = vehicle.position + Vector3.UP * .035
+			bike.safe_park_position = bike.global_position
 	elif "--wilderness-50" in OS.get_cmdline_user_args():
 		var plan: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(WILDERNESS_50_SITE))
 		var points: Array = plan.public_route

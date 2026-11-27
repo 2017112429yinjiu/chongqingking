@@ -1,0 +1,1744 @@
+{
+  "checks": [
+    {
+      "detail": {
+        "count": 57
+      },
+      "name": "all_wheel_stripes_on_link",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "above_test": "beam_soffit",
+          "clearance_m": 2.46975469589233,
+          "ground": {
+            "body": "COL_Outer500_Surface_01_03",
+            "normal_y": 0.998876452445984,
+            "y": 4.48861074447632
+          },
+          "pass": true,
+          "segment": 7,
+          "soffit": {
+            "body": "COL_R24_FlyoverBox_R24_link_concrete",
+            "normal_y": -0.998847186565399,
+            "y": 6.95836544036865
+          }
+        },
+        {
+          "above_test": "beam_soffit",
+          "clearance_m": 2.46994066238403,
+          "ground": {
+            "body": "COL_Outer500_Surface_01_03",
+            "normal_y": 0.999368131160736,
+            "y": 4.23722362518311
+          },
+          "pass": true,
+          "segment": 8,
+          "soffit": {
+            "body": "COL_R24_FlyoverBox_R24_link_concrete",
+            "normal_y": -0.999353110790253,
+            "y": 6.70716428756714
+          }
+        },
+        {
+          "above_test": "beam_soffit",
+          "clearance_m": 2.46989679336548,
+          "ground": {
+            "body": "COL_Outer500_Surface_01_03",
+            "normal_y": 0.999936461448669,
+            "y": 4.04742527008057
+          },
+          "pass": true,
+          "segment": 9,
+          "soffit": {
+            "body": "COL_R24_FlyoverBox_R24_link_concrete",
+            "normal_y": -0.999933838844299,
+            "y": 6.51732206344604
+          }
+        },
+        {
+          "above_test": "beam_soffit",
+          "clearance_m": 2.46999573707581,
+          "ground": {
+            "body": "COL_Outer500_Surface_01_03",
+            "normal_y": 1.0,
+            "y": 3.9740617275238
+          },
+          "pass": true,
+          "segment": 11,
+          "soffit": {
+            "body": "COL_R24_FlyoverBox_R24_link_concrete",
+            "normal_y": -1.0,
+            "y": 6.44405746459961
+          }
+        },
+        {
+          "above_test": "beam_soffit",
+          "clearance_m": 2.46997785568237,
+          "ground": {
+            "body": "COL_Outer500_Surface_01_03",
+            "normal_y": 0.999587893486023,
+            "y": 4.09944534301758
+          },
+          "pass": true,
+          "segment": 13,
+          "soffit": {
+            "body": "COL_R24_FlyoverBox_R24_link_concrete",
+            "normal_y": -0.999582827091217,
+            "y": 6.56942319869995
+          }
+        },
+        {
+          "above_test": "beam_soffit",
+          "clearance_m": 2.47017621994019,
+          "ground": {
+            "body": "COL_Outer500_Surface_02_03",
+            "normal_y": 0.999324798583984,
+            "y": 4.50161266326904
+          },
+          "pass": true,
+          "segment": 15,
+          "soffit": {
+            "body": "COL_R24_FlyoverBox_R24_link_concrete",
+            "normal_y": -0.999308466911316,
+            "y": 6.97178888320923
+          }
+        },
+        {
+          "above_test": "pier_cap",
+          "clearance_m": 1.77301120758057,
+          "ground": {
+            "body": "COL_Outer500_Surface_02_03",
+            "normal_y": 0.998437881469727,
+            "y": 5.04127836227417
+          },
+          "pass": true,
+          "segment": 17,
+          "soffit": {
+            "body": "COL_R24_LinkCaps_R24_link_concrete",
+            "normal_y": -0.812842547893524,
+            "y": 6.81428956985474
+          }
+        }
+      ],
+      "name": "bridge_soffit_clear_of_ground",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "pass": true,
+          "point_enu": [
+            -233.137710571289,
+            -29.9219875335693,
+            14.0725143084758
+          ],
+          "surface": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.985414922237396,
+            "y": 14.0646409988403
+          }
+        },
+        {
+          "pass": true,
+          "point_enu": [
+            -228.29508972168,
+            -33.4800605773926,
+            13.2189945493844
+          ],
+          "surface": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.984749853610992,
+            "y": 13.2111005783081
+          }
+        },
+        {
+          "pass": true,
+          "point_enu": [
+            -223.45246887207,
+            -37.0381317138672,
+            12.245715025324
+          ],
+          "surface": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.982675611972809,
+            "y": 12.2392311096191
+          }
+        },
+        {
+          "pass": true,
+          "point_enu": [
+            -218.609832763672,
+            -40.5962028503418,
+            11.2226270843602
+          ],
+          "surface": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.984021008014679,
+            "y": 11.2184543609619
+          }
+        },
+        {
+          "pass": true,
+          "point_enu": [
+            -213.767196655273,
+            -44.1542701721191,
+            10.2323439919209
+          ],
+          "surface": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.987171590328217,
+            "y": 10.2304267883301
+          }
+        },
+        {
+          "pass": true,
+          "point_enu": [
+            -208.924560546875,
+            -47.7123413085938,
+            9.370140930796
+          ],
+          "surface": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.992036759853363,
+            "y": 9.36956596374512
+          }
+        },
+        {
+          "pass": true,
+          "point_enu": [
+            -204.081924438477,
+            -51.2704086303711,
+            8.74395500113752
+          ],
+          "surface": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.996739327907562,
+            "y": 8.74413204193115
+          }
+        },
+        {
+          "pass": true,
+          "point_enu": [
+            -199.010940551758,
+            -54.5917510986328,
+            8.34317138427734
+          ],
+          "surface": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.998181104660034,
+            "y": 8.34294319152832
+          }
+        },
+        {
+          "pass": true,
+          "point_enu": [
+            -193.894302368164,
+            -57.8657455444336,
+            8.02386596435547
+          ],
+          "surface": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.998657643795013,
+            "y": 8.02370643615723
+          }
+        },
+        {
+          "pass": true,
+          "point_enu": [
+            -188.777648925781,
+            -61.1397438049316,
+            7.7603237890625
+          ],
+          "surface": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.999221682548523,
+            "y": 7.76023578643799
+          }
+        },
+        {
+          "pass": true,
+          "point_enu": [
+            -183.643157958984,
+            -64.3835754394531,
+            7.54679229492188
+          ],
+          "surface": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.999726593494415,
+            "y": 7.54707860946655
+          }
+        },
+        {
+          "pass": true,
+          "point_enu": [
+            -178.226760864258,
+            -67.150260925293,
+            7.49020507568359
+          ],
+          "surface": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.999905288219452,
+            "y": 7.48995018005371
+          }
+        },
+        {
+          "pass": true,
+          "point_enu": [
+            -172.810333251953,
+            -69.9169464111328,
+            7.46025207275391
+          ],
+          "surface": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.999926269054413,
+            "y": 7.46016502380371
+          }
+        },
+        {
+          "pass": true,
+          "point_enu": [
+            -167.393920898438,
+            -72.6836242675781,
+            7.47684600585938
+          ],
+          "surface": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.999899804592133,
+            "y": 7.47677612304688
+          }
+        },
+        {
+          "pass": true,
+          "point_enu": [
+            -161.945388793945,
+            -75.3847045898438,
+            7.55592468017578
+          ],
+          "surface": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.999760508537292,
+            "y": 7.55599308013916
+          }
+        },
+        {
+          "pass": true,
+          "point_enu": [
+            -156.858367919922,
+            -77.44140625,
+            7.71539428466797
+          ],
+          "surface": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.999500215053558,
+            "y": 7.7155065536499
+          }
+        }
+      ],
+      "name": "pedestrian_surface",
+      "pass": true
+    }
+  ],
+  "identity": {
+    "binjiang_sha256": "9130bc07a8b0707f01129a2e2df391eb676364fe951a45fc2d100ff55a4b0f54",
+    "bounds_east_north_m": [
+      -250.0,
+      -250.0,
+      250.0,
+      250.0
+    ],
+    "bridge_park_sha256": "d7610bb70365b506b084810a925ede54321bbb5812b840d8c0810ed1ecb4426c",
+    "changbin_55_sha256": "",
+    "changbin_bend_sha256": "59f467c674151e7e2f55366257a28b12260d9c1eb23ceccc7359b07e18a6af9f",
+    "collectibles_market_sha256": "a23f881d0e9206b40fedc8f262cfdb132194e59825e4728b39800471b684e175",
+    "fenghuangtai_11_sha256": "4e0af537b800faf7856af3659ea9dbe082f587dd3523824015e93fa8fb24d6a2",
+    "glb_sha256": "b0180ce3a8d821253181725ad4516c04f58fe057529680e22a081f89fdd62122",
+    "guoco_sha256": "4dcb3d55080b02d8a0cf02585626bed2dfc3cdb37ae2f987110b55dd56435853",
+    "houci_14_16_sha256": "b41a35494e9c984fa5df55393e597c036efeb49454f674749f6fc3037354c11f",
+    "houci_77_sha256": "71e594772c8218538934c7ebeff75eb965ab0c9754d726c88481dfd5ff72f17a",
+    "market_stall_row_sha256": "42fffbc9c4a98d3fa615e48fa9ce4eecdf66bf225decbd3d44d40eddf5a41646",
+    "match_factory_sha256": "ab742e6b12ad0b52c4cffef0f8342e1a957b59de5cfe3abde4dd691f853d76c6",
+    "matix_streets_sha256": "3b57fcf46931ff28ce1ab2be4a7250d31af30d302e362816265be8e38852e33b",
+    "nanqu_04_06_51_sha256": "df14048f69e2fba27d69e9673fbe85c27361cfb72eb0fae371e26fd21bccf7d0",
+    "osm_building_ids": [
+      809889594.0,
+      809889602.0,
+      809889621.0,
+      704006725,
+      809889619,
+      809889620
+    ],
+    "panda_15_17_sha256": "165c8b1ec9e31dbf2bbda447e1d5db4a37e766a97f1ad1bc45c9e8a60693775f",
+    "park_edge_finish_sha256": "52ba8de0a1bd4ee57439d86b5f0e7efad002311679d486b3b0dbc75bdc0e6d33",
+    "park_plot57_sha256": "b67c6b5fc91cdc8b8fa0e6808f8cedd8b15a49ad36a2566631ae67a1671f9f60",
+    "park_plot59_sha256": "fa02d99cf8eda6971b3b148e8c3fc5031108e134806e25b0e71e3f320cd4747c",
+    "park_plot61_sha256": "b6e7b1a3baf336235be5d553e2c3d24caf36b949a34bbf296d4b2eed31ddeceb",
+    "pavilion_62_sha256": "08d702b1a9ce0464b3bc62f33808befa5b58e5dcd082659b06c4cbc0bbab3e76",
+    "public_edges_sha256": "d585e52e0d927a9639e7285ffecc4932603a4d56b039504f1600763f72cc1be4",
+    "raijiapo_east_sha256": "c230f7e3a225f9e8446cb43b66eebd4cd05fac72cbb6b02787d8d0090038e81d",
+    "retired_internal_context": false,
+    "riverside_sha256": "12f304d468c56fb429d4a4db948f5297b7ca4284f29fc494442c9b2a146f67d1",
+    "west_court_sha256": "32eea2dd1f34b7f5dacbb546a46c6cf106ac3896804677ef9b2ee1dabfb2c683",
+    "west_ramp_sha256": "2a2ae2a4745096ea849dbb5f2365ce1cf437a8dcd974ed4cb47dddd5d5aae8b2",
+    "wilderness_50_finish_sha256": "92c0e84bacfc84b05ab13fe30618222bfff34b64586f5af5a5055526ee769b7f",
+    "wilderness_50_sha256": "ffde86e0c90b8c1b07766fad72b2bf8a3286d91b2f463ca885866a248fa266fa",
+    "xingchen_sha256": "af156281216128407550442694d4dc45ea8507dfc7da4c80efd549a0ffbe127b",
+    "zhongxing_18_21_sha256": "7622184407e04b8641e479be3c549d357de74eaa649baf78eab41bdcc19203af",
+    "zhongxing_wall_sha256": "72fa4f4c800a8e27c19d580da66524160c4c2111bd82191706b6c8da142b8d42"
+  },
+  "pedestrian": [
+    {
+      "pass": true,
+      "point_enu": [
+        -233.137710571289,
+        -29.9219875335693,
+        14.0725143084758
+      ],
+      "surface": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.985414922237396,
+        "y": 14.0646409988403
+      }
+    },
+    {
+      "pass": true,
+      "point_enu": [
+        -228.29508972168,
+        -33.4800605773926,
+        13.2189945493844
+      ],
+      "surface": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.984749853610992,
+        "y": 13.2111005783081
+      }
+    },
+    {
+      "pass": true,
+      "point_enu": [
+        -223.45246887207,
+        -37.0381317138672,
+        12.245715025324
+      ],
+      "surface": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.982675611972809,
+        "y": 12.2392311096191
+      }
+    },
+    {
+      "pass": true,
+      "point_enu": [
+        -218.609832763672,
+        -40.5962028503418,
+        11.2226270843602
+      ],
+      "surface": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.984021008014679,
+        "y": 11.2184543609619
+      }
+    },
+    {
+      "pass": true,
+      "point_enu": [
+        -213.767196655273,
+        -44.1542701721191,
+        10.2323439919209
+      ],
+      "surface": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.987171590328217,
+        "y": 10.2304267883301
+      }
+    },
+    {
+      "pass": true,
+      "point_enu": [
+        -208.924560546875,
+        -47.7123413085938,
+        9.370140930796
+      ],
+      "surface": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.992036759853363,
+        "y": 9.36956596374512
+      }
+    },
+    {
+      "pass": true,
+      "point_enu": [
+        -204.081924438477,
+        -51.2704086303711,
+        8.74395500113752
+      ],
+      "surface": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.996739327907562,
+        "y": 8.74413204193115
+      }
+    },
+    {
+      "pass": true,
+      "point_enu": [
+        -199.010940551758,
+        -54.5917510986328,
+        8.34317138427734
+      ],
+      "surface": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.998181104660034,
+        "y": 8.34294319152832
+      }
+    },
+    {
+      "pass": true,
+      "point_enu": [
+        -193.894302368164,
+        -57.8657455444336,
+        8.02386596435547
+      ],
+      "surface": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.998657643795013,
+        "y": 8.02370643615723
+      }
+    },
+    {
+      "pass": true,
+      "point_enu": [
+        -188.777648925781,
+        -61.1397438049316,
+        7.7603237890625
+      ],
+      "surface": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.999221682548523,
+        "y": 7.76023578643799
+      }
+    },
+    {
+      "pass": true,
+      "point_enu": [
+        -183.643157958984,
+        -64.3835754394531,
+        7.54679229492188
+      ],
+      "surface": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.999726593494415,
+        "y": 7.54707860946655
+      }
+    },
+    {
+      "pass": true,
+      "point_enu": [
+        -178.226760864258,
+        -67.150260925293,
+        7.49020507568359
+      ],
+      "surface": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.999905288219452,
+        "y": 7.48995018005371
+      }
+    },
+    {
+      "pass": true,
+      "point_enu": [
+        -172.810333251953,
+        -69.9169464111328,
+        7.46025207275391
+      ],
+      "surface": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.999926269054413,
+        "y": 7.46016502380371
+      }
+    },
+    {
+      "pass": true,
+      "point_enu": [
+        -167.393920898438,
+        -72.6836242675781,
+        7.47684600585938
+      ],
+      "surface": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.999899804592133,
+        "y": 7.47677612304688
+      }
+    },
+    {
+      "pass": true,
+      "point_enu": [
+        -161.945388793945,
+        -75.3847045898438,
+        7.55592468017578
+      ],
+      "surface": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.999760508537292,
+        "y": 7.55599308013916
+      }
+    },
+    {
+      "pass": true,
+      "point_enu": [
+        -156.858367919922,
+        -77.44140625,
+        7.71539428466797
+      ],
+      "surface": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.999500215053558,
+        "y": 7.7155065536499
+      }
+    }
+  ],
+  "scene": "res://first_shift.tscn",
+  "soffit": [
+    {
+      "above_test": "beam_soffit",
+      "clearance_m": 2.46975469589233,
+      "ground": {
+        "body": "COL_Outer500_Surface_01_03",
+        "normal_y": 0.998876452445984,
+        "y": 4.48861074447632
+      },
+      "pass": true,
+      "segment": 7,
+      "soffit": {
+        "body": "COL_R24_FlyoverBox_R24_link_concrete",
+        "normal_y": -0.998847186565399,
+        "y": 6.95836544036865
+      }
+    },
+    {
+      "above_test": "beam_soffit",
+      "clearance_m": 2.46994066238403,
+      "ground": {
+        "body": "COL_Outer500_Surface_01_03",
+        "normal_y": 0.999368131160736,
+        "y": 4.23722362518311
+      },
+      "pass": true,
+      "segment": 8,
+      "soffit": {
+        "body": "COL_R24_FlyoverBox_R24_link_concrete",
+        "normal_y": -0.999353110790253,
+        "y": 6.70716428756714
+      }
+    },
+    {
+      "above_test": "beam_soffit",
+      "clearance_m": 2.46989679336548,
+      "ground": {
+        "body": "COL_Outer500_Surface_01_03",
+        "normal_y": 0.999936461448669,
+        "y": 4.04742527008057
+      },
+      "pass": true,
+      "segment": 9,
+      "soffit": {
+        "body": "COL_R24_FlyoverBox_R24_link_concrete",
+        "normal_y": -0.999933838844299,
+        "y": 6.51732206344604
+      }
+    },
+    {
+      "above_test": "beam_soffit",
+      "clearance_m": 2.46999573707581,
+      "ground": {
+        "body": "COL_Outer500_Surface_01_03",
+        "normal_y": 1.0,
+        "y": 3.9740617275238
+      },
+      "pass": true,
+      "segment": 11,
+      "soffit": {
+        "body": "COL_R24_FlyoverBox_R24_link_concrete",
+        "normal_y": -1.0,
+        "y": 6.44405746459961
+      }
+    },
+    {
+      "above_test": "beam_soffit",
+      "clearance_m": 2.46997785568237,
+      "ground": {
+        "body": "COL_Outer500_Surface_01_03",
+        "normal_y": 0.999587893486023,
+        "y": 4.09944534301758
+      },
+      "pass": true,
+      "segment": 13,
+      "soffit": {
+        "body": "COL_R24_FlyoverBox_R24_link_concrete",
+        "normal_y": -0.999582827091217,
+        "y": 6.56942319869995
+      }
+    },
+    {
+      "above_test": "beam_soffit",
+      "clearance_m": 2.47017621994019,
+      "ground": {
+        "body": "COL_Outer500_Surface_02_03",
+        "normal_y": 0.999324798583984,
+        "y": 4.50161266326904
+      },
+      "pass": true,
+      "segment": 15,
+      "soffit": {
+        "body": "COL_R24_FlyoverBox_R24_link_concrete",
+        "normal_y": -0.999308466911316,
+        "y": 6.97178888320923
+      }
+    },
+    {
+      "above_test": "pier_cap",
+      "clearance_m": 1.77301120758057,
+      "ground": {
+        "body": "COL_Outer500_Surface_02_03",
+        "normal_y": 0.998437881469727,
+        "y": 5.04127836227417
+      },
+      "pass": true,
+      "segment": 17,
+      "soffit": {
+        "body": "COL_R24_LinkCaps_R24_link_concrete",
+        "normal_y": -0.812842547893524,
+        "y": 6.81428956985474
+      }
+    }
+  ],
+  "stall_rays": [],
+  "wheel_stripes": [
+    {
+      "above": {
+        "body": "COL_Nanqu_RaisedWestApproach",
+        "normal_y": 0.979836106300354,
+        "y": 11.8997898101807
+      },
+      "expected_y": 11.756402015686,
+      "i": 1,
+      "offset_from_right_lane_m": -2.65,
+      "pass": true,
+      "support": {
+        "body": "COL_Nanqu_RaisedWestApproach",
+        "normal_y": 0.979836106300354,
+        "y": 11.8997964859009
+      },
+      "x": -218.067337036133,
+      "z": 34.6910057067871
+    },
+    {
+      "above": {
+        "body": "COL_Nanqu_RaisedWestApproach",
+        "normal_y": 0.983928859233856,
+        "y": 11.8191452026367
+      },
+      "expected_y": 11.756402015686,
+      "i": 1,
+      "offset_from_right_lane_m": -1.1,
+      "pass": true,
+      "support": {
+        "body": "COL_Nanqu_RaisedWestApproach",
+        "normal_y": 0.983928859233856,
+        "y": 11.8191423416138
+      },
+      "x": -218.985092163086,
+      "z": 35.9400939941406
+    },
+    {
+      "above": {
+        "body": "COL_Nanqu_RaisedWestApproach",
+        "normal_y": 0.983928859233856,
+        "y": 11.7236347198486
+      },
+      "expected_y": 11.756402015686,
+      "i": 1,
+      "offset_from_right_lane_m": 0.75,
+      "pass": true,
+      "support": {
+        "body": "COL_Nanqu_RaisedWestApproach",
+        "normal_y": 0.983928859233856,
+        "y": 11.7236337661743
+      },
+      "x": -220.080474853516,
+      "z": 37.4309425354004
+    },
+    {
+      "above": {
+        "body": "COL_Nanqu_RaisedWestApproach",
+        "normal_y": 0.982570171356201,
+        "y": 10.7666511535645
+      },
+      "expected_y": 10.6868648529053,
+      "i": 2,
+      "offset_from_right_lane_m": -2.65,
+      "pass": true,
+      "support": {
+        "body": "COL_Nanqu_RaisedWestApproach",
+        "normal_y": 0.982570171356201,
+        "y": 10.7666501998901
+      },
+      "x": -213.229888916016,
+      "z": 38.2452507019043
+    },
+    {
+      "above": {
+        "body": "COL_Nanqu_RaisedWestApproach",
+        "normal_y": 0.982570171356201,
+        "y": 10.7206268310547
+      },
+      "expected_y": 10.6868648529053,
+      "i": 2,
+      "offset_from_right_lane_m": -1.1,
+      "pass": true,
+      "support": {
+        "body": "COL_Nanqu_RaisedWestApproach",
+        "normal_y": 0.982570171356201,
+        "y": 10.7206268310547
+      },
+      "x": -214.147644042969,
+      "z": 39.4943428039551
+    },
+    {
+      "above": {
+        "body": "COL_Nanqu_RaisedWestApproach",
+        "normal_y": 0.985897362232208,
+        "y": 10.6674499511719
+      },
+      "expected_y": 10.6868648529053,
+      "i": 2,
+      "offset_from_right_lane_m": 0.75,
+      "pass": true,
+      "support": {
+        "body": "COL_Nanqu_RaisedWestApproach",
+        "normal_y": 0.985897362232208,
+        "y": 10.6674509048462
+      },
+      "x": -215.243026733398,
+      "z": 40.9851951599121
+    },
+    {
+      "above": {
+        "body": "COL_Nanqu_RaisedWestApproach",
+        "normal_y": 0.989191591739655,
+        "y": 9.73273468017578
+      },
+      "expected_y": 9.70593452453613,
+      "i": 3,
+      "offset_from_right_lane_m": -2.65,
+      "pass": true,
+      "support": {
+        "body": "COL_Nanqu_RaisedWestApproach",
+        "normal_y": 0.989191591739655,
+        "y": 9.73273372650146
+      },
+      "x": -208.392456054688,
+      "z": 41.799503326416
+    },
+    {
+      "above": {
+        "body": "COL_Nanqu_RaisedWestApproach",
+        "normal_y": 0.989191591739655,
+        "y": 9.71791648864746
+      },
+      "expected_y": 9.70593452453613,
+      "i": 3,
+      "offset_from_right_lane_m": -1.1,
+      "pass": true,
+      "support": {
+        "body": "COL_Nanqu_RaisedWestApproach",
+        "normal_y": 0.989191591739655,
+        "y": 9.71791458129883
+      },
+      "x": -209.310211181641,
+      "z": 43.0485916137695
+    },
+    {
+      "above": {
+        "body": "COL_Nanqu_RaisedWestApproach",
+        "normal_y": 0.989191591739655,
+        "y": 9.70022773742676
+      },
+      "expected_y": 9.70593452453613,
+      "i": 3,
+      "offset_from_right_lane_m": 0.75,
+      "pass": true,
+      "support": {
+        "body": "COL_Nanqu_RaisedWestApproach",
+        "normal_y": 0.989191591739655,
+        "y": 9.70022869110107
+      },
+      "x": -210.40559387207,
+      "z": 44.5394401550293
+    },
+    {
+      "above": {
+        "body": "COL_Nanqu_RaisedWestApproach",
+        "normal_y": 0.993937134742737,
+        "y": 8.92007064819336
+      },
+      "expected_y": 8.92137622833252,
+      "i": 4,
+      "offset_from_right_lane_m": -2.65,
+      "pass": true,
+      "support": {
+        "body": "COL_Nanqu_RaisedWestApproach",
+        "normal_y": 0.993937134742737,
+        "y": 8.92006492614746
+      },
+      "x": -203.555038452148,
+      "z": 45.3537559509277
+    },
+    {
+      "above": {
+        "body": "COL_Nanqu_RaisedWestApproach",
+        "normal_y": 0.993937134742737,
+        "y": 8.92071914672852
+      },
+      "expected_y": 8.92137622833252,
+      "i": 4,
+      "offset_from_right_lane_m": -1.1,
+      "pass": true,
+      "support": {
+        "body": "COL_Nanqu_RaisedWestApproach",
+        "normal_y": 0.993937134742737,
+        "y": 8.92071914672852
+      },
+      "x": -204.472793579102,
+      "z": 46.6028442382812
+    },
+    {
+      "above": {
+        "body": "COL_Nanqu_RaisedWestApproach",
+        "normal_y": 0.994608819484711,
+        "y": 8.92246437072754
+      },
+      "expected_y": 8.92137622833252,
+      "i": 4,
+      "offset_from_right_lane_m": 0.75,
+      "pass": true,
+      "support": {
+        "body": "COL_Nanqu_RaisedWestApproach",
+        "normal_y": 0.994608819484711,
+        "y": 8.92246532440186
+      },
+      "x": -205.568176269531,
+      "z": 48.093692779541
+    },
+    {
+      "above": {
+        "body": "COL_Nanqu_RaisedWestApproach",
+        "normal_y": 0.997616112232208,
+        "y": 8.57140922546387
+      },
+      "expected_y": 8.56568145751953,
+      "i": 5,
+      "offset_from_right_lane_m": -2.65,
+      "pass": true,
+      "support": {
+        "body": "COL_Nanqu_RaisedWestApproach",
+        "normal_y": 0.997616112232208,
+        "y": 8.57139492034912
+      },
+      "x": -200.413909912109,
+      "z": 47.664119720459
+    },
+    {
+      "above": {
+        "body": "COL_Nanqu_RaisedWestApproach",
+        "normal_y": 0.997616112232208,
+        "y": 8.57070922851562
+      },
+      "expected_y": 8.56568145751953,
+      "i": 5,
+      "offset_from_right_lane_m": -1.1,
+      "pass": true,
+      "support": {
+        "body": "COL_Nanqu_RaisedWestApproach",
+        "normal_y": 0.997616112232208,
+        "y": 8.57069778442383
+      },
+      "x": -201.282623291016,
+      "z": 48.9477958679199
+    },
+    {
+      "above": {
+        "body": "COL_Nanqu_RaisedWestApproach",
+        "normal_y": 0.997663736343384,
+        "y": 8.5699291229248
+      },
+      "expected_y": 8.56568145751953,
+      "i": 5,
+      "offset_from_right_lane_m": 0.75,
+      "pass": true,
+      "support": {
+        "body": "COL_Nanqu_RaisedWestApproach",
+        "normal_y": 0.997663736343384,
+        "y": 8.56993198394775
+      },
+      "x": -202.319488525391,
+      "z": 50.4799308776855
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.998547077178955,
+        "y": 8.17973136901855
+      },
+      "expected_y": 8.17942047119141,
+      "i": 6,
+      "offset_from_right_lane_m": -2.65,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.998547077178955,
+        "y": 8.1797342300415
+      },
+      "x": -195.397994995117,
+      "z": 50.872615814209
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.998547077178955,
+        "y": 8.1796703338623
+      },
+      "expected_y": 8.17942047119141,
+      "i": 6,
+      "offset_from_right_lane_m": -1.1,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.998547077178955,
+        "y": 8.17967224121094
+      },
+      "x": -196.2333984375,
+      "z": 52.1782150268555
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.998547077178955,
+        "y": 8.17959976196289
+      },
+      "expected_y": 8.17942047119141,
+      "i": 6,
+      "offset_from_right_lane_m": 0.75,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.998547077178955,
+        "y": 8.17960071563721
+      },
+      "x": -197.230514526367,
+      "z": 53.7365074157715
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.998840510845184,
+        "y": 7.86845397949219
+      },
+      "expected_y": 7.86918640136719,
+      "i": 7,
+      "offset_from_right_lane_m": -2.65,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.998840510845184,
+        "y": 7.86844539642334
+      },
+      "x": -190.325149536133,
+      "z": 54.1185836791992
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.998840510845184,
+        "y": 7.86839294433594
+      },
+      "expected_y": 7.86918640136719,
+      "i": 7,
+      "offset_from_right_lane_m": -1.1,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.998840510845184,
+        "y": 7.86838865280151
+      },
+      "x": -191.160552978516,
+      "z": 55.4241828918457
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.99884706735611,
+        "y": 7.86833000183105
+      },
+      "expected_y": 7.86918640136719,
+      "i": 7,
+      "offset_from_right_lane_m": 0.75,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.99884706735611,
+        "y": 7.86832904815674
+      },
+      "x": -192.157669067383,
+      "z": 56.9824752807617
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999359548091888,
+        "y": 7.61814498901367
+      },
+      "expected_y": 7.61856842041016,
+      "i": 8,
+      "offset_from_right_lane_m": -2.65,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999359548091888,
+        "y": 7.61814594268799
+      },
+      "x": -185.276840209961,
+      "z": 57.3490409851074
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999359548091888,
+        "y": 7.61753845214844
+      },
+      "expected_y": 7.61856842041016,
+      "i": 8,
+      "offset_from_right_lane_m": -1.1,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999359548091888,
+        "y": 7.61754035949707
+      },
+      "x": -186.097900390625,
+      "z": 58.6637115478516
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.99936044216156,
+        "y": 7.61682319641113
+      },
+      "expected_y": 7.61856842041016,
+      "i": 8,
+      "offset_from_right_lane_m": 0.75,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.99936044216156,
+        "y": 7.61682271957397
+      },
+      "x": -187.077880859375,
+      "z": 60.2328338623047
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999935805797577,
+        "y": 7.42611694335938
+      },
+      "expected_y": 7.42694091796875,
+      "i": 9,
+      "offset_from_right_lane_m": -2.65,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999935805797577,
+        "y": 7.42611265182495
+      },
+      "x": -180.248489379883,
+      "z": 60.4153137207031
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999935805797577,
+        "y": 7.42678070068359
+      },
+      "expected_y": 7.42694091796875,
+      "i": 9,
+      "offset_from_right_lane_m": -1.1,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999935805797577,
+        "y": 7.42678070068359
+      },
+      "x": -181.004837036133,
+      "z": 61.768253326416
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999935686588287,
+        "y": 7.42757797241211
+      },
+      "expected_y": 7.42694091796875,
+      "i": 9,
+      "offset_from_right_lane_m": 0.75,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999935686588287,
+        "y": 7.42757606506348
+      },
+      "x": -181.907562255859,
+      "z": 63.3830528259277
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999976992607117,
+        "y": 7.37883186340332
+      },
+      "expected_y": 7.37889862060547,
+      "i": 10,
+      "offset_from_right_lane_m": -2.65,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999976992607117,
+        "y": 7.37883710861206
+      },
+      "x": -174.970779418945,
+      "z": 63.1090545654297
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999977111816406,
+        "y": 7.37884140014648
+      },
+      "expected_y": 7.37889862060547,
+      "i": 10,
+      "offset_from_right_lane_m": -1.1,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999977111816406,
+        "y": 7.37883901596069
+      },
+      "x": -175.675857543945,
+      "z": 64.4894027709961
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999977111816406,
+        "y": 7.37884521484375
+      },
+      "expected_y": 7.37889862060547,
+      "i": 10,
+      "offset_from_right_lane_m": 0.75,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999977111816406,
+        "y": 7.37884378433228
+      },
+      "x": -176.51741027832,
+      "z": 66.1369171142578
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999999940395355,
+        "y": 7.35406303405762
+      },
+      "expected_y": 7.35414123535156,
+      "i": 11,
+      "offset_from_right_lane_m": -2.65,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999999940395355,
+        "y": 7.3540563583374
+      },
+      "x": -169.605438232422,
+      "z": 65.8496475219727
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999999940395355,
+        "y": 7.35406303405762
+      },
+      "expected_y": 7.35414123535156,
+      "i": 11,
+      "offset_from_right_lane_m": -1.1,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999999940395355,
+        "y": 7.3540563583374
+      },
+      "x": -170.310501098633,
+      "z": 67.2299957275391
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999999940395355,
+        "y": 7.35406303405762
+      },
+      "expected_y": 7.35414123535156,
+      "i": 11,
+      "offset_from_right_lane_m": 0.75,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999999940395355,
+        "y": 7.35405731201172
+      },
+      "x": -171.152053833008,
+      "z": 68.8775177001953
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999956250190735,
+        "y": 7.38075637817383
+      },
+      "expected_y": 7.38087463378906,
+      "i": 12,
+      "offset_from_right_lane_m": -2.65,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999956250190735,
+        "y": 7.38075733184814
+      },
+      "x": -164.271636962891,
+      "z": 68.5743789672852
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999956250190735,
+        "y": 7.38094329833984
+      },
+      "expected_y": 7.38087463378906,
+      "i": 12,
+      "offset_from_right_lane_m": -1.1,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999956250190735,
+        "y": 7.38094329833984
+      },
+      "x": -164.958251953125,
+      "z": 69.9640045166016
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999955892562866,
+        "y": 7.38117790222168
+      },
+      "expected_y": 7.38087463378906,
+      "i": 12,
+      "offset_from_right_lane_m": 0.75,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999955892562866,
+        "y": 7.38117790222168
+      },
+      "x": -165.777755737305,
+      "z": 71.6225967407227
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999574959278107,
+        "y": 7.48176574707031
+      },
+      "expected_y": 7.48060607910156,
+      "i": 13,
+      "offset_from_right_lane_m": -2.65,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999574959278107,
+        "y": 7.48176193237305
+      },
+      "x": -158.944091796875,
+      "z": 71.1199951171875
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999578058719635,
+        "y": 7.48037528991699
+      },
+      "expected_y": 7.48060607910156,
+      "i": 13,
+      "offset_from_right_lane_m": -1.1,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999578058719635,
+        "y": 7.4803729057312
+      },
+      "x": -159.56884765625,
+      "z": 72.5385055541992
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999578058719635,
+        "y": 7.47871589660645
+      },
+      "expected_y": 7.48060607910156,
+      "i": 13,
+      "offset_from_right_lane_m": 0.75,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999578058719635,
+        "y": 7.47871446609497
+      },
+      "x": -160.314544677734,
+      "z": 74.2315673828125
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.99938976764679,
+        "y": 7.66032028198242
+      },
+      "expected_y": 7.66062927246094,
+      "i": 14,
+      "offset_from_right_lane_m": -2.65,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.99938976764679,
+        "y": 7.66031837463379
+      },
+      "x": -153.429321289062,
+      "z": 73.3483047485352
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.99938976764679,
+        "y": 7.66030693054199
+      },
+      "expected_y": 7.66062927246094,
+      "i": 14,
+      "offset_from_right_lane_m": -1.1,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.99938976764679,
+        "y": 7.66030788421631
+      },
+      "x": -154.010314941406,
+      "z": 74.7853012084961
+    },
+    {
+      "above": {
+        "body": "COL_Outer500_Frame_53",
+        "normal_y": 1.0,
+        "y": 25.1203002929688
+      },
+      "expected_y": 7.66062927246094,
+      "i": 14,
+      "offset_from_right_lane_m": 0.75,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.99938976764679,
+        "y": 7.6602954864502
+      },
+      "x": -154.703750610352,
+      "z": 76.5004272460938
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999313354492188,
+        "y": 7.88175964355469
+      },
+      "expected_y": 7.88091278076172,
+      "i": 15,
+      "offset_from_right_lane_m": -2.65,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999313354492188,
+        "y": 7.88175964355469
+      },
+      "x": -147.839706420898,
+      "z": 75.6082077026367
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999313354492188,
+        "y": 7.88175010681152
+      },
+      "expected_y": 7.88091278076172,
+      "i": 15,
+      "offset_from_right_lane_m": -1.1,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999313354492188,
+        "y": 7.88174867630005
+      },
+      "x": -148.420700073242,
+      "z": 77.0452041625977
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999313354492188,
+        "y": 7.88173484802246
+      },
+      "expected_y": 7.88091278076172,
+      "i": 15,
+      "offset_from_right_lane_m": 0.75,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999313354492188,
+        "y": 7.88173532485962
+      },
+      "x": -149.114135742188,
+      "z": 78.7603302001953
+    },
+    {
+      "above": {
+        "body": "COL_Outer500_Retaining_and_boundaries",
+        "normal_y": 1.0,
+        "y": 10.3135967254639
+      },
+      "expected_y": 8.10868835449219,
+      "i": 16,
+      "offset_from_right_lane_m": -2.65,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.998436689376831,
+        "y": 8.10466003417969
+      },
+      "x": -142.366226196289,
+      "z": 77.8243103027344
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.998436689376831,
+        "y": 8.10871124267578
+      },
+      "expected_y": 8.10868835449219,
+      "i": 16,
+      "offset_from_right_lane_m": -1.1,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.998436689376831,
+        "y": 8.1087064743042
+      },
+      "x": -142.879287719727,
+      "z": 79.2869415283203
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999282777309418,
+        "y": 8.10806846618652
+      },
+      "expected_y": 8.10868835449219,
+      "i": 16,
+      "offset_from_right_lane_m": 0.75,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.999282777309418,
+        "y": 8.10807037353516
+      },
+      "x": -143.491622924805,
+      "z": 81.0326614379883
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.998455762863159,
+        "y": 8.42155647277832
+      },
+      "expected_y": 8.42322540283203,
+      "i": 17,
+      "offset_from_right_lane_m": -2.65,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.998455762863159,
+        "y": 8.42155742645264
+      },
+      "x": -136.723785400391,
+      "z": 79.5076141357422
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.998455762863159,
+        "y": 8.42144012451172
+      },
+      "expected_y": 8.42322540283203,
+      "i": 17,
+      "offset_from_right_lane_m": -1.1,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.998455762863159,
+        "y": 8.42144203186035
+      },
+      "x": -137.164825439453,
+      "z": 80.993537902832
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.998455762863159,
+        "y": 8.42130470275879
+      },
+      "expected_y": 8.42322540283203,
+      "i": 17,
+      "offset_from_right_lane_m": 0.75,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.998455762863159,
+        "y": 8.42130565643311
+      },
+      "x": -137.691223144531,
+      "z": 82.7670745849609
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.998676002025604,
+        "y": 8.74847984313965
+      },
+      "expected_y": 8.74919891357422,
+      "i": 18,
+      "offset_from_right_lane_m": -2.65,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.998676002025604,
+        "y": 8.74847888946533
+      },
+      "x": -130.955932617188,
+      "z": 81.2076721191406
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.998687446117401,
+        "y": 8.74850273132324
+      },
+      "expected_y": 8.74919891357422,
+      "i": 18,
+      "offset_from_right_lane_m": -1.1,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.998687446117401,
+        "y": 8.74850273132324
+      },
+      "x": -131.394165039062,
+      "z": 82.6944351196289
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.998687446117401,
+        "y": 8.74845314025879
+      },
+      "expected_y": 8.74919891357422,
+      "i": 18,
+      "offset_from_right_lane_m": 0.75,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.998687446117401,
+        "y": 8.74845314025879
+      },
+      "x": -131.917190551758,
+      "z": 84.4689559936523
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.998927056789398,
+        "y": 8.99230003356934
+      },
+      "expected_y": 8.99224090576172,
+      "i": 19,
+      "offset_from_right_lane_m": -2.65,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.998927056789398,
+        "y": 8.99229717254639
+      },
+      "x": -126.145370483398,
+      "z": 82.6255798339844
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.998927056789398,
+        "y": 8.99233245849609
+      },
+      "expected_y": 8.99224090576172,
+      "i": 19,
+      "offset_from_right_lane_m": -1.1,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.998927056789398,
+        "y": 8.99233245849609
+      },
+      "x": -126.583587646484,
+      "z": 84.1123428344727
+    },
+    {
+      "above": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.99893593788147,
+        "y": 8.99229431152344
+      },
+      "expected_y": 8.99224090576172,
+      "i": 19,
+      "offset_from_right_lane_m": 0.75,
+      "pass": true,
+      "support": {
+        "body": "COL_R24_LinkDeck_R24_link_asphalt",
+        "normal_y": 0.99893593788147,
+        "y": 8.99229431152344
+      },
+      "x": -127.106628417969,
+      "z": 85.8868637084961
+    }
+  ]
+}

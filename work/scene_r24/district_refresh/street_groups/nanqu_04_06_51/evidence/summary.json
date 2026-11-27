@@ -1,0 +1,106 @@
+{
+  "runtime_sha256": "df14048f69e2fba27d69e9673fbe85c27361cfb72eb0fae371e26fd21bccf7d0",
+  "checks": {
+    "walking": 18,
+    "riding": 7,
+    "sections": 3
+  },
+  "regressions": {
+    "first": 85,
+    "market": 5,
+    "repair": 10
+  },
+  "renderer": "gl_compatibility",
+  "device": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "player_walks": [
+    {
+      "length_m": 89.9043842609972,
+      "reached": 15,
+      "targets": 15,
+      "supports": 110
+    },
+    {
+      "length_m": 89.9142965655774,
+      "reached": 15,
+      "targets": 15,
+      "supports": 112
+    }
+  ],
+  "wheel_distances": {
+    "approach_to_51": {
+      "closed_reverse_test": {
+        "length_m": 51.8634244439891,
+        "targets": 9,
+        "reached": 9,
+        "airborne_frames": 0
+      },
+      "forward": {
+        "length_m": 51.9495464516804,
+        "targets": 9,
+        "reached": 9,
+        "airborne_frames": 0
+      }
+    },
+    "under_rail_04": {
+      "closed_reverse_test": {
+        "length_m": 45.6374347035307,
+        "targets": 8,
+        "reached": 8,
+        "airborne_frames": 0
+      },
+      "forward": {
+        "length_m": 45.62980167981,
+        "targets": 8,
+        "reached": 8,
+        "airborne_frames": 0
+      }
+    },
+    "under_rail_04_outer_wheel_line": {
+      "closed_reverse_test": {
+        "length_m": 45.6875164983794,
+        "targets": 8,
+        "reached": 8,
+        "airborne_frames": 0
+      },
+      "forward": {
+        "length_m": 45.6808410551748,
+        "targets": 8,
+        "reached": 8,
+        "airborne_frames": 0
+      }
+    }
+  },
+  "wheel_stripes": 57,
+  "walk_stripes": 16,
+  "bridge_lower_clearances_m": [
+    2.46975469589233,
+    2.46994066238403,
+    2.46989679336548,
+    2.46999573707581,
+    2.46997785568237,
+    2.47017621994019,
+    1.77301120758057
+  ],
+  "landing_53_samples": 129,
+  "landing_53_max_gap_m": 0.00485706329345703,
+  "photograph_record": "work/scene_r24/district_refresh/street_groups/nanqu_04_06_51/field.json",
+  "frame_sha256": {
+    "06-approach-before.png": "96270f99c927d9fffbd215c8bacd4b96d211a9b609fac89e7b508d2b64a25472",
+    "06-approach-after.png": "4f54655ac07d840bf6404386440822180b6c8206396a880f8266b8e8742c123f",
+    "51-see-river-before.png": "bd17b3e58a4f3606deba9b308eebaa601b24605007945f82a686e117edf071d5",
+    "51-see-river-after.png": "6bdc60bbadc3e6e7accb70789b5cd7939e81cdf6b7332b5ccef14a753b9472b7",
+    "51-reverse-before.png": "9e8b54a8e27b0497e2ece587b45088d8adb78fd53fdbec53ec164fa080662698",
+    "51-reverse-after.png": "8b144444d812cc3dc82f837bb5c5263344d804db5be76736d0e2727c1ac2e6db",
+    "06-51-overview-before.png": "f66a54e23e573f52ebeb750395c0726cd123df8b0bde5064813c90a1850b2427",
+    "06-51-overview-after.png": "f19706aae336d0fadc9291f1fcf50b0479ca4aeb506c1b832090fbbfb7c52604",
+    "51-bridge-side-before.png": "4b6a7be7a38a54640f9dabd4dce2613f8aa321dcdfe71ee174fa4a0db3a07b68",
+    "51-bridge-side-after.png": "b4ce42f33e846c0adabf67f6ec9a54c8e903412f0dcf2c79789870e59cb813df",
+    "04-pedestrian-limit-before.png": "1e0c443de2b5063aa749cd0aa9c68f134ddbf81f5ce5320cf202205e7525f455",
+    "04-pedestrian-limit-after.png": "535e9f62fc7bdf914ebc40304a3e8cc17d3d8ade2045aab004edc12ad86d28e0",
+    "04-under-rail-before.png": "f52b93db97dd360c26bc38c160125d3241f1c6c992adf76a23618b09640d54c2",
+    "04-under-rail-after.png": "c12f9438e2285cc8274be139a0e83569d267a588372f7367ece25049f8a76cbb",
+    "player-start.png": "782080e4349a1a24957655729af54f56acf5ca3bee86a2897ac29314d7cc0ced",
+    "player-turn.png": "e510c01ca5dca849db3c84f4e5e178cb17296c10c930cf5b08c274e4ddfcda9d",
+    "player-return.png": "b851426fc9c10e893afb050ac83f768a56710bef9597016db2b0e589636b47a0"
+  }
+}

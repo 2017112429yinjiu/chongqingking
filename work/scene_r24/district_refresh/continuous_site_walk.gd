@@ -83,6 +83,10 @@ func leg_without_placement(label: String, goals: Array) -> Dictionary:
 
 func eye_frame(label: String, focus: Variant) -> void:
 	var actor = scene.explorer
+	if label=="street":
+		for arg in OS.get_cmdline_user_args():
+			if arg.begins_with("--site-fixed-views="):
+				await site_fixed_frames(arg.trim_prefix("--site-fixed-views="))
 	if focus != null:
 		actor.camera.look_at(Vector3(focus[0],focus[2],-focus[1]),Vector3.UP)
 	await process_frame
@@ -92,6 +96,29 @@ func eye_frame(label: String, focus: Variant) -> void:
 	check("frame_"+label,result==OK,file.get_file())
 	view_positions.append({"frame":file.get_file(),"eye_enu":enu(actor.camera.global_position),
 		"direction_xyz":str(-actor.camera.global_basis.z),"pixel_size":str(root.size)})
+
+func site_fixed_frames(path: String) -> void:
+	var specs: Array=JSON.parse_string(FileAccess.get_file_as_string(path))
+	var camera := Camera3D.new()
+	camera.cull_mask = scene.explorer.camera.cull_mask
+	scene.add_child(camera)
+	camera.make_current()
+	var evidence := []
+	for row: Dictionary in specs:
+		var eye: Array=row.eye_enu
+		var aim: Array=row.target_enu
+		camera.global_position=Vector3(eye[0],eye[2],-eye[1])
+		camera.look_at(Vector3(aim[0],aim[2],-aim[1]))
+		camera.fov=row.fov_deg
+		await process_frame
+		RenderingServer.force_draw(false,1.0/60.0)
+		var image := root.get_texture().get_image()
+		var saved := image.save_png(output.path_join(row.file))
+		check("fixed_"+str(row.file),saved==OK,eye)
+		evidence.append({"frame":row,"save_code":saved,"pixels":[image.get_width(),image.get_height()]})
+	FileAccess.open(output.path_join("fixed-views.json"),FileAccess.WRITE).store_string(JSON.stringify(evidence,"  "))
+	scene.explorer.camera.make_current()
+	camera.queue_free()
 
 func enu(point: Vector3) -> Array:
 	return [point.x,-point.z,point.y]

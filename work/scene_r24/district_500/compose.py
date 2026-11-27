@@ -97,6 +97,7 @@ houci_connectors = None if not bridge_margins or os.environ.get("CQ_HOUCI_14_16_
 fenghuangtai = None if not houci_connectors or os.environ.get("CQ_FENGHUANGTAI_11_PARENT") == "1" else json.loads((group_assets / "fenghuangtai-11.json").read_bytes())
 wilderness = None if not fenghuangtai or os.environ.get("CQ_WILDERNESS_50_PARENT") == "1" else json.loads((group_assets / "wilderness-50.json").read_bytes())
 wilderness_finish = None if not wilderness or os.environ.get("CQ_WILDERNESS_50_FINISH_PARENT") == "1" else json.loads((group_assets / "wilderness-50-finish.json").read_bytes())
+nanqu = None if not wilderness or os.environ.get("CQ_NANQU_PARENT") == "1" else json.loads((group_assets / "nanqu-04-06-51.json").read_bytes())
 binjiang_override = set() if not binjiang_plan else set(binjiang_plan["replacement_meshes"] + binjiang_plan["retired_objects"])
 east_override = set() if east_plan is None else set(east_plan["replacement_meshes"] + east_plan["retired_objects"]) | binjiang_override
 changbin_override = set(changbin_plan["replacement_meshes"] + changbin_plan["retired_objects"]) | east_override
@@ -345,8 +346,24 @@ if wilderness_finish:
         finish.objects = wilderness_finish["replacement_meshes"] + wilderness_finish["new_meshes"]
     for item in finish.objects:
         collection.objects.link(item)
+if nanqu:
+    for name in nanqu["replacement_meshes"] + nanqu["retired_objects"]:
+        collection.objects.unlink(collection.objects[name])
+    with bpy.data.libraries.load(str(factory_dir / "nanqu_04_06_51/nanqu-04-06-51.blend"),
+                                 link=True, relative=True) as (_, site):
+        site.objects = nanqu["replacement_meshes"] + nanqu["new_meshes"]
+    for item in site.objects:
+        collection.objects.link(item)
+    for spec in nanqu.get("rebase_trees", []):
+        item=collection.objects[spec["name"]]
+        moved=item.copy()
+        collection.objects.unlink(item)
+        collection.objects.link(moved)
+        moved.name=spec["name"]
+        moved.location.z+=spec["shift_z"]
 bpy.context.preferences.filepaths.save_version=0
-output_name = "city_and_outer.local.blend" if wilderness else (
+output_name = "city_and_outer.local.blend" if nanqu else (
+    "city_and_outer.before_nanqu.local.blend" if wilderness else
     "city_and_outer.before_wilderness_50.local.blend" if fenghuangtai else
     "city_and_outer.before_fenghuangtai_11.local.blend" if houci_connectors else
     "city_and_outer.before_houci_14_16.local.blend" if bridge_margins else

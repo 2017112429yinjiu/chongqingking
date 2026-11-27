@@ -1,0 +1,559 @@
+{
+  "new_meshes": [
+    "COL_Nanqu_RaisedWestApproach",
+    "COL_Nanqu_RiverFootway",
+    "Nanqu_FootwayGreyStoneJoints",
+    "COL_Nanqu_StreetKerbs",
+    "COL_Nanqu_HillsideRetaining",
+    "Nanqu_ApproachPaint",
+    "Nanqu_RiverBarrierStonePosts",
+    "COLH_Nanqu_RiverBarrier",
+    "Nanqu_DeckEdgeBrackets",
+    "Nanqu_GalvanizedVerticals",
+    "COL_Nanqu_EndOfPedestrianAccess",
+    "COL_Nanqu_TreeAndFlowerBoxes",
+    "Nanqu_TreeAndFlowerCanopies",
+    "Nanqu_PedestrianLimitSign",
+    "Nanqu_HillsidePlantedStrip"
+  ],
+  "replacement_meshes": [
+    "COLH_Outer500_Household_contact",
+    "COL_Outer500_Building_envelopes",
+    "COL_Outer500_Retaining_and_boundaries",
+    "Outer500_Facades_and_storefronts",
+    "Outer500_Street_furniture",
+    "COL_Outer500_Surface_02_03",
+    "COL_Outer500_Surface_01_04",
+    "COL_Outer500_Surface_01_03",
+    "COL_Outer500_Surface_01_02",
+    "COL_Outer500_Surface_00_04",
+    "COL_Outer500_Surface_00_03",
+    "COL_Outer500_Surface_00_02",
+    "Outer500_LaundryRailReturn"
+  ],
+  "retired_objects": [
+    "COL_Outer500_Frame_04",
+    "COL_Outer500_Frame_06",
+    "COL_Outer500_Frame_51",
+    "Outer500_Condenser_04_01",
+    "Outer500_Condenser_04_04",
+    "Outer500_Condenser_06_01",
+    "Outer500_Condenser_06_04",
+    "Outer500_Condenser_51_01",
+    "Outer500_Household_039_crate_0",
+    "Outer500_Household_040_chair_0",
+    "Outer500_Household_096_chair_0",
+    "Outer500_InteriorFloor_04",
+    "Outer500_InteriorFloor_06",
+    "Outer500_InteriorFloor_51",
+    "Outer500_Joinery_04",
+    "Outer500_Joinery_06",
+    "Outer500_Joinery_51",
+    "Outer500_Plant_002",
+    "Outer500_Plant_003",
+    "Outer500_Plant_048"
+  ],
+  "retired_plots": [
+    4,
+    6,
+    51
+  ],
+  "removed_face_counts": {
+    "COLH_Outer500_Household_contact": 18,
+    "COL_Outer500_Building_envelopes": 726,
+    "COL_Outer500_Retaining_and_boundaries": 378,
+    "Outer500_Facades_and_storefronts": 108,
+    "Outer500_Street_furniture": 1404,
+    "plot53_lower_lip_only": 3,
+    "plot53_over_04_inner_wheel_line": 57,
+    "Outer500_LaundryRailReturn": 1160
+  },
+  "borrowed_materials": {
+    "COLH_Outer500_Household_contact": {
+      "CQEastParentSlot000": "Door and shutter recess.001"
+    },
+    "COL_Outer500_Building_envelopes": {
+      "CQEastParentSlot001": "Grey stone walkway.001",
+      "CQEastParentSlot002": "Coursed retaining masonry.001",
+      "CQEastParentSlot003": "Aged stucco.001",
+      "CQEastParentSlot004": "Red infill brick.001",
+      "CQEastParentSlot005": "Glazed blue tile.001",
+      "CQEastParentSlot006": "Concrete bands.001",
+      "CQEastParentSlot007": "Blue grey street reflection.001",
+      "CQEastParentSlot008": "Shaded window beyond mesh.001",
+      "CQEastParentSlot009": "Flax curtain behind glazing.001",
+      "CQEastParentSlot010": "Cloud reflection.001",
+      "CQEastParentSlot011": "Painted window and rail trim.001",
+      "CQEastParentSlot012": "Door and shutter recess.002",
+      "CQEastParentSlot013": "Cream glazed wall skirting.001",
+      "CQEastParentSlot014": "Worn timber joinery.001",
+      "CQEastParentSlot015": "Worn concrete floors.001"
+    },
+    "COL_Outer500_Retaining_and_boundaries": {
+      "CQEastParentSlot016": "Grey stone walkway.002",
+      "CQEastParentSlot017": "Coursed retaining masonry.002",
+      "CQEastParentSlot018": "Concrete bands.002",
+      "CQEastParentSlot019": "Door and shutter recess.003",
+      "CQEastParentSlot020": "Aged galvanized drain pipe.001",
+      "CQEastParentSlot021": "Salvaged service-door steel.001"
+    },
+    "Outer500_Facades_and_storefronts": {
+      "CQEastParentSlot022": "Aged stucco.002",
+      "CQEastParentSlot023": "Red infill brick.002",
+      "CQEastParentSlot024": "Glazed blue tile.002",
+      "CQEastParentSlot025": "Concrete bands.003",
+      "CQEastParentSlot026": "Grey overlapping roof tiles.001",
+      "CQEastParentSlot027": "Painted window and rail trim.002",
+      "CQEastParentSlot028": "Door and shutter recess.004",
+      "CQEastParentSlot029": "Worn timber joinery.002",
+      "CQEastParentSlot030": "Faded covered market roofing.001",
+      "CQEastParentSlot031": "Aged galvanized drain pipe.002"
+    },
+    "Outer500_Street_furniture": {
+      "CQEastParentSlot032": "Aged stucco.004",
+      "CQEastParentSlot033": "Concrete bands.005",
+      "CQEastParentSlot034": "Grey overlapping roof tiles.003",
+      "CQEastParentSlot035": "Painted window and rail trim.004",
+      "CQEastParentSlot036": "Red painted steel.002",
+      "CQEastParentSlot037": "Jade painted steel.002",
+      "CQEastParentSlot038": "Ochre canvas.002",
+      "CQEastParentSlot039": "Off-white road pigment.002",
+      "CQEastParentSlot040": "Door and shutter recess.006",
+      "CQEastParentSlot041": "Canopy 0.002",
+      "CQEastParentSlot042": "Canopy 1.002",
+      "CQEastParentSlot043": "Canopy 2.002",
+      "CQEastParentSlot044": "Cream glazed wall skirting.003",
+      "CQEastParentSlot045": "Worn timber joinery.004",
+      "CQEastParentSlot046": "Weathered sheet metal.002",
+      "CQEastParentSlot047": "Faded covered market roofing.003",
+      "CQEastParentSlot048": "Used tyre casing.002",
+      "CQEastParentSlot049": "Brown earthenware.002"
+    },
+    "COL_Outer500_Surface_02_03": {},
+    "COL_Outer500_Surface_01_04": {},
+    "COL_Outer500_Surface_01_03": {},
+    "COL_Outer500_Surface_01_02": {},
+    "COL_Outer500_Surface_00_04": {},
+    "COL_Outer500_Surface_00_03": {},
+    "COL_Outer500_Surface_00_02": {},
+    "Outer500_LaundryRailReturn": {
+      "CQEastParentSlot000": "R24_link_painted_rail"
+    }
+  },
+  "surface_textures": {
+    "Nanqu exposed west asphalt": "res://assets/chongqing_district_asphalt_02_diff_1k.jpg",
+    "Nanqu grey split flagstones": "res://assets/chongqing_district_stone_floor_diff_2k.jpg",
+    "Nanqu tumbled grey kerb": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+    "Nanqu hillside ashlar wall": "res://assets/chongqing_district_stone_wall_05_diff_2k.jpg",
+    "Nanqu amber wood box grain": "res://assets/chongqing_district_wood_table_worn_diff_2k.jpg",
+    "Nanqu older concrete apron": "res://assets/chongqing_district_concrete_wall_006_diff_2k.jpg"
+  },
+  "public_walk": [
+    [
+      -233.13771057128906,
+      -29.921987533569336,
+      14.072514308475835
+    ],
+    [
+      -228.2950897216797,
+      -33.48006057739258,
+      13.21899454938444
+    ],
+    [
+      -223.4524688720703,
+      -37.03813171386719,
+      12.245715025323992
+    ],
+    [
+      -218.60983276367188,
+      -40.5962028503418,
+      11.222627084360209
+    ],
+    [
+      -213.76719665527344,
+      -44.15427017211914,
+      10.232343991920905
+    ],
+    [
+      -208.924560546875,
+      -47.71234130859375,
+      9.370140930796003
+    ],
+    [
+      -204.08192443847656,
+      -51.270408630371094,
+      8.743955001137524
+    ],
+    [
+      -199.0109405517578,
+      -54.59175109863281,
+      8.343171384277344
+    ],
+    [
+      -193.89430236816406,
+      -57.865745544433594,
+      8.023865964355469
+    ],
+    [
+      -188.77764892578125,
+      -61.13974380493164,
+      7.7603237890625
+    ],
+    [
+      -183.64315795898438,
+      -64.38357543945312,
+      7.546792294921875
+    ],
+    [
+      -178.2267608642578,
+      -67.15026092529297,
+      7.490205075683594
+    ],
+    [
+      -172.81033325195312,
+      -69.91694641113281,
+      7.460252072753907
+    ],
+    [
+      -167.3939208984375,
+      -72.68362426757812,
+      7.476846005859375
+    ],
+    [
+      -161.9453887939453,
+      -75.38470458984375,
+      7.555924680175782
+    ],
+    [
+      -156.85836791992188,
+      -77.44140625,
+      7.715394284667969
+    ]
+  ],
+  "bike_path": [
+    [
+      -224.47381591796875,
+      -33.27229309082031,
+      12.819446631607622
+    ],
+    [
+      -219.6363983154297,
+      -36.82654571533203,
+      11.756402045112502
+    ],
+    [
+      -214.7989501953125,
+      -40.380794525146484,
+      10.686864393423637
+    ],
+    [
+      -209.96151733398438,
+      -43.93504333496094,
+      9.705934686934368
+    ],
+    [
+      -205.1240997314453,
+      -47.489295959472656,
+      8.921375853400145
+    ],
+    [
+      -201.89913940429688,
+      -49.858795166015625,
+      8.565681457519531
+    ],
+    [
+      -196.82627868652344,
+      -53.104766845703125,
+      8.179420471191406
+    ],
+    [
+      -191.75343322753906,
+      -56.35073471069336,
+      7.8691864013671875
+    ],
+    [
+      -186.6805877685547,
+      -59.596702575683594,
+      7.618568420410156
+    ],
+    [
+      -181.54159545898438,
+      -62.7284049987793,
+      7.42694091796875
+    ],
+    [
+      -176.17623901367188,
+      -65.46900939941406,
+      7.378898620605469
+    ],
+    [
+      -170.81088256835938,
+      -68.20960235595703,
+      7.3541412353515625
+    ],
+    [
+      -165.44552612304688,
+      -70.9501953125,
+      7.3808746337890625
+    ],
+    [
+      -160.01223754882812,
+      -73.5451889038086,
+      7.4806060791015625
+    ],
+    [
+      -154.42262268066406,
+      -75.80510711669922,
+      7.6606292724609375
+    ],
+    [
+      -148.8330078125,
+      -78.06501007080078,
+      7.880912780761719
+    ],
+    [
+      -143.24337768554688,
+      -80.32493591308594,
+      8.108688354492188
+    ],
+    [
+      -137.47781372070312,
+      -82.0480728149414,
+      8.423225402832031
+    ],
+    [
+      -131.7051544189453,
+      -83.74955749511719,
+      8.749198913574219
+    ],
+    [
+      -126.89458465576172,
+      -85.16746520996094,
+      8.992240905761719
+    ],
+    [
+      -122.08403015136719,
+      -86.58536529541016,
+      9.227470397949219
+    ]
+  ],
+  "planter_contacts": [
+    [
+      -237.2357940673828,
+      -27.630693435668945,
+      14.53805550242804
+    ],
+    [
+      -237.70057678222656,
+      -28.281919479370117,
+      14.419852859649593
+    ],
+    [
+      -236.17823791503906,
+      -28.40773582458496,
+      14.399377346561632
+    ],
+    [
+      -236.6426544189453,
+      -29.05923843383789,
+      14.284066610734342
+    ],
+    [
+      -227.3865966796875,
+      -34.86729049682617,
+      12.923315951187128
+    ],
+    [
+      -227.847900390625,
+      -35.52107238769531,
+      12.840390201117954
+    ],
+    [
+      -226.32901000976562,
+      -35.64433288574219,
+      12.715845685129011
+    ],
+    [
+      -226.78994750976562,
+      -36.29839324951172,
+      12.637431655057936
+    ],
+    [
+      -217.7795867919922,
+      -41.925933837890625,
+      10.950364568466084
+    ],
+    [
+      -218.23748779296875,
+      -42.58221435546875,
+      10.908122109205408
+    ],
+    [
+      -216.72198486328125,
+      -42.70298385620117,
+      10.733648539446355
+    ],
+    [
+      -217.1795196533203,
+      -43.359535217285156,
+      10.695473456613835
+    ],
+    [
+      -208.01109313964844,
+      -49.10321807861328,
+      9.172869043060688
+    ],
+    [
+      -208.46554565429688,
+      -49.76203536987305,
+      9.159465293157687
+    ],
+    [
+      -206.95352172851562,
+      -49.88026428222656,
+      9.027759192435141
+    ],
+    [
+      -207.40760803222656,
+      -50.53935241699219,
+      9.01592120087193
+    ],
+    [
+      -198.18553161621094,
+      -55.8084831237793,
+      8.258597553710938
+    ],
+    [
+      -198.62319946289062,
+      -56.47819137573242,
+      8.248997553710938
+    ],
+    [
+      -197.0661163330078,
+      -56.52476501464844,
+      8.189376057128907
+    ],
+    [
+      -197.50062561035156,
+      -57.19648742675781,
+      8.179776057128906
+    ],
+    [
+      -187.8458709716797,
+      -62.424530029296875,
+      7.7002174267578125
+    ],
+    [
+      -188.25445556640625,
+      -63.11284637451172,
+      7.690617426757813
+    ],
+    [
+      -186.72645568847656,
+      -63.14081573486328,
+      7.6508705029296875
+    ],
+    [
+      -187.13189697265625,
+      -63.831146240234375,
+      7.641270502929688
+    ],
+    [
+      -177.6522674560547,
+      -68.0949935913086,
+      7.476790607910156
+    ],
+    [
+      -178.03030395507812,
+      -68.80021667480469,
+      7.467190607910156
+    ],
+    [
+      -176.46701049804688,
+      -68.70040893554688,
+      7.468291462402344
+    ],
+    [
+      -176.8413848876953,
+      -69.40750885009766,
+      7.458691462402344
+    ],
+    [
+      -167.00314331054688,
+      -73.53451538085938,
+      7.4756080517578125
+    ],
+    [
+      -167.34820556640625,
+      -74.25658416748047,
+      7.466008051757813
+    ],
+    [
+      -165.81788635253906,
+      -74.13993072509766,
+      7.488341511230469
+    ],
+    [
+      -166.15928649902344,
+      -74.8638687133789,
+      7.478741511230469
+    ]
+  ],
+  "walk_limit_station_m": 54.5,
+  "roadway_way_ids": [
+    176034685,
+    59146775
+  ],
+  "support_structure": "COL_R24_LinkDeck_R24_link_asphalt",
+  "rebase_trees": [
+    {
+      "name": "Outer500_Plant_004",
+      "shift_z": -7.586886291503907,
+      "root_east_north": [
+        -149.4395921550224,
+        -73.03798955199169
+      ]
+    },
+    {
+      "name": "Outer500_Plant_116",
+      "shift_z": -7.087771436824799,
+      "root_east_north": [
+        -192.8723731146714,
+        -73.74889262986525
+      ]
+    },
+    {
+      "name": "Outer500_Plant_152",
+      "shift_z": -1.606007955916903,
+      "root_east_north": [
+        -200.99376621523857,
+        -112.39094902327292
+      ]
+    },
+    {
+      "name": "Outer500_Plant_248",
+      "shift_z": -7.354132328166962,
+      "root_east_north": [
+        -192.729106871949,
+        -93.35004477743033
+      ]
+    },
+    {
+      "name": "Outer500_Plant_251",
+      "shift_z": -7.516811860469235,
+      "root_east_north": [
+        -187.25152546201457,
+        -91.39195827882
+      ]
+    },
+    {
+      "name": "Outer500_Plant_288",
+      "shift_z": -7.178502280845643,
+      "root_east_north": [
+        -194.41467484356724,
+        -91.35061553707894
+      ]
+    }
+  ],
+  "walk_near_plot04_distance_m": 19.073065359416923
+}

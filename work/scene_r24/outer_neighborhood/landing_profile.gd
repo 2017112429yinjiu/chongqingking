@@ -7,8 +7,15 @@ func verify() -> void:
 	while not scene.get("gameplay"):await physics_frame
 	await frames(16)
 	var data: Dictionary=JSON.parse_string(FileAccess.get_file_as_string("res://assets/district_500/layout.json"))
-	var p:Dictionary=data.plots[51]
-	assert(p.plot_id==53)
+	var p: Dictionary={}
+	for item: Dictionary in data.plots:
+		if int(item.plot_id)==53:
+			p=item
+			break
+	if p.is_empty():
+		push_error("Plot 53 is absent from the current layout")
+		quit(2)
+		return
 	var edge:float=p.door_u+1.25
 	var end:float=p.depth*.5+p.back_stair_m
 	var sections:=[]
@@ -20,11 +27,15 @@ func verify() -> void:
 			var u:float=edge-.1+j*.05
 			var origin:=world(p,u,v,1)
 			var hit:=scene.get_world_3d().direct_space_state.intersect_ray(PhysicsRayQueryParameters3D.create(origin,origin-Vector3.UP*12,1))
-			assert(not hit.is_empty())
-			row.append([u,hit.position.y,str(hit.collider.get_parent().name)])
-		var delta:float=absf(row[1][1]-row[3][1])
-		largest=maxf(largest,delta)
-		if delta>.025:gaps.append([v,delta])
+			if hit.is_empty():
+				row.append([u,null,""])
+				gaps.append([v,u,"missing ground"])
+			else:
+				row.append([u,hit.position.y,str(hit.collider.get_parent().name)])
+		if row[1][1]!=null and row[3][1]!=null:
+			var delta:float=absf(row[1][1]-row[3][1])
+			largest=maxf(largest,delta)
+			if delta>.025:gaps.append([v,delta])
 		sections.append(row)
 	if DisplayServer.get_name()!="headless":
 		scene.hud.hide()
