@@ -1,0 +1,194 @@
+{
+  "retired_plots": [
+    50
+  ],
+  "retired_objects": [
+    "COL_Outer500_Frame_50",
+    "Outer500_Condenser_50_01",
+    "Outer500_Household_095_chair_0",
+    "Outer500_InteriorFloor_50",
+    "Outer500_Joinery_50"
+  ],
+  "replacement_meshes": [
+    "COLH_Outer500_Household_contact",
+    "COL_Outer500_Building_envelopes",
+    "COL_Outer500_Retaining_and_boundaries",
+    "Outer500_Facades_and_storefronts",
+    "Outer500_Street_furniture"
+  ],
+  "new_meshes": [
+    "COL_Renai50_PublicFlagstones",
+    "COL_Renai50_LowRelicFragments",
+    "Renai50_WeatheredCoping",
+    "COL_Renai50_ReusedStoneSeats"
+  ],
+  "removed_face_counts": {
+    "COLH_Outer500_Household_contact": 6,
+    "COL_Outer500_Building_envelopes": 216,
+    "COL_Outer500_Retaining_and_boundaries": 96,
+    "Outer500_Facades_and_storefronts": 10,
+    "Outer500_Street_furniture": 299
+  },
+  "public_route": [
+    [
+      -240.4667,
+      46.1351,
+      26.970095275878908
+    ],
+    [
+      -237.0,
+      50.8,
+      27.080629943847658
+    ],
+    [
+      -234.0,
+      56.75,
+      27.743342041015627
+    ],
+    [
+      -231.3,
+      63.0,
+      28.396586059570314
+    ],
+    [
+      -228.1,
+      68.6,
+      28.77401220703125
+    ],
+    [
+      -225.3,
+      73.2,
+      28.984598754882814
+    ],
+    [
+      -222.1,
+      77.1,
+      28.95626318359375
+    ]
+  ],
+  "old_outline_en": [
+    [
+      -217.86237279020773,
+      84.9964305932562
+    ],
+    [
+      -219.73834590514585,
+      69.05065911628202
+    ],
+    [
+      -211.0955162867585,
+      68.03385563176587
+    ],
+    [
+      -209.2195431718204,
+      83.97962710874006
+    ]
+  ],
+  "old_center_en": [
+    -214.47894453848312,
+    76.51514311251104
+  ],
+  "seats": [
+    {
+      "center_en": [
+        -224.1,
+        70.5
+      ],
+      "base_z": 28.470458984375,
+      "seat_z": 28.870458984375
+    },
+    {
+      "center_en": [
+        -221.0,
+        73.45
+      ],
+      "base_z": 28.347511291503906,
+      "seat_z": 28.747511291503905
+    },
+    {
+      "center_en": [
+        -221.92,
+        80.28
+      ],
+      "base_z": 29.403770446777344,
+      "seat_z": 29.803770446777342
+    },
+    {
+      "center_en": [
+        -216.6,
+        83.95
+      ],
+      "base_z": 29.071861267089844,
+      "seat_z": 29.471861267089842
+    }
+  ],
+  "scope": "The local outdoor public route ends outside the derelict fragment. Ground follows measured game levels.",
+  "surface_textures": {
+    "Renai shallow weathered flagstones": "res://assets/chongqing_district_stone_floor_diff_2k.jpg",
+    "Renai pale broken stone nosing": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+    "Renai remnant damp coursed rubble": "res://assets/chongqing_district_stone_wall_05_diff_2k.jpg",
+    "Renai remnant worn upper stones": "res://assets/chongqing_district_stone_wall_05_diff_2k.jpg"
+  },
+  "borrowed_materials": {
+    "COLH_Outer500_Household_contact": {
+      "CQEastParentSlot000": "Door and shutter recess.001"
+    },
+    "COL_Outer500_Building_envelopes": {
+      "CQEastParentSlot001": "Grey stone walkway.001",
+      "CQEastParentSlot002": "Coursed retaining masonry.001",
+      "CQEastParentSlot003": "Aged stucco.001",
+      "CQEastParentSlot004": "Red infill brick.001",
+      "CQEastParentSlot005": "Glazed blue tile.001",
+      "CQEastParentSlot006": "Concrete bands.001",
+      "CQEastParentSlot007": "Blue grey street reflection.001",
+      "CQEastParentSlot008": "Shaded window beyond mesh.001",
+      "CQEastParentSlot009": "Flax curtain behind glazing.001",
+      "CQEastParentSlot010": "Cloud reflection.001",
+      "CQEastParentSlot011": "Painted window and rail trim.001",
+      "CQEastParentSlot012": "Door and shutter recess.002",
+      "CQEastParentSlot013": "Cream glazed wall skirting.001",
+      "CQEastParentSlot014": "Worn timber joinery.001",
+      "CQEastParentSlot015": "Worn concrete floors.001"
+    },
+    "COL_Outer500_Retaining_and_boundaries": {
+      "CQEastParentSlot016": "Grey stone walkway.002",
+      "CQEastParentSlot017": "Coursed retaining masonry.002",
+      "CQEastParentSlot018": "Concrete bands.002",
+      "CQEastParentSlot019": "Door and shutter recess.003",
+      "CQEastParentSlot020": "Aged galvanized drain pipe.001",
+      "CQEastParentSlot021": "Salvaged service-door steel.001"
+    },
+    "Outer500_Facades_and_storefronts": {
+      "CQEastParentSlot022": "Aged stucco.002",
+      "CQEastParentSlot023": "Red infill brick.002",
+      "CQEastParentSlot024": "Glazed blue tile.002",
+      "CQEastParentSlot025": "Concrete bands.003",
+      "CQEastParentSlot026": "Grey overlapping roof tiles.001",
+      "CQEastParentSlot027": "Painted window and rail trim.002",
+      "CQEastParentSlot028": "Door and shutter recess.004",
+      "CQEastParentSlot029": "Worn timber joinery.002",
+      "CQEastParentSlot030": "Faded covered market roofing.001",
+      "CQEastParentSlot031": "Aged galvanized drain pipe.002"
+    },
+    "Outer500_Street_furniture": {
+      "CQEastParentSlot032": "Aged stucco.004",
+      "CQEastParentSlot033": "Concrete bands.005",
+      "CQEastParentSlot034": "Grey overlapping roof tiles.003",
+      "CQEastParentSlot035": "Painted window and rail trim.004",
+      "CQEastParentSlot036": "Red painted steel.002",
+      "CQEastParentSlot037": "Jade painted steel.002",
+      "CQEastParentSlot038": "Ochre canvas.002",
+      "CQEastParentSlot039": "Off-white road pigment.002",
+      "CQEastParentSlot040": "Door and shutter recess.006",
+      "CQEastParentSlot041": "Canopy 0.002",
+      "CQEastParentSlot042": "Canopy 1.002",
+      "CQEastParentSlot043": "Canopy 2.002",
+      "CQEastParentSlot044": "Cream glazed wall skirting.003",
+      "CQEastParentSlot045": "Worn timber joinery.004",
+      "CQEastParentSlot046": "Weathered sheet metal.002",
+      "CQEastParentSlot047": "Faded covered market roofing.003",
+      "CQEastParentSlot048": "Used tyre casing.002",
+      "CQEastParentSlot049": "Brown earthenware.002"
+    }
+  }
+}

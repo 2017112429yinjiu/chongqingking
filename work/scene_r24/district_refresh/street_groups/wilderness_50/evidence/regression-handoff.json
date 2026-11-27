@@ -1,0 +1,98 @@
+[
+  {
+    "detail": "",
+    "name": "primary_starts_at_shelf",
+    "pass": true
+  },
+  {
+    "detail": "",
+    "name": "primary_pickup",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 83.5113569023088,
+      "end": "(-162.0288, 20.06798, -37.86618)",
+      "goals": 8,
+      "max_frame_displacement_m": 0.16396190226078,
+      "name": "primary_walk",
+      "pass": true,
+      "reached": 8,
+      "stall_contacts": []
+    },
+    "name": "primary_walk",
+    "pass": true
+  },
+  {
+    "detail": "",
+    "name": "primary_drop",
+    "pass": true
+  },
+  {
+    "detail": "",
+    "name": "primary_one_payment",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 83.5165287498385,
+      "end": "(-116.536, 13.72481, 30.58689)",
+      "goals": 8,
+      "max_frame_displacement_m": 0.107477329671383,
+      "name": "primary_return",
+      "pass": true,
+      "reached": 8,
+      "stall_contacts": []
+    },
+    "name": "primary_return",
+    "pass": true
+  },
+  {
+    "detail": "",
+    "name": "branch_starts_at_shelf",
+    "pass": true
+  },
+  {
+    "detail": "",
+    "name": "branch_pickup",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 93.8681663544849,
+      "end": "(-162.039, 20.06972, -37.90126)",
+      "goals": 7,
+      "max_frame_displacement_m": 0.0867184177041054,
+      "name": "branch_walk",
+      "pass": true,
+      "reached": 7,
+      "stall_contacts": []
+    },
+    "name": "branch_walk",
+    "pass": true
+  },
+  {
+    "detail": "",
+    "name": "branch_drop",
+    "pass": true
+  },
+  {
+    "detail": "",
+    "name": "branch_one_payment",
+    "pass": true
+  },
+  {
+    "detail": {
+      "distance_m": 93.8103013150394,
+      "end": "(-116.4421, 13.72832, 30.50153)",
+      "goals": 7,
+      "max_frame_displacement_m": 0.106918156147003,
+      "name": "branch_return",
+      "pass": true,
+      "reached": 7,
+      "stall_contacts": []
+    },
+    "name": "branch_return",
+    "pass": true
+  }
+]

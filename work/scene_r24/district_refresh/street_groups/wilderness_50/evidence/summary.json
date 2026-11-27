@@ -1,0 +1,107 @@
+{
+  "from_commit": "81ea56d8d399893a812b0ab7d264f07996e72580",
+  "materials": {
+    "Renai shallow weathered flagstones": "res://assets/chongqing_district_stone_floor_diff_2k.jpg",
+    "Renai pale broken stone nosing": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+    "Renai remnant damp coursed rubble": "res://assets/chongqing_district_stone_wall_05_diff_2k.jpg",
+    "Renai remnant worn upper stones": "res://assets/chongqing_district_stone_wall_05_diff_2k.jpg"
+  },
+  "asset_sha256": "ffde86e0c90b8c1b07766fad72b2bf8a3286d91b2f463ca885866a248fa266fa",
+  "blender_sha256": "a27259982edb3a300426a96394f318c098b21d7516cbfcdb1cc8f0af15681ced",
+  "same_camera_pairs": [
+    {
+      "frame": {
+        "eye_enu": [
+          -222.1,
+          77.1,
+          30.56
+        ],
+        "file": "50-public-edge.png",
+        "fov_deg": 64.0,
+        "target_enu": [
+          -215.8,
+          78.05,
+          29.64
+        ]
+      },
+      "pixels": [
+        900,
+        506
+      ],
+      "save_code": 0
+    },
+    {
+      "frame": {
+        "eye_enu": [
+          -230.2,
+          66.85,
+          30.55
+        ],
+        "file": "50-garden-approach.png",
+        "fov_deg": 64.0,
+        "target_enu": [
+          -217.5,
+          79.3,
+          29.66
+        ]
+      },
+      "pixels": [
+        900,
+        506
+      ],
+      "save_code": 0
+    },
+    {
+      "frame": {
+        "eye_enu": [
+          -209.2,
+          76.4,
+          29.2
+        ],
+        "file": "50-stone-side-reverse.png",
+        "fov_deg": 64.0,
+        "target_enu": [
+          -221.5,
+          77.1,
+          29.7
+        ]
+      },
+      "pixels": [
+        900,
+        506
+      ],
+      "save_code": 0
+    }
+  ],
+  "game_scene": "res://first_shift.tscn",
+  "public_walk_m": [
+    35.8729639602825,
+    35.8050880823284
+  ],
+  "parent_walk_m": [
+    35.8719604844227,
+    35.8055618871003
+  ],
+  "turn": {
+    "east_north": [
+      -222.160858154297,
+      77.0632476806641
+    ],
+    "old_center_distance_m": 7.70144414901733,
+    "old_outline_distance_m": 3.34212040901184
+  },
+  "contacts_on_path": [
+    46,
+    46
+  ],
+  "blender_sections": 54,
+  "regressions": {
+    "first": 85,
+    "market": 5,
+    "repair": 10,
+    "handoff": 12,
+    "collectibles": 15
+  },
+  "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "cloud_evidence": "/workspace/work/runtime/district-refresh/remaining-33-KxMhkZe8/remaining26-002012/E1"
+}
