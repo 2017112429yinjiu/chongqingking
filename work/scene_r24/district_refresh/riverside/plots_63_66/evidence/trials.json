@@ -1,0 +1,27 @@
+[
+  {
+    "attempt": "initial-strip-build",
+    "log": "/workspace/work/runtime/district-refresh/new-priority/west/riverside-plots-63-66/build-01.log",
+    "observed": "66号新生成所有权有2个相同面指纹，原存储源和当前捐赠源均无此面。",
+    "revision": "验证2面确实不在任何生效源后，按确定指纹的例外继续，其他缺失仍报错。",
+    "detail": "/workspace/work/runtime/district-refresh/new-priority/west/riverside-plots-63-66/ownership-detail.log"
+  },
+  {
+    "attempt": "initial-source-probe",
+    "log": "/workspace/work/runtime/district-refresh/new-priority/west/riverside-plots-63-66/reopen-editable-01.log",
+    "observed": "弯道入点贴铺装端线，外侧断面柱线无新铺装。",
+    "revision": "两条铺地延伸到步行测线外。道路接收断面微移29毫米，避开精确的裁切缝。"
+  },
+  {
+    "attempt": "first-park-entry",
+    "log": "/workspace/work/runtime/district-refresh/patched/changbin-park-v04/engine.log",
+    "observed": "玩家起步点贴到62号公厕外墙，角色中心被推开0.219米，正常站位检查失败。",
+    "revision": "沿62原门前人行带，从东端绕到公园南侧路线。",
+    "record": "park-initial-entry-failure.json"
+  },
+  {
+    "attempt": "check-only",
+    "log": "/workspace/work/runtime/district-refresh/new-priority/west/riverside-plots-63-66/parse-04.log",
+    "observed": "默认用户目录只读导致Godot检查模式崩溃。改用原云端XDG目录后脚本语法检查通过。"
+  }
+]

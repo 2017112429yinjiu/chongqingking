@@ -14,8 +14,9 @@ tracked = plan["new_meshes"] + plan["replacement_meshes"]
 park59 = objects.get("COL_Park59_PublicPaving")
 park61 = objects.get("Park61_WestParkEdgePath")
 park_finish = objects.get("ParkEdge_WestFoldGreyReturn")
+changbin = objects.get("COL_Changbin_GarageSideWalk")
 override_libraries = {}
-for layer,manifest in ((park59,"park-plot59.json"),(park61,"park-plot61.json"),(park_finish,"park-edge-finish.json")):
+for layer,manifest in ((park59,"park-plot59.json"),(park61,"park-plot61.json"),(park_finish,"park-edge-finish.json"),(changbin,"changbin-bend-and-edge.json")):
     if layer:
         park_plan = json.loads((assets / manifest).read_bytes())
         tracked = [name for name in tracked if name not in park_plan["retired_objects"]]

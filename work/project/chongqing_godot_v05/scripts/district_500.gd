@@ -36,6 +36,8 @@ const PARK_PLOT_61 := "res://assets/district_500/park-plot61.glb"
 const PARK_PLOT_61_SITE := "res://assets/district_500/park-plot61.json"
 const PARK_EDGE_FINISH := "res://assets/district_500/park-edge-finish.glb"
 const PARK_EDGE_FINISH_SITE := "res://assets/district_500/park-edge-finish.json"
+const CHANGBIN_BEND := "res://assets/district_500/changbin-bend-and-edge.glb"
+const CHANGBIN_BEND_SITE := "res://assets/district_500/changbin-bend-and-edge.json"
 
 static func install(city: Node3D) -> Dictionary:
 	var district := (load(MODEL) as PackedScene).instantiate() as Node3D
@@ -109,6 +111,10 @@ static func install(city: Node3D) -> Dictionary:
 												if not "--qa-without-park-edge-finish" in OS.get_cmdline_user_args():
 													install_street_group(district, PARK_EDGE_FINISH, PARK_EDGE_FINISH_SITE, "RiversideParkEdgeFinish")
 													finish_park_trees(district)
+													if not "--qa-without-changbin-bend" in OS.get_cmdline_user_args():
+														install_street_group(district, CHANGBIN_BEND, CHANGBIN_BEND_SITE, "ChangbinBendAndParkEdge")
+														var changbin: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(CHANGBIN_BEND_SITE))
+														retired_bridge_plots.append_array(changbin.retired_plots)
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -277,6 +283,7 @@ static func install(city: Node3D) -> Dictionary:
 		"park_plot59_sha256": FileAccess.get_sha256(PARK_PLOT_59),
 		"park_plot61_sha256": FileAccess.get_sha256(PARK_PLOT_61),
 		"park_edge_finish_sha256": FileAccess.get_sha256(PARK_EDGE_FINISH),
+		"changbin_bend_sha256": FileAccess.get_sha256(CHANGBIN_BEND),
 		"retired_internal_context": local_frame != null, "osm_building_ids": retire}
 
 
@@ -414,6 +421,14 @@ static func start_exploration(scene: Node3D) -> void:
 		if not street.is_empty():
 			scene.explorer.set_walk_origin(street.position + Vector3.UP * .035,
 				enu(plan.street_eye_target_east_north_up))
+	elif "--changbin-bend" in OS.get_cmdline_user_args() or "--changbin-park-edge" in OS.get_cmdline_user_args():
+		var routes: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(CHANGBIN_BEND_SITE)).routes
+		var route: Dictionary = routes.bend if "--changbin-bend" in OS.get_cmdline_user_args() else routes.park
+		var start: Array = route.stations[0]
+		var street := collision.raycast_ground(scene, Vector3(start[0], route.start_ray_height_m, -start[1]), 6.0)
+		if not street.is_empty():
+			var aim: Array = route.stations[1]
+			scene.explorer.set_walk_origin(street.position + Vector3.UP * .035, Vector3(aim[0], street.position.y, -aim[1]))
 	elif "--park-59" in OS.get_cmdline_user_args() or "--park-61" in OS.get_cmdline_user_args():
 		var site := PARK_PLOT_61_SITE if "--park-61" in OS.get_cmdline_user_args() else PARK_PLOT_59_SITE
 		var park: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(site))
