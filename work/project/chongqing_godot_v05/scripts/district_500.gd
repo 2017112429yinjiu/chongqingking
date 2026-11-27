@@ -30,6 +30,8 @@ const PARK_PLOT_57 := "res://assets/district_500/park-plot57.glb"
 const PARK_PLOT_57_SITE := "res://assets/district_500/park-plot57.json"
 const BRIDGE_PARK := "res://assets/district_500/bridge-park.glb"
 const BRIDGE_PARK_SITE := "res://assets/district_500/bridge-park.json"
+const PARK_PLOT_59 := "res://assets/district_500/park-plot59.glb"
+const PARK_PLOT_59_SITE := "res://assets/district_500/park-plot59.json"
 
 static func install(city: Node3D) -> Dictionary:
 	var district := (load(MODEL) as PackedScene).instantiate() as Node3D
@@ -92,6 +94,10 @@ static func install(city: Node3D) -> Dictionary:
 										install_street_group(district, BRIDGE_PARK, BRIDGE_PARK_SITE, "NanjimenBridgePark")
 										var bridge: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(BRIDGE_PARK_SITE))
 										retired_bridge_plots = bridge.parking.retired_trial_plots
+										if not "--qa-without-park-plot59" in OS.get_cmdline_user_args():
+											install_street_group(district, PARK_PLOT_59, PARK_PLOT_59_SITE, "RiversideParkPlot59")
+											var park: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(PARK_PLOT_59_SITE))
+											retired_bridge_plots.append(park.replaced_plot)
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -257,6 +263,7 @@ static func install(city: Node3D) -> Dictionary:
 		"market_stall_row_sha256": FileAccess.get_sha256(MARKET_STALL_ROW),
 		"park_plot57_sha256": FileAccess.get_sha256(PARK_PLOT_57),
 		"bridge_park_sha256": FileAccess.get_sha256(BRIDGE_PARK),
+		"park_plot59_sha256": FileAccess.get_sha256(PARK_PLOT_59),
 		"retired_internal_context": local_frame != null, "osm_building_ids": retire}
 
 
@@ -378,6 +385,13 @@ static func start_exploration(scene: Node3D) -> void:
 		if not street.is_empty():
 			scene.explorer.set_walk_origin(street.position + Vector3.UP * .035,
 				enu(plan.street_eye_target_east_north_up))
+	elif "--park-59" in OS.get_cmdline_user_args():
+		var park: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(PARK_PLOT_59_SITE))
+		var start: Array = park.route_east_north[0]
+		var ground := collision.raycast_ground(scene,Vector3(start[0],6.0,-start[1]),12.0)
+		if not ground.is_empty():
+			var next: Array = park.route_east_north[1]
+			scene.explorer.set_walk_origin(ground.position+Vector3.UP*.035,Vector3(next[0],ground.position.y,-next[1]))
 	elif "--west-court" in OS.get_cmdline_user_args():
 		var plan: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(WEST_COURT_SITE))
 		var ramp: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(WEST_RAMP_SITE))

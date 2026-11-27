@@ -1,0 +1,104 @@
+{
+  "id": 61,
+  "old_plot_east_north": [
+    -43.507302419377744,
+    -193.1399393074638
+  ],
+  "old_trial_rotated_ring_east_north": [
+    [
+      -37.76418640462556,
+      -186.53506000648724
+    ],
+    [
+      -50.985350251955154,
+      -188.59168549384964
+    ],
+    [
+      -49.25041843412993,
+      -199.74481860844037
+    ],
+    [
+      -36.029254586800334,
+      -197.68819312107797
+    ]
+  ],
+  "registered_osm_at_centre": [],
+  "registered_overture_at_centre": [],
+  "separate_street_camera": {
+    "panoid": "0902920012230514163423679AU",
+    "date": "2023-05-14",
+    "heading_deg": 130,
+    "camera_to_trial_center_m": 26.9,
+    "frame_url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=0902920012230514163423679AU&heading=130&pitch=0&fovy=80&width=900&height=560",
+    "wide_url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=0902920012230514163423679AU&heading=130&pitch=-6&fovy=104&width=900&height=560",
+    "metadata_url": "https://mapsv0.bdimg.com/?qt=sdata&sid=0902920012230514163423679AU",
+    "source_xy": [
+      1186388726,
+      342523412
+    ],
+    "observation": "顺长滨路向下游，车库留在左侧、园边树带留在右侧。围挡后准确低设施与门路仍不可识别；补园侧铺地和落地树带。",
+    "temporary_build_site_in_reference": true,
+    "camera_game_east_north": [
+      -64.1416,
+      -175.7522
+    ],
+    "distance_rounding_residual_m": 0.101
+  },
+  "newspaper": {
+    "url": "https://epaper.cqrb.cn/cqrb/2023-10/26/004/cqrb20231026004.pdf",
+    "approx_original_photo_point": [
+      1665,
+      616
+    ],
+    "observation": "屋位在梁投影和树冠遮挡处。向旁边可核顺道路的树带，无可靠屋角。"
+  },
+  "wayback": [
+    {
+      "item": "https://www.arcgis.com/home/item.html?id=24efa4fabd92463d805bfd82ef8f8b32",
+      "layer": 6543,
+      "src_date_from_desktop": "2024-03-25",
+      "tiles_zoom_row_cols": [
+        19,
+        217060,
+        [
+          417337,
+          417338,
+          417339
+        ]
+      ],
+      "tile_sha256": {
+        "417337": "cc2231e3fee2f3cb0ad99a2b753a47a676ea3d3888bded54c371a0c982acac42",
+        "417338": "3b1ef75efd5e8205af4d595187626b6a3b070703130a1b19558cfb21f8a19b4e",
+        "417339": "1a8fe00f70e7c73541da4e34d2859fa7c899b2b0be28bd5b2254cd70aba79b48"
+      },
+      "local_observation": "叠加旧59旋转轮廓，可辨浅砂边、蓝白折线路和窄草带，形态跨过旧住宅中心及轮廓。",
+      "observation": "2024 图独立投回旧61中心与四角，绿色树冠连续占大部，西南见零碎浅色园路；看不清正交立面或屋檐。"
+    },
+    {
+      "item": "https://www.arcgis.com/home/item.html?id=b4c5c1b59c4141c5b503335b5baa2df4",
+      "layer": 22869,
+      "src_date_from_desktop": "2025-05-20",
+      "tiles_zoom_row_cols": [
+        19,
+        217060,
+        [
+          417337,
+          417338,
+          417339
+        ]
+      ],
+      "tile_sha256": {
+        "417337": "765f016e5c20d3d173023e4573340d78d3011e1384e40a6605092026f4874dd9",
+        "417338": "c5cf0f9d111ce6429b2db276ea109db8d72a5df6eaac199adf98a5ebb7667215",
+        "417339": "acd6056e10b4890883e593cd01285aa4cb4802adad70b892a4aa6fcc4210517f"
+      },
+      "local_observation": "叠加旧59旋转轮廓，可辨浅砂边、蓝白折线路和窄草带，形态跨过旧住宅中心及轮廓。",
+      "observation": "2025 图树冠与阴影密集，屋位内无可配准的四条边。61与开放的59浅砂区相隔约28米。"
+    }
+  ],
+  "works_description": {
+    "url": "https://www.cqyz.gov.cn/zwgk_229/jytabl/zxwytabl/202206/t20220609_10791342.html",
+    "observation": "资料举既有建筑改造、茶舍、运动区和公厕，全园口径，未给相应61位置。"
+  },
+  "decision": "保持原游戏玩法房，仅保留桥梁批已经确认的园边路线。树下设施或房屋底板待补无树遮挡的同址照片或竣工图。"
+}

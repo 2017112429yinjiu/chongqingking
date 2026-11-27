@@ -1,0 +1,166 @@
+{
+  "editable": {
+    "blender": "4.3.2",
+    "surfaces": [
+      {
+        "spot": "old house centre",
+        "contact_enu": [
+          -71.72799682617188,
+          -191.89100646972656,
+          0.6129698753356934
+        ],
+        "material": "Park 59 gray modular flagstones"
+      },
+      {
+        "spot": "shallow sand",
+        "contact_enu": [
+          -70.37799835205078,
+          -194.43099975585938,
+          0.6214351654052734
+        ],
+        "material": "Park 59 pale warm compacted sand"
+      },
+      {
+        "spot": "tree plaza",
+        "contact_enu": [
+          -68.64800262451172,
+          -184.55099487304688,
+          1.033444881439209
+        ],
+        "material": "Park 59 gray modular flagstones"
+      },
+      {
+        "spot": "pale blue paving",
+        "contact_enu": [
+          -82.11799621582031,
+          -189.96099853515625,
+          -0.023745059967041016
+        ],
+        "material": "Park 59 desaturated pale blue park paving"
+      }
+    ],
+    "paving_faces": 1867,
+    "packed_textures": [
+      "chongqing_district_brown_mud_leaves_01_diff_2k.jpg",
+      "chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+      "chongqing_district_stone_floor_diff_2k.jpg",
+      "chongqing_district_tile_blue_v4_diff.jpg"
+    ]
+  },
+  "composed": {
+    "blender": "4.3.2",
+    "surfaces": [
+      {
+        "spot": "old house centre",
+        "contact_enu": [
+          -71.72799682617188,
+          -191.89100646972656,
+          0.6129698753356934
+        ],
+        "material": "Park 59 gray modular flagstones"
+      },
+      {
+        "spot": "shallow sand",
+        "contact_enu": [
+          -70.37799835205078,
+          -194.43099975585938,
+          0.6214351654052734
+        ],
+        "material": "Park 59 pale warm compacted sand"
+      },
+      {
+        "spot": "tree plaza",
+        "contact_enu": [
+          -68.64800262451172,
+          -184.55099487304688,
+          1.033444881439209
+        ],
+        "material": "Park 59 gray modular flagstones"
+      },
+      {
+        "spot": "pale blue paving",
+        "contact_enu": [
+          -82.11799621582031,
+          -189.96099853515625,
+          -0.023745059967041016
+        ],
+        "material": "Park 59 desaturated pale blue park paving"
+      }
+    ],
+    "paving_faces": 1867,
+    "packed_textures": [
+      "chongqing_district_brown_mud_leaves_01_diff_2k.jpg",
+      "chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+      "chongqing_district_stone_floor_diff_2k.jpg",
+      "chongqing_district_tile_blue_v4_diff.jpg"
+    ]
+  },
+  "retired_shell_control": [
+    [
+      "COL_Outer500_Frame_59",
+      7.19,
+      1.0
+    ],
+    [
+      "COL_Outer500_Building_envelopes",
+      4.06,
+      1.0
+    ],
+    [
+      "COL_Outer500_Surface_03_01",
+      0.553,
+      0.999
+    ]
+  ],
+  "open_ground_center": [
+    [
+      "COL_Park59_PublicPaving",
+      0.614,
+      0.999
+    ],
+    [
+      "COL_Outer500_Surface_03_01",
+      0.553,
+      0.999
+    ]
+  ],
+  "pedestrian_start": {
+    "distance_to_road_axis_m": 7.65798234939575,
+    "floor": [
+      [
+        "COL_Park59_PublicPaving",
+        0.48,
+        0.996
+      ],
+      [
+        "COL_Outer500_Surface_03_01",
+        0.419,
+        0.996
+      ]
+    ],
+    "street_enu": [
+      -75.6399993896484,
+      -181.016006469727,
+      0.481042176485062
+    ]
+  },
+  "street_return_horizontal_error_m": 0.07037668684313189,
+  "build_trials": [
+    "Blender 4.3.2 tessellation returns indices; first build stopped before export, corrected and reran.",
+    "Blender scene ray required distance keyword; reopened mesh from the successful export and reran all four visual samples.",
+    "Old path at 4.235 m hit COL_Outer500_Building_envelopes; raw physics result is separate.",
+    "原街边近机位位于角色衣着内，已在两个控制场景用同一侧方机位另采；原生205°主机位及真实走测有效。"
+  ],
+  "old_modeled_footprint_area_m2": 116.08699287999934,
+  "final_projected_finish_areas_m2": {
+    "sand": 69.167,
+    "blue": 49.467,
+    "grass_wedge": 36.452,
+    "folded_walk": 56.011,
+    "sand_walk": 10.206,
+    "plaza_join": 4.975,
+    "blue_skirt": 14.341,
+    "sand_skirt": 36.824,
+    "plaza": 68.882
+  }
+}

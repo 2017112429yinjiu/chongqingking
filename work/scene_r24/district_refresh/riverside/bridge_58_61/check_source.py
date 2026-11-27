@@ -11,6 +11,10 @@ plan = json.loads((assets / "bridge-park.json").read_bytes())
 scene = bpy.context.scene
 objects = scene.objects
 tracked = plan["new_meshes"] + plan["replacement_meshes"]
+park59 = objects.get("COL_Park59_PublicPaving")
+if park59:
+    park_plan = json.loads((assets / "park-plot59.json").read_bytes())
+    tracked = [name for name in tracked if name not in park_plan["retired_objects"]]
 assert all(name in objects for name in tracked)
 assert all(name not in objects for name in plan["retired_objects"])
 rail = objects["COL_Nanjimen_NorthRailSteelBox"]
@@ -37,8 +41,10 @@ for site_id, position in plan["plots"].items():
     positions.append({"plot":site_id, "ground":round(loc.z, 4), "mesh":mesh.name})
 
 if bpy.data.filepath.endswith("city_and_outer.local.blend"):
-    assert all(objects[name].library == rail.library for name in tracked)
-    assert objects.get("COL_Outer500_Frame_59") and objects.get("COL_Outer500_Frame_61")
+    assert all(objects[name].library == rail.library or (
+        park59 and name in park_plan["replacement_meshes"] and objects[name].library == park59.library)
+        for name in tracked)
+    assert (objects.get("COL_Outer500_Frame_59") or park59) and objects.get("COL_Outer500_Frame_61")
     assert objects.get("COL_Park57_NorthDeckWallSeal") and objects.get("COL_Park57_StreetEntryReturn")
     pavilion = json.loads((assets / "pavilion62.json").read_bytes())
     assert all(name in objects for name in pavilion["new_meshes"])

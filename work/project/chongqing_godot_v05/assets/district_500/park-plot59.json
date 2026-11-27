@@ -1,0 +1,154 @@
+{
+  "replaced_plot": 59,
+  "independent_adjacent_plot": 61,
+  "old_footprint_east_north": [
+    [
+      -65.6496,
+      -187.2542
+    ],
+    [
+      -75.7224,
+      -185.3356
+    ],
+    [
+      -77.8408,
+      -196.4569
+    ],
+    [
+      -67.768,
+      -198.3755
+    ]
+  ],
+  "new_meshes": [
+    "COL_Park59_PublicPaving",
+    "Park59_TreeWellStoneRims",
+    "Park59_PlazaTree_1",
+    "Park59_PlazaTree_2"
+  ],
+  "replacement_meshes": [
+    "COLH_Outer500_Household_contact",
+    "COL_Outer500_Building_envelopes",
+    "COL_Outer500_Retaining_and_boundaries",
+    "Outer500_Facades_and_storefronts",
+    "Outer500_Street_furniture"
+  ],
+  "retired_objects": [
+    "COL_Outer500_Frame_59",
+    "Outer500_Condenser_59_01",
+    "Outer500_Household_120_crate_0",
+    "Outer500_InteriorFloor_59",
+    "Outer500_Joinery_59",
+    "BridgePark_Plant_11",
+    "BridgePark_Plant_12"
+  ],
+  "removed_shared_geometry": {
+    "COLH_Outer500_Household_contact": 6,
+    "COL_Outer500_Building_envelopes": 228,
+    "COL_Outer500_Retaining_and_boundaries": 60,
+    "Outer500_Facades_and_storefronts": 10,
+    "Outer500_Street_furniture": 299
+  },
+  "registered_view": {
+    "eye_enu": [
+      -64.1416015625,
+      -175.752197265625,
+      3.054343872070312
+    ],
+    "target_enu": [
+      -70.90349578857422,
+      -190.2531280517578,
+      3.054343872070312
+    ],
+    "fov_deg": 76,
+    "registered_heading_deg": 205
+  },
+  "route_east_north": [
+    [
+      -75.64,
+      -181.016
+    ],
+    [
+      -75.0,
+      -183.0
+    ],
+    [
+      -75.37,
+      -185.55
+    ],
+    [
+      -74.83,
+      -187.55
+    ],
+    [
+      -73.64,
+      -189.63
+    ],
+    [
+      -71.75,
+      -191.86
+    ],
+    [
+      -70.4,
+      -194.4
+    ]
+  ],
+  "destination_game_m": 0.6204587326049804,
+  "sections": [
+    [
+      -75.0,
+      -183.0
+    ],
+    [
+      -75.37,
+      -185.55
+    ],
+    [
+      -74.83,
+      -187.55
+    ],
+    [
+      -73.64,
+      -189.63
+    ],
+    [
+      -71.75,
+      -191.86
+    ],
+    [
+      -70.4,
+      -194.4
+    ],
+    [
+      -68.67,
+      -184.52
+    ],
+    [
+      -82.14,
+      -189.93
+    ]
+  ],
+  "finish_area_m2": {
+    "sand": 69.167,
+    "blue": 49.467,
+    "grass_wedge": 36.452,
+    "folded_walk": 56.011,
+    "sand_walk": 10.206,
+    "plaza_join": 4.975,
+    "blue_skirt": 14.341,
+    "sand_skirt": 36.824,
+    "plaza": 68.882
+  },
+  "tree_wells": [
+    [
+      -66.55,
+      -185.54,
+      0.7
+    ],
+    [
+      -63.34,
+      -187.19,
+      0.64
+    ]
+  ],
+  "paving_raised_from_existing_ground_m": 0.061
+}

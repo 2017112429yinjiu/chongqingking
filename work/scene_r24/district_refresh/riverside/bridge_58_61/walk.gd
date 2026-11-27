@@ -19,6 +19,8 @@ func site_plan() -> Dictionary:
 	check("old_trial_geometry_58_and_60", vacant.size() == (0 if baseline else plan.retired_objects.size()), vacant)
 	for id: int in [59,61,62]:
 		var name := "COL_Outer500_Frame_%02d" % id
+		if id == 59 and scene.find_child("RiversideParkPlot59",true,false):
+			name = "COL_Park59_PublicPaving"
 		if id == 62:
 			var pavilion: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(
 				"res://assets/district_500/pavilion62.json"))
