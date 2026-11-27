@@ -1,0 +1,65 @@
+{
+  "base": "5b7705100cae57972a968dc9887a53909b762656",
+  "asset_sha256": "7622184407e04b8641e479be3c549d357de74eaa649baf78eab41bdcc19203af",
+  "engine": "Godot 4.6.3",
+  "native_backend": "Mesa llvmpipe, Xvfb, OpenGL Compatibility",
+  "bridge_18": {
+    "parent": [
+      {
+        "direction": "forward",
+        "distance_m": 2.66856561199529,
+        "reached": 0,
+        "targets": 7
+      },
+      {
+        "direction": "reverse_closed_test",
+        "distance_m": 1.11126624302688,
+        "reached": 0,
+        "targets": 7
+      }
+    ],
+    "new": [
+      {
+        "direction": "forward",
+        "distance_m": 20.4005555323674,
+        "reached": 7,
+        "targets": 7,
+        "airborne_ticks": 0,
+        "deck_contact_samples": 38
+      },
+      {
+        "direction": "reverse_closed_test",
+        "distance_m": 20.400720732403,
+        "reached": 7,
+        "targets": 7,
+        "airborne_ticks": 0,
+        "deck_contact_samples": 37
+      }
+    ]
+  },
+  "lower_21": {
+    "parent_distance_m": [
+      22.5725746853277,
+      22.5092248860747
+    ],
+    "candidate_distance_m": [
+      22.53646758385,
+      22.467468669638
+    ],
+    "waypoints_each_direction": 6,
+    "floor_samples": 21,
+    "turn_gap_m": 0,
+    "first_attempt_support": 20
+  },
+  "base_layered_samples": 1680,
+  "checked_fixed_views": 4,
+  "native_shutdown_texture_leak_warnings": 2,
+  "regressions_passed": {
+    "teaching": 85,
+    "neighbor-77": 14,
+    "repair": 10,
+    "shancheng": 12,
+    "panda-17": 20
+  },
+  "cloud_evidence_directory": "/workspace/work/runtime/district-refresh/remaining-33-KxMhkZe8/A2"
+}

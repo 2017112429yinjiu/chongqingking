@@ -178,15 +178,18 @@ def paving(ground,m):
     return [path.save(),curb.save(),detail.save()],trees
 
 
-def retire(prior):
+def retire(prior, plots=PLOTS, ownership_file=HERE/"ownership.json", absent_faces=None):
     scene=bpy.context.scene
     stock=read(ASSETS/"layout.json")
-    owners=read(HERE/"ownership.json")
+    owners=read(ownership_file)
     wanted={}
-    for plot in PLOTS:
+    for plot in plots:
         for name,sets in owners[str(plot)].items():
             wanted.setdefault(name,Counter()).update(v for block in sets for v in block["faces"])
-    household=[i for i,d in enumerate(stock["household"]) if d["plot"] in PLOTS]
+    for name, absent in (absent_faces or {}).items():
+        assert Counter(absent) <= wanted[name], name
+        wanted[name] -= Counter(absent)
+    household=[i for i,d in enumerate(stock["household"]) if d["plot"] in plots]
     if household:
         with bpy.data.libraries.load(str(SCENE/"district_500/outer_district.blend"),link=True) as (_,q):
             q.objects=[STATIC_FIXTURE]
@@ -202,8 +205,8 @@ def retire(prior):
         remove_faces(ob,hits)
         replacements.append(ob)
         counts[name]=len(hits)
-    exact={f"{part}_{plot}" for plot in PLOTS for part in ("COL_Outer500_Frame","Outer500_Joinery","Outer500_InteriorFloor")}
-    prefixes=tuple(f"Outer500_Condenser_{plot}_" for plot in PLOTS)+tuple(f"Outer500_Household_{i:03d}_" for i in household)
+    exact={f"{part}_{plot}" for plot in plots for part in ("COL_Outer500_Frame","Outer500_Joinery","Outer500_InteriorFloor")}
+    prefixes=tuple(f"Outer500_Condenser_{plot}_" for plot in plots)+tuple(f"Outer500_Household_{i:03d}_" for i in household)
     retired=sorted(ob.name for ob in scene.objects if ob.name in exact or ob.name.startswith(prefixes))
     assert exact.issubset(retired),retired
     return replacements,retired,counts
