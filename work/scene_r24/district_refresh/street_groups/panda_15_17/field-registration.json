@@ -1,0 +1,1403 @@
+{
+  "source_sha256": "37c269b570deb778828e26766a62cde853d02a5e4663954612383426115e51a8",
+  "project_control": 734116601,
+  "attribution": "© OpenStreetMap contributors, ODbL 1.0",
+  "transform": {
+    "wgs_origin": [
+      106.56312502985075,
+      29.553607734328356
+    ],
+    "matrix": [
+      [
+        96916.34685975597,
+        -0.42970423471481
+      ],
+      [
+        2.2136011518369645,
+        110845.43258936639
+      ],
+      [
+        -128.4092402979525,
+        39.65397313405212
+      ]
+    ]
+  },
+  "plots": [
+    {
+      "plot": 14,
+      "center_en": [
+        231.8793346020724,
+        71.10291015248849
+      ],
+      "center_wgs": [
+        106.56684254457868,
+        29.553891467574875
+      ],
+      "outline_en": [
+        [
+          227.95352495068232,
+          77.43028340403694
+        ],
+        [
+          225.14119966269783,
+          67.9334983423669
+        ],
+        [
+          235.80514425346246,
+          64.77553690094004
+        ],
+        [
+          238.61746954144695,
+          74.27232196261008
+        ]
+      ],
+      "floor_y": 35.726116627982044,
+      "roof_y": 47.52611662798205,
+      "width": 9.904448497165113,
+      "depth": 11.12171006187613,
+      "photo": {
+        "plot": "14",
+        "sid": "0902920012230515131733751AU",
+        "heading": 128,
+        "views": [
+          {
+            "direction": "front",
+            "heading": 128,
+            "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=0902920012230515131733751AU&heading=128&pitch=0&fovy=80&width=900&height=560",
+            "file": "14-front.jpg",
+            "sha256": "7fa36de8e93ecc604a6ed340e04d794efcdea36c644ec1f817bc4d863dba752e"
+          },
+          {
+            "direction": "left",
+            "heading": 86,
+            "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=0902920012230515131733751AU&heading=86&pitch=0&fovy=80&width=900&height=560",
+            "file": "14-left.jpg",
+            "sha256": "9481f28b9621e6d1489644e1a39568762b6cc4e2438d2a25a9bd9aa6cd3bc7c3"
+          },
+          {
+            "direction": "right",
+            "heading": 170,
+            "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=0902920012230515131733751AU&heading=170&pitch=0&fovy=80&width=900&height=560",
+            "file": "14-right.jpg",
+            "sha256": "ba894fbfe614005b4041e2abc0fc1a78b1ee2b537939147c3160c986fa6dea40"
+          },
+          {
+            "direction": "reverse",
+            "heading": 308,
+            "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=0902920012230515131733751AU&heading=308&pitch=0&fovy=80&width=900&height=560",
+            "file": "14-reverse.jpg",
+            "sha256": "4fb078dd14115444c2427bbe512118f8e014da6160aa6a24a7a34e8db2be93ea"
+          }
+        ],
+        "date": "20230515",
+        "camera_en_approx": [
+          227.6825,
+          60.52748
+        ],
+        "metadata": "https://mapsv0.bdimg.com/?qt=sdata&sid=0902920012230515131733751AU",
+        "attrs": {
+          "RoadName": null,
+          "X": 1186421959,
+          "Y": 342550309,
+          "Z": 185.21,
+          "MercatorX": null,
+          "MercatorY": null,
+          "Dir": null,
+          "MoveDir": 22.46
+        },
+        "links": []
+      },
+      "observations": "蓝色施工门和砖墙、右侧人行护栏可见。正式现状围挡待核。",
+      "nearby_ways": [
+        {
+          "way": 1306489251,
+          "name": "厚慈街",
+          "tags": {
+            "highway": "residential",
+            "name": "厚慈街"
+          },
+          "distance_m": 6.533,
+          "crossing_m": 1.465,
+          "overlap_m2": null
+        },
+        {
+          "way": 176034697,
+          "name": "中兴路",
+          "tags": {
+            "highway": "tertiary",
+            "name": "中兴路",
+            "name:en": "Zhongxing Road",
+            "oneway": "yes",
+            "source": "bing, gps",
+            "surface": "asphalt"
+          },
+          "distance_m": 7.658,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        },
+        {
+          "way": 1374780312,
+          "name": "国浩·18T",
+          "tags": {
+            "landuse": "residential",
+            "name": "国浩·18T"
+          },
+          "distance_m": 13.277,
+          "crossing_m": null,
+          "overlap_m2": 0.0
+        },
+        {
+          "way": 176034707,
+          "name": "中兴路",
+          "tags": {
+            "highway": "tertiary",
+            "name": "中兴路",
+            "name:en": "Zhongxing Road",
+            "oneway": "yes",
+            "source": "bing, gps",
+            "surface": "asphalt"
+          },
+          "distance_m": 15.202,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        },
+        {
+          "way": 734116597,
+          "name": null,
+          "tags": {
+            "highway": "residential"
+          },
+          "distance_m": 17.409,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        },
+        {
+          "way": 734116596,
+          "name": null,
+          "tags": {
+            "highway": "footway"
+          },
+          "distance_m": 20.749,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        },
+        {
+          "way": 734116598,
+          "name": null,
+          "tags": {
+            "highway": "footway"
+          },
+          "distance_m": 22.337,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        },
+        {
+          "way": 1374780315,
+          "name": "T3A幢",
+          "tags": {
+            "building": "residential",
+            "building:levels": "59",
+            "name": "T3A幢"
+          },
+          "distance_m": 25.676,
+          "crossing_m": null,
+          "overlap_m2": 0.0
+        },
+        {
+          "way": 176968735,
+          "name": null,
+          "tags": {
+            "highway": "secondary_link",
+            "oneway": "yes",
+            "source": "bing, gps"
+          },
+          "distance_m": 33.183,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        },
+        {
+          "way": 1189963552,
+          "name": "中兴路",
+          "tags": {
+            "highway": "tertiary",
+            "name": "中兴路",
+            "name:en": "Zhongxing Road",
+            "oneway": "yes",
+            "source": "bing, gps",
+            "surface": "asphalt"
+          },
+          "distance_m": 33.183,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        }
+      ],
+      "tiles": [
+        {
+          "source": "current",
+          "x": 417343,
+          "y": 217056,
+          "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/217056/417343",
+          "sha256": "ece8b038510cd9f171b092e834505a8b42279c1af6b76a5b8578eebf85a67219"
+        },
+        {
+          "source": "wayback-6543",
+          "x": 417343,
+          "y": 217056,
+          "url": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/6543/19/217056/417343",
+          "sha256": "62529a6ff51efa7ec3330990812049192efb61b8a5fc5a726b4a492ef193ad75",
+          "acquisition_date": "2024-03-25",
+          "resolution_m": 0.31,
+          "absolute_accuracy_m": 8.47,
+          "point_metadata_url": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2025_r03/MapServer/4/query?f=json&where=1%3D1&inSR=4326&geometry=106.56684254457868%2C29.553891467574875&geometryType=esriGeometryPoint&spatialRel=esriSpatialRelIntersects&returnGeometry=false&outFields=%2A"
+        },
+        {
+          "source": "wayback-22869",
+          "x": 417343,
+          "y": 217056,
+          "url": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/22869/19/217056/417343",
+          "sha256": "c1285e1a3d864e2b9337fbd2a5c45438ca469f0dd0baf8f21b22c9cfd6d99766",
+          "acquisition_date": "2025-05-20",
+          "resolution_m": 0.34,
+          "absolute_accuracy_m": 8.47,
+          "point_metadata_url": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2026_r03/MapServer/4/query?f=json&where=1%3D1&inSR=4326&geometry=106.56684254457868%2C29.553891467574875&geometryType=esriGeometryPoint&spatialRel=esriSpatialRelIntersects&returnGeometry=false&outFields=%2A"
+        }
+      ]
+    },
+    {
+      "plot": 15,
+      "center_en": [
+        176.1576684713863,
+        40.523268656484476
+      ],
+      "center_wgs": [
+        106.56626760487809,
+        29.553615588922632
+      ],
+      "outline_en": [
+        [
+          174.80590478018422,
+          33.44958654724631
+        ],
+        [
+          183.09321602624715,
+          42.4629654816796
+        ],
+        [
+          177.50943216258838,
+          47.59695076572264
+        ],
+        [
+          169.22212091652545,
+          38.58357183128935
+        ]
+      ],
+      "floor_y": 26.29200715250349,
+      "roof_y": 32.19200715250349,
+      "width": 12.244203833030824,
+      "depth": 7.585278316108553,
+      "photo": {
+        "plot": "15",
+        "sid": "0902920012230515132559478AU",
+        "heading": 326,
+        "views": [
+          {
+            "direction": "front",
+            "heading": 326,
+            "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=0902920012230515132559478AU&heading=326&pitch=0&fovy=80&width=900&height=560",
+            "file": "15-front.jpg",
+            "sha256": "af7d611df9a0a5d2dac7e5add058c4fe811f7b7f3f8152e9cbf3d3d6cee60fff"
+          },
+          {
+            "direction": "left",
+            "heading": 284,
+            "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=0902920012230515132559478AU&heading=284&pitch=0&fovy=80&width=900&height=560",
+            "file": "15-left.jpg",
+            "sha256": "33b1ce8edd9b501ba615c1cb905b7ad30b6c886d3aec1e318f3b6cf739363023"
+          },
+          {
+            "direction": "right",
+            "heading": 8,
+            "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=0902920012230515132559478AU&heading=8&pitch=0&fovy=80&width=900&height=560",
+            "file": "15-right.jpg",
+            "sha256": "a11e3859dbb9781fabe1ffc2acc6aa94a89e3cddd6dcdcc455e99ce1e40ee2aa"
+          },
+          {
+            "direction": "reverse",
+            "heading": 146,
+            "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=0902920012230515132559478AU&heading=146&pitch=0&fovy=80&width=900&height=560",
+            "file": "15-reverse.jpg",
+            "sha256": "00b70675d90a4875ad5b2bf15592c298b6f1bd0cdb13f0129c7110ad995c16e7"
+          }
+        ],
+        "date": "20230515",
+        "camera_en_approx": [
+          186.24439999999998,
+          14.326519999999988
+        ],
+        "metadata": "https://mapsv0.bdimg.com/?qt=sdata&sid=0902920012230515132559478AU",
+        "attrs": {
+          "RoadName": null,
+          "X": 1186417196,
+          "Y": 342544756,
+          "Z": 181.19,
+          "MercatorX": null,
+          "MercatorY": null,
+          "Dir": null,
+          "MoveDir": 228.24
+        },
+        "links": [
+          {
+            "CPointX": 1186418160,
+            "CPointY": 342545552,
+            "DIR": 43,
+            "PID": "09029200121906291710534941L",
+            "RID": "af5c07-a3b7-af20-58d1-2dd6b1",
+            "Type": "street",
+            "X": 1186418179,
+            "Y": 342545572
+          }
+        ]
+      },
+      "observations": "中兴路熊猫古玩文化金街橙框凹门廊、浅灰平台、车行护栏、全带在店面同一侧。",
+      "nearby_ways": [
+        {
+          "way": 734116598,
+          "name": null,
+          "tags": {
+            "highway": "footway"
+          },
+          "distance_m": 7.489,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        },
+        {
+          "way": 176034707,
+          "name": "中兴路",
+          "tags": {
+            "highway": "tertiary",
+            "name": "中兴路",
+            "name:en": "Zhongxing Road",
+            "oneway": "yes",
+            "source": "bing, gps",
+            "surface": "asphalt"
+          },
+          "distance_m": 17.325,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        },
+        {
+          "way": 1189963552,
+          "name": "中兴路",
+          "tags": {
+            "highway": "tertiary",
+            "name": "中兴路",
+            "name:en": "Zhongxing Road",
+            "oneway": "yes",
+            "source": "bing, gps",
+            "surface": "asphalt"
+          },
+          "distance_m": 24.453,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        },
+        {
+          "way": 176968735,
+          "name": null,
+          "tags": {
+            "highway": "secondary_link",
+            "oneway": "yes",
+            "source": "bing, gps"
+          },
+          "distance_m": 31.93,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        },
+        {
+          "way": 734116596,
+          "name": null,
+          "tags": {
+            "highway": "footway"
+          },
+          "distance_m": 34.79,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        },
+        {
+          "way": 59146775,
+          "name": null,
+          "tags": {
+            "bridge": "yes",
+            "highway": "secondary_link",
+            "layer": "1",
+            "oneway": "yes",
+            "source": "bing, gps"
+          },
+          "distance_m": 34.825,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        },
+        {
+          "way": 176034697,
+          "name": "中兴路",
+          "tags": {
+            "highway": "tertiary",
+            "name": "中兴路",
+            "name:en": "Zhongxing Road",
+            "oneway": "yes",
+            "source": "bing, gps",
+            "surface": "asphalt"
+          },
+          "distance_m": 36.365,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        },
+        {
+          "way": 809889625,
+          "name": null,
+          "tags": {
+            "building": "residential",
+            "building:levels": "37"
+          },
+          "distance_m": 40.696,
+          "crossing_m": null,
+          "overlap_m2": 0.0
+        }
+      ],
+      "tiles": [
+        {
+          "source": "current",
+          "x": 417342,
+          "y": 217057,
+          "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/217057/417342",
+          "sha256": "451b622742ba49832aa8917fc15946193fcb77830b03c967a854715cf9501825"
+        },
+        {
+          "source": "wayback-6543",
+          "x": 417342,
+          "y": 217057,
+          "url": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/6543/19/217057/417342",
+          "sha256": "37bbb737b7fc53e4477c00479a0e8e589263de203a5c7a39f4e56bc9346a5925",
+          "acquisition_date": "2024-03-25",
+          "resolution_m": 0.31,
+          "absolute_accuracy_m": 8.47,
+          "point_metadata_url": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2025_r03/MapServer/4/query?f=json&where=1%3D1&inSR=4326&geometry=106.56626760487809%2C29.553615588922632&geometryType=esriGeometryPoint&spatialRel=esriSpatialRelIntersects&returnGeometry=false&outFields=%2A"
+        },
+        {
+          "source": "wayback-22869",
+          "x": 417342,
+          "y": 217057,
+          "url": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/22869/19/217057/417342",
+          "sha256": "4bfb7d4234132bc653fa423e4d7c086b73f2d1216f0ebafbed5958703c096848",
+          "acquisition_date": "2025-05-20",
+          "resolution_m": 0.34,
+          "absolute_accuracy_m": 8.47,
+          "point_metadata_url": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2026_r03/MapServer/4/query?f=json&where=1%3D1&inSR=4326&geometry=106.56626760487809%2C29.553615588922632&geometryType=esriGeometryPoint&spatialRel=esriSpatialRelIntersects&returnGeometry=false&outFields=%2A"
+        }
+      ]
+    },
+    {
+      "plot": 16,
+      "center_en": [
+        201.08478934461232,
+        17.604138034396197
+      ],
+      "center_wgs": [
+        106.56652481204053,
+        29.553408823343176
+      ],
+      "outline_en": [
+        [
+          201.11981203958496,
+          24.250771236607882
+        ],
+        [
+          194.46446255152912,
+          17.01233344951114
+        ],
+        [
+          201.04976664963968,
+          10.957504832184513
+        ],
+        [
+          207.7051161376955,
+          18.195942619281254
+        ]
+      ],
+      "floor_y": 20.482976667856786,
+      "roof_y": 35.23297666785679,
+      "width": 9.83303912357897,
+      "depth": 8.945791169582982,
+      "photo": {
+        "plot": "16",
+        "sid": "0902920012230515143231226AU",
+        "heading": 43,
+        "views": [
+          {
+            "direction": "front",
+            "heading": 43,
+            "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=0902920012230515143231226AU&heading=43&pitch=0&fovy=80&width=900&height=560",
+            "file": "16-front.jpg",
+            "sha256": "e9b3a7c2d92406bbe16d0b00d3ebe489e119a4b4412b07ece94bbd8aedcacec2"
+          },
+          {
+            "direction": "left",
+            "heading": 1,
+            "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=0902920012230515143231226AU&heading=1&pitch=0&fovy=80&width=900&height=560",
+            "file": "16-left.jpg",
+            "sha256": "e7d438ca000e9236d413df9fe17b123e154d8855a9b21109971003955d62b691"
+          },
+          {
+            "direction": "right",
+            "heading": 85,
+            "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=0902920012230515143231226AU&heading=85&pitch=0&fovy=80&width=900&height=560",
+            "file": "16-right.jpg",
+            "sha256": "436bcfbbedd8779d66b81ebcb85224fd4ee9e01d014b52d5a48f6fd6a2b7c233"
+          },
+          {
+            "direction": "reverse",
+            "heading": 223,
+            "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=0902920012230515143231226AU&heading=223&pitch=0&fovy=80&width=900&height=560",
+            "file": "16-reverse.jpg",
+            "sha256": "c6937554b3cdbf0cd929d767de1043079c2f409a62561b1aa6a48493886c7e2e"
+          }
+        ],
+        "date": "20230515",
+        "camera_en_approx": [
+          199.5032,
+          4.850040000000007
+        ],
+        "metadata": "https://mapsv0.bdimg.com/?qt=sdata&sid=0902920012230515143231226AU",
+        "attrs": {
+          "RoadName": null,
+          "X": 1186418720,
+          "Y": 342543617,
+          "Z": 181.17,
+          "MercatorX": null,
+          "MercatorY": null,
+          "Dir": null,
+          "MoveDir": 43.04
+        },
+        "links": []
+      },
+      "observations": "车道分流和右侧花池可见，工地板围住塔基一侧。局部现状及车道叠层待核。",
+      "nearby_ways": [
+        {
+          "way": 176968735,
+          "name": null,
+          "tags": {
+            "highway": "secondary_link",
+            "oneway": "yes",
+            "source": "bing, gps"
+          },
+          "distance_m": 1.927,
+          "crossing_m": 9.834,
+          "overlap_m2": null
+        },
+        {
+          "way": 1189963552,
+          "name": "中兴路",
+          "tags": {
+            "highway": "tertiary",
+            "name": "中兴路",
+            "name:en": "Zhongxing Road",
+            "oneway": "yes",
+            "source": "bing, gps",
+            "surface": "asphalt"
+          },
+          "distance_m": 9.359,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        },
+        {
+          "way": 1306489251,
+          "name": "厚慈街",
+          "tags": {
+            "highway": "residential",
+            "name": "厚慈街"
+          },
+          "distance_m": 10.534,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        },
+        {
+          "way": 59146775,
+          "name": null,
+          "tags": {
+            "bridge": "yes",
+            "highway": "secondary_link",
+            "layer": "1",
+            "oneway": "yes",
+            "source": "bing, gps"
+          },
+          "distance_m": 14.599,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        },
+        {
+          "way": 1374780312,
+          "name": "国浩·18T",
+          "tags": {
+            "landuse": "residential",
+            "name": "国浩·18T"
+          },
+          "distance_m": 15.021,
+          "crossing_m": null,
+          "overlap_m2": 0.0
+        },
+        {
+          "way": 176034707,
+          "name": "中兴路",
+          "tags": {
+            "highway": "tertiary",
+            "name": "中兴路",
+            "name:en": "Zhongxing Road",
+            "oneway": "yes",
+            "source": "bing, gps",
+            "surface": "asphalt"
+          },
+          "distance_m": 16.538,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        },
+        {
+          "way": 734116598,
+          "name": null,
+          "tags": {
+            "highway": "footway"
+          },
+          "distance_m": 25.962,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        },
+        {
+          "way": 176034697,
+          "name": "中兴路",
+          "tags": {
+            "highway": "tertiary",
+            "name": "中兴路",
+            "name:en": "Zhongxing Road",
+            "oneway": "yes",
+            "source": "bing, gps",
+            "surface": "asphalt"
+          },
+          "distance_m": 28.96,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        },
+        {
+          "way": 734116596,
+          "name": null,
+          "tags": {
+            "highway": "footway"
+          },
+          "distance_m": 40.811,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        }
+      ],
+      "tiles": [
+        {
+          "source": "current",
+          "x": 417342,
+          "y": 217057,
+          "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/217057/417342",
+          "sha256": "451b622742ba49832aa8917fc15946193fcb77830b03c967a854715cf9501825"
+        },
+        {
+          "source": "wayback-6543",
+          "x": 417342,
+          "y": 217057,
+          "url": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/6543/19/217057/417342",
+          "sha256": "37bbb737b7fc53e4477c00479a0e8e589263de203a5c7a39f4e56bc9346a5925",
+          "acquisition_date": "2024-03-25",
+          "resolution_m": 0.31,
+          "absolute_accuracy_m": 8.47,
+          "point_metadata_url": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2025_r03/MapServer/4/query?f=json&where=1%3D1&inSR=4326&geometry=106.56652481204053%2C29.553408823343176&geometryType=esriGeometryPoint&spatialRel=esriSpatialRelIntersects&returnGeometry=false&outFields=%2A"
+        },
+        {
+          "source": "wayback-22869",
+          "x": 417342,
+          "y": 217057,
+          "url": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/22869/19/217057/417342",
+          "sha256": "4bfb7d4234132bc653fa423e4d7c086b73f2d1216f0ebafbed5958703c096848",
+          "acquisition_date": "2025-05-20",
+          "resolution_m": 0.34,
+          "absolute_accuracy_m": 8.47,
+          "point_metadata_url": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2026_r03/MapServer/4/query?f=json&where=1%3D1&inSR=4326&geometry=106.56652481204053%2C29.553408823343176&geometryType=esriGeometryPoint&spatialRel=esriSpatialRelIntersects&returnGeometry=false&outFields=%2A"
+        }
+      ]
+    },
+    {
+      "plot": 17,
+      "center_en": [
+        158.074702921021,
+        21.021173033958945
+      ],
+      "center_wgs": [
+        106.56608102566133,
+        29.553439648648496
+      ],
+      "outline_en": [
+        [
+          156.48659195861725,
+          13.80510377403593
+        ],
+        [
+          165.45795908048424,
+          20.73607572309706
+        ],
+        [
+          159.66281388342472,
+          28.237242293881962
+        ],
+        [
+          150.69144676155773,
+          21.30627034482083
+        ]
+      ],
+      "floor_y": 25.37601797859249,
+      "roof_y": 40.126017978592486,
+      "width": 11.336833781704163,
+      "depth": 9.47898769793815,
+      "photo": {
+        "plot": "17",
+        "sid": "0902920012230515132603259AU",
+        "heading": 334,
+        "views": [
+          {
+            "direction": "front",
+            "heading": 334,
+            "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=0902920012230515132603259AU&heading=334&pitch=0&fovy=80&width=900&height=560",
+            "file": "17-front.jpg",
+            "sha256": "929db09432b2fc612c8e41d6181e68a9a45244b12afa2c2e5849015f9b0021bb"
+          },
+          {
+            "direction": "left",
+            "heading": 292,
+            "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=0902920012230515132603259AU&heading=292&pitch=0&fovy=80&width=900&height=560",
+            "file": "17-left.jpg",
+            "sha256": "8559d641b4c70628474464137b5b535ffee2a3f4d22639f6fc549b29c20325a2"
+          },
+          {
+            "direction": "right",
+            "heading": 16,
+            "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=0902920012230515132603259AU&heading=16&pitch=0&fovy=80&width=900&height=560",
+            "file": "17-right.jpg",
+            "sha256": "16ce2e3a20438997205d3ed59902a7d19d3837acac9bd18ea240bfa63f66c79b"
+          },
+          {
+            "direction": "reverse",
+            "heading": 154,
+            "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=0902920012230515132603259AU&heading=154&pitch=0&fovy=80&width=900&height=560",
+            "file": "17-reverse.jpg",
+            "sha256": "3adea944ce787461a93749f004166898afca33b5557b752a24ec549181ac7cac"
+          }
+        ],
+        "date": "20230515",
+        "camera_en_approx": [
+          164.4509,
+          -2.388360000000006
+        ],
+        "metadata": "https://mapsv0.bdimg.com/?qt=sdata&sid=0902920012230515132603259AU",
+        "attrs": {
+          "RoadName": null,
+          "X": 1186414691,
+          "Y": 342542747,
+          "Z": 179.4,
+          "MercatorX": null,
+          "MercatorY": null,
+          "Dir": null,
+          "MoveDir": 231.96
+        },
+        "links": []
+      },
+      "observations": "公馆裙房的较低店窗、公交棚、盲道、树池和低栏；与15同一条立面而为不同段。",
+      "nearby_ways": [
+        {
+          "way": 734116598,
+          "name": null,
+          "tags": {
+            "highway": "footway"
+          },
+          "distance_m": 3.153,
+          "crossing_m": 11.337,
+          "overlap_m2": null
+        },
+        {
+          "way": 176034707,
+          "name": "中兴路",
+          "tags": {
+            "highway": "tertiary",
+            "name": "中兴路",
+            "name:en": "Zhongxing Road",
+            "oneway": "yes",
+            "source": "bing, gps",
+            "surface": "asphalt"
+          },
+          "distance_m": 14.319,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        },
+        {
+          "way": 1189963552,
+          "name": "中兴路",
+          "tags": {
+            "highway": "tertiary",
+            "name": "中兴路",
+            "name:en": "Zhongxing Road",
+            "oneway": "yes",
+            "source": "bing, gps",
+            "surface": "asphalt"
+          },
+          "distance_m": 21.146,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        },
+        {
+          "way": 809889625,
+          "name": null,
+          "tags": {
+            "building": "residential",
+            "building:levels": "37"
+          },
+          "distance_m": 25.365,
+          "crossing_m": null,
+          "overlap_m2": 0.0
+        },
+        {
+          "way": 59146775,
+          "name": null,
+          "tags": {
+            "bridge": "yes",
+            "highway": "secondary_link",
+            "layer": "1",
+            "oneway": "yes",
+            "source": "bing, gps"
+          },
+          "distance_m": 29.381,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        },
+        {
+          "way": 176968735,
+          "name": null,
+          "tags": {
+            "highway": "secondary_link",
+            "oneway": "yes",
+            "source": "bing, gps"
+          },
+          "distance_m": 34.048,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        },
+        {
+          "way": 1374780311,
+          "name": "国浩·18T",
+          "tags": {
+            "landuse": "residential",
+            "name": "国浩·18T"
+          },
+          "distance_m": 39.991,
+          "crossing_m": null,
+          "overlap_m2": 0.0
+        },
+        {
+          "way": 1306489251,
+          "name": "厚慈街",
+          "tags": {
+            "highway": "residential",
+            "name": "厚慈街"
+          },
+          "distance_m": 41.16,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        }
+      ],
+      "tiles": [
+        {
+          "source": "current",
+          "x": 417342,
+          "y": 217057,
+          "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/217057/417342",
+          "sha256": "451b622742ba49832aa8917fc15946193fcb77830b03c967a854715cf9501825"
+        },
+        {
+          "source": "wayback-6543",
+          "x": 417342,
+          "y": 217057,
+          "url": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/6543/19/217057/417342",
+          "sha256": "37bbb737b7fc53e4477c00479a0e8e589263de203a5c7a39f4e56bc9346a5925",
+          "acquisition_date": "2024-03-25",
+          "resolution_m": 0.31,
+          "absolute_accuracy_m": 8.47,
+          "point_metadata_url": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2025_r03/MapServer/4/query?f=json&where=1%3D1&inSR=4326&geometry=106.56608102566133%2C29.553439648648496&geometryType=esriGeometryPoint&spatialRel=esriSpatialRelIntersects&returnGeometry=false&outFields=%2A"
+        },
+        {
+          "source": "wayback-22869",
+          "x": 417342,
+          "y": 217057,
+          "url": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/22869/19/217057/417342",
+          "sha256": "4bfb7d4234132bc653fa423e4d7c086b73f2d1216f0ebafbed5958703c096848",
+          "acquisition_date": "2025-05-20",
+          "resolution_m": 0.34,
+          "absolute_accuracy_m": 8.47,
+          "point_metadata_url": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2026_r03/MapServer/4/query?f=json&where=1%3D1&inSR=4326&geometry=106.56608102566133%2C29.553439648648496&geometryType=esriGeometryPoint&spatialRel=esriSpatialRelIntersects&returnGeometry=false&outFields=%2A"
+        }
+      ]
+    },
+    {
+      "plot": 18,
+      "center_en": [
+        176.14735270611223,
+        -2.3718485045205924
+      ],
+      "center_wgs": [
+        106.56626750727699,
+        29.553228607554065
+      ],
+      "outline_en": [
+        [
+          179.5937010890275,
+          6.485822637615051
+        ],
+        [
+          166.70654060828218,
+          -3.4703575723535085
+        ],
+        [
+          172.70100432319697,
+          -11.229519646656236
+        ],
+        [
+          185.58816480394228,
+          -1.2733394366876762
+        ]
+      ],
+      "floor_y": 20.14298762703987,
+      "roof_y": 31.94298762703987,
+      "width": 16.285098391776863,
+      "depth": 9.805008481624462,
+      "photo": {
+        "plot": "18",
+        "sid": "09029200121906291717139081L",
+        "heading": 155,
+        "views": [
+          {
+            "direction": "front",
+            "heading": 155,
+            "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200121906291717139081L&heading=155&pitch=0&fovy=80&width=900&height=560",
+            "file": "18-front.jpg",
+            "sha256": "d313608596321e04332ec192eed4f764404a1a466a6f000ced6ad79924d37633"
+          },
+          {
+            "direction": "left",
+            "heading": 113,
+            "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200121906291717139081L&heading=113&pitch=0&fovy=80&width=900&height=560",
+            "file": "18-left.jpg",
+            "sha256": "58d2455f1ce01ce1e97bf0ff3003ce903f3d159af359b204e24bc67c98d8987f"
+          },
+          {
+            "direction": "right",
+            "heading": 197,
+            "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200121906291717139081L&heading=197&pitch=0&fovy=80&width=900&height=560",
+            "file": "18-right.jpg",
+            "sha256": "c4093725cf2be7e73fd3d78c41e46d4019d126c975aece12cc216552754d3511"
+          },
+          {
+            "direction": "reverse",
+            "heading": 335,
+            "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200121906291717139081L&heading=335&pitch=0&fovy=80&width=900&height=560",
+            "file": "18-reverse.jpg",
+            "sha256": "0a84c6738c7cb5f98e0cb1fc6fe5015b2a4a0f2b81d4f2b00715c9a121a909df"
+          }
+        ],
+        "date": "20190629",
+        "camera_en_approx": [
+          174.56029999999998,
+          -9.069320000000005
+        ],
+        "metadata": "https://mapsv0.bdimg.com/?qt=sdata&sid=09029200121906291717139081L",
+        "attrs": {
+          "RoadName": null,
+          "X": 1186415853,
+          "Y": 342541944,
+          "Z": 1.8,
+          "MercatorX": null,
+          "MercatorY": null,
+          "Dir": null,
+          "MoveDir": 50.84
+        },
+        "links": [
+          {
+            "CPointX": 1186416843,
+            "CPointY": 342542040,
+            "DIR": 51,
+            "PID": "0902920012230515143221256AU",
+            "RID": "2bdcc8-5a1b-dd32-f0f6-e73b6d",
+            "Type": "street",
+            "X": 1186416934,
+            "Y": 342542113
+          }
+        ]
+      },
+      "observations": "近侧拍自上层桥面，照片能读蓝白扶手和外侧树冠。树下与桥下另定机位。",
+      "nearby_ways": [
+        {
+          "way": 59146775,
+          "name": null,
+          "tags": {
+            "bridge": "yes",
+            "highway": "secondary_link",
+            "layer": "1",
+            "oneway": "yes",
+            "source": "bing, gps"
+          },
+          "distance_m": 0.179,
+          "crossing_m": 16.285,
+          "overlap_m2": null
+        },
+        {
+          "way": 1189963552,
+          "name": "中兴路",
+          "tags": {
+            "highway": "tertiary",
+            "name": "中兴路",
+            "name:en": "Zhongxing Road",
+            "oneway": "yes",
+            "source": "bing, gps",
+            "surface": "asphalt"
+          },
+          "distance_m": 8.413,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        },
+        {
+          "way": 1306489251,
+          "name": "厚慈街",
+          "tags": {
+            "highway": "residential",
+            "name": "厚慈街"
+          },
+          "distance_m": 12.62,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        },
+        {
+          "way": 176034707,
+          "name": "中兴路",
+          "tags": {
+            "highway": "tertiary",
+            "name": "中兴路",
+            "name:en": "Zhongxing Road",
+            "oneway": "yes",
+            "source": "bing, gps",
+            "surface": "asphalt"
+          },
+          "distance_m": 15.242,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        },
+        {
+          "way": 176968735,
+          "name": null,
+          "tags": {
+            "highway": "secondary_link",
+            "oneway": "yes",
+            "source": "bing, gps"
+          },
+          "distance_m": 17.352,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        },
+        {
+          "way": 1374780312,
+          "name": "国浩·18T",
+          "tags": {
+            "landuse": "residential",
+            "name": "国浩·18T"
+          },
+          "distance_m": 18.086,
+          "crossing_m": null,
+          "overlap_m2": 0.0
+        },
+        {
+          "way": 1374780311,
+          "name": "国浩·18T",
+          "tags": {
+            "landuse": "residential",
+            "name": "国浩·18T"
+          },
+          "distance_m": 18.989,
+          "crossing_m": null,
+          "overlap_m2": 0.0
+        },
+        {
+          "way": 734116598,
+          "name": null,
+          "tags": {
+            "highway": "footway"
+          },
+          "distance_m": 26.407,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        }
+      ],
+      "tiles": [
+        {
+          "source": "current",
+          "x": 417342,
+          "y": 217057,
+          "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/217057/417342",
+          "sha256": "451b622742ba49832aa8917fc15946193fcb77830b03c967a854715cf9501825"
+        },
+        {
+          "source": "wayback-6543",
+          "x": 417342,
+          "y": 217057,
+          "url": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/6543/19/217057/417342",
+          "sha256": "37bbb737b7fc53e4477c00479a0e8e589263de203a5c7a39f4e56bc9346a5925",
+          "acquisition_date": "2024-03-25",
+          "resolution_m": 0.31,
+          "absolute_accuracy_m": 8.47,
+          "point_metadata_url": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2025_r03/MapServer/4/query?f=json&where=1%3D1&inSR=4326&geometry=106.56626750727699%2C29.553228607554065&geometryType=esriGeometryPoint&spatialRel=esriSpatialRelIntersects&returnGeometry=false&outFields=%2A"
+        },
+        {
+          "source": "wayback-22869",
+          "x": 417342,
+          "y": 217057,
+          "url": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/22869/19/217057/417342",
+          "sha256": "4bfb7d4234132bc653fa423e4d7c086b73f2d1216f0ebafbed5958703c096848",
+          "acquisition_date": "2025-05-20",
+          "resolution_m": 0.34,
+          "absolute_accuracy_m": 8.47,
+          "point_metadata_url": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2026_r03/MapServer/4/query?f=json&where=1%3D1&inSR=4326&geometry=106.56626750727699%2C29.553228607554065&geometryType=esriGeometryPoint&spatialRel=esriSpatialRelIntersects&returnGeometry=false&outFields=%2A"
+        }
+      ]
+    },
+    {
+      "plot": 21,
+      "center_en": [
+        123.64533209838946,
+        -47.69488853258418
+      ],
+      "center_wgs": [
+        106.56572579148603,
+        29.552819720406013
+      ],
+      "outline_en": [
+        [
+          128.20682665638614,
+          -38.574634945757005
+        ],
+        [
+          113.78323944304422,
+          -50.288223556844024
+        ],
+        [
+          119.08383754039279,
+          -56.815142119411355
+        ],
+        [
+          133.50742475373468,
+          -45.101553508324336
+        ]
+      ],
+      "floor_y": 17.141717944501693,
+      "roof_y": 28.941717944501693,
+      "width": 18.580851063680253,
+      "depth": 8.408151170858023,
+      "photo": {
+        "plot": "21",
+        "sid": "09029200121906291717089071L",
+        "heading": 127,
+        "views": [
+          {
+            "direction": "front",
+            "heading": 127,
+            "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200121906291717089071L&heading=127&pitch=0&fovy=80&width=900&height=560",
+            "file": "21-front.jpg",
+            "sha256": "e1ea0b000c14d7ad23042b8c57c4c4abcddaa54cb4173ba6cde6a5df3b0c24a1"
+          },
+          {
+            "direction": "left",
+            "heading": 85,
+            "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200121906291717089071L&heading=85&pitch=0&fovy=80&width=900&height=560",
+            "file": "21-left.jpg",
+            "sha256": "766a72bf1119b92addfba294a784907f009f53c53c2b7766a252f6ace93df070"
+          },
+          {
+            "direction": "right",
+            "heading": 169,
+            "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200121906291717089071L&heading=169&pitch=0&fovy=80&width=900&height=560",
+            "file": "21-right.jpg",
+            "sha256": "5b500f852525110be18d509810be68d171bd2efc68c694e1a791a1eb3ce0860d"
+          },
+          {
+            "direction": "reverse",
+            "heading": 307,
+            "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200121906291717089071L&heading=307&pitch=0&fovy=80&width=900&height=560",
+            "file": "21-reverse.jpg",
+            "sha256": "cc07f734af6acb2d31b8f71dc8980daec17a626225fb9fa3a10f414d1122b542"
+          }
+        ],
+        "date": "20190629",
+        "camera_en_approx": [
+          117.62749999999998,
+          -50.71092
+        ],
+        "metadata": "https://mapsv0.bdimg.com/?qt=sdata&sid=09029200121906291717089071L",
+        "attrs": {
+          "RoadName": null,
+          "X": 1186409309,
+          "Y": 342536939,
+          "Z": 1.8,
+          "MercatorX": null,
+          "MercatorY": null,
+          "Dir": null,
+          "MoveDir": 50.64
+        },
+        "links": []
+      },
+      "observations": "沿桥面见护栏、车道和树冠。低处向河岸一侧的桥脚和入口仍需另一机位。",
+      "nearby_ways": [
+        {
+          "way": 1374780311,
+          "name": "国浩·18T",
+          "tags": {
+            "landuse": "residential",
+            "name": "国浩·18T"
+          },
+          "distance_m": 2.969,
+          "crossing_m": null,
+          "overlap_m2": 15.848
+        },
+        {
+          "way": 59146775,
+          "name": null,
+          "tags": {
+            "bridge": "yes",
+            "highway": "secondary_link",
+            "layer": "1",
+            "oneway": "yes",
+            "source": "bing, gps"
+          },
+          "distance_m": 3.612,
+          "crossing_m": 18.584,
+          "overlap_m2": null
+        },
+        {
+          "way": 1189963552,
+          "name": "中兴路",
+          "tags": {
+            "highway": "tertiary",
+            "name": "中兴路",
+            "name:en": "Zhongxing Road",
+            "oneway": "yes",
+            "source": "bing, gps",
+            "surface": "asphalt"
+          },
+          "distance_m": 11.476,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        },
+        {
+          "way": 176034707,
+          "name": "中兴路",
+          "tags": {
+            "highway": "tertiary",
+            "name": "中兴路",
+            "name:en": "Zhongxing Road",
+            "oneway": "yes",
+            "source": "bing, gps",
+            "surface": "asphalt"
+          },
+          "distance_m": 18.116,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        },
+        {
+          "way": 734116595,
+          "name": null,
+          "tags": {
+            "highway": "residential"
+          },
+          "distance_m": 20.611,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        },
+        {
+          "way": 1328811306,
+          "name": null,
+          "tags": {
+            "highway": "footway",
+            "layer": "-1",
+            "tunnel": "yes"
+          },
+          "distance_m": 22.187,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        },
+        {
+          "way": 1374780313,
+          "name": "T2幢",
+          "tags": {
+            "building": "residential",
+            "building:levels": "42",
+            "name": "T2幢"
+          },
+          "distance_m": 26.349,
+          "crossing_m": null,
+          "overlap_m2": 0.0
+        },
+        {
+          "way": 734116598,
+          "name": null,
+          "tags": {
+            "highway": "footway"
+          },
+          "distance_m": 28.706,
+          "crossing_m": 0.0,
+          "overlap_m2": null
+        }
+      ],
+      "tiles": [
+        {
+          "source": "current",
+          "x": 417341,
+          "y": 217058,
+          "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/217058/417341",
+          "sha256": "e7ab26cb5085575ccc339271fe3b9af9bbc1078e4fe4b783e88efd1e506d29a7"
+        },
+        {
+          "source": "wayback-6543",
+          "x": 417341,
+          "y": 217058,
+          "url": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/6543/19/217058/417341",
+          "sha256": "c1b3cb35412adae7b7b9c75551205b350ce4744cf3413cdf417650f8f35fba73",
+          "acquisition_date": "2024-03-25",
+          "resolution_m": 0.31,
+          "absolute_accuracy_m": 8.47,
+          "point_metadata_url": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2025_r03/MapServer/4/query?f=json&where=1%3D1&inSR=4326&geometry=106.56572579148603%2C29.552819720406013&geometryType=esriGeometryPoint&spatialRel=esriSpatialRelIntersects&returnGeometry=false&outFields=%2A"
+        },
+        {
+          "source": "wayback-22869",
+          "x": 417341,
+          "y": 217058,
+          "url": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/22869/19/217058/417341",
+          "sha256": "f208e9c4182b09c249d37012a07d12db924ef9478c43b7535d10530f8d59dc71",
+          "acquisition_date": "2025-05-20",
+          "resolution_m": 0.34,
+          "absolute_accuracy_m": 8.47,
+          "point_metadata_url": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2026_r03/MapServer/4/query?f=json&where=1%3D1&inSR=4326&geometry=106.56572579148603%2C29.552819720406013&geometryType=esriGeometryPoint&spatialRel=esriSpatialRelIntersects&returnGeometry=false&outFields=%2A"
+        }
+      ]
+    }
+  ],
+  "external": {
+    "official_public_network": "https://ghzrzyj.cq.gov.cn/zz/yzq/zwgk/jczwgk/jytablqk_373136/202507/t20250723_14838413.html",
+    "registered_panda_public_address": "https://www.cqyz.gov.cn/zwgk_229/zcwj/xzgfxwj/202110/t20211021_9875136.html",
+    "panda_site_photo_and_use": "https://k.sina.com.cn/article_6083003591_16a9344c7001011vqy.html",
+    "public_lift_2025": "https://www.cqnews.net/1/detail/1341846153863208960/app/content_1341846153863208960.html"
+  },
+  "known_limits": "街景的升降值只用于机位线索。正射的影子、屋顶偏移与临时围挡不能确定后墙和门内。"
+}

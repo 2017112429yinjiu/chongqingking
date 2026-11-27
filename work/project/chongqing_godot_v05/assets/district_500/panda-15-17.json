@@ -1,0 +1,514 @@
+{
+  "retired_plots": [
+    15,
+    17
+  ],
+  "retired_objects": [
+    "COL_Outer500_Frame_15",
+    "COL_Outer500_Frame_17",
+    "Outer500_Condenser_15_01",
+    "Outer500_Condenser_17_01",
+    "Outer500_Condenser_17_04",
+    "Outer500_Household_057_chair_0",
+    "Outer500_Household_059_chair_0",
+    "Outer500_InteriorFloor_15",
+    "Outer500_InteriorFloor_17",
+    "Outer500_Joinery_15",
+    "Outer500_Joinery_17"
+  ],
+  "removed_face_counts": {
+    "COLH_Outer500_Household_contact": 12,
+    "COL_Outer500_Building_envelopes": 564,
+    "COL_Outer500_Retaining_and_boundaries": 36,
+    "Outer500_Facades_and_storefronts": 46,
+    "Outer500_Street_furniture": 598
+  },
+  "replacement_meshes": [
+    "COLH_Outer500_Household_contact",
+    "COL_Outer500_Building_envelopes",
+    "COL_Outer500_Retaining_and_boundaries",
+    "Outer500_Facades_and_storefronts",
+    "Outer500_Street_furniture"
+  ],
+  "new_meshes": [
+    "COL_Panda228_PublicFlagstones",
+    "COL_Panda228_CurbsAndLedge",
+    "Panda228_TactileAndShelter",
+    "COL_Panda228_PodiumStructure",
+    "Panda228_StoneRevealsAndShops"
+  ],
+  "route": {
+    "15": {
+      "stations": [
+        [
+          187.14537048339844,
+          38.741851806640625
+        ],
+        [
+          184.4336700439453,
+          38.3227424621582
+        ],
+        [
+          181.7067108154297,
+          38.739498138427734
+        ],
+        [
+          179.0489501953125,
+          38.57727813720703
+        ],
+        [
+          177.5421905517578,
+          39.117427825927734
+        ],
+        [
+          176.8329315185547,
+          39.820255279541016
+        ]
+      ],
+      "start_ray_y": 26.095635986328126,
+      "destination_y": 25.01607666015625,
+      "street_focus": [
+        176.8329315185547,
+        39.820255279541016,
+        26.66607666015625
+      ],
+      "return_focus": [
+        187.14537048339844,
+        38.741851806640625,
+        26.245635986328125
+      ],
+      "original_grade": [
+        [
+          187.14537048339844,
+          38.741851806640625,
+          24.745635986328125
+        ],
+        [
+          184.4336700439453,
+          38.3227424621582,
+          24.630203247070312
+        ],
+        [
+          181.7067108154297,
+          38.739498138427734,
+          24.563568115234375
+        ],
+        [
+          179.0489501953125,
+          38.57727813720703,
+          24.579383850097656
+        ],
+        [
+          177.5421905517578,
+          39.117427825927734,
+          24.74750518798828
+        ],
+        [
+          176.8329315185547,
+          39.820255279541016,
+          24.91607666015625
+        ]
+      ]
+    },
+    "17": {
+      "stations": [
+        [
+          150.30120849609375,
+          12.00550365447998
+        ],
+        [
+          152.7480010986328,
+          13.990602493286133
+        ],
+        [
+          155.17543029785156,
+          15.93538761138916
+        ],
+        [
+          157.081787109375,
+          17.81789207458496
+        ],
+        [
+          159.34002685546875,
+          20.340063095092773
+        ],
+        [
+          160.3567352294922,
+          22.57048797607422
+        ]
+      ],
+      "start_ray_y": 24.67072448730469,
+      "destination_y": 24.381036376953126,
+      "street_focus": [
+        160.3567352294922,
+        22.57048797607422,
+        26.031036376953125
+      ],
+      "return_focus": [
+        150.30120849609375,
+        12.00550365447998,
+        24.820724487304688
+      ],
+      "original_grade": [
+        [
+          150.30120849609375,
+          12.00550365447998,
+          23.320724487304688
+        ],
+        [
+          152.7480010986328,
+          13.990602493286133,
+          23.452957153320312
+        ],
+        [
+          155.17543029785156,
+          15.93538761138916,
+          23.615585327148438
+        ],
+        [
+          157.081787109375,
+          17.81789207458496,
+          23.782958984375
+        ],
+        [
+          159.34002685546875,
+          20.340063095092773,
+          24.031005859375
+        ],
+        [
+          160.3567352294922,
+          22.57048797607422,
+          24.281036376953125
+        ]
+      ]
+    }
+  },
+  "minor_cross_sections": [
+    [
+      [
+        153.94590759277344,
+        10.731210708618164
+      ],
+      [
+        153.11886596679688,
+        11.798213958740234
+      ],
+      [
+        151.9548797607422,
+        13.299922943115234
+      ],
+      [
+        150.85214233398438,
+        14.722594261169434
+      ],
+      [
+        150.20889282226562,
+        15.552485466003418
+      ],
+      [
+        149.1674346923828,
+        16.896120071411133
+      ]
+    ],
+    [
+      [
+        160.66407775878906,
+        15.938530921936035
+      ],
+      [
+        159.8370361328125,
+        17.005535125732422
+      ],
+      [
+        158.6730499267578,
+        18.50724220275879
+      ],
+      [
+        157.5703125,
+        19.929914474487305
+      ],
+      [
+        156.92706298828125,
+        20.75980567932129
+      ],
+      [
+        155.88560485839844,
+        22.103439331054688
+      ]
+    ],
+    [
+      [
+        165.01112365722656,
+        19.30797576904297
+      ],
+      [
+        164.18408203125,
+        20.37497901916504
+      ],
+      [
+        163.0200958251953,
+        21.876686096191406
+      ],
+      [
+        161.9173583984375,
+        23.299358367919922
+      ],
+      [
+        161.27410888671875,
+        24.129249572753906
+      ],
+      [
+        160.23265075683594,
+        25.472883224487305
+      ]
+    ],
+    [
+      [
+        170.14854431152344,
+        23.290042877197266
+      ],
+      [
+        169.32150268554688,
+        24.357046127319336
+      ],
+      [
+        168.1575164794922,
+        25.858753204345703
+      ],
+      [
+        167.05477905273438,
+        27.28142547607422
+      ],
+      [
+        166.41152954101562,
+        28.111316680908203
+      ],
+      [
+        165.3700714111328,
+        29.4549503326416
+      ]
+    ],
+    [
+      [
+        175.04885864257812,
+        27.08832550048828
+      ],
+      [
+        174.22181701660156,
+        28.15532875061035
+      ],
+      [
+        173.05783081054688,
+        29.65703582763672
+      ],
+      [
+        171.95509338378906,
+        31.079708099365234
+      ],
+      [
+        171.3118438720703,
+        31.90959930419922
+      ],
+      [
+        170.2703857421875,
+        33.25323486328125
+      ]
+    ],
+    [
+      [
+        181.05569458007812,
+        31.744281768798828
+      ],
+      [
+        180.22865295410156,
+        32.811283111572266
+      ],
+      [
+        179.06466674804688,
+        34.312992095947266
+      ],
+      [
+        177.96192932128906,
+        35.73566436767578
+      ],
+      [
+        177.3186798095703,
+        36.565555572509766
+      ],
+      [
+        176.2772216796875,
+        37.9091911315918
+      ]
+    ],
+    [
+      [
+        184.84947204589844,
+        34.68488693237305
+      ],
+      [
+        184.02243041992188,
+        35.751888275146484
+      ],
+      [
+        182.8584442138672,
+        37.253597259521484
+      ],
+      [
+        181.75570678710938,
+        38.67626953125
+      ],
+      [
+        181.11245727539062,
+        39.506160736083984
+      ],
+      [
+        180.0709991455078,
+        40.849796295166016
+      ]
+    ],
+    [
+      [
+        188.40615844726562,
+        37.44170379638672
+      ],
+      [
+        187.57911682128906,
+        38.508705139160156
+      ],
+      [
+        186.41513061523438,
+        40.010414123535156
+      ],
+      [
+        185.31239318847656,
+        41.43308639526367
+      ],
+      [
+        184.6691436767578,
+        42.262977600097656
+      ],
+      [
+        183.627685546875,
+        43.60661315917969
+      ]
+    ]
+  ],
+  "trees": [
+    {
+      "name": "Panda228_Tree_01",
+      "donor": "Outer500_Plant_014",
+      "enu": [
+        150.7268524169922,
+        9.00788402557373,
+        23.308480529785154
+      ],
+      "yaw": 0.2,
+      "scale": 0.96
+    },
+    {
+      "name": "Panda228_Tree_02",
+      "donor": "Outer500_Plant_014",
+      "enu": [
+        163.37281799316406,
+        18.809900283813477,
+        23.70964935302734
+      ],
+      "yaw": 1.0,
+      "scale": 1.09
+    },
+    {
+      "name": "Panda228_Tree_03",
+      "donor": "Outer500_Plant_014",
+      "enu": [
+        171.197509765625,
+        24.874897003173828,
+        23.82987335205078
+      ],
+      "yaw": -0.4,
+      "scale": 0.91
+    },
+    {
+      "name": "Panda228_Tree_04",
+      "donor": "Outer500_Plant_014",
+      "enu": [
+        177.87615966796875,
+        30.051586151123047,
+        23.904191284179685
+      ],
+      "yaw": 0.6,
+      "scale": 1.02
+    }
+  ],
+  "portal_sign": {
+    "enu": [
+      177.3580322265625,
+      39.126502990722656,
+      29.18
+    ],
+    "yaw": 0.6593787970956674
+  },
+  "nonpublic_depth_behind_portal": 7.93,
+  "route_axis": "OpenStreetMap footway 734116598",
+  "borrowed_materials": {
+    "COLH_Outer500_Household_contact": {
+      "CQEastParentSlot000": "Door and shutter recess.001"
+    },
+    "COL_Outer500_Building_envelopes": {
+      "CQEastParentSlot001": "Grey stone walkway.001",
+      "CQEastParentSlot002": "Coursed retaining masonry.001",
+      "CQEastParentSlot003": "Aged stucco.001",
+      "CQEastParentSlot004": "Red infill brick.001",
+      "CQEastParentSlot005": "Glazed blue tile.001",
+      "CQEastParentSlot006": "Concrete bands.001",
+      "CQEastParentSlot007": "Blue grey street reflection.001",
+      "CQEastParentSlot008": "Shaded window beyond mesh.001",
+      "CQEastParentSlot009": "Flax curtain behind glazing.001",
+      "CQEastParentSlot010": "Cloud reflection.001",
+      "CQEastParentSlot011": "Painted window and rail trim.001",
+      "CQEastParentSlot012": "Door and shutter recess.002",
+      "CQEastParentSlot013": "Cream glazed wall skirting.001",
+      "CQEastParentSlot014": "Worn timber joinery.001",
+      "CQEastParentSlot015": "Worn concrete floors.001"
+    },
+    "COL_Outer500_Retaining_and_boundaries": {
+      "CQEastParentSlot016": "Grey stone walkway.002",
+      "CQEastParentSlot017": "Coursed retaining masonry.002",
+      "CQEastParentSlot018": "Concrete bands.002",
+      "CQEastParentSlot019": "Door and shutter recess.003",
+      "CQEastParentSlot020": "Aged galvanized drain pipe.001",
+      "CQEastParentSlot021": "Salvaged service-door steel.001"
+    },
+    "Outer500_Facades_and_storefronts": {
+      "CQEastParentSlot022": "Aged stucco.002",
+      "CQEastParentSlot023": "Red infill brick.002",
+      "CQEastParentSlot024": "Glazed blue tile.002",
+      "CQEastParentSlot025": "Concrete bands.003",
+      "CQEastParentSlot026": "Grey overlapping roof tiles.001",
+      "CQEastParentSlot027": "Painted window and rail trim.002",
+      "CQEastParentSlot028": "Door and shutter recess.004",
+      "CQEastParentSlot029": "Worn timber joinery.002",
+      "CQEastParentSlot030": "Faded covered market roofing.001",
+      "CQEastParentSlot031": "Aged galvanized drain pipe.002"
+    },
+    "Outer500_Street_furniture": {
+      "CQEastParentSlot032": "Aged stucco.004",
+      "CQEastParentSlot033": "Concrete bands.005",
+      "CQEastParentSlot034": "Grey overlapping roof tiles.003",
+      "CQEastParentSlot035": "Painted window and rail trim.004",
+      "CQEastParentSlot036": "Red painted steel.002",
+      "CQEastParentSlot037": "Jade painted steel.002",
+      "CQEastParentSlot038": "Ochre canvas.002",
+      "CQEastParentSlot039": "Off-white road pigment.002",
+      "CQEastParentSlot040": "Door and shutter recess.006",
+      "CQEastParentSlot041": "Canopy 0.002",
+      "CQEastParentSlot042": "Canopy 1.002",
+      "CQEastParentSlot043": "Canopy 2.002",
+      "CQEastParentSlot044": "Cream glazed wall skirting.003",
+      "CQEastParentSlot045": "Worn timber joinery.004",
+      "CQEastParentSlot046": "Weathered sheet metal.002",
+      "CQEastParentSlot047": "Faded covered market roofing.003",
+      "CQEastParentSlot048": "Used tyre casing.002",
+      "CQEastParentSlot049": "Brown earthenware.002"
+    }
+  }
+}

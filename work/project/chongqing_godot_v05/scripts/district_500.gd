@@ -18,6 +18,8 @@ const GUOCO := "res://assets/district_500/guoco-frontages.glb"
 const GUOCO_SITE := "res://assets/district_500/guoco-frontages.json"
 const HOUCI := "res://assets/district_500/houci-77.glb"
 const HOUCI_SITE := "res://assets/district_500/houci-77.json"
+const PANDA := "res://assets/district_500/panda-15-17.glb"
+const PANDA_SITE := "res://assets/district_500/panda-15-17.json"
 const PUBLIC_EDGES := "res://assets/district_500/public-edges.glb"
 const PUBLIC_EDGES_SITE := "res://assets/district_500/public-edges.json"
 const XINGCHEN := "res://assets/district_500/xingchen.glb"
@@ -135,6 +137,33 @@ static func install(city: Node3D) -> Dictionary:
 	if houci_active:
 		install_street_group(district, HOUCI, HOUCI_SITE, "HouciStreet77")
 		retired_bridge_plots.append(77)
+	var panda_active := houci_active and not "--qa-without-panda-frontage" in OS.get_cmdline_user_args()
+	if panda_active:
+		install_street_group(district, PANDA, PANDA_SITE, "PandaPublicFrontage")
+		var panda: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(PANDA_SITE))
+		retired_bridge_plots.append_array(panda.retired_plots)
+		var frontage := district.get_node("PandaPublicFrontage")
+		for spec: Dictionary in panda.trees:
+			var donor := district.find_child(spec.donor, true, false) as MeshInstance3D
+			var tree := donor.duplicate() as MeshInstance3D
+			tree.name = spec.name
+			tree.position = enu(spec.enu)
+			tree.rotation.y += spec.yaw
+			tree.scale *= spec.scale
+			frontage.add_child(tree)
+		var site_font := SystemFont.new()
+		site_font.font_names = PackedStringArray(["Noto Sans CJK SC", "Microsoft YaHei"])
+		var landmark := Label3D.new()
+		landmark.name = "PandaArcadeName"
+		landmark.text = "熊猫古玩文化金街"
+		landmark.font = site_font
+		landmark.font_size = 62
+		landmark.pixel_size = .006
+		landmark.modulate = Color("#ead9bf")
+		landmark.outline_size = 1
+		landmark.position = enu(panda.portal_sign.enu)
+		landmark.rotation.y = panda.portal_sign.yaw
+		frontage.add_child(landmark)
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -294,6 +323,7 @@ static func install(city: Node3D) -> Dictionary:
 		"west_ramp_sha256": FileAccess.get_sha256(WEST_RAMP),
 		"guoco_sha256": FileAccess.get_sha256(GUOCO),
 		"houci_77_sha256": FileAccess.get_sha256(HOUCI) if houci_active else "",
+		"panda_15_17_sha256": FileAccess.get_sha256(PANDA) if panda_active else "",
 		"public_edges_sha256": FileAccess.get_sha256(PUBLIC_EDGES),
 		"xingchen_sha256": FileAccess.get_sha256(XINGCHEN),
 		"pavilion_62_sha256": FileAccess.get_sha256(PAVILION_62),
@@ -492,6 +522,13 @@ static func start_exploration(scene: Node3D) -> void:
 		var street := collision.raycast_ground(scene, Vector3(point[0], plan.walk.start_ray_y, -point[1]), 3.0)
 		if not street.is_empty():
 			scene.explorer.set_walk_origin(street.position + Vector3.UP * .035, enu(plan.walk.start_aim_enu))
+	elif "--panda-15" in OS.get_cmdline_user_args() or "--panda-17" in OS.get_cmdline_user_args():
+		var plan: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(PANDA_SITE))
+		var site: Dictionary = plan.route["17" if "--panda-17" in OS.get_cmdline_user_args() else "15"]
+		var point: Array = site.stations[0]
+		var street := collision.raycast_ground(scene, Vector3(point[0], site.start_ray_y, -point[1]), 3.0)
+		if not street.is_empty():
+			scene.explorer.set_walk_origin(street.position + Vector3.UP * .035, enu(site.street_focus))
 	elif binjiang_plot() in ["70","71","72","73"]:
 		var route: Dictionary = load_binjiang_plan().public_routes[binjiang_plot()]
 		var start: Array = route.stations[0]

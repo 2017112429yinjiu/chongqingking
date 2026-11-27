@@ -91,6 +91,7 @@ changbin_plan = json.loads((group_assets / "changbin-bend-and-edge.json").read_b
 east_plan = None if os.environ.get("CQ_EAST_PARENT") == "1" else json.loads((group_assets / "raijiapo-east-bend.json").read_bytes())
 binjiang_plan = None if not east_plan or os.environ.get("CQ_BINJIANG_PARENT") == "1" else json.loads((group_assets / "binjiang-70-73.json").read_bytes())
 houci_plan = None if not binjiang_plan or os.environ.get("CQ_HOUCI_PARENT") == "1" else json.loads((group_assets / "houci-77.json").read_bytes())
+panda_plan = None if not houci_plan or os.environ.get("CQ_PANDA_PARENT") == "1" else json.loads((group_assets / "panda-15-17.json").read_bytes())
 binjiang_override = set() if not binjiang_plan else set(binjiang_plan["replacement_meshes"] + binjiang_plan["retired_objects"])
 east_override = set() if east_plan is None else set(east_plan["replacement_meshes"] + east_plan["retired_objects"]) | binjiang_override
 changbin_override = set(changbin_plan["replacement_meshes"] + changbin_plan["retired_objects"]) | east_override
@@ -284,8 +285,24 @@ if houci_plan:
         houci.objects = houci_plan["replacement_meshes"] + houci_plan["new_meshes"]
     for item in houci.objects:
         collection.objects.link(item)
+if panda_plan:
+    for name in panda_plan["replacement_meshes"] + panda_plan["retired_objects"]:
+        collection.objects.unlink(collection.objects[name])
+    with bpy.data.libraries.load(str(factory_dir / "panda_15_17/panda-15-17.blend"),
+                                 link=True, relative=True) as (_, panda):
+        panda.objects = panda_plan["replacement_meshes"] + panda_plan["new_meshes"]
+    for item in panda.objects:
+        collection.objects.link(item)
+    for spec in panda_plan["trees"]:
+        plant = collection.objects[spec["donor"]].copy()
+        plant.name = spec["name"]
+        plant.location = spec["enu"]
+        plant.rotation_euler.z += spec["yaw"]
+        plant.scale *= spec["scale"]
+        collection.objects.link(plant)
 bpy.context.preferences.filepaths.save_version=0
-output_name = "city_and_outer.local.blend" if houci_plan else (
+output_name = "city_and_outer.local.blend" if panda_plan else (
+    "city_and_outer.before_panda.local.blend" if houci_plan else
     "city_and_outer.before_houci.local.blend" if binjiang_plan else
     "city_and_outer.before_binjiang.local.blend" if east_plan else "city_and_outer.before_east.local.blend")
 bpy.ops.wm.save_as_mainfile(filepath=str(here / output_name),relative_remap=True,compress=True)

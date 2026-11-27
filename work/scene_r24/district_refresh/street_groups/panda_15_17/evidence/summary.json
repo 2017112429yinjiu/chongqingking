@@ -1,0 +1,112 @@
+{
+  "base": "4f5a988cc191effc876705a2b0aa40f9114ac071",
+  "asset_sha256": "76e4d4fdb4afb446f80ec95b959e20c7879e8d5075faa6c80723f13e959b90d8",
+  "plots": {
+    "15": {
+      "before_m": 8.38011825829744,
+      "before_waypoints": 2,
+      "after_metres": [
+        10.4364661742002,
+        10.397804393433
+      ],
+      "legs": [
+        {
+          "first_enu": [
+            187.145370483398,
+            38.7418518066406,
+            24.8896903991699
+          ],
+          "last_enu": [
+            176.881576538086,
+            39.7550086975098,
+            25.0169467926025
+          ],
+          "min_foot_up": 24.6703929901123,
+          "max_foot_up": 25.0169467926025
+        },
+        {
+          "first_enu": [
+            176.881576538086,
+            39.7550086975098,
+            25.0169467926025
+          ],
+          "last_enu": [
+            187.225646972656,
+            38.7088813781738,
+            24.8844985961914
+          ],
+          "min_foot_up": 24.6768684387207,
+          "max_foot_up": 25.0169467926025
+        }
+      ],
+      "teleports_between_legs": 0,
+      "turn_gap_m": 0.0,
+      "surfaces_passed": 48,
+      "portal_headroom_m": 4.18392372131348
+    },
+    "17": {
+      "before_m": 5.67804461438209,
+      "before_waypoints": 1,
+      "after_metres": [
+        14.4868162134662,
+        14.4630790250376
+      ],
+      "legs": [
+        {
+          "first_enu": [
+            150.301208496094,
+            12.00550365448,
+            23.4433078765869
+          ],
+          "last_enu": [
+            160.288467407227,
+            22.5706462860107,
+            24.4095363616943
+          ],
+          "min_foot_up": 23.4433078765869,
+          "max_foot_up": 24.4095363616943
+        },
+        {
+          "first_enu": [
+            160.288467407227,
+            22.5706462860107,
+            24.4095363616943
+          ],
+          "last_enu": [
+            150.330856323242,
+            12.0618152618408,
+            23.4590625762939
+          ],
+          "min_foot_up": 23.4461536407471,
+          "max_foot_up": 24.4095363616943
+        }
+      ],
+      "teleports_between_legs": 0,
+      "turn_gap_m": 0.0,
+      "surfaces_passed": 48
+    }
+  },
+  "regressions": {
+    "A1-neighbor-77": {
+      "passed": 14,
+      "total": 14
+    },
+    "A1-repair": {
+      "passed": 10,
+      "total": 10
+    },
+    "A1-shancheng": {
+      "passed": 12,
+      "total": 12
+    },
+    "A1-teaching": {
+      "passed": 85,
+      "total": 85
+    }
+  },
+  "rendering": {
+    "engine": "4.6.3-stable (official)",
+    "renderer": "gl_compatibility",
+    "device": "llvmpipe (LLVM 19.1.7, 256 bits)"
+  }
+}
