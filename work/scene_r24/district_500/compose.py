@@ -80,7 +80,9 @@ public_retired = set(public_plan["retired_objects"])
 xingchen_override = set(xingchen_plan["replacement_meshes"] + xingchen_plan["retired_objects"])
 pavilion_override = set(pavilion_plan["replacement_meshes"] + pavilion_plan["retired_objects"])
 market_override = set(market_plan["replacement_meshes"] + market_plan["retired_objects"])
-later_public_meshes = public_override | public_retired | xingchen_override | pavilion_override | market_override
+park57_plan = json.loads((group_assets / "park-plot57.json").read_bytes())
+park57_override = set(park57_plan["replacement_meshes"] + park57_plan["retired_objects"])
+later_public_meshes = public_override | public_retired | xingchen_override | pavilion_override | market_override | park57_override
 guoco_override = set(guoco_plan["replacement_meshes"])
 guoco_retired = set(guoco_plan["retired_objects"])
 factory_override = set(factory_plan["replacement_meshes"])
@@ -147,7 +149,8 @@ for item in west_court.objects:
     collection.objects.link(item)
 with bpy.data.libraries.load(str(factory_dir.parent / "riverside/west_ramp/west-ramp.blend"),
                              link=True, relative=True) as (_, west_ramp):
-    west_ramp.objects = west_ramp_plan["replacement_meshes"] + west_ramp_plan["new_meshes"]
+    west_ramp.objects = [name for name in west_ramp_plan["replacement_meshes"] + west_ramp_plan["new_meshes"]
+                         if name not in park57_override]
 for item in west_ramp.objects:
     collection.objects.link(item)
 with bpy.data.libraries.load(str(factory_dir / "guoco/guoco-frontages.blend"), link=True, relative=True) as (source, guoco):
@@ -157,24 +160,30 @@ for item in guoco.objects:
     collection.objects.link(item)
 with bpy.data.libraries.load(str(factory_dir / "matix/public-edges.blend"), link=True, relative=True) as (_, public):
     public.objects = [name for name in public_plan["replacement_meshes"] + public_plan["new_meshes"]
-                      if name not in xingchen_override | pavilion_override | market_override]
+                      if name not in xingchen_override | pavilion_override | market_override | park57_override]
 for item in public.objects:
     collection.objects.link(item)
 with bpy.data.libraries.load(str(factory_dir / "xingchen/xingchen.blend"), link=True, relative=True) as (_, xingchen):
     xingchen.objects = [name for name in xingchen_plan["replacement_meshes"] + xingchen_plan["new_meshes"]
-                        if name not in pavilion_override | market_override]
+                        if name not in pavilion_override | market_override | park57_override]
 for item in xingchen.objects:
     collection.objects.link(item)
 with bpy.data.libraries.load(str(factory_dir.parent / "riverside/pavilion62/pavilion62.blend"),
                              link=True, relative=True) as (_, pavilion):
     pavilion.objects = [name for name in pavilion_plan["replacement_meshes"] + pavilion_plan["new_meshes"]
-                        if name not in market_override]
+                        if name not in market_override | park57_override]
 for item in pavilion.objects:
     collection.objects.link(item)
 with bpy.data.libraries.load(str(factory_dir / "zhongxing/collectibles/collectibles-market.blend"),
                              link=True, relative=True) as (_, market):
-    market.objects = market_plan["replacement_meshes"] + market_plan["new_meshes"] + ["Huihuigou_Sign_Anchor"]
+    market.objects = [name for name in market_plan["replacement_meshes"] + market_plan["new_meshes"]
+                      if name not in park57_override] + ["Huihuigou_Sign_Anchor"]
 for item in market.objects:
+    collection.objects.link(item)
+with bpy.data.libraries.load(str(factory_dir.parent / "riverside/park_plot57/park-plot57.blend"),
+                             link=True, relative=True) as (_, park57):
+    park57.objects = park57_plan["replacement_meshes"] + park57_plan["new_meshes"]
+for item in park57.objects:
     collection.objects.link(item)
 bpy.context.preferences.filepaths.save_version=0
 bpy.ops.wm.save_as_mainfile(filepath=str(here / "city_and_outer.local.blend"),relative_remap=True,compress=True)

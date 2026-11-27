@@ -24,6 +24,8 @@ const PAVILION_62 := "res://assets/district_500/pavilion62.glb"
 const PAVILION_62_SITE := "res://assets/district_500/pavilion62.json"
 const COLLECTIBLES := "res://assets/district_500/collectibles-market.glb"
 const COLLECTIBLES_SITE := "res://assets/district_500/collectibles-market.json"
+const PARK_PLOT_57 := "res://assets/district_500/park-plot57.glb"
+const PARK_PLOT_57_SITE := "res://assets/district_500/park-plot57.json"
 
 static func install(city: Node3D) -> Dictionary:
 	var district := (load(MODEL) as PackedScene).instantiate() as Node3D
@@ -77,6 +79,8 @@ static func install(city: Node3D) -> Dictionary:
 								var market: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(COLLECTIBLES_SITE))
 								market_ways = market.mapped_residential_ways
 								add_collectibles_details(district, market)
+								if not "--qa-without-west-ramp" in OS.get_cmdline_user_args() and not "--qa-without-park-plot57" in OS.get_cmdline_user_args():
+									install_street_group(district, PARK_PLOT_57, PARK_PLOT_57_SITE, "RiversideParkPlot57")
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -239,6 +243,7 @@ static func install(city: Node3D) -> Dictionary:
 		"xingchen_sha256": FileAccess.get_sha256(XINGCHEN),
 		"pavilion_62_sha256": FileAccess.get_sha256(PAVILION_62),
 		"collectibles_market_sha256": FileAccess.get_sha256(COLLECTIBLES),
+		"park_plot57_sha256": FileAccess.get_sha256(PARK_PLOT_57),
 		"retired_internal_context": local_frame != null, "osm_building_ids": retire}
 
 

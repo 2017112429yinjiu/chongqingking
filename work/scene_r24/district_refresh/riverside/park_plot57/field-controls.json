@@ -1,0 +1,891 @@
+{
+  "projection": "Original plot_sources.outline, projected through source_ground.registration control way 734116601. Coordinates are plan approximations.",
+  "tiles": [
+    {
+      "x": 417337,
+      "sha256": "a088b191880c6a930015ec59051b3e9a6a8d5e8cc936143a91d3e0cbe650d9e5"
+    },
+    {
+      "x": 417338,
+      "sha256": "8a6f81238cb2224798a67e62eb8fbc1965a3f61e736b70a6721939eaaca30240"
+    },
+    {
+      "x": 417339,
+      "sha256": "4383ce21a196b9a0214bcc964e815a37637c329079fc2ed901da5c8e60073fd3"
+    }
+  ],
+  "imagery": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/217060/",
+  "park_osm_way": 1499726225,
+  "local_street_osm_way": 59146737,
+  "photos": "../west_ramp/playground-controls.json",
+  "lots": {
+    "57": {
+      "id": 57,
+      "centre": [
+        -121.9805360789063,
+        -177.7904351935349
+      ],
+      "sector": "1,0",
+      "footprint": [
+        [
+          -112.96016216356213,
+          -179.41187113738616
+        ],
+        [
+          -124.67948150974254,
+          -169.03190257362635
+        ],
+        [
+          -131.00090999425046,
+          -176.16899924968365
+        ],
+        [
+          -119.28159064807005,
+          -186.54896781344345
+        ]
+      ],
+      "inside_park_boundary": true,
+      "registered_site": null,
+      "building_type_confirmed": false,
+      "mapped_buildings_at_centre": [],
+      "overture_frontages_at_centre": [],
+      "nearest_mapped_road": {
+        "osm": 1256840005,
+        "name": null,
+        "type": "primary_link",
+        "centre_distance_m": 81.85,
+        "layer": "-1",
+        "bridge": null,
+        "tunnel": "yes",
+        "source": "https://www.openstreetmap.org/way/1256840005"
+      },
+      "nearest_mapped_path": {
+        "osm": 734116598,
+        "name": null,
+        "type": "footway",
+        "centre_distance_m": 114.18,
+        "layer": null,
+        "bridge": null,
+        "tunnel": null,
+        "source": "https://www.openstreetmap.org/way/734116598"
+      },
+      "fit_2x_pixel_ring": [
+        [
+          528.0625629425049,
+          278.1156728565693
+        ],
+        [
+          437.8949493765831,
+          197.84841912984848
+        ],
+        [
+          389.26027089357376,
+          253.03933738172054
+        ],
+        [
+          479.4278844296932,
+          333.30653996765614
+        ]
+      ],
+      "fit_2x_pixel_centre": [
+        458.6614169180393,
+        265.57750603556633
+      ],
+      "orthophoto_observation": "旧四层轮廓在蓝地以东、轨道桥西边界邻近，瓦片可见绿地、贴边硬地和伸入桥侧的窄白构件。官方地面照的白色桥柱与江岸方向支持低矮开敞；白色构件的用途与高度未知。",
+      "current_osm_line_context": [
+        {
+          "osm_way": 878019566,
+          "centre_distance_m": 13.425,
+          "tags": {
+            "name": "10号线",
+            "railway": "subway",
+            "bridge": "yes",
+            "layer": "5"
+          }
+        },
+        {
+          "osm_way": 59146737,
+          "centre_distance_m": 15.686,
+          "tags": {
+            "name": "长江滨江路",
+            "highway": "primary"
+          }
+        },
+        {
+          "osm_way": 1134456893,
+          "centre_distance_m": 23.346,
+          "tags": {
+            "name": "10号线",
+            "railway": "subway",
+            "bridge": "yes",
+            "layer": "5"
+          }
+        },
+        {
+          "osm_way": 1324001438,
+          "centre_distance_m": 23.659,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "1"
+          }
+        },
+        {
+          "osm_way": 1256840000,
+          "centre_distance_m": 29.027,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "1"
+          }
+        },
+        {
+          "osm_way": 1256859184,
+          "centre_distance_m": 34.335,
+          "tags": {
+            "name": "长江滨江路",
+            "highway": "primary"
+          }
+        },
+        {
+          "osm_way": 1256839997,
+          "centre_distance_m": 43.584,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "3"
+          }
+        }
+      ]
+    },
+    "58": {
+      "id": 58,
+      "centre": [
+        -101.19591588038558,
+        -154.3239285177857
+      ],
+      "sector": "1,0",
+      "footprint": [
+        [
+          -108.64027609665992,
+          -152.65157560790726
+        ],
+        [
+          -98.63675901326177,
+          -161.5118335960599
+        ],
+        [
+          -93.75155566411125,
+          -155.99628142766414
+        ],
+        [
+          -103.7550727475094,
+          -147.13602343951152
+        ]
+      ],
+      "inside_park_boundary": false,
+      "registered_site": null,
+      "building_type_confirmed": false,
+      "mapped_buildings_at_centre": [],
+      "overture_frontages_at_centre": [],
+      "nearest_mapped_road": {
+        "osm": 1256840005,
+        "name": null,
+        "type": "primary_link",
+        "centre_distance_m": 53.03,
+        "layer": "-1",
+        "bridge": null,
+        "tunnel": "yes",
+        "source": "https://www.openstreetmap.org/way/1256840005"
+      },
+      "nearest_mapped_path": {
+        "osm": 734116598,
+        "name": null,
+        "type": "footway",
+        "centre_distance_m": 86.48,
+        "layer": null,
+        "bridge": null,
+        "tunnel": null,
+        "source": "https://www.openstreetmap.org/way/734116598"
+      },
+      "fit_2x_pixel_ring": [
+        [
+          561.2947899401188,
+          71.17974343895912
+        ],
+        [
+          638.2611423134804,
+          139.6953328549862
+        ],
+        [
+          675.8460481464863,
+          97.0437086969614
+        ],
+        [
+          598.8796957731247,
+          28.52808552980423
+        ]
+      ],
+      "fit_2x_pixel_centre": [
+        618.5704190433025,
+        84.11172702908516
+      ],
+      "orthophoto_observation": "轮廓的中心与大部分位于白色轨道罩棚的平面投影内。航片可证上层构件投影和轴向，叠层下的实际地面与用途仍待核；需独立断面。",
+      "current_osm_line_context": [
+        {
+          "osm_way": 1134456893,
+          "centre_distance_m": 1.166,
+          "tags": {
+            "name": "10号线",
+            "railway": "subway",
+            "bridge": "yes",
+            "layer": "5"
+          }
+        },
+        {
+          "osm_way": 1256840000,
+          "centre_distance_m": 1.376,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "1"
+          }
+        },
+        {
+          "osm_way": 1324001438,
+          "centre_distance_m": 4.03,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "1"
+          }
+        },
+        {
+          "osm_way": 1256859184,
+          "centre_distance_m": 6.607,
+          "tags": {
+            "name": "长江滨江路",
+            "highway": "primary"
+          }
+        },
+        {
+          "osm_way": 878019566,
+          "centre_distance_m": 11.087,
+          "tags": {
+            "name": "10号线",
+            "railway": "subway",
+            "bridge": "yes",
+            "layer": "5"
+          }
+        },
+        {
+          "osm_way": 59146737,
+          "centre_distance_m": 12.112,
+          "tags": {
+            "name": "长江滨江路",
+            "highway": "primary"
+          }
+        },
+        {
+          "osm_way": 1256839997,
+          "centre_distance_m": 15.866,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "3"
+          }
+        }
+      ]
+    },
+    "59": {
+      "id": 59,
+      "centre": [
+        -71.74519140446822,
+        -191.8555557056673
+      ],
+      "sector": "1,0",
+      "footprint": [
+        [
+          -65.64963118300973,
+          -187.25420040037173
+        ],
+        [
+          -75.72240235158024,
+          -185.33557732064403
+        ],
+        [
+          -77.8407516259267,
+          -196.4569110109629
+        ],
+        [
+          -67.76798045735619,
+          -198.3755340906906
+        ]
+      ],
+      "inside_park_boundary": true,
+      "registered_site": null,
+      "building_type_confirmed": false,
+      "mapped_buildings_at_centre": [],
+      "overture_frontages_at_centre": [],
+      "nearest_mapped_road": {
+        "osm": 1256840005,
+        "name": null,
+        "type": "primary_link",
+        "centre_distance_m": 58.79,
+        "layer": "-1",
+        "bridge": null,
+        "tunnel": "yes",
+        "source": "https://www.openstreetmap.org/way/1256840005"
+      },
+      "nearest_mapped_path": {
+        "osm": 734116598,
+        "name": null,
+        "type": "footway",
+        "centre_distance_m": 118.58,
+        "layer": null,
+        "bridge": null,
+        "tunnel": null,
+        "source": "https://www.openstreetmap.org/way/734116598"
+      },
+      "fit_2x_pixel_ring": [
+        [
+          892.061238348484,
+          338.7583402097225
+        ],
+        [
+          814.5631193518639,
+          323.9220890849829
+        ],
+        [
+          798.2666747272015,
+          409.92258517444134
+        ],
+        [
+          875.7647937238216,
+          424.75882156193256
+        ]
+      ],
+      "fit_2x_pixel_centre": [
+        845.1639565229416,
+        374.34046998620033
+      ],
+      "orthophoto_observation": "桥东的低层硬地与树影，部分轮廓进入树冠/桥阴，无法从此图可靠辨出建筑、挡土边或用途。需低处同址视点。",
+      "current_osm_line_context": [
+        {
+          "osm_way": 59146737,
+          "centre_distance_m": 17.613,
+          "tags": {
+            "name": "长江滨江路",
+            "highway": "primary"
+          }
+        },
+        {
+          "osm_way": 1134456893,
+          "centre_distance_m": 23.72,
+          "tags": {
+            "name": "10号线",
+            "railway": "subway",
+            "bridge": "yes",
+            "layer": "5"
+          }
+        },
+        {
+          "osm_way": 1324001438,
+          "centre_distance_m": 26.52,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "1"
+          }
+        },
+        {
+          "osm_way": 1256840000,
+          "centre_distance_m": 32.726,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "1"
+          }
+        },
+        {
+          "osm_way": 878019566,
+          "centre_distance_m": 33.641,
+          "tags": {
+            "name": "10号线",
+            "railway": "subway",
+            "bridge": "yes",
+            "layer": "5"
+          }
+        },
+        {
+          "osm_way": 1256859184,
+          "centre_distance_m": 36.078,
+          "tags": {
+            "name": "长江滨江路",
+            "highway": "primary"
+          }
+        },
+        {
+          "osm_way": 1324001436,
+          "centre_distance_m": 37.94,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "1"
+          }
+        }
+      ]
+    },
+    "60": {
+      "id": 60,
+      "centre": [
+        -66.31866771307938,
+        -163.3663063258759
+      ],
+      "sector": "1,0",
+      "footprint": [
+        [
+          -75.4149154630816,
+          -166.82558858085514
+        ],
+        [
+          -59.13103997803685,
+          -169.9272791494351
+        ],
+        [
+          -57.22241996307716,
+          -159.90702407089668
+        ],
+        [
+          -73.5062954481219,
+          -156.80533350231673
+        ]
+      ],
+      "inside_park_boundary": false,
+      "registered_site": null,
+      "building_type_confirmed": false,
+      "mapped_buildings_at_centre": [],
+      "overture_frontages_at_centre": [],
+      "nearest_mapped_road": {
+        "osm": 1256840005,
+        "name": null,
+        "type": "primary_link",
+        "centre_distance_m": 30.6,
+        "layer": "-1",
+        "bridge": null,
+        "tunnel": "yes",
+        "source": "https://www.openstreetmap.org/way/1256840005"
+      },
+      "nearest_mapped_path": {
+        "osm": 734116598,
+        "name": null,
+        "type": "footway",
+        "centre_distance_m": 89.63,
+        "layer": null,
+        "bridge": null,
+        "tunnel": null,
+        "source": "https://www.openstreetmap.org/way/734116598"
+      },
+      "fit_2x_pixel_ring": [
+        [
+          816.9260335564613,
+          180.7855533361435
+        ],
+        [
+          942.2112902402878,
+          204.7702193558216
+        ],
+        [
+          956.8942892253399,
+          127.28410750627518
+        ],
+        [
+          831.6090326011181,
+          103.29942002892494
+        ]
+      ],
+      "fit_2x_pixel_centre": [
+        886.9101614356041,
+        154.034834548831
+      ],
+      "orthophoto_observation": "旧轮廓位于桥东、滨江车道一侧的连续深色带，北侧邻车道，东侧有匝道口；这张瓦片不能单独区别阴影、挡墙顶和实际地层构件。",
+      "current_osm_line_context": [
+        {
+          "osm_way": 1324001438,
+          "centre_distance_m": 2.383,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "1"
+          }
+        },
+        {
+          "osm_way": 1256840000,
+          "centre_distance_m": 5.162,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "1"
+          }
+        },
+        {
+          "osm_way": 1256859184,
+          "centre_distance_m": 7.115,
+          "tags": {
+            "name": "长江滨江路",
+            "highway": "primary"
+          }
+        },
+        {
+          "osm_way": 59146737,
+          "centre_distance_m": 11.388,
+          "tags": {
+            "name": "长江滨江路",
+            "highway": "primary"
+          }
+        },
+        {
+          "osm_way": 1256839997,
+          "centre_distance_m": 16.402,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "3"
+          }
+        },
+        {
+          "osm_way": 1324001436,
+          "centre_distance_m": 16.413,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "1"
+          }
+        },
+        {
+          "osm_way": 1375242617,
+          "centre_distance_m": 22.388,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "3"
+          }
+        }
+      ]
+    },
+    "61": {
+      "id": 61,
+      "centre": [
+        -43.507302419377744,
+        -193.1399393074638
+      ],
+      "sector": "2,0",
+      "footprint": [
+        [
+          -37.76418640462556,
+          -186.53506000648724
+        ],
+        [
+          -50.985350251955154,
+          -188.59168549384964
+        ],
+        [
+          -49.25041843412993,
+          -199.74481860844037
+        ],
+        [
+          -36.029254586800334,
+          -197.68819312107797
+        ]
+      ],
+      "inside_park_boundary": true,
+      "registered_site": null,
+      "building_type_confirmed": false,
+      "mapped_buildings_at_centre": [],
+      "overture_frontages_at_centre": [],
+      "nearest_mapped_road": {
+        "osm": 1256840006,
+        "name": null,
+        "type": "primary_link",
+        "centre_distance_m": 55.38,
+        "layer": "-1",
+        "bridge": null,
+        "tunnel": "yes",
+        "source": "https://www.openstreetmap.org/way/1256840006"
+      },
+      "nearest_mapped_path": {
+        "osm": 734116598,
+        "name": null,
+        "type": "footway",
+        "centre_distance_m": 117.19,
+        "layer": null,
+        "bridge": null,
+        "tunnel": null,
+        "source": "https://www.openstreetmap.org/way/734116598"
+      },
+      "fit_2x_pixel_ring": [
+        [
+          1106.605995386839,
+          333.1963902115822
+        ],
+        [
+          1004.8853987753391,
+          349.100545540452
+        ],
+        [
+          1018.235309869051,
+          435.3467959910631
+        ],
+        [
+          1119.9559064507484,
+          419.4426564872265
+        ]
+      ],
+      "fit_2x_pixel_centre": [
+        1062.4206525981426,
+        384.2716081440449
+      ],
+      "orthophoto_observation": "旧轮廓落在树冠和桥侧暗影。可约束与滨江路和邻近公园的相对位置；现有影像不能定其地面轮廓或用途。",
+      "current_osm_line_context": [
+        {
+          "osm_way": 59146737,
+          "centre_distance_m": 13.761,
+          "tags": {
+            "name": "长江滨江路",
+            "highway": "primary"
+          }
+        },
+        {
+          "osm_way": 1324001436,
+          "centre_distance_m": 24.256,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "1"
+          }
+        },
+        {
+          "osm_way": 1324001438,
+          "centre_distance_m": 29.997,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "1"
+          }
+        },
+        {
+          "osm_way": 1375242613,
+          "centre_distance_m": 31.605,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "1"
+          }
+        },
+        {
+          "osm_way": 1256859184,
+          "centre_distance_m": 32.026,
+          "tags": {
+            "name": "长江滨江路",
+            "highway": "primary"
+          }
+        },
+        {
+          "osm_way": 1256839997,
+          "centre_distance_m": 39.935,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "3"
+          }
+        },
+        {
+          "osm_way": 1375242615,
+          "centre_distance_m": 40.031,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "3"
+          }
+        }
+      ]
+    },
+    "62": {
+      "id": 62,
+      "centre": [
+        -21.26580861299274,
+        -187.04968430775327
+      ],
+      "sector": "2,0",
+      "footprint": [
+        [
+          -13.121421369623404,
+          -180.61695875946504
+        ],
+        [
+          -30.97936998633864,
+          -183.3948618776207
+        ],
+        [
+          -29.410195856362073,
+          -193.4824098560415
+        ],
+        [
+          -11.55224723964684,
+          -190.70450673788582
+        ]
+      ],
+      "inside_park_boundary": false,
+      "registered_site": null,
+      "building_type_confirmed": false,
+      "mapped_buildings_at_centre": [],
+      "overture_frontages_at_centre": [],
+      "nearest_mapped_road": {
+        "osm": 1256840006,
+        "name": null,
+        "type": "primary_link",
+        "centre_distance_m": 52.71,
+        "layer": "-1",
+        "bridge": null,
+        "tunnel": "yes",
+        "source": "https://www.openstreetmap.org/way/1256840006"
+      },
+      "nearest_mapped_path": {
+        "osm": 734116598,
+        "name": null,
+        "type": "footway",
+        "centre_distance_m": 109.33,
+        "layer": null,
+        "bridge": null,
+        "tunnel": null,
+        "source": "https://www.openstreetmap.org/way/734116598"
+      },
+      "fit_2x_pixel_ring": [
+        [
+          1296.2014487087727,
+          287.4313464909792
+        ],
+        [
+          1158.80649548769,
+          308.9132472425699
+        ],
+        [
+          1170.8809383809566,
+          386.9194563925266
+        ],
+        [
+          1308.2758915424347,
+          365.4375749826431
+        ]
+      ],
+      "fit_2x_pixel_centre": [
+        1233.5411935150623,
+        337.1754157245159
+      ],
+      "orthophoto_observation": "保留已制作62号公厕，现有地面同址照片和开放轮廓证据单列。此瓦片以树冠为主。",
+      "current_osm_line_context": [
+        {
+          "osm_way": 59146737,
+          "centre_distance_m": 4.497,
+          "tags": {
+            "name": "长江滨江路",
+            "highway": "primary"
+          }
+        },
+        {
+          "osm_way": 1324001436,
+          "centre_distance_m": 13.299,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "1"
+          }
+        },
+        {
+          "osm_way": 1375242613,
+          "centre_distance_m": 18.826,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "1"
+          }
+        },
+        {
+          "osm_way": 1256859184,
+          "centre_distance_m": 22.306,
+          "tags": {
+            "name": "长江滨江路",
+            "highway": "primary"
+          }
+        },
+        {
+          "osm_way": 1256839997,
+          "centre_distance_m": 29.723,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "3"
+          }
+        },
+        {
+          "osm_way": 1375242615,
+          "centre_distance_m": 32.975,
+          "tags": {
+            "highway": "primary_link",
+            "bridge": "yes",
+            "layer": "3"
+          }
+        },
+        {
+          "osm_way": 1151519554,
+          "centre_distance_m": 34.339,
+          "tags": {
+            "name": "27号线",
+            "railway": "construction",
+            "layer": "-5",
+            "tunnel": "yes"
+          }
+        }
+      ]
+    }
+  },
+  "defect_cameras": {
+    "sand-return-look": {
+      "direction_xyz": "(0.949886, 0.0, -0.312597)",
+      "eye_enu": [
+        -168.04655456543,
+        -173.994445800781,
+        -5.15373039245605
+      ],
+      "frame": "inside_look_back.png",
+      "pixel_size": "(860, 484)",
+      "fixed_fov_deg": 68
+    },
+    "street-edge-return": {
+      "direction_xyz": "(0.950508, 0.0, 0.3107)",
+      "eye_enu": [
+        -158.871307373047,
+        -159.169082641602,
+        -2.10558795928955
+      ],
+      "frame": "street_return.png",
+      "pixel_size": "(860, 484)",
+      "fixed_fov_deg": 68
+    },
+    "blue-after": {
+      "eye_enu": [
+        -147.940002441406,
+        -191.0,
+        -4.23000001907349
+      ],
+      "frame": "registered_blue.png",
+      "pixel_size": "(860, 484)",
+      "target_enu": [
+        -149.449996948242,
+        -182.5,
+        -5.03000020980835
+      ],
+      "fixed_fov_deg": 71
+    }
+  }
+}

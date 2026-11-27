@@ -1,0 +1,235 @@
+{
+  "replaced_plot": 57,
+  "replacement_meshes": [
+    "COLH_Outer500_Household_contact",
+    "COL_Outer500_Building_envelopes",
+    "COL_Outer500_Retaining_and_boundaries",
+    "Outer500_Facades_and_storefronts",
+    "Outer500_Street_furniture",
+    "COL_Outer500_Surface_02_01",
+    "COL_Outer500_WestCourt_Retaining"
+  ],
+  "retired_objects": [
+    "COL_Outer500_Frame_57",
+    "Outer500_Condenser_57_01",
+    "Outer500_Household_118_crate_0",
+    "Outer500_InteriorFloor_57",
+    "Outer500_Joinery_57"
+  ],
+  "retired_source_faces": {
+    "COLH_Outer500_Household_contact": 6,
+    "COL_Outer500_Building_envelopes": 222,
+    "COL_Outer500_Retaining_and_boundaries": 96,
+    "Outer500_Facades_and_storefronts": 36,
+    "Outer500_Street_furniture": 507
+  },
+  "new_meshes": [
+    "COL_Park57_EastWalkGrade",
+    "COL_Park57_EastWalkFlank",
+    "COL_Outer500_WestCourt_Retaining_Abutment",
+    "COL_Park57_NorthDeckWallSeal",
+    "Park57_UpperPath",
+    "Park57_UpperGreenShoulder",
+    "Park57_RailWestGreenBelt",
+    "Park57_GreenBelt_Plant_01",
+    "Park57_GreenBelt_Plant_02",
+    "Park57_GreenBelt_Plant_03",
+    "Park57_GreenBelt_Plant_04",
+    "Park57_GreenBelt_Plant_05",
+    "Park57_GreenBelt_Plant_06",
+    "Park57_GreenBelt_Plant_07",
+    "Park57_GreenBelt_Plant_08"
+  ],
+  "route_east_north": [
+    [
+      -158.96531677246094,
+      -159.0701446533203
+    ],
+    [
+      -154.96530151367188,
+      -160.0675048828125
+    ],
+    [
+      -154.84266662597656,
+      -162.8648223876953
+    ],
+    [
+      -154.71563720703125,
+      -165.7620391845703
+    ],
+    [
+      -154.5500030517578,
+      -169.5399932861328
+    ],
+    [
+      -158.1,
+      -171.3
+    ],
+    [
+      -156.0,
+      -175.9
+    ],
+    [
+      -151.2,
+      -176.6
+    ],
+    [
+      -147.4,
+      -177.8
+    ],
+    [
+      -144.8,
+      -181.4
+    ],
+    [
+      -141.55,
+      -183.73
+    ],
+    [
+      -140.17,
+      -183.7
+    ],
+    [
+      -137.83,
+      -183.49
+    ],
+    [
+      -135.14,
+      -183.22
+    ],
+    [
+      -132.92,
+      -183.14
+    ],
+    [
+      -129.33,
+      -181.43
+    ],
+    [
+      -125.62,
+      -179.84
+    ],
+    [
+      -121.9,
+      -177.82
+    ]
+  ],
+  "destination_y": -2.9250965118408203,
+  "park_way": 1499726225,
+  "street_way": 59146737,
+  "grade_new_m2": 13.01661084452644,
+  "opening_footprint_east_north": [
+    [
+      -141.89999389648438,
+      -185.10000610351562
+    ],
+    [
+      -132.8699951171875,
+      -184.4859619140625
+    ],
+    [
+      -132.8699951171875,
+      -181.6859588623047
+    ],
+    [
+      -141.89999389648438,
+      -182.3000030517578
+    ]
+  ],
+  "old_wall_opening_faces": {
+    "COL_Outer500_WestCourt_Retaining": [
+      233,
+      234,
+      235,
+      236
+    ]
+  },
+  "seal_from_east_north_up": [
+    -140.72999572753906,
+    -178.27850341796875,
+    -4.141499996185303
+  ],
+  "seal_to_east_north_up": [
+    -140.33770751953125,
+    -178.33770751953125,
+    -4.106299877166748
+  ],
+  "defect_cameras": {
+    "sand-return-look": {
+      "direction_xyz": "(0.949886, 0.0, -0.312597)",
+      "eye_enu": [
+        -168.04655456543,
+        -173.994445800781,
+        -5.15373039245605
+      ],
+      "frame": "inside_look_back.png",
+      "pixel_size": "(860, 484)",
+      "fixed_fov_deg": 68
+    },
+    "street-edge-return": {
+      "direction_xyz": "(0.950508, 0.0, 0.3107)",
+      "eye_enu": [
+        -158.871307373047,
+        -159.169082641602,
+        -2.10558795928955
+      ],
+      "frame": "street_return.png",
+      "pixel_size": "(860, 484)",
+      "fixed_fov_deg": 68
+    },
+    "blue-after": {
+      "eye_enu": [
+        -147.940002441406,
+        -191.0,
+        -4.23000001907349
+      ],
+      "frame": "registered_blue.png",
+      "pixel_size": "(860, 484)",
+      "target_enu": [
+        -149.449996948242,
+        -182.5,
+        -5.03000020980835
+      ],
+      "fixed_fov_deg": 71
+    }
+  },
+  "plot57_view": {
+    "eye_east_north_up": [
+      -136.15,
+      -190.65,
+      -4.06
+    ],
+    "target_east_north_up": [
+      -121.98,
+      -177.79,
+      0.22
+    ],
+    "fov_deg": 65
+  },
+  "approach_sections_east_north": [
+    [
+      -138.4,
+      -183.462
+    ],
+    [
+      -137.65,
+      -183.411
+    ],
+    [
+      -136.8,
+      -183.3532
+    ],
+    [
+      -135.85,
+      -183.28859999999997
+    ],
+    [
+      -134.8,
+      -183.2172
+    ],
+    [
+      -133.6,
+      -183.13559999999998
+    ]
+  ]
+}

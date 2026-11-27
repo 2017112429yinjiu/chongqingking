@@ -1,0 +1,512 @@
+{
+  "parent_commit": "0b7bbcba600d19a0e7e733a2ee9a929185f89ecc",
+  "godot": "4.6.3-stable (official)",
+  "blender": "4.3.2",
+  "scene": "res://first_shift.tscn",
+  "renderer": "gl_compatibility",
+  "device": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "native_settings": {
+    "virtual_display": "Xvfb",
+    "resolution": [
+      860,
+      484
+    ],
+    "fixed_fps": 60,
+    "qa_sun_shadows": false
+  },
+  "source_sha256": "6b8b099acee1be1756a1e59a9ca0c47ab552e2e68d3c8b06094c02d619791a14",
+  "glb_sha256": "6c96e60d7d630f871ca3e11b7a6946b1f546ee536d68c3308815e2d4c0414136",
+  "source_reopened": {
+    "version": "4.3.2",
+    "objects": 22,
+    "libraries": 0,
+    "seal_dimensions_m": [
+      0.403289794921875,
+      0.162200927734375,
+      1.7386999130249023
+    ],
+    "seal_faces": 6,
+    "seal_finish": "East park course stone and capped ends",
+    "east_deck_cut_path_faces": 16,
+    "pavilion_meshes_retained": []
+  },
+  "composition_reopened": {
+    "version": "4.3.2",
+    "objects": 4568,
+    "libraries": 19,
+    "seal_dimensions_m": [
+      0.403289794921875,
+      0.162200927734375,
+      1.7386999130249023
+    ],
+    "seal_faces": 6,
+    "seal_finish": "East park course stone and capped ends",
+    "east_deck_cut_path_faces": 16,
+    "pavilion_meshes_retained": [
+      "Riverside_62_red_tiles_open_reveal_and_vents",
+      "Riverside_62_asymmetric_eaves",
+      "COL_Riverside_62_registered_body",
+      "Riverside_62_StreetSideApproach"
+    ]
+  },
+  "removed_objects": [
+    "COL_Outer500_Frame_57",
+    "Outer500_Condenser_57_01",
+    "Outer500_Household_118_crate_0",
+    "Outer500_InteriorFloor_57",
+    "Outer500_Joinery_57"
+  ],
+  "removed_shared_faces": {
+    "COLH_Outer500_Household_contact": 6,
+    "COL_Outer500_Building_envelopes": 222,
+    "COL_Outer500_Retaining_and_boundaries": 96,
+    "Outer500_Facades_and_storefronts": 36,
+    "Outer500_Street_furniture": 507
+  },
+  "old_collider_ray": [
+    [
+      "COL_Outer500_Frame_57",
+      11.179,
+      1.0
+    ],
+    [
+      "COL_Outer500_Building_envelopes",
+      -0.586,
+      1.0
+    ],
+    [
+      "COL_Outer500_Surface_02_01",
+      -2.924,
+      0.974
+    ]
+  ],
+  "current_57_ground_ray": [
+    [
+      "COL_Outer500_Surface_02_01",
+      -2.924,
+      0.974
+    ]
+  ],
+  "baseline_stalled": {
+    "distance_m": 43.6542117479257,
+    "end": "(-137.807, -5.829449, 183.2486)",
+    "goals": 17,
+    "max_frame_displacement_m": 0.0954650789499283,
+    "name": "riverside_street_to_plot57_out",
+    "pass": false,
+    "reached": 12,
+    "stall_contacts": [
+      {
+        "mesh": "COL_Outer500_Surface_02_01",
+        "normal": "(-0.98876, 0.0, -0.149511)",
+        "position": "(-137.503, -4.703117, 183.2927)"
+      }
+    ]
+  },
+  "new_route": [
+    {
+      "distance_m": 60.736203385517,
+      "end": "(-121.9122, -2.920566, 177.8961)",
+      "goals": 17,
+      "max_frame_displacement_m": 0.535356342792511,
+      "name": "riverside_street_to_plot57_out",
+      "pass": true,
+      "reached": 17,
+      "stall_contacts": [],
+      "closest_to_osm_street_line_m": 6.470002758325402,
+      "minimum_clearance_from_modeled_curb_m": 1.0460027583254012
+    },
+    {
+      "distance_m": 60.0944335209206,
+      "end": "(-159.0049, -3.760077, 159.1243)",
+      "goals": 17,
+      "max_frame_displacement_m": 0.486806780099869,
+      "name": "riverside_street_to_plot57_back",
+      "pass": true,
+      "reached": 17,
+      "stall_contacts": [],
+      "closest_to_osm_street_line_m": 6.4705816629054205,
+      "minimum_clearance_from_modeled_curb_m": 1.04658166290542
+    }
+  ],
+  "seam_covered_native_pixel_rays": [
+    {
+      "pixel": [
+        712,
+        229
+      ],
+      "eye": [
+        -147.94000244140625,
+        -191.0,
+        -4.230000019073486
+      ],
+      "fov": 71,
+      "obj": "COL_Park57_NorthDeckWallSeal",
+      "source": "park-plot57.blend",
+      "face": 2,
+      "material": "East park course stone and capped ends",
+      "hit_enu": [
+        -140.6782,
+        -178.2863,
+        -4.8557
+      ],
+      "normal": [
+        -0.1492,
+        -0.9888,
+        0.0
+      ]
+    },
+    {
+      "pixel": [
+        719,
+        228
+      ],
+      "eye": [
+        -147.94000244140625,
+        -191.0,
+        -4.230000019073486
+      ],
+      "fov": 71,
+      "obj": "COL_Park57_NorthDeckWallSeal",
+      "source": "park-plot57.blend",
+      "face": 2,
+      "material": "East park course stone and capped ends",
+      "hit_enu": [
+        -140.4922,
+        -178.3144,
+        -4.8194
+      ],
+      "normal": [
+        -0.1492,
+        -0.9888,
+        0.0
+      ]
+    },
+    {
+      "pixel": [
+        724,
+        229
+      ],
+      "eye": [
+        -147.94000244140625,
+        -191.0,
+        -4.230000019073486
+      ],
+      "fov": 71,
+      "obj": "COL_Park57_NorthDeckWallSeal",
+      "source": "park-plot57.blend",
+      "face": 2,
+      "material": "East park course stone and capped ends",
+      "hit_enu": [
+        -140.3569,
+        -178.3348,
+        -4.85
+      ],
+      "normal": [
+        -0.1492,
+        -0.9888,
+        0.0
+      ]
+    }
+  ],
+  "texture_dark_faces_preserved": [
+    [
+      "inside_look_back.png",
+      [
+        369,
+        228
+      ]
+    ],
+    [
+      "street_return.png",
+      [
+        525,
+        331
+      ]
+    ]
+  ],
+  "normal_scene_seam_contact_heights": [
+    -5.62,
+    -5.3,
+    -5.0,
+    -4.71,
+    -4.41
+  ],
+  "east_walk_cross_section_samples": 18,
+  "minimum_sample_normal_y": 0.892,
+  "neighboring_lot_game_layers": [
+    {
+      "centre": [
+        [
+          "COL_Outer500_Frame_58",
+          9.399,
+          1.0
+        ],
+        [
+          "COL_Outer500_Building_envelopes",
+          3.534,
+          1.0
+        ],
+        [
+          "COL_Outer500_Surface_02_01",
+          2.462,
+          0.983
+        ]
+      ],
+      "east_side": [
+        [
+          "COL_Outer500_Frame_58",
+          9.399,
+          1.0
+        ],
+        [
+          "COL_Outer500_Building_envelopes",
+          3.534,
+          1.0
+        ],
+        [
+          "COL_Outer500_Surface_03_01",
+          2.266,
+          0.985
+        ]
+      ],
+      "frame_present": true,
+      "plot": 58,
+      "west_side": [
+        [
+          "COL_Outer500_Frame_58",
+          9.399,
+          1.0
+        ],
+        [
+          "COL_Outer500_Building_envelopes",
+          3.534,
+          1.0
+        ],
+        [
+          "COL_Outer500_Surface_02_01",
+          2.6,
+          0.983
+        ]
+      ]
+    },
+    {
+      "centre": [
+        [
+          "COL_Outer500_Frame_59",
+          7.19,
+          1.0
+        ],
+        [
+          "COL_Outer500_Building_envelopes",
+          4.06,
+          1.0
+        ],
+        [
+          "COL_Outer500_Surface_03_01",
+          0.553,
+          0.999
+        ]
+      ],
+      "east_side": [
+        [
+          "COL_Outer500_Frame_59",
+          7.19,
+          1.0
+        ],
+        [
+          "COL_Outer500_Building_envelopes",
+          1.325,
+          1.0
+        ],
+        [
+          "COL_Outer500_Surface_03_01",
+          0.596,
+          0.999
+        ]
+      ],
+      "frame_present": true,
+      "plot": 59,
+      "west_side": [
+        [
+          "COL_Outer500_Frame_59",
+          7.19,
+          1.0
+        ],
+        [
+          "COL_Outer500_Building_envelopes",
+          1.325,
+          1.0
+        ],
+        [
+          "COL_Outer500_Surface_03_01",
+          0.498,
+          0.999
+        ]
+      ]
+    },
+    {
+      "centre": [
+        [
+          "COL_Outer500_Frame_60",
+          11.041,
+          1.0
+        ],
+        [
+          "COL_Outer500_Building_envelopes",
+          2.226,
+          1.0
+        ],
+        [
+          "COL_Outer500_Surface_03_01",
+          1.208,
+          0.995
+        ]
+      ],
+      "east_side": [
+        [
+          "COL_Outer500_Frame_60",
+          11.041,
+          1.0
+        ],
+        [
+          "COL_Outer500_Building_envelopes",
+          2.226,
+          1.0
+        ],
+        [
+          "COL_Outer500_Surface_03_01",
+          1.334,
+          0.995
+        ]
+      ],
+      "frame_present": true,
+      "plot": 60,
+      "west_side": [
+        [
+          "COL_Outer500_Frame_60",
+          11.041,
+          1.0
+        ],
+        [
+          "COL_Outer500_Building_envelopes",
+          2.226,
+          1.0
+        ],
+        [
+          "COL_Outer500_Surface_03_01",
+          1.123,
+          0.994
+        ]
+      ]
+    },
+    {
+      "centre": [
+        [
+          "COL_Outer500_Frame_61",
+          11.575,
+          1.0
+        ],
+        [
+          "COL_Outer500_Building_envelopes",
+          2.76,
+          1.0
+        ],
+        [
+          "COL_Outer500_Surface_04_01",
+          2.184,
+          0.99
+        ]
+      ],
+      "east_side": [
+        [
+          "COL_Outer500_Frame_61",
+          11.575,
+          1.0
+        ],
+        [
+          "COL_Outer500_Building_envelopes",
+          2.76,
+          1.0
+        ],
+        [
+          "COL_Outer500_Surface_04_01",
+          2.184,
+          0.984
+        ]
+      ],
+      "frame_present": true,
+      "plot": 61,
+      "west_side": [
+        [
+          "COL_Outer500_Frame_61",
+          11.575,
+          1.0
+        ],
+        [
+          "COL_Outer500_Building_envelopes",
+          2.76,
+          1.0
+        ],
+        [
+          "COL_Outer500_Surface_04_01",
+          2.144,
+          0.993
+        ]
+      ]
+    }
+  ],
+  "regressions": {
+    "west_walks": 6,
+    "west_rides": 2,
+    "park_distances": [
+      60.7659068442881,
+      60.8583966642618
+    ],
+    "street_to_sand_distances": [
+      27.5687510333955,
+      27.594540271908
+    ],
+    "pavilion62_walks": 4,
+    "repair_checks": 10,
+    "market_main": [
+      23.2080074511468,
+      23.2046062760055
+    ],
+    "market_side": [
+      26.3874143622816,
+      26.51869700104
+    ],
+    "first_shift_exit": 0,
+    "first_shift_reports": [
+      "first_shift.json",
+      "joints.json"
+    ],
+    "legacy_teaching": {
+      "candidate": {
+        "exit": 2,
+        "count": 52,
+        "failed": [
+          "handover_once",
+          "credit_and_regular_order_unlocked"
+        ]
+      },
+      "parent_control": {
+        "exit": 2,
+        "count": 52,
+        "failed": [
+          "handover_once",
+          "credit_and_regular_order_unlocked"
+        ]
+      }
+    }
+  },
+  "native_gl_exit_warnings": [
+    "ERROR: Texture with GL ID of 595: leaked 349524 bytes.",
+    "ERROR: Texture with GL ID of 596: leaked 349524 bytes."
+  ],
+  "failed_builds_retained": [
+    "/workspace/work/runtime/district-refresh/new-priority/west/plot57-field/build-first.log",
+    "/workspace/work/runtime/district-refresh/new-priority/west/plot57-field/build-second.log"
+  ]
+}
