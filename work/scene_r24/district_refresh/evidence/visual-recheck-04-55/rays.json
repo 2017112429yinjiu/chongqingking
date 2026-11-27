@@ -1,0 +1,3623 @@
+[
+  {
+    "eye_enu": [
+      -160.0,
+      -76.9,
+      9.03
+    ],
+    "file": "04-pedestrian-limit.png",
+    "fov_deg": 68.0,
+    "hits": [
+      {
+        "geometry": [
+          {
+            "distance_m": 5.604407787323,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              0.868809223175049,
+              -0.491939961910248,
+              -0.0562637411057949
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_03",
+            "point_enu": [
+              -154.512069702148,
+              -77.7636642456055,
+              9.76898288726807
+            ]
+          },
+          {
+            "distance_m": 5.63875246047974,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              -0.746642827987671,
+              -0.660916566848755,
+              -0.0755897909402847
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_03",
+            "point_enu": [
+              -154.478439331055,
+              -77.7689590454102,
+              9.77351188659668
+            ]
+          },
+          {
+            "distance_m": 12.6766233444214,
+            "mesh": "COL_Outer500_Retaining_and_boundaries",
+            "normal": [
+              0.574189782142639,
+              -0.818722248077393,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Retaining_and_boundaries",
+            "point_enu": [
+              -147.586837768555,
+              -78.8535232543945,
+              10.7015066146851
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 5.604407787323,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              -0.868809223175049,
+              0.491939961910248,
+              0.0562637411057949
+            ],
+            "point_enu": [
+              -154.512069702148,
+              -77.7636642456055,
+              9.76898288726807
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 12.6766233444214,
+            "mesh": "COL_Outer500_Retaining_and_boundaries",
+            "normal": [
+              -0.574189782142639,
+              0.818722248077393,
+              0.0
+            ],
+            "point_enu": [
+              -147.586837768555,
+              -78.8535232543945,
+              10.7015066146851
+            ]
+          }
+        ],
+        "pixel": [
+          370.0,
+          180.0
+        ]
+      },
+      {
+        "geometry": [
+          {
+            "distance_m": 5.66877508163452,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              0.997859120368958,
+              0.00801281724125147,
+              -0.0649077445268631
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_03",
+            "point_enu": [
+              -154.615844726562,
+              -78.2256240844727,
+              10.2083921432495
+            ]
+          },
+          {
+            "distance_m": 7.51673078536987,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              -0.990361094474792,
+              0.0119681134819984,
+              -0.137991487979889
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_03",
+            "point_enu": [
+              -152.86067199707,
+              -78.6577606201172,
+              10.5925359725952
+            ]
+          },
+          {
+            "distance_m": 7.62403154373169,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              -0.0157581940293312,
+              -0.99727338552475,
+              -0.0720936581492424
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_03",
+            "point_enu": [
+              -152.758758544922,
+              -78.6828536987305,
+              10.614839553833
+            ]
+          },
+          {
+            "distance_m": 8.06812763214111,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              -0.978013098239899,
+              0.020644087344408,
+              -0.207519337534904
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_03",
+            "point_enu": [
+              -152.336959838867,
+              -78.7867050170898,
+              10.7071571350098
+            ]
+          },
+          {
+            "distance_m": 9.3069953918457,
+            "mesh": "COL_Outer500_Building_envelopes",
+            "normal": [
+              -0.817040085792542,
+              -0.576580941677094,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Building_envelopes",
+            "point_enu": [
+              -151.160293579102,
+              -79.0764083862305,
+              10.9646844863892
+            ]
+          },
+          {
+            "distance_m": 11.8485107421875,
+            "mesh": "COL_Outer500_Retaining_and_boundaries",
+            "normal": [
+              0.587065696716309,
+              -0.809539318084717,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Retaining_and_boundaries",
+            "point_enu": [
+              -148.746383666992,
+              -79.6707305908203,
+              11.4930019378662
+            ]
+          },
+          {
+            "distance_m": 11.986255645752,
+            "mesh": "COL_Outer500_Retaining_and_boundaries",
+            "normal": [
+              -0.816880762577057,
+              -0.576806604862213,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Retaining_and_boundaries",
+            "point_enu": [
+              -148.61555480957,
+              -79.7029418945312,
+              11.5216360092163
+            ]
+          },
+          {
+            "distance_m": 11.986255645752,
+            "mesh": "COL_Outer500_Retaining_and_boundaries",
+            "normal": [
+              0.816880702972412,
+              0.576806664466858,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Retaining_and_boundaries",
+            "point_enu": [
+              -148.61555480957,
+              -79.7029418945312,
+              11.5216360092163
+            ]
+          },
+          {
+            "distance_m": 12.4887495040894,
+            "mesh": "COL_Outer500_Retaining_and_boundaries",
+            "normal": [
+              -0.816900849342346,
+              -0.576778173446655,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Retaining_and_boundaries",
+            "point_enu": [
+              -148.138290405273,
+              -79.8204498291016,
+              11.626091003418
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 5.66877508163452,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              -0.997859120368958,
+              -0.00801281724125147,
+              0.0649077445268631
+            ],
+            "point_enu": [
+              -154.615844726562,
+              -78.2256240844727,
+              10.2083921432495
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 9.3069953918457,
+            "mesh": "COL_Outer500_Building_envelopes",
+            "normal": [
+              -0.817040085792542,
+              -0.576580941677094,
+              0.0
+            ],
+            "point_enu": [
+              -151.160293579102,
+              -79.0764083862305,
+              10.9646844863892
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 11.8485107421875,
+            "mesh": "COL_Outer500_Retaining_and_boundaries",
+            "normal": [
+              -0.587065696716309,
+              0.809539318084717,
+              0.0
+            ],
+            "point_enu": [
+              -148.746383666992,
+              -79.6707305908203,
+              11.4930019378662
+            ]
+          }
+        ],
+        "pixel": [
+          403.0,
+          150.0
+        ]
+      },
+      {
+        "geometry": [
+          {
+            "distance_m": 5.22626638412476,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              0.448134511709213,
+              -0.893499314785004,
+              -0.0288882963359356
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_03",
+            "point_enu": [
+              -155.092697143555,
+              -78.6975173950195,
+              8.99572372436523
+            ]
+          },
+          {
+            "distance_m": 20.8541698455811,
+            "mesh": "COL_Outer500_Surface_02_03",
+            "normal": [
+              -0.174849882721901,
+              0.261761903762817,
+              -0.949161887168884
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_02_03",
+            "point_enu": [
+              -140.418579101562,
+              -84.0725631713867,
+              8.89323043823242
+            ]
+          },
+          {
+            "distance_m": 178.396148681641,
+            "mesh": "COL_EastRoad_1375242617",
+            "normal": [
+              0.0903730690479279,
+              0.0506826601922512,
+              0.994617521762848
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/RaijiapoEastBend/COL_EastRoad_1375242617",
+            "point_enu": [
+              7.50848388671875,
+              -138.257369995117,
+              7.86001110076904
+            ]
+          },
+          {
+            "distance_m": 182.002319335938,
+            "mesh": "COL_EastRoad_1375242617",
+            "normal": [
+              -0.503317415714264,
+              0.864101588726044,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/RaijiapoEastBend/COL_EastRoad_1375242617",
+            "point_enu": [
+              10.8945617675781,
+              -139.497680664062,
+              7.83636045455933
+            ]
+          },
+          {
+            "distance_m": 254.036926269531,
+            "mesh": "Outer500_Facades_and_storefronts",
+            "normal": [
+              -0.066922664642334,
+              0.216453179717064,
+              0.973996639251709
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/Outer500_Facades_and_storefronts",
+            "point_enu": [
+              78.5328369140625,
+              -164.273162841797,
+              7.36393070220947
+            ]
+          },
+          {
+            "distance_m": 265.667327880859,
+            "mesh": "Outer500_Facades_and_storefronts",
+            "normal": [
+              -0.955377697944641,
+              -0.295379161834717,
+              0.00215772655792534
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/Outer500_Facades_and_storefronts",
+            "point_enu": [
+              89.4534149169922,
+              -168.273315429688,
+              7.28765392303467
+            ]
+          },
+          {
+            "distance_m": 599.687683105469,
+            "mesh": "R22_Riparian_groves",
+            "normal": [
+              -0.814425647258759,
+              0.580267906188965,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Riparian_groves",
+            "point_enu": [
+              403.088256835938,
+              -283.155914306641,
+              5.09702348709106
+            ]
+          },
+          {
+            "distance_m": 608.0771484375,
+            "mesh": "R22_Riparian_groves",
+            "normal": [
+              -0.828560769557953,
+              0.559899210929871,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Riparian_groves",
+            "point_enu": [
+              410.965698242188,
+              -286.041351318359,
+              5.04200267791748
+            ]
+          },
+          {
+            "distance_m": 620.923706054688,
+            "mesh": "R22_Bank_Relief",
+            "normal": [
+              0.298541516065598,
+              -0.0702770575881004,
+              -0.951805770397186
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Bank_Relief",
+            "point_enu": [
+              423.028198242188,
+              -290.459777832031,
+              4.95775032043457
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 5.22626638412476,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              -0.448134511709213,
+              0.893499314785004,
+              0.0288882963359356
+            ],
+            "point_enu": [
+              -155.092697143555,
+              -78.6975173950195,
+              8.99572372436523
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 20.8541698455811,
+            "mesh": "COL_Outer500_Surface_02_03",
+            "normal": [
+              -0.174849882721901,
+              0.261761903762817,
+              -0.949161887168884
+            ],
+            "point_enu": [
+              -140.418579101562,
+              -84.0725631713867,
+              8.89323043823242
+            ]
+          }
+        ],
+        "pixel": [
+          445.0,
+          234.0
+        ]
+      },
+      {
+        "geometry": [
+          {
+            "distance_m": 5.34260034561157,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              -0.00754302460700274,
+              -0.999337077140808,
+              -0.0356161557137966
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_03",
+            "point_enu": [
+              -155.761215209961,
+              -79.9341354370117,
+              10.2005186080933
+            ]
+          },
+          {
+            "distance_m": 9.63119125366211,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              -0.164879783987999,
+              0.0623378232121468,
+              -0.984341740608215
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_03",
+            "point_enu": [
+              -152.358673095703,
+              -82.3696823120117,
+              11.1401100158691
+            ]
+          },
+          {
+            "distance_m": 16.5115146636963,
+            "mesh": "COL_Outer500_Building_envelopes",
+            "normal": [
+              -0.576486945152283,
+              0.817106366157532,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Building_envelopes",
+            "point_enu": [
+              -146.899871826172,
+              -86.2771148681641,
+              12.6475315093994
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 5.34260034561157,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              0.00754302460700274,
+              0.999337077140808,
+              0.0356161557137966
+            ],
+            "point_enu": [
+              -155.761215209961,
+              -79.9341354370117,
+              10.2005186080933
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 16.5115146636963,
+            "mesh": "COL_Outer500_Building_envelopes",
+            "normal": [
+              -0.576486945152283,
+              0.817106366157532,
+              0.0
+            ],
+            "point_enu": [
+              -146.899871826172,
+              -86.2771148681641,
+              12.6475315093994
+            ]
+          }
+        ],
+        "pixel": [
+          550.0,
+          143.0
+        ]
+      },
+      {
+        "geometry": [
+          {
+            "distance_m": 2.7089524269104,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              -0.20900747179985,
+              -0.976845622062683,
+              -0.0457001514732838
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_03",
+            "point_enu": [
+              -158.176010131836,
+              -78.9000701904297,
+              9.13587474822998
+            ]
+          },
+          {
+            "distance_m": 6.4784369468689,
+            "mesh": "COL_Outer500_Building_envelopes",
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Building_envelopes",
+            "point_enu": [
+              -155.637954711914,
+              -81.6831588745117,
+              9.28319931030273
+            ]
+          },
+          {
+            "distance_m": 15.3454399108887,
+            "mesh": "COL_Outer500_Building_envelopes",
+            "normal": [
+              -0.576486945152283,
+              0.817106366157532,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Building_envelopes",
+            "point_enu": [
+              -149.66764831543,
+              -88.2298431396484,
+              9.62975215911865
+            ]
+          },
+          {
+            "distance_m": 16.525899887085,
+            "mesh": "COL_Outer500_Surface_02_03",
+            "normal": [
+              -0.158221825957298,
+              0.146587833762169,
+              -0.976461946964264
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_02_03",
+            "point_enu": [
+              -148.872817993164,
+              -89.1013946533203,
+              9.67588806152344
+            ]
+          },
+          {
+            "distance_m": 102.991088867188,
+            "mesh": "COL_Raijiapo_Ramp_1256840000",
+            "normal": [
+              0.210934683680534,
+              0.966356515884399,
+              -0.147178962826729
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/NanjimenBridgePark/COL_Raijiapo_Ramp_1256840000",
+            "point_enu": [
+              -90.6542816162109,
+              -152.940338134766,
+              13.0552444458008
+            ]
+          },
+          {
+            "distance_m": 104.616920471191,
+            "mesh": "COL_Raijiapo_Ramp_1256840000",
+            "normal": [
+              -0.133683443069458,
+              -0.00150924106128514,
+              -0.991022944450378
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/NanjimenBridgePark/COL_Raijiapo_Ramp_1256840000",
+            "point_enu": [
+              -89.5595703125,
+              -154.140716552734,
+              13.1187877655029
+            ]
+          },
+          {
+            "distance_m": 104.723159790039,
+            "mesh": "COL_Raijiapo_Ramp_1256840000",
+            "normal": [
+              0.134843096137047,
+              0.00556045165285468,
+              0.990851402282715
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/NanjimenBridgePark/COL_Raijiapo_Ramp_1256840000",
+            "point_enu": [
+              -89.4880447387695,
+              -154.219161987305,
+              13.1229391098022
+            ]
+          },
+          {
+            "distance_m": 105.04020690918,
+            "mesh": "COL_Raijiapo_Ramp_1256840000",
+            "normal": [
+              -0.134662225842476,
+              -0.00557742081582546,
+              -0.990875899791718
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/NanjimenBridgePark/COL_Raijiapo_Ramp_1256840000",
+            "point_enu": [
+              -89.2745742797852,
+              -154.453247070312,
+              13.1353302001953
+            ]
+          },
+          {
+            "distance_m": 113.335090637207,
+            "mesh": "COL_Raijiapo_Ramp_1324001438",
+            "normal": [
+              0.061262670904398,
+              0.700564384460449,
+              -0.710954666137695
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/NanjimenBridgePark/COL_Raijiapo_Ramp_1324001438",
+            "point_enu": [
+              -83.6894760131836,
+              -160.577514648438,
+              13.4595232009888
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 2.7089581489563,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              0.20900747179985,
+              0.976845622062683,
+              0.0457001514732838
+            ],
+            "point_enu": [
+              -158.176010131836,
+              -78.9000778198242,
+              9.13587474822998
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 6.4784369468689,
+            "mesh": "COL_Outer500_Building_envelopes",
+            "normal": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "point_enu": [
+              -155.637954711914,
+              -81.6831588745117,
+              9.28319931030273
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 16.525899887085,
+            "mesh": "COL_Outer500_Surface_02_03",
+            "normal": [
+              -0.158221825957298,
+              0.146587833762169,
+              -0.976461946964264
+            ],
+            "point_enu": [
+              -148.872817993164,
+              -89.1013946533203,
+              9.67588806152344
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 102.991088867188,
+            "mesh": "COL_Raijiapo_Ramp_1256840000",
+            "normal": [
+              0.210934683680534,
+              0.966356515884399,
+              -0.147178962826729
+            ],
+            "point_enu": [
+              -90.6542816162109,
+              -152.940338134766,
+              13.0552434921265
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 113.335083007812,
+            "mesh": "COL_Raijiapo_Ramp_1324001438",
+            "normal": [
+              0.061262670904398,
+              0.700564384460449,
+              -0.710954666137695
+            ],
+            "point_enu": [
+              -83.6894836425781,
+              -160.577514648438,
+              13.4595222473145
+            ]
+          }
+        ],
+        "pixel": [
+          640.0,
+          215.0
+        ]
+      },
+      {
+        "geometry": [
+          {
+            "distance_m": 1.62926030158997,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              -0.281168788671494,
+              -0.958582699298859,
+              -0.0454242080450058
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_03",
+            "point_enu": [
+              -159.324081420898,
+              -78.3815689086914,
+              8.97919368743896
+            ]
+          },
+          {
+            "distance_m": 20.9861927032471,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              -0.0561487190425396,
+              0.269869774580002,
+              -0.961258411407471
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_03",
+            "point_enu": [
+              -151.293716430664,
+              -95.9838333129883,
+              8.37557125091553
+            ]
+          },
+          {
+            "distance_m": 67.1020965576172,
+            "mesh": "COL_Raijiapo_GaragePublicEnvelope",
+            "normal": [
+              0.335648536682129,
+              0.941987335681915,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/NanjimenBridgePark/COL_Raijiapo_GaragePublicEnvelope",
+            "point_enu": [
+              -132.162185668945,
+              -137.919418334961,
+              6.93750333786011
+            ]
+          },
+          {
+            "distance_m": 67.756965637207,
+            "mesh": "COL_Raijiapo_GaragePublicEnvelope",
+            "normal": [
+              -0.335580110549927,
+              -0.942011654376984,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/NanjimenBridgePark/COL_Raijiapo_GaragePublicEnvelope",
+            "point_enu": [
+              -131.890502929688,
+              -138.514923095703,
+              6.91708278656006
+            ]
+          },
+          {
+            "distance_m": 83.2133255004883,
+            "mesh": "COL_Raijiapo_GaragePublicEnvelope",
+            "normal": [
+              0.969002902507782,
+              -0.247049406170845,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/NanjimenBridgePark/COL_Raijiapo_GaragePublicEnvelope",
+            "point_enu": [
+              -125.478317260742,
+              -152.570190429688,
+              6.43509483337402
+            ]
+          },
+          {
+            "distance_m": 83.9789733886719,
+            "mesh": "COL_Raijiapo_GaragePublicEnvelope",
+            "normal": [
+              -0.969003736972809,
+              0.247046232223511,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/NanjimenBridgePark/COL_Raijiapo_GaragePublicEnvelope",
+            "point_enu": [
+              -125.160690307617,
+              -153.26643371582,
+              6.41121864318848
+            ]
+          },
+          {
+            "distance_m": 991.862182617188,
+            "mesh": "R22_Bank_Relief",
+            "normal": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Bank_Relief",
+            "point_enu": [
+              251.481567382812,
+              -978.851684570312,
+              -21.9000015258789
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 1.62926030158997,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              0.281168788671494,
+              0.958582699298859,
+              0.0454242080450058
+            ],
+            "point_enu": [
+              -159.324081420898,
+              -78.3815689086914,
+              8.97919368743896
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 67.1020965576172,
+            "mesh": "COL_Raijiapo_GaragePublicEnvelope",
+            "normal": [
+              0.335648536682129,
+              0.941987335681915,
+              0.0
+            ],
+            "point_enu": [
+              -132.162185668945,
+              -137.919418334961,
+              6.93750333786011
+            ]
+          }
+        ],
+        "pixel": [
+          820.0,
+          248.0
+        ]
+      },
+      {
+        "geometry": [
+          {
+            "distance_m": 12.094048500061,
+            "mesh": "COL_Nanqu_HillsideRetaining",
+            "normal": [
+              0.374980956315994,
+              0.92703253030777,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/NanquRiverFootway/COL_Nanqu_HillsideRetaining",
+            "point_enu": [
+              -148.425262451172,
+              -73.7538833618164,
+              10.5770597457886
+            ]
+          },
+          {
+            "distance_m": 14.3837413787842,
+            "mesh": "COL_Outer500_Surface_02_03",
+            "normal": [
+              0.79277491569519,
+              0.410088211297989,
+              -0.450927585363388
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_02_03",
+            "point_enu": [
+              -146.23388671875,
+              -73.1582489013672,
+              10.8699550628662
+            ]
+          },
+          {
+            "distance_m": 16.5349178314209,
+            "mesh": "COL_Outer500_Surface_02_03",
+            "normal": [
+              -0.166072830557823,
+              0.0723523199558258,
+              -0.983455657958984
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_02_03",
+            "point_enu": [
+              -144.175079345703,
+              -72.5986480712891,
+              11.1451320648193
+            ]
+          },
+          {
+            "distance_m": 119.114479064941,
+            "mesh": "B_A05_market_details_tile_cream",
+            "normal": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/B_A05_market_details_tile_cream",
+            "point_enu": [
+              -46.0002136230469,
+              -45.9138488769531,
+              24.2670135498047
+            ]
+          },
+          {
+            "distance_m": 119.302551269531,
+            "mesh": "B_A05_market_details_tile_cream",
+            "normal": [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/B_A05_market_details_tile_cream",
+            "point_enu": [
+              -45.8202133178711,
+              -45.8649215698242,
+              24.291072845459
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 12.0940475463867,
+            "mesh": "COL_Nanqu_HillsideRetaining",
+            "normal": [
+              -0.374980956315994,
+              -0.92703253030777,
+              0.0
+            ],
+            "point_enu": [
+              -148.425262451172,
+              -73.7538833618164,
+              10.5770587921143
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 14.3837413787842,
+            "mesh": "COL_Outer500_Surface_02_03",
+            "normal": [
+              -0.79277491569519,
+              -0.410088211297989,
+              0.450927585363388
+            ],
+            "point_enu": [
+              -146.23388671875,
+              -73.1582489013672,
+              10.8699550628662
+            ]
+          }
+        ],
+        "pixel": [
+          174.0,
+          171.0
+        ]
+      },
+      {
+        "geometry": [
+          {
+            "distance_m": 14.7043476104736,
+            "mesh": "COL_Outer500_Retaining_and_boundaries",
+            "normal": [
+              0.575577914714813,
+              -0.817746996879578,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Retaining_and_boundaries",
+            "point_enu": [
+              -145.351654052734,
+              -77.2747344970703,
+              10.25612449646
+            ]
+          },
+          {
+            "distance_m": 14.8234233856201,
+            "mesh": "COL_Outer500_Retaining_and_boundaries",
+            "normal": [
+              0.816356003284454,
+              0.57754909992218,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Retaining_and_boundaries",
+            "point_enu": [
+              -145.233032226562,
+              -77.2777709960938,
+              10.2660551071167
+            ]
+          },
+          {
+            "distance_m": 14.8234386444092,
+            "mesh": "COL_Outer500_Retaining_and_boundaries",
+            "normal": [
+              -0.816356003284454,
+              -0.57754909992218,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Retaining_and_boundaries",
+            "point_enu": [
+              -145.233016967773,
+              -77.2777709960938,
+              10.2660551071167
+            ]
+          },
+          {
+            "distance_m": 15.2254667282104,
+            "mesh": "COL_Outer500_Retaining_and_boundaries",
+            "normal": [
+              -0.818312168121338,
+              -0.574774146080017,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Retaining_and_boundaries",
+            "point_enu": [
+              -144.83251953125,
+              -77.2880172729492,
+              10.299578666687
+            ]
+          },
+          {
+            "distance_m": 860.251770019531,
+            "mesh": "R22_Bank_Relief",
+            "normal": [
+              0.271415501832962,
+              0.027833130210638,
+              -0.962059795856476
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Bank_Relief",
+            "point_enu": [
+              696.975463867188,
+              -98.8231506347656,
+              80.7622985839844
+            ]
+          },
+          {
+            "distance_m": 953.246276855469,
+            "mesh": "R22_Bank_Relief",
+            "normal": [
+              0.0176767315715551,
+              0.0311803221702576,
+              -0.999357461929321
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Bank_Relief",
+            "point_enu": [
+              789.615844726562,
+              -101.193069458008,
+              88.5166702270508
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 14.7043476104736,
+            "mesh": "COL_Outer500_Retaining_and_boundaries",
+            "normal": [
+              -0.575577914714813,
+              0.817746996879578,
+              0.0
+            ],
+            "point_enu": [
+              -145.351654052734,
+              -77.2747344970703,
+              10.25612449646
+            ]
+          }
+        ],
+        "pixel": [
+          317.0,
+          198.0
+        ]
+      },
+      {
+        "geometry": [
+          {
+            "distance_m": 2.45295882225037,
+            "mesh": "Nanqu_GalvanizedVerticals",
+            "normal": [
+              -0.375259250402451,
+              -0.926919937133789,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/NanquRiverFootway/Nanqu_GalvanizedVerticals",
+            "point_enu": [
+              -158.57991027832,
+              -78.5714645385742,
+              7.93156290054321
+            ]
+          },
+          {
+            "distance_m": 2.5380642414093,
+            "mesh": "Nanqu_GalvanizedVerticals",
+            "normal": [
+              -0.0315228514373302,
+              -0.000802443362772465,
+              0.999502718448639
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/NanquRiverFootway/Nanqu_GalvanizedVerticals",
+            "point_enu": [
+              -158.530639648438,
+              -78.6294555664062,
+              7.89345264434814
+            ]
+          },
+          {
+            "distance_m": 2.59545350074768,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              -0.0296148899942636,
+              -0.998299181461334,
+              -0.0502166971564293
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_03",
+            "point_enu": [
+              -158.497421264648,
+              -78.6685638427734,
+              7.86775064468384
+            ]
+          },
+          {
+            "distance_m": 12.2164058685303,
+            "mesh": "R22_Bank_Outer",
+            "normal": [
+              0.0237966999411583,
+              0.148761138319969,
+              -0.988586843013763
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Bank_Outer",
+            "point_enu": [
+              -152.92756652832,
+              -85.2243423461914,
+              3.55947732925415
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 2.51821398735046,
+            "mesh": "COLH_Nanqu_RiverBarrier",
+            "normal": [
+              0.374989122152328,
+              0.927029252052307,
+              0.0
+            ],
+            "point_enu": [
+              -158.542129516602,
+              -78.6159286499023,
+              7.90234327316284
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 2.59545350074768,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              0.0296148899942636,
+              0.998299181461334,
+              0.0502166971564293
+            ],
+            "point_enu": [
+              -158.497421264648,
+              -78.6685638427734,
+              7.86775064468384
+            ]
+          }
+        ],
+        "pixel": [
+          650.0,
+          440.0
+        ]
+      }
+    ],
+    "id": "04-sign",
+    "pixels": [
+      [
+        370.0,
+        180.0
+      ],
+      [
+        403.0,
+        150.0
+      ],
+      [
+        445.0,
+        234.0
+      ],
+      [
+        550.0,
+        143.0
+      ],
+      [
+        640.0,
+        215.0
+      ],
+      [
+        820.0,
+        248.0
+      ],
+      [
+        174.0,
+        171.0
+      ],
+      [
+        317.0,
+        198.0
+      ],
+      [
+        650.0,
+        440.0
+      ]
+    ],
+    "projection_size": [
+      900,
+      506
+    ],
+    "target_enu": [
+      -149.13,
+      -81.03,
+      8.38
+    ],
+    "viewport_size_reported": [
+      900,
+      506
+    ]
+  },
+  {
+    "direction_xyz": "(-0.931477, 0.0, -0.3638)",
+    "eye_enu": [
+      -156.949920654297,
+      -77.3335800170898,
+      9.3809061050415
+    ],
+    "fov_deg": 68.0,
+    "frame": "inside_look_back.png",
+    "hits": [
+      {
+        "geometry": [
+          {
+            "distance_m": 2.55465340614319,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              -0.442747116088867,
+              -0.895067572593689,
+              -0.0531895160675049
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_03",
+            "point_enu": [
+              -159.243560791016,
+              -78.4471817016602,
+              9.54015254974365
+            ]
+          },
+          {
+            "distance_m": 5.81227684020996,
+            "mesh": "COL_Outer500_Building_envelopes",
+            "normal": [
+              0.816856384277344,
+              0.576841175556183,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Building_envelopes",
+            "point_enu": [
+              -162.168350219727,
+              -79.8672103881836,
+              9.74321937561035
+            ]
+          },
+          {
+            "distance_m": 8.11704635620117,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              0.671535909175873,
+              -0.699827373027802,
+              -0.243477195501328
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_03",
+            "point_enu": [
+              -164.237640380859,
+              -80.8718795776367,
+              9.88688850402832
+            ]
+          },
+          {
+            "distance_m": 10.4986343383789,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              -0.770478904247284,
+              -0.592836260795593,
+              -0.234323516488075
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_03",
+            "point_enu": [
+              -166.375900268555,
+              -81.9100341796875,
+              10.0353469848633
+            ]
+          },
+          {
+            "distance_m": 11.4180278778076,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              0.581856250762939,
+              -0.728041291236877,
+              -0.362490296363831
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_03",
+            "point_enu": [
+              -167.201354980469,
+              -82.3108139038086,
+              10.0926580429077
+            ]
+          },
+          {
+            "distance_m": 96.6898956298828,
+            "mesh": "Context_authored_1_0_brick_dark",
+            "normal": [
+              -0.978465497493744,
+              0.206410497426987,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/Context_authored_1_0_brick_dark",
+            "point_enu": [
+              -243.76091003418,
+              -119.481658935547,
+              15.4081468582153
+            ]
+          },
+          {
+            "distance_m": 98.6808013916016,
+            "mesh": "Context_v04_detail_49100_dark",
+            "normal": [
+              -0.206297740340233,
+              -0.978489279747009,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/Context_v04_detail_49100_dark",
+            "point_enu": [
+              -245.548400878906,
+              -120.349510192871,
+              15.5322513580322
+            ]
+          },
+          {
+            "distance_m": 98.7381744384766,
+            "mesh": "Context_authored_1_0_brick_dark",
+            "normal": [
+              0.206403329968452,
+              0.978466987609863,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/Context_authored_1_0_brick_dark",
+            "point_enu": [
+              -245.599914550781,
+              -120.374526977539,
+              15.5358276367188
+            ]
+          },
+          {
+            "distance_m": 98.8970413208008,
+            "mesh": "Context_v04_detail_49100_glass",
+            "normal": [
+              -0.206533625721931,
+              -0.978439509868622,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/Context_v04_detail_49100_glass",
+            "point_enu": [
+              -245.742553710938,
+              -120.443771362305,
+              15.5457305908203
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 2.55465340614319,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              0.442747116088867,
+              0.895067572593689,
+              0.0531895160675049
+            ],
+            "point_enu": [
+              -159.243560791016,
+              -78.4471817016602,
+              9.54015254974365
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 5.81227684020996,
+            "mesh": "COL_Outer500_Building_envelopes",
+            "normal": [
+              0.816856384277344,
+              0.576841175556183,
+              0.0
+            ],
+            "point_enu": [
+              -162.168350219727,
+              -79.8672103881836,
+              9.74321937561035
+            ]
+          }
+        ],
+        "pixel": [
+          44.0,
+          218.0
+        ]
+      },
+      {
+        "geometry": [
+          {
+            "distance_m": 2.59582495689392,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              -0.281168788671494,
+              -0.958582699298859,
+              -0.0454242080450058
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_03",
+            "point_enu": [
+              -159.296127319336,
+              -78.3930053710938,
+              9.04738140106201
+            ]
+          },
+          {
+            "distance_m": 9.21569156646729,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              0.576041281223297,
+              -0.726102232933044,
+              -0.375435769557953
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_03",
+            "point_enu": [
+              -165.279418945312,
+              -81.0947494506836,
+              8.19682788848877
+            ]
+          },
+          {
+            "distance_m": 10.0936527252197,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              -0.834939002990723,
+              -0.472190976142883,
+              -0.282688081264496
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_03",
+            "point_enu": [
+              -166.072952270508,
+              -81.4530715942383,
+              8.08402252197266
+            ]
+          },
+          {
+            "distance_m": 28.6130466461182,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              0.497988909482956,
+              -0.129024043679237,
+              -0.857531309127808
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_03",
+            "point_enu": [
+              -182.811492919922,
+              -89.0113372802734,
+              5.70455741882324
+            ]
+          },
+          {
+            "distance_m": 33.0994606018066,
+            "mesh": "Outer500_Plant_251",
+            "normal": [
+              -0.844660758972168,
+              0.535240828990936,
+              0.00809094309806824
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/Outer500_Plant_251",
+            "point_enu": [
+              -186.866485595703,
+              -90.8423614501953,
+              5.12812089920044
+            ]
+          },
+          {
+            "distance_m": 33.2802352905273,
+            "mesh": "Outer500_Plant_251",
+            "normal": [
+              0.503087341785431,
+              0.833647072315216,
+              -0.227893888950348
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/Outer500_Plant_251",
+            "point_enu": [
+              -187.029876708984,
+              -90.9161376953125,
+              5.10489368438721
+            ]
+          },
+          {
+            "distance_m": 33.7884864807129,
+            "mesh": "Outer500_Plant_251",
+            "normal": [
+              -0.478186160326004,
+              0.33263972401619,
+              -0.812827587127686
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/Outer500_Plant_251",
+            "point_enu": [
+              -187.4892578125,
+              -91.1235656738281,
+              5.03959131240845
+            ]
+          },
+          {
+            "distance_m": 33.8509483337402,
+            "mesh": "Outer500_Plant_251",
+            "normal": [
+              0.978383362293243,
+              0.181611448526382,
+              -0.0989104732871056
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/Outer500_Plant_251",
+            "point_enu": [
+              -187.545715332031,
+              -91.149055480957,
+              5.03156614303589
+            ]
+          },
+          {
+            "distance_m": 51.555347442627,
+            "mesh": "COL_Outer500_Surface_00_03",
+            "normal": [
+              -0.0493571944534779,
+              -0.0100706163793802,
+              -0.998730421066284
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_00_03",
+            "point_enu": [
+              -203.547622680664,
+              -98.3747100830078,
+              2.75681638717651
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 2.59582495689392,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              0.281168788671494,
+              0.958582699298859,
+              0.0454242080450058
+            ],
+            "point_enu": [
+              -159.296127319336,
+              -78.3930053710938,
+              9.04738140106201
+            ]
+          },
+          {
+            "body": "OuterDistrictTreeTrunks",
+            "distance_m": 39.4574356079102,
+            "mesh": "OuterDistrict500",
+            "normal": [
+              0.799529850482941,
+              -0.600626409053802,
+              0.0
+            ],
+            "point_enu": [
+              -192.613067626953,
+              -93.4372253417969,
+              4.31121778488159
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 51.555347442627,
+            "mesh": "COL_Outer500_Surface_00_03",
+            "normal": [
+              0.0493571944534779,
+              0.0100706163793802,
+              0.998730421066284
+            ],
+            "point_enu": [
+              -203.547622680664,
+              -98.3747100830078,
+              2.75681686401367
+            ]
+          }
+        ],
+        "pixel": [
+          66.0,
+          322.0
+        ]
+      },
+      {
+        "geometry": [
+          {
+            "distance_m": 4.04484891891479,
+            "mesh": "COL_Outer500_Building_envelopes",
+            "normal": [
+              0.576606333255768,
+              -0.817022085189819,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Building_envelopes",
+            "point_enu": [
+              -160.806823730469,
+              -78.3715286254883,
+              10.0194702148438
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 4.04484891891479,
+            "mesh": "COL_Outer500_Building_envelopes",
+            "normal": [
+              0.576606333255768,
+              -0.817022085189819,
+              0.0
+            ],
+            "point_enu": [
+              -160.806823730469,
+              -78.3715286254883,
+              10.0194702148438
+            ]
+          }
+        ],
+        "pixel": [
+          173.0,
+          178.0
+        ]
+      },
+      {
+        "geometry": [
+          {
+            "distance_m": 15.7978963851929,
+            "mesh": "COL_Nanqu_HillsideRetaining",
+            "normal": [
+              0.454893082380295,
+              0.890546083450317,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/NanquRiverFootway/COL_Nanqu_HillsideRetaining",
+            "point_enu": [
+              -167.131851196289,
+              -65.428825378418,
+              11.4250774383545
+            ]
+          },
+          {
+            "distance_m": 18.6256980895996,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              0.355154156684875,
+              0.9316565990448,
+              -0.0766911953687668
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_03",
+            "point_enu": [
+              -168.954406738281,
+              -63.2978935241699,
+              11.7909803390503
+            ]
+          },
+          {
+            "distance_m": 43.7164115905762,
+            "mesh": "COL_Outer500_Surface_01_04",
+            "normal": [
+              0.0526085197925568,
+              0.0224676486104727,
+              -0.998362421989441
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_04",
+            "point_enu": [
+              -185.125671386719,
+              -44.3903923034668,
+              15.0375947952271
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 15.7978963851929,
+            "mesh": "COL_Nanqu_HillsideRetaining",
+            "normal": [
+              -0.454893082380295,
+              -0.890546083450317,
+              0.0
+            ],
+            "point_enu": [
+              -167.131851196289,
+              -65.428825378418,
+              11.4250764846802
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 18.6257019042969,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              -0.355154156684875,
+              -0.9316565990448,
+              0.0766911953687668
+            ],
+            "point_enu": [
+              -168.954406738281,
+              -63.2978897094727,
+              11.7909803390503
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 43.7164192199707,
+            "mesh": "COL_Outer500_Surface_01_04",
+            "normal": [
+              0.0526085197925568,
+              0.0224676486104727,
+              -0.998362421989441
+            ],
+            "point_enu": [
+              -185.125671386719,
+              -44.3903846740723,
+              15.0375957489014
+            ]
+          }
+        ],
+        "pixel": [
+          650.0,
+          197.0
+        ]
+      },
+      {
+        "geometry": [
+          {
+            "distance_m": 12.0371875762939,
+            "mesh": "COL_Nanqu_HillsideRetaining",
+            "normal": [
+              0.455535233020782,
+              0.89021772146225,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/NanquRiverFootway/COL_Nanqu_HillsideRetaining",
+            "point_enu": [
+              -163.416122436523,
+              -67.3262481689453,
+              11.094217300415
+            ]
+          },
+          {
+            "distance_m": 14.1646299362183,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              0.45656144618988,
+              0.886303842067719,
+              -0.0775708481669426
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_03",
+            "point_enu": [
+              -164.558944702148,
+              -65.5575561523438,
+              11.3970260620117
+            ]
+          },
+          {
+            "distance_m": 41.6910820007324,
+            "mesh": "COL_Outer500_Surface_01_04",
+            "normal": [
+              0.0341270714998245,
+              0.00809715688228607,
+              -0.999384701251984
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_04",
+            "point_enu": [
+              -179.345748901367,
+              -42.6729431152344,
+              15.3150005340576
+            ]
+          },
+          {
+            "distance_m": 81.855842590332,
+            "mesh": "COL_Outer500_Frame_00",
+            "normal": [
+              0.50327205657959,
+              0.864128053188324,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Frame_00",
+            "point_enu": [
+              -200.921661376953,
+              -9.28124237060547,
+              21.0318450927734
+            ]
+          },
+          {
+            "distance_m": 82.2798385620117,
+            "mesh": "COL_Outer500_Frame_00",
+            "normal": [
+              -0.50327205657959,
+              -0.864128053188324,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Frame_00",
+            "point_enu": [
+              -201.1494140625,
+              -8.92874145507812,
+              21.0921936035156
+            ]
+          },
+          {
+            "distance_m": 83.0086975097656,
+            "mesh": "COL_Outer500_Frame_00",
+            "normal": [
+              -0.86406672000885,
+              0.503377377986908,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Frame_00",
+            "point_enu": [
+              -201.540954589844,
+              -8.32279968261719,
+              21.1959342956543
+            ]
+          },
+          {
+            "distance_m": 83.2464828491211,
+            "mesh": "COL_Outer500_Frame_00",
+            "normal": [
+              0.864092528820038,
+              -0.503333032131195,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Frame_00",
+            "point_enu": [
+              -201.668685913086,
+              -8.12510681152344,
+              21.2297821044922
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 12.0371875762939,
+            "mesh": "COL_Nanqu_HillsideRetaining",
+            "normal": [
+              -0.455535233020782,
+              -0.89021772146225,
+              0.0
+            ],
+            "point_enu": [
+              -163.416122436523,
+              -67.3262481689453,
+              11.094217300415
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 14.1646299362183,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              -0.45656144618988,
+              -0.886303842067719,
+              0.0775708481669426
+            ],
+            "point_enu": [
+              -164.558944702148,
+              -65.5575561523438,
+              11.397027015686
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 41.6910858154297,
+            "mesh": "COL_Outer500_Surface_01_04",
+            "normal": [
+              0.0341270714998245,
+              0.00809715688228607,
+              -0.999384701251984
+            ],
+            "point_enu": [
+              -179.345748901367,
+              -42.6729393005371,
+              15.3150005340576
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 81.8558502197266,
+            "mesh": "COL_Outer500_Frame_00",
+            "normal": [
+              -0.50327205657959,
+              -0.864128053188324,
+              0.0
+            ],
+            "point_enu": [
+              -200.921661376953,
+              -9.28123474121094,
+              21.0318450927734
+            ]
+          }
+        ],
+        "pixel": [
+          720.0,
+          186.0
+        ]
+      },
+      {
+        "geometry": [
+          {
+            "distance_m": 6.47070074081421,
+            "mesh": "COL_R24_LinkDeck_R24_link_asphalt",
+            "normal": [
+              0.027020413428545,
+              -0.0109482910484076,
+              -0.999574959278107
+            ],
+            "path": "/root/ChongqingDistrict/City/MarketTerraceR24/frontage/COL_R24_LinkDeck_R24_link_asphalt",
+            "point_enu": [
+              -160.123901367188,
+              -72.0321273803711,
+              7.45986080169678
+            ]
+          },
+          {
+            "distance_m": 8.91013717651367,
+            "mesh": "COL_R24_FlyoverBox_R24_link_concrete",
+            "normal": [
+              -0.385498583316803,
+              -0.739318311214447,
+              0.552086412906647
+            ],
+            "path": "/root/ChongqingDistrict/City/MarketTerraceR24/frontage/COL_R24_FlyoverBox_R24_link_concrete",
+            "point_enu": [
+              -161.32048034668,
+              -70.0334930419922,
+              6.73563098907471
+            ]
+          },
+          {
+            "distance_m": 11.2737493515015,
+            "mesh": "R22_Bank_Outer",
+            "normal": [
+              0.0171845871955156,
+              0.155930861830711,
+              -0.987618505954742
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Bank_Outer",
+            "point_enu": [
+              -162.479858398438,
+              -68.0969772338867,
+              6.03391075134277
+            ]
+          },
+          {
+            "distance_m": 11.7869291305542,
+            "mesh": "COL_Nanqu_HillsideRetaining",
+            "normal": [
+              0.455535262823105,
+              0.89021772146225,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/NanquRiverFootway/COL_Nanqu_HillsideRetaining",
+            "point_enu": [
+              -162.731582641602,
+              -67.6765289306641,
+              5.88155746459961
+            ]
+          },
+          {
+            "distance_m": 12.9104623794556,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              0.852678537368774,
+              0.484247863292694,
+              -0.196069687604904
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_03",
+            "point_enu": [
+              -163.282699584961,
+              -66.7560195922852,
+              5.54800033569336
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 6.47070121765137,
+            "mesh": "COL_R24_LinkDeck_R24_link_asphalt",
+            "normal": [
+              -0.027020413428545,
+              0.0109482910484076,
+              0.999574959278107
+            ],
+            "point_enu": [
+              -160.123901367188,
+              -72.0321273803711,
+              7.45986032485962
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 8.91013717651367,
+            "mesh": "COL_R24_FlyoverBox_R24_link_concrete",
+            "normal": [
+              -0.385498583316803,
+              -0.739318311214447,
+              0.552086412906647
+            ],
+            "point_enu": [
+              -161.32048034668,
+              -70.0334930419922,
+              6.73563098907471
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 11.7869281768799,
+            "mesh": "COL_Nanqu_HillsideRetaining",
+            "normal": [
+              -0.455535262823105,
+              -0.89021772146225,
+              0.0
+            ],
+            "point_enu": [
+              -162.731582641602,
+              -67.6765289306641,
+              5.88155794143677
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 12.9104413986206,
+            "mesh": "COL_Outer500_Surface_01_03",
+            "normal": [
+              -0.852678537368774,
+              -0.484247863292694,
+              0.196069687604904
+            ],
+            "point_enu": [
+              -163.282684326172,
+              -66.7560348510742,
+              5.54800510406494
+            ]
+          }
+        ],
+        "pixel": [
+          740.0,
+          400.0
+        ]
+      }
+    ],
+    "id": "04-player-return",
+    "pixel_size": "(900, 560)",
+    "pixels": [
+      [
+        44.0,
+        218.0
+      ],
+      [
+        66.0,
+        322.0
+      ],
+      [
+        173.0,
+        178.0
+      ],
+      [
+        650.0,
+        197.0
+      ],
+      [
+        720.0,
+        186.0
+      ],
+      [
+        740.0,
+        400.0
+      ]
+    ],
+    "projection_size": [
+      900,
+      506
+    ],
+    "target_enu": [
+      -157.881397654297,
+      -76.9697800170898,
+      9.3809061050415
+    ],
+    "viewport_size_reported": [
+      900,
+      506
+    ]
+  },
+  {
+    "eye_enu": [
+      -158.965316772461,
+      -159.07014465332,
+      -2.09979504394531
+    ],
+    "file": "55-shoulder-approach.png",
+    "fov_deg": 68.0,
+    "hits": [
+      {
+        "geometry": [
+          {
+            "distance_m": 6.18973827362061,
+            "mesh": "COL_WestPlayground_PerimeterSupport",
+            "normal": [
+              0.998937427997589,
+              0.0460871644318104,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/WestCourtRampFinish/COL_WestPlayground_PerimeterSupport",
+            "point_enu": [
+              -153.579208374023,
+              -161.789093017578,
+              -3.48182892799377
+            ]
+          },
+          {
+            "distance_m": 27.0839653015137,
+            "mesh": "R22_Bank_Outer",
+            "normal": [
+              0.0218526404350996,
+              0.134081095457077,
+              -0.99072939157486
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Bank_Outer",
+            "point_enu": [
+              -135.397735595703,
+              -170.967239379883,
+              -8.14705944061279
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 6.18973827362061,
+            "mesh": "COL_WestPlayground_PerimeterSupport",
+            "normal": [
+              -0.998937427997589,
+              -0.0460871644318104,
+              0.0
+            ],
+            "point_enu": [
+              -153.579208374023,
+              -161.789093017578,
+              -3.4818286895752
+            ]
+          }
+        ],
+        "pixel": [
+          536.0,
+          365.0
+        ]
+      },
+      {
+        "geometry": [
+          {
+            "distance_m": 7.02783918380737,
+            "mesh": "COL_WestPlayground_PerimeterSupport",
+            "normal": [
+              0.998997569084167,
+              0.044764868915081,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/WestCourtRampFinish/COL_WestPlayground_PerimeterSupport",
+            "point_enu": [
+              -153.523040771484,
+              -163.036331176758,
+              -4.11014842987061
+            ]
+          },
+          {
+            "distance_m": 21.853515625,
+            "mesh": "R22_Bank_Outer",
+            "normal": [
+              0.0211240351200104,
+              0.134083226323128,
+              -0.990744948387146
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Bank_Outer",
+            "point_enu": [
+              -142.042205810547,
+              -171.403244018555,
+              -8.35112476348877
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 7.02783918380737,
+            "mesh": "COL_WestPlayground_PerimeterSupport",
+            "normal": [
+              -0.998997569084167,
+              -0.044764868915081,
+              0.0
+            ],
+            "point_enu": [
+              -153.523040771484,
+              -163.036331176758,
+              -4.11014842987061
+            ]
+          }
+        ],
+        "pixel": [
+          605.0,
+          399.0
+        ]
+      },
+      {
+        "geometry": [
+          {
+            "distance_m": 8.46768665313721,
+            "mesh": "COL_WestPlayground_PerimeterSupport",
+            "normal": [
+              0.998976647853851,
+              0.0452298931777477,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/WestCourtRampFinish/COL_WestPlayground_PerimeterSupport",
+            "point_enu": [
+              -153.434600830078,
+              -165.002212524414,
+              -4.53361415863037
+            ]
+          },
+          {
+            "distance_m": 23.9325370788574,
+            "mesh": "R22_Bank_Outer",
+            "normal": [
+              0.0211240351200104,
+              0.134083226323128,
+              -0.990744948387146
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Bank_Outer",
+            "point_enu": [
+              -143.333633422852,
+              -175.836151123047,
+              -8.97858905792236
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 8.46768665313721,
+            "mesh": "COL_WestPlayground_PerimeterSupport",
+            "normal": [
+              -0.998976647853851,
+              -0.0452298931777477,
+              0.0
+            ],
+            "point_enu": [
+              -153.434600830078,
+              -165.002212524414,
+              -4.53361415863037
+            ]
+          }
+        ],
+        "pixel": [
+          699.0,
+          413.0
+        ]
+      },
+      {
+        "geometry": [
+          {
+            "distance_m": 9.28351402282715,
+            "mesh": "COL_WestPlayground_PerimeterSupport",
+            "normal": [
+              0.999004721641541,
+              0.0446042455732822,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/WestCourtRampFinish/COL_WestPlayground_PerimeterSupport",
+            "point_enu": [
+              -153.393997192383,
+              -165.905639648438,
+              -5.00152683258057
+            ]
+          },
+          {
+            "distance_m": 21.8994407653809,
+            "mesh": "R22_Bank_Outer",
+            "normal": [
+              0.0211240351200104,
+              0.134083226323128,
+              -0.990744948387146
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Bank_Outer",
+            "point_enu": [
+              -145.822799682617,
+              -175.194808959961,
+              -8.94486331939697
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 9.28351402282715,
+            "mesh": "COL_WestPlayground_PerimeterSupport",
+            "normal": [
+              -0.999004721641541,
+              -0.0446042455732822,
+              0.0
+            ],
+            "point_enu": [
+              -153.393997192383,
+              -165.905639648438,
+              -5.00152683258057
+            ]
+          }
+        ],
+        "pixel": [
+          738.0,
+          434.0
+        ]
+      },
+      {
+        "geometry": [
+          {
+            "distance_m": 10.5893135070801,
+            "mesh": "COL_WestPlayground_PerimeterSupport",
+            "normal": [
+              0.998965978622437,
+              0.0454644076526165,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/WestCourtRampFinish/COL_WestPlayground_PerimeterSupport",
+            "point_enu": [
+              -153.323822021484,
+              -167.4697265625,
+              -5.22295188903809
+            ]
+          },
+          {
+            "distance_m": 11.5636110305786,
+            "mesh": "COL_Park57_StreetEntryReturn",
+            "normal": [
+              0.11452479660511,
+              0.993420422077179,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/RiversideParkPlot57/COL_Park57_StreetEntryReturn",
+            "point_enu": [
+              -152.804763793945,
+              -168.242553710938,
+              -5.51030874252319
+            ]
+          },
+          {
+            "distance_m": 12.6475629806519,
+            "mesh": "COL_WestPlayground_GradedSurfaces",
+            "normal": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/WestCourtRampFinish/COL_WestPlayground_GradedSurfaces",
+            "point_enu": [
+              -152.227279663086,
+              -169.102355957031,
+              -5.82999992370605
+            ]
+          },
+          {
+            "distance_m": 24.8464221954346,
+            "mesh": "R22_Bank_Outer",
+            "normal": [
+              0.0211240351200104,
+              0.134083226323128,
+              -0.990744948387146
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Bank_Outer",
+            "point_enu": [
+              -145.728302001953,
+              -178.778656005859,
+              -9.42787170410156
+            ]
+          },
+          {
+            "distance_m": 111.1025390625,
+            "mesh": "R22_Bank_Relief",
+            "normal": [
+              -0.022035114467144,
+              -0.0553957931697369,
+              -0.998221337795258
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Bank_Relief",
+            "point_enu": [
+              -99.7750549316406,
+              -247.198150634766,
+              -34.8677978515625
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 10.5893135070801,
+            "mesh": "COL_WestPlayground_PerimeterSupport",
+            "normal": [
+              -0.998965978622437,
+              -0.0454644076526165,
+              0.0
+            ],
+            "point_enu": [
+              -153.323822021484,
+              -167.4697265625,
+              -5.2229528427124
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 11.5636110305786,
+            "mesh": "COL_Park57_StreetEntryReturn",
+            "normal": [
+              0.11452479660511,
+              0.993420422077179,
+              0.0
+            ],
+            "point_enu": [
+              -152.804763793945,
+              -168.242553710938,
+              -5.51030826568604
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 12.6475629806519,
+            "mesh": "COL_WestPlayground_GradedSurfaces",
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "point_enu": [
+              -152.227279663086,
+              -169.102355957031,
+              -5.82999992370605
+            ]
+          }
+        ],
+        "pixel": [
+          798.0,
+          436.0
+        ]
+      },
+      {
+        "geometry": [
+          {
+            "distance_m": 14.7606945037842,
+            "mesh": "COL_WestPlayground_PerimeterSupport",
+            "normal": [
+              0.442397266626358,
+              -0.896819233894348,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/WestCourtRampFinish/COL_WestPlayground_PerimeterSupport",
+            "point_enu": [
+              -151.946807861328,
+              -171.629547119141,
+              -5.39828777313232
+            ]
+          },
+          {
+            "distance_m": 16.2818622589111,
+            "mesh": "COL_WestPlayground_PerimeterSupport",
+            "normal": [
+              0.143144652247429,
+              0.989701807498932,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/WestCourtRampFinish/COL_WestPlayground_PerimeterSupport",
+            "point_enu": [
+              -151.223510742188,
+              -172.923858642578,
+              -5.7382116317749
+            ]
+          },
+          {
+            "distance_m": 16.6926021575928,
+            "mesh": "COL_WestPlayground_GradedSurfaces",
+            "normal": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/WestCourtRampFinish/COL_WestPlayground_GradedSurfaces",
+            "point_enu": [
+              -151.028213500977,
+              -173.273345947266,
+              -5.82999992370605
+            ]
+          },
+          {
+            "distance_m": 41.8840560913086,
+            "mesh": "R22_Bank_Outer",
+            "normal": [
+              0.0188006833195686,
+              0.135305300354958,
+              -0.990625619888306
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Bank_Outer",
+            "point_enu": [
+              -139.050018310547,
+              -194.707946777344,
+              -11.4593954086304
+            ]
+          },
+          {
+            "distance_m": 139.357986450195,
+            "mesh": "R22_Bank_Relief",
+            "normal": [
+              -0.0198755953460932,
+              -0.0581614412367344,
+              -0.998109340667725
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Bank_Relief",
+            "point_enu": [
+              -92.7024917602539,
+              -277.645385742188,
+              -33.2413520812988
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 14.7606945037842,
+            "mesh": "COL_WestPlayground_PerimeterSupport",
+            "normal": [
+              -0.442397266626358,
+              0.896819233894348,
+              0.0
+            ],
+            "point_enu": [
+              -151.946807861328,
+              -171.629547119141,
+              -5.39828777313232
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 16.6926021575928,
+            "mesh": "COL_WestPlayground_GradedSurfaces",
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "point_enu": [
+              -151.028213500977,
+              -173.273345947266,
+              -5.82999992370605
+            ]
+          }
+        ],
+        "pixel": [
+          858.0,
+          404.0
+        ]
+      },
+      {
+        "geometry": [
+          {
+            "distance_m": 12.8342437744141,
+            "mesh": "COL_Outer500_Surface_01_01",
+            "normal": [
+              0.164109587669373,
+              0.156248167157173,
+              -0.973989009857178
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_01",
+            "point_enu": [
+              -151.535629272461,
+              -169.332260131836,
+              -4.15078163146973
+            ]
+          },
+          {
+            "distance_m": 19.6770782470703,
+            "mesh": "COL_WestPlayground_PerimeterSupport",
+            "normal": [
+              0.199980095028877,
+              0.97979998588562,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/WestCourtRampFinish/COL_WestPlayground_PerimeterSupport",
+            "point_enu": [
+              -147.574340820312,
+              -174.8037109375,
+              -5.24430561065674
+            ]
+          },
+          {
+            "distance_m": 23.2545051574707,
+            "mesh": "Outer500_WestCourt_BlueFinish",
+            "normal": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/RiversideWestCourt/Outer500_WestCourt_BlueFinish",
+            "point_enu": [
+              -145.503387451172,
+              -177.664184570312,
+              -5.81600046157837
+            ]
+          },
+          {
+            "distance_m": 23.3421192169189,
+            "mesh": "COL_Outer500_WestCourt_Paving",
+            "normal": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/RiversideWestCourt/COL_Outer500_WestCourt_Paving",
+            "point_enu": [
+              -145.452667236328,
+              -177.734237670898,
+              -5.82999992370605
+            ]
+          },
+          {
+            "distance_m": 86.5493927001953,
+            "mesh": "R22_Bank_Outer",
+            "normal": [
+              0.0043741837143898,
+              0.145746901631355,
+              -0.989312291145325
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Bank_Outer",
+            "point_enu": [
+              -108.862266540527,
+              -228.274063110352,
+              -15.93088722229
+            ]
+          },
+          {
+            "distance_m": 185.553588867188,
+            "mesh": "R22_Bank_Relief",
+            "normal": [
+              -0.0220526717603207,
+              -0.0889781937003136,
+              -0.995789468288422
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Bank_Relief",
+            "point_enu": [
+              -51.549186706543,
+              -307.436706542969,
+              -31.752326965332
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 12.8342437744141,
+            "mesh": "COL_Outer500_Surface_01_01",
+            "normal": [
+              -0.164109587669373,
+              -0.156248167157173,
+              0.973989009857178
+            ],
+            "point_enu": [
+              -151.535629272461,
+              -169.332260131836,
+              -4.15078210830688
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 19.6770782470703,
+            "mesh": "COL_WestPlayground_PerimeterSupport",
+            "normal": [
+              0.199980095028877,
+              0.97979998588562,
+              0.0
+            ],
+            "point_enu": [
+              -147.574340820312,
+              -174.8037109375,
+              -5.24430513381958
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 23.3421192169189,
+            "mesh": "COL_Outer500_WestCourt_Paving",
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "point_enu": [
+              -145.452667236328,
+              -177.734237670898,
+              -5.82999897003174
+            ]
+          }
+        ],
+        "pixel": [
+          770.0,
+          356.0
+        ]
+      },
+      {
+        "geometry": [
+          {
+            "distance_m": 9.60394763946533,
+            "mesh": "COL_Outer500_Surface_01_01",
+            "normal": [
+              0.17043049633503,
+              0.163719549775124,
+              -0.971673548221588
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_01",
+            "point_enu": [
+              -152.040908813477,
+              -165.549835205078,
+              -3.61702966690063
+            ]
+          },
+          {
+            "distance_m": 63.240795135498,
+            "mesh": "R22_Bank_Outer",
+            "normal": [
+              0.00923208799213171,
+              0.143153920769691,
+              -0.989657402038574
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Bank_Outer",
+            "point_enu": [
+              -113.368988037109,
+              -201.738128662109,
+              -12.0905904769897
+            ]
+          },
+          {
+            "distance_m": 198.031539916992,
+            "mesh": "R22_Bank_Relief",
+            "normal": [
+              -0.00833147950470448,
+              -0.0546353086829185,
+              -0.998471617698669
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Bank_Relief",
+            "point_enu": [
+              -16.1854553222656,
+              -292.680206298828,
+              -33.3848648071289
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 9.60395812988281,
+            "mesh": "COL_Outer500_Surface_01_01",
+            "normal": [
+              -0.17043049633503,
+              -0.163719549775124,
+              0.971673548221588
+            ],
+            "point_enu": [
+              -152.040908813477,
+              -165.549850463867,
+              -3.61702990531921
+            ]
+          }
+        ],
+        "pixel": [
+          661.0,
+          345.0
+        ]
+      },
+      {
+        "geometry": [
+          {
+            "distance_m": 4.0837779045105,
+            "mesh": "COL_Changbin55_PublicShoulder",
+            "normal": [
+              0.177243456244469,
+              0.171451658010483,
+              -0.969117701053619
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/ChangbinRoadShoulder55/COL_Changbin55_PublicShoulder",
+            "point_enu": [
+              -155.094268798828,
+              -159.828125,
+              -3.15700721740723
+            ]
+          },
+          {
+            "distance_m": 4.12400436401367,
+            "mesh": "WestParkStreet_south_footway",
+            "normal": [
+              0.17730800807476,
+              0.171470895409584,
+              -0.969102501869202
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/WestCourtRampFinish/WestParkStreet_south_footway",
+            "point_enu": [
+              -155.056137084961,
+              -159.835586547852,
+              -3.16742134094238
+            ]
+          },
+          {
+            "distance_m": 4.16426467895508,
+            "mesh": "COL_Outer500_Surface_01_01",
+            "normal": [
+              0.177242562174797,
+              0.171484366059303,
+              -0.96911209821701
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_01",
+            "point_enu": [
+              -155.017974853516,
+              -159.843063354492,
+              -3.17784357070923
+            ]
+          },
+          {
+            "distance_m": 19.4637050628662,
+            "mesh": "R22_Bank_Outer",
+            "normal": [
+              0.0218030791729689,
+              0.134108990430832,
+              -0.990726709365845
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Bank_Outer",
+            "point_enu": [
+              -140.515502929688,
+              -162.682739257812,
+              -7.13857746124268
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 4.0837779045105,
+            "mesh": "COL_Changbin55_PublicShoulder",
+            "normal": [
+              -0.177243456244469,
+              -0.171451658010483,
+              0.969117701053619
+            ],
+            "point_enu": [
+              -155.094268798828,
+              -159.828125,
+              -3.15700721740723
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 4.16426467895508,
+            "mesh": "COL_Outer500_Surface_01_01",
+            "normal": [
+              -0.177242562174797,
+              -0.171484366059303,
+              0.96911209821701
+            ],
+            "point_enu": [
+              -155.017974853516,
+              -159.843063354492,
+              -3.17784357070923
+            ]
+          }
+        ],
+        "pixel": [
+          430.0,
+          378.0
+        ]
+      }
+    ],
+    "id": "55-entry",
+    "pixels": [
+      [
+        536.0,
+        365.0
+      ],
+      [
+        605.0,
+        399.0
+      ],
+      [
+        699.0,
+        413.0
+      ],
+      [
+        738.0,
+        434.0
+      ],
+      [
+        798.0,
+        436.0
+      ],
+      [
+        858.0,
+        404.0
+      ],
+      [
+        770.0,
+        356.0
+      ],
+      [
+        661.0,
+        345.0
+      ],
+      [
+        430.0,
+        378.0
+      ]
+    ],
+    "projection_size": [
+      900,
+      506
+    ],
+    "target_enu": [
+      -136.279266357422,
+      -164.726791381836,
+      -0.679067504882812
+    ],
+    "viewport_size_reported": [
+      900,
+      506
+    ]
+  },
+  {
+    "direction_xyz": "(0.949889, 0.0, -0.312586)",
+    "eye_enu": [
+      -168.042526245117,
+      -173.993057250977,
+      -5.15345335006714
+    ],
+    "fov_deg": 68.0,
+    "frame": "inside_look_back.png",
+    "hits": [
+      {
+        "geometry": [
+          {
+            "distance_m": 7.60833120346069,
+            "mesh": "COL_WestPlayground_PerimeterSupport",
+            "normal": [
+              0.658511221408844,
+              0.752570927143097,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/WestCourtRampFinish/COL_WestPlayground_PerimeterSupport",
+            "point_enu": [
+              -161.044494628906,
+              -176.74870300293,
+              -6.30266094207764
+            ]
+          },
+          {
+            "distance_m": 33.8296127319336,
+            "mesh": "R22_Bank_Outer",
+            "normal": [
+              0.0188006833195686,
+              0.135305300354958,
+              -0.990625619888306
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Bank_Outer",
+            "point_enu": [
+              -136.926544189453,
+              -186.245727539062,
+              -10.263277053833
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 7.60833120346069,
+            "mesh": "COL_WestPlayground_PerimeterSupport",
+            "normal": [
+              -0.658511221408844,
+              -0.752570927143097,
+              0.0
+            ],
+            "point_enu": [
+              -161.044494628906,
+              -176.74870300293,
+              -6.30266094207764
+            ]
+          }
+        ],
+        "pixel": [
+          761.0,
+          327.0
+        ]
+      },
+      {
+        "geometry": [
+          {
+            "distance_m": 9.27525901794434,
+            "mesh": "COL_Outer500_Surface_01_01",
+            "normal": [
+              0.151781722903252,
+              0.13179013133049,
+              -0.979588568210602
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_01",
+            "point_enu": [
+              -159.797073364258,
+              -177.966247558594,
+              -6.65568351745605
+            ]
+          },
+          {
+            "distance_m": 33.4664611816406,
+            "mesh": "R22_Bank_Outer",
+            "normal": [
+              0.0188006833195686,
+              0.135305300354958,
+              -0.990625619888306
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Bank_Outer",
+            "point_enu": [
+              -138.291748046875,
+              -188.328887939453,
+              -10.5737152099609
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 9.27525901794434,
+            "mesh": "COL_Outer500_Surface_01_01",
+            "normal": [
+              -0.151781722903252,
+              -0.13179013133049,
+              0.979588568210602
+            ],
+            "point_enu": [
+              -159.797073364258,
+              -177.966247558594,
+              -6.65568399429321
+            ]
+          }
+        ],
+        "pixel": [
+          811.0,
+          338.0
+        ]
+      },
+      {
+        "geometry": [
+          {
+            "distance_m": 9.95763874053955,
+            "mesh": "COL_Outer500_Surface_01_01",
+            "normal": [
+              0.151035398244858,
+              0.159347534179688,
+              -0.975600719451904
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_01",
+            "point_enu": [
+              -159.419586181641,
+              -178.720321655273,
+              -6.71948051452637
+            ]
+          },
+          {
+            "distance_m": 36.9903984069824,
+            "mesh": "R22_Bank_Outer",
+            "normal": [
+              0.0188006833195686,
+              0.135305300354958,
+              -0.990625619888306
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Bank_Outer",
+            "point_enu": [
+              -136.01025390625,
+              -191.553817749023,
+              -10.9708957672119
+            ]
+          },
+          {
+            "distance_m": 189.579772949219,
+            "mesh": "R22_Bank_Relief",
+            "normal": [
+              -0.000515763240400702,
+              -0.0522413663566113,
+              -0.998634397983551
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Bank_Relief",
+            "point_enu": [
+              -3.8736572265625,
+              -263.993835449219,
+              -34.9684677124023
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 9.95763874053955,
+            "mesh": "COL_Outer500_Surface_01_01",
+            "normal": [
+              -0.151035398244858,
+              -0.159347534179688,
+              0.975600719451904
+            ],
+            "point_enu": [
+              -159.419586181641,
+              -178.720321655273,
+              -6.71948051452637
+            ]
+          }
+        ],
+        "pixel": [
+          851.0,
+          340.0
+        ]
+      },
+      {
+        "geometry": [
+          {
+            "distance_m": 8.41601276397705,
+            "mesh": "COL_Outer500_Surface_01_01",
+            "normal": [
+              0.155838668346405,
+              0.185084223747253,
+              -0.970287680625916
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_01",
+            "point_enu": [
+              -160.839950561523,
+              -178.011215209961,
+              -6.8287410736084
+            ]
+          },
+          {
+            "distance_m": 26.8879489898682,
+            "mesh": "R22_Bank_Outer",
+            "normal": [
+              0.0211222674697638,
+              0.134694710373878,
+              -0.990662038326263
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Bank_Outer",
+            "point_enu": [
+              -145.031341552734,
+              -186.830505371094,
+              -10.5057516098022
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 8.41601276397705,
+            "mesh": "COL_Outer500_Surface_01_01",
+            "normal": [
+              -0.155838668346405,
+              -0.185084223747253,
+              0.970287680625916
+            ],
+            "point_enu": [
+              -160.839950561523,
+              -178.011215209961,
+              -6.8287410736084
+            ]
+          }
+        ],
+        "pixel": [
+          857.0,
+          365.0
+        ]
+      },
+      {
+        "geometry": [
+          {
+            "distance_m": 10.5395107269287,
+            "mesh": "COL_WestPlayground_GradedSurfaces",
+            "normal": [
+              0.0747830420732498,
+              0.0,
+              -0.997199833393097
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/WestCourtRampFinish/COL_WestPlayground_GradedSurfaces",
+            "point_enu": [
+              -158.700271606445,
+              -178.777755737305,
+              -6.10750818252563
+            ]
+          },
+          {
+            "distance_m": 13.3219575881958,
+            "mesh": "COL_WestPlayground_PerimeterSupport",
+            "normal": [
+              -0.180185288190842,
+              0.983632743358612,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/WestCourtRampFinish/COL_WestPlayground_PerimeterSupport",
+            "point_enu": [
+              -156.233901977539,
+              -180.040924072266,
+              -6.35938024520874
+            ]
+          },
+          {
+            "distance_m": 13.3585014343262,
+            "mesh": "COL_Outer500_Surface_01_01",
+            "normal": [
+              0.162431165575981,
+              0.125413671135902,
+              -0.97871732711792
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_01_01",
+            "point_enu": [
+              -156.201507568359,
+              -180.057510375977,
+              -6.36268758773804
+            ]
+          },
+          {
+            "distance_m": 108.008399963379,
+            "mesh": "R22_Bank_Outer",
+            "normal": [
+              0.0087338387966156,
+              0.151172190904617,
+              -0.988468885421753
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Bank_Outer",
+            "point_enu": [
+              -72.3035507202148,
+              -223.026428222656,
+              -14.9305591583252
+            ]
+          },
+          {
+            "distance_m": 289.1943359375,
+            "mesh": "R22_Bank_Relief",
+            "normal": [
+              0.0317149236798286,
+              -0.0854841396212578,
+              -0.995834648609161
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Bank_Relief",
+            "point_enu": [
+              88.3002166748047,
+              -305.28076171875,
+              -31.3318252563477
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 10.5395107269287,
+            "mesh": "COL_WestPlayground_GradedSurfaces",
+            "normal": [
+              -0.0747830420732498,
+              0.0,
+              0.997199833393097
+            ],
+            "point_enu": [
+              -158.700271606445,
+              -178.777755737305,
+              -6.10750818252563
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 13.3219575881958,
+            "mesh": "COL_WestPlayground_PerimeterSupport",
+            "normal": [
+              -0.180185288190842,
+              0.983632743358612,
+              0.0
+            ],
+            "point_enu": [
+              -156.233901977539,
+              -180.040924072266,
+              -6.3593807220459
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 13.3585014343262,
+            "mesh": "COL_Outer500_Surface_01_01",
+            "normal": [
+              -0.162431165575981,
+              -0.125413671135902,
+              0.97871732711792
+            ],
+            "point_enu": [
+              -156.201507568359,
+              -180.057510375977,
+              -6.36268758773804
+            ]
+          }
+        ],
+        "pixel": [
+          829.0,
+          301.0
+        ]
+      },
+      {
+        "geometry": [
+          {
+            "distance_m": 4.65088081359863,
+            "mesh": "COL_WestPlayground_GradedSurfaces",
+            "normal": [
+              0.0747823864221573,
+              0.0,
+              -0.997199892997742
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/WestCourtRampFinish/COL_WestPlayground_GradedSurfaces",
+            "point_enu": [
+              -163.586288452148,
+              -174.163116455078,
+              -6.473952293396
+            ]
+          },
+          {
+            "distance_m": 13.7268047332764,
+            "mesh": "R22_Bank_Outer",
+            "normal": [
+              0.0235735289752483,
+              0.133408591151237,
+              -0.990780770778656
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Bank_Outer",
+            "point_enu": [
+              -154.890197753906,
+              -174.494964599609,
+              -9.05082511901855
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 4.65088081359863,
+            "mesh": "COL_WestPlayground_GradedSurfaces",
+            "normal": [
+              -0.0747823864221573,
+              0.0,
+              0.997199892997742
+            ],
+            "point_enu": [
+              -163.586288452148,
+              -174.163116455078,
+              -6.473952293396
+            ]
+          }
+        ],
+        "pixel": [
+          589.0,
+          371.0
+        ]
+      },
+      {
+        "geometry": [
+          {
+            "distance_m": 16.4559879302979,
+            "mesh": "COL_WestPlayground_PerimeterSupport",
+            "normal": [
+              0.143144652247429,
+              0.989701807498932,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/WestCourtRampFinish/COL_WestPlayground_PerimeterSupport",
+            "point_enu": [
+              -151.629211425781,
+              -172.865173339844,
+              -4.79215526580811
+            ]
+          },
+          {
+            "distance_m": 426.510925292969,
+            "mesh": "Outer500_Background_transition",
+            "normal": [
+              -0.353354692459106,
+              0.0943377688527107,
+              -0.930720627307892
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/Outer500_Background_transition",
+            "point_enu": [
+              257.362365722656,
+              -144.760375976562,
+              4.21077871322632
+            ]
+          },
+          {
+            "distance_m": 439.002746582031,
+            "mesh": "R22_Bank_Outer",
+            "normal": [
+              0.0286977477371693,
+              0.135884553194046,
+              -0.990308940410614
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Bank_Outer",
+            "point_enu": [
+              269.82177734375,
+              -143.904205322266,
+              4.48504114151001
+            ]
+          },
+          {
+            "distance_m": 682.473388671875,
+            "mesh": "R22_Bank_Relief",
+            "normal": [
+              0.251332402229309,
+              -0.0933050736784935,
+              -0.963393032550812
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Bank_Relief",
+            "point_enu": [
+              512.661071777344,
+              -127.216934204102,
+              9.83054542541504
+            ]
+          },
+          {
+            "distance_m": 1235.51062011719,
+            "mesh": "R22_Bank_Relief",
+            "normal": [
+              -0.115519925951958,
+              0.145331799983978,
+              -0.982615828514099
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Bank_Relief",
+            "point_enu": [
+              1064.26416015625,
+              -89.312255859375,
+              21.9727153778076
+            ]
+          },
+          {
+            "distance_m": 1327.42700195312,
+            "mesh": "R22_Bank_Relief",
+            "normal": [
+              0.185811176896095,
+              0.126835003495216,
+              -0.974364995956421
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Bank_Relief",
+            "point_enu": [
+              1155.94226074219,
+              -83.0123748779297,
+              23.9907817840576
+            ]
+          },
+          {
+            "distance_m": 1350.28674316406,
+            "mesh": "R22_Bank_Relief",
+            "normal": [
+              -0.218102559447289,
+              0.743496954441071,
+              -0.632173717021942
+            ],
+            "path": "/root/ChongqingDistrict/City/RiverContextR22/river_context/R22_Bank_Relief",
+            "point_enu": [
+              1178.74267578125,
+              -81.4456024169922,
+              24.49267578125
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 16.4559879302979,
+            "mesh": "COL_WestPlayground_PerimeterSupport",
+            "normal": [
+              -0.143144652247429,
+              -0.989701807498932,
+              0.0
+            ],
+            "point_enu": [
+              -151.629211425781,
+              -172.865173339844,
+              -4.79215526580811
+            ]
+          }
+        ],
+        "pixel": [
+          545.0,
+          244.0
+        ]
+      }
+    ],
+    "id": "55-sand-return",
+    "pixel_size": "(900, 560)",
+    "pixels": [
+      [
+        761.0,
+        327.0
+      ],
+      [
+        811.0,
+        338.0
+      ],
+      [
+        851.0,
+        340.0
+      ],
+      [
+        857.0,
+        365.0
+      ],
+      [
+        829.0,
+        301.0
+      ],
+      [
+        589.0,
+        371.0
+      ],
+      [
+        545.0,
+        244.0
+      ]
+    ],
+    "projection_size": [
+      900,
+      506
+    ],
+    "target_enu": [
+      -167.092637245117,
+      -173.680471250977,
+      -5.15345335006714
+    ],
+    "viewport_size_reported": [
+      900,
+      506
+    ]
+  }
+]
