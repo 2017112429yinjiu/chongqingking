@@ -22,6 +22,8 @@ const PANDA := "res://assets/district_500/panda-15-17.glb"
 const PANDA_SITE := "res://assets/district_500/panda-15-17.json"
 const ZHONGXING_BRIDGE := "res://assets/district_500/zhongxing-bridge-18-21.glb"
 const ZHONGXING_BRIDGE_SITE := "res://assets/district_500/zhongxing-bridge-18-21.json"
+const HOUCI_CONNECTORS := "res://assets/district_500/houci-14-16.glb"
+const HOUCI_CONNECTORS_SITE := "res://assets/district_500/houci-14-16.json"
 const PUBLIC_EDGES := "res://assets/district_500/public-edges.glb"
 const PUBLIC_EDGES_SITE := "res://assets/district_500/public-edges.json"
 const XINGCHEN := "res://assets/district_500/xingchen.glb"
@@ -182,6 +184,11 @@ static func install(city: Node3D) -> Dictionary:
 		install_street_group(district, ZHONGXING_BRIDGE, ZHONGXING_BRIDGE_SITE, "ZhongxingBridgeMargins")
 		var bridge_margins: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(ZHONGXING_BRIDGE_SITE))
 		retired_bridge_plots.append_array(bridge_margins.retired_plots)
+	var connectors_active := bridge_margins_active and not "--qa-without-houci-14-16" in OS.get_cmdline_user_args()
+	if connectors_active:
+		install_street_group(district, HOUCI_CONNECTORS, HOUCI_CONNECTORS_SITE, "HouciConnectors1416")
+		var connectors: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(HOUCI_CONNECTORS_SITE))
+		retired_bridge_plots.append_array(connectors.retired_plots)
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -343,6 +350,7 @@ static func install(city: Node3D) -> Dictionary:
 		"houci_77_sha256": FileAccess.get_sha256(HOUCI) if houci_active else "",
 		"panda_15_17_sha256": FileAccess.get_sha256(PANDA) if panda_active else "",
 		"zhongxing_18_21_sha256": FileAccess.get_sha256(ZHONGXING_BRIDGE) if bridge_margins_active else "",
+		"houci_14_16_sha256": FileAccess.get_sha256(HOUCI_CONNECTORS) if connectors_active else "",
 		"public_edges_sha256": FileAccess.get_sha256(PUBLIC_EDGES),
 		"xingchen_sha256": FileAccess.get_sha256(XINGCHEN),
 		"pavilion_62_sha256": FileAccess.get_sha256(PAVILION_62),
@@ -505,6 +513,12 @@ static func trim_roofs(node: MeshInstance3D, anchors: Array) -> void:
 static func enu(p: Array) -> Vector3:
 	return Vector3(p[0],p[2],-float(p[1]))
 
+static func zhongxing_public_view() -> String:
+	for id in ["14","16","18"]:
+		if ("--zhongxing-public=" + id) in OS.get_cmdline_user_args():
+			return id
+	return ""
+
 static func start_exploration(scene: Node3D) -> void:
 	var collision := preload("res://scripts/build_collisions.gd")
 	var bike := scene.gameplay.scooter as CharacterBody3D
@@ -547,6 +561,13 @@ static func start_exploration(scene: Node3D) -> void:
 		var street := collision.raycast_ground(scene, origin + Vector3.UP * 1.1, 3.0)
 		if not street.is_empty():
 			scene.explorer.set_walk_origin(street.position + Vector3.UP * .035, enu(plan.lower_walk_21[1]))
+	elif not zhongxing_public_view().is_empty():
+		var plan: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(HOUCI_CONNECTORS_SITE))
+		var points: Array = plan.public_walks[zhongxing_public_view()]
+		var origin := enu(points[0])
+		var street := collision.raycast_ground(scene, origin + Vector3.UP * .9, 3.0)
+		if not street.is_empty():
+			scene.explorer.set_walk_origin(street.position + Vector3.UP * .035, enu(points[1]))
 	elif "--panda-15" in OS.get_cmdline_user_args() or "--panda-17" in OS.get_cmdline_user_args():
 		var plan: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(PANDA_SITE))
 		var site: Dictionary = plan.route["17" if "--panda-17" in OS.get_cmdline_user_args() else "15"]

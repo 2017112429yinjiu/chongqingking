@@ -1,0 +1,234 @@
+{
+  "base": "eb1cd37b02e227df5d25d5fb6e406ff6f08cebb0",
+  "scene": "res://first_shift.tscn",
+  "engines": {
+    "blender": "4.3.2",
+    "godot": "4.6.3"
+  },
+  "runtime_glb_sha256": "b41a35494e9c984fa5df55393e597c036efeb49454f674749f6fc3037354c11f",
+  "source_blend_sha256": "1418d07ac724f96a9af1e5a2344438a3d53cd3631a064710b2b4c65dce2bc5cb",
+  "fixed_cameras": [
+    {
+      "frame": {
+        "eye_enu": [
+          219.22,
+          63.45,
+          32.55
+        ],
+        "file": "14-lower-street.png",
+        "fov_deg": 66.0,
+        "target_enu": [
+          232.3,
+          71.42,
+          35.01
+        ]
+      },
+      "pixels": [
+        900,
+        506
+      ],
+      "save_code": 0
+    },
+    {
+      "frame": {
+        "eye_enu": [
+          239.29,
+          77.0,
+          38.06
+        ],
+        "file": "14-upper-bend-return.png",
+        "fov_deg": 67.0,
+        "target_enu": [
+          237.2,
+          65.5,
+          33.46
+        ]
+      },
+      "pixels": [
+        900,
+        506
+      ],
+      "save_code": 0
+    },
+    {
+      "frame": {
+        "eye_enu": [
+          190.4,
+          11.1,
+          20.56
+        ],
+        "file": "16-spur-slope-foot.png",
+        "fov_deg": 68.0,
+        "target_enu": [
+          202.0,
+          19.1,
+          20.32
+        ]
+      },
+      "pixels": [
+        900,
+        506
+      ],
+      "save_code": 0
+    },
+    {
+      "frame": {
+        "eye_enu": [
+          206.7,
+          23.4,
+          21.61
+        ],
+        "file": "16-spur-return.png",
+        "fov_deg": 62.0,
+        "target_enu": [
+          196.85,
+          15.5,
+          19.72
+        ]
+      },
+      "pixels": [
+        900,
+        506
+      ],
+      "save_code": 0
+    },
+    {
+      "frame": {
+        "eye_enu": [
+          159.96,
+          18.51,
+          25.46
+        ],
+        "file": "18-public-bridge-overlook.png",
+        "fov_deg": 67.0,
+        "target_enu": [
+          176.15,
+          -2.37,
+          24.5
+        ]
+      },
+      "pixels": [
+        900,
+        506
+      ],
+      "save_code": 0
+    },
+    {
+      "frame": {
+        "eye_enu": [
+          190.55,
+          9.33,
+          27.13
+        ],
+        "file": "16-deck-approach.png",
+        "fov_deg": 66.0,
+        "target_enu": [
+          209.49,
+          32.69,
+          25.92
+        ]
+      },
+      "pixels": [
+        900,
+        506
+      ],
+      "save_code": 0
+    },
+    {
+      "frame": {
+        "eye_enu": [
+          208.78,
+          32.58,
+          27.21
+        ],
+        "file": "16-deck-reverse.png",
+        "fov_deg": 66.0,
+        "target_enu": [
+          192.2,
+          11.22,
+          25.97
+        ]
+      },
+      "pixels": [
+        900,
+        506
+      ],
+      "save_code": 0
+    }
+  ],
+  "native_device": "Mesa llvmpipe / OpenGL Compatibility / Xvfb",
+  "parent_exact_rides_reached": {
+    "14": {
+      "forward": 3,
+      "reverse": 2
+    },
+    "16": {
+      "forward": 3,
+      "reverse": 4
+    }
+  },
+  "rides_m": {
+    "14": {
+      "forward": 35.6335255203303,
+      "reverse": 35.6570707643405
+    },
+    "16": {
+      "forward": 46.2350418710266,
+      "reverse": 46.2426686341059
+    }
+  },
+  "ride_checks": 6,
+  "road_contact_probes": {
+    "14": 21,
+    "16": 27
+  },
+  "walks": {
+    "14": {
+      "metres": [
+        22.341218477115,
+        22.3205801090226
+      ],
+      "support_samples": [
+        31,
+        29
+      ],
+      "old_outline_m": 17.3626251220703,
+      "old_centre_m": 23.8845138549805,
+      "checks": 11
+    },
+    "16": {
+      "metres": [
+        19.2112697502598,
+        19.1727693555877
+      ],
+      "support_samples": [
+        26,
+        27
+      ],
+      "old_outline_m": 22.2311267852783,
+      "old_centre_m": 26.9800796508789,
+      "checks": 11
+    },
+    "18": {
+      "metres": [
+        11.5921162366867,
+        11.6254516178742
+      ],
+      "support_samples": [
+        17,
+        17
+      ],
+      "old_outline_m": 21.4543418884277,
+      "old_centre_m": 26.3569068908691,
+      "checks": 11
+    }
+  },
+  "regressions": {
+    "upper-18": 4,
+    "repair": 10,
+    "market": 5,
+    "first": 85,
+    "handoff": 12
+  },
+  "raw_cloud_run": "/workspace/work/runtime/district-refresh/remaining-33-KxMhkZe8/A3-work-o0ZuuBt5"
+}
