@@ -32,6 +32,8 @@ const NORTH_EDGES := "res://assets/district_500/north-38-40-41.glb"
 const NORTH_EDGES_SITE := "res://assets/district_500/north-38-40-41.json"
 const LIANGTINGZI := "res://assets/district_500/liangtingzi-45-46.glb"
 const LIANGTINGZI_SITE := "res://assets/district_500/liangtingzi-45-46.json"
+const MATI34_35 := "res://assets/district_500/mati-34-35.glb"
+const MATI34_35_SITE := "res://assets/district_500/mati-34-35.json"
 const NANQU := "res://assets/district_500/nanqu-04-06-51.glb"
 const NANQU_SITE := "res://assets/district_500/nanqu-04-06-51.json"
 const WILDERNESS_50 := "res://assets/district_500/wilderness-50.glb"
@@ -66,7 +68,7 @@ const BINJIANG := "res://assets/district_500/binjiang-70-73.glb"
 const BINJIANG_SITE := "res://assets/district_500/binjiang-70-73.json"
 
 static func north_edge_mode() -> String:
-	for id: String in ["38","40","41","45","46"]:
+	for id: String in ["34","35","38","40","41","45","46"]:
 		if ("--north-edge="+id) in OS.get_cmdline_user_args():
 			return id
 	return ""
@@ -249,6 +251,9 @@ static func install(city: Node3D) -> Dictionary:
 	var liangtingzi_active := north_active and not "--qa-without-liangtingzi-45-46" in OS.get_cmdline_user_args()
 	if liangtingzi_active:
 		install_street_group(district, LIANGTINGZI, LIANGTINGZI_SITE, "LiangtingziPublicEdges")
+	var mati34_active := liangtingzi_active and not "--qa-without-mati-34-35" in OS.get_cmdline_user_args()
+	if mati34_active:
+		install_street_group(district, MATI34_35, MATI34_35_SITE, "Mati34And35PublicEdges")
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -421,6 +426,7 @@ static func install(city: Node3D) -> Dictionary:
 		"wilderness_50_finish_sha256": FileAccess.get_sha256(WILDERNESS_FINISH) if wilderness_finish_active else "",
 		"north_38_40_41_sha256": FileAccess.get_sha256(NORTH_EDGES) if north_active else "",
 		"liangtingzi_45_46_sha256": FileAccess.get_sha256(LIANGTINGZI) if liangtingzi_active else "",
+		"mati_34_35_sha256": FileAccess.get_sha256(MATI34_35) if mati34_active else "",
 		"nanqu_04_06_51_sha256": FileAccess.get_sha256(NANQU) if nanqu_active else "",
 		"changbin_55_sha256": FileAccess.get_sha256(CHANGBIN_55) if changbin55_active else "",
 		"public_edges_sha256": FileAccess.get_sha256(PUBLIC_EDGES),
@@ -711,7 +717,8 @@ static func start_exploration(scene: Node3D) -> void:
 			scene.explorer.set_walk_origin(ground.position+Vector3.UP*.035,Vector3(next[0],ground.position.y,-next[1]))
 	elif not north_edge_mode().is_empty():
 		var plot := north_edge_mode()
-		var path := LIANGTINGZI_SITE if plot in ["45","46"] else NORTH_EDGES_SITE
+		var paths := {"34":MATI34_35_SITE,"35":MATI34_35_SITE,"45":LIANGTINGZI_SITE,"46":LIANGTINGZI_SITE}
+		var path: String = paths.get(plot,NORTH_EDGES_SITE)
 		var north: Dictionary=JSON.parse_string(FileAccess.get_file_as_string(path))
 		var rows: Array=north.walks[plot]
 		var street := collision.raycast_ground(scene,enu(rows[0])+Vector3.UP*.8,2.4)
