@@ -1,0 +1,52 @@
+{
+  "checks": [
+    {
+      "detail": "",
+      "name": "exploration_from_normal_scene",
+      "pass": true
+    },
+    {
+      "detail": "(161.1107, 38.14437, -113.9295)",
+      "name": "market_threshold_spawn",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 48.1560320509598,
+        "end": "(169.4129, 41.05452, -139.5043)",
+        "goals": 7,
+        "max_frame_displacement_m": 0.168420374393463,
+        "name": "market_to_201",
+        "pass": true,
+        "reached": 7,
+        "stall_contacts": []
+      },
+      "name": "uninterrupted_market_to_201",
+      "pass": true
+    },
+    {
+      "detail": "(169.4129, 41.05452, -139.5043)",
+      "name": "upstairs_height",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "clip": "street/watch_street",
+          "foot_origin_gap_m": 0.0067596435546875,
+          "name": "OuterMarketSeller"
+        },
+        {
+          "clip": "street/commuter",
+          "foot_origin_gap_m": 0.00647163391113281,
+          "name": "OuterRepairWorker"
+        }
+      ],
+      "name": "local_worker_clips_and_floor",
+      "pass": true
+    }
+  ],
+  "images": 0,
+  "physics_hz": 60,
+  "ticks_per_image": 9
+}
