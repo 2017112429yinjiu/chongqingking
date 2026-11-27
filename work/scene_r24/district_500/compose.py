@@ -104,6 +104,7 @@ liangtingzi = None if not north_edges or os.environ.get("CQ_LIANGTINGZI_PARENT")
 mati34 = None if not liangtingzi or os.environ.get("CQ_MATI34_PARENT") == "1" else json.loads((group_assets / "mati-34-35.json").read_bytes())
 public_zhongxing = None if not mati34 or os.environ.get("CQ_ZHONGXING_PUBLIC_PARENT") == "1" else json.loads((group_assets / "zhongxing-public-10-12-13-22.json").read_bytes())
 public_jiefang = None if not public_zhongxing or os.environ.get("CQ_JIEFANG_PUBLIC_PARENT") == "1" else json.loads((group_assets / "jiefang-public-02-24-25-26.json").read_bytes())
+public_zhongxing22 = None if not public_zhongxing or os.environ.get("CQ_ZHONGXING22_PARENT") == "1" else json.loads((group_assets / "zhongxing-plaza-22-finish.json").read_bytes())
 binjiang_override = set() if not binjiang_plan else set(binjiang_plan["replacement_meshes"] + binjiang_plan["retired_objects"])
 east_override = set() if east_plan is None else set(east_plan["replacement_meshes"] + east_plan["retired_objects"]) | binjiang_override
 changbin_override = set(changbin_plan["replacement_meshes"] + changbin_plan["retired_objects"]) | east_override
@@ -425,6 +426,21 @@ if public_jiefang:
         jiefang_margin.objects = public_jiefang["new_meshes"] + public_jiefang["replacement_meshes"]
     for item in jiefang_margin.objects:
         collection.objects.link(item)
+if public_zhongxing22:
+    for name in public_zhongxing22["replacement_meshes"] + public_zhongxing22["retired_objects"]:
+        collection.objects.unlink(collection.objects[name])
+    with bpy.data.libraries.load(str(factory_dir / "zhongxing_plaza22_finish/zhongxing-plaza-22-finish.blend"),
+                                 link=True, relative=True) as (_, plaza_apron):
+        plaza_apron.objects = public_zhongxing22["new_meshes"] + public_zhongxing22["replacement_meshes"]
+    for item in plaza_apron.objects:
+        collection.objects.link(item)
+    for entry in public_zhongxing22["trees"]:
+        planted=collection.objects[entry["donor"]].copy()
+        planted.name=entry["name"]
+        planted.location=entry["enu"]
+        planted.scale*=entry["scale"]
+        planted.rotation_euler.z+=entry["yaw"]
+        collection.objects.link(planted)
 bpy.context.preferences.filepaths.save_version=0
 output_name = "city_and_outer.local.blend" if nanqu else (
     "city_and_outer.before_nanqu.local.blend" if wilderness else

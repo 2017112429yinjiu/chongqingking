@@ -38,6 +38,8 @@ const ZHONGXING_PUBLIC_EDGES := "res://assets/district_500/zhongxing-public-10-1
 const ZHONGXING_PUBLIC_EDGES_SITE := "res://assets/district_500/zhongxing-public-10-12-13-22.json"
 const JIEFANG_PUBLIC_EDGES := "res://assets/district_500/jiefang-public-02-24-25-26.glb"
 const JIEFANG_PUBLIC_EDGES_SITE := "res://assets/district_500/jiefang-public-02-24-25-26.json"
+const ZHONGXING22_FINISH := "res://assets/district_500/zhongxing-plaza-22-finish.glb"
+const ZHONGXING22_FINISH_SITE := "res://assets/district_500/zhongxing-plaza-22-finish.json"
 const NANQU := "res://assets/district_500/nanqu-04-06-51.glb"
 const NANQU_SITE := "res://assets/district_500/nanqu-04-06-51.json"
 const WILDERNESS_50 := "res://assets/district_500/wilderness-50.glb"
@@ -273,6 +275,10 @@ static func install(city: Node3D) -> Dictionary:
 		retired_bridge_plots.append_array(frontage.retired_plots)
 		district.set_meta("riverside_tea", frontage.tea)
 		place_worker(district,{"name":"江岸茶摊","bearing":.30},frontage.tea.stand_east_north_up)
+	if zhongxing_public_active and not "--qa-without-zhongxing22-finish" in OS.get_cmdline_user_args():
+		install_street_group(district, ZHONGXING22_FINISH, ZHONGXING22_FINISH_SITE, "Zhongxing22PublicApron")
+		var finish: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(ZHONGXING22_FINISH_SITE))
+		add_public_edge_trees(district, district.get_node("Zhongxing22PublicApron"), finish.trees)
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -761,6 +767,8 @@ static func start_exploration(scene: Node3D) -> void:
 			paths[id]=ZHONGXING_PUBLIC_EDGES_SITE
 		for id: String in ["02","24","25","26"]:
 			paths[id]=JIEFANG_PUBLIC_EDGES_SITE
+		if plot == "22" and not "--qa-without-zhongxing22-finish" in OS.get_cmdline_user_args():
+			paths["22"]=ZHONGXING22_FINISH_SITE
 		var path: String = paths.get(plot,NORTH_EDGES_SITE)
 		var north: Dictionary=JSON.parse_string(FileAccess.get_file_as_string(path))
 		var rows: Array=north.walks[plot]
