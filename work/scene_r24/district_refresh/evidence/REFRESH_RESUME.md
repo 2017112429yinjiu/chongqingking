@@ -24,3 +24,5 @@
 - 西坡采用源道现场、平面与 2025 整修信息，配准以金马教室及仁爱堂作独立对照。 [西坡来源和误差](E-west-slope-sources.md)
 
 - B1 已走通 11 号两条公开路与灰铺。保留旧楼冲突和首件错误坡向，终版按同址角度改为下坡。车库和低侧裙房轮廓待核，继续重点看 10、13 和 45、46。 [B1 源、实测和原生前后图](../street_groups/fenghuangtai_11/evidence/README.md)
+
+- 续作首轮复查覆盖余下 26 块。每块有独立旧中心、开放地图、已看角度、可见范围和公开通行边界。继续逐地块以实景、配对画面、实际玩家原地返程和提交作验收。 [26 块可见性总表](remaining-26-visibility.tsv) · [29 个阅片机位及原图哈希](remaining-26-eye-points.json) · [道合和源道叠合](E-donehome-registration.json)

@@ -1,0 +1,141 @@
+{
+  "source_plan": "https://p4.itc.cn/q_70/images03/20220908/70a31e2663ef4971947fce4a336914a2.png",
+  "design_team_article": "https://mooool.com/wilderness-garden-theater-by-donehome.html",
+  "donehome_plan": "https://i.mooool.com/img/2022/05/%E5%9B%BE%E7%89%8712-mun.jpg",
+  "completed_garden_aerial": "https://i.mooool.com/img/2022/05/3e77c08212a23c19fc70a6673d4da91.jpg",
+  "author_plan_sizes_px": [
+    [
+      1080,
+      764
+    ],
+    [
+      500,
+      356
+    ]
+  ],
+  "donehome_px_from_yuandao": {
+    "matrix": [
+      [
+        0.7727603255495551,
+        -0.01376131436830974
+      ],
+      [
+        0.01376131436830974,
+        0.7727603255495551
+      ]
+    ],
+    "offset": [
+      -202.97646915646197,
+      5.763288963263036
+    ]
+  },
+  "donehome_approx_m_per_pixel": 0.2988234403480452,
+  "fit_rms_m": 1.5102427915197498,
+  "control_marks": [
+    {
+      "landmark": "北缘长屋西角",
+      "yuandao_px": [
+        380,
+        81
+      ],
+      "donehome_px": [
+        86,
+        62
+      ],
+      "residual_m": 1.762,
+      "holdout_m": 3.211
+    },
+    {
+      "landmark": "北缘长屋南角",
+      "yuandao_px": [
+        415,
+        129
+      ],
+      "donehome_px": [
+        120,
+        102
+      ],
+      "residual_m": 0.693,
+      "holdout_m": 1.036
+    },
+    {
+      "landmark": "北缘长屋东角",
+      "yuandao_px": [
+        522,
+        50
+      ],
+      "donehome_px": [
+        208,
+        39
+      ],
+      "residual_m": 2.132,
+      "holdout_m": 3.258
+    },
+    {
+      "landmark": "园边圆井中心",
+      "yuandao_px": [
+        670,
+        280
+      ],
+      "donehome_px": [
+        317,
+        210
+      ],
+      "residual_m": 0.998,
+      "holdout_m": 7.744
+    }
+  ],
+  "limitations": "Three points share the same roof and are correlated. The round well is a distinct holdout. Do not translate pixel precision into an exact surveyed boundary. The Yuan Dao fit to OSM has a separate 2.08 m RMS. Plan colors and changes from 2025 are not height readings.",
+  "plots": {
+    "30": {
+      "east_north_candidate": [
+        -205.45468852617267,
+        101.090043239075
+      ],
+      "donehome_px_candidate": [
+        198.52,
+        82.62
+      ]
+    },
+    "31": {
+      "east_north_candidate": [
+        -233.15847456975516,
+        114.46428477735618
+      ],
+      "donehome_px_candidate": [
+        105.72,
+        38.04
+      ]
+    },
+    "33": {
+      "east_north_candidate": [
+        -211.3822138971746,
+        148.3594216598975
+      ],
+      "donehome_px_candidate": [
+        178.38,
+        -75.52
+      ]
+    },
+    "49": {
+      "east_north_candidate": [
+        -237.36188344133683,
+        32.63084565324856
+      ],
+      "donehome_px_candidate": [
+        92.18,
+        311.92
+      ]
+    },
+    "50": {
+      "east_north_candidate": [
+        -214.47894453848312,
+        76.51514311251104
+      ],
+      "donehome_px_candidate": [
+        168.48,
+        164.92
+      ]
+    }
+  }
+}
