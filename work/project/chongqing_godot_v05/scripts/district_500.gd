@@ -34,6 +34,8 @@ const LIANGTINGZI := "res://assets/district_500/liangtingzi-45-46.glb"
 const LIANGTINGZI_SITE := "res://assets/district_500/liangtingzi-45-46.json"
 const MATI34_35 := "res://assets/district_500/mati-34-35.glb"
 const MATI34_35_SITE := "res://assets/district_500/mati-34-35.json"
+const ZHONGXING_PUBLIC_EDGES := "res://assets/district_500/zhongxing-public-10-12-13-22.glb"
+const ZHONGXING_PUBLIC_EDGES_SITE := "res://assets/district_500/zhongxing-public-10-12-13-22.json"
 const NANQU := "res://assets/district_500/nanqu-04-06-51.glb"
 const NANQU_SITE := "res://assets/district_500/nanqu-04-06-51.json"
 const WILDERNESS_50 := "res://assets/district_500/wilderness-50.glb"
@@ -68,7 +70,7 @@ const BINJIANG := "res://assets/district_500/binjiang-70-73.glb"
 const BINJIANG_SITE := "res://assets/district_500/binjiang-70-73.json"
 
 static func north_edge_mode() -> String:
-	for id: String in ["34","35","38","40","41","45","46"]:
+	for id: String in ["10","12","13","22","34","35","38","40","41","45","46"]:
 		if ("--north-edge="+id) in OS.get_cmdline_user_args():
 			return id
 	return ""
@@ -254,6 +256,21 @@ static func install(city: Node3D) -> Dictionary:
 	var mati34_active := liangtingzi_active and not "--qa-without-mati-34-35" in OS.get_cmdline_user_args()
 	if mati34_active:
 		install_street_group(district, MATI34_35, MATI34_35_SITE, "Mati34And35PublicEdges")
+	var zhongxing_public_active := mati34_active and not "--qa-without-zhongxing-public-edges" in OS.get_cmdline_user_args()
+	if zhongxing_public_active:
+		install_street_group(district, ZHONGXING_PUBLIC_EDGES, ZHONGXING_PUBLIC_EDGES_SITE, "ZhongxingPublicEdges")
+		var plaza: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(ZHONGXING_PUBLIC_EDGES_SITE))
+		retired_bridge_plots.append_array(plaza.retired_plots)
+		var public_layer := district.get_node("ZhongxingPublicEdges")
+		for row: Dictionary in plaza.trees:
+			var donor := district.find_child(row.donor,true,false) as MeshInstance3D
+			assert(donor,row.donor)
+			var tree := donor.duplicate() as MeshInstance3D
+			tree.name = row.name
+			tree.position = enu(row.enu)
+			tree.scale *= float(row.scale)
+			tree.rotation.y += float(row.yaw)
+			public_layer.add_child(tree)
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -427,6 +444,7 @@ static func install(city: Node3D) -> Dictionary:
 		"north_38_40_41_sha256": FileAccess.get_sha256(NORTH_EDGES) if north_active else "",
 		"liangtingzi_45_46_sha256": FileAccess.get_sha256(LIANGTINGZI) if liangtingzi_active else "",
 		"mati_34_35_sha256": FileAccess.get_sha256(MATI34_35) if mati34_active else "",
+		"zhongxing_public_edges_sha256": FileAccess.get_sha256(ZHONGXING_PUBLIC_EDGES) if zhongxing_public_active else "",
 		"nanqu_04_06_51_sha256": FileAccess.get_sha256(NANQU) if nanqu_active else "",
 		"changbin_55_sha256": FileAccess.get_sha256(CHANGBIN_55) if changbin55_active else "",
 		"public_edges_sha256": FileAccess.get_sha256(PUBLIC_EDGES),
@@ -718,6 +736,8 @@ static func start_exploration(scene: Node3D) -> void:
 	elif not north_edge_mode().is_empty():
 		var plot := north_edge_mode()
 		var paths := {"34":MATI34_35_SITE,"35":MATI34_35_SITE,"45":LIANGTINGZI_SITE,"46":LIANGTINGZI_SITE}
+		for id: String in ["10","12","13","22"]:
+			paths[id]=ZHONGXING_PUBLIC_EDGES_SITE
 		var path: String = paths.get(plot,NORTH_EDGES_SITE)
 		var north: Dictionary=JSON.parse_string(FileAccess.get_file_as_string(path))
 		var rows: Array=north.walks[plot]

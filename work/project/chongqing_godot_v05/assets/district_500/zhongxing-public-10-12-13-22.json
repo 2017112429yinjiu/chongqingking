@@ -1,0 +1,268 @@
+{
+  "retired_plots": [
+    13
+  ],
+  "retired_objects": [
+    "COL_Outer500_Frame_13",
+    "Outer500_Condenser_13_01",
+    "Outer500_Household_055_chair_0",
+    "Outer500_InteriorFloor_13",
+    "Outer500_Joinery_13"
+  ],
+  "new_meshes": [
+    "COL_Zhongxing22_RoundedStonePlanter",
+    "Zhongxing22_RecessedPlanterGround",
+    "COL_Zhongxing22_PublicPaving",
+    "COL_Zhongxing10_PublicPaving",
+    "COL_Zhongxing10_PublicArcadeFace",
+    "Zhongxing10_ArcadePlinthAndRecesses",
+    "COL_Zhongxing10_WhiteAndBlueRail",
+    "COL_Zhongxing12_PublicPaving",
+    "COL_Zhongxing12_RegisteredTimberGate",
+    "Zhongxing12_OverlappingTileEaves",
+    "COL_Zhongxing12_WhiteAndBlueRail",
+    "COL_Zhongxing13_PublicPaving",
+    "COL_Zhongxing13_OuterMuralWall",
+    "Zhongxing13_PaintedPanels",
+    "COL_Zhongxing13_WhiteAndBlueRail"
+  ],
+  "replacement_meshes": [
+    "COLH_Outer500_Household_contact",
+    "COL_Outer500_Building_envelopes",
+    "COL_Outer500_Retaining_and_boundaries",
+    "Outer500_Facades_and_storefronts",
+    "Outer500_Street_furniture"
+  ],
+  "retired_plot_faces": {
+    "COLH_Outer500_Household_contact": 6,
+    "COL_Outer500_Building_envelopes": 258,
+    "COL_Outer500_Retaining_and_boundaries": 24,
+    "Outer500_Facades_and_storefronts": 10,
+    "Outer500_Street_furniture": 299
+  },
+  "walks": {
+    "22": [
+      [
+        110.26844787597656,
+        82.51395416259766,
+        34.54536630249024
+      ],
+      [
+        112.49656677246094,
+        82.32199096679688,
+        34.404821411132815
+      ],
+      [
+        114.73035430908203,
+        82.23567199707031,
+        34.29106713867188
+      ],
+      [
+        116.96615600585938,
+        82.1935806274414,
+        34.22880746459961
+      ],
+      [
+        119.19927215576172,
+        82.31428527832031,
+        34.24910546875
+      ],
+      [
+        121.42510223388672,
+        82.5087661743164,
+        34.319833770751956
+      ]
+    ],
+    "10": [
+      [
+        228.23468017578125,
+        171.63143920898438,
+        49.126501098632815
+      ],
+      [
+        228.40460205078125,
+        169.58079528808594,
+        48.86570932006836
+      ],
+      [
+        228.64036560058594,
+        167.53775024414062,
+        48.61757470703125
+      ],
+      [
+        228.94268798828125,
+        165.50242614746094,
+        48.38587762451172
+      ],
+      [
+        229.20033264160156,
+        163.46121215820312,
+        48.15623666381836
+      ],
+      [
+        229.43336486816406,
+        161.41677856445312,
+        47.903844848632815
+      ]
+    ],
+    "12": [
+      [
+        220.00433349609375,
+        111.18070983886719,
+        40.58315087890625
+      ],
+      [
+        220.0782470703125,
+        109.9072265625,
+        40.430795684814456
+      ],
+      [
+        220.12339782714844,
+        108.63265991210938,
+        40.271101013183596
+      ],
+      [
+        220.14691162109375,
+        107.35726165771484,
+        40.10521508789063
+      ],
+      [
+        220.11538696289062,
+        106.08221435546875,
+        39.92717172241211
+      ],
+      [
+        220.15493774414062,
+        104.80876922607422,
+        39.75847817993164
+      ]
+    ],
+    "13": [
+      [
+        231.3502197265625,
+        97.3695068359375,
+        40.77941926695535
+      ],
+      [
+        231.49134826660156,
+        100.28858947753906,
+        41.34683650195299
+      ],
+      [
+        231.70257568359375,
+        103.20344543457031,
+        41.85463183973423
+      ],
+      [
+        231.92495727539062,
+        106.11746215820312,
+        42.289889029047465
+      ],
+      [
+        232.11749267578125,
+        109.03350067138672,
+        42.6543124916239
+      ],
+      [
+        232.29043579101562,
+        111.95086669921875,
+        42.975952869616854
+      ]
+    ]
+  },
+  "surface_textures": {
+    "Zhongxing public grey flags": "res://assets/chongqing_district_stone_floor_diff_2k.jpg",
+    "Zhongxing public light curb": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+    "Zhongxing planter brushed grey honey stone": "res://assets/chongqing_district_stone_wall_05_diff_2k.jpg",
+    "Zhongxing planter local warm-green groundcover": "res://assets/chongqing_district_leaf_scattered_gravel_diff_2k.jpg",
+    "Zhongxing footway dark red brick": "res://assets/chongqing_district_brick_wall_08_diff_2k.jpg",
+    "Zhongxing dark red aged canopy timbers": "res://assets/chongqing_district_wood_table_worn_diff_2k.jpg",
+    "Zhongxing pale wall stained stucco": "res://assets/chongqing_district_concrete_wall_006_diff_2k.jpg"
+  },
+  "borrowed_materials": {
+    "COLH_Outer500_Household_contact": {
+      "CQEastParentSlot000": "Door and shutter recess.001"
+    },
+    "COL_Outer500_Building_envelopes": {
+      "CQEastParentSlot001": "Grey stone walkway.001",
+      "CQEastParentSlot002": "Coursed retaining masonry.001",
+      "CQEastParentSlot003": "Aged stucco.001",
+      "CQEastParentSlot004": "Red infill brick.001",
+      "CQEastParentSlot005": "Glazed blue tile.001",
+      "CQEastParentSlot006": "Concrete bands.001",
+      "CQEastParentSlot007": "Blue grey street reflection.001",
+      "CQEastParentSlot008": "Shaded window beyond mesh.001",
+      "CQEastParentSlot009": "Flax curtain behind glazing.001",
+      "CQEastParentSlot010": "Cloud reflection.001",
+      "CQEastParentSlot011": "Painted window and rail trim.001",
+      "CQEastParentSlot012": "Door and shutter recess.002",
+      "CQEastParentSlot013": "Cream glazed wall skirting.001",
+      "CQEastParentSlot014": "Worn timber joinery.001",
+      "CQEastParentSlot015": "Worn concrete floors.001"
+    },
+    "COL_Outer500_Retaining_and_boundaries": {
+      "CQEastParentSlot016": "Grey stone walkway.002",
+      "CQEastParentSlot017": "Coursed retaining masonry.002",
+      "CQEastParentSlot018": "Concrete bands.002",
+      "CQEastParentSlot019": "Door and shutter recess.003",
+      "CQEastParentSlot020": "Aged galvanized drain pipe.001",
+      "CQEastParentSlot021": "Salvaged service-door steel.001"
+    },
+    "Outer500_Facades_and_storefronts": {
+      "CQEastParentSlot022": "Aged stucco.002",
+      "CQEastParentSlot023": "Red infill brick.002",
+      "CQEastParentSlot024": "Glazed blue tile.002",
+      "CQEastParentSlot025": "Concrete bands.003",
+      "CQEastParentSlot026": "Grey overlapping roof tiles.001",
+      "CQEastParentSlot027": "Painted window and rail trim.002",
+      "CQEastParentSlot028": "Door and shutter recess.004",
+      "CQEastParentSlot029": "Worn timber joinery.002",
+      "CQEastParentSlot030": "Faded covered market roofing.001",
+      "CQEastParentSlot031": "Aged galvanized drain pipe.002"
+    },
+    "Outer500_Street_furniture": {
+      "CQEastParentSlot032": "Aged stucco.004",
+      "CQEastParentSlot033": "Concrete bands.005",
+      "CQEastParentSlot034": "Grey overlapping roof tiles.003",
+      "CQEastParentSlot035": "Painted window and rail trim.004",
+      "CQEastParentSlot036": "Red painted steel.002",
+      "CQEastParentSlot037": "Jade painted steel.002",
+      "CQEastParentSlot038": "Ochre canvas.002",
+      "CQEastParentSlot039": "Off-white road pigment.002",
+      "CQEastParentSlot040": "Door and shutter recess.006",
+      "CQEastParentSlot041": "Canopy 0.002",
+      "CQEastParentSlot042": "Canopy 1.002",
+      "CQEastParentSlot043": "Canopy 2.002",
+      "CQEastParentSlot044": "Cream glazed wall skirting.003",
+      "CQEastParentSlot045": "Worn timber joinery.004",
+      "CQEastParentSlot046": "Weathered sheet metal.002",
+      "CQEastParentSlot047": "Faded covered market roofing.003",
+      "CQEastParentSlot048": "Used tyre casing.002",
+      "CQEastParentSlot049": "Brown earthenware.002"
+    }
+  },
+  "trees": [
+    {
+      "donor": "Outer500_Plant_036",
+      "name": "Zhongxing22_CourtyardTreeA",
+      "enu": [
+        115.99999694824218,
+        86.23999786376953,
+        35.87334197998047
+      ],
+      "scale": 0.87,
+      "yaw": 0.53
+    },
+    {
+      "donor": "Outer500_Plant_036",
+      "name": "Zhongxing22_CourtyardTreeB",
+      "enu": [
+        119.21999694824218,
+        86.78999786376953,
+        35.87334197998047
+      ],
+      "scale": 0.66,
+      "yaw": 2.03
+    }
+  ]
+}
