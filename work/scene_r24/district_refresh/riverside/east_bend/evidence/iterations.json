@@ -1,0 +1,30 @@
+{
+  "parent": "75b9e2bb4884b74e3acbb6f336ff41c938d948d2",
+  "cloud_evidence": "/workspace/work/runtime/district-refresh/new-priority/west/riverside-east-67-69",
+  "trials": [
+    {
+      "log": "mask-godot-preflight.log",
+      "finding": "顶点压缩造成导入后格点指纹不相等。改用 Blender 源面片指纹移除，并在 Godot 复用已导入材质。"
+    },
+    {
+      "log": "build-01.log",
+      "finding": "1256840008 在 E79.56/N−99.73 附近越过外圈原地形。落接范围缩回有支承处。"
+    },
+    {
+      "log": "build-02.log",
+      "finding": "1375242618 方向在 E31.836/N−99.9 缺外圈原地形。衔接短段留在有支承处。"
+    },
+    {
+      "log": "probe-after-01.log",
+      "finding": "内弯分流起段新柱遮住车库转折。第一根柱移到从旧平台分离处。"
+    },
+    {
+      "log": "joints-diagnostic-normal.log",
+      "finding": "两个旧桥面最高沥青面法向倒置，接头负向站点首轮复验失败。修正原桥沥青及划线面朝向后重跑。"
+    },
+    {
+      "log": "native-final-candidate/round-trip.json",
+      "finding": "初次原生去回完成。对向街景核定可见的背景两段后补内侧竖分格；按两期正射可见宽带延长红色磨耗层。"
+    }
+  ]
+}

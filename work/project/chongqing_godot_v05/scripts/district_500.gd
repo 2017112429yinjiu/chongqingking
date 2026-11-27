@@ -38,6 +38,8 @@ const PARK_EDGE_FINISH := "res://assets/district_500/park-edge-finish.glb"
 const PARK_EDGE_FINISH_SITE := "res://assets/district_500/park-edge-finish.json"
 const CHANGBIN_BEND := "res://assets/district_500/changbin-bend-and-edge.glb"
 const CHANGBIN_BEND_SITE := "res://assets/district_500/changbin-bend-and-edge.json"
+const RAIJIAPO_EAST := "res://assets/district_500/raijiapo-east-bend.glb"
+const RAIJIAPO_EAST_SITE := "res://assets/district_500/raijiapo-east-bend.json"
 
 static func install(city: Node3D) -> Dictionary:
 	var district := (load(MODEL) as PackedScene).instantiate() as Node3D
@@ -115,6 +117,11 @@ static func install(city: Node3D) -> Dictionary:
 														install_street_group(district, CHANGBIN_BEND, CHANGBIN_BEND_SITE, "ChangbinBendAndParkEdge")
 														var changbin: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(CHANGBIN_BEND_SITE))
 														retired_bridge_plots.append_array(changbin.retired_plots)
+														if not "--qa-without-raijiapo-east" in OS.get_cmdline_user_args():
+															install_street_group(district, RAIJIAPO_EAST, RAIJIAPO_EAST_SITE, "RaijiapoEastBend")
+															var east: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(RAIJIAPO_EAST_SITE))
+															retired_bridge_plots.append_array(east.retired_plots)
+															place_east_tree(district,east.tree)
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -284,6 +291,7 @@ static func install(city: Node3D) -> Dictionary:
 		"park_plot61_sha256": FileAccess.get_sha256(PARK_PLOT_61),
 		"park_edge_finish_sha256": FileAccess.get_sha256(PARK_EDGE_FINISH),
 		"changbin_bend_sha256": FileAccess.get_sha256(CHANGBIN_BEND),
+		"raijiapo_east_sha256": FileAccess.get_sha256(RAIJIAPO_EAST),
 		"retired_internal_context": local_frame != null, "osm_building_ids": retire}
 
 
@@ -295,6 +303,9 @@ static func install_street_group(district: Node3D, model_path: String, plan_path
 		var original := district.find_child(mesh_name, true, false) as MeshInstance3D
 		var updated := layer.find_child(mesh_name, true, false) as MeshInstance3D
 		assert(original and updated, mesh_name)
+		var slots: Dictionary = plan.get("borrowed_materials",{}).get(mesh_name,{})
+		if not slots.is_empty():
+			restore_street_materials(original,updated,slots)
 		original.mesh = updated.mesh
 		updated.free()
 	for mesh_name: String in plan.retired_objects:
@@ -302,6 +313,30 @@ static func install_street_group(district: Node3D, model_path: String, plan_path
 		assert(old, mesh_name)
 		old.free()
 	district.add_child(layer)
+
+static func restore_street_materials(original: MeshInstance3D, updated: MeshInstance3D, slots: Dictionary) -> void:
+	var materials := {}
+	for i in original.mesh.get_surface_count():
+		var material := original.mesh.surface_get_material(i)
+		if material:
+			materials[material.resource_name] = material
+	for i in updated.mesh.get_surface_count():
+		var material := updated.mesh.surface_get_material(i)
+		if material and material.resource_name in slots:
+			var donor: String = slots[material.resource_name]
+			assert(materials.has(donor), "%s %s" % [original.name, donor])
+			updated.mesh.surface_set_material(i, materials[donor])
+
+
+static func place_east_tree(district: Node3D, spec: Dictionary) -> void:
+	var donor := district.find_child(spec.donor,true,false) as MeshInstance3D
+	var plant := donor.duplicate() as MeshInstance3D
+	plant.name=spec.name
+	plant.position=enu(spec.enu)
+	plant.scale*=.89
+	plant.rotation.y+=.83
+	district.get_node("RaijiapoEastBend").add_child(plant)
+
 
 static func finish_park_trees(district: Node3D) -> void:
 	var plan: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(PARK_EDGE_FINISH_SITE))
@@ -421,6 +456,13 @@ static func start_exploration(scene: Node3D) -> void:
 		if not street.is_empty():
 			scene.explorer.set_walk_origin(street.position + Vector3.UP * .035,
 				enu(plan.street_eye_target_east_north_up))
+	elif "--raijiapo-east" in OS.get_cmdline_user_args():
+		var route: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(RAIJIAPO_EAST_SITE)).walk
+		var origin: Array = route.stations[0]
+		var aim: Array = route.stations[1]
+		var street := collision.raycast_ground(scene, Vector3(origin[0], route.start_ray_m, -origin[1]), 6.0)
+		if not street.is_empty():
+			scene.explorer.set_walk_origin(street.position + Vector3.UP * .035, Vector3(aim[0], street.position.y, -aim[1]))
 	elif "--changbin-bend" in OS.get_cmdline_user_args() or "--changbin-park-edge" in OS.get_cmdline_user_args():
 		var routes: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(CHANGBIN_BEND_SITE)).routes
 		var route: Dictionary = routes.bend if "--changbin-bend" in OS.get_cmdline_user_args() else routes.park

@@ -1,5 +1,6 @@
 """Open the original city, relink its libraries, append the editable outer layer."""
 import json
+import os
 from pathlib import Path
 
 import bpy
@@ -87,7 +88,9 @@ park59_plan = json.loads((group_assets / "park-plot59.json").read_bytes())
 park61_plan = json.loads((group_assets / "park-plot61.json").read_bytes())
 park_finish_plan = json.loads((group_assets / "park-edge-finish.json").read_bytes())
 changbin_plan = json.loads((group_assets / "changbin-bend-and-edge.json").read_bytes())
-changbin_override = set(changbin_plan["replacement_meshes"] + changbin_plan["retired_objects"])
+east_plan = None if os.environ.get("CQ_EAST_PARENT") == "1" else json.loads((group_assets / "raijiapo-east-bend.json").read_bytes())
+east_override = set() if east_plan is None else set(east_plan["replacement_meshes"] + east_plan["retired_objects"])
+changbin_override = set(changbin_plan["replacement_meshes"] + changbin_plan["retired_objects"]) | east_override
 park_finish_override = set(park_finish_plan["replacement_meshes"] + park_finish_plan["retired_objects"]) | changbin_override
 park61_override = set(park61_plan["replacement_meshes"] + park61_plan["retired_objects"]) | park_finish_override
 park59_override = set(park59_plan["replacement_meshes"] + park59_plan["retired_objects"]) | park61_override
@@ -242,8 +245,22 @@ for spec in park_finish_plan["planted_trees"]:
     collection.objects.link(plant)
 with bpy.data.libraries.load(str(factory_dir.parent / "riverside/plots_63_66/changbin-bend-and-edge.blend"),
                              link=True, relative=True) as (_, changbin):
-    changbin.objects = changbin_plan["replacement_meshes"] + changbin_plan["new_meshes"]
+    changbin.objects = [name for name in changbin_plan["replacement_meshes"] + changbin_plan["new_meshes"]
+                        if name not in east_override]
 for item in changbin.objects:
     collection.objects.link(item)
+if east_plan:
+    with bpy.data.libraries.load(str(factory_dir.parent / "riverside/east_bend/raijiapo-east-bend.blend"),
+                                 link=True, relative=True) as (_, east_bend):
+        east_bend.objects = east_plan["replacement_meshes"] + east_plan["new_meshes"]
+    for item in east_bend.objects:
+        collection.objects.link(item)
+    spec = east_plan["tree"]
+    plant = collection.objects[spec["donor"]].copy()
+    plant.name = spec["name"]
+    plant.location = spec["enu"]
+    plant.scale *= .89
+    plant.rotation_euler.z += .83
+    collection.objects.link(plant)
 bpy.context.preferences.filepaths.save_version=0
-bpy.ops.wm.save_as_mainfile(filepath=str(here / "city_and_outer.local.blend"),relative_remap=True,compress=True)
+bpy.ops.wm.save_as_mainfile(filepath=str(here / ("city_and_outer.local.blend" if east_plan else "city_and_outer.before_east.local.blend")),relative_remap=True,compress=True)

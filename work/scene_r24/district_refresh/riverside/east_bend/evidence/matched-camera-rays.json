@@ -1,0 +1,3489 @@
+{
+  "parent": "75b9e2bb4884b74e3acbb6f336ff41c938d948d2",
+  "before": {
+    "bend-east-reverse": {
+      "eye": [
+        -8.8,
+        -153.4,
+        4.23
+      ],
+      "target": [
+        -26.4,
+        -157.4,
+        4.91
+      ],
+      "vfov": 67.0,
+      "pixels": {
+        "upper_end_face": [
+          771,
+          75
+        ],
+        "upper_end_corner": [
+          764,
+          83
+        ],
+        "lower_end_face": [
+          706,
+          160
+        ],
+        "lower_end_corner": [
+          698,
+          159
+        ],
+        "dark_high": [
+          578,
+          174
+        ],
+        "dark_middle": [
+          567,
+          212
+        ],
+        "dark_foot": [
+          569,
+          254
+        ],
+        "pale_garage": [
+          482,
+          212
+        ],
+        "ground_dark_wall": [
+          172,
+          334
+        ]
+      },
+      "rays": {
+        "upper_end_face": {
+          "direction_enu": [
+            -0.8248049020767212,
+            0.43453216552734375,
+            0.3617714047431946
+          ],
+          "hits": [
+            {
+              "object": "Nanjimen_NorthAcousticHood",
+              "point_enu": [
+                -106.46736907958984,
+                -101.94587707519531,
+                47.06832504272461
+              ],
+              "normal_enu": [
+                -0.8477936387062073,
+                -0.1687556803226471,
+                -0.5027598738670349
+              ],
+              "face": 539,
+              "material": "North rail pale acoustic canopy"
+            },
+            {
+              "object": "Nanjimen_NorthAcousticHood",
+              "point_enu": [
+                -108.3748550415039,
+                -100.94095611572266,
+                47.90497589111328
+              ],
+              "normal_enu": [
+                -0.1065131425857544,
+                -0.03330014646053314,
+                -0.9937535524368286
+              ],
+              "face": 537,
+              "material": "North rail pale acoustic canopy"
+            }
+          ]
+        },
+        "upper_end_corner": {
+          "direction_enu": [
+            -0.8332192897796631,
+            0.4270576238632202,
+            0.3512369990348816
+          ],
+          "hits": [
+            {
+              "object": "COL_Raijiapo_Ramp_1324001438",
+              "point_enu": [
+                -38.60502243041992,
+                -138.12374877929688,
+                16.794071197509766
+              ],
+              "normal_enu": [
+                -0.00013180746464058757,
+                -0.0015769707970321178,
+                0.9999987483024597
+              ],
+              "face": 316,
+              "material": "Raijiapo light ash fascia"
+            },
+            {
+              "object": "COL_Raijiapo_Ramp_1324001438",
+              "point_enu": [
+                -38.91496658325195,
+                -137.9648895263672,
+                16.924726486206055
+              ],
+              "normal_enu": [
+                0.08329226076602936,
+                0.9965251684188843,
+                -4.657114914152771e-06
+              ],
+              "face": 1,
+              "material": "Raijiapo light ash fascia"
+            },
+            {
+              "object": "Nanjimen_NorthAcousticHood",
+              "point_enu": [
+                -105.56509399414062,
+                -103.8040771484375,
+                45.02056121826172
+              ],
+              "normal_enu": [
+                -0.9821802377700806,
+                -0.18794158101081848,
+                0.0
+              ],
+              "face": 530,
+              "material": "North rail pale acoustic canopy"
+            },
+            {
+              "object": "Nanjimen_NorthAcousticHood",
+              "point_enu": [
+                -112.88443756103516,
+                -100.05262756347656,
+                48.10597610473633
+              ],
+              "normal_enu": [
+                0.0023992888163775206,
+                -0.01253899559378624,
+                -0.999918520450592
+              ],
+              "face": 546,
+              "material": "North rail pale acoustic canopy"
+            }
+          ]
+        },
+        "lower_end_face": {
+          "direction_enu": [
+            -0.9071265459060669,
+            0.3540588915348053,
+            0.227516308426857
+          ],
+          "hits": [
+            {
+              "object": "COL_Raijiapo_Ramp_1256840000",
+              "point_enu": [
+                -49.24163818359375,
+                -137.61529541015625,
+                14.373163223266602
+              ],
+              "normal_enu": [
+                -0.7016282081604004,
+                0.134260356426239,
+                0.6997799873352051
+              ],
+              "face": 267,
+              "material": "Raijiapo light ash fascia"
+            },
+            {
+              "object": "COL_Raijiapo_Ramp_1256840000",
+              "point_enu": [
+                -51.54775619506836,
+                -136.7152099609375,
+                14.951560020446777
+              ],
+              "normal_enu": [
+                0.19144374132156372,
+                0.9815036058425903,
+                -7.298916443687631e-06
+              ],
+              "face": 1,
+              "material": "Raijiapo light ash fascia"
+            }
+          ]
+        },
+        "lower_end_corner": {
+          "direction_enu": [
+            -0.9112728834152222,
+            0.3404509723186493,
+            0.23167861998081207
+          ],
+          "hits": [
+            {
+              "object": "COL_Raijiapo_Ramp_1256840000",
+              "point_enu": [
+                -49.234920501708984,
+                -138.2935333251953,
+                14.51002311706543
+              ],
+              "normal_enu": [
+                -0.7016282081604004,
+                0.134260356426239,
+                0.6997799873352051
+              ],
+              "face": 267,
+              "material": "Raijiapo light ash fascia"
+            },
+            {
+              "object": "COL_Raijiapo_Ramp_1256840000",
+              "point_enu": [
+                -53.30493927001953,
+                -136.77297973632812,
+                15.544770240783691
+              ],
+              "normal_enu": [
+                -0.0006963500054553151,
+                -0.003570111934095621,
+                0.9999933838844299
+              ],
+              "face": 453,
+              "material": "Raijiapo retained asphalt surface"
+            },
+            {
+              "object": "COL_Raijiapo_Ramp_1256840000",
+              "point_enu": [
+                -53.34436798095703,
+                -136.7582550048828,
+                15.554795265197754
+              ],
+              "normal_enu": [
+                0.0006963598425500095,
+                0.003570110071450472,
+                -0.9999933838844299
+              ],
+              "face": 271,
+              "material": "Raijiapo light ash fascia"
+            },
+            {
+              "object": "COL_Raijiapo_Ramp_1256840000",
+              "point_enu": [
+                -53.46266174316406,
+                -136.7140655517578,
+                15.584870338439941
+              ],
+              "normal_enu": [
+                -0.0006965326028876007,
+                -0.003570076311007142,
+                0.9999933838844299
+              ],
+              "face": 1316,
+              "material": "Raijiapo light ash fascia"
+            },
+            {
+              "object": "COL_Raijiapo_Ramp_1256840000",
+              "point_enu": [
+                -53.49991989135742,
+                -136.7001495361328,
+                15.594343185424805
+              ],
+              "normal_enu": [
+                0.9815035462379456,
+                -0.19144386053085327,
+                0.0
+              ],
+              "face": 450,
+              "material": "Raijiapo retained asphalt surface"
+            },
+            {
+              "object": "COL_Raijiapo_Ramp_1256840000",
+              "point_enu": [
+                -53.56639862060547,
+                -136.67530822753906,
+                15.611245155334473
+              ],
+              "normal_enu": [
+                0.9815035462379456,
+                -0.19144386053085327,
+                0.0
+              ],
+              "face": 1317,
+              "material": "Raijiapo light ash fascia"
+            }
+          ]
+        },
+        "dark_high": {
+          "direction_enu": [
+            -0.9689317941665649,
+            0.10054447501897812,
+            0.22596904635429382
+          ],
+          "hits": [
+            {
+              "object": "COL_Raijiapo_GaragePublicEnvelope",
+              "point_enu": [
+                -43.41893768310547,
+                -149.80764770507812,
+                12.303642272949219
+              ],
+              "normal_enu": [
+                0.4822285771369934,
+                0.8760454654693604,
+                0.0
+              ],
+              "face": 885,
+              "material": "Raijiapo rough grey covered parking slabs"
+            },
+            {
+              "object": "COL_Raijiapo_GaragePublicEnvelope",
+              "point_enu": [
+                -44.49223327636719,
+                -149.69627380371094,
+                12.553950309753418
+              ],
+              "normal_enu": [
+                -0.4822285771369934,
+                -0.8760454654693604,
+                0.0
+              ],
+              "face": 887,
+              "material": "Raijiapo rough grey covered parking slabs"
+            },
+            {
+              "object": "COL_Raijiapo_GarageParkingSlabs",
+              "point_enu": [
+                -47.583587646484375,
+                -149.37548828125,
+                13.27489948272705
+              ],
+              "normal_enu": [
+                -0.009067650884389877,
+                -0.016472863033413887,
+                0.9998232126235962
+              ],
+              "face": 546,
+              "material": "Raijiapo rough grey covered parking slabs"
+            },
+            {
+              "object": "COL_Raijiapo_GarageParkingSlabs",
+              "point_enu": [
+                -49.12157440185547,
+                -149.2158966064453,
+                13.633581161499023
+              ],
+              "normal_enu": [
+                0.009067656472325325,
+                0.016472861170768738,
+                -0.9998232126235962
+              ],
+              "face": 548,
+              "material": "Raijiapo rough grey covered parking slabs"
+            },
+            {
+              "object": "COL_Raijiapo_Ramp_1256839997",
+              "point_enu": [
+                -52.04160690307617,
+                -148.9128875732422,
+                14.3145751953125
+              ],
+              "normal_enu": [
+                -0.017933771014213562,
+                0.004366040229797363,
+                0.9998296499252319
+              ],
+              "face": 250,
+              "material": "Raijiapo light ash fascia"
+            },
+            {
+              "object": "COL_Raijiapo_Ramp_1256840000",
+              "point_enu": [
+                -52.63983154296875,
+                -148.85081481933594,
+                14.454090118408203
+              ],
+              "normal_enu": [
+                -0.6330392360687256,
+                0.3310246467590332,
+                0.6997743248939514
+              ],
+              "face": 249,
+              "material": "Raijiapo light ash fascia"
+            },
+            {
+              "object": "COL_Raijiapo_Ramp_1256840000",
+              "point_enu": [
+                -56.97724533081055,
+                -148.40072631835938,
+                15.465638160705566
+              ],
+              "normal_enu": [
+                -0.005218538921326399,
+                -0.008015659637749195,
+                0.9999542832374573
+              ],
+              "face": 441,
+              "material": "Raijiapo retained asphalt surface"
+            },
+            {
+              "object": "COL_Raijiapo_Ramp_1256840000",
+              "point_enu": [
+                -57.01789474487305,
+                -148.39651489257812,
+                15.475118637084961
+              ],
+              "normal_enu": [
+                0.004555107094347477,
+                0.006996619049459696,
+                -0.9999651908874512
+              ],
+              "face": 253,
+              "material": "Raijiapo light ash fascia"
+            }
+          ]
+        },
+        "dark_middle": {
+          "direction_enu": [
+            -0.9877753853797913,
+            0.0752934068441391,
+            0.13649395108222961
+          ],
+          "hits": [
+            {
+              "object": "COL_Raijiapo_GaragePublicEnvelope",
+              "point_enu": [
+                -41.40830612182617,
+                -150.91441345214844,
+                8.735919952392578
+              ],
+              "normal_enu": [
+                0.4822285771369934,
+                0.8760454654693604,
+                0.0
+              ],
+              "face": 885,
+              "material": "Raijiapo rough grey covered parking slabs"
+            },
+            {
+              "object": "COL_Raijiapo_GaragePublicEnvelope",
+              "point_enu": [
+                -42.4193000793457,
+                -150.83734130859375,
+                8.875621795654297
+              ],
+              "normal_enu": [
+                -0.4822285771369934,
+                -0.8760454654693604,
+                0.0
+              ],
+              "face": 887,
+              "material": "Raijiapo rough grey covered parking slabs"
+            },
+            {
+              "object": "COL_Raijiapo_GaragePublicEnvelope",
+              "point_enu": [
+                -51.45612335205078,
+                -150.14849853515625,
+                10.124359130859375
+              ],
+              "normal_enu": [
+                -0.9413991570472717,
+                0.3372946083545685,
+                0.0
+              ],
+              "face": 655,
+              "material": "Raijiapo deep parking wall and ramp lining"
+            },
+            {
+              "object": "COL_Raijiapo_GaragePublicEnvelope",
+              "point_enu": [
+                -52.011409759521484,
+                -150.10617065429688,
+                10.201089859008789
+              ],
+              "normal_enu": [
+                0.448253870010376,
+                -0.89390629529953,
+                0.0
+              ],
+              "face": 649,
+              "material": "Raijiapo deep parking wall and ramp lining"
+            }
+          ]
+        },
+        "dark_foot": {
+          "direction_enu": [
+            -0.9963100552558899,
+            0.0795607939362526,
+            0.03219073638319969
+          ],
+          "hits": [
+            {
+              "object": "COL_Raijiapo_GaragePublicEnvelope",
+              "point_enu": [
+                -41.65983581542969,
+                -150.7759552001953,
+                5.2916998863220215
+              ],
+              "normal_enu": [
+                0.4822285771369934,
+                0.8760454654693604,
+                0.0
+              ],
+              "face": 885,
+              "material": "Raijiapo rough grey covered parking slabs"
+            },
+            {
+              "object": "COL_Raijiapo_GaragePublicEnvelope",
+              "point_enu": [
+                -42.6786003112793,
+                -150.69461059570312,
+                5.324616432189941
+              ],
+              "normal_enu": [
+                -0.4822285771369934,
+                -0.8760454654693604,
+                0.0
+              ],
+              "face": 887,
+              "material": "Raijiapo rough grey covered parking slabs"
+            },
+            {
+              "object": "COL_Raijiapo_GarageParkingSlabs",
+              "point_enu": [
+                -48.49520492553711,
+                -150.23013305664062,
+                5.5125508308410645
+              ],
+              "normal_enu": [
+                -0.009067650884389877,
+                -0.016472863033413887,
+                0.9998232126235962
+              ],
+              "face": 216,
+              "material": "Raijiapo rough grey covered parking slabs"
+            },
+            {
+              "object": "COL_Raijiapo_GaragePublicEnvelope",
+              "point_enu": [
+                -51.402198791503906,
+                -149.9980010986328,
+                5.606475830078125
+              ],
+              "normal_enu": [
+                -0.9413991570472717,
+                0.3372946083545685,
+                0.0
+              ],
+              "face": 655,
+              "material": "Raijiapo deep parking wall and ramp lining"
+            },
+            {
+              "object": "COL_Raijiapo_GarageParkingSlabs",
+              "point_enu": [
+                -51.815547943115234,
+                -149.96499633789062,
+                5.619831085205078
+              ],
+              "normal_enu": [
+                0.9468081593513489,
+                -0.321798712015152,
+                0.0
+              ],
+              "face": 213,
+              "material": "Raijiapo rough grey covered parking slabs"
+            },
+            {
+              "object": "COL_Raijiapo_GaragePublicEnvelope",
+              "point_enu": [
+                -51.864227294921875,
+                -149.96112060546875,
+                5.62140417098999
+              ],
+              "normal_enu": [
+                0.9474818110466003,
+                -0.31980958580970764,
+                0.0
+              ],
+              "face": 653,
+              "material": "Raijiapo deep parking wall and ramp lining"
+            },
+            {
+              "object": "COL_Raijiapo_GaragePublicEnvelope",
+              "point_enu": [
+                -98.83061218261719,
+                -146.21060180664062,
+                7.138886451721191
+              ],
+              "normal_enu": [
+                -0.2195122092962265,
+                -0.9756097793579102,
+                0.0
+              ],
+              "face": 589,
+              "material": "Raijiapo deep parking wall and ramp lining"
+            },
+            {
+              "object": "COL_Raijiapo_GaragePublicEnvelope",
+              "point_enu": [
+                -102.14973449707031,
+                -145.945556640625,
+                7.246127605438232
+              ],
+              "normal_enu": [
+                0.2195121943950653,
+                0.9756097793579102,
+                0.0
+              ],
+              "face": 591,
+              "material": "Raijiapo deep parking wall and ramp lining"
+            }
+          ]
+        },
+        "pale_garage": {
+          "direction_enu": [
+            -0.9803894758224487,
+            -0.13641639053821564,
+            0.1422213762998581
+          ],
+          "hits": [
+            {
+              "object": "COL_Raijiapo_GaragePublicEnvelope",
+              "point_enu": [
+                -41.47110366821289,
+                -157.94601440429688,
+                8.969472885131836
+              ],
+              "normal_enu": [
+                0.6185606122016907,
+                0.785737156867981,
+                0.0
+              ],
+              "face": 855,
+              "material": "Raijiapo sandy cast stone bands"
+            },
+            {
+              "object": "COL_Raijiapo_GaragePublicEnvelope",
+              "point_enu": [
+                -42.13054656982422,
+                -158.03778076171875,
+                9.065135955810547
+              ],
+              "normal_enu": [
+                -0.6185606122016907,
+                -0.785737156867981,
+                0.0
+              ],
+              "face": 857,
+              "material": "Raijiapo sandy cast stone bands"
+            },
+            {
+              "object": "COL_Raijiapo_GarageParkingSlabs",
+              "point_enu": [
+                -51.40918731689453,
+                -159.328857421875,
+                10.411153793334961
+              ],
+              "normal_enu": [
+                -0.03330504894256592,
+                -0.01379777118563652,
+                0.9993500113487244
+              ],
+              "face": 416,
+              "material": "Raijiapo rough grey covered parking slabs"
+            },
+            {
+              "object": "COL_Raijiapo_GarageParkingSlabs",
+              "point_enu": [
+                -53.30651092529297,
+                -159.59286499023438,
+                10.686391830444336
+              ],
+              "normal_enu": [
+                0.035403333604335785,
+                0.008732779882848263,
+                -0.999334990978241
+              ],
+              "face": 418,
+              "material": "Raijiapo rough grey covered parking slabs"
+            },
+            {
+              "object": "COL_Raijiapo_GarageParkingSlabs",
+              "point_enu": [
+                -64.41050720214844,
+                -161.137939453125,
+                12.297205924987793
+              ],
+              "normal_enu": [
+                -0.04755210876464844,
+                0.001585079007782042,
+                0.9988675117492676
+              ],
+              "face": 514,
+              "material": "Raijiapo rough grey covered parking slabs"
+            },
+            {
+              "object": "Raijiapo_GaragePlantedRoof",
+              "point_enu": [
+                -66.25738525390625,
+                -161.39492797851562,
+                12.565125465393066
+              ],
+              "normal_enu": [
+                -0.04152777045965195,
+                0.0013843090273439884,
+                0.9991364479064941
+              ],
+              "face": 36,
+              "material": "Raijiapo rooftop planted ground"
+            },
+            {
+              "object": "COL_Raijiapo_GarageParkingSlabs",
+              "point_enu": [
+                -66.32537078857422,
+                -161.40438842773438,
+                12.574987411499023
+              ],
+              "normal_enu": [
+                0.04908027872443199,
+                -0.0016360189765691757,
+                -0.9987935423851013
+              ],
+              "face": 512,
+              "material": "Raijiapo rough grey covered parking slabs"
+            },
+            {
+              "object": "Raijiapo_GaragePlantedRoof",
+              "point_enu": [
+                -66.7369613647461,
+                -161.461669921875,
+                12.63469409942627
+              ],
+              "normal_enu": [
+                0.04143546149134636,
+                -0.004361635074019432,
+                -0.9991316795349121
+              ],
+              "face": 38,
+              "material": "Raijiapo rooftop planted ground"
+            }
+          ]
+        },
+        "ground_dark_wall": {
+          "direction_enu": [
+            -0.6550064086914062,
+            -0.7425621747970581,
+            -0.13988548517227173
+          ],
+          "hits": [
+            {
+              "object": "Changbin_GroundRoad_1256859184",
+              "point_enu": [
+                -18.263221740722656,
+                -164.128173828125,
+                2.209001064300537
+              ],
+              "normal_enu": [
+                0.0029618130065500736,
+                0.005710960831493139,
+                0.9999793767929077
+              ],
+              "face": 478,
+              "material": "Changbin grey road aggregate"
+            },
+            {
+              "object": "COL_Outer500_Surface_04_01",
+              "point_enu": [
+                -18.406719207763672,
+                -164.29086303710938,
+                2.1783552169799805
+              ],
+              "normal_enu": [
+                0.0029618130065500736,
+                0.005710960831493139,
+                0.9999793767929077
+              ],
+              "face": 1685,
+              "material": "Leaf litter and earth"
+            },
+            {
+              "object": "Outer500_Background_transition",
+              "point_enu": [
+                -99.23696899414062,
+                -255.92581176757812,
+                -15.084037780761719
+              ],
+              "normal_enu": [
+                0.0,
+                -0.5900717973709106,
+                0.8073508143424988
+              ],
+              "face": 32,
+              "material": "Leaf litter and earth"
+            },
+            {
+              "object": "Outer500_Background_transition",
+              "point_enu": [
+                -106.33538055419922,
+                -263.97308349609375,
+                -16.600000381469727
+              ],
+              "normal_enu": [
+                0.0,
+                0.0,
+                1.0
+              ],
+              "face": 25,
+              "material": "Leaf litter and earth"
+            }
+          ]
+        }
+      }
+    },
+    "road-and-park-west": {
+      "eye": [
+        -5.15,
+        -190.54,
+        0.27
+      ],
+      "target": [
+        12.1,
+        -177.8,
+        1.05
+      ],
+      "vfov": 68.0,
+      "pixels": {
+        "road_foreground": [
+          458,
+          425
+        ],
+        "grey_road_centre": [
+          436,
+          357
+        ],
+        "road_cut_end": [
+          760,
+          339
+        ],
+        "grass_at_cut": [
+          768,
+          327
+        ],
+        "outer_line": [
+          790,
+          378
+        ],
+        "footway_beyond": [
+          881,
+          382
+        ],
+        "red_at_edge_test": [
+          459,
+          284
+        ],
+        "middle_retaining": [
+          368,
+          268
+        ],
+        "back_upper_road": [
+          365,
+          207
+        ]
+      },
+      "rays": {
+        "road_foreground": {
+          "direction_enu": [
+            0.7546241283416748,
+            0.5317384004592896,
+            -0.3844433128833771
+          ],
+          "hits": [
+            {
+              "object": "Changbin_GroundRoad_59146737",
+              "point_enu": [
+                -1.1172094345092773,
+                -187.69833374023438,
+                -1.7845056056976318
+              ],
+              "normal_enu": [
+                0.09298916161060333,
+                -0.12233608216047287,
+                0.9881229400634766
+              ],
+              "face": 391,
+              "material": "Changbin grey road aggregate"
+            },
+            {
+              "object": "COL_Outer500_Surface_04_01",
+              "point_enu": [
+                -1.0535379648208618,
+                -187.65347290039062,
+                -1.8169430494308472
+              ],
+              "normal_enu": [
+                0.09298942983150482,
+                -0.12233607470989227,
+                0.9881228804588318
+              ],
+              "face": 2512,
+              "material": "Leaf litter and earth"
+            }
+          ]
+        },
+        "grey_road_centre": {
+          "direction_enu": [
+            0.7611681818962097,
+            0.6052369475364685,
+            -0.23304767906665802
+          ],
+          "hits": [
+            {
+              "object": "Changbin_GroundRoad_59146737",
+              "point_enu": [
+                1.207014560699463,
+                -185.48526000976562,
+                -1.676334023475647
+              ],
+              "normal_enu": [
+                0.056857991963624954,
+                -0.13318490982055664,
+                0.9894589185714722
+              ],
+              "face": 419,
+              "material": "Changbin grey road aggregate"
+            },
+            {
+              "object": "COL_Outer500_Surface_05_01",
+              "point_enu": [
+                1.297209620475769,
+                -185.41354370117188,
+                -1.703949213027954
+              ],
+              "normal_enu": [
+                0.07821566611528397,
+                -0.14355547726154327,
+                0.9865465760231018
+              ],
+              "face": 64,
+              "material": "Leaf litter and earth"
+            }
+          ]
+        },
+        "road_cut_end": {
+          "direction_enu": [
+            0.9877892136573792,
+            -0.05097454413771629,
+            -0.14722129702568054
+          ],
+          "hits": [
+            {
+              "object": "Changbin_GroundRoad_59146737",
+              "point_enu": [
+                27.3217716217041,
+                -192.21568298339844,
+                -4.569632053375244
+              ],
+              "normal_enu": [
+                0.03790894150733948,
+                -0.027433693408966064,
+                0.9989045858383179
+              ],
+              "face": 843,
+              "material": "Changbin grey road aggregate"
+            },
+            {
+              "object": "COL_Outer500_Surface_05_01",
+              "point_enu": [
+                27.613548278808594,
+                -192.23072814941406,
+                -4.613118648529053
+              ],
+              "normal_enu": [
+                0.037908945232629776,
+                -0.027433590963482857,
+                0.9989045858383179
+              ],
+              "face": 1357,
+              "material": "Leaf litter and earth"
+            }
+          ]
+        },
+        "grass_at_cut": {
+          "direction_enu": [
+            0.9904329180717468,
+            -0.06410564482212067,
+            -0.12220104038715363
+          ],
+          "hits": [
+            {
+              "object": "COL_Outer500_Surface_06_01",
+              "point_enu": [
+                52.98442840576172,
+                -194.302734375,
+                -6.9027099609375
+              ],
+              "normal_enu": [
+                0.0011359845520928502,
+                -0.023648308590054512,
+                0.9997197389602661
+              ],
+              "face": 104,
+              "material": "Scrub bank"
+            }
+          ]
+        },
+        "outer_line": {
+          "direction_enu": [
+            0.9723628759384155,
+            -0.09292829036712646,
+            -0.21418413519859314
+          ],
+          "hits": [
+            {
+              "object": "COL_Outer500_Surface_05_01",
+              "point_enu": [
+                15.752241134643555,
+                -192.53761291503906,
+                -4.334174633026123
+              ],
+              "normal_enu": [
+                0.024309303611516953,
+                -0.09835794568061829,
+                0.9948541522026062
+              ],
+              "face": 756,
+              "material": "Leaf litter and earth"
+            }
+          ]
+        },
+        "footway_beyond": {
+          "direction_enu": [
+            0.9580998420715332,
+            -0.207453653216362,
+            -0.19750350713729858
+          ],
+          "hits": [
+            {
+              "object": "COL_Changbin_ParkSideWalk",
+              "point_enu": [
+                18.356348037719727,
+                -195.62973022460938,
+                -4.575618267059326
+              ],
+              "normal_enu": [
+                -0.0030392385087907314,
+                -0.06301185488700867,
+                0.9980081915855408
+              ],
+              "face": 320,
+              "material": "Park Edge neutral grey stone slabs"
+            },
+            {
+              "object": "COL_Outer500_Surface_05_01",
+              "point_enu": [
+                18.622310638427734,
+                -195.68731689453125,
+                -4.630444049835205
+              ],
+              "normal_enu": [
+                -0.0030375889036804438,
+                -0.06301414221525192,
+                0.9980080723762512
+              ],
+              "face": 904,
+              "material": "Leaf litter and earth"
+            }
+          ]
+        },
+        "red_at_edge_test": {
+          "direction_enu": [
+            0.8182280659675598,
+            0.5729368329048157,
+            -0.0473940372467041
+          ],
+          "hits": [
+            {
+              "object": "COL_Changbin_LowRamp_1324001436",
+              "point_enu": [
+                10.988170623779297,
+                -179.23977661132812,
+                -0.6647675037384033
+              ],
+              "normal_enu": [
+                -0.11449946463108063,
+                -0.993423342704773,
+                0.0
+              ],
+              "face": 81,
+              "material": "Changbin weathered pale bridge concrete"
+            },
+            {
+              "object": "COL_Changbin_LowRamp_1324001436",
+              "point_enu": [
+                14.450084686279297,
+                -176.81568908691406,
+                -0.8652911186218262
+              ],
+              "normal_enu": [
+                0.1434115171432495,
+                0.0,
+                0.9896631240844727
+              ],
+              "face": 86,
+              "material": "Changbin muted red vehicle aggregate"
+            },
+            {
+              "object": "COL_Changbin_LowRamp_1375242613",
+              "point_enu": [
+                17.38396453857422,
+                -174.76133728027344,
+                -1.0352296829223633
+              ],
+              "normal_enu": [
+                -0.12208852916955948,
+                -0.992519199848175,
+                0.0
+              ],
+              "face": 97,
+              "material": "Changbin weathered pale bridge concrete"
+            },
+            {
+              "object": "COL_Changbin_LowRamp_1375242613",
+              "point_enu": [
+                22.06071662902832,
+                -171.48660278320312,
+                -1.3061201572418213
+              ],
+              "normal_enu": [
+                0.12208841741085052,
+                0.9925192594528198,
+                0.0
+              ],
+              "face": 107,
+              "material": "Changbin weathered pale bridge concrete"
+            },
+            {
+              "object": "Changbin_GroundRoad_1256859184",
+              "point_enu": [
+                24.5988712310791,
+                -169.70933532714844,
+                -1.4531371593475342
+              ],
+              "normal_enu": [
+                0.14263521134853363,
+                -0.17072664201259613,
+                0.9749398231506348
+              ],
+              "face": 1038,
+              "material": "Changbin grey road aggregate"
+            },
+            {
+              "object": "COL_Outer500_Surface_05_01",
+              "point_enu": [
+                25.335969924926758,
+                -169.19320678710938,
+                -1.495831847190857
+              ],
+              "normal_enu": [
+                0.12333965301513672,
+                -0.17117325961589813,
+                0.977490246295929
+              ],
+              "face": 1281,
+              "material": "Leaf litter and earth"
+            },
+            {
+              "object": "COL_Outer500_Building_envelopes",
+              "point_enu": [
+                41.074771881103516,
+                -158.17263793945312,
+                -2.4074668884277344
+              ],
+              "normal_enu": [
+                -0.9178568124771118,
+                -0.3969116806983948,
+                0.0
+              ],
+              "face": 23260,
+              "material": "Coursed retaining masonry.001"
+            },
+            {
+              "object": "COL_Outer500_Building_envelopes",
+              "point_enu": [
+                42.45002746582031,
+                -157.20965576171875,
+                -2.4871253967285156
+              ],
+              "normal_enu": [
+                -0.3969120383262634,
+                0.9178566932678223,
+                0.0
+              ],
+              "face": 23259,
+              "material": "Coursed retaining masonry.001"
+            }
+          ]
+        },
+        "middle_retaining": {
+          "direction_enu": [
+            0.6600391864776611,
+            0.7512156367301941,
+            -0.004830794874578714
+          ],
+          "hits": [
+            {
+              "object": "COL_Changbin_LowRamp_1375242613",
+              "point_enu": [
+                9.559234619140625,
+                -173.79885864257812,
+                0.162343829870224
+              ],
+              "normal_enu": [
+                -0.12208899110555649,
+                -0.992519199848175,
+                0.0
+              ],
+              "face": 81,
+              "material": "Changbin weathered pale bridge concrete"
+            },
+            {
+              "object": "COL_Changbin_LowRamp_1375242613",
+              "point_enu": [
+                12.612027168273926,
+                -170.32435607910156,
+                0.1400005966424942
+              ],
+              "normal_enu": [
+                0.12208840250968933,
+                0.9925192594528198,
+                0.0
+              ],
+              "face": 87,
+              "material": "Changbin weathered pale bridge concrete"
+            },
+            {
+              "object": "COL_Outer500_Surface_05_01",
+              "point_enu": [
+                20.089481353759766,
+                -161.81398010253906,
+                0.08527348935604095
+              ],
+              "normal_enu": [
+                0.061204202473163605,
+                -0.17716310918331146,
+                0.9822766184806824
+              ],
+              "face": 1039,
+              "material": "Grey stone walkway"
+            }
+          ]
+        },
+        "back_upper_road": {
+          "direction_enu": [
+            0.6456838250160217,
+            0.74819016456604,
+            0.15265583992004395
+          ],
+          "hits": [
+            {
+              "object": "COL_Outer500_Frame_21",
+              "point_enu": [
+                114.80292510986328,
+                -51.543792724609375,
+                28.629878997802734
+              ],
+              "normal_enu": [
+                -0.7762596607208252,
+                -0.6304133534431458,
+                0.0
+              ],
+              "face": 2067,
+              "material": "Concrete bands"
+            },
+            {
+              "object": "COL_Outer500_Frame_21",
+              "point_enu": [
+                114.84605407714844,
+                -51.49381637573242,
+                28.64007568359375
+              ],
+              "normal_enu": [
+                -0.7762622833251953,
+                -0.6304100751876831,
+                0.0
+              ],
+              "face": 1257,
+              "material": "Formed concrete frame"
+            },
+            {
+              "object": "COL_Outer500_Frame_21",
+              "point_enu": [
+                114.92900848388672,
+                -51.39768600463867,
+                28.65968894958496
+              ],
+              "normal_enu": [
+                0.7762596607208252,
+                0.6304133534431458,
+                0.0
+              ],
+              "face": 2069,
+              "material": "Concrete bands"
+            },
+            {
+              "object": "COL_Outer500_Frame_21",
+              "point_enu": [
+                115.01197052001953,
+                -51.301551818847656,
+                28.679302215576172
+              ],
+              "normal_enu": [
+                0.7762596011161804,
+                0.6304134726524353,
+                0.0
+              ],
+              "face": 1259,
+              "material": "Formed concrete frame"
+            },
+            {
+              "object": "COL_Outer500_Frame_21",
+              "point_enu": [
+                115.4874496459961,
+                -50.75058364868164,
+                28.791717529296875
+              ],
+              "normal_enu": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "face": 996,
+              "material": "Formed concrete frame"
+            },
+            {
+              "object": "Outer500_Facades_and_storefronts",
+              "point_enu": [
+                115.61434173583984,
+                -50.60354232788086,
+                28.821718215942383
+              ],
+              "normal_enu": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "face": 51102,
+              "material": "Concrete bands.003"
+            },
+            {
+              "object": "COL_Outer500_Frame_21",
+              "point_enu": [
+                116.12189483642578,
+                -50.01540756225586,
+                28.94171714782715
+              ],
+              "normal_enu": [
+                0.0,
+                0.0,
+                1.0
+              ],
+              "face": 997,
+              "material": "Formed concrete frame"
+            },
+            {
+              "object": "Outer500_Facades_and_storefronts",
+              "point_enu": [
+                116.96783447265625,
+                -49.03517150878906,
+                29.1417179107666
+              ],
+              "normal_enu": [
+                0.0,
+                0.0,
+                1.0
+              ],
+              "face": 51103,
+              "material": "Concrete bands.003"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "after": {
+    "bend-east-reverse": {
+      "eye": [
+        -8.8,
+        -153.4,
+        4.23
+      ],
+      "target": [
+        -26.4,
+        -157.4,
+        4.91
+      ],
+      "vfov": 67.0,
+      "pixels": {
+        "upper_end_face": [
+          771,
+          75
+        ],
+        "upper_end_corner": [
+          764,
+          83
+        ],
+        "lower_end_face": [
+          706,
+          160
+        ],
+        "lower_end_corner": [
+          698,
+          159
+        ],
+        "dark_high": [
+          578,
+          174
+        ],
+        "dark_middle": [
+          567,
+          212
+        ],
+        "dark_foot": [
+          569,
+          254
+        ],
+        "pale_garage": [
+          482,
+          212
+        ],
+        "ground_dark_wall": [
+          172,
+          334
+        ]
+      },
+      "rays": {
+        "upper_end_face": {
+          "direction_enu": [
+            -0.8248049020767212,
+            0.43453216552734375,
+            0.3617714047431946
+          ],
+          "hits": [
+            {
+              "object": "Nanjimen_NorthAcousticHood",
+              "point_enu": [
+                -106.46736907958984,
+                -101.94587707519531,
+                47.06832504272461
+              ],
+              "normal_enu": [
+                -0.8477936387062073,
+                -0.1687556803226471,
+                -0.5027598738670349
+              ],
+              "face": 539,
+              "material": "North rail pale acoustic canopy"
+            },
+            {
+              "object": "Nanjimen_NorthAcousticHood",
+              "point_enu": [
+                -108.3748550415039,
+                -100.94095611572266,
+                47.90497589111328
+              ],
+              "normal_enu": [
+                -0.1065131425857544,
+                -0.03330014646053314,
+                -0.9937535524368286
+              ],
+              "face": 537,
+              "material": "North rail pale acoustic canopy"
+            }
+          ]
+        },
+        "upper_end_corner": {
+          "direction_enu": [
+            -0.8332192897796631,
+            0.4270576238632202,
+            0.3512369990348816
+          ],
+          "hits": [
+            {
+              "object": "Nanjimen_NorthAcousticHood",
+              "point_enu": [
+                -105.56510162353516,
+                -103.8040771484375,
+                45.02056121826172
+              ],
+              "normal_enu": [
+                -0.9821802377700806,
+                -0.18794158101081848,
+                0.0
+              ],
+              "face": 530,
+              "material": "North rail pale acoustic canopy"
+            },
+            {
+              "object": "Nanjimen_NorthAcousticHood",
+              "point_enu": [
+                -112.88444519042969,
+                -100.05262756347656,
+                48.10597610473633
+              ],
+              "normal_enu": [
+                0.0023992888163775206,
+                -0.01253899559378624,
+                -0.999918520450592
+              ],
+              "face": 546,
+              "material": "North rail pale acoustic canopy"
+            }
+          ]
+        },
+        "lower_end_face": {
+          "direction_enu": [
+            -0.9071265459060669,
+            0.3540588915348053,
+            0.227516308426857
+          ],
+          "hits": [
+            {
+              "object": "COL_EastRoadPiers_1375242617",
+              "point_enu": [
+                -24.105579376220703,
+                -147.4261016845703,
+                8.068790435791016
+              ],
+              "normal_enu": [
+                0.9914277195930481,
+                -0.13051745295524597,
+                0.006019283551722765
+              ],
+              "face": 233,
+              "material": "East bend rubbed pale concrete"
+            },
+            {
+              "object": "COL_EastRoadPiers_1375242617",
+              "point_enu": [
+                -25.0095157623291,
+                -147.0732879638672,
+                8.295506477355957
+              ],
+              "normal_enu": [
+                -0.7933529019355774,
+                0.6087322235107422,
+                0.006019724067300558
+              ],
+              "face": 219,
+              "material": "East bend rubbed pale concrete"
+            }
+          ]
+        },
+        "lower_end_corner": {
+          "direction_enu": [
+            -0.9112728834152222,
+            0.3404509723186493,
+            0.23167861998081207
+          ],
+          "hits": [
+            {
+              "object": "COL_EastRoadPiers_1375242617",
+              "point_enu": [
+                -24.170921325683594,
+                -147.6574249267578,
+                8.137845993041992
+              ],
+              "normal_enu": [
+                0.9238663911819458,
+                -0.3826679587364197,
+                0.006019312422722578
+              ],
+              "face": 232,
+              "material": "East bend rubbed pale concrete"
+            },
+            {
+              "object": "COL_EastRoadPiers_1375242617",
+              "point_enu": [
+                -25.119672775268555,
+                -147.302978515625,
+                8.379053115844727
+              ],
+              "normal_enu": [
+                -0.9914255738258362,
+                0.13053393363952637,
+                0.006019511725753546
+              ],
+              "face": 221,
+              "material": "East bend rubbed pale concrete"
+            }
+          ]
+        },
+        "dark_high": {
+          "direction_enu": [
+            -0.9689317941665649,
+            0.10054447501897812,
+            0.22596904635429382
+          ],
+          "hits": [
+            {
+              "object": "COL_EastGarage_ReturnFrame",
+              "point_enu": [
+                -44.103118896484375,
+                -149.7366485595703,
+                12.463203430175781
+              ],
+              "normal_enu": [
+                0.8760483860969543,
+                -0.4822233319282532,
+                0.0
+              ],
+              "face": 14,
+              "material": "East bend rubbed pale concrete"
+            },
+            {
+              "object": "COL_EastGarage_ReturnFrame",
+              "point_enu": [
+                -44.578243255615234,
+                -149.68734741210938,
+                12.574009895324707
+              ],
+              "normal_enu": [
+                -0.8760483860969543,
+                0.4822233319282532,
+                0.0
+              ],
+              "face": 16,
+              "material": "East bend rubbed pale concrete"
+            },
+            {
+              "object": "COL_Raijiapo_GarageParkingSlabs",
+              "point_enu": [
+                -47.58358383178711,
+                -149.37548828125,
+                13.27489948272705
+              ],
+              "normal_enu": [
+                -0.009067650884389877,
+                -0.016472863033413887,
+                0.9998232126235962
+              ],
+              "face": 546,
+              "material": "Raijiapo rough grey covered parking slabs"
+            },
+            {
+              "object": "COL_Raijiapo_GarageParkingSlabs",
+              "point_enu": [
+                -49.1215705871582,
+                -149.2158966064453,
+                13.633581161499023
+              ],
+              "normal_enu": [
+                0.009067656472325325,
+                0.016472861170768738,
+                -0.9998232126235962
+              ],
+              "face": 548,
+              "material": "Raijiapo rough grey covered parking slabs"
+            },
+            {
+              "object": "COL_Raijiapo_Ramp_1256839997",
+              "point_enu": [
+                -52.041603088378906,
+                -148.9128875732422,
+                14.3145751953125
+              ],
+              "normal_enu": [
+                -0.017933771014213562,
+                0.004366040229797363,
+                0.9998296499252319
+              ],
+              "face": 250,
+              "material": "Raijiapo light ash fascia"
+            },
+            {
+              "object": "COL_Raijiapo_Ramp_1256839997",
+              "point_enu": [
+                -57.44690704345703,
+                -148.35198974609375,
+                15.57517147064209
+              ],
+              "normal_enu": [
+                -0.017933791503310204,
+                0.0043660239316523075,
+                0.9998296499252319
+              ],
+              "face": 631,
+              "material": "Raijiapo retained asphalt surface"
+            },
+            {
+              "object": "COL_Raijiapo_Ramp_1256839997",
+              "point_enu": [
+                -57.48665237426758,
+                -148.34786987304688,
+                15.584441184997559
+              ],
+              "normal_enu": [
+                0.017933793365955353,
+                -0.004366026259958744,
+                -0.9998297095298767
+              ],
+              "face": 241,
+              "material": "Raijiapo light ash fascia"
+            },
+            {
+              "object": "COL_Raijiapo_Ramp_1256839997",
+              "point_enu": [
+                -57.6456298828125,
+                -148.3313751220703,
+                15.621517181396484
+              ],
+              "normal_enu": [
+                -0.017933791503310204,
+                0.0043660239316523075,
+                0.9998296499252319
+              ],
+              "face": 629,
+              "material": "Raijiapo retained asphalt surface"
+            }
+          ]
+        },
+        "dark_middle": {
+          "direction_enu": [
+            -0.9877753853797913,
+            0.0752934068441391,
+            0.13649395108222961
+          ],
+          "hits": [
+            {
+              "object": "COL_EastRoad_1375242613",
+              "point_enu": [
+                -37.24287414550781,
+                -151.23193359375,
+                8.160326957702637
+              ],
+              "normal_enu": [
+                0.9615473747253418,
+                0.2746390998363495,
+                0.0
+              ],
+              "face": 15,
+              "material": "East bend rubbed pale concrete"
+            },
+            {
+              "object": "COL_Raijiapo_Ramp_1324001438",
+              "point_enu": [
+                -39.46116256713867,
+                -151.06283569335938,
+                8.466856956481934
+              ],
+              "normal_enu": [
+                -0.7051562666893005,
+                0.11823540180921555,
+                0.6991245746612549
+              ],
+              "face": 291,
+              "material": "Raijiapo light ash fascia"
+            },
+            {
+              "object": "COL_EastGarage_ReturnFrame",
+              "point_enu": [
+                -41.16763687133789,
+                -150.93275451660156,
+                8.70266342163086
+              ],
+              "normal_enu": [
+                0.4822162687778473,
+                0.8760522603988647,
+                0.0
+              ],
+              "face": 9,
+              "material": "East bend rubbed pale concrete"
+            },
+            {
+              "object": "COL_EastGarage_ReturnFrame",
+              "point_enu": [
+                -41.21576690673828,
+                -150.9290771484375,
+                8.709314346313477
+              ],
+              "normal_enu": [
+                0.4822275638580322,
+                0.8760460019111633,
+                0.0
+              ],
+              "face": 45,
+              "material": "East bend rubbed pale concrete"
+            },
+            {
+              "object": "COL_EastRoad_1375242613",
+              "point_enu": [
+                -41.45822525024414,
+                -150.91058349609375,
+                8.742817878723145
+              ],
+              "normal_enu": [
+                -0.9603949785232544,
+                -0.27864235639572144,
+                0.0
+              ],
+              "face": 10,
+              "material": "East bend rubbed pale concrete"
+            },
+            {
+              "object": "COL_EastGarage_ReturnFrame",
+              "point_enu": [
+                -41.61505126953125,
+                -150.89862060546875,
+                8.764488220214844
+              ],
+              "normal_enu": [
+                -0.8760483860969543,
+                0.4822233319282532,
+                0.0
+              ],
+              "face": 10,
+              "material": "East bend rubbed pale concrete"
+            },
+            {
+              "object": "COL_EastGarage_ReturnFrame",
+              "point_enu": [
+                -41.6665153503418,
+                -150.89468383789062,
+                8.771599769592285
+              ],
+              "normal_enu": [
+                0.0,
+                0.0,
+                1.0
+              ],
+              "face": 43,
+              "material": "East bend rubbed pale concrete"
+            },
+            {
+              "object": "COL_Raijiapo_Ramp_1324001438",
+              "point_enu": [
+                -44.22098159790039,
+                -150.69996643066406,
+                9.124584197998047
+              ],
+              "normal_enu": [
+                0.9476919174194336,
+                -0.28434380888938904,
+                0.1450127363204956
+              ],
+              "face": 288,
+              "material": "Raijiapo light ash fascia"
+            }
+          ]
+        },
+        "dark_foot": {
+          "direction_enu": [
+            -0.9963100552558899,
+            0.0795607939362526,
+            0.03219073638319969
+          ],
+          "hits": [
+            {
+              "object": "COL_EastGarage_ReturnFrame",
+              "point_enu": [
+                -41.41730499267578,
+                -150.79531860351562,
+                5.2838640213012695
+              ],
+              "normal_enu": [
+                0.4822162687778473,
+                0.8760522603988647,
+                0.0
+              ],
+              "face": 9,
+              "material": "East bend rubbed pale concrete"
+            },
+            {
+              "object": "COL_EastGarage_ReturnFrame",
+              "point_enu": [
+                -41.5522575378418,
+                -150.7845458984375,
+                5.288224697113037
+              ],
+              "normal_enu": [
+                -0.8760483860969543,
+                0.4822233319282532,
+                0.0
+              ],
+              "face": 10,
+              "material": "East bend rubbed pale concrete"
+            },
+            {
+              "object": "COL_Raijiapo_GarageParkingSlabs",
+              "point_enu": [
+                -48.495201110839844,
+                -150.23011779785156,
+                5.512551307678223
+              ],
+              "normal_enu": [
+                -0.009067650884389877,
+                -0.016472863033413887,
+                0.9998232126235962
+              ],
+              "face": 216,
+              "material": "Raijiapo rough grey covered parking slabs"
+            },
+            {
+              "object": "COL_Raijiapo_GaragePublicEnvelope",
+              "point_enu": [
+                -51.40219497680664,
+                -149.99798583984375,
+                5.606476306915283
+              ],
+              "normal_enu": [
+                -0.9413991570472717,
+                0.3372946083545685,
+                0.0
+              ],
+              "face": 654,
+              "material": "Raijiapo deep parking wall and ramp lining"
+            },
+            {
+              "object": "COL_Raijiapo_GarageParkingSlabs",
+              "point_enu": [
+                -51.8155403137207,
+                -149.96498107910156,
+                5.619831562042236
+              ],
+              "normal_enu": [
+                0.9468081593513489,
+                -0.321798712015152,
+                0.0
+              ],
+              "face": 213,
+              "material": "Raijiapo rough grey covered parking slabs"
+            },
+            {
+              "object": "COL_Raijiapo_GaragePublicEnvelope",
+              "point_enu": [
+                -51.864219665527344,
+                -149.9611053466797,
+                5.621404647827148
+              ],
+              "normal_enu": [
+                0.9474818110466003,
+                -0.31980958580970764,
+                0.0
+              ],
+              "face": 652,
+              "material": "Raijiapo deep parking wall and ramp lining"
+            },
+            {
+              "object": "COL_Raijiapo_GaragePublicEnvelope",
+              "point_enu": [
+                -98.83071899414062,
+                -146.21058654785156,
+                7.138890743255615
+              ],
+              "normal_enu": [
+                -0.2195122092962265,
+                -0.9756097793579102,
+                0.0
+              ],
+              "face": 588,
+              "material": "Raijiapo deep parking wall and ramp lining"
+            },
+            {
+              "object": "COL_Raijiapo_GaragePublicEnvelope",
+              "point_enu": [
+                -102.14978790283203,
+                -145.94554138183594,
+                7.246129989624023
+              ],
+              "normal_enu": [
+                0.2195121943950653,
+                0.9756097793579102,
+                0.0
+              ],
+              "face": 590,
+              "material": "Raijiapo deep parking wall and ramp lining"
+            }
+          ]
+        },
+        "pale_garage": {
+          "direction_enu": [
+            -0.9803894758224487,
+            -0.13641639053821564,
+            0.1422213762998581
+          ],
+          "hits": [
+            {
+              "object": "COL_Raijiapo_GaragePublicEnvelope",
+              "point_enu": [
+                -41.47110366821289,
+                -157.94601440429688,
+                8.969472885131836
+              ],
+              "normal_enu": [
+                0.6185606122016907,
+                0.785737156867981,
+                0.0
+              ],
+              "face": 854,
+              "material": "Raijiapo sandy cast stone bands"
+            },
+            {
+              "object": "COL_Raijiapo_Ramp_1324001438",
+              "point_enu": [
+                -41.71229553222656,
+                -157.97958374023438,
+                9.004462242126465
+              ],
+              "normal_enu": [
+                -0.8694566488265991,
+                0.4717923700809479,
+                0.14648258686065674
+              ],
+              "face": 272,
+              "material": "Raijiapo light ash fascia"
+            },
+            {
+              "object": "COL_Raijiapo_GaragePublicEnvelope",
+              "point_enu": [
+                -42.13053894042969,
+                -158.03778076171875,
+                9.06513500213623
+              ],
+              "normal_enu": [
+                -0.6185606122016907,
+                -0.785737156867981,
+                0.0
+              ],
+              "face": 856,
+              "material": "Raijiapo sandy cast stone bands"
+            },
+            {
+              "object": "COL_Raijiapo_Ramp_1324001438",
+              "point_enu": [
+                -45.71686935424805,
+                -158.53680419921875,
+                9.585390090942383
+              ],
+              "normal_enu": [
+                0.04739607870578766,
+                -0.0032707215286791325,
+                0.998870849609375
+              ],
+              "face": 501,
+              "material": "Raijiapo retained asphalt surface"
+            },
+            {
+              "object": "COL_Raijiapo_Ramp_1324001438",
+              "point_enu": [
+                -45.83814239501953,
+                -158.55368041992188,
+                9.602982521057129
+              ],
+              "normal_enu": [
+                -0.05049033463001251,
+                -0.0010392330586910248,
+                -0.9987240433692932
+              ],
+              "face": 265,
+              "material": "Raijiapo light ash fascia"
+            },
+            {
+              "object": "COL_Raijiapo_Ramp_1324001438",
+              "point_enu": [
+                -46.24156951904297,
+                -158.6098175048828,
+                9.661506652832031
+              ],
+              "normal_enu": [
+                0.05025047808885574,
+                0.0006792034837417305,
+                0.9987364411354065
+              ],
+              "face": 495,
+              "material": "Raijiapo retained asphalt surface"
+            },
+            {
+              "object": "COL_Raijiapo_Ramp_1324001438",
+              "point_enu": [
+                -48.05571365356445,
+                -158.8622589111328,
+                9.924677848815918
+              ],
+              "normal_enu": [
+                -0.7222588062286377,
+                0.6916229128837585,
+                0.0
+              ],
+              "face": 1515,
+              "material": "Raijiapo light ash fascia"
+            },
+            {
+              "object": "COL_Raijiapo_Ramp_1324001438",
+              "point_enu": [
+                -48.342220306396484,
+                -158.90213012695312,
+                9.966240882873535
+              ],
+              "normal_enu": [
+                0.752501368522644,
+                -0.6585906744003296,
+                0.0
+              ],
+              "face": 1509,
+              "material": "Raijiapo light ash fascia"
+            }
+          ]
+        },
+        "ground_dark_wall": {
+          "direction_enu": [
+            -0.6550064086914062,
+            -0.7425621747970581,
+            -0.13988548517227173
+          ],
+          "hits": [
+            {
+              "object": "EastRoad_Ground_1256859184",
+              "point_enu": [
+                -18.173534393310547,
+                -164.02650451660156,
+                2.2281548976898193
+              ],
+              "normal_enu": [
+                0.0029618130065500736,
+                0.005710960831493139,
+                0.9999793767929077
+              ],
+              "face": 668,
+              "material": "East bend worn fine asphalt"
+            },
+            {
+              "object": "COL_Outer500_Surface_04_01",
+              "point_enu": [
+                -18.406719207763672,
+                -164.29086303710938,
+                2.1783552169799805
+              ],
+              "normal_enu": [
+                0.0029618130065500736,
+                0.005710960831493139,
+                0.9999793767929077
+              ],
+              "face": 1685,
+              "material": "Leaf litter and earth"
+            },
+            {
+              "object": "Outer500_Background_transition",
+              "point_enu": [
+                -99.23696899414062,
+                -255.92581176757812,
+                -15.084037780761719
+              ],
+              "normal_enu": [
+                0.0,
+                -0.5900717973709106,
+                0.8073508143424988
+              ],
+              "face": 32,
+              "material": "Leaf litter and earth"
+            },
+            {
+              "object": "Outer500_Background_transition",
+              "point_enu": [
+                -106.33538055419922,
+                -263.97308349609375,
+                -16.600000381469727
+              ],
+              "normal_enu": [
+                0.0,
+                0.0,
+                1.0
+              ],
+              "face": 25,
+              "material": "Leaf litter and earth"
+            }
+          ]
+        }
+      }
+    },
+    "road-and-park-west": {
+      "eye": [
+        -5.15,
+        -190.54,
+        0.27
+      ],
+      "target": [
+        12.1,
+        -177.8,
+        1.05
+      ],
+      "vfov": 68.0,
+      "pixels": {
+        "road_foreground": [
+          458,
+          425
+        ],
+        "grey_road_centre": [
+          436,
+          357
+        ],
+        "road_cut_end": [
+          760,
+          339
+        ],
+        "grass_at_cut": [
+          768,
+          327
+        ],
+        "outer_line": [
+          790,
+          378
+        ],
+        "footway_beyond": [
+          881,
+          382
+        ],
+        "red_at_edge_test": [
+          459,
+          284
+        ],
+        "middle_retaining": [
+          368,
+          268
+        ],
+        "back_upper_road": [
+          365,
+          207
+        ]
+      },
+      "rays": {
+        "road_foreground": {
+          "direction_enu": [
+            0.7546241283416748,
+            0.5317384004592896,
+            -0.3844433128833771
+          ],
+          "hits": [
+            {
+              "object": "EastRoad_Ground_59146737",
+              "point_enu": [
+                -1.1570043563842773,
+                -187.7263641357422,
+                -1.7642319202423096
+              ],
+              "normal_enu": [
+                0.09298952668905258,
+                -0.12233607470989227,
+                0.9881228804588318
+              ],
+              "face": 606,
+              "material": "East bend worn fine asphalt"
+            },
+            {
+              "object": "COL_Outer500_Surface_04_01",
+              "point_enu": [
+                -1.0535403490066528,
+                -187.65345764160156,
+                -1.816941738128662
+              ],
+              "normal_enu": [
+                0.09298942983150482,
+                -0.12233607470989227,
+                0.9881228804588318
+              ],
+              "face": 2512,
+              "material": "Leaf litter and earth"
+            }
+          ]
+        },
+        "grey_road_centre": {
+          "direction_enu": [
+            0.7611681818962097,
+            0.6052369475364685,
+            -0.23304767906665802
+          ],
+          "hits": [
+            {
+              "object": "EastRoad_Ground_59146737",
+              "point_enu": [
+                1.1507940292358398,
+                -185.52996826171875,
+                -1.6591209173202515
+              ],
+              "normal_enu": [
+                0.05685769394040108,
+                -0.13318482041358948,
+                0.9894589781761169
+              ],
+              "face": 598,
+              "material": "East bend worn fine asphalt"
+            },
+            {
+              "object": "COL_Outer500_Surface_05_01",
+              "point_enu": [
+                1.297211766242981,
+                -185.41354370117188,
+                -1.7039498090744019
+              ],
+              "normal_enu": [
+                0.07821566611528397,
+                -0.14355547726154327,
+                0.9865465760231018
+              ],
+              "face": 64,
+              "material": "Leaf litter and earth"
+            }
+          ]
+        },
+        "road_cut_end": {
+          "direction_enu": [
+            0.9877892136573792,
+            -0.05097454413771629,
+            -0.14722129702568054
+          ],
+          "hits": [
+            {
+              "object": "EastRoad_Ground_59146737",
+              "point_enu": [
+                27.13941764831543,
+                -192.20628356933594,
+                -4.542453765869141
+              ],
+              "normal_enu": [
+                0.037908945232629776,
+                -0.027433522045612335,
+                0.9989045858383179
+              ],
+              "face": 1028,
+              "material": "East bend worn fine asphalt"
+            },
+            {
+              "object": "COL_Outer500_Surface_05_01",
+              "point_enu": [
+                27.61355209350586,
+                -192.23074340820312,
+                -4.613119125366211
+              ],
+              "normal_enu": [
+                0.037908945232629776,
+                -0.027433590963482857,
+                0.9989045858383179
+              ],
+              "face": 1357,
+              "material": "Leaf litter and earth"
+            }
+          ]
+        },
+        "grass_at_cut": {
+          "direction_enu": [
+            0.9904329180717468,
+            -0.06410564482212067,
+            -0.12220104038715363
+          ],
+          "hits": [
+            {
+              "object": "EastRoad_Ground_59146737",
+              "point_enu": [
+                52.539241790771484,
+                -194.27392578125,
+                -6.847781658172607
+              ],
+              "normal_enu": [
+                0.0065107219852507114,
+                -0.026333816349506378,
+                0.9996320009231567
+              ],
+              "face": 1394,
+              "material": "East bend worn fine asphalt"
+            },
+            {
+              "object": "COL_Outer500_Surface_06_01",
+              "point_enu": [
+                52.98442840576172,
+                -194.302734375,
+                -6.902709484100342
+              ],
+              "normal_enu": [
+                0.0011359845520928502,
+                -0.023648308590054512,
+                0.9997197389602661
+              ],
+              "face": 104,
+              "material": "Scrub bank"
+            }
+          ]
+        },
+        "outer_line": {
+          "direction_enu": [
+            0.9723628759384155,
+            -0.09292829036712646,
+            -0.21418413519859314
+          ],
+          "hits": [
+            {
+              "object": "COL_Outer500_Surface_05_01",
+              "point_enu": [
+                15.752241134643555,
+                -192.53761291503906,
+                -4.334174633026123
+              ],
+              "normal_enu": [
+                0.024309303611516953,
+                -0.09835794568061829,
+                0.9948541522026062
+              ],
+              "face": 756,
+              "material": "Leaf litter and earth"
+            }
+          ]
+        },
+        "footway_beyond": {
+          "direction_enu": [
+            0.9580998420715332,
+            -0.207453653216362,
+            -0.19750350713729858
+          ],
+          "hits": [
+            {
+              "object": "COL_Changbin_ParkSideWalk",
+              "point_enu": [
+                18.356348037719727,
+                -195.62973022460938,
+                -4.575618267059326
+              ],
+              "normal_enu": [
+                -0.0030392385087907314,
+                -0.06301185488700867,
+                0.9980081915855408
+              ],
+              "face": 320,
+              "material": "Park Edge neutral grey stone slabs"
+            },
+            {
+              "object": "COL_Outer500_Surface_05_01",
+              "point_enu": [
+                18.622310638427734,
+                -195.68731689453125,
+                -4.630444049835205
+              ],
+              "normal_enu": [
+                -0.0030375889036804438,
+                -0.06301414221525192,
+                0.9980080723762512
+              ],
+              "face": 904,
+              "material": "Leaf litter and earth"
+            }
+          ]
+        },
+        "red_at_edge_test": {
+          "direction_enu": [
+            0.8182280659675598,
+            0.5729368329048157,
+            -0.0473940372467041
+          ],
+          "hits": [
+            {
+              "object": "COL_EastRoad_1324001436",
+              "point_enu": [
+                10.676813125610352,
+                -179.45779418945312,
+                -0.6467329263687134
+              ],
+              "normal_enu": [
+                -0.11448556929826736,
+                -0.9934249520301819,
+                0.0
+              ],
+              "face": 158,
+              "material": "East bend rubbed pale concrete"
+            },
+            {
+              "object": "COL_EastRoad_1324001436",
+              "point_enu": [
+                13.403639793395996,
+                -177.5484161376953,
+                -0.8046782612800598
+              ],
+              "normal_enu": [
+                0.11835531145334244,
+                -0.013640854507684708,
+                0.9928776621818542
+              ],
+              "face": 161,
+              "material": "East bend red vehicle wearing course"
+            },
+            {
+              "object": "COL_EastRoad_1375242613",
+              "point_enu": [
+                17.299015045166016,
+                -174.82080078125,
+                -1.0303092002868652
+              ],
+              "normal_enu": [
+                -0.12208543717861176,
+                -0.9925196170806885,
+                0.0
+              ],
+              "face": 142,
+              "material": "East bend rubbed pale concrete"
+            },
+            {
+              "object": "COL_EastRoad_1375242613",
+              "point_enu": [
+                22.145641326904297,
+                -171.42710876464844,
+                -1.3110392093658447
+              ],
+              "normal_enu": [
+                0.12208501249551773,
+                0.9925196766853333,
+                0.0
+              ],
+              "face": 151,
+              "material": "East bend rubbed pale concrete"
+            },
+            {
+              "object": "EastRoad_Ground_1256859184",
+              "point_enu": [
+                24.04267692565918,
+                -170.09877014160156,
+                -1.4209208488464355
+              ],
+              "normal_enu": [
+                0.14239852130413055,
+                -0.17991545796394348,
+                0.9733206629753113
+              ],
+              "face": 1217,
+              "material": "East bend worn fine asphalt"
+            },
+            {
+              "object": "COL_Outer500_Surface_05_01",
+              "point_enu": [
+                25.335899353027344,
+                -169.1932373046875,
+                -1.4958279132843018
+              ],
+              "normal_enu": [
+                0.12333965301513672,
+                -0.17117325961589813,
+                0.977490246295929
+              ],
+              "face": 1281,
+              "material": "Leaf litter and earth"
+            }
+          ]
+        },
+        "middle_retaining": {
+          "direction_enu": [
+            0.6600391864776611,
+            0.7512156367301941,
+            -0.004830794874578714
+          ],
+          "hits": [
+            {
+              "object": "COL_EastRoad_1375242613",
+              "point_enu": [
+                9.503793716430664,
+                -173.86195373535156,
+                0.16274960339069366
+              ],
+              "normal_enu": [
+                -0.12208537757396698,
+                -0.9925196170806885,
+                0.0
+              ],
+              "face": 126,
+              "material": "East bend rubbed pale concrete"
+            },
+            {
+              "object": "COL_EastRoad_1375242613",
+              "point_enu": [
+                12.357037544250488,
+                -170.61456298828125,
+                0.14186686277389526
+              ],
+              "normal_enu": [
+                0.14146365225315094,
+                -0.01740073971450329,
+                0.9897904992103577
+              ],
+              "face": 129,
+              "material": "East bend worn fine asphalt"
+            },
+            {
+              "object": "EastRoad_Lines_1375242613",
+              "point_enu": [
+                12.495451927185059,
+                -170.45701599121094,
+                0.14085382223129272
+              ],
+              "normal_enu": [
+                0.14146357774734497,
+                -0.01740139164030552,
+                0.9897904992103577
+              ],
+              "face": 69,
+              "material": "East bend weathered white direction paint"
+            },
+            {
+              "object": "COL_Outer500_Surface_05_01",
+              "point_enu": [
+                20.089458465576172,
+                -161.81398010253906,
+                0.08527366816997528
+              ],
+              "normal_enu": [
+                0.061204202473163605,
+                -0.17716310918331146,
+                0.9822766184806824
+              ],
+              "face": 1039,
+              "material": "Grey stone walkway"
+            }
+          ]
+        },
+        "back_upper_road": {
+          "direction_enu": [
+            0.6456838250160217,
+            0.74819016456604,
+            0.15265583992004395
+          ],
+          "hits": [
+            {
+              "object": "COL_Raijiapo_Ramp_1256839997",
+              "point_enu": [
+                44.249752044677734,
+                -133.2977294921875,
+                11.9493408203125
+              ],
+              "normal_enu": [
+                -0.7199480533599854,
+                0.6781170964241028,
+                0.14775705337524414
+              ],
+              "face": 434,
+              "material": "Raijiapo light ash fascia"
+            },
+            {
+              "object": "COL_Raijiapo_Ramp_1256839997",
+              "point_enu": [
+                45.00646209716797,
+                -132.4208984375,
+                12.12824535369873
+              ],
+              "normal_enu": [
+                -0.11513889580965042,
+                0.020594151690602303,
+                -0.993135929107666
+              ],
+              "face": 439,
+              "material": "Raijiapo light ash fascia"
+            },
+            {
+              "object": "COL_Raijiapo_Ramp_1256839997",
+              "point_enu": [
+                45.09252166748047,
+                -132.32118225097656,
+                12.148591041564941
+              ],
+              "normal_enu": [
+                0.09881651401519775,
+                -0.005103020463138819,
+                0.9950926303863525
+              ],
+              "face": 1074,
+              "material": "Raijiapo light ash fascia"
+            },
+            {
+              "object": "COL_Raijiapo_Ramp_1256839997",
+              "point_enu": [
+                45.840328216552734,
+                -131.4546661376953,
+                12.325389862060547
+              ],
+              "normal_enu": [
+                -0.08998069912195206,
+                0.014748014509677887,
+                -0.9958343505859375
+              ],
+              "face": 1080,
+              "material": "Raijiapo light ash fascia"
+            },
+            {
+              "object": "COL_Raijiapo_Ramp_1256839997",
+              "point_enu": [
+                46.451507568359375,
+                -130.7464599609375,
+                12.469887733459473
+              ],
+              "normal_enu": [
+                0.09032928198575974,
+                -0.014361690729856491,
+                0.9958084225654602
+              ],
+              "face": 1392,
+              "material": "Raijiapo grey blue parapet rails"
+            },
+            {
+              "object": "COL_Raijiapo_Ramp_1256839997",
+              "point_enu": [
+                46.59099197387695,
+                -130.5848388671875,
+                12.502864837646484
+              ],
+              "normal_enu": [
+                -0.07922477275133133,
+                0.004027096554636955,
+                -0.9968487024307251
+              ],
+              "face": 1394,
+              "material": "Raijiapo grey blue parapet rails"
+            },
+            {
+              "object": "COL_Outer500_Frame_21",
+              "point_enu": [
+                114.80294036865234,
+                -51.54383087158203,
+                28.6298770904541
+              ],
+              "normal_enu": [
+                -0.7762596607208252,
+                -0.6304133534431458,
+                0.0
+              ],
+              "face": 2067,
+              "material": "Concrete bands"
+            },
+            {
+              "object": "COL_Outer500_Frame_21",
+              "point_enu": [
+                114.84607696533203,
+                -51.49384307861328,
+                28.64007568359375
+              ],
+              "normal_enu": [
+                -0.7762622833251953,
+                -0.6304100751876831,
+                0.0
+              ],
+              "face": 1257,
+              "material": "Formed concrete frame"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "visibility": {
+    "original_park_eye": {
+      "sample_count": {
+        "red": 12,
+        "paint": 214,
+        "arrow": 6
+      },
+      "detail": {
+        "red": [
+          {
+            "obj": "COL_EastRoad_1324001436",
+            "screen_xy": [
+              316.21,
+              276.47
+            ],
+            "enu_m": [
+              4.234,
+              -176.601,
+              -0.144
+            ],
+            "face": 145
+          },
+          {
+            "obj": "COL_EastRoad_1324001436",
+            "screen_xy": [
+              361.64,
+              277.69
+            ],
+            "enu_m": [
+              6.461,
+              -176.858,
+              -0.243
+            ],
+            "face": 149
+          },
+          {
+            "obj": "COL_EastRoad_1324001436",
+            "screen_xy": [
+              603.31,
+              308.7
+            ],
+            "enu_m": [
+              35.407,
+              -180.194,
+              -4.054
+            ],
+            "face": 201
+          },
+          {
+            "obj": "COL_EastRoad_1324001436",
+            "screen_xy": [
+              643.34,
+              302.73
+            ],
+            "enu_m": [
+              48.767,
+              -181.734,
+              -4.384
+            ],
+            "face": 225
+          },
+          {
+            "obj": "COL_EastRoad_1324001436",
+            "screen_xy": [
+              648.48,
+              302.04
+            ],
+            "enu_m": [
+              50.994,
+              -181.99,
+              -4.449
+            ],
+            "face": 229
+          },
+          {
+            "obj": "COL_EastRoad_1324001436",
+            "screen_xy": [
+              662.07,
+              299.77
+            ],
+            "enu_m": [
+              57.674,
+              -182.76,
+              -4.58
+            ],
+            "face": 241
+          },
+          {
+            "obj": "COL_EastRoad_1324001436",
+            "screen_xy": [
+              666.07,
+              298.68
+            ],
+            "enu_m": [
+              59.9,
+              -183.017,
+              -4.56
+            ],
+            "face": 245
+          },
+          {
+            "obj": "COL_EastRoad_1324001436",
+            "screen_xy": [
+              669.83,
+              297.35
+            ],
+            "enu_m": [
+              62.127,
+              -183.274,
+              -4.494
+            ],
+            "face": 249
+          },
+          {
+            "obj": "COL_EastRoad_1324001436",
+            "screen_xy": [
+              673.39,
+              295.81
+            ],
+            "enu_m": [
+              64.354,
+              -183.53,
+              -4.383
+            ],
+            "face": 253
+          },
+          {
+            "obj": "COL_EastRoad_1324001436",
+            "screen_xy": [
+              676.75,
+              294.12
+            ],
+            "enu_m": [
+              66.58,
+              -183.787,
+              -4.233
+            ],
+            "face": 257
+          },
+          {
+            "obj": "COL_EastRoad_1324001436",
+            "screen_xy": [
+              685.82,
+              289.38
+            ],
+            "enu_m": [
+              73.26,
+              -184.557,
+              -3.754
+            ],
+            "face": 269
+          },
+          {
+            "obj": "COL_EastRoad_1324001436",
+            "screen_xy": [
+              688.56,
+              288.34
+            ],
+            "enu_m": [
+              75.487,
+              -184.813,
+              -3.665
+            ],
+            "face": 273
+          }
+        ],
+        "arrow": [
+          {
+            "obj": "EastRoad_Lines_1324001436",
+            "screen_xy": [
+              380.11,
+              277.65
+            ],
+            "enu_m": [
+              7.503,
+              -176.978,
+              -0.264
+            ],
+            "face": 80
+          },
+          {
+            "obj": "EastRoad_Lines_1324001436",
+            "screen_xy": [
+              374.74,
+              277.37
+            ],
+            "enu_m": [
+              7.195,
+              -176.937,
+              -0.244
+            ],
+            "face": 80
+          },
+          {
+            "obj": "EastRoad_Lines_1324001436",
+            "screen_xy": [
+              614.88,
+              307.22
+            ],
+            "enu_m": [
+              38.676,
+              -180.571,
+              -4.161
+            ],
+            "face": 110
+          },
+          {
+            "obj": "EastRoad_Lines_1324001436",
+            "screen_xy": [
+              613.8,
+              307.38
+            ],
+            "enu_m": [
+              38.368,
+              -180.53,
+              -4.155
+            ],
+            "face": 110
+          },
+          {
+            "obj": "EastRoad_Lines_1324001436",
+            "screen_xy": [
+              681.36,
+              291.46
+            ],
+            "enu_m": [
+              69.849,
+              -184.164,
+              -3.957
+            ],
+            "face": 140
+          },
+          {
+            "obj": "EastRoad_Lines_1324001436",
+            "screen_xy": [
+              680.9,
+              291.68
+            ],
+            "enu_m": [
+              69.541,
+              -184.123,
+              -3.979
+            ],
+            "face": 140
+          }
+        ]
+      }
+    },
+    "new_east_eye": {
+      "sample_count": {
+        "red": 17,
+        "paint": 289,
+        "arrow": 6
+      },
+      "detail": {
+        "red": [
+          {
+            "obj": "COL_EastRoad_1324001436",
+            "screen_xy": [
+              538.91,
+              239.06
+            ],
+            "enu_m": [
+              4.234,
+              -176.601,
+              -0.144
+            ],
+            "face": 145
+          },
+          {
+            "obj": "COL_EastRoad_1324001436",
+            "screen_xy": [
+              531.24,
+              240.34
+            ],
+            "enu_m": [
+              6.461,
+              -176.858,
+              -0.243
+            ],
+            "face": 149
+          },
+          {
+            "obj": "COL_EastRoad_1324001436",
+            "screen_xy": [
+              522.93,
+              241.91
+            ],
+            "enu_m": [
+              8.687,
+              -177.115,
+              -0.363
+            ],
+            "face": 153
+          },
+          {
+            "obj": "COL_EastRoad_1324001436",
+            "screen_xy": [
+              513.88,
+              244.12
+            ],
+            "enu_m": [
+              10.914,
+              -177.371,
+              -0.537
+            ],
+            "face": 157
+          },
+          {
+            "obj": "COL_EastRoad_1324001436",
+            "screen_xy": [
+              504.01,
+              247.13
+            ],
+            "enu_m": [
+              13.141,
+              -177.628,
+              -0.774
+            ],
+            "face": 161
+          },
+          {
+            "obj": "COL_EastRoad_1324001436",
+            "screen_xy": [
+              493.18,
+              251.08
+            ],
+            "enu_m": [
+              15.367,
+              -177.884,
+              -1.076
+            ],
+            "face": 165
+          },
+          {
+            "obj": "COL_EastRoad_1324001436",
+            "screen_xy": [
+              481.27,
+              256.04
+            ],
+            "enu_m": [
+              17.594,
+              -178.141,
+              -1.437
+            ],
+            "face": 169
+          },
+          {
+            "obj": "COL_EastRoad_1324001436",
+            "screen_xy": [
+              468.1,
+              262.0
+            ],
+            "enu_m": [
+              19.821,
+              -178.398,
+              -1.841
+            ],
+            "face": 173
+          },
+          {
+            "obj": "COL_EastRoad_1324001436",
+            "screen_xy": [
+              418.78,
+              284.64
+            ],
+            "enu_m": [
+              26.501,
+              -179.168,
+              -3.076
+            ],
+            "face": 185
+          },
+          {
+            "obj": "COL_EastRoad_1324001436",
+            "screen_xy": [
+              397.97,
+              293.21
+            ],
+            "enu_m": [
+              28.727,
+              -179.424,
+              -3.417
+            ],
+            "face": 189
+          },
+          {
+            "obj": "COL_EastRoad_1324001436",
+            "screen_xy": [
+              374.18,
+              302.09
+            ],
+            "enu_m": [
+              30.954,
+              -179.681,
+              -3.697
+            ],
+            "face": 193
+          },
+          {
+            "obj": "COL_EastRoad_1324001436",
+            "screen_xy": [
+              346.72,
+              311.22
+            ],
+            "enu_m": [
+              33.181,
+              -179.937,
+              -3.908
+            ],
+            "face": 197
+          },
+          {
+            "obj": "COL_EastRoad_1324001436",
+            "screen_xy": [
+              314.64,
+              320.77
+            ],
+            "enu_m": [
+              35.407,
+              -180.194,
+              -4.054
+            ],
+            "face": 201
+          },
+          {
+            "obj": "COL_EastRoad_1324001436",
+            "screen_xy": [
+              230.99,
+              342.74
+            ],
+            "enu_m": [
+              39.861,
+              -180.707,
+              -4.208
+            ],
+            "face": 209
+          },
+          {
+            "obj": "COL_EastRoad_1324001436",
+            "screen_xy": [
+              175.04,
+              356.57
+            ],
+            "enu_m": [
+              42.087,
+              -180.964,
+              -4.248
+            ],
+            "face": 213
+          },
+          {
+            "obj": "COL_EastRoad_1324001436",
+            "screen_xy": [
+              104.9,
+              373.78
+            ],
+            "enu_m": [
+              44.314,
+              -181.221,
+              -4.283
+            ],
+            "face": 217
+          },
+          {
+            "obj": "COL_EastRoad_1324001436",
+            "screen_xy": [
+              14.44,
+              396.26
+            ],
+            "enu_m": [
+              46.541,
+              -181.477,
+              -4.327
+            ],
+            "face": 221
+          }
+        ],
+        "arrow": [
+          {
+            "obj": "EastRoad_Lines_1324001436",
+            "screen_xy": [
+              527.44,
+              240.76
+            ],
+            "enu_m": [
+              7.503,
+              -176.978,
+              -0.264
+            ],
+            "face": 80
+          },
+          {
+            "obj": "EastRoad_Lines_1324001436",
+            "screen_xy": [
+              528.62,
+              240.51
+            ],
+            "enu_m": [
+              7.195,
+              -176.937,
+              -0.244
+            ],
+            "face": 80
+          },
+          {
+            "obj": "EastRoad_Lines_1324001436",
+            "screen_xy": [
+              446.06,
+              272.08
+            ],
+            "enu_m": [
+              23.09,
+              -178.775,
+              -2.442
+            ],
+            "face": 95
+          },
+          {
+            "obj": "EastRoad_Lines_1324001436",
+            "screen_xy": [
+              448.35,
+              271.06
+            ],
+            "enu_m": [
+              22.782,
+              -178.734,
+              -2.385
+            ],
+            "face": 95
+          },
+          {
+            "obj": "EastRoad_Lines_1324001436",
+            "screen_xy": [
+              256.36,
+              335.95
+            ],
+            "enu_m": [
+              38.676,
+              -180.571,
+              -4.161
+            ],
+            "face": 110
+          },
+          {
+            "obj": "EastRoad_Lines_1324001436",
+            "screen_xy": [
+              262.61,
+              334.43
+            ],
+            "enu_m": [
+              38.368,
+              -180.53,
+              -4.155
+            ],
+            "face": 110
+          }
+        ]
+      }
+    },
+    "old_bend_eye": {
+      "sample_count": {
+        "garage": 12
+      },
+      "detail": {
+        "garage": [
+          {
+            "obj": "COL_EastGarage_ReturnFrame",
+            "screen_xy": [
+              551.53,
+              219.81
+            ],
+            "enu_m": [
+              -38.705,
+              -152.289,
+              7.842
+            ],
+            "face": 3
+          },
+          {
+            "obj": "COL_EastGarage_ReturnFrame",
+            "screen_xy": [
+              568.63,
+              224.01
+            ],
+            "enu_m": [
+              -41.333,
+              -150.842,
+              7.777
+            ],
+            "face": 9
+          },
+          {
+            "obj": "COL_EastGarage_ReturnFrame",
+            "screen_xy": [
+              579.92,
+              227.33
+            ],
+            "enu_m": [
+              -44.07,
+              -149.677,
+              7.758
+            ],
+            "face": 14
+          },
+          {
+            "obj": "COL_EastGarage_ReturnFrame",
+            "screen_xy": [
+              584.26,
+              227.29
+            ],
+            "enu_m": [
+              -44.119,
+              -149.308,
+              7.758
+            ],
+            "face": 15
+          },
+          {
+            "obj": "COL_EastGarage_ReturnFrame",
+            "screen_xy": [
+              593.59,
+              229.38
+            ],
+            "enu_m": [
+              -46.821,
+              -148.163,
+              7.811
+            ],
+            "face": 20
+          },
+          {
+            "obj": "COL_EastGarage_ReturnFrame",
+            "screen_xy": [
+              597.67,
+              229.35
+            ],
+            "enu_m": [
+              -46.869,
+              -147.794,
+              7.811
+            ],
+            "face": 21
+          },
+          {
+            "obj": "COL_EastGarage_ReturnFrame",
+            "screen_xy": [
+              605.69,
+              230.41
+            ],
+            "enu_m": [
+              -49.598,
+              -146.634,
+              7.943
+            ],
+            "face": 26
+          },
+          {
+            "obj": "COL_EastGarage_ReturnFrame",
+            "screen_xy": [
+              609.52,
+              230.38
+            ],
+            "enu_m": [
+              -49.646,
+              -146.266,
+              7.943
+            ],
+            "face": 27
+          },
+          {
+            "obj": "COL_EastGarage_ReturnFrame",
+            "screen_xy": [
+              585.37,
+              277.6
+            ],
+            "enu_m": [
+              -44.255,
+              -149.256,
+              3.334
+            ],
+            "face": 33
+          },
+          {
+            "obj": "COL_EastGarage_ReturnFrame",
+            "screen_xy": [
+              584.98,
+              248.51
+            ],
+            "enu_m": [
+              -44.255,
+              -149.256,
+              5.894
+            ],
+            "face": 39
+          },
+          {
+            "obj": "COL_EastGarage_ReturnFrame",
+            "screen_xy": [
+              584.19,
+              189.03
+            ],
+            "enu_m": [
+              -44.255,
+              -149.256,
+              11.174
+            ],
+            "face": 51
+          },
+          {
+            "obj": "COL_EastGarage_ReturnFrame",
+            "screen_xy": [
+              583.83,
+              161.56
+            ],
+            "enu_m": [
+              -44.255,
+              -149.256,
+              13.634
+            ],
+            "face": 57
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,2193 @@
+{
+  "candidate": {
+    "bounds_east_north_m": [
+      -250.0,
+      -250.0,
+      250.0,
+      250.0
+    ],
+    "bridge_park_sha256": "d7610bb70365b506b084810a925ede54321bbb5812b840d8c0810ed1ecb4426c",
+    "changbin_bend_sha256": "59f467c674151e7e2f55366257a28b12260d9c1eb23ceccc7359b07e18a6af9f",
+    "collectibles_market_sha256": "a23f881d0e9206b40fedc8f262cfdb132194e59825e4728b39800471b684e175",
+    "glb_sha256": "b0180ce3a8d821253181725ad4516c04f58fe057529680e22a081f89fdd62122",
+    "guoco_sha256": "4dcb3d55080b02d8a0cf02585626bed2dfc3cdb37ae2f987110b55dd56435853",
+    "market_stall_row_sha256": "42fffbc9c4a98d3fa615e48fa9ce4eecdf66bf225decbd3d44d40eddf5a41646",
+    "match_factory_sha256": "ab742e6b12ad0b52c4cffef0f8342e1a957b59de5cfe3abde4dd691f853d76c6",
+    "matix_streets_sha256": "3b57fcf46931ff28ce1ab2be4a7250d31af30d302e362816265be8e38852e33b",
+    "osm_building_ids": [
+      809889594.0,
+      809889602.0,
+      809889621.0,
+      704006725,
+      809889619,
+      809889620
+    ],
+    "park_edge_finish_sha256": "52ba8de0a1bd4ee57439d86b5f0e7efad002311679d486b3b0dbc75bdc0e6d33",
+    "park_plot57_sha256": "b67c6b5fc91cdc8b8fa0e6808f8cedd8b15a49ad36a2566631ae67a1671f9f60",
+    "park_plot59_sha256": "fa02d99cf8eda6971b3b148e8c3fc5031108e134806e25b0e71e3f320cd4747c",
+    "park_plot61_sha256": "b6e7b1a3baf336235be5d553e2c3d24caf36b949a34bbf296d4b2eed31ddeceb",
+    "pavilion_62_sha256": "08d702b1a9ce0464b3bc62f33808befa5b58e5dcd082659b06c4cbc0bbab3e76",
+    "public_edges_sha256": "d585e52e0d927a9639e7285ffecc4932603a4d56b039504f1600763f72cc1be4",
+    "raijiapo_east_sha256": "50fd0b1d4d276c06fc1d747a6d2d8089e511e31f47dd9e738fcec7c56b1381c7",
+    "retired_internal_context": false,
+    "riverside_sha256": "12f304d468c56fb429d4a4db948f5297b7ca4284f29fc494442c9b2a146f67d1",
+    "west_court_sha256": "32eea2dd1f34b7f5dacbb546a46c6cf106ac3896804677ef9b2ee1dabfb2c683",
+    "west_ramp_sha256": "2a2ae2a4745096ea849dbb5f2365ce1cf437a8dcd974ed4cb47dddd5d5aae8b2",
+    "xingchen_sha256": "af156281216128407550442694d4dc45ea8507dfc7da4c80efd549a0ffbe127b",
+    "zhongxing_wall_sha256": "72fa4f4c800a8e27c19d580da66524160c4c2111bd82191706b6c8da142b8d42"
+  },
+  "checks": [
+    {
+      "detail": "",
+      "name": "first_shift",
+      "pass": true
+    },
+    {
+      "detail": [
+        "COL_Riverside_62_registered_body",
+        "COL_Raijiapo_Ramp_1256839997",
+        "COL_Raijiapo_GarageParkingSlabs",
+        "COL_Park59_PublicPaving",
+        "Park61_WestParkEdgePath"
+      ],
+      "name": "pavilion_62_garage_bridge_and_park_retained",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "layers": [
+            [
+              "COL_Raijiapo_Ramp_1256839997",
+              16.472,
+              1.0
+            ],
+            [
+              "COL_Outer500_Surface_04_01",
+              1.811,
+              0.999
+            ]
+          ],
+          "old_collision": false,
+          "old_frame": false,
+          "plot": 63
+        },
+        {
+          "layers": [
+            [
+              "COL_Outer500_Surface_05_01",
+              -1.123,
+              0.991
+            ]
+          ],
+          "old_collision": false,
+          "old_frame": false,
+          "plot": 64
+        },
+        {
+          "layers": [
+            [
+              "COL_EastRoad_1375242615",
+              15.565,
+              1.0
+            ],
+            [
+              "COL_Changbin_GarageSideWalk",
+              2.633,
+              0.997
+            ],
+            [
+              "COL_Outer500_Surface_04_01",
+              2.574,
+              0.997
+            ]
+          ],
+          "old_collision": false,
+          "old_frame": false,
+          "plot": 65
+        },
+        {
+          "layers": [
+            [
+              "COL_Outer500_Surface_05_01",
+              -1.388,
+              0.976
+            ]
+          ],
+          "old_collision": false,
+          "old_frame": false,
+          "plot": 66
+        }
+      ],
+      "name": "old_63_to_66_structure_and_collision",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "en": [
+            -18.371,
+            -189.59
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              0.073,
+              0.986
+            ],
+            [
+              "COL_Outer500_Surface_04_01",
+              0.021,
+              0.986
+            ]
+          ],
+          "side_clearance_m": 6.63635444641113,
+          "walk_support": true
+        },
+        {
+          "en": [
+            -18.371,
+            -188.89
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              0.117,
+              0.986
+            ],
+            [
+              "COL_Outer500_Surface_04_01",
+              0.065,
+              0.986
+            ]
+          ],
+          "side_clearance_m": 5.94239616394043,
+          "walk_support": true
+        },
+        {
+          "en": [
+            -18.371,
+            -188.19
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              0.164,
+              0.984
+            ],
+            [
+              "COL_Outer500_Surface_04_01",
+              0.112,
+              0.984
+            ]
+          ],
+          "side_clearance_m": 5.24843788146973,
+          "walk_support": true
+        },
+        {
+          "en": [
+            -14.971,
+            -189.8
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -0.434,
+              0.99
+            ],
+            [
+              "COL_Outer500_Surface_04_01",
+              -0.486,
+              0.99
+            ]
+          ],
+          "side_clearance_m": 6.39895582199097,
+          "walk_support": true
+        },
+        {
+          "en": [
+            -14.971,
+            -189.1
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -0.402,
+              0.99
+            ],
+            [
+              "COL_Outer500_Surface_04_01",
+              -0.454,
+              0.99
+            ]
+          ],
+          "side_clearance_m": 5.70499753952026,
+          "walk_support": true
+        },
+        {
+          "en": [
+            -14.971,
+            -188.4
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -0.369,
+              0.99
+            ],
+            [
+              "COL_Outer500_Surface_04_01",
+              -0.421,
+              0.99
+            ]
+          ],
+          "side_clearance_m": 5.01102304458618,
+          "walk_support": true
+        },
+        {
+          "en": [
+            -11.221,
+            -190.18
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -0.92,
+              0.993
+            ],
+            [
+              "COL_Outer500_Surface_04_01",
+              -0.972,
+              0.993
+            ]
+          ],
+          "side_clearance_m": 6.2842116355896,
+          "walk_support": true
+        },
+        {
+          "en": [
+            -11.221,
+            -189.48
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -0.892,
+              0.992
+            ],
+            [
+              "COL_Outer500_Surface_04_01",
+              -0.944,
+              0.992
+            ]
+          ],
+          "side_clearance_m": 5.5902533531189,
+          "walk_support": true
+        },
+        {
+          "en": [
+            -11.221,
+            -188.78
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -0.861,
+              0.992
+            ],
+            [
+              "COL_Outer500_Surface_04_01",
+              -0.913,
+              0.992
+            ]
+          ],
+          "side_clearance_m": 4.89629507064819,
+          "walk_support": true
+        },
+        {
+          "en": [
+            -7.571,
+            -190.57
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -1.367,
+              0.992
+            ],
+            [
+              "COL_Outer500_Surface_04_01",
+              -1.419,
+              0.992
+            ]
+          ],
+          "side_clearance_m": 6.19250917434692,
+          "walk_support": true
+        },
+        {
+          "en": [
+            -7.571,
+            -189.87
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -1.322,
+              0.992
+            ],
+            [
+              "COL_Outer500_Surface_04_01",
+              -1.374,
+              0.992
+            ]
+          ],
+          "side_clearance_m": 5.49853563308716,
+          "walk_support": true
+        },
+        {
+          "en": [
+            -7.571,
+            -189.17
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -1.275,
+              0.992
+            ],
+            [
+              "COL_Outer500_Surface_04_01",
+              -1.327,
+              0.992
+            ]
+          ],
+          "side_clearance_m": 4.8045768737793,
+          "walk_support": true
+        },
+        {
+          "en": [
+            -5.221,
+            -191.1
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -1.698,
+              0.986
+            ],
+            [
+              "COL_Outer500_Surface_04_01",
+              -1.75,
+              0.986
+            ]
+          ],
+          "side_clearance_m": 6.40996074676514,
+          "walk_support": true
+        },
+        {
+          "en": [
+            -5.221,
+            -190.4
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -1.629,
+              0.99
+            ],
+            [
+              "COL_Outer500_Surface_04_01",
+              -1.681,
+              0.99
+            ]
+          ],
+          "side_clearance_m": 5.71598720550537,
+          "walk_support": true
+        },
+        {
+          "en": [
+            -5.221,
+            -189.7
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -1.568,
+              0.99
+            ],
+            [
+              "COL_Outer500_Surface_04_01",
+              -1.62,
+              0.99
+            ]
+          ],
+          "side_clearance_m": 5.02202844619751,
+          "walk_support": true
+        },
+        {
+          "en": [
+            -4.211,
+            -192.76
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -2.014,
+              0.98
+            ],
+            [
+              "COL_Outer500_Surface_04_01",
+              -2.066,
+              0.98
+            ]
+          ],
+          "side_clearance_m": 7.92327165603638,
+          "walk_support": true
+        },
+        {
+          "en": [
+            -4.211,
+            -192.06
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -1.935,
+              0.985
+            ],
+            [
+              "COL_Outer500_Surface_04_01",
+              -1.987,
+              0.985
+            ]
+          ],
+          "side_clearance_m": 7.22931385040283,
+          "walk_support": true
+        },
+        {
+          "en": [
+            -4.211,
+            -191.36
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -1.856,
+              0.984
+            ],
+            [
+              "COL_Outer500_Surface_04_01",
+              -1.908,
+              0.984
+            ]
+          ],
+          "side_clearance_m": 6.53535509109497,
+          "walk_support": true
+        },
+        {
+          "en": [
+            -3.271,
+            -194.42
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -2.361,
+              0.981
+            ],
+            [
+              "COL_Outer500_Surface_04_01",
+              -2.413,
+              0.981
+            ]
+          ],
+          "side_clearance_m": 9.44575691223145,
+          "walk_support": true
+        },
+        {
+          "en": [
+            -3.271,
+            -193.72
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -2.278,
+              0.979
+            ],
+            [
+              "COL_Outer500_Surface_04_01",
+              -2.33,
+              0.979
+            ]
+          ],
+          "side_clearance_m": 8.75179958343506,
+          "walk_support": true
+        },
+        {
+          "en": [
+            -3.271,
+            -193.02
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -2.187,
+              0.979
+            ],
+            [
+              "COL_Outer500_Surface_04_01",
+              -2.239,
+              0.979
+            ]
+          ],
+          "side_clearance_m": 8.05784034729004,
+          "walk_support": true
+        },
+        {
+          "en": [
+            -0.971,
+            -195.0
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -2.807,
+              0.981
+            ],
+            [
+              "COL_Outer500_Surface_04_01",
+              -2.859,
+              0.981
+            ]
+          ],
+          "side_clearance_m": 9.71934223175049,
+          "walk_support": true
+        },
+        {
+          "en": [
+            -0.971,
+            -194.3
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -2.726,
+              0.981
+            ],
+            [
+              "COL_Outer500_Surface_04_01",
+              -2.778,
+              0.981
+            ]
+          ],
+          "side_clearance_m": 9.02538299560547,
+          "walk_support": true
+        },
+        {
+          "en": [
+            -0.971,
+            -193.6
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -2.631,
+              0.979
+            ],
+            [
+              "COL_Outer500_Surface_04_01",
+              -2.683,
+              0.979
+            ]
+          ],
+          "side_clearance_m": 8.3314094543457,
+          "walk_support": true
+        },
+        {
+          "en": [
+            4.029,
+            -195.4
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -3.632,
+              0.984
+            ],
+            [
+              "COL_Outer500_Surface_05_01",
+              -3.684,
+              0.984
+            ]
+          ],
+          "side_clearance_m": 9.46061038970947,
+          "walk_support": true
+        },
+        {
+          "en": [
+            4.029,
+            -194.7
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -3.55,
+              0.984
+            ],
+            [
+              "COL_Outer500_Surface_05_01",
+              -3.602,
+              0.984
+            ]
+          ],
+          "side_clearance_m": 8.76665115356445,
+          "walk_support": true
+        },
+        {
+          "en": [
+            4.029,
+            -194.0
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -3.468,
+              0.984
+            ],
+            [
+              "COL_Outer500_Surface_05_01",
+              -3.52,
+              0.984
+            ]
+          ],
+          "side_clearance_m": 8.07269287109375,
+          "walk_support": true
+        },
+        {
+          "en": [
+            9.029,
+            -195.8
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -4.257,
+              0.99
+            ],
+            [
+              "COL_Outer500_Surface_05_01",
+              -4.309,
+              0.99
+            ]
+          ],
+          "side_clearance_m": 9.20189380645752,
+          "walk_support": true
+        },
+        {
+          "en": [
+            9.029,
+            -195.1
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -4.181,
+              0.99
+            ],
+            [
+              "COL_Outer500_Surface_05_01",
+              -4.233,
+              0.99
+            ]
+          ],
+          "side_clearance_m": 8.5079345703125,
+          "walk_support": true
+        },
+        {
+          "en": [
+            9.029,
+            -194.4
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -4.105,
+              0.99
+            ],
+            [
+              "COL_Outer500_Surface_05_01",
+              -4.157,
+              0.99
+            ]
+          ],
+          "side_clearance_m": 7.81396150588989,
+          "walk_support": true
+        },
+        {
+          "en": [
+            14.029,
+            -196.5
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -4.59,
+              0.998
+            ],
+            [
+              "COL_Outer500_Surface_05_01",
+              -4.642,
+              0.998
+            ]
+          ],
+          "side_clearance_m": 9.24057197570801,
+          "walk_support": true
+        },
+        {
+          "en": [
+            14.029,
+            -195.8
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -4.54,
+              0.995
+            ],
+            [
+              "COL_Outer500_Surface_05_01",
+              -4.593,
+              0.995
+            ]
+          ],
+          "side_clearance_m": 8.54661464691162,
+          "walk_support": true
+        },
+        {
+          "en": [
+            14.029,
+            -195.1
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -4.477,
+              0.995
+            ],
+            [
+              "COL_Outer500_Surface_05_01",
+              -4.529,
+              0.995
+            ]
+          ],
+          "side_clearance_m": 7.8526554107666,
+          "walk_support": true
+        },
+        {
+          "en": [
+            19.029,
+            -197.1
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -4.704,
+              0.995
+            ],
+            [
+              "COL_Outer500_Surface_05_01",
+              -4.756,
+              0.995
+            ]
+          ],
+          "side_clearance_m": 9.30370807647705,
+          "walk_support": true
+        },
+        {
+          "en": [
+            19.029,
+            -196.4
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -4.636,
+              0.995
+            ],
+            [
+              "COL_Outer500_Surface_05_01",
+              -4.688,
+              0.995
+            ]
+          ],
+          "side_clearance_m": 8.60681819915771,
+          "walk_support": true
+        },
+        {
+          "en": [
+            19.029,
+            -195.7
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -4.578,
+              0.998
+            ],
+            [
+              "COL_Outer500_Surface_05_01",
+              -4.63,
+              0.998
+            ]
+          ],
+          "side_clearance_m": 7.9099440574646,
+          "walk_support": true
+        },
+        {
+          "en": [
+            24.029,
+            -197.7
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -4.811,
+              0.992
+            ],
+            [
+              "COL_Outer500_Surface_05_01",
+              -4.863,
+              0.992
+            ]
+          ],
+          "side_clearance_m": 9.42972660064697,
+          "walk_support": true
+        },
+        {
+          "en": [
+            24.029,
+            -197.0
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -4.724,
+              0.992
+            ],
+            [
+              "COL_Outer500_Surface_05_01",
+              -4.776,
+              0.992
+            ]
+          ],
+          "side_clearance_m": 8.7328519821167,
+          "walk_support": true
+        },
+        {
+          "en": [
+            24.029,
+            -196.3
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -4.637,
+              0.992
+            ],
+            [
+              "COL_Outer500_Surface_05_01",
+              -4.689,
+              0.992
+            ]
+          ],
+          "side_clearance_m": 8.03596305847168,
+          "walk_support": true
+        },
+        {
+          "en": [
+            29.029,
+            -198.6
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -5.179,
+              0.978
+            ],
+            [
+              "COL_Outer500_Surface_05_01",
+              -5.232,
+              0.978
+            ]
+          ],
+          "side_clearance_m": 9.85442352294922,
+          "walk_support": true
+        },
+        {
+          "en": [
+            29.029,
+            -197.9
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -5.048,
+              0.989
+            ],
+            [
+              "COL_Outer500_Surface_05_01",
+              -5.1,
+              0.989
+            ]
+          ],
+          "side_clearance_m": 9.15753364562988,
+          "walk_support": true
+        },
+        {
+          "en": [
+            29.029,
+            -197.2
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -4.955,
+              0.989
+            ],
+            [
+              "COL_Outer500_Surface_05_01",
+              -5.007,
+              0.989
+            ]
+          ],
+          "side_clearance_m": 8.46064472198486,
+          "walk_support": true
+        },
+        {
+          "en": [
+            31.029,
+            -200.05
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -5.627,
+              0.982
+            ],
+            [
+              "COL_Outer500_Surface_05_00",
+              -5.679,
+              0.982
+            ]
+          ],
+          "side_clearance_m": 11.109447479248,
+          "walk_support": true
+        },
+        {
+          "en": [
+            31.029,
+            -199.35
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -5.495,
+              0.978
+            ],
+            [
+              "COL_Outer500_Surface_05_01",
+              -5.547,
+              0.978
+            ]
+          ],
+          "side_clearance_m": 10.4125728607178,
+          "walk_support": true
+        },
+        {
+          "en": [
+            31.029,
+            -198.65
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -5.363,
+              0.978
+            ],
+            [
+              "COL_Outer500_Surface_05_01",
+              -5.415,
+              0.978
+            ]
+          ],
+          "side_clearance_m": 9.71566772460938,
+          "walk_support": true
+        },
+        {
+          "en": [
+            31.929,
+            -202.4
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -6.061,
+              0.993
+            ],
+            [
+              "COL_Outer500_Surface_05_00",
+              -6.113,
+              0.993
+            ]
+          ],
+          "side_clearance_m": 13.3641452789307,
+          "walk_support": true
+        },
+        {
+          "en": [
+            31.929,
+            -201.7
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -5.968,
+              0.985
+            ],
+            [
+              "COL_Outer500_Surface_05_00",
+              -6.02,
+              0.985
+            ]
+          ],
+          "side_clearance_m": 12.6672554016113,
+          "walk_support": true
+        },
+        {
+          "en": [
+            31.929,
+            -201.0
+          ],
+          "hits": [
+            [
+              "COL_Changbin_ParkSideWalk",
+              -5.856,
+              0.985
+            ],
+            [
+              "COL_Outer500_Surface_05_00",
+              -5.908,
+              0.985
+            ]
+          ],
+          "side_clearance_m": 11.9703817367554,
+          "walk_support": true
+        }
+      ],
+      "name": "three_samples_per_walk_section",
+      "pass": true
+    },
+    {
+      "detail": {
+        "enu": [
+          -18.3999996185303,
+          -188.889999389648,
+          0.137726068496704
+        ],
+        "gap_m": 0.0
+      },
+      "name": "normal_street_spawn",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 54.2513471888378,
+        "end": "(31.82983, -5.945997, 201.7133)",
+        "goals": 15,
+        "max_frame_displacement_m": 0.101257927715778,
+        "name": "changbin_park_out",
+        "pass": true,
+        "reached": 15,
+        "stall_contacts": []
+      },
+      "name": "changbin_park_out",
+      "pass": true
+    },
+    {
+      "detail": 5.52543973922729,
+      "name": "changbin_park_out_clear_of_motor_lane",
+      "pass": true
+    },
+    {
+      "detail": [
+        31.829833984375,
+        -201.713272094727,
+        -5.94599723815918
+      ],
+      "name": "on_destination_floor",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 54.2274188809097,
+        "end": "(-18.41822, 0.140993, 188.9177)",
+        "goals": 15,
+        "max_frame_displacement_m": 0.0867160484194756,
+        "name": "changbin_park_back",
+        "pass": true,
+        "reached": 15,
+        "stall_contacts": []
+      },
+      "name": "changbin_park_back",
+      "pass": true
+    },
+    {
+      "detail": 5.53489017486572,
+      "name": "changbin_park_back_clear_of_motor_lane",
+      "pass": true
+    },
+    {
+      "detail": [
+        -18.4182243347168,
+        -188.917678833008,
+        0.140993267297745
+      ],
+      "name": "returned_to_same_street",
+      "pass": true
+    }
+  ],
+  "device": "",
+  "engine": "4.6.3-stable (official)",
+  "native_frames": [],
+  "renderer": "forward_plus",
+  "scene": "res://first_shift.tscn",
+  "sections": [
+    {
+      "contacts": [
+        [
+          "COL_Changbin_ParkSideWalk",
+          0.121,
+          0.986
+        ],
+        [
+          "COL_Outer500_Surface_04_01",
+          0.069,
+          0.986
+        ]
+      ],
+      "east_north": [
+        -18.4,
+        -188.89
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Changbin_ParkSideWalk",
+          -0.398,
+          0.99
+        ],
+        [
+          "COL_Outer500_Surface_04_01",
+          -0.45,
+          0.99
+        ]
+      ],
+      "east_north": [
+        -15.0,
+        -189.1
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Changbin_ParkSideWalk",
+          -0.888,
+          0.992
+        ],
+        [
+          "COL_Outer500_Surface_04_01",
+          -0.94,
+          0.992
+        ]
+      ],
+      "east_north": [
+        -11.25,
+        -189.48
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Changbin_ParkSideWalk",
+          -1.319,
+          0.992
+        ],
+        [
+          "COL_Outer500_Surface_04_01",
+          -1.371,
+          0.992
+        ]
+      ],
+      "east_north": [
+        -7.6,
+        -189.87
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Changbin_ParkSideWalk",
+          -1.625,
+          0.99
+        ],
+        [
+          "COL_Outer500_Surface_04_01",
+          -1.677,
+          0.99
+        ]
+      ],
+      "east_north": [
+        -5.25,
+        -190.4
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Changbin_ParkSideWalk",
+          -1.931,
+          0.985
+        ],
+        [
+          "COL_Outer500_Surface_04_01",
+          -1.983,
+          0.985
+        ]
+      ],
+      "east_north": [
+        -4.24,
+        -192.06
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Changbin_ParkSideWalk",
+          -2.273,
+          0.979
+        ],
+        [
+          "COL_Outer500_Surface_04_01",
+          -2.325,
+          0.979
+        ]
+      ],
+      "east_north": [
+        -3.3,
+        -193.72
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Changbin_ParkSideWalk",
+          -2.722,
+          0.98
+        ],
+        [
+          "COL_Outer500_Surface_04_01",
+          -2.774,
+          0.981
+        ]
+      ],
+      "east_north": [
+        -1.0,
+        -194.3
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Changbin_ParkSideWalk",
+          -3.546,
+          0.984
+        ],
+        [
+          "COL_Outer500_Surface_05_01",
+          -3.598,
+          0.984
+        ]
+      ],
+      "east_north": [
+        4.0,
+        -194.7
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Changbin_ParkSideWalk",
+          -4.178,
+          0.99
+        ],
+        [
+          "COL_Outer500_Surface_05_01",
+          -4.23,
+          0.99
+        ]
+      ],
+      "east_north": [
+        9.0,
+        -195.1
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Changbin_ParkSideWalk",
+          -4.54,
+          0.995
+        ],
+        [
+          "COL_Outer500_Surface_05_01",
+          -4.592,
+          0.995
+        ]
+      ],
+      "east_north": [
+        14.0,
+        -195.8
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Changbin_ParkSideWalk",
+          -4.636,
+          0.995
+        ],
+        [
+          "COL_Outer500_Surface_05_01",
+          -4.688,
+          0.995
+        ]
+      ],
+      "east_north": [
+        19.0,
+        -196.4
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Changbin_ParkSideWalk",
+          -4.724,
+          0.992
+        ],
+        [
+          "COL_Outer500_Surface_05_01",
+          -4.776,
+          0.992
+        ]
+      ],
+      "east_north": [
+        24.0,
+        -197.0
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Changbin_ParkSideWalk",
+          -5.046,
+          0.989
+        ],
+        [
+          "COL_Outer500_Surface_05_01",
+          -5.098,
+          0.989
+        ]
+      ],
+      "east_north": [
+        29.0,
+        -197.9
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Changbin_ParkSideWalk",
+          -5.492,
+          0.978
+        ],
+        [
+          "COL_Outer500_Surface_05_01",
+          -5.544,
+          0.978
+        ]
+      ],
+      "east_north": [
+        31.0,
+        -199.35
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Changbin_ParkSideWalk",
+          -5.967,
+          0.985
+        ],
+        [
+          "COL_Outer500_Surface_05_00",
+          -6.019,
+          0.985
+        ]
+      ],
+      "east_north": [
+        31.9,
+        -201.7
+      ]
+    }
+  ],
+  "start": "normal first_shift exploration spawn",
+  "teleports_between_legs": 0,
+  "walks": [
+    {
+      "finish_enu": [
+        31.829833984375,
+        -201.713272094727,
+        -5.94599723815918
+      ],
+      "id": "changbin_park_out",
+      "minimum_same_side_clearance_m": 5.52543973922729,
+      "registered_street_way": "59146737",
+      "result": {
+        "distance_m": 54.2513471888378,
+        "end": "(31.82983, -5.945997, 201.7133)",
+        "goals": 15,
+        "max_frame_displacement_m": 0.101257927715778,
+        "name": "changbin_park_out",
+        "pass": true,
+        "reached": 15,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -18.3999996185303,
+        -188.889999389648,
+        0.137726068496704
+      ],
+      "trace_enu": [
+        [
+          -18.3999996185303,
+          -188.889999389648,
+          0.137726068496704
+        ],
+        [
+          -17.8630962371826,
+          -188.940063476562,
+          0.0517885684967041
+        ],
+        [
+          -17.0111846923828,
+          -188.98762512207,
+          -0.0844419002532959
+        ],
+        [
+          -16.1582679748535,
+          -189.035263061523,
+          -0.216277837753296
+        ],
+        [
+          -15.30553150177,
+          -189.082946777344,
+          -0.340789556503296
+        ],
+        [
+          -14.455132484436,
+          -189.163925170898,
+          -0.462371587753296
+        ],
+        [
+          -13.6068458557129,
+          -189.247604370117,
+          -0.576629400253296
+        ],
+        [
+          -12.7577075958252,
+          -189.331329345703,
+          -0.687957525253296
+        ],
+        [
+          -11.9164323806763,
+          -189.413665771484,
+          -0.73187118768692
+        ],
+        [
+          -11.0703783035278,
+          -189.499176025391,
+          -0.854766845703125
+        ],
+        [
+          -10.2140254974365,
+          -189.590682983398,
+          -1.00125122070312
+        ],
+        [
+          -9.36646366119385,
+          -189.681213378906,
+          -1.10086059570312
+        ],
+        [
+          -8.52009391784668,
+          -189.771667480469,
+          -1.19900512695312
+        ],
+        [
+          -7.67703723907471,
+          -189.883651733398,
+          -1.29861450195312
+        ],
+        [
+          -6.84198379516602,
+          -190.061309814453,
+          -1.40408325195312
+        ],
+        [
+          -6.0085506439209,
+          -190.23860168457,
+          -1.51101684570312
+        ],
+        [
+          -5.27328824996948,
+          -190.523040771484,
+          -1.62088012695312
+        ],
+        [
+          -4.79715013504028,
+          -191.230224609375,
+          -1.74978637695312
+        ],
+        [
+          -4.3299388885498,
+          -191.943405151367,
+          -1.88748168945312
+        ],
+        [
+          -3.90068483352661,
+          -192.683837890625,
+          -2.03396606445312
+        ],
+        [
+          -3.47253608703613,
+          -193.422378540039,
+          -2.19998168945312
+        ],
+        [
+          -2.73877024650574,
+          -193.806045532227,
+          -2.36648559570312
+        ],
+        [
+          -1.91508626937866,
+          -194.040054321289,
+          -2.53396606445312
+        ],
+        [
+          -1.08497667312622,
+          -194.254135131836,
+          -2.68338012695312
+        ],
+        [
+          -0.233248099684715,
+          -194.328811645508,
+          -2.82986450195312
+        ],
+        [
+          0.617355167865753,
+          -194.403396606445,
+          -2.97634887695312
+        ],
+        [
+          1.46757400035858,
+          -194.477920532227,
+          -3.12136840820312
+        ],
+        [
+          2.31835126876831,
+          -194.552536010742,
+          -3.26199340820312
+        ],
+        [
+          3.16904854774475,
+          -194.627136230469,
+          -3.39968872070312
+        ],
+        [
+          4.01953220367432,
+          -194.699630737305,
+          -3.53152465820312
+        ],
+        [
+          4.87152624130249,
+          -194.768127441406,
+          -3.65750122070312
+        ],
+        [
+          5.72238922119141,
+          -194.836517333984,
+          -3.77761840820312
+        ],
+        [
+          6.57289409637451,
+          -194.904891967773,
+          -3.89041137695312
+        ],
+        [
+          7.42348289489746,
+          -194.973266601562,
+          -3.99441528320312
+        ],
+        [
+          8.27233123779297,
+          -195.041519165039,
+          -4.09109497070312
+        ],
+        [
+          9.11782360076904,
+          -195.12956237793,
+          -4.17410278320312
+        ],
+        [
+          9.95666885375977,
+          -195.244750976562,
+          -4.25662231445312
+        ],
+        [
+          10.795802116394,
+          -195.359954833984,
+          -4.33181762695312
+        ],
+        [
+          11.6357278823853,
+          -195.475326538086,
+          -4.39675903320312
+        ],
+        [
+          12.4734535217285,
+          -195.590377807617,
+          -4.45242309570312
+        ],
+        [
+          13.3101644515991,
+          -195.705276489258,
+          -4.49929809570312
+        ],
+        [
+          14.14684009552,
+          -195.813247680664,
+          -4.53103637695312
+        ],
+        [
+          14.9835691452026,
+          -195.914413452148,
+          -4.56277465820312
+        ],
+        [
+          15.8188705444336,
+          -196.016143798828,
+          -4.58248567581177
+        ],
+        [
+          16.6538047790527,
+          -196.118759155273,
+          -4.59198474884033
+        ],
+        [
+          17.4894409179688,
+          -196.220169067383,
+          -4.6166090965271
+        ],
+        [
+          18.3247394561768,
+          -196.321502685547,
+          -4.62662553787231
+        ],
+        [
+          19.159854888916,
+          -196.420455932617,
+          -4.63017606735229
+        ],
+        [
+          19.9937191009521,
+          -196.522857666016,
+          -4.63099479675293
+        ],
+        [
+          20.828052520752,
+          -196.624374389648,
+          -4.65278291702271
+        ],
+        [
+          21.6626415252686,
+          -196.727752685547,
+          -4.65183448791504
+        ],
+        [
+          22.4989109039307,
+          -196.825149536133,
+          -4.66697120666504
+        ],
+        [
+          23.3354434967041,
+          -196.923599243164,
+          -4.68764591217041
+        ],
+        [
+          24.1700973510742,
+          -197.045944213867,
+          -4.72301149368286
+        ],
+        [
+          25.0009632110596,
+          -197.19287109375,
+          -4.75621461868286
+        ],
+        [
+          25.8320388793945,
+          -197.339813232422,
+          -4.80455446243286
+        ],
+        [
+          26.664644241333,
+          -197.487030029297,
+          -4.85289430618286
+        ],
+        [
+          27.496753692627,
+          -197.634170532227,
+          -4.90416383743286
+        ],
+        [
+          28.3313045501709,
+          -197.781723022461,
+          -4.96617555618286
+        ],
+        [
+          29.1055240631104,
+          -198.055908203125,
+          -5.05943727493286
+        ],
+        [
+          29.8101711273193,
+          -198.53727722168,
+          -5.21324586868286
+        ],
+        [
+          30.5150470733643,
+          -199.018753051758,
+          -5.36851930618286
+        ],
+        [
+          31.0566444396973,
+          -199.651031494141,
+          -5.54723024368286
+        ],
+        [
+          31.383996963501,
+          -200.446334838867,
+          -5.71812868118286
+        ],
+        [
+          31.7095146179199,
+          -201.237197875977,
+          -5.86314821243286
+        ],
+        [
+          31.829833984375,
+          -201.713272094727,
+          -5.94599723815918
+        ],
+        [
+          31.829833984375,
+          -201.713272094727,
+          -5.94599723815918
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -18.4182243347168,
+        -188.917678833008,
+        0.140993267297745
+      ],
+      "id": "changbin_park_back",
+      "minimum_same_side_clearance_m": 5.53489017486572,
+      "registered_street_way": "59146737",
+      "result": {
+        "distance_m": 54.2274188809097,
+        "end": "(-18.41822, 0.140993, 188.9177)",
+        "goals": 15,
+        "max_frame_displacement_m": 0.0867160484194756,
+        "name": "changbin_park_back",
+        "pass": true,
+        "reached": 15,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        31.829833984375,
+        -201.713272094727,
+        -5.94599723815918
+      ],
+      "trace_enu": [
+        [
+          31.829833984375,
+          -201.713272094727,
+          -5.94599723815918
+        ],
+        [
+          31.5988826751709,
+          -201.215759277344,
+          -5.85269069671631
+        ],
+        [
+          31.3537292480469,
+          -200.441680908203,
+          -5.70314979553223
+        ],
+        [
+          31.1072425842285,
+          -199.672302246094,
+          -5.54553079605103
+        ],
+        [
+          30.5575313568115,
+          -199.132400512695,
+          -5.3940224647522
+        ],
+        [
+          29.9153919219971,
+          -198.638244628906,
+          -5.24198484420776
+        ],
+        [
+          29.2791328430176,
+          -198.135986328125,
+          -5.08974027633667
+        ],
+        [
+          28.4888134002686,
+          -197.899078369141,
+          -4.99322652816772
+        ],
+        [
+          27.6696949005127,
+          -197.742446899414,
+          -4.92366552352905
+        ],
+        [
+          26.8494548797607,
+          -197.582824707031,
+          -4.86442375183105
+        ],
+        [
+          26.0290031433105,
+          -197.420532226562,
+          -4.81130313873291
+        ],
+        [
+          25.2081680297852,
+          -197.254776000977,
+          -4.76569032669067
+        ],
+        [
+          24.3875350952148,
+          -197.084182739258,
+          -4.72750949859619
+        ],
+        [
+          23.5569286346436,
+          -196.971206665039,
+          -4.69843530654907
+        ],
+        [
+          22.7237453460693,
+          -196.869293212891,
+          -4.67514181137085
+        ],
+        [
+          21.8905448913574,
+          -196.765869140625,
+          -4.66019439697266
+        ],
+        [
+          21.0574359893799,
+          -196.661727905273,
+          -4.64614677429199
+        ],
+        [
+          20.2242183685303,
+          -196.556655883789,
+          -4.63455629348755
+        ],
+        [
+          19.3911762237549,
+          -196.45051574707,
+          -4.62543106079102
+        ],
+        [
+          18.5574226379395,
+          -196.349624633789,
+          -4.61649942398071
+        ],
+        [
+          17.7234725952148,
+          -196.249771118164,
+          -4.60716009140015
+        ],
+        [
+          16.8896369934082,
+          -196.14990234375,
+          -4.5956130027771
+        ],
+        [
+          16.0558414459229,
+          -196.049835205078,
+          -4.58272075653076
+        ],
+        [
+          15.2222623825073,
+          -195.949600219727,
+          -4.56574249267578
+        ],
+        [
+          14.3893346786499,
+          -195.848937988281,
+          -4.53834104537964
+        ],
+        [
+          13.5580987930298,
+          -195.737869262695,
+          -4.50432538986206
+        ],
+        [
+          12.7279491424561,
+          -195.625198364258,
+          -4.46221494674683
+        ],
+        [
+          11.8989067077637,
+          -195.512466430664,
+          -4.41174840927124
+        ],
+        [
+          11.071234703064,
+          -195.399490356445,
+          -4.35240697860718
+        ],
+        [
+          10.2447900772095,
+          -195.285095214844,
+          -4.28372526168823
+        ],
+        [
+          9.42137050628662,
+          -195.1669921875,
+          -4.20516633987427
+        ],
+        [
+          8.59381294250488,
+          -195.094848632812,
+          -4.12290239334106
+        ],
+        [
+          7.76673221588135,
+          -195.032012939453,
+          -4.03428268432617
+        ],
+        [
+          6.94150829315186,
+          -194.968185424805,
+          -3.937166929245
+        ],
+        [
+          6.11809635162354,
+          -194.902572631836,
+          -3.83116006851196
+        ],
+        [
+          5.29718160629272,
+          -194.833343505859,
+          -3.72002482414246
+        ],
+        [
+          4.47921133041382,
+          -194.756774902344,
+          -3.60092353820801
+        ],
+        [
+          3.66118836402893,
+          -194.694030761719,
+          -3.47792291641235
+        ],
+        [
+          2.84349632263184,
+          -194.636901855469,
+          -3.35138416290283
+        ],
+        [
+          2.0279541015625,
+          -194.57763671875,
+          -3.21942234039307
+        ],
+        [
+          1.21382141113281,
+          -194.514770507812,
+          -3.08450293540955
+        ],
+        [
+          0.400437086820602,
+          -194.447113037109,
+          -2.94748640060425
+        ],
+        [
+          -0.409993231296539,
+          -194.371047973633,
+          -2.80719923973083
+        ],
+        [
+          -1.20825505256653,
+          -194.229705810547,
+          -2.66053152084351
+        ],
+        [
+          -1.99966871738434,
+          -194.047515869141,
+          -2.52107787132263
+        ],
+        [
+          -2.7843644618988,
+          -193.85986328125,
+          -2.35417819023132
+        ],
+        [
+          -3.37728548049927,
+          -193.42887878418,
+          -2.2031524181366
+        ],
+        [
+          -3.80458545684814,
+          -192.738616943359,
+          -2.05548906326294
+        ],
+        [
+          -4.23303556442261,
+          -192.048812866211,
+          -1.91185927391052
+        ],
+        [
+          -4.65645027160645,
+          -191.350219726562,
+          -1.77539467811584
+        ],
+        [
+          -5.08951425552368,
+          -190.651611328125,
+          -1.65391540527344
+        ],
+        [
+          -5.83551025390625,
+          -190.344741821289,
+          -1.53881657123566
+        ],
+        [
+          -6.63308715820312,
+          -190.133865356445,
+          -1.42987608909607
+        ],
+        [
+          -7.43252468109131,
+          -189.92497253418,
+          -1.32547283172607
+        ],
+        [
+          -8.25545597076416,
+          -189.833480834961,
+          -1.22897434234619
+        ],
+        [
+          -9.07833671569824,
+          -189.740142822266,
+          -1.13270199298859
+        ],
+        [
+          -9.90089702606201,
+          -189.644744873047,
+          -1.03514909744263
+        ],
+        [
+          -10.7226009368896,
+          -189.546630859375,
+          -0.935128331184387
+        ],
+        [
+          -11.4703722000122,
+          -189.451782226562,
+          -0.733794927597046
+        ],
+        [
+          -12.3062114715576,
+          -189.368469238281,
+          -0.733794927597046
+        ],
+        [
+          -13.1292743682861,
+          -189.289001464844,
+          -0.636963307857513
+        ],
+        [
+          -13.9500331878662,
+          -189.208709716797,
+          -0.526916980743408
+        ],
+        [
+          -14.7695989608765,
+          -189.125457763672,
+          -0.41467547416687
+        ],
+        [
+          -15.5904817581177,
+          -189.076644897461,
+          -0.298579901456833
+        ],
+        [
+          -16.4094944000244,
+          -189.026504516602,
+          -0.17725558578968
+        ],
+        [
+          -17.2273483276367,
+          -188.974807739258,
+          -0.0510281957685947
+        ],
+        [
+          -18.0427722930908,
+          -188.919372558594,
+          0.0809925198554993
+        ],
+        [
+          -18.4182243347168,
+          -188.917678833008,
+          0.140993267297745
+        ],
+        [
+          -18.4182243347168,
+          -188.917678833008,
+          0.140993267297745
+        ]
+      ]
+    }
+  ]
+}
