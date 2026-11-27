@@ -22,7 +22,8 @@ func site_plan() -> Dictionary:
 			"legacy_collision":hits.any(func(row: Array):return row[0]==label)})
 	check("tested_old_frames_and_collisions",rows.all(func(row: Dictionary):
 		return row.has_legacy_node==before and row.legacy_collision==before),rows)
-	var names := ["COL_Outer500_Frame_70","COL_Riverside_62_registered_body",
+	var plot70 := "COL_Binjiang_1128648941_Podium" if scene.find_child("BinjiangFrontages",true,false) else "COL_Outer500_Frame_70"
+	var names := [plot70,"COL_Riverside_62_registered_body",
 		"COL_Changbin_GarageSideWalk","COL_Changbin_ParkSideWalk","COL_Raijiapo_GaragePublicEnvelope"]
 	check("previous_walks_pavilion_and_next_district",names.all(func(label: String):
 		return scene.find_child(label,true,false)!=null),names)

@@ -89,7 +89,9 @@ park61_plan = json.loads((group_assets / "park-plot61.json").read_bytes())
 park_finish_plan = json.loads((group_assets / "park-edge-finish.json").read_bytes())
 changbin_plan = json.loads((group_assets / "changbin-bend-and-edge.json").read_bytes())
 east_plan = None if os.environ.get("CQ_EAST_PARENT") == "1" else json.loads((group_assets / "raijiapo-east-bend.json").read_bytes())
-east_override = set() if east_plan is None else set(east_plan["replacement_meshes"] + east_plan["retired_objects"])
+binjiang_plan = None if not east_plan or os.environ.get("CQ_BINJIANG_PARENT") == "1" else json.loads((group_assets / "binjiang-70-73.json").read_bytes())
+binjiang_override = set() if not binjiang_plan else set(binjiang_plan["replacement_meshes"] + binjiang_plan["retired_objects"])
+east_override = set() if east_plan is None else set(east_plan["replacement_meshes"] + east_plan["retired_objects"]) | binjiang_override
 changbin_override = set(changbin_plan["replacement_meshes"] + changbin_plan["retired_objects"]) | east_override
 park_finish_override = set(park_finish_plan["replacement_meshes"] + park_finish_plan["retired_objects"]) | changbin_override
 park61_override = set(park61_plan["replacement_meshes"] + park61_plan["retired_objects"]) | park_finish_override
@@ -252,7 +254,8 @@ for item in changbin.objects:
 if east_plan:
     with bpy.data.libraries.load(str(factory_dir.parent / "riverside/east_bend/raijiapo-east-bend.blend"),
                                  link=True, relative=True) as (_, east_bend):
-        east_bend.objects = east_plan["replacement_meshes"] + east_plan["new_meshes"]
+        east_bend.objects = [name for name in east_plan["replacement_meshes"] + east_plan["new_meshes"]
+                             if name not in binjiang_override]
     for item in east_bend.objects:
         collection.objects.link(item)
     spec = east_plan["tree"]
@@ -262,5 +265,17 @@ if east_plan:
     plant.scale *= .89
     plant.rotation_euler.z += .83
     collection.objects.link(plant)
+if binjiang_plan:
+    for name in binjiang_plan["retired_runtime_frontage"]:
+        if name in bpy.context.scene.objects:
+            bpy.context.scene.objects[name].hide_render=True
+            bpy.context.scene.objects[name].hide_set(True)
+    with bpy.data.libraries.load(str(factory_dir.parent / "riverside/binjiang/binjiang-70-73.blend"),
+                                 link=True, relative=True) as (_, binjiang):
+        binjiang.objects = binjiang_plan["replacement_meshes"] + binjiang_plan["new_meshes"]
+    for item in binjiang.objects:
+        collection.objects.link(item)
 bpy.context.preferences.filepaths.save_version=0
-bpy.ops.wm.save_as_mainfile(filepath=str(here / ("city_and_outer.local.blend" if east_plan else "city_and_outer.before_east.local.blend")),relative_remap=True,compress=True)
+output_name = "city_and_outer.local.blend" if binjiang_plan else (
+    "city_and_outer.before_binjiang.local.blend" if east_plan else "city_and_outer.before_east.local.blend")
+bpy.ops.wm.save_as_mainfile(filepath=str(here / output_name),relative_remap=True,compress=True)

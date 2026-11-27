@@ -40,6 +40,8 @@ const CHANGBIN_BEND := "res://assets/district_500/changbin-bend-and-edge.glb"
 const CHANGBIN_BEND_SITE := "res://assets/district_500/changbin-bend-and-edge.json"
 const RAIJIAPO_EAST := "res://assets/district_500/raijiapo-east-bend.glb"
 const RAIJIAPO_EAST_SITE := "res://assets/district_500/raijiapo-east-bend.json"
+const BINJIANG := "res://assets/district_500/binjiang-70-73.glb"
+const BINJIANG_SITE := "res://assets/district_500/binjiang-70-73.json"
 
 static func install(city: Node3D) -> Dictionary:
 	var district := (load(MODEL) as PackedScene).instantiate() as Node3D
@@ -122,6 +124,11 @@ static func install(city: Node3D) -> Dictionary:
 															var east: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(RAIJIAPO_EAST_SITE))
 															retired_bridge_plots.append_array(east.retired_plots)
 															place_east_tree(district,east.tree)
+															if not "--qa-without-binjiang" in OS.get_cmdline_user_args():
+																install_street_group(district, BINJIANG, BINJIANG_SITE, "BinjiangFrontages")
+																var binjiang := load_binjiang_plan()
+																retired_bridge_plots.append_array(binjiang.retired_plots)
+																hide_replaced_binjiang_facades(city,binjiang.retired_runtime_frontage)
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -292,6 +299,7 @@ static func install(city: Node3D) -> Dictionary:
 		"park_edge_finish_sha256": FileAccess.get_sha256(PARK_EDGE_FINISH),
 		"changbin_bend_sha256": FileAccess.get_sha256(CHANGBIN_BEND),
 		"raijiapo_east_sha256": FileAccess.get_sha256(RAIJIAPO_EAST),
+		"binjiang_sha256": FileAccess.get_sha256(BINJIANG),
 		"retired_internal_context": local_frame != null, "osm_building_ids": retire}
 
 
@@ -336,6 +344,21 @@ static func place_east_tree(district: Node3D, spec: Dictionary) -> void:
 	plant.scale*=.89
 	plant.rotation.y+=.83
 	district.get_node("RaijiapoEastBend").add_child(plant)
+
+static func load_binjiang_plan() -> Dictionary:
+	return JSON.parse_string(FileAccess.get_file_as_string(BINJIANG_SITE))
+
+static func hide_replaced_binjiang_facades(city: Node3D, names: Array) -> void:
+	for mesh_name: String in names:
+		var former := city.find_child(mesh_name,true,false) as MeshInstance3D
+		if former:
+			former.hide()
+
+static func binjiang_plot() -> String:
+	for arg: String in OS.get_cmdline_user_args():
+		if arg.begins_with("--binjiang-plot="):
+			return arg.trim_prefix("--binjiang-plot=")
+	return ""
 
 
 static func finish_park_trees(district: Node3D) -> void:
@@ -456,6 +479,13 @@ static func start_exploration(scene: Node3D) -> void:
 		if not street.is_empty():
 			scene.explorer.set_walk_origin(street.position + Vector3.UP * .035,
 				enu(plan.street_eye_target_east_north_up))
+	elif binjiang_plot() in ["70","71","72","73"]:
+		var route: Dictionary = load_binjiang_plan().public_routes[binjiang_plot()]
+		var start: Array = route.stations[0]
+		var next: Array = route.stations[1]
+		var street := collision.raycast_ground(scene, Vector3(start[0],route.start_ground_m+.85,-start[1]),2.4)
+		if not street.is_empty():
+			scene.explorer.set_walk_origin(street.position+Vector3.UP*.035,Vector3(next[0],street.position.y,-next[1]))
 	elif "--raijiapo-east" in OS.get_cmdline_user_args():
 		var route: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(RAIJIAPO_EAST_SITE)).walk
 		var origin: Array = route.stations[0]

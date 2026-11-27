@@ -13,6 +13,10 @@ GRAPH = bpy.context.evaluated_depsgraph_get()
 OBJECTS = SCENE.objects
 NAMES = PLAN["replacement_meshes"] + PLAN["new_meshes"]
 ASSEMBLED = Path(bpy.data.filepath).name == "city_and_outer.local.blend"
+BINJIANG = ASSEMBLED and OBJECTS.get("COL_Binjiang_1128648941_Podium") is not None
+if BINJIANG:
+    continuation = json.loads((ASSETS / "binjiang-70-73.json").read_bytes())
+    NAMES = [name for name in NAMES if name not in continuation["retired_objects"]]
 
 
 def surface(name, point, height, window=.65):
@@ -84,7 +88,7 @@ def reports():
               "upper_ramp_join": {"1256840008":shared_road("1256840008","1256839997")}}
     if ASSEMBLED:
         assert all(OBJECTS.get(name) is None for name in PLAN["retired_objects"])
-        assert OBJECTS.get("COL_Outer500_Frame_70")
+        assert OBJECTS.get("COL_Outer500_Frame_70") is None if BINJIANG else OBJECTS.get("COL_Outer500_Frame_70")
         assert OBJECTS[PLAN["tree"]["name"]].data == OBJECTS[PLAN["tree"]["donor"]].data
     return report
 

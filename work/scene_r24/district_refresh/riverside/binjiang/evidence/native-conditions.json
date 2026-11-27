@@ -1,0 +1,106 @@
+{
+  "parent": "7208f355b75c5c49a0dc6dbbbb520efb92615b5a",
+  "renderer": "gl_compatibility",
+  "device": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "same_cameras": [
+    {
+      "eye_enu": [
+        87.0,
+        -109.5,
+        9.165
+      ],
+      "focus_enu": [
+        79.0,
+        -123.0,
+        18.2
+      ],
+      "image": "plot-70.png",
+      "pixels": "(900, 506)",
+      "vfov": 66.0
+    },
+    {
+      "eye_enu": [
+        109.9,
+        -131.1,
+        9.614
+      ],
+      "focus_enu": [
+        95.2,
+        -141.1,
+        12.7
+      ],
+      "image": "plot-71.png",
+      "pixels": "(900, 506)",
+      "vfov": 66.0
+    },
+    {
+      "eye_enu": [
+        118.6,
+        -122.9,
+        10.224
+      ],
+      "focus_enu": [
+        115.1,
+        -139.2,
+        10.8
+      ],
+      "image": "plot-72.png",
+      "pixels": "(900, 506)",
+      "vfov": 65.0
+    },
+    {
+      "eye_enu": [
+        145.7,
+        -121.9,
+        13.431
+      ],
+      "focus_enu": [
+        143.6,
+        -140.6,
+        13.7
+      ],
+      "image": "plot-73.png",
+      "pixels": "(900, 506)",
+      "vfov": 64.0
+    }
+  ],
+  "native_logs": {
+    "native-before": [
+      "Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org",
+      "WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.",
+      "OpenGL API 4.5 (Core Profile) Mesa 25.0.7-2+deb13u1 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 19.1.7, 256 bits)",
+      "WARNING: Subsurface scattering is only available when using the Forward+ renderer.",
+      "ERROR: Texture with GL ID of 666: leaked 349524 bytes.",
+      "ERROR: Texture with GL ID of 667: leaked 349524 bytes."
+    ],
+    "native-release": [
+      "Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org",
+      "WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.",
+      "OpenGL API 4.5 (Core Profile) Mesa 25.0.7-2+deb13u1 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 19.1.7, 256 bits)",
+      "WARNING: Subsurface scattering is only available when using the Forward+ renderer.",
+      "ERROR: Texture with GL ID of 673: leaked 349524 bytes.",
+      "ERROR: Texture with GL ID of 674: leaked 349524 bytes."
+    ],
+    "native-before-blocked": [
+      "Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org",
+      "WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.",
+      "OpenGL API 4.5 (Core Profile) Mesa 25.0.7-2+deb13u1 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 19.1.7, 256 bits)",
+      "WARNING: Subsurface scattering is only available when using the Forward+ renderer.",
+      "ERROR: Texture with GL ID of 666: leaked 349524 bytes.",
+      "ERROR: Texture with GL ID of 667: leaked 349524 bytes."
+    ]
+  },
+  "frame_sha256": {
+    "plot-73-before.png": "3f3b8c5d87dbdc94f2aea0a3d4be11814f3e868087bd9033797000fcc304a1c9",
+    "blocked-71.png": "02b67dfa74b2a8422264c000a5074c888f72eb0528b4b751764642a2414a5231",
+    "plot-73-overlap-trial.png": "e61a800c09ee8101df9bc03b90f5f5b2de1b8626c491660a798af1ffc116abe2",
+    "plot-72-turn-after.png": "084e65dba08b974a42c97fac7ba1b4a0b0ead3f21461190321410a032bfacd0f",
+    "plot-72-before.png": "7f7d3358574fbc4bc8db4aeb59573b6adc5645afa6e3f93b1cd7c16e791bc59a",
+    "plot-71-after.png": "0475937b01cd7716ab97e31c05c4202b520e58eda640377a8453882d0e0c6816",
+    "plot-73-after.png": "2052dce0cd2d876a4cc08ccd6a79175e23a16c835e0bf44806fdb10dd36bdb77",
+    "plot-71-before.png": "cc209d3b8bb2e08d1e2d0fa60692a862bb81dfa64725edb2a1f17bdd0ade580d",
+    "plot-70-before.png": "778d92b8ee791666a776e2aba6fa224ac4ccb5e18c10e42f26620849917ceb3a",
+    "plot-72-after.png": "2909639fda2bc626aa74b80ec55b94d05234eeaa663bc94d21e44cc8ebc25c00",
+    "plot-70-after.png": "b35ada15539a47644035e88c6f6576404148d9a091cf195155724e648904f3ce"
+  }
+}

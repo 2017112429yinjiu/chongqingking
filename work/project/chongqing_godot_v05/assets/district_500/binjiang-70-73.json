@@ -1,0 +1,423 @@
+{
+  "retired_plots": [
+    70,
+    71,
+    72,
+    73
+  ],
+  "retired_objects": [
+    "COL_EastGarage_StreetFrontage68",
+    "COL_Outer500_Court_72",
+    "COL_Outer500_Frame_70",
+    "COL_Outer500_Frame_71",
+    "COL_Outer500_Frame_72",
+    "COL_Outer500_Frame_73",
+    "EastGarage_StreetFrontageLouvers68",
+    "Outer500_Condenser_70_01",
+    "Outer500_Condenser_70_04",
+    "Outer500_Condenser_71_01",
+    "Outer500_Condenser_72_01",
+    "Outer500_Condenser_73_01",
+    "Outer500_CourtDetails_72",
+    "Outer500_Household_147_chair_0",
+    "Outer500_Household_148_crate_0",
+    "Outer500_Household_149_chair_0",
+    "Outer500_Household_150_basket_0",
+    "Outer500_Household_150_basket_1",
+    "Outer500_Household_151_armchair_0",
+    "Outer500_Household_152_basket_0",
+    "Outer500_Household_152_basket_1",
+    "Outer500_Household_153_armchair_0",
+    "Outer500_Household_154_plant_0",
+    "Outer500_Household_154_plant_1",
+    "Outer500_Household_154_plant_2",
+    "Outer500_Household_155_plant_0",
+    "Outer500_Household_155_plant_1",
+    "Outer500_Household_155_plant_2",
+    "Outer500_Household_156_plant_0",
+    "Outer500_Household_156_plant_1",
+    "Outer500_Household_156_plant_2",
+    "Outer500_Household_157_chair_0",
+    "Outer500_Household_158_crate_0",
+    "Outer500_InteriorFloor_70",
+    "Outer500_InteriorFloor_71",
+    "Outer500_InteriorFloor_72",
+    "Outer500_InteriorFloor_73",
+    "Outer500_Joinery_70",
+    "Outer500_Joinery_71",
+    "Outer500_Joinery_72",
+    "Outer500_Joinery_73",
+    "Outer500_Plant_060",
+    "Outer500_Plant_061",
+    "Outer500_Plant_062",
+    "Outer500_Plant_121",
+    "Outer500_Plant_153",
+    "Outer500_Plant_154",
+    "Outer500_Plant_283"
+  ],
+  "replacement_meshes": [
+    "COL_Outer500_Building_envelopes",
+    "Outer500_Facades_and_storefronts",
+    "Outer500_Street_furniture",
+    "COL_Outer500_Retaining_and_boundaries",
+    "COLH_Outer500_Household_contact"
+  ],
+  "new_meshes": [
+    "COL_Binjiang_1128648941_Podium",
+    "Binjiang_Podium_Stone_Piers_Glazing",
+    "Binjiang_Recessed_Landing_And_Louvres",
+    "Binjiang_Tower_1128648941",
+    "COL_Binjiang_704006726_Curved_Podium",
+    "Binjiang_Salmon_Arc_Windows_And_Grilles",
+    "Binjiang_Adjacent_Tower_704006726",
+    "Binjiang_Stone_Entrance_Aprons",
+    "Outer500_Riverside_COL_Binjiang_Jiefang_South_Sidewalk",
+    "COL_Binjiang_Walk_70",
+    "COL_Binjiang_Walk_71",
+    "COL_Binjiang_Walk_72",
+    "COL_Binjiang_Walk_73",
+    "COL_Binjiang_Podium_Sill_Landing"
+  ],
+  "borrowed_materials": {
+    "COL_Outer500_Building_envelopes": {
+      "CQEastParentSlot000": "Grey stone walkway.001",
+      "CQEastParentSlot001": "Coursed retaining masonry.001",
+      "CQEastParentSlot002": "Aged stucco.001",
+      "CQEastParentSlot003": "Red infill brick.001",
+      "CQEastParentSlot004": "Glazed blue tile.001",
+      "CQEastParentSlot005": "Concrete bands.001",
+      "CQEastParentSlot006": "Blue grey street reflection.001",
+      "CQEastParentSlot007": "Shaded window beyond mesh.001",
+      "CQEastParentSlot008": "Flax curtain behind glazing.001",
+      "CQEastParentSlot009": "Cloud reflection.001",
+      "CQEastParentSlot010": "Painted window and rail trim.001",
+      "CQEastParentSlot011": "Door and shutter recess.002",
+      "CQEastParentSlot012": "Cream glazed wall skirting.001",
+      "CQEastParentSlot013": "Worn timber joinery.001",
+      "CQEastParentSlot014": "Worn concrete floors.001"
+    },
+    "Outer500_Facades_and_storefronts": {
+      "CQEastParentSlot015": "Aged stucco.002",
+      "CQEastParentSlot016": "Red infill brick.002",
+      "CQEastParentSlot017": "Glazed blue tile.002",
+      "CQEastParentSlot018": "Concrete bands.003",
+      "CQEastParentSlot019": "Grey overlapping roof tiles.001",
+      "CQEastParentSlot020": "Painted window and rail trim.002",
+      "CQEastParentSlot021": "Door and shutter recess.004",
+      "CQEastParentSlot022": "Worn timber joinery.002",
+      "CQEastParentSlot023": "Faded covered market roofing.001",
+      "CQEastParentSlot024": "Aged galvanized drain pipe.002"
+    },
+    "Outer500_Street_furniture": {
+      "CQEastParentSlot025": "Aged stucco.004",
+      "CQEastParentSlot026": "Concrete bands.005",
+      "CQEastParentSlot027": "Grey overlapping roof tiles.003",
+      "CQEastParentSlot028": "Painted window and rail trim.004",
+      "CQEastParentSlot029": "Red painted steel.002",
+      "CQEastParentSlot030": "Jade painted steel.002",
+      "CQEastParentSlot031": "Ochre canvas.002",
+      "CQEastParentSlot032": "Off-white road pigment.002",
+      "CQEastParentSlot033": "Door and shutter recess.006",
+      "CQEastParentSlot034": "Canopy 0.002",
+      "CQEastParentSlot035": "Canopy 1.002",
+      "CQEastParentSlot036": "Canopy 2.002",
+      "CQEastParentSlot037": "Cream glazed wall skirting.003",
+      "CQEastParentSlot038": "Worn timber joinery.004",
+      "CQEastParentSlot039": "Weathered sheet metal.002",
+      "CQEastParentSlot040": "Faded covered market roofing.003",
+      "CQEastParentSlot041": "Used tyre casing.002",
+      "CQEastParentSlot042": "Brown earthenware.002"
+    },
+    "COL_Outer500_Retaining_and_boundaries": {
+      "CQEastParentSlot043": "Grey stone walkway.002",
+      "CQEastParentSlot044": "Coursed retaining masonry.002",
+      "CQEastParentSlot045": "Concrete bands.002",
+      "CQEastParentSlot046": "Door and shutter recess.003",
+      "CQEastParentSlot047": "Aged galvanized drain pipe.001",
+      "CQEastParentSlot048": "Salvaged service-door steel.001"
+    },
+    "COLH_Outer500_Household_contact": {
+      "CQEastParentSlot049": "Door and shutter recess.001"
+    }
+  },
+  "public_routes": {
+    "70": {
+      "stations": [
+        [
+          98.0,
+          -106.6
+        ],
+        [
+          95.0,
+          -107.4
+        ],
+        [
+          92.1,
+          -108.1
+        ],
+        [
+          89.3,
+          -109.05
+        ],
+        [
+          86.5,
+          -110.3
+        ],
+        [
+          84.35,
+          -112.9
+        ]
+      ],
+      "start_ground_m": 7.9418741149902345,
+      "destination_game_m": 7.5912919921875,
+      "shot": [
+        "plot-70",
+        [
+          87,
+          -109.5,
+          9.165
+        ],
+        [
+          79,
+          -123,
+          18.2
+        ],
+        66.0
+      ]
+    },
+    "71": {
+      "stations": [
+        [
+          108.0,
+          -108.6
+        ],
+        [
+          106.9,
+          -111.6
+        ],
+        [
+          105.5,
+          -115.8
+        ],
+        [
+          104.4,
+          -120.1
+        ],
+        [
+          103.6,
+          -124.4
+        ],
+        [
+          103.35,
+          -128.7
+        ],
+        [
+          103.25,
+          -133.0
+        ],
+        [
+          103.47,
+          -137.4
+        ]
+      ],
+      "start_ground_m": 8.023523895263672,
+      "destination_game_m": 7.768728820800781,
+      "shot": [
+        "plot-71",
+        [
+          109.9,
+          -131.1,
+          9.614
+        ],
+        [
+          95.2,
+          -141.1,
+          12.7
+        ],
+        66.0
+      ]
+    },
+    "72": {
+      "stations": [
+        [
+          120.9,
+          -111.0
+        ],
+        [
+          119.8,
+          -114.7
+        ],
+        [
+          118.7,
+          -118.7
+        ],
+        [
+          117.9,
+          -122.9
+        ],
+        [
+          117.45,
+          -127.15
+        ],
+        [
+          117.1,
+          -131.15
+        ],
+        [
+          117.4,
+          -135.4
+        ]
+      ],
+      "start_ground_m": 8.700056640625,
+      "destination_game_m": 7.8836160583496095,
+      "shot": [
+        "plot-72",
+        [
+          118.6,
+          -122.9,
+          10.224
+        ],
+        [
+          115.1,
+          -139.2,
+          10.8
+        ],
+        65.0
+      ]
+    },
+    "73": {
+      "stations": [
+        [
+          144.7,
+          -118.15
+        ],
+        [
+          145.3,
+          -121.7
+        ],
+        [
+          145.7,
+          -125.5
+        ],
+        [
+          145.0,
+          -129.0
+        ],
+        [
+          143.8,
+          -132.2
+        ],
+        [
+          142.4,
+          -134.1
+        ]
+      ],
+      "start_ground_m": 11.799219696044922,
+      "destination_game_m": 10.436789123535156,
+      "shot": [
+        "plot-73",
+        [
+          145.7,
+          -121.9,
+          13.431
+        ],
+        [
+          143.6,
+          -140.6,
+          13.7
+        ],
+        64.0
+      ]
+    }
+  },
+  "terrace_area_m2": {
+    "70": 141.56,
+    "71": 295.96,
+    "72": 286.192,
+    "73": 222.31
+  },
+  "render_buildings": {
+    "1128648941": {
+      "walkable_levels": [
+        3.17,
+        5.72,
+        7.91,
+        10.82,
+        13.95,
+        17.25
+      ],
+      "top_m": 127.85000000000001,
+      "tower_plan": [
+        [
+          62.918052673339844,
+          -125.73338317871094
+        ],
+        [
+          62.70356369018555,
+          -130.4795379638672
+        ],
+        [
+          86.98161315917969,
+          -148.16835021972656
+        ],
+        [
+          92.18794250488281,
+          -148.59747314453125
+        ],
+        [
+          94.35523223876953,
+          -120.33934020996094
+        ],
+        [
+          73.10889434814453,
+          -116.8890151977539
+        ]
+      ]
+    },
+    "704006726": {
+      "podium_roof": 20.54,
+      "top_m": 85.85999999999999,
+      "tower_plan": [
+        [
+          128.96896362304688,
+          -161.86207580566406
+        ],
+        [
+          154.95777893066406,
+          -165.5347137451172
+        ],
+        [
+          157.65744018554688,
+          -146.60140991210938
+        ],
+        [
+          131.6686248779297,
+          -142.9361114501953
+        ]
+      ]
+    }
+  },
+  "plant_roots_inside_new_building": [
+    "Outer500_Plant_283",
+    "Outer500_Plant_154",
+    "Outer500_Plant_153",
+    "Outer500_Plant_121",
+    "Outer500_Plant_062",
+    "Outer500_Plant_061",
+    "Outer500_Plant_060"
+  ],
+  "removed_face_counts": {
+    "COL_Outer500_Building_envelopes": 966,
+    "Outer500_Facades_and_storefronts": 144,
+    "Outer500_Street_furniture": 1911,
+    "COL_Outer500_Retaining_and_boundaries": 354,
+    "COLH_Outer500_Household_contact": 72
+  },
+  "retired_runtime_frontage": [
+    "R24_East_Block_0_R24_east_balcony_shadow",
+    "R24_East_Block_0_R24_east_concrete_band",
+    "R24_East_Block_0_R24_east_loggia_glass",
+    "R24_East_Block_0_R24_east_roof",
+    "R24_East_Block_0_R24_east_wall_1"
+  ]
+}
