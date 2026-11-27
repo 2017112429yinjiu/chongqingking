@@ -1,0 +1,3357 @@
+{
+  "base_revision": "4dcc489527a8863404448da40f1302c1b0e21689",
+  "registered_frame_revision": "52031ffe8cb16fc7992ef14de3c6d1464999f411",
+  "old_wall_mode": "--before-street-entry-return (only restores original west-ramp perimeter mesh in composed scene)",
+  "inputs": "Registered 860×484 game viewport; native saved PNGs are 860×483.",
+  "reopen_layer": {
+    "version": "4.3.2",
+    "objects": 24,
+    "libraries": 0,
+    "seal_dimensions_m": [
+      0.403289794921875,
+      0.162200927734375,
+      1.7386999130249023
+    ],
+    "seal_faces": 6,
+    "seal_finish": "East park course stone and capped ends",
+    "east_deck_cut_path_faces": 16,
+    "entry_faces": 5,
+    "entry_joint_sections": [
+      [
+        -154.0,
+        -168.10479736328125,
+        -5.829999923706055,
+        -5.790043830871582
+      ],
+      [
+        -153.82278442382812,
+        -168.12521362304688,
+        -5.829999923706055,
+        -5.7950334548950195
+      ],
+      [
+        -153.6455535888672,
+        -168.14564514160156,
+        -5.830000877380371,
+        -5.800026893615723
+      ],
+      [
+        -153.46832275390625,
+        -168.16607666015625,
+        -5.829999923706055,
+        -5.805021286010742
+      ],
+      [
+        -153.29110717773438,
+        -168.18649291992188,
+        -5.829999923706055,
+        -5.8098907470703125
+      ]
+    ],
+    "pavilion_meshes_retained": []
+  },
+  "reopen_composed": {
+    "version": "4.3.2",
+    "objects": 1034,
+    "libraries": 17,
+    "seal_dimensions_m": [
+      0.403289794921875,
+      0.162200927734375,
+      1.7386999130249023
+    ],
+    "seal_faces": 6,
+    "seal_finish": "East park course stone and capped ends",
+    "east_deck_cut_path_faces": 16,
+    "entry_faces": 5,
+    "entry_joint_sections": [
+      [
+        -154.0,
+        -168.10479736328125,
+        -5.829999923706055,
+        -5.790043830871582
+      ],
+      [
+        -153.82278442382812,
+        -168.12521362304688,
+        -5.829999923706055,
+        -5.7950334548950195
+      ],
+      [
+        -153.6455535888672,
+        -168.14564514160156,
+        -5.830000877380371,
+        -5.800026893615723
+      ],
+      [
+        -153.46832275390625,
+        -168.16607666015625,
+        -5.829999923706055,
+        -5.805021286010742
+      ],
+      [
+        -153.29110717773438,
+        -168.18649291992188,
+        -5.829999923706055,
+        -5.8098907470703125
+      ]
+    ],
+    "pavilion_meshes_retained": [
+      "Riverside_62_red_tiles_open_reveal_and_vents",
+      "Riverside_62_asymmetric_eaves",
+      "COL_Riverside_62_registered_body",
+      "Riverside_62_StreetSideApproach"
+    ]
+  },
+  "wall_ground_profiles_before": [
+    {
+      "index": 144,
+      "a": [
+        -152.4297637939453,
+        -168.42974853515625
+      ],
+      "b": [
+        -152.0,
+        -169.7107696533203
+      ],
+      "z_top": [
+        -4.155146598815918,
+        -4.2896728515625
+      ],
+      "z_bottom": [
+        -5.829999923706055,
+        -5.829999923706055
+      ],
+      "width": 1.3511890931919608,
+      "normal": [
+        -0.9480694532394409,
+        -0.3180633783340454,
+        0.0
+      ],
+      "stations": [
+        {
+          "point": [
+            -152.34381103515625,
+            -168.6859588623047
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_01_01",
+              -4.1746
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.83
+            ]
+          ],
+          "top_over_floor": -0.007451849365234686,
+          "foot_gap": 7.629394538355427e-08
+        },
+        {
+          "point": [
+            -152.21487426757812,
+            -169.07025146484375
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_01_01",
+              -4.2149
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.83
+            ]
+          ],
+          "top_over_floor": -0.007509725189208893,
+          "foot_gap": 7.629394538355427e-08
+        },
+        {
+          "point": [
+            -152.08595275878906,
+            -169.45455932617188
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_01_01",
+              -4.2553
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.83
+            ]
+          ],
+          "top_over_floor": -0.007467601013183334,
+          "foot_gap": 7.629394538355427e-08
+        }
+      ]
+    },
+    {
+      "index": 145,
+      "a": [
+        -152.47998046875,
+        -168.27999877929688
+      ],
+      "b": [
+        -152.42974853515625,
+        -168.4297637939453
+      ],
+      "z_top": [
+        -4.1405863761901855,
+        -4.155146598815918
+      ],
+      "z_bottom": [
+        -5.829999923706055,
+        -5.829999923706055
+      ],
+      "width": 0.15796457366252398,
+      "normal": [
+        -0.9480924606323242,
+        -0.3179948925971985,
+        0.0
+      ],
+      "stations": [
+        {
+          "point": [
+            -152.46994018554688,
+            -168.30996704101562
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_01_01",
+              -4.1359
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.83
+            ]
+          ],
+          "top_over_floor": -0.007598420715331677,
+          "foot_gap": 7.629394538355427e-08
+        },
+        {
+          "point": [
+            -152.45486450195312,
+            -168.35488891601562
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_01_01",
+              -4.1403
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.83
+            ]
+          ],
+          "top_over_floor": -0.0075664875030518886,
+          "foot_gap": 7.629394538355427e-08
+        },
+        {
+          "point": [
+            -152.43978881835938,
+            -168.39981079101562
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_01_01",
+              -4.1446
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.83
+            ]
+          ],
+          "top_over_floor": -0.007634554290771867,
+          "foot_gap": 7.629394538355427e-08
+        }
+      ]
+    },
+    {
+      "index": 146,
+      "a": [
+        -154.0,
+        -168.10479736328125
+      ],
+      "b": [
+        -152.47998046875,
+        -168.27999877929688
+      ],
+      "z_top": [
+        -4.373253345489502,
+        -4.1405863761901855
+      ],
+      "z_bottom": [
+        -5.829999923706055,
+        -5.829999923706055
+      ],
+      "width": 1.5300833018577868,
+      "normal": [
+        -0.11450450867414474,
+        -0.99342280626297,
+        0.0
+      ],
+      "stations": [
+        {
+          "point": [
+            -153.6959991455078,
+            -168.13983154296875
+          ],
+          "readings": [
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.7917
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.83
+            ]
+          ],
+          "top_over_floor": 1.4649800483703608,
+          "foot_gap": 7.629394538355427e-08
+        },
+        {
+          "point": [
+            -153.239990234375,
+            -168.19239807128906
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_01_01",
+              -4.2507
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.83
+            ]
+          ],
+          "top_over_floor": -0.006219860839843605,
+          "foot_gap": 7.629394538355427e-08
+        },
+        {
+          "point": [
+            -152.7839813232422,
+            -168.24496459960938
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_01_01",
+              -4.1809
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.83
+            ]
+          ],
+          "top_over_floor": -0.006219770050048368,
+          "foot_gap": 7.629394538355427e-08
+        }
+      ]
+    },
+    {
+      "index": 147,
+      "a": [
+        -153.2994842529297,
+        -168.0
+      ],
+      "b": [
+        -153.29110717773438,
+        -168.18650817871094
+      ],
+      "z_top": [
+        -4.23735237121582,
+        -4.264742851257324
+      ],
+      "z_bottom": [
+        -5.771639823913574,
+        -5.8105950355529785
+      ],
+      "width": 0.18669621282197524,
+      "normal": [
+        -0.998992919921875,
+        -0.04487008601427078,
+        0.0
+      ],
+      "stations": [
+        {
+          "point": [
+            -153.2978057861328,
+            -168.0373077392578
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_01_01",
+              -4.2364
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.7796
+            ]
+          ],
+          "top_over_floor": -0.00643046722412155,
+          "foot_gap": 0.00016913375854521462
+        },
+        {
+          "point": [
+            -153.2952880859375,
+            -168.09326171875
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_01_01",
+              -4.2447
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.7913
+            ]
+          ],
+          "top_over_floor": -0.006347611236572348,
+          "foot_gap": 0.00018257026672330312
+        },
+        {
+          "point": [
+            -153.29278564453125,
+            -168.14920043945312
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_01_01",
+              -4.2529
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.803
+            ]
+          ],
+          "top_over_floor": -0.006364755249022913,
+          "foot_gap": 0.0001960067749022798
+        }
+      ]
+    },
+    {
+      "index": 148,
+      "a": [
+        -153.32965087890625,
+        -167.32965087890625
+      ],
+      "b": [
+        -153.29949951171875,
+        -168.0
+      ],
+      "z_top": [
+        -4.132038116455078,
+        -4.237351894378662
+      ],
+      "z_bottom": [
+        -5.619810104370117,
+        -5.771639823913574
+      ],
+      "width": 0.6710268589029416,
+      "normal": [
+        -0.9989900588989258,
+        -0.044933173805475235,
+        0.0
+      ],
+      "stations": [
+        {
+          "point": [
+            -153.32362365722656,
+            -167.46371459960938
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_01_01",
+              -4.1467
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.6505
+            ]
+          ],
+          "top_over_floor": -0.0064008720397952246,
+          "foot_gap": 0.0003239517211914844
+        },
+        {
+          "point": [
+            -153.3145751953125,
+            -167.66482543945312
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_01_01",
+              -4.1783
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.696
+            ]
+          ],
+          "top_over_floor": -0.006395005416869992,
+          "foot_gap": 0.00027503585815402687
+        },
+        {
+          "point": [
+            -153.30552673339844,
+            -167.86593627929688
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_01_01",
+              -4.2099
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.7416
+            ]
+          ],
+          "top_over_floor": -0.006389138793945648,
+          "foot_gap": 0.00032611999511722445
+        }
+      ]
+    },
+    {
+      "index": 149,
+      "a": [
+        -153.38946533203125,
+        -166.0
+      ],
+      "b": [
+        -153.32965087890625,
+        -167.32965087890625
+      ],
+      "z_top": [
+        -3.929422616958618,
+        -4.132038116455078
+      ],
+      "z_bottom": [
+        -5.266201496124268,
+        -5.619810104370117
+      ],
+      "width": 1.3309955989627316,
+      "normal": [
+        -0.9989897012710571,
+        -0.04493963345885277,
+        0.0
+      ],
+      "stations": [
+        {
+          "point": [
+            -153.37750244140625,
+            -166.26593017578125
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_01_01",
+              -3.9634
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.3359
+            ]
+          ],
+          "top_over_floor": -0.006545716857910389,
+          "foot_gap": -0.0010232177734375014
+        },
+        {
+          "point": [
+            -153.35955810546875,
+            -166.66482543945312
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_01_01",
+              -4.0242
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.442
+            ]
+          ],
+          "top_over_floor": -0.006530366706847701,
+          "foot_gap": -0.0010058002471922123
+        },
+        {
+          "point": [
+            -153.34161376953125,
+            -167.063720703125
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_01_01",
+              -4.0849
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.5481
+            ]
+          ],
+          "top_over_floor": -0.006615016555786113,
+          "foot_gap": -0.0009883827209478113
+        }
+      ]
+    },
+    {
+      "index": 151,
+      "a": [
+        -153.47943115234375,
+        -164.0
+      ],
+      "b": [
+        -153.41574096679688,
+        -165.41575622558594
+      ],
+      "z_top": [
+        -3.612931966781616,
+        -3.8355894088745117
+      ],
+      "z_bottom": [
+        -4.595870494842529,
+        -5.086885452270508
+      ],
+      "width": 1.4171881040768455,
+      "normal": [
+        -0.9989896416664124,
+        -0.044941239058971405,
+        0.0
+      ],
+      "stations": [
+        {
+          "point": [
+            -153.46669006347656,
+            -164.28314208984375
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_01_01",
+              -3.6508
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -4.6948
+            ]
+          ],
+          "top_over_floor": -0.006663455200195401,
+          "foot_gap": 0.0007265136718750398
+        },
+        {
+          "point": [
+            -153.4475860595703,
+            -164.7078857421875
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_01_01",
+              -3.7176
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -4.8421
+            ]
+          ],
+          "top_over_floor": -0.006660687828063949,
+          "foot_gap": 0.0007220264434817381
+        },
+        {
+          "point": [
+            -153.42848205566406,
+            -165.1326141357422
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_01_01",
+              -3.7844
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -4.9894
+            ]
+          ],
+          "top_over_floor": -0.006657920455932498,
+          "foot_gap": 0.0007175392150884363
+        }
+      ]
+    },
+    {
+      "index": 152,
+      "a": [
+        -153.50186157226562,
+        -163.50184631347656
+      ],
+      "b": [
+        -153.47943115234375,
+        -164.0
+      ],
+      "z_top": [
+        -3.5314602851867676,
+        -3.612931966781616
+      ],
+      "z_bottom": [
+        -4.401664733886719,
+        -4.595870494842529
+      ],
+      "width": 0.4986584227978332,
+      "normal": [
+        -0.9989878535270691,
+        -0.04498153179883957,
+        0.0
+      ],
+      "stations": [
+        {
+          "point": [
+            -153.49737548828125,
+            -163.6014862060547
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_01_01",
+              -3.5411
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -4.4443
+            ]
+          ],
+          "top_over_floor": -0.006654621505737257,
+          "foot_gap": 0.0037941139221189246
+        },
+        {
+          "point": [
+            -153.4906463623047,
+            -163.75091552734375
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_01_01",
+              -3.5655
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -4.5025
+            ]
+          ],
+          "top_over_floor": -0.006696125984191781,
+          "foot_gap": 0.0037323856353763674
+        },
+        {
+          "point": [
+            -153.48391723632812,
+            -163.90036010742188
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_01_01",
+              -3.5899
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -4.5608
+            ]
+          ],
+          "top_over_floor": -0.006737630462646305,
+          "foot_gap": 0.003770657348633577
+        }
+      ]
+    },
+    {
+      "index": 153,
+      "a": [
+        -153.5694122314453,
+        -162.0
+      ],
+      "b": [
+        -153.50186157226562,
+        -163.50184631347656
+      ],
+      "z_top": [
+        -3.288760185241699,
+        -3.5314602851867676
+      ],
+      "z_bottom": [
+        -3.7546911239624023,
+        -4.401664733886719
+      ],
+      "width": 1.5033646828406522,
+      "normal": [
+        -0.9989900588989258,
+        -0.04493298381567001,
+        0.0
+      ],
+      "stations": [
+        {
+          "point": [
+            -153.555908203125,
+            -162.3003692626953
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_01_01",
+              -3.3305
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -3.8865
+            ]
+          ],
+          "top_over_floor": -0.006800205230713008,
+          "foot_gap": 0.002414154052734041
+        },
+        {
+          "point": [
+            -153.53564453125,
+            -162.75091552734375
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_01_01",
+              -3.4033
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -4.0806
+            ]
+          ],
+          "top_over_floor": -0.0068102352142331846,
+          "foot_gap": 0.002422071075439014
+        },
+        {
+          "point": [
+            -153.51536560058594,
+            -163.20147705078125
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_01_01",
+              -3.4762
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -4.2747
+            ]
+          ],
+          "top_over_floor": -0.006720265197754038,
+          "foot_gap": 0.002429988098144875
+        }
+      ]
+    },
+    {
+      "index": 163,
+      "a": [
+        -151.90296936035156,
+        -170.0
+      ],
+      "b": [
+        -151.44000244140625,
+        -171.3800048828125
+      ],
+      "z_top": [
+        -4.320240020751953,
+        -4.458912372589111
+      ],
+      "z_bottom": [
+        -5.829999923706055,
+        -5.829999923706055
+      ],
+      "width": 1.4555932893161228,
+      "normal": [
+        -0.9480704069137573,
+        -0.31806063652038574,
+        0.0
+      ],
+      "stations": [
+        {
+          "point": [
+            -151.8103790283203,
+            -170.2760009765625
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_01_01",
+              -4.3406
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.83
+            ]
+          ],
+          "top_over_floor": -0.007374491119384707,
+          "foot_gap": 7.629394538355427e-08
+        },
+        {
+          "point": [
+            -151.67147827148438,
+            -170.69000244140625
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_01_01",
+              -4.3822
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.83
+            ]
+          ],
+          "top_over_floor": -0.007376196670532131,
+          "foot_gap": 7.629394538355427e-08
+        },
+        {
+          "point": [
+            -151.5325927734375,
+            -171.10400390625
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_01_01",
+              -4.4238
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.83
+            ]
+          ],
+          "top_over_floor": -0.007377902221679555,
+          "foot_gap": 7.629394538355427e-08
+        }
+      ]
+    },
+    {
+      "index": 169,
+      "a": [
+        -149.41429138183594,
+        -174.0
+      ],
+      "b": [
+        -148.66806030273438,
+        -174.58041381835938
+      ],
+      "z_top": [
+        -4.561996936798096,
+        -4.5413618087768555
+      ],
+      "z_bottom": [
+        -5.829999923706055,
+        -5.829999923706055
+      ],
+      "width": 0.9453787662199569,
+      "normal": [
+        -0.6139484643936157,
+        -0.7893460392951965,
+        0.0
+      ],
+      "stations": [
+        {
+          "point": [
+            -149.26504516601562,
+            -174.11607360839844
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_02_01",
+              -4.5503
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.83
+            ]
+          ],
+          "top_over_floor": -0.007569911193847645,
+          "foot_gap": 7.629394538355427e-08
+        },
+        {
+          "point": [
+            -149.04116821289062,
+            -174.2902069091797
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_02_01",
+              -4.5441
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.83
+            ]
+          ],
+          "top_over_floor": -0.007579372787475336,
+          "foot_gap": 7.629394538355427e-08
+        },
+        {
+          "point": [
+            -148.8173065185547,
+            -174.46434020996094
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_02_01",
+              -4.5379
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.83
+            ]
+          ],
+          "top_over_floor": -0.007588834381103915,
+          "foot_gap": 7.629394538355427e-08
+        }
+      ]
+    },
+    {
+      "index": 174,
+      "a": [
+        -146.93458557128906,
+        -174.93458557128906
+      ],
+      "b": [
+        -146.0,
+        -175.12554931640625
+      ],
+      "z_top": [
+        -4.3519134521484375,
+        -4.257550239562988
+      ],
+      "z_bottom": [
+        -5.829999923706055,
+        -5.829999923706055
+      ],
+      "width": 0.9538958922283877,
+      "normal": [
+        -0.20019350945949554,
+        -0.9797564148902893,
+        0.0
+      ],
+      "stations": [
+        {
+          "point": [
+            -146.74766540527344,
+            -174.9727783203125
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_02_01",
+              -4.3262
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.83
+            ]
+          ],
+          "top_over_floor": -0.0068408096313472555,
+          "foot_gap": 7.629394538355427e-08
+        },
+        {
+          "point": [
+            -146.46728515625,
+            -175.03005981445312
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_02_01",
+              -4.2979
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.83
+            ]
+          ],
+          "top_over_floor": -0.006831845855712615,
+          "foot_gap": 7.629394538355427e-08
+        },
+        {
+          "point": [
+            -146.18692016601562,
+            -175.08737182617188
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_02_01",
+              -4.2696
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.83
+            ]
+          ],
+          "top_over_floor": -0.006822882080077974,
+          "foot_gap": 7.629394538355427e-08
+        }
+      ]
+    },
+    {
+      "index": 188,
+      "a": [
+        -140.78158569335938,
+        -178.0
+      ],
+      "b": [
+        -140.73004150390625,
+        -178.27845764160156
+      ],
+      "z_top": [
+        -4.099466323852539,
+        -4.141532897949219
+      ],
+      "z_bottom": [
+        -5.829999923706055,
+        -5.829999923706055
+      ],
+      "width": 0.2831880384570357,
+      "normal": [
+        -0.9832959771156311,
+        -0.18201403319835663,
+        0.0
+      ],
+      "stations": [
+        {
+          "point": [
+            -140.77127075195312,
+            -178.05569458007812
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_02_01",
+              -4.1026
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.83
+            ]
+          ],
+          "top_over_floor": -0.0052796386718751975,
+          "foot_gap": 7.629394538355427e-08
+        },
+        {
+          "point": [
+            -140.7558135986328,
+            -178.13922119140625
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_02_01",
+              -4.1153
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.83
+            ]
+          ],
+          "top_over_floor": -0.005199610900878504,
+          "foot_gap": 7.629394538355427e-08
+        },
+        {
+          "point": [
+            -140.7403564453125,
+            -178.2227783203125
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_02_01",
+              -4.1279
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.83
+            ]
+          ],
+          "top_over_floor": -0.005219583129882466,
+          "foot_gap": 7.629394538355427e-08
+        }
+      ]
+    },
+    {
+      "index": 190,
+      "a": [
+        -141.12950134277344,
+        -176.12069702148438
+      ],
+      "b": [
+        -140.971923828125,
+        -176.971923828125
+      ],
+      "z_top": [
+        -3.8008689880371094,
+        -3.9325509071350098
+      ],
+      "z_bottom": [
+        -5.829999923706055,
+        -5.829999923706055
+      ],
+      "width": 0.8656891796440579,
+      "normal": [
+        -0.9832938313484192,
+        -0.1820255070924759,
+        0.0
+      ],
+      "stations": [
+        {
+          "point": [
+            -141.09799194335938,
+            -176.2909393310547
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_02_01",
+              -3.8217
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.83
+            ]
+          ],
+          "top_over_floor": -0.005505371856689756,
+          "foot_gap": 7.629394538355427e-08
+        },
+        {
+          "point": [
+            -141.05072021484375,
+            -176.5463104248047
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_02_01",
+              -3.8612
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.83
+            ]
+          ],
+          "top_over_floor": -0.005509947586059383,
+          "foot_gap": 7.629394538355427e-08
+        },
+        {
+          "point": [
+            -141.00344848632812,
+            -176.8016815185547
+          ],
+          "readings": [
+            [
+              "COL_Outer500_Surface_02_01",
+              -3.9007
+            ],
+            [
+              "COL_WestPlayground_GradedSurfaces",
+              -5.83
+            ]
+          ],
+          "top_over_floor": -0.005514523315429454,
+          "foot_gap": 7.629394538355427e-08
+        }
+      ]
+    }
+  ],
+  "old_wall_pixel_hits": {
+    "inside_look_back.png": [
+      {
+        "pixel": [
+          320,
+          203
+        ],
+        "eye": [
+          -168.0465545654297,
+          -173.99444580078125,
+          -5.153730392456055
+        ],
+        "fov": 68,
+        "obj": "COL_Outer500_Surface_01_01",
+        "source": "west-ramp.blend",
+        "face": 1048,
+        "material": "Asphalt aggregate.001",
+        "hit_enu": [
+          -152.094,
+          -162.7461,
+          -3.1504
+        ],
+        "normal": [
+          -0.1734,
+          -0.1666,
+          0.9707
+        ],
+        "normal_towards_eye": 0.1373
+      },
+      {
+        "pixel": [
+          369,
+          228
+        ],
+        "eye": [
+          -168.0465545654297,
+          -173.99444580078125,
+          -5.153730392456055
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "west-ramp.blend",
+        "face": 149,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -153.3776,
+          -166.2645,
+          -4.5385
+        ],
+        "normal": [
+          -0.999,
+          -0.0449,
+          0.0
+        ],
+        "normal_towards_eye": 0.9041
+      },
+      {
+        "pixel": [
+          419,
+          229
+        ],
+        "eye": [
+          -168.0465545654297,
+          -173.99444580078125,
+          -5.153730392456055
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "west-ramp.blend",
+        "face": 145,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -152.4555,
+          -168.353,
+          -4.5763
+        ],
+        "normal": [
+          -0.9481,
+          -0.318,
+          0.0
+        ],
+        "normal_towards_eye": 0.9991
+      },
+      {
+        "pixel": [
+          440,
+          236
+        ],
+        "eye": [
+          -168.0465545654297,
+          -173.99444580078125,
+          -5.153730392456055
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "west-ramp.blend",
+        "face": 144,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -152.1469,
+          -169.2728,
+          -4.8996
+        ],
+        "normal": [
+          -0.9481,
+          -0.3181,
+          0.0
+        ],
+        "normal_towards_eye": 0.9993
+      },
+      {
+        "pixel": [
+          478,
+          240
+        ],
+        "eye": [
+          -168.0465545654297,
+          -173.99444580078125,
+          -5.153730392456055
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "west-ramp.blend",
+        "face": 163,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -151.588,
+          -170.9389,
+          -5.0844
+        ],
+        "normal": [
+          -0.9481,
+          -0.3181,
+          0.0
+        ],
+        "normal_towards_eye": 0.9902
+      },
+      {
+        "pixel": [
+          507,
+          234
+        ],
+        "eye": [
+          -168.0465545654297,
+          -173.99444580078125,
+          -5.153730392456055
+        ],
+        "fov": 68,
+        "obj": "COL_Outer500_Surface_01_01",
+        "source": "west-ramp.blend",
+        "face": 1039,
+        "material": "Grey stone walkway.001",
+        "hit_enu": [
+          -152.8785,
+          -172.3931,
+          -4.8421
+        ],
+        "normal": [
+          -0.1544,
+          -0.1416,
+          0.9778
+        ],
+        "normal_towards_eye": 0.1484
+      },
+      {
+        "pixel": [
+          548,
+          238
+        ],
+        "eye": [
+          -168.0465545654297,
+          -173.99444580078125,
+          -5.153730392456055
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "west-ramp.blend",
+        "face": 169,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -149.3955,
+          -174.0146,
+          -4.981
+        ],
+        "normal": [
+          -0.6139,
+          -0.7893,
+          0.0
+        ],
+        "normal_towards_eye": 0.6131
+      },
+      {
+        "pixel": [
+          566,
+          234
+        ],
+        "eye": [
+          -168.0465545654297,
+          -173.99444580078125,
+          -5.153730392456055
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "west-ramp.blend",
+        "face": 174,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -146.7855,
+          -174.965,
+          -4.7379
+        ],
+        "normal": [
+          -0.2002,
+          -0.9798,
+          0.0
+        ],
+        "normal_towards_eye": 0.1553
+      },
+      {
+        "pixel": [
+          580,
+          236
+        ],
+        "eye": [
+          -168.0465545654297,
+          -173.99444580078125,
+          -5.153730392456055
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "west-ramp.blend",
+        "face": 190,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -141.1273,
+          -176.1325,
+          -4.772
+        ],
+        "normal": [
+          -0.9833,
+          -0.182,
+          0.0
+        ],
+        "normal_towards_eye": 0.9657
+      },
+      {
+        "pixel": [
+          612,
+          242
+        ],
+        "eye": [
+          -168.0465545654297,
+          -173.99444580078125,
+          -5.153730392456055
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "west-ramp.blend",
+        "face": 188,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -140.7457,
+          -178.1941,
+          -5.188
+        ],
+        "normal": [
+          -0.9833,
+          -0.182,
+          0.0
+        ],
+        "normal_towards_eye": 0.9442
+      },
+      {
+        "pixel": [
+          638,
+          236
+        ],
+        "eye": [
+          -168.0465545654297,
+          -173.99444580078125,
+          -5.153730392456055
+        ],
+        "fov": 68,
+        "obj": "COL_Outer500_WestCourt_Retaining",
+        "source": "park-plot57.blend",
+        "face": 233,
+        "material": "Park grey green stone support",
+        "hit_enu": [
+          -137.087,
+          -180.545,
+          -4.7343
+        ],
+        "normal": [
+          -0.9888,
+          0.1494,
+          0.0
+        ],
+        "normal_towards_eye": 0.9982
+      },
+      {
+        "pixel": [
+          719,
+          273
+        ],
+        "eye": [
+          -168.0465545654297,
+          -173.99444580078125,
+          -5.153730392456055
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_GradedSurfaces",
+        "source": "west-ramp.blend",
+        "face": 244,
+        "material": "West playground light grey access flags",
+        "hit_enu": [
+          -156.8684,
+          -178.2148,
+          -5.9701
+        ],
+        "normal": [
+          -0.0748,
+          -0.0,
+          0.9972
+        ],
+        "normal_towards_eye": 0.1378
+      },
+      {
+        "pixel": [
+          804,
+          295
+        ],
+        "eye": [
+          -168.0465545654297,
+          -173.99444580078125,
+          -5.153730392456055
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "west-ramp.blend",
+        "face": 100,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -158.7279,
+          -178.9518,
+          -6.2426
+        ],
+        "normal": [
+          0.1871,
+          0.9823,
+          0.0
+        ],
+        "normal_towards_eye": 0.2946
+      },
+      {
+        "pixel": [
+          810,
+          306
+        ],
+        "eye": [
+          -168.0465545654297,
+          -173.99444580078125,
+          -5.153730392456055
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "west-ramp.blend",
+        "face": 102,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -158.9989,
+          -178.9002,
+          -6.4231
+        ],
+        "normal": [
+          0.1872,
+          0.9823,
+          0.0
+        ],
+        "normal_towards_eye": 0.3014
+      },
+      {
+        "pixel": [
+          578,
+          149
+        ],
+        "eye": [
+          -168.0465545654297,
+          -173.99444580078125,
+          -5.153730392456055
+        ],
+        "fov": 68
+      }
+    ],
+    "street_return.png": [
+      {
+        "pixel": [
+          445,
+          304
+        ],
+        "eye": [
+          -158.87130737304688,
+          -159.16908264160156,
+          -2.105587959289551
+        ],
+        "fov": 68,
+        "obj": "WestParkStreet_south_footway",
+        "source": "west-ramp.blend",
+        "face": 87,
+        "material": "West park local walking flags",
+        "hit_enu": [
+          -153.4521,
+          -161.2034,
+          -3.113
+        ],
+        "normal": [
+          -0.1756,
+          -0.1684,
+          0.97
+        ],
+        "normal_towards_eye": 0.27
+      },
+      {
+        "pixel": [
+          480,
+          310
+        ],
+        "eye": [
+          -158.87130737304688,
+          -159.16908264160156,
+          -2.105587959289551
+        ],
+        "fov": 68,
+        "obj": "COL_Outer500_Surface_01_01",
+        "source": "west-ramp.blend",
+        "face": 1050,
+        "material": "Asphalt aggregate.001",
+        "hit_enu": [
+          -153.4829,
+          -161.8104,
+          -3.2401
+        ],
+        "normal": [
+          -0.175,
+          -0.1689,
+          0.97
+        ],
+        "normal_towards_eye": 0.2616
+      },
+      {
+        "pixel": [
+          525,
+          331
+        ],
+        "eye": [
+          -158.87130737304688,
+          -159.16908264160156,
+          -2.105587959289551
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "west-ramp.blend",
+        "face": 153,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -153.541,
+          -162.6315,
+          -3.6378
+        ],
+        "normal": [
+          -0.999,
+          -0.0449,
+          0.0
+        ],
+        "normal_towards_eye": 0.7906
+      },
+      {
+        "pixel": [
+          556,
+          339
+        ],
+        "eye": [
+          -158.87130737304688,
+          -159.16908264160156,
+          -2.105587959289551
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "west-ramp.blend",
+        "face": 153,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -153.5116,
+          -163.2852,
+          -3.8376
+        ],
+        "normal": [
+          -0.999,
+          -0.0449,
+          0.0
+        ],
+        "normal_towards_eye": 0.741
+      },
+      {
+        "pixel": [
+          583,
+          349
+        ],
+        "eye": [
+          -158.87130737304688,
+          -159.16908264160156,
+          -2.105587959289551
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "west-ramp.blend",
+        "face": 152,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -153.4841,
+          -163.8959,
+          -4.0799
+        ],
+        "normal": [
+          -0.999,
+          -0.045,
+          0.0
+        ],
+        "normal_towards_eye": 0.6953
+      },
+      {
+        "pixel": [
+          628,
+          363
+        ],
+        "eye": [
+          -158.87130737304688,
+          -159.16908264160156,
+          -2.105587959289551
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "west-ramp.blend",
+        "face": 151,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -153.4339,
+          -165.0113,
+          -4.4705
+        ],
+        "normal": [
+          -0.999,
+          -0.0449,
+          0.0
+        ],
+        "normal_towards_eye": 0.621
+      },
+      {
+        "pixel": [
+          700,
+          368
+        ],
+        "eye": [
+          -158.87130737304688,
+          -159.16908264160156,
+          -2.105587959289551
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "west-ramp.blend",
+        "face": 149,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -153.3399,
+          -167.1029,
+          -4.8285
+        ],
+        "normal": [
+          -0.999,
+          -0.0449,
+          0.0
+        ],
+        "normal_towards_eye": 0.5145
+      },
+      {
+        "pixel": [
+          749,
+          371
+        ],
+        "eye": [
+          -158.87130737304688,
+          -159.16908264160156,
+          -2.105587959289551
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "west-ramp.blend",
+        "face": 146,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -153.644,
+          -168.1458,
+          -4.9057
+        ],
+        "normal": [
+          -0.1145,
+          -0.9934,
+          0.0
+        ],
+        "normal_towards_eye": -0.7733
+      },
+      {
+        "pixel": [
+          776,
+          379
+        ],
+        "eye": [
+          -158.87130737304688,
+          -159.16908264160156,
+          -2.105587959289551
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_GradedSurfaces",
+        "source": "west-ramp.blend",
+        "face": 350,
+        "material": "West terrace warm aggregate with wear",
+        "hit_enu": [
+          -152.5502,
+          -171.1095,
+          -5.83
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "normal_towards_eye": 0.2658
+      },
+      {
+        "pixel": [
+          787,
+          395
+        ],
+        "eye": [
+          -158.87130737304688,
+          -159.16908264160156,
+          -2.105587959289551
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_GradedSurfaces",
+        "source": "west-ramp.blend",
+        "face": 351,
+        "material": "West terrace warm aggregate with wear",
+        "hit_enu": [
+          -153.292,
+          -170.1186,
+          -5.83
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "normal_towards_eye": 0.29
+      },
+      {
+        "pixel": [
+          600,
+          320
+        ],
+        "eye": [
+          -158.87130737304688,
+          -159.16908264160156,
+          -2.105587959289551
+        ],
+        "fov": 68,
+        "obj": "COL_Outer500_Surface_01_01",
+        "source": "west-ramp.blend",
+        "face": 1047,
+        "material": "Asphalt aggregate.001",
+        "hit_enu": [
+          -153.1879,
+          -164.5661,
+          -3.6544
+        ],
+        "normal": [
+          -0.1735,
+          -0.1606,
+          0.9716
+        ],
+        "normal_towards_eye": 0.2033
+      },
+      {
+        "pixel": [
+          416,
+          169
+        ],
+        "eye": [
+          -158.87130737304688,
+          -159.16908264160156,
+          -2.105587959289551
+        ],
+        "fov": 68,
+        "obj": "COL_Outer500_Retaining_and_boundaries",
+        "source": "park-plot57.blend",
+        "face": 3798,
+        "material": "Grey stone walkway.002",
+        "hit_enu": [
+          -147.7487,
+          -162.3472,
+          0.2303
+        ],
+        "normal": [
+          -0.663,
+          -0.7486,
+          0.0
+        ],
+        "normal_towards_eye": 0.4233
+      },
+      {
+        "pixel": [
+          522,
+          176
+        ],
+        "eye": [
+          -158.87130737304688,
+          -159.16908264160156,
+          -2.105587959289551
+        ],
+        "fov": 68
+      }
+    ],
+    "registered_blue.png": [
+      {
+        "pixel": [
+          592,
+          218
+        ],
+        "eye": [
+          -147.94000244140625,
+          -191.0,
+          -4.230000019073486
+        ],
+        "fov": 71,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "west-ramp.blend",
+        "face": 185,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -143.6773,
+          -175.6001,
+          -4.5652
+        ],
+        "normal": [
+          -0.2002,
+          -0.9798,
+          0.0
+        ],
+        "normal_towards_eye": 0.9974
+      },
+      {
+        "pixel": [
+          637,
+          218
+        ],
+        "eye": [
+          -147.94000244140625,
+          -191.0,
+          -4.230000019073486
+        ],
+        "fov": 71,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "west-ramp.blend",
+        "face": 184,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -142.058,
+          -175.931,
+          -4.5511
+        ],
+        "normal": [
+          -0.2002,
+          -0.9798,
+          0.0
+        ],
+        "normal_towards_eye": 0.9853
+      },
+      {
+        "pixel": [
+          669,
+          231
+        ],
+        "eye": [
+          -147.94000244140625,
+          -191.0,
+          -4.230000019073486
+        ],
+        "fov": 71,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "west-ramp.blend",
+        "face": 190,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -141.0769,
+          -176.4047,
+          -5.0405
+        ],
+        "normal": [
+          -0.9833,
+          -0.182,
+          0.0
+        ],
+        "normal_towards_eye": 0.5824
+      },
+      {
+        "pixel": [
+          686,
+          231
+        ],
+        "eye": [
+          -147.94000244140625,
+          -191.0,
+          -4.230000019073486
+        ],
+        "fov": 71,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "west-ramp.blend",
+        "face": 189,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -140.9195,
+          -177.2548,
+          -4.9873
+        ],
+        "normal": [
+          -0.9833,
+          -0.182,
+          0.0
+        ],
+        "normal_towards_eye": 0.6087
+      },
+      {
+        "pixel": [
+          705,
+          232
+        ],
+        "eye": [
+          -147.94000244140625,
+          -191.0,
+          -4.230000019073486
+        ],
+        "fov": 71,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "west-ramp.blend",
+        "face": 188,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -140.7659,
+          -178.085,
+          -4.9692
+        ],
+        "normal": [
+          -0.9833,
+          -0.182,
+          0.0
+        ],
+        "normal_towards_eye": 0.6358
+      },
+      {
+        "pixel": [
+          712,
+          229
+        ],
+        "eye": [
+          -147.94000244140625,
+          -191.0,
+          -4.230000019073486
+        ],
+        "fov": 71,
+        "obj": "COL_Park57_NorthDeckWallSeal",
+        "source": "park-plot57.blend",
+        "face": 2,
+        "material": "East park course stone and capped ends",
+        "hit_enu": [
+          -140.6782,
+          -178.2863,
+          -4.8557
+        ],
+        "normal": [
+          -0.1492,
+          -0.9888,
+          0.0
+        ],
+        "normal_towards_eye": 0.9318
+      },
+      {
+        "pixel": [
+          719,
+          228
+        ],
+        "eye": [
+          -147.94000244140625,
+          -191.0,
+          -4.230000019073486
+        ],
+        "fov": 71,
+        "obj": "COL_Park57_NorthDeckWallSeal",
+        "source": "park-plot57.blend",
+        "face": 2,
+        "material": "East park course stone and capped ends",
+        "hit_enu": [
+          -140.4922,
+          -178.3144,
+          -4.8194
+        ],
+        "normal": [
+          -0.1492,
+          -0.9888,
+          0.0
+        ],
+        "normal_towards_eye": 0.9275
+      },
+      {
+        "pixel": [
+          724,
+          229
+        ],
+        "eye": [
+          -147.94000244140625,
+          -191.0,
+          -4.230000019073486
+        ],
+        "fov": 71,
+        "obj": "COL_Park57_NorthDeckWallSeal",
+        "source": "park-plot57.blend",
+        "face": 2,
+        "material": "East park course stone and capped ends",
+        "hit_enu": [
+          -140.3569,
+          -178.3348,
+          -4.85
+        ],
+        "normal": [
+          -0.1492,
+          -0.9888,
+          0.0
+        ],
+        "normal_towards_eye": 0.9242
+      },
+      {
+        "pixel": [
+          737,
+          234
+        ],
+        "eye": [
+          -147.94000244140625,
+          -191.0,
+          -4.230000019073486
+        ],
+        "fov": 71,
+        "obj": "COL_Outer500_WestCourt_Retaining",
+        "source": "park-plot57.blend",
+        "face": 201,
+        "material": "Park grey green stone support",
+        "hit_enu": [
+          -140.0046,
+          -178.3881,
+          -5.0067
+        ],
+        "normal": [
+          -0.1495,
+          -0.9888,
+          0.0
+        ],
+        "normal_towards_eye": 0.9152
+      },
+      {
+        "pixel": [
+          763,
+          241
+        ],
+        "eye": [
+          -147.94000244140625,
+          -191.0,
+          -4.230000019073486
+        ],
+        "fov": 71,
+        "obj": "COL_Outer500_WestCourt_Retaining",
+        "source": "park-plot57.blend",
+        "face": 222,
+        "material": "Park grey green stone support",
+        "hit_enu": [
+          -139.3253,
+          -178.4908,
+          -5.2156
+        ],
+        "normal": [
+          -0.1494,
+          -0.9888,
+          0.0
+        ],
+        "normal_towards_eye": 0.8972
+      },
+      {
+        "pixel": [
+          706,
+          255
+        ],
+        "eye": [
+          -147.94000244140625,
+          -191.0,
+          -4.230000019073486
+        ],
+        "fov": 71,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "west-ramp.blend",
+        "face": 188,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -140.7455,
+          -178.1951,
+          -5.7388
+        ],
+        "normal": [
+          -0.9833,
+          -0.182,
+          0.0
+        ],
+        "normal_towards_eye": 0.637
+      },
+      {
+        "pixel": [
+          511,
+          134
+        ],
+        "eye": [
+          -147.94000244140625,
+          -191.0,
+          -4.230000019073486
+        ],
+        "fov": 71,
+        "obj": "COL_Outer500_Building_envelopes",
+        "source": "park-plot57.blend",
+        "face": 22595,
+        "material": "Concrete bands.001",
+        "hit_enu": [
+          -146.3303,
+          -161.4394,
+          2.0475
+        ],
+        "normal": [
+          -0.663,
+          -0.7486,
+          0.0
+        ],
+        "normal_towards_eye": 0.7665
+      }
+    ]
+  },
+  "current_pixel_hits": {
+    "inside_look_back.png": [
+      {
+        "pixel": [
+          320,
+          203
+        ],
+        "eye": [
+          -168.0465545654297,
+          -173.99444580078125,
+          -5.153730392456055
+        ],
+        "fov": 68,
+        "obj": "COL_Outer500_Surface_01_01",
+        "source": "west-ramp.blend",
+        "face": 1048,
+        "material": "Asphalt aggregate.001",
+        "hit_enu": [
+          -152.094,
+          -162.7461,
+          -3.1504
+        ],
+        "normal": [
+          -0.1734,
+          -0.1666,
+          0.9707
+        ],
+        "normal_towards_eye": 0.1373
+      },
+      {
+        "pixel": [
+          369,
+          228
+        ],
+        "eye": [
+          -168.0465545654297,
+          -173.99444580078125,
+          -5.153730392456055
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "park-plot57.blend",
+        "face": 148,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -153.3776,
+          -166.2645,
+          -4.5385
+        ],
+        "normal": [
+          -0.999,
+          -0.0449,
+          0.0
+        ],
+        "normal_towards_eye": 0.9041
+      },
+      {
+        "pixel": [
+          419,
+          229
+        ],
+        "eye": [
+          -168.0465545654297,
+          -173.99444580078125,
+          -5.153730392456055
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "park-plot57.blend",
+        "face": 145,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -152.4555,
+          -168.353,
+          -4.5763
+        ],
+        "normal": [
+          -0.9481,
+          -0.318,
+          0.0
+        ],
+        "normal_towards_eye": 0.9991
+      },
+      {
+        "pixel": [
+          440,
+          236
+        ],
+        "eye": [
+          -168.0465545654297,
+          -173.99444580078125,
+          -5.153730392456055
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "park-plot57.blend",
+        "face": 144,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -152.1469,
+          -169.2728,
+          -4.8996
+        ],
+        "normal": [
+          -0.9481,
+          -0.3181,
+          0.0
+        ],
+        "normal_towards_eye": 0.9993
+      },
+      {
+        "pixel": [
+          478,
+          240
+        ],
+        "eye": [
+          -168.0465545654297,
+          -173.99444580078125,
+          -5.153730392456055
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "park-plot57.blend",
+        "face": 162,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -151.588,
+          -170.9389,
+          -5.0844
+        ],
+        "normal": [
+          -0.9481,
+          -0.3181,
+          0.0
+        ],
+        "normal_towards_eye": 0.9902
+      },
+      {
+        "pixel": [
+          507,
+          234
+        ],
+        "eye": [
+          -168.0465545654297,
+          -173.99444580078125,
+          -5.153730392456055
+        ],
+        "fov": 68,
+        "obj": "COL_Outer500_Surface_01_01",
+        "source": "west-ramp.blend",
+        "face": 1039,
+        "material": "Grey stone walkway.001",
+        "hit_enu": [
+          -152.8785,
+          -172.3931,
+          -4.8421
+        ],
+        "normal": [
+          -0.1544,
+          -0.1416,
+          0.9778
+        ],
+        "normal_towards_eye": 0.1484
+      },
+      {
+        "pixel": [
+          548,
+          238
+        ],
+        "eye": [
+          -168.0465545654297,
+          -173.99444580078125,
+          -5.153730392456055
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "park-plot57.blend",
+        "face": 168,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -149.3955,
+          -174.0146,
+          -4.981
+        ],
+        "normal": [
+          -0.6139,
+          -0.7893,
+          0.0
+        ],
+        "normal_towards_eye": 0.6131
+      },
+      {
+        "pixel": [
+          566,
+          234
+        ],
+        "eye": [
+          -168.0465545654297,
+          -173.99444580078125,
+          -5.153730392456055
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "park-plot57.blend",
+        "face": 173,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -146.7855,
+          -174.965,
+          -4.7379
+        ],
+        "normal": [
+          -0.2002,
+          -0.9798,
+          0.0
+        ],
+        "normal_towards_eye": 0.1553
+      },
+      {
+        "pixel": [
+          580,
+          236
+        ],
+        "eye": [
+          -168.0465545654297,
+          -173.99444580078125,
+          -5.153730392456055
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "park-plot57.blend",
+        "face": 189,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -141.1273,
+          -176.1325,
+          -4.772
+        ],
+        "normal": [
+          -0.9833,
+          -0.182,
+          0.0
+        ],
+        "normal_towards_eye": 0.9657
+      },
+      {
+        "pixel": [
+          612,
+          242
+        ],
+        "eye": [
+          -168.0465545654297,
+          -173.99444580078125,
+          -5.153730392456055
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "park-plot57.blend",
+        "face": 187,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -140.7457,
+          -178.1941,
+          -5.188
+        ],
+        "normal": [
+          -0.9833,
+          -0.182,
+          0.0
+        ],
+        "normal_towards_eye": 0.9442
+      },
+      {
+        "pixel": [
+          638,
+          236
+        ],
+        "eye": [
+          -168.0465545654297,
+          -173.99444580078125,
+          -5.153730392456055
+        ],
+        "fov": 68,
+        "obj": "COL_Outer500_WestCourt_Retaining",
+        "source": "park-plot57.blend",
+        "face": 233,
+        "material": "Park grey green stone support",
+        "hit_enu": [
+          -137.087,
+          -180.545,
+          -4.7343
+        ],
+        "normal": [
+          -0.9888,
+          0.1494,
+          0.0
+        ],
+        "normal_towards_eye": 0.9982
+      },
+      {
+        "pixel": [
+          719,
+          273
+        ],
+        "eye": [
+          -168.0465545654297,
+          -173.99444580078125,
+          -5.153730392456055
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_GradedSurfaces",
+        "source": "west-ramp.blend",
+        "face": 244,
+        "material": "West playground light grey access flags",
+        "hit_enu": [
+          -156.8684,
+          -178.2148,
+          -5.9701
+        ],
+        "normal": [
+          -0.0748,
+          -0.0,
+          0.9972
+        ],
+        "normal_towards_eye": 0.1378
+      },
+      {
+        "pixel": [
+          804,
+          295
+        ],
+        "eye": [
+          -168.0465545654297,
+          -173.99444580078125,
+          -5.153730392456055
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "park-plot57.blend",
+        "face": 100,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -158.7279,
+          -178.9518,
+          -6.2426
+        ],
+        "normal": [
+          0.1871,
+          0.9823,
+          0.0
+        ],
+        "normal_towards_eye": 0.2946
+      },
+      {
+        "pixel": [
+          810,
+          306
+        ],
+        "eye": [
+          -168.0465545654297,
+          -173.99444580078125,
+          -5.153730392456055
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "park-plot57.blend",
+        "face": 102,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -158.9989,
+          -178.9002,
+          -6.4231
+        ],
+        "normal": [
+          0.1872,
+          0.9823,
+          0.0
+        ],
+        "normal_towards_eye": 0.3014
+      },
+      {
+        "pixel": [
+          578,
+          149
+        ],
+        "eye": [
+          -168.0465545654297,
+          -173.99444580078125,
+          -5.153730392456055
+        ],
+        "fov": 68
+      }
+    ],
+    "street_return.png": [
+      {
+        "pixel": [
+          445,
+          304
+        ],
+        "eye": [
+          -158.87130737304688,
+          -159.16908264160156,
+          -2.105587959289551
+        ],
+        "fov": 68,
+        "obj": "WestParkStreet_south_footway",
+        "source": "west-ramp.blend",
+        "face": 87,
+        "material": "West park local walking flags",
+        "hit_enu": [
+          -153.4521,
+          -161.2034,
+          -3.113
+        ],
+        "normal": [
+          -0.1756,
+          -0.1684,
+          0.97
+        ],
+        "normal_towards_eye": 0.27
+      },
+      {
+        "pixel": [
+          480,
+          310
+        ],
+        "eye": [
+          -158.87130737304688,
+          -159.16908264160156,
+          -2.105587959289551
+        ],
+        "fov": 68,
+        "obj": "COL_Outer500_Surface_01_01",
+        "source": "west-ramp.blend",
+        "face": 1050,
+        "material": "Asphalt aggregate.001",
+        "hit_enu": [
+          -153.4829,
+          -161.8104,
+          -3.2401
+        ],
+        "normal": [
+          -0.175,
+          -0.1689,
+          0.97
+        ],
+        "normal_towards_eye": 0.2616
+      },
+      {
+        "pixel": [
+          525,
+          331
+        ],
+        "eye": [
+          -158.87130737304688,
+          -159.16908264160156,
+          -2.105587959289551
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "park-plot57.blend",
+        "face": 152,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -153.541,
+          -162.6315,
+          -3.6378
+        ],
+        "normal": [
+          -0.999,
+          -0.0449,
+          0.0
+        ],
+        "normal_towards_eye": 0.7906
+      },
+      {
+        "pixel": [
+          556,
+          339
+        ],
+        "eye": [
+          -158.87130737304688,
+          -159.16908264160156,
+          -2.105587959289551
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "park-plot57.blend",
+        "face": 152,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -153.5116,
+          -163.2852,
+          -3.8376
+        ],
+        "normal": [
+          -0.999,
+          -0.0449,
+          0.0
+        ],
+        "normal_towards_eye": 0.741
+      },
+      {
+        "pixel": [
+          583,
+          349
+        ],
+        "eye": [
+          -158.87130737304688,
+          -159.16908264160156,
+          -2.105587959289551
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "park-plot57.blend",
+        "face": 151,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -153.4841,
+          -163.8959,
+          -4.0799
+        ],
+        "normal": [
+          -0.999,
+          -0.045,
+          0.0
+        ],
+        "normal_towards_eye": 0.6953
+      },
+      {
+        "pixel": [
+          628,
+          363
+        ],
+        "eye": [
+          -158.87130737304688,
+          -159.16908264160156,
+          -2.105587959289551
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "park-plot57.blend",
+        "face": 150,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -153.4339,
+          -165.0113,
+          -4.4705
+        ],
+        "normal": [
+          -0.999,
+          -0.0449,
+          0.0
+        ],
+        "normal_towards_eye": 0.621
+      },
+      {
+        "pixel": [
+          700,
+          368
+        ],
+        "eye": [
+          -158.87130737304688,
+          -159.16908264160156,
+          -2.105587959289551
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "park-plot57.blend",
+        "face": 148,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -153.3399,
+          -167.1029,
+          -4.8285
+        ],
+        "normal": [
+          -0.999,
+          -0.0449,
+          0.0
+        ],
+        "normal_towards_eye": 0.5145
+      },
+      {
+        "pixel": [
+          749,
+          371
+        ],
+        "eye": [
+          -158.87130737304688,
+          -159.16908264160156,
+          -2.105587959289551
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_GradedSurfaces",
+        "source": "west-ramp.blend",
+        "face": 379,
+        "material": "West terrace warm aggregate with wear",
+        "hit_enu": [
+          -151.9185,
+          -171.1091,
+          -5.83
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "normal_towards_eye": 0.2603
+      },
+      {
+        "pixel": [
+          776,
+          379
+        ],
+        "eye": [
+          -158.87130737304688,
+          -159.16908264160156,
+          -2.105587959289551
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_GradedSurfaces",
+        "source": "west-ramp.blend",
+        "face": 350,
+        "material": "West terrace warm aggregate with wear",
+        "hit_enu": [
+          -152.5502,
+          -171.1095,
+          -5.83
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "normal_towards_eye": 0.2658
+      },
+      {
+        "pixel": [
+          787,
+          395
+        ],
+        "eye": [
+          -158.87130737304688,
+          -159.16908264160156,
+          -2.105587959289551
+        ],
+        "fov": 68,
+        "obj": "COL_WestPlayground_GradedSurfaces",
+        "source": "west-ramp.blend",
+        "face": 351,
+        "material": "West terrace warm aggregate with wear",
+        "hit_enu": [
+          -153.292,
+          -170.1186,
+          -5.83
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "normal_towards_eye": 0.29
+      },
+      {
+        "pixel": [
+          600,
+          320
+        ],
+        "eye": [
+          -158.87130737304688,
+          -159.16908264160156,
+          -2.105587959289551
+        ],
+        "fov": 68,
+        "obj": "COL_Outer500_Surface_01_01",
+        "source": "west-ramp.blend",
+        "face": 1047,
+        "material": "Asphalt aggregate.001",
+        "hit_enu": [
+          -153.1879,
+          -164.5661,
+          -3.6544
+        ],
+        "normal": [
+          -0.1735,
+          -0.1606,
+          0.9716
+        ],
+        "normal_towards_eye": 0.2033
+      },
+      {
+        "pixel": [
+          416,
+          169
+        ],
+        "eye": [
+          -158.87130737304688,
+          -159.16908264160156,
+          -2.105587959289551
+        ],
+        "fov": 68,
+        "obj": "COL_Outer500_Retaining_and_boundaries",
+        "source": "park-plot57.blend",
+        "face": 3798,
+        "material": "Grey stone walkway.002",
+        "hit_enu": [
+          -147.7487,
+          -162.3472,
+          0.2303
+        ],
+        "normal": [
+          -0.663,
+          -0.7486,
+          0.0
+        ],
+        "normal_towards_eye": 0.4233
+      },
+      {
+        "pixel": [
+          522,
+          176
+        ],
+        "eye": [
+          -158.87130737304688,
+          -159.16908264160156,
+          -2.105587959289551
+        ],
+        "fov": 68
+      }
+    ],
+    "registered_blue.png": [
+      {
+        "pixel": [
+          592,
+          218
+        ],
+        "eye": [
+          -147.94000244140625,
+          -191.0,
+          -4.230000019073486
+        ],
+        "fov": 71,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "park-plot57.blend",
+        "face": 184,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -143.6773,
+          -175.6001,
+          -4.5652
+        ],
+        "normal": [
+          -0.2002,
+          -0.9798,
+          0.0
+        ],
+        "normal_towards_eye": 0.9974
+      },
+      {
+        "pixel": [
+          637,
+          218
+        ],
+        "eye": [
+          -147.94000244140625,
+          -191.0,
+          -4.230000019073486
+        ],
+        "fov": 71,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "park-plot57.blend",
+        "face": 183,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -142.058,
+          -175.931,
+          -4.5511
+        ],
+        "normal": [
+          -0.2002,
+          -0.9798,
+          0.0
+        ],
+        "normal_towards_eye": 0.9853
+      },
+      {
+        "pixel": [
+          669,
+          231
+        ],
+        "eye": [
+          -147.94000244140625,
+          -191.0,
+          -4.230000019073486
+        ],
+        "fov": 71,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "park-plot57.blend",
+        "face": 189,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -141.0769,
+          -176.4047,
+          -5.0405
+        ],
+        "normal": [
+          -0.9833,
+          -0.182,
+          0.0
+        ],
+        "normal_towards_eye": 0.5824
+      },
+      {
+        "pixel": [
+          686,
+          231
+        ],
+        "eye": [
+          -147.94000244140625,
+          -191.0,
+          -4.230000019073486
+        ],
+        "fov": 71,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "park-plot57.blend",
+        "face": 188,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -140.9195,
+          -177.2548,
+          -4.9873
+        ],
+        "normal": [
+          -0.9833,
+          -0.182,
+          0.0
+        ],
+        "normal_towards_eye": 0.6087
+      },
+      {
+        "pixel": [
+          705,
+          232
+        ],
+        "eye": [
+          -147.94000244140625,
+          -191.0,
+          -4.230000019073486
+        ],
+        "fov": 71,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "park-plot57.blend",
+        "face": 187,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -140.7659,
+          -178.085,
+          -4.9692
+        ],
+        "normal": [
+          -0.9833,
+          -0.182,
+          0.0
+        ],
+        "normal_towards_eye": 0.6358
+      },
+      {
+        "pixel": [
+          712,
+          229
+        ],
+        "eye": [
+          -147.94000244140625,
+          -191.0,
+          -4.230000019073486
+        ],
+        "fov": 71,
+        "obj": "COL_Park57_NorthDeckWallSeal",
+        "source": "park-plot57.blend",
+        "face": 2,
+        "material": "East park course stone and capped ends",
+        "hit_enu": [
+          -140.6782,
+          -178.2863,
+          -4.8557
+        ],
+        "normal": [
+          -0.1492,
+          -0.9888,
+          0.0
+        ],
+        "normal_towards_eye": 0.9318
+      },
+      {
+        "pixel": [
+          719,
+          228
+        ],
+        "eye": [
+          -147.94000244140625,
+          -191.0,
+          -4.230000019073486
+        ],
+        "fov": 71,
+        "obj": "COL_Park57_NorthDeckWallSeal",
+        "source": "park-plot57.blend",
+        "face": 2,
+        "material": "East park course stone and capped ends",
+        "hit_enu": [
+          -140.4922,
+          -178.3144,
+          -4.8194
+        ],
+        "normal": [
+          -0.1492,
+          -0.9888,
+          0.0
+        ],
+        "normal_towards_eye": 0.9275
+      },
+      {
+        "pixel": [
+          724,
+          229
+        ],
+        "eye": [
+          -147.94000244140625,
+          -191.0,
+          -4.230000019073486
+        ],
+        "fov": 71,
+        "obj": "COL_Park57_NorthDeckWallSeal",
+        "source": "park-plot57.blend",
+        "face": 2,
+        "material": "East park course stone and capped ends",
+        "hit_enu": [
+          -140.3569,
+          -178.3348,
+          -4.85
+        ],
+        "normal": [
+          -0.1492,
+          -0.9888,
+          0.0
+        ],
+        "normal_towards_eye": 0.9242
+      },
+      {
+        "pixel": [
+          737,
+          234
+        ],
+        "eye": [
+          -147.94000244140625,
+          -191.0,
+          -4.230000019073486
+        ],
+        "fov": 71,
+        "obj": "COL_Outer500_WestCourt_Retaining",
+        "source": "park-plot57.blend",
+        "face": 201,
+        "material": "Park grey green stone support",
+        "hit_enu": [
+          -140.0046,
+          -178.3881,
+          -5.0067
+        ],
+        "normal": [
+          -0.1495,
+          -0.9888,
+          0.0
+        ],
+        "normal_towards_eye": 0.9152
+      },
+      {
+        "pixel": [
+          763,
+          241
+        ],
+        "eye": [
+          -147.94000244140625,
+          -191.0,
+          -4.230000019073486
+        ],
+        "fov": 71,
+        "obj": "COL_Outer500_WestCourt_Retaining",
+        "source": "park-plot57.blend",
+        "face": 222,
+        "material": "Park grey green stone support",
+        "hit_enu": [
+          -139.3253,
+          -178.4908,
+          -5.2156
+        ],
+        "normal": [
+          -0.1494,
+          -0.9888,
+          0.0
+        ],
+        "normal_towards_eye": 0.8972
+      },
+      {
+        "pixel": [
+          706,
+          255
+        ],
+        "eye": [
+          -147.94000244140625,
+          -191.0,
+          -4.230000019073486
+        ],
+        "fov": 71,
+        "obj": "COL_WestPlayground_PerimeterSupport",
+        "source": "park-plot57.blend",
+        "face": 187,
+        "material": "West playground stepped retaining stone",
+        "hit_enu": [
+          -140.7455,
+          -178.1951,
+          -5.7388
+        ],
+        "normal": [
+          -0.9833,
+          -0.182,
+          0.0
+        ],
+        "normal_towards_eye": 0.637
+      },
+      {
+        "pixel": [
+          511,
+          134
+        ],
+        "eye": [
+          -147.94000244140625,
+          -191.0,
+          -4.230000019073486
+        ],
+        "fov": 71,
+        "obj": "COL_Outer500_Building_envelopes",
+        "source": "park-plot57.blend",
+        "face": 22595,
+        "material": "Concrete bands.001",
+        "hit_enu": [
+          -146.3303,
+          -161.4394,
+          2.0475
+        ],
+        "normal": [
+          -0.663,
+          -0.7486,
+          0.0
+        ],
+        "normal_towards_eye": 0.7665
+      }
+    ]
+  }
+}

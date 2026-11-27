@@ -6,6 +6,7 @@ import sys
 import bmesh
 import bpy
 from mathutils import Vector
+from mathutils.bvhtree import BVHTree
 
 HERE=Path(__file__).resolve().parent
 SCENE=HERE.parents[2]
@@ -21,6 +22,9 @@ TILES=("COL_Outer500_Surface_01_01","COL_Outer500_Surface_02_01")
 WALLS=("COL_WestPlayground_PerimeterSupport","COL_Outer500_WestCourt_Retaining")
 CAP_WEST=Vector((-140.7300,-178.2785,-4.1415))
 CAP_EAST=Vector((-140.3377,-178.3377,-4.1063))
+ENTRY_WEST=Vector((-154.0,-168.1048))
+ENTRY_EAST=Vector((-152.48,-168.28))
+ENTRY_CORNER=Vector((-153.2911,-168.1865))
 PATH_END=[(-132.92,-183.14),(-129.33,-181.43),(-125.62,-179.84),(-121.90,-177.82)]
 CROSS=[(-140.17,-183.70),(-137.83,-183.49),(-135.14,-183.22),*PATH_END]
 
@@ -59,6 +63,64 @@ def remove_balanced_opening(obj, edges, finish):
     bm.to_mesh(obj.data)
     bm.free()
     return (retained.save() if retained.faces else None),removed
+
+
+def finish_street_entry(wall, grade):
+    """Keep the retaining line along high ground and close the low paving joint."""
+    def footprint(face):
+        return [wall.matrix_world @ wall.data.vertices[i].co for i in face.vertices]
+
+    spans = []
+    for face in wall.data.polygons:
+        points = footprint(face)
+        if len(points) == 4 and all(
+            min((p.xy - end).length for end in (ENTRY_WEST, ENTRY_EAST)) < .001 for p in points
+        ):
+            spans.append(face)
+    assert len(spans) == 1, [face.index for face in spans]
+    face = spans[0]
+    source_index = face.index
+    material = wall.data.materials[face.material_index]
+    owned_span, _ = clip_polygon(footprint(face), lambda p: p.x - ENTRY_CORNER.x)
+    assert len(owned_span) == 4
+    corner = sorted(owned_span, key=lambda p: p.x)[0].xy
+    assert (corner - ENTRY_CORNER).length < .001
+
+    paving = BVHTree.FromPolygons(
+        [grade.matrix_world @ v.co for v in grade.data.vertices],
+        [list(p.vertices) for p in grade.data.polygons],
+    )
+    across = Vector((ENTRY_EAST.y - ENTRY_WEST.y, ENTRY_WEST.x - ENTRY_EAST.x)).normalized()
+    toward_west = (ENTRY_WEST - corner).normalized()
+
+    def floor(point):
+        pos, normal, _, _ = paving.ray_cast(Vector((point.x, point.y, 3)), Vector((0, 0, -1)))
+        assert pos is not None and normal.z > .85, list(point)
+        return pos.z
+
+    section = []
+    for i in range(5):
+        point = ENTRY_WEST.lerp(corner, i / 4)
+        # Stay inside the west branch at its junction with the full-height wall.
+        probe = point + toward_west * .003 if i == 4 else point
+        lower, upper = floor(probe + across * .003), floor(probe - across * .003)
+        assert .005 < upper - lower < .15, (list(probe), upper, lower)
+        section.append((point, lower, upper))
+
+    replacement = court.Mesh()
+    replacement.face(owned_span, 0, True)
+    for (a, low_a, high_a), (b, low_b, high_b) in zip(section, section[1:]):
+        court.retaining(replacement, a, b, low_a, low_b, high_a, high_b, 0)
+    bm = bmesh.new()
+    bm.from_mesh(wall.data)
+    bm.faces.ensure_lookup_table()
+    bmesh.ops.delete(bm, geom=[bm.faces[source_index]], context='FACES_ONLY')
+    bm.to_mesh(wall.data)
+    bm.free()
+    return replacement.make("COL_Park57_StreetEntryReturn", [material]), {
+        "source_face": source_index,
+        "section_east_north_lower_upper": [[*point, lower, upper] for point, lower, upper in section],
+    }
 
 
 def build():
@@ -120,6 +182,12 @@ def build():
         if remainder is not None:
             parts.append(remainder)
     assert cuts,cuts
+    entry_wall = old_wall[0]
+    entry_grade = load_current("COL_WestPlayground_GradedSurfaces", donors["COL_WestPlayground_GradedSurfaces"])
+    entry_return, entry_section = finish_street_entry(entry_wall, entry_grade)
+    if entry_wall not in replacements:
+        replacements.append(entry_wall)
+    parts.append(entry_return)
 
     seam=Mesh("COL_Park57_NorthDeckWallSeal")
     a,b=CAP_WEST,CAP_EAST
@@ -164,6 +232,7 @@ def build():
               "route_east_north":route,"destination_y":land(target),"park_way":1499726225,
               "street_way":59146737,"grade_new_m2":area["east_walk"],
               "opening_footprint_east_north":[list(p) for p in ring],"old_wall_opening_faces":cuts,
+              "street_entry_return": entry_section,
               "seal_from_east_north_up":list(a),"seal_to_east_north_up":list(b),
               "defect_cameras":read(HERE/"field-controls.json")["defect_cameras"],
               "plot57_view":{"eye_east_north_up":[-136.15,-190.65,-4.06],

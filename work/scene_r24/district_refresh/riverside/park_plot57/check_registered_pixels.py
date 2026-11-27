@@ -3,6 +3,7 @@ import json
 from math import radians,tan
 from pathlib import Path
 import re
+import sys
 import bpy
 from mathutils import Vector
 here=Path(__file__).resolve().parent
@@ -18,6 +19,19 @@ samples={
 }
 result={}
 scene=bpy.context.scene
+if '--before-street-entry-return' in sys.argv:
+    wall_name='COL_WestPlayground_PerimeterSupport'
+    wall=scene.objects[wall_name]
+    entry=scene.objects['COL_Park57_StreetEntryReturn']
+    assert wall.library.filepath.endswith('/park-plot57.blend')
+    collections=list(wall.users_collection)
+    for collection in collections:
+        collection.objects.unlink(wall)
+        collection.objects.unlink(entry)
+    with bpy.data.libraries.load(str(here.parent/'west_ramp/west-ramp.blend'),link=True) as (_, data):
+        data.objects=[wall_name]
+    for collection in collections:
+        collection.objects.link(data.objects[0])
 depsgraph=bpy.context.evaluated_depsgraph_get()
 for label,pixels in samples.items():
     f=frames[label]
@@ -42,7 +56,8 @@ for label,pixels in samples.items():
             material=obj.data.materials[poly.material_index] if obj.data.materials else None
             row.update(obj=obj.name,source=Path(obj.library.filepath).name if obj.library else None,
                        face=index,material=material.name if material else None,
-                       hit_enu=[round(k,4) for k in position],normal=[round(k,4) for k in normal])
+                       hit_enu=[round(k,4) for k in position],normal=[round(k,4) for k in normal],
+                       normal_towards_eye=round(-normal.dot(direction),4))
         results.append(row)
     result[label]=results
 print('CQ_PARK_PIXELS',json.dumps(result))

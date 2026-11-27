@@ -7,7 +7,8 @@
     "Outer500_Facades_and_storefronts",
     "Outer500_Street_furniture",
     "COL_Outer500_Surface_02_01",
-    "COL_Outer500_WestCourt_Retaining"
+    "COL_Outer500_WestCourt_Retaining",
+    "COL_WestPlayground_PerimeterSupport"
   ],
   "retired_objects": [
     "COL_Outer500_Frame_57",
@@ -27,6 +28,7 @@
     "COL_Park57_EastWalkGrade",
     "COL_Park57_EastWalkFlank",
     "COL_Outer500_WestCourt_Retaining_Abutment",
+    "COL_Park57_StreetEntryReturn",
     "COL_Park57_NorthDeckWallSeal",
     "Park57_UpperPath",
     "Park57_UpperGreenShoulder",
@@ -142,6 +144,41 @@
       234,
       235,
       236
+    ]
+  },
+  "street_entry_return": {
+    "source_face": 146,
+    "section_east_north_lower_upper": [
+      [
+        -154.0,
+        -168.10479736328125,
+        -5.829999923706055,
+        -5.790043830871582
+      ],
+      [
+        -153.82278442382812,
+        -168.12521362304688,
+        -5.829999923706055,
+        -5.7950334548950195
+      ],
+      [
+        -153.6455535888672,
+        -168.14564514160156,
+        -5.830000877380371,
+        -5.800026893615723
+      ],
+      [
+        -153.46832275390625,
+        -168.16607666015625,
+        -5.829999923706055,
+        -5.805021286010742
+      ],
+      [
+        -153.29110717773438,
+        -168.18649291992188,
+        -5.829999923706055,
+        -5.8098907470703125
+      ]
     ]
   },
   "seal_from_east_north_up": [
