@@ -1,0 +1,238 @@
+{
+  "parent": "52031ffe8cb16fc7992ef14de3c6d1464999f411",
+  "camera_baseline": "c3f79f4eba49a262e7a36a53082a27d39786a2ec",
+  "baseline_images": [
+    "../street-after.png",
+    "../hall-look-back.png"
+  ],
+  "registered_same_camera_frames": [
+    "street.png",
+    "inside_look_back.png"
+  ],
+  "scene": "res://first_shift.tscn",
+  "engine": "4.6.3-stable (official)",
+  "renderer": "gl_compatibility",
+  "device": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "native_viewport": [
+    860,
+    484
+  ],
+  "software_renderer": true,
+  "qa_sun_shadows": false,
+  "source_blender": "4.3.2",
+  "assets": {
+    "glb_sha256": "a23f881d0e9206b40fedc8f262cfdb132194e59825e4728b39800471b684e175",
+    "blend_sha256": "8462c71f5229e8c8fbc97488fe21dbca042e08d56314566410685cf1365c480f"
+  },
+  "source_reopened": {
+    "COL_Huihuigou_MarketFurnishings": {
+      "dimensions_m": [
+        8.595001220703125,
+        11.80999755859375,
+        2.3522911071777344
+      ],
+      "polygons": 4487,
+      "materials": [
+        "Market aged charcoal rack angles",
+        "Market scuffed varnished wood",
+        "Market warm white acrylic",
+        "Market tea-stained ivory enamel",
+        "Market graphite speaker and case grilles",
+        "Market switch indicators",
+        "Market brushed and worn aluminium",
+        "Market cable and shadow recess",
+        "Market curved washer porthole glass",
+        "Market oxidised painted steel",
+        "Market leaded CRT glass",
+        "Market CRT curved highlight",
+        "Market smoked brown TV shell",
+        "Market amber smoked radio indicator",
+        "Market sage enamel fan blades",
+        "Market counter clear glass"
+      ]
+    },
+    "Huihuigou_TerrazzoPaving": {
+      "dimensions_m": [
+        10.239990234375,
+        12.779998779296875,
+        0.0
+      ],
+      "polygons": 154,
+      "materials": [
+        "Market terrazzo panel finish 1",
+        "Market terrazzo panel finish 0",
+        "Market terrazzo panel finish 3",
+        "Market terrazzo panel finish 2"
+      ]
+    },
+    "Huihuigou_WainscotAndShutters": {
+      "dimensions_m": [
+        9.3800048828125,
+        12.613006591796875,
+        2.658000946044922
+      ],
+      "polygons": 429,
+      "materials": [
+        "Market green-grey worn lower wall",
+        "Market scrubbed olive skirting cap",
+        "Market wall exposed plaster and grout",
+        "Market aged charcoal rack angles",
+        "Market oxidised painted steel",
+        "Market brushed and worn aluminium"
+      ]
+    },
+    "Huihuigou_SuspendedDuctsAndConduit": {
+      "dimensions_m": [
+        8.934982299804688,
+        6.4810028076171875,
+        0.5400009155273438
+      ],
+      "polygons": 420,
+      "materials": [
+        "Market old green-grey service conduit",
+        "Market aged charcoal rack angles",
+        "Market brushed and worn aluminium",
+        "Market frosted strip light"
+      ]
+    },
+    "Huihuigou_EntryShoulderAndNosing": {
+      "dimensions_m": [
+        6.94000244140625,
+        4.279998779296875,
+        1.5247116088867188
+      ],
+      "polygons": 171,
+      "materials": [
+        "Market grey stair nose water wear",
+        "Market entry grey cut stone coping",
+        "Market shoulder narrow transverse setts",
+        "Market narrow dark drainage joint",
+        "Market worn drain and door track"
+      ]
+    }
+  },
+  "door_stair_rises": 6,
+  "side_stair_rises": 13,
+  "stock_inventory": {
+    "wall_rack": 4,
+    "washer": 3,
+    "air_conditioner": 5,
+    "television": 6,
+    "audio_receiver": 7,
+    "fan": 4,
+    "dvd_player": 6,
+    "case_counter": 3
+  },
+  "imported_uv": [
+    {
+      "bbox_m": "(10.23999, 0.000011, 12.78)",
+      "materials": [
+        {
+          "albedo_size": "(256.0, 256.0)",
+          "name": "Market terrazzo panel finish 1",
+          "normal_enabled": false,
+          "pass": true,
+          "repeat_m": 0.949930906295776,
+          "uv_count": 72,
+          "uv_edge_samples": 72,
+          "vertex_count": 72
+        },
+        {
+          "albedo_size": "(256.0, 256.0)",
+          "name": "Market terrazzo panel finish 0",
+          "normal_enabled": false,
+          "pass": true,
+          "repeat_m": 0.949930906295776,
+          "uv_count": 472,
+          "uv_edge_samples": 472,
+          "vertex_count": 472
+        },
+        {
+          "albedo_size": "(256.0, 256.0)",
+          "name": "Market terrazzo panel finish 3",
+          "normal_enabled": false,
+          "pass": true,
+          "repeat_m": 0.949930906295776,
+          "uv_count": 36,
+          "uv_edge_samples": 36,
+          "vertex_count": 36
+        },
+        {
+          "albedo_size": "(256.0, 256.0)",
+          "name": "Market terrazzo panel finish 2",
+          "normal_enabled": false,
+          "pass": true,
+          "repeat_m": 0.949930906295776,
+          "uv_count": 36,
+          "uv_edge_samples": 36,
+          "vertex_count": 36
+        }
+      ]
+    },
+    {
+      "bbox_m": "(9.380005, 2.658001, 12.61301)",
+      "materials": [
+        {
+          "albedo_size": "(2048.0, 2048.0)",
+          "name": "Market wall exposed plaster and grout",
+          "normal_enabled": true,
+          "pass": true,
+          "repeat_m": 1.44106817245483,
+          "uv_count": 12,
+          "uv_edge_samples": 12,
+          "vertex_count": 12
+        }
+      ]
+    }
+  ],
+  "routes": {
+    "main_native": [
+      {
+        "distance_m": 23.2080074511468,
+        "end": "(231.4663, 53.31384, -195.9058)",
+        "goals": 7,
+        "max_frame_displacement_m": 0.374395132064819,
+        "name": "zhongxing_collectibles_out",
+        "pass": true,
+        "reached": 7,
+        "stall_contacts": []
+      },
+      {
+        "distance_m": 23.2046062760055,
+        "end": "(216.5499, 50.87316, -184.4382)",
+        "goals": 7,
+        "max_frame_displacement_m": 0.295301079750061,
+        "name": "zhongxing_collectibles_back",
+        "pass": true,
+        "reached": 7,
+        "stall_contacts": []
+      }
+    ],
+    "side_headless": [
+      {
+        "distance_m": 26.3874143622816,
+        "end": "(227.2199, 51.5573, -184.0221)",
+        "goals": 9,
+        "max_frame_displacement_m": 0.374395132064819,
+        "name": "zhongxing_collectibles_side_out",
+        "pass": true,
+        "reached": 9,
+        "stall_contacts": []
+      },
+      {
+        "distance_m": 26.51869700104,
+        "end": "(216.5593, 50.87931, -184.4762)",
+        "goals": 9,
+        "max_frame_displacement_m": 0.180749475955963,
+        "name": "zhongxing_collectibles_side_back",
+        "pass": true,
+        "reached": 9,
+        "stall_contacts": []
+      }
+    ]
+  },
+  "rejected_first_art_preview": {
+    "reason": "tile cloud waves were repetitive and part of the room remained empty in the doorway framing",
+    "preview_path": "/workspace/work/runtime/district-refresh/new-priority/market/art-review/native-initial/doorway_stock_eye.png"
+  }
+}

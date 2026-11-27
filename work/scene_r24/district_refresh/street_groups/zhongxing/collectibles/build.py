@@ -1,6 +1,6 @@
 """Build the Zhongxing Road market frontage and playable high-side hall."""
 import json
-from math import ceil, cos, sin, tau
+from math import ceil
 from pathlib import Path
 import sys
 
@@ -9,9 +9,10 @@ from mathutils import Vector
 
 HERE = Path(__file__).resolve().parent
 GROUPS = HERE.parents[1]
-sys.path[:0] = [str(GROUPS), str(GROUPS / "guoco")]
+sys.path[:0] = [str(HERE), str(GROUPS), str(GROUPS / "guoco")]
 from factory import Mesh, material, terrain
 from factory_glazing import glaze_material
+from interior_art import build as build_interior_art, entrance_finish
 from refresh_geometry import ASSETS, latest_donors, read, strip_plots
 
 FRONT, LOWER, UPPER = 223.45, 173.15, 214.0
@@ -58,7 +59,6 @@ def build():
     detail = Mesh("Huihuigou_Recessed_Glazing_Louvers_and_Plinths")
     hall = Mesh("COL_Huihuigou_HighStreetHall")
     steps = Mesh("COL_Huihuigou_StreetSteps")
-    displays = Mesh("COL_Huihuigou_MarketFurnishings")
     tower = Mesh("Huihuigou_Registered_Tower_Outlines")
     balconies = Mesh("Huihuigou_Recessed_Balconies")
     bands = [LOWER,176.75,180.45,184.05,188.00,ENTRY_LOW,ENTRY_HIGH,199.8,203.45,207.2,210.8,UPPER]
@@ -154,32 +154,8 @@ def build():
         ring=[(225.65,south),(229.15,south),(229.15,north),(225.65,north)]
         detail.face([(e,n,grade(e,n)+.021) for e,n in ring],inside)
 
-    shelf = glaze_material("Huihuigou enamel shelves and old appliance shells", (.47,.48,.44), .72)
-    old_blue = glaze_material("Huihuigou old enamel blue", (.18,.26,.31), .62)
-    timber = material("Huihuigou plywood display stands", (.64,.54,.40), "wood_table_worn_diff_2k.jpg")
-    for index,x in enumerate((225.41,226.65,227.91,229.35,230.66,232.0)):
-        y=198.82+(.18 if index%2 else 0)
-        box(displays,x,x+.93,y,y+.78,FLOOR,FLOOR+.27,timber)
-        box(displays,x+.08,x+.84,y+.11,y+.69,FLOOR+.26,FLOOR+.96+.09*(index%3),shelf if index%2 else old_blue)
-        box(detail,x+.15,x+.77,y+.085,y+.115,FLOOR+.48,FLOOR+.78,glass if index%3 else steel)
-        box(detail,x+.20,x+.66,y+.078,y+.111,FLOOR+.88,FLOOR+.93,trim)
-    for x,y in ((225.82,189.12),(230.19,189.22),(232.11,190.60)):
-        box(displays,x,x+1.02,y,y+.59,FLOOR,FLOOR+.93,timber)
-        box(detail,x-.025,x+1.04,y-.025,y+.61,FLOOR+.88,FLOOR+.99,steel)
-        box(detail,x+.04,x+.98,y+.05,y+.53,FLOOR+.99,FLOOR+1.013,glass)
-    # Rear stock sits outside the continuous passage to the side stair.
-    for i,x in enumerate((229.29,230.15,231.03,231.93,232.80)):
-        box(displays,x,x+.72,188.01,188.67,FLOOR,FLOOR+.95,shelf if i%2 else old_blue)
-        box(detail,x+.055,x+.665,188.666,188.695,FLOOR+.75,FLOOR+.865,steel)
-        middle = x+.355
-        ring = [(middle+.247*cos(tau*k/20),188.71,FLOOR+.44+.247*sin(tau*k/20)) for k in range(20)]
-        detail.face(ring,trim)
-        detail.face([(middle+(x0-middle)*.79,188.716,FLOOR+.44+(z-FLOOR-.44)*.79)
-                     for x0,_,z in ring],glass)
-    box(detail,229.23,233.54,188.03,188.80,FLOOR+1.40,FLOOR+1.46,steel)
-    for x in (229.44,230.50,231.87,232.75):
-        box(detail,x,x+.51,188.12,188.67,FLOOR+1.46,FLOOR+1.88,old_blue)
-        box(detail,x+.045,x+.465,188.669,188.691,FLOOR+1.53,FLOOR+1.81,glass)
+    interior_art, inventory = build_interior_art(FLOOR)
+    entry_art = entrance_finish(grade,entry_start,entry_end,step_count,step_floor,FLOOR)
 
     registered = read(GROUPS/"guoco/field-registration.json")["ways"]
     tower_finish = material("Huihuigou faded pale tower elevations", (.78,.80,.76), "plastered_wall_04_diff_2k.jpg")
@@ -224,7 +200,7 @@ def build():
     replacement, retired, counts = strip_plots(
         read(HERE/"ownership.json"), (8,9),layout,latest_donors(donor_groups)
     )
-    sites = [mesh.save() for mesh in (facade,detail,hall,steps,displays,tower,balconies)]
+    sites = [mesh.save() for mesh in (facade,detail,hall,steps,tower,balconies)] + [*interior_art,entry_art]
     # Text is editable in the production source. The normal scene installs its matching vector label.
     note = bpy.data.objects.new("Huihuigou_Sign_Anchor",None)
     note.location=(FRONT-.23,193.62,58.46)
@@ -250,6 +226,11 @@ def build():
         "side_landing_floor_m":side_floor+(FLOOR-side_floor)/side_steps,
         "street_eye_target_east_north_up":[FRONT,193.62,55.83],
         "return_eye_target_east_north_up":[219.6,192.7,54.10],
+        "interior_art":{"inventory":inventory,"floor_module_m":.95,
+            "inside_eye_east_north_up":[225.81,193.34,55.02],
+            "inside_target_east_north_up":[230.84,189.74,54.58],
+            "threshold_eye_east_north_up":[218.42,191.48,53.05],
+            "threshold_target_east_north_up":[222.47,193.24,53.15]},
         "sign_east_north_up":[FRONT-.238,193.62,58.46],
         "parking_access_outside_east_north":[287.652,167.043],"parking_lot_outside_east_north":[285.811,194.422],
     }

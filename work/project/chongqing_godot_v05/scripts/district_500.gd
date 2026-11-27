@@ -271,12 +271,12 @@ static func add_collectibles_details(district: Node3D, plan: Dictionary) -> void
 	sign.rotation.y = -PI / 2.0
 	sign.position = enu(plan.sign_east_north_up)
 	district.add_child(sign)
-	for north: float in [189.75, 197.68]:
+	for enu_position: Array in [[227.0,193.15,56.22],[231.0,189.87,56.05],[230.0,197.56,56.12]]:
 		var light := OmniLight3D.new()
-		light.position = Vector3(228.3, 55.72, -north)
-		light.light_color = Color("#f1ecd5")
-		light.light_energy = .78
-		light.omni_range = 8.6
+		light.position = enu(enu_position)
+		light.light_color = Color("#edeee1")
+		light.light_energy = .91
+		light.omni_range = 6.2
 		district.add_child(light)
 
 static func place_worker(district: Node3D,p: Dictionary) -> void:

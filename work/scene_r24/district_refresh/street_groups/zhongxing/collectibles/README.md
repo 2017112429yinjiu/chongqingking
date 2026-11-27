@@ -11,3 +11,11 @@
 Blender 4.3.2 打开 `work/scene_r24/district_500/outer_district.blend` 后执行同组 `build.py`。它读取本组逐面归属和已发布供体，输出独立源、GLB 及路线。正门牌使用 `build_sign_font.py` 从 Noto Sans CJK SC 缩编并改名，沿用项目内完整 OFL 文本。实拍只用于观察，照片像素未作为资产分发。
 
 在 Godot 4.6.3 正常 `first_shift.tscn` 使用 `--explore-500 --zhongxing-collectibles` 从中兴路东侧路肩开局。同组 `walk.gd` 用正常探索开局位置、同一个玩家身体和控制器走进、转头、原路走回；两段之间零位置重置。按表中开放地标出发点保持相同，可以用 `--qa-without-collectibles` 复跑改前。侧阶路线用 `--qa-market-side`。原始轨迹、停滞接触和渲染条件随证据记录。场景内的门槛标高和步数均为游戏实测值。
+
+## 第二轮室内和入口复查
+
+按同址的「中兴路旧货市场内的店铺」和「人们搬空调」对照灰绿分格露骨料、吊管和支座、灯管、带网罩的旧电器、灰石踏步、砖墙台端及路肩。独立源重做凹入洗衣机舷窗、风扇网罩、空调格栅和叶轮、CRT 弧形玻璃、音响及成摞 DVD 机，加入开放层架和薄框玻璃柜，保留主厅以及通向侧阶的走道。[采访图与照片指纹](art-controls.json) · [市场走访](https://m.thepaper.cn/newsDetail_forward_9057120)
+
+器具型号、数量和摆位按玩法拟合。每件的朝向、尺寸和底部 ENU 坐标见游戏 `assets/district_500/collectibles-market.json` 的 `interior_art.inventory`。入口加了分块石鼻、门轨、铺地收口和小排水带，原阶高、门槛与碰撞承面保留。灰绿水磨石按约 0.95 米分格，墙上磨损面和贴图沿用既有许可；正常 Godot 导入测了每个地面材质、墙面 UV 和启用的法线图。
+
+[室内和街面前后、门内近视、实走与材质结果](evidence/art-refresh)。
