@@ -1,0 +1,154 @@
+{
+  "pano_spec": {
+    "width": 700,
+    "height": 440,
+    "heading_deg": 110,
+    "pitch_deg": 0,
+    "fovy_deg": 60,
+    "camera_height_m": 2.32
+  },
+  "map": {
+    "way": 1297385297,
+    "version": "1",
+    "polygon_en": [
+      [
+        -138.69671606474216,
+        -48.394313508517314
+      ],
+      [
+        71.36500012716829,
+        -1242.6217666099917
+      ],
+      [
+        93.47169587930179,
+        -1238.764443571233
+      ],
+      [
+        -116.59971216945665,
+        -44.54807497057038
+      ],
+      [
+        -138.69671606474216,
+        -48.394313508517314
+      ]
+    ],
+    "source_sha256": "37c269b570deb778828e26766a62cde853d02a5e4663954612383426115e51a8"
+  },
+  "perspective": "Heights are relative, assume a rectilinear vertical 60 degree FOV and supplied screen picks at the center column. Street View provider elevation is not used. Way footprint neither bounds width of visible underside nor supplies height.",
+  "stations": [
+    {
+      "pano": "0902920012230515142922191AU",
+      "camera_en": [
+        -213.65581941128264,
+        -42.20048655385996
+      ],
+      "ordered_intersection_along_heading_m": [
+        83.98741066958097,
+        109.88060007147716
+      ],
+      "supplied_near_far_m": [
+        84,
+        110
+      ],
+      "sample_pixel_row": 201,
+      "angle_from_level_deg": 2.8545219986672987,
+      "far_edge_height_over_camera_m": 5.484827557301444,
+      "far_edge_height_over_road_m": 7.804827557301444
+    },
+    {
+      "pano": "0902920012230515142924863AU",
+      "camera_en": [
+        -190.90183850039062,
+        -57.59544103418675
+      ],
+      "ordered_intersection_along_heading_m": [
+        61.19569497062693,
+        87.08896860458864
+      ],
+      "supplied_near_far_m": [
+        61,
+        87
+      ],
+      "sample_pixel_row": 204,
+      "angle_from_level_deg": 2.404386433920035,
+      "far_edge_height_over_camera_m": 3.653052612327086,
+      "far_edge_height_over_road_m": 5.973052612327086
+    },
+    {
+      "pano": "0902920012230515142926254AU",
+      "camera_en": [
+        -178.60276221041588,
+        -64.73986513901434
+      ],
+      "ordered_intersection_along_heading_m": [
+        48.640849820588144,
+        74.5341550472929
+      ],
+      "supplied_near_far_m": [
+        49,
+        75
+      ],
+      "sample_pixel_row": 198,
+      "angle_from_level_deg": 3.3043051801559615,
+      "far_edge_height_over_camera_m": 4.330127018922193,
+      "far_edge_height_over_road_m": 6.650127018922193
+    },
+    {
+      "pano": "0902920012230515142927597AU",
+      "camera_en": [
+        -166.85246049094016,
+        -70.74717084562135
+      ],
+      "ordered_intersection_along_heading_m": [
+        36.48253163792349,
+        62.37585735720374
+      ],
+      "supplied_near_far_m": [
+        36,
+        62
+      ],
+      "sample_pixel_row": 189,
+      "angle_from_level_deg": 4.650992455418603,
+      "far_edge_height_over_camera_m": 5.043941897193003,
+      "far_edge_height_over_road_m": 7.363941897193003
+    },
+    {
+      "pano": "0902920012230515142928988AU",
+      "camera_en": [
+        -154.82405314361915,
+        -76.02857198465485
+      ],
+      "ordered_intersection_along_heading_m": [
+        23.862842596698822,
+        49.756179013980656
+      ],
+      "supplied_near_far_m": [
+        24,
+        50
+      ],
+      "sample_pixel_row": 184,
+      "angle_from_level_deg": 5.397028104476301,
+      "far_edge_height_over_camera_m": 4.723774929733302,
+      "far_edge_height_over_road_m": 7.043774929733301
+    },
+    {
+      "pano": "0902920012230515142930784AU",
+      "camera_en": [
+        -139.81088351351144,
+        -82.13689237994417
+      ],
+      "ordered_intersection_along_heading_m": [
+        8.014949412477142,
+        33.90829345549031
+      ],
+      "supplied_near_far_m": [
+        8,
+        34
+      ],
+      "sample_pixel_row": 162,
+      "angle_from_level_deg": 8.654592042248014,
+      "far_edge_height_over_camera_m": 5.175157867463373,
+      "far_edge_height_over_road_m": 7.495157867463373
+    }
+  ]
+}

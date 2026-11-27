@@ -1,0 +1,577 @@
+[
+  {
+    "eye_enu": [
+      -137.477813720703,
+      -82.0480728149414,
+      10.053225402832
+    ],
+    "file": "04-under-rail.png",
+    "fov_deg": 70.0,
+    "hits": [
+      {
+        "geometry": [],
+        "physics": [],
+        "pixel": [
+          350.0,
+          32.0
+        ]
+      },
+      {
+        "geometry": [],
+        "physics": [],
+        "pixel": [
+          450.0,
+          100.0
+        ]
+      },
+      {
+        "geometry": [],
+        "physics": [],
+        "pixel": [
+          350.0,
+          189.0
+        ]
+      },
+      {
+        "geometry": [],
+        "physics": [],
+        "pixel": [
+          539.0,
+          180.0
+        ]
+      },
+      {
+        "geometry": [
+          {
+            "distance_m": 30.1266384124756,
+            "mesh": "COL_Nanjimen_NorthRailPiers",
+            "normal": [
+              0.0,
+              -0.999981462955475,
+              -0.00609624339267612
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/NanjimenBridgePark/COL_Nanjimen_NorthRailPiers",
+            "point_enu": [
+              -116.664794921875,
+              -103.430511474609,
+              14.2033996582031
+            ]
+          },
+          {
+            "distance_m": 34.0433540344238,
+            "mesh": "COL_Nanjimen_NorthRailPiers",
+            "normal": [
+              -0.999984741210938,
+              0.0,
+              -0.00552209420129657
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/NanjimenBridgePark/COL_Nanjimen_NorthRailPiers",
+            "point_enu": [
+              -113.958923339844,
+              -106.210403442383,
+              14.742956161499
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 30.1266384124756,
+            "mesh": "COL_Nanjimen_NorthRailPiers",
+            "normal": [
+              0.0,
+              0.999981462955475,
+              0.00609624339267612
+            ],
+            "point_enu": [
+              -116.664794921875,
+              -103.430511474609,
+              14.2033996582031
+            ]
+          }
+        ],
+        "pixel": [
+          624.0,
+          196.0
+        ]
+      },
+      {
+        "geometry": [],
+        "physics": [],
+        "pixel": [
+          775.0,
+          82.0
+        ]
+      },
+      {
+        "geometry": [
+          {
+            "distance_m": 92.2353820800781,
+            "mesh": "COL_Nanjimen_NorthRailSteelBox",
+            "normal": [
+              0.0022030312102288,
+              -0.012608134187758,
+              -0.999918162822723
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/NanjimenBridgePark/COL_Nanjimen_NorthRailSteelBox",
+            "point_enu": [
+              -105.371269226074,
+              -162.314544677734,
+              42.206428527832
+            ]
+          },
+          {
+            "distance_m": 100.488220214844,
+            "mesh": "Nanjimen_NorthAcousticHood",
+            "normal": [
+              0.00220364239066839,
+              -0.0126186134293675,
+              -0.999917984008789
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/NanjimenBridgePark/Nanjimen_NorthAcousticHood",
+            "point_enu": [
+              -102.498504638672,
+              -169.496459960938,
+              45.083366394043
+            ]
+          },
+          {
+            "distance_m": 100.992919921875,
+            "mesh": "COL_Nanjimen_NorthRailSteelBox",
+            "normal": [
+              -0.00220265192911029,
+              0.0126105165109038,
+              0.999918103218079
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/NanjimenBridgePark/COL_Nanjimen_NorthRailSteelBox",
+            "point_enu": [
+              -102.322830200195,
+              -169.935668945312,
+              45.2593002319336
+            ]
+          },
+          {
+            "distance_m": 112.125289916992,
+            "mesh": "Nanjimen_NorthAcousticHood",
+            "normal": [
+              -0.00220371736213565,
+              0.0126190520823002,
+              0.999917984008789
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/NanjimenBridgePark/Nanjimen_NorthAcousticHood",
+            "point_enu": [
+              -98.4477233886719,
+              -179.623443603516,
+              49.1400375366211
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 92.2353820800781,
+            "mesh": "COL_Nanjimen_NorthRailSteelBox",
+            "normal": [
+              0.0022030312102288,
+              -0.012608134187758,
+              -0.999918162822723
+            ],
+            "point_enu": [
+              -105.371276855469,
+              -162.314544677734,
+              42.206428527832
+            ]
+          }
+        ],
+        "pixel": [
+          854.0,
+          50.0
+        ]
+      },
+      {
+        "geometry": [],
+        "physics": [],
+        "pixel": [
+          715.0,
+          151.0
+        ]
+      },
+      {
+        "geometry": [
+          {
+            "distance_m": 8.23777103424072,
+            "mesh": "COL_R24_LinkDeck_R24_link_asphalt",
+            "normal": [
+              0.0465287752449512,
+              -0.0136821456253529,
+              -0.998823285102844
+            ],
+            "path": "/root/ChongqingDistrict/City/MarketTerraceR24/frontage/COL_R24_LinkDeck_R24_link_asphalt",
+            "point_enu": [
+              -129.903625488281,
+              -85.0570831298828,
+              8.8538932800293
+            ]
+          },
+          {
+            "distance_m": 10.2200832366943,
+            "mesh": "COL_R24_FlyoverBox_R24_link_concrete",
+            "normal": [
+              -0.00987023953348398,
+              0.131000235676765,
+              0.991333246231079
+            ],
+            "path": "/root/ChongqingDistrict/City/MarketTerraceR24/frontage/COL_R24_FlyoverBox_R24_link_concrete",
+            "point_enu": [
+              -128.080993652344,
+              -85.7811584472656,
+              8.56528949737549
+            ]
+          },
+          {
+            "distance_m": 43.8676223754883,
+            "mesh": "COL_Terrain_200m_gravel_ground",
+            "normal": [
+              0.0400623716413975,
+              0.141058593988419,
+              -0.989190340042114
+            ],
+            "path": "/root/ChongqingDistrict/City/COL_Terrain_200m_gravel_ground",
+            "point_enu": [
+              -97.1438827514648,
+              -98.0715866088867,
+              3.66656351089478
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 8.23777103424072,
+            "mesh": "COL_R24_LinkDeck_R24_link_asphalt",
+            "normal": [
+              -0.0465287752449512,
+              0.0136821456253529,
+              0.998823285102844
+            ],
+            "point_enu": [
+              -129.903625488281,
+              -85.0570831298828,
+              8.85389232635498
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 10.2200832366943,
+            "mesh": "COL_R24_FlyoverBox_R24_link_concrete",
+            "normal": [
+              -0.00987023953348398,
+              0.131000235676765,
+              0.991333246231079
+            ],
+            "point_enu": [
+              -128.080993652344,
+              -85.7811584472656,
+              8.56528949737549
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 43.8676071166992,
+            "mesh": "COL_Terrain_200m_gravel_ground",
+            "normal": [
+              -0.0400623716413975,
+              -0.141058593988419,
+              0.989190340042114
+            ],
+            "point_enu": [
+              -97.1438980102539,
+              -98.0715789794922,
+              3.66656541824341
+            ]
+          }
+        ],
+        "pixel": [
+          460.0,
+          305.0
+        ]
+      },
+      {
+        "geometry": [
+          {
+            "distance_m": 51.3221664428711,
+            "mesh": "COL_Outer500_Court_56",
+            "normal": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Court_56",
+            "point_enu": [
+              -116.513526916504,
+              -128.540878295898,
+              4.31890058517456
+            ]
+          },
+          {
+            "distance_m": 51.5459175109863,
+            "mesh": "COL_Outer500_Court_56",
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Court_56",
+            "point_enu": [
+              -116.42212677002,
+              -128.743576049805,
+              4.29389953613281
+            ]
+          },
+          {
+            "distance_m": 51.5459175109863,
+            "mesh": "COL_Outer500_Court_56",
+            "normal": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Court_56",
+            "point_enu": [
+              -116.422134399414,
+              -128.743576049805,
+              4.29390001296997
+            ]
+          },
+          {
+            "distance_m": 54.1551856994629,
+            "mesh": "COL_Outer500_Surface_02_02",
+            "normal": [
+              -0.0101473005488515,
+              0.0,
+              -0.999948501586914
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Surface_02_02",
+            "point_enu": [
+              -115.356285095215,
+              -131.107315063477,
+              4.00236129760742
+            ]
+          },
+          {
+            "distance_m": 60.6367568969727,
+            "mesh": "COL_Outer500_Court_56",
+            "normal": [
+              -0.74858945608139,
+              0.663033843040466,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Court_56",
+            "point_enu": [
+              -112.70866394043,
+              -136.978973388672,
+              3.27816295623779
+            ]
+          },
+          {
+            "distance_m": 60.8302230834961,
+            "mesh": "COL_Outer500_Building_envelopes",
+            "normal": [
+              -0.663056552410126,
+              -0.748569369316101,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Building_envelopes",
+            "point_enu": [
+              -112.629638671875,
+              -137.154235839844,
+              3.25654554367065
+            ]
+          },
+          {
+            "distance_m": 61.4996757507324,
+            "mesh": "COL_Outer500_Building_envelopes",
+            "normal": [
+              -0.748584568500519,
+              0.663039326667786,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/COL_Outer500_Building_envelopes",
+            "point_enu": [
+              -112.356178283691,
+              -137.760696411133,
+              3.18174648284912
+            ]
+          },
+          {
+            "distance_m": 68.0813980102539,
+            "mesh": "COL_Raijiapo_GaragePublicEnvelope",
+            "normal": [
+              0.24664019048214,
+              0.969107151031494,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/NanjimenBridgePark/COL_Raijiapo_GaragePublicEnvelope",
+            "point_enu": [
+              -109.66764831543,
+              -143.723083496094,
+              2.44635772705078
+            ]
+          },
+          {
+            "distance_m": 68.6859512329102,
+            "mesh": "COL_Raijiapo_GaragePublicEnvelope",
+            "normal": [
+              -0.246641919016838,
+              -0.969106674194336,
+              0.0
+            ],
+            "path": "/root/ChongqingDistrict/City/OuterDistrict500/NanjimenBridgePark/COL_Raijiapo_GaragePublicEnvelope",
+            "point_enu": [
+              -109.420700073242,
+              -144.270751953125,
+              2.3788104057312
+            ]
+          }
+        ],
+        "physics": [
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 51.3221664428711,
+            "mesh": "COL_Outer500_Court_56",
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "point_enu": [
+              -116.513526916504,
+              -128.540878295898,
+              4.3189001083374
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 54.1551856994629,
+            "mesh": "COL_Outer500_Surface_02_02",
+            "normal": [
+              0.0101473005488515,
+              0.0,
+              0.999948501586914
+            ],
+            "point_enu": [
+              -115.356285095215,
+              -131.107315063477,
+              4.00236177444458
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 60.8302345275879,
+            "mesh": "COL_Outer500_Building_envelopes",
+            "normal": [
+              0.663056552410126,
+              0.748569369316101,
+              0.0
+            ],
+            "point_enu": [
+              -112.629638671875,
+              -137.154251098633,
+              3.2565450668335
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 68.0813980102539,
+            "mesh": "COL_Raijiapo_GaragePublicEnvelope",
+            "normal": [
+              0.24664019048214,
+              0.969107151031494,
+              0.0
+            ],
+            "point_enu": [
+              -109.66764831543,
+              -143.723083496094,
+              2.44635772705078
+            ]
+          },
+          {
+            "body": "CQ_StaticCollision",
+            "distance_m": 82.6514205932617,
+            "mesh": "COL_Raijiapo_GarageParkingSlabs",
+            "normal": [
+              -0.0370871461927891,
+              0.00834481976926327,
+              0.999277234077454
+            ],
+            "point_enu": [
+              -103.716026306152,
+              -156.922088623047,
+              0.818421363830566
+            ]
+          }
+        ],
+        "pixel": [
+          820.0,
+          310.0
+        ]
+      }
+    ],
+    "id": "04-under-rail",
+    "pixels": [
+      [
+        350.0,
+        32.0
+      ],
+      [
+        450.0,
+        100.0
+      ],
+      [
+        350.0,
+        189.0
+      ],
+      [
+        539.0,
+        180.0
+      ],
+      [
+        624.0,
+        196.0
+      ],
+      [
+        775.0,
+        82.0
+      ],
+      [
+        854.0,
+        50.0
+      ],
+      [
+        715.0,
+        151.0
+      ],
+      [
+        460.0,
+        305.0
+      ],
+      [
+        820.0,
+        310.0
+      ]
+    ],
+    "projection_size": [
+      900,
+      506
+    ],
+    "target_enu": [
+      -122.477813720703,
+      -87.5080728149414,
+      10.023225402832
+    ],
+    "viewport_size_reported": [
+      900,
+      506
+    ]
+  }
+]

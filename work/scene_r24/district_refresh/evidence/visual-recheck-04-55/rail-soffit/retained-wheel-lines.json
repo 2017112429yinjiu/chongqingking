@@ -1,0 +1,6880 @@
+{
+  "checks": [
+    {
+      "detail": {
+        "airborne_frames": 0,
+        "distance_m": 51.9495125217363,
+        "last_contact": {
+
+        },
+        "reached": 9,
+        "targets": 9
+      },
+      "name": "approach_to_51_forward",
+      "pass": true
+    },
+    {
+      "detail": {
+        "airborne_frames": 0,
+        "distance_m": 51.8616266673198,
+        "last_contact": {
+
+        },
+        "reached": 9,
+        "targets": 9
+      },
+      "name": "approach_to_51_closed_reverse_test",
+      "pass": true
+    },
+    {
+      "detail": {
+        "airborne_frames": 0,
+        "distance_m": 45.6296528432867,
+        "last_contact": {
+
+        },
+        "reached": 8,
+        "targets": 8
+      },
+      "name": "under_rail_04_forward",
+      "pass": true
+    },
+    {
+      "detail": {
+        "airborne_frames": 0,
+        "distance_m": 45.6374360297341,
+        "last_contact": {
+
+        },
+        "reached": 8,
+        "targets": 8
+      },
+      "name": "under_rail_04_closed_reverse_test",
+      "pass": true
+    },
+    {
+      "detail": {
+        "airborne_frames": 0,
+        "distance_m": 45.6826703559491,
+        "last_contact": {
+
+        },
+        "reached": 8,
+        "targets": 8
+      },
+      "name": "under_rail_04_outer_wheel_line_forward",
+      "pass": true
+    },
+    {
+      "detail": {
+        "airborne_frames": 0,
+        "distance_m": 45.6873643277213,
+        "last_contact": {
+
+        },
+        "reached": 8,
+        "targets": 8
+      },
+      "name": "under_rail_04_outer_wheel_line_closed_reverse_test",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "expected_enu": [
+            -237.235794067383,
+            -27.6306934356689,
+            14.538055502428
+          ],
+          "found": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.986082911491394,
+            "y": 14.5250701904297
+          }
+        },
+        {
+          "expected_enu": [
+            -237.700576782227,
+            -28.2819194793701,
+            14.4198528596496
+          ],
+          "found": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.986082911491394,
+            "y": 14.4142446517944
+          }
+        },
+        {
+          "expected_enu": [
+            -236.178237915039,
+            -28.407735824585,
+            14.3993773465616
+          ],
+          "found": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.984687983989716,
+            "y": 14.3876543045044
+          }
+        },
+        {
+          "expected_enu": [
+            -236.642654418945,
+            -29.0592384338379,
+            14.2840666107343
+          ],
+          "found": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.984687983989716,
+            "y": 14.2786874771118
+          }
+        },
+        {
+          "expected_enu": [
+            -227.386596679688,
+            -34.8672904968262,
+            12.9233159511871
+          ],
+          "found": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.984662294387817,
+            "y": 12.9129810333252
+          }
+        },
+        {
+          "expected_enu": [
+            -227.847900390625,
+            -35.5210723876953,
+            12.840390201118
+          ],
+          "found": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.984662294387817,
+            "y": 12.8360328674316
+          }
+        },
+        {
+          "expected_enu": [
+            -226.329010009766,
+            -35.6443328857422,
+            12.715845685129
+          ],
+          "found": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.984619557857513,
+            "y": 12.7085189819336
+          }
+        },
+        {
+          "expected_enu": [
+            -226.789947509766,
+            -36.2983932495117,
+            12.6374316550579
+          ],
+          "found": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.984619557857513,
+            "y": 12.6343622207642
+          }
+        },
+        {
+          "expected_enu": [
+            -217.779586791992,
+            -41.9259338378906,
+            10.9503645684661
+          ],
+          "found": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.98472934961319,
+            "y": 10.9466323852539
+          }
+        },
+        {
+          "expected_enu": [
+            -218.237487792969,
+            -42.5822143554688,
+            10.9081221092054
+          ],
+          "found": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.98472934961319,
+            "y": 10.9063720703125
+          }
+        },
+        {
+          "expected_enu": [
+            -216.721984863281,
+            -42.7029838562012,
+            10.7336485394464
+          ],
+          "found": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.986841082572937,
+            "y": 10.7286930084229
+          }
+        },
+        {
+          "expected_enu": [
+            -217.17951965332,
+            -43.3595352172851,
+            10.6954734566138
+          ],
+          "found": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.986841082572937,
+            "y": 10.6935005187988
+          }
+        },
+        {
+          "expected_enu": [
+            -208.011093139648,
+            -49.1032180786133,
+            9.17286904306069
+          ],
+          "found": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.993371665477753,
+            "y": 9.17234134674072
+          }
+        },
+        {
+          "expected_enu": [
+            -208.465545654297,
+            -49.762035369873,
+            9.15946529315769
+          ],
+          "found": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.993371665477753,
+            "y": 9.15943908691406
+          }
+        },
+        {
+          "expected_enu": [
+            -206.953521728516,
+            -49.8802642822266,
+            9.02775919243514
+          ],
+          "found": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.994383335113525,
+            "y": 9.02752113342285
+          }
+        },
+        {
+          "expected_enu": [
+            -207.407608032227,
+            -50.5393524169922,
+            9.01592120087193
+          ],
+          "found": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.994750678539276,
+            "y": 9.01586532592773
+          }
+        },
+        {
+          "expected_enu": [
+            -198.185531616211,
+            -55.8084831237793,
+            8.25859755371094
+          ],
+          "found": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.998504042625427,
+            "y": 8.25844478607178
+          }
+        },
+        {
+          "expected_enu": [
+            -198.623199462891,
+            -56.4781913757324,
+            8.24899755371094
+          ],
+          "found": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.998525857925415,
+            "y": 8.24884605407715
+          }
+        },
+        {
+          "expected_enu": [
+            -197.066116333008,
+            -56.5247650146484,
+            8.18937605712891
+          ],
+          "found": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.998659312725067,
+            "y": 8.18955421447754
+          }
+        },
+        {
+          "expected_enu": [
+            -197.500625610352,
+            -57.1964874267578,
+            8.17977605712891
+          ],
+          "found": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.998659312725067,
+            "y": 8.17998695373535
+          }
+        },
+        {
+          "expected_enu": [
+            -187.84587097168,
+            -62.4245300292969,
+            7.70021742675781
+          ],
+          "found": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.999297499656677,
+            "y": 7.70003700256348
+          }
+        },
+        {
+          "expected_enu": [
+            -188.254455566406,
+            -63.1128463745117,
+            7.69061742675781
+          ],
+          "found": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.999297499656677,
+            "y": 7.69042444229126
+          }
+        },
+        {
+          "expected_enu": [
+            -186.726455688477,
+            -63.1408157348633,
+            7.65087050292969
+          ],
+          "found": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.999204337596893,
+            "y": 7.65076398849487
+          }
+        },
+        {
+          "expected_enu": [
+            -187.131896972656,
+            -63.8311462402344,
+            7.64127050292969
+          ],
+          "found": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.999204337596893,
+            "y": 7.64117097854614
+          }
+        },
+        {
+          "expected_enu": [
+            -177.652267456055,
+            -68.0949935913086,
+            7.47679060791016
+          ],
+          "found": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.99990314245224,
+            "y": 7.4767484664917
+          }
+        },
+        {
+          "expected_enu": [
+            -178.030303955078,
+            -68.8002166748047,
+            7.46719060791016
+          ],
+          "found": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.999903976917267,
+            "y": 7.46715402603149
+          }
+        },
+        {
+          "expected_enu": [
+            -176.467010498047,
+            -68.7004089355469,
+            7.46829146240234
+          ],
+          "found": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.999907970428467,
+            "y": 7.46818065643311
+          }
+        },
+        {
+          "expected_enu": [
+            -176.841384887695,
+            -69.4075088500977,
+            7.45869146240234
+          ],
+          "found": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.999907970428467,
+            "y": 7.45858478546143
+          }
+        },
+        {
+          "expected_enu": [
+            -167.003143310547,
+            -73.5345153808594,
+            7.47560805175781
+          ],
+          "found": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.99988842010498,
+            "y": 7.47575902938843
+          }
+        },
+        {
+          "expected_enu": [
+            -167.348205566406,
+            -74.2565841674805,
+            7.46600805175781
+          ],
+          "found": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.99988842010498,
+            "y": 7.46614789962769
+          }
+        },
+        {
+          "expected_enu": [
+            -165.817886352539,
+            -74.1399307250977,
+            7.48834151123047
+          ],
+          "found": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.999862849712372,
+            "y": 7.48828172683716
+          }
+        },
+        {
+          "expected_enu": [
+            -166.159286499023,
+            -74.8638687133789,
+            7.47874151123047
+          ],
+          "found": {
+            "body": "COL_Nanqu_RiverFootway",
+            "normal_y": 0.999862670898438,
+            "y": 7.47865581512451
+          }
+        }
+      ],
+      "name": "flower_box_corners_on_footway",
+      "pass": true
+    }
+  ],
+  "identity": {
+    "binjiang_sha256": "9130bc07a8b0707f01129a2e2df391eb676364fe951a45fc2d100ff55a4b0f54",
+    "bounds_east_north_m": [
+      -250.0,
+      -250.0,
+      250.0,
+      250.0
+    ],
+    "bridge_park_sha256": "d7610bb70365b506b084810a925ede54321bbb5812b840d8c0810ed1ecb4426c",
+    "changbin_55_sha256": "b24dbc38c8c06c6dd7556479254d5073519713c336041eb7ab4c5c3a0aae312f",
+    "changbin_bend_sha256": "59f467c674151e7e2f55366257a28b12260d9c1eb23ceccc7359b07e18a6af9f",
+    "collectibles_market_sha256": "a23f881d0e9206b40fedc8f262cfdb132194e59825e4728b39800471b684e175",
+    "fenghuangtai_11_sha256": "4e0af537b800faf7856af3659ea9dbe082f587dd3523824015e93fa8fb24d6a2",
+    "glb_sha256": "b0180ce3a8d821253181725ad4516c04f58fe057529680e22a081f89fdd62122",
+    "guoco_sha256": "4dcb3d55080b02d8a0cf02585626bed2dfc3cdb37ae2f987110b55dd56435853",
+    "houci_14_16_sha256": "b41a35494e9c984fa5df55393e597c036efeb49454f674749f6fc3037354c11f",
+    "houci_77_sha256": "71e594772c8218538934c7ebeff75eb965ab0c9754d726c88481dfd5ff72f17a",
+    "liangtingzi_45_46_sha256": "1546d0e14a245361364fbdfe087d355bcefabb600bc703db391f311bf251680b",
+    "market_stall_row_sha256": "42fffbc9c4a98d3fa615e48fa9ce4eecdf66bf225decbd3d44d40eddf5a41646",
+    "match_factory_sha256": "ab742e6b12ad0b52c4cffef0f8342e1a957b59de5cfe3abde4dd691f853d76c6",
+    "matix_streets_sha256": "3b57fcf46931ff28ce1ab2be4a7250d31af30d302e362816265be8e38852e33b",
+    "nanqu_04_06_51_sha256": "df14048f69e2fba27d69e9673fbe85c27361cfb72eb0fae371e26fd21bccf7d0",
+    "north_38_40_41_sha256": "73b67982d9f9f93fea1c044f76e91ac5f82ad8bdb77a057a25425e41a7be1f10",
+    "osm_building_ids": [
+      809889594.0,
+      809889602.0,
+      809889621.0,
+      704006725,
+      809889619,
+      809889620
+    ],
+    "panda_15_17_sha256": "165c8b1ec9e31dbf2bbda447e1d5db4a37e766a97f1ad1bc45c9e8a60693775f",
+    "park_edge_finish_sha256": "52ba8de0a1bd4ee57439d86b5f0e7efad002311679d486b3b0dbc75bdc0e6d33",
+    "park_plot57_sha256": "b67c6b5fc91cdc8b8fa0e6808f8cedd8b15a49ad36a2566631ae67a1671f9f60",
+    "park_plot59_sha256": "fa02d99cf8eda6971b3b148e8c3fc5031108e134806e25b0e71e3f320cd4747c",
+    "park_plot61_sha256": "b6e7b1a3baf336235be5d553e2c3d24caf36b949a34bbf296d4b2eed31ddeceb",
+    "pavilion_62_sha256": "08d702b1a9ce0464b3bc62f33808befa5b58e5dcd082659b06c4cbc0bbab3e76",
+    "public_edges_sha256": "d585e52e0d927a9639e7285ffecc4932603a4d56b039504f1600763f72cc1be4",
+    "raijiapo_east_sha256": "c230f7e3a225f9e8446cb43b66eebd4cd05fac72cbb6b02787d8d0090038e81d",
+    "retired_internal_context": false,
+    "riverside_sha256": "12f304d468c56fb429d4a4db948f5297b7ca4284f29fc494442c9b2a146f67d1",
+    "west_court_sha256": "32eea2dd1f34b7f5dacbb546a46c6cf106ac3896804677ef9b2ee1dabfb2c683",
+    "west_ramp_sha256": "2a2ae2a4745096ea849dbb5f2365ce1cf437a8dcd974ed4cb47dddd5d5aae8b2",
+    "wilderness_50_finish_sha256": "92c0e84bacfc84b05ab13fe30618222bfff34b64586f5af5a5055526ee769b7f",
+    "wilderness_50_sha256": "ffde86e0c90b8c1b07766fad72b2bf8a3286d91b2f463ca885866a248fa266fa",
+    "xingchen_sha256": "af156281216128407550442694d4dc45ea8507dfc7da4c80efd549a0ffbe127b",
+    "zhongxing_18_21_sha256": "7622184407e04b8641e479be3c549d357de74eaa649baf78eab41bdcc19203af",
+    "zhongxing_wall_sha256": "72fa4f4c800a8e27c19d580da66524160c4c2111bd82191706b6c8da142b8d42"
+  },
+  "results": {
+    "approach_to_51": {
+      "closed_reverse_test": {
+        "airborne_frames": 0,
+        "distance_m": 51.8616266673198,
+        "intended_surface_samples": 89,
+        "last_contact": {
+
+        },
+        "pass": true,
+        "reached": 9,
+        "sample_count": 89,
+        "stable_start": true,
+        "targets": 9,
+        "trace": [
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999935686588287,
+              "y": 7.42726230621338
+            },
+            "enu": [
+              -181.542221069336,
+              -62.72802734375,
+              7.43405914306641
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999935686588287,
+              "y": 7.42802906036377
+            },
+            "enu": [
+              -181.600051879883,
+              -62.6926307678223,
+              7.44083309173584
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999935805797577,
+              "y": 7.43007230758667
+            },
+            "enu": [
+              -181.754364013672,
+              -62.5984840393066,
+              7.44392776489258
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999784827232361,
+              "y": 7.43344449996948
+            },
+            "enu": [
+              -182.004119873047,
+              -62.4460868835449,
+              7.44997072219849
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999784827232361,
+              "y": 7.44181537628174
+            },
+            "enu": [
+              -182.349548339844,
+              -62.2354393005371,
+              7.45832300186157
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999784827232361,
+              "y": 7.45249128341675
+            },
+            "enu": [
+              -182.790191650391,
+              -61.9669456481934,
+              7.47118902206421
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999309957027435,
+              "y": 7.46842765808105
+            },
+            "enu": [
+              -183.303909301758,
+              -61.6541213989258,
+              7.49264860153198
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999309957027435,
+              "y": 7.49097871780396
+            },
+            "enu": [
+              -183.822219848633,
+              -61.3384742736816,
+              7.51554346084595
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999310076236725,
+              "y": 7.51355075836182
+            },
+            "enu": [
+              -184.341003417969,
+              -61.0224685668945,
+              7.53827333450317
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999226808547974,
+              "y": 7.5368595123291
+            },
+            "enu": [
+              -184.85856628418,
+              -60.7071838378906,
+              7.56211614608765
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999226808547974,
+              "y": 7.56071424484253
+            },
+            "enu": [
+              -185.376480102539,
+              -60.391731262207,
+              7.58673095703125
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99936044216156,
+              "y": 7.58419132232666
+            },
+            "enu": [
+              -185.89501953125,
+              -60.0758285522461,
+              7.60775852203369
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99936044216156,
+              "y": 7.60409545898438
+            },
+            "enu": [
+              -186.369903564453,
+              -59.785945892334,
+              7.62775468826294
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999359548091888,
+              "y": 7.62582302093506
+            },
+            "enu": [
+              -186.885589599609,
+              -59.4656143188477,
+              7.65008401870728
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999269127845764,
+              "y": 7.64856243133545
+            },
+            "enu": [
+              -187.399124145508,
+              -59.1421661376953,
+              7.67330360412598
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999269127845764,
+              "y": 7.67176723480225
+            },
+            "enu": [
+              -187.911163330078,
+              -58.8169441223145,
+              7.69704103469849
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999177932739258,
+              "y": 7.69531965255737
+            },
+            "enu": [
+              -188.422210693359,
+              -58.4908256530762,
+              7.7211594581604
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999177932739258,
+              "y": 7.71994304656982
+            },
+            "enu": [
+              -188.933395385742,
+              -58.1637001037598,
+              7.74578332901001
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999177932739258,
+              "y": 7.74454545974731
+            },
+            "enu": [
+              -189.443756103516,
+              -57.836254119873,
+              7.77127885818481
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999079465866089,
+              "y": 7.77033042907715
+            },
+            "enu": [
+              -189.953399658203,
+              -57.5088577270508,
+              7.79771614074707
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999078214168549,
+              "y": 7.79634714126587
+            },
+            "enu": [
+              -190.462997436523,
+              -57.1811943054199,
+              7.82398891448975
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99884706735611,
+              "y": 7.82366228103638
+            },
+            "enu": [
+              -190.972015380859,
+              -56.8537712097168,
+              7.8530421257019
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99884706735611,
+              "y": 7.85037326812744
+            },
+            "enu": [
+              -191.439346313477,
+              -56.5529747009277,
+              7.87978982925415
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998840510845184,
+              "y": 7.87950134277344
+            },
+            "enu": [
+              -191.948348999023,
+              -56.2260284423828,
+              7.90995597839355
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.9986971616745,
+              "y": 7.91030073165894
+            },
+            "enu": [
+              -192.45817565918,
+              -55.8991851806641,
+              7.94196367263794
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998706221580505,
+              "y": 7.94116115570068
+            },
+            "enu": [
+              -192.96711730957,
+              -55.5731468200684,
+              7.97191047668457
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998598754405975,
+              "y": 7.97260761260986
+            },
+            "enu": [
+              -193.477005004883,
+              -55.2468566894531,
+              8.00428867340088
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998598754405975,
+              "y": 8.00466060638428
+            },
+            "enu": [
+              -193.986541748047,
+              -54.9209823608398,
+              8.03622436523438
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998765766620636,
+              "y": 8.03667545318604
+            },
+            "enu": [
+              -194.496002197266,
+              -54.5949325561523,
+              8.06682968139648
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998765766620636,
+              "y": 8.06680297851562
+            },
+            "enu": [
+              -195.00634765625,
+              -54.2684936523438,
+              8.096999168396
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998775959014893,
+              "y": 8.09681129455566
+            },
+            "enu": [
+              -195.515472412109,
+              -53.9428482055664,
+              8.12769508361816
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998557090759277,
+              "y": 8.12845325469971
+            },
+            "enu": [
+              -196.025451660156,
+              -53.616813659668,
+              8.16045665740967
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998557090759277,
+              "y": 8.15824890136719
+            },
+            "enu": [
+              -196.4921875,
+              -53.318302154541,
+              8.1905574798584
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998184323310852,
+              "y": 8.19140529632568
+            },
+            "enu": [
+              -197.00178527832,
+              -52.9924087524414,
+              8.22598648071289
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998184323310852,
+              "y": 8.2278528213501
+            },
+            "enu": [
+              -197.510650634766,
+              -52.6670036315918,
+              8.26249313354492
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99819415807724,
+              "y": 8.26424026489258
+            },
+            "enu": [
+              -198.019195556641,
+              -52.3416633605957,
+              8.29946613311768
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998023271560669,
+              "y": 8.30175304412842
+            },
+            "enu": [
+              -198.527496337891,
+              -52.0163269042969,
+              8.33767700195312
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998012185096741,
+              "y": 8.3397388458252
+            },
+            "enu": [
+              -199.035568237305,
+              -51.6911125183105,
+              8.37598419189453
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.997811913490295,
+              "y": 8.37839508056641
+            },
+            "enu": [
+              -199.54426574707,
+              -51.3656578063965,
+              8.41525459289551
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.997811913490295,
+              "y": 8.41837596893311
+            },
+            "enu": [
+              -200.052551269531,
+              -51.0405197143555,
+              8.4554271697998
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.997827112674713,
+              "y": 8.45823764801025
+            },
+            "enu": [
+              -200.560287475586,
+              -50.715633392334,
+              8.4962100982666
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.997584402561188,
+              "y": 8.49984359741211
+            },
+            "enu": [
+              -201.067626953125,
+              -50.3911209106445,
+              8.53871631622314
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.997581481933594,
+              "y": 8.53830432891846
+            },
+            "enu": [
+              -201.53271484375,
+              -50.093204498291,
+              8.57951831817627
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.997246980667114,
+              "y": 8.57809638977051
+            },
+            "enu": [
+              -202.034530639648,
+              -49.7580528259277,
+              8.61886692047119
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.997170329093933,
+              "y": 8.6229419708252
+            },
+            "enu": [
+              -202.528945922852,
+              -49.4127616882324,
+              8.66179275512695
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.996445894241333,
+              "y": 8.67168521881104
+            },
+            "enu": [
+              -203.024932861328,
+              -49.0565490722656,
+              8.71275615692139
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.996202647686005,
+              "y": 8.72357654571533
+            },
+            "enu": [
+              -203.51676940918,
+              -48.6968536376953,
+              8.76882743835449
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.995533287525177,
+              "y": 8.7800931930542
+            },
+            "enu": [
+              -204.007171630859,
+              -48.3336868286133,
+              8.82745265960693
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.995096266269684,
+              "y": 8.83917236328125
+            },
+            "enu": [
+              -204.495681762695,
+              -47.9683876037598,
+              8.88990879058838
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.994608819484711,
+              "y": 8.89723968505859
+            },
+            "enu": [
+              -204.94270324707,
+              -47.6323738098145,
+              8.95035362243652
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.993655264377594,
+              "y": 8.96323871612549
+            },
+            "enu": [
+              -205.431884765625,
+              -47.2676162719727,
+              9.01791858673096
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.993655264377594,
+              "y": 9.03227806091309
+            },
+            "enu": [
+              -205.921966552734,
+              -46.9044456481934,
+              9.09059238433838
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.992699801921844,
+              "y": 9.10527038574219
+            },
+            "enu": [
+              -206.412551879883,
+              -46.5422897338867,
+              9.16454410552979
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.991563975811005,
+              "y": 9.17951107025146
+            },
+            "enu": [
+              -206.903350830078,
+              -46.1807899475098,
+              9.24360752105713
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.991783797740936,
+              "y": 9.25876140594482
+            },
+            "enu": [
+              -207.395095825195,
+              -45.819091796875,
+              9.32267093658447
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.99036431312561,
+              "y": 9.3391284942627
+            },
+            "enu": [
+              -207.886840820312,
+              -45.4577331542969,
+              9.40684604644775
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.990873694419861,
+              "y": 9.42270278930664
+            },
+            "enu": [
+              -208.378494262695,
+              -45.0966491699219,
+              9.49229621887207
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.989204287528992,
+              "y": 9.50908088684082
+            },
+            "enu": [
+              -208.870025634766,
+              -44.7357902526855,
+              9.58030223846436
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.990013182163239,
+              "y": 9.59597015380859
+            },
+            "enu": [
+              -209.361434936523,
+              -44.3751449584961,
+              9.67086219787598
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.989191591739655,
+              "y": 9.68008995056152
+            },
+            "enu": [
+              -209.812530517578,
+              -44.0440979003906,
+              9.75174713134766
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.989191591739655,
+              "y": 9.77028942108154
+            },
+            "enu": [
+              -210.304077148438,
+              -43.6832275390625,
+              9.84869384765625
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.988410949707031,
+              "y": 9.86627292633057
+            },
+            "enu": [
+              -210.796279907227,
+              -43.3217544555664,
+              9.94180870056152
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.986001372337341,
+              "y": 9.96001720428467
+            },
+            "enu": [
+              -211.287353515625,
+              -42.9610176086426,
+              10.0413093566895
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.987708568572998,
+              "y": 10.0593137741089
+            },
+            "enu": [
+              -211.779113769531,
+              -42.5997314453125,
+              10.1382570266724
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.985000252723694,
+              "y": 10.1581363677979
+            },
+            "enu": [
+              -212.27067565918,
+              -42.2385597229004,
+              10.2390356063843
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.987033486366272,
+              "y": 10.2586278915405
+            },
+            "enu": [
+              -212.762069702148,
+              -41.8775024414062,
+              10.3423690795898
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.984123706817627,
+              "y": 10.362509727478
+            },
+            "enu": [
+              -213.254165649414,
+              -41.5159187316895,
+              10.4431467056274
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.986434519290924,
+              "y": 10.4633026123047
+            },
+            "enu": [
+              -213.745193481445,
+              -41.1551132202148,
+              10.550313949585
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.985897362232208,
+              "y": 10.5701179504395
+            },
+            "enu": [
+              -214.236938476562,
+              -40.7937812805176,
+              10.6523694992065
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.985897362232208,
+              "y": 10.6638307571411
+            },
+            "enu": [
+              -214.687210083008,
+              -40.4629135131836,
+              10.7536935806274
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.985388934612274,
+              "y": 10.7728757858276
+            },
+            "enu": [
+              -215.179138183594,
+              -40.1014595031738,
+              10.855749130249
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.981936931610107,
+              "y": 10.8775596618652
+            },
+            "enu": [
+              -215.670883178711,
+              -39.7401390075684,
+              10.9680252075195
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.98499608039856,
+              "y": 10.9874076843262
+            },
+            "enu": [
+              -216.162445068359,
+              -39.3789520263672,
+              11.0751905441284
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.9813312292099,
+              "y": 11.0957946777344
+            },
+            "enu": [
+              -216.653823852539,
+              -39.0179061889648,
+              11.1849126815796
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.984638333320618,
+              "y": 11.2041358947754
+            },
+            "enu": [
+              -217.145034790039,
+              -38.6569938659668,
+              11.2946348190308
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.980848729610443,
+              "y": 11.3163232803345
+            },
+            "enu": [
+              -217.636962890625,
+              -38.2955551147461,
+              11.401801109314
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.984327375888824,
+              "y": 11.4227380752563
+            },
+            "enu": [
+              -218.128707885742,
+              -37.9342460632324,
+              11.5166330337524
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.984097898006439,
+              "y": 11.5357437133789
+            },
+            "enu": [
+              -218.62028503418,
+              -37.5730743408203,
+              11.6212453842163
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.984097898006439,
+              "y": 11.6419887542725
+            },
+            "enu": [
+              -219.111679077148,
+              -37.212043762207,
+              11.7360773086548
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.983928859233856,
+              "y": 11.7463483810425
+            },
+            "enu": [
+              -219.562255859375,
+              -36.8810119628906,
+              11.8322896957397
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.979836106300354,
+              "y": 11.8536443710327
+            },
+            "enu": [
+              -220.053817749023,
+              -36.5198364257812,
+              11.9471216201782
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.983756065368652,
+              "y": 11.9655857086182
+            },
+            "enu": [
+              -220.545211791992,
+              -36.1587905883789,
+              12.0542898178101
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.979713559150696,
+              "y": 12.0757007598877
+            },
+            "enu": [
+              -221.037307739258,
+              -35.7972183227539,
+              12.1640110015869
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.983710825443268,
+              "y": 12.18381690979
+            },
+            "enu": [
+              -221.528335571289,
+              -35.4364395141602,
+              12.2750110626221
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.979596436023712,
+              "y": 12.2961339950562
+            },
+            "enu": [
+              -222.020080566406,
+              -35.0751342773438,
+              12.3821773529053
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.98365443944931,
+              "y": 12.4004287719727
+            },
+            "enu": [
+              -222.511642456055,
+              -34.7139587402344,
+              12.4931774139404
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.983693838119507,
+              "y": 12.5115242004395
+            },
+            "enu": [
+              -223.003036499023,
+              -34.352912902832,
+              12.596510887146
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.983693838119507,
+              "y": 12.6146230697632
+            },
+            "enu": [
+              -223.495132446289,
+              -33.991340637207,
+              12.7049560546875
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.983713686466217,
+              "y": 12.7241449356079
+            },
+            "enu": [
+              -223.98616027832,
+              -33.6305618286133,
+              12.8082895278931
+            ]
+          }
+        ],
+        "wall_hits": {
+
+        }
+      },
+      "forward": {
+        "airborne_frames": 0,
+        "distance_m": 51.9495125217363,
+        "intended_surface_samples": 88,
+        "last_contact": {
+
+        },
+        "pass": true,
+        "reached": 9,
+        "sample_count": 88,
+        "stable_start": true,
+        "targets": 9,
+        "trace": [
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.979698061943054,
+              "y": 12.8270788192749
+            },
+            "enu": [
+              -224.472732543945,
+              -33.2736206054688,
+              12.9156274795532
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.979698061943054,
+              "y": 12.8119115829468
+            },
+            "enu": [
+              -224.411834716797,
+              -33.3235130310059,
+              12.9080095291138
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.983713686466217,
+              "y": 12.779956817627
+            },
+            "enu": [
+              -224.262634277344,
+              -33.4360466003418,
+              12.877477645874
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.983713686466217,
+              "y": 12.7307529449463
+            },
+            "enu": [
+              -224.025161743164,
+              -33.6110763549805,
+              12.8232355117798
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.979598701000214,
+              "y": 12.6599493026733
+            },
+            "enu": [
+              -223.695816040039,
+              -33.8545951843262,
+              12.7485914230347
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.983693838119507,
+              "y": 12.567156791687
+            },
+            "enu": [
+              -223.276062011719,
+              -34.1623306274414,
+              12.6606979370117
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.979585289955139,
+              "y": 12.4609937667847
+            },
+            "enu": [
+              -222.785064697266,
+              -34.5220527648926,
+              12.5552072525024
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.98365443944931,
+              "y": 12.352201461792
+            },
+            "enu": [
+              -222.289916992188,
+              -34.8846397399902,
+              12.4397945404053
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.979596436023712,
+              "y": 12.2405338287354
+            },
+            "enu": [
+              -221.794296264648,
+              -35.2474784851074,
+              12.332670211792
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.983710825443268,
+              "y": 12.1340265274048
+            },
+            "enu": [
+              -221.299057006836,
+              -35.6099662780762,
+              12.2243127822876
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.983756065368652,
+              "y": 12.0208015441895
+            },
+            "enu": [
+              -220.804016113281,
+              -35.9722290039062,
+              12.1189298629761
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.983756065368652,
+              "y": 11.914231300354
+            },
+            "enu": [
+              -220.308258056641,
+              -36.3350067138672,
+              12.0067710876465
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.983928859233856,
+              "y": 11.8093414306641
+            },
+            "enu": [
+              -219.854598999023,
+              -36.667049407959,
+              11.9045028686523
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.980115294456482,
+              "y": 11.7015800476074
+            },
+            "enu": [
+              -219.35954284668,
+              -37.0299072265625,
+              11.7905130386353
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.984097898006439,
+              "y": 11.5886907577515
+            },
+            "enu": [
+              -218.864852905273,
+              -37.3929023742676,
+              11.6793785095215
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.980457544326782,
+              "y": 11.477707862854
+            },
+            "enu": [
+              -218.369644165039,
+              -37.7565269470215,
+              11.5710020065308
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.984327375888824,
+              "y": 11.3681125640869
+            },
+            "enu": [
+              -217.875228881836,
+              -38.1197280883789,
+              11.4607849121094
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.984638333320618,
+              "y": 11.2548322677612
+            },
+            "enu": [
+              -217.380554199219,
+              -38.4832153320312,
+              11.352520942688
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.984638333320618,
+              "y": 11.1483469009399
+            },
+            "enu": [
+              -216.884948730469,
+              -38.8474349975586,
+              11.2377767562866
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.98499608039856,
+              "y": 11.036229133606
+            },
+            "enu": [
+              -216.391052246094,
+              -39.2104339599609,
+              11.1295595169067
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.981936931610107,
+              "y": 10.930624961853
+            },
+            "enu": [
+              -215.896026611328,
+              -39.5742835998535,
+              11.0202312469482
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.985388934612274,
+              "y": 10.8199625015259
+            },
+            "enu": [
+              -215.401916503906,
+              -39.9374923706055,
+              10.9138469696045
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.982570171356201,
+              "y": 10.7225580215454
+            },
+            "enu": [
+              -214.948089599609,
+              -40.271110534668,
+              10.8124618530273
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.985897362232208,
+              "y": 10.6151790618896
+            },
+            "enu": [
+              -214.453430175781,
+              -40.6346664428711,
+              10.7050838470459
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.98333203792572,
+              "y": 10.5085668563843
+            },
+            "enu": [
+              -213.958526611328,
+              -40.9983596801758,
+              10.5958614349365
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.986434519290924,
+              "y": 10.4058799743652
+            },
+            "enu": [
+              -213.464569091797,
+              -41.361328125,
+              10.4875755310059
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.987033486366272,
+              "y": 10.3004341125488
+            },
+            "enu": [
+              -212.970642089844,
+              -41.7242431640625,
+              10.3866853713989
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.987033486366272,
+              "y": 10.201358795166
+            },
+            "enu": [
+              -212.476333618164,
+              -42.0874290466309,
+              10.2847757339478
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.987708568572998,
+              "y": 10.0991220474243
+            },
+            "enu": [
+              -211.982788085938,
+              -42.4500389099121,
+              10.1857938766479
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.986001372337341,
+              "y": 10.0020360946655
+            },
+            "enu": [
+              -211.488388061523,
+              -42.8132667541504,
+              10.0804500579834
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.988410949707031,
+              "y": 9.90402793884277
+            },
+            "enu": [
+              -210.995040893555,
+              -43.1757164001465,
+              9.98526000976562
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.986983895301819,
+              "y": 9.80851078033447
+            },
+            "enu": [
+              -210.501205444336,
+              -43.5385322570801,
+              9.88723850250244
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.989191591739655,
+              "y": 9.72343635559082
+            },
+            "enu": [
+              -210.048904418945,
+              -43.8708648681641,
+              9.80342388153076
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.98809552192688,
+              "y": 9.63074684143066
+            },
+            "enu": [
+              -209.554992675781,
+              -44.2337646484375,
+              9.7082691192627
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.990013182163239,
+              "y": 9.54295063018799
+            },
+            "enu": [
+              -209.061447143555,
+              -44.5963859558105,
+              9.61218643188477
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.990873694419861,
+              "y": 9.45458602905273
+            },
+            "enu": [
+              -208.568237304688,
+              -44.9587593078613,
+              9.52627944946289
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.990873694419861,
+              "y": 9.37142658233643
+            },
+            "enu": [
+              -208.075317382812,
+              -45.3209266662598,
+              9.44038677215576
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.991783797740936,
+              "y": 9.2886791229248
+            },
+            "enu": [
+              -207.58283996582,
+              -45.6827621459961,
+              9.36087322235107
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.991563975811005,
+              "y": 9.2096118927002
+            },
+            "enu": [
+              -207.089538574219,
+              -46.0451927185059,
+              9.27595233917236
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.992699801921844,
+              "y": 9.13297939300537
+            },
+            "enu": [
+              -206.596496582031,
+              -46.4074554443359,
+              9.19928932189941
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.992752373218536,
+              "y": 9.05883502960205
+            },
+            "enu": [
+              -206.104095458984,
+              -46.7692604064941,
+              9.12268161773682
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.993655264377594,
+              "y": 8.98883438110352
+            },
+            "enu": [
+              -205.612014770508,
+              -47.1308174133301,
+              9.04514026641846
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.993937134742737,
+              "y": 8.9261646270752
+            },
+            "enu": [
+              -205.160385131836,
+              -47.4626159667969,
+              8.98858737945557
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.994608819484711,
+              "y": 8.86207294464111
+            },
+            "enu": [
+              -204.666290283203,
+              -47.8256988525391,
+              8.91999435424805
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.995533287525177,
+              "y": 8.80097961425781
+            },
+            "enu": [
+              -204.173736572266,
+              -48.1875610351562,
+              8.85535335540771
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.995533287525177,
+              "y": 8.74307537078857
+            },
+            "enu": [
+              -203.681549072266,
+              -48.5491828918457,
+              8.79647254943848
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.996445894241333,
+              "y": 8.6902322769165
+            },
+            "enu": [
+              -203.190414428711,
+              -48.9100723266602,
+              8.73911476135254
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.997170329093933,
+              "y": 8.63948726654053
+            },
+            "enu": [
+              -202.698226928711,
+              -49.2716827392578,
+              8.68613624572754
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.997246980667114,
+              "y": 8.59767532348633
+            },
+            "enu": [
+              -202.247253417969,
+              -49.602668762207,
+              8.63945198059082
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_Nanqu_RaisedWestApproach",
+              "normal_y": 0.997663736343384,
+              "y": 8.55794334411621
+            },
+            "enu": [
+              -201.747299194336,
+              -49.9547157287598,
+              8.59397506713867
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.997584402561188,
+              "y": 8.51352882385254
+            },
+            "enu": [
+              -201.240295410156,
+              -50.2963104248047,
+              8.5531644821167
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.997584402561188,
+              "y": 8.47096347808838
+            },
+            "enu": [
+              -200.729095458984,
+              -50.6315765380859,
+              8.51176643371582
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.997811913490295,
+              "y": 8.430251121521
+            },
+            "enu": [
+              -200.215682983398,
+              -50.9629211425781,
+              8.46933078765869
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.997811913490295,
+              "y": 8.38976955413818
+            },
+            "enu": [
+              -199.700866699219,
+              -51.2918930053711,
+              8.42889308929443
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998012185096741,
+              "y": 8.35007190704346
+            },
+            "enu": [
+              -199.184280395508,
+              -51.6198883056641,
+              8.38835334777832
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998023271560669,
+              "y": 8.31153392791748
+            },
+            "enu": [
+              -198.667434692383,
+              -51.9468421936035,
+              8.3490629196167
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99819415807724,
+              "y": 8.27310752868652
+            },
+            "enu": [
+              -198.150253295898,
+              -52.2730941772461,
+              8.31052494049072
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998184323310852,
+              "y": 8.23629093170166
+            },
+            "enu": [
+              -197.632995605469,
+              -52.598747253418,
+              8.27241230010986
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998184323310852,
+              "y": 8.20246887207031
+            },
+            "enu": [
+              -197.158508300781,
+              -52.897144317627,
+              8.2386646270752
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998547077178955,
+              "y": 8.1677713394165
+            },
+            "enu": [
+              -196.641677856445,
+              -53.2239875793457,
+              8.20176792144775
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998557090759277,
+              "y": 8.13489055633545
+            },
+            "enu": [
+              -196.125961303711,
+              -53.5517959594727,
+              8.16786670684814
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998775959014893,
+              "y": 8.10240077972412
+            },
+            "enu": [
+              -195.609893798828,
+              -53.8809852600098,
+              8.13492774963379
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998765766620636,
+              "y": 8.07209205627441
+            },
+            "enu": [
+              -195.095153808594,
+              -54.2099342346191,
+              8.10300254821777
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998765766620636,
+              "y": 8.04167175292969
+            },
+            "enu": [
+              -194.579864501953,
+              -54.5395927429199,
+              8.07263088226318
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998598754405975,
+              "y": 8.00963497161865
+            },
+            "enu": [
+              -194.064910888672,
+              -54.8693161010742,
+              8.04238033294678
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998598754405975,
+              "y": 7.97723960876465
+            },
+            "enu": [
+              -193.550170898438,
+              -55.199031829834,
+              8.00977230072021
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998706221580505,
+              "y": 7.94526481628418
+            },
+            "enu": [
+              -193.034774780273,
+              -55.5293350219727,
+              7.97736740112305
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.9986971616745,
+              "y": 7.91409301757812
+            },
+            "enu": [
+              -192.520523071289,
+              -55.8589324951172,
+              7.94570398330688
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.9986971616745,
+              "y": 7.88543510437012
+            },
+            "enu": [
+              -192.048355102539,
+              -56.16162109375,
+              7.91706800460815
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99884706735611,
+              "y": 7.85580444335938
+            },
+            "enu": [
+              -191.533966064453,
+              -56.4911994934082,
+              7.8837251663208
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99884706735611,
+              "y": 7.82638692855835
+            },
+            "enu": [
+              -191.018463134766,
+              -56.8211898803711,
+              7.85652732849121
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999078214168549,
+              "y": 7.798499584198
+            },
+            "enu": [
+              -190.503143310547,
+              -57.1509742736816,
+              7.82712507247925
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999079465866089,
+              "y": 7.77223587036133
+            },
+            "enu": [
+              -189.988006591797,
+              -57.4805908203125,
+              7.80014181137085
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999177932739258,
+              "y": 7.74611949920654
+            },
+            "enu": [
+              -189.473052978516,
+              -57.81005859375,
+              7.77361297607422
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999177932739258,
+              "y": 7.72132587432861
+            },
+            "enu": [
+              -188.958312988281,
+              -58.1394119262695,
+              7.74779081344604
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999177932739258,
+              "y": 7.69649791717529
+            },
+            "enu": [
+              -188.442855834961,
+              -58.4692077636719,
+              7.72296524047852
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999270141124725,
+              "y": 7.6726655960083
+            },
+            "enu": [
+              -187.927520751953,
+              -58.7989234924316,
+              7.69814491271973
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999269127845764,
+              "y": 7.64927673339844
+            },
+            "enu": [
+              -187.412490844727,
+              -59.1284332275391,
+              7.6746129989624
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999359548091888,
+              "y": 7.62816715240479
+            },
+            "enu": [
+              -186.940307617188,
+              -59.4296569824219,
+              7.65318155288696
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99936044216156,
+              "y": 7.60627317428589
+            },
+            "enu": [
+              -186.422058105469,
+              -59.7545509338379,
+              7.63040256500244
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99936044216156,
+              "y": 7.58439350128174
+            },
+            "enu": [
+              -185.90202331543,
+              -60.0762786865234,
+              7.60851907730103
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999226808547974,
+              "y": 7.56077337265015
+            },
+            "enu": [
+              -185.381011962891,
+              -60.3960342407227,
+              7.58691310882568
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999226808547974,
+              "y": 7.53669023513794
+            },
+            "enu": [
+              -184.858581542969,
+              -60.7151985168457,
+              7.56255483627319
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999310076236725,
+              "y": 7.51321077346802
+            },
+            "enu": [
+              -184.336868286133,
+              -61.0329818725586,
+              7.53851985931396
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999309957027435,
+              "y": 7.49047899246216
+            },
+            "enu": [
+              -183.814117431641,
+              -61.3507537841797,
+              7.51533699035645
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999557316303253,
+              "y": 7.46780586242676
+            },
+            "enu": [
+              -183.291427612305,
+              -61.6680526733398,
+              7.49255752563477
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999784827232361,
+              "y": 7.45192527770996
+            },
+            "enu": [
+              -182.768814086914,
+              -61.9850616455078,
+              7.47080945968628
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999784827232361,
+              "y": 7.43926334381104
+            },
+            "enu": [
+              -182.245544433594,
+              -62.3021774291992,
+              7.4560604095459
+            ]
+          }
+        ],
+        "wall_hits": {
+
+        }
+      }
+    },
+    "under_rail_04": {
+      "closed_reverse_test": {
+        "airborne_frames": 0,
+        "distance_m": 45.6374360297341,
+        "intended_surface_samples": 76,
+        "last_contact": {
+
+        },
+        "pass": true,
+        "reached": 8,
+        "sample_count": 76,
+        "stable_start": true,
+        "targets": 8,
+        "trace": [
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999050199985504,
+              "y": 9.22802829742432
+            },
+            "enu": [
+              -122.084999084473,
+              -86.585075378418,
+              9.24993515014648
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999050199985504,
+              "y": 9.22485542297363
+            },
+            "enu": [
+              -122.154769897461,
+              -86.5645294189453,
+              9.25242614746094
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999041676521301,
+              "y": 9.21678733825684
+            },
+            "enu": [
+              -122.331489562988,
+              -86.5124359130859,
+              9.24454879760742
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998959362506866,
+              "y": 9.20367050170898
+            },
+            "enu": [
+              -122.615348815918,
+              -86.4287719726562,
+              9.23205757141113
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998959362506866,
+              "y": 9.1850471496582
+            },
+            "enu": [
+              -123.00658416748,
+              -86.3133773803711,
+              9.21429824829102
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99896764755249,
+              "y": 9.16133975982666
+            },
+            "enu": [
+              -123.505058288574,
+              -86.1664428710938,
+              9.19025611877441
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998874306678772,
+              "y": 9.1331262588501
+            },
+            "enu": [
+              -124.086227416992,
+              -85.9951324462891,
+              9.16265678405762
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998864412307739,
+              "y": 9.10409355163574
+            },
+            "enu": [
+              -124.672508239746,
+              -85.8223571777344,
+              9.13395690917969
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998773694038391,
+              "y": 9.07440567016602
+            },
+            "enu": [
+              -125.259658813477,
+              -85.6493301391602,
+              9.10481929779053
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998773694038391,
+              "y": 9.04413223266602
+            },
+            "enu": [
+              -125.84546661377,
+              -85.4766845703125,
+              9.0750093460083
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99893593788147,
+              "y": 9.01692581176758
+            },
+            "enu": [
+              -126.383232116699,
+              -85.3181838989258,
+              9.04506683349609
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99893593788147,
+              "y": 8.98871231079102
+            },
+            "enu": [
+              -126.96940612793,
+              -85.1454238891602,
+              9.01792049407959
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998889923095703,
+              "y": 8.96031284332275
+            },
+            "enu": [
+              -127.556251525879,
+              -84.9724807739258,
+              8.98986053466797
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998889923095703,
+              "y": 8.93147087097168
+            },
+            "enu": [
+              -128.142929077148,
+              -84.7995681762695,
+              8.96116256713867
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998823285102844,
+              "y": 8.9026927947998
+            },
+            "enu": [
+              -128.729507446289,
+              -84.6267623901367,
+              8.93232727050781
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998823285102844,
+              "y": 8.87301826477051
+            },
+            "enu": [
+              -129.315719604492,
+              -84.453987121582,
+              8.90336322784424
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998811841011047,
+              "y": 8.84326934814453
+            },
+            "enu": [
+              -129.901870727539,
+              -84.2812881469727,
+              8.8737268447876
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998742997646332,
+              "y": 8.81263160705566
+            },
+            "enu": [
+              -130.488784790039,
+              -84.1083068847656,
+              8.84382343292236
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99875396490097,
+              "y": 8.78199100494385
+            },
+            "enu": [
+              -131.07551574707,
+              -83.9353561401367,
+              8.81311988830566
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998687446117401,
+              "y": 8.75339126586914
+            },
+            "enu": [
+              -131.613220214844,
+              -83.7768249511719,
+              8.78512382507324
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998676002025604,
+              "y": 8.72203540802002
+            },
+            "enu": [
+              -132.199020385742,
+              -83.6041259765625,
+              8.75379180908203
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998594760894775,
+              "y": 8.68994045257568
+            },
+            "enu": [
+              -132.78564453125,
+              -83.4312057495117,
+              8.72236824035645
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998608231544495,
+              "y": 8.65751838684082
+            },
+            "enu": [
+              -133.372055053711,
+              -83.2583694458008,
+              8.69010353088379
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998541355133057,
+              "y": 8.62484455108643
+            },
+            "enu": [
+              -133.958267211914,
+              -83.085578918457,
+              8.65771579742432
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998528122901917,
+              "y": 8.5917501449585
+            },
+            "enu": [
+              -134.545257568359,
+              -82.9125518798828,
+              8.62485313415527
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998456954956055,
+              "y": 8.55825614929199
+            },
+            "enu": [
+              -135.131011962891,
+              -82.7398834228516,
+              8.59176063537598
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998456954956055,
+              "y": 8.52424049377441
+            },
+            "enu": [
+              -135.717666625977,
+              -82.5669631958008,
+              8.55810260772705
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998422026634216,
+              "y": 8.49021434783936
+            },
+            "enu": [
+              -136.30403137207,
+              -82.3941802978516,
+              8.52412509918213
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998422026634216,
+              "y": 8.45584106445312
+            },
+            "enu": [
+              -136.890243530273,
+              -82.2213973999023,
+              8.49000930786133
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998455762863159,
+              "y": 8.42423725128174
+            },
+            "enu": [
+              -137.428146362305,
+              -82.0624237060547,
+              8.45851421356201
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998455762863159,
+              "y": 8.39022445678711
+            },
+            "enu": [
+              -138.01416015625,
+              -81.8883590698242,
+              8.42409133911133
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998413681983948,
+              "y": 8.35632419586182
+            },
+            "enu": [
+              -138.599853515625,
+              -81.7139129638672,
+              8.39009857177734
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998413681983948,
+              "y": 8.32187175750732
+            },
+            "enu": [
+              -139.185272216797,
+              -81.5392150878906,
+              8.35611343383789
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998399436473846,
+              "y": 8.28728675842285
+            },
+            "enu": [
+              -139.771530151367,
+              -81.3641052246094,
+              8.32161235809326
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998550176620483,
+              "y": 8.25414657592773
+            },
+            "enu": [
+              -140.357437133789,
+              -81.1889266967773,
+              8.28719234466553
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998561978340149,
+              "y": 8.2212495803833
+            },
+            "enu": [
+              -140.943099975586,
+              -81.0136947631836,
+              8.25420761108398
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998631715774536,
+              "y": 8.18907928466797
+            },
+            "enu": [
+              -141.528579711914,
+              -80.8385009765625,
+              8.22164249420166
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998619258403778,
+              "y": 8.15704441070557
+            },
+            "enu": [
+              -142.113800048828,
+              -80.6633071899414,
+              8.18934345245361
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999282777309418,
+              "y": 8.10977840423584
+            },
+            "enu": [
+              -143.233184814453,
+              -80.3167877197266,
+              8.13492107391357
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999343633651733,
+              "y": 8.08126354217529
+            },
+            "enu": [
+              -143.809555053711,
+              -80.1110000610352,
+              8.11198139190674
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999343633651733,
+              "y": 8.05913066864014
+            },
+            "enu": [
+              -144.380310058594,
+              -79.8938674926758,
+              8.08348083496094
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999324560165405,
+              "y": 8.03692722320557
+            },
+            "enu": [
+              -144.949111938477,
+              -79.6694030761719,
+              8.06158256530762
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999324560165405,
+              "y": 8.01444435119629
+            },
+            "enu": [
+              -145.516159057617,
+              -79.4407730102539,
+              8.03904914855957
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999324560165405,
+              "y": 7.99197101593018
+            },
+            "enu": [
+              -146.081848144531,
+              -79.2095184326172,
+              8.01658058166504
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99931412935257,
+              "y": 7.96930551528931
+            },
+            "enu": [
+              -146.647644042969,
+              -78.9763488769531,
+              7.99406003952026
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999314069747925,
+              "y": 7.94667530059814
+            },
+            "enu": [
+              -147.211776733398,
+              -78.7424545288086,
+              7.97142124176025
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999319016933441,
+              "y": 7.92407608032227
+            },
+            "enu": [
+              -147.776397705078,
+              -78.5074844360352,
+              7.94903469085693
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999313354492188,
+              "y": 7.88076400756836
+            },
+            "enu": [
+              -148.858276367188,
+              -78.0572128295898,
+              7.90549373626709
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999313354492188,
+              "y": 7.85808849334717
+            },
+            "enu": [
+              -149.424072265625,
+              -77.8250427246094,
+              7.88284969329834
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999311506748199,
+              "y": 7.83541202545166
+            },
+            "enu": [
+              -149.990219116211,
+              -77.594352722168,
+              7.85981369018555
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999311506748199,
+              "y": 7.81272172927856
+            },
+            "enu": [
+              -150.556518554688,
+              -77.3645629882812,
+              7.83750581741333
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999313354492188,
+              "y": 7.79004383087158
+            },
+            "enu": [
+              -151.122802734375,
+              -77.1353530883789,
+              7.81522464752197
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999313354492188,
+              "y": 7.7673602104187
+            },
+            "enu": [
+              -151.690048217773,
+              -76.9061737060547,
+              7.79211282730103
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999313354492188,
+              "y": 7.74468374252319
+            },
+            "enu": [
+              -152.257171630859,
+              -76.6772003173828,
+              7.76944398880005
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999316275119781,
+              "y": 7.7220664024353
+            },
+            "enu": [
+              -152.824081420898,
+              -76.4486389160156,
+              7.74642705917358
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999316275119781,
+              "y": 7.69945430755615
+            },
+            "enu": [
+              -153.390914916992,
+              -76.2201309204102,
+              7.72417497634888
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99938976764679,
+              "y": 7.67958641052246
+            },
+            "enu": [
+              -153.910629272461,
+              -76.0108261108398,
+              7.70352458953857
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99938976764679,
+              "y": 7.6582202911377
+            },
+            "enu": [
+              -154.477600097656,
+              -75.7823028564453,
+              7.6819429397583
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999553799629211,
+              "y": 7.63844442367554
+            },
+            "enu": [
+              -155.044357299805,
+              -75.5534896850586,
+              7.66057634353638
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999553799629211,
+              "y": 7.62015628814697
+            },
+            "enu": [
+              -155.611831665039,
+              -75.3243560791016,
+              7.6414098739624
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99956351518631,
+              "y": 7.60197257995605
+            },
+            "enu": [
+              -156.178039550781,
+              -75.0956344604492,
+              7.62316274642944
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99956351518631,
+              "y": 7.58389711380005
+            },
+            "enu": [
+              -156.745040893555,
+              -74.8665084838867,
+              7.60499143600464
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999558746814728,
+              "y": 7.56581211090088
+            },
+            "enu": [
+              -157.31184387207,
+              -74.6374206542969,
+              7.58725881576538
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999558746814728,
+              "y": 7.54765129089355
+            },
+            "enu": [
+              -157.87841796875,
+              -74.4083709716797,
+              7.5688214302063
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999558746814728,
+              "y": 7.52946281433105
+            },
+            "enu": [
+              -158.445877075195,
+              -74.1789703369141,
+              7.55063486099243
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999556839466095,
+              "y": 7.51127910614014
+            },
+            "enu": [
+              -159.011917114258,
+              -73.9500274658203,
+              7.53248453140259
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999556839466095,
+              "y": 7.49457931518555
+            },
+            "enu": [
+              -159.53173828125,
+              -73.7397842407227,
+              7.51578283309937
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999578058719635,
+              "y": 7.47670698165894
+            },
+            "enu": [
+              -160.09440612793,
+              -73.5023803710938,
+              7.49778366088867
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999574959278107,
+              "y": 7.45892858505249
+            },
+            "enu": [
+              -160.652893066406,
+              -73.2526397705078,
+              7.47977876663208
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99982488155365,
+              "y": 7.44447755813599
+            },
+            "enu": [
+              -161.207855224609,
+              -72.9959945678711,
+              7.46200037002563
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99982488155365,
+              "y": 7.4330587387085
+            },
+            "enu": [
+              -161.760391235352,
+              -72.7352447509766,
+              7.44888544082642
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999928116798401,
+              "y": 7.41966867446899
+            },
+            "enu": [
+              -162.311447143555,
+              -72.4720077514648,
+              7.4378080368042
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999928116798401,
+              "y": 7.41234922409058
+            },
+            "enu": [
+              -162.861602783203,
+              -72.2070922851562,
+              7.4249439239502
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999928712844849,
+              "y": 7.40504121780396
+            },
+            "enu": [
+              -163.411666870117,
+              -71.9409866333008,
+              7.41789960861206
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999936997890472,
+              "y": 7.39814138412476
+            },
+            "enu": [
+              -163.961227416992,
+              -71.6742630004883,
+              7.41040468215942
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999936640262604,
+              "y": 7.39128446578979
+            },
+            "enu": [
+              -164.510116577148,
+              -71.4072189331055,
+              7.40362644195557
+            ]
+          }
+        ],
+        "wall_hits": {
+
+        }
+      },
+      "forward": {
+        "airborne_frames": 0,
+        "distance_m": 45.6296528432867,
+        "intended_surface_samples": 79,
+        "last_contact": {
+
+        },
+        "pass": true,
+        "reached": 8,
+        "sample_count": 79,
+        "stable_start": true,
+        "targets": 8,
+        "trace": [
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999955892562866,
+              "y": 7.38108730316162
+            },
+            "enu": [
+              -165.444854736328,
+              -70.9505081176758,
+              7.38786602020264
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999955892562866,
+              "y": 7.3817400932312
+            },
+            "enu": [
+              -165.382125854492,
+              -70.9804306030273,
+              7.39283275604248
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999955892562866,
+              "y": 7.38344478607178
+            },
+            "enu": [
+              -165.218246459961,
+              -71.0586929321289,
+              7.39465093612671
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999955892562866,
+              "y": 7.38619804382324
+            },
+            "enu": [
+              -164.953582763672,
+              -71.1850891113281,
+              7.39805030822754
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999936640262604,
+              "y": 7.39026165008545
+            },
+            "enu": [
+              -164.587844848633,
+              -71.3597183227539,
+              7.40263414382935
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999936997890472,
+              "y": 7.39607524871826
+            },
+            "enu": [
+              -164.121124267578,
+              -71.5826187133789,
+              7.40813541412354
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999936997890472,
+              "y": 7.40284729003906
+            },
+            "enu": [
+              -163.576477050781,
+              -71.8427505493164,
+              7.41528034210205
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999928116798401,
+              "y": 7.41002750396729
+            },
+            "enu": [
+              -163.026947021484,
+              -72.1051635742188,
+              7.42245578765869
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999928116798401,
+              "y": 7.41733264923096
+            },
+            "enu": [
+              -162.476959228516,
+              -72.3678131103516,
+              7.43234014511108
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999653160572052,
+              "y": 7.42906332015991
+            },
+            "enu": [
+              -161.9287109375,
+              -72.6296920776367,
+              7.44493436813354
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99982488155365,
+              "y": 7.44077110290527
+            },
+            "enu": [
+              -161.379425048828,
+              -72.8921279907227,
+              7.4563512802124
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999574959278107,
+              "y": 7.453040599823
+            },
+            "enu": [
+              -160.83088684082,
+              -73.1543502807617,
+              7.47362947463989
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999578058719635,
+              "y": 7.46923875808716
+            },
+            "enu": [
+              -160.32763671875,
+              -73.3936157226562,
+              7.48962020874023
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999578058719635,
+              "y": 7.48689270019531
+            },
+            "enu": [
+              -159.77311706543,
+              -73.6428756713867,
+              7.50840997695923
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999556839466095,
+              "y": 7.50493335723877
+            },
+            "enu": [
+              -159.214248657227,
+              -73.8820571899414,
+              7.52567529678345
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999556839466095,
+              "y": 7.52302742004395
+            },
+            "enu": [
+              -158.653167724609,
+              -74.115104675293,
+              7.54375600814819
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999558746814728,
+              "y": 7.54107999801636
+            },
+            "enu": [
+              -158.091064453125,
+              -74.3443603515625,
+              7.56179189682007
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999558746814728,
+              "y": 7.55915784835815
+            },
+            "enu": [
+              -157.526885986328,
+              -74.571907043457,
+              7.58001756668091
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99956351518631,
+              "y": 7.57718086242676
+            },
+            "enu": [
+              -156.962448120117,
+              -74.7980422973633,
+              7.59781646728516
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99956351518631,
+              "y": 7.59514808654785
+            },
+            "enu": [
+              -156.397796630859,
+              -75.0231552124023,
+              7.61631679534912
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999553799629211,
+              "y": 7.61316680908203
+            },
+            "enu": [
+              -155.833053588867,
+              -75.2475433349609,
+              7.63396787643433
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999553799629211,
+              "y": 7.63131427764893
+            },
+            "enu": [
+              -155.268432617188,
+              -75.4711837768555,
+              7.6521053314209
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99938976764679,
+              "y": 7.64798450469971
+            },
+            "enu": [
+              -154.750579833984,
+              -75.6761856079102,
+              7.67135572433472
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99938976764679,
+              "y": 7.66920566558838
+            },
+            "enu": [
+              -154.186630249023,
+              -75.9011383056641,
+              7.69238567352295
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99938976764679,
+              "y": 7.69044828414917
+            },
+            "enu": [
+              -153.622589111328,
+              -76.1274795532227,
+              7.714768409729
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999316275119781,
+              "y": 7.71266651153564
+            },
+            "enu": [
+              -153.059951782227,
+              -76.3542404174805,
+              7.73681640625
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999316275119781,
+              "y": 7.73513889312744
+            },
+            "enu": [
+              -152.496734619141,
+              -76.5816345214844,
+              7.75931262969971
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999313354492188,
+              "y": 7.75763130187988
+            },
+            "enu": [
+              -151.933868408203,
+              -76.809211730957,
+              7.78181600570679
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999313354492188,
+              "y": 7.78012990951538
+            },
+            "enu": [
+              -151.371383666992,
+              -77.0368270874023,
+              7.80451488494873
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999311506748199,
+              "y": 7.80267715454102
+            },
+            "enu": [
+              -150.808044433594,
+              -77.2649307250977,
+              7.82688617706299
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999311506748199,
+              "y": 7.82518768310547
+            },
+            "enu": [
+              -150.246078491211,
+              -77.4925155639648,
+              7.8502082824707
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999313354492188,
+              "y": 7.84773588180542
+            },
+            "enu": [
+              -149.683029174805,
+              -77.7206039428711,
+              7.87193489074707
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999313354492188,
+              "y": 7.86835098266602
+            },
+            "enu": [
+              -149.167709350586,
+              -77.9293746948242,
+              7.89253759384155
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999313354492188,
+              "y": 7.8908805847168
+            },
+            "enu": [
+              -148.604476928711,
+              -78.1573944091797,
+              7.91548824310303
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999319016933441,
+              "y": 7.91330862045288
+            },
+            "enu": [
+              -148.04150390625,
+              -78.3851928710938,
+              7.93741893768311
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999319016933441,
+              "y": 7.93571996688843
+            },
+            "enu": [
+              -147.478805541992,
+              -78.6127471923828,
+              7.95993041992188
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99931412935257,
+              "y": 7.95817804336548
+            },
+            "enu": [
+              -146.916458129883,
+              -78.8401107788086,
+              7.98235321044922
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99931412935257,
+              "y": 7.9806604385376
+            },
+            "enu": [
+              -146.35400390625,
+              -79.0675277709961,
+              8.00479698181152
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999324560165405,
+              "y": 8.00307750701904
+            },
+            "enu": [
+              -145.790740966797,
+              -79.2952880859375,
+              8.02711772918701
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999324560165405,
+              "y": 8.02540969848633
+            },
+            "enu": [
+              -145.227722167969,
+              -79.5229187011719,
+              8.04971027374268
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999343633651733,
+              "y": 8.0476245880127
+            },
+            "enu": [
+              -144.664749145508,
+              -79.7505035400391,
+              8.07142066955566
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999343633651733,
+              "y": 8.06961250305176
+            },
+            "enu": [
+              -144.10237121582,
+              -79.9778213500977,
+              8.09391975402832
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998436689376831,
+              "y": 8.09079933166504
+            },
+            "enu": [
+              -143.587295532227,
+              -80.1852569580078,
+              8.12000274658203
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999282777309418,
+              "y": 8.11843776702881
+            },
+            "enu": [
+              -143.018051147461,
+              -80.3951568603516,
+              8.14298629760742
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999282777309418,
+              "y": 8.1413745880127
+            },
+            "enu": [
+              -142.443832397461,
+              -80.5877990722656,
+              8.17077350616455
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998631715774536,
+              "y": 8.17113876342773
+            },
+            "enu": [
+              -141.865753173828,
+              -80.7706756591797,
+              8.20245838165283
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998631715774536,
+              "y": 8.20280361175537
+            },
+            "enu": [
+              -141.287246704102,
+              -80.9468078613281,
+              8.23424434661865
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998550176620483,
+              "y": 8.23501396179199
+            },
+            "enu": [
+              -140.706954956055,
+              -81.1193313598633,
+              8.26691150665283
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998550176620483,
+              "y": 8.26763153076172
+            },
+            "enu": [
+              -140.126266479492,
+              -81.2893295288086,
+              8.29979991912842
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998399436473846,
+              "y": 8.30106353759766
+            },
+            "enu": [
+              -139.545562744141,
+              -81.4576416015625,
+              8.33418083190918
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998413681983948,
+              "y": 8.3352222442627
+            },
+            "enu": [
+              -138.963760375977,
+              -81.6250762939453,
+              8.36831855773926
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998470664024353,
+              "y": 8.36907482147217
+            },
+            "enu": [
+              -138.382690429688,
+              -81.7915115356445,
+              8.40178871154785
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998455762863159,
+              "y": 8.39988040924072
+            },
+            "enu": [
+              -137.849533081055,
+              -81.9436492919922,
+              8.43297576904297
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998407900333405,
+              "y": 8.43361663818359
+            },
+            "enu": [
+              -137.268402099609,
+              -82.1112518310547,
+              8.46691417694092
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998422026634216,
+              "y": 8.46772003173828
+            },
+            "enu": [
+              -136.687454223633,
+              -82.2804183959961,
+              8.50047492980957
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998469710350037,
+              "y": 8.50175666809082
+            },
+            "enu": [
+              -136.106414794922,
+              -82.4507064819336,
+              8.53481674194336
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998456954956055,
+              "y": 8.53530883789062
+            },
+            "enu": [
+              -135.52619934082,
+              -82.6212997436523,
+              8.56797218322754
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998456954956055,
+              "y": 8.56895446777344
+            },
+            "enu": [
+              -134.945922851562,
+              -82.7922592163086,
+              8.60192775726318
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998541355133057,
+              "y": 8.60183525085449
+            },
+            "enu": [
+              -134.36589050293,
+              -82.9634017944336,
+              8.63381671905518
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998541355133057,
+              "y": 8.63457584381104
+            },
+            "enu": [
+              -133.785140991211,
+              -83.1348266601562,
+              8.66639423370361
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998594760894775,
+              "y": 8.66676235198975
+            },
+            "enu": [
+              -133.204208374023,
+              -83.3065490722656,
+              8.69835090637207
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998594760894775,
+              "y": 8.69889354705811
+            },
+            "enu": [
+              -132.623580932617,
+              -83.4780883789062,
+              8.73008060455322
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998676002025604,
+              "y": 8.72778701782227
+            },
+            "enu": [
+              -132.091796875,
+              -83.6353073120117,
+              8.75872802734375
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998687446117401,
+              "y": 8.75886631011963
+            },
+            "enu": [
+              -131.510772705078,
+              -83.8068466186523,
+              8.78968143463135
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99875396490097,
+              "y": 8.78958034515381
+            },
+            "enu": [
+              -130.929840087891,
+              -83.9783401489258,
+              8.81993103027344
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998742997646332,
+              "y": 8.81993961334229
+            },
+            "enu": [
+              -130.349151611328,
+              -84.1496047973633,
+              8.85067081451416
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998811841011047,
+              "y": 8.85011577606201
+            },
+            "enu": [
+              -129.767333984375,
+              -84.3211364746094,
+              8.87978935241699
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998823285102844,
+              "y": 8.8795337677002
+            },
+            "enu": [
+              -129.187057495117,
+              -84.4921340942383,
+              8.91002655029297
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99889999628067,
+              "y": 8.90880012512207
+            },
+            "enu": [
+              -128.605331420898,
+              -84.6636199951172,
+              8.93771839141846
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998889923095703,
+              "y": 8.9373083114624
+            },
+            "enu": [
+              -128.02424621582,
+              -84.8347930908203,
+              8.96626663208008
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998927056789398,
+              "y": 8.96585845947266
+            },
+            "enu": [
+              -127.442878723145,
+              -85.0060348510742,
+              8.99457168579102
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99893593788147,
+              "y": 8.99159622192383
+            },
+            "enu": [
+              -126.909530639648,
+              -85.1631927490234,
+              9.02008533477783
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99893593788147,
+              "y": 9.01956748962402
+            },
+            "enu": [
+              -126.328392028809,
+              -85.3344421386719,
+              9.05013751983643
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998773694038391,
+              "y": 9.0491943359375
+            },
+            "enu": [
+              -125.747573852539,
+              -85.5057144165039,
+              9.07915878295898
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998773694038391,
+              "y": 9.07920837402344
+            },
+            "enu": [
+              -125.166778564453,
+              -85.6768951416016,
+              9.10869979858398
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998874306678772,
+              "y": 9.10843086242676
+            },
+            "enu": [
+              -124.585090637207,
+              -85.8483352661133,
+              9.13754844665527
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998874306678772,
+              "y": 9.1372241973877
+            },
+            "enu": [
+              -124.003524780273,
+              -86.0197372436523,
+              9.16587448120117
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99896764755249,
+              "y": 9.16528034210205
+            },
+            "enu": [
+              -123.421997070312,
+              -86.1911468505859,
+              9.19352626800537
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998959362506866,
+              "y": 9.19295120239258
+            },
+            "enu": [
+              -122.84056854248,
+              -86.3624649047852,
+              9.22099590301514
+            ]
+          }
+        ],
+        "wall_hits": {
+
+        }
+      }
+    },
+    "under_rail_04_outer_wheel_line": {
+      "closed_reverse_test": {
+        "airborne_frames": 0,
+        "distance_m": 45.6873643277213,
+        "intended_surface_samples": 77,
+        "last_contact": {
+
+        },
+        "pass": true,
+        "reached": 8,
+        "sample_count": 77,
+        "stable_start": true,
+        "targets": 8,
+        "trace": [
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999050199985504,
+              "y": 9.22802829742432
+            },
+            "enu": [
+              -122.084999084473,
+              -86.585075378418,
+              9.2499361038208
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999050199985504,
+              "y": 9.22485542297363
+            },
+            "enu": [
+              -122.154769897461,
+              -86.5645294189453,
+              9.25242710113525
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999041676521301,
+              "y": 9.21678733825684
+            },
+            "enu": [
+              -122.331489562988,
+              -86.5124359130859,
+              9.24454784393311
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998959362506866,
+              "y": 9.2036714553833
+            },
+            "enu": [
+              -122.615341186523,
+              -86.4287719726562,
+              9.23205757141113
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998959362506866,
+              "y": 9.18504905700684
+            },
+            "enu": [
+              -123.006553649902,
+              -86.3133850097656,
+              9.21430110931396
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99896764755249,
+              "y": 9.16134166717529
+            },
+            "enu": [
+              -123.505020141602,
+              -86.1664505004883,
+              9.19025707244873
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998874306678772,
+              "y": 9.13312911987305
+            },
+            "enu": [
+              -124.086166381836,
+              -85.9951553344727,
+              9.16266059875488
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998864412307739,
+              "y": 9.10409641265869
+            },
+            "enu": [
+              -124.67244720459,
+              -85.822380065918,
+              9.13395881652832
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998773694038391,
+              "y": 9.07440948486328
+            },
+            "enu": [
+              -125.25959777832,
+              -85.6493530273438,
+              9.10482311248779
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998773694038391,
+              "y": 9.04413509368896
+            },
+            "enu": [
+              -125.845413208008,
+              -85.4767074584961,
+              9.07501125335693
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99893593788147,
+              "y": 9.01692867279053
+            },
+            "enu": [
+              -126.383178710938,
+              -85.3182067871094,
+              9.04506969451904
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99893593788147,
+              "y": 8.9887170791626
+            },
+            "enu": [
+              -126.97045135498,
+              -85.1493148803711,
+              9.01792335510254
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998889923095703,
+              "y": 8.9603214263916
+            },
+            "enu": [
+              -127.559875488281,
+              -84.9853897094727,
+              8.98985767364502
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998889923095703,
+              "y": 8.93148612976074
+            },
+            "enu": [
+              -128.149978637695,
+              -84.8246307373047,
+              8.96117210388184
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998823285102844,
+              "y": 8.90271759033203
+            },
+            "enu": [
+              -128.740493774414,
+              -84.6659317016602,
+              8.93234539031982
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998823285102844,
+              "y": 8.8730525970459
+            },
+            "enu": [
+              -129.331008911133,
+              -84.5085144042969,
+              8.90338897705078
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998811841011047,
+              "y": 8.84332084655762
+            },
+            "enu": [
+              -129.921661376953,
+              -84.3519897460938,
+              8.87376403808594
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998742997646332,
+              "y": 8.81269931793213
+            },
+            "enu": [
+              -130.513229370117,
+              -84.1958312988281,
+              8.84388160705566
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99875396490097,
+              "y": 8.78206825256348
+            },
+            "enu": [
+              -131.104736328125,
+              -84.040153503418,
+              8.81319236755371
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998687446117401,
+              "y": 8.75348472595215
+            },
+            "enu": [
+              -131.647659301758,
+              -83.9003143310547,
+              8.78519153594971
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998676002025604,
+              "y": 8.72216796875
+            },
+            "enu": [
+              -132.240615844727,
+              -83.7540283203125,
+              8.75388622283936
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998594760894775,
+              "y": 8.6901273727417
+            },
+            "enu": [
+              -132.835220336914,
+              -83.6115112304688,
+              8.72251510620117
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998608231544495,
+              "y": 8.65774250030518
+            },
+            "enu": [
+              -133.430236816406,
+              -83.4712829589844,
+              8.6903018951416
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998541355133057,
+              "y": 8.6251277923584
+            },
+            "enu": [
+              -134.025405883789,
+              -83.3325042724609,
+              8.65791702270508
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998541355133057,
+              "y": 8.5920934677124
+            },
+            "enu": [
+              -134.621627807617,
+              -83.1944427490234,
+              8.62514495849609
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998456954956055,
+              "y": 8.55868339538574
+            },
+            "enu": [
+              -135.216705322266,
+              -83.0572357177734,
+              8.59218120574951
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998456954956055,
+              "y": 8.52472972869873
+            },
+            "enu": [
+              -135.812805175781,
+              -82.9202346801758,
+              8.55853939056396
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998422026634216,
+              "y": 8.49075126647949
+            },
+            "enu": [
+              -136.408645629883,
+              -82.7836303710938,
+              8.52474880218506
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998422026634216,
+              "y": 8.45644283294678
+            },
+            "enu": [
+              -137.004364013672,
+              -82.6472625732422,
+              8.49056053161621
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998455762863159,
+              "y": 8.42490482330322
+            },
+            "enu": [
+              -137.549865722656,
+              -82.5168228149414,
+              8.45909023284912
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998455762863159,
+              "y": 8.39090442657471
+            },
+            "enu": [
+              -138.140823364258,
+              -82.3603591918945,
+              8.42477130889893
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998470664024353,
+              "y": 8.35697174072266
+            },
+            "enu": [
+              -138.729125976562,
+              -82.1948165893555,
+              8.39077854156494
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998413681983948,
+              "y": 8.3225269317627
+            },
+            "enu": [
+              -139.315658569336,
+              -82.023811340332,
+              8.35676860809326
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998399436473846,
+              "y": 8.28797912597656
+            },
+            "enu": [
+              -139.902038574219,
+              -81.8492736816406,
+              8.32226943969727
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998550176620483,
+              "y": 8.25480842590332
+            },
+            "enu": [
+              -140.487487792969,
+              -81.6727142333984,
+              8.285888671875
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998561978340149,
+              "y": 8.22187614440918
+            },
+            "enu": [
+              -141.072479248047,
+              -81.4948120117188,
+              8.25486278533936
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998631715774536,
+              "y": 8.1896915435791
+            },
+            "enu": [
+              -141.656890869141,
+              -81.3161239624023,
+              8.22217178344727
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998619258403778,
+              "y": 8.15769004821777
+            },
+            "enu": [
+              -142.24089050293,
+              -81.1368789672852,
+              8.18995475769043
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999282777309418,
+              "y": 8.1314640045166
+            },
+            "enu": [
+              -142.825561523438,
+              -80.9568634033203,
+              8.15788459777832
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999282777309418,
+              "y": 8.11024856567383
+            },
+            "enu": [
+              -143.358169555664,
+              -80.7836837768555,
+              8.1353874206543
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999343633651733,
+              "y": 8.08340454101562
+            },
+            "enu": [
+              -143.934066772461,
+              -80.5767822265625,
+              8.11221504211426
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999343633651733,
+              "y": 8.06126880645752
+            },
+            "enu": [
+              -144.504730224609,
+              -80.3591461181641,
+              8.08561992645264
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999324560165405,
+              "y": 8.03909111022949
+            },
+            "enu": [
+              -145.073547363281,
+              -80.1344604492188,
+              8.06345272064209
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999324560165405,
+              "y": 8.01661396026611
+            },
+            "enu": [
+              -145.640502929688,
+              -79.9059982299805,
+              8.04117679595947
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999324560165405,
+              "y": 7.99414110183716
+            },
+            "enu": [
+              -146.206283569336,
+              -79.6749801635742,
+              8.01874923706055
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99931412935257,
+              "y": 7.97149324417114
+            },
+            "enu": [
+              -146.772186279297,
+              -79.4421615600586,
+              7.99629068374634
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999314069747925,
+              "y": 7.9488639831543
+            },
+            "enu": [
+              -147.336486816406,
+              -79.2087020874023,
+              7.97360849380493
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999319016933441,
+              "y": 7.9262580871582
+            },
+            "enu": [
+              -147.901260375977,
+              -78.9742431640625,
+              7.95100116729736
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999319016933441,
+              "y": 7.90368747711182
+            },
+            "enu": [
+              -148.465591430664,
+              -78.7392196655273,
+              7.92837142944336
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999313354492188,
+              "y": 7.88296365737915
+            },
+            "enu": [
+              -148.980133056641,
+              -78.5171356201172,
+              7.90773105621338
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999313354492188,
+              "y": 7.86031341552734
+            },
+            "enu": [
+              -149.535705566406,
+              -78.2614898681641,
+              7.88504695892334
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999311506748199,
+              "y": 7.8376841545105
+            },
+            "enu": [
+              -150.087158203125,
+              -77.9976196289062,
+              7.86248445510864
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999311506748199,
+              "y": 7.81505489349365
+            },
+            "enu": [
+              -150.635986328125,
+              -77.7289581298828,
+              7.83978796005249
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999313354492188,
+              "y": 7.79244041442871
+            },
+            "enu": [
+              -151.183166503906,
+              -77.4572677612305,
+              7.81716537475586
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999313354492188,
+              "y": 7.76983308792114
+            },
+            "enu": [
+              -151.73014831543,
+              -77.1834259033203,
+              7.79448413848877
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999313354492188,
+              "y": 7.74723339080811
+            },
+            "enu": [
+              -152.276397705078,
+              -76.9083557128906,
+              7.77193212509155
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999316275119781,
+              "y": 7.72468852996826
+            },
+            "enu": [
+              -152.822006225586,
+              -76.632698059082,
+              7.74938249588013
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999316275119781,
+              "y": 7.70215940475464
+            },
+            "enu": [
+              -153.367141723633,
+              -76.3564453125,
+              7.72681522369385
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99938976764679,
+              "y": 7.68045330047607
+            },
+            "enu": [
+              -153.91178894043,
+              -76.0799026489258,
+              7.70433187484741
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99938976764679,
+              "y": 7.66090536117554
+            },
+            "enu": [
+              -154.415283203125,
+              -75.8331146240234,
+              7.68459939956665
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999553799629211,
+              "y": 7.64075994491577
+            },
+            "enu": [
+              -154.971878051758,
+              -75.580940246582,
+              7.66322660446167
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999553799629211,
+              "y": 7.62247562408447
+            },
+            "enu": [
+              -155.534149169922,
+              -75.3393096923828,
+              7.64372825622559
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99956351518631,
+              "y": 7.60427141189575
+            },
+            "enu": [
+              -156.097869873047,
+              -75.1048202514648,
+              7.62243413925171
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99956351518631,
+              "y": 7.58619594573975
+            },
+            "enu": [
+              -156.664154052734,
+              -74.8739242553711,
+              7.60728931427002
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999558746814728,
+              "y": 7.56812381744385
+            },
+            "enu": [
+              -157.231262207031,
+              -74.6456298828125,
+              7.58936214447021
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999558746814728,
+              "y": 7.54996967315674
+            },
+            "enu": [
+              -157.798599243164,
+              -74.4190444946289,
+              7.57108497619629
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999558746814728,
+              "y": 7.5317816734314
+            },
+            "enu": [
+              -158.367446899414,
+              -74.1931762695312,
+              7.5529522895813
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999556839466095,
+              "y": 7.51360082626343
+            },
+            "enu": [
+              -158.935287475586,
+              -73.9684829711914,
+              7.53485155105591
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999578058719635,
+              "y": 7.47896671295166
+            },
+            "enu": [
+              -160.022125244141,
+              -73.5310821533203,
+              7.49993324279785
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999574959278107,
+              "y": 7.46119499206543
+            },
+            "enu": [
+              -160.582046508789,
+              -73.2847061157227,
+              7.48204040527344
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99982488155365,
+              "y": 7.4459285736084
+            },
+            "enu": [
+              -161.137939453125,
+              -73.0298767089844,
+              7.46426439285278
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99982488155365,
+              "y": 7.43450689315796
+            },
+            "enu": [
+              -161.691024780273,
+              -72.7700729370117,
+              7.45033359527588
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999928116798401,
+              "y": 7.42059898376465
+            },
+            "enu": [
+              -162.242324829102,
+              -72.5072555541992,
+              7.43900108337402
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999928116798401,
+              "y": 7.41328096389771
+            },
+            "enu": [
+              -162.792465209961,
+              -72.242561340332,
+              7.4258770942688
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999928712844849,
+              "y": 7.40596914291382
+            },
+            "enu": [
+              -163.342498779297,
+              -71.9763946533203,
+              7.41871786117554
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999936997890472,
+              "y": 7.39901304244995
+            },
+            "enu": [
+              -163.891983032227,
+              -71.7094421386719,
+              7.41182374954224
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999936640262604,
+              "y": 7.39215850830078
+            },
+            "enu": [
+              -164.440765380859,
+              -71.4420928955078,
+              7.40444803237915
+            ]
+          }
+        ],
+        "wall_hits": {
+
+        }
+      },
+      "forward": {
+        "airborne_frames": 0,
+        "distance_m": 45.6826703559491,
+        "intended_surface_samples": 79,
+        "last_contact": {
+
+        },
+        "pass": true,
+        "reached": 8,
+        "sample_count": 79,
+        "stable_start": true,
+        "targets": 8,
+        "trace": [
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999955892562866,
+              "y": 7.38108730316162
+            },
+            "enu": [
+              -165.444854736328,
+              -70.9505157470703,
+              7.38557529449463
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999955892562866,
+              "y": 7.38173913955688
+            },
+            "enu": [
+              -165.382186889648,
+              -70.9804153442383,
+              7.39283180236816
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999955892562866,
+              "y": 7.38344383239746
+            },
+            "enu": [
+              -165.218307495117,
+              -71.0586776733398,
+              7.39465045928955
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999955892562866,
+              "y": 7.38619709014893
+            },
+            "enu": [
+              -164.953643798828,
+              -71.1850738525391,
+              7.39804935455322
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999936640262604,
+              "y": 7.39026117324829
+            },
+            "enu": [
+              -164.587905883789,
+              -71.3597030639648,
+              7.40263319015503
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999936997890472,
+              "y": 7.3960747718811
+            },
+            "enu": [
+              -164.121185302734,
+              -71.5826034545898,
+              7.40813493728638
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999936997890472,
+              "y": 7.4028468132019
+            },
+            "enu": [
+              -163.576538085938,
+              -71.8427352905273,
+              7.41527986526489
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999928116798401,
+              "y": 7.41002655029297
+            },
+            "enu": [
+              -163.027008056641,
+              -72.1051483154297,
+              7.42245435714722
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999928116798401,
+              "y": 7.4173321723938
+            },
+            "enu": [
+              -162.477020263672,
+              -72.3677978515625,
+              7.43233871459961
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999653160572052,
+              "y": 7.42906141281128
+            },
+            "enu": [
+              -161.928771972656,
+              -72.6296768188477,
+              7.44493341445923
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99982488155365,
+              "y": 7.4407696723938
+            },
+            "enu": [
+              -161.379486083984,
+              -72.8921127319336,
+              7.45634937286377
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999574959278107,
+              "y": 7.45303869247437
+            },
+            "enu": [
+              -160.830947875977,
+              -73.1543426513672,
+              7.47362756729126
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999578058719635,
+              "y": 7.46923732757568
+            },
+            "enu": [
+              -160.327697753906,
+              -73.3936233520508,
+              7.48961973190308
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999578058719635,
+              "y": 7.48689126968384
+            },
+            "enu": [
+              -159.773330688477,
+              -73.6432800292969,
+              7.50840759277344
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999556839466095,
+              "y": 7.50493144989014
+            },
+            "enu": [
+              -159.214797973633,
+              -73.8832244873047,
+              7.52567148208618
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999556839466095,
+              "y": 7.52302551269531
+            },
+            "enu": [
+              -158.654113769531,
+              -74.1172714233398,
+              7.54375457763672
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999558746814728,
+              "y": 7.54107999801636
+            },
+            "enu": [
+              -158.092376708984,
+              -74.3476333618164,
+              7.56179237365723
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999558746814728,
+              "y": 7.55915880203247
+            },
+            "enu": [
+              -157.528656005859,
+              -74.5763702392578,
+              7.58001756668091
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99956351518631,
+              "y": 7.57718276977539
+            },
+            "enu": [
+              -156.96467590332,
+              -74.8037261962891,
+              7.59781837463379
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99956351518631,
+              "y": 7.59514904022217
+            },
+            "enu": [
+              -156.40055847168,
+              -75.0301055908203,
+              7.6163182258606
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999553799629211,
+              "y": 7.61318588256836
+            },
+            "enu": [
+              -155.835845947266,
+              -75.2561874389648,
+              7.63398599624634
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999553799629211,
+              "y": 7.63133335113525
+            },
+            "enu": [
+              -155.271759033203,
+              -75.4811172485352,
+              7.65212535858154
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99938976764679,
+              "y": 7.64800548553467
+            },
+            "enu": [
+              -154.754821777344,
+              -75.6883010864258,
+              7.6713604927063
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99938976764679,
+              "y": 7.66921901702881
+            },
+            "enu": [
+              -154.197830200195,
+              -75.9298706054688,
+              7.69238758087158
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99938976764679,
+              "y": 7.69043827056885
+            },
+            "enu": [
+              -153.646331787109,
+              -76.1854782104492,
+              7.71518516540527
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999316275119781,
+              "y": 7.71260786056519
+            },
+            "enu": [
+              -153.099807739258,
+              -76.4486541748047,
+              7.73671722412109
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999316275119781,
+              "y": 7.73501825332642
+            },
+            "enu": [
+              -152.554916381836,
+              -76.7169189453125,
+              7.75914239883423
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999313354492188,
+              "y": 7.75744295120239
+            },
+            "enu": [
+              -152.011642456055,
+              -76.9881134033203,
+              7.78157186508179
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999313354492188,
+              "y": 7.77986764907837
+            },
+            "enu": [
+              -151.46955871582,
+              -77.2609176635742,
+              7.80421590805054
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999311506748199,
+              "y": 7.80233669281006
+            },
+            "enu": [
+              -150.927200317383,
+              -77.5353088378906,
+              7.82648324966431
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999311506748199,
+              "y": 7.82476377487183
+            },
+            "enu": [
+              -150.386596679688,
+              -77.8097915649414,
+              7.84979867935181
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999313354492188,
+              "y": 7.84723377227783
+            },
+            "enu": [
+              -149.845031738281,
+              -78.0854034423828,
+              7.87135457992554
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999313354492188,
+              "y": 7.86777400970459
+            },
+            "enu": [
+              -149.349334716797,
+              -78.3373184204102,
+              7.89190578460693
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999313354492188,
+              "y": 7.8902645111084
+            },
+            "enu": [
+              -148.800247192383,
+              -78.597526550293,
+              7.91449069976807
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999319016933441,
+              "y": 7.91268157958984
+            },
+            "enu": [
+              -148.244583129883,
+              -78.8424301147461,
+              7.93678712844849
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999319016933441,
+              "y": 7.93508911132812
+            },
+            "enu": [
+              -147.685256958008,
+              -79.0780563354492,
+              7.95962905883789
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99931412935257,
+              "y": 7.95755195617676
+            },
+            "enu": [
+              -147.123825073242,
+              -79.3081970214844,
+              7.98172807693481
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99931412935257,
+              "y": 7.98003625869751
+            },
+            "enu": [
+              -146.56103515625,
+              -79.5349273681641,
+              8.00421333312988
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999324560165405,
+              "y": 8.00245666503906
+            },
+            "enu": [
+              -145.996673583984,
+              -79.7598342895508,
+              8.02649688720703
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999324560165405,
+              "y": 8.0247859954834
+            },
+            "enu": [
+              -145.432022094727,
+              -79.9832382202148,
+              8.04917335510254
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999343633651733,
+              "y": 8.04701519012451
+            },
+            "enu": [
+              -144.866836547852,
+              -80.2057952880859,
+              8.07081031799316
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999343633651733,
+              "y": 8.06900501251221
+            },
+            "enu": [
+              -144.302093505859,
+              -80.4273147583008,
+              8.09298324584961
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998436689376831,
+              "y": 8.08987236022949
+            },
+            "enu": [
+              -143.784469604492,
+              -80.6290588378906,
+              8.11761569976807
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999282777309418,
+              "y": 8.11604881286621
+            },
+            "enu": [
+              -143.213531494141,
+              -80.8343505859375,
+              8.14060306549072
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.999282777309418,
+              "y": 8.13901042938232
+            },
+            "enu": [
+              -142.638000488281,
+              -81.0248947143555,
+              8.16812229156494
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998631715774536,
+              "y": 8.1678352355957
+            },
+            "enu": [
+              -142.059768676758,
+              -81.2067260742188,
+              8.19913387298584
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998631715774536,
+              "y": 8.19950485229492
+            },
+            "enu": [
+              -141.481155395508,
+              -81.3827743530273,
+              8.2308521270752
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998550176620483,
+              "y": 8.23164367675781
+            },
+            "enu": [
+              -140.901000976562,
+              -81.5557403564453,
+              8.26360893249512
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998550176620483,
+              "y": 8.26426887512207
+            },
+            "enu": [
+              -140.320404052734,
+              -81.7265472412109,
+              8.29644203186035
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998399436473846,
+              "y": 8.29752922058105
+            },
+            "enu": [
+              -139.740020751953,
+              -81.8959350585938,
+              8.33071708679199
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998413681983948,
+              "y": 8.33166790008545
+            },
+            "enu": [
+              -139.158676147461,
+              -82.0645217895508,
+              8.36517715454102
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998470664024353,
+              "y": 8.3655834197998
+            },
+            "enu": [
+              -138.578033447266,
+              -82.2322616577148,
+              8.39826202392578
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998455762863159,
+              "y": 8.39641284942627
+            },
+            "enu": [
+              -138.044998168945,
+              -82.385383605957,
+              8.42895126342773
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998407900333405,
+              "y": 8.43008041381836
+            },
+            "enu": [
+              -137.461135864258,
+              -82.5428314208984,
+              8.46307563781738
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998422026634216,
+              "y": 8.46414279937744
+            },
+            "enu": [
+              -136.874435424805,
+              -82.6907043457031,
+              8.49692249298096
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998422026634216,
+              "y": 8.49814796447754
+            },
+            "enu": [
+              -136.286071777344,
+              -82.8329620361328,
+              8.53075313568115
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998456954956055,
+              "y": 8.53169441223145
+            },
+            "enu": [
+              -135.697402954102,
+              -82.9716339111328,
+              8.56418323516846
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998456954956055,
+              "y": 8.56527614593506
+            },
+            "enu": [
+              -135.108169555664,
+              -83.1082305908203,
+              8.59821128845215
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998541355133057,
+              "y": 8.59817790985107
+            },
+            "enu": [
+              -134.518768310547,
+              -83.243522644043,
+              8.63002395629883
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998541355133057,
+              "y": 8.63086032867432
+            },
+            "enu": [
+              -133.928329467773,
+              -83.3781661987305,
+              8.66256618499756
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998594760894775,
+              "y": 8.66305828094482
+            },
+            "enu": [
+              -133.337783813477,
+              -83.5123748779297,
+              8.69457817077637
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998594760894775,
+              "y": 8.69511890411377
+            },
+            "enu": [
+              -132.747375488281,
+              -83.6461563110352,
+              8.72640800476074
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998676002025604,
+              "y": 8.72407054901123
+            },
+            "enu": [
+              -132.206420898438,
+              -83.7686538696289,
+              8.75491237640381
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998687446117401,
+              "y": 8.75511074066162
+            },
+            "enu": [
+              -131.617080688477,
+              -83.9087219238281,
+              8.78630924224854
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99875396490097,
+              "y": 8.78590393066406
+            },
+            "enu": [
+              -131.029479980469,
+              -84.0563125610352,
+              8.81604671478271
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998742997646332,
+              "y": 8.81621837615967
+            },
+            "enu": [
+              -130.443740844727,
+              -84.208122253418,
+              8.84737300872803
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998811841011047,
+              "y": 8.8464937210083
+            },
+            "enu": [
+              -129.857162475586,
+              -84.3632049560547,
+              8.87616539001465
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998823285102844,
+              "y": 8.8759241104126
+            },
+            "enu": [
+              -129.27262878418,
+              -84.5196075439453,
+              8.90551280975342
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99889999628067,
+              "y": 8.90529727935791
+            },
+            "enu": [
+              -128.687225341797,
+              -84.6775970458984,
+              8.93431186676025
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998889923095703,
+              "y": 8.93378448486328
+            },
+            "enu": [
+              -128.102584838867,
+              -84.8362350463867,
+              8.96273708343506
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998889923095703,
+              "y": 8.9623556137085
+            },
+            "enu": [
+              -127.517936706543,
+              -84.9956512451172,
+              8.99144458770752
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99893593788147,
+              "y": 8.98813629150391
+            },
+            "enu": [
+              -126.982040405273,
+              -85.1441345214844,
+              9.01662158966064
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99893593788147,
+              "y": 9.01611232757568
+            },
+            "enu": [
+              -126.399230957031,
+              -85.3101196289062,
+              9.04545974731445
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998773694038391,
+              "y": 9.04547882080078
+            },
+            "enu": [
+              -125.817749023438,
+              -85.4786987304688,
+              9.07558059692383
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998773694038391,
+              "y": 9.07548522949219
+            },
+            "enu": [
+              -125.236808776855,
+              -85.6488494873047,
+              9.10515689849854
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998864412307739,
+              "y": 9.10486316680908
+            },
+            "enu": [
+              -124.655097961426,
+              -85.8203887939453,
+              9.13396835327148
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998874306678772,
+              "y": 9.13366317749023
+            },
+            "enu": [
+              -124.073677062988,
+              -85.9925308227539,
+              9.16254043579102
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.99896764755249,
+              "y": 9.161865234375
+            },
+            "enu": [
+              -123.492607116699,
+              -86.1651229858398,
+              9.19009876251221
+            ]
+          },
+          {
+            "contact": {
+              "body": "COL_R24_LinkDeck_R24_link_asphalt",
+              "normal_y": 0.998959362506866,
+              "y": 9.18951511383057
+            },
+            "enu": [
+              -122.911819458008,
+              -86.3379669189453,
+              9.21790218353271
+            ]
+          }
+        ],
+        "wall_hits": {
+
+        }
+      }
+    }
+  },
+  "scene": "res://first_shift.tscn",
+  "support_corners": [
+    {
+      "expected_enu": [
+        -237.235794067383,
+        -27.6306934356689,
+        14.538055502428
+      ],
+      "found": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.986082911491394,
+        "y": 14.5250701904297
+      }
+    },
+    {
+      "expected_enu": [
+        -237.700576782227,
+        -28.2819194793701,
+        14.4198528596496
+      ],
+      "found": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.986082911491394,
+        "y": 14.4142446517944
+      }
+    },
+    {
+      "expected_enu": [
+        -236.178237915039,
+        -28.407735824585,
+        14.3993773465616
+      ],
+      "found": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.984687983989716,
+        "y": 14.3876543045044
+      }
+    },
+    {
+      "expected_enu": [
+        -236.642654418945,
+        -29.0592384338379,
+        14.2840666107343
+      ],
+      "found": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.984687983989716,
+        "y": 14.2786874771118
+      }
+    },
+    {
+      "expected_enu": [
+        -227.386596679688,
+        -34.8672904968262,
+        12.9233159511871
+      ],
+      "found": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.984662294387817,
+        "y": 12.9129810333252
+      }
+    },
+    {
+      "expected_enu": [
+        -227.847900390625,
+        -35.5210723876953,
+        12.840390201118
+      ],
+      "found": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.984662294387817,
+        "y": 12.8360328674316
+      }
+    },
+    {
+      "expected_enu": [
+        -226.329010009766,
+        -35.6443328857422,
+        12.715845685129
+      ],
+      "found": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.984619557857513,
+        "y": 12.7085189819336
+      }
+    },
+    {
+      "expected_enu": [
+        -226.789947509766,
+        -36.2983932495117,
+        12.6374316550579
+      ],
+      "found": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.984619557857513,
+        "y": 12.6343622207642
+      }
+    },
+    {
+      "expected_enu": [
+        -217.779586791992,
+        -41.9259338378906,
+        10.9503645684661
+      ],
+      "found": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.98472934961319,
+        "y": 10.9466323852539
+      }
+    },
+    {
+      "expected_enu": [
+        -218.237487792969,
+        -42.5822143554688,
+        10.9081221092054
+      ],
+      "found": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.98472934961319,
+        "y": 10.9063720703125
+      }
+    },
+    {
+      "expected_enu": [
+        -216.721984863281,
+        -42.7029838562012,
+        10.7336485394464
+      ],
+      "found": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.986841082572937,
+        "y": 10.7286930084229
+      }
+    },
+    {
+      "expected_enu": [
+        -217.17951965332,
+        -43.3595352172851,
+        10.6954734566138
+      ],
+      "found": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.986841082572937,
+        "y": 10.6935005187988
+      }
+    },
+    {
+      "expected_enu": [
+        -208.011093139648,
+        -49.1032180786133,
+        9.17286904306069
+      ],
+      "found": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.993371665477753,
+        "y": 9.17234134674072
+      }
+    },
+    {
+      "expected_enu": [
+        -208.465545654297,
+        -49.762035369873,
+        9.15946529315769
+      ],
+      "found": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.993371665477753,
+        "y": 9.15943908691406
+      }
+    },
+    {
+      "expected_enu": [
+        -206.953521728516,
+        -49.8802642822266,
+        9.02775919243514
+      ],
+      "found": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.994383335113525,
+        "y": 9.02752113342285
+      }
+    },
+    {
+      "expected_enu": [
+        -207.407608032227,
+        -50.5393524169922,
+        9.01592120087193
+      ],
+      "found": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.994750678539276,
+        "y": 9.01586532592773
+      }
+    },
+    {
+      "expected_enu": [
+        -198.185531616211,
+        -55.8084831237793,
+        8.25859755371094
+      ],
+      "found": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.998504042625427,
+        "y": 8.25844478607178
+      }
+    },
+    {
+      "expected_enu": [
+        -198.623199462891,
+        -56.4781913757324,
+        8.24899755371094
+      ],
+      "found": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.998525857925415,
+        "y": 8.24884605407715
+      }
+    },
+    {
+      "expected_enu": [
+        -197.066116333008,
+        -56.5247650146484,
+        8.18937605712891
+      ],
+      "found": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.998659312725067,
+        "y": 8.18955421447754
+      }
+    },
+    {
+      "expected_enu": [
+        -197.500625610352,
+        -57.1964874267578,
+        8.17977605712891
+      ],
+      "found": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.998659312725067,
+        "y": 8.17998695373535
+      }
+    },
+    {
+      "expected_enu": [
+        -187.84587097168,
+        -62.4245300292969,
+        7.70021742675781
+      ],
+      "found": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.999297499656677,
+        "y": 7.70003700256348
+      }
+    },
+    {
+      "expected_enu": [
+        -188.254455566406,
+        -63.1128463745117,
+        7.69061742675781
+      ],
+      "found": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.999297499656677,
+        "y": 7.69042444229126
+      }
+    },
+    {
+      "expected_enu": [
+        -186.726455688477,
+        -63.1408157348633,
+        7.65087050292969
+      ],
+      "found": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.999204337596893,
+        "y": 7.65076398849487
+      }
+    },
+    {
+      "expected_enu": [
+        -187.131896972656,
+        -63.8311462402344,
+        7.64127050292969
+      ],
+      "found": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.999204337596893,
+        "y": 7.64117097854614
+      }
+    },
+    {
+      "expected_enu": [
+        -177.652267456055,
+        -68.0949935913086,
+        7.47679060791016
+      ],
+      "found": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.99990314245224,
+        "y": 7.4767484664917
+      }
+    },
+    {
+      "expected_enu": [
+        -178.030303955078,
+        -68.8002166748047,
+        7.46719060791016
+      ],
+      "found": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.999903976917267,
+        "y": 7.46715402603149
+      }
+    },
+    {
+      "expected_enu": [
+        -176.467010498047,
+        -68.7004089355469,
+        7.46829146240234
+      ],
+      "found": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.999907970428467,
+        "y": 7.46818065643311
+      }
+    },
+    {
+      "expected_enu": [
+        -176.841384887695,
+        -69.4075088500977,
+        7.45869146240234
+      ],
+      "found": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.999907970428467,
+        "y": 7.45858478546143
+      }
+    },
+    {
+      "expected_enu": [
+        -167.003143310547,
+        -73.5345153808594,
+        7.47560805175781
+      ],
+      "found": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.99988842010498,
+        "y": 7.47575902938843
+      }
+    },
+    {
+      "expected_enu": [
+        -167.348205566406,
+        -74.2565841674805,
+        7.46600805175781
+      ],
+      "found": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.99988842010498,
+        "y": 7.46614789962769
+      }
+    },
+    {
+      "expected_enu": [
+        -165.817886352539,
+        -74.1399307250977,
+        7.48834151123047
+      ],
+      "found": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.999862849712372,
+        "y": 7.48828172683716
+      }
+    },
+    {
+      "expected_enu": [
+        -166.159286499023,
+        -74.8638687133789,
+        7.47874151123047
+      ],
+      "found": {
+        "body": "COL_Nanqu_RiverFootway",
+        "normal_y": 0.999862670898438,
+        "y": 7.47865581512451
+      }
+    }
+  ]
+}
