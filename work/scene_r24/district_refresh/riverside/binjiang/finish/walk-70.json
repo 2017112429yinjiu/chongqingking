@@ -1,0 +1,920 @@
+{
+  "candidate": {
+    "binjiang_sha256": "9130bc07a8b0707f01129a2e2df391eb676364fe951a45fc2d100ff55a4b0f54",
+    "bounds_east_north_m": [
+      -250.0,
+      -250.0,
+      250.0,
+      250.0
+    ],
+    "bridge_park_sha256": "d7610bb70365b506b084810a925ede54321bbb5812b840d8c0810ed1ecb4426c",
+    "changbin_bend_sha256": "59f467c674151e7e2f55366257a28b12260d9c1eb23ceccc7359b07e18a6af9f",
+    "collectibles_market_sha256": "a23f881d0e9206b40fedc8f262cfdb132194e59825e4728b39800471b684e175",
+    "glb_sha256": "b0180ce3a8d821253181725ad4516c04f58fe057529680e22a081f89fdd62122",
+    "guoco_sha256": "4dcb3d55080b02d8a0cf02585626bed2dfc3cdb37ae2f987110b55dd56435853",
+    "market_stall_row_sha256": "42fffbc9c4a98d3fa615e48fa9ce4eecdf66bf225decbd3d44d40eddf5a41646",
+    "match_factory_sha256": "ab742e6b12ad0b52c4cffef0f8342e1a957b59de5cfe3abde4dd691f853d76c6",
+    "matix_streets_sha256": "3b57fcf46931ff28ce1ab2be4a7250d31af30d302e362816265be8e38852e33b",
+    "osm_building_ids": [
+      809889594.0,
+      809889602.0,
+      809889621.0,
+      704006725,
+      809889619,
+      809889620
+    ],
+    "park_edge_finish_sha256": "52ba8de0a1bd4ee57439d86b5f0e7efad002311679d486b3b0dbc75bdc0e6d33",
+    "park_plot57_sha256": "b67c6b5fc91cdc8b8fa0e6808f8cedd8b15a49ad36a2566631ae67a1671f9f60",
+    "park_plot59_sha256": "fa02d99cf8eda6971b3b148e8c3fc5031108e134806e25b0e71e3f320cd4747c",
+    "park_plot61_sha256": "b6e7b1a3baf336235be5d553e2c3d24caf36b949a34bbf296d4b2eed31ddeceb",
+    "pavilion_62_sha256": "08d702b1a9ce0464b3bc62f33808befa5b58e5dcd082659b06c4cbc0bbab3e76",
+    "public_edges_sha256": "d585e52e0d927a9639e7285ffecc4932603a4d56b039504f1600763f72cc1be4",
+    "raijiapo_east_sha256": "c230f7e3a225f9e8446cb43b66eebd4cd05fac72cbb6b02787d8d0090038e81d",
+    "retired_internal_context": false,
+    "riverside_sha256": "12f304d468c56fb429d4a4db948f5297b7ca4284f29fc494442c9b2a146f67d1",
+    "west_court_sha256": "32eea2dd1f34b7f5dacbb546a46c6cf106ac3896804677ef9b2ee1dabfb2c683",
+    "west_ramp_sha256": "2a2ae2a4745096ea849dbb5f2365ce1cf437a8dcd974ed4cb47dddd5d5aae8b2",
+    "xingchen_sha256": "af156281216128407550442694d4dc45ea8507dfc7da4c80efd549a0ffbe127b",
+    "zhongxing_wall_sha256": "72fa4f4c800a8e27c19d580da66524160c4c2111bd82191706b6c8da142b8d42"
+  },
+  "checks": [
+    {
+      "detail": "",
+      "name": "first_shift",
+      "pass": true
+    },
+    {
+      "detail": [
+        [
+          "COL_Outer500_Frame_70",
+          false
+        ],
+        [
+          "COL_Outer500_Frame_71",
+          false
+        ],
+        [
+          "COL_Outer500_Frame_72",
+          false
+        ],
+        [
+          "COL_Outer500_Frame_73",
+          false
+        ]
+      ],
+      "name": "former_plot_frames",
+      "pass": true
+    },
+    {
+      "detail": [
+        "/root/ChongqingDistrict/City/OuterDistrict500/BinjiangFrontages/COL_Binjiang_1128648941_Podium",
+        "/root/ChongqingDistrict/City/OuterDistrict500/BinjiangFrontages/Binjiang_Tower_1128648941",
+        "/root/ChongqingDistrict/City/OuterDistrict500/BinjiangFrontages/COL_Binjiang_704006726_Curved_Podium",
+        "/root/ChongqingDistrict/City/OuterDistrict500/BinjiangFrontages/Binjiang_Adjacent_Tower_704006726"
+      ],
+      "name": "one_registered_tower",
+      "pass": true
+    },
+    {
+      "detail": [
+        [
+          "R24_East_Block_0_R24_east_balcony_shadow",
+          false
+        ],
+        [
+          "R24_East_Block_0_R24_east_concrete_band",
+          false
+        ],
+        [
+          "R24_East_Block_0_R24_east_loggia_glass",
+          false
+        ],
+        [
+          "R24_East_Block_0_R24_east_roof",
+          false
+        ],
+        [
+          "R24_East_Block_0_R24_east_wall_1",
+          false
+        ]
+      ],
+      "name": "former_frontage_layers",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "en": [
+            97.467,
+            -106.585
+          ],
+          "hits": [
+            [
+              "COL_Binjiang_Walk_70",
+              7.934,
+              1.0
+            ],
+            [
+              "COL_Binjiang_Jiefang_South_Sidewalk",
+              7.92,
+              1.0
+            ],
+            [
+              "COL_Outer500_Surface_06_02",
+              7.867,
+              1.0
+            ]
+          ],
+          "walk": true
+        },
+        {
+          "en": [
+            98.017,
+            -106.585
+          ],
+          "hits": [
+            [
+              "COL_Binjiang_Walk_70",
+              7.942,
+              1.0
+            ],
+            [
+              "COL_Binjiang_Jiefang_South_Sidewalk",
+              7.928,
+              1.0
+            ],
+            [
+              "COL_Outer500_Surface_06_02",
+              7.875,
+              1.0
+            ]
+          ],
+          "walk": true
+        },
+        {
+          "en": [
+            98.567,
+            -106.585
+          ],
+          "hits": [
+            [
+              "COL_Binjiang_Walk_70",
+              7.951,
+              1.0
+            ],
+            [
+              "COL_Binjiang_Jiefang_South_Sidewalk",
+              7.937,
+              1.0
+            ],
+            [
+              "COL_Outer500_Surface_06_02",
+              7.884,
+              1.0
+            ]
+          ],
+          "walk": true
+        },
+        {
+          "en": [
+            94.467,
+            -107.385
+          ],
+          "hits": [
+            [
+              "COL_Binjiang_Walk_70",
+              7.918,
+              0.999
+            ],
+            [
+              "COL_Outer500_Surface_06_02",
+              7.851,
+              0.999
+            ]
+          ],
+          "walk": true
+        },
+        {
+          "en": [
+            95.017,
+            -107.385
+          ],
+          "hits": [
+            [
+              "COL_Binjiang_Walk_70",
+              7.923,
+              1.0
+            ],
+            [
+              "COL_Outer500_Surface_06_02",
+              7.856,
+              1.0
+            ]
+          ],
+          "walk": true
+        },
+        {
+          "en": [
+            95.567,
+            -107.385
+          ],
+          "hits": [
+            [
+              "COL_Binjiang_Walk_70",
+              7.928,
+              1.0
+            ],
+            [
+              "COL_Outer500_Surface_06_02",
+              7.861,
+              1.0
+            ]
+          ],
+          "walk": true
+        },
+        {
+          "en": [
+            91.567,
+            -108.085
+          ],
+          "hits": [
+            [
+              "COL_Binjiang_Walk_70",
+              7.915,
+              0.998
+            ],
+            [
+              "COL_Outer500_Surface_06_02",
+              7.848,
+              0.998
+            ]
+          ],
+          "walk": true
+        },
+        {
+          "en": [
+            92.117,
+            -108.085
+          ],
+          "hits": [
+            [
+              "COL_Binjiang_Walk_70",
+              7.921,
+              0.999
+            ],
+            [
+              "COL_Outer500_Surface_06_02",
+              7.854,
+              0.999
+            ]
+          ],
+          "walk": true
+        },
+        {
+          "en": [
+            92.667,
+            -108.085
+          ],
+          "hits": [
+            [
+              "COL_Binjiang_Walk_70",
+              7.925,
+              0.999
+            ],
+            [
+              "COL_Outer500_Surface_06_02",
+              7.858,
+              0.999
+            ]
+          ],
+          "walk": true
+        },
+        {
+          "en": [
+            88.767,
+            -109.035
+          ],
+          "hits": [
+            [
+              "COL_Binjiang_Walk_70",
+              7.551,
+              0.997
+            ],
+            [
+              "COL_Outer500_Surface_06_02",
+              7.484,
+              0.997
+            ]
+          ],
+          "walk": true
+        },
+        {
+          "en": [
+            89.317,
+            -109.035
+          ],
+          "hits": [
+            [
+              "COL_Binjiang_Walk_70",
+              7.525,
+              0.996
+            ],
+            [
+              "COL_Outer500_Surface_06_02",
+              7.458,
+              0.996
+            ]
+          ],
+          "walk": true
+        },
+        {
+          "en": [
+            89.867,
+            -109.035
+          ],
+          "hits": [
+            [
+              "COL_Binjiang_Walk_70",
+              7.493,
+              0.996
+            ],
+            [
+              "COL_Outer500_Surface_06_02",
+              7.426,
+              0.996
+            ]
+          ],
+          "walk": true
+        },
+        {
+          "en": [
+            85.967,
+            -110.285
+          ],
+          "hits": [
+            [
+              "COL_Binjiang_Walk_70",
+              7.617,
+              0.994
+            ],
+            [
+              "COL_Outer500_Surface_06_02",
+              7.55,
+              0.994
+            ]
+          ],
+          "walk": true
+        },
+        {
+          "en": [
+            86.517,
+            -110.285
+          ],
+          "hits": [
+            [
+              "COL_Binjiang_Walk_70",
+              7.646,
+              0.997
+            ],
+            [
+              "COL_Outer500_Surface_06_02",
+              7.579,
+              0.997
+            ]
+          ],
+          "walk": true
+        },
+        {
+          "en": [
+            87.067,
+            -110.285
+          ],
+          "hits": [
+            [
+              "COL_Binjiang_Walk_70",
+              7.671,
+              0.998
+            ],
+            [
+              "COL_Outer500_Surface_06_02",
+              7.604,
+              0.998
+            ]
+          ],
+          "walk": true
+        },
+        {
+          "en": [
+            83.817,
+            -112.885
+          ],
+          "hits": [
+            [
+              "COL_Binjiang_Walk_70",
+              7.534,
+              0.993
+            ],
+            [
+              "COL_Outer500_Surface_06_02",
+              7.467,
+              0.993
+            ]
+          ],
+          "walk": true
+        },
+        {
+          "en": [
+            84.367,
+            -112.885
+          ],
+          "hits": [
+            [
+              "COL_Binjiang_Walk_70",
+              7.592,
+              0.994
+            ],
+            [
+              "COL_Outer500_Surface_06_02",
+              7.525,
+              0.994
+            ]
+          ],
+          "walk": true
+        },
+        {
+          "en": [
+            84.917,
+            -112.885
+          ],
+          "hits": [
+            [
+              "COL_Binjiang_Walk_70",
+              7.65,
+              0.993
+            ],
+            [
+              "COL_Outer500_Surface_06_02",
+              7.584,
+              0.993
+            ]
+          ],
+          "walk": true
+        }
+      ],
+      "name": "public_walk_contact",
+      "pass": true
+    },
+    {
+      "detail": {
+        "enu": [
+          98.0,
+          -106.599998474121,
+          7.94213533401489
+        ],
+        "gap_m": 0.0
+      },
+      "name": "normal_street_spawn",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 15.236324143596,
+        "end": "(84.37633, 7.610483, 112.8967)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0819859355688095,
+        "name": "binjiang_70_out",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "name": "binjiang_70_out",
+      "pass": true
+    },
+    {
+      "detail": [
+        84.3763275146484,
+        -112.896743774414,
+        7.61048316955566
+      ],
+      "name": "on_destination_floor",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 15.1574750002474,
+        "end": "(98.01905, 7.957168, 106.6584)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.072296030819416,
+        "name": "binjiang_70_back",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "name": "binjiang_70_back",
+      "pass": true
+    },
+    {
+      "detail": [
+        98.0190505981445,
+        -106.658378601074,
+        7.95716762542725
+      ],
+      "name": "returned_to_same_street",
+      "pass": true
+    }
+  ],
+  "device": "",
+  "engine": "4.6.3-stable (official)",
+  "native_frames": [],
+  "renderer": "forward_plus",
+  "scene": "res://first_shift.tscn",
+  "sections": [
+    {
+      "contacts": [
+        [
+          "COL_Binjiang_Walk_70",
+          7.942,
+          1.0
+        ],
+        [
+          "COL_Binjiang_Jiefang_South_Sidewalk",
+          7.928,
+          1.0
+        ],
+        [
+          "COL_Outer500_Surface_06_02",
+          7.875,
+          1.0
+        ]
+      ],
+      "east_north": [
+        98.0,
+        -106.6
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Binjiang_Walk_70",
+          7.923,
+          1.0
+        ],
+        [
+          "COL_Outer500_Surface_06_02",
+          7.856,
+          1.0
+        ]
+      ],
+      "east_north": [
+        95.0,
+        -107.4
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Binjiang_Walk_70",
+          7.921,
+          0.999
+        ],
+        [
+          "COL_Outer500_Surface_06_02",
+          7.854,
+          0.999
+        ]
+      ],
+      "east_north": [
+        92.1,
+        -108.1
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Binjiang_Walk_70",
+          7.527,
+          0.996
+        ],
+        [
+          "COL_Outer500_Surface_06_02",
+          7.46,
+          0.996
+        ]
+      ],
+      "east_north": [
+        89.3,
+        -109.05
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Binjiang_Walk_70",
+          7.646,
+          0.997
+        ],
+        [
+          "COL_Outer500_Surface_06_02",
+          7.579,
+          0.997
+        ]
+      ],
+      "east_north": [
+        86.5,
+        -110.3
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Binjiang_Walk_70",
+          7.591,
+          0.994
+        ],
+        [
+          "COL_Outer500_Surface_06_02",
+          7.524,
+          0.994
+        ]
+      ],
+      "east_north": [
+        84.35,
+        -112.9
+      ]
+    }
+  ],
+  "start": "normal first_shift exploration spawn",
+  "teleports_between_legs": 0,
+  "walks": [
+    {
+      "finish_enu": [
+        84.3763275146484,
+        -112.896743774414,
+        7.61048316955566
+      ],
+      "id": "binjiang_70_out",
+      "result": {
+        "distance_m": 15.236324143596,
+        "end": "(84.37633, 7.610483, 112.8967)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0819859355688095,
+        "name": "binjiang_70_out",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        98.0,
+        -106.599998474121,
+        7.94213533401489
+      ],
+      "trace_enu": [
+        [
+          98.0,
+          -106.599998474121,
+          7.94213533401489
+        ],
+        [
+          97.4824981689453,
+          -106.791442871094,
+          7.94051599502563
+        ],
+        [
+          96.6662521362305,
+          -106.991218566895,
+          7.94330596923828
+        ],
+        [
+          95.8502883911133,
+          -107.191528320312,
+          7.9403281211853
+        ],
+        [
+          95.0342330932617,
+          -107.390739440918,
+          7.93731594085693
+        ],
+        [
+          94.2176208496094,
+          -107.587730407715,
+          7.9342098236084
+        ],
+        [
+          93.4011611938477,
+          -107.785202026367,
+          7.93510293960571
+        ],
+        [
+          92.5846939086914,
+          -107.982734680176,
+          7.93510293960571
+        ],
+        [
+          91.7824401855469,
+          -108.229759216309,
+          7.93900012969971
+        ],
+        [
+          90.9848175048828,
+          -108.493011474609,
+          7.94484567642212
+        ],
+        [
+          90.1398849487305,
+          -108.772346496582,
+          7.56984567642212
+        ],
+        [
+          89.3404541015625,
+          -109.056274414062,
+          7.54012870788574
+        ],
+        [
+          88.5735397338867,
+          -109.389930725098,
+          7.59280920028687
+        ],
+        [
+          87.8058319091797,
+          -109.724594116211,
+          7.64142179489136
+        ],
+        [
+          87.0377731323242,
+          -110.061813354492,
+          7.67106008529663
+        ],
+        [
+          86.3810348510742,
+          -110.541709899902,
+          7.6687159538269
+        ],
+        [
+          85.8320999145508,
+          -111.17830657959,
+          7.66226148605347
+        ],
+        [
+          85.2816925048828,
+          -111.814643859863,
+          7.65209627151489
+        ],
+        [
+          84.7329254150391,
+          -112.453125,
+          7.61519765853882
+        ],
+        [
+          84.3763275146484,
+          -112.896743774414,
+          7.61048316955566
+        ],
+        [
+          84.3763275146484,
+          -112.896743774414,
+          7.61048316955566
+        ],
+        [
+          84.3763275146484,
+          -112.896743774414,
+          7.61048316955566
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        98.0190505981445,
+        -106.658378601074,
+        7.95716762542725
+      ],
+      "id": "binjiang_70_back",
+      "result": {
+        "distance_m": 15.1574750002474,
+        "end": "(98.01905, 7.957168, 106.6584)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.072296030819416,
+        "name": "binjiang_70_back",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        84.3763275146484,
+        -112.896743774414,
+        7.61048316955566
+      ],
+      "trace_enu": [
+        [
+          84.3763275146484,
+          -112.896743774414,
+          7.61048316955566
+        ],
+        [
+          84.7837066650391,
+          -112.42887878418,
+          7.63055324554443
+        ],
+        [
+          85.3091049194336,
+          -111.774230957031,
+          7.65057563781738
+        ],
+        [
+          85.8356399536133,
+          -111.120246887207,
+          7.66822957992554
+        ],
+        [
+          86.3709182739258,
+          -110.472862243652,
+          7.6640043258667
+        ],
+        [
+          87.1237564086914,
+          -110.094497680664,
+          7.66122961044312
+        ],
+        [
+          87.8836364746094,
+          -109.729782104492,
+          7.63095617294312
+        ],
+        [
+          88.6442794799805,
+          -109.364715576172,
+          7.57968664169312
+        ],
+        [
+          89.4226303100586,
+          -109.03458404541,
+          7.53134679794312
+        ],
+        [
+          90.1694564819336,
+          -108.75341796875,
+          7.59632396697998
+        ],
+        [
+          90.8274536132812,
+          -108.481903076172,
+          7.89491748809814
+        ],
+        [
+          91.6205062866211,
+          -108.240913391113,
+          7.93784332275391
+        ],
+        [
+          92.4342575073242,
+          -108.030624389648,
+          7.93442869186401
+        ],
+        [
+          93.25,
+          -107.830123901367,
+          7.93442869186401
+        ],
+        [
+          94.0657577514648,
+          -107.629623413086,
+          7.93442869186401
+        ],
+        [
+          94.880859375,
+          -107.426612854004,
+          7.93677949905396
+        ],
+        [
+          95.6928558349609,
+          -107.21142578125,
+          7.93677949905396
+        ],
+        [
+          96.5047912597656,
+          -106.996162414551,
+          7.94133043289185
+        ],
+        [
+          97.3166351318359,
+          -106.780944824219,
+          7.94843578338623
+        ],
+        [
+          97.9827270507812,
+          -106.658386230469,
+          7.95598936080933
+        ],
+        [
+          98.0190505981445,
+          -106.658378601074,
+          7.95716762542725
+        ],
+        [
+          98.0190505981445,
+          -106.658378601074,
+          7.95716762542725
+        ]
+      ]
+    }
+  ]
+}

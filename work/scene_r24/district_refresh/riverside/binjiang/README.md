@@ -23,3 +23,9 @@ bash work/scene_r24/district_500/play.sh --software -- --explore-500 --binjiang-
 ```
 
 `--binjiang-plot=70` 至 `73` 可切换公共街边入口。用 `walk.gd`、全新 `CQ_QA_DIR` 和 `--fixed-fps 60` 运行往返。`--qa-without-binjiang` 可重现旧几何。原生前后图采用固定眼位、指向和视野，关闭太阳阴影以沿用父版拍摄条件。
+
+## 40f77024 后的同址精修
+
+72 号以 2019 年南区路正面为准，重排入口斑马纹、街口白边、灰砖人行带、两侧低缘石与浅层排水。退入小门房并把原有树根纳入带石边的种植槽。70、71 号在塔裙门前压低门槛、后退玻璃并细分门梃，补门前种植槽。73 号以 2019 年北侧和 2020 年长滨路反侧为准，分别做凸弧玻璃带及有斜升层板的厚框开孔。照片用于外形和层位判读，坡度、精确尺寸和不可见内部为有限试作。 [三张同址资料、观察与指纹](finish/field.json) · [本轮原生前后与往返](finish/README.md)
+
+重开与导出沿用上面的命令。使用 `finish_views.gd -- --day-one-test --qa-still-frames --qa-no-sun-shadows --explore-500 --binjiang-plot=72` 导出登记人眼高视图并复走入口。追加 `--site-view-only` 可单独复拍机位。

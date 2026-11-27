@@ -1,0 +1,133 @@
+{
+  "parent_commit": "40f7702427b341d1e5370e2405af09d4f9cd4d0a",
+  "parent_model_sha256": "3e9776aa7b491f4a0bd824b7ed98fcaa3846cb05a821a6702bc26d9532de2d83",
+  "finish_model_sha256": "9130bc07a8b0707f01129a2e2df391eb676364fe951a45fc2d100ff55a4b0f54",
+  "renderer": "gl_compatibility",
+  "device": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "frames": {
+    "72-entry": {
+      "before_sha256": "21a765982d0b04e696b37564865a933c44adc6c80b128af0a02fa466be7fe303",
+      "after_sha256": "e7fdf51d206e8edc227773d10ed0b22ceb9e735e2fcbae5f050857489a22bd7f",
+      "camera": {
+        "eye_enu": [
+          125.3,
+          -103.0,
+          10.664
+        ],
+        "focus_enu": [
+          117.67,
+          -126.48,
+          9.704
+        ],
+        "image": "72-entry.png",
+        "pixels": "(899, 506)",
+        "vfov": 51.0
+      }
+    },
+    "72-back": {
+      "before_sha256": "9d42dbb5706cd7b04397808e1581463352b9480c0bd97f742bd2d157da36e4d8",
+      "after_sha256": "b145d3e9aea13f0ec4c1a03f8645b6161d59c4f85709aaba0b9bdc1c8b90587e",
+      "camera": {
+        "eye_enu": [
+          117.4,
+          -135.4,
+          9.51
+        ],
+        "focus_enu": [
+          120.9,
+          -111.0,
+          9.51
+        ],
+        "image": "72-back.png",
+        "pixels": "(899, 506)",
+        "vfov": 54.0
+      }
+    },
+    "73-north": {
+      "before_sha256": "cf04c68c8ab0ffbecee7e699b4c5e0162177b74d24f8119dd446608943f50739",
+      "after_sha256": "86108ea79d60191fcd84c88520b7a1fd92313985e9456438c7e72878bd6112ba",
+      "camera": {
+        "eye_enu": [
+          149.9,
+          -121.6,
+          13.96
+        ],
+        "focus_enu": [
+          143.4,
+          -139.25,
+          14.65
+        ],
+        "image": "73-north.png",
+        "pixels": "(899, 506)",
+        "vfov": 55.0
+      }
+    },
+    "73-south": {
+      "before_sha256": "fe27e53f4c1ebc7b91652522119e30ce7b3993b07d27dbc447e44d2719503fa7",
+      "after_sha256": "cb15b9862b293ae8f91511b437d52580412a0394c86c56796088d077df3dac54",
+      "camera": {
+        "eye_enu": [
+          143.1,
+          -181.967,
+          -1.888
+        ],
+        "focus_enu": [
+          143.56,
+          -170.0,
+          5.2
+        ],
+        "image": "73-south.png",
+        "pixels": "(899, 506)",
+        "vfov": 57.0
+      }
+    },
+    "70-threshold": {
+      "before_sha256": "fe101e28213d6826580896c7968a7d324b5e9b8d1203be794a2ca18e890be213",
+      "after_sha256": "a56fca3bff9137d518efd529d7db6bb325c8a7dccb2f046642186bd537589b77",
+      "camera": {
+        "eye_enu": [
+          88.15,
+          -109.9,
+          9.35
+        ],
+        "focus_enu": [
+          84.5,
+          -115.04,
+          9.45
+        ],
+        "image": "70-threshold.png",
+        "pixels": "(899, 506)",
+        "vfov": 56.0
+      }
+    },
+    "inside_look_back": {
+      "after_sha256": "a3d51fa7a296d514acd247186894a4e37c2303ff1441f872ba45fe9aedab5cb0"
+    }
+  },
+  "backend_logs": {
+    "before-entry-centred": [
+      "Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org",
+      "WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.",
+      "OpenGL API 4.5 (Core Profile) Mesa 25.0.7-2+deb13u1 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 19.1.7, 256 bits)",
+      "WARNING: Subsurface scattering is only available when using the Forward+ renderer.",
+      "ERROR: Texture with GL ID of 673: leaked 349524 bytes.",
+      "ERROR: Texture with GL ID of 674: leaked 349524 bytes."
+    ],
+    "before-eye-height": [
+      "Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org",
+      "WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.",
+      "OpenGL API 4.5 (Core Profile) Mesa 25.0.7-2+deb13u1 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 19.1.7, 256 bits)",
+      "WARNING: Subsurface scattering is only available when using the Forward+ renderer.",
+      "ERROR: Texture with GL ID of 673: leaked 349524 bytes.",
+      "ERROR: Texture with GL ID of 674: leaked 349524 bytes."
+    ],
+    "after-v3": [
+      "Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org",
+      "WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.",
+      "OpenGL API 4.5 (Core Profile) Mesa 25.0.7-2+deb13u1 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 19.1.7, 256 bits)",
+      "WARNING: Subsurface scattering is only available when using the Forward+ renderer.",
+      "ERROR: Texture with GL ID of 676: leaked 349524 bytes.",
+      "ERROR: Texture with GL ID of 677: leaked 349524 bytes."
+    ]
+  }
+}

@@ -12,11 +12,12 @@ from mathutils import Vector
 
 HERE = Path(__file__).resolve().parent
 SCENE = HERE.parents[2]
-sys.path[:0] = [str(SCENE/"district_500"), str(SCENE/"district_refresh/street_groups")]
+sys.path[:0] = [str(HERE), str(SCENE/"district_500"), str(SCENE/"district_refresh/street_groups")]
 from factory import Mesh, terrain
 from refresh_geometry import ASSETS, read
 from retire_plots import fingerprint, remove_faces
 from riverside import make_strip, terrain_faces
+from entrance import canopy, flagstone, public_entry
 
 def ring_ccw(points):
     values=[Vector(p) for p in points]
@@ -68,8 +69,9 @@ def podium(ring,levels,m):
             for bay in range(count):
                 l,r=bay*pitch+.28,(bay+1)*pitch-.28
                 north=-n.y>.46
+                doorway=(north or -n.x>.70) and floor==2 and bay in (1,3,5,6)
                 low_opening=floor<2 and not north
-                bar(floors,a,t,n,l,r,.025,.38,z+.02,z+(.32 if north and floor==2 else .47),m["foot"] if floor==0 else m["sand"])
+                bar(floors,a,t,n,l,r,.025,.38,z+.02,z+(.055 if doorway else .32 if north and floor==2 else .47),m["foot"] if floor==0 else m["sand"])
                 bar(detail,a,t,n,l,r,.03,.47,next_z-.69,next_z-.075,m["sand"])
                 if low_opening or (not north and floor in (2,3) and bay%5 in (1,2)):
                     # The outdoor garage bay can be seen to its recessed shadow wall.
@@ -78,12 +80,17 @@ def podium(ring,levels,m):
                         h=z+.69+stripe*.135
                         bar(contents,a,t,n,l+.06,r-.06,.36,.405,h,h+.035,m["rail"])
                 else:
-                    recess=.36 if north and floor==2 and bay in (2,3,4,5) else .49
-                    bottom=z+(.105 if north and floor==2 else .50)
+                    recess=.96 if doorway else .36 if north and floor==2 else .49
+                    bottom=z+(.063 if doorway else .33 if north and floor==2 else .50)
                     bar(floors,a,t,n,l,r,recess,recess+.03,bottom,next_z-.67,m["blue"] if (bay+floor)%4 else m["teal"])
                     for section in (0.0,.33,.67,1.):
                         u=l+section*(r-l)
                         bar(detail,a,t,n,u-.026,u+.026,recess-.02,recess+.043,bottom,next_z-.67,m["rail"])
+                    if doorway:
+                        for jamb_l,jamb_r in ((l,l+.14),(r-.14,r)):
+                            bar(detail,a,t,n,jamb_l,jamb_r,-.045,recess+.01,bottom,next_z-.66,m["pier"])
+                        bar(detail,a,t,n,l,r,.12,recess+.04,bottom-.05,bottom+.018,m["edge"])
+                        bar(detail,a,t,n,l,r,recess-.019,recess+.015,bottom+2.04,bottom+2.094,m["rail"])
                     if north and floor==2:
                         bar(detail,a,t,n,l+.18,r-.18,-.09,.02,next_z-.70,next_z-.31,m["sign"] if bay%3==1 else m["lintel"])
                         bar(detail,a,t,n,l+.40,l+.43,recess-.055,recess-.015,bottom+.61,bottom+1.02,m["pier"])
@@ -126,40 +133,138 @@ def tower(name,ring,bottom,count,height,m,style):
     return body.save(),plate,top
 
 def curved_neighbor(corners,m):
-    northwest,northeast,*south=corners
-    east=northeast-northwest
-    edge=[northwest.lerp(northeast,i/14)+Vector((0,2.18*sin(pi*i/14))) for i in range(15)]
-    ring=ring_ccw(edge+south)
-    floor=Mesh("COL_Binjiang_704006726_Curved_Podium")
-    fronts=Mesh("Binjiang_Salmon_Arc_Windows_And_Grilles")
+    northwest,northeast,southeast,southwest=corners
+    east=(northeast-northwest).normalized()
+    outward=Vector((-east.y,east.x))
+    length=(northeast-northwest).length
     levels=(1.0,4.28,7.56,10.81,14.08,17.43,20.54)
+    floor=Mesh("COL_Binjiang_704006726_Curved_Podium")
+    ribbon=Mesh("COL_Binjiang_73_Continuous_Bowed_Glazing")
+    glass=Mesh("Binjiang_73_Fine_Mullions_And_Curtains")
+    cornice=Mesh("Binjiang_73_Pitched_Sills_And_Planted_Cornice")
+    garage=Mesh("COL_Binjiang_73_South_Garage_Reveals")
+    ramps=Mesh("COL_Binjiang_73_South_Visible_Ramp_Slabs")
+
+    def point(distance, offset):
+        fraction=distance/length
+        east_bow=min(1.,max(0.,(fraction-.38)/.54))
+        west_bow=min(1.,fraction/.36)
+        wave=1.18*sin(pi*fraction)+1.01*sin(pi*east_bow)**2+.53*sin(pi*west_bow)**2
+        return northwest+east*distance+outward*(wave+offset)
+
+    def arc_solid(mesh,left,right,outer,inner,base,top,finish):
+        # Join subdivisions without buried coplanar end faces.
+        count=max(1,round((right-left)/.48))
+        sections = [[point(left+(right-left)*i/count, depth) for depth in (inner,outer)]
+                    for i in range(count+1)]
+        for (ai,ao),(bi,bo) in zip(sections,sections[1:]):
+            mesh.face([(*ao,base),(*bo,base),(*bi,base),(*ai,base)],finish)
+            mesh.face([(*ai,top),(*bi,top),(*bo,top),(*ao,top)],finish)
+            mesh.face([(*ai,base),(*bi,base),(*bi,top),(*ai,top)],finish)
+            mesh.face([(*bo,base),(*ao,base),(*ao,top),(*bo,top)],finish)
+        for a,q in (sections[0][::-1],sections[-1]):
+            mesh.face([(*a,base),(*q,base),(*q,top),(*a,top)],finish)
+
+    edge=[point(i*length/28,0) for i in range(29)]
+    ring=ring_ccw(edge+[southeast,southwest])
+    core=ring_ccw([northwest-outward*2.40,northeast-outward*2.40,
+                   southeast+outward*7.8,southwest+outward*7.8])
     slab(floor,ring,-.65,1.,m["foot"])
     for z in levels[1:]:
-        slab(floor,ring,z-.2,z,m["brick"])
-    for a,t,n,L in axes(ring):
-        public=-n.y>.54
-        count=max(1,round(L/4.4))
-        bay=L/count
-        for k,(low,high) in enumerate(zip(levels,levels[1:])):
-            for j in range(count):
-                u=j*bay
-                width=.29 if public else .37
-                bar(floor,a,t,n,u,min(u+width,L),-.045,.48,low,high,m["brick"])
-                bar(floor,a,t,n,max(0,u+bay-width),u+bay,-.045,.48,low,high,m["brick"])
-                bar(floor,a,t,n,u+width,u+bay-width,.03,.48,low,low+(.46 if public else .69),m["brick"])
-                bar(fronts,a,t,n,u+width,u+bay-width,-.21,.42,high-.55,high+.08,m["coping"])
-                glass=public and k>=2 and k!=3
-                set_back=.24 if glass else (1.23 if public and k==3 else 2.64)
-                bar(floor,a,t,n,u+width,u+bay-width,set_back,set_back+.035,
-                    low+.62,high-.53,m["greyblue"] if glass else m["recess"])
-                if glass:
-                    for s in (.25,.5,.75):
-                        x=u+s*bay
-                        bar(fronts,a,t,n,x-.025,x+.025,.195,.235,low+.62,high-.54,m["rail"])
-        if public:
-            bar(floor,a,t,n,0.,L,-.14,.63,levels[-1],levels[-1]+.63,m["coping"])
-            bar(fronts,a,t,n,.12,L-.12,.22,.63,levels[-1]+.47,levels[-1]+.71,m["leaf"])
-    return [floor.save(),fronts.save()],levels[-1],ring
+        slab(floor,core,z-.22,z,m["pinkstone"])
+    arc_solid(floor,0,length,-2.19,-2.42,7.20,20.51,m["recess"])
+    # Use two uninterrupted broad ribbons, with fine metal framing and a single masonry stair screen.
+    for band,(bottom,top) in enumerate(((14.32,16.71),(17.59,19.93))):
+        rise=.58 if band==0 else .76
+        for left,right in ((.73,15.17),(17.38,length-1.15)):
+            arc_solid(ribbon,left,right,rise,rise-.105,bottom,top,m["ribbon_glass"])
+            arc_solid(cornice,left-.06,right+.06,rise+.24,-.16,bottom-.22,bottom+.035,m["pinkstone"])
+            arc_solid(cornice,left-.06,right+.06,rise+.29,-.16,top-.008,top+.17,m["sill_stone"])
+            bays=round((right-left)/.84)
+            for i in range(bays+1):
+                x=left+(right-left)*i/bays
+                arc_solid(glass,x-.016,x+.016,rise+.036,rise-.10,bottom+.025,top-.025,m["silver"])
+                if i<bays and i%5 in (1,2):
+                    end=min(right,x+.38+(i%3)*.06)
+                    arc_solid(glass,x+.07,end,rise+.021,rise-.006,bottom+.08,top-.075,m["curtain"])
+            arc_solid(glass,left,right,rise+.033,rise-.012,bottom+1.66,bottom+1.69,m["silver"])
+    arc_solid(floor,15.13,17.42,.54,-.48,12.68,20.31,m["sill_stone"])
+    for i in range(11):
+        x=15.26+i*.181
+        arc_solid(glass,x,x+.083,.548,.536,13.03,19.98,m["rail"])
+    for z in (13.11,14.25,15.40,16.55,17.69,18.84,19.96):
+        arc_solid(glass,15.23,17.25,.557,.541,z,z+.037,m["silver"])
+    for left,right in ((0,.73),(length-1.17,length)):
+        arc_solid(floor,left,right,.14,-2.08,9.23,20.46,m["pinkstone"])
+
+    count=9
+    pitch=length/count
+    for bay in range(count):
+        a,b=bay*pitch,(bay+1)*pitch
+        arc_solid(floor,a,a+.42,.07,-1.86,8.35,14.31,m["pinkstone"])
+        shutter=bay in (1,4,7)
+        arc_solid(floor,a+.41,b,-1.36,-1.61,8.26,13.02,m["roller"] if shutter else m["shade_glass"])
+        if shutter:
+            for course in range(28):
+                z=8.36+course*.163
+                arc_solid(glass,a+.48,b-.07,-1.337,-1.374,z,z+.038,m["roller"])
+        else:
+            for position in (.32,.65):
+                x=a+position*(b-a)
+                arc_solid(glass,x-.038,x+.038,-1.31,-1.36,8.36,12.95,m["silver"])
+        arc_solid(cornice,a+.42,b,-.06,-1.65,12.64,13.00,m["pinkstone"])
+        arc_solid(ribbon,a+.45,b-.08,-.41,-.50,13.06,14.28,m["shade_glass"])
+        for fraction in (.28,.61,.85):
+            x=a+(b-a)*fraction
+            arc_solid(glass,x-.024,x+.024,-.38,-.47,13.10,14.27,m["rail"])
+    for outer,inner,z0,z1,finish in (
+        (.49,-.23,20.02,20.34,m["pinkstone"]),
+        (.71,-.14,20.33,20.49,m["sill_stone"]),
+        (.45,-.70,20.48,20.63,m["soil"]),
+    ):
+        arc_solid(cornice,0,length,outer,inner,z0,z1,finish)
+    for index in range(89):
+        x=.35+index*(length-.70)/88
+        root=Vector((*point(x,.29+.071*(index%3)),20.60))
+        canopy(cornice,root,.27,.18+.043*(index%5),41,
+               [m["leaf"],m["leaf"],m["leaf_lit"]],1000+index)
+        if index%5 in (0,1,3):
+            lower=Vector((*point(x,.53),20.30-.055*(index%4)))
+            canopy(cornice,lower,.102,.29,19,[m["leaf"],m["leaf_lit"]],1900+index)
+    # Return walls close the north and south layers within the registered envelope.
+    for a,b in ((northwest,southwest),(southeast,northeast)):
+        axis=(b-a).normalized()
+        inside=Vector((-axis.y,axis.x))
+        if (sum(corners,Vector((0,0)))*.25-a).dot(inside)<0:
+            inside=-inside
+        bar(floor,a,axis,inside,0,(b-a).length,0,.43,1.0,20.5,m["pinkstone"])
+
+    span=(southeast-southwest).length
+    axis=(southeast-southwest).normalized()
+    inward=Vector((-axis.y,axis.x))
+    pitch=span/8
+    for index in range(9):
+        x=index*pitch
+        bar(garage,southwest,axis,inward,max(0,x-.34),min(span,x+.34),-.21,1.06,1.0,20.52,m["pinkstone"])
+    for z in levels:
+        bar(garage,southwest,axis,inward,0,span,-.11,1.15,z-.37,z+.26,m["pinkstone"])
+        bar(garage,southwest,axis,inward,0,span,-.165,.03,z+.19,z+.29,m["sill_stone"])
+    for low,high in zip(levels,levels[1:]):
+        bar(garage,southwest,axis,inward,0,span,7.45,7.81,low-.23,high+.01,m["recess"])
+        for left,right in ((0,8.9),(31.4,span)):
+            bar(garage,southwest,axis,inward,left,right,.38,7.5,low-.012,low+.21,m["garage_concrete"])
+        a,b=8.90,31.40
+        ring2=[(a,1.56),(b,1.56),(b,6.98),(a,6.98)]
+        def slope(near,far,finish):
+            def face(height):
+                return [(*(southwest+axis*x+inward*y),low+.29+(x-a)*.090+height) for x,y in ring2]
+            ramps.solid(face(near),face(far),finish)
+        slope(-.27,-.12,m["pinkstone"])
+        slope(-.12,.06,m["garage_concrete"])
+        rail=[(a,1.49),(b,1.49),(b,1.64),(a,1.64)]
+        lower=[(*(southwest+axis*x+inward*y),low+.24+(x-a)*.090) for x,y in rail]
+        ramps.solid(lower,[(x,y,z+.29) for x,y,z in lower],m["pinkstone"])
+    return [mesh.save() for mesh in (floor,ribbon,glass,cornice,garage,ramps)],levels[-1],ring
 
 def paving(site, tiles, ground, m, previous):
     project=runpy.run_path(str(HERE.parent/"park_plot59/build.py"),run_name="park_projection")
@@ -179,19 +284,25 @@ def paving(site, tiles, ground, m, previous):
     pieces.append(landings.save())
     frontage=[[96.78,-106.35],[98,-106.6],[103.5,-107.61],[108,-108.6],[115.2,-109.62],
               [120.9,-111],[128.6,-113.08],[137.95,-115.82],[144.7,-118.15],[149.4,-119.39]]
-    street=make_strip({"id":"COL_Binjiang_Jiefang_South_Sidewalk","points":frontage,"width_m":2.15,
-                       "finish":0,"raise_m":.053},tiles,[m["pavers"],m["pavers"],m["edge"]])
-    pieces.append(street)
+    for suffix,points in (("",frontage[:5]+[[118.05,-110.3]]),
+                          ("_East",[[123.95,-111.83]]+frontage[6:])):
+        street=make_strip({"id":"COL_Binjiang_Jiefang_South_Sidewalk"+suffix,"points":points,"width_m":2.15,
+                           "finish":0,"raise_m":.053},tiles,[m["pavers"],m["pavers"],m["edge"]])
+        street.name="COL_Binjiang_Jiefang_South_Sidewalk"+suffix
+        pieces.append(street)
     for key,value in site["public_routes"].items():
         stations=value["stations"]
         # Extend a short stone landing past both checks, so the test begins and turns within paving.
         vec=list(map(Vector,stations))
         trace=[list(vec[0]+(vec[0]-vec[1]).normalized()*.67),*stations,
                list(vec[-1]+(vec[-1]-vec[-2]).normalized()*.68)]
-        piece=make_strip({"id":"COL_Binjiang_Walk_"+key,"points":trace,"width_m":2.52 if key in ("70","73") else 2.32,
-                          "finish":0,"raise_m":.067},tiles,[m["pavers"],m["pavers"],m["edge"]])
-        piece.name="COL_Binjiang_Walk_"+key
-        pieces.append(piece)
+        if key=="72":
+            pieces.extend(public_entry(stations,ground,tiles,project,m))
+        else:
+            piece=make_strip({"id":"COL_Binjiang_Walk_"+key,"points":trace,"width_m":2.52 if key in ("70","73") else 2.32,
+                              "finish":0,"raise_m":.067},tiles,[m["pavers"],m["pavers"],m["edge"]])
+            piece.name="COL_Binjiang_Walk_"+key
+            pieces.append(piece)
         plot_paths[key]={**value,"start_ground_m":ground(vec[0])+.067,"destination_game_m":ground(vec[-1])+.067}
     return pieces,plot_paths,area
 
@@ -224,6 +335,8 @@ def build(tmp):
       "coping":("Binjiang red podium coping","concrete_wall_006_diff_2k.jpg",(143,91,76)),
       "pavers":("Binjiang grey entry flags","stone_floor_diff_2k.jpg",(139,142,143)),
       "edge":("Binjiang warm paving edge","concrete_wall_006_diff_2k.jpg",(176,174,166)),
+      "pinkstone":("Binjiang warm slate panels","concrete_wall_006_diff_2k.jpg",(133,103,97)),
+      "entry_asphalt":("Binjiang entry asphalt wear","asphalt_02_diff_1k.jpg",(85,87,86)),
     }
     m={slot:prior["tinted_material"](*spec,tmp,writer) for slot,spec in reused.items()}
     for key,name,col,rough in (("teal","Blue green window ribbons",(.076,.172,.191),.27),
@@ -231,8 +344,21 @@ def build(tmp):
               ("dimblue","Light muted blue glass",(.118,.153,.174),.34),("recess","Recessed structural shade",(.077,.069,.062),.90),
               ("rail","Dark bronze glazing mullions",(.062,.067,.069),.46),
               ("sign","Muted red shop fascia",(.26,.063,.036),.60),("lintel","Stone lintels",(.32,.268,.215),.81),
-              ("leaf","Podium parapet low planting",(.102,.147,.061),.89)):
+              ("leaf","Podium parapet low planting",(.076,.131,.043),.89),
+              ("leaf_lit","Young leaves at pavement",(.116,.181,.057),.88),
+              ("soil","Contained planter soil",(.074,.053,.037),.95),
+              ("ribbon_glass","Silver blue continuous curved glass",(.21,.265,.29),.27),
+              ("shade_glass","Glazing in shaded doorways",(.082,.117,.125),.36),
+              ("curtain","Pale translucent lining convention",(.29,.339,.348),.37),
+              ("silver","Slender anodised window framing",(.31,.34,.35),.63),
+              ("sill_stone","Warm polished sill stone",(.26,.171,.148),.53),
+              ("roller","Closed lower entrance louvres",(.20,.121,.071),.79),
+              ("garage_concrete","Garage ramp and slab concrete",(.196,.161,.147),.88),
+              ("road_paint","Off-white entrance road paint",(.74,.745,.70),.85),
+              ("drain","Recessed cast iron drain plates",(.058,.058,.053),.84),
+              ("entry_flags","Small grey street flags",(.61,.62,.63),.87)):
         m[key]=plain("Binjiang "+name,col,rough)
+    flagstone(m["entry_flags"],writer,tmp)
     original=terrain()
     tiles=list(terrain_faces())
     def ground(p):
