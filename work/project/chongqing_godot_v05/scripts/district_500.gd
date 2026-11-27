@@ -20,6 +20,8 @@ const XINGCHEN := "res://assets/district_500/xingchen.glb"
 const XINGCHEN_SITE := "res://assets/district_500/xingchen.json"
 const PAVILION_62 := "res://assets/district_500/pavilion62.glb"
 const PAVILION_62_SITE := "res://assets/district_500/pavilion62.json"
+const COLLECTIBLES := "res://assets/district_500/collectibles-market.glb"
+const COLLECTIBLES_SITE := "res://assets/district_500/collectibles-market.json"
 
 static func install(city: Node3D) -> Dictionary:
 	var district := (load(MODEL) as PackedScene).instantiate() as Node3D
@@ -47,6 +49,7 @@ static func install(city: Node3D) -> Dictionary:
 	district.add_child(riverside)
 	var guoco_plant_roots: Array = []
 	var xingchen_way: Array = []
+	var market_ways: Array = []
 	if not "--qa-without-match-factory" in OS.get_cmdline_user_args():
 		install_street_group(district, MATCH_FACTORY, MATCH_FACTORY_SITE, "MatchFactory")
 		if not "--qa-without-matix-streets" in OS.get_cmdline_user_args():
@@ -65,6 +68,11 @@ static func install(city: Node3D) -> Dictionary:
 						xingchen_way.append(int(site.way))
 						if not "--qa-without-pavilion62" in OS.get_cmdline_user_args():
 							install_street_group(district, PAVILION_62, PAVILION_62_SITE, "RiversidePavilion62")
+							if not "--qa-without-collectibles" in OS.get_cmdline_user_args():
+								install_street_group(district, COLLECTIBLES, COLLECTIBLES_SITE, "ZhongxingCollectiblesMarket")
+								var market: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(COLLECTIBLES_SITE))
+								market_ways = market.mapped_residential_ways
+								add_collectibles_details(district, market)
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -158,6 +166,8 @@ static func install(city: Node3D) -> Dictionary:
 			"kind":tree.species, "yaw":deg_to_rad(tree.rotation_deg), "shade":0.94})
 	preload("res://scripts/district_r21.gd").install_canopy(district, distant_trees, tree_data.canopy_pivots, 8.0, 34.0)
 	var retire: Array = layout.get("osm_building_ids", []) + xingchen_way
+	for way: float in market_ways:
+		retire.append(int(way))
 	for id: int in retire:
 		for prior: Node3D in city.find_children("Context_*%s_*" % id, "MeshInstance3D", true, false):
 			prior.hide()
@@ -223,6 +233,7 @@ static func install(city: Node3D) -> Dictionary:
 		"public_edges_sha256": FileAccess.get_sha256(PUBLIC_EDGES),
 		"xingchen_sha256": FileAccess.get_sha256(XINGCHEN),
 		"pavilion_62_sha256": FileAccess.get_sha256(PAVILION_62),
+		"collectibles_market_sha256": FileAccess.get_sha256(COLLECTIBLES),
 		"retired_internal_context": local_frame != null, "osm_building_ids": retire}
 
 
@@ -242,6 +253,26 @@ static func install_street_group(district: Node3D, model_path: String, plan_path
 		old.free()
 	district.add_child(layer)
 
+static func add_collectibles_details(district: Node3D, plan: Dictionary) -> void:
+	var sign := Label3D.new()
+	sign.name = "ZhongxingMarketName"
+	sign.text = "中兴路收藏品交易市场"
+	sign.font = load("res://assets/district_500/market_signs.otf")
+	sign.font_size = 114
+	sign.pixel_size = .011
+	sign.modulate = Color("#c35143")
+	sign.outline_size = 1
+	sign.outline_modulate = Color("#411c16")
+	sign.rotation.y = -PI / 2.0
+	sign.position = enu(plan.sign_east_north_up)
+	district.add_child(sign)
+	for north: float in [189.75, 197.68]:
+		var light := OmniLight3D.new()
+		light.position = Vector3(228.3, 55.72, -north)
+		light.light_color = Color("#f1ecd5")
+		light.light_energy = .78
+		light.omni_range = 8.6
+		district.add_child(light)
 
 static func place_worker(district: Node3D,p: Dictionary) -> void:
 	var market: bool=p.name=="照相巷便民市场"
@@ -317,6 +348,13 @@ static func start_exploration(scene: Node3D) -> void:
 		var a: Array=layout.public_stops[0].approach
 		var b: Array=layout.public_stops[0].target
 		scene.explorer.set_walk_origin(Vector3(a[0],a[2],-a[1]),Vector3(b[0],b[1],b[2]))
+	elif "--zhongxing-collectibles" in OS.get_cmdline_user_args():
+		var plan: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(COLLECTIBLES_SITE))
+		var point: Array = plan.route_east_north[0]
+		var street := collision.raycast_ground(scene, Vector3(point[0], 52.1, -point[1]), 8.0)
+		if not street.is_empty():
+			scene.explorer.set_walk_origin(street.position + Vector3.UP * .035,
+				enu(plan.street_eye_target_east_north_up))
 	elif "--west-court" in OS.get_cmdline_user_args():
 		var plan: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(WEST_COURT_SITE))
 		var join: Array = plan.walk_plan.ramp[0]

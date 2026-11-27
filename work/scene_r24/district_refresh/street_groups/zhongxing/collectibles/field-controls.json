@@ -1,0 +1,55 @@
+{
+  "source_photos": [
+    {
+      "url": "https://lbsugc.cdn.bcebos.com/images/B65dc22467b1d52d82.jpeg",
+      "observed_sha256": "597914efb06b1f21fcfe6affb463c5dbade545e14ae59e01e6213570511ae5ef"
+    },
+    {
+      "url": "https://poi-pic-gz.cdn.bcebos.com/pic_1ba99e99b7c9d83296b72a8dbf1329af.jpeg",
+      "observed_sha256": "2e875efc7daffcff84d75a03b21731dde1805b83915a79ab77ebb164af0c8eff"
+    },
+    {
+      "url": "https://taojin-pic-bj.cdn.bcebos.com/bf2b5c29eb307fbe48b150ccec5aa1da.jpeg",
+      "observed_sha256": "72822de31a6ac81742c491108cc6a8243a7ce9bfa32de91b321a252bb84ee61a"
+    }
+  ],
+  "parking_evidence": [
+    {
+      "uid": "f6acf5d1b26bbb7984330486",
+      "wgs84_lon_lat": [
+        106.567418,
+        29.554757
+      ],
+      "enu_xy_m": [
+        287.652,
+        167.043
+      ]
+    },
+    {
+      "uid": "062367e5f4a562083010afbc",
+      "enu_xy_m": [
+        285.811,
+        194.422
+      ]
+    }
+  ],
+  "road_osm_way": 176034707,
+  "bus_stop_osm_node": 11049229719,
+  "residential_osm_ways": [
+    809889619,
+    809889620
+  ],
+  "old_footprints_model_overlap_m2": {
+    "08": 40.957,
+    "09": 29.126,
+    "11": 0.0
+  },
+  "sign_font": {
+    "license": "SIL OFL 1.1",
+    "license_path": "work/project/chongqing_godot_v05/assets/fonts/R20_OFL.txt",
+    "source": "Noto Sans CJK SC Regular from system NotoSansCJK-Regular.ttc index 2",
+    "source_version": "Version 2.004;hotconv 1.0.118;makeotfexe 2.5.65603",
+    "source_sha256": "b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+    "derived_sha256": "5e6b2b9da6ce95ca211073c8690603352f9abeb3236c188588d9c1441b28d7c2"
+  }
+}
