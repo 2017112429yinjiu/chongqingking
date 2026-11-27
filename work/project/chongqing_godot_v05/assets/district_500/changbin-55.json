@@ -1,0 +1,166 @@
+{
+  "retired_plots": [
+    55
+  ],
+  "retired_objects": [
+    "COL_Outer500_Frame_55",
+    "Outer500_Condenser_55_01",
+    "Outer500_Household_108_crate_0",
+    "Outer500_InteriorFloor_55",
+    "Outer500_Joinery_55"
+  ],
+  "replacement_meshes": [
+    "COLH_Outer500_Household_contact",
+    "COL_Outer500_Building_envelopes",
+    "COL_Outer500_Retaining_and_boundaries",
+    "Outer500_Facades_and_storefronts",
+    "Outer500_Street_furniture"
+  ],
+  "new_meshes": [
+    "COL_Changbin55_PublicShoulder",
+    "COL_Changbin55_CurbBlocks",
+    "COL_Changbin55_AsphaltLaneEdge",
+    "Changbin55_StaggeredGreyJoints"
+  ],
+  "removed_face_counts": {
+    "COLH_Outer500_Household_contact": 6,
+    "COL_Outer500_Building_envelopes": 174,
+    "COL_Outer500_Retaining_and_boundaries": 120,
+    "Outer500_Facades_and_storefronts": 36,
+    "Outer500_Street_furniture": 299
+  },
+  "borrowed_materials": {
+    "COLH_Outer500_Household_contact": {
+      "CQEastParentSlot000": "Door and shutter recess.001"
+    },
+    "COL_Outer500_Building_envelopes": {
+      "CQEastParentSlot001": "Grey stone walkway.001",
+      "CQEastParentSlot002": "Coursed retaining masonry.001",
+      "CQEastParentSlot003": "Aged stucco.001",
+      "CQEastParentSlot004": "Red infill brick.001",
+      "CQEastParentSlot005": "Glazed blue tile.001",
+      "CQEastParentSlot006": "Concrete bands.001",
+      "CQEastParentSlot007": "Blue grey street reflection.001",
+      "CQEastParentSlot008": "Shaded window beyond mesh.001",
+      "CQEastParentSlot009": "Flax curtain behind glazing.001",
+      "CQEastParentSlot010": "Cloud reflection.001",
+      "CQEastParentSlot011": "Painted window and rail trim.001",
+      "CQEastParentSlot012": "Door and shutter recess.002",
+      "CQEastParentSlot013": "Cream glazed wall skirting.001",
+      "CQEastParentSlot014": "Worn timber joinery.001",
+      "CQEastParentSlot015": "Worn concrete floors.001"
+    },
+    "COL_Outer500_Retaining_and_boundaries": {
+      "CQEastParentSlot016": "Grey stone walkway.002",
+      "CQEastParentSlot017": "Coursed retaining masonry.002",
+      "CQEastParentSlot018": "Concrete bands.002",
+      "CQEastParentSlot019": "Door and shutter recess.003",
+      "CQEastParentSlot020": "Aged galvanized drain pipe.001",
+      "CQEastParentSlot021": "Salvaged service-door steel.001"
+    },
+    "Outer500_Facades_and_storefronts": {
+      "CQEastParentSlot022": "Aged stucco.002",
+      "CQEastParentSlot023": "Red infill brick.002",
+      "CQEastParentSlot024": "Glazed blue tile.002",
+      "CQEastParentSlot025": "Concrete bands.003",
+      "CQEastParentSlot026": "Grey overlapping roof tiles.001",
+      "CQEastParentSlot027": "Painted window and rail trim.002",
+      "CQEastParentSlot028": "Door and shutter recess.004",
+      "CQEastParentSlot029": "Worn timber joinery.002",
+      "CQEastParentSlot030": "Faded covered market roofing.001",
+      "CQEastParentSlot031": "Aged galvanized drain pipe.002"
+    },
+    "Outer500_Street_furniture": {
+      "CQEastParentSlot032": "Aged stucco.004",
+      "CQEastParentSlot033": "Concrete bands.005",
+      "CQEastParentSlot034": "Grey overlapping roof tiles.003",
+      "CQEastParentSlot035": "Painted window and rail trim.004",
+      "CQEastParentSlot036": "Red painted steel.002",
+      "CQEastParentSlot037": "Jade painted steel.002",
+      "CQEastParentSlot038": "Ochre canvas.002",
+      "CQEastParentSlot039": "Off-white road pigment.002",
+      "CQEastParentSlot040": "Door and shutter recess.006",
+      "CQEastParentSlot041": "Canopy 0.002",
+      "CQEastParentSlot042": "Canopy 1.002",
+      "CQEastParentSlot043": "Canopy 2.002",
+      "CQEastParentSlot044": "Cream glazed wall skirting.003",
+      "CQEastParentSlot045": "Worn timber joinery.004",
+      "CQEastParentSlot046": "Weathered sheet metal.002",
+      "CQEastParentSlot047": "Faded covered market roofing.003",
+      "CQEastParentSlot048": "Used tyre casing.002",
+      "CQEastParentSlot049": "Brown earthenware.002"
+    }
+  },
+  "walk": [
+    [
+      -158.96531677246094,
+      -159.0701446533203,
+      -3.7297950439453125
+    ],
+    [
+      -154.96530151367188,
+      -160.0675048828125,
+      -3.175550048828125
+    ],
+    [
+      -152.48313903808594,
+      -160.68641662597656,
+      -2.832021301269531
+    ],
+    [
+      -148.69898986816406,
+      -161.62997436523438,
+      -2.330335205078125
+    ],
+    [
+      -144.72079467773438,
+      -162.62191772460938,
+      -1.9941306762695312
+    ],
+    [
+      -139.96636962890625,
+      -163.8074188232422,
+      -1.8219962768554687
+    ],
+    [
+      -136.27926635742188,
+      -164.72679138183594,
+      -1.6090675048828125
+    ]
+  ],
+  "osm_way": 59146737,
+  "old_outline": [
+    [
+      -135.46202442095785,
+      -156.45273631110527
+    ],
+    [
+      -142.39213905294702,
+      -150.31463477991483
+    ],
+    [
+      -149.64508941526515,
+      -158.50344970511267
+    ],
+    [
+      -142.71497478327598,
+      -164.64155123630312
+    ]
+  ],
+  "road_line_en": [
+    [
+      -304.29901123046875,
+      -116.16449737548828
+    ],
+    [
+      -74.86039733886719,
+      -173.372802734375
+    ]
+  ],
+  "lane_offset_m": 3.9999999999999996,
+  "surface_textures": {
+    "Changbin55 grey footway flags": "res://assets/chongqing_district_stone_floor_diff_2k.jpg",
+    "Changbin55 weathered road shoulder": "res://assets/chongqing_district_asphalt_02_diff_1k.jpg",
+    "Changbin55 ash kerb blocks": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg"
+  }
+}

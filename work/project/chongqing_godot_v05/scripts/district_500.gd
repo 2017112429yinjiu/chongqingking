@@ -26,6 +26,8 @@ const HOUCI_CONNECTORS := "res://assets/district_500/houci-14-16.glb"
 const HOUCI_CONNECTORS_SITE := "res://assets/district_500/houci-14-16.json"
 const FENGHUANGTAI_11 := "res://assets/district_500/fenghuangtai-11.glb"
 const FENGHUANGTAI_11_SITE := "res://assets/district_500/fenghuangtai-11.json"
+const CHANGBIN_55 := "res://assets/district_500/changbin-55.glb"
+const CHANGBIN_55_SITE := "res://assets/district_500/changbin-55.json"
 const NANQU := "res://assets/district_500/nanqu-04-06-51.glb"
 const NANQU_SITE := "res://assets/district_500/nanqu-04-06-51.json"
 const WILDERNESS_50 := "res://assets/district_500/wilderness-50.glb"
@@ -223,6 +225,11 @@ static func install(city: Node3D) -> Dictionary:
 			assert(plant,spec.name)
 			plant.position.y += float(spec.shift_z)
 			nanqu_rebased_trees[spec.name]=plant.position.y
+	var changbin55_active := nanqu_active and not "--qa-without-changbin-55" in OS.get_cmdline_user_args()
+	if changbin55_active:
+		install_street_group(district, CHANGBIN_55, CHANGBIN_55_SITE, "ChangbinRoadShoulder55")
+		var roadside: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(CHANGBIN_55_SITE))
+		retired_bridge_plots.append_array(roadside.retired_plots)
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -394,6 +401,7 @@ static func install(city: Node3D) -> Dictionary:
 		"wilderness_50_sha256": FileAccess.get_sha256(WILDERNESS_50) if wilderness_active else "",
 		"wilderness_50_finish_sha256": FileAccess.get_sha256(WILDERNESS_FINISH) if wilderness_finish_active else "",
 		"nanqu_04_06_51_sha256": FileAccess.get_sha256(NANQU) if nanqu_active else "",
+		"changbin_55_sha256": FileAccess.get_sha256(CHANGBIN_55) if changbin55_active else "",
 		"public_edges_sha256": FileAccess.get_sha256(PUBLIC_EDGES),
 		"xingchen_sha256": FileAccess.get_sha256(XINGCHEN),
 		"pavilion_62_sha256": FileAccess.get_sha256(PAVILION_62),
@@ -680,6 +688,12 @@ static func start_exploration(scene: Node3D) -> void:
 		if not ground.is_empty():
 			var next: Array = park.route_east_north[1]
 			scene.explorer.set_walk_origin(ground.position+Vector3.UP*.035,Vector3(next[0],ground.position.y,-next[1]))
+	elif "--changbin-55-park" in OS.get_cmdline_user_args():
+		var plan: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(CHANGBIN_55_SITE))
+		var rows: Array = plan.walk
+		var street := collision.raycast_ground(scene, enu(rows[-1]) + Vector3.UP * .8, 2.4)
+		if not street.is_empty():
+			scene.explorer.set_walk_origin(street.position + Vector3.UP * .035, enu(rows[-2]))
 	elif "--west-court" in OS.get_cmdline_user_args():
 		var plan: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(WEST_COURT_SITE))
 		var ramp: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(WEST_RAMP_SITE))

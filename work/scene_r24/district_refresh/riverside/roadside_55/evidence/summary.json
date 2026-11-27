@@ -1,0 +1,52 @@
+{
+  "sha256": "b24dbc38c8c06c6dd7556479254d5073519713c336041eb7ab4c5c3a0aae312f",
+  "renderer": "gl_compatibility",
+  "device": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "checks": 13,
+  "routes": [
+    {
+      "distance_m": 42.6762091293931,
+      "end": "(-168.1755, -6.803453, 174.0368)",
+      "goals": 11,
+      "max_frame_displacement_m": 0.388840854167938,
+      "name": "changbin55_park_out",
+      "pass": true,
+      "reached": 11,
+      "stall_contacts": []
+    },
+    {
+      "distance_m": 42.9093407941982,
+      "end": "(-136.2097, -1.58312, 164.688)",
+      "goals": 11,
+      "max_frame_displacement_m": 0.5125333070755,
+      "name": "changbin55_park_back",
+      "pass": true,
+      "reached": 11,
+      "stall_contacts": []
+    }
+  ],
+  "min_centreline_distance_m": 6.38256072998047,
+  "footway_samples": 110,
+  "previous_gate": [
+    {
+      "distance_m": 27.574466060847,
+      "end": "(-168.1824, -6.80395, 174.0392)",
+      "goals": 7,
+      "max_frame_displacement_m": 0.0997692868113518,
+      "name": "west_binjiang_street_gate_out",
+      "pass": true,
+      "reached": 7,
+      "stall_contacts": []
+    },
+    {
+      "distance_m": 27.5713296318427,
+      "end": "(-158.9989, -3.727499, 159.1266)",
+      "goals": 7,
+      "max_frame_displacement_m": 0.0867119953036308,
+      "name": "west_binjiang_street_gate_back",
+      "pass": true,
+      "reached": 7,
+      "stall_contacts": []
+    }
+  ]
+}

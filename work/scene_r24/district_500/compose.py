@@ -98,6 +98,7 @@ fenghuangtai = None if not houci_connectors or os.environ.get("CQ_FENGHUANGTAI_1
 wilderness = None if not fenghuangtai or os.environ.get("CQ_WILDERNESS_50_PARENT") == "1" else json.loads((group_assets / "wilderness-50.json").read_bytes())
 wilderness_finish = None if not wilderness or os.environ.get("CQ_WILDERNESS_50_FINISH_PARENT") == "1" else json.loads((group_assets / "wilderness-50-finish.json").read_bytes())
 nanqu = None if not wilderness or os.environ.get("CQ_NANQU_PARENT") == "1" else json.loads((group_assets / "nanqu-04-06-51.json").read_bytes())
+roadside_55 = None if not nanqu or os.environ.get("CQ_CHANGBIN_55_PARENT") == "1" else json.loads((group_assets / "changbin-55.json").read_bytes())
 binjiang_override = set() if not binjiang_plan else set(binjiang_plan["replacement_meshes"] + binjiang_plan["retired_objects"])
 east_override = set() if east_plan is None else set(east_plan["replacement_meshes"] + east_plan["retired_objects"]) | binjiang_override
 changbin_override = set(changbin_plan["replacement_meshes"] + changbin_plan["retired_objects"]) | east_override
@@ -361,6 +362,14 @@ if nanqu:
         collection.objects.link(moved)
         moved.name=spec["name"]
         moved.location.z+=spec["shift_z"]
+if roadside_55:
+    for name in roadside_55["replacement_meshes"] + roadside_55["retired_objects"]:
+        collection.objects.unlink(collection.objects[name])
+    with bpy.data.libraries.load(str(here.parent / "district_refresh/riverside/roadside_55/changbin-55.blend"),
+                                 link=True, relative=True) as (_, roadside):
+        roadside.objects = roadside_55["replacement_meshes"] + roadside_55["new_meshes"]
+    for item in roadside.objects:
+        collection.objects.link(item)
 bpy.context.preferences.filepaths.save_version=0
 output_name = "city_and_outer.local.blend" if nanqu else (
     "city_and_outer.before_nanqu.local.blend" if wilderness else
