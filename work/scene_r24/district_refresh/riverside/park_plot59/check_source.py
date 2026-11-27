@@ -32,6 +32,6 @@ if bpy.data.filepath.endswith("city_and_outer.local.blend"):
     assert objects.get("COL_Outer500_Frame_61") or objects.get("Park61_WestParkEdgePath")
     assert objects.get("COL_Nanjimen_NorthRailSteelBox")
     assert objects.get("COL_Riverside_62_registered_body")
-    assert paving.library and paving.library.filepath.endswith("/park-plot59.blend")
+    assert paving.library and paving.library.filepath.endswith(("/park-plot59.blend","/park-edge-finish.blend"))
 print("CQ_PARK59_SOURCE",json.dumps({"blender":bpy.app.version_string,
       "surfaces":tests,"paving_faces":len(paving.data.polygons),"packed_textures":sorted(textures)}))

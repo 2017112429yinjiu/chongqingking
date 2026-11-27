@@ -85,7 +85,9 @@ park57_plan = json.loads((group_assets / "park-plot57.json").read_bytes())
 bridge_park_plan = json.loads((group_assets / "bridge-park.json").read_bytes())
 park59_plan = json.loads((group_assets / "park-plot59.json").read_bytes())
 park61_plan = json.loads((group_assets / "park-plot61.json").read_bytes())
-park61_override = set(park61_plan["replacement_meshes"] + park61_plan["retired_objects"])
+park_finish_plan = json.loads((group_assets / "park-edge-finish.json").read_bytes())
+park_finish_override = set(park_finish_plan["replacement_meshes"] + park_finish_plan["retired_objects"])
+park61_override = set(park61_plan["replacement_meshes"] + park61_plan["retired_objects"]) | park_finish_override
 park59_override = set(park59_plan["replacement_meshes"] + park59_plan["retired_objects"]) | park61_override
 bridge_park_override = set(bridge_park_plan["replacement_meshes"] + bridge_park_plan["retired_objects"]) | park59_override
 park57_override = set(park57_plan["replacement_meshes"] + park57_plan["retired_objects"]) | bridge_park_override
@@ -212,8 +214,28 @@ for item in park59.objects:
     collection.objects.link(item)
 with bpy.data.libraries.load(str(factory_dir.parent / "riverside/park_plot61/park-plot61.blend"),
                              link=True, relative=True) as (_, park61):
-    park61.objects = park61_plan["replacement_meshes"] + park61_plan["new_meshes"]
+    park61.objects = [name for name in park61_plan["replacement_meshes"] + park61_plan["new_meshes"]
+                      if name not in park_finish_override]
 for item in park61.objects:
     collection.objects.link(item)
+with bpy.data.libraries.load(str(factory_dir.parent / "riverside/park_edge_finish/park-edge-finish.blend"),
+                             link=True, relative=True) as (_, park_finish):
+    park_finish.objects = park_finish_plan["replacement_meshes"] + park_finish_plan["new_meshes"]
+for item in park_finish.objects:
+    collection.objects.link(item)
+for name,scale in park_finish_plan["tree_local_scale"].items():
+    linked = collection.objects[name]
+    editable = linked.copy()
+    collection.objects.unlink(linked)
+    editable.name = name
+    editable.scale = tuple(a*b for a,b in zip(editable.scale,scale))
+    collection.objects.link(editable)
+for spec in park_finish_plan["planted_trees"]:
+    plant = collection.objects[spec["donor"]].copy()
+    plant.name = spec["name"]
+    plant.location = spec["east_north_up"]
+    plant.rotation_euler.z += spec["yaw_offset_rad"]
+    plant.scale *= spec["scale"]
+    collection.objects.link(plant)
 bpy.context.preferences.filepaths.save_version=0
 bpy.ops.wm.save_as_mainfile(filepath=str(here / "city_and_outer.local.blend"),relative_remap=True,compress=True)

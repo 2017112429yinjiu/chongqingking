@@ -34,6 +34,8 @@ const PARK_PLOT_59 := "res://assets/district_500/park-plot59.glb"
 const PARK_PLOT_59_SITE := "res://assets/district_500/park-plot59.json"
 const PARK_PLOT_61 := "res://assets/district_500/park-plot61.glb"
 const PARK_PLOT_61_SITE := "res://assets/district_500/park-plot61.json"
+const PARK_EDGE_FINISH := "res://assets/district_500/park-edge-finish.glb"
+const PARK_EDGE_FINISH_SITE := "res://assets/district_500/park-edge-finish.json"
 
 static func install(city: Node3D) -> Dictionary:
 	var district := (load(MODEL) as PackedScene).instantiate() as Node3D
@@ -104,6 +106,9 @@ static func install(city: Node3D) -> Dictionary:
 												install_street_group(district, PARK_PLOT_61, PARK_PLOT_61_SITE, "RiversideParkPlot61")
 												var edge_park: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(PARK_PLOT_61_SITE))
 												retired_bridge_plots.append(edge_park.replaced_plot)
+												if not "--qa-without-park-edge-finish" in OS.get_cmdline_user_args():
+													install_street_group(district, PARK_EDGE_FINISH, PARK_EDGE_FINISH_SITE, "RiversideParkEdgeFinish")
+													finish_park_trees(district)
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -271,6 +276,7 @@ static func install(city: Node3D) -> Dictionary:
 		"bridge_park_sha256": FileAccess.get_sha256(BRIDGE_PARK),
 		"park_plot59_sha256": FileAccess.get_sha256(PARK_PLOT_59),
 		"park_plot61_sha256": FileAccess.get_sha256(PARK_PLOT_61),
+		"park_edge_finish_sha256": FileAccess.get_sha256(PARK_EDGE_FINISH),
 		"retired_internal_context": local_frame != null, "osm_building_ids": retire}
 
 
@@ -289,6 +295,22 @@ static func install_street_group(district: Node3D, model_path: String, plan_path
 		assert(old, mesh_name)
 		old.free()
 	district.add_child(layer)
+
+static func finish_park_trees(district: Node3D) -> void:
+	var plan: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(PARK_EDGE_FINISH_SITE))
+	for label: String in plan.tree_local_scale:
+		var tree := district.find_child(label,true,false) as MeshInstance3D
+		var scale: Array = plan.tree_local_scale[label]
+		tree.scale *= Vector3(scale[0],scale[2],scale[1])
+	var park := district.get_node("RiversideParkEdgeFinish")
+	for entry: Dictionary in plan.planted_trees:
+		var donor := district.find_child(entry.donor,true,false) as MeshInstance3D
+		var tree := donor.duplicate() as MeshInstance3D
+		tree.name = entry.name
+		tree.position = enu(entry.east_north_up)
+		tree.rotation.y += float(entry.yaw_offset_rad)
+		tree.scale *= float(entry.scale)
+		park.add_child(tree)
 
 static func add_collectibles_details(district: Node3D, plan: Dictionary) -> void:
 	var sign := Label3D.new()

@@ -1,0 +1,76 @@
+{
+  "sha256": "52ba8de0a1bd4ee57439d86b5f0e7efad002311679d486b3b0dbc75bdc0e6d33",
+  "bytes": 9002576,
+  "materials": [
+    {
+      "material": "Park Edge fine unjointed pale sand",
+      "image": "sand-park-edge",
+      "embedded": true,
+      "tex_coord": 0,
+      "roughness": 0.95,
+      "meshes": [
+        "COL_Park59_PublicPaving"
+      ]
+    },
+    {
+      "material": "Park Edge matte blue-green aggregate",
+      "image": "bluegreen-park-edge",
+      "embedded": true,
+      "tex_coord": 0,
+      "roughness": 0.89,
+      "meshes": [
+        "COL_Park59_PublicPaving"
+      ]
+    },
+    {
+      "material": "Park Edge pale mineral kerb",
+      "image": "pale-park-edge",
+      "embedded": true,
+      "tex_coord": 0,
+      "roughness": 0.9,
+      "meshes": [
+        "BridgePark_ChangbinParkFootway",
+        "BridgePark_EastGroundWalk",
+        "COL_Park59_PublicPaving",
+        "Park59_TreeWellStoneRims",
+        "Park61_WestParkEdgePath"
+      ]
+    },
+    {
+      "material": "Park Edge neutral grey stone slabs",
+      "image": "stone-park-edge",
+      "embedded": true,
+      "tex_coord": 0,
+      "roughness": 0.93,
+      "meshes": [
+        "BridgePark_ChangbinParkFootway",
+        "BridgePark_EastGroundWalk",
+        "COL_Park59_PublicPaving",
+        "Park61_WestParkEdgePath",
+        "ParkEdge_WestFoldGreyReturn"
+      ]
+    },
+    {
+      "material": "Park Edge mixed green turf",
+      "image": "grass-park-edge",
+      "embedded": true,
+      "tex_coord": 0,
+      "roughness": 0.98,
+      "meshes": [
+        "COL_Park59_PublicPaving",
+        "Park61_NearTreeBelt",
+        "ParkEdge_TreeBandTurf"
+      ]
+    },
+    {
+      "material": "Park Edge grey blue-green surround",
+      "image": "skirt-park-edge",
+      "embedded": true,
+      "tex_coord": 0,
+      "roughness": 0.91,
+      "meshes": [
+        "COL_Park59_PublicPaving"
+      ]
+    }
+  ]
+}

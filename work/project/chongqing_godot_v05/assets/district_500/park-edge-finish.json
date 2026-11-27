@@ -1,0 +1,152 @@
+{
+  "new_meshes": [
+    "ParkEdge_WestFoldGreyReturn",
+    "ParkEdge_TreeBandTurf"
+  ],
+  "replacement_meshes": [
+    "COL_Park59_PublicPaving",
+    "Park59_TreeWellStoneRims",
+    "Park61_WestParkEdgePath",
+    "Park61_NearTreeBelt",
+    "BridgePark_EastGroundWalk",
+    "BridgePark_ChangbinParkFootway"
+  ],
+  "retired_objects": [],
+  "painted_faces": {
+    "COL_Park59_PublicPaving": {
+      "grass": 182,
+      "sand": 264,
+      "bluegreen": 150,
+      "stone": 657,
+      "pale": 359,
+      "skirt": 255
+    },
+    "Park59_TreeWellStoneRims": {
+      "pale": 192
+    },
+    "Park61_WestParkEdgePath": {
+      "pale": 81,
+      "stone": 100
+    },
+    "Park61_NearTreeBelt": {
+      "grass": 86
+    },
+    "BridgePark_EastGroundWalk": {
+      "pale": 274,
+      "stone": 317
+    },
+    "BridgePark_ChangbinParkFootway": {
+      "pale": 233,
+      "stone": 228
+    }
+  },
+  "uv_tile_m": {
+    "sand": 3.6,
+    "bluegreen": 2.8,
+    "pale": 1.26,
+    "stone": 1.24,
+    "grass": 3.4,
+    "skirt": 2.6
+  },
+  "tree_local_scale": {
+    "Park59_PlazaTree_1": [
+      1.36,
+      1.3,
+      1.32
+    ],
+    "Park59_PlazaTree_2": [
+      1.31,
+      1.28,
+      1.28
+    ],
+    "Park61_PerimeterTree_1": [
+      1.28,
+      1.27,
+      1.29
+    ],
+    "Park61_PerimeterTree_2": [
+      1.17,
+      1.22,
+      1.23
+    ],
+    "Park61_PerimeterTree_3": [
+      1.29,
+      1.26,
+      1.22
+    ]
+  },
+  "planted_trees": [
+    {
+      "name": "ParkEdge_MatureBeltTree_1",
+      "donor": "Outer500_Plant_018",
+      "east_north_up": [
+        -59.2,
+        -190.8,
+        1.1228438911437988
+      ],
+      "scale": 1.1,
+      "yaw_offset_rad": 1.9699999999999998
+    },
+    {
+      "name": "ParkEdge_MatureBeltTree_2",
+      "donor": "Outer500_Plant_010",
+      "east_north_up": [
+        -56.13,
+        -191.9,
+        1.2753278312683105
+      ],
+      "scale": 1.11,
+      "yaw_offset_rad": 3.0999999999999996
+    },
+    {
+      "name": "ParkEdge_MatureBeltTree_3",
+      "donor": "Outer500_Plant_018",
+      "east_north_up": [
+        -51.21,
+        -193.77,
+        1.7730056343078613
+      ],
+      "scale": 0.89,
+      "yaw_offset_rad": 4.2299999999999995
+    }
+  ],
+  "west_fold_game_en": [
+    [
+      -78.5,
+      -183.29
+    ],
+    [
+      -76.2,
+      -182.82
+    ],
+    [
+      -75.46,
+      -183.75
+    ],
+    [
+      -75.7,
+      -185.05
+    ],
+    [
+      -76.86,
+      -186.92
+    ],
+    [
+      -77.87,
+      -188.08
+    ],
+    [
+      -78.36,
+      -187.26
+    ],
+    [
+      -78.03,
+      -185.1
+    ],
+    [
+      -78.77,
+      -184.05
+    ]
+  ],
+  "exposed_substrate_covered_m2": 4.807
+}

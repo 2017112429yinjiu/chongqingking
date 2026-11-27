@@ -1,0 +1,1155 @@
+{
+  "candidate": {
+    "bounds_east_north_m": [
+      -250.0,
+      -250.0,
+      250.0,
+      250.0
+    ],
+    "bridge_park_sha256": "d7610bb70365b506b084810a925ede54321bbb5812b840d8c0810ed1ecb4426c",
+    "collectibles_market_sha256": "a23f881d0e9206b40fedc8f262cfdb132194e59825e4728b39800471b684e175",
+    "glb_sha256": "b0180ce3a8d821253181725ad4516c04f58fe057529680e22a081f89fdd62122",
+    "guoco_sha256": "4dcb3d55080b02d8a0cf02585626bed2dfc3cdb37ae2f987110b55dd56435853",
+    "market_stall_row_sha256": "42fffbc9c4a98d3fa615e48fa9ce4eecdf66bf225decbd3d44d40eddf5a41646",
+    "match_factory_sha256": "ab742e6b12ad0b52c4cffef0f8342e1a957b59de5cfe3abde4dd691f853d76c6",
+    "matix_streets_sha256": "3b57fcf46931ff28ce1ab2be4a7250d31af30d302e362816265be8e38852e33b",
+    "osm_building_ids": [
+      809889594.0,
+      809889602.0,
+      809889621.0,
+      704006725,
+      809889619,
+      809889620
+    ],
+    "park_edge_finish_sha256": "52ba8de0a1bd4ee57439d86b5f0e7efad002311679d486b3b0dbc75bdc0e6d33",
+    "park_plot57_sha256": "b67c6b5fc91cdc8b8fa0e6808f8cedd8b15a49ad36a2566631ae67a1671f9f60",
+    "park_plot59_sha256": "fa02d99cf8eda6971b3b148e8c3fc5031108e134806e25b0e71e3f320cd4747c",
+    "park_plot61_sha256": "b6e7b1a3baf336235be5d553e2c3d24caf36b949a34bbf296d4b2eed31ddeceb",
+    "pavilion_62_sha256": "08d702b1a9ce0464b3bc62f33808befa5b58e5dcd082659b06c4cbc0bbab3e76",
+    "public_edges_sha256": "d585e52e0d927a9639e7285ffecc4932603a4d56b039504f1600763f72cc1be4",
+    "retired_internal_context": false,
+    "riverside_sha256": "12f304d468c56fb429d4a4db948f5297b7ca4284f29fc494442c9b2a146f67d1",
+    "west_court_sha256": "32eea2dd1f34b7f5dacbb546a46c6cf106ac3896804677ef9b2ee1dabfb2c683",
+    "west_ramp_sha256": "2a2ae2a4745096ea849dbb5f2365ce1cf437a8dcd974ed4cb47dddd5d5aae8b2",
+    "xingchen_sha256": "af156281216128407550442694d4dc45ea8507dfc7da4c80efd549a0ffbe127b",
+    "zhongxing_wall_sha256": "72fa4f4c800a8e27c19d580da66524160c4c2111bd82191706b6c8da142b8d42"
+  },
+  "checks": [
+    {
+      "detail": "",
+      "name": "first_shift",
+      "pass": true
+    },
+    {
+      "detail": [],
+      "name": "old_59_and_attached_objects",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "independent_61_in_its_active_version",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "bridge_and_pavilion_still_present",
+      "pass": true
+    },
+    {
+      "detail": [
+        [
+          "COL_Park59_PublicPaving",
+          0.614,
+          0.999
+        ],
+        [
+          "COL_Outer500_Surface_03_01",
+          0.553,
+          0.999
+        ]
+      ],
+      "name": "old_footprint_roof_or_open_paving",
+      "pass": true
+    },
+    {
+      "detail": [
+        [
+          {
+            "en": [
+              -75.64,
+              -183.0
+            ],
+            "hits": [
+              [
+                "COL_Park59_PublicPaving",
+                0.423,
+                0.996
+              ],
+              [
+                "COL_Outer500_Surface_03_01",
+                0.362,
+                0.996
+              ]
+            ]
+          },
+          {
+            "en": [
+              -75.0,
+              -183.0
+            ],
+            "hits": [
+              [
+                "COL_Park59_PublicPaving",
+                0.483,
+                0.995
+              ],
+              [
+                "COL_Outer500_Surface_03_01",
+                0.422,
+                0.996
+              ]
+            ]
+          },
+          {
+            "en": [
+              -74.36,
+              -183.0
+            ],
+            "hits": [
+              [
+                "COL_Park59_PublicPaving",
+                0.541,
+                0.995
+              ],
+              [
+                "COL_Outer500_Surface_03_01",
+                0.479,
+                0.995
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "en": [
+              -76.01,
+              -185.55
+            ],
+            "hits": [
+              [
+                "COL_Park59_PublicPaving",
+                0.36,
+                0.996
+              ],
+              [
+                "COL_Outer500_Surface_03_01",
+                0.299,
+                0.996
+              ]
+            ]
+          },
+          {
+            "en": [
+              -75.37,
+              -185.55
+            ],
+            "hits": [
+              [
+                "COL_Park59_PublicPaving",
+                0.418,
+                0.996
+              ],
+              [
+                "COL_Outer500_Surface_03_01",
+                0.357,
+                0.996
+              ]
+            ]
+          },
+          {
+            "en": [
+              -74.73,
+              -185.55
+            ],
+            "hits": [
+              [
+                "COL_Park59_PublicPaving",
+                0.477,
+                0.996
+              ],
+              [
+                "COL_Outer500_Surface_03_01",
+                0.416,
+                0.996
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "en": [
+              -75.47,
+              -187.55
+            ],
+            "hits": [
+              [
+                "COL_Park59_PublicPaving",
+                0.458,
+                0.997
+              ],
+              [
+                "COL_Outer500_Surface_03_01",
+                0.397,
+                0.997
+              ]
+            ]
+          },
+          {
+            "en": [
+              -74.83,
+              -187.55
+            ],
+            "hits": [
+              [
+                "COL_Park59_PublicPaving",
+                0.506,
+                0.996
+              ],
+              [
+                "COL_Outer500_Surface_03_01",
+                0.445,
+                0.996
+              ]
+            ]
+          },
+          {
+            "en": [
+              -74.19,
+              -187.55
+            ],
+            "hits": [
+              [
+                "COL_Park59_PublicPaving",
+                0.55,
+                0.998
+              ],
+              [
+                "COL_Outer500_Surface_03_01",
+                0.489,
+                0.998
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "en": [
+              -74.28,
+              -189.63
+            ],
+            "hits": [
+              [
+                "COL_Park59_PublicPaving",
+                0.583,
+                0.999
+              ],
+              [
+                "COL_Outer500_Surface_03_01",
+                0.522,
+                0.999
+              ]
+            ]
+          },
+          {
+            "en": [
+              -73.64,
+              -189.63
+            ],
+            "hits": [
+              [
+                "COL_Park59_PublicPaving",
+                0.612,
+                0.999
+              ],
+              [
+                "COL_Outer500_Surface_03_01",
+                0.551,
+                0.999
+              ]
+            ]
+          },
+          {
+            "en": [
+              -73.0,
+              -189.63
+            ],
+            "hits": [
+              [
+                "COL_Park59_PublicPaving",
+                0.634,
+                0.999
+              ],
+              [
+                "COL_Outer500_Surface_03_01",
+                0.573,
+                0.998
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "en": [
+              -72.39,
+              -191.86
+            ],
+            "hits": [
+              [
+                "COL_Park59_PublicPaving",
+                0.599,
+                0.999
+              ],
+              [
+                "COL_Outer500_Surface_03_01",
+                0.538,
+                0.999
+              ]
+            ]
+          },
+          {
+            "en": [
+              -71.75,
+              -191.86
+            ],
+            "hits": [
+              [
+                "COL_Park59_PublicPaving",
+                0.614,
+                0.999
+              ],
+              [
+                "COL_Outer500_Surface_03_01",
+                0.553,
+                0.999
+              ]
+            ]
+          },
+          {
+            "en": [
+              -71.11,
+              -191.86
+            ],
+            "hits": [
+              [
+                "COL_Park59_PublicPaving",
+                0.627,
+                0.999
+              ],
+              [
+                "COL_Outer500_Surface_03_01",
+                0.566,
+                0.999
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "en": [
+              -71.04,
+              -194.4
+            ],
+            "hits": [
+              [
+                "COL_Park59_PublicPaving",
+                0.588,
+                0.997
+              ],
+              [
+                "COL_Outer500_Surface_03_01",
+                0.527,
+                0.997
+              ]
+            ]
+          },
+          {
+            "en": [
+              -70.4,
+              -194.4
+            ],
+            "hits": [
+              [
+                "COL_Park59_PublicPaving",
+                0.62,
+                0.999
+              ],
+              [
+                "COL_Outer500_Surface_03_01",
+                0.559,
+                0.999
+              ]
+            ]
+          },
+          {
+            "en": [
+              -69.76,
+              -194.4
+            ],
+            "hits": [
+              [
+                "COL_Park59_PublicPaving",
+                0.658,
+                0.999
+              ],
+              [
+                "COL_Outer500_Surface_03_01",
+                0.597,
+                0.999
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "en": [
+              -69.31,
+              -184.52
+            ],
+            "hits": [
+              [
+                "COL_Park59_PublicPaving",
+                0.976,
+                0.996
+              ],
+              [
+                "COL_Outer500_Surface_03_01",
+                0.915,
+                0.996
+              ]
+            ]
+          },
+          {
+            "en": [
+              -68.67,
+              -184.52
+            ],
+            "hits": [
+              [
+                "COL_Park59_PublicPaving",
+                1.032,
+                0.996
+              ],
+              [
+                "COL_Outer500_Surface_03_01",
+                0.971,
+                0.996
+              ]
+            ]
+          },
+          {
+            "en": [
+              -68.03,
+              -184.52
+            ],
+            "hits": [
+              [
+                "COL_Park59_PublicPaving",
+                1.088,
+                0.996
+              ],
+              [
+                "COL_Outer500_Surface_03_01",
+                1.027,
+                0.996
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "en": [
+              -82.78,
+              -189.93
+            ],
+            "hits": [
+              [
+                "COL_Park59_PublicPaving",
+                -0.11,
+                0.991
+              ],
+              [
+                "COL_Outer500_Surface_03_01",
+                -0.171,
+                0.991
+              ]
+            ]
+          },
+          {
+            "en": [
+              -82.14,
+              -189.93
+            ],
+            "hits": [
+              [
+                "COL_Park59_PublicPaving",
+                -0.028,
+                0.991
+              ],
+              [
+                "COL_Outer500_Surface_03_01",
+                -0.089,
+                0.991
+              ]
+            ]
+          },
+          {
+            "en": [
+              -81.5,
+              -189.93
+            ],
+            "hits": [
+              [
+                "COL_Park59_PublicPaving",
+                0.049,
+                0.992
+              ],
+              [
+                "COL_Outer500_Surface_03_01",
+                -0.012,
+                0.992
+              ]
+            ]
+          }
+        ]
+      ],
+      "name": "24_actual_paving_and_ground_contacts",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_to_road_axis_m": 7.65798234939575,
+        "floor": [
+          [
+            "COL_Park59_PublicPaving",
+            0.48,
+            0.996
+          ],
+          [
+            "COL_Outer500_Surface_03_01",
+            0.419,
+            0.996
+          ]
+        ],
+        "street_enu": [
+          -75.6399993896484,
+          -181.016006469727,
+          0.481042176485062
+        ]
+      },
+      "name": "street_start_along_registered_59146737",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "name": "ParkEdge_MatureBeltTree_1",
+          "present": true,
+          "shared_mesh": true
+        },
+        {
+          "name": "ParkEdge_MatureBeltTree_2",
+          "present": true,
+          "shared_mesh": true
+        },
+        {
+          "name": "ParkEdge_MatureBeltTree_3",
+          "present": true,
+          "shared_mesh": true
+        }
+      ],
+      "name": "tree_band_reuses_licensed_meshes",
+      "pass": true
+    },
+    {
+      "detail": {
+        "enu": [
+          -75.6399993896484,
+          -181.016006469727,
+          0.481042176485062
+        ],
+        "gap_m": 0.0
+      },
+      "name": "normal_street_spawn",
+      "pass": true
+    },
+    {
+      "detail": "street-to-59.png",
+      "name": "native_street-to-59",
+      "pass": true
+    },
+    {
+      "detail": "west-fold-joint.png",
+      "name": "native_west-fold-joint",
+      "pass": true
+    },
+    {
+      "detail": "sand-grass-and-tree-plaza.png",
+      "name": "native_sand-grass-and-tree-plaza",
+      "pass": true
+    },
+    {
+      "detail": "61-eye-back-toward-street.png",
+      "name": "native_61-eye-back-toward-street",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 14.6261497437954,
+        "end": "(-70.46252, 0.631201, 194.4081)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0722917690873146,
+        "name": "changbin_street_into_park_59_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "name": "changbin_street_into_park_59_out",
+      "pass": true
+    },
+    {
+      "detail": 7.65798234939575,
+      "name": "changbin_street_into_park_59_out_off_carriageway",
+      "pass": true
+    },
+    {
+      "detail": [
+        -70.4625244140625,
+        -194.408050537109,
+        0.631200730800629
+      ],
+      "name": "on_destination_floor",
+      "pass": true
+    },
+    {
+      "detail": "inside_look_back.png",
+      "name": "frame_inside_look_back",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 14.6070030881092,
+        "end": "(-75.58871, 0.50086, 180.9673)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0733880549669266,
+        "name": "changbin_street_into_park_59_back",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "name": "changbin_street_into_park_59_back",
+      "pass": true
+    },
+    {
+      "detail": 7.600745677948,
+      "name": "changbin_street_into_park_59_back_off_carriageway",
+      "pass": true
+    },
+    {
+      "detail": [
+        -75.5887069702148,
+        -180.967254638672,
+        0.500859677791595
+      ],
+      "name": "returned_to_same_street",
+      "pass": true
+    }
+  ],
+  "device": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "engine": "4.6.3-stable (official)",
+  "native_frames": [
+    {
+      "eye_enu": [
+        -77.45,
+        -181.1,
+        2.22
+      ],
+      "fov_deg": 67.0,
+      "frame": "street-to-59.png",
+      "pixel_size": "(900, 560)",
+      "target_enu": [
+        -71.75,
+        -191.86,
+        1.19
+      ],
+      "saved_png_size_px": [
+        900,
+        506
+      ]
+    },
+    {
+      "eye_enu": [
+        -78.24,
+        -181.75,
+        1.92
+      ],
+      "fov_deg": 53.0,
+      "frame": "west-fold-joint.png",
+      "pixel_size": "(900, 560)",
+      "target_enu": [
+        -76.78,
+        -185.08,
+        0.45
+      ],
+      "saved_png_size_px": [
+        900,
+        506
+      ]
+    },
+    {
+      "eye_enu": [
+        -73.25,
+        -198.43,
+        2.32
+      ],
+      "fov_deg": 66.0,
+      "frame": "sand-grass-and-tree-plaza.png",
+      "pixel_size": "(900, 560)",
+      "target_enu": [
+        -66.77,
+        -188.5,
+        0.99
+      ],
+      "saved_png_size_px": [
+        900,
+        506
+      ]
+    },
+    {
+      "eye_enu": [
+        -45.21526,
+        -203.6573,
+        2.61476
+      ],
+      "fov_deg": 69.0,
+      "frame": "61-eye-back-toward-street.png",
+      "pixel_size": "(900, 560)",
+      "target_enu": [
+        -52.45,
+        -185.1,
+        2.62
+      ],
+      "saved_png_size_px": [
+        900,
+        506
+      ]
+    },
+    {
+      "direction_xyz": "(-0.452537, 0.0, -0.891746)",
+      "eye_enu": [
+        -70.52587890625,
+        -194.283203125,
+        2.28120064735413
+      ],
+      "frame": "inside_look_back.png",
+      "pixel_size": "(900, 560)",
+      "saved_png_size_px": [
+        900,
+        506
+      ]
+    }
+  ],
+  "renderer": "gl_compatibility",
+  "scene": "res://first_shift.tscn",
+  "sections": [
+    {
+      "contacts": [
+        [
+          "COL_Park59_PublicPaving",
+          0.48,
+          0.996
+        ],
+        [
+          "COL_Outer500_Surface_03_01",
+          0.419,
+          0.996
+        ]
+      ],
+      "east_north": [
+        -75.64,
+        -181.016
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Park59_PublicPaving",
+          0.483,
+          0.995
+        ],
+        [
+          "COL_Outer500_Surface_03_01",
+          0.422,
+          0.996
+        ]
+      ],
+      "east_north": [
+        -75.0,
+        -183.0
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Park59_PublicPaving",
+          0.418,
+          0.996
+        ],
+        [
+          "COL_Outer500_Surface_03_01",
+          0.357,
+          0.996
+        ]
+      ],
+      "east_north": [
+        -75.37,
+        -185.55
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Park59_PublicPaving",
+          0.506,
+          0.996
+        ],
+        [
+          "COL_Outer500_Surface_03_01",
+          0.445,
+          0.996
+        ]
+      ],
+      "east_north": [
+        -74.83,
+        -187.55
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Park59_PublicPaving",
+          0.612,
+          0.999
+        ],
+        [
+          "COL_Outer500_Surface_03_01",
+          0.551,
+          0.999
+        ]
+      ],
+      "east_north": [
+        -73.64,
+        -189.63
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Park59_PublicPaving",
+          0.614,
+          0.999
+        ],
+        [
+          "COL_Outer500_Surface_03_01",
+          0.553,
+          0.999
+        ]
+      ],
+      "east_north": [
+        -71.75,
+        -191.86
+      ]
+    },
+    {
+      "contacts": [
+        [
+          "COL_Park59_PublicPaving",
+          0.62,
+          0.999
+        ],
+        [
+          "COL_Outer500_Surface_03_01",
+          0.559,
+          0.999
+        ]
+      ],
+      "east_north": [
+        -70.4,
+        -194.4
+      ]
+    }
+  ],
+  "start": "normal first_shift exploration spawn",
+  "teleports_between_legs": 0,
+  "walks": [
+    {
+      "finish_enu": [
+        -70.4625244140625,
+        -194.408050537109,
+        0.631200730800629
+      ],
+      "id": "changbin_street_into_park_59_out",
+      "result": {
+        "distance_m": 14.6261497437954,
+        "end": "(-70.46252, 0.631201, 194.4081)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0722917690873146,
+        "name": "changbin_street_into_park_59_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -75.6399993896484,
+        -181.016006469727,
+        0.481042176485062
+      ],
+      "trace_enu": [
+        [
+          -75.6399993896484,
+          -181.016006469727,
+          0.481042176485062
+        ],
+        [
+          -75.4417953491211,
+          -181.46354675293,
+          0.49856972694397
+        ],
+        [
+          -75.2096710205078,
+          -182.270812988281,
+          0.48343300819397
+        ],
+        [
+          -75.0746994018555,
+          -183.090942382812,
+          0.482395023107529
+        ],
+        [
+          -75.175163269043,
+          -183.92756652832,
+          0.452121585607529
+        ],
+        [
+          -75.2761306762695,
+          -184.762985229492,
+          0.444224029779434
+        ],
+        [
+          -75.3086090087891,
+          -185.591262817383,
+          0.438943356275558
+        ],
+        [
+          -75.1107711791992,
+          -186.406478881836,
+          0.46746900677681
+        ],
+        [
+          -74.9119567871094,
+          -187.221008300781,
+          0.501551747322083
+        ],
+        [
+          -74.5437393188477,
+          -187.964614868164,
+          0.547324478626251
+        ],
+        [
+          -74.145133972168,
+          -188.70166015625,
+          0.585912823677063
+        ],
+        [
+          -73.7379684448242,
+          -189.431625366211,
+          0.618751049041748
+        ],
+        [
+          -73.2064514160156,
+          -190.08154296875,
+          0.637857854366302
+        ],
+        [
+          -72.6743087768555,
+          -190.731430053711,
+          0.63949990272522
+        ],
+        [
+          -72.1424560546875,
+          -191.381851196289,
+          0.632253229618073
+        ],
+        [
+          -71.6786727905273,
+          -192.083358764648,
+          0.617116510868073
+        ],
+        [
+          -71.272575378418,
+          -192.820175170898,
+          0.612510323524475
+        ],
+        [
+          -70.8666305541992,
+          -193.555480957031,
+          0.617206156253815
+        ],
+        [
+          -70.4816741943359,
+          -194.269714355469,
+          0.631200730800629
+        ],
+        [
+          -70.4625244140625,
+          -194.408050537109,
+          0.631200730800629
+        ],
+        [
+          -70.4625244140625,
+          -194.408050537109,
+          0.631200730800629
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -75.5887069702148,
+        -180.967254638672,
+        0.500859677791595
+      ],
+      "id": "changbin_street_into_park_59_back",
+      "result": {
+        "distance_m": 14.6070030881092,
+        "end": "(-75.58871, 0.50086, 180.9673)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0733880549669266,
+        "name": "changbin_street_into_park_59_back",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -70.4625244140625,
+        -194.408050537109,
+        0.631200730800629
+      ],
+      "trace_enu": [
+        [
+          -70.4625244140625,
+          -194.408050537109,
+          0.631200730800629
+        ],
+        [
+          -70.7454833984375,
+          -193.96760559082,
+          0.616064012050629
+        ],
+        [
+          -71.1067123413086,
+          -193.209609985352,
+          0.600782036781311
+        ],
+        [
+          -71.4688720703125,
+          -192.451019287109,
+          0.613869309425354
+        ],
+        [
+          -71.9076919555664,
+          -191.745101928711,
+          0.627740681171417
+        ],
+        [
+          -72.4400329589844,
+          -191.095413208008,
+          0.633802354335785
+        ],
+        [
+          -72.9722747802734,
+          -190.445526123047,
+          0.636850118637085
+        ],
+        [
+          -73.4981918334961,
+          -189.788818359375,
+          0.63104522228241
+        ],
+        [
+          -73.9287185668945,
+          -189.06575012207,
+          0.591737866401672
+        ],
+        [
+          -74.3592834472656,
+          -188.341644287109,
+          0.557069897651672
+        ],
+        [
+          -74.7535858154297,
+          -187.596374511719,
+          0.525331616401672
+        ],
+        [
+          -74.9968185424805,
+          -186.788848876953,
+          0.472597241401672
+        ],
+        [
+          -75.2402496337891,
+          -185.980758666992,
+          0.437929272651672
+        ],
+        [
+          -75.269416809082,
+          -185.154083251953,
+          0.444136291742325
+        ],
+        [
+          -75.1663513183594,
+          -184.320449829102,
+          0.456713676452637
+        ],
+        [
+          -75.062629699707,
+          -183.487594604492,
+          0.477147310972214
+        ],
+        [
+          -75.166877746582,
+          -182.673767089844,
+          0.491550177335739
+        ],
+        [
+          -75.3980941772461,
+          -181.866394042969,
+          0.491844743490219
+        ],
+        [
+          -75.5883560180664,
+          -181.100280761719,
+          0.496583491563797
+        ],
+        [
+          -75.5887069702148,
+          -180.967254638672,
+          0.500859677791595
+        ],
+        [
+          -75.5887069702148,
+          -180.967254638672,
+          0.500859677791595
+        ]
+      ]
+    }
+  ]
+}

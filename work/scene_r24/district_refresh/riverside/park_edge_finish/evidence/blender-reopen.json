@@ -1,0 +1,92 @@
+{
+  "independent": {
+    "blender": "4.3.2",
+    "meshes": [
+      "ParkEdge_WestFoldGreyReturn",
+      "ParkEdge_TreeBandTurf",
+      "COL_Park59_PublicPaving",
+      "Park59_TreeWellStoneRims",
+      "Park61_WestParkEdgePath",
+      "Park61_NearTreeBelt",
+      "BridgePark_EastGroundWalk",
+      "BridgePark_ChangbinParkFootway"
+    ],
+    "uv_tile_m": {
+      "sand": 3.6,
+      "bluegreen": 2.8,
+      "pale": 1.26,
+      "stone": 1.24,
+      "grass": 3.4,
+      "skirt": 2.6
+    },
+    "uv_polygon_counts": {
+      "sand": 264,
+      "bluegreen": 150,
+      "pale": 1139,
+      "stone": 1372,
+      "grass": 349,
+      "skirt": 255
+    },
+    "max_uv_error_m": 1.7059844799040144e-05,
+    "shared_tree_meshes": []
+  },
+  "assembled": {
+    "blender": "4.3.2",
+    "meshes": [
+      "ParkEdge_WestFoldGreyReturn",
+      "ParkEdge_TreeBandTurf",
+      "COL_Park59_PublicPaving",
+      "Park59_TreeWellStoneRims",
+      "Park61_WestParkEdgePath",
+      "Park61_NearTreeBelt",
+      "BridgePark_EastGroundWalk",
+      "BridgePark_ChangbinParkFootway"
+    ],
+    "uv_tile_m": {
+      "sand": 3.6,
+      "bluegreen": 2.8,
+      "pale": 1.26,
+      "stone": 1.24,
+      "grass": 3.4,
+      "skirt": 2.6
+    },
+    "uv_polygon_counts": {
+      "sand": 264,
+      "bluegreen": 150,
+      "pale": 1139,
+      "stone": 1372,
+      "grass": 349,
+      "skirt": 255
+    },
+    "max_uv_error_m": 1.7059844799040144e-05,
+    "shared_tree_meshes": [
+      {
+        "name": "ParkEdge_MatureBeltTree_1",
+        "donor": "Outer500_Plant_018",
+        "root_enu": [
+          -59.20000076293945,
+          -190.8000030517578,
+          1.122843861579895
+        ]
+      },
+      {
+        "name": "ParkEdge_MatureBeltTree_2",
+        "donor": "Outer500_Plant_010",
+        "root_enu": [
+          -56.130001068115234,
+          -191.89999389648438,
+          1.2753278017044067
+        ]
+      },
+      {
+        "name": "ParkEdge_MatureBeltTree_3",
+        "donor": "Outer500_Plant_018",
+        "root_enu": [
+          -51.209999084472656,
+          -193.77000427246094,
+          1.7730056047439575
+        ]
+      }
+    ]
+  }
+}

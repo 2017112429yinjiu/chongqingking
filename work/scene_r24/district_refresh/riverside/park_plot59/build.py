@@ -186,4 +186,5 @@ def build():
     print("CQ_PARK59",json.dumps(data))
 
 
-build()
+if __name__ == "__main__":
+    build()

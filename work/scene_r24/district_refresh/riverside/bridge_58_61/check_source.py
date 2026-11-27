@@ -13,12 +13,15 @@ objects = scene.objects
 tracked = plan["new_meshes"] + plan["replacement_meshes"]
 park59 = objects.get("COL_Park59_PublicPaving")
 park61 = objects.get("Park61_WestParkEdgePath")
+park_finish = objects.get("ParkEdge_WestFoldGreyReturn")
 override_libraries = {}
-for layer,manifest in ((park59,"park-plot59.json"),(park61,"park-plot61.json")):
+for layer,manifest in ((park59,"park-plot59.json"),(park61,"park-plot61.json"),(park_finish,"park-edge-finish.json")):
     if layer:
         park_plan = json.loads((assets / manifest).read_bytes())
         tracked = [name for name in tracked if name not in park_plan["retired_objects"]]
-        override_libraries.update({name:layer.library for name in park_plan["replacement_meshes"]})
+        library_path = "/"+manifest.replace(".json",".blend")
+        library = next((lib for lib in bpy.data.libraries if lib.filepath.endswith(library_path)), None)
+        override_libraries.update({name:library for name in park_plan["replacement_meshes"]})
 assert all(name in objects for name in tracked)
 assert all(name not in objects for name in plan["retired_objects"])
 rail = objects["COL_Nanjimen_NorthRailSteelBox"]
