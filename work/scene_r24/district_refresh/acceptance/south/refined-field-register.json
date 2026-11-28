@@ -1,0 +1,67 @@
+{
+  "source_use": "Observation only. No provider pixels exported with the game.",
+  "53": {
+    "upper_registered_panoramas": [
+      {
+        "id": "0902920012230515142928988AU",
+        "heading": 184,
+        "pitch": -8,
+        "fovy": 64,
+        "pixels": [
+          800,
+          500
+        ],
+        "source_date": "2023-05-15",
+        "observed": "Upper stair opening, gray flags, paired tactile guides, metal rails, bougainvillea, blue and white roadside pipes.",
+        "sha256": "4144335ac19d1fe8e67623937e54ce377112199c81da9c750d9d725ff1bf16e6",
+        "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=0902920012230515142928988AU&heading=184&pitch=-8&fovy=64&width=800&height=500",
+        "registered_east_north": [
+          -154.824,
+          -76.029
+        ]
+      },
+      {
+        "id": "0902920012230515142927597AU",
+        "heading": 134,
+        "pitch": -6,
+        "fovy": 64,
+        "pixels": [
+          800,
+          500
+        ],
+        "source_date": "2023-05-15",
+        "observed": "Upstream pavement and planter continuation.",
+        "sha256": "a11b9f981e5cef75e56da2d187004120d197d18d32919cdc3189c4a7765d11f5",
+        "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=0902920012230515142927597AU&heading=134&pitch=-6&fovy=64&width=800&height=500"
+      },
+      {
+        "id": "0902920012230515142930784AU",
+        "heading": 268,
+        "pitch": -6,
+        "fovy": 64,
+        "pixels": [
+          800,
+          500
+        ],
+        "source_date": "2023-05-15",
+        "observed": "Roadside edge and railing continuity at the vehicle-only reach.",
+        "sha256": "3e324dc9089b432269954179102f3a83fbfb1bafe3db9234dd0e39be05ea7e1f",
+        "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=0902920012230515142930784AU&heading=268&pitch=-6&fovy=64&width=800&height=500"
+      }
+    ],
+    "lower_support": "COL_Outer500_Retaining_and_boundaries",
+    "landing_at_joint": "COL_Outer500_53_LowLanding",
+    "upper_support": "Grade__COL_Nanqu_RiverFootway",
+    "upper_public_stop": "Existing end of the raised footway. The street-eye level and the low gameplay stair are kept distinct."
+  },
+  "56": {
+    "registered_panorama_plan": "56-opening-plan.json",
+    "first_collision_owners": [
+      "COL_Raijiapo_GarageParkingSlabs",
+      "COL_Raijiapo_GaragePublicEnvelope",
+      "COL_Raijiapo_RampRoundColumns"
+    ],
+    "finish": "Short bands, dark reveals, separated jambs and lower louvers on the existing front. The separate measured western fold remains in place.",
+    "remaining": "The mapped A, W and V fold lies behind some current structure from the four field views. 2023 construction fences are excluded."
+  }
+}

@@ -2,11 +2,17 @@
   "new_meshes": [
     "Review00_RepairBenchAndHandTools",
     "Review52_LowFootwayPaleStoneEdge",
+    "Review53_OriginalStoneTreadsAndWornNoses",
+    "Review53_StoneBlockSidewallFaces",
+    "Review53_ExistingUpperPublicFlagsAndTactileStrip",
+    "Review53_ExistingUpperRailingFinishes",
     "Review54_DressedOldEntryThreshold",
     "Review56_SharedCourtyardEntryStoneAndMarker",
     "Review56_WeatheredTopOfRetainedGameBase",
     "Review56_ObservedGarageWestFold",
-    "Review56_OpenBaysAndLowerLouvres"
+    "Review56_OpenBaysAndLowerLouvres",
+    "Review56_ChangbinRoadVisibleFasciaAndDeepOpenings",
+    "Review56_ChangbinRoadLowerRecessedLouvres"
   ],
   "retired_objects": [],
   "replacement_meshes": [
@@ -37,7 +43,95 @@
     }
   },
   "trees": [],
-  "pbr_maps": {},
+  "pbr_maps": {
+    "South review 53 stone tread 0": [
+      "res://assets/district_500/acceptance_textures/washed-stone-normal.jpg",
+      "res://assets/district_500/acceptance_textures/washed-stone-rough.jpg",
+      false
+    ],
+    "South review 53 stone tread 1": [
+      "res://assets/district_500/acceptance_textures/washed-stone-normal.jpg",
+      "res://assets/district_500/acceptance_textures/washed-stone-rough.jpg",
+      false
+    ],
+    "South review 53 stone tread 2": [
+      "res://assets/district_500/acceptance_textures/washed-stone-normal.jpg",
+      "res://assets/district_500/acceptance_textures/washed-stone-rough.jpg",
+      false
+    ],
+    "South review 53 stone tread 3": [
+      "res://assets/district_500/acceptance_textures/washed-stone-normal.jpg",
+      "res://assets/district_500/acceptance_textures/washed-stone-rough.jpg",
+      false
+    ],
+    "South review 53 stone tread 4": [
+      "res://assets/district_500/acceptance_textures/washed-stone-normal.jpg",
+      "res://assets/district_500/acceptance_textures/washed-stone-rough.jpg",
+      false
+    ],
+    "South review 53 evenly worn granite nose": [
+      "res://assets/district_500/acceptance_textures/washed-stone-normal.jpg",
+      "res://assets/district_500/acceptance_textures/washed-stone-rough.jpg",
+      false
+    ],
+    "South review 53 weathered sidewall stone": [
+      "res://assets/district_r21/terraces_mossy_stone_wall_nor_gl_2k.jpg",
+      "res://assets/district_r21/terraces_mossy_stone_wall_rough_2k.png",
+      false
+    ],
+    "South review visible garage pale buff fascia": [
+      "res://assets/district_500/acceptance_textures/washed-stone-normal.jpg",
+      "res://assets/district_500/acceptance_textures/washed-stone-rough.jpg",
+      false
+    ],
+    "South review visible garage pale sill return": [
+      "res://assets/district_500/acceptance_textures/washed-stone-normal.jpg",
+      "res://assets/district_500/acceptance_textures/washed-stone-rough.jpg",
+      false
+    ]
+  },
+  "surface_tints": {
+    "South review 53 stone tread 0": [
+      0.69,
+      0.74,
+      0.75
+    ],
+    "South review 53 stone tread 1": [
+      0.72,
+      0.76,
+      0.77
+    ],
+    "South review 53 stone tread 2": [
+      0.6,
+      0.66,
+      0.69
+    ],
+    "South review 53 stone tread 3": [
+      0.78,
+      0.8,
+      0.77
+    ],
+    "South review 53 stone tread 4": [
+      0.66,
+      0.71,
+      0.72
+    ],
+    "South review 53 evenly worn granite nose": [
+      0.85,
+      0.9,
+      0.86
+    ],
+    "South review visible garage pale buff fascia": [
+      0.93,
+      0.85,
+      0.7
+    ],
+    "South review visible garage pale sill return": [
+      0.78,
+      0.71,
+      0.56
+    ]
+  },
   "surface_textures": {
     "South review scuffed workshop timber": "res://assets/chongqing_district_wood_table_worn_diff_2k.jpg",
     "South review old green workshop paint": "res://assets/chongqing_district_rusty_painted_metal_diff_2k.jpg",
@@ -45,11 +139,27 @@
     "South review rough lower street shoulder": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
     "South review dressed landing tread faces": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
     "South review split stone landing risers": "res://assets/chongqing_district_stone_wall_05_diff_2k.jpg",
+    "South review 53 stone tread 0": "res://assets/district_r21/terraces_washed_sandstone.jpg",
+    "South review 53 stone tread 1": "res://assets/district_r21/terraces_washed_sandstone.jpg",
+    "South review 53 stone tread 2": "res://assets/district_r21/terraces_washed_sandstone.jpg",
+    "South review 53 stone tread 3": "res://assets/district_r21/terraces_washed_sandstone.jpg",
+    "South review 53 stone tread 4": "res://assets/district_r21/terraces_washed_sandstone.jpg",
+    "South review 53 evenly worn granite nose": "res://assets/district_r21/terraces_washed_sandstone.jpg",
+    "South review 53 ash grey mortar": "res://assets/chongqing_district_concrete_wall_006_diff_2k.jpg",
+    "South review 53 weathered sidewall stone": "res://assets/district_r21/terraces_mossy_stone_wall_diff_2k.jpg",
+    "South review 53 upper blue grey rectangular flags": "res://assets/chongqing_district_stone_floor_diff_2k.jpg",
+    "South review 53 muted pale tactile strip": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+    "South review 53 chamfered tactile ribs": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
     "South review worn old entry granite": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
     "South review damp threshold wall footing": "res://assets/chongqing_district_stone_wall_05_diff_2k.jpg",
     "South review old 56 low concrete top": "res://assets/chongqing_district_concrete_wall_006_diff_2k.jpg",
     "South review garage muted inner concrete": "res://assets/chongqing_district_concrete_wall_006_diff_2k.jpg",
-    "South review garage sand coloured bands": "res://assets/chongqing_district_plastered_wall_04_diff_1k.jpg"
+    "South review garage sand coloured bands": "res://assets/chongqing_district_plastered_wall_04_diff_1k.jpg",
+    "South review visible garage pale buff fascia": "res://assets/district_r21/terraces_washed_sandstone.jpg",
+    "South review visible garage pale sill return": "res://assets/district_r21/terraces_washed_sandstone.jpg",
+    "South review visible garage recessed dark soffit": "res://assets/chongqing_district_concrete_wall_006_diff_2k.jpg",
+    "South review visible lower garage recessed louvre channel": "res://assets/chongqing_district_rusty_painted_metal_diff_2k.jpg",
+    "South review visible garage weathered grey louvre blades": "res://assets/chongqing_district_rusty_painted_metal_diff_2k.jpg"
   },
   "shaded_surface_fill": {
     "South review scuffed workshop timber": [
@@ -88,6 +198,72 @@
       0.54,
       0.48
     ],
+    "South review 53 stone tread 0": [
+      0.17,
+      0.69,
+      0.74,
+      0.75
+    ],
+    "South review 53 stone tread 1": [
+      0.17,
+      0.72,
+      0.76,
+      0.77
+    ],
+    "South review 53 stone tread 2": [
+      0.17,
+      0.6,
+      0.66,
+      0.69
+    ],
+    "South review 53 stone tread 3": [
+      0.17,
+      0.78,
+      0.8,
+      0.77
+    ],
+    "South review 53 stone tread 4": [
+      0.17,
+      0.66,
+      0.71,
+      0.72
+    ],
+    "South review 53 evenly worn granite nose": [
+      0.17,
+      0.83,
+      0.85,
+      0.83
+    ],
+    "South review 53 ash grey mortar": [
+      0.15,
+      0.37,
+      0.4,
+      0.38
+    ],
+    "South review 53 weathered sidewall stone": [
+      0.17,
+      0.56,
+      0.58,
+      0.52
+    ],
+    "South review 53 upper blue grey rectangular flags": [
+      0.16,
+      0.72,
+      0.74,
+      0.74
+    ],
+    "South review 53 muted pale tactile strip": [
+      0.17,
+      0.68,
+      0.64,
+      0.53
+    ],
+    "South review 53 chamfered tactile ribs": [
+      0.16,
+      0.75,
+      0.71,
+      0.6
+    ],
     "South review worn old entry granite": [
       0.3,
       0.73,
@@ -117,6 +293,36 @@
       0.68,
       0.62,
       0.49
+    ],
+    "South review visible garage pale buff fascia": [
+      0.22,
+      0.87,
+      0.79,
+      0.64
+    ],
+    "South review visible garage pale sill return": [
+      0.17,
+      0.69,
+      0.65,
+      0.56
+    ],
+    "South review visible garage recessed dark soffit": [
+      0.09,
+      0.23,
+      0.25,
+      0.25
+    ],
+    "South review visible lower garage recessed louvre channel": [
+      0.08,
+      0.115,
+      0.134,
+      0.13
+    ],
+    "South review visible garage weathered grey louvre blades": [
+      0.12,
+      0.34,
+      0.38,
+      0.35
     ]
   },
   "player_points": {

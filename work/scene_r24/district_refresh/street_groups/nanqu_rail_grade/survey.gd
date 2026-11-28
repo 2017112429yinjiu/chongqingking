@@ -66,7 +66,23 @@ func verify() -> void:
 		if overlay is CanvasItem: overlay.hide()
 	var hillside_trees := scene.find_children("NanquLandside_Tree_*", "Node3D", true, false)
 	var views: Array=[]
+	var resolved: Array=[]
+	var original_size := root.size
 	for v: Dictionary in plan.views:
+		if v.has("height_above_support_m"):
+			var en: Array = v.eye_enu
+			var hits := trace(world_point(en, 95.), world_point(en, -30.))
+			var floors := hits.filter(func(hit: Dictionary) -> bool:
+				return hit.normal[2] > .7 and not str(hit.body).begins_with("COL_Outer500_Frame_"))
+			if not check(str(v.id) + "_camera_support", not floors.is_empty(), hits):
+				continue
+			var lift := float(v.height_above_support_m) + float(floors[0].at[2]) - float(v.eye_enu[2])
+			v.eye_enu[2] += lift
+			v.target_enu[2] += lift
+			v.erase("height_above_support_m")
+		resolved.append(v)
+		var size: Array = v.get("resolution", [original_size.x, original_size.y])
+		root.size = Vector2i(size[0], size[1])
 		for tree: Node3D in hillside_trees:
 			tree.visible = not v.get("bank_only", false)
 		camera.fov=v.fov_deg
@@ -84,5 +100,9 @@ func verify() -> void:
 			return [[m.x.x,m.x.y,m.x.z,m.x.w],[m.y.x,m.y.y,m.y.z,m.y.w],[m.z.x,m.z.y,m.z.z,m.z.w],[m.w.x,m.w.y,m.w.z,m.w.w]]
 		views.append({"id":v.id,"view_columns":columns.call(view),"projection_columns":columns.call(projection),"pixels":[frame.get_width(),frame.get_height()],"write_code":error})
 		check(v.id,error==OK)
+		FileAccess.open(output.path_join("matrices-partial.json"), FileAccess.WRITE).store_string(
+			JSON.stringify(views,"  "))
 	FileAccess.open(output.path_join("matrices.json"),FileAccess.WRITE).store_string(JSON.stringify(views,"  "))
+	FileAccess.open(output.path_join("locked-cameras.json"),FileAccess.WRITE).store_string(
+		JSON.stringify({"samples":{},"views":resolved},"  "))
 	quit(2 if ever_failed else 0)

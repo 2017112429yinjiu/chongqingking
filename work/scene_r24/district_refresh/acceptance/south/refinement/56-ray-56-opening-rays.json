@@ -1,0 +1,573 @@
+{
+  "checks": [
+    {
+      "detail": [
+        [
+          "COL_Outer500_Surface_02_01",
+          0.602,
+          0.984
+        ]
+      ],
+      "name": "station_lower_road_0902920012230514163419600AU",
+      "pass": true
+    },
+    {
+      "detail": [
+        [
+          "COL_Nanjimen_NorthRailSteelBox",
+          45.183,
+          1.0
+        ],
+        [
+          "COL_Outer500_Surface_02_01",
+          0.378,
+          0.988
+        ]
+      ],
+      "name": "station_lower_road_0902920012230514163420960AU",
+      "pass": true
+    },
+    {
+      "detail": [
+        [
+          "COL_Outer500_Surface_03_01",
+          0.458,
+          0.996
+        ]
+      ],
+      "name": "station_lower_road_0902920012230514163422320AU",
+      "pass": true
+    },
+    {
+      "detail": [
+        [
+          "COL_Outer500_Surface_03_01",
+          1.379,
+          0.998
+        ]
+      ],
+      "name": "station_lower_road_0902920012230514163423679AU",
+      "pass": true
+    }
+  ],
+  "engine": "4.6.3-stable (official)",
+  "hits": [
+    {
+      "feature": "A",
+      "first_hit": {
+        "at": [
+          -119.82430267334,
+          -154.540130615234,
+          4.56664371490479
+        ],
+        "distance_m": 9.58990478515625,
+        "owner": "COL_Raijiapo_RampRoundColumns",
+        "remaining_m": 28.1193447113037
+      },
+      "from": [
+        -118.746292114258,
+        -163.926254272461,
+        2.92199993133545
+      ],
+      "pixel": [
+        499.0,
+        245.0
+      ],
+      "projected_target": [
+        -122.985237121582,
+        -127.018310546875,
+        9.3890380859375
+      ],
+      "rise_m": 6.46703815460205,
+      "station": "0902920012230514163419600AU",
+      "support": [
+        "COL_Outer500_Surface_02_01",
+        0.602,
+        0.984
+      ],
+      "target_plan": [
+        -123.17,
+        -127.04
+      ]
+    },
+    {
+      "feature": "W",
+      "first_hit": {
+        "at": [
+          -122.004852294922,
+          -152.05256652832,
+          4.94964170455933
+        ],
+        "distance_m": 12.4785423278809,
+        "owner": "COL_Raijiapo_GarageParkingSlabs",
+        "remaining_m": 30.2518787384033
+      },
+      "from": [
+        -118.746292114258,
+        -163.926254272461,
+        2.92199993133545
+      ],
+      "pixel": [
+        383.0,
+        251.0
+      ],
+      "projected_target": [
+        -129.90461730957,
+        -123.267044067383,
+        9.86528015136719
+      ],
+      "rise_m": 6.94328022003174,
+      "station": "0902920012230514163419600AU",
+      "support": [
+        "COL_Outer500_Surface_02_01",
+        0.602,
+        0.984
+      ],
+      "target_plan": [
+        -130.06,
+        -123.31
+      ]
+    },
+    {
+      "feature": "V",
+      "first_hit": {
+        "at": [
+          -123.416389465332,
+          -152.444839477539,
+          4.90157508850098
+        ],
+        "distance_m": 12.5519485473633,
+        "owner": "COL_Raijiapo_GarageParkingSlabs",
+        "remaining_m": 31.8234901428223
+      },
+      "from": [
+        -118.746292114258,
+        -163.926254272461,
+        2.92199993133545
+      ],
+      "pixel": [
+        290.5,
+        252.0
+      ],
+      "projected_target": [
+        -135.256683349609,
+        -123.335517883301,
+        9.92047691345215
+      ],
+      "rise_m": 6.9984769821167,
+      "station": "0902920012230514163419600AU",
+      "support": [
+        "COL_Outer500_Surface_02_01",
+        0.602,
+        0.984
+      ],
+      "target_plan": [
+        -135.39,
+        -123.39
+      ]
+    },
+    {
+      "feature": "A",
+      "first_hit": {
+        "at": [
+          -106.085105895996,
+          -158.108215332031,
+          4.33360004425049
+        ],
+        "distance_m": 11.7531852722168,
+        "owner": "COL_Raijiapo_GaragePublicEnvelope",
+        "remaining_m": 35.804084777832
+      },
+      "from": [
+        -100.392967224121,
+        -168.260147094727,
+        2.69799995422363
+      ],
+      "pixel": [
+        489.5,
+        270.0
+      ],
+      "projected_target": [
+        -123.425239562988,
+        -127.182075500488,
+        9.3161792755127
+      ],
+      "rise_m": 6.61817932128906,
+      "station": "0902920012230514163420960AU",
+      "support": [
+        "COL_Outer500_Surface_02_01",
+        0.378,
+        0.988
+      ],
+      "target_plan": [
+        -123.17,
+        -127.04
+      ]
+    },
+    {
+      "feature": "W",
+      "first_hit": {
+        "at": [
+          -111.551750183105,
+          -151.533569335938,
+          5.33034610748291
+        ],
+        "distance_m": 20.2787113189697,
+        "owner": "COL_Raijiapo_GarageParkingSlabs",
+        "remaining_m": 34.0385360717773
+      },
+      "from": [
+        -100.392967224121,
+        -168.260147094727,
+        2.69799995422363
+      ],
+      "pixel": [
+        431.0,
+        277.0
+      ],
+      "projected_target": [
+        -130.282150268555,
+        -123.457405090332,
+        9.74883270263672
+      ],
+      "rise_m": 7.05083274841309,
+      "station": "0902920012230514163420960AU",
+      "support": [
+        "COL_Outer500_Surface_02_01",
+        0.378,
+        0.988
+      ],
+      "target_plan": [
+        -130.06,
+        -123.31
+      ]
+    },
+    {
+      "feature": "V",
+      "first_hit": {
+        "at": [
+          -113.074951171875,
+          -152.144104003906,
+          5.27970695495605
+        ],
+        "distance_m": 20.6694164276123,
+        "owner": "COL_Raijiapo_GarageParkingSlabs",
+        "remaining_m": 36.6842422485352
+      },
+      "from": [
+        -100.392967224121,
+        -168.260147094727,
+        2.69799995422363
+      ],
+      "pixel": [
+        371.0,
+        280.0
+      ],
+      "projected_target": [
+        -135.583023071289,
+        -123.541213989258,
+        9.861741065979
+      ],
+      "rise_m": 7.16374111175537,
+      "station": "0902920012230514163420960AU",
+      "support": [
+        "COL_Outer500_Surface_02_01",
+        0.378,
+        0.988
+      ],
+      "target_plan": [
+        -135.39,
+        -123.39
+      ]
+    },
+    {
+      "feature": "A",
+      "first_hit": {
+        "at": [
+          -99.4153823852539,
+          -153.342819213867,
+          5.48496723175049
+        ],
+        "distance_m": 25.698184967041,
+        "owner": "COL_Raijiapo_RampRoundColumns",
+        "remaining_m": 35.6399040222168
+      },
+      "from": [
+        -82.1972503662109,
+        -172.226806640625,
+        2.77800011634827
+      ],
+      "pixel": [
+        488.5,
+        296.0
+      ],
+      "projected_target": [
+        -123.29460144043,
+        -127.153289794922,
+        9.23916339874268
+      ],
+      "rise_m": 6.46116328239441,
+      "station": "0902920012230514163422320AU",
+      "support": [
+        "COL_Outer500_Surface_03_01",
+        0.458,
+        0.996
+      ],
+      "target_plan": [
+        -123.17,
+        -127.04
+      ]
+    },
+    {
+      "feature": "W",
+      "first_hit": {
+        "at": [
+          -102.778625488281,
+          -151.261657714844,
+          5.65600347518921
+        ],
+        "distance_m": 29.5197105407715,
+        "owner": "COL_Raijiapo_GarageParkingSlabs",
+        "remaining_m": 39.2454261779785
+      },
+      "from": [
+        -82.1972503662109,
+        -172.226806640625,
+        2.77800011634827
+      ],
+      "pixel": [
+        460.5,
+        302.0
+      ],
+      "projected_target": [
+        -130.140838623047,
+        -123.389221191406,
+        9.48220634460449
+      ],
+      "rise_m": 6.70420622825623,
+      "station": "0902920012230514163422320AU",
+      "support": [
+        "COL_Outer500_Surface_03_01",
+        0.458,
+        0.996
+      ],
+      "target_plan": [
+        -130.06,
+        -123.31
+      ]
+    },
+    {
+      "feature": "V",
+      "first_hit": {
+        "at": [
+          -95.6679840087891,
+          -159.889083862305,
+          4.46626996994019
+        ],
+        "distance_m": 18.344762802124,
+        "owner": "COL_Raijiapo_GaragePublicEnvelope",
+        "remaining_m": 54.174503326416
+      },
+      "from": [
+        -82.1972503662109,
+        -172.226806640625,
+        2.77800011634827
+      ],
+      "pixel": [
+        420.0,
+        306.0
+      ],
+      "projected_target": [
+        -135.448837280273,
+        -123.454162597656,
+        9.45195388793945
+      ],
+      "rise_m": 6.67395377159119,
+      "station": "0902920012230514163422320AU",
+      "support": [
+        "COL_Outer500_Surface_03_01",
+        0.458,
+        0.996
+      ],
+      "target_plan": [
+        -135.39,
+        -123.39
+      ]
+    },
+    {
+      "feature": "A",
+      "first_hit": {
+        "at": [
+          -86.1750564575195,
+          -157.369171142578,
+          6.32481861114502
+        ],
+        "distance_m": 28.8539161682129,
+        "owner": "COL_Raijiapo_GarageParkingSlabs",
+        "remaining_m": 48.0370597839355
+      },
+      "from": [
+        -64.0721054077148,
+        -175.72981262207,
+        3.69899988174438
+      ],
+      "pixel": [
+        489.5,
+        307.0
+      ],
+      "projected_target": [
+        -122.972854614258,
+        -126.801696777344,
+        10.6963768005371
+      ],
+      "rise_m": 6.99737691879272,
+      "station": "0902920012230514163423679AU",
+      "support": [
+        "COL_Outer500_Surface_03_01",
+        1.379,
+        0.998
+      ],
+      "target_plan": [
+        -123.17,
+        -127.04
+      ]
+    },
+    {
+      "feature": "W",
+      "first_hit": {
+        "at": [
+          -79.6570281982422,
+          -163.278121948242,
+          5.44312477111816
+        ],
+        "distance_m": 20.0243949890137,
+        "owner": "COL_Raijiapo_GaragePublicEnvelope",
+        "remaining_m": 64.571891784668
+      },
+      "from": [
+        -64.0721054077148,
+        -175.72981262207,
+        3.69899988174438
+      ],
+      "pixel": [
+        475.0,
+        310.0
+      ],
+      "projected_target": [
+        -129.913131713867,
+        -123.125648498535,
+        11.0673370361328
+      ],
+      "rise_m": 7.36833715438843,
+      "station": "0902920012230514163423679AU",
+      "support": [
+        "COL_Outer500_Surface_03_01",
+        1.379,
+        0.998
+      ],
+      "target_plan": [
+        -130.06,
+        -123.31
+      ]
+    },
+    {
+      "feature": "V",
+      "first_hit": {
+        "at": [
+          -80.1507110595703,
+          -163.873153686523,
+          5.28628778457642
+        ],
+        "distance_m": 20.0404949188232,
+        "owner": "COL_Raijiapo_GaragePublicEnvelope",
+        "remaining_m": 68.7012786865234
+      },
+      "from": [
+        -64.0721054077148,
+        -175.72981262207,
+        3.69899988174438
+      ],
+      "pixel": [
+        445.5,
+        316.0
+      ],
+      "projected_target": [
+        -135.270141601562,
+        -123.22705078125,
+        10.7277069091797
+      ],
+      "rise_m": 7.0287070274353,
+      "station": "0902920012230514163423679AU",
+      "support": [
+        "COL_Outer500_Surface_03_01",
+        1.379,
+        0.998
+      ],
+      "target_plan": [
+        -135.39,
+        -123.39
+      ]
+    }
+  ],
+  "scene": "res://first_shift.tscn",
+  "scene_assets": {
+    "acceptance": {
+      "east": "9f6627f1ec1cc229a5c8ef71503bf6027b35946042c70815da4748903abd1425",
+      "jiefang": "cb0d8f61b3b5dd19fd321ed33db5775a0f5ca3416122336c4598b06714ade888",
+      "north": "cfee138b939f8bb448c11d3467728be46294b998a712d8dc4985164c7842e86e",
+      "south": "6329f0d1b1c50e6e97c064e0eb87aa552e491c71fce26fc6db58662e9779a5ef",
+      "west": "51e0388bea759c165829021ce67c25bcf3614396e318aedd162d09ff7a485a13"
+    },
+    "binjiang_sha256": "9130bc07a8b0707f01129a2e2df391eb676364fe951a45fc2d100ff55a4b0f54",
+    "bounds_east_north_m": [
+      -250.0,
+      -250.0,
+      250.0,
+      250.0
+    ],
+    "bridge_park_sha256": "d7610bb70365b506b084810a925ede54321bbb5812b840d8c0810ed1ecb4426c",
+    "changbin_55_sha256": "b24dbc38c8c06c6dd7556479254d5073519713c336041eb7ab4c5c3a0aae312f",
+    "changbin_bend_sha256": "59f467c674151e7e2f55366257a28b12260d9c1eb23ceccc7359b07e18a6af9f",
+    "collectibles_market_sha256": "a23f881d0e9206b40fedc8f262cfdb132194e59825e4728b39800471b684e175",
+    "fenghuangtai_11_sha256": "4e0af537b800faf7856af3659ea9dbe082f587dd3523824015e93fa8fb24d6a2",
+    "glb_sha256": "b0180ce3a8d821253181725ad4516c04f58fe057529680e22a081f89fdd62122",
+    "guoco_sha256": "4dcb3d55080b02d8a0cf02585626bed2dfc3cdb37ae2f987110b55dd56435853",
+    "houci_14_16_sha256": "b41a35494e9c984fa5df55393e597c036efeb49454f674749f6fc3037354c11f",
+    "houci_77_sha256": "71e594772c8218538934c7ebeff75eb965ab0c9754d726c88481dfd5ff72f17a",
+    "jiefang_public_edges_sha256": "8281850d827cb6061d7b6f78ba6f78accc1d3d10275d53c3e3c9abbc7a3bb98e",
+    "liangtingzi_45_46_sha256": "d2a917773cdbfb81b63548c0d3c24f04ec4644f25c672408e5991a1293d27583",
+    "market_stall_row_sha256": "42fffbc9c4a98d3fa615e48fa9ce4eecdf66bf225decbd3d44d40eddf5a41646",
+    "match_factory_sha256": "ab742e6b12ad0b52c4cffef0f8342e1a957b59de5cfe3abde4dd691f853d76c6",
+    "mati_34_35_sha256": "3a0c3f8e3598d88d7bbf414c2f1ee6567ef9f749762fa6bbbcade43a97916b39",
+    "matix_streets_sha256": "3b57fcf46931ff28ce1ab2be4a7250d31af30d302e362816265be8e38852e33b",
+    "nanqu_04_06_51_sha256": "df14048f69e2fba27d69e9673fbe85c27361cfb72eb0fae371e26fd21bccf7d0",
+    "north_38_40_41_sha256": "73b67982d9f9f93fea1c044f76e91ac5f82ad8bdb77a057a25425e41a7be1f10",
+    "osm_building_ids": [
+      809889594.0,
+      809889602.0,
+      809889621.0,
+      704006725,
+      809889619,
+      809889620
+    ],
+    "panda_15_17_sha256": "165c8b1ec9e31dbf2bbda447e1d5db4a37e766a97f1ad1bc45c9e8a60693775f",
+    "park_edge_finish_sha256": "52ba8de0a1bd4ee57439d86b5f0e7efad002311679d486b3b0dbc75bdc0e6d33",
+    "park_plot57_sha256": "b67c6b5fc91cdc8b8fa0e6808f8cedd8b15a49ad36a2566631ae67a1671f9f60",
+    "park_plot59_sha256": "fa02d99cf8eda6971b3b148e8c3fc5031108e134806e25b0e71e3f320cd4747c",
+    "park_plot61_sha256": "b6e7b1a3baf336235be5d553e2c3d24caf36b949a34bbf296d4b2eed31ddeceb",
+    "pavilion_62_sha256": "08d702b1a9ce0464b3bc62f33808befa5b58e5dcd082659b06c4cbc0bbab3e76",
+    "public_edges_sha256": "d585e52e0d927a9639e7285ffecc4932603a4d56b039504f1600763f72cc1be4",
+    "raijiapo_east_sha256": "c230f7e3a225f9e8446cb43b66eebd4cd05fac72cbb6b02787d8d0090038e81d",
+    "retired_internal_context": false,
+    "riverside_sha256": "12f304d468c56fb429d4a4db948f5297b7ca4284f29fc494442c9b2a146f67d1",
+    "west_court_sha256": "32eea2dd1f34b7f5dacbb546a46c6cf106ac3896804677ef9b2ee1dabfb2c683",
+    "west_ramp_sha256": "2a2ae2a4745096ea849dbb5f2365ce1cf437a8dcd974ed4cb47dddd5d5aae8b2",
+    "wilderness_50_finish_sha256": "92c0e84bacfc84b05ab13fe30618222bfff34b64586f5af5a5055526ee769b7f",
+    "wilderness_50_sha256": "ffde86e0c90b8c1b07766fad72b2bf8a3286d91b2f463ca885866a248fa266fa",
+    "xingchen_sha256": "af156281216128407550442694d4dc45ea8507dfc7da4c80efd549a0ffbe127b",
+    "zhongxing_18_21_sha256": "7622184407e04b8641e479be3c549d357de74eaa649baf78eab41bdcc19203af",
+    "zhongxing_arcade10_sha256": "190e0d665118c87503f2db0eca6c318223330eefff50c03428ca1be2f6b17465",
+    "zhongxing_public_edges_sha256": "c77fe6be06d123aea15dfeacea0987608af695da8ae90839e060b18baffcae66",
+    "zhongxing_wall_sha256": "72fa4f4c800a8e27c19d580da66524160c4c2111bd82191706b6c8da142b8d42"
+  }
+}

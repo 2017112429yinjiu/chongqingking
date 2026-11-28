@@ -10,6 +10,8 @@ sys.path.insert(0, str(HERE.parent))
 from build import ASSETS, SCENE, apply_finish, box, read
 sys.path.insert(0,str(HERE))
 from garage_return import finish as garage_finish
+from garage_facade import finish_public_garage
+from stone_stairs import low_stairs, upper_public_way
 
 
 def frame(plot):
@@ -100,5 +102,8 @@ def make(scope):
     repair(scope, plots[0])
     tiers(scope)
     stone_landing(scope)
+    low_stairs(scope, plots[53])
+    upper_public_way(scope)
     thresholds(scope, plots[54], plots[56])
     garage_finish(scope,frame(plots[56]),plots[56])
+    finish_public_garage(scope)
