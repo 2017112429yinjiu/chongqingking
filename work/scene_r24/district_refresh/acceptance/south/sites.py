@@ -12,6 +12,7 @@ sys.path.insert(0,str(HERE))
 from garage_return import finish as garage_finish
 from garage_facade import finish_public_garage
 from stone_stairs import low_stairs, upper_public_way
+from repair_bench import EYE_FOOT, EYE_TARGET, make as make_repair_bench
 
 
 def frame(plot):
@@ -22,29 +23,10 @@ def frame(plot):
 
 def repair(scope, plot):
     at = frame(plot)
-    bench = scope.mesh('Review00_RepairBenchAndHandTools')
-    wood = scope.finish('scuffed workshop timber', (.57, .44, .29), 'wood_table_worn_diff_2k.jpg', .32)
-    paint = scope.finish('old green workshop paint', (.19, .31, .24), 'rusty_painted_metal_diff_2k.jpg', .22)
-    steel = scope.finish('oxidized workshop steel', (.40, .43, .40), metal=.47, rough=.61)
-    rubber = scope.finish('rubber and cork handle', (.082, .083, .067))
-    for u in (-3.12, -1.75):
-        for v in (-1.92, -1.34):
-            box(bench, at, u, u+.089, v, v+.09, .044, .886, paint)
-    for v in (-1.98, -1.72, -1.46):
-        box(bench, at, -3.24, -1.59, v, v+.251, .854, .915, wood)
-    for v in (-1.91, -1.26):
-        box(bench, at, -3.12, -1.66, v, v+.06, .21, .29, steel)
-    for i, u in enumerate((-2.94, -2.67, -2.34)):
-        v = -1.69 + .043*i
-        box(bench, at, u, u+.23, v, v+.028, .917, .944, steel)
-        box(bench, at, u-.063, u+.09, v-.011, v+.039, .917, .961, rubber)
-        box(bench, at, u+.21, u+.26, v-.022, v+.01, .917, .94, steel)
-        box(bench, at, u+.21, u+.26, v+.03, v+.055, .917, .94, steel)
-    box(bench, at, -1.98, -1.81, -1.68, -1.46, .913, 1.084, paint)
-    box(bench, at, -2.013, -1.78, -1.70, -1.62, 1.061, 1.119, steel)
-    box(bench, at, -2.013, -1.78, -1.51, -1.43, 1.059, 1.119, steel)
+    make_repair_bench(scope, at)
     court = plot['repair_court']
     scope.points['00'] = [court['street'], court['porch']]
+    scope.points['00-tool-eye'] = [at(*EYE_FOOT), at(*EYE_TARGET)]
 
 
 def tiers(scope):

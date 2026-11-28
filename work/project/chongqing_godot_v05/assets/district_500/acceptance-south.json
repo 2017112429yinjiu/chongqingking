@@ -1,6 +1,10 @@
 {
   "new_meshes": [
-    "Review00_RepairBenchAndHandTools",
+    "Review00_BayWorkbench",
+    "Review00_ViseCastBaseJawsScrewAndGuides",
+    "Review00_OpenEndWrench",
+    "Review00_PliersWithGripsAndPivot",
+    "Review00_RibbedScrewdriver",
     "Review52_LowFootwayPaleStoneEdge",
     "Review53_OriginalStoneTreadsAndWornNoses",
     "Review53_StoneBlockSidewallFaces",
@@ -44,6 +48,41 @@
   },
   "trees": [],
   "pbr_maps": {
+    "South review workshop worn hardwood grain": [
+      "res://assets/chongqing_district_wood_table_worn_nor_gl_2k.jpg",
+      "res://assets/chongqing_district_wood_table_worn_rough_2k.png",
+      false,
+      0.44,
+      0.5
+    ],
+    "South review workshop painted cast iron": [
+      "res://assets/chongqing_district_rusty_painted_metal_nor_gl_2k.jpg",
+      "res://assets/chongqing_district_rusty_painted_metal_rough_2k.png",
+      false,
+      0.28,
+      0.5
+    ],
+    "South review workshop worn steel": [
+      "res://assets/chongqing_district_rusty_painted_metal_nor_gl_2k.jpg",
+      "res://assets/chongqing_district_rusty_painted_metal_rough_2k.png",
+      false,
+      0.15,
+      0.5
+    ],
+    "South review workshop darkened hardware": [
+      "res://assets/chongqing_district_rusty_painted_metal_nor_gl_2k.jpg",
+      "res://assets/chongqing_district_rusty_painted_metal_rough_2k.png",
+      false,
+      0.44,
+      0.5
+    ],
+    "South review workshop worn grip": [
+      "res://assets/chongqing_district_wood_table_worn_nor_gl_2k.jpg",
+      "res://assets/chongqing_district_wood_table_worn_rough_2k.png",
+      false,
+      0.44,
+      0.5
+    ],
     "South review 53 stone tread 0": [
       "res://assets/district_500/acceptance_textures/washed-stone-normal.jpg",
       "res://assets/district_500/acceptance_textures/washed-stone-rough.jpg",
@@ -91,6 +130,31 @@
     ]
   },
   "surface_tints": {
+    "South review workshop worn hardwood grain": [
+      0.81,
+      0.64,
+      0.47
+    ],
+    "South review workshop painted cast iron": [
+      0.48,
+      0.62,
+      0.59
+    ],
+    "South review workshop worn steel": [
+      0.94,
+      0.96,
+      0.93
+    ],
+    "South review workshop darkened hardware": [
+      0.31,
+      0.35,
+      0.33
+    ],
+    "South review workshop worn grip": [
+      0.43,
+      0.23,
+      0.14
+    ],
     "South review 53 stone tread 0": [
       0.69,
       0.74,
@@ -133,8 +197,11 @@
     ]
   },
   "surface_textures": {
-    "South review scuffed workshop timber": "res://assets/chongqing_district_wood_table_worn_diff_2k.jpg",
-    "South review old green workshop paint": "res://assets/chongqing_district_rusty_painted_metal_diff_2k.jpg",
+    "South review workshop worn hardwood grain": "res://assets/chongqing_district_wood_table_worn_diff_2k.jpg",
+    "South review workshop painted cast iron": "res://assets/district_500/acceptance_textures/repair-workshop-steel-albedo.jpg",
+    "South review workshop worn steel": "res://assets/district_500/acceptance_textures/repair-workshop-steel-albedo.jpg",
+    "South review workshop darkened hardware": "res://assets/chongqing_district_rusty_painted_metal_diff_2k.jpg",
+    "South review workshop worn grip": "res://assets/chongqing_district_wood_table_worn_diff_2k.jpg",
     "South review worn granite street edge": "res://assets/chongqing_district_stone_wall_05_diff_2k.jpg",
     "South review rough lower street shoulder": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
     "South review dressed landing tread faces": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
@@ -162,17 +229,35 @@
     "South review visible garage weathered grey louvre blades": "res://assets/chongqing_district_rusty_painted_metal_diff_2k.jpg"
   },
   "shaded_surface_fill": {
-    "South review scuffed workshop timber": [
-      0.32,
-      0.57,
-      0.44,
-      0.29
-    ],
-    "South review old green workshop paint": [
+    "South review workshop worn hardwood grain": [
       0.22,
-      0.19,
+      0.81,
+      0.64,
+      0.47
+    ],
+    "South review workshop painted cast iron": [
+      0.22,
+      0.48,
+      0.62,
+      0.59
+    ],
+    "South review workshop worn steel": [
+      0.32,
+      0.94,
+      0.96,
+      0.93
+    ],
+    "South review workshop darkened hardware": [
+      0.22,
       0.31,
-      0.24
+      0.35,
+      0.33
+    ],
+    "South review workshop worn grip": [
+      0.22,
+      0.43,
+      0.23,
+      0.14
     ],
     "South review worn granite street edge": [
       0.23,
@@ -336,6 +421,18 @@
         -188.3011,
         -17.9063,
         16.4902
+      ]
+    ],
+    "00-tool-eye": [
+      [
+        -186.69530052804865,
+        -11.812277036872283,
+        16.49017018733576
+      ],
+      [
+        -188.38894717540245,
+        -11.948240391888215,
+        17.41017018733576
       ]
     ],
     "52": [

@@ -1,0 +1,324 @@
+{
+  "checks": [
+    {
+      "detail": "(-193.8725, 16.0236, 26.5521)",
+      "name": "start_on_734116598",
+      "pass": true
+    },
+    {
+      "detail": "(-185.2189, 16.44909, 20.1647)",
+      "name": "underinflated_scooter_parked",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "offset": -1.3,
+          "step": 0,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": 0.0,
+          "step": 0,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": 1.3,
+          "step": 0,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": -1.3,
+          "step": 1,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": 0.0,
+          "step": 1,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": 1.3,
+          "step": 1,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": -1.3,
+          "step": 2,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": 0.0,
+          "step": 2,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": 1.3,
+          "step": 2,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": -1.3,
+          "step": 3,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": 0.0,
+          "step": 3,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": 1.3,
+          "step": 3,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": -1.3,
+          "step": 4,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": 0.0,
+          "step": 4,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": 1.3,
+          "step": 4,
+          "support": "COL_Outer500_RepairCourt"
+        }
+      ],
+      "name": "all_stone_treads_exposed_across_lane",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 14.881474413909,
+        "end": "(-185.9177, 16.48905, 13.70511)",
+        "goals": 2,
+        "max_frame_displacement_m": 0.0750535055994987,
+        "name": "public_walk_to_repair_counter",
+        "pass": true,
+        "reached": 2,
+        "stall_contacts": []
+      },
+      "name": "walk_in_through_front",
+      "pass": true
+    },
+    {
+      "detail": "@Node3D@891:<Node3D#707511998606>",
+      "name": "workbench_within_reach",
+      "pass": true
+    },
+    {
+      "detail": 2.4,
+      "name": "E_inflates_player_scooter",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "repeat_check_preserves_bike_and_wallet",
+      "pass": true
+    },
+    {
+      "detail": {
+        "actual_foot": [
+          -186.675750732422,
+          -11.8906850814819,
+          16.4890480041504
+        ],
+        "eye_foot": [
+          -186.695297241211,
+          -11.81227684021,
+          16.4901695251465
+        ],
+        "movement": {
+          "distance_m": 2.56013832427561,
+          "end": "(-186.6758, 16.48905, 11.89069)",
+          "goals": 2,
+          "max_frame_displacement_m": 0.0700061544775963,
+          "name": "service_to_reachable_tool_eye",
+          "pass": true,
+          "reached": 2,
+          "stall_contacts": []
+        },
+        "supports": [
+          {
+            "height_m": 16.4750003814697,
+            "mesh": "COL_Outer500_Building_envelopes"
+          },
+          {
+            "height_m": 16.4750003814697,
+            "mesh": "COL_Outer500_Building_envelopes"
+          },
+          {
+            "height_m": 16.4750003814697,
+            "mesh": "COL_Outer500_Building_envelopes"
+          },
+          {
+            "height_m": 16.4750003814697,
+            "mesh": "COL_Outer500_Building_envelopes"
+          },
+          {
+            "height_m": 16.4750003814697,
+            "mesh": "COL_Outer500_Building_envelopes"
+          }
+        ]
+      },
+      "name": "tool_eye_reached_on_workshop_floor",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "albedo": "res://assets/district_500/acceptance_textures/repair-workshop-steel-albedo.jpg",
+          "material": "South review workshop painted cast iron",
+          "mesh": "Review00_BayWorkbench",
+          "normal": "res://assets/chongqing_district_rusty_painted_metal_nor_gl_2k.jpg",
+          "roughness": "res://assets/chongqing_district_rusty_painted_metal_rough_2k.png",
+          "uv": 336
+        },
+        {
+          "albedo": "res://assets/chongqing_district_rusty_painted_metal_diff_2k.jpg",
+          "material": "South review workshop darkened hardware",
+          "mesh": "Review00_BayWorkbench",
+          "normal": "res://assets/chongqing_district_rusty_painted_metal_nor_gl_2k.jpg",
+          "roughness": "res://assets/chongqing_district_rusty_painted_metal_rough_2k.png",
+          "uv": 192
+        },
+        {
+          "albedo": "res://assets/chongqing_district_wood_table_worn_diff_2k.jpg",
+          "material": "South review workshop worn hardwood grain",
+          "mesh": "Review00_BayWorkbench",
+          "normal": "res://assets/chongqing_district_wood_table_worn_nor_gl_2k.jpg",
+          "roughness": "res://assets/chongqing_district_wood_table_worn_rough_2k.png",
+          "uv": 144
+        },
+        {
+          "albedo": "res://assets/district_500/acceptance_textures/repair-workshop-steel-albedo.jpg",
+          "material": "South review workshop painted cast iron",
+          "mesh": "Review00_ViseCastBaseJawsScrewAndGuides",
+          "normal": "res://assets/chongqing_district_rusty_painted_metal_nor_gl_2k.jpg",
+          "roughness": "res://assets/chongqing_district_rusty_painted_metal_rough_2k.png",
+          "uv": 472
+        },
+        {
+          "albedo": "res://assets/district_500/acceptance_textures/repair-workshop-steel-albedo.jpg",
+          "material": "South review workshop worn steel",
+          "mesh": "Review00_ViseCastBaseJawsScrewAndGuides",
+          "normal": "res://assets/chongqing_district_rusty_painted_metal_nor_gl_2k.jpg",
+          "roughness": "res://assets/chongqing_district_rusty_painted_metal_rough_2k.png",
+          "uv": 1832
+        },
+        {
+          "albedo": "res://assets/district_500/acceptance_textures/repair-workshop-steel-albedo.jpg",
+          "material": "South review workshop worn steel",
+          "mesh": "Review00_OpenEndWrench",
+          "normal": "res://assets/chongqing_district_rusty_painted_metal_nor_gl_2k.jpg",
+          "roughness": "res://assets/chongqing_district_rusty_painted_metal_rough_2k.png",
+          "uv": 420
+        },
+        {
+          "albedo": "res://assets/district_500/acceptance_textures/repair-workshop-steel-albedo.jpg",
+          "material": "South review workshop worn steel",
+          "mesh": "Review00_PliersWithGripsAndPivot",
+          "normal": "res://assets/chongqing_district_rusty_painted_metal_nor_gl_2k.jpg",
+          "roughness": "res://assets/chongqing_district_rusty_painted_metal_rough_2k.png",
+          "uv": 300
+        },
+        {
+          "albedo": "res://assets/chongqing_district_wood_table_worn_diff_2k.jpg",
+          "material": "South review workshop worn grip",
+          "mesh": "Review00_PliersWithGripsAndPivot",
+          "normal": "res://assets/chongqing_district_wood_table_worn_nor_gl_2k.jpg",
+          "roughness": "res://assets/chongqing_district_wood_table_worn_rough_2k.png",
+          "uv": 96
+        },
+        {
+          "albedo": "res://assets/chongqing_district_rusty_painted_metal_diff_2k.jpg",
+          "material": "South review workshop darkened hardware",
+          "mesh": "Review00_PliersWithGripsAndPivot",
+          "normal": "res://assets/chongqing_district_rusty_painted_metal_nor_gl_2k.jpg",
+          "roughness": "res://assets/chongqing_district_rusty_painted_metal_rough_2k.png",
+          "uv": 224
+        },
+        {
+          "albedo": "res://assets/chongqing_district_wood_table_worn_diff_2k.jpg",
+          "material": "South review workshop worn grip",
+          "mesh": "Review00_RibbedScrewdriver",
+          "normal": "res://assets/chongqing_district_wood_table_worn_nor_gl_2k.jpg",
+          "roughness": "res://assets/chongqing_district_wood_table_worn_rough_2k.png",
+          "uv": 308
+        },
+        {
+          "albedo": "res://assets/chongqing_district_rusty_painted_metal_diff_2k.jpg",
+          "material": "South review workshop darkened hardware",
+          "mesh": "Review00_RibbedScrewdriver",
+          "normal": "res://assets/chongqing_district_rusty_painted_metal_nor_gl_2k.jpg",
+          "roughness": "res://assets/chongqing_district_rusty_painted_metal_rough_2k.png",
+          "uv": 672
+        },
+        {
+          "albedo": "res://assets/district_500/acceptance_textures/repair-workshop-steel-albedo.jpg",
+          "material": "South review workshop worn steel",
+          "mesh": "Review00_RibbedScrewdriver",
+          "normal": "res://assets/chongqing_district_rusty_painted_metal_nor_gl_2k.jpg",
+          "roughness": "res://assets/chongqing_district_rusty_painted_metal_rough_2k.png",
+          "uv": 192
+        }
+      ],
+      "name": "workshop_parts_have_runtime_uv_and_pbr",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 2.60529583506286,
+        "end": "(-185.8231, 16.48905, 13.64204)",
+        "goals": 2,
+        "max_frame_displacement_m": 0.0700067356228828,
+        "name": "tool_eye_to_service",
+        "pass": true,
+        "reached": 2,
+        "stall_contacts": []
+      },
+      "name": "return_from_tool_eye",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 12.865641547367,
+        "end": "(-179.8884, 16.45856, 1.965523)",
+        "goals": 2,
+        "max_frame_displacement_m": 0.0760927870869637,
+        "name": "workshop_to_court",
+        "pass": true,
+        "reached": 2,
+        "stall_contacts": []
+      },
+      "name": "reach_inner_court",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 28.0985303092748,
+        "end": "(-193.8265, 16.031, 26.56912)",
+        "goals": 4,
+        "max_frame_displacement_m": 0.0995685160160065,
+        "name": "return_to_same_street",
+        "pass": true,
+        "reached": 4,
+        "stall_contacts": []
+      },
+      "name": "walk_back_from_court",
+      "pass": true
+    },
+    {
+      "detail": "(-193.8265, 16.031, 26.56912)",
+      "name": "back_at_start",
+      "pass": true
+    }
+  ],
+  "images": 0,
+  "physics_hz": 60,
+  "ticks_per_image": 9
+}

@@ -1,5 +1,39 @@
 extends "../../scene_r24/shancheng_courts/delivery_take.gd"
 
+func verify_tool_bay(district:Node3D, service:Vector3, inward:Vector3) -> void:
+	var scenario: Dictionary = district.get_meta("acceptance_player_points")
+	var at := point(scenario["00-tool-eye"][0])
+	var actor: CharacterBody3D = scene.explorer.body
+	var open_lane := service + inward*1.20
+	var visit := await WalkTest._walk(scene,[open_lane,at],"service_to_reachable_tool_eye")
+	var actual := actor.global_position
+	var space := scene.get_world_3d().direct_space_state as PhysicsDirectSpaceState3D
+	var hits: Array = []
+	for delta:Vector3 in [Vector3.ZERO,Vector3.FORWARD*.20,Vector3.BACK*.20,Vector3.LEFT*.20,Vector3.RIGHT*.20]:
+		var probe:=at+delta
+		var hit:=space.intersect_ray(PhysicsRayQueryParameters3D.create(probe + Vector3.UP*.25,probe-Vector3.UP*.35,1))
+		if not hit.is_empty():
+			hits.append({"height_m":hit.position.y,"mesh":str(hit.collider.get_parent().name)})
+	check("tool_eye_reached_on_workshop_floor",visit["pass"] and actual.distance_to(at)<.33 and hits.size()==5,
+		{"movement":visit,"eye_foot":[at.x,-at.z,at.y],"actual_foot":[actual.x,-actual.z,actual.y],"supports":hits})
+	var materials: Array = []
+	var layer := district.get_node("Acceptance_south")
+	var parts := layer.find_children("Review00_*","MeshInstance3D",true,false)
+	for part: MeshInstance3D in parts:
+		for i:int in part.mesh.get_surface_count():
+			var arrays := part.mesh.surface_get_arrays(i)
+			var uv: PackedVector2Array = arrays[Mesh.ARRAY_TEX_UV]
+			var finish := part.mesh.surface_get_material(i) as BaseMaterial3D
+			materials.append({"mesh":str(part.name),"material":finish.resource_name,"uv":uv.size(),
+				"albedo":finish.albedo_texture.resource_path if finish.albedo_texture else "",
+				"normal":finish.normal_texture.resource_path if finish.normal_enabled and finish.normal_texture else "",
+				"roughness":finish.roughness_texture.resource_path if finish.roughness_texture else ""})
+	check("workshop_parts_have_runtime_uv_and_pbr",parts.size()==5 and materials.size()>=7 and materials.all(
+		func(row): return row.uv>0 and not row.albedo.is_empty() and not row.normal.is_empty() and not row.roughness.is_empty()),
+		materials)
+	var back := await WalkTest._walk(scene,[open_lane,service],"tool_eye_to_service")
+	check("return_from_tool_eye",back["pass"],back)
+
 func verify() -> void:
 	output=OS.get_environment("CQ_QA_DIR")
 	DirAccess.make_dir_recursive_absolute(output)
@@ -42,6 +76,8 @@ func verify() -> void:
 	tap(KEY_E)
 	await frames(12)
 	check("repeat_check_preserves_bike_and_wallet",bike.parked and bike.global_position.distance_to(parked_at)<.20 and scene.gameplay.earnings==wallet)
+	if "--qa-repair-tool-eye" in OS.get_cmdline_user_args():
+		await verify_tool_bay(scene.get_node("City/OuterDistrict500"),point(site.service),inward)
 	var yard:=await WalkTest._walk(scene,[point(site.rear),point(site.court)],"workshop_to_court")
 	check("reach_inner_court",yard["pass"],yard)
 	var back:=await WalkTest._walk(scene,[point(site.rear),point(site.service),point(site.porch),point(site.street)],"return_to_same_street")
