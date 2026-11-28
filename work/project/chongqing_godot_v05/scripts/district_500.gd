@@ -297,6 +297,7 @@ static func install(city: Node3D) -> Dictionary:
 		install_street_group(district, ZHONGXING_ARCADE10, ZHONGXING_ARCADE10_SITE, "ZhongxingArcade10")
 		var arcade: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(ZHONGXING_ARCADE10_SITE))
 		retired_bridge_plots.append_array(arcade.retired_plots)
+	var acceptance := install_acceptance(district)
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -454,7 +455,7 @@ static func install(city: Node3D) -> Dictionary:
 		label.position=Vector3(plot.east_north[0]+cos(a)*u-sin(a)*v,plot.height+court.upper_m+1.76,
 			-plot.east_north[1]-sin(a)*u-cos(a)*v)
 		district.add_child(label)
-	return {"bounds_east_north_m": layout.bounds_east_north_m,
+	return {"bounds_east_north_m": layout.bounds_east_north_m, "acceptance": acceptance,
 		"glb_sha256": FileAccess.get_sha256(MODEL), "riverside_sha256": FileAccess.get_sha256(RIVERSIDE),
 		"match_factory_sha256": FileAccess.get_sha256(MATCH_FACTORY),
 		"matix_streets_sha256": FileAccess.get_sha256(MATIX_STREETS),
@@ -503,6 +504,26 @@ static func add_public_edge_trees(district: Node3D, layer: Node, trees: Array) -
 		tree.scale *= float(row.scale)
 		tree.rotation.y += float(row.yaw)
 		layer.add_child(tree)
+
+
+static func install_acceptance(district: Node3D) -> Dictionary:
+	var installed := {}
+	var points := {}
+	if "--qa-without-acceptance" in OS.get_cmdline_user_args():
+		return installed
+	for region: String in ["east", "jiefang", "west", "north", "south"]:
+		var path := "res://assets/district_500/acceptance-" + region
+		if not FileAccess.file_exists(path + ".json"):
+			continue
+		var plan: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(path + ".json"))
+		var donors: Array = plan.retired_objects + plan.replacement_meshes
+		if donors.any(func(name: String) -> bool: return not district.find_child(name, true, false)):
+			continue
+		install_street_group(district, path + ".glb", path + ".json", "Acceptance_" + region)
+		points.merge(plan.player_points, true)
+		installed[region] = FileAccess.get_sha256(path + ".glb")
+	district.set_meta("acceptance_player_points", points)
+	return installed
 
 
 static func install_street_group(district: Node3D, model_path: String, plan_path: String, group_name: String) -> void:
@@ -688,6 +709,16 @@ static func start_exploration(scene: Node3D) -> void:
 	bike.safe_park_position = bike.global_position
 	bike.rotation.y = -0.87
 	scene.explorer.set_walk_origin(shoulder.position + Vector3.UP * 0.035, bike.global_position + Vector3.UP)
+	var acceptance_points: Dictionary = scene.get_node("City/OuterDistrict500").get_meta("acceptance_player_points", {})
+	for option: String in OS.get_cmdline_user_args():
+		if option.begins_with("--refresh-plot="):
+			var id := option.trim_prefix("--refresh-plot=")
+			if acceptance_points.has(id):
+				var entry: Array = acceptance_points[id]
+				var foot := enu(entry[0])
+				var paving := collision.raycast_ground(scene, foot + Vector3.UP * .30, .95)
+				if not paving.is_empty():
+					scene.explorer.set_walk_origin(paving.position + Vector3.UP * .035, enu(entry[1]))
 	if "--repair-court" in OS.get_cmdline_user_args():
 		var site: Dictionary=scene.get_node("City/OuterDistrict500").get_meta("repair_court")
 		bike.global_position=enu(site.bike)

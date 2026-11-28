@@ -491,6 +491,23 @@ if nanqu_grade:
         bank.objects = [name for name in archive.objects if "NanquLandside_" in name]
     for obj in bank.objects:
         collection.objects.link(obj)
+acceptance_sources = factory_dir.parent / "acceptance"
+for region in ("east", "jiefang", "west", "north", "south"):
+    filename = "acceptance-" + region
+    asset = group_assets / (filename + ".json")
+    if not asset.is_file():
+        continue
+    finish = json.loads(asset.read_bytes())
+    former = finish["retired_objects"] + finish["replacement_meshes"]
+    if any(name not in collection.objects for name in former):
+        continue
+    for name in former:
+        collection.objects.unlink(collection.objects[name])
+    with bpy.data.libraries.load(str(acceptance_sources / (filename + ".blend")),
+                                 link=True, relative=True) as (_, region_layer):
+        region_layer.objects = finish["new_meshes"] + finish["replacement_meshes"]
+    for obj in region_layer.objects:
+        collection.objects.link(obj)
 bpy.context.preferences.filepaths.save_version=0
 output_name = "city_and_outer.local.blend" if nanqu else (
     "city_and_outer.before_nanqu.local.blend" if wilderness else
