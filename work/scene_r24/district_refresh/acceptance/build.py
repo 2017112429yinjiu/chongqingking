@@ -35,6 +35,7 @@ class Region:
         self.trees = []
         self.attached_art = []
         self.pbr_maps = {}
+        self.tints = {}
         self.required_group = ''
         self.points = {}
         self.ground = terrain()
@@ -49,7 +50,7 @@ class Region:
         surface.inputs['Metallic'].default_value = metal
         surface.inputs['Roughness'].default_value = rough
         if texture:
-            asset = texture if '/' in texture else 'chongqing_district_' + texture
+            asset = texture if '/' in texture or texture.startswith('chongqing_district_') else 'chongqing_district_' + texture
             tex = mat.node_tree.nodes.new('ShaderNodeTexImage')
             tex.image = self.image(asset)
             mat.node_tree.links.new(tex.outputs['Color'], surface.inputs['Base Color'])
@@ -74,22 +75,52 @@ class Region:
 
     def mossy_wall(self, name, color):
         base = 'district_r21/terraces_mossy_stone_wall_'
-        surface = self.finish(name, color, base + 'diff_2k.jpg', .17)
         normal, roughness = (base + suffix for suffix in ('nor_gl_2k.jpg', 'rough_2k.png'))
+        return self.pbr(name, color, base + 'diff_2k.jpg', normal, roughness, ambient=.17)
+
+    def pbr(self, name, color, albedo, normal, roughness, *, ambient=.17, tint=None,
+            packed_roughness=False, normal_strength=.78, specular=.50):
+        surface = self.finish(name, color, albedo, ambient)
+        self.map_pbr(surface, normal, roughness, packed_roughness, normal_strength, specular)
+        if tint is not None:
+            self.tints[surface.name] = tint
+            nodes = surface.node_tree.nodes
+            links = surface.node_tree.links
+            shader = nodes['Principled BSDF']
+            base_color = shader.inputs['Base Color']
+            image_output = base_color.links[0].from_socket
+            mix = nodes.new('ShaderNodeMixRGB')
+            mix.blend_type = 'MULTIPLY'
+            mix.inputs[0].default_value = 1.
+            mix.inputs[2].default_value = (*tint,1.)
+            links.new(image_output,mix.inputs[1])
+            links.new(mix.outputs['Color'],base_color)
+        return surface
+
+    def map_pbr(self, surface, normal, roughness, packed_roughness=False, normal_strength=.78, specular=.50):
         nodes = surface.node_tree.nodes
         links = surface.node_tree.links
         maps = [nodes.new('ShaderNodeTexImage') for _ in range(2)]
         for node, asset in zip(maps, (normal, roughness)):
             node.image = self.image(asset, data=True)
         bump = nodes.new('ShaderNodeNormalMap')
+        bump.inputs['Strength'].default_value = normal_strength
         links.new(maps[0].outputs['Color'], bump.inputs['Color'])
         links.new(bump.outputs['Normal'], nodes['Principled BSDF'].inputs['Normal'])
-        links.new(maps[1].outputs['Color'], nodes['Principled BSDF'].inputs['Roughness'])
-        self.pbr_maps[surface.name] = ['res://assets/' + asset for asset in (normal, roughness)]
-        return surface
+        rough_output = maps[1].outputs['Color']
+        if packed_roughness:
+            channels = nodes.new('ShaderNodeSeparateColor')
+            links.new(rough_output, channels.inputs['Color'])
+            rough_output = channels.outputs['Green']
+        links.new(rough_output, nodes['Principled BSDF'].inputs['Roughness'])
+        nodes['Principled BSDF'].inputs['Specular IOR Level'].default_value = specular
+        channels = ['res://assets/' + normal, 'res://assets/' + roughness, packed_roughness]
+        if (normal_strength, specular) != (.78, .50):
+            channels.extend((normal_strength, specular))
+        self.pbr_maps[surface.name] = channels
 
-    def mesh(self, name):
-        mesh = Mesh(name)
+    def mesh(self, name, mesh_class=Mesh):
+        mesh = mesh_class(name)
         self.meshes.append(mesh)
         return mesh
 
@@ -137,7 +168,7 @@ class Region:
         plan = {'new_meshes':[m.name for m in self.meshes + self.attached_art], 'retired_objects':self.retired,
                 'replacement_meshes':[m.name for m in self.replacement],
                 'borrowed_materials':self.borrowed,
-                'trees':self.trees, 'pbr_maps':self.pbr_maps,
+                'trees':self.trees, 'pbr_maps':self.pbr_maps, 'surface_tints':self.tints,
                 'surface_textures':self.textures,'shaded_surface_fill':self.fill,
                 'player_points':self.points}
         if self.required_group:

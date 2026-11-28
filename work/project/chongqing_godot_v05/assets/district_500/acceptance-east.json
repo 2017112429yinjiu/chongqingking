@@ -11,8 +11,15 @@
     "Review22_FittedCopingBlocks",
     "Review22_LargeVerticalStoneFacing",
     "Review22_ClippedTurfAndPaleMineralBed",
-    "Review22_LowDenseGrassAndRadialLeaves",
-    "Review22_TwoPurpleRoundedShrubs"
+    "Review22_RadialLeaves",
+    "Review22_TwoPurpleRoundedShrubs",
+    "Review01_Ginger_01",
+    "Review01_Ginger_02",
+    "Review01_Ginger_03",
+    "Review01_Ginger_04",
+    "Review01_Ginger_05",
+    "Review01_Ginger_06",
+    "Review01_Ginger_07"
   ],
   "retired_objects": [
     "Outer500_MarketProduce",
@@ -68,11 +75,445 @@
       "yaw": 1.48
     }
   ],
-  "pbr_maps": {},
+  "pbr_maps": {
+    "East review mandarin skin 0": [
+      "res://assets/district_500/acceptance_textures/mandarin-normal.jpg",
+      "res://assets/district_500/acceptance_textures/mandarin-rough.jpg",
+      false
+    ],
+    "East review mandarin skin 1": [
+      "res://assets/district_500/acceptance_textures/mandarin-normal.jpg",
+      "res://assets/district_500/acceptance_textures/mandarin-rough.jpg",
+      false
+    ],
+    "East review mandarin skin 2": [
+      "res://assets/district_500/acceptance_textures/mandarin-normal.jpg",
+      "res://assets/district_500/acceptance_textures/mandarin-rough.jpg",
+      false
+    ],
+    "East review mandarin skin 3": [
+      "res://assets/district_500/acceptance_textures/mandarin-normal.jpg",
+      "res://assets/district_500/acceptance_textures/mandarin-rough.jpg",
+      false
+    ],
+    "East review aubergine skin 0": [
+      "res://assets/district_500/acceptance_textures/aubergine-normal.jpg",
+      "res://assets/district_500/acceptance_textures/aubergine-rough.jpg",
+      false
+    ],
+    "East review aubergine skin 1": [
+      "res://assets/district_500/acceptance_textures/aubergine-normal.jpg",
+      "res://assets/district_500/acceptance_textures/aubergine-rough.jpg",
+      false
+    ],
+    "East review aubergine skin 2": [
+      "res://assets/district_500/acceptance_textures/aubergine-normal.jpg",
+      "res://assets/district_500/acceptance_textures/aubergine-rough.jpg",
+      false
+    ],
+    "East review aubergine skin 3": [
+      "res://assets/district_500/acceptance_textures/aubergine-normal.jpg",
+      "res://assets/district_500/acceptance_textures/aubergine-rough.jpg",
+      false
+    ],
+    "East review squash skin 0": [
+      "res://assets/district_500/acceptance_textures/squash-normal.jpg",
+      "res://assets/district_500/acceptance_textures/squash-rough.jpg",
+      false
+    ],
+    "East review squash skin 1": [
+      "res://assets/district_500/acceptance_textures/squash-normal.jpg",
+      "res://assets/district_500/acceptance_textures/squash-rough.jpg",
+      false
+    ],
+    "East review squash skin 2": [
+      "res://assets/district_500/acceptance_textures/squash-normal.jpg",
+      "res://assets/district_500/acceptance_textures/squash-rough.jpg",
+      false
+    ],
+    "East review squash skin 3": [
+      "res://assets/district_500/acceptance_textures/squash-normal.jpg",
+      "res://assets/district_500/acceptance_textures/squash-rough.jpg",
+      false
+    ],
+    "East review potato skin 0": [
+      "res://assets/district_500/acceptance_textures/potato-normal.jpg",
+      "res://assets/district_500/acceptance_textures/potato-rough.jpg",
+      false
+    ],
+    "East review potato skin 1": [
+      "res://assets/district_500/acceptance_textures/potato-normal.jpg",
+      "res://assets/district_500/acceptance_textures/potato-rough.jpg",
+      false
+    ],
+    "East review potato skin 2": [
+      "res://assets/district_500/acceptance_textures/potato-normal.jpg",
+      "res://assets/district_500/acceptance_textures/potato-rough.jpg",
+      false
+    ],
+    "East review potato skin 3": [
+      "res://assets/district_500/acceptance_textures/potato-normal.jpg",
+      "res://assets/district_500/acceptance_textures/potato-rough.jpg",
+      false
+    ],
+    "East review market stems and calyx": [
+      "res://assets/chongqing_district_shrub_01_nor_gl_2k.jpg",
+      "res://assets/chongqing_district_shrub_01_arm_2k.jpg",
+      true
+    ],
+    "East review vegetable leaf tone 0": [
+      "res://assets/chongqing_district_shrub_01_nor_gl_2k.jpg",
+      "res://assets/chongqing_district_shrub_01_arm_2k.jpg",
+      true
+    ],
+    "East review vegetable leaf tone 1": [
+      "res://assets/chongqing_district_shrub_01_nor_gl_2k.jpg",
+      "res://assets/chongqing_district_shrub_01_arm_2k.jpg",
+      true
+    ],
+    "East review vegetable leaf tone 2": [
+      "res://assets/chongqing_district_shrub_01_nor_gl_2k.jpg",
+      "res://assets/chongqing_district_shrub_01_arm_2k.jpg",
+      true
+    ],
+    "East review vegetable leaf tone 3": [
+      "res://assets/chongqing_district_shrub_01_nor_gl_2k.jpg",
+      "res://assets/chongqing_district_shrub_01_arm_2k.jpg",
+      true
+    ],
+    "East review vegetable leaf tone 4": [
+      "res://assets/chongqing_district_shrub_01_nor_gl_2k.jpg",
+      "res://assets/chongqing_district_shrub_01_arm_2k.jpg",
+      true
+    ],
+    "East review ginger scan with original UVs": [
+      "res://assets/district_500/acceptance_textures/ginger-scan-normal.jpg",
+      "res://assets/district_500/acceptance_textures/ginger-scan-rough.jpg",
+      false,
+      0.25,
+      0.13
+    ],
+    "East review washed sandstone panel 0": [
+      "res://assets/district_500/acceptance_textures/washed-stone-normal.jpg",
+      "res://assets/district_500/acceptance_textures/washed-stone-rough.jpg",
+      false,
+      0.36,
+      0.21
+    ],
+    "East review washed sandstone panel 1": [
+      "res://assets/district_500/acceptance_textures/washed-stone-normal.jpg",
+      "res://assets/district_500/acceptance_textures/washed-stone-rough.jpg",
+      false,
+      0.36,
+      0.21
+    ],
+    "East review washed sandstone panel 2": [
+      "res://assets/district_500/acceptance_textures/washed-stone-normal.jpg",
+      "res://assets/district_500/acceptance_textures/washed-stone-rough.jpg",
+      false,
+      0.36,
+      0.21
+    ],
+    "East review washed sandstone panel 3": [
+      "res://assets/district_500/acceptance_textures/washed-stone-normal.jpg",
+      "res://assets/district_500/acceptance_textures/washed-stone-rough.jpg",
+      false,
+      0.36,
+      0.21
+    ],
+    "East review washed sandstone panel 4": [
+      "res://assets/district_500/acceptance_textures/washed-stone-normal.jpg",
+      "res://assets/district_500/acceptance_textures/washed-stone-rough.jpg",
+      false,
+      0.36,
+      0.21
+    ],
+    "East review dense mown turf": [
+      "res://assets/district_500/acceptance_textures/turf-normal.jpg",
+      "res://assets/district_500/acceptance_textures/turf-rough.jpg",
+      false
+    ],
+    "East review light gravel 0": [
+      "res://assets/chongqing_district_leaf_scattered_gravel_nor_gl_2k.jpg",
+      "res://assets/chongqing_district_leaf_scattered_gravel_rough_2k.png",
+      false
+    ],
+    "East review light gravel 1": [
+      "res://assets/chongqing_district_leaf_scattered_gravel_nor_gl_2k.jpg",
+      "res://assets/chongqing_district_leaf_scattered_gravel_rough_2k.png",
+      false
+    ],
+    "East review light gravel 2": [
+      "res://assets/chongqing_district_leaf_scattered_gravel_nor_gl_2k.jpg",
+      "res://assets/chongqing_district_leaf_scattered_gravel_rough_2k.png",
+      false
+    ],
+    "East review light gravel 3": [
+      "res://assets/chongqing_district_leaf_scattered_gravel_nor_gl_2k.jpg",
+      "res://assets/chongqing_district_leaf_scattered_gravel_rough_2k.png",
+      false
+    ],
+    "East review purple shrub leaf 0": [
+      "res://assets/chongqing_district_shrub_01_nor_gl_2k.jpg",
+      "res://assets/chongqing_district_shrub_01_arm_2k.jpg",
+      true,
+      0.32,
+      0.17
+    ],
+    "East review purple shrub leaf 1": [
+      "res://assets/chongqing_district_shrub_01_nor_gl_2k.jpg",
+      "res://assets/chongqing_district_shrub_01_arm_2k.jpg",
+      true,
+      0.32,
+      0.17
+    ],
+    "East review purple shrub leaf 2": [
+      "res://assets/chongqing_district_shrub_01_nor_gl_2k.jpg",
+      "res://assets/chongqing_district_shrub_01_arm_2k.jpg",
+      true,
+      0.32,
+      0.17
+    ],
+    "East review radial planting leaf 0": [
+      "res://assets/chongqing_district_shrub_01_nor_gl_2k.jpg",
+      "res://assets/chongqing_district_shrub_01_arm_2k.jpg",
+      true
+    ],
+    "East review radial planting leaf 1": [
+      "res://assets/chongqing_district_shrub_01_nor_gl_2k.jpg",
+      "res://assets/chongqing_district_shrub_01_arm_2k.jpg",
+      true
+    ],
+    "East review radial planting leaf 2": [
+      "res://assets/chongqing_district_shrub_01_nor_gl_2k.jpg",
+      "res://assets/chongqing_district_shrub_01_arm_2k.jpg",
+      true
+    ]
+  },
+  "surface_tints": {
+    "East review mandarin skin 0": [
+      1.0,
+      0.85,
+      0.79
+    ],
+    "East review mandarin skin 1": [
+      0.93,
+      0.69,
+      0.62
+    ],
+    "East review mandarin skin 2": [
+      1.0,
+      0.98,
+      0.86
+    ],
+    "East review mandarin skin 3": [
+      0.85,
+      0.72,
+      0.74
+    ],
+    "East review aubergine skin 0": [
+      0.88,
+      0.79,
+      0.92
+    ],
+    "East review aubergine skin 1": [
+      0.98,
+      0.94,
+      0.89
+    ],
+    "East review aubergine skin 2": [
+      0.74,
+      0.82,
+      0.88
+    ],
+    "East review aubergine skin 3": [
+      0.81,
+      0.67,
+      0.8
+    ],
+    "East review squash skin 0": [
+      1.0,
+      0.94,
+      0.81
+    ],
+    "East review squash skin 1": [
+      1.0,
+      0.78,
+      0.7
+    ],
+    "East review squash skin 2": [
+      0.84,
+      0.91,
+      0.73
+    ],
+    "East review squash skin 3": [
+      0.97,
+      0.91,
+      0.78
+    ],
+    "East review potato skin 0": [
+      0.91,
+      0.82,
+      0.7
+    ],
+    "East review potato skin 1": [
+      1.0,
+      0.96,
+      0.88
+    ],
+    "East review potato skin 2": [
+      0.89,
+      0.72,
+      0.58
+    ],
+    "East review potato skin 3": [
+      0.81,
+      0.79,
+      0.69
+    ],
+    "East review market stems and calyx": [
+      0.47,
+      0.64,
+      0.32
+    ],
+    "East review vegetable leaf tone 0": [
+      0.78,
+      0.96,
+      0.64
+    ],
+    "East review vegetable leaf tone 1": [
+      0.91,
+      1.0,
+      0.78
+    ],
+    "East review vegetable leaf tone 2": [
+      0.65,
+      0.84,
+      0.58
+    ],
+    "East review vegetable leaf tone 3": [
+      0.8,
+      0.9,
+      0.61
+    ],
+    "East review vegetable leaf tone 4": [
+      0.94,
+      0.97,
+      0.78
+    ],
+    "East review ginger scan with original UVs": [
+      1.0,
+      0.91,
+      0.78
+    ],
+    "East review washed sandstone panel 0": [
+      0.94,
+      0.9,
+      0.8
+    ],
+    "East review washed sandstone panel 1": [
+      0.99,
+      0.93,
+      0.82
+    ],
+    "East review washed sandstone panel 2": [
+      0.89,
+      0.89,
+      0.84
+    ],
+    "East review washed sandstone panel 3": [
+      0.84,
+      0.84,
+      0.8
+    ],
+    "East review washed sandstone panel 4": [
+      0.98,
+      0.91,
+      0.79
+    ],
+    "East review dense mown turf": [
+      0.83,
+      0.92,
+      0.76
+    ],
+    "East review light gravel 0": [
+      0.89,
+      0.86,
+      0.81
+    ],
+    "East review light gravel 1": [
+      1.0,
+      0.97,
+      0.91
+    ],
+    "East review light gravel 2": [
+      0.94,
+      0.91,
+      0.86
+    ],
+    "East review light gravel 3": [
+      0.82,
+      0.79,
+      0.74
+    ],
+    "East review purple shrub leaf 0": [
+      0.83,
+      0.72,
+      0.83
+    ],
+    "East review purple shrub leaf 1": [
+      0.95,
+      0.88,
+      0.91
+    ],
+    "East review purple shrub leaf 2": [
+      0.7,
+      0.64,
+      0.76
+    ],
+    "East review radial planting leaf 0": [
+      0.81,
+      0.9,
+      0.68
+    ],
+    "East review radial planting leaf 1": [
+      0.95,
+      0.97,
+      0.78
+    ],
+    "East review radial planting leaf 2": [
+      0.67,
+      0.83,
+      0.59
+    ]
+  },
   "surface_textures": {
     "East review glazed celadon work counter": "res://assets/chongqing_district_concrete_wall_006_diff_2k.jpg",
     "East review worn timber edges and hooks": "res://assets/chongqing_district_wood_table_worn_diff_2k.jpg",
     "East review market basket staves": "res://assets/chongqing_district_wood_table_worn_diff_2k.jpg",
+    "East review mandarin skin 0": "res://assets/district_500/acceptance_textures/mandarin-albedo.jpg",
+    "East review mandarin skin 1": "res://assets/district_500/acceptance_textures/mandarin-albedo.jpg",
+    "East review mandarin skin 2": "res://assets/district_500/acceptance_textures/mandarin-albedo.jpg",
+    "East review mandarin skin 3": "res://assets/district_500/acceptance_textures/mandarin-albedo.jpg",
+    "East review aubergine skin 0": "res://assets/district_500/acceptance_textures/aubergine-albedo.jpg",
+    "East review aubergine skin 1": "res://assets/district_500/acceptance_textures/aubergine-albedo.jpg",
+    "East review aubergine skin 2": "res://assets/district_500/acceptance_textures/aubergine-albedo.jpg",
+    "East review aubergine skin 3": "res://assets/district_500/acceptance_textures/aubergine-albedo.jpg",
+    "East review squash skin 0": "res://assets/district_500/acceptance_textures/squash-albedo.jpg",
+    "East review squash skin 1": "res://assets/district_500/acceptance_textures/squash-albedo.jpg",
+    "East review squash skin 2": "res://assets/district_500/acceptance_textures/squash-albedo.jpg",
+    "East review squash skin 3": "res://assets/district_500/acceptance_textures/squash-albedo.jpg",
+    "East review potato skin 0": "res://assets/district_500/acceptance_textures/potato-albedo.jpg",
+    "East review potato skin 1": "res://assets/district_500/acceptance_textures/potato-albedo.jpg",
+    "East review potato skin 2": "res://assets/district_500/acceptance_textures/potato-albedo.jpg",
+    "East review potato skin 3": "res://assets/district_500/acceptance_textures/potato-albedo.jpg",
+    "East review market stems and calyx": "res://assets/chongqing_district_shrub_01_diff_2k.jpg",
+    "East review vegetable leaf tone 0": "res://assets/chongqing_district_shrub_01_diff_2k.jpg",
+    "East review vegetable leaf tone 1": "res://assets/chongqing_district_shrub_01_diff_2k.jpg",
+    "East review vegetable leaf tone 2": "res://assets/chongqing_district_shrub_01_diff_2k.jpg",
+    "East review vegetable leaf tone 3": "res://assets/chongqing_district_shrub_01_diff_2k.jpg",
+    "East review vegetable leaf tone 4": "res://assets/chongqing_district_shrub_01_diff_2k.jpg",
+    "East review ginger scan with original UVs": "res://assets/district_500/acceptance_textures/ginger-scan-albedo.jpg",
     "East review ceramic weather tone 0": "res://assets/chongqing_district_roof_tiles_diff.jpg",
     "East review ceramic weather tone 1": "res://assets/chongqing_district_roof_tiles_diff.jpg",
     "East review ceramic weather tone 2": "res://assets/chongqing_district_roof_tiles_diff.jpg",
@@ -88,7 +529,23 @@
     "East review bush hammered coping 0": "res://assets/chongqing_district_concrete_wall_006_diff_2k.jpg",
     "East review bush hammered coping 1": "res://assets/chongqing_district_concrete_wall_006_diff_2k.jpg",
     "East review bush hammered coping 2": "res://assets/chongqing_district_concrete_wall_006_diff_2k.jpg",
-    "East review cool dressed coping edge": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg"
+    "East review washed sandstone panel 0": "res://assets/district_500/acceptance_textures/washed-stone-buff-albedo.jpg",
+    "East review washed sandstone panel 1": "res://assets/district_500/acceptance_textures/washed-stone-buff-albedo.jpg",
+    "East review washed sandstone panel 2": "res://assets/district_500/acceptance_textures/washed-stone-buff-albedo.jpg",
+    "East review washed sandstone panel 3": "res://assets/district_500/acceptance_textures/washed-stone-buff-albedo.jpg",
+    "East review washed sandstone panel 4": "res://assets/district_500/acceptance_textures/washed-stone-buff-albedo.jpg",
+    "East review cool dressed coping edge": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+    "East review dense mown turf": "res://assets/district_500/acceptance_textures/turf-albedo.jpg",
+    "East review light gravel 0": "res://assets/district_500/acceptance_textures/pale-gravel-albedo.jpg",
+    "East review light gravel 1": "res://assets/district_500/acceptance_textures/pale-gravel-albedo.jpg",
+    "East review light gravel 2": "res://assets/district_500/acceptance_textures/pale-gravel-albedo.jpg",
+    "East review light gravel 3": "res://assets/district_500/acceptance_textures/pale-gravel-albedo.jpg",
+    "East review purple shrub leaf 0": "res://assets/district_500/acceptance_textures/purple-leaf-dusk-albedo.jpg",
+    "East review purple shrub leaf 1": "res://assets/district_500/acceptance_textures/purple-leaf-dusk-albedo.jpg",
+    "East review purple shrub leaf 2": "res://assets/district_500/acceptance_textures/purple-leaf-dusk-albedo.jpg",
+    "East review radial planting leaf 0": "res://assets/chongqing_district_shrub_01_diff_2k.jpg",
+    "East review radial planting leaf 1": "res://assets/chongqing_district_shrub_01_diff_2k.jpg",
+    "East review radial planting leaf 2": "res://assets/chongqing_district_shrub_01_diff_2k.jpg"
   },
   "shaded_surface_fill": {
     "East review glazed celadon work counter": [
@@ -108,6 +565,144 @@
       0.63,
       0.45,
       0.3
+    ],
+    "East review mandarin skin 0": [
+      0.12,
+      1.0,
+      0.85,
+      0.79
+    ],
+    "East review mandarin skin 1": [
+      0.12,
+      0.93,
+      0.69,
+      0.62
+    ],
+    "East review mandarin skin 2": [
+      0.12,
+      1.0,
+      0.98,
+      0.86
+    ],
+    "East review mandarin skin 3": [
+      0.12,
+      0.85,
+      0.72,
+      0.74
+    ],
+    "East review aubergine skin 0": [
+      0.12,
+      0.88,
+      0.79,
+      0.92
+    ],
+    "East review aubergine skin 1": [
+      0.12,
+      0.98,
+      0.94,
+      0.89
+    ],
+    "East review aubergine skin 2": [
+      0.12,
+      0.74,
+      0.82,
+      0.88
+    ],
+    "East review aubergine skin 3": [
+      0.12,
+      0.81,
+      0.67,
+      0.8
+    ],
+    "East review squash skin 0": [
+      0.12,
+      1.0,
+      0.94,
+      0.81
+    ],
+    "East review squash skin 1": [
+      0.12,
+      1.0,
+      0.78,
+      0.7
+    ],
+    "East review squash skin 2": [
+      0.12,
+      0.84,
+      0.91,
+      0.73
+    ],
+    "East review squash skin 3": [
+      0.12,
+      0.97,
+      0.91,
+      0.78
+    ],
+    "East review potato skin 0": [
+      0.12,
+      0.91,
+      0.82,
+      0.7
+    ],
+    "East review potato skin 1": [
+      0.12,
+      1.0,
+      0.96,
+      0.88
+    ],
+    "East review potato skin 2": [
+      0.12,
+      0.89,
+      0.72,
+      0.58
+    ],
+    "East review potato skin 3": [
+      0.12,
+      0.81,
+      0.79,
+      0.69
+    ],
+    "East review market stems and calyx": [
+      0.2,
+      0.47,
+      0.64,
+      0.32
+    ],
+    "East review vegetable leaf tone 0": [
+      0.2,
+      0.78,
+      0.96,
+      0.64
+    ],
+    "East review vegetable leaf tone 1": [
+      0.2,
+      0.91,
+      1.0,
+      0.78
+    ],
+    "East review vegetable leaf tone 2": [
+      0.2,
+      0.65,
+      0.84,
+      0.58
+    ],
+    "East review vegetable leaf tone 3": [
+      0.2,
+      0.8,
+      0.9,
+      0.61
+    ],
+    "East review vegetable leaf tone 4": [
+      0.2,
+      0.94,
+      0.97,
+      0.78
+    ],
+    "East review ginger scan with original UVs": [
+      0.24,
+      1.0,
+      0.89,
+      0.73
     ],
     "East review ceramic weather tone 0": [
       0.14,
@@ -199,11 +794,107 @@
       0.63,
       0.61
     ],
+    "East review washed sandstone panel 0": [
+      0.34,
+      0.94,
+      0.9,
+      0.8
+    ],
+    "East review washed sandstone panel 1": [
+      0.34,
+      0.99,
+      0.93,
+      0.82
+    ],
+    "East review washed sandstone panel 2": [
+      0.34,
+      0.89,
+      0.89,
+      0.84
+    ],
+    "East review washed sandstone panel 3": [
+      0.34,
+      0.84,
+      0.84,
+      0.8
+    ],
+    "East review washed sandstone panel 4": [
+      0.34,
+      0.98,
+      0.91,
+      0.79
+    ],
     "East review cool dressed coping edge": [
       0.36,
       0.73,
       0.71,
       0.64
+    ],
+    "East review dense mown turf": [
+      0.14,
+      0.83,
+      0.92,
+      0.76
+    ],
+    "East review light gravel 0": [
+      0.19,
+      0.89,
+      0.86,
+      0.81
+    ],
+    "East review light gravel 1": [
+      0.19,
+      1.0,
+      0.97,
+      0.91
+    ],
+    "East review light gravel 2": [
+      0.19,
+      0.94,
+      0.91,
+      0.86
+    ],
+    "East review light gravel 3": [
+      0.19,
+      0.82,
+      0.79,
+      0.74
+    ],
+    "East review purple shrub leaf 0": [
+      0.18,
+      0.83,
+      0.72,
+      0.83
+    ],
+    "East review purple shrub leaf 1": [
+      0.18,
+      0.95,
+      0.88,
+      0.91
+    ],
+    "East review purple shrub leaf 2": [
+      0.18,
+      0.7,
+      0.64,
+      0.76
+    ],
+    "East review radial planting leaf 0": [
+      0.2,
+      0.81,
+      0.9,
+      0.68
+    ],
+    "East review radial planting leaf 1": [
+      0.2,
+      0.95,
+      0.97,
+      0.78
+    ],
+    "East review radial planting leaf 2": [
+      0.2,
+      0.67,
+      0.83,
+      0.59
     ]
   },
   "player_points": {

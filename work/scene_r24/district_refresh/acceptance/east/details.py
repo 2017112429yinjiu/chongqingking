@@ -7,6 +7,7 @@ import bmesh
 from mathutils import Vector
 
 from build import ASSETS, box, read
+from textured_goods import STOCK, TEXTURE, UVSurface, food_material, ginger, plant_material
 
 
 def blade(mesh, anchor, angle, length, width, lift, mats):
@@ -14,23 +15,25 @@ def blade(mesh, anchor, angle, length, width, lift, mats):
     along=Vector((cos(angle),sin(angle),0))
     across=Vector((-sin(angle),cos(angle),0))
     verts=[]
-    for t,spread,camber in ((0,.055,0),(.19,.59,.43),(.4,.96,.74),(.61,1,1),(.79,.74,.96),(.92,.39,.87),(1,.015,.68)):
+    uvs=[]
+    profile=((0,.055,0),(.19,.59,.43),(.4,.96,.74),(.61,1,1),(.79,.74,.96),(.92,.39,.87),(1,.015,.68))
+    for t,spread,camber in profile:
         p=anchor+along*(t*length)+Vector((0,0,camber*lift))
         w=width*spread
         ripple=.12*width*sin(t*36+angle)
         verts.append([p-across*w+Vector((0,0,ripple-w*.31)),p,p+across*w+Vector((0,0,-ripple-w*.44))])
+        uvs.append([(.574+side*.083*spread,.688+.290*t) for side in (-1,0,1)])
     for i,(a,b) in enumerate(zip(verts,verts[1:])):
+        c,d=uvs[i:i+2]
         for j in (0,1):
             points=(a[j],b[j],b[j+1],a[j+1])
-            mesh.face(points,mats[(i+j)%2])
-            mesh.face([p-Vector((0,0,.0008)) for p in points[::-1]],mats[-1])
-    for a,b in zip(verts[1:-1],verts[2:]):
-        mesh.face([a[1]+Vector((0,0,.0012)),b[1]+Vector((0,0,.0012)),
-                   b[1]+across*.003,a[1]+across*.003],mats[1])
+            texture=(c[j],d[j],d[j+1],c[j+1])
+            mesh.face(points,mats[(i+j)%2],texture)
+            mesh.face([p-Vector((0,0,.0008)) for p in points[::-1]],mats[-1],texture[::-1])
 
 
 def canopy(scope, name, positions, rng, tone):
-    mesh=scope.mesh(name)
+    mesh=scope.mesh(name,UVSurface)
     for center,radius,height,leaf_size,amount in positions:
         e,n,h=center
         for i in range(amount):
@@ -66,22 +69,24 @@ def market_goods(scope, plot, at):
     mesh.free()
     scope.borrowed[part.name]=slots
     baskets=scope.mesh('Review01_PartitionedMarketTraysAndCrates')
-    fruit=scope.mesh('Review01_MixedProduceSkins')
+    fruit=scope.mesh('Review01_MixedProduceSkins',UVSurface)
     scope.smooth.add(fruit.name)
-    leaves=scope.mesh('Review01_BunchedGreensRoundedLeaves')
+    leaves=scope.mesh('Review01_BunchedGreensRoundedLeaves',UVSurface)
     wood=scope.finish('market basket staves',(.63,.45,.30),'wood_table_worn_diff_2k.jpg',.2)
     enamel=scope.finish('market wet goods blue enamel',(.21,.44,.53),metal=.22,rough=.65)
     paper=scope.finish('market folded pale kraft liners',(.60,.54,.37))
     wire=scope.finish('brushed shallow basin edge',(.57,.60,.55),metal=.62,rough=.42)
-    colors=[[scope.finish('fruit colour %d %d'%(i,j),rgb,rough=.51 if i<3 else .74)
-             for j,rgb in enumerate(row)] for i,row in enumerate((
-        ((.76,.30,.037),(.64,.17,.026),(.76,.43,.078),(.54,.23,.069)),
-        ((.28,.076,.14),(.40,.098,.126),(.31,.19,.056),(.17,.054,.113)),
-        ((.60,.13,.065),(.82,.325,.061),(.42,.37,.044),(.69,.45,.22)),
-        ((.57,.45,.31),(.69,.57,.39),(.54,.35,.174),(.47,.41,.30))))]
-    stem=scope.finish('market stems and calyx',(.23,.37,.11))
-    greens=[scope.finish('vegetable leaf tone %d'%i,t,rough=.73) for i,t in enumerate(
-        ((.21,.41,.09),(.43,.59,.23),(.12,.28,.085),(.31,.49,.17),(.66,.70,.36)))]
+    kinds=('mandarin','aubergine','squash','potato')
+    colors=[[food_material(scope,f'{kind} skin {j}',tint,kind) for j,tint in enumerate(row)]
+            for kind,row in zip(kinds,(
+        ((1.,.85,.79),(.93,.69,.62),(1.,.98,.86),(.85,.72,.74)),
+        ((.88,.79,.92),(.98,.94,.89),(.74,.82,.88),(.81,.67,.80)),
+        ((1.,.94,.81),(1.,.78,.70),(.84,.91,.73),(.97,.91,.78)),
+        ((.91,.82,.70),(1.,.96,.88),(.89,.72,.58),(.81,.79,.69)),
+    ),strict=True)]
+    stem=plant_material(scope,'market stems and calyx',(.47,.64,.32))
+    greens=[plant_material(scope,'vegetable leaf tone %d'%i,t) for i,t in enumerate(
+        ((.78,.96,.64),(.91,1.,.78),(.65,.84,.58),(.80,.90,.61),(.94,.97,.78)))]
     rng=Random(12101)
 
     def rings(dest,u,v,z,rad,kind,phase):
@@ -103,12 +108,16 @@ def market_goods(scope, plot, at):
                 row.append(at(u+dx*cos(phase)-dy*sin(phase),v+dx*sin(phase)+dy*cos(phase),
                               z+rad*(height*deformation+.065*ratio*sin(a))))
             rows.append(row)
-        dest.face(rows[0][::-1],appearance)
-        for old,new in zip(rows,rows[1:]):
+        dest.face(rows[0][::-1],appearance,[(.5+.29*cos(k*2*pi/detail),.5+.29*sin(k*2*pi/detail))
+                                            for k in reversed(range(detail))])
+        for i,(old,new) in enumerate(zip(rows,rows[1:])):
+            a,b=i/(len(rows)-1),(i+1)/(len(rows)-1)
             for j in range(detail):
                 k=(j+1)%detail
-                dest.face([old[j],old[k],new[k],new[j]],appearance)
-        dest.face(rows[-1],stem if kind<3 else appearance)
+                u0,u1=j/detail,(j+1)/detail
+                dest.face([old[j],old[k],new[k],new[j]],appearance,[(u0,a),(u1,a),(u1,b),(u0,b)])
+        dest.face(rows[-1],stem if kind<3 else appearance,
+                  [(.574+.04*cos(k*2*pi/detail),.83+.065*sin(k*2*pi/detail)) for k in range(detail)])
 
     def bowl(u,v,z,rx,ry,profile,mat):
         for (r0,h0),(r1,h1) in zip(profile,profile[1:]):
@@ -129,6 +138,9 @@ def market_goods(scope, plot, at):
                 box(baskets,at,u-.32,u+.32,y-.39,y+.39,.879,.893,paper)
                 for n in (-.38,.38):
                     box(baskets,at,u-.317,u+.317,y+n-.016,y+n+.014,.882,.992,wood)
+                if stall==2:
+                    ginger(scope,at,u,y,.895,plot['bearing'])
+                    continue
             else:
                 box(baskets,at,u-.25,u+.25,y-.34,y+.34,.881,.903,wood)
             kind=(stall+j)%4
@@ -191,11 +203,13 @@ def gate_wings(scope, at):
 
 def planted_bed(scope, topology, center, axis, across, half, radius, top):
     edges=topology(.002)
-    stone=scope.mesh('Review22_LargeVerticalStoneFacing')
+    stone=scope.mesh('Review22_LargeVerticalStoneFacing',UVSurface)
     soil=scope.mesh('Review22_ClippedTurfAndPaleMineralBed')
-    blades=scope.mesh('Review22_LowDenseGrassAndRadialLeaves')
-    tan=[scope.finish('warm limestone block %d'%i,col,rough=.83) for i,col in enumerate(
-         ((.53,.47,.39),(.60,.55,.45),(.53,.48,.41),(.47,.45,.40),(.59,.53,.46)))]
+    blades=scope.mesh('Review22_RadialLeaves',UVSurface)
+    tan=[scope.pbr('washed sandstone panel %d'%i,col,TEXTURE+'washed-stone-buff-albedo.jpg',
+                  TEXTURE+'washed-stone-normal.jpg',TEXTURE+'washed-stone-rough.jpg',
+                  ambient=.34,tint=col,normal_strength=.36,specular=.21) for i,col in enumerate(
+         ((.94,.90,.80),(.99,.93,.82),(.89,.89,.84),(.84,.84,.80),(.98,.91,.79)))]
     edge=scope.finish('cool dressed coping edge',(.73,.71,.64),'concrete_floor_worn_001_diff_2k.jpg',.36)
     joint=scope.finish('fine weathered vertical pointing',(.37,.34,.29))
     stone_seed=Random(2208)
@@ -215,23 +229,23 @@ def planted_bed(scope, topology, center, axis, across, half, radius, top):
             high=top-.071
             face=[(*p,low(p)),(*q,low(q)),(*q,high),(*p,high)]
             tone=tan[(i//2+k)%len(tan)]
-            stone.face(face,tone)
+            phase=stone_seed.uniform(0,1)
+            rise=(high-(low(p)+low(q))*.5)*1.29
+            tex=(phase,phase+(q-p).length*1.29)
+            stone.face(face,tone,[(tex[0],.21),(tex[1],.21),(tex[1],.21+rise),(tex[0],.21+rise)])
             stone.face([*face[:2],(*q,low(q)+.022),(*p,low(p)+.022)],joint)
-            for _ in range(5):
-                t=stone_seed.uniform(.077,.87);u=stone_seed.uniform(.14,.88)
-                p0=p.lerp(q,t)+edge_normal*.001
-                z=low(p0)+(high-low(p0))*u
-                stone.face([(*p0,z),(*(p0.lerp(q,.079)),z+.007),(*(p0.lerp(q,.045)),z+.019)],tan[3])
         a,b=a+edge_normal*.012,b+edge_normal*.012
         stone.face([(*a,top-.068),(*b,top-.068),(*b,top-.012),(*a,top-.012)],edge)
     bottom=top-.121
-    grass=[scope.finish('mown turf %d'%i,col,rough=.90) for i,col in enumerate(
-        ((.20,.31,.079),(.29,.41,.118),(.17,.29,.084),(.25,.36,.10),(.26,.34,.13)))]
-    pale=[scope.finish('light garden gravel %d'%i,col,rough=.91) for i,col in enumerate(
-        ((.67,.64,.55),(.84,.81,.72),(.77,.75,.66),(.59,.57,.51)))]
+    grass=scope.pbr('dense mown turf',(.83,.92,.76),TEXTURE+'turf-albedo.jpg',TEXTURE+'turf-normal.jpg',
+                    TEXTURE+'turf-rough.jpg',ambient=.14,tint=(.83,.92,.76))
+    pale=[scope.pbr('light gravel %d'%i,col,TEXTURE+'pale-gravel-albedo.jpg',
+                    STOCK+'leaf_scattered_gravel_nor_gl_2k.jpg',STOCK+'leaf_scattered_gravel_rough_2k.png',
+                    ambient=.19,tint=col) for i,col in enumerate(
+        ((.89,.86,.81),(1.,.97,.91),(.94,.91,.86),(.82,.79,.74)))]
     inner=topology(.263)
     for a,b in zip(inner,inner[1:]+inner[:1]):
-        soil.face([(*center,bottom),(*a,bottom),(*b,bottom)],grass[0])
+        soil.face([(*center,bottom),(*a,bottom),(*b,bottom)],grass)
     def xy(u,v):
         return center+axis*u+across*v
     def inside(u,v):
@@ -257,18 +271,12 @@ def planted_bed(scope, topology, center, axis, across, half, radius, top):
             width=rng.uniform(.012,.031)
             soil.face([(*(p+Vector((cos(k*pi/2+a),sin(k*pi/2+a)))*width),bottom+.014+rng.uniform(.006,.011))
                        for k in range(4)],rng.choice(pale))
-        else:
-            r=Vector((cos(a),sin(a)))*rng.uniform(.009,.017)
-            q=p+Vector((cos(a+.89),sin(a+.89)))*rng.uniform(.018,.044)
-            blade_points=[(*(p-r),bottom+.014),(*(p+r),bottom+.014),(*q,bottom+rng.uniform(.04,.079))]
-            blades.face(blade_points,rng.choice(grass))
-            blades.face(blade_points[::-1],grass[2])
-    purple=[scope.finish('purple shrub leaf %d'%i,col,rough=.73) for i,col in enumerate(
-        ((.28,.105,.23),(.41,.18,.32),(.22,.083,.18)))]
-    centers=[((*xy(u,v),bottom),r,h,.078,270) for u,v,r,h in ((-1.68,.87,.45,.51),(1.41,.86,.39,.42))]
+    purple=[plant_material(scope,'purple shrub leaf %d'%i,col,purple=True) for i,col in enumerate(
+        ((.83,.72,.83),(.95,.88,.91),(.70,.64,.76)))]
+    centers=[((*xy(u,v),bottom),r,h,.102,340) for u,v,r,h in ((-1.68,.87,.45,.51),(1.41,.86,.39,.42))]
     canopy(scope,'Review22_TwoPurpleRoundedShrubs',centers,rng,purple)
-    agave=[scope.finish('radial planting leaf %d'%i,col,rough=.58) for i,col in enumerate(
-        ((.28,.50,.22),(.52,.65,.31),(.21,.39,.15)))]
+    agave=[plant_material(scope,'radial planting leaf %d'%i,col) for i,col in enumerate(
+        ((.81,.90,.68),(.95,.97,.78),(.67,.83,.59)))]
     for i,(u,v) in enumerate(((-2.10,-.62),(-.69,-.94),(.65,-.77),(2.08,-.44))):
         for j in range(15):
             blade(blades,Vector((*xy(u,v),bottom+.016)),j*2.399+i*.73,

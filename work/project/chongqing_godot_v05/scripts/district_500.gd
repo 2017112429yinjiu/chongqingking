@@ -537,19 +537,25 @@ static func install_street_group(district: Node3D, model_path: String, plan_path
 	var textures: Dictionary = plan.get("surface_textures", {})
 	var fill: Dictionary = plan.get("shaded_surface_fill", {})
 	var pbr_maps: Dictionary = plan.get("pbr_maps", {})
+	var tints: Dictionary = plan.get("surface_tints", {})
 	if not textures.is_empty():
 		for part: MeshInstance3D in layer.find_children("*", "MeshInstance3D", true, false):
 			for index in part.mesh.get_surface_count():
 				var finish := part.mesh.surface_get_material(index) as BaseMaterial3D
 				if finish != null and textures.has(finish.resource_name):
 					finish.albedo_texture = load(textures[finish.resource_name]) as Texture2D
+					if tints.has(finish.resource_name):
+						var tint: Array = tints[finish.resource_name]
+						finish.albedo_color = Color(tint[0], tint[1], tint[2])
 					if pbr_maps.has(finish.resource_name):
 						var channels: Array = pbr_maps[finish.resource_name]
 						finish.normal_texture = load(channels[0]) as Texture2D
 						finish.normal_enabled = true
-						finish.normal_scale = .78
+						finish.normal_scale = float(channels[3]) if channels.size() > 3 else .78
+						if channels.size() > 4:
+							finish.metallic_specular = float(channels[4])
 						finish.roughness_texture = load(channels[1]) as Texture2D
-						finish.roughness_texture_channel = BaseMaterial3D.TEXTURE_CHANNEL_RED
+						finish.roughness_texture_channel = BaseMaterial3D.TEXTURE_CHANNEL_GREEN if channels.size() > 2 and channels[2] else BaseMaterial3D.TEXTURE_CHANNEL_RED
 					if fill.has(finish.resource_name):
 						var reflected: Array = fill[finish.resource_name]
 						finish.emission_enabled = true
