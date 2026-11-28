@@ -441,7 +441,8 @@ if public_zhongxing22:
         planted.scale*=entry["scale"]
         planted.rotation_euler.z+=entry["yaw"]
         collection.objects.link(planted)
-if public_jiefang and os.environ.get("CQ_WESTERN_PUBLIC_PARENT") != "1":
+western_active = public_jiefang and os.environ.get("CQ_WESTERN_PUBLIC_PARENT") != "1"
+if western_active:
     western = json.loads((group_assets / "western-public-30-31-33-49.json").read_bytes())
     for name in western["replacement_meshes"] + western["retired_objects"]:
         collection.objects.unlink(collection.objects[name])
@@ -460,6 +461,15 @@ if public_jiefang and os.environ.get("CQ_JIEFANG_GATE25_PARENT") != "1":
     for item in gate_model.objects:
         collection.objects.link(item)
 grade_source = factory_dir / "nanqu_rail_grade/nanqu-rail-grade.blend"
+if western_active and os.environ.get("CQ_ZHONGXING10_ARCADE_PARENT") != "1":
+    arcade = json.loads((group_assets / "zhongxing-arcade10.json").read_bytes())
+    for name in arcade["replacement_meshes"] + arcade["retired_objects"]:
+        collection.objects.unlink(collection.objects[name])
+    with bpy.data.libraries.load(str(factory_dir / "zhongxing_arcade10/zhongxing-arcade10.blend"),
+                                 link=True, relative=True) as (_, arcade_layer):
+        arcade_layer.objects = arcade["new_meshes"] + arcade["replacement_meshes"]
+    for item in arcade_layer.objects:
+        collection.objects.link(item)
 grade_manifest = group_assets / "nanqu-rail-grade.json"
 nanqu_grade = bool(nanqu and grade_source.exists() and grade_manifest.exists()
                    and os.environ.get("CQ_NANQU_RAIL_PARENT") != "1")

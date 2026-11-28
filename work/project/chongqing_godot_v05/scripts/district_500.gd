@@ -36,6 +36,8 @@ const MATI34_35 := "res://assets/district_500/mati-34-35.glb"
 const MATI34_35_SITE := "res://assets/district_500/mati-34-35.json"
 const ZHONGXING_PUBLIC_EDGES := "res://assets/district_500/zhongxing-public-10-12-13-22.glb"
 const ZHONGXING_PUBLIC_EDGES_SITE := "res://assets/district_500/zhongxing-public-10-12-13-22.json"
+const ZHONGXING_ARCADE10 := "res://assets/district_500/zhongxing-arcade10.glb"
+const ZHONGXING_ARCADE10_SITE := "res://assets/district_500/zhongxing-arcade10.json"
 const JIEFANG_PUBLIC_EDGES := "res://assets/district_500/jiefang-public-02-24-25-26.glb"
 const JIEFANG_PUBLIC_EDGES_SITE := "res://assets/district_500/jiefang-public-02-24-25-26.json"
 const JIEFANG_GATE25 := "res://assets/district_500/jiefang-gate25-finish.glb"
@@ -283,12 +285,18 @@ static func install(city: Node3D) -> Dictionary:
 		install_street_group(district, ZHONGXING22_FINISH, ZHONGXING22_FINISH_SITE, "Zhongxing22PublicApron")
 		var finish: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(ZHONGXING22_FINISH_SITE))
 		add_public_edge_trees(district, district.get_node("Zhongxing22PublicApron"), finish.trees)
-	if jiefang_public_active and not "--qa-without-western-public" in OS.get_cmdline_user_args():
+	var western_public_active := jiefang_public_active and not "--qa-without-western-public" in OS.get_cmdline_user_args()
+	if western_public_active:
 		install_street_group(district, WESTERN_PUBLIC, WESTERN_PUBLIC_SITE, "WesternSlopePublicEdges")
 		var western: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(WESTERN_PUBLIC_SITE))
 		retired_bridge_plots.append_array(western.retired_plots)
 	if jiefang_public_active and not "--qa-without-jiefang-gate25" in OS.get_cmdline_user_args():
 		install_street_group(district, JIEFANG_GATE25, JIEFANG_GATE25_SITE, "Jiefang25StreetGate")
+	var arcade10_active := western_public_active and not "--qa-without-zhongxing10-arcade" in OS.get_cmdline_user_args()
+	if arcade10_active:
+		install_street_group(district, ZHONGXING_ARCADE10, ZHONGXING_ARCADE10_SITE, "ZhongxingArcade10")
+		var arcade: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(ZHONGXING_ARCADE10_SITE))
+		retired_bridge_plots.append_array(arcade.retired_plots)
 	var ground := ShaderMaterial.new()
 	ground.shader = preload("res://shaders/district_500_ground.gdshader")
 	ground.set_shader_parameter("street_mask", load("res://assets/district_500/surface_mask.png"))
@@ -465,6 +473,7 @@ static func install(city: Node3D) -> Dictionary:
 		"liangtingzi_45_46_sha256": FileAccess.get_sha256(LIANGTINGZI) if liangtingzi_active else "",
 		"mati_34_35_sha256": FileAccess.get_sha256(MATI34_35) if mati34_active else "",
 		"zhongxing_public_edges_sha256": FileAccess.get_sha256(ZHONGXING_PUBLIC_EDGES) if zhongxing_public_active else "",
+		"zhongxing_arcade10_sha256": FileAccess.get_sha256(ZHONGXING_ARCADE10) if arcade10_active else "",
 		"jiefang_public_edges_sha256": FileAccess.get_sha256(JIEFANG_PUBLIC_EDGES) if jiefang_public_active else "",
 		"nanqu_04_06_51_sha256": FileAccess.get_sha256(NANQU) if nanqu_active else "",
 		"changbin_55_sha256": FileAccess.get_sha256(CHANGBIN_55) if changbin55_active else "",
@@ -501,12 +510,20 @@ static func install_street_group(district: Node3D, model_path: String, plan_path
 	var layer := (load(model_path) as PackedScene).instantiate() as Node3D
 	layer.name = group_name
 	var textures: Dictionary = plan.get("surface_textures", {})
+	var fill: Dictionary = plan.get("shaded_surface_fill", {})
 	if not textures.is_empty():
 		for part: MeshInstance3D in layer.find_children("*", "MeshInstance3D", true, false):
 			for index in part.mesh.get_surface_count():
 				var finish := part.mesh.surface_get_material(index) as BaseMaterial3D
 				if finish != null and textures.has(finish.resource_name):
 					finish.albedo_texture = load(textures[finish.resource_name]) as Texture2D
+					if fill.has(finish.resource_name):
+						var reflected: Array = fill[finish.resource_name]
+						finish.emission_enabled = true
+						finish.emission_operator = BaseMaterial3D.EMISSION_OP_MULTIPLY
+						finish.emission_energy_multiplier = reflected[0]
+						finish.emission = Color(reflected[1], reflected[2], reflected[3])
+						finish.emission_texture = finish.albedo_texture
 	for mesh_name: String in plan.replacement_meshes:
 		var original := district.find_child(mesh_name, true, false) as MeshInstance3D
 		var updated := layer.find_child(mesh_name, true, false) as MeshInstance3D
@@ -780,6 +797,8 @@ static func start_exploration(scene: Node3D) -> void:
 			paths[id]=JIEFANG_PUBLIC_EDGES_SITE
 		if plot == "22" and not "--qa-without-zhongxing22-finish" in OS.get_cmdline_user_args():
 			paths["22"]=ZHONGXING22_FINISH_SITE
+		if plot == "10" and scene.find_child("ZhongxingArcade10",true,false):
+			paths["10"]=ZHONGXING_ARCADE10_SITE
 		for id: String in ["30","31","33","49","30-garden","31-garden"]:
 			paths[id]=WESTERN_PUBLIC_SITE
 		if plot == "25" and not "--qa-without-jiefang-gate25" in OS.get_cmdline_user_args():
