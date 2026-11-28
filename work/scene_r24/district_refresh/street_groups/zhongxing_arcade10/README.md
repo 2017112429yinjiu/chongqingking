@@ -17,3 +17,7 @@ bash work/scene_r24/district_500/play.sh --software -- --explore-500 --north-edg
 ```
 
 场景层由正常 `first_shift.tscn` 安装，`compose.py` 在原城市组合源接入同一编辑层。Godot 4.6.3 用 `walk.gd` 实走，设置新 `CQ_QA_DIR` 并传 `--day-one-test --explore-500 --north-edge=10`。加 `--qa-without-zhongxing10-arcade` 从同一点复验父版阻挡。固定照片观测 `--arcade-camera-plan=<evidence/cameras.json>`。旧 10–12–13–22 组的历史支承脚本可用此父版开关复查 10；另用 `--qa-without-zhongxing22-finish` 复原当时的 22 支承名。
+
+## 候车棚与街面门窗精修
+
+按同址实物重绘站名，并制作原创牌面、透明玻璃、檐下构件及可读的门窗框。生成贴图可先运行 `python3 work/scene_r24/district_refresh/street_groups/zhongxing_arcade10/draw_stop.py work/project/chongqing_godot_v05/assets/district_500`。需要 Pillow 和 Noto Sans CJK Bold TTC。现有图、独立源及运行导出均独立留存。[新旧八机位与实际复走](evidence/stop-and-entrance/README.md)

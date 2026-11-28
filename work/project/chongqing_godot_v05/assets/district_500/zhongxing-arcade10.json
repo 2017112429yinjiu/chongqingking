@@ -9,7 +9,9 @@
     "Zhongxing10_ContinuousUpperWindowAndTransoms",
     "COL_Zhongxing10_RecessedThresholds",
     "COL_Zhongxing10_BlueAndWhiteRail",
-    "COL_Zhongxing10_PublicStopShelter"
+    "COL_Zhongxing10_PublicStopShelter",
+    "Zhongxing10_StationEnamelAndPrintedNotices",
+    "Zhongxing10_GlazedShelterCases"
   ],
   "replacement_meshes": [
     "COLH_Outer500_Household_contact",
@@ -108,7 +110,10 @@
     "Zhongxing10 grey apron pavers": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
     "Zhongxing10 granular pale coping and caps": "res://assets/chongqing_district_concrete_wall_006_diff_2k.jpg",
     "Zhongxing10 weathered east asphalt shoulder": "res://assets/chongqing_district_asphalt_02_diff_1k.jpg",
-    "Zhongxing10 warm muted stop treatment": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg"
+    "Zhongxing10 warm muted stop treatment": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+    "Zhongxing10 printed station name": "res://assets/district_500/arcade10-stop-name.png",
+    "Zhongxing10 printed passenger information": "res://assets/district_500/arcade10-stop-passengers.png",
+    "Zhongxing10 printed courtesy poster": "res://assets/district_500/arcade10-stop-poster.png"
   },
   "walks": {
     "10": [
@@ -175,19 +180,19 @@
   },
   "shaded_surface_fill": {
     "Zhongxing10 warm coursed street brick": [
-      0.36,
+      0.59,
       0.97,
       0.86,
       0.79
     ],
     "Zhongxing10 dark recessed brick": [
-      0.2,
+      0.34,
       0.92,
       0.81,
       0.75
     ],
     "Zhongxing10 granular pale coping and caps": [
-      0.25,
+      0.32,
       0.98,
       0.98,
       0.95
@@ -197,6 +202,24 @@
       0.9,
       0.92,
       0.95
+    ],
+    "Zhongxing10 printed station name": [
+      0.78,
+      1,
+      1,
+      1
+    ],
+    "Zhongxing10 printed passenger information": [
+      0.48,
+      1,
+      1,
+      1
+    ],
+    "Zhongxing10 printed courtesy poster": [
+      0.48,
+      1,
+      1,
+      1
     ]
   }
 }
