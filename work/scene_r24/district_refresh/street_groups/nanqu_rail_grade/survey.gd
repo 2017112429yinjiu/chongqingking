@@ -64,8 +64,11 @@ func verify() -> void:
 	for layer in ["HUD","Hud","UI"]:
 		var overlay:=scene.get_node_or_null(layer)
 		if overlay is CanvasItem: overlay.hide()
+	var hillside_trees := scene.find_children("NanquLandside_Tree_*", "Node3D", true, false)
 	var views: Array=[]
 	for v: Dictionary in plan.views:
+		for tree: Node3D in hillside_trees:
+			tree.visible = not v.get("bank_only", false)
 		camera.fov=v.fov_deg
 		camera.global_position=world_point(v.eye_enu,v.eye_enu[2])
 		camera.look_at(world_point(v.target_enu,v.target_enu[2]))

@@ -476,6 +476,11 @@ if nanqu_grade:
         assert donor_names <= {name.removeprefix("Grade__") for name in layer.objects}
     for obj in layer.objects:
         collection.objects.link(obj)
+    landside_source = factory_dir / "nanqu_rail_grade/nanqu-landside.blend"
+    with bpy.data.libraries.load(str(landside_source), link=True, relative=True) as (archive, bank):
+        bank.objects = [name for name in archive.objects if "NanquLandside_" in name]
+    for obj in bank.objects:
+        collection.objects.link(obj)
 bpy.context.preferences.filepaths.save_version=0
 output_name = "city_and_outer.local.blend" if nanqu else (
     "city_and_outer.before_nanqu.local.blend" if wilderness else

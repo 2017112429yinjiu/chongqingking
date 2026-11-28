@@ -1,0 +1,198 @@
+{
+  "checks": [
+    {
+      "detail": "(-193.5939, 16.01803, 26.2814)",
+      "name": "start_on_734116598",
+      "pass": true
+    },
+    {
+      "detail": "(-185.6154, 16.44445, 20.69159)",
+      "name": "underinflated_scooter_parked",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "offset": -1.3,
+          "step": 0,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": 0.0,
+          "step": 0,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": 1.3,
+          "step": 0,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": -1.3,
+          "step": 1,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": 0.0,
+          "step": 1,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": 1.3,
+          "step": 1,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": -1.3,
+          "step": 2,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": 0.0,
+          "step": 2,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": 1.3,
+          "step": 2,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": -1.3,
+          "step": 3,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": 0.0,
+          "step": 3,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": 1.3,
+          "step": 3,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": -1.3,
+          "step": 4,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": 0.0,
+          "step": 4,
+          "support": "COL_Outer500_RepairCourt"
+        },
+        {
+          "offset": 1.3,
+          "step": 4,
+          "support": "COL_Outer500_RepairCourt"
+        }
+      ],
+      "name": "all_stone_treads_exposed_across_lane",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 16.7304981600028,
+        "end": "(-188.4417, 16.45353, 18.9123)",
+        "goals": 2,
+        "max_frame_displacement_m": 0.0751094818115234,
+        "name": "public_walk_to_repair_counter",
+        "pass": false,
+        "reached": 0,
+        "stall_contacts": [
+          {
+            "mesh": "COL_NanquLandside_Bank",
+            "normal": "(-0.427931, -0.616845, 0.660589)",
+            "position": "(-188.3089, 18.0889, 18.70938)"
+          },
+          {
+            "mesh": "COL_NanquLandside_Bank",
+            "normal": "(-0.427931, -0.616845, 0.660589)",
+            "position": "(-188.309, 18.08864, 18.70908)"
+          },
+          {
+            "mesh": "COL_NanquLandside_Bank",
+            "normal": "(-0.427931, -0.616845, 0.660589)",
+            "position": "(-188.3111, 18.09179, 18.71069)"
+          }
+        ]
+      },
+      "name": "walk_in_through_front",
+      "pass": false
+    },
+    {
+      "detail": "<null>",
+      "name": "workbench_within_reach",
+      "pass": false
+    },
+    {
+      "detail": 1.15,
+      "name": "E_inflates_player_scooter",
+      "pass": false
+    },
+    {
+      "detail": "",
+      "name": "repeat_check_preserves_bike_and_wallet",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 4.35381159947974,
+        "end": "(-187.2496, 16.45407, 19.73239)",
+        "goals": 2,
+        "max_frame_displacement_m": 0.0134043181315064,
+        "name": "workshop_to_court",
+        "pass": false,
+        "reached": 0,
+        "stall_contacts": [
+          {
+            "mesh": "COL_NanquLandside_Bank",
+            "normal": "(-0.453615, -0.608236, 0.65137)",
+            "position": "(-187.11, 18.09001, 19.5304)"
+          },
+          {
+            "mesh": "COL_NanquLandside_Bank",
+            "normal": "(-0.453615, -0.608236, 0.65137)",
+            "position": "(-187.1099, 18.09142, 19.53175)"
+          }
+        ]
+      },
+      "name": "reach_inner_court",
+      "pass": false
+    },
+    {
+      "detail": {
+        "distance_m": 2.5706919467757,
+        "end": "(-187.2439, 16.45425, 19.73261)",
+        "goals": 4,
+        "max_frame_displacement_m": 0.0090123750269413,
+        "name": "return_to_same_street",
+        "pass": false,
+        "reached": 0,
+        "stall_contacts": [
+          {
+            "mesh": "COL_NanquLandside_Bank",
+            "normal": "(-0.453615, -0.608236, 0.65137)",
+            "position": "(-187.1057, 18.08917, 19.53256)"
+          },
+          {
+            "mesh": "COL_NanquLandside_Bank",
+            "normal": "(-0.453615, -0.608236, 0.65137)",
+            "position": "(-187.1054, 18.09005, 19.53363)"
+          }
+        ]
+      },
+      "name": "walk_back_from_court",
+      "pass": false
+    },
+    {
+      "detail": "(-187.2439, 16.45425, 19.73261)",
+      "name": "back_at_start",
+      "pass": false
+    }
+  ],
+  "images": 0,
+  "physics_hz": 60,
+  "ticks_per_image": 9
+}

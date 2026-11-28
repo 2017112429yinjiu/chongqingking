@@ -24,6 +24,8 @@ Blender 4.3.2 用 `blender -b -P work/scene_r24/district_refresh/street_groups/n
 
 东端 16 号并线修订将重叠的车面裁成同一连续坡面，去除内部侧立面和圆形补面独立碰撞。原道板足迹保留，标线随新面落位。[并线逐帧实测及同机位原图](evidence/merge16/README.md)
 
+04 号陆侧植坡独立保存在 `nanqu-landside.blend`。从仓库根目录用 Blender 4.3.2 执行 `blender -b -P work/scene_r24/district_refresh/street_groups/nanqu_rail_grade/build_landside.py -- work/scene_r24/district_refresh/street_groups/nanqu_rail_grade/evidence/landside04/landside-plan.json <output>` 可重建编辑源及 Godot 增量。[前三站同址配准、原生对照与复测](evidence/landside04/README.md)
+
 ```sh
 bash work/scene_r24/district_500/play.sh --software -- --explore-500 --nanqu-riverwalk
 ```

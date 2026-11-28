@@ -2,6 +2,7 @@ extends RefCounted
 
 const MODEL := "res://assets/district_500/nanqu-rail-grade.glb"
 const PLAN := "res://assets/district_500/nanqu-rail-grade.json"
+const LANDSIDE := "res://assets/district_500/nanqu-landside.glb"
 const PREFIX := "Grade__"
 
 static func install(city: Node3D) -> Dictionary:
@@ -37,8 +38,14 @@ static func install(city: Node3D) -> Dictionary:
 		for index in materials.size():
 			donor.set_surface_override_material(index,null if key in spec.get("use_export_materials",[]) else materials[index])
 		part.free()
+	var landside_sha := ""
+	if "--qa-nanqu-landside-parent" not in OS.get_cmdline_user_args():
+		var landside := (load(LANDSIDE) as PackedScene).instantiate()
+		landside.name = "NanquLandside"
+		layer.add_child(landside)
+		landside_sha = FileAccess.get_sha256(LANDSIDE)
 	return {"installed":true,"corrected_meshes":replacements.size(),"model_sha256":FileAccess.get_sha256(MODEL),
-		"plan_sha256":FileAccess.get_sha256(PLAN)}
+		"plan_sha256":FileAccess.get_sha256(PLAN),"landside_sha256":landside_sha}
 
 static func sample(east: float, table: Array) -> float:
 	var lo:=0
