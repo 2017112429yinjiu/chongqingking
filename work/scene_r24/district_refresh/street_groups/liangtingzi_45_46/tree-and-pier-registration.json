@@ -1,0 +1,892 @@
+{
+  "date": "2019-06-29",
+  "image_size": [
+    800,
+    500
+  ],
+  "vertical_fov_degrees": 60,
+  "pitch_degrees": 0,
+  "sources": [
+    {
+      "heading": 181,
+      "en": [
+        149.43412092264853,
+        181.15392263197793
+      ],
+      "pano": "09029200121906291518058701L",
+      "files": {
+        "09029200121906291518058701L.json": {
+          "url": "https://mapsv0.bdimg.com/?qt=sdata&sid=09029200121906291518058701L",
+          "bytes": 2378,
+          "sha256": "e834735ad9020cd1c0f53571da01b958df8bc68625b20d5ca52a6338d1e8311b"
+        },
+        "09029200121906291518058701L-181.jpg": {
+          "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200121906291518058701L&heading=181&pitch=0&fovy=60&width=800&height=500",
+          "bytes": 121595,
+          "sha256": "cce0c72d81767a770744c3f1600608604a890b8b45fcc066ba2aac094a1acb62"
+        }
+      },
+      "provider_source_height": 1.8
+    },
+    {
+      "heading": 161,
+      "en": [
+        142.77287858141838,
+        180.08092179971192
+      ],
+      "pano": "09029200121906291519159841L",
+      "files": {
+        "09029200121906291519159841L.json": {
+          "url": "https://mapsv0.bdimg.com/?qt=sdata&sid=09029200121906291519159841L",
+          "bytes": 2378,
+          "sha256": "29869ea85c028215e11b32229fa93d5f89e946104dba6d8808aa2a3a75b4dbfd"
+        },
+        "09029200121906291519159841L-161.jpg": {
+          "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200121906291519159841L&heading=161&pitch=0&fovy=60&width=800&height=500",
+          "bytes": 125984,
+          "sha256": "afa5aea5c196d7623bfbb886b50a8c11314bb278300b28735af42e7234e58bd9"
+        }
+      },
+      "provider_source_height": 1.8
+    },
+    {
+      "heading": 186,
+      "en": [
+        151.64320380500706,
+        185.2423266372067
+      ],
+      "pano": "09029200121906291519131171L",
+      "files": {
+        "09029200121906291519131171L.json": {
+          "url": "https://mapsv0.bdimg.com/?qt=sdata&sid=09029200121906291519131171L",
+          "bytes": 2378,
+          "sha256": "2f30501ae1ca96c0caedd7ecc262f7c24a22799fac6375dfed6231e3595dee5e"
+        },
+        "09029200121906291519131171L-186.jpg": {
+          "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200121906291519131171L&heading=186&pitch=0&fovy=60&width=800&height=500",
+          "bytes": 150869,
+          "sha256": "32e5f8571bd6008c4faa28e9a39958e3dac92f4bbffba617f7385a426676a411"
+        }
+      },
+      "provider_source_height": 1.8
+    },
+    {
+      "heading": 192,
+      "en": [
+        153.99943627893467,
+        180.74230908609758
+      ],
+      "pano": "09029200121906291518255991L",
+      "files": {
+        "09029200121906291518255991L.json": {
+          "url": "https://mapsv0.bdimg.com/?qt=sdata&sid=09029200121906291518255991L",
+          "bytes": 2909,
+          "sha256": "d86f4e868bd700c1e96ad3d131d47c314d6e7ba7ff5e26e52fcea5580114f8a5"
+        },
+        "09029200121906291518255991L-192.jpg": {
+          "url": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200121906291518255991L&heading=192&pitch=0&fovy=60&width=800&height=500",
+          "bytes": 96968,
+          "sha256": "8cf12642d53dc955c737da5f68471184458d275c9c00d7810755bf38b1fbccb1"
+        }
+      },
+      "provider_source_height": 1.8
+    }
+  ],
+  "pair": [
+    181,
+    192
+  ],
+  "controls": {
+    "tree_root_visible_axis": {
+      "picks": [
+        [
+          181,
+          329,
+          488
+        ],
+        [
+          192,
+          478,
+          393
+        ],
+        [
+          186,
+          319,
+          487
+        ]
+      ],
+      "paired_diagnostic": {
+        "en": [
+          150.6814117204923,
+          172.61634817238135
+        ],
+        "forward_m": [
+          8.628204447481622,
+          8.777273366010117
+        ],
+        "signed_residual_m": [
+          -5.88418203051333e-14,
+          -4.707345624410664e-14
+        ],
+        "azimuth_degrees": [
+          171.68821575531214,
+          202.21137049860283
+        ],
+        "leave_one_other_lateral_m": {
+          "186": 1.97
+        },
+        "pixel_pick_5_px_plan_bounds": [
+          [
+            150.58134713766128,
+            172.2316920159053
+          ],
+          [
+            150.7816472422339,
+            172.9692725095833
+          ]
+        ],
+        "depth_inside_old_45_outline_m": 0.8721344815960572
+      },
+      "unconstrained_fit_all_candidates": {
+        "en": [
+          151.44259791136858,
+          174.11195340434543
+        ],
+        "forward_m": [
+          7.258345797205934,
+          7.1049016031562875,
+          11.078520603463428
+        ],
+        "signed_residual_m": [
+          -0.9693950202698907,
+          -0.13932736223820896,
+          1.091710706182514
+        ],
+        "azimuth_degrees": [
+          171.68821575531214,
+          202.21137049860283,
+          175.40461828254672
+        ]
+      }
+    },
+    "tree_at_blue_sign_height": {
+      "picks": [
+        [
+          181,
+          360,
+          352
+        ],
+        [
+          192,
+          482,
+          235
+        ],
+        [
+          186,
+          344,
+          358
+        ]
+      ],
+      "paired_diagnostic": {
+        "en": [
+          150.15209522036443,
+          171.55538296093462
+        ],
+        "forward_m": [
+          9.62535458613203,
+          9.9600022515139
+        ],
+        "signed_residual_m": [
+          1.0524914273446484e-13,
+          3.552713678800501e-14
+        ],
+        "azimuth_degrees": [
+          175.72222094368803,
+          202.72317353557662
+        ],
+        "leave_one_other_lateral_m": {
+          "186": 1.818
+        },
+        "pixel_pick_5_px_plan_bounds": [
+          [
+            150.0402650920024,
+            171.06370691305594
+          ],
+          [
+            150.26426380359453,
+            172.00145250532248
+          ]
+        ],
+        "depth_inside_old_45_outline_m": 1.9994990546925504
+      },
+      "unconstrained_fit_all_candidates": {
+        "en": [
+          150.93406028613455,
+          173.13375892108283
+        ],
+        "forward_m": [
+          8.109704090368696,
+          8.202079993528631,
+          12.088169838287333
+        ],
+        "signed_residual_m": [
+          -0.8975208133245839,
+          -0.11157674730251044,
+          0.9982217324004521
+        ],
+        "azimuth_degrees": [
+          175.72222094368803,
+          202.72317353557662,
+          178.63104076731477
+        ]
+      }
+    },
+    "tree_upper_outline": {
+      "picks": [
+        [
+          181,
+          383,
+          250
+        ],
+        [
+          192,
+          485,
+          177
+        ],
+        [
+          186,
+          367,
+          279
+        ]
+      ],
+      "paired_diagnostic": {
+        "en": [
+          149.66448024878383,
+          170.5820448671172
+        ],
+        "forward_m": [
+          10.574387211290048,
+          11.046393655072873
+        ],
+        "signed_residual_m": [
+          4.063416270128073e-14,
+          1.021405182655144e-14
+        ],
+        "azimuth_degrees": [
+          178.7517327420419,
+          203.10589731752438
+        ],
+        "leave_one_other_lateral_m": {
+          "186": 1.558
+        },
+        "pixel_pick_5_px_plan_bounds": [
+          [
+            149.54224091980342,
+            169.9799734338481
+          ],
+          [
+            149.78723973742908,
+            171.12265635831832
+          ]
+        ],
+        "depth_inside_old_45_outline_m": 3.0340493999147204
+      },
+      "unconstrained_fit_all_candidates": {
+        "en": [
+          150.39995038764536,
+          172.03652757488274
+        ],
+        "forward_m": [
+          9.136271631809105,
+          9.419966072706295,
+          13.23599962465124
+        ],
+        "signed_residual_m": [
+          -0.7669809987216986,
+          -0.10568628890830123,
+          0.8643621176857439
+        ],
+        "azimuth_degrees": [
+          178.7517327420419,
+          203.10589731752438,
+          181.64189940295822
+        ]
+      }
+    },
+    "white_board_face": {
+      "picks": [
+        [
+          181,
+          134,
+          354
+        ],
+        [
+          192,
+          211,
+          265
+        ],
+        [
+          186,
+          111,
+          358
+        ]
+      ],
+      "paired_diagnostic": {
+        "en": [
+          156.29627514866914,
+          169.53327147575826
+        ],
+        "forward_m": [
+          13.495506434226254,
+          11.441940086520493
+        ],
+        "signed_residual_m": [
+          1.0036416142611415e-13,
+          3.5083047578154947e-14
+        ],
+        "azimuth_degrees": [
+          149.43756534196046,
+          168.4198471761884
+        ],
+        "leave_one_other_lateral_m": {
+          "186": 3.188
+        },
+        "pixel_pick_5_px_plan_bounds": [
+          [
+            156.06554239959593,
+            168.86210196396115
+          ],
+          [
+            156.55360174634313,
+            170.13494535391754
+          ]
+        ],
+        "depth_inside_old_45_outline_m": -1.1090160202556036
+      },
+      "unconstrained_fit_all_candidates": {
+        "en": [
+          155.7707555176928,
+          173.478698017546
+        ],
+        "forward_m": [
+          9.830981319722692,
+          7.471331250306893,
+          12.333473335627005
+        ],
+        "signed_residual_m": [
+          -1.5536464090510118,
+          -0.2771767468010735,
+          1.817987052091639
+        ],
+        "azimuth_degrees": [
+          149.43756534196046,
+          168.4198471761884,
+          152.28018334708761
+        ]
+      }
+    },
+    "blue_sign_on_next_brick_pier": {
+      "picks": [
+        [
+          181,
+          383,
+          354
+        ],
+        [
+          192,
+          468,
+          235
+        ],
+        [
+          186,
+          365,
+          360
+        ]
+      ],
+      "paired_diagnostic": {
+        "en": [
+          149.6887469519495,
+          169.4683733525868
+        ],
+        "forward_m": [
+          11.688323078007214,
+          12.069949022142339
+        ],
+        "signed_residual_m": [
+          1.9040324872321435e-14,
+          2.1316282072803006e-14
+        ],
+        "azimuth_degrees": [
+          178.7517327420419,
+          200.92479811120344
+        ],
+        "leave_one_other_lateral_m": {
+          "186": 1.574
+        },
+        "pixel_pick_5_px_plan_bounds": [
+          [
+            149.55364787136816,
+            168.73082163596771
+          ],
+          [
+            149.82437702796054,
+            170.12337579212698
+          ]
+        ],
+        "depth_inside_old_45_outline_m": 4.131996196658485
+      },
+      "unconstrained_fit_all_candidates": {
+        "en": [
+          150.42833534211883,
+          171.1053241102976
+        ],
+        "forward_m": [
+          10.067872465404076,
+          10.276816890306971,
+          14.162143097225593
+        ],
+        "signed_residual_m": [
+          -0.7750732753471029,
+          -0.10618817176477258,
+          0.8743275825800064
+        ],
+        "azimuth_degrees": [
+          178.7517327420419,
+          200.92479811120344,
+          181.3788835695631
+        ]
+      }
+    },
+    "bench_end_at_white_pier_side": {
+      "picks": [
+        [
+          181,
+          164,
+          442
+        ],
+        [
+          192,
+          281,
+          388
+        ]
+      ],
+      "paired_diagnostic": {
+        "en": [
+          154.55123359923778,
+          171.3621295767238
+        ],
+        "forward_m": [
+          11.048260197055175,
+          9.396395474370456
+        ],
+        "signed_residual_m": [
+          -4.707345624410664e-14,
+          -3.3306690738754696e-16
+        ],
+        "azimuth_degrees": [
+          152.40879190445077,
+          176.63340508504376
+        ],
+        "leave_one_other_lateral_m": {},
+        "pixel_pick_5_px_plan_bounds": [
+          [
+            154.42896398879756,
+            170.882547372932
+          ],
+          [
+            154.6854219232495,
+            171.79894525532416
+          ]
+        ],
+        "depth_inside_old_45_outline_m": 0.8863989063003295
+      },
+      "unconstrained_fit_all_candidates": {
+        "en": [
+          154.55123359923778,
+          171.3621295767238
+        ],
+        "forward_m": [
+          11.048260197055175,
+          9.396395474370456
+        ],
+        "signed_residual_m": [
+          -4.707345624410664e-14,
+          -3.3306690738754696e-16
+        ],
+        "azimuth_degrees": [
+          152.40879190445077,
+          176.63340508504376
+        ]
+      }
+    },
+    "public_stone_at_base_of_tree": {
+      "picks": [
+        [
+          181,
+          330,
+          491
+        ],
+        [
+          192,
+          479,
+          407
+        ]
+      ],
+      "paired_diagnostic": {
+        "en": [
+          150.66138419463854,
+          172.6192443264895
+        ],
+        "forward_m": [
+          8.62246536188754,
+          8.782184967663811
+        ],
+        "signed_residual_m": [
+          6.94999613415348e-14,
+          -3.019806626980426e-14
+        ],
+        "azimuth_degrees": [
+          171.81711770593424,
+          202.3394790534557
+        ],
+        "leave_one_other_lateral_m": {},
+        "pixel_pick_5_px_plan_bounds": [
+          [
+            150.56135730019946,
+            172.23472122675457
+          ],
+          [
+            150.76158786528669,
+            172.97204705359377
+          ]
+        ],
+        "depth_inside_old_45_outline_m": 0.8722202049452069
+      },
+      "unconstrained_fit_all_candidates": {
+        "en": [
+          150.66138419463854,
+          172.6192443264895
+        ],
+        "forward_m": [
+          8.62246536188754,
+          8.782184967663811
+        ],
+        "signed_residual_m": [
+          6.94999613415348e-14,
+          -3.019806626980426e-14
+        ],
+        "azimuth_degrees": [
+          171.81711770593424,
+          202.3394790534557
+        ]
+      }
+    },
+    "balcony_purple_fabric": {
+      "picks": [
+        [
+          181,
+          398,
+          216
+        ],
+        [
+          161,
+          234,
+          126
+        ],
+        [
+          186,
+          376,
+          225
+        ],
+        [
+          192,
+          397,
+          84
+        ]
+      ],
+      "paired_diagnostic": {
+        "en": [
+          149.12407158789182,
+          156.99780049277462
+        ],
+        "forward_m": [
+          24.158111834207816,
+          24.23986116315552
+        ],
+        "signed_residual_m": [
+          -5.850875339774575e-14,
+          -4.973799150320701e-14
+        ],
+        "azimuth_degrees": [
+          180.73536401204274,
+          191.60304954642228
+        ],
+        "leave_one_other_lateral_m": {
+          "161": 9.963,
+          "186": 1.123
+        },
+        "pixel_pick_5_px_plan_bounds": [
+          [
+            148.76362255627686,
+            153.65895037697277
+          ],
+          [
+            149.4063581295715,
+            159.6139049093574
+          ]
+        ],
+        "depth_inside_old_45_outline_m": -5.075088344571744
+      },
+      "unconstrained_fit_all_candidates": {
+        "en": [
+          150.73276755664818,
+          170.09580208117998
+        ],
+        "forward_m": [
+          11.040542736145506,
+          12.765702991373605,
+          15.172996126037567,
+          11.085966070695374
+        ],
+        "signed_residual_m": [
+          -1.440461484151295,
+          0.31508003338065915,
+          0.1621383603442934,
+          1.0585802880817412
+        ],
+        "azimuth_degrees": [
+          180.73536401204274,
+          140.02514554265417,
+          182.82759145178844,
+          191.60304954642228
+        ]
+      }
+    },
+    "corner_below_blue_canopy": {
+      "picks": [
+        [
+          181,
+          443,
+          336
+        ],
+        [
+          161,
+          255,
+          239
+        ],
+        [
+          186,
+          422,
+          344
+        ],
+        [
+          192,
+          474,
+          209
+        ]
+      ],
+      "paired_diagnostic": {
+        "en": [
+          147.46531277426365,
+          164.32104249300824
+        ],
+        "forward_m": [
+          16.947626951820343,
+          17.67350464666265
+        ],
+        "signed_residual_m": [
+          9.103828801926284e-15,
+          3.375077994860476e-14
+        ],
+        "azimuth_degrees": [
+          186.6711213647154,
+          201.69791513731704
+        ],
+        "leave_one_other_lateral_m": {
+          "161": 5.875,
+          "186": 0.888
+        },
+        "pixel_pick_5_px_plan_bounds": [
+          [
+            147.06559111871564,
+            162.72967852137688
+          ],
+          [
+            147.80142797874524,
+            165.65961369021574
+          ]
+        ],
+        "depth_inside_old_45_outline_m": 1.9239044657653555
+      },
+      "unconstrained_fit_all_candidates": {
+        "en": [
+          149.31970624532295,
+          171.07178323859998
+        ],
+        "forward_m": [
+          10.02716810944888,
+          11.132816052284602,
+          14.359412537474249,
+          10.715487439047234
+        ],
+        "signed_residual_m": [
+          -1.0576035035600648,
+          0.2931498254724252,
+          0.1010579055886911,
+          0.772833939619435
+        ],
+        "azimuth_degrees": [
+          186.6711213647154,
+          142.48620026457195,
+          188.9085156720398,
+          201.69791513731704
+        ]
+      }
+    }
+  },
+  "reading": "The 181° and 192° frames show the same trunk next to the blue-sign pier, a tree well and continuous grey paving outside the railing. The independent 186° frame shows the same order, but its unadjusted ray misses the paired tree root by about 1.97 m. The 161° trunk and the upper projecting facade are useful for identifying the sequence, with correspondence or pose uncertainty too large for an exact wall-foot limit.",
+  "historical_photos": [
+    {
+      "pano": "09029200121711081306357099T",
+      "date": "20171108",
+      "heading": 176,
+      "en": [
+        151.1995167620215,
+        182.73097765757575
+      ],
+      "metadata": "https://mapsv0.bdimg.com/?qt=sdata&sid=09029200121711081306357099T",
+      "picture": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200121711081306357099T&heading=176&pitch=0&fovy=72&width=800&height=500",
+      "metadata_sha256": "5485f3cf5c00addd815477f2c91601f4a6b04b48d1f673fdecc3288ae9bd8eb6",
+      "image_sha256": "2ad01cfdeae1e04ce2d0b151f2c39f305f320c2bc976f34cd32ac9bfe63c3ec3"
+    },
+    {
+      "pano": "09029200011610031558001787G",
+      "date": "20161003",
+      "heading": 162,
+      "en": [
+        147.93867453662162,
+        184.51454066546103
+      ],
+      "metadata": "https://mapsv0.bdimg.com/?qt=sdata&sid=09029200011610031558001787G",
+      "picture": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200011610031558001787G&heading=162&pitch=0&fovy=72&width=800&height=500",
+      "metadata_sha256": "8063d350662ef847a92ede1245f657ddc76296261172bd5fa75d1418a3d2f5ca",
+      "image_sha256": "be3a0e47ec57b9bbfd50c230395b92039d6bce38023b49f62007b5877b774d65"
+    },
+    {
+      "pano": "09029200011509040423391811A",
+      "date": "20150904",
+      "heading": 219,
+      "en": [
+        156.63404060869325,
+        177.75103409148892
+      ],
+      "metadata": "https://mapsv0.bdimg.com/?qt=sdata&sid=09029200011509040423391811A",
+      "picture": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200011509040423391811A&heading=219&pitch=0&fovy=72&width=800&height=500",
+      "metadata_sha256": "823edb3b34236d1ce25c4aa43d4fff36e3a176bb12c79720b6994a9c4bd1437d",
+      "image_sha256": "5c18213509dea3fc31c6c6b0913a33a900eba32b89b8aac0730b8fe482de618d"
+    },
+    {
+      "pano": "09029200121711081306403079T",
+      "date": "20171108",
+      "heading": 127,
+      "en": [
+        141.26844719143182,
+        180.06468381779212
+      ],
+      "metadata": "https://mapsv0.bdimg.com/?qt=sdata&sid=09029200121711081306403079T",
+      "picture": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200121711081306403079T&heading=127&pitch=0&fovy=72&width=800&height=500",
+      "metadata_sha256": "70a5abf75e99d79693f284d7097973f3a19fd043df1783e004b987734c40db48",
+      "image_sha256": "ab3a76c72c9a324cdc9c4ebe00130e0f905dab8e7e712c22094448011e6de59d"
+    },
+    {
+      "pano": "09029200011610031558035517G",
+      "date": "20161003",
+      "heading": 129,
+      "en": [
+        140.52937221390508,
+        181.3447885373762
+      ],
+      "metadata": "https://mapsv0.bdimg.com/?qt=sdata&sid=09029200011610031558035517G",
+      "picture": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200011610031558035517G&heading=129&pitch=0&fovy=72&width=800&height=500",
+      "metadata_sha256": "25d6addc490cbe3a88010a8123c8ba1acfa525fd5166e0d080dfb40cdf803b31",
+      "image_sha256": "f00ff4910b2ec7cc5796e803cabadaebab2a26cd556c882c43ff2802af1ccf8b"
+    },
+    {
+      "pano": "09029200011509040423365171A",
+      "date": "20150904",
+      "heading": 125,
+      "en": [
+        148.39010839882596,
+        174.57167138616302
+      ],
+      "metadata": "https://mapsv0.bdimg.com/?qt=sdata&sid=09029200011509040423365171A",
+      "picture": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200011509040423365171A&heading=125&pitch=0&fovy=72&width=800&height=500",
+      "metadata_sha256": "d3a3c2462807eed67cb66565bdad70e7561e120651b29f46da9b6f1aa5668b67",
+      "image_sha256": "32b767c4a96dfeaaab01f86991c399096e1db1d600ab6414074549605a37bf3b"
+    },
+    {
+      "pano": "09029200121906291518294521L",
+      "date": "20190629",
+      "heading": 224,
+      "en": [
+        167.35656041178217,
+        187.76415526875036
+      ],
+      "metadata": "https://mapsv0.bdimg.com/?qt=sdata&sid=09029200121906291518294521L",
+      "picture": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200121906291518294521L&heading=224&pitch=0&fovy=72&width=800&height=500",
+      "metadata_sha256": "a6d9fe8af0dffa024a28c58a171beaa6a666460728a2215cfefdad05cfb355da",
+      "image_sha256": "6c986350a625e7f7539d451a384fcde2c91dda67a70731f87f86b8d2d14815b8"
+    },
+    {
+      "pano": "09029200121906291518033101L",
+      "date": "20190629",
+      "heading": 199,
+      "en": [
+        156.82599833833822,
+        186.18653882937775
+      ],
+      "metadata": "https://mapsv0.bdimg.com/?qt=sdata&sid=09029200121906291518033101L",
+      "picture": "https://mapsv0.bdimg.com/?qt=pr3d&panoid=09029200121906291518033101L&heading=199&pitch=0&fovy=72&width=800&height=500",
+      "metadata_sha256": "ba695e0a388f1c77c9e407f16e770023105b78741964385a8de08b0b9c33fa75",
+      "image_sha256": "0d8d62411c6e5c41623eb60ec6a1f890fb3f562690c2bd571384eaeb28411e21"
+    }
+  ],
+  "interpretation": {
+    "2015": "Public paving, timber seats and low rail run; some street-level surfaces hidden by parked vehicles.",
+    "2016": "Daylight confirms two wooden seats flanking the tree outside the low brick boundary and iron bars.",
+    "2017": "Near frontal daylight confirms square tree well, staggered grey paving, brick piers, grey house with window cages and steps beyond the white-plaque end.",
+    "2019": "The same sequence remains. Lighting, tree leaves and traffic hide portions of the lower window and the lane behind the gate."
+  },
+  "historic_root_check": [
+    {
+      "pano": "09029200121711081306403079T",
+      "date": "20171108",
+      "root_pixel_candidate": [
+        542,
+        428
+      ],
+      "raw_ray_azimuth_deg": 149.42477227899636,
+      "lateral_m_to_2019_pair": -4.315466012183768
+    },
+    {
+      "pano": "09029200011610031558001787G",
+      "date": "20161003",
+      "root_pixel_candidate": [
+        699,
+        426
+      ],
+      "raw_ray_azimuth_deg": 202.98884107507502,
+      "lateral_m_to_2019_pair": -7.1717725739356935
+    },
+    {
+      "pano": "09029200011509040423391811A",
+      "date": "20150904",
+      "root_pixel_candidate": [
+        230,
+        377
+      ],
+      "raw_ray_azimuth_deg": 192.70837508278905,
+      "lateral_m_to_2019_pair": 4.677230368335859
+    }
+  ]
+}

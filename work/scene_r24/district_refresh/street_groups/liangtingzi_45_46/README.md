@@ -14,3 +14,7 @@
 重建时先用 `CQ_LIANGTINGZI_PARENT=1 blender -b --factory-startup -P work/scene_r24/district_500/compose.py` 生成父组合，再用 Blender 4.3.2 打开它并执行本目录的 `build.py -- <导出目录>`。可用 `CQ_LIANGTINGZI_SOURCE` 指定独立模型保存路径。把导出 GLB/JSON 装入 Godot `assets/district_500`，组合城使用不带父版参数的 `compose.py`。本目录 `check_source.py` 核支撑，Godot 4.6.3 导入并运行 `walk.gd`。要重拍加 `--site-fixed-views=<views.json>`；父版用 `--qa-without-liangtingzi-45-46`。
 
 后续共同砖墩、下沉店边和树下铺地已经复拍。独立两眼和四眼的配准、树位与旧楼冲突及可达范围见 [精修实测与图片](evidence/refined-lane/README.md)。
+
+## 白牌墩与树井复查
+
+2015–2019 同址街眼补登记树井、长椅、围栏、灰铺和浅灰住房的公开相邻关系。下巷白牌墩与既有点位互证，按实物整理公共收边。试作框架在实证树井范围上方仍有实体，树根及完整楼脚线保留待核。 [原图来源、投影与同机位走测](evidence/tree-and-pier/README.md)
