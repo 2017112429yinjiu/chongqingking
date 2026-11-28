@@ -9,6 +9,9 @@ from mathutils import Vector
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent))
 from build import ASSETS, apply_finish, box, read
+sys.path.insert(0,str(HERE))
+from scanned_crowns import finish_crowns
+from public_space import lower_49, mati as mati_public, western_wall
 
 STREETS = HERE.parents[1]/'street_groups'
 Edge = runpy.run_path(str(STREETS/'north_edges/build.py'))['Edge']
@@ -126,3 +129,7 @@ def mati(scope):
 def make(scope):
     slope(scope)
     mati(scope)
+    western_wall(scope)
+    mati_public(scope)
+    lower_49(scope)
+    finish_crowns(scope)

@@ -1,15 +1,47 @@
 {
   "new_meshes": [
-    "Review26_StaggeredLayByFlagsAndDrainStrips"
+    "Review26_StaggeredLayByFlagsAndDrainStrips",
+    "Review26_GroundedStreetTreePockets",
+    "Jiefang26StreetTree_0ScannedLeaves",
+    "Jiefang26StreetTree_1ScannedLeaves"
   ],
   "retired_objects": [],
   "replacement_meshes": [
     "COL_Jiefang26_PublicFlags",
     "COL_Jiefang26_LowerRoadLayBy"
   ],
+  "borrowed_materials": {},
+  "trees": [
+    {
+      "donor": "Outer500_Plant_001",
+      "name": "Jiefang26StreetTree_0",
+      "enu": [
+        180.9123992919922,
+        -123.1026840209961,
+        13.428964538574219
+      ],
+      "scale": 0.82,
+      "yaw": -0.2904371167239833
+    },
+    {
+      "donor": "Outer500_Plant_001",
+      "name": "Jiefang26StreetTree_1",
+      "enu": [
+        187.79335021972656,
+        -125.1612777709961,
+        12.520875854492187
+      ],
+      "scale": 0.82,
+      "yaw": -0.28656246953640013
+    }
+  ],
+  "pbr_maps": {},
   "surface_textures": {
     "Jiefang review pale patched granite": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
-    "Jiefang review stone curb face": "res://assets/chongqing_district_stone_wall_05_diff_2k.jpg"
+    "Jiefang review stone curb face": "res://assets/chongqing_district_stone_wall_05_diff_2k.jpg",
+    "Jiefang review Jiefang street pale tree edging": "res://assets/chongqing_district_stone_floor_diff_2k.jpg",
+    "Jiefang review Jiefang tree bed grit": "res://assets/chongqing_district_leaf_scattered_gravel_diff_2k.jpg",
+    "Jiefang review scanned street broadleaf": "res://assets/chongqing_district_island_tree_01_leaves_diff_2k.jpg"
   },
   "shaded_surface_fill": {
     "Jiefang review pale patched granite": [
@@ -23,6 +55,24 @@
       0.64,
       0.645,
       0.62
+    ],
+    "Jiefang review Jiefang street pale tree edging": [
+      0.21,
+      0.65,
+      0.67,
+      0.64
+    ],
+    "Jiefang review Jiefang tree bed grit": [
+      0.11,
+      0.43,
+      0.45,
+      0.35
+    ],
+    "Jiefang review scanned street broadleaf": [
+      0.21,
+      0.3,
+      0.43,
+      0.16
     ]
   },
   "player_points": {

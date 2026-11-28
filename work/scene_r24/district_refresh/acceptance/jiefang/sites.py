@@ -6,6 +6,8 @@ from mathutils import Vector
 
 HERE=Path(__file__).resolve().parent
 sys.path.insert(0,str(HERE.parent))
+sys.path.insert(0,str(HERE.parent/"west"))
+from scanned_crowns import finish_crowns
 from build import ASSETS, apply_finish, box, read
 
 STREETS=HERE.parents[1]/'street_groups'
@@ -38,3 +40,24 @@ def make(scope):
             if i==1:
                 for k in range(5):
                     box(mesh,point,s+k*.038,s+k*.038+.014,.52,.62,.006,.018,flush)
+    # The dated views support a planted public street edge. The private shell
+    # and the construction screens belong to different evidence scopes.
+    from math import atan2
+    cut=scope.mesh('Review26_GroundedStreetTreePockets')
+    curb=scope.finish('Jiefang street pale tree edging',(.65,.67,.64),'stone_floor_diff_2k.jpg',.21)
+    earth=scope.finish('Jiefang tree bed grit',(.43,.45,.35),'leaf_scattered_gravel_diff_2k.jpg',.11)
+    for i,idx in enumerate((1,3,5)):
+        if idx>=len(route)-1:
+            continue
+        a,b=Vector(route[idx][:2]),Vector(route[idx+1][:2])
+        along=(b-a).normalized()
+        across=Vector((-along.y,along.x))
+        center=a+1.16*across+.13*along
+        def world(u,v,h):
+            e,n=center+u*along+v*across
+            return e,n,scope.floor(e,n)+h
+        box(cut,world,-.43,.43,-.33,.33,-.022,.040,curb)
+        box(cut,world,-.39,.39,-.29,.29,.04,.047,earth)
+        scope.trees.append({'donor':'Outer500_Plant_001','name':f'Jiefang26StreetTree_{i}',
+                            'enu':list(world(0,0,.045)),'scale':.39+i*.04,'yaw':atan2(along.y,along.x)})
+    finish_crowns(scope)
