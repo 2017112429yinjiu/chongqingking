@@ -18,6 +18,12 @@
     "COL_Review35_PublicGrayWallAndStoneCoping",
     "Review35_PublicFlagsAndLinearDrain",
     "Review35_FineBlackRails",
+    "Review30_PublicWallWindowReturn",
+    "Review30_PublicUnderCanopyCutStone",
+    "COL_Review34_MatixStreetLinkApron",
+    "Review34_GreyStoneStreetTurnAndStep",
+    "COL_Review34_RegisteredStairSideWall",
+    "Review34_CloseRegisteredBlackRailCorner",
     "Review49_LowerStreetPavingAndGravelEdges",
     "COL_Review49_LowSlopeFooting",
     "Review49_PairedBinsAndTrunkWhitewash",
@@ -242,21 +248,31 @@
   "pbr_maps": {
     "West review green retaining stone 0": [
       "res://assets/district_r21/terraces_mossy_stone_wall_nor_gl_2k.jpg",
-      "res://assets/district_r21/terraces_mossy_stone_wall_rough_2k.png"
+      "res://assets/district_r21/terraces_mossy_stone_wall_rough_2k.png",
+      false
     ],
     "West review green retaining stone 1": [
       "res://assets/district_r21/terraces_mossy_stone_wall_nor_gl_2k.jpg",
-      "res://assets/district_r21/terraces_mossy_stone_wall_rough_2k.png"
+      "res://assets/district_r21/terraces_mossy_stone_wall_rough_2k.png",
+      false
     ],
     "West review green retaining stone 2": [
       "res://assets/district_r21/terraces_mossy_stone_wall_nor_gl_2k.jpg",
-      "res://assets/district_r21/terraces_mossy_stone_wall_rough_2k.png"
+      "res://assets/district_r21/terraces_mossy_stone_wall_rough_2k.png",
+      false
+    ],
+    "West review 30 large shaded wall limestone": [
+      "res://assets/district_r21/terraces_mossy_stone_wall_nor_gl_2k.jpg",
+      "res://assets/district_r21/terraces_mossy_stone_wall_rough_2k.png",
+      false
     ],
     "West review 49 low slope toe grey masonry": [
       "res://assets/district_r21/terraces_mossy_stone_wall_nor_gl_2k.jpg",
-      "res://assets/district_r21/terraces_mossy_stone_wall_rough_2k.png"
+      "res://assets/district_r21/terraces_mossy_stone_wall_rough_2k.png",
+      false
     ]
   },
+  "surface_tints": {},
   "surface_textures": {
     "West review secure damp wall stones": "res://assets/chongqing_district_stone_wall_05_diff_2k.jpg",
     "West review gray-split garden flags": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
@@ -275,6 +291,14 @@
     "West review Mati street dressed flags": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
     "West review Mati street low blue grey bricks": "res://assets/chongqing_district_brick_wall_08_diff_2k.jpg",
     "West review Mati wall earth and leaf edges": "res://assets/chongqing_district_leaf_scattered_gravel_diff_2k.jpg",
+    "West review 30 large shaded wall limestone": "res://assets/district_r21/terraces_mossy_stone_wall_diff_2k.jpg",
+    "West review 30 wall foot with runoff stains": "res://assets/chongqing_district_stone_wall_05_diff_2k.jpg",
+    "West review 30 pale plaster below small windows": "res://assets/chongqing_district_concrete_wall_006_diff_2k.jpg",
+    "West review 30 worn vertical wood panels": "res://assets/chongqing_district_wood_table_worn_diff_2k.jpg",
+    "West review 30 shaded grey flags": "res://assets/chongqing_district_stone_floor_diff_2k.jpg",
+    "West review 34 close cut grey flags": "res://assets/chongqing_district_stone_floor_diff_2k.jpg",
+    "West review 34 tread arrises and coping": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+    "West review 34 blue grey clay wall feet": "res://assets/chongqing_district_brick_wall_08_diff_2k.jpg",
     "West review 49 low street grey pavers": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
     "West review 49 tree pit leaf gravel": "res://assets/chongqing_district_leaf_scattered_gravel_diff_2k.jpg",
     "West review 49 readably cut curb stone": "res://assets/chongqing_district_stone_floor_diff_2k.jpg",
@@ -384,6 +408,54 @@
       0.37,
       0.22
     ],
+    "West review 30 large shaded wall limestone": [
+      0.17,
+      0.5,
+      0.53,
+      0.44
+    ],
+    "West review 30 wall foot with runoff stains": [
+      0.16,
+      0.53,
+      0.55,
+      0.49
+    ],
+    "West review 30 pale plaster below small windows": [
+      0.17,
+      0.76,
+      0.74,
+      0.67
+    ],
+    "West review 30 worn vertical wood panels": [
+      0.11,
+      0.47,
+      0.37,
+      0.26
+    ],
+    "West review 30 shaded grey flags": [
+      0.13,
+      0.68,
+      0.69,
+      0.65
+    ],
+    "West review 34 close cut grey flags": [
+      0.17,
+      0.73,
+      0.74,
+      0.7
+    ],
+    "West review 34 tread arrises and coping": [
+      0.2,
+      0.8,
+      0.81,
+      0.76
+    ],
+    "West review 34 blue grey clay wall feet": [
+      0.16,
+      0.6,
+      0.62,
+      0.59
+    ],
     "West review 49 low street grey pavers": [
       0.3,
       0.69,
@@ -474,6 +546,18 @@
         -58.37545394897461,
         189.43446350097656,
         47.75897134399414
+      ]
+    ],
+    "34-street": [
+      [
+        -65.22999572753906,
+        165.01950073242188,
+        44.43412131501492
+      ],
+      [
+        -70.67887878417969,
+        164.48646545410156,
+        43.86765863629351
       ]
     ]
   }

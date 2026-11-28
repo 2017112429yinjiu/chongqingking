@@ -1,0 +1,87 @@
+{
+  "raw_directory": "/workspace/work/runtime/district-refresh/remaining-33-KxMhkZe8/remaining21-9zoDuH/finish-final-refined-43-long",
+  "exit": 2,
+  "checks": [
+    {
+      "detail": {
+        "distance_m": 83.8326337262988,
+        "end": "(-68.20119, 44.42994, -166.4287)",
+        "goals": 89,
+        "max_frame_displacement_m": 0.432624399662018,
+        "name": "osm_59146654_out",
+        "pass": false,
+        "reached": 31,
+        "stall_contacts": [
+          {
+            "mesh": "COL_Review34_RegisteredStairSideWall",
+            "normal": "(0.980295, 0.0, -0.197538)",
+            "position": "(-68.50166, 45.89163, -166.3644)"
+          }
+        ]
+      },
+      "name": "osm_59146654_out",
+      "pass": false
+    },
+    {
+      "detail": {
+        "distance_m": 151.855039932299,
+        "end": "(-68.70251, 44.14175, -165.225)",
+        "goals": 89,
+        "max_frame_displacement_m": 0.250304013490677,
+        "name": "osm_59146654_back",
+        "pass": false,
+        "reached": 56,
+        "stall_contacts": [
+          {
+            "mesh": "COL_Review34_RegisteredStairSideWall",
+            "normal": "(0.197513, 0.0, 0.9803)",
+            "position": "(-68.76353, 45.59199, -165.5367)"
+          }
+        ]
+      },
+      "name": "osm_59146654_back",
+      "pass": false
+    },
+    {
+      "detail": {
+        "distance_m": 83.8326337262988,
+        "end": "(-68.20119, 44.42994, -166.4287)",
+        "goals": 152,
+        "max_frame_displacement_m": 0.432624399662018,
+        "name": "joined_streets_out",
+        "pass": false,
+        "reached": 31,
+        "stall_contacts": [
+          {
+            "mesh": "COL_Review34_RegisteredStairSideWall",
+            "normal": "(0.980295, 0.0, -0.197538)",
+            "position": "(-68.50169, 45.89153, -166.3645)"
+          }
+        ]
+      },
+      "name": "joined_streets_out",
+      "pass": false
+    },
+    {
+      "detail": {
+        "distance_m": 329.078470118227,
+        "end": "(-68.70132, 44.14172, -165.2242)",
+        "goals": 152,
+        "max_frame_displacement_m": 0.233435496687889,
+        "name": "joined_streets_back",
+        "pass": false,
+        "reached": 119,
+        "stall_contacts": [
+          {
+            "mesh": "COL_Review34_RegisteredStairSideWall",
+            "normal": "(0.197513, 0.0, 0.9803)",
+            "position": "(-68.7626, 45.59195, -165.5369)"
+          }
+        ]
+      },
+      "name": "joined_streets_back",
+      "pass": false
+    }
+  ],
+  "amended": "Transfer the lower masonry bearing to the raised side, retaining the measured rail tip and the lower walk."
+}

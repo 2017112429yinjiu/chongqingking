@@ -12,6 +12,7 @@ from build import ASSETS, apply_finish, box, read
 sys.path.insert(0,str(HERE))
 from scanned_crowns import finish_crowns
 from public_space import lower_49, mati as mati_public, western_wall
+from registered_corners import entrance34, wall30
 
 STREETS = HERE.parents[1]/'street_groups'
 Edge = runpy.run_path(str(STREETS/'north_edges/build.py'))['Edge']
@@ -131,5 +132,7 @@ def make(scope):
     mati(scope)
     western_wall(scope)
     mati_public(scope)
+    wall30(scope)
+    entrance34(scope)
     lower_49(scope)
     finish_crowns(scope)
