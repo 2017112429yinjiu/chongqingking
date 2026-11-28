@@ -41,9 +41,10 @@ func verify() -> void:
 	var upper_columns := []
 	for row: Array in road.public_walk.slice(8,14):
 		var hits := column(row.slice(0,2))
-		var existing := hits.filter(func(hit: Array) -> bool: return hit[0]==UPPER and absf(hit[1]-row[2])<.12)
-		upper_columns.append({"enu":row,"layers":hits,"retained_walkway_support":not existing.is_empty()})
-		if not existing.is_empty():
+		var existing := hits.filter(func(hit: Array) -> bool: return hit[0] == UPPER and hit[2] > .8)
+		upper_columns.append({"registered_before_regrade_enu":row,"layers":hits,
+			"active_walkway_support":existing[0][1] if existing.size() == 1 else null})
+		if existing.size() == 1:
 			upper.append(Vector3(row[0],existing[0][1],-row[1]))
 	check("six_expected_upper_deck_ground_contacts",upper.size()==6,upper.size())
 	var lower_result := await follow("52_existing_low_exterior",low)
