@@ -1,0 +1,19 @@
+Blender 4.3.2 (hash 32f5fdce0a0a built 2024-12-17 01:31:14)
+Read blend: "/workspace/chongqing-refresh/work/scene_r24/district_500/outer_district.blend"
+Traceback (most recent call last):
+  File "/workspace/chongqing-refresh/work/scene_r24/district_refresh/acceptance/build.py", line 145, in <module>
+    main()
+  File "/workspace/chongqing-refresh/work/scene_r24/district_refresh/acceptance/build.py", line 140, in main
+    runpy.run_path(str(HERE/region/'sites.py'))['make'](scope)
+  File "/workspace/chongqing-refresh/work/scene_r24/district_refresh/acceptance/east/sites.py", line 140, in make
+    market(scope)
+  File "/workspace/chongqing-refresh/work/scene_r24/district_refresh/acceptance/east/sites.py", line 59, in market
+    market_goods(scope,plot,point)
+  File "/workspace/chongqing-refresh/work/scene_r24/district_refresh/acceptance/east/details.py", line 60, in market_goods
+    assert old_leaf,'No original countertop leaves found'
+           ^^^^^^^^
+AssertionError: No original countertop leaves found
+
+Error: script failed, file: 'work/scene_r24/district_refresh/acceptance/build.py', exiting.
+
+Blender quit

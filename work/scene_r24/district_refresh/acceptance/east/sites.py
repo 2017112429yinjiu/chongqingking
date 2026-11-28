@@ -1,7 +1,6 @@
 """Finish the market's working counter, the mapped gate and the public planter."""
 from math import cos, pi, sin
 from pathlib import Path
-from random import Random
 import sys
 
 from mathutils import Vector
@@ -9,6 +8,8 @@ from mathutils import Vector
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent))
 from build import ASSETS, box, read
+sys.path.insert(0,str(HERE))
+from details import gate_wings, market_goods, planted_bed
 
 STREETS = HERE.parents[1]/'street_groups'
 
@@ -55,6 +56,7 @@ def market(scope):
                 board.face([point(x+.14*cos(a),y+.14*sin(a),2.32),point(x+.14*cos(b),y+.14*sin(b),2.32),
                             point(x+.044*cos(b),y+.044*sin(b),2.46),point(x+.044*cos(a),y+.044*sin(a),2.46)],zinc)
             board.face([point(x+.126*cos(t*pi/8),y+.126*sin(t*pi/8),2.324) for t in reversed(range(16))],cream)
+    market_goods(scope,plot,point)
     scope.points['01']=[[161.1106872559,113.9294586182,38.1440849304],[166,123,39.55]]
 
 
@@ -102,6 +104,7 @@ def gate(scope):
     for s in (2.62,4.72):
         box(trim,surface,s-.076,s+.224,-.227,.255,.313,.371,coping)
         box(trim,surface,s-.024,s+.186,-.176,.213,1.944,2.014,beam)
+    gate_wings(scope,surface)
     scope.retired.append('Zhongxing12_OverlappingTileEaves')
     route=read(ASSETS/'district_500/zhongxing-public-10-12-13-22.json')['walks']['12']
     scope.points['12']=[route[0],[e,n,scope.floor(e,n)+1.4]]
@@ -114,7 +117,6 @@ def plaza(scope):
     top=34.766+.021*(n-81.42)-.009*(e-112)+.55
     radius=spec['round_end_radius_m']; half=spec['straight_half_length_m']; center=Vector((e,n))
     cap=scope.mesh('Review22_FittedCopingBlocks')
-    bed=scope.mesh('Review22_TuftedLowPlanting')
     finish=[scope.finish('bush hammered coping '+str(i),color,'concrete_wall_006_diff_2k.jpg',.22)
             for i,color in enumerate(((.64,.65,.63),(.70,.70,.68),(.60,.63,.61)))]
     def shape(inset):
@@ -129,18 +131,7 @@ def plaza(scope):
             a,b=outer[x].lerp(outer[y],start),outer[x].lerp(outer[y],end)
             d,c=inner[x].lerp(inner[y],start),inner[x].lerp(inner[y],end)
             cap.solid([(*p,top-.012) for p in (a,b,c,d)],[(*p,top+.026) for p in (a,b,c,d)],finish[(i//3)%3])
-    green=[scope.finish('clipped shade foliage '+str(i),col,shaded=.15) for i,col in enumerate((
-        (.23,.36,.11),(.34,.44,.17),(.40,.46,.22),(.15,.27,.09)))]
-    rng=Random(2201)
-    for u,v,count in ((-1.65,-.68,10),(-.49,1.0,8),(.62,-.96,9),(1.53,.76,11)):
-        patch=center+axis*u+across*v
-        for j in range(count):
-            p=patch+Vector((rng.uniform(-.18,.18),rng.uniform(-.22,.22)))
-            for i in range(6):
-                a=rng.uniform(0,2*pi); angle=Vector((cos(a),sin(a))); normal=Vector((-sin(a),cos(a)))
-                length=rng.uniform(.064,.18); height=rng.uniform(.10,.252); mid=p+angle*.61*length
-                bed.face([(*p,top-.121),(*(mid+normal*.017),top+height*.55),
-                          (*(p+angle*length),top+height),(*(mid-normal*.017),top+height*.52)],green[(i+j)%4])
+    planted_bed(scope,shape,center,axis,across,half,radius,top)
     route=read(ASSETS/'district_500/zhongxing-plaza-22-finish.json')['walks']['22']
     scope.points['22']=[route[0],[e,n,top]]
 

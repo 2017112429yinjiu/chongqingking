@@ -508,6 +508,14 @@ for region in ("east", "jiefang", "west", "north", "south"):
         region_layer.objects = finish["new_meshes"] + finish["replacement_meshes"]
     for obj in region_layer.objects:
         collection.objects.link(obj)
+    for plant in finish.get("trees", []):
+        donor = collection.objects[plant["donor"]]
+        tree = donor.copy()
+        tree.name = plant["name"]
+        tree.location = plant["enu"]
+        tree.rotation_euler.z += plant["yaw"]
+        tree.scale *= plant["scale"]
+        collection.objects.link(tree)
 bpy.context.preferences.filepaths.save_version=0
 output_name = "city_and_outer.local.blend" if nanqu else (
     "city_and_outer.before_nanqu.local.blend" if wilderness else

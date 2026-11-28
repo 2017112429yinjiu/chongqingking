@@ -1,26 +1,94 @@
 {
   "new_meshes": [
     "Review01_MarketServingCounterAndLamps",
+    "Review01_PartitionedMarketTraysAndCrates",
+    "Review01_MixedProduceSkins",
+    "Review01_BunchedGreensRoundedLeaves",
     "Review12_TwoCoursedCeramicEaves",
     "Review12_RafterAndStoneFootContacts",
+    "Review12_SteppedBrickWingWallsAndGateDepth",
+    "Review12_CappedWallFoliage",
     "Review22_FittedCopingBlocks",
-    "Review22_TuftedLowPlanting"
+    "Review22_LargeVerticalStoneFacing",
+    "Review22_ClippedTurfAndPaleMineralBed",
+    "Review22_LowDenseGrassAndRadialLeaves",
+    "Review22_TwoPurpleRoundedShrubs"
   ],
   "retired_objects": [
-    "Zhongxing12_OverlappingTileEaves"
+    "Outer500_MarketProduce",
+    "Zhongxing12_OverlappingTileEaves",
+    "Zhongxing22_TurfAndLowShrubs"
   ],
-  "replacement_meshes": [],
+  "replacement_meshes": [
+    "Outer500_Street_furniture"
+  ],
+  "borrowed_materials": {
+    "Outer500_Street_furniture": {
+      "CQEastParentSlot032": "Aged stucco.004",
+      "CQEastParentSlot033": "Concrete bands.005",
+      "CQEastParentSlot034": "Grey overlapping roof tiles.003",
+      "CQEastParentSlot035": "Painted window and rail trim.004",
+      "CQEastParentSlot036": "Red painted steel.002",
+      "CQEastParentSlot037": "Jade painted steel.002",
+      "CQEastParentSlot038": "Ochre canvas.002",
+      "CQEastParentSlot039": "Off-white road pigment.002",
+      "CQEastParentSlot040": "Door and shutter recess.006",
+      "CQEastParentSlot041": "Canopy 0.002",
+      "CQEastParentSlot042": "Canopy 1.002",
+      "CQEastParentSlot043": "Canopy 2.002",
+      "CQEastParentSlot044": "Cream glazed wall skirting.003",
+      "CQEastParentSlot045": "Worn timber joinery.004",
+      "CQEastParentSlot046": "Weathered sheet metal.002",
+      "CQEastParentSlot047": "Faded covered market roofing.003",
+      "CQEastParentSlot048": "Used tyre casing.002",
+      "CQEastParentSlot049": "Brown earthenware.002"
+    }
+  },
+  "trees": [
+    {
+      "donor": "Outer500_Plant_001",
+      "name": "Zhongxing12_WallCrown1",
+      "enu": [
+        216.98409196648132,
+        101.82667433203287,
+        38.699284057617184
+      ],
+      "scale": 0.57,
+      "yaw": 0.74
+    },
+    {
+      "donor": "Outer500_Plant_001",
+      "name": "Zhongxing12_WallCrown2",
+      "enu": [
+        216.71409196648133,
+        107.19667433203287,
+        39.40049407958984
+      ],
+      "scale": 0.75,
+      "yaw": 1.48
+    }
+  ],
+  "pbr_maps": {},
   "surface_textures": {
     "East review glazed celadon work counter": "res://assets/chongqing_district_concrete_wall_006_diff_2k.jpg",
     "East review worn timber edges and hooks": "res://assets/chongqing_district_wood_table_worn_diff_2k.jpg",
+    "East review market basket staves": "res://assets/chongqing_district_wood_table_worn_diff_2k.jpg",
     "East review ceramic weather tone 0": "res://assets/chongqing_district_roof_tiles_diff.jpg",
     "East review ceramic weather tone 1": "res://assets/chongqing_district_roof_tiles_diff.jpg",
     "East review ceramic weather tone 2": "res://assets/chongqing_district_roof_tiles_diff.jpg",
     "East review faded red rafter ends": "res://assets/chongqing_district_wood_table_worn_diff_2k.jpg",
     "East review grey gate stone bases": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+    "East review brick gate wing warm course 0": "res://assets/chongqing_district_brick_wall_08_diff_2k.jpg",
+    "East review brick gate wing warm course 1": "res://assets/chongqing_district_brick_wall_08_diff_2k.jpg",
+    "East review brick gate wing warm course 2": "res://assets/chongqing_district_brick_wall_08_diff_2k.jpg",
+    "East review worn grey gate wall top": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+    "East review red beam gate depth": "res://assets/chongqing_district_wood_table_worn_diff_2k.jpg",
+    "East review planting pocket soil": "res://assets/chongqing_district_leaf_scattered_gravel_diff_2k.jpg",
+    "East review weathered light washed wing wall": "res://assets/chongqing_district_plastered_wall_04_diff_1k.jpg",
     "East review bush hammered coping 0": "res://assets/chongqing_district_concrete_wall_006_diff_2k.jpg",
     "East review bush hammered coping 1": "res://assets/chongqing_district_concrete_wall_006_diff_2k.jpg",
-    "East review bush hammered coping 2": "res://assets/chongqing_district_concrete_wall_006_diff_2k.jpg"
+    "East review bush hammered coping 2": "res://assets/chongqing_district_concrete_wall_006_diff_2k.jpg",
+    "East review cool dressed coping edge": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg"
   },
   "shaded_surface_fill": {
     "East review glazed celadon work counter": [
@@ -34,6 +102,12 @@
       0.57,
       0.41,
       0.27
+    ],
+    "East review market basket staves": [
+      0.2,
+      0.63,
+      0.45,
+      0.3
     ],
     "East review ceramic weather tone 0": [
       0.14,
@@ -65,6 +139,48 @@
       0.62,
       0.61
     ],
+    "East review brick gate wing warm course 0": [
+      0.2,
+      0.67,
+      0.43,
+      0.32
+    ],
+    "East review brick gate wing warm course 1": [
+      0.2,
+      0.57,
+      0.35,
+      0.26
+    ],
+    "East review brick gate wing warm course 2": [
+      0.2,
+      0.61,
+      0.41,
+      0.34
+    ],
+    "East review worn grey gate wall top": [
+      0.27,
+      0.6,
+      0.61,
+      0.53
+    ],
+    "East review red beam gate depth": [
+      0.33,
+      0.4,
+      0.155,
+      0.116
+    ],
+    "East review planting pocket soil": [
+      0.1,
+      0.28,
+      0.3,
+      0.19
+    ],
+    "East review weathered light washed wing wall": [
+      0.33,
+      0.73,
+      0.72,
+      0.65
+    ],
     "East review bush hammered coping 0": [
       0.22,
       0.64,
@@ -82,6 +198,12 @@
       0.6,
       0.63,
       0.61
+    ],
+    "East review cool dressed coping edge": [
+      0.36,
+      0.73,
+      0.71,
+      0.64
     ]
   },
   "player_points": {
@@ -121,5 +243,6 @@
         35.375969999999995
       ]
     ]
-  }
+  },
+  "required_group": "ZhongxingArcade10"
 }

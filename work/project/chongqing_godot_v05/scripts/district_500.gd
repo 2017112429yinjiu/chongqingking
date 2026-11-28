@@ -519,7 +519,11 @@ static func install_acceptance(district: Node3D) -> Dictionary:
 		var donors: Array = plan.retired_objects + plan.replacement_meshes
 		if donors.any(func(name: String) -> bool: return not district.find_child(name, true, false)):
 			continue
-		install_street_group(district, path + ".glb", path + ".json", "Acceptance_" + region)
+		if plan.has("required_group") and not district.has_node(NodePath(plan.required_group)):
+			continue
+		var group := "Acceptance_" + region
+		install_street_group(district, path + ".glb", path + ".json", group)
+		add_public_edge_trees(district, district.get_node(group), plan.get("trees", []))
 		points.merge(plan.player_points, true)
 		installed[region] = FileAccess.get_sha256(path + ".glb")
 	district.set_meta("acceptance_player_points", points)
@@ -532,12 +536,20 @@ static func install_street_group(district: Node3D, model_path: String, plan_path
 	layer.name = group_name
 	var textures: Dictionary = plan.get("surface_textures", {})
 	var fill: Dictionary = plan.get("shaded_surface_fill", {})
+	var pbr_maps: Dictionary = plan.get("pbr_maps", {})
 	if not textures.is_empty():
 		for part: MeshInstance3D in layer.find_children("*", "MeshInstance3D", true, false):
 			for index in part.mesh.get_surface_count():
 				var finish := part.mesh.surface_get_material(index) as BaseMaterial3D
 				if finish != null and textures.has(finish.resource_name):
 					finish.albedo_texture = load(textures[finish.resource_name]) as Texture2D
+					if pbr_maps.has(finish.resource_name):
+						var channels: Array = pbr_maps[finish.resource_name]
+						finish.normal_texture = load(channels[0]) as Texture2D
+						finish.normal_enabled = true
+						finish.normal_scale = .78
+						finish.roughness_texture = load(channels[1]) as Texture2D
+						finish.roughness_texture_channel = BaseMaterial3D.TEXTURE_CHANNEL_RED
 					if fill.has(finish.resource_name):
 						var reflected: Array = fill[finish.resource_name]
 						finish.emission_enabled = true

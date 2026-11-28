@@ -1,9 +1,11 @@
 """Build one proposed district region from its independent site controls."""
+from hashlib import sha256
 import json
 from pathlib import Path
 import runpy
 import sys
 
+import bmesh
 import bpy
 from mathutils import Vector
 from mathutils.bvhtree import BVHTree
@@ -28,6 +30,12 @@ class Region:
         self.images = {}
         self.retired = []
         self.replacement = []
+        self.borrowed = {}
+        self.smooth = set()
+        self.trees = []
+        self.attached_art = []
+        self.pbr_maps = {}
+        self.required_group = ''
         self.points = {}
         self.ground = terrain()
 
@@ -41,13 +49,9 @@ class Region:
         surface.inputs['Metallic'].default_value = metal
         surface.inputs['Roughness'].default_value = rough
         if texture:
-            asset = 'chongqing_district_' + texture
+            asset = texture if '/' in texture else 'chongqing_district_' + texture
             tex = mat.node_tree.nodes.new('ShaderNodeTexImage')
-            if asset not in self.images:
-                image = bpy.data.images.load(str(ASSETS / asset), check_existing=False)
-                image.filepath = '//../../../project/chongqing_godot_v05/assets/' + asset
-                self.images[asset] = image
-            tex.image = self.images[asset]
+            tex.image = self.image(asset)
             mat.node_tree.links.new(tex.outputs['Color'], surface.inputs['Base Color'])
             self.textures[label] = 'res://assets/' + asset
             if shaded:
@@ -58,6 +62,31 @@ class Region:
             surface.inputs['Emission Color'].default_value = (*color, 1)
             surface.inputs['Emission Strength'].default_value = shaded
         return mat
+
+    def image(self, asset, data=False):
+        if asset not in self.images:
+            image = bpy.data.images.load(str(ASSETS / asset), check_existing=False)
+            image.filepath = '//../../../project/chongqing_godot_v05/assets/' + asset
+            if data:
+                image.colorspace_settings.name = 'Non-Color'
+            self.images[asset] = image
+        return self.images[asset]
+
+    def mossy_wall(self, name, color):
+        base = 'district_r21/terraces_mossy_stone_wall_'
+        surface = self.finish(name, color, base + 'diff_2k.jpg', .17)
+        normal, roughness = (base + suffix for suffix in ('nor_gl_2k.jpg', 'rough_2k.png'))
+        nodes = surface.node_tree.nodes
+        links = surface.node_tree.links
+        maps = [nodes.new('ShaderNodeTexImage') for _ in range(2)]
+        for node, asset in zip(maps, (normal, roughness)):
+            node.image = self.image(asset, data=True)
+        bump = nodes.new('ShaderNodeNormalMap')
+        links.new(maps[0].outputs['Color'], bump.inputs['Color'])
+        links.new(bump.outputs['Normal'], nodes['Principled BSDF'].inputs['Normal'])
+        links.new(maps[1].outputs['Color'], nodes['Principled BSDF'].inputs['Roughness'])
+        self.pbr_maps[surface.name] = ['res://assets/' + asset for asset in (normal, roughness)]
+        return surface
 
     def mesh(self, name):
         mesh = Mesh(name)
@@ -81,23 +110,56 @@ class Region:
         self.replacement.append(part)
         return part
 
+    def preserve_finishes(self, part):
+        self.borrowed[part.name] = {mat.name: mat.name for mat in part.data.materials if mat}
+
     def save(self, output):
-        made = [mesh.save() for mesh in self.meshes] + self.replacement
+        made = [mesh.save() for mesh in self.meshes] + self.attached_art + self.replacement
+        for obj in made:
+            if obj.name in self.smooth:
+                geometry = bmesh.new()
+                geometry.from_mesh(obj.data)
+                bmesh.ops.remove_doubles(geometry, verts=list(geometry.verts), dist=.00001)
+                geometry.to_mesh(obj.data)
+                geometry.free()
+                for face in obj.data.polygons:
+                    face.use_smooth = True
         for obj in list(bpy.data.objects):
             if obj not in made:
                 bpy.data.objects.remove(obj, do_unlink=True)
         bpy.data.orphans_purge(do_recursive=True)
+        self.use_existing_donor_images()
         model = 'acceptance-' + self.name
         bpy.context.preferences.filepaths.save_version = 0
         bpy.ops.wm.save_as_mainfile(filepath=str(output/(model+'.blend')), compress=True, relative_remap=False)
         bpy.ops.export_scene.gltf(filepath=str(output/(model+'.glb')), export_format='GLB',
                                   export_image_format='NONE', export_cameras=False, export_lights=False)
-        plan = {'new_meshes':[m.name for m in self.meshes], 'retired_objects':self.retired,
+        plan = {'new_meshes':[m.name for m in self.meshes + self.attached_art], 'retired_objects':self.retired,
                 'replacement_meshes':[m.name for m in self.replacement],
+                'borrowed_materials':self.borrowed,
+                'trees':self.trees, 'pbr_maps':self.pbr_maps,
                 'surface_textures':self.textures,'shaded_surface_fill':self.fill,
                 'player_points':self.points}
+        if self.required_group:
+            plan['required_group'] = self.required_group
         (output/(model+'.json')).write_text(json.dumps(plan,ensure_ascii=False,indent=2)+'\n')
         print('CQ_ACCEPTANCE_REGION',self.name,[(obj.name,len(obj.data.polygons)) for obj in made])
+
+    def use_existing_donor_images(self):
+        for image in bpy.data.images:
+            marker = '/chongqing_godot_v05/assets/'
+            if image.source != 'FILE' or marker not in image.filepath:
+                continue
+            asset = image.filepath.split(marker, 1)[1]
+            target = ASSETS / asset
+            if not target.is_file():
+                continue
+            if image.packed_file:
+                match = sha256(image.packed_file.data).digest() == sha256(target.read_bytes()).digest()
+                if not match:
+                    continue
+                image.unpack(method='REMOVE')
+            image.filepath = '//../../../project/chongqing_godot_v05/assets/' + asset
 
 
 def box(mesh, point, u0, u1, v0, v1, z0, z1, finish):
