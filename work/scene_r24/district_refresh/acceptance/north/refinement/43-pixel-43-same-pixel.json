@@ -1,0 +1,229 @@
+{
+  "fov_degrees": 70,
+  "head_height_m": 2.32,
+  "heading": 329,
+  "hits": [
+    {
+      "direction_enu": [
+        -0.515038073062897,
+        0.857167303562164,
+        0.0
+      ],
+      "eye_enu": [
+        110.951065063477,
+        161.25602722168,
+        38.2470016479492
+      ],
+      "first_hit": {
+        "at": [
+          108.805618286133,
+          164.826644897461,
+          38.2470016479492
+        ],
+        "distance_m": 4.16560363769531,
+        "normal_enu": [
+          0.192029356956482,
+          -0.981389224529266,
+          0.0
+        ],
+        "owner": "COL_Liangtingzi_RearStair_43"
+      },
+      "pixel": [
+        350.0,
+        220.0
+      ]
+    },
+    {
+      "direction_enu": [
+        -0.499355256557465,
+        0.861839294433594,
+        -0.0887543857097626
+      ],
+      "eye_enu": [
+        110.951065063477,
+        161.25602722168,
+        38.2470016479492
+      ],
+      "first_hit": {
+        "at": [
+          108.87442779541,
+          164.840103149414,
+          37.8779029846191
+        ],
+        "distance_m": 4.15863656997681,
+        "normal_enu": [
+          0.192029356956482,
+          -0.981389224529266,
+          0.0
+        ],
+        "owner": "COL_Liangtingzi_RearStair_43"
+      },
+      "pixel": [
+        355.0,
+        248.0
+      ]
+    },
+    {
+      "direction_enu": [
+        -0.32478803396225,
+        0.945274889469147,
+        -0.0311126671731472
+      ],
+      "eye_enu": [
+        110.951065063477,
+        161.25602722168,
+        38.2470016479492
+      ],
+      "first_hit": {
+        "at": [
+          109.287284851074,
+          166.098358154297,
+          38.0876235961914
+        ],
+        "distance_m": 5.12266874313354,
+        "normal_enu": [
+          0.981404185295105,
+          0.191952556371689,
+          0.0
+        ],
+        "owner": "COL_Liangtingzi_RearStair_43"
+      },
+      "pixel": [
+        417.0,
+        230.0
+      ]
+    },
+    {
+      "direction_enu": [
+        -0.174567878246307,
+        0.980358123779297,
+        -0.0917827039957047
+      ],
+      "eye_enu": [
+        110.951065063477,
+        161.25602722168,
+        38.2470016479492
+      ],
+      "first_hit": {
+        "at": [
+          110.056869506836,
+          166.277740478516,
+          37.7768592834473
+        ],
+        "distance_m": 5.1223258972168,
+        "normal_enu": [
+          0.191975295543671,
+          -0.981399774551392,
+          0.0
+        ],
+        "owner": "COL_Outer500_Building_envelopes"
+      },
+      "pixel": [
+        470.0,
+        251.0
+      ]
+    },
+    {
+      "direction_enu": [
+        -0.901664614677429,
+        0.432428032159805,
+        0.00265778042376041
+      ],
+      "eye_enu": [
+        110.951065063477,
+        161.25602722168,
+        38.2470016479492
+      ],
+      "first_hit": {
+        "at": [
+          103.254653930664,
+          164.947128295898,
+          38.2696876525879
+        ],
+        "distance_m": 8.53577709197998,
+        "normal_enu": [
+          0.191975295543671,
+          -0.981399774551392,
+          0.0
+        ],
+        "owner": "COL_Outer500_Building_envelopes"
+      },
+      "pixel": [
+        143.0,
+        219.0
+      ]
+    }
+  ],
+  "local_road_layers": [
+    [
+      "COL_Outer500_Surface_07_08",
+      35.927,
+      0.991
+    ]
+  ],
+  "pixels": [
+    700,
+    440
+  ],
+  "scene_assets": {
+    "acceptance": {
+      "east": "9f6627f1ec1cc229a5c8ef71503bf6027b35946042c70815da4748903abd1425",
+      "jiefang": "cb0d8f61b3b5dd19fd321ed33db5775a0f5ca3416122336c4598b06714ade888",
+      "north": "cfee138b939f8bb448c11d3467728be46294b998a712d8dc4985164c7842e86e",
+      "south": "6329f0d1b1c50e6e97c064e0eb87aa552e491c71fce26fc6db58662e9779a5ef",
+      "west": "51e0388bea759c165829021ce67c25bcf3614396e318aedd162d09ff7a485a13"
+    },
+    "binjiang_sha256": "9130bc07a8b0707f01129a2e2df391eb676364fe951a45fc2d100ff55a4b0f54",
+    "bounds_east_north_m": [
+      -250.0,
+      -250.0,
+      250.0,
+      250.0
+    ],
+    "bridge_park_sha256": "d7610bb70365b506b084810a925ede54321bbb5812b840d8c0810ed1ecb4426c",
+    "changbin_55_sha256": "b24dbc38c8c06c6dd7556479254d5073519713c336041eb7ab4c5c3a0aae312f",
+    "changbin_bend_sha256": "59f467c674151e7e2f55366257a28b12260d9c1eb23ceccc7359b07e18a6af9f",
+    "collectibles_market_sha256": "a23f881d0e9206b40fedc8f262cfdb132194e59825e4728b39800471b684e175",
+    "fenghuangtai_11_sha256": "4e0af537b800faf7856af3659ea9dbe082f587dd3523824015e93fa8fb24d6a2",
+    "glb_sha256": "b0180ce3a8d821253181725ad4516c04f58fe057529680e22a081f89fdd62122",
+    "guoco_sha256": "4dcb3d55080b02d8a0cf02585626bed2dfc3cdb37ae2f987110b55dd56435853",
+    "houci_14_16_sha256": "b41a35494e9c984fa5df55393e597c036efeb49454f674749f6fc3037354c11f",
+    "houci_77_sha256": "71e594772c8218538934c7ebeff75eb965ab0c9754d726c88481dfd5ff72f17a",
+    "jiefang_public_edges_sha256": "8281850d827cb6061d7b6f78ba6f78accc1d3d10275d53c3e3c9abbc7a3bb98e",
+    "liangtingzi_45_46_sha256": "d2a917773cdbfb81b63548c0d3c24f04ec4644f25c672408e5991a1293d27583",
+    "market_stall_row_sha256": "42fffbc9c4a98d3fa615e48fa9ce4eecdf66bf225decbd3d44d40eddf5a41646",
+    "match_factory_sha256": "ab742e6b12ad0b52c4cffef0f8342e1a957b59de5cfe3abde4dd691f853d76c6",
+    "mati_34_35_sha256": "3a0c3f8e3598d88d7bbf414c2f1ee6567ef9f749762fa6bbbcade43a97916b39",
+    "matix_streets_sha256": "3b57fcf46931ff28ce1ab2be4a7250d31af30d302e362816265be8e38852e33b",
+    "nanqu_04_06_51_sha256": "df14048f69e2fba27d69e9673fbe85c27361cfb72eb0fae371e26fd21bccf7d0",
+    "north_38_40_41_sha256": "73b67982d9f9f93fea1c044f76e91ac5f82ad8bdb77a057a25425e41a7be1f10",
+    "osm_building_ids": [
+      809889594.0,
+      809889602.0,
+      809889621.0,
+      704006725,
+      809889619,
+      809889620
+    ],
+    "panda_15_17_sha256": "165c8b1ec9e31dbf2bbda447e1d5db4a37e766a97f1ad1bc45c9e8a60693775f",
+    "park_edge_finish_sha256": "52ba8de0a1bd4ee57439d86b5f0e7efad002311679d486b3b0dbc75bdc0e6d33",
+    "park_plot57_sha256": "b67c6b5fc91cdc8b8fa0e6808f8cedd8b15a49ad36a2566631ae67a1671f9f60",
+    "park_plot59_sha256": "fa02d99cf8eda6971b3b148e8c3fc5031108e134806e25b0e71e3f320cd4747c",
+    "park_plot61_sha256": "b6e7b1a3baf336235be5d553e2c3d24caf36b949a34bbf296d4b2eed31ddeceb",
+    "pavilion_62_sha256": "08d702b1a9ce0464b3bc62f33808befa5b58e5dcd082659b06c4cbc0bbab3e76",
+    "public_edges_sha256": "d585e52e0d927a9639e7285ffecc4932603a4d56b039504f1600763f72cc1be4",
+    "raijiapo_east_sha256": "c230f7e3a225f9e8446cb43b66eebd4cd05fac72cbb6b02787d8d0090038e81d",
+    "retired_internal_context": false,
+    "riverside_sha256": "12f304d468c56fb429d4a4db948f5297b7ca4284f29fc494442c9b2a146f67d1",
+    "west_court_sha256": "32eea2dd1f34b7f5dacbb546a46c6cf106ac3896804677ef9b2ee1dabfb2c683",
+    "west_ramp_sha256": "2a2ae2a4745096ea849dbb5f2365ce1cf437a8dcd974ed4cb47dddd5d5aae8b2",
+    "wilderness_50_finish_sha256": "92c0e84bacfc84b05ab13fe30618222bfff34b64586f5af5a5055526ee769b7f",
+    "wilderness_50_sha256": "ffde86e0c90b8c1b07766fad72b2bf8a3286d91b2f463ca885866a248fa266fa",
+    "xingchen_sha256": "af156281216128407550442694d4dc45ea8507dfc7da4c80efd549a0ffbe127b",
+    "zhongxing_18_21_sha256": "7622184407e04b8641e479be3c549d357de74eaa649baf78eab41bdcc19203af",
+    "zhongxing_arcade10_sha256": "190e0d665118c87503f2db0eca6c318223330eefff50c03428ca1be2f6b17465",
+    "zhongxing_public_edges_sha256": "c77fe6be06d123aea15dfeacea0987608af695da8ae90839e060b18baffcae66",
+    "zhongxing_wall_sha256": "72fa4f4c800a8e27c19d580da66524160c4c2111bd82191706b6c8da142b8d42"
+  },
+  "station": "09029200121906291519265961L"
+}

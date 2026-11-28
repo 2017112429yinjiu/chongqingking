@@ -5,12 +5,20 @@
     "Review43_TreadNosesAndMidLandingJoints",
     "Review42_UndesignatedThresholdAndCasing",
     "Review45_CastTreePitAndPublicSeatSupports",
-    "Review46_LowShopEdgeTransomsAndReveals",
+    "Review46_SteppedPublicShopRevealsAndFoldingAwnings",
+    "Review46_ConcreteDescentAndStoneMargins",
+    "Review46_GreyParapetWithContinuousRailAndSeat",
     "Review42_SchoolGatePiersAndBentRail",
     "Review42_SchoolThreeStoneStepsAndFanFlags",
+    "Review42_OriginalSchoolNameAndPlaque",
+    "Review42_TrimmedSchoolHedge",
     "Review43_SouthRecessedBrickFrontage",
     "Review43_MosaicReturnBalconiesAndWindowGuards",
-    "Review43_SouthStepsAndBrickPublicEdge"
+    "Review43_SouthStepsAndBrickPublicEdge",
+    "Review43_RegisteredGreenFascia",
+    "Review46_PublicShadeTree_1Leaves",
+    "Review46_PublicShadeTree_2Leaves",
+    "Review46_PublicShadeTree_3Leaves"
   ],
   "retired_objects": [],
   "replacement_meshes": [
@@ -19,8 +27,95 @@
     "COL_Liangtingzi_RearStair_43"
   ],
   "borrowed_materials": {},
-  "trees": [],
-  "pbr_maps": {},
+  "trees": [
+    {
+      "name": "Review46_PublicShadeTree_1",
+      "donor": "Outer500_Plant_036",
+      "enu": [
+        152.60614013671875,
+        176.5374755859375,
+        41.713897247314456
+      ],
+      "yaw": 0.19,
+      "scale": 0.78
+    },
+    {
+      "name": "Review46_PublicShadeTree_2",
+      "donor": "Outer500_Plant_036",
+      "enu": [
+        153.7746124267578,
+        171.8258056640625,
+        40.46972610473633
+      ],
+      "yaw": 0.84,
+      "scale": 0.8140000000000001
+    },
+    {
+      "name": "Review46_PublicShadeTree_3",
+      "donor": "Outer500_Plant_036",
+      "enu": [
+        160.0821990966797,
+        170.94580078125,
+        41.45666458129883
+      ],
+      "yaw": 1.33,
+      "scale": 0.8480000000000001
+    }
+  ],
+  "pbr_maps": {
+    "North review lane weathered blue folded awning": [
+      "res://assets/district_500/acceptance_textures/washed-stone-normal.jpg",
+      "res://assets/district_500/acceptance_textures/washed-stone-rough.jpg",
+      false
+    ],
+    "North review school blue-grey dressed stone": [
+      "res://assets/district_500/acceptance_textures/washed-stone-normal.jpg",
+      "res://assets/district_500/acceptance_textures/washed-stone-rough.jpg",
+      false
+    ],
+    "North review school pale grey cap and three treads": [
+      "res://assets/district_500/acceptance_textures/washed-stone-normal.jpg",
+      "res://assets/district_500/acceptance_textures/washed-stone-rough.jpg",
+      false
+    ],
+    "North review school shaded lower masonry": [
+      "res://assets/district_500/acceptance_textures/washed-stone-normal.jpg",
+      "res://assets/district_500/acceptance_textures/washed-stone-rough.jpg",
+      false
+    ],
+    "North review school clipped broadleaf": [
+      "res://assets/chongqing_district_shrub_01_nor_gl_2k.jpg",
+      "res://assets/chongqing_district_shrub_01_arm_2k.jpg",
+      true
+    ]
+  },
+  "surface_tints": {
+    "North review lane weathered blue folded awning": [
+      0.34,
+      0.56,
+      0.88
+    ],
+    "North review school blue-grey dressed stone": [
+      0.64,
+      0.74,
+      0.75
+    ],
+    "North review school pale grey cap and three treads": [
+      0.88,
+      0.92,
+      0.89
+    ],
+    "North review school shaded lower masonry": [
+      0.57,
+      0.69,
+      0.68
+    ],
+    "North review school clipped broadleaf": [
+      0.55,
+      0.72,
+      0.31
+    ]
+  },
   "surface_textures": {
     "North review honed stone coping": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
     "North review faded pink stone": "res://assets/chongqing_district_stone_wall_05_diff_2k.jpg",
@@ -36,15 +131,33 @@
     "North review unnamed dwelling weathered casing": "res://assets/chongqing_district_wood_table_worn_diff_2k.jpg",
     "North review oiled public sitting rails": "res://assets/chongqing_district_wood_table_worn_diff_2k.jpg",
     "North review tree well cut stone": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
-    "North review edged weathered low shop wood": "res://assets/chongqing_district_wood_table_worn_diff_2k.jpg",
-    "North review school grey ledge stone": "res://assets/chongqing_district_stone_wall_05_diff_2k.jpg",
-    "North review school worn light stone step": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
-    "North review school grey-green small paving": "res://assets/chongqing_district_stone_floor_diff_2k.jpg",
+    "North review lane grey fired brick": "res://assets/chongqing_district_brick_wall_08_diff_2k.jpg",
+    "North review lane weathered flag lintel": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+    "North review lane dark timber stall fittings": "res://assets/chongqing_district_wood_table_worn_diff_2k.jpg",
+    "North review lane weathered blue folded awning": "res://assets/chongqing_district_rusty_painted_metal_diff_2k.jpg",
+    "North review public lane grey concrete 1": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+    "North review public lane grey concrete 2": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+    "North review public lane grey concrete 3": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
+    "North review lane grey stone threshold aggregate": "res://assets/chongqing_district_stone_floor_diff_2k.jpg",
+    "North review lane right grey dressed brick": "res://assets/chongqing_district_brick_wall_08_diff_2k.jpg",
+    "North review lane blue grey pier coping": "res://assets/chongqing_district_stone_wall_05_diff_2k.jpg",
+    "North review lane worn slatted seat": "res://assets/chongqing_district_wood_table_worn_diff_2k.jpg",
+    "North review lane mature leafy canopy": "res://assets/chongqing_district_island_tree_01_leaves_diff_2k.jpg",
+    "North review school blue-grey dressed stone": "res://assets/district_r21/terraces_washed_sandstone.jpg",
+    "North review school pale grey cap and three treads": "res://assets/district_r21/terraces_washed_sandstone.jpg",
+    "North review school shaded lower masonry": "res://assets/district_r21/terraces_washed_sandstone.jpg",
+    "North review school green-white fan mosaic": "res://assets/district_500/acceptance_textures/north-school-fan-flags.jpg",
+    "North review school bed leaf litter": "res://assets/chongqing_district_leaf_scattered_gravel_diff_2k.jpg",
+    "North review xinglin-school": "res://assets/district_500/acceptance_textures/north-xinglin-school.jpg",
+    "North review xinglin-placard": "res://assets/district_500/acceptance_textures/north-xinglin-placard.jpg",
+    "North review school clipped broadleaf": "res://assets/chongqing_district_shrub_01_diff_2k.jpg",
     "North review grey stair-side shop brick": "res://assets/chongqing_district_brick_wall_08_diff_2k.jpg",
     "North review grey worn dressed stone caps": "res://assets/chongqing_district_concrete_floor_worn_001_diff_2k.jpg",
-    "North review small celadon mosaic": "res://assets/chongqing_district_stone_floor_diff_2k.jpg",
+    "North review celadon mosaic tiles": "res://assets/district_500/acceptance_textures/north-celadon-mosaic.jpg",
+    "North review dark enamel gate with weathered steel": "res://assets/chongqing_district_rusty_painted_metal_diff_2k.jpg",
     "North review soft grey balcony slab face": "res://assets/chongqing_district_concrete_wall_006_diff_2k.jpg",
-    "North review aged cyan canopy metal": "res://assets/chongqing_district_rusty_painted_metal_diff_2k.jpg"
+    "North review aged cyan canopy metal": "res://assets/chongqing_district_rusty_painted_metal_diff_2k.jpg",
+    "North review liangting-shop": "res://assets/district_500/acceptance_textures/north-liangting-shop.jpg"
   },
   "shaded_surface_fill": {
     "North review honed stone coping": [
@@ -131,29 +244,125 @@
       0.62,
       0.58
     ],
-    "North review edged weathered low shop wood": [
-      0.25,
-      0.42,
-      0.37,
+    "North review lane grey fired brick": [
+      0.14,
+      0.55,
+      0.56,
+      0.52
+    ],
+    "North review lane weathered flag lintel": [
+      0.16,
+      0.76,
+      0.76,
+      0.72
+    ],
+    "North review lane dark timber stall fittings": [
+      0.11,
+      0.39,
+      0.31,
+      0.25
+    ],
+    "North review lane weathered blue folded awning": [
+      0.17,
+      0.29,
+      0.48,
+      0.67
+    ],
+    "North review public lane grey concrete 1": [
+      0.18,
+      0.68,
+      0.67,
+      0.63
+    ],
+    "North review public lane grey concrete 2": [
+      0.18,
+      0.72,
+      0.73,
+      0.7
+    ],
+    "North review public lane grey concrete 3": [
+      0.18,
+      0.63,
+      0.65,
+      0.63
+    ],
+    "North review lane grey stone threshold aggregate": [
+      0.12,
+      0.66,
+      0.67,
+      0.64
+    ],
+    "North review lane right grey dressed brick": [
+      0.18,
+      0.54,
+      0.56,
+      0.54
+    ],
+    "North review lane blue grey pier coping": [
+      0.16,
+      0.78,
+      0.78,
+      0.73
+    ],
+    "North review lane worn slatted seat": [
+      0.14,
+      0.53,
+      0.4,
       0.3
     ],
-    "North review school grey ledge stone": [
-      0.22,
+    "North review lane mature leafy canopy": [
+      0.16,
+      0.32,
+      0.45,
+      0.21
+    ],
+    "North review school blue-grey dressed stone": [
+      0.17,
+      0.62,
+      0.72,
+      0.72
+    ],
+    "North review school pale grey cap and three treads": [
+      0.17,
+      0.83,
+      0.87,
+      0.86
+    ],
+    "North review school shaded lower masonry": [
+      0.17,
+      0.56,
+      0.64,
+      0.63
+    ],
+    "North review school green-white fan mosaic": [
+      0.15,
       0.68,
-      0.7,
-      0.68
+      0.74,
+      0.65
     ],
-    "North review school worn light stone step": [
-      0.26,
-      0.78,
-      0.78,
-      0.725
+    "North review school bed leaf litter": [
+      0.14,
+      0.39,
+      0.42,
+      0.31
     ],
-    "North review school grey-green small paving": [
-      0.21,
-      0.52,
-      0.67,
-      0.5
+    "North review xinglin-school": [
+      0.11,
+      0.86,
+      0.86,
+      0.86
+    ],
+    "North review xinglin-placard": [
+      0.11,
+      0.86,
+      0.86,
+      0.86
+    ],
+    "North review school clipped broadleaf": [
+      0.2,
+      0.55,
+      0.72,
+      0.31
     ],
     "North review grey stair-side shop brick": [
       0.22,
@@ -167,11 +376,17 @@
       0.75,
       0.73
     ],
-    "North review small celadon mosaic": [
-      0.28,
+    "North review celadon mosaic tiles": [
+      0.16,
       0.53,
       0.68,
       0.6
+    ],
+    "North review dark enamel gate with weathered steel": [
+      0.1,
+      0.14,
+      0.22,
+      0.2
     ],
     "North review soft grey balcony slab face": [
       0.27,
@@ -184,6 +399,12 @@
       0.3,
       0.46,
       0.41
+    ],
+    "North review liangting-shop": [
+      0.11,
+      0.86,
+      0.86,
+      0.86
     ]
   },
   "player_points": {

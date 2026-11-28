@@ -12,6 +12,7 @@ sys.path.insert(0,str(HERE.parent))
 from build import ASSETS, apply_finish, box, read
 sys.path.insert(0, str(HERE))
 from public_edges import school, liangting_storefront
+from liangting_lane import finish_lane
 
 STREETS=HERE.parents[1]/'street_groups'
 Edge=runpy.run_path(str(STREETS/'north_edges/build.py'))['Edge']
@@ -130,8 +131,6 @@ def liangting(scope):
     f=read(d/'field.json'); cfg=read(ASSETS/'district_500/liangtingzi-45-46.json')
     timber=scope.finish('oiled public sitting rails',(.60,.42,.26),'wood_table_worn_diff_2k.jpg',.36)
     base=scope.finish('tree well cut stone',(.64,.62,.58),'concrete_floor_worn_001_diff_2k.jpg',.22)
-    hinge=scope.finish('bronze shop track attachments',(.37,.30,.24),metal=.34)
-    paint=scope.finish('edged weathered low shop wood',(.42,.37,.30),'wood_table_worn_diff_2k.jpg',.25)
     e,n=f['tree_anchor']; z=scope.floor(e,n)+.052
     tree=scope.mesh('Review45_CastTreePitAndPublicSeatSupports')
     def point(u,v,h):
@@ -149,16 +148,7 @@ def liangting(scope):
     for i in range(3):
         v=-.313+i*.12
         box(tree,point,.66,1.47,v,v+.106,.407,.467,timber)
-    shop=scope.mesh('Review46_LowShopEdgeTransomsAndReveals')
-    edge=Edge(f['geometry']['46']['path'],scope.ground)
-    for a,b in ((4.4,7.0),(7.0,9.62),(9.62,12.22)):
-        for v in (a+.24,b-.30):
-            box(shop,edge.at,v,v+.065,1.282,1.340,-.383,.932,paint)
-            box(shop,edge.at,v+.019,v+.044,1.271,1.287,.387,.521,hinge)
-        box(shop,edge.at,a+.225,b-.22,1.271,1.335,.592,.691,paint)
-        for i in range(1,5):
-            u=a+.25+i*(b-a-.50)/5
-            box(shop,edge.at,u,u+.027,1.276,1.329,.632,1.035,hinge)
+    finish_lane(scope, Edge(f['geometry']['46']['path'],scope.ground))
     for id in ('45','46'):
         r=cfg['walks'][id]; scope.points[id]=[r[0],r[-1]]
 
