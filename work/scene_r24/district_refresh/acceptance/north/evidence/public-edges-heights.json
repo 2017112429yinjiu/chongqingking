@@ -1,0 +1,286 @@
+{
+  "camera_columns": {
+    "42-east": [
+      [
+        "COL_Outer500_Surface_07_08",
+        45.02,
+        0.973
+      ]
+    ],
+    "42-front": [
+      [
+        "COL_Outer500_Surface_06_08",
+        42.889,
+        0.975
+      ]
+    ],
+    "42-gate-front": [
+      [
+        "COL_Outer500_Surface_06_08",
+        43.384,
+        0.983
+      ]
+    ],
+    "42-street-start": [
+      [
+        "COL_Outer500_Surface_06_08",
+        42.991,
+        0.982
+      ]
+    ],
+    "43-east": [
+      [
+        "COL_Outer500_Surface_06_08",
+        35.637,
+        0.999
+      ]
+    ],
+    "43-fascia-approach": [
+      [
+        "COL_Outer500_Surface_07_08",
+        36.093,
+        0.989
+      ]
+    ],
+    "43-fascia-front": [
+      [
+        "COL_Outer500_Surface_07_08",
+        36.325,
+        0.983
+      ]
+    ],
+    "43-fascia-start": [
+      [
+        "COL_Outer500_Surface_07_08",
+        35.935,
+        0.989
+      ]
+    ],
+    "43-front": [
+      [
+        "COL_Outer500_Surface_07_08",
+        35.927,
+        0.991
+      ]
+    ],
+    "43-street": [
+      [
+        "COL_Outer500_Surface_07_08",
+        35.927,
+        0.991
+      ]
+    ],
+    "43-west": [
+      [
+        "COL_Outer500_Surface_07_08",
+        37.665,
+        0.972
+      ]
+    ]
+  },
+  "fixed_eye_sightlines": {
+    "42-east": {
+      "eye_enu": [
+        102.847991943359,
+        194.251922607422,
+        47.3400001525879
+      ],
+      "hits": [
+        {
+          "enu": [
+            86.4583282470703,
+            192.818008422852,
+            47.3400001525879
+          ],
+          "offset_deg": -12.0,
+          "owner": "COL_Outer500_Building_envelopes"
+        },
+        {
+          "enu": [
+            89.3006591796875,
+            195.915328979492,
+            47.3400001525879
+          ],
+          "offset_deg": 0.0,
+          "owner": "COL_Outer500_Building_envelopes"
+        },
+        {
+          "enu": [],
+          "offset_deg": 12.0,
+          "owner": ""
+        }
+      ]
+    },
+    "42-front": {
+      "eye_enu": [
+        92.4803695678711,
+        187.068298339844,
+        45.2089996337891
+      ],
+      "hits": [
+        {
+          "enu": [
+            83.0625076293945,
+            192.075866699219,
+            45.2089996337891
+          ],
+          "offset_deg": -12.0,
+          "owner": "COL_Outer500_Building_envelopes"
+        },
+        {
+          "enu": [
+            85.8599853515625,
+            192.623458862305,
+            45.2089996337891
+          ],
+          "offset_deg": 0.0,
+          "owner": "COL_Outer500_Building_envelopes"
+        },
+        {
+          "enu": [
+            87.8377380371094,
+            193.010589599609,
+            45.2089996337891
+          ],
+          "offset_deg": 12.0,
+          "owner": "COL_Outer500_Building_envelopes"
+        }
+      ]
+    },
+    "43-east": {
+      "eye_enu": [
+        97.3483810424805,
+        153.359115600586,
+        37.9570007324219
+      ],
+      "hits": [
+        {
+          "enu": [
+            99.253662109375,
+            164.164489746094,
+            37.9570007324219
+          ],
+          "offset_deg": -12.0,
+          "owner": "COL_Outer500_Building_envelopes"
+        },
+        {
+          "enu": [
+            101.925170898438,
+            164.687072753906,
+            37.9570007324219
+          ],
+          "offset_deg": 0.0,
+          "owner": "COL_Outer500_Building_envelopes"
+        },
+        {
+          "enu": [
+            105.45491027832,
+            165.377532958984,
+            37.9570007324219
+          ],
+          "offset_deg": 12.0,
+          "owner": "COL_Outer500_Building_envelopes"
+        }
+      ]
+    },
+    "43-front": {
+      "eye_enu": [
+        110.951065063477,
+        161.25602722168,
+        38.2470016479492
+      ],
+      "hits": [
+        {
+          "enu": [
+            106.852722167969,
+            165.650970458984,
+            38.2470016479492
+          ],
+          "offset_deg": -12.0,
+          "owner": "COL_Outer500_Building_envelopes"
+        },
+        {
+          "enu": [
+            108.805618286133,
+            164.826644897461,
+            38.2470016479492
+          ],
+          "offset_deg": 0.0,
+          "owner": "COL_Liangtingzi_RearStair_43"
+        },
+        {
+          "enu": [
+            109.291976928711,
+            166.074371337891,
+            38.2470016479492
+          ],
+          "offset_deg": 12.0,
+          "owner": "COL_Liangtingzi_RearStair_43"
+        }
+      ]
+    },
+    "43-west": {
+      "eye_enu": [
+        120.587463378906,
+        166.988815307617,
+        39.9850006103516
+      ],
+      "hits": [
+        {
+          "enu": [
+            114.864639282227,
+            167.489501953125,
+            39.9850006103516
+          ],
+          "offset_deg": -12.0,
+          "owner": "COL_Outer500_Building_envelopes"
+        },
+        {
+          "enu": [
+            114.605087280273,
+            168.817810058594,
+            39.9850006103516
+          ],
+          "offset_deg": 0.0,
+          "owner": "COL_Outer500_Building_envelopes"
+        },
+        {
+          "enu": [
+            114.279220581055,
+            170.485534667969,
+            39.9850006103516
+          ],
+          "offset_deg": 12.0,
+          "owner": "COL_Outer500_Building_envelopes"
+        }
+      ]
+    }
+  },
+  "gameplay_waypoints_east_north": {
+    "42-gate-front": [
+      89.54,
+      190.05
+    ],
+    "42-street-start": [
+      85.826,
+      188.995
+    ],
+    "43-fascia-approach": [
+      106.28,
+      163.22
+    ],
+    "43-fascia-front": [
+      107.3,
+      164.62
+    ],
+    "43-fascia-start": [
+      105.06,
+      162.1
+    ],
+    "43-street": [
+      110.95,
+      161.256
+    ]
+  },
+  "scene": "res://first_shift.tscn"
+}

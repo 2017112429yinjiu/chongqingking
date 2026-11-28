@@ -1,0 +1,27 @@
+Blender 4.3.2 (hash 32f5fdce0a0a built 2024-12-17 01:31:14)
+Traceback (most recent call last):
+  File "/workspace/chongqing-refresh/work/scene_r24/district_refresh/acceptance/build.py", line 129, in <module>
+    main()
+  File "/workspace/chongqing-refresh/work/scene_r24/district_refresh/acceptance/build.py", line 124, in main
+    runpy.run_path(str(HERE/region/'sites.py'))['make'](scope)
+  File "/workspace/chongqing-refresh/work/scene_r24/district_refresh/acceptance/north/sites.py", line 149, in make
+    walls(scope)
+  File "/workspace/chongqing-refresh/work/scene_r24/district_refresh/acceptance/north/sites.py", line 51, in walls
+    box(trim,edge.at,a,b,1.348,1.834,1.793,1.846,pale)
+  File "/workspace/chongqing-refresh/work/scene_r24/district_refresh/acceptance/build.py", line 105, in box
+    mesh.solid([point(u,v,z0) for u,v in ring], [point(u,v,z1) for u,v in ring],finish)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/chongqing-refresh/work/scene_r24/district_refresh/acceptance/build.py", line 105, in <listcomp>
+    mesh.solid([point(u,v,z0) for u,v in ring], [point(u,v,z1) for u,v in ring],finish)
+                ^^^^^^^^^^^^^
+  File "/workspace/chongqing-refresh/work/scene_r24/district_refresh/street_groups/north_edges/build.py", line 53, in at
+    return (*p,self.ground_y(p)+lift)
+               ^^^^^^^^^^^^^^^^
+  File "/workspace/chongqing-refresh/work/scene_r24/district_refresh/street_groups/north_edges/build.py", line 48, in ground_y
+    assert hit is not None,tuple(p)
+           ^^^^^^^^^^^^^^^
+AssertionError: (-6.908392906188965, 165.06793212890625)
+
+Error: script failed, file: 'work/scene_r24/district_refresh/acceptance/build.py', exiting.
+
+Blender quit
