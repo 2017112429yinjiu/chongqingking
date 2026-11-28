@@ -18,54 +18,103 @@ sys.path.insert(0, str(GROUPS))
 from factory import Mesh, material
 
 
-def foliage(seed):
-    """Layer small, irregular leaf sprays over shadowed interior foliage."""
+def leaf_material():
+    leaf = material("Nanqu scanned broadleaf surfaces", (.8, .91, .75), "island_tree_01_leaves_diff_2k.jpg")
+    shader = leaf.node_tree.nodes.get("Principled BSDF")
+    # The mesh perimeter follows each leaf in the atlas. The atlas itself has
+    # a black background and does not need an alpha or transparency pass.
+    scan = next(node for node in leaf.node_tree.nodes if node.type == "TEX_IMAGE")
+    leaf.node_tree.links.new(scan.outputs["Color"], shader.inputs["Base Color"])
+    shader.inputs["Emission Color"].default_value = (.034, .083, .023, 1.)
+    shader.inputs["Emission Strength"].default_value = .26
+    return leaf
+
+
+def direction(rng):
+    z = rng.uniform(-1, 1)
+    angle = rng.uniform(0, 2*pi)
+    radius = sqrt(1-z*z)
+    return Vector((radius*cos(angle), radius*sin(angle), z))
+
+
+# Cut points within six different scans. (0,0) is the top left of the atlas.
+LEAF_SCANS = (
+    ((.091,.050),(.061,.105),(.034,.214),(.044,.284),(.071,.354),(.101,.276),(.127,.199),(.120,.105)),
+    ((.277,.046),(.237,.099),(.198,.153),(.210,.274),(.274,.358),(.305,.302),(.321,.184),(.309,.093)),
+    ((.418,.039),(.392,.098),(.372,.189),(.387,.264),(.416,.302),(.449,.252),(.471,.151),(.454,.098)),
+    ((.589,.060),(.552,.101),(.526,.182),(.544,.260),(.592,.350),(.616,.274),(.629,.166),(.617,.091)),
+    ((.274,.607),(.242,.663),(.226,.784),(.253,.870),(.286,.922),(.322,.821),(.344,.737),(.313,.662)),
+    ((.482,.622),(.455,.703),(.434,.759),(.451,.819),(.476,.911),(.508,.839),(.545,.776),(.515,.721)),
+)
+
+
+def leaf_spray(mesh, tip, size, rng, uv_layer):
+    axis = direction(rng) * size
+    across = axis.cross(direction(rng)).normalized() * size
+    raised = axis.cross(across).normalized() * size * .075
+    for side in (-1, 1):
+        outline = rng.choice(LEAF_SCANS)
+        u_mid = sum(u for u, _ in outline) / len(outline)
+        v_mid = sum(v for _, v in outline) / len(outline)
+        center = tip + across * (.25 * side) + axis * rng.uniform(-.22, .22)
+        ph = mesh.verts.new(center + raised)
+        rim = [mesh.verts.new(center + axis * ((v_mid-v)*3.1) + across * ((u-u_mid)*3.2))
+               for u, v in outline]
+        for i, vert in enumerate(rim):
+            j = (i+1) % len(rim)
+            face = mesh.faces.new((ph, vert, rim[j]))
+            for loop, (u, v) in zip(face.loops, ((u_mid,v_mid), outline[i], outline[j])):
+                loop[uv_layer].uv = (u, 1-v)
+
+
+def canopy(name, lobes, seed, leaf, *, spread, leaf_size, density):
+    """Fill irregular branch volumes with overlapping scanned leaves."""
     rng = Random(seed)
-    mesh = Mesh(f"Nanqu canopy {seed}")
-    shades = []
-    for index, rgb in enumerate(((.023,.057,.016), (.029,.083,.019), (.038,.107,.023),
-                                 (.047,.133,.028), (.064,.153,.036))):
-        material = bpy.data.materials.new(f"Nanqu broadleaf green {seed}-{index}")
-        material.diffuse_color = (*rgb, 1)
-        material.use_nodes = True
-        shader = material.node_tree.nodes.get("Principled BSDF")
-        shader.inputs["Base Color"].default_value = (*rgb, 1)
-        shader.inputs["Roughness"].default_value = .89
-        shader.inputs["Emission Color"].default_value = (*rgb, 1)
-        shader.inputs["Emission Strength"].default_value = .15
-        shades.append(material)
+    mesh = bmesh.new()
+    uv = mesh.loops.layers.uv.new()
+    for center, radii in lobes:
+        for _ in range(density):
+            u = direction(rng)
+            factor = rng.uniform(.39, spread)
+            point = center + Vector(tuple(a*b*factor for a,b in zip(u,radii)))
+            leaf_spray(mesh, point, rng.uniform(*leaf_size), rng, uv)
+    data = bpy.data.meshes.new(name)
+    data.materials.append(leaf)
+    mesh.to_mesh(data)
+    mesh.free()
+    return data
 
-    def direction():
-        z = rng.uniform(-1, 1)
-        angle = rng.uniform(0, 2*pi)
-        radius = sqrt(1-z*z)
-        return Vector((radius*cos(angle), radius*sin(angle), z))
 
-    centres = [(0., 0., .80, .225, .21, .18)]
-    for ring, (distance, z, size) in enumerate(((.24,.68,.187), (.20,.85,.16), (.115,.58,.15))):
+def lower_lobes(seed):
+    rng = Random(seed)
+    yield Vector((0.,0.,.80)), (.225,.21,.18)
+    for ring, (radius, height, size) in enumerate(((.24,.68,.187), (.20,.85,.16), (.115,.58,.15))):
         for i in range(6):
-            a = pi*(i/3 + ring/9) + rng.uniform(-.22,.22)
-            centres.append((cos(a)*distance,sin(a)*distance,z+rng.uniform(-.06,.06),
-                            size*rng.uniform(.88,1.16),size*rng.uniform(.85,1.18),rng.uniform(.105,.16)))
-    for e, n, h, rx, ry, rz in centres:
-        # Interior leaf masses keep overlapping crowns dark and dense, with
-        # individual sprays breaking up the edges and surface highlights.
-        body = bmesh.new()
-        bmesh.ops.create_icosphere(body,subdivisions=2,radius=1.)
-        for v in body.verts:
-            factor = rng.uniform(.66,.80)
-            v.co = (e+v.co.x*rx*factor,n+v.co.y*ry*factor,h+v.co.z*rz*factor)
-        for face in body.faces:
-            mesh.face([v.co.copy() for v in face.verts],shades[rng.randrange(3)])
-        body.free()
-        for _ in range(320):
-            u = direction()
-            factor = rng.uniform(.66,1.12)
-            origin = Vector((e+rx*u.x*factor,n+ry*u.y*factor,h+rz*u.z*factor))
-            along = direction()*rng.uniform(.010,.020)
-            across = along.cross(direction()).normalized()*rng.uniform(.007,.015)
-            mesh.face((origin-along, origin-across, origin+along, origin+across),rng.choice(shades))
+            angle = pi*(i/3 + ring/9) + rng.uniform(-.22,.22)
+            yield (Vector((cos(angle)*radius, sin(angle)*radius, height+rng.uniform(-.06,.06))),
+                   (size*rng.uniform(.88,1.16),size*rng.uniform(.85,1.18),rng.uniform(.105,.16)))
+
+
+def grown_branch(name, points, bark_material):
+    mesh = Mesh(name)
+    for index, (a, b) in enumerate(zip(points, points[1:])):
+        axis = (b-a).normalized()
+        u = axis.cross(Vector((0, 1, 0))).normalized()
+        v = axis.cross(u)
+        ring = [u*cos(i*pi/4)+v*sin(i*pi/4) for i in range(8)]
+        r0, r1 = (.265,.122) if index == 0 else (.122,.037)
+        mesh.solid([a+r*r0 for r in ring], [b+r*r1 for r in ring], bark_material)
     return mesh.save()
+
+
+def high_lobes(center, size, seed):
+    rng = Random(seed)
+    yield center, tuple(r*.64 for r in size)
+    for i in range(10):
+        angle = i*pi/5 + rng.uniform(-.26,.26)
+        height = rng.uniform(-.44,.59)
+        point = center + Vector((.50*size[0]*cos(angle), .50*size[1]*sin(angle), size[2]*height))
+        yield point, (size[0]*rng.uniform(.38,.56),size[1]*rng.uniform(.40,.57),size[2]*rng.uniform(.43,.63))
 
 
 def woody_mesh(mesh):
@@ -98,7 +147,12 @@ def build(plan):
         assert set(donors) <= set(archive.objects)
         selected.objects = donors
     templates = {obj.name: (obj.data, woody_mesh(obj.data)) for obj in selected.objects}
-    canopies = [foliage(seed) for seed in (391,547,963)]
+    leaf = leaf_material()
+    canopies = [canopy(f"Nanqu low crown {seed}",lower_lobes(seed),seed,leaf,
+                       spread=1.095,leaf_size=(.024,.046),density=169) for seed in (391,547,963)]
+    extensions = {i: [] for i in range(len(plan["trees"]))}
+    for part in plan.get("upper_lobes", []):
+        extensions[part["on_tree"]].append(part)
     eastings = [row[0][0] for row in plan["sections"]]
     contacts = []
     for index, record in enumerate(plan["trees"]):
@@ -121,11 +175,23 @@ def build(plan):
         tree.scale = (sx, sy, sz)
         tree.rotation_euler.z = record["yaw"]
         tree.location = (east, north, hit.z - lo[2] * sz - .09)
-        crown = bpy.data.objects.new(tree.name+"_Canopy",canopies[index % len(canopies)].data)
+        crown = bpy.data.objects.new(tree.name+"_Canopy",canopies[index % len(canopies)])
         bpy.context.collection.objects.link(crown)
         crown.scale = (record["crown_width"],record.get("crown_depth",record["crown_width"]),record["height"])
         crown.rotation_euler.z = record["yaw"]
         crown.location = (east,north,hit.z-.09)
+        for part in extensions[index]:
+            tip = Vector(part["centre_enu"])
+            seed = part["seed"]
+            base = Vector((east,north,hit.z+record["height"]*.67))
+            elbow = base.lerp(tip,.51)
+            elbow.z += .9
+            bend = tip.lerp(elbow,.19)
+            grown_branch(f"{tree.name}_UpperFork_{seed}", (base,elbow,bend), bark.materials[0])
+            upper_data = canopy(f"Nanqu high crown {seed}",high_lobes(tip,part["radii"],seed),seed,
+                                leaf,spread=1.09,leaf_size=(.35,.68),density=117)
+            upper = bpy.data.objects.new(f"{tree.name}_UpperLeaves_{seed}", upper_data)
+            bpy.context.collection.objects.link(upper)
         # Only the root and lower trunk block the player. The foliage is visual.
         bpy.ops.mesh.primitive_cylinder_add(vertices=10, radius=min(.55, sx*.12), depth=2.8,
                                            location=(east, north, hit.z+1.30))
@@ -133,8 +199,6 @@ def build(plan):
         trunk.name = f"COLH_NanquLandside_Stem_{index:02d}"
         contacts.append({"tree": tree.name, "donor": record["donor"],
                          "root_enu": list(hit), "crown_top_y": hit.z + record["height"] - .09})
-    for template in canopies:
-        bpy.data.objects.remove(template,do_unlink=True)
     return contacts
 
 

@@ -1,0 +1,84 @@
+{
+  "paths": {
+    "approach_to_51": {
+      "closed_reverse_test": {
+        "reached": 9,
+        "targets": 9,
+        "distance_m": 51.5957056805491,
+        "airborne_frames": 0,
+        "wall_hits": {}
+      },
+      "forward": {
+        "reached": 9,
+        "targets": 9,
+        "distance_m": 51.6060407897457,
+        "airborne_frames": 0,
+        "wall_hits": {}
+      }
+    },
+    "under_rail_04": {
+      "closed_reverse_test": {
+        "reached": 8,
+        "targets": 8,
+        "distance_m": 45.6127780295792,
+        "airborne_frames": 0,
+        "wall_hits": {}
+      },
+      "forward": {
+        "reached": 8,
+        "targets": 8,
+        "distance_m": 45.6240203422494,
+        "airborne_frames": 0,
+        "wall_hits": {}
+      }
+    },
+    "under_rail_04_outer_wheel_line": {
+      "closed_reverse_test": {
+        "reached": 8,
+        "targets": 8,
+        "distance_m": 45.7144204943324,
+        "airborne_frames": 0,
+        "wall_hits": {}
+      },
+      "forward": {
+        "reached": 8,
+        "targets": 8,
+        "distance_m": 45.6738141071983,
+        "airborne_frames": 0,
+        "wall_hits": {}
+      }
+    }
+  },
+  "repair": {
+    "passed": 10,
+    "total": 10
+  },
+  "stairs_53": {
+    "53_down_original_stairs": {
+      "reached": 6,
+      "goals": 6,
+      "distance_m": 8.62648201547563
+    },
+    "53_up_original_stairs": {
+      "reached": 6,
+      "goals": 6,
+      "distance_m": 8.6140961451456
+    }
+  },
+  "landing_53": {
+    "points": 129,
+    "maximum_difference_m": 0.00525665283203125
+  },
+  "profiles": {
+    "unchanged_bank_families": 39,
+    "unchanged_bank_samples": 416,
+    "unchanged_rail_samples": 90,
+    "beam_road_assets_sha256": {
+      "corrected_meshes": 40,
+      "installed": true,
+      "landside_sha256": "30cf78980a4adb79e94bf30698cb4bfb49e683f6f83e83b3ed8a12b8d0878673",
+      "model_sha256": "49e4114230bc9109117e7983f51f5b83456ba9927a244a6f773bba06d1b4fbe1",
+      "plan_sha256": "c69f58b2dc477c8b4cbdafadd0337996dc94ea933cb14169a4acc0ec6385b815"
+    }
+  }
+}
