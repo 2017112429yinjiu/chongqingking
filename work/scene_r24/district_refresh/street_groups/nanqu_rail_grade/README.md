@@ -22,6 +22,8 @@ Blender 4.3.2 用 `blender -b -P work/scene_r24/district_refresh/street_groups/n
 
 从原整城打开并执行 `work/scene_r24/district_500/compose.py` 可复建可编辑整城，默认输出 `city_and_outer.nanqu_grade.local.blend`，也可用 `CQ_NANQU_GRADE_OUTPUT` 指定独立输出路径。[21 张返图、逐向实测和历史失败](evidence/README.md)
 
+东端 16 号并线修订将重叠的车面裁成同一连续坡面，去除内部侧立面和圆形补面独立碰撞。原道板足迹保留，标线随新面落位。[并线逐帧实测及同机位原图](evidence/merge16/README.md)
+
 ```sh
 bash work/scene_r24/district_500/play.sh --software -- --explore-500 --nanqu-riverwalk
 ```

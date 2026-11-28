@@ -12,7 +12,7 @@ func support(p: Vector3, above:=.52, below:=1.7) -> Dictionary:
 	var hit := scene.get_world_3d().direct_space_state.intersect_ray(ray)
 	return {} if hit.is_empty() else {"body":String(hit.collider.get_parent().name),"y":hit.position.y,"normal_y":hit.normal.y}
 
-func drive(points: Array, allowed: Array) -> Dictionary:
+func drive(points: Array, allowed: Array, trace_merge := false) -> Dictionary:
 	var start:=world(points[0])
 	var face:=world(points[1])-start
 	bike.global_position=start+Vector3.UP*.21
@@ -32,6 +32,7 @@ func drive(points: Array, allowed: Array) -> Dictionary:
 	var air:=0
 	var intended:=0
 	var trail:=[]
+	var merge_frames: Array = []
 	for tick in 1800:
 		var old: Vector3=bike.global_position
 		var goal:=world(points[destination])-old
@@ -58,6 +59,17 @@ func drive(points: Array, allowed: Array) -> Dictionary:
 		var p:Vector3=bike.global_position
 		metres+=old.distance_to(p)
 		air+=int(not bike.is_on_floor())
+		var in_merge := p.x >= 202. and p.x <= 216. and -p.z >= 33. and -p.z <= 49.
+		if trace_merge and (in_merge or not bike.is_on_floor()):
+			var contacts: Array = []
+			for i in bike.get_slide_collision_count():
+				var hit: KinematicCollision3D = bike.get_slide_collision(i)
+				var normal := hit.get_normal()
+				var point := hit.get_position()
+				contacts.append({"owner":str(hit.get_collider().get_parent().name),
+					"enu":[point.x,-point.z,point.y],"normal":[normal.x,-normal.z,normal.y]})
+			merge_frames.append({"tick":tick,"enu":[p.x,-p.z,p.y],"from_enu":[old.x,-old.z,old.y],
+				"floor":bike.is_on_floor(),"surface":support(p),"contacts":contacts,"vertical_velocity_mps":bike.velocity.y})
 		if tick%12==0:
 			var contact:=support(p)
 			intended+=int(contact.get("body","") in allowed)
@@ -67,7 +79,8 @@ func drive(points: Array, allowed: Array) -> Dictionary:
 	await frames(28)
 	return {"pass":stable and destination==points.size() and intended>=int(trail.size()*.95) and air<=12,
 		"reached":destination-1,"targets":points.size()-1,"distance_m":metres,"airborne_frames":air,
-		"intended_surface_samples":intended,"sample_count":trail.size(),"trace":trail,"last_contact":bike.last_obstacle.duplicate(true),"stable_start":stable}
+		"intended_surface_samples":intended,"sample_count":trail.size(),"trace":trail,"merge_frames":merge_frames,
+		"last_contact":bike.last_obstacle.duplicate(true),"stable_start":stable}
 
 func verify() -> void:
 	output=preload("res://scripts/qa_context.gd").directory()

@@ -12,6 +12,7 @@ import bpy
 import bmesh
 from mathutils import Vector
 from mathutils.bvhtree import BVHTree
+from mathutils.geometry import delaunay_2d_cdt
 
 HERE=Path(__file__).resolve().parent
 SCENE=HERE.parents[2]
@@ -152,11 +153,12 @@ def add_west_bearings(deck, lower_target):
     return values
 
 
-def set_spur_slab(asphalt, slab, thickness=.58):
+def set_spur_slab(asphalt, slab, thickness=.58, elevation=None):
     """Use the same plan and triangulation as the finished running surface."""
     asphalt.data.calc_loop_triangles()
     number=len(asphalt.data.vertices)
-    top=[(v.co.x,v.co.y,v.co.z-.032) for v in asphalt.data.vertices]
+    top=[(v.co.x,v.co.y,(elevation(v.co) if elevation else v.co.z)-.032)
+         for v in asphalt.data.vertices]
     bottom=[(e,n,z-thickness) for e,n,z in top]
     faces=[tuple(q.vertices) for q in asphalt.data.loop_triangles]
     cut_edges={}
@@ -266,6 +268,135 @@ def match_incoming(rows, join):
         w=u*u*(3.-2.*u)
         out.append([e,n,z+(controls[2]+(n-controls[1])*join['longitudinal_grade']-z)*w])
     return out
+
+
+def merge_level(north, original, tie):
+    if north <= 33.9 or north >= 49.:
+        return original
+    # Begin the blend after the existing upstream cross-section. Both
+    # approaches share the plane before the first wheel contact at N37.97.
+    t = min(1., (north - 33.9) / 3.1, (49. - north) / 3.5)
+    plane = tie[2] + (north - tie[1]) * .071
+    return original + (plane - original) * t * t * (3. - 2. * t)
+
+
+def merge_top(parts, tie):
+    """Weld the three road strips and the small apron in plan before grading."""
+    coordinates, triangles, owners, texture, skirts = [], [], [], [], []
+    for index, obj in enumerate(parts):
+        mesh = obj.data
+        mesh.calc_loop_triangles()
+        uv = mesh.uv_layers.active.data
+        for tri in mesh.loop_triangles:
+            vertices = [mesh.vertices[i].co.copy() for i in tri.vertices]
+            tex = [uv[i].uv.copy() for i in tri.loops]
+            if tri.normal.z <= .55:
+                skirts.append((index, vertices, tex, tri.material_index))
+                continue
+            start = len(coordinates)
+            coordinates.extend(vertices)
+            triangles.append([start, start + 1, start + 2])
+            owners.append((index, tri.material_index))
+            texture.append(tex)
+    xy, _, faces, _, _, origins = delaunay_2d_cdt(
+        [co.xy for co in coordinates], [], triangles, 1, .00025)
+    covered = [(face, sources) for face, sources in zip(faces, origins, strict=True) if sources]
+    pieces = [[] for _ in parts]
+    grades = {}
+
+    def weights(point, origin):
+        a, b, c = [coordinates[i].xy for i in triangles[origin]]
+        area = (b - a).cross(c - a)
+        w = (point - a).cross(c - a) / area
+        t = (b - a).cross(point - a) / area
+        return [1 - w - t, w, t]
+
+    for face, sources in covered:
+        # Road 16 owns the first strip, then the incoming and outgoing
+        # streets. Intersections are no longer exported as stacked faces.
+        origin = min(sources)
+        for i in face:
+            grades[i] = min(origin, grades.get(i, origin))
+        average_north = sum(xy[i].y for i in face) / len(face)
+        if 36. <= average_north <= 48.:
+            # Keep the common carriageway in one collision mesh, including
+            # the old three-way vertex and the end of the separate apron.
+            index, material = 0, 0
+            uv = [xy[i] * .58 for i in face]
+        else:
+            index, material = owners[origin]
+            uv = [sum((value * w for value, w in zip(texture[origin], weights(xy[i], origin))), Vector((0, 0)))
+                  for i in face]
+        pieces[index].append((face, uv, material))
+
+    deck = []
+    for i, point in enumerate(xy):
+        if i not in grades:
+            deck.append(Vector((point.x, point.y, 0)))
+            continue
+        origin = grades[i]
+        old = sum(coordinates[j].z * w for j, w in zip(triangles[origin], weights(point, origin)))
+        deck.append(Vector((point.x, point.y, merge_level(point.y, old, tie))))
+    surface = BVHTree.FromPolygons(deck, [face for face, _ in covered], all_triangles=True)
+    for index, vertices, tex, material in skirts:
+        if 32. <= max(v.y for v in vertices) <= 49.:
+            # Skirts sit under the exposed outside edges only. An inner
+            # skirt can strike the wheel even when both road tops align.
+            a, b = sorted(vertices, key=lambda v: v.z, reverse=True)[:2]
+            direction = b.xy - a.xy
+            outward = Vector((-direction.y, direction.x)).normalized() * .035
+            centre = (a.xy + b.xy) * .5
+            def paved(point):
+                return surface.ray_cast(Vector((point.x, point.y, 50)), Vector((0, 0, -1)), 28)[0] is not None
+            if direction.length > .003 and paved(centre - outward) and paved(centre + outward):
+                continue
+            for v in vertices:
+                if v.z > 31.:
+                    v.z = merge_level(v.y, v.z, tie)
+        start = len(deck)
+        deck.extend(vertices)
+        pieces[index].append(([start, start + 1, start + 2], tex, material))
+    for obj, section in zip(parts, pieces, strict=True):
+        mesh = bpy.data.meshes.new(obj.data.name + ' joined')
+        ids = sorted({i for face, _, _ in section for i in face})
+        compact = {i: j for j, i in enumerate(ids)}
+        mesh.from_pydata([deck[i] for i in ids], [], [[compact[i] for i in face] for face, _, _ in section])
+        for material in obj.data.materials:
+            mesh.materials.append(material)
+        uv = mesh.uv_layers.new(name='UVMap')
+        for poly, (_, tex, material) in zip(mesh.polygons, section, strict=True):
+            poly.material_index = material
+            for li, value in zip(poly.loop_indices, tex, strict=True):
+                uv.data[li].uv = value
+        mesh.update()
+        if obj == parts[0]:
+            editable = bmesh.new()
+            editable.from_mesh(mesh)
+            internal = [
+                edge for edge in editable.edges if len(edge.link_faces) == 2
+                and all(37. <= v.co.y <= 45.5 for face in edge.link_faces for v in face.verts)
+            ]
+            # Triangulate the common plane from its border. Interior edges
+            # from the old three road owners no longer meet under a wheel.
+            bmesh.ops.dissolve_limit(editable, angle_limit=.0009, verts=[],
+                                     edges=internal, use_dissolve_boundaries=False)
+            editable.to_mesh(mesh)
+            editable.free()
+            mesh.update()
+        obj.data = mesh
+    return surface
+
+
+def fit_spur_paint(obj, old, paved):
+    for v in obj.data.vertices:
+        if not 30. <= v.co.y <= 46.:
+            continue
+        ray = Vector((v.co.x, v.co.y, 50))
+        previous = old.ray_cast(ray, Vector((0, 0, -1)), 30)[0]
+        current = paved.ray_cast(ray, Vector((0, 0, -1)), 30)[0]
+        if previous is not None and current is not None:
+            v.co.z += current.z - previous.z
+    obj.data.update()
 
 
 def active_west_edge(road, axis, target, style):
@@ -407,8 +538,11 @@ def main():
             bounded_height(obj,lift)
         else:
             move(obj,lift)
+    pre_merge_road=tree(connector[SPUR[0]])
     spur_merge=shape_spur_merge(connector,field['east_upper_tie'][0],field['east_spur_axis_en'])
-    set_spur_slab(connector[SPUR[0]],connector['COL_Houci16_SpurSlab'])
+    tie=field['east_upper_tie'][0]
+    set_spur_slab(connector[SPUR[0]],connector['COL_Houci16_SpurSlab'],
+                  elevation=lambda point: merge_level(point.y, point.z, tie))
     west_surface=approach['COL_Nanqu_RaisedWestApproach']
     west_end,west=active_west_edge(west_surface,field['west_visible_tie'],target,author)
     for owner in (west_surface,west_end):
@@ -433,11 +567,13 @@ def main():
     east=list(east_join(field['east_upper_tie']))
     joined=Vector(east[0][:2])
     earth_east=curve(field['east_join_ground_by_north'])
-    road_patch('COL_NanquGrade_EastPublicJoin',east,2.58,author,lambda p:earth_east(p.y)-.12,joined)
+    east_exit=road_patch('COL_NanquGrade_EastPublicJoin',east,2.58,author,lambda p:earth_east(p.y)-.12,joined)
     incoming=match_incoming(field['east_incoming_join_enu'],spur_merge)
     incoming_earth=curve(field['east_incoming_ground_by_east'])
-    road_patch('COL_NanquGrade_EastApproachingBranch',incoming,2.55,author,lambda p:incoming_earth(p.x)-.12,joined)
-    junction_apron(east[0],author)
+    east_branch=road_patch('COL_NanquGrade_EastApproachingBranch',incoming,2.55,author,lambda p:incoming_earth(p.x)-.12,joined)
+    apron=junction_apron(east[0],author)
+    paved=merge_top((connector[SPUR[0]],east_branch,east_exit,apron),east[0])
+    fit_spur_paint(connector['Houci16_JointsAndRoadPaint'],pre_merge_road,paved)
 
 
     assert len(footings)>=3,footings

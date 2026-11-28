@@ -49,9 +49,9 @@ func verify() -> void:
 	for course: Array in cases:
 		var revised:=project_surface(course[1],course[2])
 		if not check(course[0]+"_registered_anchors",revised.size()==course[1].size(),[revised.size(),course[1].size()]): continue
-		var out:=await drive(revised,course[2])
+		var out:=await drive(revised,course[2],true)
 		revised.reverse()
-		var back:=await drive(revised,course[2])
+		var back:=await drive(revised,course[2],true)
 		check(course[0]+"_forward",out.pass,out.reached)
 		check(course[0]+"_reverse_closed_qa",back.pass,back.reached)
 		outcomes[course[0]]={"out":out,"back":back}

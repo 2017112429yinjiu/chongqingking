@@ -1,0 +1,64 @@
+{
+  "paired_frames": 5,
+  "size": [
+    700,
+    440
+  ],
+  "checks": [
+    {
+      "id": "16-out",
+      "matrix_bit_exact": true,
+      "parent_sha256": "45613634c4d0396665b7a6c20487d1c1e978e294a462ff6b0207e954dd550db9",
+      "candidate_sha256": "871812b2cdf163ea16da2ab741f8a52e9b489135662c45441766faace86ab2fe",
+      "changed_pixels_bounding_box": [
+        0,
+        197,
+        700,
+        440
+      ]
+    },
+    {
+      "id": "16-back",
+      "matrix_bit_exact": true,
+      "parent_sha256": "1dae8106fdb756b60bb02049e2f5b5dc2d5a65b676e1ab6290cd6da88b89e0af",
+      "candidate_sha256": "0acb4fad548abfe31987530e127348c6798541bcdd0a2f472caead88b2f7ffd5",
+      "changed_pixels_bounding_box": [
+        0,
+        168,
+        700,
+        440
+      ]
+    },
+    {
+      "id": "16-contact",
+      "matrix_bit_exact": true,
+      "parent_sha256": "c1d320e7b6ac9172b80311c21b81e66faae28e620c33f73889cb8be8cff00efb",
+      "candidate_sha256": "0c6878ab4263abffe7a2cda3603d15c1d408ac681738f4273edfad3861c44267",
+      "changed_pixels_bounding_box": [
+        0,
+        164,
+        700,
+        440
+      ]
+    },
+    {
+      "id": "53-original-stair",
+      "matrix_bit_exact": true,
+      "parent_sha256": "c4bd38fd24cb43fc6c0f259d42428c113b9dcb1ba439b777f8967f2514bd149a",
+      "candidate_sha256": "c4bd38fd24cb43fc6c0f259d42428c113b9dcb1ba439b777f8967f2514bd149a",
+      "changed_pixels_bounding_box": null
+    },
+    {
+      "id": "legacy-04-under-rail-regraded-eye",
+      "matrix_bit_exact": true,
+      "parent_sha256": "66a08550dd8b83248c06588fd2b2c9dd18761d9aae81e987a9bd88c147b01bed",
+      "candidate_sha256": "ccce406b799589e50e7436689719c259abc980cd6f9be651beb42599c6890b75",
+      "changed_pixels_bounding_box": [
+        103,
+        221,
+        129,
+        227
+      ]
+    }
+  ]
+}
