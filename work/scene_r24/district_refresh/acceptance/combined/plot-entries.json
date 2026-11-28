@@ -1,0 +1,547 @@
+{
+  "checks": [
+    {
+      "detail": "",
+      "name": "registered_ground_00",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "registered_ground_01",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "registered_ground_12",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "registered_ground_22",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "registered_ground_26",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "registered_ground_30",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "registered_ground_31",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "registered_ground_34",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "registered_ground_35",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "registered_ground_40",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "registered_ground_41",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "registered_ground_42",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "registered_ground_43",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "registered_ground_45",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "registered_ground_46",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "registered_ground_49",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "registered_ground_52",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "registered_ground_53",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "registered_ground_54",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "registered_ground_56",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "registered_ground_00-tool-eye",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "registered_ground_34-street",
+      "pass": true
+    },
+    {
+      "detail": [
+        105.059997558594,
+        162.100006103516,
+        35.9515647888184
+      ],
+      "name": "normal_exploration_starts_at_plot43",
+      "pass": true
+    }
+  ],
+  "entries": {
+    "00": {
+      "editor_enu_m": [
+        -193.8725,
+        -26.5521,
+        15.9047
+      ],
+      "look_enu_m": [
+        -188.3011,
+        -17.9063,
+        16.4902
+      ],
+      "support": "COL_Outer500_RepairCourt",
+      "supported_enu_m": [
+        -193.872497558594,
+        -26.5520992279053,
+        15.8012704849243
+      ]
+    },
+    "00-tool-eye": {
+      "editor_enu_m": [
+        -186.695300528049,
+        -11.8122770368723,
+        16.4901701873358
+      ],
+      "look_enu_m": [
+        -188.388947175402,
+        -11.9482403918882,
+        17.4101701873358
+      ],
+      "support": "COL_Outer500_Building_envelopes",
+      "supported_enu_m": [
+        -186.695297241211,
+        -11.81227684021,
+        16.4750003814697
+      ]
+    },
+    "01": {
+      "editor_enu_m": [
+        161.1106872559,
+        113.9294586182,
+        38.1440849304
+      ],
+      "look_enu_m": [
+        166.0,
+        123.0,
+        39.55
+      ],
+      "support": "COL_Outer500_Retaining_and_boundaries",
+      "supported_enu_m": [
+        161.110687255859,
+        113.929458618164,
+        38.1445007324219
+      ]
+    },
+    "12": {
+      "editor_enu_m": [
+        220.004333496094,
+        111.180709838867,
+        40.5831508789063
+      ],
+      "look_enu_m": [
+        219.414091966481,
+        104.336674332033,
+        40.8976615905762
+      ],
+      "support": "COL_Zhongxing12_PublicPaving",
+      "supported_enu_m": [
+        220.004333496094,
+        111.180709838867,
+        40.5831031799316
+      ]
+    },
+    "22": {
+      "editor_enu_m": [
+        112.22,
+        88.45,
+        34.91165
+      ],
+      "look_enu_m": [
+        116.35,
+        86.14,
+        35.37597
+      ],
+      "support": "COL_Zhongxing22_ContinuousPublicApron",
+      "supported_enu_m": [
+        112.220001220703,
+        88.4499969482422,
+        34.9116439819336
+      ]
+    },
+    "26": {
+      "editor_enu_m": [
+        177.010238647461,
+        -123.156318664551,
+        13.7668089376668
+      ],
+      "look_enu_m": [
+        194.247451782227,
+        -128.223098754883,
+        11.6225090281632
+      ],
+      "support": "COL_Jiefang26_PublicFlags",
+      "supported_enu_m": [
+        177.010238647461,
+        -123.156318664551,
+        13.7667903900146
+      ]
+    },
+    "30": {
+      "editor_enu_m": [
+        -204.417343139648,
+        138.82341003418,
+        30.241947065704
+      ],
+      "look_enu_m": [
+        -206.572601318359,
+        129.420806884766,
+        30.250353482212
+      ],
+      "support": "COL_Western30_OutdoorStoneFlags",
+      "supported_enu_m": [
+        -204.417343139648,
+        138.82341003418,
+        30.241907119751
+      ]
+    },
+    "31": {
+      "editor_enu_m": [
+        -205.466812133789,
+        138.941421508789,
+        30.170296260435
+      ],
+      "look_enu_m": [
+        -213.495361328125,
+        132.406616210938,
+        29.945735241825
+      ],
+      "support": "COL_Western31_OutdoorStoneFlags",
+      "supported_enu_m": [
+        -205.466812133789,
+        138.941421508789,
+        30.1704769134521
+      ]
+    },
+    "34": {
+      "editor_enu_m": [
+        -70.7388458251953,
+        164.484375,
+        43.82711328125
+      ],
+      "look_enu_m": [
+        -83.0022964477539,
+        163.563858032227,
+        42.317103515625
+      ],
+      "support": "COL_Mati34_PublicApproach",
+      "supported_enu_m": [
+        -70.7388458251953,
+        164.484375,
+        43.8270721435547
+      ]
+    },
+    "34-street": {
+      "editor_enu_m": [
+        -65.2299957275391,
+        165.019500732422,
+        44.4341213150149
+      ],
+      "look_enu_m": [
+        -70.6788787841797,
+        164.486465454102,
+        43.8676586362935
+      ],
+      "support": "COL_Review34_MatixStreetLinkApron",
+      "supported_enu_m": [
+        -65.2299957275391,
+        165.019500732422,
+        44.3989601135254
+      ]
+    },
+    "35": {
+      "editor_enu_m": [
+        -65.9505157470703,
+        181.687088012695,
+        46.3888427124023
+      ],
+      "look_enu_m": [
+        -58.3754539489746,
+        189.434463500977,
+        47.7589713439941
+      ],
+      "support": "COL_Mati35_PublicApproach",
+      "supported_enu_m": [
+        -65.9505157470703,
+        181.687088012695,
+        46.388801574707
+      ]
+    },
+    "40": {
+      "editor_enu_m": [
+        17.2387886047363,
+        163.434173583984,
+        40.3070479125977
+      ],
+      "look_enu_m": [
+        -1.34117615222931,
+        163.92936706543,
+        41.6944723815918
+      ],
+      "support": "COL_North40_Footway",
+      "supported_enu_m": [
+        17.2387886047363,
+        163.434173583984,
+        40.3070297241211
+      ]
+    },
+    "41": {
+      "editor_enu_m": [
+        51.3365631103516,
+        167.042465209961,
+        39.2724447937012
+      ],
+      "look_enu_m": [
+        69.5038223266602,
+        171.324600219727,
+        39.5883360595703
+      ],
+      "support": "COL_North41_Footway",
+      "supported_enu_m": [
+        51.3365631103516,
+        167.042465209961,
+        39.272388458252
+      ]
+    },
+    "42": {
+      "editor_enu_m": [
+        85.825789,
+        188.995499,
+        43.0015
+      ],
+      "look_enu_m": [
+        89.54,
+        190.05,
+        43.4239225769043
+      ],
+      "support": "COL_Outer500_Surface_06_08",
+      "supported_enu_m": [
+        85.8257904052734,
+        188.995498657227,
+        42.9909973144531
+      ]
+    },
+    "43": {
+      "editor_enu_m": [
+        105.06,
+        162.1,
+        35.9749784851074
+      ],
+      "look_enu_m": [
+        106.749725341797,
+        165.183013916016,
+        37.8053974914551
+      ],
+      "support": "COL_Outer500_Surface_07_08",
+      "supported_enu_m": [
+        105.059997558594,
+        162.100006103516,
+        35.9348983764648
+      ]
+    },
+    "45": {
+      "editor_enu_m": [
+        140.086517333984,
+        178.455139160156,
+        41.2981896667481
+      ],
+      "look_enu_m": [
+        151.65007019043,
+        179.882751464844,
+        42.5412621765137
+      ],
+      "support": "COL_Liangtingzi45_PublicFlags",
+      "supported_enu_m": [
+        140.086517333984,
+        178.455139160156,
+        41.298152923584
+      ]
+    },
+    "46": {
+      "editor_enu_m": [
+        153.995956420898,
+        179.303421020508,
+        42.6537936096191
+      ],
+      "look_enu_m": [
+        157.555450439453,
+        169.178161621094,
+        40.7324869995117
+      ],
+      "support": "COL_Liangtingzi46_PublicDescent",
+      "supported_enu_m": [
+        153.995956420898,
+        179.303421020508,
+        42.6537055969238
+      ]
+    },
+    "49": {
+      "editor_enu_m": [
+        -240.924621582031,
+        14.7307376861572,
+        20.7461839788855
+      ],
+      "look_enu_m": [
+        -248.005035400391,
+        21.7095775604248,
+        21.908865227955
+      ],
+      "support": "COL_Western49_OutdoorStoneFlags",
+      "supported_enu_m": [
+        -240.924621582031,
+        14.7307376861572,
+        20.7462940216064
+      ]
+    },
+    "52": {
+      "editor_enu_m": [
+        -171.62,
+        -111.25,
+        6.73
+      ],
+      "look_enu_m": [
+        -171.62,
+        -96.85,
+        10.44
+      ],
+      "support": "COL_Outer500_Surface_01_02",
+      "supported_enu_m": [
+        -171.619995117188,
+        -111.25,
+        6.73000288009644
+      ]
+    },
+    "53": {
+      "editor_enu_m": [
+        -141.8983,
+        -76.5209,
+        10.2521
+      ],
+      "look_enu_m": [
+        -145.2315,
+        -78.8738,
+        11.6776
+      ],
+      "support": "COL_Nanqu_HillsideRetaining",
+      "supported_enu_m": [
+        -141.898300170898,
+        -76.5208969116211,
+        10.2521076202393
+      ]
+    },
+    "54": {
+      "editor_enu_m": [
+        -143.4855,
+        -118.47,
+        4.5239
+      ],
+      "look_enu_m": [
+        -139.8706,
+        -116.6737,
+        5.3352
+      ],
+      "support": "COL_Outer500_Building_envelopes",
+      "supported_enu_m": [
+        -143.485504150391,
+        -118.470001220703,
+        4.52199983596802
+      ]
+    },
+    "56": {
+      "editor_enu_m": [
+        -128.6075,
+        -110.7911,
+        4.6314
+      ],
+      "look_enu_m": [
+        -124.3973,
+        -123.9423,
+        4.3329
+      ],
+      "support": "COL_Outer500_Surface_02_02",
+      "supported_enu_m": [
+        -128.607498168945,
+        -110.79109954834,
+        4.55992126464844
+      ]
+    }
+  },
+  "plots": [
+    "00",
+    "01",
+    "12",
+    "22",
+    "26",
+    "30",
+    "31",
+    "34",
+    "35",
+    "40",
+    "41",
+    "42",
+    "43",
+    "45",
+    "46",
+    "49",
+    "52",
+    "53",
+    "54",
+    "56"
+  ],
+  "shortcuts": [
+    "00-tool-eye",
+    "34-street"
+  ]
+}

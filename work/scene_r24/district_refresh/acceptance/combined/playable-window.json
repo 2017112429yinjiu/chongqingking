@@ -1,0 +1,23 @@
+{
+  "played_commit": "034207b30a1f759dd9cb14287fc0e56dcca1a6a4",
+  "launch": "bash work/scene_r24/district_500/play.sh --software -- --explore-500 --refresh-plot=43",
+  "renderer": "OpenGL API 4.5 (Core Profile) Mesa 25.0.7-2+deb13u1 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 19.1.7, 256 bits)",
+  "audio": "Dummy fallback observed",
+  "display": ":0",
+  "window": "xwininfo: Window id: 0x200003 \"重庆外卖王 · 梯坎里 R24 构建 25b (DEBUG)\"\n\n  Absolute upper-left X:  112\n  Absolute upper-left Y:  159\n  Relative upper-left X:  112\n  Relative upper-left Y:  159\n  Width: 800\n  Height: 450\n  Depth: 24\n  Visual: 0x1cb\n  Visual Class: TrueColor\n  Border width: 0\n  Class: InputOutput\n  Colormap: 0x200001 (not installed)\n  Bit Gravity State: ForgetGravity\n  Window Gravity State: NorthWestGravity\n  Backing Store State: NotUseful\n  Save Under State: no\n  Map State: IsViewable\n  Override Redirect State: no\n  Corners:  +112+159  -112+159  -112-159  +112-159\n  -geometry 800x450+112+159",
+  "image_sha256": "1fedef4a1985374e79b2812c37cc7b440002c1b9876190fabecd6b2a859f0c03",
+  "persistent_storage": "Filesystem      Size  Used Avail Use% Mounted on\noverlay          32G   30G   15M 100% /workspace",
+  "formal_assets_preceding_local_furniture_change": "5787c14158f33f2d1a53e5831ac010d4dfd3e21f",
+  "revised_art_runtime_files": [
+    "work/project/chongqing_godot_v05/assets/district_500/acceptance-south.glb",
+    "work/project/chongqing_godot_v05/assets/district_500/acceptance-south.json",
+    "work/project/chongqing_godot_v05/assets/district_500/acceptance_textures/repair-workshop-steel-albedo.jpg"
+  ],
+  "case_runs_verified_after_furniture_change": [
+    "normal tyre",
+    "tool bay",
+    "reachable eye",
+    "Blender combined source"
+  ],
+  "QA_raw": "/workspace/work/runtime/district-refresh/final-twenty.YZvMkn65/real-play.txSVL2J5"
+}

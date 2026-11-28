@@ -1,0 +1,3424 @@
+{
+  "tested_commit": "5787c14158f33f2d1a53e5831ac010d4dfd3e21f",
+  "starting_checkout": "1312c8d08d0d2e64bc2e7ba5520398996276c88d",
+  "godot": "4.6.3.stable.official.7d41c59c4",
+  "blender": "Blender 4.3.2",
+  "renderer_native": "OpenGL Compatibility / Mesa llvmpipe, Xvfb. Sun shadows disabled for the software run.",
+  "storage": "Filesystem      Size  Used Avail Use% Mounted on\noverlay          32G   30G   26M 100% /workspace\nshm             8.8G  4.8G  4.1G  54% /dev/shm",
+  "execution_dates": {
+    "start": "2026-11-28T22:16:09+08:00",
+    "end": "2026-11-29T01:03:28+08:00"
+  },
+  "formal_cases": {
+    "bridge": {
+      "exit": 0,
+      "engine_diagnostics": 0,
+      "substantive_errors": [],
+      "checks": 42,
+      "passed": 42,
+      "failures": []
+    },
+    "counter": {
+      "exit": 0,
+      "engine_diagnostics": 0,
+      "substantive_errors": [],
+      "checks": 7,
+      "passed": 7,
+      "failures": []
+    },
+    "ground": {
+      "exit": 0,
+      "engine_diagnostics": 0,
+      "substantive_errors": []
+    },
+    "home": {
+      "exit": 0,
+      "engine_diagnostics": 0,
+      "substantive_errors": [],
+      "checks": 13,
+      "passed": 13,
+      "failures": []
+    },
+    "junction_profiles": {
+      "exit": 0,
+      "engine_diagnostics": 0,
+      "substantive_errors": [],
+      "checks": 67,
+      "passed": 67,
+      "failures": []
+    },
+    "lunch": {
+      "exit": 0,
+      "engine_diagnostics": 0,
+      "substantive_errors": [],
+      "checks": 35,
+      "passed": 35,
+      "failures": []
+    },
+    "market": {
+      "exit": 0,
+      "engine_diagnostics": 0,
+      "substantive_errors": [],
+      "checks": 5,
+      "passed": 5,
+      "failures": []
+    },
+    "north": {
+      "exit": 2,
+      "engine_diagnostics": 0,
+      "substantive_errors": [],
+      "checks": 305,
+      "passed": 45,
+      "failures": [
+        {
+          "detail": {
+            "old_height": 10.725,
+            "point": [
+              -43.777,
+              100.0
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_0",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.7156,
+            "point": [
+              44.592,
+              95.094
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_1",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.7203,
+            "point": [
+              44.482,
+              94.68
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_2",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.7206,
+            "point": [
+              44.335,
+              94.307
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_3",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.5543,
+            "point": [
+              42.574,
+              94.998
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_4",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.721,
+            "point": [
+              44.189,
+              93.933
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_5",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.5547,
+            "point": [
+              42.428,
+              94.625
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_6",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.7213,
+            "point": [
+              44.043,
+              93.56
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_7",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.555,
+            "point": [
+              42.281,
+              94.251
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_8",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.3917,
+            "point": [
+              40.52,
+              94.943
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_9",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.7217,
+            "point": [
+              43.896,
+              93.187
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_10",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.5554,
+            "point": [
+              42.135,
+              93.878
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_11",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.3921,
+            "point": [
+              40.374,
+              94.569
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_12",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 14.4649,
+            "point": [
+              61.394,
+              87.118
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_13",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 14.4227,
+            "point": [
+              60.958,
+              87.189
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_14",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 14.3805,
+            "point": [
+              60.523,
+              87.261
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_15",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 14.3384,
+            "point": [
+              60.087,
+              87.333
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_16",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 14.2963,
+            "point": [
+              59.651,
+              87.405
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_17",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 14.2542,
+            "point": [
+              59.216,
+              87.476
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_18",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 14.2123,
+            "point": [
+              58.78,
+              87.548
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_19",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 14.1703,
+            "point": [
+              58.345,
+              87.62
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_20",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 14.1285,
+            "point": [
+              57.909,
+              87.692
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_21",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 14.0866,
+            "point": [
+              57.473,
+              87.763
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_22",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 14.0449,
+            "point": [
+              57.038,
+              87.835
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_23",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 14.0032,
+            "point": [
+              56.602,
+              87.907
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_24",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 13.9616,
+            "point": [
+              56.166,
+              87.979
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_25",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 14.9921,
+            "point": [
+              55.731,
+              88.05
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_26",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 13.7711,
+            "point": [
+              43.497,
+              93.009
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_27",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.6556,
+            "point": [
+              43.106,
+              93.227
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_28",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.6166,
+            "point": [
+              42.716,
+              93.445
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_29",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.5778,
+            "point": [
+              42.326,
+              93.663
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_30",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.5907,
+            "point": [
+              42.454,
+              93.585
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_31",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.5543,
+            "point": [
+              42.1,
+              93.822
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_32",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.518,
+            "point": [
+              41.745,
+              94.059
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_33",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.4818,
+            "point": [
+              41.39,
+              94.297
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_34",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.4458,
+            "point": [
+              41.036,
+              94.534
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_35",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.41,
+            "point": [
+              40.681,
+              94.771
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_36",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.3743,
+            "point": [
+              40.326,
+              95.008
+            ],
+            "support": []
+          },
+          "name": "recheck_sections_37",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 11.667,
+            "point": [
+              -63.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_48",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.618,
+            "point": [
+              -61.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_49",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.638,
+            "point": [
+              -59.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_50",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.656,
+            "point": [
+              -57.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_51",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.672,
+            "point": [
+              -55.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_52",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.694,
+            "point": [
+              -53.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_53",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.717,
+            "point": [
+              -51.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_54",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.739,
+            "point": [
+              -49.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_55",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.887,
+            "point": [
+              -47.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_56",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.801,
+            "point": [
+              -45.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_57",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.684,
+            "point": [
+              -43.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_58",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.756,
+            "point": [
+              -41.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_59",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.811,
+            "point": [
+              -39.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_60",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.818,
+            "point": [
+              -37.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_61",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.824,
+            "point": [
+              -35.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_62",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.828,
+            "point": [
+              -33.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_63",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.829,
+            "point": [
+              -31.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_64",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.829,
+            "point": [
+              -29.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_65",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.826,
+            "point": [
+              -27.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_66",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.822,
+            "point": [
+              -25.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_67",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.817,
+            "point": [
+              -23.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_68",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.81,
+            "point": [
+              -21.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_69",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.815,
+            "point": [
+              -19.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_70",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.824,
+            "point": [
+              -17.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_71",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.833,
+            "point": [
+              -15.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_72",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.843,
+            "point": [
+              -13.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_73",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.852,
+            "point": [
+              -11.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_74",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.862,
+            "point": [
+              -9.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_75",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.871,
+            "point": [
+              -7.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_76",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.88,
+            "point": [
+              -5.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_77",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.89,
+            "point": [
+              -3.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_78",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.899,
+            "point": [
+              -1.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_79",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.909,
+            "point": [
+              1.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_80",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.918,
+            "point": [
+              3.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_81",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.928,
+            "point": [
+              5.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_82",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.937,
+            "point": [
+              7.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_83",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.946,
+            "point": [
+              9.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_84",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.956,
+            "point": [
+              11.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_85",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.965,
+            "point": [
+              13.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_86",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.975,
+            "point": [
+              15.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_87",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.984,
+            "point": [
+              17.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_88",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.993,
+            "point": [
+              19.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_89",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 11.004,
+            "point": [
+              21.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_90",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 11.013,
+            "point": [
+              23.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_91",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 11.124,
+            "point": [
+              25.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_92",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 11.259,
+            "point": [
+              27.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_93",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 11.399,
+            "point": [
+              29.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_94",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 11.544,
+            "point": [
+              31.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_95",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 11.693,
+            "point": [
+              33.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_96",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 11.848,
+            "point": [
+              35.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_97",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 11.994,
+            "point": [
+              37.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_98",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.145,
+            "point": [
+              39.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_99",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.3,
+            "point": [
+              41.0,
+              99.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_100",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.341,
+            "point": [
+              -79.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_101",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.378,
+            "point": [
+              -77.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_102",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.414,
+            "point": [
+              -75.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_103",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.449,
+            "point": [
+              -73.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_104",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.481,
+            "point": [
+              -71.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_105",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.512,
+            "point": [
+              -69.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_106",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.541,
+            "point": [
+              -67.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_107",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.568,
+            "point": [
+              -65.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_108",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.593,
+            "point": [
+              -63.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_109",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.615,
+            "point": [
+              -61.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_110",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.636,
+            "point": [
+              -59.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_111",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.654,
+            "point": [
+              -57.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_112",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.67,
+            "point": [
+              -55.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_113",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.692,
+            "point": [
+              -53.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_114",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.716,
+            "point": [
+              -51.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_115",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.737,
+            "point": [
+              -49.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_116",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.888,
+            "point": [
+              -47.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_117",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.81,
+            "point": [
+              -45.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_118",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.693,
+            "point": [
+              -43.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_119",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.744,
+            "point": [
+              -41.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_120",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.81,
+            "point": [
+              -39.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_121",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.818,
+            "point": [
+              -37.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_122",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.824,
+            "point": [
+              -35.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_123",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.827,
+            "point": [
+              -33.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_124",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.829,
+            "point": [
+              -31.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_125",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.829,
+            "point": [
+              -29.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_126",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.827,
+            "point": [
+              -27.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_127",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.351,
+            "point": [
+              27.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_128",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 11.416,
+            "point": [
+              29.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_129",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 11.561,
+            "point": [
+              31.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_130",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 11.712,
+            "point": [
+              33.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_131",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 11.867,
+            "point": [
+              35.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_132",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.035,
+            "point": [
+              37.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_133",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.208,
+            "point": [
+              39.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_134",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.364,
+            "point": [
+              41.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_135",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.523,
+            "point": [
+              43.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_136",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.686,
+            "point": [
+              45.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_137",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.851,
+            "point": [
+              47.0,
+              97.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_138",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.104,
+            "point": [
+              -93.0,
+              95.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_139",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.117,
+            "point": [
+              -91.0,
+              95.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_140",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.131,
+            "point": [
+              -89.0,
+              95.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_141",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.173,
+            "point": [
+              -87.0,
+              95.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_142",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.216,
+            "point": [
+              -85.0,
+              95.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_143",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.257,
+            "point": [
+              -83.0,
+              95.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_144",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.298,
+            "point": [
+              -81.0,
+              95.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_145",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.337,
+            "point": [
+              -79.0,
+              95.0
+            ],
+            "support": [
+              [
+                10.7582674026489,
+                "COL_R24_LinkPiers_R24_link_concrete"
+              ]
+            ]
+          },
+          "name": "recheck_grid_146",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.374,
+            "point": [
+              -77.0,
+              95.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_147",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.41,
+            "point": [
+              -75.0,
+              95.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_148",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.445,
+            "point": [
+              -73.0,
+              95.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_149",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.478,
+            "point": [
+              -71.0,
+              95.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_150",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.509,
+            "point": [
+              -69.0,
+              95.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_151",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.538,
+            "point": [
+              -67.0,
+              95.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_152",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.565,
+            "point": [
+              -65.0,
+              95.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_153",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.59,
+            "point": [
+              -63.0,
+              95.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_154",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.613,
+            "point": [
+              -61.0,
+              95.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_155",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.634,
+            "point": [
+              -59.0,
+              95.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_156",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.652,
+            "point": [
+              -57.0,
+              95.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_157",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.669,
+            "point": [
+              -55.0,
+              95.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_158",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 11.767,
+            "point": [
+              -53.0,
+              95.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_159",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.27,
+            "point": [
+              39.0,
+              95.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_160",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.428,
+            "point": [
+              41.0,
+              95.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_161",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.589,
+            "point": [
+              43.0,
+              95.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_162",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.752,
+            "point": [
+              45.0,
+              95.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_163",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.919,
+            "point": [
+              47.0,
+              95.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_164",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 13.087,
+            "point": [
+              49.0,
+              95.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_165",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 13.258,
+            "point": [
+              51.0,
+              95.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_166",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.063,
+            "point": [
+              -99.0,
+              93.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_167",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.076,
+            "point": [
+              -97.0,
+              93.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_168",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.089,
+            "point": [
+              -95.0,
+              93.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_169",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.102,
+            "point": [
+              -93.0,
+              93.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_170",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.114,
+            "point": [
+              -91.0,
+              93.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_171",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.126,
+            "point": [
+              -89.0,
+              93.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_172",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.168,
+            "point": [
+              -87.0,
+              93.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_173",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.211,
+            "point": [
+              -85.0,
+              93.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_174",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.252,
+            "point": [
+              -83.0,
+              93.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_175",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.293,
+            "point": [
+              -81.0,
+              93.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_176",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.332,
+            "point": [
+              -79.0,
+              93.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_177",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.37,
+            "point": [
+              -77.0,
+              93.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_178",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.406,
+            "point": [
+              -75.0,
+              93.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_179",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.441,
+            "point": [
+              -73.0,
+              93.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_180",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.474,
+            "point": [
+              -71.0,
+              93.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_181",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.819,
+            "point": [
+              45.0,
+              93.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_182",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 12.986,
+            "point": [
+              47.0,
+              93.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_183",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 13.156,
+            "point": [
+              49.0,
+              93.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_184",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 13.328,
+            "point": [
+              51.0,
+              93.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_185",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 13.502,
+            "point": [
+              53.0,
+              93.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_186",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 13.678,
+            "point": [
+              55.0,
+              93.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_187",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 13.855,
+            "point": [
+              57.0,
+              93.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_188",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.06,
+            "point": [
+              -99.0,
+              91.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_189",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.073,
+            "point": [
+              -97.0,
+              91.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_190",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.086,
+            "point": [
+              -95.0,
+              91.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_191",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.099,
+            "point": [
+              -93.0,
+              91.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_192",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.111,
+            "point": [
+              -91.0,
+              91.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_193",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.123,
+            "point": [
+              -89.0,
+              91.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_194",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 13.225,
+            "point": [
+              49.0,
+              91.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_195",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 13.398,
+            "point": [
+              51.0,
+              91.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_196",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 13.573,
+            "point": [
+              53.0,
+              91.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_197",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 13.749,
+            "point": [
+              55.0,
+              91.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_198",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 13.927,
+            "point": [
+              57.0,
+              91.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_199",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 14.106,
+            "point": [
+              59.0,
+              91.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_200",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 14.287,
+            "point": [
+              61.0,
+              91.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_201",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 10.057,
+            "point": [
+              -99.0,
+              89.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_202",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 11.143,
+            "point": [
+              -97.0,
+              89.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_203",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 13.821,
+            "point": [
+              55.0,
+              89.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_204",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 13.999,
+            "point": [
+              57.0,
+              89.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_205",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 14.179,
+            "point": [
+              59.0,
+              89.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_206",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 14.36,
+            "point": [
+              61.0,
+              89.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_207",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 14.542,
+            "point": [
+              63.0,
+              89.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_208",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 14.707,
+            "point": [
+              65.0,
+              89.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_209",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 14.252,
+            "point": [
+              59.0,
+              87.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_210",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 14.433,
+            "point": [
+              61.0,
+              87.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_211",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 14.616,
+            "point": [
+              63.0,
+              87.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_212",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 14.787,
+            "point": [
+              65.0,
+              87.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_213",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 14.959,
+            "point": [
+              67.0,
+              87.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_214",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 15.119,
+            "point": [
+              69.0,
+              87.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_215",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 14.914,
+            "point": [
+              65.0,
+              85.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_216",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 15.075,
+            "point": [
+              67.0,
+              85.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_217",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 15.235,
+            "point": [
+              69.0,
+              85.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_218",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 15.396,
+            "point": [
+              71.0,
+              85.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_219",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 15.19,
+            "point": [
+              67.0,
+              83.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_220",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 15.351,
+            "point": [
+              69.0,
+              83.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_221",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 15.511,
+            "point": [
+              71.0,
+              83.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_222",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 15.672,
+            "point": [
+              73.0,
+              83.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_223",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 15.466,
+            "point": [
+              69.0,
+              81.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_224",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 15.627,
+            "point": [
+              71.0,
+              81.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_225",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 15.787,
+            "point": [
+              73.0,
+              81.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_226",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 15.946,
+            "point": [
+              75.0,
+              81.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_227",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 16.105,
+            "point": [
+              77.0,
+              81.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_228",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 15.902,
+            "point": [
+              73.0,
+              79.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_229",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 16.061,
+            "point": [
+              75.0,
+              79.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_230",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 16.219,
+            "point": [
+              77.0,
+              79.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_231",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 16.377,
+            "point": [
+              79.0,
+              79.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_232",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 16.175,
+            "point": [
+              75.0,
+              77.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_233",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 16.333,
+            "point": [
+              77.0,
+              77.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_234",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 16.49,
+            "point": [
+              79.0,
+              77.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_235",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 16.646,
+            "point": [
+              81.0,
+              77.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_236",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 16.801,
+            "point": [
+              83.0,
+              77.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_237",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 16.603,
+            "point": [
+              79.0,
+              75.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_238",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 16.758,
+            "point": [
+              81.0,
+              75.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_239",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 16.912,
+            "point": [
+              83.0,
+              75.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_240",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 17.064,
+            "point": [
+              85.0,
+              75.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_241",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 16.869,
+            "point": [
+              81.0,
+              73.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_242",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 17.022,
+            "point": [
+              83.0,
+              73.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_243",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 17.173,
+            "point": [
+              85.0,
+              73.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_244",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 17.323,
+            "point": [
+              87.0,
+              73.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_245",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 17.131,
+            "point": [
+              83.0,
+              71.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_246",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 17.281,
+            "point": [
+              85.0,
+              71.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_247",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 17.43,
+            "point": [
+              87.0,
+              71.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_248",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 17.577,
+            "point": [
+              89.0,
+              71.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_249",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 17.721,
+            "point": [
+              91.0,
+              71.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_250",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 17.536,
+            "point": [
+              87.0,
+              69.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_251",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 17.681,
+            "point": [
+              89.0,
+              69.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_252",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 17.824,
+            "point": [
+              91.0,
+              69.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_253",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 17.966,
+            "point": [
+              93.0,
+              69.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_254",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 17.785,
+            "point": [
+              89.0,
+              67.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_255",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 17.926,
+            "point": [
+              91.0,
+              67.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_256",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 18.066,
+            "point": [
+              93.0,
+              67.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_257",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 18.203,
+            "point": [
+              95.0,
+              67.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_258",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 19.408,
+            "point": [
+              97.0,
+              67.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_259",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 18.027,
+            "point": [
+              91.0,
+              65.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_260",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 18.165,
+            "point": [
+              93.0,
+              65.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_261",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 18.3,
+            "point": [
+              95.0,
+              65.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_262",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 18.433,
+            "point": [
+              97.0,
+              65.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_263",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 18.558,
+            "point": [
+              99.0,
+              65.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_264",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 18.396,
+            "point": [
+              95.0,
+              63.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_265",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 18.528,
+            "point": [
+              97.0,
+              63.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_266",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 18.653,
+            "point": [
+              99.0,
+              63.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_267",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 18.626,
+            "point": [
+              97.0,
+              61.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_268",
+          "pass": false
+        },
+        {
+          "detail": {
+            "old_height": 18.748,
+            "point": [
+              99.0,
+              61.0
+            ],
+            "support": []
+          },
+          "name": "recheck_grid_269",
+          "pass": false
+        }
+      ]
+    },
+    "older_crossings": {
+      "exit": 0,
+      "engine_diagnostics": 0,
+      "substantive_errors": [],
+      "checks": 19,
+      "passed": 19,
+      "failures": []
+    },
+    "pavement": {
+      "exit": 0,
+      "engine_diagnostics": 0,
+      "substantive_errors": [],
+      "checks": 10,
+      "passed": 10,
+      "failures": []
+    },
+    "player_back_0": {
+      "exit": 0,
+      "engine_diagnostics": 0,
+      "substantive_errors": []
+    },
+    "player_back_1": {
+      "exit": 0,
+      "engine_diagnostics": 0,
+      "substantive_errors": []
+    },
+    "player_back_2": {
+      "exit": 0,
+      "engine_diagnostics": 0,
+      "substantive_errors": []
+    },
+    "player_out_0": {
+      "exit": 0,
+      "engine_diagnostics": 0,
+      "substantive_errors": []
+    },
+    "player_out_1": {
+      "exit": 0,
+      "engine_diagnostics": 0,
+      "substantive_errors": []
+    },
+    "player_out_2": {
+      "exit": 0,
+      "engine_diagnostics": 0,
+      "substantive_errors": []
+    },
+    "repair": {
+      "exit": 0,
+      "engine_diagnostics": 0,
+      "substantive_errors": [],
+      "checks": 10,
+      "passed": 10,
+      "failures": []
+    },
+    "restore": {
+      "exit": 0,
+      "engine_diagnostics": 0,
+      "substantive_errors": [],
+      "checks": 5,
+      "passed": 5,
+      "failures": []
+    },
+    "ride": {
+      "exit": 0,
+      "engine_diagnostics": 0,
+      "substantive_errors": []
+    },
+    "save_resume": {
+      "exit": 0,
+      "engine_diagnostics": 0,
+      "substantive_errors": []
+    },
+    "sections": {
+      "exit": 0,
+      "engine_diagnostics": 0,
+      "substantive_errors": [],
+      "checks": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "single": {
+      "exit": 0,
+      "engine_diagnostics": 0,
+      "substantive_errors": [],
+      "checks": 8,
+      "passed": 8,
+      "failures": []
+    },
+    "sites": {
+      "exit": 0,
+      "engine_diagnostics": 0,
+      "substantive_errors": [],
+      "checks": 15,
+      "passed": 15,
+      "failures": []
+    },
+    "software-frame-intervals": {
+      "exit": 0,
+      "engine_diagnostics": 0,
+      "substantive_errors": []
+    },
+    "teaching": {
+      "exit": 0,
+      "engine_diagnostics": 0,
+      "substantive_errors": [],
+      "checks": 85,
+      "passed": 85,
+      "failures": []
+    },
+    "timing": {
+      "exit": 124,
+      "engine_diagnostics": 0,
+      "substantive_errors": []
+    },
+    "turns": {
+      "exit": 0,
+      "engine_diagnostics": 0,
+      "substantive_errors": [],
+      "checks": 7,
+      "passed": 7,
+      "failures": []
+    }
+  },
+  "expected_surface_roads": 26,
+  "roads": {
+    "out": {
+      "batches": [
+        9,
+        9,
+        8
+      ],
+      "total": 26,
+      "unique": 26,
+      "passed": 26,
+      "missing": [],
+      "stops": []
+    },
+    "back": {
+      "batches": [
+        9,
+        9,
+        8
+      ],
+      "total": 26,
+      "unique": 26,
+      "passed": 26,
+      "missing": [],
+      "stops": []
+    }
+  },
+  "ground": {
+    "sections": 16004,
+    "grid": 10000
+  },
+  "mentor": {
+    "roads": 14,
+    "legs": 28,
+    "passed": 28
+  },
+  "strict_report_exit": "1",
+  "timing_native_script": null,
+  "timing_software_intervals": {
+    "device": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "viewport": "(692.0, 389.0)",
+    "views": [
+      {
+        "median_ms": 14962.826,
+        "samples": 8,
+        "view": "switchback",
+        "wall_frame_intervals_ms": [
+          14672.123,
+          15417.401,
+          15078.873,
+          16783.266,
+          14846.779,
+          15673.15,
+          14454.588,
+          14400.724
+        ]
+      },
+      {
+        "median_ms": 19974.1935,
+        "samples": 8,
+        "view": "crossing",
+        "wall_frame_intervals_ms": [
+          20007.913,
+          19940.474,
+          19929.661,
+          20356.972,
+          19169.28,
+          20442.2,
+          20641.527,
+          19439.865
+        ]
+      },
+      {
+        "median_ms": 18394.2215,
+        "samples": 8,
+        "view": "301",
+        "wall_frame_intervals_ms": [
+          18219.611,
+          18416.908,
+          18371.535,
+          17671.999,
+          18295.391,
+          18827.044,
+          18791.42,
+          19136.102
+        ]
+      }
+    ],
+    "warm_frames_per_view": 4,
+    "window": "(1152, 648)"
+  },
+  "native_pngs": {
+    "bridge": 12,
+    "home": 3,
+    "sites": 13,
+    "junction_profiles": 4,
+    "older_crossings": 12,
+    "turns": 3,
+    "ride": 14,
+    "north": 2
+  }
+}

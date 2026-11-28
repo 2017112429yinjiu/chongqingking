@@ -1,0 +1,5474 @@
+{
+  "active_regions": {
+    "east": "9f6627f1ec1cc229a5c8ef71503bf6027b35946042c70815da4748903abd1425",
+    "jiefang": "cb0d8f61b3b5dd19fd321ed33db5775a0f5ca3416122336c4598b06714ade888",
+    "north": "cfee138b939f8bb448c11d3467728be46294b998a712d8dc4985164c7842e86e",
+    "south": "6329f0d1b1c50e6e97c064e0eb87aa552e491c71fce26fc6db58662e9779a5ef",
+    "west": "51e0388bea759c165829021ce67c25bcf3614396e318aedd162d09ff7a485a13"
+  },
+  "checks": [
+    {
+      "detail": "9f6627f1ec1cc229a5c8ef71503bf6027b35946042c70815da4748903abd1425",
+      "name": "loaded_east",
+      "pass": true
+    },
+    {
+      "detail": "51e0388bea759c165829021ce67c25bcf3614396e318aedd162d09ff7a485a13",
+      "name": "loaded_west",
+      "pass": true
+    },
+    {
+      "detail": "cb0d8f61b3b5dd19fd321ed33db5775a0f5ca3416122336c4598b06714ade888",
+      "name": "loaded_jiefang",
+      "pass": true
+    },
+    {
+      "detail": "cfee138b939f8bb448c11d3467728be46294b998a712d8dc4985164c7842e86e",
+      "name": "loaded_north",
+      "pass": true
+    },
+    {
+      "detail": "6329f0d1b1c50e6e97c064e0eb87aa552e491c71fce26fc6db58662e9779a5ef",
+      "name": "loaded_south",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "12_ground",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 6.07816850952804,
+        "end": "(220.147, 39.77386, -104.7772)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0734417214989662,
+        "name": "12_out",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "name": "12_out",
+      "pass": true
+    },
+    {
+      "detail": [
+        220.14697265625,
+        104.777198791504,
+        39.7738647460938
+      ],
+      "name": "12_destination_level",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 6.1527761304751,
+        "end": "(220.0005, 40.61137, -111.2388)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0697039589285851,
+        "name": "12_back",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "name": "12_back",
+      "pass": true
+    },
+    {
+      "detail": [
+        220.00048828125,
+        111.238807678223,
+        40.6113700866699
+      ],
+      "name": "12_return_root",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "22_ground",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 18.2031889846548,
+        "end": "(119.5216, 34.84077, -87.53746)",
+        "goals": 12,
+        "max_frame_displacement_m": 0.0719451531767845,
+        "name": "22_out",
+        "pass": true,
+        "reached": 12,
+        "stall_contacts": []
+      },
+      "name": "22_out",
+      "pass": true
+    },
+    {
+      "detail": [
+        119.521591186523,
+        87.5374603271484,
+        34.8407745361328
+      ],
+      "name": "22_destination_level",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 18.0993543509394,
+        "end": "(112.222, 34.92699, -88.50657)",
+        "goals": 12,
+        "max_frame_displacement_m": 0.073083721101284,
+        "name": "22_back",
+        "pass": true,
+        "reached": 12,
+        "stall_contacts": []
+      },
+      "name": "22_back",
+      "pass": true
+    },
+    {
+      "detail": [
+        112.222038269043,
+        88.5065689086914,
+        34.9269866943359
+      ],
+      "name": "22_return_root",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "30_ground",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 9.37008517142385,
+        "end": "(-206.5238, 30.26413, -129.3962)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0717507302761078,
+        "name": "30_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "name": "30_out",
+      "pass": true
+    },
+    {
+      "detail": [
+        -206.523803710938,
+        129.396179199219,
+        30.2641334533691
+      ],
+      "name": "30_destination_level",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 9.42722554132342,
+        "end": "(-204.4613, 30.25372, -138.889)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0716154798865318,
+        "name": "30_back",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "name": "30_back",
+      "pass": true
+    },
+    {
+      "detail": [
+        -204.46125793457,
+        138.889007568359,
+        30.2537231445312
+      ],
+      "name": "30_return_root",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "31_ground",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 10.0946613270789,
+        "end": "(-213.4718, 29.96083, -132.4583)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0719493851065636,
+        "name": "31_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "name": "31_out",
+      "pass": true
+    },
+    {
+      "detail": [
+        -213.471817016602,
+        132.458312988281,
+        29.9608325958252
+      ],
+      "name": "31_destination_level",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 10.0649880282581,
+        "end": "(-205.49, 30.18297, -138.9133)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0701780170202255,
+        "name": "31_back",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "name": "31_back",
+      "pass": true
+    },
+    {
+      "detail": [
+        -205.489974975586,
+        138.913269042969,
+        30.1829662322998
+      ],
+      "name": "31_return_root",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "49_ground",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 9.65529028233141,
+        "end": "(-247.95, 21.91607, -21.65674)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0698773786425591,
+        "name": "49_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "name": "49_out",
+      "pass": true
+    },
+    {
+      "detail": [
+        -247.950042724609,
+        21.65673828125,
+        21.9160690307617
+      ],
+      "name": "49_destination_level",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 9.58127486798912,
+        "end": "(-240.9712, 20.76912, -14.77639)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0730840489268303,
+        "name": "49_back",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "name": "49_back",
+      "pass": true
+    },
+    {
+      "detail": [
+        -240.971176147461,
+        14.7763862609863,
+        20.7691192626953
+      ],
+      "name": "49_return_root",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "34_ground",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 12.0343306083232,
+        "end": "(-83.06021, 42.33605, -163.5878)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0731060430407524,
+        "name": "34_out",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "name": "34_out",
+      "pass": true
+    },
+    {
+      "detail": [
+        -83.0602111816406,
+        163.587768554688,
+        42.3360481262207
+      ],
+      "name": "34_destination_level",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 12.1056881677359,
+        "end": "(-70.68086, 43.84814, -164.4499)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.070522703230381,
+        "name": "34_back",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "name": "34_back",
+      "pass": true
+    },
+    {
+      "detail": [
+        -70.6808624267578,
+        164.449905395508,
+        43.8481407165527
+      ],
+      "name": "34_return_root",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "35_ground",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 10.6447085943073,
+        "end": "(-58.40954, 47.76883, -189.373)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0702672228217125,
+        "name": "35_out",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "name": "35_out",
+      "pass": true
+    },
+    {
+      "detail": [
+        -58.409538269043,
+        189.372955322266,
+        47.7688293457031
+      ],
+      "name": "35_destination_level",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 10.5607050070539,
+        "end": "(-65.87534, 46.41513, -181.7116)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.07461828738451,
+        "name": "35_back",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "name": "35_back",
+      "pass": true
+    },
+    {
+      "detail": [
+        -65.8753356933594,
+        181.711563110352,
+        46.4151344299316
+      ],
+      "name": "35_return_root",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "26_ground",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 17.6800971282646,
+        "end": "(194.2618, 11.63638, 128.1599)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0735165402293205,
+        "name": "26_out",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "name": "26_out",
+      "pass": true
+    },
+    {
+      "detail": [
+        194.261810302734,
+        -128.159927368164,
+        11.6363821029663
+      ],
+      "name": "26_destination_level",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 17.7197408499196,
+        "end": "(176.9645, 13.7845, 123.2102)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0699367672204971,
+        "name": "26_back",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "name": "26_back",
+      "pass": true
+    },
+    {
+      "detail": [
+        176.964462280273,
+        -123.210235595703,
+        13.7845029830933
+      ],
+      "name": "26_return_root",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "30-garden_ground",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 11.827206870541,
+        "end": "(-212.0037, 30.23568, -101.4869)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0718612000346184,
+        "name": "30-garden_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "name": "30-garden_out",
+      "pass": true
+    },
+    {
+      "detail": [
+        -212.003707885742,
+        101.486907958984,
+        30.2356777191162
+      ],
+      "name": "30-garden_destination_level",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 11.7554688584059,
+        "end": "(-219.8417, 30.29394, -92.43945)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0719328075647354,
+        "name": "30-garden_back",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "name": "30-garden_back",
+      "pass": true
+    },
+    {
+      "detail": [
+        -219.841735839844,
+        92.4394454956055,
+        30.2939414978027
+      ],
+      "name": "30-garden_return_root",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "31-garden_ground",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 7.14372785575688,
+        "end": "(-227.201, 30.83016, -90.82932)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0718963220715523,
+        "name": "31-garden_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "name": "31-garden_out",
+      "pass": true
+    },
+    {
+      "detail": [
+        -227.200973510742,
+        90.8293228149414,
+        30.8301582336426
+      ],
+      "name": "31-garden_destination_level",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 7.10659293923527,
+        "end": "(-220.6561, 30.31475, -91.63435)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0746617019176483,
+        "name": "31-garden_back",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "name": "31-garden_back",
+      "pass": true
+    },
+    {
+      "detail": [
+        -220.656066894531,
+        91.6343536376953,
+        30.3147468566895
+      ],
+      "name": "31-garden_return_root",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "40_ground",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 18.3219363382086,
+        "end": "(-1.389984, 41.71044, -163.9081)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0702967792749405,
+        "name": "40_out",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "name": "40_out",
+      "pass": true
+    },
+    {
+      "detail": [
+        -1.38998425006866,
+        163.908050537109,
+        41.7104415893555
+      ],
+      "name": "40_destination_level",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 18.3675302239135,
+        "end": "(17.29027, 40.32502, -163.4401)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0731145814061165,
+        "name": "40_back",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "name": "40_back",
+      "pass": true
+    },
+    {
+      "detail": [
+        17.2902679443359,
+        163.440078735352,
+        40.3250198364258
+      ],
+      "name": "40_return_root",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "41_ground",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 19.6600826140493,
+        "end": "(69.58505, 39.60757, -171.3369)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0747038051486015,
+        "name": "41_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "name": "41_out",
+      "pass": true
+    },
+    {
+      "detail": [
+        69.5850524902344,
+        171.336898803711,
+        39.6075744628906
+      ],
+      "name": "41_destination_level",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 19.6966944430023,
+        "end": "(51.36507, 39.29518, -167.1022)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.072669193148613,
+        "name": "41_back",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "name": "41_back",
+      "pass": true
+    },
+    {
+      "detail": [
+        51.3650665283203,
+        167.102203369141,
+        39.2951774597168
+      ],
+      "name": "41_return_root",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "42_ground",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 8.04614457115531,
+        "end": "(79.76249, 45.61998, -190.8856)",
+        "goals": 2,
+        "max_frame_displacement_m": 0.464945107698441,
+        "name": "42_out",
+        "pass": true,
+        "reached": 2,
+        "stall_contacts": []
+      },
+      "name": "42_out",
+      "pass": true
+    },
+    {
+      "detail": [
+        79.7624893188477,
+        190.885559082031,
+        45.6199836730957
+      ],
+      "name": "42_destination_level",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 8.00205146148801,
+        "end": "(85.77876, 43.00102, -188.9585)",
+        "goals": 2,
+        "max_frame_displacement_m": 0.412118673324585,
+        "name": "42_back",
+        "pass": true,
+        "reached": 2,
+        "stall_contacts": []
+      },
+      "name": "42_back",
+      "pass": true
+    },
+    {
+      "detail": [
+        85.7787628173828,
+        188.958526611328,
+        43.0010185241699
+      ],
+      "name": "42_return_root",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "45_ground",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 11.3968997253105,
+        "end": "(151.6796, 42.56313, -179.8572)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0703715980052948,
+        "name": "45_out",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "name": "45_out",
+      "pass": true
+    },
+    {
+      "detail": [
+        151.679595947266,
+        179.857162475586,
+        42.5631256103516
+      ],
+      "name": "45_destination_level",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 11.4318978008814,
+        "end": "(140.0493, 41.31717, -178.495)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0732105150818825,
+        "name": "45_back",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "name": "45_back",
+      "pass": true
+    },
+    {
+      "detail": [
+        140.049331665039,
+        178.495040893555,
+        41.3171653747559
+      ],
+      "name": "45_return_root",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "46_ground",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 10.4675363469869,
+        "end": "(157.4919, 40.73857, -169.1555)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0759697631001472,
+        "name": "46_out",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "name": "46_out",
+      "pass": true
+    },
+    {
+      "detail": [
+        157.491943359375,
+        169.155532836914,
+        40.7385711669922
+      ],
+      "name": "46_destination_level",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 10.5184269314632,
+        "end": "(154.0296, 42.69311, -179.3522)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0699871927499771,
+        "name": "46_back",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "name": "46_back",
+      "pass": true
+    },
+    {
+      "detail": [
+        154.029586791992,
+        179.352188110352,
+        42.6931114196777
+      ],
+      "name": "46_return_root",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "42-school-lane_ground",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 3.6016505965963,
+        "end": "(89.57138, 43.39383, -189.9872)",
+        "goals": 1,
+        "max_frame_displacement_m": 0.0699970200657845,
+        "name": "42-school-lane_out",
+        "pass": true,
+        "reached": 1,
+        "stall_contacts": []
+      },
+      "name": "42-school-lane_out",
+      "pass": true
+    },
+    {
+      "detail": [
+        89.5713806152344,
+        189.987167358398,
+        43.3938255310059
+      ],
+      "name": "42-school-lane_destination_level",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 3.6015266366303,
+        "end": "(85.79974, 43.01845, -189.0481)",
+        "goals": 1,
+        "max_frame_displacement_m": 0.0731066465377808,
+        "name": "42-school-lane_back",
+        "pass": true,
+        "reached": 1,
+        "stall_contacts": []
+      },
+      "name": "42-school-lane_back",
+      "pass": true
+    },
+    {
+      "detail": [
+        85.7997360229492,
+        189.048095703125,
+        43.0184516906738
+      ],
+      "name": "42-school-lane_return_root",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "43-south-street_ground",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 3.10284642037004,
+        "end": "(107.2363, 36.33854, -164.5874)",
+        "goals": 2,
+        "max_frame_displacement_m": 0.0699257552623749,
+        "name": "43-south-street_out",
+        "pass": true,
+        "reached": 2,
+        "stall_contacts": []
+      },
+      "name": "43-south-street_out",
+      "pass": true
+    },
+    {
+      "detail": [
+        107.236305236816,
+        164.58740234375,
+        36.3385429382324
+      ],
+      "name": "43-south-street_destination_level",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 3.0309424996376,
+        "end": "(105.1095, 35.95992, -162.1525)",
+        "goals": 2,
+        "max_frame_displacement_m": 0.0738732218742371,
+        "name": "43-south-street_back",
+        "pass": true,
+        "reached": 2,
+        "stall_contacts": []
+      },
+      "name": "43-south-street_back",
+      "pass": true
+    },
+    {
+      "detail": [
+        105.10954284668,
+        162.152496337891,
+        35.9599189758301
+      ],
+      "name": "43-south-street_return_root",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "34_from_street_shoulder_to_old_lane_ground",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 11.948251019232,
+        "end": "(-77.45892, 43.06931, -164.102)",
+        "goals": 4,
+        "max_frame_displacement_m": 0.0731805562973022,
+        "name": "34_from_street_shoulder_to_old_lane_out",
+        "pass": true,
+        "reached": 4,
+        "stall_contacts": []
+      },
+      "name": "34_from_street_shoulder_to_old_lane_out",
+      "pass": true
+    },
+    {
+      "detail": [
+        -77.4589157104492,
+        164.101974487305,
+        43.0693130493164
+      ],
+      "name": "34_from_street_shoulder_to_old_lane_destination_level",
+      "pass": true
+    },
+    {
+      "detail": {
+        "distance_m": 11.9944654926658,
+        "end": "(-65.19168, 44.41612, -164.9919)",
+        "goals": 4,
+        "max_frame_displacement_m": 0.0719389393925667,
+        "name": "34_from_street_shoulder_to_old_lane_back",
+        "pass": true,
+        "reached": 4,
+        "stall_contacts": []
+      },
+      "name": "34_from_street_shoulder_to_old_lane_back",
+      "pass": true
+    },
+    {
+      "detail": [
+        -65.1916809082031,
+        164.991851806641,
+        44.4161186218262
+      ],
+      "name": "34_from_street_shoulder_to_old_lane_return_root",
+      "pass": true
+    }
+  ],
+  "engine": "4.6.3-stable (official)",
+  "reports": {
+    "12": {
+      "back": {
+        "distance_m": 6.1527761304751,
+        "end": "(220.0005, 40.61137, -111.2388)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0697039589285851,
+        "name": "12_back",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "end_enu": [
+        220.14697265625,
+        104.777198791504,
+        39.7738647460938
+      ],
+      "origin_enu": [
+        220.004333496094,
+        111.180709838867,
+        40.5912475585938
+      ],
+      "out": {
+        "distance_m": 6.07816850952804,
+        "end": "(220.147, 39.77386, -104.7772)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0734417214989662,
+        "name": "12_out",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "teleports_between_legs": 0
+    },
+    "22": {
+      "back": {
+        "distance_m": 18.0993543509394,
+        "end": "(112.222, 34.92699, -88.50657)",
+        "goals": 12,
+        "max_frame_displacement_m": 0.073083721101284,
+        "name": "22_back",
+        "pass": true,
+        "reached": 12,
+        "stall_contacts": []
+      },
+      "end_enu": [
+        119.521591186523,
+        87.5374603271484,
+        34.8407745361328
+      ],
+      "origin_enu": [
+        112.220001220703,
+        88.4499969482422,
+        34.9124641418457
+      ],
+      "out": {
+        "distance_m": 18.2031889846548,
+        "end": "(119.5216, 34.84077, -87.53746)",
+        "goals": 12,
+        "max_frame_displacement_m": 0.0719451531767845,
+        "name": "22_out",
+        "pass": true,
+        "reached": 12,
+        "stall_contacts": []
+      },
+      "teleports_between_legs": 0
+    },
+    "26": {
+      "back": {
+        "distance_m": 17.7197408499196,
+        "end": "(176.9645, 13.7845, 123.2102)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0699367672204971,
+        "name": "26_back",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "end_enu": [
+        194.261810302734,
+        -128.159927368164,
+        11.6363821029663
+      ],
+      "origin_enu": [
+        177.010238647461,
+        -123.156318664551,
+        13.7705402374268
+      ],
+      "out": {
+        "distance_m": 17.6800971282646,
+        "end": "(194.2618, 11.63638, 128.1599)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0735165402293205,
+        "name": "26_out",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "teleports_between_legs": 0
+    },
+    "30": {
+      "back": {
+        "distance_m": 9.42722554132342,
+        "end": "(-204.4613, 30.25372, -138.889)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0716154798865318,
+        "name": "30_back",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "end_enu": [
+        -206.523803710938,
+        129.396179199219,
+        30.2641334533691
+      ],
+      "origin_enu": [
+        -204.417343139648,
+        138.82341003418,
+        30.2427272796631
+      ],
+      "out": {
+        "distance_m": 9.37008517142385,
+        "end": "(-206.5238, 30.26413, -129.3962)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0717507302761078,
+        "name": "30_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "teleports_between_legs": 0
+    },
+    "30-garden": {
+      "back": {
+        "distance_m": 11.7554688584059,
+        "end": "(-219.8417, 30.29394, -92.43945)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0719328075647354,
+        "name": "30-garden_back",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "end_enu": [
+        -212.003707885742,
+        101.486907958984,
+        30.2356777191162
+      ],
+      "origin_enu": [
+        -219.901397705078,
+        92.4001159667969,
+        30.2816143035889
+      ],
+      "out": {
+        "distance_m": 11.827206870541,
+        "end": "(-212.0037, 30.23568, -101.4869)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0718612000346184,
+        "name": "30-garden_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "teleports_between_legs": 0
+    },
+    "31": {
+      "back": {
+        "distance_m": 10.0649880282581,
+        "end": "(-205.49, 30.18297, -138.9133)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0701780170202255,
+        "name": "31_back",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "end_enu": [
+        -213.471817016602,
+        132.458312988281,
+        29.9608325958252
+      ],
+      "origin_enu": [
+        -205.466812133789,
+        138.941421508789,
+        30.1712970733643
+      ],
+      "out": {
+        "distance_m": 10.0946613270789,
+        "end": "(-213.4718, 29.96083, -132.4583)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0719493851065636,
+        "name": "31_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "teleports_between_legs": 0
+    },
+    "31-garden": {
+      "back": {
+        "distance_m": 7.10659293923527,
+        "end": "(-220.6561, 30.31475, -91.63435)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0746617019176483,
+        "name": "31-garden_back",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "end_enu": [
+        -227.200973510742,
+        90.8293228149414,
+        30.8301582336426
+      ],
+      "origin_enu": [
+        -220.648529052734,
+        91.6847991943359,
+        30.3001556396484
+      ],
+      "out": {
+        "distance_m": 7.14372785575688,
+        "end": "(-227.201, 30.83016, -90.82932)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0718963220715523,
+        "name": "31-garden_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "teleports_between_legs": 0
+    },
+    "34": {
+      "back": {
+        "distance_m": 12.1056881677359,
+        "end": "(-70.68086, 43.84814, -164.4499)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.070522703230381,
+        "name": "34_back",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "end_enu": [
+        -83.0602111816406,
+        163.587768554688,
+        42.3360481262207
+      ],
+      "origin_enu": [
+        -70.7388458251953,
+        164.484375,
+        43.8366813659668
+      ],
+      "out": {
+        "distance_m": 12.0343306083232,
+        "end": "(-83.06021, 42.33605, -163.5878)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0731060430407524,
+        "name": "34_out",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "teleports_between_legs": 0
+    },
+    "34_from_street_shoulder_to_old_lane": {
+      "back": {
+        "distance_m": 11.9944654926658,
+        "end": "(-65.19168, 44.41612, -164.9919)",
+        "goals": 4,
+        "max_frame_displacement_m": 0.0719389393925667,
+        "name": "34_from_street_shoulder_to_old_lane_back",
+        "pass": true,
+        "reached": 4,
+        "stall_contacts": []
+      },
+      "end_enu": [
+        -77.4589157104492,
+        164.101974487305,
+        43.0693130493164
+      ],
+      "origin_enu": [
+        -65.2299957275391,
+        165.019500732422,
+        44.4027099609375
+      ],
+      "out": {
+        "distance_m": 11.948251019232,
+        "end": "(-77.45892, 43.06931, -164.102)",
+        "goals": 4,
+        "max_frame_displacement_m": 0.0731805562973022,
+        "name": "34_from_street_shoulder_to_old_lane_out",
+        "pass": true,
+        "reached": 4,
+        "stall_contacts": []
+      },
+      "teleports_between_legs": 0
+    },
+    "35": {
+      "back": {
+        "distance_m": 10.5607050070539,
+        "end": "(-65.87534, 46.41513, -181.7116)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.07461828738451,
+        "name": "35_back",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "end_enu": [
+        -58.409538269043,
+        189.372955322266,
+        47.7688293457031
+      ],
+      "origin_enu": [
+        -65.9505157470703,
+        181.687088012695,
+        46.3925514221191
+      ],
+      "out": {
+        "distance_m": 10.6447085943073,
+        "end": "(-58.40954, 47.76883, -189.373)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0702672228217125,
+        "name": "35_out",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "teleports_between_legs": 0
+    },
+    "40": {
+      "back": {
+        "distance_m": 18.3675302239135,
+        "end": "(17.29027, 40.32502, -163.4401)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0731145814061165,
+        "name": "40_back",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "end_enu": [
+        -1.38998425006866,
+        163.908050537109,
+        41.7104415893555
+      ],
+      "origin_enu": [
+        17.2387886047363,
+        163.434173583984,
+        40.3151741027832
+      ],
+      "out": {
+        "distance_m": 18.3219363382086,
+        "end": "(-1.389984, 41.71044, -163.9081)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0702967792749405,
+        "name": "40_out",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "teleports_between_legs": 0
+    },
+    "41": {
+      "back": {
+        "distance_m": 19.6966944430023,
+        "end": "(51.36507, 39.29518, -167.1022)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.072669193148613,
+        "name": "41_back",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "end_enu": [
+        69.5850524902344,
+        171.336898803711,
+        39.6075744628906
+      ],
+      "origin_enu": [
+        51.3365631103516,
+        167.042465209961,
+        39.2761383056641
+      ],
+      "out": {
+        "distance_m": 19.6600826140493,
+        "end": "(69.58505, 39.60757, -171.3369)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0747038051486015,
+        "name": "41_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "teleports_between_legs": 0
+    },
+    "42": {
+      "back": {
+        "distance_m": 8.00205146148801,
+        "end": "(85.77876, 43.00102, -188.9585)",
+        "goals": 2,
+        "max_frame_displacement_m": 0.412118673324585,
+        "name": "42_back",
+        "pass": true,
+        "reached": 2,
+        "stall_contacts": []
+      },
+      "end_enu": [
+        79.7624893188477,
+        190.885559082031,
+        45.6199836730957
+      ],
+      "origin_enu": [
+        85.8257904052734,
+        188.995498657227,
+        42.9976768493652
+      ],
+      "out": {
+        "distance_m": 8.04614457115531,
+        "end": "(79.76249, 45.61998, -190.8856)",
+        "goals": 2,
+        "max_frame_displacement_m": 0.464945107698441,
+        "name": "42_out",
+        "pass": true,
+        "reached": 2,
+        "stall_contacts": []
+      },
+      "teleports_between_legs": 0
+    },
+    "42-school-lane": {
+      "back": {
+        "distance_m": 3.6015266366303,
+        "end": "(85.79974, 43.01845, -189.0481)",
+        "goals": 1,
+        "max_frame_displacement_m": 0.0731066465377808,
+        "name": "42-school-lane_back",
+        "pass": true,
+        "reached": 1,
+        "stall_contacts": []
+      },
+      "end_enu": [
+        89.5713806152344,
+        189.987167358398,
+        43.3938255310059
+      ],
+      "origin_enu": [
+        85.8259963989258,
+        188.994995117188,
+        42.9975929260254
+      ],
+      "out": {
+        "distance_m": 3.6016505965963,
+        "end": "(89.57138, 43.39383, -189.9872)",
+        "goals": 1,
+        "max_frame_displacement_m": 0.0699970200657845,
+        "name": "42-school-lane_out",
+        "pass": true,
+        "reached": 1,
+        "stall_contacts": []
+      },
+      "teleports_between_legs": 0
+    },
+    "43-south-street": {
+      "back": {
+        "distance_m": 3.0309424996376,
+        "end": "(105.1095, 35.95992, -162.1525)",
+        "goals": 2,
+        "max_frame_displacement_m": 0.0738732218742371,
+        "name": "43-south-street_back",
+        "pass": true,
+        "reached": 2,
+        "stall_contacts": []
+      },
+      "end_enu": [
+        107.236305236816,
+        164.58740234375,
+        36.3385429382324
+      ],
+      "origin_enu": [
+        105.059997558594,
+        162.100006103516,
+        35.938648223877
+      ],
+      "out": {
+        "distance_m": 3.10284642037004,
+        "end": "(107.2363, 36.33854, -164.5874)",
+        "goals": 2,
+        "max_frame_displacement_m": 0.0699257552623749,
+        "name": "43-south-street_out",
+        "pass": true,
+        "reached": 2,
+        "stall_contacts": []
+      },
+      "teleports_between_legs": 0
+    },
+    "45": {
+      "back": {
+        "distance_m": 11.4318978008814,
+        "end": "(140.0493, 41.31717, -178.495)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0732105150818825,
+        "name": "45_back",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "end_enu": [
+        151.679595947266,
+        179.857162475586,
+        42.5631256103516
+      ],
+      "origin_enu": [
+        140.086517333984,
+        178.455139160156,
+        41.3092269897461
+      ],
+      "out": {
+        "distance_m": 11.3968997253105,
+        "end": "(151.6796, 42.56313, -179.8572)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0703715980052948,
+        "name": "45_out",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "teleports_between_legs": 0
+    },
+    "46": {
+      "back": {
+        "distance_m": 10.5184269314632,
+        "end": "(154.0296, 42.69311, -179.3522)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0699871927499771,
+        "name": "46_back",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "end_enu": [
+        157.491943359375,
+        169.155532836914,
+        40.7385711669922
+      ],
+      "origin_enu": [
+        153.995956420898,
+        179.303421020508,
+        42.6647796630859
+      ],
+      "out": {
+        "distance_m": 10.4675363469869,
+        "end": "(157.4919, 40.73857, -169.1555)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0759697631001472,
+        "name": "46_out",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "teleports_between_legs": 0
+    },
+    "49": {
+      "back": {
+        "distance_m": 9.58127486798912,
+        "end": "(-240.9712, 20.76912, -14.77639)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0730840489268303,
+        "name": "49_back",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "end_enu": [
+        -247.950042724609,
+        21.65673828125,
+        21.9160690307617
+      ],
+      "origin_enu": [
+        -240.924621582031,
+        14.7307376861572,
+        20.7500438690186
+      ],
+      "out": {
+        "distance_m": 9.65529028233141,
+        "end": "(-247.95, 21.91607, -21.65674)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0698773786425591,
+        "name": "49_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "teleports_between_legs": 0
+    }
+  },
+  "scene": "res://first_shift.tscn",
+  "traces": [
+    {
+      "finish_enu": [
+        220.14697265625,
+        104.777198791504,
+        39.7738647460938
+      ],
+      "id": "12_out",
+      "result": {
+        "distance_m": 6.07816850952804,
+        "end": "(220.147, 39.77386, -104.7772)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0734417214989662,
+        "name": "12_out",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        220.004333496094,
+        111.180709838867,
+        40.5912475585938
+      ],
+      "trace_enu": [
+        [
+          220.004333496094,
+          111.180709838867,
+          40.5912475585938
+        ],
+        [
+          220.044860839844,
+          110.647918701172,
+          40.537670135498
+        ],
+        [
+          220.080322265625,
+          109.796829223633,
+          40.433666229248
+        ],
+        [
+          220.111877441406,
+          108.944114685059,
+          40.326732635498
+        ],
+        [
+          220.131149291992,
+          108.091583251953,
+          40.218334197998
+        ],
+        [
+          220.135391235352,
+          107.238899230957,
+          40.105541229248
+        ],
+        [
+          220.120635986328,
+          106.385757446289,
+          39.986888885498
+        ],
+        [
+          220.138000488281,
+          105.532989501953,
+          39.872631072998
+        ],
+        [
+          220.147964477539,
+          104.826469421387,
+          39.768627166748
+        ],
+        [
+          220.14697265625,
+          104.777198791504,
+          39.7738647460938
+        ],
+        [
+          220.14697265625,
+          104.777198791504,
+          39.7738647460938
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        220.00048828125,
+        111.238807678223,
+        40.6113700866699
+      ],
+      "id": "12_back",
+      "result": {
+        "distance_m": 6.1527761304751,
+        "end": "(220.0005, 40.61137, -111.2388)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0697039589285851,
+        "name": "12_back",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        220.14697265625,
+        104.777198791504,
+        39.7738647460938
+      ],
+      "trace_enu": [
+        [
+          220.14697265625,
+          104.777198791504,
+          39.7738647460938
+        ],
+        [
+          220.121337890625,
+          105.289619445801,
+          39.8397102355957
+        ],
+        [
+          220.111022949219,
+          106.113883972168,
+          39.9519233703613
+        ],
+        [
+          220.123596191406,
+          106.937347412109,
+          40.066104888916
+        ],
+        [
+          220.114273071289,
+          107.761978149414,
+          40.1742248535156
+        ],
+        [
+          220.104141235352,
+          108.586715698242,
+          40.2819786071777
+        ],
+        [
+          220.077041625977,
+          109.412002563477,
+          40.3860626220703
+        ],
+        [
+          220.035522460938,
+          110.237854003906,
+          40.4866638183594
+        ],
+        [
+          220.005249023438,
+          111.043952941895,
+          40.5798454284668
+        ],
+        [
+          220.00048828125,
+          111.238807678223,
+          40.6113700866699
+        ],
+        [
+          220.00048828125,
+          111.238807678223,
+          40.6113700866699
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        119.521591186523,
+        87.5374603271484,
+        34.8407745361328
+      ],
+      "id": "22_out",
+      "result": {
+        "distance_m": 18.2031889846548,
+        "end": "(119.5216, 34.84077, -87.53746)",
+        "goals": 12,
+        "max_frame_displacement_m": 0.0719451531767845,
+        "name": "22_out",
+        "pass": true,
+        "reached": 12,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        112.220001220703,
+        88.4499969482422,
+        34.9124641418457
+      ],
+      "trace_enu": [
+        [
+          112.220001220703,
+          88.4499969482422,
+          34.9124641418457
+        ],
+        [
+          112.230499267578,
+          87.9272537231445,
+          34.9148864746094
+        ],
+        [
+          112.23014831543,
+          87.0856704711914,
+          34.8957901000977
+        ],
+        [
+          112.210441589355,
+          86.2449188232422,
+          34.8781356811523
+        ],
+        [
+          112.191635131836,
+          85.4040756225586,
+          34.8621139526367
+        ],
+        [
+          112.175140380859,
+          84.5632247924805,
+          34.844612121582
+        ],
+        [
+          112.177825927734,
+          83.7225036621094,
+          34.8269920349121
+        ],
+        [
+          112.206741333008,
+          82.8811111450195,
+          34.7984313964844
+        ],
+        [
+          112.615562438965,
+          82.4224853515625,
+          34.794792175293
+        ],
+        [
+          113.454895019531,
+          82.4603500366211,
+          34.787914276123
+        ],
+        [
+          114.294853210449,
+          82.4916534423828,
+          34.7654647827148
+        ],
+        [
+          115.134620666504,
+          82.5226287841797,
+          34.7741355895996
+        ],
+        [
+          115.974548339844,
+          82.542121887207,
+          34.7673416137695
+        ],
+        [
+          116.814743041992,
+          82.5499496459961,
+          34.7602348327637
+        ],
+        [
+          117.65495300293,
+          82.55810546875,
+          34.7526512145996
+        ],
+        [
+          118.495132446289,
+          82.5663986206055,
+          34.7454452514648
+        ],
+        [
+          119.335296630859,
+          82.5750122070312,
+          34.7380561828613
+        ],
+        [
+          119.86385345459,
+          82.8965606689453,
+          34.7401924133301
+        ],
+        [
+          119.965835571289,
+          83.7299575805664,
+          34.7567024230957
+        ],
+        [
+          119.943687438965,
+          84.5691909790039,
+          34.7744979858398
+        ],
+        [
+          119.923881530762,
+          85.4085693359375,
+          34.7923049926758
+        ],
+        [
+          119.905471801758,
+          86.2454071044922,
+          34.8100433349609
+        ],
+        [
+          119.690849304199,
+          87.0562438964844,
+          34.8289680480957
+        ],
+        [
+          119.521591186523,
+          87.5374603271484,
+          34.8407745361328
+        ],
+        [
+          119.521591186523,
+          87.5374603271484,
+          34.8407745361328
+        ],
+        [
+          119.521591186523,
+          87.5374603271484,
+          34.8407745361328
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        112.222038269043,
+        88.5065689086914,
+        34.9269866943359
+      ],
+      "id": "22_back",
+      "result": {
+        "distance_m": 18.0993543509394,
+        "end": "(112.222, 34.92699, -88.50657)",
+        "goals": 12,
+        "max_frame_displacement_m": 0.073083721101284,
+        "name": "22_back",
+        "pass": true,
+        "reached": 12,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        119.521591186523,
+        87.5374603271484,
+        34.8407745361328
+      ],
+      "trace_enu": [
+        [
+          119.521591186523,
+          87.5374603271484,
+          34.8407745361328
+        ],
+        [
+          119.728240966797,
+          86.9773635864258,
+          34.8139419555664
+        ],
+        [
+          119.877716064453,
+          86.1532440185547,
+          34.8087387084961
+        ],
+        [
+          119.92325592041,
+          85.3134307861328,
+          34.7906684875488
+        ],
+        [
+          119.972900390625,
+          84.4738616943359,
+          34.7725868225098
+        ],
+        [
+          119.912643432617,
+          83.6377105712891,
+          34.7423133850098
+        ],
+        [
+          119.801376342773,
+          82.8106307983398,
+          34.7250900268555
+        ],
+        [
+          119.146743774414,
+          82.5602722167969,
+          34.738941192627
+        ],
+        [
+          118.306816101074,
+          82.5599975585938,
+          34.7464790344238
+        ],
+        [
+          117.466888427734,
+          82.5570526123047,
+          34.7539901733398
+        ],
+        [
+          116.626960754395,
+          82.5532684326172,
+          34.7614822387695
+        ],
+        [
+          115.78719329834,
+          82.5399475097656,
+          34.7688255310059
+        ],
+        [
+          114.947647094727,
+          82.513427734375,
+          34.7764205932617
+        ],
+        [
+          114.108055114746,
+          82.4894332885742,
+          34.7834701538086
+        ],
+        [
+          113.268127441406,
+          82.4895477294922,
+          34.7910194396973
+        ],
+        [
+          112.43514251709,
+          82.4967727661133,
+          34.7986602783203
+        ],
+        [
+          112.175117492676,
+          83.0818405151367,
+          34.812126159668
+        ],
+        [
+          112.170097351074,
+          83.9213333129883,
+          34.8294448852539
+        ],
+        [
+          112.181488037109,
+          84.760871887207,
+          34.8469581604004
+        ],
+        [
+          112.199752807617,
+          85.6002960205078,
+          34.8644218444824
+        ],
+        [
+          112.22282409668,
+          86.4396514892578,
+          34.8818359375
+        ],
+        [
+          112.228630065918,
+          87.2791061401367,
+          34.8994407653809
+        ],
+        [
+          112.222503662109,
+          88.1187362670898,
+          34.9170722961426
+        ],
+        [
+          112.222038269043,
+          88.5065689086914,
+          34.9269866943359
+        ],
+        [
+          112.222038269043,
+          88.5065689086914,
+          34.9269866943359
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -206.523803710938,
+        129.396179199219,
+        30.2641334533691
+      ],
+      "id": "30_out",
+      "result": {
+        "distance_m": 9.37008517142385,
+        "end": "(-206.5238, 30.26413, -129.3962)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0717507302761078,
+        "name": "30_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -204.417343139648,
+        138.82341003418,
+        30.2427272796631
+      ],
+      "trace_enu": [
+        [
+          -204.417343139648,
+          138.82341003418,
+          30.2427272796631
+        ],
+        [
+          -204.576751708984,
+          138.304718017578,
+          30.254322052002
+        ],
+        [
+          -204.739471435547,
+          137.480758666992,
+          30.254322052002
+        ],
+        [
+          -204.929260253906,
+          136.662033081055,
+          30.252836227417
+        ],
+        [
+          -205.12028503418,
+          135.844055175781,
+          30.252836227417
+        ],
+        [
+          -205.31803894043,
+          135.027587890625,
+          30.252836227417
+        ],
+        [
+          -205.515274047852,
+          134.211029052734,
+          30.252836227417
+        ],
+        [
+          -205.711212158203,
+          133.394195556641,
+          30.2547092437744
+        ],
+        [
+          -205.905151367188,
+          132.576889038086,
+          30.2565307617188
+        ],
+        [
+          -206.09521484375,
+          131.758728027344,
+          30.2565307617188
+        ],
+        [
+          -206.273574829102,
+          130.938064575195,
+          30.2588748931885
+        ],
+        [
+          -206.435989379883,
+          130.113906860352,
+          30.2615756988525
+        ],
+        [
+          -206.523803710938,
+          129.435546875,
+          30.2641334533691
+        ],
+        [
+          -206.523803710938,
+          129.396179199219,
+          30.2641334533691
+        ],
+        [
+          -206.523803710938,
+          129.396179199219,
+          30.2641334533691
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -204.46125793457,
+        138.889007568359,
+        30.2537231445312
+      ],
+      "id": "30_back",
+      "result": {
+        "distance_m": 9.42722554132342,
+        "end": "(-204.4613, 30.25372, -138.889)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0716154798865318,
+        "name": "30_back",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -206.523803710938,
+        129.396179199219,
+        30.2641334533691
+      ],
+      "trace_enu": [
+        [
+          -206.523803710938,
+          129.396179199219,
+          30.2641334533691
+        ],
+        [
+          -206.412368774414,
+          129.916915893555,
+          30.2489967346191
+        ],
+        [
+          -206.303985595703,
+          130.749893188477,
+          30.247350692749
+        ],
+        [
+          -206.12580871582,
+          131.570495605469,
+          30.2570114135742
+        ],
+        [
+          -205.946380615234,
+          132.391052246094,
+          30.2570114135742
+        ],
+        [
+          -205.753204345703,
+          133.208480834961,
+          30.2570114135742
+        ],
+        [
+          -205.55908203125,
+          134.02571105957,
+          30.2537231445312
+        ],
+        [
+          -205.36067199707,
+          134.841995239258,
+          30.2537231445312
+        ],
+        [
+          -205.162979125977,
+          135.658432006836,
+          30.2537231445312
+        ],
+        [
+          -204.967376708984,
+          136.47526550293,
+          30.2537231445312
+        ],
+        [
+          -204.773513793945,
+          137.292541503906,
+          30.2537231445312
+        ],
+        [
+          -204.583160400391,
+          138.110656738281,
+          30.2537231445312
+        ],
+        [
+          -204.46125793457,
+          138.824630737305,
+          30.2537231445312
+        ],
+        [
+          -204.46125793457,
+          138.889007568359,
+          30.2537231445312
+        ],
+        [
+          -204.46125793457,
+          138.889007568359,
+          30.2537231445312
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -213.471817016602,
+        132.458312988281,
+        29.9608325958252
+      ],
+      "id": "31_out",
+      "result": {
+        "distance_m": 10.0946613270789,
+        "end": "(-213.4718, 29.96083, -132.4583)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0719493851065636,
+        "name": "31_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -205.466812133789,
+        138.941421508789,
+        30.1712970733643
+      ],
+      "trace_enu": [
+        [
+          -205.466812133789,
+          138.941421508789,
+          30.1712970733643
+        ],
+        [
+          -205.910095214844,
+          138.496734619141,
+          30.1616802215576
+        ],
+        [
+          -206.504180908203,
+          137.899261474609,
+          30.1314067840576
+        ],
+        [
+          -207.154251098633,
+          137.364868164062,
+          30.111421585083
+        ],
+        [
+          -207.804214477539,
+          136.830139160156,
+          30.078218460083
+        ],
+        [
+          -208.495681762695,
+          136.348022460938,
+          30.063081741333
+        ],
+        [
+          -209.185897827148,
+          135.8662109375,
+          30.0425395965576
+        ],
+        [
+          -209.848022460938,
+          135.347244262695,
+          30.0228157043457
+        ],
+        [
+          -210.507766723633,
+          134.825332641602,
+          30.0052871704102
+        ],
+        [
+          -211.161544799805,
+          134.296142578125,
+          29.9799575805664
+        ],
+        [
+          -211.814361572266,
+          133.765411376953,
+          29.98193359375
+        ],
+        [
+          -212.468215942383,
+          133.236557006836,
+          29.9720821380615
+        ],
+        [
+          -213.121734619141,
+          132.708511352539,
+          29.9647121429443
+        ],
+        [
+          -213.471817016602,
+          132.458312988281,
+          29.9608325958252
+        ],
+        [
+          -213.471817016602,
+          132.458312988281,
+          29.9608325958252
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -205.489974975586,
+        138.913269042969,
+        30.1829662322998
+      ],
+      "id": "31_back",
+      "result": {
+        "distance_m": 10.0649880282581,
+        "end": "(-205.49, 30.18297, -138.9133)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0701780170202255,
+        "name": "31_back",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -213.471817016602,
+        132.458312988281,
+        29.9608325958252
+      ],
+      "trace_enu": [
+        [
+          -213.471817016602,
+          132.458312988281,
+          29.9608325958252
+        ],
+        [
+          -212.997787475586,
+          132.856369018555,
+          29.9646434783936
+        ],
+        [
+          -212.32763671875,
+          133.362579345703,
+          29.9707832336426
+        ],
+        [
+          -211.673843383789,
+          133.889770507812,
+          29.9829483032227
+        ],
+        [
+          -211.020095825195,
+          134.416854858398,
+          29.9959335327148
+        ],
+        [
+          -210.366485595703,
+          134.944137573242,
+          30.0098724365234
+        ],
+        [
+          -209.712966918945,
+          135.471374511719,
+          30.0264987945557
+        ],
+        [
+          -209.02604675293,
+          135.953353881836,
+          30.0480632781982
+        ],
+        [
+          -208.336135864258,
+          136.431686401367,
+          30.0699577331543
+        ],
+        [
+          -207.672805786133,
+          136.945251464844,
+          30.097339630127
+        ],
+        [
+          -207.011444091797,
+          137.4619140625,
+          30.1230163574219
+        ],
+        [
+          -206.399612426758,
+          138.035766601562,
+          30.1448135375977
+        ],
+        [
+          -205.797500610352,
+          138.620407104492,
+          30.1694164276123
+        ],
+        [
+          -205.489974975586,
+          138.913269042969,
+          30.1829662322998
+        ],
+        [
+          -205.489974975586,
+          138.913269042969,
+          30.1829662322998
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -247.950042724609,
+        21.65673828125,
+        21.9160690307617
+      ],
+      "id": "49_out",
+      "result": {
+        "distance_m": 9.65529028233141,
+        "end": "(-247.95, 21.91607, -21.65674)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0698773786425591,
+        "name": "49_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -240.924621582031,
+        14.7307376861572,
+        20.7500438690186
+      ],
+      "trace_enu": [
+        [
+          -240.924621582031,
+          14.7307376861572,
+          20.7500438690186
+        ],
+        [
+          -241.357391357422,
+          15.1683168411255,
+          20.8297843933105
+        ],
+        [
+          -241.93928527832,
+          15.7583150863647,
+          20.9238567352295
+        ],
+        [
+          -242.54020690918,
+          16.3304653167725,
+          21.0152626037598
+        ],
+        [
+          -243.141143798828,
+          16.9013538360596,
+          21.1084327697754
+        ],
+        [
+          -243.749664306641,
+          17.4652366638184,
+          21.1995506286621
+        ],
+        [
+          -244.356552124023,
+          18.0317344665527,
+          21.2873821258545
+        ],
+        [
+          -244.941879272461,
+          18.6160011291504,
+          21.3882160186768
+        ],
+        [
+          -245.527008056641,
+          19.2005882263184,
+          21.4889888763428
+        ],
+        [
+          -246.109786987305,
+          19.7891750335693,
+          21.5859622955322
+        ],
+        [
+          -246.691589355469,
+          20.3771228790283,
+          21.6860332489014
+        ],
+        [
+          -247.27165222168,
+          20.9654407501221,
+          21.7915000915527
+        ],
+        [
+          -247.84440612793,
+          21.5466251373291,
+          21.8974571228027
+        ],
+        [
+          -247.950042724609,
+          21.65673828125,
+          21.9160690307617
+        ],
+        [
+          -247.950042724609,
+          21.65673828125,
+          21.9160690307617
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -240.971176147461,
+        14.7763862609863,
+        20.7691192626953
+      ],
+      "id": "49_back",
+      "result": {
+        "distance_m": 9.58127486798912,
+        "end": "(-240.9712, 20.76912, -14.77639)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0730840489268303,
+        "name": "49_back",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -247.950042724609,
+        21.65673828125,
+        21.9160690307617
+      ],
+      "trace_enu": [
+        [
+          -247.950042724609,
+          21.65673828125,
+          21.9160690307617
+        ],
+        [
+          -247.502319335938,
+          21.2036476135254,
+          21.8315963745117
+        ],
+        [
+          -246.905288696289,
+          20.5945625305176,
+          21.7217330932617
+        ],
+        [
+          -246.306777954102,
+          19.9879817962646,
+          21.6133346557617
+        ],
+        [
+          -245.708160400391,
+          19.3816566467285,
+          21.5151901245117
+        ],
+        [
+          -245.108993530273,
+          18.7759075164795,
+          21.4126510620117
+        ],
+        [
+          -244.501861572266,
+          18.1781272888184,
+          21.3071823120117
+        ],
+        [
+          -243.881317138672,
+          17.597864151001,
+          21.2075729370117
+        ],
+        [
+          -243.259201049805,
+          17.0149898529053,
+          21.1138229370117
+        ],
+        [
+          -242.638656616211,
+          16.4313831329346,
+          21.0186080932617
+        ],
+        [
+          -242.026885986328,
+          15.8394565582275,
+          20.9248580932617
+        ],
+        [
+          -241.426300048828,
+          15.2353372573853,
+          20.8281784057617
+        ],
+        [
+          -240.972503662109,
+          14.7780113220215,
+          20.7632369995117
+        ],
+        [
+          -240.971176147461,
+          14.7763862609863,
+          20.7691192626953
+        ],
+        [
+          -240.971176147461,
+          14.7763862609863,
+          20.7691192626953
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -83.0602111816406,
+        163.587768554688,
+        42.3360481262207
+      ],
+      "id": "34_out",
+      "result": {
+        "distance_m": 12.0343306083232,
+        "end": "(-83.06021, 42.33605, -163.5878)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0731060430407524,
+        "name": "34_out",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -70.7388458251953,
+        164.484375,
+        43.8366813659668
+      ],
+      "trace_enu": [
+        [
+          -70.7388458251953,
+          164.484375,
+          43.8366813659668
+        ],
+        [
+          -71.2715377807617,
+          164.433563232422,
+          43.7732048034668
+        ],
+        [
+          -72.1210556030273,
+          164.386993408203,
+          43.6794548034668
+        ],
+        [
+          -72.9713287353516,
+          164.339859008789,
+          43.5827751159668
+        ],
+        [
+          -73.822265625,
+          164.291931152344,
+          43.4860954284668
+        ],
+        [
+          -74.6708984375,
+          164.244125366211,
+          43.3864860534668
+        ],
+        [
+          -75.5202941894531,
+          164.195266723633,
+          43.2854118347168
+        ],
+        [
+          -76.3709259033203,
+          164.146240234375,
+          43.1843376159668
+        ],
+        [
+          -77.2203979492188,
+          164.093185424805,
+          43.0803337097168
+        ],
+        [
+          -78.0680618286133,
+          164.020355224609,
+          42.9719352722168
+        ],
+        [
+          -78.9171447753906,
+          163.947418212891,
+          42.8606071472168
+        ],
+        [
+          -79.7670593261719,
+          163.874359130859,
+          42.7507438659668
+        ],
+        [
+          -80.6164245605469,
+          163.794479370117,
+          42.6394157409668
+        ],
+        [
+          -81.4638824462891,
+          163.712554931641,
+          42.5280876159668
+        ],
+        [
+          -82.3121490478516,
+          163.630569458008,
+          42.4167594909668
+        ],
+        [
+          -83.0134124755859,
+          163.589599609375,
+          42.3415641784668
+        ],
+        [
+          -83.0602111816406,
+          163.587768554688,
+          42.3360481262207
+        ],
+        [
+          -83.0602111816406,
+          163.587768554688,
+          42.3360481262207
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -70.6808624267578,
+        164.449905395508,
+        43.8481407165527
+      ],
+      "id": "34_back",
+      "result": {
+        "distance_m": 12.1056881677359,
+        "end": "(-70.68086, 43.84814, -164.4499)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.070522703230381,
+        "name": "34_back",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -83.0602111816406,
+        163.587768554688,
+        42.3360481262207
+      ],
+      "trace_enu": [
+        [
+          -83.0602111816406,
+          163.587768554688,
+          42.3360481262207
+        ],
+        [
+          -82.5463027954102,
+          163.643447875977,
+          42.404411315918
+        ],
+        [
+          -81.7209014892578,
+          163.696243286133,
+          42.5076713562012
+        ],
+        [
+          -80.8971786499023,
+          163.759994506836,
+          42.6136512756348
+        ],
+        [
+          -80.0745010375977,
+          163.827194213867,
+          42.7202796936035
+        ],
+        [
+          -79.2501525878906,
+          163.888946533203,
+          42.8249206542969
+        ],
+        [
+          -78.4273529052734,
+          163.95979309082,
+          42.9317359924316
+        ],
+        [
+          -77.6062850952148,
+          164.050720214844,
+          43.041015625
+        ],
+        [
+          -76.7785491943359,
+          164.088729858398,
+          43.1407012939453
+        ],
+        [
+          -75.9523468017578,
+          164.13737487793,
+          43.2411422729492
+        ],
+        [
+          -75.1268081665039,
+          164.197296142578,
+          43.3409996032715
+        ],
+        [
+          -74.298713684082,
+          164.23649597168,
+          43.4366111755371
+        ],
+        [
+          -73.471321105957,
+          164.287521362305,
+          43.5333976745605
+        ],
+        [
+          -72.6445999145508,
+          164.339492797852,
+          43.6289138793945
+        ],
+        [
+          -71.8176345825195,
+          164.388031005859,
+          43.7231864929199
+        ],
+        [
+          -70.9908142089844,
+          164.452926635742,
+          43.8176460266113
+        ],
+        [
+          -70.6808624267578,
+          164.449905395508,
+          43.8481407165527
+        ],
+        [
+          -70.6808624267578,
+          164.449905395508,
+          43.8481407165527
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -58.409538269043,
+        189.372955322266,
+        47.7688293457031
+      ],
+      "id": "35_out",
+      "result": {
+        "distance_m": 10.6447085943073,
+        "end": "(-58.40954, 47.76883, -189.373)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0702672228217125,
+        "name": "35_out",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -65.9505157470703,
+        181.687088012695,
+        46.3925514221191
+      ],
+      "trace_enu": [
+        [
+          -65.9505157470703,
+          181.687088012695,
+          46.3925514221191
+        ],
+        [
+          -65.6165237426758,
+          182.174789428711,
+          46.4790077209473
+        ],
+        [
+          -65.2188949584961,
+          182.894012451172,
+          46.6010246276855
+        ],
+        [
+          -64.756950378418,
+          183.56721496582,
+          46.7240028381348
+        ],
+        [
+          -64.2302703857422,
+          184.194854736328,
+          46.8470420837402
+        ],
+        [
+          -63.6987953186035,
+          184.823837280273,
+          46.9642372131348
+        ],
+        [
+          -63.1139907836914,
+          185.40168762207,
+          47.0829200744629
+        ],
+        [
+          -62.5219650268555,
+          185.974639892578,
+          47.1977691650391
+        ],
+        [
+          -61.9116706848145,
+          186.531845092773,
+          47.301570892334
+        ],
+        [
+          -61.2839622497559,
+          187.07194519043,
+          47.4020843505859
+        ],
+        [
+          -60.6538162231445,
+          187.610717773438,
+          47.4983711242676
+        ],
+        [
+          -60.006233215332,
+          188.129699707031,
+          47.5888710021973
+        ],
+        [
+          -59.3566360473633,
+          188.650741577148,
+          47.66796875
+        ],
+        [
+          -58.706169128418,
+          189.171264648438,
+          47.7402381896973
+        ],
+        [
+          -58.409538269043,
+          189.372955322266,
+          47.7688293457031
+        ],
+        [
+          -58.409538269043,
+          189.372955322266,
+          47.7688293457031
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -65.8753356933594,
+        181.711563110352,
+        46.4151344299316
+      ],
+      "id": "35_back",
+      "result": {
+        "distance_m": 10.5607050070539,
+        "end": "(-65.87534, 46.41513, -181.7116)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.07461828738451,
+        "name": "35_back",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -58.409538269043,
+        189.372955322266,
+        47.7688293457031
+      ],
+      "trace_enu": [
+        [
+          -58.409538269043,
+          189.372955322266,
+          47.7688293457031
+        ],
+        [
+          -58.8872566223145,
+          188.96940612793,
+          47.7175598144531
+        ],
+        [
+          -59.5620346069336,
+          188.4580078125,
+          47.6423645019531
+        ],
+        [
+          -60.2365455627441,
+          187.946807861328,
+          47.5461730957031
+        ],
+        [
+          -60.8918800354004,
+          187.403396606445,
+          47.4509582519531
+        ],
+        [
+          -61.5455131530762,
+          186.85725402832,
+          47.3469543457031
+        ],
+        [
+          -62.181282043457,
+          186.291656494141,
+          47.2444152832031
+        ],
+        [
+          -62.805290222168,
+          185.711776733398,
+          47.1316223144531
+        ],
+        [
+          -63.4157600402832,
+          185.118301391602,
+          47.0100402832031
+        ],
+        [
+          -63.9866790771484,
+          184.484619140625,
+          46.8899230957031
+        ],
+        [
+          -64.5592041015625,
+          183.84912109375,
+          46.7639465332031
+        ],
+        [
+          -65.0423049926758,
+          183.148559570312,
+          46.6365051269531
+        ],
+        [
+          -65.4923858642578,
+          182.424331665039,
+          46.5075988769531
+        ],
+        [
+          -65.872314453125,
+          181.76985168457,
+          46.4084777832031
+        ],
+        [
+          -65.8753356933594,
+          181.711563110352,
+          46.4151344299316
+        ],
+        [
+          -65.8753356933594,
+          181.711563110352,
+          46.4151344299316
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        194.261810302734,
+        -128.159927368164,
+        11.6363821029663
+      ],
+      "id": "26_out",
+      "result": {
+        "distance_m": 17.6800971282646,
+        "end": "(194.2618, 11.63638, 128.1599)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0735165402293205,
+        "name": "26_out",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        177.010238647461,
+        -123.156318664551,
+        13.7705402374268
+      ],
+      "trace_enu": [
+        [
+          177.010238647461,
+          -123.156318664551,
+          13.7705402374268
+        ],
+        [
+          177.531372070312,
+          -123.368835449219,
+          13.7315969467163
+        ],
+        [
+          178.348617553711,
+          -123.594665527344,
+          13.6505422592163
+        ],
+        [
+          179.165252685547,
+          -123.820327758789,
+          13.5514211654663
+        ],
+        [
+          179.983322143555,
+          -124.046363830566,
+          13.4625539779663
+        ],
+        [
+          180.800918579102,
+          -124.285148620605,
+          13.3673391342163
+        ],
+        [
+          181.617599487305,
+          -124.527908325195,
+          13.2706594467163
+        ],
+        [
+          182.434524536133,
+          -124.770751953125,
+          13.1681203842163
+        ],
+        [
+          183.251327514648,
+          -125.013549804688,
+          13.0626516342163
+        ],
+        [
+          184.068725585938,
+          -125.257415771484,
+          12.9571828842163
+        ],
+        [
+          184.885284423828,
+          -125.501922607422,
+          12.8443899154663
+        ],
+        [
+          185.70263671875,
+          -125.746658325195,
+          12.7345266342163
+        ],
+        [
+          186.520233154297,
+          -125.991485595703,
+          12.6188039779663
+        ],
+        [
+          187.337890625,
+          -126.235137939453,
+          12.5074758529663
+        ],
+        [
+          188.156158447266,
+          -126.476547241211,
+          12.3961477279663
+        ],
+        [
+          188.974334716797,
+          -126.71794128418,
+          12.2848196029663
+        ],
+        [
+          189.792373657227,
+          -126.959289550781,
+          12.1764211654663
+        ],
+        [
+          190.610260009766,
+          -127.19962310791,
+          12.0694875717163
+        ],
+        [
+          191.431549072266,
+          -127.430725097656,
+          11.9654836654663
+        ],
+        [
+          192.251922607422,
+          -127.661575317383,
+          11.8644094467163
+        ],
+        [
+          193.072067260742,
+          -127.892356872559,
+          11.7633352279663
+        ],
+        [
+          193.892761230469,
+          -128.123291015625,
+          11.6666555404663
+        ],
+        [
+          194.261810302734,
+          -128.159927368164,
+          11.6363821029663
+        ],
+        [
+          194.261810302734,
+          -128.159927368164,
+          11.6363821029663
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        176.964462280273,
+        -123.210235595703,
+        13.7845029830933
+      ],
+      "id": "26_back",
+      "result": {
+        "distance_m": 17.7197408499196,
+        "end": "(176.9645, 13.7845, 123.2102)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0699367672204971,
+        "name": "26_back",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        194.261810302734,
+        -128.159927368164,
+        11.6363821029663
+      ],
+      "trace_enu": [
+        [
+          194.261810302734,
+          -128.159927368164,
+          11.6363821029663
+        ],
+        [
+          193.752426147461,
+          -127.973449707031,
+          11.6998357772827
+        ],
+        [
+          192.946655273438,
+          -127.778099060059,
+          11.7935676574707
+        ],
+        [
+          192.14208984375,
+          -127.582893371582,
+          11.8920402526855
+        ],
+        [
+          191.337417602539,
+          -127.387222290039,
+          11.9899568557739
+        ],
+        [
+          190.540222167969,
+          -127.16788482666,
+          12.0916423797607
+        ],
+        [
+          189.746475219727,
+          -126.937118530273,
+          12.1949234008789
+        ],
+        [
+          188.953659057617,
+          -126.706748962402,
+          12.3009338378906
+        ],
+        [
+          188.161010742188,
+          -126.476135253906,
+          12.408655166626
+        ],
+        [
+          187.368865966797,
+          -126.243957519531,
+          12.5161743164062
+        ],
+        [
+          186.578536987305,
+          -126.007629394531,
+          12.6241683959961
+        ],
+        [
+          185.788635253906,
+          -125.771453857422,
+          12.7358884811401
+        ],
+        [
+          184.99739074707,
+          -125.534782409668,
+          12.8419637680054
+        ],
+        [
+          184.207092285156,
+          -125.298477172852,
+          12.9509973526001
+        ],
+        [
+          183.415176391602,
+          -125.06169128418,
+          13.05455493927
+        ],
+        [
+          182.622833251953,
+          -124.824913024902,
+          13.1564388275146
+        ],
+        [
+          181.83073425293,
+          -124.588157653809,
+          13.258508682251
+        ],
+        [
+          181.036422729492,
+          -124.350639343262,
+          13.351939201355
+        ],
+        [
+          180.242065429688,
+          -124.114540100098,
+          13.4457855224609
+        ],
+        [
+          179.446029663086,
+          -123.878524780273,
+          13.5342826843262
+        ],
+        [
+          178.649261474609,
+          -123.642372131348,
+          13.618824005127
+        ],
+        [
+          177.852401733398,
+          -123.406120300293,
+          13.7019090652466
+        ],
+        [
+          177.095306396484,
+          -123.2099609375,
+          13.7732009887695
+        ],
+        [
+          176.964462280273,
+          -123.210235595703,
+          13.7845029830933
+        ],
+        [
+          176.964462280273,
+          -123.210235595703,
+          13.7845029830933
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -212.003707885742,
+        101.486907958984,
+        30.2356777191162
+      ],
+      "id": "30-garden_out",
+      "result": {
+        "distance_m": 11.827206870541,
+        "end": "(-212.0037, 30.23568, -101.4869)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0718612000346184,
+        "name": "30-garden_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -219.901397705078,
+        92.4001159667969,
+        30.2816143035889
+      ],
+      "trace_enu": [
+        [
+          -219.901397705078,
+          92.4001159667969,
+          30.2816143035889
+        ],
+        [
+          -219.487411499023,
+          92.8643569946289,
+          30.2742710113525
+        ],
+        [
+          -218.951141357422,
+          93.5116806030273,
+          30.2839984893799
+        ],
+        [
+          -218.4111328125,
+          94.1551361083984,
+          30.2839984893799
+        ],
+        [
+          -217.869186401367,
+          94.7966918945312,
+          30.2812557220459
+        ],
+        [
+          -217.327423095703,
+          95.4386596679688,
+          30.2762680053711
+        ],
+        [
+          -216.786712646484,
+          96.0814514160156,
+          30.2775135040283
+        ],
+        [
+          -216.246002197266,
+          96.7242736816406,
+          30.2791347503662
+        ],
+        [
+          -215.705871582031,
+          97.367546081543,
+          30.2810001373291
+        ],
+        [
+          -215.165802001953,
+          98.0109252929688,
+          30.277853012085
+        ],
+        [
+          -214.617385864258,
+          98.6471176147461,
+          30.2747611999512
+        ],
+        [
+          -214.057601928711,
+          99.2733688354492,
+          30.2768115997314
+        ],
+        [
+          -213.495223999023,
+          99.8991317749023,
+          30.2693500518799
+        ],
+        [
+          -212.917709350586,
+          100.509857177734,
+          30.2555656433105
+        ],
+        [
+          -212.339416503906,
+          101.121337890625,
+          30.2297954559326
+        ],
+        [
+          -212.003707885742,
+          101.486907958984,
+          30.2356777191162
+        ],
+        [
+          -212.003707885742,
+          101.486907958984,
+          30.2356777191162
+        ],
+        [
+          -212.003707885742,
+          101.486907958984,
+          30.2356777191162
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -219.841735839844,
+        92.4394454956055,
+        30.2939414978027
+      ],
+      "id": "30-garden_back",
+      "result": {
+        "distance_m": 11.7554688584059,
+        "end": "(-219.8417, 30.29394, -92.43945)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0719328075647354,
+        "name": "30-garden_back",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -212.003707885742,
+        101.486907958984,
+        30.2356777191162
+      ],
+      "trace_enu": [
+        [
+          -212.003707885742,
+          101.486907958984,
+          30.2356777191162
+        ],
+        [
+          -212.436981201172,
+          101.037391662598,
+          30.2438087463379
+        ],
+        [
+          -213.011810302734,
+          100.425140380859,
+          30.2575664520264
+        ],
+        [
+          -213.578125,
+          99.8051376342773,
+          30.2727966308594
+        ],
+        [
+          -214.141876220703,
+          99.1823806762695,
+          30.2727966308594
+        ],
+        [
+          -214.698638916016,
+          98.5533828735352,
+          30.2760677337646
+        ],
+        [
+          -215.241546630859,
+          97.9123306274414,
+          30.2787113189697
+        ],
+        [
+          -215.784454345703,
+          97.2712936401367,
+          30.2815589904785
+        ],
+        [
+          -216.325820922852,
+          96.6281127929688,
+          30.2796001434326
+        ],
+        [
+          -216.866638183594,
+          95.9853210449219,
+          30.2796001434326
+        ],
+        [
+          -217.408950805664,
+          95.3428115844727,
+          30.2772521972656
+        ],
+        [
+          -217.951675415039,
+          94.7017669677734,
+          30.2790203094482
+        ],
+        [
+          -218.49446105957,
+          94.0607452392578,
+          30.2821178436279
+        ],
+        [
+          -219.037414550781,
+          93.4198684692383,
+          30.2837028503418
+        ],
+        [
+          -219.580368041992,
+          92.7790298461914,
+          30.288911819458
+        ],
+        [
+          -219.841735839844,
+          92.4394454956055,
+          30.2939414978027
+        ],
+        [
+          -219.841735839844,
+          92.4394454956055,
+          30.2939414978027
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -227.200973510742,
+        90.8293228149414,
+        30.8301582336426
+      ],
+      "id": "31-garden_out",
+      "result": {
+        "distance_m": 7.14372785575688,
+        "end": "(-227.201, 30.83016, -90.82932)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0718963220715523,
+        "name": "31-garden_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -220.648529052734,
+        91.6847991943359,
+        30.3001556396484
+      ],
+      "trace_enu": [
+        [
+          -220.648529052734,
+          91.6847991943359,
+          30.3001556396484
+        ],
+        [
+          -221.124130249023,
+          91.2919235229492,
+          30.3288192749023
+        ],
+        [
+          -221.819000244141,
+          90.8223648071289,
+          30.3567562103271
+        ],
+        [
+          -222.530242919922,
+          90.3773574829102,
+          30.3991718292236
+        ],
+        [
+          -223.302810668945,
+          90.054557800293,
+          30.4474544525146
+        ],
+        [
+          -224.104263305664,
+          89.8296432495117,
+          30.5103302001953
+        ],
+        [
+          -224.924453735352,
+          89.6980361938477,
+          30.5711727142334
+        ],
+        [
+          -225.7060546875,
+          89.9424896240234,
+          30.6456565856934
+        ],
+        [
+          -226.422134399414,
+          90.3443450927734,
+          30.7300701141357
+        ],
+        [
+          -227.084869384766,
+          90.7944946289062,
+          30.8180713653564
+        ],
+        [
+          -227.200973510742,
+          90.8293228149414,
+          30.8301582336426
+        ],
+        [
+          -227.200973510742,
+          90.8293228149414,
+          30.8301582336426
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -220.656066894531,
+        91.6343536376953,
+        30.3147468566895
+      ],
+      "id": "31-garden_back",
+      "result": {
+        "distance_m": 7.10659293923527,
+        "end": "(-220.6561, 30.31475, -91.63435)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0746617019176483,
+        "name": "31-garden_back",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -227.200973510742,
+        90.8293228149414,
+        30.8301582336426
+      ],
+      "trace_enu": [
+        [
+          -227.200973510742,
+          90.8293228149414,
+          30.8301582336426
+        ],
+        [
+          -226.708068847656,
+          90.4533386230469,
+          30.7486152648926
+        ],
+        [
+          -225.959686279297,
+          90.0518417358398,
+          30.6778144836426
+        ],
+        [
+          -225.169921875,
+          89.7371292114258,
+          30.5830879211426
+        ],
+        [
+          -224.326126098633,
+          89.7878952026367,
+          30.5108222961426
+        ],
+        [
+          -223.51220703125,
+          89.9877014160156,
+          30.4580879211426
+        ],
+        [
+          -222.734085083008,
+          90.2966690063477,
+          30.4038887023926
+        ],
+        [
+          -221.998382568359,
+          90.7129974365234,
+          30.3570137023926
+        ],
+        [
+          -221.310333251953,
+          91.1983032226562,
+          30.3252754211426
+        ],
+        [
+          -220.701248168945,
+          91.6275329589844,
+          30.3101387023926
+        ],
+        [
+          -220.656066894531,
+          91.6343536376953,
+          30.3147468566895
+        ],
+        [
+          -220.656066894531,
+          91.6343536376953,
+          30.3147468566895
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -1.38998425006866,
+        163.908050537109,
+        41.7104415893555
+      ],
+      "id": "40_out",
+      "result": {
+        "distance_m": 18.3219363382086,
+        "end": "(-1.389984, 41.71044, -163.9081)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0702967792749405,
+        "name": "40_out",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        17.2387886047363,
+        163.434173583984,
+        40.3151741027832
+      ],
+      "trace_enu": [
+        [
+          17.2387886047363,
+          163.434173583984,
+          40.3151741027832
+        ],
+        [
+          16.7219924926758,
+          163.444427490234,
+          40.3706893920898
+        ],
+        [
+          15.8889493942261,
+          163.453308105469,
+          40.4450416564941
+        ],
+        [
+          15.0573301315308,
+          163.46696472168,
+          40.523796081543
+        ],
+        [
+          14.2256879806519,
+          163.491409301758,
+          40.6033744812012
+        ],
+        [
+          13.3934860229492,
+          163.504287719727,
+          40.6804008483887
+        ],
+        [
+          12.5614433288574,
+          163.511199951172,
+          40.7575187683105
+        ],
+        [
+          11.7298069000244,
+          163.522384643555,
+          40.8356552124023
+        ],
+        [
+          10.8987226486206,
+          163.54020690918,
+          40.9153671264648
+        ],
+        [
+          10.0678853988647,
+          163.569213867188,
+          40.9964408874512
+        ],
+        [
+          9.23569393157959,
+          163.589401245117,
+          41.073112487793
+        ],
+        [
+          8.40186309814453,
+          163.595458984375,
+          41.1427764892578
+        ],
+        [
+          7.56812191009521,
+          163.606719970703,
+          41.211368560791
+        ],
+        [
+          6.73383760452271,
+          163.625152587891,
+          41.2775955200195
+        ],
+        [
+          5.90009021759033,
+          163.653930664062,
+          41.3436889648438
+        ],
+        [
+          5.06450653076172,
+          163.673568725586,
+          41.3992385864258
+        ],
+        [
+          4.22789192199707,
+          163.684860229492,
+          41.4498519897461
+        ],
+        [
+          3.39045548439026,
+          163.70100402832,
+          41.4966735839844
+        ],
+        [
+          2.55337858200073,
+          163.722961425781,
+          41.5404243469238
+        ],
+        [
+          1.71624732017517,
+          163.75602722168,
+          41.5818748474121
+        ],
+        [
+          0.879277586936951,
+          163.797592163086,
+          41.6202697753906
+        ],
+        [
+          0.0418765619397163,
+          163.843292236328,
+          41.6524353027344
+        ],
+        [
+          -0.795013189315796,
+          163.891845703125,
+          41.689037322998
+        ],
+        [
+          -1.38228821754456,
+          163.908111572266,
+          41.7100868225098
+        ],
+        [
+          -1.38998425006866,
+          163.908050537109,
+          41.7104415893555
+        ],
+        [
+          -1.38998425006866,
+          163.908050537109,
+          41.7104415893555
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        17.2902679443359,
+        163.440078735352,
+        40.3250198364258
+      ],
+      "id": "40_back",
+      "result": {
+        "distance_m": 18.3675302239135,
+        "end": "(17.29027, 40.32502, -163.4401)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0731145814061165,
+        "name": "40_back",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -1.38998425006866,
+        163.908050537109,
+        41.7104415893555
+      ],
+      "trace_enu": [
+        [
+          -1.38998425006866,
+          163.908050537109,
+          41.7104415893555
+        ],
+        [
+          -0.865942239761353,
+          163.868362426758,
+          41.6744194030762
+        ],
+        [
+          -0.0236123502254486,
+          163.832138061523,
+          41.6426811218262
+        ],
+        [
+          0.81924307346344,
+          163.7958984375,
+          41.6094779968262
+        ],
+        [
+          1.66294634342194,
+          163.764434814453,
+          41.5777397155762
+        ],
+        [
+          2.50715661048889,
+          163.747207641602,
+          41.5460014343262
+        ],
+        [
+          3.35175538063049,
+          163.729995727539,
+          41.4991264343262
+        ],
+        [
+          4.1952338218689,
+          163.712814331055,
+          41.4478569030762
+        ],
+        [
+          5.04049062728882,
+          163.695602416992,
+          41.3980522155762
+        ],
+        [
+          5.88583898544312,
+          163.679763793945,
+          41.3467826843262
+        ],
+        [
+          6.73299121856689,
+          163.664016723633,
+          41.2847709655762
+        ],
+        [
+          7.57998180389404,
+          163.648284912109,
+          41.2183647155762
+        ],
+        [
+          8.42726516723633,
+          163.632537841797,
+          41.1490287780762
+        ],
+        [
+          9.2743673324585,
+          163.616592407227,
+          41.0752983093262
+        ],
+        [
+          10.1207151412964,
+          163.598785400391,
+          40.9986381530762
+        ],
+        [
+          10.9673471450806,
+          163.580978393555,
+          40.9190483093262
+        ],
+        [
+          11.8150405883789,
+          163.563171386719,
+          40.8379936218262
+        ],
+        [
+          12.6646566390991,
+          163.545318603516,
+          40.7569389343262
+        ],
+        [
+          13.5113096237183,
+          163.527221679688,
+          40.6758842468262
+        ],
+        [
+          14.3578119277954,
+          163.506088256836,
+          40.5796928405762
+        ],
+        [
+          15.2052984237671,
+          163.484939575195,
+          40.5074272155762
+        ],
+        [
+          16.0520782470703,
+          163.463821411133,
+          40.4336967468262
+        ],
+        [
+          16.8990516662598,
+          163.442657470703,
+          40.3555717468262
+        ],
+        [
+          17.2902679443359,
+          163.440078735352,
+          40.3250198364258
+        ],
+        [
+          17.2902679443359,
+          163.440078735352,
+          40.3250198364258
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        69.5850524902344,
+        171.336898803711,
+        39.6075744628906
+      ],
+      "id": "41_out",
+      "result": {
+        "distance_m": 19.6600826140493,
+        "end": "(69.58505, 39.60757, -171.3369)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.0747038051486015,
+        "name": "41_out",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        51.3365631103516,
+        167.042465209961,
+        39.2761383056641
+      ],
+      "trace_enu": [
+        [
+          51.3365631103516,
+          167.042465209961,
+          39.2761383056641
+        ],
+        [
+          51.809154510498,
+          167.438827514648,
+          39.3253326416016
+        ],
+        [
+          52.4753684997559,
+          167.946136474609,
+          39.372444152832
+        ],
+        [
+          53.1405258178711,
+          168.454483032227,
+          39.4211006164551
+        ],
+        [
+          53.8044548034668,
+          168.964477539062,
+          39.4709930419922
+        ],
+        [
+          54.4648857116699,
+          169.478256225586,
+          39.523250579834
+        ],
+        [
+          55.1293144226074,
+          169.986770629883,
+          39.5713920593262
+        ],
+        [
+          55.7927436828613,
+          170.49577331543,
+          39.6301193237305
+        ],
+        [
+          56.4546508789062,
+          171.00715637207,
+          39.682487487793
+        ],
+        [
+          57.1147346496582,
+          171.519577026367,
+          39.7431182861328
+        ],
+        [
+          57.7921333312988,
+          172.016082763672,
+          39.8002815246582
+        ],
+        [
+          58.6323661804199,
+          172.036224365234,
+          39.7947731018066
+        ],
+        [
+          59.4726676940918,
+          171.994064331055,
+          39.7694473266602
+        ],
+        [
+          60.3134689331055,
+          171.955032348633,
+          39.7694473266602
+        ],
+        [
+          61.1533851623535,
+          171.901138305664,
+          39.7543106079102
+        ],
+        [
+          61.9918365478516,
+          171.840530395508,
+          39.7421455383301
+        ],
+        [
+          62.8314819335938,
+          171.782699584961,
+          39.7260589599609
+        ],
+        [
+          63.671989440918,
+          171.729232788086,
+          39.7109222412109
+        ],
+        [
+          64.5124969482422,
+          171.667556762695,
+          39.6811981201172
+        ],
+        [
+          65.3513107299805,
+          171.604690551758,
+          39.6768341064453
+        ],
+        [
+          66.1907730102539,
+          171.550201416016,
+          39.6626243591309
+        ],
+        [
+          67.0306625366211,
+          171.489166259766,
+          39.6468696594238
+        ],
+        [
+          67.870231628418,
+          171.429656982422,
+          39.6177825927734
+        ],
+        [
+          68.7085723876953,
+          171.371353149414,
+          39.6160354614258
+        ],
+        [
+          69.4779968261719,
+          171.336898803711,
+          39.6075744628906
+        ],
+        [
+          69.5850524902344,
+          171.336898803711,
+          39.6075744628906
+        ],
+        [
+          69.5850524902344,
+          171.336898803711,
+          39.6075744628906
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        51.3650665283203,
+        167.102203369141,
+        39.2951774597168
+      ],
+      "id": "41_back",
+      "result": {
+        "distance_m": 19.6966944430023,
+        "end": "(51.36507, 39.29518, -167.1022)",
+        "goals": 6,
+        "max_frame_displacement_m": 0.072669193148613,
+        "name": "41_back",
+        "pass": true,
+        "reached": 6,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        69.5850524902344,
+        171.336898803711,
+        39.6075744628906
+      ],
+      "trace_enu": [
+        [
+          69.5850524902344,
+          171.336898803711,
+          39.6075744628906
+        ],
+        [
+          69.0633544921875,
+          171.385620117188,
+          39.6161041259766
+        ],
+        [
+          68.2249298095703,
+          171.432769775391,
+          39.6283493041992
+        ],
+        [
+          67.3864593505859,
+          171.480682373047,
+          39.6419792175293
+        ],
+        [
+          66.5482406616211,
+          171.531280517578,
+          39.6567573547363
+        ],
+        [
+          65.7104415893555,
+          171.587417602539,
+          39.6726150512695
+        ],
+        [
+          64.8727798461914,
+          171.644500732422,
+          39.6886672973633
+        ],
+        [
+          64.0351867675781,
+          171.703643798828,
+          39.7041625976562
+        ],
+        [
+          63.1975135803223,
+          171.760940551758,
+          39.7196273803711
+        ],
+        [
+          62.3598022460938,
+          171.818664550781,
+          39.7348823547363
+        ],
+        [
+          61.5221176147461,
+          171.877517700195,
+          39.7500839233398
+        ],
+        [
+          60.6844749450684,
+          171.9365234375,
+          39.765308380127
+        ],
+        [
+          59.8466949462891,
+          171.994003295898,
+          39.7799797058105
+        ],
+        [
+          59.0090560913086,
+          172.052307128906,
+          39.7950744628906
+        ],
+        [
+          58.1715316772461,
+          172.112319946289,
+          39.8100662231445
+        ],
+        [
+          57.4871673583984,
+          171.744705200195,
+          39.7602615356445
+        ],
+        [
+          56.8097763061523,
+          171.238983154297,
+          39.7075271606445
+        ],
+        [
+          56.1320648193359,
+          170.733016967773,
+          39.6562576293945
+        ],
+        [
+          55.4558181762695,
+          170.228149414062,
+          39.6020584106445
+        ],
+        [
+          54.7803344726562,
+          169.720367431641,
+          39.5478591918945
+        ],
+        [
+          54.1137504577637,
+          169.202041625977,
+          39.4951248168945
+        ],
+        [
+          53.4474449157715,
+          168.68391418457,
+          39.4438552856445
+        ],
+        [
+          52.7810363769531,
+          168.165710449219,
+          39.3925857543945
+        ],
+        [
+          52.1140594482422,
+          167.647079467773,
+          39.3427810668945
+        ],
+        [
+          51.4679718017578,
+          167.149322509766,
+          39.2944412231445
+        ],
+        [
+          51.3650665283203,
+          167.102203369141,
+          39.2951774597168
+        ],
+        [
+          51.3650665283203,
+          167.102203369141,
+          39.2951774597168
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        79.7624893188477,
+        190.885559082031,
+        45.6199836730957
+      ],
+      "id": "42_out",
+      "result": {
+        "distance_m": 8.04614457115531,
+        "end": "(79.76249, 45.61998, -190.8856)",
+        "goals": 2,
+        "max_frame_displacement_m": 0.464945107698441,
+        "name": "42_out",
+        "pass": true,
+        "reached": 2,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        85.8257904052734,
+        188.995498657227,
+        42.9976768493652
+      ],
+      "trace_enu": [
+        [
+          85.8257904052734,
+          188.995498657227,
+          42.9976768493652
+        ],
+        [
+          85.6782302856445,
+          189.497131347656,
+          43.0938529968262
+        ],
+        [
+          85.5422134399414,
+          190.235488891602,
+          43.2126274108887
+        ],
+        [
+          85.3316268920898,
+          190.772369384766,
+          43.669548034668
+        ],
+        [
+          85.2583236694336,
+          191.575805664062,
+          43.4054679870605
+        ],
+        [
+          84.6448745727539,
+          191.681671142578,
+          43.6269607543945
+        ],
+        [
+          83.9916381835938,
+          191.570938110352,
+          43.9897918701172
+        ],
+        [
+          83.2000885009766,
+          191.43505859375,
+          44.3581962585449
+        ],
+        [
+          82.4980926513672,
+          191.314346313477,
+          44.7382621765137
+        ],
+        [
+          81.8013153076172,
+          191.194229125977,
+          45.121150970459
+        ],
+        [
+          80.9400177001953,
+          191.04411315918,
+          45.5532493591309
+        ],
+        [
+          80.1392974853516,
+          190.90299987793,
+          45.6199836730957
+        ],
+        [
+          79.7624893188477,
+          190.885559082031,
+          45.6199836730957
+        ],
+        [
+          79.7624893188477,
+          190.885559082031,
+          45.6199836730957
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        85.7787628173828,
+        188.958526611328,
+        43.0010185241699
+      ],
+      "id": "42_back",
+      "result": {
+        "distance_m": 8.00205146148801,
+        "end": "(85.77876, 43.00102, -188.9585)",
+        "goals": 2,
+        "max_frame_displacement_m": 0.412118673324585,
+        "name": "42_back",
+        "pass": true,
+        "reached": 2,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        79.7624893188477,
+        190.885559082031,
+        45.6199836730957
+      ],
+      "trace_enu": [
+        [
+          79.7624893188477,
+          190.885559082031,
+          45.6199836730957
+        ],
+        [
+          80.2830429077148,
+          190.998306274414,
+          45.6199836730957
+        ],
+        [
+          81.1370086669922,
+          191.115142822266,
+          45.4495735168457
+        ],
+        [
+          82.0171585083008,
+          191.235549926758,
+          44.9778938293457
+        ],
+        [
+          82.9134902954102,
+          191.358169555664,
+          44.5042610168457
+        ],
+        [
+          83.7909927368164,
+          191.478179931641,
+          44.0296516418457
+        ],
+        [
+          84.6376419067383,
+          191.593994140625,
+          43.7515449523926
+        ],
+        [
+          85.3459701538086,
+          191.561859130859,
+          43.3994522094727
+        ],
+        [
+          85.5080184936523,
+          190.776580810547,
+          43.7359771728516
+        ],
+        [
+          85.6478271484375,
+          189.974075317383,
+          43.6479949951172
+        ],
+        [
+          85.7787628173828,
+          189.156784057617,
+          43.0356864929199
+        ],
+        [
+          85.7787628173828,
+          188.958526611328,
+          43.0010185241699
+        ],
+        [
+          85.7787628173828,
+          188.958526611328,
+          43.0010185241699
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        151.679595947266,
+        179.857162475586,
+        42.5631256103516
+      ],
+      "id": "45_out",
+      "result": {
+        "distance_m": 11.3968997253105,
+        "end": "(151.6796, 42.56313, -179.8572)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0703715980052948,
+        "name": "45_out",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        140.086517333984,
+        178.455139160156,
+        41.3092269897461
+      ],
+      "trace_enu": [
+        [
+          140.086517333984,
+          178.455139160156,
+          41.3092269897461
+        ],
+        [
+          140.602203369141,
+          178.566787719727,
+          41.3812828063965
+        ],
+        [
+          141.427169799805,
+          178.686599731445,
+          41.4540481567383
+        ],
+        [
+          142.249145507812,
+          178.818267822266,
+          41.5339317321777
+        ],
+        [
+          143.069549560547,
+          178.950988769531,
+          41.6154022216797
+        ],
+        [
+          143.886978149414,
+          179.092697143555,
+          41.7104339599609
+        ],
+        [
+          144.70426940918,
+          179.228942871094,
+          41.8050537109375
+        ],
+        [
+          145.525543212891,
+          179.346435546875,
+          41.8953323364258
+        ],
+        [
+          146.344223022461,
+          179.477813720703,
+          41.9937400817871
+        ],
+        [
+          147.163528442383,
+          179.596527099609,
+          42.0909042358398
+        ],
+        [
+          147.984634399414,
+          179.707641601562,
+          42.1884994506836
+        ],
+        [
+          148.801116943359,
+          179.836044311523,
+          42.2924995422363
+        ],
+        [
+          149.631057739258,
+          179.857696533203,
+          42.3710556030273
+        ],
+        [
+          150.464538574219,
+          179.852783203125,
+          42.4463882446289
+        ],
+        [
+          151.296249389648,
+          179.862365722656,
+          42.5274200439453
+        ],
+        [
+          151.679595947266,
+          179.857162475586,
+          42.5631256103516
+        ],
+        [
+          151.679595947266,
+          179.857162475586,
+          42.5631256103516
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        140.049331665039,
+        178.495040893555,
+        41.3171653747559
+      ],
+      "id": "45_back",
+      "result": {
+        "distance_m": 11.4318978008814,
+        "end": "(140.0493, 41.31717, -178.495)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0732105150818825,
+        "name": "45_back",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        151.679595947266,
+        179.857162475586,
+        42.5631256103516
+      ],
+      "trace_enu": [
+        [
+          151.679595947266,
+          179.857162475586,
+          42.5631256103516
+        ],
+        [
+          151.151718139648,
+          179.877975463867,
+          42.5103912353516
+        ],
+        [
+          150.305099487305,
+          179.89811706543,
+          42.4366607666016
+        ],
+        [
+          149.458892822266,
+          179.918273925781,
+          42.3643951416016
+        ],
+        [
+          148.614593505859,
+          179.813354492188,
+          42.2574615478516
+        ],
+        [
+          147.7705078125,
+          179.70475769043,
+          42.1563873291016
+        ],
+        [
+          146.927185058594,
+          179.591690063477,
+          42.0582427978516
+        ],
+        [
+          146.084991455078,
+          179.46549987793,
+          41.9571685791016
+        ],
+        [
+          145.243362426758,
+          179.339370727539,
+          41.8604888916016
+        ],
+        [
+          144.402877807617,
+          179.205368041992,
+          41.7638092041016
+        ],
+        [
+          143.564834594727,
+          179.060623168945,
+          41.6685943603516
+        ],
+        [
+          142.726791381836,
+          178.915878295898,
+          41.5855865478516
+        ],
+        [
+          141.888458251953,
+          178.769973754883,
+          41.4933013916016
+        ],
+        [
+          141.054779052734,
+          178.624298095703,
+          41.4122467041016
+        ],
+        [
+          140.241577148438,
+          178.497741699219,
+          41.3370513916016
+        ],
+        [
+          140.049331665039,
+          178.495040893555,
+          41.3171653747559
+        ],
+        [
+          140.049331665039,
+          178.495040893555,
+          41.3171653747559
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        157.491943359375,
+        169.155532836914,
+        40.7385711669922
+      ],
+      "id": "46_out",
+      "result": {
+        "distance_m": 10.4675363469869,
+        "end": "(157.4919, 40.73857, -169.1555)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0759697631001472,
+        "name": "46_out",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        153.995956420898,
+        179.303421020508,
+        42.6647796630859
+      ],
+      "trace_enu": [
+        [
+          153.995956420898,
+          179.303421020508,
+          42.6647796630859
+        ],
+        [
+          154.198745727539,
+          178.7724609375,
+          42.5759124755859
+        ],
+        [
+          154.406982421875,
+          177.944091796875,
+          42.3952484130859
+        ],
+        [
+          154.675048828125,
+          177.114242553711,
+          42.1916351318359
+        ],
+        [
+          154.981323242188,
+          176.303375244141,
+          42.0080413818359
+        ],
+        [
+          155.286773681641,
+          175.494613647461,
+          41.8132171630859
+        ],
+        [
+          155.624481201172,
+          174.688659667969,
+          41.6183929443359
+        ],
+        [
+          155.963088989258,
+          173.887466430664,
+          41.4294281005859
+        ],
+        [
+          156.284027099609,
+          173.095169067383,
+          41.2697601318359
+        ],
+        [
+          156.581268310547,
+          172.294509887695,
+          41.1086273193359
+        ],
+        [
+          156.878265380859,
+          171.49446105957,
+          40.9899749755859
+        ],
+        [
+          157.120422363281,
+          170.677444458008,
+          40.8815765380859
+        ],
+        [
+          157.357879638672,
+          169.859085083008,
+          40.7941741943359
+        ],
+        [
+          157.493896484375,
+          169.192184448242,
+          40.7429046630859
+        ],
+        [
+          157.491943359375,
+          169.155532836914,
+          40.7385711669922
+        ],
+        [
+          157.491943359375,
+          169.155532836914,
+          40.7385711669922
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        154.029586791992,
+        179.352188110352,
+        42.6931114196777
+      ],
+      "id": "46_back",
+      "result": {
+        "distance_m": 10.5184269314632,
+        "end": "(154.0296, 42.69311, -179.3522)",
+        "goals": 5,
+        "max_frame_displacement_m": 0.0699871927499771,
+        "name": "46_back",
+        "pass": true,
+        "reached": 5,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        157.491943359375,
+        169.155532836914,
+        40.7385711669922
+      ],
+      "trace_enu": [
+        [
+          157.491943359375,
+          169.155532836914,
+          40.7385711669922
+        ],
+        [
+          157.314071655273,
+          169.670257568359,
+          40.7662048339844
+        ],
+        [
+          157.127136230469,
+          170.476455688477,
+          40.8588104248047
+        ],
+        [
+          156.912902832031,
+          171.269302368164,
+          40.9660263061523
+        ],
+        [
+          156.63037109375,
+          172.045639038086,
+          41.0666084289551
+        ],
+        [
+          156.366104125977,
+          172.80989074707,
+          41.2192077636719
+        ],
+        [
+          156.041458129883,
+          173.552810668945,
+          41.3642883300781
+        ],
+        [
+          155.721221923828,
+          174.291915893555,
+          41.5228080749512
+        ],
+        [
+          155.427124023438,
+          175.031356811523,
+          41.7028160095215
+        ],
+        [
+          155.11376953125,
+          175.762557983398,
+          41.8829650878906
+        ],
+        [
+          154.822601318359,
+          176.509948730469,
+          42.0538330078125
+        ],
+        [
+          154.565628051758,
+          177.263534545898,
+          42.2310562133789
+        ],
+        [
+          154.325576782227,
+          178.022903442383,
+          42.4145050048828
+        ],
+        [
+          154.108276367188,
+          178.802276611328,
+          42.570858001709
+        ],
+        [
+          154.029754638672,
+          179.346466064453,
+          42.6915397644043
+        ],
+        [
+          154.029586791992,
+          179.352188110352,
+          42.6931114196777
+        ],
+        [
+          154.029586791992,
+          179.352188110352,
+          42.6931114196777
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        89.5713806152344,
+        189.987167358398,
+        43.3938255310059
+      ],
+      "id": "42-school-lane_out",
+      "result": {
+        "distance_m": 3.6016505965963,
+        "end": "(89.57138, 43.39383, -189.9872)",
+        "goals": 1,
+        "max_frame_displacement_m": 0.0699970200657845,
+        "name": "42-school-lane_out",
+        "pass": true,
+        "reached": 1,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        85.8259963989258,
+        188.994995117188,
+        42.9975929260254
+      ],
+      "trace_enu": [
+        [
+          85.8259963989258,
+          188.994995117188,
+          42.9975929260254
+        ],
+        [
+          86.3376541137695,
+          189.186004638672,
+          43.0716552734375
+        ],
+        [
+          87.1444473266602,
+          189.391555786133,
+          43.1511764526367
+        ],
+        [
+          87.9491119384766,
+          189.601135253906,
+          43.2333450317383
+        ],
+        [
+          88.7521286010742,
+          189.817108154297,
+          43.3172721862793
+        ],
+        [
+          89.4811401367188,
+          189.988021850586,
+          43.3890419006348
+        ],
+        [
+          89.5713806152344,
+          189.987167358398,
+          43.3938255310059
+        ],
+        [
+          89.5713806152344,
+          189.987167358398,
+          43.3938255310059
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        85.7997360229492,
+        189.048095703125,
+        43.0184516906738
+      ],
+      "id": "42-school-lane_back",
+      "result": {
+        "distance_m": 3.6015266366303,
+        "end": "(85.79974, 43.01845, -189.0481)",
+        "goals": 1,
+        "max_frame_displacement_m": 0.0731066465377808,
+        "name": "42-school-lane_back",
+        "pass": true,
+        "reached": 1,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        89.5713806152344,
+        189.987167358398,
+        43.3938255310059
+      ],
+      "trace_enu": [
+        [
+          89.5713806152344,
+          189.987167358398,
+          43.3938255310059
+        ],
+        [
+          89.0466842651367,
+          189.791580200195,
+          43.3215599060059
+        ],
+        [
+          88.2247085571289,
+          189.588302612305,
+          43.2390403747559
+        ],
+        [
+          87.4022445678711,
+          189.384872436523,
+          43.1579856872559
+        ],
+        [
+          86.580696105957,
+          189.181671142578,
+          43.0783958435059
+        ],
+        [
+          85.8638458251953,
+          189.050094604492,
+          43.0227317810059
+        ],
+        [
+          85.7997360229492,
+          189.048095703125,
+          43.0184516906738
+        ],
+        [
+          85.7997360229492,
+          189.048095703125,
+          43.0184516906738
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        107.236305236816,
+        164.58740234375,
+        36.3385429382324
+      ],
+      "id": "43-south-street_out",
+      "result": {
+        "distance_m": 3.10284642037004,
+        "end": "(107.2363, 36.33854, -164.5874)",
+        "goals": 2,
+        "max_frame_displacement_m": 0.0699257552623749,
+        "name": "43-south-street_out",
+        "pass": true,
+        "reached": 2,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        105.059997558594,
+        162.100006103516,
+        35.938648223877
+      ],
+      "trace_enu": [
+        [
+          105.059997558594,
+          162.100006103516,
+          35.938648223877
+        ],
+        [
+          105.513854980469,
+          162.518356323242,
+          36.0099067687988
+        ],
+        [
+          106.123603820801,
+          163.084686279297,
+          36.0894470214844
+        ],
+        [
+          106.633026123047,
+          163.738311767578,
+          36.1857681274414
+        ],
+        [
+          107.135116577148,
+          164.391387939453,
+          36.299747467041
+        ],
+        [
+          107.236305236816,
+          164.58740234375,
+          36.3385429382324
+        ],
+        [
+          107.236305236816,
+          164.58740234375,
+          36.3385429382324
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        105.10954284668,
+        162.152496337891,
+        35.9599189758301
+      ],
+      "id": "43-south-street_back",
+      "result": {
+        "distance_m": 3.0309424996376,
+        "end": "(105.1095, 35.95992, -162.1525)",
+        "goals": 2,
+        "max_frame_displacement_m": 0.0738732218742371,
+        "name": "43-south-street_back",
+        "pass": true,
+        "reached": 2,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        107.236305236816,
+        164.58740234375,
+        36.3385429382324
+      ],
+      "trace_enu": [
+        [
+          107.236305236816,
+          164.58740234375,
+          36.3385429382324
+        ],
+        [
+          106.854385375977,
+          164.093856811523,
+          36.2423515319824
+        ],
+        [
+          106.379249572754,
+          163.388824462891,
+          36.1295585632324
+        ],
+        [
+          105.773300170898,
+          162.796783447266,
+          36.0362968444824
+        ],
+        [
+          105.188232421875,
+          162.22575378418,
+          35.9567070007324
+        ],
+        [
+          105.10954284668,
+          162.152496337891,
+          35.9599189758301
+        ],
+        [
+          105.10954284668,
+          162.152496337891,
+          35.9599189758301
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -77.4589157104492,
+        164.101974487305,
+        43.0693130493164
+      ],
+      "id": "34_from_street_shoulder_to_old_lane_out",
+      "result": {
+        "distance_m": 11.948251019232,
+        "end": "(-77.45892, 43.06931, -164.102)",
+        "goals": 4,
+        "max_frame_displacement_m": 0.0731805562973022,
+        "name": "34_from_street_shoulder_to_old_lane_out",
+        "pass": true,
+        "reached": 4,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -65.2299957275391,
+        165.019500732422,
+        44.4027099609375
+      ],
+      "trace_enu": [
+        [
+          -65.2299957275391,
+          165.019500732422,
+          44.4027099609375
+        ],
+        [
+          -65.758918762207,
+          164.939086914062,
+          44.3514404296875
+        ],
+        [
+          -66.6023864746094,
+          164.861480712891,
+          44.2747802734375
+        ],
+        [
+          -67.4489212036133,
+          164.783615112305,
+          44.1800537109375
+        ],
+        [
+          -68.2975692749023,
+          164.70556640625,
+          44.0687255859375
+        ],
+        [
+          -69.1427307128906,
+          164.627807617188,
+          43.9798583984375
+        ],
+        [
+          -69.9855651855469,
+          164.550262451172,
+          43.9017333984375
+        ],
+        [
+          -70.8312301635742,
+          164.482376098633,
+          43.8261985778809
+        ],
+        [
+          -71.6794815063477,
+          164.425689697266,
+          43.7309837341309
+        ],
+        [
+          -72.5291290283203,
+          164.368911743164,
+          43.6343040466309
+        ],
+        [
+          -73.3807983398438,
+          164.319076538086,
+          43.5361595153809
+        ],
+        [
+          -74.2309036254883,
+          164.270004272461,
+          43.4380149841309
+        ],
+        [
+          -75.0810546875,
+          164.220901489258,
+          43.3384056091309
+        ],
+        [
+          -75.931526184082,
+          164.171783447266,
+          43.2373313903809
+        ],
+        [
+          -76.7818069458008,
+          164.122650146484,
+          43.1347923278809
+        ],
+        [
+          -77.436149597168,
+          164.102172851562,
+          43.0683860778809
+        ],
+        [
+          -77.4589157104492,
+          164.101974487305,
+          43.0693130493164
+        ],
+        [
+          -77.4589157104492,
+          164.101974487305,
+          43.0693130493164
+        ]
+      ]
+    },
+    {
+      "finish_enu": [
+        -65.1916809082031,
+        164.991851806641,
+        44.4161186218262
+      ],
+      "id": "34_from_street_shoulder_to_old_lane_back",
+      "result": {
+        "distance_m": 11.9944654926658,
+        "end": "(-65.19168, 44.41612, -164.9919)",
+        "goals": 4,
+        "max_frame_displacement_m": 0.0719389393925667,
+        "name": "34_from_street_shoulder_to_old_lane_back",
+        "pass": true,
+        "reached": 4,
+        "stall_contacts": []
+      },
+      "start_enu": [
+        -77.4589157104492,
+        164.101974487305,
+        43.0693130493164
+      ],
+      "trace_enu": [
+        [
+          -77.4589157104492,
+          164.101974487305,
+          43.0693130493164
+        ],
+        [
+          -76.9435882568359,
+          164.128982543945,
+          43.1318473815918
+        ],
+        [
+          -76.1149139404297,
+          164.155334472656,
+          43.2263946533203
+        ],
+        [
+          -75.28759765625,
+          164.197601318359,
+          43.3238525390625
+        ],
+        [
+          -74.4594497680664,
+          164.234252929688,
+          43.4192657470703
+        ],
+        [
+          -73.6316680908203,
+          164.27880859375,
+          43.515869140625
+        ],
+        [
+          -72.8056640625,
+          164.330993652344,
+          43.6117630004883
+        ],
+        [
+          -71.9775161743164,
+          164.376678466797,
+          43.7040634155273
+        ],
+        [
+          -71.1504135131836,
+          164.435165405273,
+          43.7976875305176
+        ],
+        [
+          -70.3235702514648,
+          164.501480102539,
+          43.8922080993652
+        ],
+        [
+          -69.4951095581055,
+          164.583450317383,
+          43.9607543945312
+        ],
+        [
+          -68.6662292480469,
+          164.667785644531,
+          44.0353164672852
+        ],
+        [
+          -67.8441390991211,
+          164.751556396484,
+          44.1414413452148
+        ],
+        [
+          -67.0226287841797,
+          164.835083007812,
+          44.2495803833008
+        ],
+        [
+          -66.1930313110352,
+          164.920272827148,
+          44.3231430053711
+        ],
+        [
+          -65.3851776123047,
+          164.991851806641,
+          44.3990898132324
+        ],
+        [
+          -65.1916809082031,
+          164.991851806641,
+          44.4161186218262
+        ],
+        [
+          -65.1916809082031,
+          164.991851806641,
+          44.4161186218262
+        ]
+      ]
+    }
+  ]
+}

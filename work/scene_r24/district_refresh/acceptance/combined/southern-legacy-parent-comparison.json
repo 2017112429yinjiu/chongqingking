@@ -1,0 +1,146 @@
+{
+  "baseline": "cb36b07c1128acdd871923610bf6704c6ac5d57a",
+  "baseline_configuration": "same runtime before acceptance layers (--qa-without-acceptance) and unchanged district_500/routes.gd",
+  "scope": "historical dedicated route south from the five-path, four modes matrix",
+  "renderer": "headless",
+  "fixed_fps": 60,
+  "parents_passed": 0,
+  "candidate_passed": 0,
+  "comparison": [
+    {
+      "mode": "walk",
+      "direction": "out",
+      "targets": 6,
+      "parent": {
+        "passed": false,
+        "reached": 5,
+        "distance_m": 105.910021978896,
+        "stop": [
+          66.2061614990234,
+          4.54963254928589,
+          136.199340820312
+        ],
+        "contact": {}
+      },
+      "candidate": {
+        "passed": false,
+        "reached": 5,
+        "distance_m": 105.909133390989,
+        "stop": [
+          66.2061767578125,
+          4.5496506690979,
+          136.19921875
+        ],
+        "contact": {}
+      },
+      "stop_offset_m": 0.00012434757456906956,
+      "contact_owner_match": true
+    },
+    {
+      "mode": "ride",
+      "direction": "out",
+      "targets": 6,
+      "parent": {
+        "passed": false,
+        "reached": 5,
+        "distance_m": 106.764812051493,
+        "stop": [
+          65.8297576904297,
+          4.55803918838501,
+          136.211944580078
+        ],
+        "contact": {
+          "body": "COL_Outer500_Surface_06_02",
+          "normal": "(-0.046698, 0.988882, 0.141177)",
+          "position": "(66.29127, 4.55982, 136.0337)"
+        }
+      },
+      "candidate": {
+        "passed": false,
+        "reached": 5,
+        "distance_m": 106.803114424809,
+        "stop": [
+          65.8298263549805,
+          4.55712795257568,
+          136.211975097656
+        ],
+        "contact": {
+          "body": "COL_Binjiang_1128648941_Podium",
+          "normal": "(-0.854354, 0.0, -0.519691)",
+          "position": "(66.5235, 4.838758, 136.2235)"
+        }
+      },
+      "stop_offset_m": 0.000914328629818996,
+      "contact_owner_match": false
+    },
+    {
+      "mode": "walk",
+      "direction": "back",
+      "targets": 6,
+      "parent": {
+        "passed": false,
+        "reached": 0,
+        "distance_m": 7.81299753207713,
+        "stop": [
+          98.1203002929688,
+          7.60451507568359,
+          126.563774108887
+        ],
+        "contact": {}
+      },
+      "candidate": {
+        "passed": false,
+        "reached": 0,
+        "distance_m": 7.82028108369559,
+        "stop": [
+          98.1201705932617,
+          7.60606956481934,
+          126.565658569336
+        ],
+        "contact": {}
+      },
+      "stop_offset_m": 0.00244631348583957,
+      "contact_owner_match": true
+    },
+    {
+      "mode": "ride",
+      "direction": "back",
+      "targets": 6,
+      "parent": {
+        "passed": false,
+        "reached": 0,
+        "distance_m": 11.1126051292231,
+        "stop": [
+          98.5438461303711,
+          7.64583301544189,
+          126.447364807129
+        ],
+        "contact": {
+          "body": "COL_Outer500_Surface_06_02",
+          "normal": "(-0.043506, 0.99805, 0.044767)",
+          "position": "(99.01082, 7.645622, 126.3108)"
+        }
+      },
+      "candidate": {
+        "passed": false,
+        "reached": 0,
+        "distance_m": 11.126355609711,
+        "stop": [
+          98.5428161621094,
+          7.64523220062256,
+          126.446495056152
+        ],
+        "contact": {
+          "body": "COL_Outer500_Surface_06_02",
+          "normal": "(-0.043506, 0.99805, 0.044767)",
+          "position": "(99.01106, 7.645676, 126.3098)"
+        }
+      },
+      "stop_offset_m": 0.0014758996677326469,
+      "contact_owner_match": true
+    }
+  ],
+  "same_pass_counts_and_stop_locations": true,
+  "last_contact_owner_matches_in": 3,
+  "observed_last_contact_variation": "The last recorded outward ride contact in one run is the pre-existing riverside podium; the full-candidate matrix recorded the original terrain tile there. Neither collider changed in this refresh."
+}
