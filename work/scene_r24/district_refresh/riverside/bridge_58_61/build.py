@@ -60,13 +60,13 @@ def columns(mesh, p, bottom, top, radius, concrete):
     mesh.solid(circle(top-.47,radius),circle(top+.05,radius*1.3),concrete)
 
 
-def rail_meshes(axes, ground, street_level):
+def rail_meshes(axes, ground, street_level, vertical_adjustment=None, northern_end=None):
     lines=[axes[key] for key in ("878019566","1134456893")]
     def center(n):
         a,b=[read_axis(line,n,1) for line in lines]
         return (a+b)*.5
     def level(n):
-        return street_level+42.-.013*(n+175.)
+        return street_level+42.-.013*(n+175.)+(vertical_adjustment(n) if vertical_adjustment else 0.)
     steel=material("North rail muted steel box finish",(.56,.63,.64),"concrete_wall_006_diff_2k.jpg")
     shell=material("North rail pale acoustic canopy",(.85,.89,.87),"concrete_wall_006_diff_2k.jpg")
     light=material("North rail pale fair-faced concrete piers",(.90,.92,.90),"plastered_wall_04_diff_1k.jpg")
@@ -77,22 +77,24 @@ def rail_meshes(axes, ground, street_level):
     pier=Mesh("COL_Nanjimen_NorthRailPiers")
     underside=Mesh("Nanjimen_NorthRailBoxStiffeners")
     river=Mesh("Nanjimen_RiverSpanContext")
-    stations=[(center(n),level(n)) for n in range(-278,-79,3)]
+    span_stations=list(range(-278,-79,3)) if northern_end is None else [*range(-278,ceil(northern_end),3),northern_end]
+    stations=[(center(n),level(n)) for n in span_stations]
     box=[(-11.5,2.95),(-11.5,2.05),(-8.1,0.),(8.1,0.),(11.5,2.05),(11.5,2.95)]
     sweep(beam,stations,box,steel)
     continuation=[(center(n),level(n)) for n in (*range(-1158,-279,20),-278)]
     sweep(river,continuation,box,steel)
-    cover=[(center(n),level(n)) for n in range(-263,-88,3)]
+    cover_stop=-88 if northern_end is None else ceil(northern_end-1.)
+    cover=[(center(n),level(n)) for n in range(-263,cover_stop,3)]
     sweep(canopy,cover,[(-10.72,2.78),(-10.72,4.7),(-10.15,5.68),(-8.92,6.43),
                         (-6.50,6.70),(6.50,6.70),(8.92,6.43),(10.15,5.68),(10.72,4.7),(10.72,2.78)],shell)
     for side in (-1.,1.):
         sweep(vents,cover,[(side*10.65,3.59),(side*10.77,3.59),(side*10.77,4.3),(side*10.65,4.3)],dark)
-        for n in range(-261,-89,2):
+        for n in range(-261,cover_stop-1,2):
             rows=[(center(k),level(k)) for k in (n-.10,n+.10)]
             sweep(vents,rows,[(side*10.77,3.59),(side*10.84,3.59),(side*10.84,4.3),(side*10.77,4.3)],shell)
     for offset in (-6.8,-2.25,2.25,6.8):
         sweep(underside,stations,[(offset-.11,-.22),(offset+.11,-.22),(offset+.11,.06),(offset-.11,.06)],steel)
-    for n in range(-275,-83,3):
+    for n in range(-275,-83 if northern_end is None else ceil(northern_end-1.0),3):
         ties=[(center(k),level(k)) for k in (n-.08,n+.08)]
         sweep(underside,ties,[(-7.65,-.17),(7.65,-.17),(7.65,.04),(-7.65,.04)],steel)
     for n,h in ((-365.,72.),(-837.,109.)):
@@ -365,4 +367,5 @@ def build():
     print("CQ_BRIDGE_PARK",json.dumps({"objects":len(parts),"park_stations":len(route),"finish_m":metas["route_finish_m"]}))
 
 
-build()
+if not globals().get("CQ_RAIL_FUNCTIONS_ONLY",False):
+    build()

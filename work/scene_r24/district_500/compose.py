@@ -459,6 +459,23 @@ if public_jiefang and os.environ.get("CQ_JIEFANG_GATE25_PARENT") != "1":
         gate_model.objects = gate25["new_meshes"] + gate25["replacement_meshes"]
     for item in gate_model.objects:
         collection.objects.link(item)
+grade_source = factory_dir / "nanqu_rail_grade/nanqu-rail-grade.blend"
+grade_manifest = group_assets / "nanqu-rail-grade.json"
+nanqu_grade = bool(nanqu and grade_source.exists() and grade_manifest.exists()
+                   and os.environ.get("CQ_NANQU_RAIL_PARENT") != "1")
+if nanqu_grade:
+    controls = json.loads(grade_manifest.read_bytes())
+    donor_names = set(controls["corrected_meshes"])
+    source_names = donor_names | {"R24_FlyoverBox_R24_link_concrete"}
+    for obj in list(bpy.context.scene.objects):
+        if obj.name.replace(".", "_") in source_names:
+            for owner in list(obj.users_collection):
+                owner.objects.unlink(obj)
+    with bpy.data.libraries.load(str(grade_source), link=True, relative=True) as (archive, layer):
+        layer.objects = [name for name in archive.objects if name.startswith(("Grade__", "COL_NanquGrade_", "NanquGrade_"))]
+        assert donor_names <= {name.removeprefix("Grade__") for name in layer.objects}
+    for obj in layer.objects:
+        collection.objects.link(obj)
 bpy.context.preferences.filepaths.save_version=0
 output_name = "city_and_outer.local.blend" if nanqu else (
     "city_and_outer.before_nanqu.local.blend" if wilderness else
@@ -469,4 +486,6 @@ output_name = "city_and_outer.local.blend" if nanqu else (
     "city_and_outer.before_panda.local.blend" if houci_plan else
     "city_and_outer.before_houci.local.blend" if binjiang_plan else
     "city_and_outer.before_binjiang.local.blend" if east_plan else "city_and_outer.before_east.local.blend")
+if nanqu_grade:
+    output_name = os.environ.get("CQ_NANQU_GRADE_OUTPUT", "city_and_outer.nanqu_grade.local.blend")
 bpy.ops.wm.save_as_mainfile(filepath=str(here / output_name),relative_remap=True,compress=True)

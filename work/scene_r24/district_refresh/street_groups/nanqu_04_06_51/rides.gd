@@ -1,5 +1,6 @@
 extends "../houci_14_16/ride_connectors.gd"
 
+
 const NANQU_SITE := "res://assets/district_500/nanqu-04-06-51.json"
 const DECK := "COL_R24_LinkDeck_R24_link_asphalt"
 const APPROACH := "COL_Nanqu_RaisedWestApproach"
@@ -14,7 +15,7 @@ func verify() -> void:
 	game=scene.gameplay
 	bike=game.scooter
 	var plan: Dictionary=JSON.parse_string(FileAccess.get_file_as_string(NANQU_SITE))
-	var points: Array=plan.bike_path
+	var points: Array=Grade.adjust(scene,plan.bike_path)
 	var results := {}
 	bike.enter(game.actor)
 	bike.automation=true
@@ -36,11 +37,13 @@ func verify() -> void:
 				{"reached":outcome.reached,"targets":outcome.targets,"airborne_frames":outcome.airborne_frames,
 				"distance_m":outcome.distance_m,"last_contact":outcome.last_contact})
 	var supports := []
-	for expected: Array in plan.planter_contacts:
-		var hit := support(world(expected),.019,.12)
+	var grade_plan:=Grade.installed_plan(scene)
+	for expected: Array in grade_plan.get("planter_contacts",plan.planter_contacts):
+		var point:=world(expected)
+		var hit:=support(point,.019,.12) if grade_plan.is_empty() else planar_box_contact(point)
 		supports.append({"expected_enu":expected,"found":hit})
 	check("flower_box_corners_on_footway",supports.all(func(entry: Dictionary) -> bool:
-		return entry.found.get("body","")=="COL_Nanqu_RiverFootway"),supports)
+		return entry.found.get("body","")=="COL_Nanqu_RiverFootway" and absf(entry.found.y-entry.expected_enu[2])<.065),supports)
 	FileAccess.open(output.path_join("rides.json"),FileAccess.WRITE).store_string(JSON.stringify({
 		"scene":scene.scene_file_path,"identity":scene.scene_identity.district_500,
 		"results":results,"support_corners":supports,"checks":checks},"  "))
@@ -85,3 +88,16 @@ func lane_offset(rows: Array) -> Array:
 		var hit := support(xy)
 		variant[i]=[xy.x,-xy.z,hit.get("y",xy.y)]
 	return variant
+
+
+func planar_box_contact(point: Vector3) -> Dictionary:
+	var exclusions: Array[RID]=[]
+	for i in 6:
+		var q:=PhysicsRayQueryParameters3D.create(point+Vector3.UP*.065,point-Vector3.UP*.065,1,exclusions)
+		var hit:=scene.get_world_3d().direct_space_state.intersect_ray(q)
+		if hit.is_empty(): return {}
+		var body:=str(hit.collider.get_parent().name)
+		if body=="COL_Nanqu_RiverFootway":
+			return {"body":body,"y":hit.position.y,"normal_y":hit.normal.y,"gap_from_editable_m":hit.position.y-point.y}
+		exclusions.append(hit.rid)
+	return {}

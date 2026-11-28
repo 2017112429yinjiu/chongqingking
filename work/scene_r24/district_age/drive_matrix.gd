@@ -1,5 +1,7 @@
 extends "../../scene_r24/day_one/verify.gd"
 
+const NanquGrade := preload("res://scripts/nanqu_rail_grade.gd")
+
 const EAST_RAMP := &"COL_EastRoad_1256840008"
 const EAST_RAMP_MERGE := &"COL_EastRoad_RampMerge_1865946191"
 
@@ -38,11 +40,13 @@ func verify()->void:
 	await frames(12)
 	game=scene.gameplay;lesson=game.lesson;bike=game.scooter
 	var query:Dictionary=JSON.parse_string(FileAccess.get_file_as_string("res://../../scene_r24/district_age/road_queries.json"))
+	var grade_plan:=NanquGrade.installed_plan(scene)
 	var lines:={}
 	for row:Array in query.sections:
 		if row[1]!=1 or row[4]==null:continue
 		var id:=int(row[0])
 		var p:=Vector3(row[2],row[4],row[3])
+		if query.routes[id].name=="59146775": p.y+=NanquGrade.delta_at(p.x,grade_plan)
 		if absf(p.x)>98.5 or absf(p.z)>98.5:continue
 		if not lines.has(id):lines[id]=[]
 		var pts:Array=lines[id]

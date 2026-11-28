@@ -161,6 +161,8 @@ func _ready() -> void:
 	_build_reflection_probes()
 	if district_500_enabled:
 		scene_identity["district_500"] = preload("res://scripts/district_500.gd").install($City)
+		if not scene_identity["district_500"].get("nanqu_04_06_51_sha256", "").is_empty() and "--qa-nanqu-rail-parent" not in OS.get_cmdline_user_args():
+			scene_identity["nanqu_grade"] = preload("res://scripts/nanqu_rail_grade.gd").install($City)
 	collision_stats = CollisionBuilder.attach($City)
 	collision_stats["props"] = preload("res://scripts/prop_collisions.gd").attach($City)
 	_build_hud()

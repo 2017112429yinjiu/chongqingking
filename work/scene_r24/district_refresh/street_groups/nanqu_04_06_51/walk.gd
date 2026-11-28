@@ -1,10 +1,12 @@
 extends "../../continuous_site_walk.gd"
 
+const Grade := preload("res://scripts/nanqu_rail_grade.gd")
+
 const SITE := "res://assets/district_500/nanqu-04-06-51.json"
 
 func site_plan() -> Dictionary:
 	var plan: Dictionary=JSON.parse_string(FileAccess.get_file_as_string(SITE))
-	var rows: Array=plan.public_walk
+	var rows: Array=Grade.adjust(scene,plan.public_walk)
 	var point: Array=rows.back()
 	var next: Array=rows[2]
 	return {"id":"nanqu_river_edge","stations":rows,"destination_y":point[2],

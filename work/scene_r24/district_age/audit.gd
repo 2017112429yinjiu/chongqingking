@@ -1,4 +1,6 @@
 extends "../../scene_r24/day_one/verify.gd"
+
+const NanquGrade := preload("res://scripts/nanqu_rail_grade.gd")
 func support(space:PhysicsDirectSpaceState3D,x:float,z:float,h:Variant)->Array:
 	var top:=80. if h==null else float(h)+.38
 	var low:=-13. if h==null else float(h)-1.65
@@ -14,8 +16,14 @@ func verify()->void:
 	var space:=scene.get_world_3d().direct_space_state
 	var query:Dictionary=JSON.parse_string(FileAccess.get_file_as_string("res://../../scene_r24/district_age/road_queries.json"))
 	var rows:=[];var grid:=[];var absent:=[];var props:=[]
+	var grade_plan:=NanquGrade.installed_plan(scene)
+	var corrected_bridge_rays:=0
 	for row:Array in query.sections:
-		var hit:=support(space,row[2],row[3],row[4])
+		var reference: Variant=row[4]
+		if reference!=null and not grade_plan.is_empty() and query.routes[int(row[0])].name=="59146775":
+			reference=float(reference)+NanquGrade.delta_at(row[2],grade_plan)
+			corrected_bridge_rays+=1
+		var hit:=support(space,row[2],row[3],reference)
 		rows.append(row+hit)
 		if hit[0]==null:absent.append(row)
 	for pt:Array in query.ground_grid:grid.append(pt+support(space,pt[0],pt[1],pt[2]))
@@ -50,6 +58,6 @@ func verify()->void:
 	for p:Array in JSON.parse_string(FileAccess.get_file_as_string("res://../../scene_r24/district_age/median_open_pixels.json")):
 		var h:=space.intersect_ray(PhysicsRayQueryParameters3D.create(Vector3(p[0],14.,p[1]),Vector3(p[0],-2.,p[1]),1))
 		median_edge.append(p+[null,""] if h.is_empty() else p+[h.position.y,str(h.collider.get_parent().name)])
-	var report={"western_extra":median_edge,"western_median":median,"south_joint":verge,"routes":query.routes,"sections":rows,"grid":grid,"void_samples":absent,"contacts":props,"engine":Engine.get_version_info().string,"scene":scene.scene_identity.get("district_connections",{}),"below_another_level":query.probes_below_a_higher_surface,"underground_projection":query.underground_alignment_excluded}
+	var report={"western_extra":median_edge,"western_median":median,"south_joint":verge,"routes":query.routes,"sections":rows,"grid":grid,"void_samples":absent,"contacts":props,"engine":Engine.get_version_info().string,"scene":scene.scene_identity.get("district_connections",{}),"registered_bridge_grade_rays":corrected_bridge_rays,"below_another_level":query.probes_below_a_higher_surface,"underground_projection":query.underground_alignment_excluded}
 	FileAccess.open(output.path_join("district.json"),FileAccess.WRITE).store_string(JSON.stringify(report))
 	quit()

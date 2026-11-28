@@ -1,5 +1,7 @@
 extends "res://../../scene_r24/day_one/verify.gd"
 
+const Grade := preload("res://scripts/nanqu_rail_grade.gd")
+
 const SITE := "res://assets/district_500/zhongxing-bridge-18-21.json"
 const DECK := "COL_R24_LinkDeck_R24_link_asphalt"
 
@@ -77,7 +79,7 @@ func verify() -> void:
 	game=scene.gameplay
 	bike=game.scooter
 	var plan: Dictionary=JSON.parse_string(FileAccess.get_file_as_string(SITE))
-	var points: Array=plan.upper_scooter_18.duplicate(true)
+	var points: Array=Grade.adjust(scene,plan.upper_scooter_18).duplicate(true)
 	var baseline := "--qa-without-zhongxing-18-21" in OS.get_cmdline_user_args()
 	check("legacy_frame_18",(scene.find_child("COL_Outer500_Frame_18",true,false)!=null)==baseline)
 	var surf := []

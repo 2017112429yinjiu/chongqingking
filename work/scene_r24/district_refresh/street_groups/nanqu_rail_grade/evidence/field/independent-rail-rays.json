@@ -1,0 +1,124 @@
+{
+  "upper_far_edge_above_lower_reference": [
+    {
+      "pano": "0902920012230515142922191AU",
+      "feature_above_lower_street_m": 41.40982755730143,
+      "ray_feature": "far visible lower steel edge at 04"
+    },
+    {
+      "pano": "0902920012230515142924863AU",
+      "feature_above_lower_street_m": 39.268052612327075,
+      "ray_feature": "far visible lower steel edge at 04"
+    },
+    {
+      "pano": "0902920012230515142926254AU",
+      "feature_above_lower_street_m": 39.835127018922165,
+      "ray_feature": "far visible lower steel edge at 04"
+    },
+    {
+      "pano": "0902920012230515142927597AU",
+      "feature_above_lower_street_m": 40.40894189719299,
+      "ray_feature": "far visible lower steel edge at 04"
+    },
+    {
+      "pano": "0902920012230515142928988AU",
+      "feature_above_lower_street_m": 39.968774929733286,
+      "ray_feature": "far visible lower steel edge at 04"
+    },
+    {
+      "pano": "0902920012230515142930784AU",
+      "feature_above_lower_street_m": 40.21015786746335,
+      "ray_feature": "far visible lower steel edge at 04"
+    }
+  ],
+  "lower_pier_head_en_fit": [
+    -103.51604681117449,
+    -174.45831622269287
+  ],
+  "lower_registered_pier_head_rays": [
+    {
+      "pano": "0902920012230514163419600AU",
+      "camera_en": [
+        -118.74629173114572,
+        -163.9262487300873
+      ],
+      "heading_pitch_deg": [
+        135,
+        65
+      ],
+      "feature_px": [
+        435,
+        287
+      ],
+      "vertical_camera_height_m": 2.32,
+      "horizontal_ray_distance_m": 18.459473083185394,
+      "horizontal_residual_m": 1.4603627913166104,
+      "feature_above_local_road_m": 39.638897294785025
+    },
+    {
+      "pano": "0902920012230514163420960AU",
+      "camera_en": [
+        -100.39297003097221,
+        -168.2601453670698
+      ],
+      "heading_pitch_deg": [
+        190,
+        68
+      ],
+      "feature_px": [
+        460,
+        211
+      ],
+      "vertical_camera_height_m": 2.32,
+      "horizontal_ray_distance_m": 6.882153419292754,
+      "horizontal_residual_m": 0.8982732567826028,
+      "feature_above_local_road_m": 39.62820510980826
+    },
+    {
+      "pano": "0902920012230514163422320AU",
+      "camera_en": [
+        -82.19725185453365,
+        -172.2268066321094
+      ],
+      "heading_pitch_deg": [
+        237,
+        45
+      ],
+      "feature_px": [
+        527,
+        157
+      ],
+      "vertical_camera_height_m": 2.32,
+      "horizontal_ray_distance_m": 21.434957869552367,
+      "horizontal_residual_m": 0.11504167364944573,
+      "feature_above_local_road_m": 43.59516786476035
+    },
+    {
+      "pano": "0902920012230514163423679AU",
+      "camera_en": [
+        -64.07210765161598,
+        -175.72980989688392
+      ],
+      "heading_pitch_deg": [
+        250,
+        30
+      ],
+      "feature_px": [
+        553,
+        170
+      ],
+      "vertical_camera_height_m": 2.32,
+      "horizontal_ray_distance_m": 39.44243843661662,
+      "horizontal_residual_m": 1.317225402187868,
+      "feature_above_local_road_m": 42.75853263525237
+    }
+  ],
+  "pixel_model": {
+    "size": [
+      900,
+      560
+    ],
+    "vertical_fov_deg": 80
+  },
+  "scope": "These are different points on the same structure. The low view measures the observed pier head under the steel box and the high view the dark far edge near the crossing. No provider Z values are used as absolute survey heights."
+}

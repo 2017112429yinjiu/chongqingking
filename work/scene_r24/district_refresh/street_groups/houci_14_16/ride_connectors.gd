@@ -1,5 +1,7 @@
 extends "res://../../scene_r24/day_one/verify.gd"
 
+const Grade := preload("res://scripts/nanqu_rail_grade.gd")
+
 const SITE := "res://assets/district_500/houci-14-16.json"
 
 func world(row: Array) -> Vector3:
@@ -82,9 +84,13 @@ func verify() -> void:
 	for plot in ["14","16"]:
 		var name:String="COL_Houci14_Road_1306489251" if plot=="14" else "COL_Houci16_Road_176968735"
 		var allowed: Array=[name] if plot=="14" else [name,"COL_R24_LinkDeck_R24_link_asphalt"]
+		if plot=="16" and not Grade.installed_plan(scene).is_empty():
+			allowed.append("COL_NanquGrade_EastApproachingBranch")
 		var data: Dictionary=plan.roads[plot]
 		var rows: Array=data.drives_enu.duplicate(true)
-		if plot=="16": rows.push_front([184.10,4.05,24.74])
+		if plot=="16":
+			rows.push_front([184.10,4.05,24.74])
+			rows=Grade.adjust(scene,rows,true)
 		var forward:=await drive(rows,allowed)
 		rows.reverse()
 		var reverse:=await drive(rows,allowed)
@@ -95,11 +101,23 @@ func verify() -> void:
 	for plot in ["14","16"]:
 		var rows:=[]
 		for section: Array in plan.roads[plot].across_enu:
-			for pt: Array in section:
+			for pt: Array in Grade.adjust(scene,section,true) if plot=="16" else section:
 				rows.append(support(world(pt),.20,.20))
 		across[plot]=rows
 		var name: String="COL_Houci14_Road_1306489251" if plot=="14" else "COL_Houci16_Road_176968735"
-		var on_road:=rows.filter(func(hit: Dictionary) -> bool: return hit.get("body", "")==name and hit.get("normal_y",0.)>.72)
-		check("connector_"+plot+"_three_point_sections",on_road.size()==rows.size(),{"surface_contacts":on_road.size(),"samples":rows.size()})
+		var on_road:=0
+		var coalesced:=0
+		var grade_active: bool=plot=="16" and not Grade.installed_plan(scene).is_empty()
+		var i:=0
+		for group: Array in plan.roads[plot].across_enu:
+			for pt: Array in group:
+				var hit: Dictionary=rows[i]
+				var body: String=hit.get("body","")
+				var merge: bool=grade_active and pt[1]>=37.8 and body=="COL_NanquGrade_EastApproachingBranch"
+				if (body==name or merge) and hit.get("normal_y",0.)>.72:
+					on_road+=1
+					coalesced+=int(merge)
+				i+=1
+		check("connector_"+plot+"_three_point_sections",on_road==rows.size(),{"surface_contacts":on_road,"samples":rows.size(),"shared_merge_contacts":coalesced})
 	FileAccess.open(output.path_join("rides.json"),FileAccess.WRITE).store_string(JSON.stringify({"results":results,"across":across,"identity":scene.scene_identity.district_500,"checks":checks,"scene":scene.scene_file_path},"  "))
 	quit(2 if ever_failed else 0)

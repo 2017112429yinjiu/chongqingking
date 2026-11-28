@@ -703,13 +703,14 @@ static func start_exploration(scene: Node3D) -> void:
 			scene.explorer.set_walk_origin(street.position + Vector3.UP * .035, enu(plan.lower_walk_21[1]))
 	elif "--nanqu-riverwalk" in OS.get_cmdline_user_args():
 		var plan: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(NANQU_SITE))
-		var points: Array = plan.public_walk
+		var grade := preload("res://scripts/nanqu_rail_grade.gd")
+		var points: Array = grade.adjust(scene,plan.public_walk)
 		var parent := "--qa-without-nanqu-04-06-51" in OS.get_cmdline_user_args()
 		var from := enu(points[0]) + Vector3.UP * (8.0 if parent else 0.8)
 		var street := collision.raycast_ground(scene, from, 12.0 if parent else 2.4)
 		if not street.is_empty():
 			scene.explorer.set_walk_origin(street.position + Vector3.UP * .035, enu(points[1]))
-		var parking := enu(plan.bike_path[1])
+		var parking := enu(grade.adjust(scene,plan.bike_path)[1])
 		var vehicle := collision.raycast_ground(scene, parking + Vector3.UP * (8.0 if parent else 0.8), 12.0 if parent else 2.4)
 		if not vehicle.is_empty():
 			bike.global_position = vehicle.position + Vector3.UP * .035
